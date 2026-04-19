@@ -1,0 +1,359 @@
+﻿  dllmain.cpp
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(22,48): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(25,48): error C3646: 'Flags': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(25,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(26,48): error C3646: 'Index': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(26,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(28,48): error C2079: 'SDK::UObject::Name' uses undefined class 'SDK::FName'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(32,61): error C2061: syntax error: identifier 'EClassCastFlags'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(33,61): error C2061: syntax error: identifier 'EClassCastFlags'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(35,20): error C3646: 'GetFullName': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(35,31): error C2059: syntax error: '('
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(35,39): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(36,21): error C3646: 'GetFullWName': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(36,33): error C2059: syntax error: '('
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(36,41): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(37,20): error C3646: 'GetName': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(37,27): error C2059: syntax error: '('
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(37,35): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(38,21): error C3646: 'GetWName': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(38,29): error C2059: syntax error: '('
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(38,37): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(39,19): error C2061: syntax error: identifier 'EClassCastFlags'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(40,11): error C2061: syntax error: identifier 'EClassCastFlags'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(66,24): error C2061: syntax error: identifier 'int32'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(79,46): error C2061: syntax error: identifier 'EClassCastFlags'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(84,50): error C2061: syntax error: identifier 'EClassCastFlags'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(81,52): error C3861: 'RequiredType': identifier not found
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(79,17):
+      This diagnostic occurred in the compiler generated function 'UEType *SDK::UObject::FindObject(const char *)'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(81,52): error C2065: 'RequiredType': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(79,17):
+      This diagnostic occurred in the compiler generated function 'UEType *SDK::UObject::FindObject(const char *)'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(86,56): error C3861: 'RequiredType': identifier not found
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(84,17):
+      This diagnostic occurred in the compiler generated function 'UEType *SDK::UObject::FindObjectFast(const char *)'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(86,56): error C2065: 'RequiredType': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(84,17):
+      This diagnostic occurred in the compiler generated function 'UEType *SDK::UObject::FindObjectFast(const char *)'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(71,50): error C2653: 'EClassCastFlags': is not a class or namespace name
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(71,67): error C2597: illegal reference to non-static member 'SDK::UObject::Class'
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(27,48):
+      see declaration of 'SDK::UObject::Class'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(75,50): error C2653: 'EClassCastFlags': is not a class or namespace name
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(75,67): error C2597: illegal reference to non-static member 'SDK::UObject::Class'
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(27,48):
+      see declaration of 'SDK::UObject::Class'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(91,3): error C2653: 'InSDKUtils': is not a class or namespace name
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(91,32): error C2653: 'InSDKUtils': is not a class or namespace name
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(91,44): error C2065: 'GetVirtualFunction': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(91,69): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(91,119): error C2653: 'Offsets': is not a class or namespace name
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(95,31): error C2338: static_assert failed: 'Wrong size on UObject'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(97,15): error C2039: 'Flags': is not a member of 'SDK::UObject'
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(19,7):
+      see declaration of 'SDK::UObject'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(97,15): error C2618: illegal member designator in offsetof
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(97,15):
+      offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(97,40): error C2338: static_assert failed: 'Member 'UObject::Flags' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(98,15): error C2039: 'Index': is not a member of 'SDK::UObject'
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(19,7):
+      see declaration of 'SDK::UObject'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(98,15): error C2618: illegal member designator in offsetof
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(98,15):
+      offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(98,40): error C2338: static_assert failed: 'Member 'UObject::Index' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(99,40): error C2338: static_assert failed: 'Member 'UObject::Class' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(100,39): error C2338: static_assert failed: 'Member 'UObject::Name' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(101,40): error C2338: static_assert failed: 'Member 'UObject::Outer' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(113,10): error C2065: 'StaticClassImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(113,35): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(117,10): error C2065: 'GetDefaultObjImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(117,28): error C2275: 'SDK::UField': expected an expression instead of a type
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(117,36): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(121,30): error C2338: static_assert failed: 'Wrong size on UField'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(122,38): error C2338: static_assert failed: 'Member 'UField::Next' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(129,48): error C3646: 'Pad_28': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(129,54): error C2143: syntax error: missing ',' before '['
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(129,60): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(134,10): error C2065: 'StaticClassImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(134,40): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(138,10): error C2065: 'GetDefaultObjImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(138,28): error C2275: 'SDK::UPackageMap': expected an expression instead of a type
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(138,41): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(142,35): error C2338: static_assert failed: 'Wrong size on UPackageMap'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(151,48): error C3646: 'Size': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(151,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(152,48): error C3646: 'MinAlignemnt': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(152,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(153,48): error C3646: 'Pad_48': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(153,54): error C2143: syntax error: missing ',' before '['
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(153,60): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(161,10): error C2065: 'StaticClassImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(161,36): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(165,10): error C2065: 'GetDefaultObjImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(165,28): error C2275: 'SDK::UStruct': expected an expression instead of a type
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(165,37): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(169,31): error C2338: static_assert failed: 'Wrong size on UStruct'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(170,40): error C2338: static_assert failed: 'Member 'UStruct::Super' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(171,43): error C2338: static_assert failed: 'Member 'UStruct::Children' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(172,15): error C2039: 'Size': is not a member of 'SDK::UStruct'
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(146,7):
+      see declaration of 'SDK::UStruct'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(172,15): error C2618: illegal member designator in offsetof
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(172,15):
+      offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(172,39): error C2338: static_assert failed: 'Member 'UStruct::Size' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(173,15): error C2039: 'MinAlignemnt': is not a member of 'SDK::UStruct'
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(146,7):
+      see declaration of 'SDK::UStruct'
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(173,15): error C2618: illegal member designator in offsetof
+  (compiling source file 'dllmain.cpp')
+      C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(173,15):
+      offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(173,47): error C2338: static_assert failed: 'Member 'UStruct::MinAlignemnt' has a wrong offset!'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(180,48): error C3646: 'Pad_88': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(180,54): error C2143: syntax error: missing ',' before '['
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(180,60): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(185,10): error C2065: 'StaticClassImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(185,42): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(189,10): error C2065: 'GetDefaultObjImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(189,28): error C2275: 'SDK::UScriptStruct': expected an expression instead of a type
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(189,43): error C2059: syntax error: ')'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(193,37): error C2338: static_assert failed: 'Wrong size on UScriptStruct'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(200,48): error C3646: 'ArrayDim': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(200,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(201,48): error C3646: 'ElementSize': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(201,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(202,48): error C3646: 'PropertyFlags': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(202,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(203,48): error C3646: 'Pad_40': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(203,54): error C2143: syntax error: missing ',' before '['
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(203,59): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(204,48): error C3646: 'Offset': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(204,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(205,48): error C3646: 'Pad_48': unknown override specifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(205,54): error C2143: syntax error: missing ',' before '['
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(205,60): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(210,10): error C2065: 'StaticClassImpl': undeclared identifier
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\nick\Documents\GitHub\GS\SDK\CoreUObject_classes.hpp(210,10): error C1003: error count exceeds 100; stopping compilation
+  (compiling source file 'dllmain.cpp')
+  
