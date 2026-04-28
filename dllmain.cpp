@@ -11,6 +11,7 @@ void Main()
     FILE* file = nullptr;
 
     freopen_s(&file, "CONOUT$", "w", stdout);
+        std::cout << "Starting 1.7.2" << std::endl;
     sleep(5000);
     MH_Initialize();
 
