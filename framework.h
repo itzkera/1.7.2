@@ -1,15 +1,16 @@
 #pragma once
-
-#define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
-// Windows Header Files
+#define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <thread>
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cwchar> 
 #include "SDK/SDK.hpp"
+//#include "MinHook.h"  // Comment out if not needed
 
 using namespace SDK;
+
 inline uintptr_t ImageBase = InSDKUtils::GetImageBase();
 
 namespace Addresses {
@@ -28,24 +29,27 @@ namespace Addresses {
     inline uint64_t GIsClient = 0x6536b65;
     inline uint64_t GameSessionPatch = 0x417536;
     inline uint64_t EncryptionPatch = 0x249e40f;
-    inline std::vector<uint64_t, 4> NullFuncs = { 0x1b56650, 0x593690, 0x6ddbd0 };
-    inline std::vector<uint64_t, 1> RetTrueFuncs = { 0x6e89c0 };
-    // vector is better
+    inline std::vector<uint64_t> NullFuncs = { 0x1b56650, 0x593690, 0x6ddbd0 };
+    inline std::vector<uint64_t> RetTrueFuncs = { 0x6e89c0 };
 };
 
-struct FFrame
-{
-
-};
+// Define function pointer types - all void* for compatibility
+typedef void* (*StepFn)(void*, void*, void*);
+typedef void* (*StepExplicitPropertyFn)(void*, void*, void*);
+typedef void* (*CreateNetDriverFn)(void*, void*, void*);
+typedef bool (*InitListenFn)(void*, void*, void*, bool, void*);
+typedef void* (*SetWorldFn)(void*, void*);
+typedef void* (*ReallocFn)(void*, void*, void*);
+typedef void* (*StaticFindObjectFn)(void*, void*, void*, void*);
+typedef void* (*StaticLoadObjectFn)(void*, void*, void*, void*, void*, void*, void*);
 
 namespace Funcs {
-    inline auto Step = (void (*)(FFrame*, SDK::UObject*, void* const)) (ImageBase + Addresses::Step);
-    inline auto StepExplicitProperty = (void (*)(FFrame*, void* const, SDK::UField*)) (ImageBase + Addresses::StepExplicitProperty);
-    inline auto CreateNetDriver = (SDK::UNetDriver * (*)(SDK::UEngine*, SDK::UWorld*, SDK::FName)) (ImageBase + Addresses::CreateNetDriver);
-    inline auto InitListen = (bool (*)(SDK::UNetDriver*, SDK::UWorld*, SDK::FURL&, bool, UC::FString)) (ImageBase + Addresses::InitListen);
-    inline auto SetWorld = (void (*)(SDK::UNetDriver*, SDK::UWorld*)) (ImageBase + Addresses::SetWorld);
-    inline auto Realloc = (void* (*)(void*, __int64, unsigned int)) (ImageBase + Addresses::Realloc);
-    inline auto StaticFindObject = (SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, bool)) (ImageBase + Addresses::StaticFindObject);
-    inline auto StaticLoadObject = (SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, const wchar_t*, uint32_t, SDK::UObject*, bool)) (ImageBase + Addresses::StaticLoadObject);
+    inline StepFn Step = (StepFn)(ImageBase + Addresses::Step);
+    inline StepExplicitPropertyFn StepExplicitProperty = (StepExplicitPropertyFn)(ImageBase + Addresses::StepExplicitProperty);
+    inline CreateNetDriverFn CreateNetDriver = (CreateNetDriverFn)(ImageBase + Addresses::CreateNetDriver);
+    inline InitListenFn InitListen = (InitListenFn)(ImageBase + Addresses::InitListen);
+    inline SetWorldFn SetWorld = (SetWorldFn)(ImageBase + Addresses::SetWorld);
+    inline ReallocFn Realloc = (ReallocFn)(ImageBase + Addresses::Realloc);
+    inline StaticFindObjectFn StaticFindObject = (StaticFindObjectFn)(ImageBase + Addresses::StaticFindObject);
+    inline StaticLoadObjectFn StaticLoadObject = (StaticLoadObjectFn)(ImageBase + Addresses::StaticLoadObject);
 };
-

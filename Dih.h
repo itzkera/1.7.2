@@ -1,50 +1,97 @@
 #pragma once
 #include "SDK/SDK.hpp"
-#include "MinHook.h"
+#include "framework.h"
+#include <Windows.h>
+
+inline void SetTitle(const std::string& Text)
+{
+    SetConsoleTitleA(Text.c_str());
+}
 
 inline bool ReadyToStartMatch(AFortGameModeAthena* Gamemode)
 {
-	static bool bFirstTouchingSession = false;
-	auto GameState = AFortGameStateAthena*)GameState->GameState;
-	if (!GameState || !GameState->MapInfo)
-		return false;
-	if (!bFirstTouchingSession)
-	{ 
-		static UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_DefaultSolo.Playlist_DefaultSolo");
-		GameState->CurrentPlaylistInfo.OverridePlaylist = Playlist;
-		GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;
-		GameState->CurrentPlaylistInfo.MarkArrayDirty();
-			GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
-		bFirstTouchingSession = true;
+    if (!Gamemode)
+    {
+        SetTitle("Starting gamemode...");
+        return false;
+    }
 
-	}
+    auto GameState = (AFortGameStateAthena*)Gamemode->GameState;
 
-	static bool bListen = false;
-	if (!bListen)
-	{
-		FName GameNetDriver = UKismetStringLibrary::Conv_StringToName(L"GameNetDriver");
+    if (!GameState)
+    {
+        SetTitle("No GameState");
+        return false;
+    }
 
-		UNetDriver* NetDriver = Func::CreateNetDriver(UEngine::GetEngine(), UWorld::GetWorld(), GameNetDriver)
+    if (!GameState->MapInfo)
+    {
+        SetTitle("No MapInfo");
+        return false;
+    }
 
-			UWorld::GetWorld()->NetDriver = NetDriver;
+    static bool bFirstTouchingSession = false;
+
+    if (!bFirstTouchingSession)
+    {
+        bFirstTouchingSession = true;
+
+        SetTitle("Initializing Session...");
+
+        GameState->CurrentPlaylistId = 1;
+        Gamemode->CurrentPlaylistId = 1;
+    }
+
+    static bool bListen = false;
+
+    if (!bListen)
+    {
+        UWorld* World = UWorld::GetWorld();
+
+        if (!World || !World->NetDriver)
+        {
+            SetTitle("No NetDriver");
+            return false;
+        }
+
+        FName GameNetDriver = UKismetStringLibrary::Conv_StringToName(L"GameNetDriver");
+
+        World->NetDriver->NetDriverName = GameNetDriver;
+        World->NetDriver->World = World;
+
+        FURL URL{};
+        URL.Port = 7777;
+
+        FString Error;
+
+        SetTitle("Starting Listen");
+
+        if (Funcs::InitListen(
+            (void*)World->NetDriver,
+            (void*)World,
+            (void*)&URL,
+            false,
+            (void*)&Error))
+        {
+            Funcs::SetWorld((void*)World->NetDriver, (void*)World);
+
+            SetTitle("Listening");
+        }
+        else
+        {
+            SetTitle("Listen Failed");
+            return false;
+        }
+
+        bListen = true;
+    }
+
+    if (Gamemode->GetMatchState().ToString() == "WaitingToStart")
+    {
+        Gamemode->StartMatch();
+    }
 
 
-		FURL.URL();
-		URL.Port = 7777;
-
-		If (UWorld::GetWorld()->NetDriver)
-		{
-			UWorld::GetWorld()->NetDriver->NetDriverName = GameNetDriver;
-			UWorld::GetWorld()->NetDriver->World = UWorld::GetWorld();
-			Funcs::InitListen(UWorld::GetWorld()->NetDriver, UWorld::GetWorld(), URL, false, {});
-			Funcs::SetWorld(UWorld::GetWorld()->NetDriver, UWorld::GetWorld());
-			for (int i = 0; i < UWorld::GetWorld()->LevelCollections.Num(); i++)
-			{
-				UWorld::GetWorld()->LevelCollections[i].NetDriver = UWorld::GetWorld()
-			}
-
-		   }
-		bListen = true;
-
-	}
+    SetTitle("InProgress");
+    return true;
 }
