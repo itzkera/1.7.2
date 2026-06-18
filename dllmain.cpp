@@ -15,7 +15,7 @@ void Main()
     sleep(5000);
     MH_Initialize();
 
-    UKismetSystemLibrary::ExecuteConsoleCommand(World, "open Athena_Terrain", nullptr);
+    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
 
 // bleh
 

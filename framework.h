@@ -9,9 +9,9 @@
 #include <string>
 #include "SDK/SDK.hpp"
 
-
 using namespace SDK;
-inline uint64 ImageBase = unit64(GetModuleHandle(0));
+inline uintptr_t ImageBase = InSDKUtils::GetImageBase();
+
 namespace Addresses {
     inline uint64_t Step = 0x13e0650;
     inline uint64_t StepExplicitProperty = 0x13e0680;
@@ -33,14 +33,19 @@ namespace Addresses {
     // vector is better
 };
 
+struct FFrame
+{
+
+};
+
 namespace Funcs {
-    inline auto Step = (void (*)(FFrame*, SDK::UObject*, void* const)) (ImageBase + Offsets::Step);
-    inline auto StepExplicitProperty = (void (*)(FFrame*, void* const, SDK::UField*)) (ImageBase + Offsets::StepExplicitProperty);
-    inline auto CreateNetDriver = (SDK::UNetDriver * (*)(SDK::UEngine*, SDK::UWorld*, SDK::FName)) (ImageBase + Offsets::CreateNetDriver);
-    inline auto InitListen = (bool (*)(SDK::UNetDriver*, SDK::UWorld*, SDK::FURL&, bool, UC::FString)) (ImageBase + Offsets::InitListen);
-    inline auto SetWorld = (void (*)(SDK::UNetDriver*, SDK::UWorld*)) (ImageBase + Offsets::SetWorld);
-    inline auto Realloc = (void* (*)(void*, __int64, unsigned int)) (ImageBase + Offsets::Realloc);
-    inline auto StaticFindObject = (SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, bool)) (ImageBase + Offsets::StaticFindObject);
-    inline auto StaticLoadObject = (SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, const wchar_t*, uint32_t, SDK::UObject*, bool)) (ImageBase + Offsets::StaticLoadObject);
+    inline auto Step = (void (*)(FFrame*, SDK::UObject*, void* const)) (ImageBase + Addresses::Step);
+    inline auto StepExplicitProperty = (void (*)(FFrame*, void* const, SDK::UField*)) (ImageBase + Addresses::StepExplicitProperty);
+    inline auto CreateNetDriver = (SDK::UNetDriver * (*)(SDK::UEngine*, SDK::UWorld*, SDK::FName)) (ImageBase + Addresses::CreateNetDriver);
+    inline auto InitListen = (bool (*)(SDK::UNetDriver*, SDK::UWorld*, SDK::FURL&, bool, UC::FString)) (ImageBase + Addresses::InitListen);
+    inline auto SetWorld = (void (*)(SDK::UNetDriver*, SDK::UWorld*)) (ImageBase + Addresses::SetWorld);
+    inline auto Realloc = (void* (*)(void*, __int64, unsigned int)) (ImageBase + Addresses::Realloc);
+    inline auto StaticFindObject = (SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, bool)) (ImageBase + Addresses::StaticFindObject);
+    inline auto StaticLoadObject = (SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, const wchar_t*, uint32_t, SDK::UObject*, bool)) (ImageBase + Addresses::StaticLoadObject);
 };
 
