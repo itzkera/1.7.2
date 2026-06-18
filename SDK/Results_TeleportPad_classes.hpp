@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TeleportPad.Results_TeleportPad_C
 // 0x00F0 (0x0390 - 0x02A0)
@@ -86,39 +85,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TeleportPad_C">();
+		BP_STATIC_CLASS_IMPL("Results_TeleportPad_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TeleportPad_C")
 	}
 	static class UResults_TeleportPad_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TeleportPad_C>();
 	}
 };
-static_assert(alignof(UResults_TeleportPad_C) == 0x000008, "Wrong alignment on UResults_TeleportPad_C");
-static_assert(sizeof(UResults_TeleportPad_C) == 0x000390, "Wrong size on UResults_TeleportPad_C");
-static_assert(offsetof(UResults_TeleportPad_C, UberGraphFrame) == 0x0002A0, "Member 'UResults_TeleportPad_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Anim_ExitButtonIntro) == 0x0002A8, "Member 'UResults_TeleportPad_C::Anim_ExitButtonIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Anim_ExitTimeTick) == 0x0002B0, "Member 'UResults_TeleportPad_C::Anim_ExitTimeTick' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Anim_ExitEnabled) == 0x0002B8, "Member 'UResults_TeleportPad_C::Anim_ExitEnabled' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, ButtonExit) == 0x0002C0, "Member 'UResults_TeleportPad_C::ButtonExit' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, ImageTimer) == 0x0002C8, "Member 'UResults_TeleportPad_C::ImageTimer' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, OverlayRoot) == 0x0002D0, "Member 'UResults_TeleportPad_C::OverlayRoot' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, OverlayTimer) == 0x0002D8, "Member 'UResults_TeleportPad_C::OverlayTimer' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Pad1) == 0x0002E0, "Member 'UResults_TeleportPad_C::Pad1' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Pad2) == 0x0002E8, "Member 'UResults_TeleportPad_C::Pad2' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Pad3) == 0x0002F0, "Member 'UResults_TeleportPad_C::Pad3' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, Pad4) == 0x0002F8, "Member 'UResults_TeleportPad_C::Pad4' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, SafeZone_0) == 0x000300, "Member 'UResults_TeleportPad_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, TextExitTime) == 0x000308, "Member 'UResults_TeleportPad_C::TextExitTime' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, TeleportPadsOrdered) == 0x000310, "Member 'UResults_TeleportPad_C::TeleportPadsOrdered' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, OnMissionStatsClicked) == 0x000320, "Member 'UResults_TeleportPad_C::OnMissionStatsClicked' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, OnExitClicked) == 0x000330, "Member 'UResults_TeleportPad_C::OnExitClicked' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, ExitButtonIntro) == 0x000340, "Member 'UResults_TeleportPad_C::ExitButtonIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, bExitTimeFinished) == 0x000348, "Member 'UResults_TeleportPad_C::bExitTimeFinished' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, ExitingText) == 0x000350, "Member 'UResults_TeleportPad_C::ExitingText' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, OnAddFriendClicked) == 0x000368, "Member 'UResults_TeleportPad_C::OnAddFriendClicked' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, OnUpVoteClicked) == 0x000378, "Member 'UResults_TeleportPad_C::OnUpVoteClicked' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, bIsSolo) == 0x000388, "Member 'UResults_TeleportPad_C::bIsSolo' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPad_C, CompletionResult) == 0x000389, "Member 'UResults_TeleportPad_C::CompletionResult' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

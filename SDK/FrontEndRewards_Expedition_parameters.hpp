@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ExecuteUbergraph_FrontEndRewards_Expedition
 // 0x0040 (0x0040 - 0x0000)
@@ -33,15 +33,6 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition");
-static_assert(sizeof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition) == 0x000040, "Wrong size on FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, EntryPoint) == 0x000000, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, K2Node_Event_Expedition) == 0x000008, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::K2Node_Event_Expedition' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, K2Node_Event_bSucceeded) == 0x000010, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::K2Node_Event_bSucceeded' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, K2Node_Event_Rewards) == 0x000018, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::K2Node_Event_Rewards' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000028, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, K2Node_SwitchInteger_CmpSuccess) == 0x00002C, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'FrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnCollectExpeditionCompleted
 // 0x0020 (0x0020 - 0x0000)
@@ -53,11 +44,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFortItemInstanceQuantityPair>  Rewards;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted");
-static_assert(sizeof(FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted) == 0x000020, "Wrong size on FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted");
-static_assert(offsetof(FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted, Expedition) == 0x000000, "Member 'FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted::Expedition' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted, bSucceeded) == 0x000008, "Member 'FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted::bSucceeded' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted, Rewards) == 0x000010, "Member 'FrontEndRewards_Expedition_C_OnCollectExpeditionCompleted::Rewards' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.PopulateFromExpedition
 // 0x0008 (0x0008 - 0x0000)
@@ -66,9 +52,6 @@ struct FrontEndRewards_Expedition_C_PopulateFromExpedition final
 public:
 	class UFortExpeditionItem*                    Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_PopulateFromExpedition) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_PopulateFromExpedition");
-static_assert(sizeof(FrontEndRewards_Expedition_C_PopulateFromExpedition) == 0x000008, "Wrong size on FrontEndRewards_Expedition_C_PopulateFromExpedition");
-static_assert(offsetof(FrontEndRewards_Expedition_C_PopulateFromExpedition, Item) == 0x000000, "Member 'FrontEndRewards_Expedition_C_PopulateFromExpedition::Item' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetBrushFromExpedition
 // 0x03B0 (0x03B0 - 0x0000)
@@ -80,12 +63,6 @@ public:
 	struct FFortTagUIData                         CallFunc_GetUIDataForTag_OutData;                  // 0x0010(0x0398)()
 	bool                                          CallFunc_GetUIDataForTag_ReturnValue;              // 0x03A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_SetBrushFromExpedition) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_SetBrushFromExpedition");
-static_assert(sizeof(FrontEndRewards_Expedition_C_SetBrushFromExpedition) == 0x0003B0, "Wrong size on FrontEndRewards_Expedition_C_SetBrushFromExpedition");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetVehicleTagRequiredForExpedition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetUIDataForTag_OutData) == 0x000010, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetUIDataForTag_OutData' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetBrushFromExpedition, CallFunc_GetUIDataForTag_ReturnValue) == 0x0003A8, "Member 'FrontEndRewards_Expedition_C_SetBrushFromExpedition::CallFunc_GetUIDataForTag_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetTitleFromExpedition
 // 0x0018 (0x0018 - 0x0000)
@@ -94,9 +71,6 @@ struct FrontEndRewards_Expedition_C_SetTitleFromExpedition final
 public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0000(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_SetTitleFromExpedition) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_SetTitleFromExpedition");
-static_assert(sizeof(FrontEndRewards_Expedition_C_SetTitleFromExpedition) == 0x000018, "Wrong size on FrontEndRewards_Expedition_C_SetTitleFromExpedition");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetTitleFromExpedition, CallFunc_GetDisplayName_ReturnValue) == 0x000000, "Member 'FrontEndRewards_Expedition_C_SetTitleFromExpedition::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetSuccessChanceFromExpedition
 // 0x0028 (0x0028 - 0x0000)
@@ -109,12 +83,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition");
-static_assert(sizeof(FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition) == 0x000028, "Wrong size on FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition, CallFunc_GetExpeditionSuccessChance_ReturnValue) == 0x000000, "Member 'FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition::CallFunc_GetExpeditionSuccessChance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition, CallFunc_FTrunc_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'FrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ContinueFail
 // 0x0010 (0x0010 - 0x0000)
@@ -123,9 +91,6 @@ struct FrontEndRewards_Expedition_C_ContinueFail final
 public:
 	TArray<struct FFortItemInstanceQuantityPair>  K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FrontEndRewards_Expedition_C_ContinueFail) == 0x000008, "Wrong alignment on FrontEndRewards_Expedition_C_ContinueFail");
-static_assert(sizeof(FrontEndRewards_Expedition_C_ContinueFail) == 0x000010, "Wrong size on FrontEndRewards_Expedition_C_ContinueFail");
-static_assert(offsetof(FrontEndRewards_Expedition_C_ContinueFail, K2Node_MakeArray_Array) == 0x000000, "Member 'FrontEndRewards_Expedition_C_ContinueFail::K2Node_MakeArray_Array' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

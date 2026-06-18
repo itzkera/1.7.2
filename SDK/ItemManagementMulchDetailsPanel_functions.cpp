@@ -14,8 +14,7 @@
 #include "ItemManagementMulchDetailsPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.ExecuteUbergraph_ItemManagementMulchDetailsPanel
 // (HasDefaults)
@@ -96,9 +95,9 @@ void UItemManagementMulchDetailsPanel_C::DialogResult_58BF1F8B4DC97D1C2902828F65
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.GetWarningText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<EItemRecyclingWarning>           Warnings                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<EItemRecyclingWarning>&          Warnings                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                                    HasAnimateItems                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             WarningText                                            (Parm, OutParm)
+// class FText*                            WarningText                                            (Parm, OutParm)
 
 void UItemManagementMulchDetailsPanel_C::GetWarningText(TArray<EItemRecyclingWarning>& Warnings, bool HasAnimateItems, class FText* WarningText)
 {
@@ -134,5 +133,5 @@ void UItemManagementMulchDetailsPanel_C::UpdateDoneButtonText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

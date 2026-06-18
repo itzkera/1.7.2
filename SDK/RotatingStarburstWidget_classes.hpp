@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RotatingStarburstWidget.RotatingStarburstWidget_C
 // 0x0018 (0x0248 - 0x0230)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RotatingStarburstWidget_C">();
+		BP_STATIC_CLASS_IMPL("RotatingStarburstWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotatingStarburstWidget_C")
 	}
 	static class URotatingStarburstWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotatingStarburstWidget_C>();
 	}
 };
-static_assert(alignof(URotatingStarburstWidget_C) == 0x000008, "Wrong alignment on URotatingStarburstWidget_C");
-static_assert(sizeof(URotatingStarburstWidget_C) == 0x000248, "Wrong size on URotatingStarburstWidget_C");
-static_assert(offsetof(URotatingStarburstWidget_C, UberGraphFrame) == 0x000230, "Member 'URotatingStarburstWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URotatingStarburstWidget_C, Image_0) == 0x000238, "Member 'URotatingStarburstWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(URotatingStarburstWidget_C, rotationSpeed) == 0x000240, "Member 'URotatingStarburstWidget_C::rotationSpeed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

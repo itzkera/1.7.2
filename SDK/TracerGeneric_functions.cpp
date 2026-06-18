@@ -14,8 +14,7 @@
 #include "TracerGeneric_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TracerGeneric.TracerGeneric_C.ExecuteUbergraph_TracerGeneric
 // (HasDefaults)
@@ -40,8 +39,8 @@ void ATracerGeneric_C::ExecuteUbergraph_TracerGeneric(int32 EntryPoint)
 // Function TracerGeneric.TracerGeneric_C.OnInit
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FVector                          Start_0                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          End_0                                                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Start_0                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   End_0                                                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ATracerGeneric_C::OnInit(const struct FVector& Start_0, const struct FVector& End_0)
 {
@@ -96,8 +95,8 @@ void ATracerGeneric_C::UserConstructionScript()
 // Function TracerGeneric.TracerGeneric_C.TrackPassBy
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Changed                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                                   Pass_Distance                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Changed                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// float*                                  Pass_Distance                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ATracerGeneric_C::TrackPassBy(bool* Changed, float* Pass_Distance)
 {
@@ -151,5 +150,5 @@ class AFortPlayerPawn* ATracerGeneric_C::GetLocalPawnForPassBy()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

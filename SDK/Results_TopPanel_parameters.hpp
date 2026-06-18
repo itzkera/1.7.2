@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_TopPanel.Results_TopPanel_C.ExecuteUbergraph_Results_TopPanel
 // 0x0004 (0x0004 - 0x0000)
@@ -25,9 +25,6 @@ struct Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel) == 0x000004, "Wrong alignment on Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel");
-static_assert(sizeof(Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel) == 0x000004, "Wrong size on Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel");
-static_assert(offsetof(Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel, EntryPoint) == 0x000000, "Member 'Results_TopPanel_C_ExecuteUbergraph_Results_TopPanel::EntryPoint' has a wrong offset!");
 
 // Function Results_TopPanel.Results_TopPanel_C.Initialize
 // 0x04F8 (0x04F8 - 0x0000)
@@ -52,22 +49,6 @@ public:
 	uint8                                         Pad_4D9[0x7];                                      // 0x04D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x04E0(0x0018)()
 };
-static_assert(alignof(Results_TopPanel_C_Initialize) == 0x000008, "Wrong alignment on Results_TopPanel_C_Initialize");
-static_assert(sizeof(Results_TopPanel_C_Initialize) == 0x0004F8, "Wrong size on Results_TopPanel_C_Initialize");
-static_assert(offsetof(Results_TopPanel_C_Initialize, CompletionResult) == 0x000000, "Member 'Results_TopPanel_C_Initialize::CompletionResult' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable) == 0x000008, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable2) == 0x000020, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable3) == 0x000038, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_text_Variable4) == 0x000050, "Member 'Results_TopPanel_C_Initialize::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'Results_TopPanel_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000070, "Member 'Results_TopPanel_C_Initialize::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x000428, "Member 'Results_TopPanel_C_Initialize::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, K2Node_MakeStruct_FormatArgumentData) == 0x000430, "Member 'Results_TopPanel_C_Initialize::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, K2Node_MakeStruct_FormatArgumentData2) == 0x000470, "Member 'Results_TopPanel_C_Initialize::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, K2Node_MakeArray_Array) == 0x0004B0, "Member 'Results_TopPanel_C_Initialize::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, CallFunc_Format_ReturnValue) == 0x0004C0, "Member 'Results_TopPanel_C_Initialize::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, Temp_byte_Variable) == 0x0004D8, "Member 'Results_TopPanel_C_Initialize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_TopPanel_C_Initialize, K2Node_Select_Default) == 0x0004E0, "Member 'Results_TopPanel_C_Initialize::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

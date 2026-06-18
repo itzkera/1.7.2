@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ActiveModifiersHUD.ActiveModifiersHUD_C
 // 0x0030 (0x0290 - 0x0260)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActiveModifiersHUD_C">();
+		BP_STATIC_CLASS_IMPL("ActiveModifiersHUD_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActiveModifiersHUD_C")
 	}
 	static class UActiveModifiersHUD_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActiveModifiersHUD_C>();
 	}
 };
-static_assert(alignof(UActiveModifiersHUD_C) == 0x000008, "Wrong alignment on UActiveModifiersHUD_C");
-static_assert(sizeof(UActiveModifiersHUD_C) == 0x000290, "Wrong size on UActiveModifiersHUD_C");
-static_assert(offsetof(UActiveModifiersHUD_C, UberGraphFrame) == 0x000260, "Member 'UActiveModifiersHUD_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActiveModifiersHUD_C, HboxModifierStack) == 0x000268, "Member 'UActiveModifiersHUD_C::HboxModifierStack' has a wrong offset!");
-static_assert(offsetof(UActiveModifiersHUD_C, Timers) == 0x000270, "Member 'UActiveModifiersHUD_C::Timers' has a wrong offset!");
-static_assert(offsetof(UActiveModifiersHUD_C, ModifierRows) == 0x000280, "Member 'UActiveModifiersHUD_C::ModifierRows' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

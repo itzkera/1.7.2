@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class PacketHandler.HandlerComponentFactory
 // 0x0000 (0x0028 - 0x0028)
@@ -23,15 +22,16 @@ class UHandlerComponentFactory : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"HandlerComponentFactory">();
+		STATIC_CLASS_IMPL("HandlerComponentFactory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HandlerComponentFactory")
 	}
 	static class UHandlerComponentFactory* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHandlerComponentFactory>();
 	}
 };
-static_assert(alignof(UHandlerComponentFactory) == 0x000008, "Wrong alignment on UHandlerComponentFactory");
-static_assert(sizeof(UHandlerComponentFactory) == 0x000028, "Wrong size on UHandlerComponentFactory");
 
-}
-
+SDK_NAMESPACE_END

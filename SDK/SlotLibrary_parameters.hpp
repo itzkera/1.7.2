@@ -17,8 +17,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SlotLibrary.SlotLibrary_C.InitItemWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -31,13 +31,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Create_Item_Tooltip_Return_Value;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SlotLibrary_C_InitItemWidget) == 0x000008, "Wrong alignment on SlotLibrary_C_InitItemWidget");
-static_assert(sizeof(SlotLibrary_C_InitItemWidget) == 0x000028, "Wrong size on SlotLibrary_C_InitItemWidget");
-static_assert(offsetof(SlotLibrary_C_InitItemWidget, Widget) == 0x000000, "Member 'SlotLibrary_C_InitItemWidget::Widget' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_InitItemWidget, Item) == 0x000008, "Member 'SlotLibrary_C_InitItemWidget::Item' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_InitItemWidget, __WorldContext) == 0x000010, "Member 'SlotLibrary_C_InitItemWidget::__WorldContext' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_InitItemWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'SlotLibrary_C_InitItemWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_InitItemWidget, CallFunc_Create_Item_Tooltip_Return_Value) == 0x000020, "Member 'SlotLibrary_C_InitItemWidget::CallFunc_Create_Item_Tooltip_Return_Value' has a wrong offset!");
 
 // Function SlotLibrary.SlotLibrary_C.EnsureIconBrush
 // 0x0528 (0x0528 - 0x0000)
@@ -54,15 +47,6 @@ public:
 	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0498(0x0090)()
 };
-static_assert(alignof(SlotLibrary_C_EnsureIconBrush) == 0x000008, "Wrong alignment on SlotLibrary_C_EnsureIconBrush");
-static_assert(sizeof(SlotLibrary_C_EnsureIconBrush) == 0x000528, "Wrong size on SlotLibrary_C_EnsureIconBrush");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, Multi_size_Brush) == 0x000000, "Member 'SlotLibrary_C_EnsureIconBrush::Multi_size_Brush' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, __WorldContext) == 0x000360, "Member 'SlotLibrary_C_EnsureIconBrush::__WorldContext' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, Brush) == 0x000368, "Member 'SlotLibrary_C_EnsureIconBrush::Brush' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, Temp_bool_Variable) == 0x0003F8, "Member 'SlotLibrary_C_EnsureIconBrush::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, K2Node_MakeStruct_SlateBrush) == 0x000400, "Member 'SlotLibrary_C_EnsureIconBrush::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, CallFunc_IsValid_ReturnValue) == 0x000490, "Member 'SlotLibrary_C_EnsureIconBrush::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_EnsureIconBrush, K2Node_Select_Default) == 0x000498, "Member 'SlotLibrary_C_EnsureIconBrush::K2Node_Select_Default' has a wrong offset!");
 
 // Function SlotLibrary.SlotLibrary_C.Calculate Current Pulsing Highlight Color
 // 0x0080 (0x0080 - 0x0000)
@@ -86,24 +70,6 @@ public:
 	float                                         CallFunc_Abs_ReturnValue;                          // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_CInterpTo_ReturnValue;                    // 0x0070(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color) == 0x000008, "Wrong alignment on SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color");
-static_assert(sizeof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color) == 0x000080, "Wrong size on SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, Base_Color) == 0x000000, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::Base_Color' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, Hightlight_Color) == 0x000010, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::Hightlight_Color' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, __WorldContext) == 0x000020, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, Current_Color) == 0x000028, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::Current_Color' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_RGBToHSV_H) == 0x000038, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_RGBToHSV_H' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_RGBToHSV_S) == 0x00003C, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_RGBToHSV_S' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_RGBToHSV_V) == 0x000040, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_RGBToHSV_V' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_RGBToHSV_A) == 0x000044, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_RGBToHSV_A' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000048, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00004C, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000050, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000054, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_Sin_ReturnValue) == 0x000058, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_Sin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_HSVToRGB_ReturnValue) == 0x00005C, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_HSVToRGB_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_Abs_ReturnValue) == 0x00006C, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color, CallFunc_CInterpTo_ReturnValue) == 0x000070, "Member 'SlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color::CallFunc_CInterpTo_ReturnValue' has a wrong offset!");
 
 // Function SlotLibrary.SlotLibrary_C.Get Traits Of Workers
 // 0x0178 (0x0178 - 0x0000)
@@ -140,34 +106,6 @@ public:
 	uint8                                         Pad_16D[0x3];                                      // 0x016D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SlotLibrary_C_Get_Traits_Of_Workers) == 0x000008, "Wrong alignment on SlotLibrary_C_Get_Traits_Of_Workers");
-static_assert(sizeof(SlotLibrary_C_Get_Traits_Of_Workers) == 0x000178, "Wrong size on SlotLibrary_C_Get_Traits_Of_Workers");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Workers) == 0x000000, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Workers' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, __WorldContext) == 0x000010, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::__WorldContext' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Chief_Personality) == 0x000018, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Chief_Personality' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Crew_Personalities) == 0x000038, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Crew_Personalities' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Crew_Set_Bonuses) == 0x000058, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Crew_Set_Bonuses' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Crew_Personalities_Result) == 0x000078, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Crew_Personalities_Result' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Crew_Set_Bonuses_Result) == 0x000088, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Crew_Set_Bonuses_Result' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Chief_Personalities_Result) == 0x000098, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Chief_Personalities_Result' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Temp_int_Array_Index_Variable) == 0x0000A8, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_Array_Length_ReturnValue) == 0x0000AC, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_BreakGameplayTagContainer_GameplayTags) == 0x0000B8, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_BreakGameplayTagContainer_GameplayTags' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_BreakGameplayTagContainer_GameplayTags2) == 0x0000C8, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_BreakGameplayTagContainer_GameplayTags2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x0000D8, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_IsValid_ReturnValue) == 0x0000E0, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, K2Node_DynamicCast_AsFort_Worker_Type) == 0x0000E8, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::K2Node_DynamicCast_AsFort_Worker_Type' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, K2Node_DynamicCast_bSuccess) == 0x0000F0, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Temp_bool_Variable) == 0x0000F1, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_Not_PreBool_ReturnValue) == 0x0000F2, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_MakeGameplayTagContainerFromArray_ReturnValue) == 0x0000F8, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_MakeGameplayTagContainerFromArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, K2Node_Select_Default) == 0x000118, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_MakeGameplayTagContainerFromArray_ReturnValue2) == 0x000128, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_MakeGameplayTagContainerFromArray_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_MakeGameplayTagContainerFromArray_ReturnValue3) == 0x000148, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_MakeGameplayTagContainerFromArray_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, Temp_int_Loop_Counter_Variable) == 0x000168, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_Less_IntInt_ReturnValue) == 0x00016C, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Traits_Of_Workers, CallFunc_Add_IntInt_ReturnValue) == 0x000170, "Member 'SlotLibrary_C_Get_Traits_Of_Workers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function SlotLibrary.SlotLibrary_C.Create Attribute Modifier Tool Tip
 // 0x0240 (0x0240 - 0x0000)
@@ -207,35 +145,6 @@ public:
 	class FText                                   K2Node_Select3_Default;                            // 0x0220(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Multi_Line_Tooltip_Output;   // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip) == 0x000008, "Wrong alignment on SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip");
-static_assert(sizeof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip) == 0x000240, "Wrong size on SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Owning_Player) == 0x000000, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Owning_Player' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Attribute_Info) == 0x000008, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Attribute_Info' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Required_Gameplay_Tags) == 0x000080, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Required_Gameplay_Tags' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Required_Gameplay_Tags_Description) == 0x0000A0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Required_Gameplay_Tags_Description' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Modifier_Source) == 0x0000B8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Modifier_Source' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, __WorldContext) == 0x0000D0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::__WorldContext' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Result) == 0x0000D8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Result' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Temp_text_Variable) == 0x0000E0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_GetContext_ReturnValue) == 0x0000F8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_GetAttributeDescription_ReturnValue) == 0x000100, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_GetAttributeDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_Get_Attribute_Modifier_Header_Text_ReturnValue) == 0x000118, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_Get_Attribute_Modifier_Header_Text_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_TextIsEmpty_ReturnValue) == 0x000130, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_TextIsEmpty_ReturnValue2) == 0x000131, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_TextIsEmpty_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_MakeStruct_FormatArgumentData) == 0x000138, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_TextIsEmpty_ReturnValue3) == 0x000178, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_TextIsEmpty_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_MakeArray_Array) == 0x000180, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Temp_bool_Variable) == 0x000190, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_Format_ReturnValue) == 0x000198, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Temp_bool_Variable2) == 0x0001B0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_Select_Default) == 0x0001B8, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_MakeArray_Array2) == 0x0001D0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_MakeArray_Array3) == 0x0001E0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Temp_text_Variable2) == 0x0001F0, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_Select2_Default) == 0x000208, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, Temp_bool_Variable3) == 0x000218, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, K2Node_Select3_Default) == 0x000220, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip, CallFunc_Create_Basic_Multi_Line_Tooltip_Output) == 0x000238, "Member 'SlotLibrary_C_Create_Attribute_Modifier_Tool_Tip::CallFunc_Create_Basic_Multi_Line_Tooltip_Output' has a wrong offset!");
 
 // Function SlotLibrary.SlotLibrary_C.Get Attribute Modifier Header Text
 // 0x01F0 (0x01F0 - 0x0000)
@@ -266,26 +175,6 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x01C0(0x0018)()
 	class FText                                   K2Node_Select2_Default;                            // 0x01D8(0x0018)()
 };
-static_assert(alignof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text) == 0x000008, "Wrong alignment on SlotLibrary_C_Get_Attribute_Modifier_Header_Text");
-static_assert(sizeof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text) == 0x0001F0, "Wrong size on SlotLibrary_C_Get_Attribute_Modifier_Header_Text");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Attribute_Info) == 0x000000, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Attribute_Info' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Required_Tags) == 0x000078, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Required_Tags' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Required_Gameplay_Tags_Description) == 0x000098, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Required_Gameplay_Tags_Description' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, __WorldContext) == 0x0000B0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::__WorldContext' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, ReturnValue) == 0x0000B8, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Temp_bool_Variable) == 0x0000D0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_GetContext_ReturnValue) == 0x0000D8, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, K2Node_MakeStruct_FormatArgumentData) == 0x0000E0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_GetAttributeDisplayName_ReturnValue) == 0x000120, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_GetAttributeDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_TextIsEmpty_ReturnValue) == 0x000138, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, K2Node_MakeStruct_FormatArgumentData2) == 0x000140, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_TextIsEmpty_ReturnValue2) == 0x000180, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_TextIsEmpty_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, K2Node_MakeArray_Array) == 0x000188, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_BooleanOR_ReturnValue) == 0x000198, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, CallFunc_Format_ReturnValue) == 0x0001A0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, Temp_bool_Variable2) == 0x0001B8, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, K2Node_Select_Default) == 0x0001C0, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SlotLibrary_C_Get_Attribute_Modifier_Header_Text, K2Node_Select2_Default) == 0x0001D8, "Member 'SlotLibrary_C_Get_Attribute_Modifier_Header_Text::K2Node_Select2_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

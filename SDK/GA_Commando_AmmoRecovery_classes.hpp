@@ -15,8 +15,7 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C
 // 0x0050 (0x0B60 - 0x0B10)
@@ -45,25 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Commando_AmmoRecovery_C">();
+		BP_STATIC_CLASS_IMPL("GA_Commando_AmmoRecovery_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Commando_AmmoRecovery_C")
 	}
 	static class UGA_Commando_AmmoRecovery_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Commando_AmmoRecovery_C>();
 	}
 };
-static_assert(alignof(UGA_Commando_AmmoRecovery_C) == 0x000008, "Wrong alignment on UGA_Commando_AmmoRecovery_C");
-static_assert(sizeof(UGA_Commando_AmmoRecovery_C) == 0x000B60, "Wrong size on UGA_Commando_AmmoRecovery_C");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, UberGraphFrame_GA_Commando_AmmoRecovery_C) == 0x000B10, "Member 'UGA_Commando_AmmoRecovery_C::UberGraphFrame_GA_Commando_AmmoRecovery_C' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, EventActivation) == 0x000B18, "Member 'UGA_Commando_AmmoRecovery_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, EventComplete) == 0x000B20, "Member 'UGA_Commando_AmmoRecovery_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, AmountGiven) == 0x000B28, "Member 'UGA_Commando_AmmoRecovery_C::AmountGiven' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, UpgradedAmmoAmount) == 0x000B2C, "Member 'UGA_Commando_AmmoRecovery_C::UpgradedAmmoAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, TC_AmmoRecovery2) == 0x000B30, "Member 'UGA_Commando_AmmoRecovery_C::TC_AmmoRecovery2' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, AmmoRecovery2) == 0x000B50, "Member 'UGA_Commando_AmmoRecovery_C::AmmoRecovery2' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, AmmoRecovery1ChanceToApply) == 0x000B54, "Member 'UGA_Commando_AmmoRecovery_C::AmmoRecovery1ChanceToApply' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, FinalChanceToApply) == 0x000B58, "Member 'UGA_Commando_AmmoRecovery_C::FinalChanceToApply' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_AmmoRecovery_C, AmmoRecovery2ChanceToApply) == 0x000B5C, "Member 'UGA_Commando_AmmoRecovery_C::AmmoRecovery2ChanceToApply' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

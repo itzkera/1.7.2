@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotScreen.ItemTransformSlotScreen_C
 // 0x00C0 (0x02F8 - 0x0238)
@@ -37,7 +36,7 @@ public:
 	TArray<class UFortItem*>                      SacrificeItems;                                    // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UItemTransformSlotEntry_C*>      SacrificeItemSlotWidgets;                          // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	UMulticastDelegateProperty_                   OnTransformConfirmed;                              // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<struct FFortItemTransformFilterTabLabelInfo> ItemPickerFilterTabs;                              // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FFortItemTransformFilterTabLabelInfo> ItemPickerFilterTabs;                        // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	UMulticastDelegateProperty_                   OnTransformButtonUpdated;                          // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnItemPickerClosed;                                // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastDelegateProperty_                   OnItemPickerOpened;                                // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -70,32 +69,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformSlotScreen_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformSlotScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformSlotScreen_C")
 	}
 	static class UItemTransformSlotScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformSlotScreen_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotScreen_C) == 0x000008, "Wrong alignment on UItemTransformSlotScreen_C");
-static_assert(sizeof(UItemTransformSlotScreen_C) == 0x0002F8, "Wrong size on UItemTransformSlotScreen_C");
-static_assert(offsetof(UItemTransformSlotScreen_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformSlotScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, ItemTransformItemPicker) == 0x000240, "Member 'UItemTransformSlotScreen_C::ItemTransformItemPicker' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, ItemTransformResultInfo) == 0x000248, "Member 'UItemTransformSlotScreen_C::ItemTransformResultInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, Slot1) == 0x000250, "Member 'UItemTransformSlotScreen_C::Slot1' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, Slot2) == 0x000258, "Member 'UItemTransformSlotScreen_C::Slot2' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, Slot3) == 0x000260, "Member 'UItemTransformSlotScreen_C::Slot3' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, Slot4) == 0x000268, "Member 'UItemTransformSlotScreen_C::Slot4' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, Slot5) == 0x000270, "Member 'UItemTransformSlotScreen_C::Slot5' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, SelectedKey) == 0x000278, "Member 'UItemTransformSlotScreen_C::SelectedKey' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, CurrentSlotIndex) == 0x000280, "Member 'UItemTransformSlotScreen_C::CurrentSlotIndex' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, SacrificeItems) == 0x000288, "Member 'UItemTransformSlotScreen_C::SacrificeItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, SacrificeItemSlotWidgets) == 0x000298, "Member 'UItemTransformSlotScreen_C::SacrificeItemSlotWidgets' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, OnTransformConfirmed) == 0x0002A8, "Member 'UItemTransformSlotScreen_C::OnTransformConfirmed' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, ItemPickerFilterTabs) == 0x0002B8, "Member 'UItemTransformSlotScreen_C::ItemPickerFilterTabs' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, OnTransformButtonUpdated) == 0x0002C8, "Member 'UItemTransformSlotScreen_C::OnTransformButtonUpdated' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, OnItemPickerClosed) == 0x0002D8, "Member 'UItemTransformSlotScreen_C::OnItemPickerClosed' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotScreen_C, OnItemPickerOpened) == 0x0002E8, "Member 'UItemTransformSlotScreen_C::OnItemPickerOpened' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

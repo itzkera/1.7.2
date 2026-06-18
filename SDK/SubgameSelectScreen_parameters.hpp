@@ -16,8 +16,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.ExecuteUbergraph_SubgameSelectScreen
 // 0x0230 (0x0230 - 0x0000)
@@ -26,7 +26,7 @@ struct SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EMatchmakingState OldState, EMatchmakingState NewState)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMatchmakingState OldState, EMatchmakingState NewState)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,7 +36,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortAsyncAction_ShowPlatformRedeemCode* CallFunc_ShowPlatformRedeemCode_ReturnValue;       // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_ShowPlatformRedeemCode* CallFunc_ShowPlatformRedeemCode_ReturnValue;      // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_CanPlay_DenialReason2;                    // 0x0098(0x0018)()
 	bool                                          CallFunc_CanPlay_ReturnValue2;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -101,73 +101,6 @@ public:
 	class FText                                   Temp_text_Variable2;                               // 0x0208(0x0018)(ConstParm)
 	TDelegate<void(bool bSuccess)>                K2Node_CreateDelegate_OutputDelegate7;             // 0x0220(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen");
-static_assert(sizeof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen) == 0x000230, "Wrong size on SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, EntryPoint) == 0x000000, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_CanPlay_DenialReason) == 0x000038, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_CanPlay_DenialReason' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_CanPlay_ReturnValue) == 0x000050, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate3) == 0x000058, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate4) == 0x000068, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate5) == 0x000078, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_ShowPlatformRedeemCode_ReturnValue) == 0x000088, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_ShowPlatformRedeemCode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue3) == 0x000090, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_CanPlay_DenialReason2) == 0x000098, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_CanPlay_DenialReason2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_CanPlay_ReturnValue2) == 0x0000B0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_CanPlay_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_IsValid_ReturnValue) == 0x0000B1, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue4) == 0x0000B8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue5) == 0x0000C0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate6) == 0x0000C8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue6) == 0x0000D8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button7) == 0x0000E0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button6) == 0x0000E8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_PauseAnimation_ReturnValue) == 0x0000F0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_PauseAnimation_ReturnValue2) == 0x0000F4, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_PauseAnimation_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000F8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetEndTime_ReturnValue) == 0x0000FC, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue7) == 0x000100, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000108, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x000110, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_Create_ReturnValue) == 0x000118, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CustomEvent_OldState) == 0x000120, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CustomEvent_OldState' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CustomEvent_NewState) == 0x000121, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CustomEvent_NewState' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button5) == 0x000128, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000130, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetUINavigationManager_ReturnValue) == 0x000138, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetUINavigationManager_ReturnValue2) == 0x000140, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetUINavigationManager_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button4) == 0x000148, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button3) == 0x000150, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button2) == 0x000158, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000160, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, Temp_text_Variable) == 0x000168, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000180, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_Create_ReturnValue2) == 0x000188, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000190, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetUINavigationManager_ReturnValue3) == 0x000198, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetUINavigationManager_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_SwitchInteger_CmpSuccess) == 0x0001A0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue8) == 0x0001A8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetInputManager_ReturnValue) == 0x0001B0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetUINavigationManager_ReturnValue4) == 0x0001B8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetUINavigationManager_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_ComponentBoundEvent_Button) == 0x0001C0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, Temp_float_Variable) == 0x0001C8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_IsActivated_ReturnValue) == 0x0001CC, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, Temp_bool_Variable) == 0x0001CD, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_Not_PreBool_ReturnValue) == 0x0001CE, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CustomEvent_bSuccess) == 0x0001CF, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_Select_Default) == 0x0001D0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_BooleanAND_ReturnValue) == 0x0001D4, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_BooleanAND_ReturnValue2) == 0x0001D5, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetContext_ReturnValue9) == 0x0001D8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetSubGame_ReturnValue) == 0x0001E0, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_GetPlatformDisplayName_ReturnValue) == 0x0001E8, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_GetPlatformDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_SwitchEnum_CmpSuccess) == 0x000200, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_IsBusyMatchmakingOrPartyTransitioning_ReturnValue) == 0x000201, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_IsBusyMatchmakingOrPartyTransitioning_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, CallFunc_IsBusyMatchmakingOrPartyTransitioning_ReturnValue2) == 0x000202, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::CallFunc_IsBusyMatchmakingOrPartyTransitioning_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, Temp_text_Variable2) == 0x000208, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen, K2Node_CreateDelegate_OutputDelegate7) == 0x000220, "Member 'SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.OnRealMoneyPurchaseComleteHandler
 // 0x0001 (0x0001 - 0x0000)
@@ -176,9 +109,6 @@ struct SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler) == 0x000001, "Wrong alignment on SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler");
-static_assert(sizeof(SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler) == 0x000001, "Wrong size on SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler");
-static_assert(offsetof(SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler, bSuccess) == 0x000000, "Member 'SubgameSelectScreen_C_OnRealMoneyPurchaseComleteHandler::bSuccess' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -187,9 +117,6 @@ struct SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__ButtonRedeem_K2Node_ComponentBoundEvent_67_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -198,9 +125,6 @@ struct SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_3
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -209,9 +133,6 @@ struct SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_107_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -220,9 +141,6 @@ struct SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__BattlegroundBtn_K2Node_ComponentBoundEvent_125_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -231,9 +149,6 @@ struct SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.CustomEvent_0
 // 0x0002 (0x0002 - 0x0000)
@@ -243,10 +158,6 @@ public:
 	EMatchmakingState                             OldState;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMatchmakingState                             NewState;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_CustomEvent_0) == 0x000001, "Wrong alignment on SubgameSelectScreen_C_CustomEvent_0");
-static_assert(sizeof(SubgameSelectScreen_C_CustomEvent_0) == 0x000002, "Wrong size on SubgameSelectScreen_C_CustomEvent_0");
-static_assert(offsetof(SubgameSelectScreen_C_CustomEvent_0, OldState) == 0x000000, "Member 'SubgameSelectScreen_C_CustomEvent_0::OldState' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_CustomEvent_0, NewState) == 0x000001, "Member 'SubgameSelectScreen_C_CustomEvent_0::NewState' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -255,9 +166,6 @@ struct SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_Co
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__AthenaBtn_K2Node_ComponentBoundEvent_298_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -266,9 +174,6 @@ struct SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SubgameSelectScreen_C_BndEvt__CampaignBtn_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.SetDescriptionForSubGame
 // 0x00A0 (0x00A0 - 0x0000)
@@ -293,21 +198,6 @@ public:
 	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0088(0x0018)()
 };
-static_assert(alignof(SubgameSelectScreen_C_SetDescriptionForSubGame) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_SetDescriptionForSubGame");
-static_assert(sizeof(SubgameSelectScreen_C_SetDescriptionForSubGame) == 0x0000A0, "Wrong size on SubgameSelectScreen_C_SetDescriptionForSubGame");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, SubGame) == 0x000000, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::SubGame' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_GetFullDescription_FullDescription) == 0x000008, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_GetFullDescription_FullDescription' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_GetFullDescription_ReturnValue) == 0x000020, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_GetFullDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_GetFullDescription_FullDescription2) == 0x000028, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_GetFullDescription_FullDescription2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_GetFullDescription_ReturnValue2) == 0x000040, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_GetFullDescription_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, Temp_text_Variable) == 0x000050, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_CanPlay_DenialReason) == 0x000068, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_CanPlay_DenialReason' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_CanPlay_ReturnValue) == 0x000080, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, CallFunc_BooleanOR_ReturnValue) == 0x000081, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, Temp_byte_Variable) == 0x000082, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SetDescriptionForSubGame, K2Node_Select_Default) == 0x000088, "Member 'SubgameSelectScreen_C_SetDescriptionForSubGame::K2Node_Select_Default' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.SafeSetSubGame
 // 0x0038 (0x0038 - 0x0000)
@@ -321,13 +211,6 @@ public:
 	class FText                                   CallFunc_CanPlay_DenialReason;                     // 0x0018(0x0018)()
 	bool                                          CallFunc_CanPlay_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_SafeSetSubGame) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_SafeSetSubGame");
-static_assert(sizeof(SubgameSelectScreen_C_SafeSetSubGame) == 0x000038, "Wrong size on SubgameSelectScreen_C_SafeSetSubGame");
-static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, SubGame) == 0x000000, "Member 'SubgameSelectScreen_C_SafeSetSubGame::SubGame' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'SubgameSelectScreen_C_SafeSetSubGame::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'SubgameSelectScreen_C_SafeSetSubGame::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, CallFunc_CanPlay_DenialReason) == 0x000018, "Member 'SubgameSelectScreen_C_SafeSetSubGame::CallFunc_CanPlay_DenialReason' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_SafeSetSubGame, CallFunc_CanPlay_ReturnValue) == 0x000030, "Member 'SubgameSelectScreen_C_SafeSetSubGame::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.ToggleTimer
 // 0x0020 (0x0020 - 0x0000)
@@ -339,11 +222,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_ToggleTimer) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_ToggleTimer");
-static_assert(sizeof(SubgameSelectScreen_C_ToggleTimer) == 0x000020, "Wrong size on SubgameSelectScreen_C_ToggleTimer");
-static_assert(offsetof(SubgameSelectScreen_C_ToggleTimer, Enabled) == 0x000000, "Member 'SubgameSelectScreen_C_ToggleTimer::Enabled' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ToggleTimer, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'SubgameSelectScreen_C_ToggleTimer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_ToggleTimer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'SubgameSelectScreen_C_ToggleTimer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.ResetKeyArtForMainMenu
 // 0x0020 (0x0020 - 0x0000)
@@ -352,9 +230,6 @@ struct SubgameSelectScreen_C_ResetKeyArtForMainMenu final
 public:
 	struct FSubGameSelectRotatorItems             CallFunc_Array_Get_Item;                           // 0x0000(0x0020)(HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_ResetKeyArtForMainMenu) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_ResetKeyArtForMainMenu");
-static_assert(sizeof(SubgameSelectScreen_C_ResetKeyArtForMainMenu) == 0x000020, "Wrong size on SubgameSelectScreen_C_ResetKeyArtForMainMenu");
-static_assert(offsetof(SubgameSelectScreen_C_ResetKeyArtForMainMenu, CallFunc_Array_Get_Item) == 0x000000, "Member 'SubgameSelectScreen_C_ResetKeyArtForMainMenu::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.AdvanceRotator
 // 0x0030 (0x0030 - 0x0000)
@@ -368,12 +243,6 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelectScreen_C_AdvanceRotator) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_AdvanceRotator");
-static_assert(sizeof(SubgameSelectScreen_C_AdvanceRotator) == 0x000030, "Wrong size on SubgameSelectScreen_C_AdvanceRotator");
-static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_Array_Length_ReturnValue) == 0x000000, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_Array_Get_Item) == 0x000008, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_AdvanceRotator, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'SubgameSelectScreen_C_AdvanceRotator::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.IsBusyMatchmakingOrPartyTransitioning
 // 0x0020 (0x0020 - 0x0000)
@@ -388,14 +257,6 @@ public:
 	bool                                          CallFunc_IsLocalPlayerInParty_ReturnValue;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning");
-static_assert(sizeof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning) == 0x000020, "Wrong size on SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning");
-static_assert(offsetof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning, ReturnValue) == 0x000000, "Member 'SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning, CallFunc_IsMatchmakingLocal_ReturnValue) == 0x000018, "Member 'SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning::CallFunc_IsMatchmakingLocal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning, CallFunc_IsLocalPlayerInParty_ReturnValue) == 0x000019, "Member 'SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning::CallFunc_IsLocalPlayerInParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning, CallFunc_BooleanOR_ReturnValue) == 0x00001A, "Member 'SubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.InitializeReedemButton
 // 0x0020 (0x0020 - 0x0000)
@@ -412,16 +273,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_InitializeReedemButton) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_InitializeReedemButton");
-static_assert(sizeof(SubgameSelectScreen_C_InitializeReedemButton) == 0x000020, "Wrong size on SubgameSelectScreen_C_InitializeReedemButton");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, Temp_bool_Variable) == 0x000000, "Member 'SubgameSelectScreen_C_InitializeReedemButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, Temp_byte_Variable) == 0x000001, "Member 'SubgameSelectScreen_C_InitializeReedemButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, Temp_byte_Variable2) == 0x000002, "Member 'SubgameSelectScreen_C_InitializeReedemButton::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, CallFunc_GetPlatformName_ReturnValue) == 0x000008, "Member 'SubgameSelectScreen_C_InitializeReedemButton::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000018, "Member 'SubgameSelectScreen_C_InitializeReedemButton::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, CallFunc_EqualEqual_StrStr_ReturnValue2) == 0x000019, "Member 'SubgameSelectScreen_C_InitializeReedemButton::CallFunc_EqualEqual_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, CallFunc_BooleanOR_ReturnValue) == 0x00001A, "Member 'SubgameSelectScreen_C_InitializeReedemButton::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeReedemButton, K2Node_Select_Default) == 0x00001B, "Member 'SubgameSelectScreen_C_InitializeReedemButton::K2Node_Select_Default' has a wrong offset!");
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.InitializeShortDescriptions
 // 0x0060 (0x0060 - 0x0000)
@@ -437,14 +288,6 @@ public:
 	class FText                                   CallFunc_GetShortDescription_ShortDescription2;    // 0x0040(0x0018)()
 	bool                                          CallFunc_GetShortDescription_ReturnValue2;         // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SubgameSelectScreen_C_InitializeShortDescriptions) == 0x000008, "Wrong alignment on SubgameSelectScreen_C_InitializeShortDescriptions");
-static_assert(sizeof(SubgameSelectScreen_C_InitializeShortDescriptions) == 0x000060, "Wrong size on SubgameSelectScreen_C_InitializeShortDescriptions");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeShortDescriptions, ShortDescription) == 0x000000, "Member 'SubgameSelectScreen_C_InitializeShortDescriptions::ShortDescription' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeShortDescriptions, CallFunc_TextIsEmpty_ReturnValue) == 0x000018, "Member 'SubgameSelectScreen_C_InitializeShortDescriptions::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeShortDescriptions, CallFunc_GetShortDescription_ShortDescription) == 0x000020, "Member 'SubgameSelectScreen_C_InitializeShortDescriptions::CallFunc_GetShortDescription_ShortDescription' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeShortDescriptions, CallFunc_GetShortDescription_ReturnValue) == 0x000038, "Member 'SubgameSelectScreen_C_InitializeShortDescriptions::CallFunc_GetShortDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeShortDescriptions, CallFunc_GetShortDescription_ShortDescription2) == 0x000040, "Member 'SubgameSelectScreen_C_InitializeShortDescriptions::CallFunc_GetShortDescription_ShortDescription2' has a wrong offset!");
-static_assert(offsetof(SubgameSelectScreen_C_InitializeShortDescriptions, CallFunc_GetShortDescription_ReturnValue2) == 0x000058, "Member 'SubgameSelectScreen_C_InitializeShortDescriptions::CallFunc_GetShortDescription_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

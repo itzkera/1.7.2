@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ScoreDetailsRow.ScoreDetailsRow_C.UpdateRow
 // 0x0048 (0x0048 - 0x0000)
@@ -36,22 +36,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue4;             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_TextText_ReturnValue;            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ScoreDetailsRow_C_UpdateRow) == 0x000008, "Wrong alignment on ScoreDetailsRow_C_UpdateRow");
-static_assert(sizeof(ScoreDetailsRow_C_UpdateRow) == 0x000048, "Wrong size on ScoreDetailsRow_C_UpdateRow");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, PlayerName_0) == 0x000000, "Member 'ScoreDetailsRow_C_UpdateRow::PlayerName_0' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, TotalScore_0) == 0x000018, "Member 'ScoreDetailsRow_C_UpdateRow::TotalScore_0' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, Combat_0) == 0x00001C, "Member 'ScoreDetailsRow_C_UpdateRow::Combat_0' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, Building_0) == 0x000020, "Member 'ScoreDetailsRow_C_UpdateRow::Building_0' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, Utility_0) == 0x000024, "Member 'ScoreDetailsRow_C_UpdateRow::Utility_0' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000028, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_NotEqual_IntInt_ReturnValue2) == 0x000029, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_NotEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_NotEqual_IntInt_ReturnValue3) == 0x00002A, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_NotEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00002C, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000030, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000034, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_NotEqual_IntInt_ReturnValue4) == 0x000038, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_NotEqual_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x00003C, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ScoreDetailsRow_C_UpdateRow, CallFunc_NotEqual_TextText_ReturnValue) == 0x000040, "Member 'ScoreDetailsRow_C_UpdateRow::CallFunc_NotEqual_TextText_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

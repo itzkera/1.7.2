@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SkillTreeBPLibrary.SkillTreeBPLibrary_C
 // 0x0000 (0x0028 - 0x0028)
@@ -32,15 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillTreeBPLibrary_C">();
+		BP_STATIC_CLASS_IMPL("SkillTreeBPLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillTreeBPLibrary_C")
 	}
 	static class USkillTreeBPLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillTreeBPLibrary_C>();
 	}
 };
-static_assert(alignof(USkillTreeBPLibrary_C) == 0x000008, "Wrong alignment on USkillTreeBPLibrary_C");
-static_assert(sizeof(USkillTreeBPLibrary_C) == 0x000028, "Wrong size on USkillTreeBPLibrary_C");
 
-}
-
+SDK_NAMESPACE_END

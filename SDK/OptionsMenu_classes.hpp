@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OptionsMenu.OptionsMenu_C
 // 0x0090 (0x0470 - 0x03E0)
@@ -82,34 +81,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenu_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenu_C")
 	}
 	static class UOptionsMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenu_C>();
 	}
 };
-static_assert(alignof(UOptionsMenu_C) == 0x000008, "Wrong alignment on UOptionsMenu_C");
-static_assert(sizeof(UOptionsMenu_C) == 0x000470, "Wrong size on UOptionsMenu_C");
-static_assert(offsetof(UOptionsMenu_C, UberGraphFrame) == 0x0003E0, "Member 'UOptionsMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, BorderBackground) == 0x0003E8, "Member 'UOptionsMenu_C::BorderBackground' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, CurrentTabSwitcher) == 0x0003F0, "Member 'UOptionsMenu_C::CurrentTabSwitcher' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Image_0) == 0x0003F8, "Member 'UOptionsMenu_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, LanguageOk) == 0x000400, "Member 'UOptionsMenu_C::LanguageOk' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, MESSAGE) == 0x000408, "Member 'UOptionsMenu_C::MESSAGE' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, OverlayText) == 0x000410, "Member 'UOptionsMenu_C::OverlayText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SafeZone_0) == 0x000418, "Member 'UOptionsMenu_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SafeZone_1) == 0x000420, "Member 'UOptionsMenu_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SettingsTabs) == 0x000428, "Member 'UOptionsMenu_C::SettingsTabs' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Title) == 0x000430, "Member 'UOptionsMenu_C::Title' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, VideoSettingsAccept) == 0x000438, "Member 'UOptionsMenu_C::VideoSettingsAccept' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, VideoSettingsCancel) == 0x000440, "Member 'UOptionsMenu_C::VideoSettingsCancel' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SelectedOption) == 0x000448, "Member 'UOptionsMenu_C::SelectedOption' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Current_Tab) == 0x000450, "Member 'UOptionsMenu_C::Current_Tab' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Accept_Input) == 0x000458, "Member 'UOptionsMenu_C::Accept_Input' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Video_Tab_Selected) == 0x000459, "Member 'UOptionsMenu_C::Video_Tab_Selected' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Apply_Visible) == 0x00045A, "Member 'UOptionsMenu_C::Apply_Visible' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, AllTabWidgets) == 0x000460, "Member 'UOptionsMenu_C::AllTabWidgets' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

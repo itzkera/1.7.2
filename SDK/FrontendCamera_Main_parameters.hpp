@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FrontendCamera_Main.FrontendCamera_Main_C.ExecuteUbergraph_FrontendCamera_Main
 // 0x0028 (0x0028 - 0x0000)
@@ -25,12 +25,6 @@ public:
 	TArray<class ATVPostProcessBP_C*>             CallFunc_GetAllActorsOfClass_OutActors;            // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
 	class ATVPostProcessBP_C*                     CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main) == 0x000008, "Wrong alignment on FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main");
-static_assert(sizeof(FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main) == 0x000028, "Wrong size on FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main");
-static_assert(offsetof(FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main, EntryPoint) == 0x000000, "Member 'FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000008, "Member 'FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main, CallFunc_GetAllActorsOfClass_OutActors) == 0x000010, "Member 'FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main, CallFunc_Array_Get_Item) == 0x000020, "Member 'FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main::CallFunc_Array_Get_Item' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

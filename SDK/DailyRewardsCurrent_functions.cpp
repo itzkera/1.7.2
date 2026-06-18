@@ -14,8 +14,7 @@
 #include "DailyRewardsCurrent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DailyRewardsCurrent.DailyRewardsCurrent_C.ExecuteUbergraph_DailyRewardsCurrent
 // (HasDefaults)
@@ -86,5 +85,5 @@ void UDailyRewardsCurrent_C::Set_Item_Flare()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

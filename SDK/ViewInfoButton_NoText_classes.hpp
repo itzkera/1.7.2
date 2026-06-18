@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ViewInfoButton_NoText.ViewInfoButton_NoText_C
 // 0x0008 (0x08A8 - 0x08A0)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ViewInfoButton_NoText_C">();
+		BP_STATIC_CLASS_IMPL("ViewInfoButton_NoText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ViewInfoButton_NoText_C")
 	}
 	static class UViewInfoButton_NoText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UViewInfoButton_NoText_C>();
 	}
 };
-static_assert(alignof(UViewInfoButton_NoText_C) == 0x000008, "Wrong alignment on UViewInfoButton_NoText_C");
-static_assert(sizeof(UViewInfoButton_NoText_C) == 0x0008A8, "Wrong size on UViewInfoButton_NoText_C");
-static_assert(offsetof(UViewInfoButton_NoText_C, Content) == 0x0008A0, "Member 'UViewInfoButton_NoText_C::Content' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

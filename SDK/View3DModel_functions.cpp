@@ -14,8 +14,7 @@
 #include "View3DModel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function View3DModel.View3DModel_C.ExecuteUbergraph_View3DModel
 // (HasDefaults)
@@ -68,7 +67,7 @@ void UView3DModel_C::Construct()
 // Function View3DModel.View3DModel_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UView3DModel_C::HandleBack(bool* PassThrough)
 {
@@ -85,5 +84,5 @@ void UView3DModel_C::HandleBack(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

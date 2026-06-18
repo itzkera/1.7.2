@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemDetailsHeader.ItemDetailsHeader_C.ExecuteUbergraph_ItemDetailsHeader
 // 0x0020 (0x0020 - 0x0000)
@@ -30,12 +30,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader) == 0x000008, "Wrong alignment on ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader");
-static_assert(sizeof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader) == 0x000020, "Wrong size on ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader");
-static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, EntryPoint) == 0x000000, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, K2Node_Event_IsDesignTime) == 0x000010, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000018, "Member 'ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
 // Function ItemDetailsHeader.ItemDetailsHeader_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -44,9 +38,6 @@ struct ItemDetailsHeader_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsHeader_C_PreConstruct) == 0x000001, "Wrong alignment on ItemDetailsHeader_C_PreConstruct");
-static_assert(sizeof(ItemDetailsHeader_C_PreConstruct) == 0x000001, "Wrong size on ItemDetailsHeader_C_PreConstruct");
-static_assert(offsetof(ItemDetailsHeader_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemDetailsHeader_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemDetailsHeader.ItemDetailsHeader_C.UpdateItemsForWidgets
 // 0x0108 (0x0108 - 0x0000)
@@ -91,39 +82,6 @@ public:
 	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDetailsHeader_C_UpdateItemsForWidgets) == 0x000008, "Wrong alignment on ItemDetailsHeader_C_UpdateItemsForWidgets");
-static_assert(sizeof(ItemDetailsHeader_C_UpdateItemsForWidgets) == 0x000108, "Wrong size on ItemDetailsHeader_C_UpdateItemsForWidgets");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_MakeArray_Array) == 0x000000, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetSchematicResultType_ReturnValue) == 0x000010, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetSchematicResultType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetSchematicCraftingResultBP_ReturnValue) == 0x000018, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetSchematicCraftingResultBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetType_ReturnValue) == 0x000020, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_IsValid_ReturnValue2) == 0x000022, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetRarity_ReturnValue) == 0x000023, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_BPGetRarityData_ReturnValue) == 0x000028, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_MakeArray_Array2) == 0x0000A8, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetSchematicCraftingResultBP_ReturnValue2) == 0x0000B8, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetSchematicCraftingResultBP_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetTier_ReturnValue) == 0x0000C0, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_DynamicCast_AsFort_Weapon_Item_Definition) == 0x0000C8, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_DynamicCast_AsFort_Weapon_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_Convert_Tier_To_Integer_Numeric_Tier) == 0x0000D4, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_Convert_Tier_To_Integer_Numeric_Tier' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_IsValid_ReturnValue3) == 0x0000D8, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_MakeStruct_LinearColor) == 0x0000DC, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, Temp_bool_Variable) == 0x0000EC, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, Temp_bool_Variable2) == 0x0000ED, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, Temp_byte_Variable) == 0x0000EE, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_Select_Default) == 0x0000EF, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_Array_Contains_ReturnValue) == 0x0000F0, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, Temp_byte_Variable2) == 0x0000F1, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, K2Node_Select2_Default) == 0x0000F2, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_IsTemporaryItem_ReturnValue) == 0x0000F3, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_IsTemporaryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetType_ReturnValue2) == 0x0000F4, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetType_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_Array_Contains_ReturnValue2) == 0x0000F5, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_Array_Contains_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_GetTier_ReturnValue2) == 0x0000F6, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_GetTier_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_Not_PreBool_ReturnValue) == 0x0000F7, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_Convert_Tier_To_Integer_Numeric_Tier2) == 0x0000F8, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_Convert_Tier_To_Integer_Numeric_Tier2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_BooleanOR_ReturnValue) == 0x0000FC, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeader_C_UpdateItemsForWidgets, CallFunc_Subtract_IntInt_ReturnValue) == 0x000100, "Member 'ItemDetailsHeader_C_UpdateItemsForWidgets::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

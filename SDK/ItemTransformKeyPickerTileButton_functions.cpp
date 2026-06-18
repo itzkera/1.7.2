@@ -14,8 +14,7 @@
 #include "ItemTransformKeyPickerTileButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.ExecuteUbergraph_ItemTransformKeyPickerTileButton
 // (HasDefaults)
@@ -104,7 +103,7 @@ void UItemTransformKeyPickerTileButton_C::Update_Bang_State()
 // Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Get Transform Key
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortAccountItem*                 AsFort_Account_Item                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortAccountItem**                AsFort_Account_Item                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformKeyPickerTileButton_C::Get_Transform_Key(class UFortAccountItem** AsFort_Account_Item)
 {
@@ -125,7 +124,7 @@ void UItemTransformKeyPickerTileButton_C::Get_Transform_Key(class UFortAccountIt
 // Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Is Transform Key Consumable
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bConsumedOnConversion                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bConsumedOnConversion                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransformKeyPickerTileButton_C::Is_Transform_Key_Consumable(bool* bConsumedOnConversion)
 {
@@ -180,7 +179,7 @@ struct FGameplayTagContainer UItemTransformKeyPickerTileButton_C::Get_Transform_
 // Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Get Fort PC
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            FortPC                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerController**           FortPC                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformKeyPickerTileButton_C::Get_Fort_PC(class AFortPlayerController** FortPC)
 {
@@ -197,5 +196,5 @@ void UItemTransformKeyPickerTileButton_C::Get_Fort_PC(class AFortPlayerControlle
 		*FortPC = Parms.FortPC;
 }
 
-}
 
+SDK_NAMESPACE_END

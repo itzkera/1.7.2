@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_CameraRainDrops_01.B_CameraRainDrops_01_C
 // 0x0010 (0x0450 - 0x0440)
@@ -32,16 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_CameraRainDrops_01_C">();
+		BP_STATIC_CLASS_IMPL("B_CameraRainDrops_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_CameraRainDrops_01_C")
 	}
 	static class AB_CameraRainDrops_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_CameraRainDrops_01_C>();
 	}
 };
-static_assert(alignof(AB_CameraRainDrops_01_C) == 0x000010, "Wrong alignment on AB_CameraRainDrops_01_C");
-static_assert(sizeof(AB_CameraRainDrops_01_C) == 0x000450, "Wrong size on AB_CameraRainDrops_01_C");
-static_assert(offsetof(AB_CameraRainDrops_01_C, UberGraphFrame) == 0x000440, "Member 'AB_CameraRainDrops_01_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

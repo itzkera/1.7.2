@@ -14,8 +14,7 @@
 #include "LegalInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegalInfo.LegalInfo_C.ExecuteUbergraph_LegalInfo
 // ()
@@ -118,7 +117,7 @@ void ULegalInfo_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_
 // Function LegalInfo.LegalInfo_C.On Scroll Down
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULegalInfo_C::On_Scroll_Down(bool* PassThrough)
 {
@@ -135,5 +134,5 @@ void ULegalInfo_C::On_Scroll_Down(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

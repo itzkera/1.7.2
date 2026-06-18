@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.ExecuteUbergraph_AthenaAerialFeedback
 // 0x0138 (0x0138 - 0x0000)
@@ -52,32 +52,6 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0108(0x0018)()
 	class FText                                   K2Node_Select2_Default;                            // 0x0120(0x0018)()
 };
-static_assert(alignof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000008, "Wrong alignment on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
-static_assert(sizeof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback) == 0x000138, "Wrong size on AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, EntryPoint) == 0x000000, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, Temp_byte_Variable) == 0x000004, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, Temp_text_Variable) == 0x000008, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, Temp_text_Variable2) == 0x000020, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, Temp_bool_Variable) == 0x000038, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Event_MyGeometry) == 0x00003C, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Event_InDeltaTime) == 0x000070, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetGameState_ReturnValue) == 0x000078, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_AsAthena_Game_State) == 0x000080, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_AsAthena_Game_State' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_MakeLiteralText_ReturnValue) == 0x000090, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_MakeLiteralText_ReturnValue2) == 0x0000A8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_MakeLiteralText_ReturnValue3) == 0x0000C0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_MakeLiteralText_ReturnValue4) == 0x0000E0, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_MakeLiteralText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_AsAthena_Player_Controller) == 0x0000F8, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_AsAthena_Player_Controller' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_DynamicCast_bSuccess2) == 0x000100, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_GetAerialPhase_ReturnValue) == 0x000101, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_GetAerialPhase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000102, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000103, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_SwitchEnum_CmpSuccess) == 0x000104, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, CallFunc_BooleanOR_ReturnValue) == 0x000105, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Select_Default) == 0x000108, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback, K2Node_Select2_Default) == 0x000120, "Member 'AthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback::K2Node_Select2_Default' has a wrong offset!");
 
 // Function AthenaAerialFeedback.AthenaAerialFeedback_C.Tick
 // 0x0038 (0x0038 - 0x0000)
@@ -87,10 +61,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaAerialFeedback_C_Tick) == 0x000004, "Wrong alignment on AthenaAerialFeedback_C_Tick");
-static_assert(sizeof(AthenaAerialFeedback_C_Tick) == 0x000038, "Wrong size on AthenaAerialFeedback_C_Tick");
-static_assert(offsetof(AthenaAerialFeedback_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaAerialFeedback_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaAerialFeedback_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaAerialFeedback_C_Tick::InDeltaTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "PrivacyWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PrivacyWidget.PrivacyWidget_C.ExecuteUbergraph_PrivacyWidget
 // (HasDefaults)
@@ -278,5 +277,5 @@ void UPrivacyWidget_C::SetMode()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

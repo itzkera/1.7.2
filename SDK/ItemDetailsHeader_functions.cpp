@@ -14,8 +14,7 @@
 #include "ItemDetailsHeader_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDetailsHeader.ItemDetailsHeader_C.ExecuteUbergraph_ItemDetailsHeader
 // ()
@@ -126,5 +125,5 @@ void UItemDetailsHeader_C::SetStyles()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

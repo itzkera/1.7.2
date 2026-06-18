@@ -14,8 +14,7 @@
 #include "WeakSpot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WeakSpot.WeakSpot_C.ExecuteUbergraph_WeakSpot
 // (HasDefaults)
@@ -134,5 +133,5 @@ void AWeakSpot_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

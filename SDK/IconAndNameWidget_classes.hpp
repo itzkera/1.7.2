@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass IconAndNameWidget.IconAndNameWidget_C
 // 0x00F0 (0x0328 - 0x0238)
@@ -49,27 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IconAndNameWidget_C">();
+		BP_STATIC_CLASS_IMPL("IconAndNameWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IconAndNameWidget_C")
 	}
 	static class UIconAndNameWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIconAndNameWidget_C>();
 	}
 };
-static_assert(alignof(UIconAndNameWidget_C) == 0x000008, "Wrong alignment on UIconAndNameWidget_C");
-static_assert(sizeof(UIconAndNameWidget_C) == 0x000328, "Wrong size on UIconAndNameWidget_C");
-static_assert(offsetof(UIconAndNameWidget_C, UberGraphFrame) == 0x000238, "Member 'UIconAndNameWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, CommonBorder_0) == 0x000240, "Member 'UIconAndNameWidget_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, Icon) == 0x000248, "Member 'UIconAndNameWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, Matched) == 0x000250, "Member 'UIconAndNameWidget_C::Matched' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, Name_0) == 0x000258, "Member 'UIconAndNameWidget_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, Brush) == 0x000260, "Member 'UIconAndNameWidget_C::Brush' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, Text) == 0x0002F0, "Member 'UIconAndNameWidget_C::Text' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, BorderStyle) == 0x000308, "Member 'UIconAndNameWidget_C::BorderStyle' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, bBorderVisible) == 0x000310, "Member 'UIconAndNameWidget_C::bBorderVisible' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, bMatches) == 0x000311, "Member 'UIconAndNameWidget_C::bMatches' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, bBorderColorOverride) == 0x000312, "Member 'UIconAndNameWidget_C::bBorderColorOverride' has a wrong offset!");
-static_assert(offsetof(UIconAndNameWidget_C, RGBA0) == 0x000314, "Member 'UIconAndNameWidget_C::RGBA0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C
 // 0x0010 (0x0270 - 0x0260)
@@ -34,17 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MulchRefundItemQuantityListEntry_C">();
+		BP_STATIC_CLASS_IMPL("MulchRefundItemQuantityListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MulchRefundItemQuantityListEntry_C")
 	}
 	static class UMulchRefundItemQuantityListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMulchRefundItemQuantityListEntry_C>();
 	}
 };
-static_assert(alignof(UMulchRefundItemQuantityListEntry_C) == 0x000008, "Wrong alignment on UMulchRefundItemQuantityListEntry_C");
-static_assert(sizeof(UMulchRefundItemQuantityListEntry_C) == 0x000270, "Wrong size on UMulchRefundItemQuantityListEntry_C");
-static_assert(offsetof(UMulchRefundItemQuantityListEntry_C, UberGraphFrame) == 0x000260, "Member 'UMulchRefundItemQuantityListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchRefundItemQuantityListEntry_C, ItemCountRecycling) == 0x000268, "Member 'UMulchRefundItemQuantityListEntry_C::ItemCountRecycling' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

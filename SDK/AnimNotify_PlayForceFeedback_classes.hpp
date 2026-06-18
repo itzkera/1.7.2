@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C
 // 0x0020 (0x0058 - 0x0038)
@@ -34,20 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_PlayForceFeedback_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_PlayForceFeedback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayForceFeedback_C")
 	}
 	static class UAnimNotify_PlayForceFeedback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_PlayForceFeedback_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayForceFeedback_C) == 0x000008, "Wrong alignment on UAnimNotify_PlayForceFeedback_C");
-static_assert(sizeof(UAnimNotify_PlayForceFeedback_C) == 0x000058, "Wrong size on UAnimNotify_PlayForceFeedback_C");
-static_assert(offsetof(UAnimNotify_PlayForceFeedback_C, ForceFeedbackTemplate) == 0x000038, "Member 'UAnimNotify_PlayForceFeedback_C::ForceFeedbackTemplate' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayForceFeedback_C, ForceFeedbackFarTemplate) == 0x000040, "Member 'UAnimNotify_PlayForceFeedback_C::ForceFeedbackFarTemplate' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayForceFeedback_C, bPlayAtWorldLocation) == 0x000048, "Member 'UAnimNotify_PlayForceFeedback_C::bPlayAtWorldLocation' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayForceFeedback_C, InnerRadius) == 0x00004C, "Member 'UAnimNotify_PlayForceFeedback_C::InnerRadius' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayForceFeedback_C, OuterRadius) == 0x000050, "Member 'UAnimNotify_PlayForceFeedback_C::OuterRadius' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

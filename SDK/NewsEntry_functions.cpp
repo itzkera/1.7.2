@@ -14,8 +14,7 @@
 #include "NewsEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function NewsEntry.NewsEntry_C.ExecuteUbergraph_NewsEntry
 // ()
@@ -84,5 +83,5 @@ void UNewsEntry_C::SetFocus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

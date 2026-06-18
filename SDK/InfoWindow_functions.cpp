@@ -14,8 +14,7 @@
 #include "InfoWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function InfoWindow.InfoWindow_C.ExecuteUbergraph_InfoWindow
 // ()
@@ -184,8 +183,8 @@ void UInfoWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonB
 // Function InfoWindow.InfoWindow_C.AddInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItemDefinition*>      Info_Items                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             Title_0                                                (Parm)
+// TArray<class UFortItemDefinition*>&     Info_Items                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const class FText&                      Title_0                                                (Parm)
 
 void UInfoWindow_C::AddInfo(TArray<class UFortItemDefinition*>& Info_Items, const class FText& Title_0)
 {
@@ -218,5 +217,5 @@ void UInfoWindow_C::Initialize()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

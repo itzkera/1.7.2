@@ -14,8 +14,7 @@
 #include "BoostsRoot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BoostsRoot.BoostsRoot_C.ExecuteUbergraph_BoostsRoot
 // ()
@@ -126,7 +125,7 @@ void UBoostsRoot_C::Construct()
 // Function BoostsRoot.BoostsRoot_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBoostsRoot_C::HandleBack(bool* PassThrough)
 {
@@ -181,7 +180,7 @@ void UBoostsRoot_C::HandleCursorModeChanging(bool IsEnabled)
 // Function BoostsRoot.BoostsRoot_C.HandleStore
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBoostsRoot_C::HandleStore(bool* PassThrough)
 {
@@ -198,5 +197,5 @@ void UBoostsRoot_C::HandleStore(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

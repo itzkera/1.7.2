@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StatusWidget.StatusWidget_C
 // 0x0028 (0x0260 - 0x0238)
@@ -39,20 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatusWidget_C">();
+		BP_STATIC_CLASS_IMPL("StatusWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatusWidget_C")
 	}
 	static class UStatusWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatusWidget_C>();
 	}
 };
-static_assert(alignof(UStatusWidget_C) == 0x000008, "Wrong alignment on UStatusWidget_C");
-static_assert(sizeof(UStatusWidget_C) == 0x000260, "Wrong size on UStatusWidget_C");
-static_assert(offsetof(UStatusWidget_C, UberGraphFrame) == 0x000238, "Member 'UStatusWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatusWidget_C, CommonLazyImage_0) == 0x000240, "Member 'UStatusWidget_C::CommonLazyImage_0' has a wrong offset!");
-static_assert(offsetof(UStatusWidget_C, Image_0) == 0x000248, "Member 'UStatusWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UStatusWidget_C, StatusText) == 0x000250, "Member 'UStatusWidget_C::StatusText' has a wrong offset!");
-static_assert(offsetof(UStatusWidget_C, TitleText) == 0x000258, "Member 'UStatusWidget_C::TitleText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

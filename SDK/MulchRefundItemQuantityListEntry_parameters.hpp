@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.ExecuteUbergraph_MulchRefundItemQuantityListEntry
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +22,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsBeingReset;                         // 0x0004(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry) == 0x000004, "Wrong alignment on MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry");
-static_assert(sizeof(MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry) == 0x000008, "Wrong size on MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry");
-static_assert(offsetof(MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry, EntryPoint) == 0x000000, "Member 'MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry, K2Node_Event_IsBeingReset) == 0x000004, "Member 'MulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry::K2Node_Event_IsBeingReset' has a wrong offset!");
 
 // Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.HandleDifferentItemOrQuantitySetBP
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +30,6 @@ struct MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP fin
 public:
 	bool                                          IsBeingReset;                                      // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP) == 0x000001, "Wrong alignment on MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP");
-static_assert(sizeof(MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP) == 0x000001, "Wrong size on MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP");
-static_assert(offsetof(MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP, IsBeingReset) == 0x000000, "Member 'MulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP::IsBeingReset' has a wrong offset!");
 
 // Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.UpdateItemAndQuantity
 // 0x0010 (0x0010 - 0x0000)
@@ -47,10 +40,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItemDefinition*                    CallFunc_GetItemDefinition_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity) == 0x000008, "Wrong alignment on MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity");
-static_assert(sizeof(MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity) == 0x000010, "Wrong size on MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity");
-static_assert(offsetof(MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity, DirectlySetQuantity) == 0x000000, "Member 'MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity::DirectlySetQuantity' has a wrong offset!");
-static_assert(offsetof(MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity, CallFunc_GetItemDefinition_ReturnValue) == 0x000008, "Member 'MulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity::CallFunc_GetItemDefinition_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

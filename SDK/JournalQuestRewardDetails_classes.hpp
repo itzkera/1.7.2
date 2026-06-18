@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass JournalQuestRewardDetails.JournalQuestRewardDetails_C
 // 0x0018 (0x0258 - 0x0240)
@@ -41,18 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JournalQuestRewardDetails_C">();
+		BP_STATIC_CLASS_IMPL("JournalQuestRewardDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JournalQuestRewardDetails_C")
 	}
 	static class UJournalQuestRewardDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJournalQuestRewardDetails_C>();
 	}
 };
-static_assert(alignof(UJournalQuestRewardDetails_C) == 0x000008, "Wrong alignment on UJournalQuestRewardDetails_C");
-static_assert(sizeof(UJournalQuestRewardDetails_C) == 0x000258, "Wrong size on UJournalQuestRewardDetails_C");
-static_assert(offsetof(UJournalQuestRewardDetails_C, UberGraphFrame) == 0x000240, "Member 'UJournalQuestRewardDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJournalQuestRewardDetails_C, PerkDivider) == 0x000248, "Member 'UJournalQuestRewardDetails_C::PerkDivider' has a wrong offset!");
-static_assert(offsetof(UJournalQuestRewardDetails_C, QuestVerticalRewardInfo) == 0x000250, "Member 'UJournalQuestRewardDetails_C::QuestVerticalRewardInfo' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

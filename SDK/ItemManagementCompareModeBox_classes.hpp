@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementCompareModeBox.ItemManagementCompareModeBox_C
 // 0x0050 (0x0480 - 0x0430)
@@ -46,25 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementCompareModeBox_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementCompareModeBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementCompareModeBox_C")
 	}
 	static class UItemManagementCompareModeBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementCompareModeBox_C>();
 	}
 };
-static_assert(alignof(UItemManagementCompareModeBox_C) == 0x000008, "Wrong alignment on UItemManagementCompareModeBox_C");
-static_assert(sizeof(UItemManagementCompareModeBox_C) == 0x000480, "Wrong size on UItemManagementCompareModeBox_C");
-static_assert(offsetof(UItemManagementCompareModeBox_C, UberGraphFrame) == 0x000430, "Member 'UItemManagementCompareModeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, ComparisonModeBox) == 0x000438, "Member 'UItemManagementCompareModeBox_C::ComparisonModeBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, Image_30) == 0x000440, "Member 'UItemManagementCompareModeBox_C::Image_30' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, Image_31) == 0x000448, "Member 'UItemManagementCompareModeBox_C::Image_31' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, Image_62) == 0x000450, "Member 'UItemManagementCompareModeBox_C::Image_62' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, NoSelectionDetailsBox) == 0x000458, "Member 'UItemManagementCompareModeBox_C::NoSelectionDetailsBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, NoSelectionText) == 0x000460, "Member 'UItemManagementCompareModeBox_C::NoSelectionText' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, RightSideSwitcher) == 0x000468, "Member 'UItemManagementCompareModeBox_C::RightSideSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, ScrollBoxWidget) == 0x000470, "Member 'UItemManagementCompareModeBox_C::ScrollBoxWidget' has a wrong offset!");
-static_assert(offsetof(UItemManagementCompareModeBox_C, SelectionPromptText) == 0x000478, "Member 'UItemManagementCompareModeBox_C::SelectionPromptText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

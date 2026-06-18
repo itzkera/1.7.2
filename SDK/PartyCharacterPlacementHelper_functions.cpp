@@ -14,8 +14,7 @@
 #include "PartyCharacterPlacementHelper_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.ExecuteUbergraph_PartyCharacterPlacementHelper
 // (HasDefaults)
@@ -42,7 +41,7 @@ void APartyCharacterPlacementHelper_C::ExecuteUbergraph_PartyCharacterPlacementH
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabSelected(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -66,7 +65,7 @@ void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabSelected(class 
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabClosed(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -254,7 +253,7 @@ void APartyCharacterPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera N
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnTeamMemberAdded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void APartyCharacterPlacementHelper_C::OnTeamMemberAdded(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -294,7 +293,7 @@ void APartyCharacterPlacementHelper_C::OnTeamMemberRemoved(int32 TeamMemberRemov
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void APartyCharacterPlacementHelper_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -396,7 +395,7 @@ void APartyCharacterPlacementHelper_C::PlayLobbyAnimation(int32 PartyMemberIndex
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.IsInLobby
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsInLobby_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsInLobby_0                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APartyCharacterPlacementHelper_C::IsInLobby(bool* IsInLobby_0)
 {
@@ -417,7 +416,7 @@ void APartyCharacterPlacementHelper_C::IsInLobby(bool* IsInLobby_0)
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.CompletedQuestPrerequisites
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCompleted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCompleted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APartyCharacterPlacementHelper_C::CompletedQuestPrerequisites(bool* bCompleted)
 {
@@ -438,7 +437,7 @@ void APartyCharacterPlacementHelper_C::CompletedQuestPrerequisites(bool* bComple
 // Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnPartyDataChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              MemberInfo                                             (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             MemberInfo                                             (Parm, OutParm, ReferenceParm)
 
 void APartyCharacterPlacementHelper_C::OnPartyDataChanged(struct FFortTeamMemberInfo& MemberInfo)
 {
@@ -456,5 +455,5 @@ void APartyCharacterPlacementHelper_C::OnPartyDataChanged(struct FFortTeamMember
 	MemberInfo = std::move(Parms.MemberInfo);
 }
 
-}
 
+SDK_NAMESPACE_END

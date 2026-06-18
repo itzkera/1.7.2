@@ -14,8 +14,7 @@
 #include "MissionRichText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionRichText.MissionRichText_C.ExecuteUbergraph_MissionRichText
 // ()
@@ -54,7 +53,7 @@ void UMissionRichText_C::Construct()
 // Function MissionRichText.MissionRichText_C.Update
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 
 void UMissionRichText_C::Update(const class FText& Text)
 {
@@ -70,5 +69,5 @@ void UMissionRichText_C::Update(const class FText& Text)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

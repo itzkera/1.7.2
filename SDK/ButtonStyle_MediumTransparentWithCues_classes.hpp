@@ -13,8 +13,7 @@
 #include "ButtonStyle_MediumTransparentNoCues_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-MediumTransparentWithCues.ButtonStyle-MediumTransparentWithCues_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_MediumTransparentWithCues_C final : public UButtonStyle_Mediu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-MediumTransparentWithCues_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-MediumTransparentWithCues_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-MediumTransparentWithCues_C")
 	}
 	static class UButtonStyle_MediumTransparentWithCues_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_MediumTransparentWithCues_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_MediumTransparentWithCues_C) == 0x000008, "Wrong alignment on UButtonStyle_MediumTransparentWithCues_C");
-static_assert(sizeof(UButtonStyle_MediumTransparentWithCues_C) == 0x000530, "Wrong size on UButtonStyle_MediumTransparentWithCues_C");
 
-}
-
+SDK_NAMESPACE_END

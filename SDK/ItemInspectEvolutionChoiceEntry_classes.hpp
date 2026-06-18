@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C
 // 0x0070 (0x02A8 - 0x0238)
@@ -49,26 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectEvolutionChoiceEntry_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectEvolutionChoiceEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectEvolutionChoiceEntry_C")
 	}
 	static class UItemInspectEvolutionChoiceEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectEvolutionChoiceEntry_C>();
 	}
 };
-static_assert(alignof(UItemInspectEvolutionChoiceEntry_C) == 0x000008, "Wrong alignment on UItemInspectEvolutionChoiceEntry_C");
-static_assert(sizeof(UItemInspectEvolutionChoiceEntry_C) == 0x0002A8, "Wrong size on UItemInspectEvolutionChoiceEntry_C");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, UberGraphFrame) == 0x000238, "Member 'UItemInspectEvolutionChoiceEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, DisabledOverlay) == 0x000240, "Member 'UItemInspectEvolutionChoiceEntry_C::DisabledOverlay' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, Image_0) == 0x000248, "Member 'UItemInspectEvolutionChoiceEntry_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, Image_1) == 0x000250, "Member 'UItemInspectEvolutionChoiceEntry_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, ItemCard) == 0x000258, "Member 'UItemInspectEvolutionChoiceEntry_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, PanelButton) == 0x000260, "Member 'UItemInspectEvolutionChoiceEntry_C::PanelButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, OnEvolutionChoiceHovered) == 0x000268, "Member 'UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceHovered' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, OnEvolutionChoiceUnhovered) == 0x000278, "Member 'UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceUnhovered' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, OnEvolutionChoiceSelected) == 0x000288, "Member 'UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceSelected' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, ItemRepresented) == 0x000298, "Member 'UItemInspectEvolutionChoiceEntry_C::ItemRepresented' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionChoiceEntry_C, RecipeIndexRepresented) == 0x0002A0, "Member 'UItemInspectEvolutionChoiceEntry_C::RecipeIndexRepresented' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

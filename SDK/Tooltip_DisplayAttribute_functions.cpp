@@ -14,8 +14,7 @@
 #include "Tooltip_DisplayAttribute_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.ExecuteUbergraph_Tooltip-DisplayAttribute
 // (HasDefaults)
@@ -202,5 +201,5 @@ class UWidget* UTooltip_DisplayAttribute_C::GetToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

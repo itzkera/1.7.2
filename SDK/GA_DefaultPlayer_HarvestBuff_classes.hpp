@@ -16,8 +16,7 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_DefaultPlayer_HarvestBuff.GA_DefaultPlayer_HarvestBuff_C
 // 0x00D0 (0x0B10 - 0x0A40)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DefaultPlayer_HarvestBuff_C">();
+		BP_STATIC_CLASS_IMPL("GA_DefaultPlayer_HarvestBuff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DefaultPlayer_HarvestBuff_C")
 	}
 	static class UGA_DefaultPlayer_HarvestBuff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DefaultPlayer_HarvestBuff_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_HarvestBuff_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_HarvestBuff_C");
-static_assert(sizeof(UGA_DefaultPlayer_HarvestBuff_C) == 0x000B10, "Wrong size on UGA_DefaultPlayer_HarvestBuff_C");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_HarvestBuff_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, EventData) == 0x000A48, "Member 'UGA_DefaultPlayer_HarvestBuff_C::EventData' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, EventActivation) == 0x000AF0, "Member 'UGA_DefaultPlayer_HarvestBuff_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, HitThreshold) == 0x000AF8, "Member 'UGA_DefaultPlayer_HarvestBuff_C::HitThreshold' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, GE_HarvestBuffHit) == 0x000B00, "Member 'UGA_DefaultPlayer_HarvestBuff_C::GE_HarvestBuffHit' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuff_C, PlayerPawn) == 0x000B08, "Member 'UGA_DefaultPlayer_HarvestBuff_C::PlayerPawn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "B_GoinCommandoWeapon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_GoinCommandoWeapon.B_GoinCommandoWeapon_C.ExecuteUbergraph_B_GoinCommandoWeapon
 // (HasDefaults)
@@ -40,7 +39,7 @@ void AB_GoinCommandoWeapon_C::ExecuteUbergraph_B_GoinCommandoWeapon(int32 EntryP
 // Function B_GoinCommandoWeapon.B_GoinCommandoWeapon_C.OnInitCosmeticAlterations
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// struct FFortCosmeticModification        CosmeticMod                                            (Parm)
+// const struct FFortCosmeticModification& CosmeticMod                                            (Parm)
 // class UMaterialInstanceDynamic*         DynamicMaterialInstance                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_GoinCommandoWeapon_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod, class UMaterialInstanceDynamic* DynamicMaterialInstance)
@@ -90,7 +89,7 @@ void AB_GoinCommandoWeapon_C::OnChargeUp()
 // Function B_GoinCommandoWeapon.B_GoinCommandoWeapon_C.OnPlayImpactFX
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       HitResult                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                HitResult                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // EPhysicalSurface                        ImpactPhysicalSurface                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UParticleSystemComponent*         SpawnedPSC                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -202,5 +201,5 @@ void AB_GoinCommandoWeapon_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

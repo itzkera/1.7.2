@@ -14,8 +14,7 @@
 #include "TabInputOptions_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabInputOptions.TabInputOptions_C.ExecuteUbergraph_TabInputOptions
 // (HasDefaults)
@@ -164,7 +163,7 @@ void UTabInputOptions_C::Construct()
 // Function TabInputOptions.TabInputOptions_C.Overlay Key Pressed
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FKey                             NewKey                                                 (Parm, HasGetValueTypeHash)
+// const struct FKey&                      NewKey                                                 (Parm, HasGetValueTypeHash)
 
 void UTabInputOptions_C::Overlay_Key_Pressed(const struct FKey& NewKey)
 {
@@ -208,5 +207,5 @@ void UTabInputOptions_C::NewFunction_0()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

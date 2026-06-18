@@ -16,8 +16,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GAB_PlayerDBNO.GAB_PlayerDBNO_C
 // 0x00E8 (0x0B28 - 0x0A40)
@@ -44,21 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_PlayerDBNO_C">();
+		BP_STATIC_CLASS_IMPL("GAB_PlayerDBNO_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_PlayerDBNO_C")
 	}
 	static class UGAB_PlayerDBNO_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_PlayerDBNO_C>();
 	}
 };
-static_assert(alignof(UGAB_PlayerDBNO_C) == 0x000008, "Wrong alignment on UGAB_PlayerDBNO_C");
-static_assert(sizeof(UGAB_PlayerDBNO_C) == 0x000B28, "Wrong size on UGAB_PlayerDBNO_C");
-static_assert(offsetof(UGAB_PlayerDBNO_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_PlayerDBNO_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DeathMontage) == 0x000A48, "Member 'UGAB_PlayerDBNO_C::DeathMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitDirection) == 0x000A50, "Member 'UGAB_PlayerDBNO_C::DeathHitDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DeathHitResult) == 0x000A60, "Member 'UGAB_PlayerDBNO_C::DeathHitResult' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, DamageTags) == 0x000AE8, "Member 'UGAB_PlayerDBNO_C::DamageTags' has a wrong offset!");
-static_assert(offsetof(UGAB_PlayerDBNO_C, GameplayStatusAfflicted) == 0x000B08, "Member 'UGAB_PlayerDBNO_C::GameplayStatusAfflicted' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

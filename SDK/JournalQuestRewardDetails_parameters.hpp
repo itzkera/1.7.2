@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.ExecuteUbergraph_JournalQuestRewardDetails
 // 0x0004 (0x0004 - 0x0000)
@@ -23,24 +23,16 @@ struct JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails) == 0x000004, "Wrong alignment on JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails");
-static_assert(sizeof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails) == 0x000004, "Wrong size on JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails");
-static_assert(offsetof(JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails, EntryPoint) == 0x000000, "Member 'JournalQuestRewardDetails_C_ExecuteUbergraph_JournalQuestRewardDetails::EntryPoint' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.Setup
 // 0x0028 (0x0028 - 0x0000)
 struct JournalQuestRewardDetails_C_Setup final
 {
 public:
-	TDelegate<void(class UTexture2D* Image, class FText Title, class FText Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UTexture2D* Image, class FText Title, class FText Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JournalQuestRewardDetails_C_Setup) == 0x000008, "Wrong alignment on JournalQuestRewardDetails_C_Setup");
-static_assert(sizeof(JournalQuestRewardDetails_C_Setup) == 0x000028, "Wrong size on JournalQuestRewardDetails_C_Setup");
-static_assert(offsetof(JournalQuestRewardDetails_C_Setup, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'JournalQuestRewardDetails_C_Setup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_Setup, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'JournalQuestRewardDetails_C_Setup::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_Setup, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000020, "Member 'JournalQuestRewardDetails_C_Setup::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.HandleOnBeginSpokenDialog
 // 0x0040 (0x0040 - 0x0000)
@@ -52,12 +44,6 @@ public:
 	class FText                                   Subtitle;                                          // 0x0020(0x0018)(Parm)
 	EFortAnnouncementDisplayPreference            DisplayPreference;                                 // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog) == 0x000008, "Wrong alignment on JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog");
-static_assert(sizeof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog) == 0x000040, "Wrong size on JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog");
-static_assert(offsetof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog, Image) == 0x000000, "Member 'JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog::Image' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog, Title) == 0x000008, "Member 'JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog::Title' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog, Subtitle) == 0x000020, "Member 'JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog::Subtitle' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog, DisplayPreference) == 0x000038, "Member 'JournalQuestRewardDetails_C_HandleOnBeginSpokenDialog::DisplayPreference' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.UpdatePlayButtonState
 // 0x0004 (0x0004 - 0x0000)
@@ -69,12 +55,6 @@ public:
 	EFortQuestState                               CallFunc_GetQuestState_ReturnValue;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JournalQuestRewardDetails_C_UpdatePlayButtonState) == 0x000001, "Wrong alignment on JournalQuestRewardDetails_C_UpdatePlayButtonState");
-static_assert(sizeof(JournalQuestRewardDetails_C_UpdatePlayButtonState) == 0x000004, "Wrong size on JournalQuestRewardDetails_C_UpdatePlayButtonState");
-static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_CanGotoQuest_ReturnValue) == 0x000000, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_CanGotoQuest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_CanPlayQuest_ReturnValue) == 0x000001, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_CanPlayQuest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_GetQuestState_ReturnValue) == 0x000002, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_GetQuestState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePlayButtonState, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000003, "Member 'JournalQuestRewardDetails_C_UpdatePlayButtonState::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.UpdatePanelInfo
 // 0x0038 (0x0038 - 0x0000)
@@ -84,10 +64,6 @@ public:
 	class UFortQuestItemDefinition*               CallFunc_GetQuestDefinitionBP_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortRewardInfo                        CallFunc_GetRewardInfo_BP_ReturnValue;             // 0x0008(0x0030)()
 };
-static_assert(alignof(JournalQuestRewardDetails_C_UpdatePanelInfo) == 0x000008, "Wrong alignment on JournalQuestRewardDetails_C_UpdatePanelInfo");
-static_assert(sizeof(JournalQuestRewardDetails_C_UpdatePanelInfo) == 0x000038, "Wrong size on JournalQuestRewardDetails_C_UpdatePanelInfo");
-static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePanelInfo, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000000, "Member 'JournalQuestRewardDetails_C_UpdatePanelInfo::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestRewardDetails_C_UpdatePanelInfo, CallFunc_GetRewardInfo_BP_ReturnValue) == 0x000008, "Member 'JournalQuestRewardDetails_C_UpdatePanelInfo::CallFunc_GetRewardInfo_BP_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

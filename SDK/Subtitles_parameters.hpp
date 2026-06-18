@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Subtitles.Subtitles_C.ExecuteUbergraph_Subtitles
 // 0x0004 (0x0004 - 0x0000)
@@ -23,9 +23,6 @@ struct Subtitles_C_ExecuteUbergraph_Subtitles final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x000004, "Wrong alignment on Subtitles_C_ExecuteUbergraph_Subtitles");
-static_assert(sizeof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x000004, "Wrong size on Subtitles_C_ExecuteUbergraph_Subtitles");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, EntryPoint) == 0x000000, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::EntryPoint' has a wrong offset!");
 
 // Function Subtitles.Subtitles_C.GetSubtitleVisibility
 // 0x0006 (0x0006 - 0x0000)
@@ -39,14 +36,6 @@ public:
 	bool                                          CallFunc_HasSubtitles_ReturnValue;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Subtitles_C_GetSubtitleVisibility) == 0x000001, "Wrong alignment on Subtitles_C_GetSubtitleVisibility");
-static_assert(sizeof(Subtitles_C_GetSubtitleVisibility) == 0x000006, "Wrong size on Subtitles_C_GetSubtitleVisibility");
-static_assert(offsetof(Subtitles_C_GetSubtitleVisibility, ReturnValue) == 0x000000, "Member 'Subtitles_C_GetSubtitleVisibility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_GetSubtitleVisibility, Temp_bool_Variable) == 0x000001, "Member 'Subtitles_C_GetSubtitleVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_GetSubtitleVisibility, Temp_byte_Variable) == 0x000002, "Member 'Subtitles_C_GetSubtitleVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_GetSubtitleVisibility, Temp_byte_Variable2) == 0x000003, "Member 'Subtitles_C_GetSubtitleVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_GetSubtitleVisibility, CallFunc_HasSubtitles_ReturnValue) == 0x000004, "Member 'Subtitles_C_GetSubtitleVisibility::CallFunc_HasSubtitles_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_GetSubtitleVisibility, K2Node_Select_Default) == 0x000005, "Member 'Subtitles_C_GetSubtitleVisibility::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

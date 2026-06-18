@@ -16,8 +16,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class Qos.QosBeaconClient
 // 0x0068 (0x04A0 - 0x0438)
@@ -33,15 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QosBeaconClient">();
+		STATIC_CLASS_IMPL("QosBeaconClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QosBeaconClient")
 	}
 	static class AQosBeaconClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AQosBeaconClient>();
 	}
 };
-static_assert(alignof(AQosBeaconClient) == 0x000008, "Wrong alignment on AQosBeaconClient");
-static_assert(sizeof(AQosBeaconClient) == 0x0004A0, "Wrong size on AQosBeaconClient");
 
 // Class Qos.QosBeaconHost
 // 0x0010 (0x03C0 - 0x03B0)
@@ -53,15 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QosBeaconHost">();
+		STATIC_CLASS_IMPL("QosBeaconHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QosBeaconHost")
 	}
 	static class AQosBeaconHost* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AQosBeaconHost>();
 	}
 };
-static_assert(alignof(AQosBeaconHost) == 0x000008, "Wrong alignment on AQosBeaconHost");
-static_assert(sizeof(AQosBeaconHost) == 0x0003C0, "Wrong size on AQosBeaconHost");
 
 // Class Qos.QosRegionManager
 // 0x0080 (0x00A8 - 0x0028)
@@ -88,26 +91,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QosRegionManager">();
+		STATIC_CLASS_IMPL("QosRegionManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QosRegionManager")
 	}
 	static class UQosRegionManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQosRegionManager>();
 	}
 };
-static_assert(alignof(UQosRegionManager) == 0x000008, "Wrong alignment on UQosRegionManager");
-static_assert(sizeof(UQosRegionManager) == 0x0000A8, "Wrong size on UQosRegionManager");
-static_assert(offsetof(UQosRegionManager, bUseOldQosServers) == 0x000028, "Member 'UQosRegionManager::bUseOldQosServers' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, NumTestsPerRegion) == 0x00002C, "Member 'UQosRegionManager::NumTestsPerRegion' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, PingTimeout) == 0x000030, "Member 'UQosRegionManager::PingTimeout' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, Datacenters) == 0x000038, "Member 'UQosRegionManager::Datacenters' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, LastCheckTimestamp) == 0x000048, "Member 'UQosRegionManager::LastCheckTimestamp' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, Evaluator) == 0x000050, "Member 'UQosRegionManager::Evaluator' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, QosEvalResult) == 0x000058, "Member 'UQosRegionManager::QosEvalResult' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, RegionOptions) == 0x000060, "Member 'UQosRegionManager::RegionOptions' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, ForceRegionId) == 0x000070, "Member 'UQosRegionManager::ForceRegionId' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, bRegionForcedViaCommandline) == 0x000080, "Member 'UQosRegionManager::bRegionForcedViaCommandline' has a wrong offset!");
-static_assert(offsetof(UQosRegionManager, SelectedRegionId) == 0x000088, "Member 'UQosRegionManager::SelectedRegionId' has a wrong offset!");
 
 // Class Qos.QosEvaluator
 // 0x00F8 (0x0120 - 0x0028)
@@ -126,20 +120,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QosEvaluator">();
+		STATIC_CLASS_IMPL("QosEvaluator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QosEvaluator")
 	}
 	static class UQosEvaluator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQosEvaluator>();
 	}
 };
-static_assert(alignof(UQosEvaluator) == 0x000008, "Wrong alignment on UQosEvaluator");
-static_assert(sizeof(UQosEvaluator) == 0x000120, "Wrong size on UQosEvaluator");
-static_assert(offsetof(UQosEvaluator, CurrentSearchPass) == 0x000028, "Member 'UQosEvaluator::CurrentSearchPass' has a wrong offset!");
-static_assert(offsetof(UQosEvaluator, ControllerId) == 0x0000D8, "Member 'UQosEvaluator::ControllerId' has a wrong offset!");
-static_assert(offsetof(UQosEvaluator, bInProgress) == 0x0000DC, "Member 'UQosEvaluator::bInProgress' has a wrong offset!");
-static_assert(offsetof(UQosEvaluator, bCancelOperation) == 0x0000DD, "Member 'UQosEvaluator::bCancelOperation' has a wrong offset!");
-static_assert(offsetof(UQosEvaluator, Datacenters) == 0x0000E0, "Member 'UQosEvaluator::Datacenters' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_PlayerShieldDamage_LensEffect_Direction.B_PlayerShieldDamage_LensEffect_Direction_C
 // 0x0000 (0x0470 - 0x0470)
@@ -23,15 +22,16 @@ class AB_PlayerShieldDamage_LensEffect_Direction_C final : public AFortEmitterCa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_PlayerShieldDamage_LensEffect_Direction_C">();
+		BP_STATIC_CLASS_IMPL("B_PlayerShieldDamage_LensEffect_Direction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_PlayerShieldDamage_LensEffect_Direction_C")
 	}
 	static class AB_PlayerShieldDamage_LensEffect_Direction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_PlayerShieldDamage_LensEffect_Direction_C>();
 	}
 };
-static_assert(alignof(AB_PlayerShieldDamage_LensEffect_Direction_C) == 0x000010, "Wrong alignment on AB_PlayerShieldDamage_LensEffect_Direction_C");
-static_assert(sizeof(AB_PlayerShieldDamage_LensEffect_Direction_C) == 0x000470, "Wrong size on AB_PlayerShieldDamage_LensEffect_Direction_C");
 
-}
-
+SDK_NAMESPACE_END

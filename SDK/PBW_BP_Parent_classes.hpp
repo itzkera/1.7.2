@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PBW_BP_Parent.PBW_BP_Parent_C
 // 0x0020 (0x10D0 - 0x10B0)
@@ -34,17 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBW_BP_Parent_C">();
+		BP_STATIC_CLASS_IMPL("PBW_BP_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBW_BP_Parent_C")
 	}
 	static class APBW_BP_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBW_BP_Parent_C>();
 	}
 };
-static_assert(alignof(APBW_BP_Parent_C) == 0x000010, "Wrong alignment on APBW_BP_Parent_C");
-static_assert(sizeof(APBW_BP_Parent_C) == 0x0010D0, "Wrong size on APBW_BP_Parent_C");
-static_assert(offsetof(APBW_BP_Parent_C, UberGraphFrame) == 0x0010B0, "Member 'APBW_BP_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APBW_BP_Parent_C, StaticMeshAlternateArray) == 0x0010B8, "Member 'APBW_BP_Parent_C::StaticMeshAlternateArray' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AlterationWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AlterationWidget.AlterationWidget_C.ExecuteUbergraph_AlterationWidget
 // (HasDefaults)
@@ -160,5 +159,5 @@ void UAlterationWidget_C::SetEvolutionDetails()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

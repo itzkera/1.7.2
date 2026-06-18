@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AdditionalEntriesIndicator.AdditionalEntriesIndicator_C
 // 0x0008 (0x0240 - 0x0238)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AdditionalEntriesIndicator_C">();
+		BP_STATIC_CLASS_IMPL("AdditionalEntriesIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AdditionalEntriesIndicator_C")
 	}
 	static class UAdditionalEntriesIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAdditionalEntriesIndicator_C>();
 	}
 };
-static_assert(alignof(UAdditionalEntriesIndicator_C) == 0x000008, "Wrong alignment on UAdditionalEntriesIndicator_C");
-static_assert(sizeof(UAdditionalEntriesIndicator_C) == 0x000240, "Wrong size on UAdditionalEntriesIndicator_C");
-static_assert(offsetof(UAdditionalEntriesIndicator_C, Image_0) == 0x000238, "Member 'UAdditionalEntriesIndicator_C::Image_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

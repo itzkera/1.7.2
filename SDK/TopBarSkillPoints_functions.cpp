@@ -14,8 +14,7 @@
 #include "TopBarSkillPoints_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TopBarSkillPoints.TopBarSkillPoints_C.ExecuteUbergraph_TopBarSkillPoints
 // (HasDefaults)
@@ -150,7 +149,7 @@ void UTopBarSkillPoints_C::Construct()
 // Function TopBarSkillPoints.TopBarSkillPoints_C.UpdateAccountInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           Info                                                   (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    Info                                                   (Parm, NoDestructor)
 
 void UTopBarSkillPoints_C::UpdateAccountInfo(const struct FFortPublicAccountInfo& Info)
 {
@@ -224,7 +223,7 @@ class UWidget* UTopBarSkillPoints_C::GetSkillPointsTooltipWidget()
 // Function TopBarSkillPoints.TopBarSkillPoints_C.GetBonusExperienceDescription
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Result                                                 (Parm, OutParm)
+// class FText*                            Result                                                 (Parm, OutParm)
 
 void UTopBarSkillPoints_C::GetBonusExperienceDescription(class FText* Result)
 {
@@ -313,7 +312,7 @@ void UTopBarSkillPoints_C::Unbind_Party_Delegates()
 // Function TopBarSkillPoints.TopBarSkillPoints_C.HandleOnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewMemberState                                         (Parm)
+// const struct FFortTeamMemberInfo&       NewMemberState                                         (Parm)
 
 void UTopBarSkillPoints_C::HandleOnTeamMemberStateChanged(const struct FFortTeamMemberInfo& NewMemberState)
 {
@@ -353,7 +352,7 @@ void UTopBarSkillPoints_C::HandleRemotePlayerRemoved(int32 RemovedIndex)
 // Function TopBarSkillPoints.TopBarSkillPoints_C.Has Founder Badge
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UTopBarSkillPoints_C::Has_Founder_Badge(bool* Result)
 {
@@ -374,7 +373,7 @@ void UTopBarSkillPoints_C::Has_Founder_Badge(bool* Result)
 // Function TopBarSkillPoints.TopBarSkillPoints_C.Has VIP Badge
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UTopBarSkillPoints_C::Has_VIP_Badge(bool* Result)
 {
@@ -431,5 +430,5 @@ class UWidget* UTopBarSkillPoints_C::GetFounderBadgetTooltipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass IconTabButton.IconTabButton_C
 // 0x0108 (0x09A8 - 0x08A0)
@@ -59,27 +58,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IconTabButton_C">();
+		BP_STATIC_CLASS_IMPL("IconTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IconTabButton_C")
 	}
 	static class UIconTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIconTabButton_C>();
 	}
 };
-static_assert(alignof(UIconTabButton_C) == 0x000008, "Wrong alignment on UIconTabButton_C");
-static_assert(sizeof(UIconTabButton_C) == 0x0009A8, "Wrong size on UIconTabButton_C");
-static_assert(offsetof(UIconTabButton_C, UberGraphFrame) == 0x0008A0, "Member 'UIconTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, BangWrapper) == 0x0008A8, "Member 'UIconTabButton_C::BangWrapper' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, CenterButtonTextWidget) == 0x0008B0, "Member 'UIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ContentHB) == 0x0008B8, "Member 'UIconTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, LeftSideImage) == 0x0008C0, "Member 'UIconTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ButtonText) == 0x0008C8, "Member 'UIconTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, IconBrush) == 0x0008E0, "Member 'UIconTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, UseText) == 0x000970, "Member 'UIconTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SelectedIconTint) == 0x000974, "Member 'UIconTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, DeselectedIconTint) == 0x000984, "Member 'UIconTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, HoveredIconTint) == 0x000994, "Member 'UIconTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, bBangEnabled) == 0x0009A4, "Member 'UIconTabButton_C::bBangEnabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

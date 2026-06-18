@@ -10,16 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "SupplyDropUnlocks_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "GAT_GenericActiveAbilityNoCommit_classes.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "SupplyDropUnlocks_structs.hpp"
+#include "GAT_GenericActiveAbilityNoCommit_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_SupplyDrop.GA_SupplyDrop_C
 // 0x0200 (0x0D10 - 0x0B10)
@@ -65,37 +64,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_SupplyDrop_C">();
+		BP_STATIC_CLASS_IMPL("GA_SupplyDrop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_SupplyDrop_C")
 	}
 	static class UGA_SupplyDrop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_SupplyDrop_C>();
 	}
 };
-static_assert(alignof(UGA_SupplyDrop_C) == 0x000008, "Wrong alignment on UGA_SupplyDrop_C");
-static_assert(sizeof(UGA_SupplyDrop_C) == 0x000D10, "Wrong size on UGA_SupplyDrop_C");
-static_assert(offsetof(UGA_SupplyDrop_C, UberGraphFrame_GA_SupplyDrop_C) == 0x000B10, "Member 'UGA_SupplyDrop_C::UberGraphFrame_GA_SupplyDrop_C' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, EventComplete) == 0x000B18, "Member 'UGA_SupplyDrop_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, EventActivation) == 0x000B20, "Member 'UGA_SupplyDrop_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, T_Explosion) == 0x000B28, "Member 'UGA_SupplyDrop_C::T_Explosion' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, ActivationSound) == 0x000B88, "Member 'UGA_SupplyDrop_C::ActivationSound' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, EventData_0) == 0x000B90, "Member 'UGA_SupplyDrop_C::EventData_0' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, AbilityMultiplier) == 0x000C38, "Member 'UGA_SupplyDrop_C::AbilityMultiplier' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, TC_CoreResourceUpgrade1) == 0x000C40, "Member 'UGA_SupplyDrop_C::TC_CoreResourceUpgrade1' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, TC_CoreResourceUpgrade2) == 0x000C60, "Member 'UGA_SupplyDrop_C::TC_CoreResourceUpgrade2' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, TC_RandomItemUpgrade1) == 0x000C80, "Member 'UGA_SupplyDrop_C::TC_RandomItemUpgrade1' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, TC_RandomItemUpgrade2) == 0x000CA0, "Member 'UGA_SupplyDrop_C::TC_RandomItemUpgrade2' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, TC_RandomItemUpgrade3) == 0x000CC0, "Member 'UGA_SupplyDrop_C::TC_RandomItemUpgrade3' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, UnlockTiers) == 0x000CE0, "Member 'UGA_SupplyDrop_C::UnlockTiers' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, WoodCount) == 0x000CE8, "Member 'UGA_SupplyDrop_C::WoodCount' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, ExtraCraftingCount) == 0x000CEC, "Member 'UGA_SupplyDrop_C::ExtraCraftingCount' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, MetalCount) == 0x000CF0, "Member 'UGA_SupplyDrop_C::MetalCount' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, StoneCount) == 0x000CF4, "Member 'UGA_SupplyDrop_C::StoneCount' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, WoodItems) == 0x000CF8, "Member 'UGA_SupplyDrop_C::WoodItems' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, StoneItems) == 0x000CFC, "Member 'UGA_SupplyDrop_C::StoneItems' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, MetalItems) == 0x000D00, "Member 'UGA_SupplyDrop_C::MetalItems' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, CraftingItems) == 0x000D04, "Member 'UGA_SupplyDrop_C::CraftingItems' has a wrong offset!");
-static_assert(offsetof(UGA_SupplyDrop_C, bTraps) == 0x000D08, "Member 'UGA_SupplyDrop_C::bTraps' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

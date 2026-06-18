@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LeaveButton.LeaveButton_C
 // 0x0060 (0x0298 - 0x0238)
@@ -60,24 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaveButton_C">();
+		BP_STATIC_CLASS_IMPL("LeaveButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaveButton_C")
 	}
 	static class ULeaveButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaveButton_C>();
 	}
 };
-static_assert(alignof(ULeaveButton_C) == 0x000008, "Wrong alignment on ULeaveButton_C");
-static_assert(sizeof(ULeaveButton_C) == 0x000298, "Wrong size on ULeaveButton_C");
-static_assert(offsetof(ULeaveButton_C, UberGraphFrame) == 0x000238, "Member 'ULeaveButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, Leave) == 0x000240, "Member 'ULeaveButton_C::Leave' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, OnClicked) == 0x000248, "Member 'ULeaveButton_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, Update_Visibility) == 0x000258, "Member 'ULeaveButton_C::Update_Visibility' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, ButtonStyleOverride) == 0x000268, "Member 'ULeaveButton_C::ButtonStyleOverride' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, ControllerStyleOverride) == 0x000270, "Member 'ULeaveButton_C::ControllerStyleOverride' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, UseButtoneStyleOverride) == 0x000278, "Member 'ULeaveButton_C::UseButtoneStyleOverride' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, OverrideButtonText) == 0x000279, "Member 'ULeaveButton_C::OverrideButtonText' has a wrong offset!");
-static_assert(offsetof(ULeaveButton_C, ButtonTextOverride) == 0x000280, "Member 'ULeaveButton_C::ButtonTextOverride' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PermissionsRoot.PermissionsRoot_C
 // 0x0038 (0x0418 - 0x03E0)
@@ -40,22 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PermissionsRoot_C">();
+		BP_STATIC_CLASS_IMPL("PermissionsRoot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PermissionsRoot_C")
 	}
 	static class UPermissionsRoot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPermissionsRoot_C>();
 	}
 };
-static_assert(alignof(UPermissionsRoot_C) == 0x000008, "Wrong alignment on UPermissionsRoot_C");
-static_assert(sizeof(UPermissionsRoot_C) == 0x000418, "Wrong size on UPermissionsRoot_C");
-static_assert(offsetof(UPermissionsRoot_C, UberGraphFrame) == 0x0003E0, "Member 'UPermissionsRoot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPermissionsRoot_C, Outpost_Screen_WidgetSwitcher) == 0x0003E8, "Member 'UPermissionsRoot_C::Outpost_Screen_WidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UPermissionsRoot_C, OutpostLevel_Text) == 0x0003F0, "Member 'UPermissionsRoot_C::OutpostLevel_Text' has a wrong offset!");
-static_assert(offsetof(UPermissionsRoot_C, OutpostName_Text) == 0x0003F8, "Member 'UPermissionsRoot_C::OutpostName_Text' has a wrong offset!");
-static_assert(offsetof(UPermissionsRoot_C, OutpostScreenStormShieldPermissions) == 0x000400, "Member 'UPermissionsRoot_C::OutpostScreenStormShieldPermissions' has a wrong offset!");
-static_assert(offsetof(UPermissionsRoot_C, PlayerBanner) == 0x000408, "Member 'UPermissionsRoot_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UPermissionsRoot_C, SafeZone_2) == 0x000410, "Member 'UPermissionsRoot_C::SafeZone_2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

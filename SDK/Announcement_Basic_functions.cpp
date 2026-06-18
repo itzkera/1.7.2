@@ -14,8 +14,7 @@
 #include "Announcement_Basic_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announcement_Basic.Announcement_Basic_C.ExecuteUbergraph_Announcement_Basic
 // (HasDefaults)
@@ -90,5 +89,5 @@ void UAnnouncement_Basic_C::UpdateWidgetData(class AFortClientAnnouncement* Anno
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

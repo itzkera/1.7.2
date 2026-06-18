@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SmasherStrength00.SmasherStrength00_C
 // 0x0000 (0x0060 - 0x0060)
@@ -23,15 +22,16 @@ class USmasherStrength00_C final : public UFortNavAreaAutomatic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SmasherStrength00_C">();
+		BP_STATIC_CLASS_IMPL("SmasherStrength00_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmasherStrength00_C")
 	}
 	static class USmasherStrength00_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmasherStrength00_C>();
 	}
 };
-static_assert(alignof(USmasherStrength00_C) == 0x000008, "Wrong alignment on USmasherStrength00_C");
-static_assert(sizeof(USmasherStrength00_C) == 0x000060, "Wrong size on USmasherStrength00_C");
 
-}
-
+SDK_NAMESPACE_END

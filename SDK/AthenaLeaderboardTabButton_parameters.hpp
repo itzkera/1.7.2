@@ -14,8 +14,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ExecuteUbergraph_AthenaLeaderboardTabButton
 // 0x00D0 (0x00D0 - 0x0000)
@@ -33,16 +33,6 @@ public:
 	bool                                          CallFunc_GetSelected_ReturnValue;                  // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetSelected_ReturnValue2;                 // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton) == 0x000008, "Wrong alignment on AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton");
-static_assert(sizeof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton) == 0x0000D0, "Wrong size on AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, EntryPoint) == 0x000000, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue) == 0x000008, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue2) == 0x000010, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, K2Node_Event_IsDesignTime) == 0x000018, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000019, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, K2Node_Event_TabLabelInfo) == 0x000020, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::K2Node_Event_TabLabelInfo' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, CallFunc_GetSelected_ReturnValue) == 0x0000C8, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton, CallFunc_GetSelected_ReturnValue2) == 0x0000C9, "Member 'AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton::CallFunc_GetSelected_ReturnValue2' has a wrong offset!");
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.SetTabLabelInfo
 // 0x00A8 (0x00A8 - 0x0000)
@@ -51,9 +41,6 @@ struct AthenaLeaderboardTabButton_C_SetTabLabelInfo final
 public:
 	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaLeaderboardTabButton_C_SetTabLabelInfo) == 0x000008, "Wrong alignment on AthenaLeaderboardTabButton_C_SetTabLabelInfo");
-static_assert(sizeof(AthenaLeaderboardTabButton_C_SetTabLabelInfo) == 0x0000A8, "Wrong size on AthenaLeaderboardTabButton_C_SetTabLabelInfo");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'AthenaLeaderboardTabButton_C_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -62,9 +49,6 @@ struct AthenaLeaderboardTabButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLeaderboardTabButton_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaLeaderboardTabButton_C_PreConstruct");
-static_assert(sizeof(AthenaLeaderboardTabButton_C_PreConstruct) == 0x000001, "Wrong size on AthenaLeaderboardTabButton_C_PreConstruct");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaLeaderboardTabButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Text
 // 0x0038 (0x0038 - 0x0000)
@@ -80,14 +64,6 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLeaderboardTabButton_C_Set_Text) == 0x000008, "Wrong alignment on AthenaLeaderboardTabButton_C_Set_Text");
-static_assert(sizeof(AthenaLeaderboardTabButton_C_Set_Text) == 0x000038, "Wrong size on AthenaLeaderboardTabButton_C_Set_Text");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Text, ButtonText_0) == 0x000000, "Member 'AthenaLeaderboardTabButton_C_Set_Text::ButtonText_0' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Text, CallFunc_TextIsEmpty_ReturnValue) == 0x000018, "Member 'AthenaLeaderboardTabButton_C_Set_Text::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Text, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'AthenaLeaderboardTabButton_C_Set_Text::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Text, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'AthenaLeaderboardTabButton_C_Set_Text::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Text, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'AthenaLeaderboardTabButton_C_Set_Text::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Text, CallFunc_Create_Basic_Tooltip_Output) == 0x000030, "Member 'AthenaLeaderboardTabButton_C_Set_Text::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Icon
 // 0x0090 (0x0090 - 0x0000)
@@ -96,9 +72,6 @@ struct AthenaLeaderboardTabButton_C_Set_Icon final
 public:
 	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(AthenaLeaderboardTabButton_C_Set_Icon) == 0x000008, "Wrong alignment on AthenaLeaderboardTabButton_C_Set_Icon");
-static_assert(sizeof(AthenaLeaderboardTabButton_C_Set_Icon) == 0x000090, "Wrong size on AthenaLeaderboardTabButton_C_Set_Icon");
-static_assert(offsetof(AthenaLeaderboardTabButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'AthenaLeaderboardTabButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

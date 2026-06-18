@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortMaterialProgressBar.BP_FortMaterialProgressBar_C
 // 0x0000 (0x0390 - 0x0390)
@@ -23,15 +22,16 @@ class UBP_FortMaterialProgressBar_C final : public UFortMaterialProgressBar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortMaterialProgressBar_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortMaterialProgressBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortMaterialProgressBar_C")
 	}
 	static class UBP_FortMaterialProgressBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortMaterialProgressBar_C>();
 	}
 };
-static_assert(alignof(UBP_FortMaterialProgressBar_C) == 0x000008, "Wrong alignment on UBP_FortMaterialProgressBar_C");
-static_assert(sizeof(UBP_FortMaterialProgressBar_C) == 0x000390, "Wrong size on UBP_FortMaterialProgressBar_C");
 
-}
-
+SDK_NAMESPACE_END

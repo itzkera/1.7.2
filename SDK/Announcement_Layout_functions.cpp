@@ -14,8 +14,7 @@
 #include "Announcement_Layout_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announcement_Layout.Announcement_Layout_C.ExecuteUbergraph_Announcement_Layout
 // ()
@@ -96,7 +95,7 @@ void UAnnouncement_Layout_C::SwapAnnouncementUIContent(class AFortClientAnnounce
 // Parameters:
 // class UClass*                           NewWidgetClass                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ForceCreateUI                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UFortAnnouncementWidget*          NewWidget                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortAnnouncementWidget**         NewWidget                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAnnouncement_Layout_C::CreateAnnouncementWidget(class UClass* NewWidgetClass, bool ForceCreateUI, class UFortAnnouncementWidget** NewWidget)
 {
@@ -116,5 +115,5 @@ void UAnnouncement_Layout_C::CreateAnnouncementWidget(class UClass* NewWidgetCla
 		*NewWidget = Parms.NewWidget;
 }
 
-}
 
+SDK_NAMESPACE_END

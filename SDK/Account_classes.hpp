@@ -14,8 +14,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class Account.OnlineAccountCommon
 // 0x07D8 (0x0800 - 0x0028)
@@ -37,22 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineAccountCommon">();
+		STATIC_CLASS_IMPL("OnlineAccountCommon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineAccountCommon")
 	}
 	static class UOnlineAccountCommon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineAccountCommon>();
 	}
 };
-static_assert(alignof(UOnlineAccountCommon) == 0x000008, "Wrong alignment on UOnlineAccountCommon");
-static_assert(sizeof(UOnlineAccountCommon) == 0x000800, "Wrong size on UOnlineAccountCommon");
-static_assert(offsetof(UOnlineAccountCommon, AvailabilityServiceGameName) == 0x000038, "Member 'UOnlineAccountCommon::AvailabilityServiceGameName' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bRequireLightswitchAtStartup) == 0x000048, "Member 'UOnlineAccountCommon::bRequireLightswitchAtStartup' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, EulaKey) == 0x000050, "Member 'UOnlineAccountCommon::EulaKey' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, WebCreateEpicAccountUrl) == 0x000060, "Member 'UOnlineAccountCommon::WebCreateEpicAccountUrl' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bShouldGrantFreeAccess) == 0x000070, "Member 'UOnlineAccountCommon::bShouldGrantFreeAccess' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bUseGameSubAccessRedemption) == 0x000072, "Member 'UOnlineAccountCommon::bUseGameSubAccessRedemption' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bAllowHomeSharingAccess) == 0x000073, "Member 'UOnlineAccountCommon::bAllowHomeSharingAccess' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function B_CameraRainDrops_01.B_CameraRainDrops_01_C.ExecuteUbergraph_B_CameraRainDrops_01
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01 final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01) == 0x000004, "Wrong alignment on B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01");
-static_assert(sizeof(B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01) == 0x000004, "Wrong size on B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01");
-static_assert(offsetof(B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01, EntryPoint) == 0x000000, "Member 'B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

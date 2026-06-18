@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.ExecuteUbergraph_ItemTransformResultInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo");
-static_assert(sizeof(ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo) == 0x000018, "Wrong size on ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo");
-static_assert(offsetof(ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo, EntryPoint) == 0x000000, "Member 'ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ItemTransformResultInfo_C_ExecuteUbergraph_ItemTransformResultInfo::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +34,6 @@ struct ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemTransformResultInfo_C_BndEvt__TransformButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.SetKeyToRepresent
 // 0x0040 (0x0040 - 0x0000)
@@ -56,14 +48,6 @@ public:
 	class UFortConversionControlItemDefinition*   K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformResultInfo_C_SetKeyToRepresent) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_SetKeyToRepresent");
-static_assert(sizeof(ItemTransformResultInfo_C_SetKeyToRepresent) == 0x000040, "Wrong size on ItemTransformResultInfo_C_SetKeyToRepresent");
-static_assert(offsetof(ItemTransformResultInfo_C_SetKeyToRepresent, Key) == 0x000000, "Member 'ItemTransformResultInfo_C_SetKeyToRepresent::Key' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_SetKeyToRepresent, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'ItemTransformResultInfo_C_SetKeyToRepresent::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_SetKeyToRepresent, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'ItemTransformResultInfo_C_SetKeyToRepresent::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_SetKeyToRepresent, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'ItemTransformResultInfo_C_SetKeyToRepresent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_SetKeyToRepresent, K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition) == 0x000030, "Member 'ItemTransformResultInfo_C_SetKeyToRepresent::K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_SetKeyToRepresent, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'ItemTransformResultInfo_C_SetKeyToRepresent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.UpdateSacrificePointsBar
 // 0x0024 (0x0024 - 0x0000)
@@ -86,19 +70,6 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_UpdateSacrificePointsBar) == 0x000004, "Wrong alignment on ItemTransformResultInfo_C_UpdateSacrificePointsBar");
-static_assert(sizeof(ItemTransformResultInfo_C_UpdateSacrificePointsBar) == 0x000024, "Wrong size on ItemTransformResultInfo_C_UpdateSacrificePointsBar");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_GetTierFromSacrificePoints_CalculatedTier) == 0x000000, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_GetTierFromSacrificePoints_CalculatedTier' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_GetTierFromSacrificePoints_ReturnValue) == 0x000001, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_GetTierFromSacrificePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_GetMaxConversionTier_ReturnValue) == 0x000002, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_GetMaxConversionTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_Conv_ByteToInt_ReturnValue2) == 0x000008, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_Conv_ByteToInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_GetFirstConversionTier_ReturnValue) == 0x00000C, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_GetFirstConversionTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_Conv_ByteToInt_ReturnValue3) == 0x000010, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_Conv_ByteToInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, Temp_int_Variable) == 0x000018, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, Temp_bool_Variable) == 0x00001C, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificePointsBar, K2Node_Select_Default) == 0x000020, "Member 'ItemTransformResultInfo_C_UpdateSacrificePointsBar::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.UpdateSacrificeInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -110,11 +81,6 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_CalculateCurrentSacrificePoints_TotalSacrificePoints; // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_UpdateSacrificeInfo) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_UpdateSacrificeInfo");
-static_assert(sizeof(ItemTransformResultInfo_C_UpdateSacrificeInfo) == 0x000018, "Wrong size on ItemTransformResultInfo_C_UpdateSacrificeInfo");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificeInfo, SacrificeItems) == 0x000000, "Member 'ItemTransformResultInfo_C_UpdateSacrificeInfo::SacrificeItems' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificeInfo, CallFunc_Is_Tranfsorm_Button_Enabled_ReturnValue) == 0x000010, "Member 'ItemTransformResultInfo_C_UpdateSacrificeInfo::CallFunc_Is_Tranfsorm_Button_Enabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateSacrificeInfo, CallFunc_CalculateCurrentSacrificePoints_TotalSacrificePoints) == 0x000014, "Member 'ItemTransformResultInfo_C_UpdateSacrificeInfo::CallFunc_CalculateCurrentSacrificePoints_TotalSacrificePoints' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.CalculateCurrentSacrificePoints
 // 0x0050 (0x0050 - 0x0000)
@@ -139,22 +105,6 @@ public:
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_CalculateCurrentSacrificePoints");
-static_assert(sizeof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints) == 0x000050, "Wrong size on ItemTransformResultInfo_C_CalculateCurrentSacrificePoints");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, TotalSacrificePoints) == 0x000000, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::TotalSacrificePoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, TotalPoints) == 0x000004, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::TotalPoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, Temp_int_Array_Index_Variable) == 0x000008, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_Array_Get_Item) == 0x000018, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_IsValid_ReturnValue) == 0x000024, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_Less_IntInt_ReturnValue) == 0x000025, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000028, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData) == 0x000038, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_GetTransmogSacrificeDataFromItemDefintion_OutTransmogData' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_GetTransmogSacrificeDataFromItemDefintion_ReturnValue) == 0x000048, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_GetTransmogSacrificeDataFromItemDefintion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateCurrentSacrificePoints, CallFunc_Add_IntInt_ReturnValue2) == 0x00004C, "Member 'ItemTransformResultInfo_C_CalculateCurrentSacrificePoints::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.UpdateTierProgressPercentage
 // 0x0180 (0x0180 - 0x0000)
@@ -224,66 +174,6 @@ public:
 	int32                                         CallFunc_GetPointsForTier_Points5;                 // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_UpdateTierProgressPercentage) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_UpdateTierProgressPercentage");
-static_assert(sizeof(ItemTransformResultInfo_C_UpdateTierProgressPercentage) == 0x000180, "Wrong size on ItemTransformResultInfo_C_UpdateTierProgressPercentage");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CalculatedPercent) == 0x000000, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CalculatedPercent' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, AdjustedNextPoints) == 0x000004, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::AdjustedNextPoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, AdjustedCurrentPoints) == 0x000008, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::AdjustedCurrentPoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_GetPointsForTier_Points) == 0x00000C, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_GetPointsForTier_Points' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000018, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue) == 0x000020, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue2) == 0x000028, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue3) == 0x000030, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue4) == 0x000038, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue5) == 0x000040, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue6) == 0x000048, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue7) == 0x000050, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue8) == 0x000058, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue9) == 0x000060, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue10) == 0x000068, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue11) == 0x000070, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue12) == 0x000078, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue13) == 0x000080, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue14) == 0x000088, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue15) == 0x000090, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue15' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue16) == 0x000098, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue16' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue17) == 0x0000A0, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue17' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue18) == 0x0000A8, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue18' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue19) == 0x0000B0, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue19' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue20) == 0x0000B8, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue20' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue21) == 0x0000C0, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue21' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue22) == 0x0000C8, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue22' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue23) == 0x0000D0, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue23' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue24) == 0x0000D8, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue24' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue25) == 0x0000E0, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue25' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue26) == 0x0000E8, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue26' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue27) == 0x0000F0, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue27' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue28) == 0x0000F8, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue28' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue29) == 0x000100, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue29' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue30) == 0x000108, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue30' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue31) == 0x000110, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue31' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue32) == 0x000118, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue32' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue33) == 0x000120, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue33' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue34) == 0x000128, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue34' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue35) == 0x000130, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue35' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_MakeLiteralName_ReturnValue36) == 0x000138, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_MakeLiteralName_ReturnValue36' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000140, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_GetPointsForTier_Points2) == 0x000144, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_GetPointsForTier_Points2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, K2Node_SwitchInteger_CmpSuccess) == 0x000148, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x00014C, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x000150, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Conv_IntToFloat_ReturnValue5) == 0x000154, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Conv_IntToFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_CalculateNextTier_ReturnValue) == 0x000158, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_CalculateNextTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Conv_IntToFloat_ReturnValue6) == 0x00015C, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Conv_IntToFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_GetPointsForTier_Points3) == 0x000160, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_GetPointsForTier_Points3' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000164, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_FMin_ReturnValue) == 0x000168, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_GetPointsForTier_Points4) == 0x00016C, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_GetPointsForTier_Points4' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Subtract_IntInt_ReturnValue) == 0x000170, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_GetPointsForTier_Points5) == 0x000174, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_GetPointsForTier_Points5' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_UpdateTierProgressPercentage, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000178, "Member 'ItemTransformResultInfo_C_UpdateTierProgressPercentage::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.GetPointsForTier
 // 0x0014 (0x0014 - 0x0000)
@@ -298,14 +188,6 @@ public:
 	int32                                         CallFunc_GetPointsForTier_ReturnValue;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Max_ReturnValue;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_GetPointsForTier) == 0x000004, "Wrong alignment on ItemTransformResultInfo_C_GetPointsForTier");
-static_assert(sizeof(ItemTransformResultInfo_C_GetPointsForTier) == 0x000014, "Wrong size on ItemTransformResultInfo_C_GetPointsForTier");
-static_assert(offsetof(ItemTransformResultInfo_C_GetPointsForTier, Tier) == 0x000000, "Member 'ItemTransformResultInfo_C_GetPointsForTier::Tier' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_GetPointsForTier, Points) == 0x000004, "Member 'ItemTransformResultInfo_C_GetPointsForTier::Points' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_GetPointsForTier, CallFunc_Conv_IntToByte_ReturnValue) == 0x000008, "Member 'ItemTransformResultInfo_C_GetPointsForTier::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_GetPointsForTier, CallFunc_GetValidValue_ReturnValue) == 0x000009, "Member 'ItemTransformResultInfo_C_GetPointsForTier::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_GetPointsForTier, CallFunc_GetPointsForTier_ReturnValue) == 0x00000C, "Member 'ItemTransformResultInfo_C_GetPointsForTier::CallFunc_GetPointsForTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_GetPointsForTier, CallFunc_Max_ReturnValue) == 0x000010, "Member 'ItemTransformResultInfo_C_GetPointsForTier::CallFunc_Max_ReturnValue' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.CalculateNextTier
 // 0x0014 (0x0014 - 0x0000)
@@ -320,13 +202,6 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_CalculateNextTier) == 0x000004, "Wrong alignment on ItemTransformResultInfo_C_CalculateNextTier");
-static_assert(sizeof(ItemTransformResultInfo_C_CalculateNextTier) == 0x000014, "Wrong size on ItemTransformResultInfo_C_CalculateNextTier");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateNextTier, ReturnValue) == 0x000000, "Member 'ItemTransformResultInfo_C_CalculateNextTier::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateNextTier, Temp_bool_Variable) == 0x000004, "Member 'ItemTransformResultInfo_C_CalculateNextTier::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateNextTier, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'ItemTransformResultInfo_C_CalculateNextTier::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateNextTier, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000C, "Member 'ItemTransformResultInfo_C_CalculateNextTier::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_CalculateNextTier, K2Node_Select_Default) == 0x000010, "Member 'ItemTransformResultInfo_C_CalculateNextTier::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.Get Transform Data
 // 0x0008 (0x0008 - 0x0000)
@@ -336,10 +211,6 @@ public:
 	int32                                         CurrentSacrificePoints_0;                          // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentTier_0;                                     // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformResultInfo_C_Get_Transform_Data) == 0x000004, "Wrong alignment on ItemTransformResultInfo_C_Get_Transform_Data");
-static_assert(sizeof(ItemTransformResultInfo_C_Get_Transform_Data) == 0x000008, "Wrong size on ItemTransformResultInfo_C_Get_Transform_Data");
-static_assert(offsetof(ItemTransformResultInfo_C_Get_Transform_Data, CurrentSacrificePoints_0) == 0x000000, "Member 'ItemTransformResultInfo_C_Get_Transform_Data::CurrentSacrificePoints_0' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Get_Transform_Data, CurrentTier_0) == 0x000004, "Member 'ItemTransformResultInfo_C_Get_Transform_Data::CurrentTier_0' has a wrong offset!");
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.Is Tranfsorm Button Enabled
 // 0x0038 (0x0038 - 0x0000)
@@ -364,21 +235,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled) == 0x000008, "Wrong alignment on ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled");
-static_assert(sizeof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled) == 0x000038, "Wrong size on ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, ReturnValue) == 0x000000, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_GetRequiredItemQuantity_ReturnValue) == 0x000014, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_GetRequiredItemQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_GetRequiredItemDefinition_ReturnValue) == 0x000020, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_GetRequiredItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_Greater_IntInt_ReturnValue) == 0x000028, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_GetNumInInventory_ReturnValue) == 0x00002C, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_GetNumInInventory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_BooleanAND_ReturnValue) == 0x000030, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000031, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_GreaterEqual_IntInt_ReturnValue2) == 0x000032, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_GreaterEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_BooleanAND_ReturnValue2) == 0x000033, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'ItemTransformResultInfo_C_Is_Tranfsorm_Button_Enabled::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

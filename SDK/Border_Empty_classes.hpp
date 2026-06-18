@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-Empty.Border-Empty_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_Empty_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-Empty_C">();
+		BP_STATIC_CLASS_IMPL("Border-Empty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-Empty_C")
 	}
 	static class UBorder_Empty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_Empty_C>();
 	}
 };
-static_assert(alignof(UBorder_Empty_C) == 0x000008, "Wrong alignment on UBorder_Empty_C");
-static_assert(sizeof(UBorder_Empty_C) == 0x0000B8, "Wrong size on UBorder_Empty_C");
 
-}
-
+SDK_NAMESPACE_END

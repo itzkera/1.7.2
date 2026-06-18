@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-Primary-XL-Yellow.ButtonStyle-Primary-XL-Yellow_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_Primary_XL_Yellow_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Primary-XL-Yellow_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Primary-XL-Yellow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Primary-XL-Yellow_C")
 	}
 	static class UButtonStyle_Primary_XL_Yellow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Primary_XL_Yellow_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Primary_XL_Yellow_C) == 0x000008, "Wrong alignment on UButtonStyle_Primary_XL_Yellow_C");
-static_assert(sizeof(UButtonStyle_Primary_XL_Yellow_C) == 0x000530, "Wrong size on UButtonStyle_Primary_XL_Yellow_C");
 
-}
-
+SDK_NAMESPACE_END

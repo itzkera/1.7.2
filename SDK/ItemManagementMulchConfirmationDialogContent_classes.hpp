@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C
 // 0x0038 (0x0270 - 0x0238)
@@ -36,20 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementMulchConfirmationDialogContent_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementMulchConfirmationDialogContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementMulchConfirmationDialogContent_C")
 	}
 	static class UItemManagementMulchConfirmationDialogContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementMulchConfirmationDialogContent_C>();
 	}
 };
-static_assert(alignof(UItemManagementMulchConfirmationDialogContent_C) == 0x000008, "Wrong alignment on UItemManagementMulchConfirmationDialogContent_C");
-static_assert(sizeof(UItemManagementMulchConfirmationDialogContent_C) == 0x000270, "Wrong size on UItemManagementMulchConfirmationDialogContent_C");
-static_assert(offsetof(UItemManagementMulchConfirmationDialogContent_C, UberGraphFrame) == 0x000238, "Member 'UItemManagementMulchConfirmationDialogContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchConfirmationDialogContent_C, ItemScrollBox) == 0x000240, "Member 'UItemManagementMulchConfirmationDialogContent_C::ItemScrollBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchConfirmationDialogContent_C, ItemSlots) == 0x000248, "Member 'UItemManagementMulchConfirmationDialogContent_C::ItemSlots' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchConfirmationDialogContent_C, ItemList) == 0x000250, "Member 'UItemManagementMulchConfirmationDialogContent_C::ItemList' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchConfirmationDialogContent_C, ItemCounts) == 0x000260, "Member 'UItemManagementMulchConfirmationDialogContent_C::ItemCounts' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.ExecuteUbergraph_AthenaTeamMemberIndicator
 // 0x00A8 (0x00A8 - 0x0000)
@@ -29,27 +29,13 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDBNO_ReturnValue;                       // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TArray<bool>& DBNOStates)>     K2Node_CreateDelegate_OutputDelegate;              // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<bool>& DBNOStates)> K2Node_CreateDelegate_OutputDelegate;            // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
-	TDelegate<void(TArray<bool>& RevivingStates)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<bool>& RevivingStates)> K2Node_CreateDelegate_OutputDelegate2;       // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPlayerPawn*                        CallFunc_GetCurrentPawn_ReturnValue;               // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator) == 0x000008, "Wrong alignment on AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator");
-static_assert(sizeof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator) == 0x0000A8, "Wrong size on AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, EntryPoint) == 0x000000, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_Event_MyGeometry) == 0x000004, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_Event_InDeltaTime) == 0x000038, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000040, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, CallFunc_IsDBNO_ReturnValue) == 0x000049, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::CallFunc_IsDBNO_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000050, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, CallFunc_Conv_StringToText_ReturnValue) == 0x000060, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_CreateDelegate_OutputDelegate2) == 0x000078, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, CallFunc_GetContext_ReturnValue) == 0x000088, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, K2Node_CreateDelegate_OutputDelegate3) == 0x000090, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator, CallFunc_GetCurrentPawn_ReturnValue) == 0x0000A0, "Member 'AthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator::CallFunc_GetCurrentPawn_ReturnValue' has a wrong offset!");
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Tick
 // 0x0038 (0x0038 - 0x0000)
@@ -59,10 +45,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTeamMemberIndicator_C_Tick) == 0x000004, "Wrong alignment on AthenaTeamMemberIndicator_C_Tick");
-static_assert(sizeof(AthenaTeamMemberIndicator_C_Tick) == 0x000038, "Wrong size on AthenaTeamMemberIndicator_C_Tick");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaTeamMemberIndicator_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaTeamMemberIndicator_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team DBNO Changed
 // 0x0018 (0x0018 - 0x0000)
@@ -72,10 +54,6 @@ public:
 	TArray<bool>                                  DBNOStates;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Array_Get_Item;                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed) == 0x000008, "Wrong alignment on AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed");
-static_assert(sizeof(AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed) == 0x000018, "Wrong size on AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed, DBNOStates) == 0x000000, "Member 'AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed::DBNOStates' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed, CallFunc_Array_Get_Item) == 0x000010, "Member 'AthenaTeamMemberIndicator_C_On_Team_DBNO_Changed::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team Reviving Changed
 // 0x0018 (0x0018 - 0x0000)
@@ -85,10 +63,6 @@ public:
 	TArray<bool>                                  Team_Reviving;                                     // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Array_Get_Item;                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed) == 0x000008, "Wrong alignment on AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed");
-static_assert(sizeof(AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed) == 0x000018, "Wrong size on AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed, Team_Reviving) == 0x000000, "Member 'AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed::Team_Reviving' has a wrong offset!");
-static_assert(offsetof(AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed, CallFunc_Array_Get_Item) == 0x000010, "Member 'AthenaTeamMemberIndicator_C_On_Team_Reviving_Changed::CallFunc_Array_Get_Item' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

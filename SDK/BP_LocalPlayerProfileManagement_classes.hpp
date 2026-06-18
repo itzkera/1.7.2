@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C
 // 0x0070 (0x02A8 - 0x0238)
@@ -54,27 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LocalPlayerProfileManagement_C">();
+		BP_STATIC_CLASS_IMPL("BP_LocalPlayerProfileManagement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LocalPlayerProfileManagement_C")
 	}
 	static class UBP_LocalPlayerProfileManagement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_LocalPlayerProfileManagement_C>();
 	}
 };
-static_assert(alignof(UBP_LocalPlayerProfileManagement_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerProfileManagement_C");
-static_assert(sizeof(UBP_LocalPlayerProfileManagement_C) == 0x0002A8, "Wrong size on UBP_LocalPlayerProfileManagement_C");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, UberGraphFrame) == 0x000238, "Member 'UBP_LocalPlayerProfileManagement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileButton) == 0x000240, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseBanner) == 0x000248, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseBanner' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomebaseName) == 0x000250, "Member 'UBP_LocalPlayerProfileManagement_C::HomebaseName' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, HomeBaseRating) == 0x000258, "Member 'UBP_LocalPlayerProfileManagement_C::HomeBaseRating' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, Image_0) == 0x000260, "Member 'UBP_LocalPlayerProfileManagement_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, LeavePartyButton) == 0x000268, "Member 'UBP_LocalPlayerProfileManagement_C::LeavePartyButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, NormalBangWrapper) == 0x000270, "Member 'UBP_LocalPlayerProfileManagement_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, OpenBannerEditorButton) == 0x000278, "Member 'UBP_LocalPlayerProfileManagement_C::OpenBannerEditorButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, ViewProfileButton) == 0x000280, "Member 'UBP_LocalPlayerProfileManagement_C::ViewProfileButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, OpenBannerEditor) == 0x000288, "Member 'UBP_LocalPlayerProfileManagement_C::OpenBannerEditor' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileManagement_C, CloseProfileModal) == 0x000298, "Member 'UBP_LocalPlayerProfileManagement_C::CloseProfileModal' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

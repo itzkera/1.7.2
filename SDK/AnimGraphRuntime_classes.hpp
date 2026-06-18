@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class AnimGraphRuntime.AnimCustomInstance
 // 0x0000 (0x0358 - 0x0358)
@@ -23,15 +22,17 @@ class UAnimCustomInstance : public UAnimInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimCustomInstance">();
+		STATIC_CLASS_IMPL("AnimCustomInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimCustomInstance")
 	}
 	static class UAnimCustomInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimCustomInstance>();
 	}
 };
-static_assert(alignof(UAnimCustomInstance) == 0x000008, "Wrong alignment on UAnimCustomInstance");
-static_assert(sizeof(UAnimCustomInstance) == 0x000358, "Wrong size on UAnimCustomInstance");
 
 // Class AnimGraphRuntime.AnimSequencerInstance
 // 0x0000 (0x0358 - 0x0358)
@@ -40,15 +41,16 @@ class UAnimSequencerInstance final : public UAnimCustomInstance
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnimSequencerInstance">();
+		STATIC_CLASS_IMPL("AnimSequencerInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSequencerInstance")
 	}
 	static class UAnimSequencerInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimSequencerInstance>();
 	}
 };
-static_assert(alignof(UAnimSequencerInstance) == 0x000008, "Wrong alignment on UAnimSequencerInstance");
-static_assert(sizeof(UAnimSequencerInstance) == 0x000358, "Wrong size on UAnimSequencerInstance");
 
-}
-
+SDK_NAMESPACE_END

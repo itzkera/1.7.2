@@ -14,8 +14,7 @@
 #include "ItemTransformSlotEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.ExecuteUbergraph_ItemTransformSlotEntry
 // (HasDefaults)
@@ -158,5 +157,5 @@ void UItemTransformSlotEntry_C::SetSlotSelection(bool Selected)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

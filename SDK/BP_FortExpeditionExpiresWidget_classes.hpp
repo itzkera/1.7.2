@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C
 // 0x0018 (0x0260 - 0x0248)
@@ -37,18 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionExpiresWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionExpiresWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionExpiresWidget_C")
 	}
 	static class UBP_FortExpeditionExpiresWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionExpiresWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionExpiresWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionExpiresWidget_C");
-static_assert(sizeof(UBP_FortExpeditionExpiresWidget_C) == 0x000260, "Wrong size on UBP_FortExpeditionExpiresWidget_C");
-static_assert(offsetof(UBP_FortExpeditionExpiresWidget_C, UberGraphFrame) == 0x000248, "Member 'UBP_FortExpeditionExpiresWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionExpiresWidget_C, ExpeditionExpires) == 0x000250, "Member 'UBP_FortExpeditionExpiresWidget_C::ExpeditionExpires' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionExpiresWidget_C, Style) == 0x000258, "Member 'UBP_FortExpeditionExpiresWidget_C::Style' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

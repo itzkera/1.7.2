@@ -14,8 +14,7 @@
 #include "BluGloInventory_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BluGloInventory.BluGloInventory_C.ExecuteUbergraph_BluGloInventory
 // ()
@@ -90,8 +89,8 @@ void UBluGloInventory_C::HandleWorldItemsChanged()
 // Function BluGloInventory.BluGloInventory_C.HandleOnWorldItemListChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           Items_Added                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           Items_Removed                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorldItem*>&          Items_Added                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorldItem*>&          Items_Removed                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UBluGloInventory_C::HandleOnWorldItemListChanged(TArray<class UFortWorldItem*>& Items_Added, TArray<class UFortWorldItem*>& Items_Removed)
 {
@@ -125,5 +124,5 @@ void UBluGloInventory_C::Update()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

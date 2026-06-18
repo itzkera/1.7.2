@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass T3_Main.T3_Main_C
 // 0x04B8 (0x07E8 - 0x0330)
@@ -160,143 +159,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"T3_Main_C">();
+		BP_STATIC_CLASS_IMPL("T3_Main_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"T3_Main_C")
 	}
 	static class UT3_Main_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UT3_Main_C>();
 	}
 };
-static_assert(alignof(UT3_Main_C) == 0x000008, "Wrong alignment on UT3_Main_C");
-static_assert(sizeof(UT3_Main_C) == 0x0007E8, "Wrong size on UT3_Main_C");
-static_assert(offsetof(UT3_Main_C, UberGraphFrame) == 0x000330, "Member 'UT3_Main_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Background) == 0x000338, "Member 'UT3_Main_C::Background' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Base1) == 0x000340, "Member 'UT3_Main_C::Base1' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Base2) == 0x000348, "Member 'UT3_Main_C::Base2' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Base3) == 0x000350, "Member 'UT3_Main_C::Base3' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Base4) == 0x000358, "Member 'UT3_Main_C::Base4' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Building1) == 0x000360, "Member 'UT3_Main_C::Building1' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Building2) == 0x000368, "Member 'UT3_Main_C::Building2' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Building3) == 0x000370, "Member 'UT3_Main_C::Building3' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Building4) == 0x000378, "Member 'UT3_Main_C::Building4' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Building5) == 0x000380, "Member 'UT3_Main_C::Building5' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat1) == 0x000388, "Member 'UT3_Main_C::Combat1' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat10) == 0x000390, "Member 'UT3_Main_C::Combat10' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat2) == 0x000398, "Member 'UT3_Main_C::Combat2' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat3) == 0x0003A0, "Member 'UT3_Main_C::Combat3' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat4) == 0x0003A8, "Member 'UT3_Main_C::Combat4' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat5) == 0x0003B0, "Member 'UT3_Main_C::Combat5' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat6) == 0x0003B8, "Member 'UT3_Main_C::Combat6' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat7) == 0x0003C0, "Member 'UT3_Main_C::Combat7' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat8) == 0x0003C8, "Member 'UT3_Main_C::Combat8' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Combat9) == 0x0003D0, "Member 'UT3_Main_C::Combat9' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_0) == 0x0003D8, "Member 'UT3_Main_C::DefaultSkillNode_C_0' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_1) == 0x0003E0, "Member 'UT3_Main_C::DefaultSkillNode_C_1' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_2) == 0x0003E8, "Member 'UT3_Main_C::DefaultSkillNode_C_2' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_3) == 0x0003F0, "Member 'UT3_Main_C::DefaultSkillNode_C_3' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_4) == 0x0003F8, "Member 'UT3_Main_C::DefaultSkillNode_C_4' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_5) == 0x000400, "Member 'UT3_Main_C::DefaultSkillNode_C_5' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_6) == 0x000408, "Member 'UT3_Main_C::DefaultSkillNode_C_6' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_7) == 0x000410, "Member 'UT3_Main_C::DefaultSkillNode_C_7' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_8) == 0x000418, "Member 'UT3_Main_C::DefaultSkillNode_C_8' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_11) == 0x000420, "Member 'UT3_Main_C::DefaultSkillNode_C_11' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_12) == 0x000428, "Member 'UT3_Main_C::DefaultSkillNode_C_12' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_13) == 0x000430, "Member 'UT3_Main_C::DefaultSkillNode_C_13' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_15) == 0x000438, "Member 'UT3_Main_C::DefaultSkillNode_C_15' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_16) == 0x000440, "Member 'UT3_Main_C::DefaultSkillNode_C_16' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_17) == 0x000448, "Member 'UT3_Main_C::DefaultSkillNode_C_17' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_18) == 0x000450, "Member 'UT3_Main_C::DefaultSkillNode_C_18' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_19) == 0x000458, "Member 'UT3_Main_C::DefaultSkillNode_C_19' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_20) == 0x000460, "Member 'UT3_Main_C::DefaultSkillNode_C_20' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_21) == 0x000468, "Member 'UT3_Main_C::DefaultSkillNode_C_21' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_22) == 0x000470, "Member 'UT3_Main_C::DefaultSkillNode_C_22' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_23) == 0x000478, "Member 'UT3_Main_C::DefaultSkillNode_C_23' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_24) == 0x000480, "Member 'UT3_Main_C::DefaultSkillNode_C_24' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_25) == 0x000488, "Member 'UT3_Main_C::DefaultSkillNode_C_25' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_26) == 0x000490, "Member 'UT3_Main_C::DefaultSkillNode_C_26' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_27) == 0x000498, "Member 'UT3_Main_C::DefaultSkillNode_C_27' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_28) == 0x0004A0, "Member 'UT3_Main_C::DefaultSkillNode_C_28' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_29) == 0x0004A8, "Member 'UT3_Main_C::DefaultSkillNode_C_29' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_114) == 0x0004B0, "Member 'UT3_Main_C::DefaultSkillNode_C_114' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_115) == 0x0004B8, "Member 'UT3_Main_C::DefaultSkillNode_C_115' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_116) == 0x0004C0, "Member 'UT3_Main_C::DefaultSkillNode_C_116' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_117) == 0x0004C8, "Member 'UT3_Main_C::DefaultSkillNode_C_117' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_118) == 0x0004D0, "Member 'UT3_Main_C::DefaultSkillNode_C_118' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_119) == 0x0004D8, "Member 'UT3_Main_C::DefaultSkillNode_C_119' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_120) == 0x0004E0, "Member 'UT3_Main_C::DefaultSkillNode_C_120' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_121) == 0x0004E8, "Member 'UT3_Main_C::DefaultSkillNode_C_121' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_122) == 0x0004F0, "Member 'UT3_Main_C::DefaultSkillNode_C_122' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_123) == 0x0004F8, "Member 'UT3_Main_C::DefaultSkillNode_C_123' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_124) == 0x000500, "Member 'UT3_Main_C::DefaultSkillNode_C_124' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_125) == 0x000508, "Member 'UT3_Main_C::DefaultSkillNode_C_125' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_126) == 0x000510, "Member 'UT3_Main_C::DefaultSkillNode_C_126' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_127) == 0x000518, "Member 'UT3_Main_C::DefaultSkillNode_C_127' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_128) == 0x000520, "Member 'UT3_Main_C::DefaultSkillNode_C_128' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_129) == 0x000528, "Member 'UT3_Main_C::DefaultSkillNode_C_129' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_130) == 0x000530, "Member 'UT3_Main_C::DefaultSkillNode_C_130' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_131) == 0x000538, "Member 'UT3_Main_C::DefaultSkillNode_C_131' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_132) == 0x000540, "Member 'UT3_Main_C::DefaultSkillNode_C_132' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_133) == 0x000548, "Member 'UT3_Main_C::DefaultSkillNode_C_133' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_134) == 0x000550, "Member 'UT3_Main_C::DefaultSkillNode_C_134' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_135) == 0x000558, "Member 'UT3_Main_C::DefaultSkillNode_C_135' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_136) == 0x000560, "Member 'UT3_Main_C::DefaultSkillNode_C_136' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_137) == 0x000568, "Member 'UT3_Main_C::DefaultSkillNode_C_137' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_138) == 0x000570, "Member 'UT3_Main_C::DefaultSkillNode_C_138' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_139) == 0x000578, "Member 'UT3_Main_C::DefaultSkillNode_C_139' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_140) == 0x000580, "Member 'UT3_Main_C::DefaultSkillNode_C_140' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_141) == 0x000588, "Member 'UT3_Main_C::DefaultSkillNode_C_141' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_142) == 0x000590, "Member 'UT3_Main_C::DefaultSkillNode_C_142' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_143) == 0x000598, "Member 'UT3_Main_C::DefaultSkillNode_C_143' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_145) == 0x0005A0, "Member 'UT3_Main_C::DefaultSkillNode_C_145' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_146) == 0x0005A8, "Member 'UT3_Main_C::DefaultSkillNode_C_146' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_147) == 0x0005B0, "Member 'UT3_Main_C::DefaultSkillNode_C_147' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_148) == 0x0005B8, "Member 'UT3_Main_C::DefaultSkillNode_C_148' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_149) == 0x0005C0, "Member 'UT3_Main_C::DefaultSkillNode_C_149' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_150) == 0x0005C8, "Member 'UT3_Main_C::DefaultSkillNode_C_150' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_151) == 0x0005D0, "Member 'UT3_Main_C::DefaultSkillNode_C_151' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_152) == 0x0005D8, "Member 'UT3_Main_C::DefaultSkillNode_C_152' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_153) == 0x0005E0, "Member 'UT3_Main_C::DefaultSkillNode_C_153' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_154) == 0x0005E8, "Member 'UT3_Main_C::DefaultSkillNode_C_154' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_155) == 0x0005F0, "Member 'UT3_Main_C::DefaultSkillNode_C_155' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_156) == 0x0005F8, "Member 'UT3_Main_C::DefaultSkillNode_C_156' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_157) == 0x000600, "Member 'UT3_Main_C::DefaultSkillNode_C_157' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_158) == 0x000608, "Member 'UT3_Main_C::DefaultSkillNode_C_158' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_159) == 0x000610, "Member 'UT3_Main_C::DefaultSkillNode_C_159' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_160) == 0x000618, "Member 'UT3_Main_C::DefaultSkillNode_C_160' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_161) == 0x000620, "Member 'UT3_Main_C::DefaultSkillNode_C_161' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_162) == 0x000628, "Member 'UT3_Main_C::DefaultSkillNode_C_162' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_163) == 0x000630, "Member 'UT3_Main_C::DefaultSkillNode_C_163' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_164) == 0x000638, "Member 'UT3_Main_C::DefaultSkillNode_C_164' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_165) == 0x000640, "Member 'UT3_Main_C::DefaultSkillNode_C_165' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_166) == 0x000648, "Member 'UT3_Main_C::DefaultSkillNode_C_166' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_167) == 0x000650, "Member 'UT3_Main_C::DefaultSkillNode_C_167' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_170) == 0x000658, "Member 'UT3_Main_C::DefaultSkillNode_C_170' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_171) == 0x000660, "Member 'UT3_Main_C::DefaultSkillNode_C_171' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_172) == 0x000668, "Member 'UT3_Main_C::DefaultSkillNode_C_172' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_173) == 0x000670, "Member 'UT3_Main_C::DefaultSkillNode_C_173' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_174) == 0x000678, "Member 'UT3_Main_C::DefaultSkillNode_C_174' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_175) == 0x000680, "Member 'UT3_Main_C::DefaultSkillNode_C_175' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_176) == 0x000688, "Member 'UT3_Main_C::DefaultSkillNode_C_176' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_177) == 0x000690, "Member 'UT3_Main_C::DefaultSkillNode_C_177' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_178) == 0x000698, "Member 'UT3_Main_C::DefaultSkillNode_C_178' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_179) == 0x0006A0, "Member 'UT3_Main_C::DefaultSkillNode_C_179' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_180) == 0x0006A8, "Member 'UT3_Main_C::DefaultSkillNode_C_180' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_181) == 0x0006B0, "Member 'UT3_Main_C::DefaultSkillNode_C_181' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_182) == 0x0006B8, "Member 'UT3_Main_C::DefaultSkillNode_C_182' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_183) == 0x0006C0, "Member 'UT3_Main_C::DefaultSkillNode_C_183' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_184) == 0x0006C8, "Member 'UT3_Main_C::DefaultSkillNode_C_184' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_185) == 0x0006D0, "Member 'UT3_Main_C::DefaultSkillNode_C_185' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_186) == 0x0006D8, "Member 'UT3_Main_C::DefaultSkillNode_C_186' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_187) == 0x0006E0, "Member 'UT3_Main_C::DefaultSkillNode_C_187' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_188) == 0x0006E8, "Member 'UT3_Main_C::DefaultSkillNode_C_188' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, DefaultSkillNode_C_189) == 0x0006F0, "Member 'UT3_Main_C::DefaultSkillNode_C_189' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Utility1) == 0x0006F8, "Member 'UT3_Main_C::Utility1' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Utility2) == 0x000700, "Member 'UT3_Main_C::Utility2' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Utility3) == 0x000708, "Member 'UT3_Main_C::Utility3' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Utility4) == 0x000710, "Member 'UT3_Main_C::Utility4' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Utility5) == 0x000718, "Member 'UT3_Main_C::Utility5' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, Utility6) == 0x000720, "Member 'UT3_Main_C::Utility6' has a wrong offset!");
-static_assert(offsetof(UT3_Main_C, PageColors) == 0x000728, "Member 'UT3_Main_C::PageColors' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

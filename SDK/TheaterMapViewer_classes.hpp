@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TheaterMapViewer.TheaterMapViewer_C
 // 0x0008 (0x0618 - 0x0610)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TheaterMapViewer_C">();
+		BP_STATIC_CLASS_IMPL("TheaterMapViewer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TheaterMapViewer_C")
 	}
 	static class ATheaterMapViewer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATheaterMapViewer_C>();
 	}
 };
-static_assert(alignof(ATheaterMapViewer_C) == 0x000008, "Wrong alignment on ATheaterMapViewer_C");
-static_assert(sizeof(ATheaterMapViewer_C) == 0x000618, "Wrong size on ATheaterMapViewer_C");
-static_assert(offsetof(ATheaterMapViewer_C, DefaultSceneRoot) == 0x000610, "Member 'ATheaterMapViewer_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

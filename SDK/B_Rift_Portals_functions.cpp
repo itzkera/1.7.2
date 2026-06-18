@@ -14,8 +14,7 @@
 #include "B_Rift_Portals_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Rift_Portals.B_Rift_Portals_C.ExecuteUbergraph_B_Rift_Portals
 // (HasDefaults)
@@ -318,5 +317,5 @@ void AB_Rift_Portals_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

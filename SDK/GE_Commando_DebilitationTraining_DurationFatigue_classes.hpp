@@ -13,8 +13,7 @@
 #include "GET_FatiguedParent_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Commando_DebilitationTraining_DurationFatigue.GE_Commando_DebilitationTraining_DurationFatigue_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_Commando_DebilitationTraining_DurationFatigue_C final : public UGET_Fa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Commando_DebilitationTraining_DurationFatigue_C">();
+		BP_STATIC_CLASS_IMPL("GE_Commando_DebilitationTraining_DurationFatigue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Commando_DebilitationTraining_DurationFatigue_C")
 	}
 	static class UGE_Commando_DebilitationTraining_DurationFatigue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Commando_DebilitationTraining_DurationFatigue_C>();
 	}
 };
-static_assert(alignof(UGE_Commando_DebilitationTraining_DurationFatigue_C) == 0x000010, "Wrong alignment on UGE_Commando_DebilitationTraining_DurationFatigue_C");
-static_assert(sizeof(UGE_Commando_DebilitationTraining_DurationFatigue_C) == 0x000660, "Wrong size on UGE_Commando_DebilitationTraining_DurationFatigue_C");
 
-}
-
+SDK_NAMESPACE_END

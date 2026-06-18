@@ -14,8 +14,7 @@
 #include "AthenaMatchmakingWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.ExecuteUbergraph_AthenaMatchmakingWidget
 // (HasDefaults)
@@ -252,5 +251,5 @@ void UAthenaMatchmakingWidget_C::FillChange(bool bDirection)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

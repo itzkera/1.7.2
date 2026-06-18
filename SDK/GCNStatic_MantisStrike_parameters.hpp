@@ -14,8 +14,8 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GCNStatic_MantisStrike.GCNStatic_MantisStrike_C.OnExecute
 // 0x00F0 (0x00F0 - 0x0000)
@@ -32,15 +32,6 @@ public:
 	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNStatic_MantisStrike_C_OnExecute) == 0x000008, "Wrong alignment on GCNStatic_MantisStrike_C_OnExecute");
-static_assert(sizeof(GCNStatic_MantisStrike_C_OnExecute) == 0x0000F0, "Wrong size on GCNStatic_MantisStrike_C_OnExecute");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, MyTarget) == 0x000000, "Member 'GCNStatic_MantisStrike_C_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, Parameters) == 0x000008, "Member 'GCNStatic_MantisStrike_C_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, ReturnValue) == 0x0000C0, "Member 'GCNStatic_MantisStrike_C_OnExecute::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, LocalMantisStrikeImpactCue) == 0x0000C8, "Member 'GCNStatic_MantisStrike_C_OnExecute::LocalMantisStrikeImpactCue' has a wrong offset!");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, LocalP_MantisStrikeImpact) == 0x0000D0, "Member 'GCNStatic_MantisStrike_C_OnExecute::LocalP_MantisStrikeImpact' has a wrong offset!");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, CallFunc_MakeRotFromZ_ReturnValue) == 0x0000D8, "Member 'GCNStatic_MantisStrike_C_OnExecute::CallFunc_MakeRotFromZ_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNStatic_MantisStrike_C_OnExecute, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0000E8, "Member 'GCNStatic_MantisStrike_C_OnExecute::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

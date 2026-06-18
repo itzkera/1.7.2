@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabAudioOptions.TabAudioOptions_C
 // 0x0050 (0x0298 - 0x0248)
@@ -53,25 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabAudioOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabAudioOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabAudioOptions_C")
 	}
 	static class UTabAudioOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabAudioOptions_C>();
 	}
 };
-static_assert(alignof(UTabAudioOptions_C) == 0x000008, "Wrong alignment on UTabAudioOptions_C");
-static_assert(sizeof(UTabAudioOptions_C) == 0x000298, "Wrong size on UTabAudioOptions_C");
-static_assert(offsetof(UTabAudioOptions_C, UberGraphFrame) == 0x000248, "Member 'UTabAudioOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, ChatVolume) == 0x000250, "Member 'UTabAudioOptions_C::ChatVolume' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, DialogVolume) == 0x000258, "Member 'UTabAudioOptions_C::DialogVolume' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, MusicVolume) == 0x000260, "Member 'UTabAudioOptions_C::MusicVolume' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, Quality) == 0x000268, "Member 'UTabAudioOptions_C::Quality' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, SoundFXVolume) == 0x000270, "Member 'UTabAudioOptions_C::SoundFXVolume' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, Subtitles) == 0x000278, "Member 'UTabAudioOptions_C::Subtitles' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, TooltipDisplay) == 0x000280, "Member 'UTabAudioOptions_C::TooltipDisplay' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, VoiceChatEnable) == 0x000288, "Member 'UTabAudioOptions_C::VoiceChatEnable' has a wrong offset!");
-static_assert(offsetof(UTabAudioOptions_C, VoiceChatPushToTalk) == 0x000290, "Member 'UTabAudioOptions_C::VoiceChatPushToTalk' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

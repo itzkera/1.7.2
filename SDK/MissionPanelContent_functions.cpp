@@ -14,8 +14,7 @@
 #include "MissionPanelContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionPanelContent.MissionPanelContent_C.ExecuteUbergraph_MissionPanelContent
 // ()
@@ -96,7 +95,7 @@ void UMissionPanelContent_C::UpdateOverviewObjectives()
 // Function MissionPanelContent.MissionPanelContent_C.Setup Mission Rewards
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                Array                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               Array                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // ERewardListEntryType                    RewardType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMissionPanelContent_C::Setup_Mission_Rewards(TArray<class UFortItem*>& Array, ERewardListEntryType RewardType)
@@ -116,5 +115,5 @@ void UMissionPanelContent_C::Setup_Mission_Rewards(TArray<class UFortItem*>& Arr
 	Array = std::move(Parms.Array);
 }
 
-}
 
+SDK_NAMESPACE_END

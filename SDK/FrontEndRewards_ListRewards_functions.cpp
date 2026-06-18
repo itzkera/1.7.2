@@ -14,8 +14,7 @@
 #include "FrontEndRewards_ListRewards_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.ExecuteUbergraph_FrontEndRewards_ListRewards
 // (HasDefaults)
@@ -236,13 +235,13 @@ void UFrontEndRewards_ListRewards_C::SelectNextCard()
 // Parameters:
 // int32                                   CardQueueIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   CardListIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Alignment                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAnchors                         Anchors                                                (Parm, OutParm, NoDestructor)
-// float                                   Scale                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Offset                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Translation                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   DropShadowDepth                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Alignment                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FAnchors*                        Anchors                                                (Parm, OutParm, NoDestructor)
+// float*                                  Scale                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Offset                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Translation                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  DropShadowDepth                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFrontEndRewards_ListRewards_C::GetCardAlignment(int32 CardQueueIndex, int32 CardListIndex, struct FVector2D* Alignment, struct FAnchors* Anchors, float* Scale, float* Offset, float* Angle, struct FVector2D* Translation, float* DropShadowDepth)
 {
@@ -492,7 +491,7 @@ void UFrontEndRewards_ListRewards_C::SetArrowVisibility()
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.HandleCollectAllAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_ListRewards_C::HandleCollectAllAction(bool* Committed)
 {
@@ -513,7 +512,7 @@ void UFrontEndRewards_ListRewards_C::HandleCollectAllAction(bool* Committed)
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.HandleScrollAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_ListRewards_C::HandleScrollAction(bool* Committed)
 {
@@ -534,7 +533,7 @@ void UFrontEndRewards_ListRewards_C::HandleScrollAction(bool* Committed)
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.HandleInspectAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_ListRewards_C::HandleInspectAction(bool* Committed)
 {
@@ -555,7 +554,7 @@ void UFrontEndRewards_ListRewards_C::HandleInspectAction(bool* Committed)
 // Function FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C.PopulateFromCardsList
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>&     Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_ListRewards_C::PopulateFromCardsList(TArray<class URewards_ItemCard_C*>& Cards)
 {
@@ -704,7 +703,7 @@ void UFrontEndRewards_ListRewards_C::Clear_DisplayName_and_Description_Widgets()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Description                                            (Parm)
+// const class FText&                      Description                                            (Parm)
 
 void UFrontEndRewards_ListRewards_C::Set_DisplayName_and_Description_Widget(class UFortItem* Item, const class FText& Description)
 {
@@ -726,7 +725,7 @@ void UFrontEndRewards_ListRewards_C::Set_DisplayName_and_Description_Widget(clas
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Object                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             OutDescription                                         (Parm, OutParm)
+// class FText*                            OutDescription                                         (Parm, OutParm)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UFrontEndRewards_ListRewards_C::Get_Item_Description(class UFortItem* Object, class FText* OutDescription)
@@ -748,5 +747,5 @@ bool UFrontEndRewards_ListRewards_C::Get_Item_Description(class UFortItem* Objec
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

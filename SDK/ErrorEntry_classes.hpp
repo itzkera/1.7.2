@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ErrorEntry.ErrorEntry_C
 // 0x00A8 (0x02E0 - 0x0238)
@@ -41,20 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ErrorEntry_C">();
+		BP_STATIC_CLASS_IMPL("ErrorEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ErrorEntry_C")
 	}
 	static class UErrorEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UErrorEntry_C>();
 	}
 };
-static_assert(alignof(UErrorEntry_C) == 0x000010, "Wrong alignment on UErrorEntry_C");
-static_assert(sizeof(UErrorEntry_C) == 0x0002E0, "Wrong size on UErrorEntry_C");
-static_assert(offsetof(UErrorEntry_C, UberGraphFrame) == 0x000238, "Member 'UErrorEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UErrorEntry_C, IconTextButton) == 0x000240, "Member 'UErrorEntry_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UErrorEntry_C, MESSAGE) == 0x000248, "Member 'UErrorEntry_C::MESSAGE' has a wrong offset!");
-static_assert(offsetof(UErrorEntry_C, ErrorInfo) == 0x000250, "Member 'UErrorEntry_C::ErrorInfo' has a wrong offset!");
-static_assert(offsetof(UErrorEntry_C, ErrorUrlBase) == 0x0002D0, "Member 'UErrorEntry_C::ErrorUrlBase' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

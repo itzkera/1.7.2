@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TheaterCamera_Blueprint.TheaterCamera_Blueprint_C
 // 0x0210 (0x0AD0 - 0x08C0)
@@ -152,95 +151,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TheaterCamera_Blueprint_C">();
+		BP_STATIC_CLASS_IMPL("TheaterCamera_Blueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TheaterCamera_Blueprint_C")
 	}
 	static class ATheaterCamera_Blueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATheaterCamera_Blueprint_C>();
 	}
 };
-static_assert(alignof(ATheaterCamera_Blueprint_C) == 0x000010, "Wrong alignment on ATheaterCamera_Blueprint_C");
-static_assert(sizeof(ATheaterCamera_Blueprint_C) == 0x000AD0, "Wrong size on ATheaterCamera_Blueprint_C");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, UberGraphFrame) == 0x0008C0, "Member 'ATheaterCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, MeshScreenPlane) == 0x0008C8, "Member 'ATheaterCamera_Blueprint_C::MeshScreenPlane' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, SceneInitializeFX) == 0x0008D0, "Member 'ATheaterCamera_Blueprint_C::SceneInitializeFX' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, FocusTimeline_Float_Curve_ADC98EA5D14E24EC78DD4F80C5102578) == 0x0008D8, "Member 'ATheaterCamera_Blueprint_C::FocusTimeline_Float_Curve_ADC98EA5D14E24EC78DD4F80C5102578' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, FocusTimeline__Direction_ADC98EA5D14E24EC78DD4F80C5102578) == 0x0008DC, "Member 'ATheaterCamera_Blueprint_C::FocusTimeline__Direction_ADC98EA5D14E24EC78DD4F80C5102578' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, FocusTimeline) == 0x0008E0, "Member 'ATheaterCamera_Blueprint_C::FocusTimeline' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DEBUGFOVA_ggt443_69C3A05E440A88A12DB0BAA6A9375778) == 0x0008E8, "Member 'ATheaterCamera_Blueprint_C::DEBUGFOVA_ggt443_69C3A05E440A88A12DB0BAA6A9375778' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DEBUGFOVA__Direction_69C3A05E440A88A12DB0BAA6A9375778) == 0x0008EC, "Member 'ATheaterCamera_Blueprint_C::DEBUGFOVA__Direction_69C3A05E440A88A12DB0BAA6A9375778' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DEBUGFOVA) == 0x0008F0, "Member 'ATheaterCamera_Blueprint_C::DEBUGFOVA' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFX_TL_FadeInitFX_21BA8C434B0965A323799DA5570E46CF) == 0x0008F8, "Member 'ATheaterCamera_Blueprint_C::InitializeFX_TL_FadeInitFX_21BA8C434B0965A323799DA5570E46CF' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFX_TL__Direction_21BA8C434B0965A323799DA5570E46CF) == 0x0008FC, "Member 'ATheaterCamera_Blueprint_C::InitializeFX_TL__Direction_21BA8C434B0965A323799DA5570E46CF' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, InitializeFX_TL) == 0x000900, "Member 'ATheaterCamera_Blueprint_C::InitializeFX_TL' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraRotLevelMax_41B63CEF445574B1F9D6F489004E4238) == 0x000908, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraRotLevelMax_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraRotLevelZero_41B63CEF445574B1F9D6F489004E4238) == 0x00090C, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraRotLevelZero_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraOffsetX___LevelMax_41B63CEF445574B1F9D6F489004E4238) == 0x000910, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraOffsetX___LevelMax_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraOffsetX___LevelZero_41B63CEF445574B1F9D6F489004E4238) == 0x000914, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraOffsetX___LevelZero_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_TotalNumberOfZoomLevels_41B63CEF445574B1F9D6F489004E4238) == 0x000918, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_TotalNumberOfZoomLevels_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraHeight_LevelMax_41B63CEF445574B1F9D6F489004E4238) == 0x00091C, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraHeight_LevelMax_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_CameraHeight_LevelZero_41B63CEF445574B1F9D6F489004E4238) == 0x000920, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_CameraHeight_LevelZero_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_FOV_In_41B63CEF445574B1F9D6F489004E4238) == 0x000924, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_FOV_In_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL_FOV_Out_41B63CEF445574B1F9D6F489004E4238) == 0x000928, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL_FOV_Out_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL__Direction_41B63CEF445574B1F9D6F489004E4238) == 0x00092C, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL__Direction_41B63CEF445574B1F9D6F489004E4238' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugZoomTL) == 0x000930, "Member 'ATheaterCamera_Blueprint_C::DebugZoomTL' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, WorldLocSnapSize) == 0x000938, "Member 'ATheaterCamera_Blueprint_C::WorldLocSnapSize' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CameraZHeightLevelZero) == 0x00093C, "Member 'ATheaterCamera_Blueprint_C::CameraZHeightLevelZero' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CameraXOffsetLevelZero) == 0x000940, "Member 'ATheaterCamera_Blueprint_C::CameraXOffsetLevelZero' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TargetTile) == 0x000948, "Member 'ATheaterCamera_Blueprint_C::TargetTile' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CurrentZoomPercentage) == 0x000950, "Member 'ATheaterCamera_Blueprint_C::CurrentZoomPercentage' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, NumberOfZoomLevels) == 0x000954, "Member 'ATheaterCamera_Blueprint_C::NumberOfZoomLevels' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, ZoomDistanceUnitZ) == 0x000958, "Member 'ATheaterCamera_Blueprint_C::ZoomDistanceUnitZ' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CurrentZoomLevel) == 0x00095C, "Member 'ATheaterCamera_Blueprint_C::CurrentZoomLevel' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, FocusedTileLocWithOffset) == 0x000960, "Member 'ATheaterCamera_Blueprint_C::FocusedTileLocWithOffset' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, MouseDown) == 0x00096C, "Member 'ATheaterCamera_Blueprint_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CurrentOffsetAmountX) == 0x000970, "Member 'ATheaterCamera_Blueprint_C::CurrentOffsetAmountX' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CameraXOffsetLevelMax) == 0x000974, "Member 'ATheaterCamera_Blueprint_C::CameraXOffsetLevelMax' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, InitialZoomLevels) == 0x000978, "Member 'ATheaterCamera_Blueprint_C::InitialZoomLevels' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, ForwardVector) == 0x00097C, "Member 'ATheaterCamera_Blueprint_C::ForwardVector' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CameraYRotationLevelZero) == 0x000988, "Member 'ATheaterCamera_Blueprint_C::CameraYRotationLevelZero' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TargetTileLoc) == 0x00098C, "Member 'ATheaterCamera_Blueprint_C::TargetTileLoc' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, OldOffsetAmountX) == 0x000998, "Member 'ATheaterCamera_Blueprint_C::OldOffsetAmountX' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CurrentFOV) == 0x00099C, "Member 'ATheaterCamera_Blueprint_C::CurrentFOV' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, FOVLevelZero) == 0x0009A0, "Member 'ATheaterCamera_Blueprint_C::FOVLevelZero' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, FOVLevelMax) == 0x0009A4, "Member 'ATheaterCamera_Blueprint_C::FOVLevelMax' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CameraZHeightLevelMax) == 0x0009A8, "Member 'ATheaterCamera_Blueprint_C::CameraZHeightLevelMax' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, ZoomDistanceUnitX) == 0x0009AC, "Member 'ATheaterCamera_Blueprint_C::ZoomDistanceUnitX' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugCameraZoom) == 0x0009B0, "Member 'ATheaterCamera_Blueprint_C::DebugCameraZoom' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CameraYRotationLevelMax) == 0x0009B4, "Member 'ATheaterCamera_Blueprint_C::CameraYRotationLevelMax' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, DebugCameraVariables) == 0x0009B8, "Member 'ATheaterCamera_Blueprint_C::DebugCameraVariables' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, SnapCameraToFocusedTile) == 0x0009B9, "Member 'ATheaterCamera_Blueprint_C::SnapCameraToFocusedTile' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, MIDMeshScreenPlane) == 0x0009C0, "Member 'ATheaterCamera_Blueprint_C::MIDMeshScreenPlane' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CloudMaskLocations) == 0x0009C8, "Member 'ATheaterCamera_Blueprint_C::CloudMaskLocations' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CloudMaskScale) == 0x0009D8, "Member 'ATheaterCamera_Blueprint_C::CloudMaskScale' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, ReadyForPings) == 0x0009DC, "Member 'ATheaterCamera_Blueprint_C::ReadyForPings' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TVPostProcess) == 0x0009E0, "Member 'ATheaterCamera_Blueprint_C::TVPostProcess' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, AllHexesArray) == 0x0009E8, "Member 'ATheaterCamera_Blueprint_C::AllHexesArray' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HexesPinged) == 0x0009F8, "Member 'ATheaterCamera_Blueprint_C::HexesPinged' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, AllHexesHavePingedOnce) == 0x000A08, "Member 'ATheaterCamera_Blueprint_C::AllHexesHavePingedOnce' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, WaitForForceFocus) == 0x000A09, "Member 'ATheaterCamera_Blueprint_C::WaitForForceFocus' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, AQuestIsPinned) == 0x000A0A, "Member 'ATheaterCamera_Blueprint_C::AQuestIsPinned' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, PinnedQuestsArray) == 0x000A10, "Member 'ATheaterCamera_Blueprint_C::PinnedQuestsArray' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, WaitForPinned) == 0x000A20, "Member 'ATheaterCamera_Blueprint_C::WaitForPinned' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HexWorldLocFromBP_Hex_PARENT) == 0x000A24, "Member 'ATheaterCamera_Blueprint_C::HexWorldLocFromBP_Hex_PARENT' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, MaxCameraDistance) == 0x000A30, "Member 'ATheaterCamera_Blueprint_C::MaxCameraDistance' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CenterOfCameraBounds) == 0x000A34, "Member 'ATheaterCamera_Blueprint_C::CenterOfCameraBounds' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HighestX_Value) == 0x000A40, "Member 'ATheaterCamera_Blueprint_C::HighestX_Value' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HighestY_Value) == 0x000A44, "Member 'ATheaterCamera_Blueprint_C::HighestY_Value' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TotalWidthOfHexPlane) == 0x000A48, "Member 'ATheaterCamera_Blueprint_C::TotalWidthOfHexPlane' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HexPlaneBufferSize) == 0x000A4C, "Member 'ATheaterCamera_Blueprint_C::HexPlaneBufferSize' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, CenterLocOfAllHexes) == 0x000A50, "Member 'ATheaterCamera_Blueprint_C::CenterLocOfAllHexes' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, AllHexesBoxExtent) == 0x000A5C, "Member 'ATheaterCamera_Blueprint_C::AllHexesBoxExtent' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, RoadMaskLocations) == 0x000A68, "Member 'ATheaterCamera_Blueprint_C::RoadMaskLocations' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, LightsBPSet) == 0x000A78, "Member 'ATheaterCamera_Blueprint_C::LightsBPSet' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, LightsBP) == 0x000A80, "Member 'ATheaterCamera_Blueprint_C::LightsBP' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, HexPlaneLayersBufferSize) == 0x000A88, "Member 'ATheaterCamera_Blueprint_C::HexPlaneLayersBufferSize' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TotalWidthOfHexPlaneLayer) == 0x000A8C, "Member 'ATheaterCamera_Blueprint_C::TotalWidthOfHexPlaneLayer' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType0_Locs) == 0x000A90, "Member 'ATheaterCamera_Blueprint_C::TileType0_Locs' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType1_Locs) == 0x000AA0, "Member 'ATheaterCamera_Blueprint_C::TileType1_Locs' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileType2_Locs) == 0x000AB0, "Member 'ATheaterCamera_Blueprint_C::TileType2_Locs' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, TileTypeMaskScale) == 0x000AC0, "Member 'ATheaterCamera_Blueprint_C::TileTypeMaskScale' has a wrong offset!");
-static_assert(offsetof(ATheaterCamera_Blueprint_C, bSuspendInput) == 0x000AC4, "Member 'ATheaterCamera_Blueprint_C::bSuspendInput' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

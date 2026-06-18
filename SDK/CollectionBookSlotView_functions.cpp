@@ -14,8 +14,7 @@
 #include "CollectionBookSlotView_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookSlotView.CollectionBookSlotView_C.ExecuteUbergraph_CollectionBookSlotView
 // ()
@@ -50,5 +49,5 @@ void UCollectionBookSlotView_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BuildWatermark.BuildWatermark_C
 // 0x0028 (0x0288 - 0x0260)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuildWatermark_C">();
+		BP_STATIC_CLASS_IMPL("BuildWatermark_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildWatermark_C")
 	}
 	static class UBuildWatermark_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuildWatermark_C>();
 	}
 };
-static_assert(alignof(UBuildWatermark_C) == 0x000008, "Wrong alignment on UBuildWatermark_C");
-static_assert(sizeof(UBuildWatermark_C) == 0x000288, "Wrong size on UBuildWatermark_C");
-static_assert(offsetof(UBuildWatermark_C, UberGraphFrame) == 0x000260, "Member 'UBuildWatermark_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Text) == 0x000268, "Member 'UBuildWatermark_C::Text' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Watermark) == 0x000270, "Member 'UBuildWatermark_C::Watermark' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

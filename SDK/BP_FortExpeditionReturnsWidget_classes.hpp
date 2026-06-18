@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C
 // 0x0048 (0x0290 - 0x0248)
@@ -47,23 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionReturnsWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionReturnsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionReturnsWidget_C")
 	}
 	static class UBP_FortExpeditionReturnsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionReturnsWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionReturnsWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionReturnsWidget_C");
-static_assert(sizeof(UBP_FortExpeditionReturnsWidget_C) == 0x000290, "Wrong size on UBP_FortExpeditionReturnsWidget_C");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, UberGraphFrame) == 0x000248, "Member 'UBP_FortExpeditionReturnsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, BP_FortMaterialProgressBar) == 0x000250, "Member 'UBP_FortExpeditionReturnsWidget_C::BP_FortMaterialProgressBar' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, ExpeditionReturns) == 0x000258, "Member 'UBP_FortExpeditionReturnsWidget_C::ExpeditionReturns' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, ProgressPercentage) == 0x000260, "Member 'UBP_FortExpeditionReturnsWidget_C::ProgressPercentage' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, SizeBoxWidget) == 0x000268, "Member 'UBP_FortExpeditionReturnsWidget_C::SizeBoxWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, Style) == 0x000270, "Member 'UBP_FortExpeditionReturnsWidget_C::Style' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, MinWidget) == 0x000278, "Member 'UBP_FortExpeditionReturnsWidget_C::MinWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionReturnsWidget_C, OnExpeditionCompleted) == 0x000280, "Member 'UBP_FortExpeditionReturnsWidget_C::OnExpeditionCompleted' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

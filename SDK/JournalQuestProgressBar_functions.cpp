@@ -14,8 +14,7 @@
 #include "JournalQuestProgressBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function JournalQuestProgressBar.JournalQuestProgressBar_C.ExecuteUbergraph_JournalQuestProgressBar
 // (HasDefaults)
@@ -92,5 +91,5 @@ void UJournalQuestProgressBar_C::SetStylesToDefault()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

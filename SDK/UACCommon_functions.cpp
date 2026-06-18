@@ -14,8 +14,7 @@
 #include "UACCommon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function UACCommon.UACNetComponent.SendClientHello
 // (Net, NetReliable, Native, Event, Public, NetClient)
@@ -27,7 +26,12 @@ void UUACNetComponent::SendClientHello()
 	if (Func == nullptr)
 		Func = Class->GetFunction("UACNetComponent", "SendClientHello");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -35,7 +39,7 @@ void UUACNetComponent::SendClientHello()
 // (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
 // EUACPacketType                          Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<uint8>                           Packet                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<uint8>&                    Packet                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UUACNetComponent::SendPacketToClient(EUACPacketType Type, const TArray<uint8>& Packet)
 {
@@ -49,7 +53,12 @@ void UUACNetComponent::SendPacketToClient(EUACPacketType Type, const TArray<uint
 	Parms.Type = Type;
 	Parms.Packet = std::move(Packet);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -57,7 +66,7 @@ void UUACNetComponent::SendPacketToClient(EUACPacketType Type, const TArray<uint
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
 // EUACPacketType                          Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TArray<uint8>                           Packet                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TArray<uint8>&                    Packet                                                 (ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UUACNetComponent::SendPacketToServer(EUACPacketType Type, const TArray<uint8>& Packet)
 {
@@ -71,8 +80,13 @@ void UUACNetComponent::SendPacketToServer(EUACPacketType Type, const TArray<uint
 	Parms.Type = Type;
 	Parms.Packet = std::move(Packet);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

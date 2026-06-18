@@ -13,8 +13,7 @@
 #include "Announce_ZoneModifiers_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_ZoneModifiers.Announce_ZoneModifiers_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -29,5 +28,5 @@ void AAnnounce_ZoneModifiers_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

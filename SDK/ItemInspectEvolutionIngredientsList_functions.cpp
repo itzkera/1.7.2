@@ -14,14 +14,13 @@
 #include "ItemInspectEvolutionIngredientsList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C.SetIngredients
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemQuantityPair>    InIngredients                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemQuantityPair>&   InIngredients                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemInspectEvolutionIngredientsList_C::SetIngredients(class UFortItem* Item, TArray<struct FFortItemQuantityPair>& InIngredients)
 {
@@ -74,5 +73,5 @@ void UItemInspectEvolutionIngredientsList_C::SetupItemLevelRequirement(class UFo
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

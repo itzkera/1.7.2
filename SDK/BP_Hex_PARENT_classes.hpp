@@ -16,8 +16,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Hex_PARENT.BP_Hex_PARENT_C
 // 0x0128 (0x0728 - 0x0600)
@@ -125,71 +124,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Hex_PARENT_C">();
+		BP_STATIC_CLASS_IMPL("BP_Hex_PARENT_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Hex_PARENT_C")
 	}
 	static class ABP_Hex_PARENT_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Hex_PARENT_C>();
 	}
 };
-static_assert(alignof(ABP_Hex_PARENT_C) == 0x000008, "Wrong alignment on ABP_Hex_PARENT_C");
-static_assert(sizeof(ABP_Hex_PARENT_C) == 0x000728, "Wrong size on ABP_Hex_PARENT_C");
-static_assert(offsetof(ABP_Hex_PARENT_C, UberGraphFrame) == 0x000600, "Member 'ABP_Hex_PARENT_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, StormZoneIndicator) == 0x000608, "Member 'ABP_Hex_PARENT_C::StormZoneIndicator' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, P_StormAffected) == 0x000610, "Member 'ABP_Hex_PARENT_C::P_StormAffected' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, StormBillboard) == 0x000618, "Member 'ABP_Hex_PARENT_C::StormBillboard' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Billboard) == 0x000620, "Member 'ABP_Hex_PARENT_C::Billboard' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, P_CloudTwister_RandomLightning_01) == 0x000628, "Member 'ABP_Hex_PARENT_C::P_CloudTwister_RandomLightning_01' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, PinnedQuestIcon) == 0x000630, "Member 'ABP_Hex_PARENT_C::PinnedQuestIcon' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MissionIconMesh) == 0x000638, "Member 'ABP_Hex_PARENT_C::MissionIconMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MouseoverMesh) == 0x000640, "Member 'ABP_Hex_PARENT_C::MouseoverMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, SelectedIndicatorMesh) == 0x000648, "Member 'ABP_Hex_PARENT_C::SelectedIndicatorMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Widget) == 0x000650, "Member 'ABP_Hex_PARENT_C::Widget' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, HexTileSound) == 0x000658, "Member 'ABP_Hex_PARENT_C::HexTileSound' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Timeline_12_NewTrack_2_9A9B376A4CE242AE90C66285F93293B7) == 0x000660, "Member 'ABP_Hex_PARENT_C::Timeline_12_NewTrack_2_9A9B376A4CE242AE90C66285F93293B7' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Timeline_12__Direction_9A9B376A4CE242AE90C66285F93293B7) == 0x000664, "Member 'ABP_Hex_PARENT_C::Timeline_12__Direction_9A9B376A4CE242AE90C66285F93293B7' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Timeline_12) == 0x000668, "Member 'ABP_Hex_PARENT_C::Timeline_12' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Timeline_11_NewTrack_0_ABB0E704455E70C66E9A21979F9D10BE) == 0x000670, "Member 'ABP_Hex_PARENT_C::Timeline_11_NewTrack_0_ABB0E704455E70C66E9A21979F9D10BE' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Timeline_11__Direction_ABB0E704455E70C66E9A21979F9D10BE) == 0x000674, "Member 'ABP_Hex_PARENT_C::Timeline_11__Direction_ABB0E704455E70C66E9A21979F9D10BE' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Timeline_11) == 0x000678, "Member 'ABP_Hex_PARENT_C::Timeline_11' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, HexAudioComponent) == 0x000680, "Member 'ABP_Hex_PARENT_C::HexAudioComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, HexMapSound) == 0x000688, "Member 'ABP_Hex_PARENT_C::HexMapSound' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, StormChance) == 0x000690, "Member 'ABP_Hex_PARENT_C::StormChance' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, UseHexNeighborTextureBlending) == 0x000694, "Member 'ABP_Hex_PARENT_C::UseHexNeighborTextureBlending' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, DoesTileHaveRoads) == 0x000695, "Member 'ABP_Hex_PARENT_C::DoesTileHaveRoads' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, IsFirstOutpost) == 0x000696, "Member 'ABP_Hex_PARENT_C::IsFirstOutpost' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, IsOutpost) == 0x000697, "Member 'ABP_Hex_PARENT_C::IsOutpost' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, IsQuickplayMission) == 0x000698, "Member 'ABP_Hex_PARENT_C::IsQuickplayMission' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, RandomIndex) == 0x00069C, "Member 'ABP_Hex_PARENT_C::RandomIndex' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, HexDecoMesh) == 0x0006A0, "Member 'ABP_Hex_PARENT_C::HexDecoMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Mouseover) == 0x0006A8, "Member 'ABP_Hex_PARENT_C::Mouseover' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MissionSelected) == 0x0006A9, "Member 'ABP_Hex_PARENT_C::MissionSelected' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TileIsPlayable) == 0x0006AA, "Member 'ABP_Hex_PARENT_C::TileIsPlayable' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TileIsLocked) == 0x0006AB, "Member 'ABP_Hex_PARENT_C::TileIsLocked' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TileIsHidden) == 0x0006AC, "Member 'ABP_Hex_PARENT_C::TileIsHidden' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TileIsVaildMission) == 0x0006AD, "Member 'ABP_Hex_PARENT_C::TileIsVaildMission' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MIDMissionIcon) == 0x0006B0, "Member 'ABP_Hex_PARENT_C::MIDMissionIcon' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MID_Selected) == 0x0006B8, "Member 'ABP_Hex_PARENT_C::MID_Selected' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, Hex_Deco_Meshes) == 0x0006C0, "Member 'ABP_Hex_PARENT_C::Hex_Deco_Meshes' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MID_Mouseover) == 0x0006D0, "Member 'ABP_Hex_PARENT_C::MID_Mouseover' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, RenderHexWithClouds) == 0x0006D8, "Member 'ABP_Hex_PARENT_C::RenderHexWithClouds' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, MIDMissionPinnedIcon) == 0x0006E0, "Member 'ABP_Hex_PARENT_C::MIDMissionPinnedIcon' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, DifficultyColor) == 0x0006E8, "Member 'ABP_Hex_PARENT_C::DifficultyColor' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, PinnedQuest) == 0x0006F8, "Member 'ABP_Hex_PARENT_C::PinnedQuest' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TheaterCamera) == 0x000700, "Member 'ABP_Hex_PARENT_C::TheaterCamera' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, CameraIsMissionControl) == 0x000708, "Member 'ABP_Hex_PARENT_C::CameraIsMissionControl' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, IsTutorial) == 0x000709, "Member 'ABP_Hex_PARENT_C::IsTutorial' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TimesUpdated) == 0x00070C, "Member 'ABP_Hex_PARENT_C::TimesUpdated' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TileIsBeingInitialized) == 0x000710, "Member 'ABP_Hex_PARENT_C::TileIsBeingInitialized' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, PauseUpdates) == 0x000711, "Member 'ABP_Hex_PARENT_C::PauseUpdates' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, PinnedMissionExists) == 0x000712, "Member 'ABP_Hex_PARENT_C::PinnedMissionExists' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, OppositePinnedQuest) == 0x000713, "Member 'ABP_Hex_PARENT_C::OppositePinnedQuest' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, OppositePinnedQuestOpacity) == 0x000714, "Member 'ABP_Hex_PARENT_C::OppositePinnedQuestOpacity' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, UseLightning) == 0x000718, "Member 'ABP_Hex_PARENT_C::UseLightning' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, IsMainMission) == 0x000719, "Member 'ABP_Hex_PARENT_C::IsMainMission' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, IsBlockParty) == 0x00071A, "Member 'ABP_Hex_PARENT_C::IsBlockParty' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, TileTypeNumber) == 0x00071C, "Member 'ABP_Hex_PARENT_C::TileTypeNumber' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_PARENT_C, StormModLightningStrength) == 0x000720, "Member 'ABP_Hex_PARENT_C::StormModLightningStrength' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -10,15 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_classes.hpp"
-#include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ScoreBarsWidget.ScoreBarsWidget_C
 // 0x0B08 (0x0D68 - 0x0260)
@@ -36,9 +35,9 @@ public:
 	class UCollectionMultiProgressBar_C*          UtilityMultiProgressBar;                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScoreMessageNumber_C*                  UtilityScoreMessageNumber;                         // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class AFortMission*                           TrackedMission;                                    // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FCollectionMissionBadgeDisplayInfo> CombatBadgeInfos;                                  // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FCollectionMissionBadgeDisplayInfo> BuildingBadgeInfos;                                // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TArray<struct FCollectionMissionBadgeDisplayInfo> UtilityBadgeInfos;                                 // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FCollectionMissionBadgeDisplayInfo> CombatBadgeInfos;                              // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FCollectionMissionBadgeDisplayInfo> BuildingBadgeInfos;                            // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FCollectionMissionBadgeDisplayInfo> UtilityBadgeInfos;                             // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	int32                                         CurrentCombatScore;                                // 0x02E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentBuildingScore;                              // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentUtilityScore;                               // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,48 +84,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ScoreBarsWidget_C">();
+		BP_STATIC_CLASS_IMPL("ScoreBarsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreBarsWidget_C")
 	}
 	static class UScoreBarsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreBarsWidget_C>();
 	}
 };
-static_assert(alignof(UScoreBarsWidget_C) == 0x000008, "Wrong alignment on UScoreBarsWidget_C");
-static_assert(sizeof(UScoreBarsWidget_C) == 0x000D68, "Wrong size on UScoreBarsWidget_C");
-static_assert(offsetof(UScoreBarsWidget_C, UberGraphFrame) == 0x000260, "Member 'UScoreBarsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BuildingMultiProgressBar) == 0x000268, "Member 'UScoreBarsWidget_C::BuildingMultiProgressBar' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BuildingScoreMessageNumber) == 0x000270, "Member 'UScoreBarsWidget_C::BuildingScoreMessageNumber' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CombatMultiProgressBar) == 0x000278, "Member 'UScoreBarsWidget_C::CombatMultiProgressBar' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CombatScoreMessageNumber) == 0x000280, "Member 'UScoreBarsWidget_C::CombatScoreMessageNumber' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, ScoreBarElement) == 0x000288, "Member 'UScoreBarsWidget_C::ScoreBarElement' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, ScoreMessageBox) == 0x000290, "Member 'UScoreBarsWidget_C::ScoreMessageBox' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, ScoreNumberPaddingBox) == 0x000298, "Member 'UScoreBarsWidget_C::ScoreNumberPaddingBox' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, UtilityMultiProgressBar) == 0x0002A0, "Member 'UScoreBarsWidget_C::UtilityMultiProgressBar' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, UtilityScoreMessageNumber) == 0x0002A8, "Member 'UScoreBarsWidget_C::UtilityScoreMessageNumber' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, TrackedMission) == 0x0002B0, "Member 'UScoreBarsWidget_C::TrackedMission' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CombatBadgeInfos) == 0x0002B8, "Member 'UScoreBarsWidget_C::CombatBadgeInfos' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BuildingBadgeInfos) == 0x0002C8, "Member 'UScoreBarsWidget_C::BuildingBadgeInfos' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, UtilityBadgeInfos) == 0x0002D8, "Member 'UScoreBarsWidget_C::UtilityBadgeInfos' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CurrentCombatScore) == 0x0002E8, "Member 'UScoreBarsWidget_C::CurrentCombatScore' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CurrentBuildingScore) == 0x0002EC, "Member 'UScoreBarsWidget_C::CurrentBuildingScore' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CurrentUtilityScore) == 0x0002F0, "Member 'UScoreBarsWidget_C::CurrentUtilityScore' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, bShowTopBarIcons) == 0x0002F4, "Member 'UScoreBarsWidget_C::bShowTopBarIcons' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, bShowSideBarIcons) == 0x0002F5, "Member 'UScoreBarsWidget_C::bShowSideBarIcons' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, bOnlyShowIconsForTopCategory) == 0x0002F6, "Member 'UScoreBarsWidget_C::bOnlyShowIconsForTopCategory' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, bOnlyShowBarsWithCountInRange) == 0x0002F7, "Member 'UScoreBarsWidget_C::bOnlyShowBarsWithCountInRange' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CombatCategoryIcon) == 0x0002F8, "Member 'UScoreBarsWidget_C::CombatCategoryIcon' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BuildingCategoryIcon) == 0x000658, "Member 'UScoreBarsWidget_C::BuildingCategoryIcon' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, UtilityCategoryIcon) == 0x0009B8, "Member 'UScoreBarsWidget_C::UtilityCategoryIcon' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CategoryIconSize) == 0x000D18, "Member 'UScoreBarsWidget_C::CategoryIconSize' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BadgeIconSize) == 0x000D19, "Member 'UScoreBarsWidget_C::BadgeIconSize' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, CategoriesMargin) == 0x000D1C, "Member 'UScoreBarsWidget_C::CategoriesMargin' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BarsMargin) == 0x000D2C, "Member 'UScoreBarsWidget_C::BarsMargin' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BarsIconMargin) == 0x000D3C, "Member 'UScoreBarsWidget_C::BarsIconMargin' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, MessageManager) == 0x000D50, "Member 'UScoreBarsWidget_C::MessageManager' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, MaxScoreMessagesDisplayed) == 0x000D58, "Member 'UScoreBarsWidget_C::MaxScoreMessagesDisplayed' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, bDisplayScoreStream) == 0x000D5C, "Member 'UScoreBarsWidget_C::bDisplayScoreStream' has a wrong offset!");
-static_assert(offsetof(UScoreBarsWidget_C, BarHeightOverride) == 0x000D60, "Member 'UScoreBarsWidget_C::BarHeightOverride' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

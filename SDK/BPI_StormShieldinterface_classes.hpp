@@ -13,12 +13,11 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BPI_StormShieldinterface.BPI_StormShieldInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IBPI_StormShieldInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IBPI_StormShieldInterface_C final
 {
 public:
 	void CanLeaveOutpost(bool* AllowedToLeave);
@@ -27,15 +26,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_StormShieldInterface_C">();
+		BP_STATIC_CLASS_IMPL("BPI_StormShieldInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_StormShieldInterface_C")
 	}
 	static class IBPI_StormShieldInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IBPI_StormShieldInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IBPI_StormShieldInterface_C) == 0x000008, "Wrong alignment on IBPI_StormShieldInterface_C");
-static_assert(sizeof(IBPI_StormShieldInterface_C) == 0x000028, "Wrong size on IBPI_StormShieldInterface_C");
 
-}
-
+SDK_NAMESPACE_END

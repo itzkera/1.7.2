@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HelpWidget.HelpWidget_C
 // 0x0118 (0x04F8 - 0x03E0)
@@ -58,40 +57,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HelpWidget_C">();
+		BP_STATIC_CLASS_IMPL("HelpWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HelpWidget_C")
 	}
 	static class UHelpWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHelpWidget_C>();
 	}
 };
-static_assert(alignof(UHelpWidget_C) == 0x000008, "Wrong alignment on UHelpWidget_C");
-static_assert(sizeof(UHelpWidget_C) == 0x0004F8, "Wrong size on UHelpWidget_C");
-static_assert(offsetof(UHelpWidget_C, UberGraphFrame) == 0x0003E0, "Member 'UHelpWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Arrow1Image) == 0x0003E8, "Member 'UHelpWidget_C::Arrow1Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Arrow2Image) == 0x0003F0, "Member 'UHelpWidget_C::Arrow2Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, ButtonClose) == 0x0003F8, "Member 'UHelpWidget_C::ButtonClose' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, DescriptionText) == 0x000400, "Member 'UHelpWidget_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Lightbox) == 0x000408, "Member 'UHelpWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Picture1Image) == 0x000410, "Member 'UHelpWidget_C::Picture1Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Picture2Image) == 0x000418, "Member 'UHelpWidget_C::Picture2Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Picture3Image) == 0x000420, "Member 'UHelpWidget_C::Picture3Image' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TextStep1) == 0x000428, "Member 'UHelpWidget_C::TextStep1' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TextStep2) == 0x000430, "Member 'UHelpWidget_C::TextStep2' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TextStep3) == 0x000438, "Member 'UHelpWidget_C::TextStep3' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, TitleText) == 0x000440, "Member 'UHelpWidget_C::TitleText' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, VboxStep1) == 0x000448, "Member 'UHelpWidget_C::VboxStep1' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, VboxStep2) == 0x000450, "Member 'UHelpWidget_C::VboxStep2' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, VboxStep3) == 0x000458, "Member 'UHelpWidget_C::VboxStep3' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Title) == 0x000460, "Member 'UHelpWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Description) == 0x000478, "Member 'UHelpWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step1_Text) == 0x000490, "Member 'UHelpWidget_C::Step1_Text' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step2_Text) == 0x0004A8, "Member 'UHelpWidget_C::Step2_Text' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step3_Text) == 0x0004C0, "Member 'UHelpWidget_C::Step3_Text' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step1_Picture) == 0x0004D8, "Member 'UHelpWidget_C::Step1_Picture' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step2_Picture) == 0x0004E0, "Member 'UHelpWidget_C::Step2_Picture' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, Step3_Picture) == 0x0004E8, "Member 'UHelpWidget_C::Step3_Picture' has a wrong offset!");
-static_assert(offsetof(UHelpWidget_C, NumOfSteps) == 0x0004F0, "Member 'UHelpWidget_C::NumOfSteps' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

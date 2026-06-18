@@ -14,8 +14,7 @@
 #include "RewardsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RewardsWidget.RewardsWidget_C.ExecuteUbergraph_RewardsWidget
 // (HasDefaults)
@@ -90,7 +89,7 @@ void URewardsWidget_C::BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_Fo
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void URewardsWidget_C::HandleClientEvent_ConversationFinished(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -126,7 +125,7 @@ void URewardsWidget_C::Construct()
 // Function RewardsWidget.RewardsWidget_C.SetQuest
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class UFortQuestItem*                   Quest                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortQuestItem*             Quest                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsWidget_C::SetQuest(const class UFortQuestItem* Quest)
 {
@@ -220,7 +219,7 @@ void URewardsWidget_C::PopulateFromQuest(class UFortQuestItem* Quest)
 // Function RewardsWidget.RewardsWidget_C.PopulateQuestUI
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortQuestItem*                   Quest                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortQuestItem*             Quest                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    RewardSelect                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URewardsWidget_C::PopulateQuestUI(const class UFortQuestItem* Quest, bool RewardSelect)
@@ -243,7 +242,7 @@ void URewardsWidget_C::PopulateQuestUI(const class UFortQuestItem* Quest, bool R
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortQuestItem*                   Quest                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void URewardsWidget_C::PopulateFromQuestWithRewards(class UFortQuestItem* Quest, TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -286,7 +285,7 @@ void URewardsWidget_C::SetupUI(ERewardType RewardType)
 // Function RewardsWidget.RewardsWidget_C.PopulateMissionUI
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortLastMissionInfo             Mission                                                (Parm)
+// const struct FFortLastMissionInfo&      Mission                                                (Parm)
 
 void URewardsWidget_C::PopulateMissionUI(const struct FFortLastMissionInfo& Mission)
 {
@@ -306,8 +305,8 @@ void URewardsWidget_C::PopulateMissionUI(const struct FFortLastMissionInfo& Miss
 // Function RewardsWidget.RewardsWidget_C.PopulateFromMissionWithRewards
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortLastMissionInfo             LastMissionInfo                                        (Parm)
-// TArray<struct FFortItemInstanceQuantityPair>MissionRewards                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const struct FFortLastMissionInfo&      LastMissionInfo                                        (Parm)
+// TArray<struct FFortItemInstanceQuantityPair>&MissionRewards                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void URewardsWidget_C::PopulateFromMissionWithRewards(const struct FFortLastMissionInfo& LastMissionInfo, TArray<struct FFortItemInstanceQuantityPair>& MissionRewards)
 {
@@ -330,8 +329,8 @@ void URewardsWidget_C::PopulateFromMissionWithRewards(const struct FFortLastMiss
 // Function RewardsWidget.RewardsWidget_C.SelectText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             InText                                                 (ConstParm, Parm, OutParm, ReferenceParm)
-// class FText                             Default                                                (Parm)
+// const class FText&                      InText                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Default                                                (Parm)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 class FText URewardsWidget_C::SelectText(const class FText& InText, const class FText& Default)
@@ -355,7 +354,7 @@ class FText URewardsWidget_C::SelectText(const class FText& InText, const class 
 // Function RewardsWidget.RewardsWidget_C.GetChestImage
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       MissionIcon                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D**                      MissionIcon                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsWidget_C::GetChestImage(class UTexture2D** MissionIcon)
 {
@@ -430,7 +429,7 @@ void URewardsWidget_C::SelectRewards(int32 RewardIndex)
 // Function RewardsWidget.RewardsWidget_C.CreateRewardChoice
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   RewardIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsRewardSelection                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -504,7 +503,7 @@ void URewardsWidget_C::TerminateQuestConverstation()
 // Function RewardsWidget.RewardsWidget_C.GetClosedChestImage
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       ChestImage                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D**                      ChestImage                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsWidget_C::GetClosedChestImage(class UTexture2D** ChestImage)
 {
@@ -525,8 +524,8 @@ void URewardsWidget_C::GetClosedChestImage(class UTexture2D** ChestImage)
 // Function RewardsWidget.RewardsWidget_C.On_ClosedChest_MouseButtonDown_1
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply URewardsWidget_C::On_ClosedChest_MouseButtonDown_1(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -550,8 +549,8 @@ struct FEventReply URewardsWidget_C::On_ClosedChest_MouseButtonDown_1(const stru
 // Function RewardsWidget.RewardsWidget_C.OnHandleAction
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FEventReply*                     Result                                                 (Parm, OutParm)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URewardsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
@@ -571,5 +570,5 @@ void URewardsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThr
 		*bPassThrough = Parms.bPassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

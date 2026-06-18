@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LoginBackground.LoginBackground_C
 // 0x0008 (0x0240 - 0x0238)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginBackground_C">();
+		BP_STATIC_CLASS_IMPL("LoginBackground_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginBackground_C")
 	}
 	static class ULoginBackground_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginBackground_C>();
 	}
 };
-static_assert(alignof(ULoginBackground_C) == 0x000008, "Wrong alignment on ULoginBackground_C");
-static_assert(sizeof(ULoginBackground_C) == 0x000240, "Wrong size on ULoginBackground_C");
-static_assert(offsetof(ULoginBackground_C, Content) == 0x000238, "Member 'ULoginBackground_C::Content' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

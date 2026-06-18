@@ -13,8 +13,7 @@
 #include "B_Post_Explosion_Generic_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Post_Explosion_Generic.B_Post_Explosion_Generic_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -29,5 +28,5 @@ void AB_Post_Explosion_Generic_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

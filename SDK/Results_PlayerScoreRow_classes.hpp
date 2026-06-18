@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_PlayerScoreRow.Results_PlayerScoreRow_C
 // 0x0088 (0x02C0 - 0x0238)
@@ -53,30 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_PlayerScoreRow_C">();
+		BP_STATIC_CLASS_IMPL("Results_PlayerScoreRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_PlayerScoreRow_C")
 	}
 	static class UResults_PlayerScoreRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_PlayerScoreRow_C>();
 	}
 };
-static_assert(alignof(UResults_PlayerScoreRow_C) == 0x000008, "Wrong alignment on UResults_PlayerScoreRow_C");
-static_assert(sizeof(UResults_PlayerScoreRow_C) == 0x0002C0, "Wrong size on UResults_PlayerScoreRow_C");
-static_assert(offsetof(UResults_PlayerScoreRow_C, UberGraphFrame) == 0x000238, "Member 'UResults_PlayerScoreRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, BasicGradientFill) == 0x000240, "Member 'UResults_PlayerScoreRow_C::BasicGradientFill' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, ImageCapLeft) == 0x000248, "Member 'UResults_PlayerScoreRow_C::ImageCapLeft' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, ImageCapRight) == 0x000250, "Member 'UResults_PlayerScoreRow_C::ImageCapRight' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, ImageCenter) == 0x000258, "Member 'UResults_PlayerScoreRow_C::ImageCenter' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextHomeBasePower) == 0x000260, "Member 'UResults_PlayerScoreRow_C::TextHomeBasePower' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextPlayerName) == 0x000268, "Member 'UResults_PlayerScoreRow_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextScoreBuilding) == 0x000270, "Member 'UResults_PlayerScoreRow_C::TextScoreBuilding' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextScoreCombat) == 0x000278, "Member 'UResults_PlayerScoreRow_C::TextScoreCombat' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextScoreMission) == 0x000280, "Member 'UResults_PlayerScoreRow_C::TextScoreMission' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextScoreTotal) == 0x000288, "Member 'UResults_PlayerScoreRow_C::TextScoreTotal' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, TextScoreUtility) == 0x000290, "Member 'UResults_PlayerScoreRow_C::TextScoreUtility' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, PlayerNameColor) == 0x000298, "Member 'UResults_PlayerScoreRow_C::PlayerNameColor' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, LocalPlayerNameColor) == 0x0002A8, "Member 'UResults_PlayerScoreRow_C::LocalPlayerNameColor' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreRow_C, bIsLocalPlayer) == 0x0002B8, "Member 'UResults_PlayerScoreRow_C::bIsLocalPlayer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

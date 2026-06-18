@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Car_Copper.Car_Copper_C
 // 0x01D0 (0x11A0 - 0x0FD0)
@@ -144,85 +143,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Car_Copper_C">();
+		BP_STATIC_CLASS_IMPL("Car_Copper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Car_Copper_C")
 	}
 	static class ACar_Copper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACar_Copper_C>();
 	}
 };
-static_assert(alignof(ACar_Copper_C) == 0x000010, "Wrong alignment on ACar_Copper_C");
-static_assert(sizeof(ACar_Copper_C) == 0x0011A0, "Wrong size on ACar_Copper_C");
-static_assert(offsetof(ACar_Copper_C, UberGraphFrame) == 0x000FD0, "Member 'ACar_Copper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000FD8, "Member 'ACar_Copper_C::Timeline_2_SirenLightMultiplier_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9) == 0x000FDC, "Member 'ACar_Copper_C::Timeline_2__Direction_0FF34BB7440D69B151AEB98B69DAACB9' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_2) == 0x000FE0, "Member 'ACar_Copper_C::Timeline_2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12) == 0x000FE8, "Member 'ACar_Copper_C::BounceCar_Vertical_Bounce_Component_05733C554001D77C015F47B548F45A12' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, BounceCar__Direction_05733C554001D77C015F47B548F45A12) == 0x000FEC, "Member 'ACar_Copper_C::BounceCar__Direction_05733C554001D77C015F47B548F45A12' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, BounceCar) == 0x000FF0, "Member 'ACar_Copper_C::BounceCar' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B) == 0x000FF8, "Member 'ACar_Copper_C::Timeline_0_AlarmLightMultiplier_0249B75D481A6B889F74E6BC52A3E21B' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B) == 0x000FFC, "Member 'ACar_Copper_C::Timeline_0__Direction_0249B75D481A6B889F74E6BC52A3E21B' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Timeline_0) == 0x001000, "Member 'ACar_Copper_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, OverallAlarmCycleFinished) == 0x001008, "Member 'ACar_Copper_C::OverallAlarmCycleFinished' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, InitialEmissiveMultiplier) == 0x00100C, "Member 'ACar_Copper_C::InitialEmissiveMultiplier' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, InitialEmissiveMultiplier2) == 0x00101C, "Member 'ACar_Copper_C::InitialEmissiveMultiplier2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, AlarmLightCounter) == 0x00102C, "Member 'ACar_Copper_C::AlarmLightCounter' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SoundIsRetriggerable) == 0x001030, "Member 'ACar_Copper_C::SoundIsRetriggerable' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CurrentFlashAnimationCycleFinished) == 0x001031, "Member 'ACar_Copper_C::CurrentFlashAnimationCycleFinished' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, NumberOfTimesTheLightsFlashWhenHit) == 0x001034, "Member 'ACar_Copper_C::NumberOfTimesTheLightsFlashWhenHit' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SirenLightEmissiveMultiplier) == 0x001038, "Member 'ACar_Copper_C::SirenLightEmissiveMultiplier' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SirenLightOn) == 0x00103C, "Member 'ACar_Copper_C::SirenLightOn' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Emissive_Multiplier_2) == 0x001040, "Member 'ACar_Copper_C::Emissive_Multiplier_2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Emissive_Multiplier) == 0x001048, "Member 'ACar_Copper_C::Emissive_Multiplier' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Sound___HitAlarm) == 0x001050, "Member 'ACar_Copper_C::Sound___HitAlarm' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Use_Emissive_2) == 0x001058, "Member 'ACar_Copper_C::Use_Emissive_2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Sound___Jump_on_Car) == 0x001060, "Member 'ACar_Copper_C::Sound___Jump_on_Car' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, SuspensionMovementAmount) == 0x001068, "Member 'ACar_Copper_C::SuspensionMovementAmount' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, ParticleEffectHas_NOT_AlreadyBeenTriggered) == 0x00106C, "Member 'ACar_Copper_C::ParticleEffectHas_NOT_AlreadyBeenTriggered' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, EngineSteamParticleEffect) == 0x001070, "Member 'ACar_Copper_C::EngineSteamParticleEffect' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Sound___Hit_AutoBody) == 0x001078, "Member 'ACar_Copper_C::Sound___Hit_AutoBody' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, canMakeJumpingNoiseAgain) == 0x001080, "Member 'ACar_Copper_C::canMakeJumpingNoiseAgain' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CarAlarmIsCurrentlyMakingNoise) == 0x001081, "Member 'ACar_Copper_C::CarAlarmIsCurrentlyMakingNoise' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CarAlarmEnabled) == 0x001082, "Member 'ACar_Copper_C::CarAlarmEnabled' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, RandomlyDisableSomeCarAlarms) == 0x001083, "Member 'ACar_Copper_C::RandomlyDisableSomeCarAlarms' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, PercentageChanceOfCarAlarmsBeingDisabled) == 0x001084, "Member 'ACar_Copper_C::PercentageChanceOfCarAlarmsBeingDisabled' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight1) == 0x001088, "Member 'ACar_Copper_C::HLight1' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight1SocketLocation) == 0x001090, "Member 'ACar_Copper_C::HLight1SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight2SocketLocation) == 0x00109C, "Member 'ACar_Copper_C::HLight2SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, AnimatingMIDArray) == 0x0010A8, "Member 'ACar_Copper_C::AnimatingMIDArray' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, AudibleAlarmSound) == 0x0010B8, "Member 'ACar_Copper_C::AudibleAlarmSound' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, UseCarBounce) == 0x0010C0, "Member 'ACar_Copper_C::UseCarBounce' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, UseCarAlarm) == 0x0010C1, "Member 'ACar_Copper_C::UseCarAlarm' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Headlight_Emissive_Brightness) == 0x0010C4, "Member 'ACar_Copper_C::Headlight_Emissive_Brightness' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, IsCarAlarmEnabledInitialized) == 0x0010C8, "Member 'ACar_Copper_C::IsCarAlarmEnabledInitialized' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, DebugWind) == 0x0010C9, "Member 'ACar_Copper_C::DebugWind' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, OriginalMaterials) == 0x0010D0, "Member 'ACar_Copper_C::OriginalMaterials' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, IntenseWindMaterialsForPreview) == 0x0010E0, "Member 'ACar_Copper_C::IntenseWindMaterialsForPreview' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Debug_TempMaterial) == 0x0010F0, "Member 'ACar_Copper_C::Debug_TempMaterial' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Debug_Wind_Intensity) == 0x0010F8, "Member 'ACar_Copper_C::Debug_Wind_Intensity' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Wind_Intensity_Debug_Mesh) == 0x001100, "Member 'ACar_Copper_C::Wind_Intensity_Debug_Mesh' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, CanDropOilDecal) == 0x001108, "Member 'ACar_Copper_C::CanDropOilDecal' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Wind_Yaw_Rotation) == 0x00110C, "Member 'ACar_Copper_C::Wind_Yaw_Rotation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Taillight1) == 0x001110, "Member 'ACar_Copper_C::Taillight1' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Taillight2) == 0x001118, "Member 'ACar_Copper_C::Taillight2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TailLightBrightness) == 0x001120, "Member 'ACar_Copper_C::TailLightBrightness' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TailLightsExist) == 0x001124, "Member 'ACar_Copper_C::TailLightsExist' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HeadLightsExist) == 0x001125, "Member 'ACar_Copper_C::HeadLightsExist' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HLight2) == 0x001128, "Member 'ACar_Copper_C::HLight2' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, HeadLightLightBrightness) == 0x001130, "Member 'ACar_Copper_C::HeadLightLightBrightness' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TLight1SocketLocation) == 0x001134, "Member 'ACar_Copper_C::TLight1SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TLight2SocketLocation) == 0x001140, "Member 'ACar_Copper_C::TLight2SocketLocation' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Bounce_Offset) == 0x00114C, "Member 'ACar_Copper_C::Bounce_Offset' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, hlight2___impact_bounce_light_location) == 0x001158, "Member 'ACar_Copper_C::hlight2___impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, tlight2___impact_bounce_light_location) == 0x001164, "Member 'ACar_Copper_C::tlight2___impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Car_Currently_Bouncing_From_Jump) == 0x001170, "Member 'ACar_Copper_C::Car_Currently_Bouncing_From_Jump' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, hlight1___impact_bounce_light_location) == 0x001174, "Member 'ACar_Copper_C::hlight1___impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, tlight1___impact_bounce_light_location) == 0x001180, "Member 'ACar_Copper_C::tlight1___impact_bounce_light_location' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Randomly_start_with_some_cars_lights_on) == 0x00118C, "Member 'ACar_Copper_C::Randomly_start_with_some_cars_lights_on' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Percentage_chance_of_lights_being_left_off) == 0x001190, "Member 'ACar_Copper_C::Percentage_chance_of_lights_being_left_off' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, Final_Random_Light_Intensity_Variance) == 0x001194, "Member 'ACar_Copper_C::Final_Random_Light_Intensity_Variance' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, This_Car_s_Lights_Have_Been_Randomly_Enabled) == 0x001198, "Member 'ACar_Copper_C::This_Car_s_Lights_Have_Been_Randomly_Enabled' has a wrong offset!");
-static_assert(offsetof(ACar_Copper_C, TurnHeadLightsOn) == 0x001199, "Member 'ACar_Copper_C::TurnHeadLightsOn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

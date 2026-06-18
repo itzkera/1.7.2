@@ -14,8 +14,7 @@
 #include "AthenaGamePhaseChangeWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.ExecuteUbergraph_AthenaGamePhaseChangeWidget
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UAthenaGamePhaseChangeWidget_C::GamePhaseStepChanged(EAthenaGamePhaseStep S
 // Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWidgetAnimation*                 Animation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaGamePhaseChangeWidget_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
 {
@@ -81,8 +80,8 @@ void UAthenaGamePhaseChangeWidget_C::OnAnimationFinished(const class UWidgetAnim
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // EAthenaGamePhaseStep                    Step                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             MESSAGE_0                                              (ConstParm, Parm, OutParm, ReferenceParm)
-// class FText                             TimeText_0                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      MESSAGE_0                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      TimeText_0                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaGamePhaseChangeWidget_C::UpdateMessaging(EAthenaGamePhaseStep Step, const class FText& MESSAGE_0, const class FText& TimeText_0)
 {
@@ -120,5 +119,5 @@ void UAthenaGamePhaseChangeWidget_C::PlayGamePhaseAlertSound(EAthenaGamePhaseSte
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

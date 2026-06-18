@@ -14,8 +14,7 @@
 #include "AthenaLeaderboardTab_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.ExecuteUbergraph_AthenaLeaderboardTab
 // (HasDefaults)
@@ -82,7 +81,7 @@ void UAthenaLeaderboardTab_C::OnDeactivated()
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateListHeader
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FAthenaPlaylistLeaderboardData   PlaylistTabData                                        (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FAthenaPlaylistLeaderboardData&PlaylistTabData                                        (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaLeaderboardTab_C::OnUpdateListHeader(const struct FAthenaPlaylistLeaderboardData& PlaylistTabData)
 {
@@ -104,7 +103,7 @@ void UAthenaLeaderboardTab_C::OnUpdateListHeader(const struct FAthenaPlaylistLea
 // Parameters:
 // bool                                    bWasSuccessful                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortLeaderboardRowProxyInstance* LocalUserRow_0                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             ErrorStr                                               (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      ErrorStr                                               (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool bWasSuccessful, class UFortLeaderboardRowProxyInstance* LocalUserRow_0, const class FText& ErrorStr)
 {
@@ -127,7 +126,7 @@ void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool bWasSuccessful, cla
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // class UCommonButton*                    Button                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAthenaPlaylistLeaderboardData   PlaylistTabData                                        (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FAthenaPlaylistLeaderboardData&PlaylistTabData                                        (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaLeaderboardTab_C::OnUpdateTabButtonText(class UCommonButton* Button, const struct FAthenaPlaylistLeaderboardData& PlaylistTabData)
 {
@@ -282,7 +281,7 @@ void UAthenaLeaderboardTab_C::OnActivated()
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnPlaylistChangeGamepad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommitted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommitted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLeaderboardTab_C::OnPlaylistChangeGamepad(bool* bCommitted)
 {
@@ -303,7 +302,7 @@ void UAthenaLeaderboardTab_C::OnPlaylistChangeGamepad(bool* bCommitted)
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnFriendTypeChangeGamepad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommitted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommitted                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLeaderboardTab_C::OnFriendTypeChangeGamepad(bool* bCommitted)
 {
@@ -374,5 +373,5 @@ void UAthenaLeaderboardTab_C::ToggleDisabledTabVisuals(bool bShouldBeDisabled)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

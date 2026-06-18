@@ -14,8 +14,7 @@
 #include "MicIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MicIndicator.MicIndicator_C.ExecuteUbergraph_MicIndicator
 // ()
@@ -76,5 +75,5 @@ void UMicIndicator_C::OnPlayerTalkingChanged(bool bIsTalking_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

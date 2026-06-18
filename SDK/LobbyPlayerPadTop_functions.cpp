@@ -14,8 +14,7 @@
 #include "LobbyPlayerPadTop_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.ExecuteUbergraph_LobbyPlayerPadTop
 // (HasDefaults)
@@ -54,7 +53,7 @@ void ULobbyPlayerPadTop_C::OnLobbyDisconnected()
 // Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnUpdateLobbyPlayerPadTop
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 PlayerNetId                                            (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          PlayerNetId                                            (Parm, HasGetValueTypeHash)
 // bool                                    bIsReady                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULobbyPlayerPadTop_C::OnUpdateLobbyPlayerPadTop(const struct FUniqueNetIdRepl& PlayerNetId, bool bIsReady)
@@ -166,7 +165,7 @@ void ULobbyPlayerPadTop_C::Refresh()
 // Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo_0                                       (Parm)
 
 void ULobbyPlayerPadTop_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
@@ -260,7 +259,7 @@ void ULobbyPlayerPadTop_C::OnLobbyPlayerUnhovered(int32 PlayerIndex_0)
 // Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaReadyStateChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 Member_Id                                              (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// struct FUniqueNetIdRepl&                Member_Id                                              (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 // bool                                    Ready                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULobbyPlayerPadTop_C::OnAthenaReadyStateChanged(struct FUniqueNetIdRepl& Member_Id, bool Ready)
@@ -300,5 +299,5 @@ void ULobbyPlayerPadTop_C::RefreshReadyState(bool Ready)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

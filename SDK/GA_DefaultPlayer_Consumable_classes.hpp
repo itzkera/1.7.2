@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C
 // 0x0010 (0x0A50 - 0x0A40)
@@ -35,17 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DefaultPlayer_Consumable_C">();
+		BP_STATIC_CLASS_IMPL("GA_DefaultPlayer_Consumable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DefaultPlayer_Consumable_C")
 	}
 	static class UGA_DefaultPlayer_Consumable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DefaultPlayer_Consumable_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_Consumable_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Consumable_C");
-static_assert(sizeof(UGA_DefaultPlayer_Consumable_C) == 0x000A50, "Wrong size on UGA_DefaultPlayer_Consumable_C");
-static_assert(offsetof(UGA_DefaultPlayer_Consumable_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_Consumable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Consumable_C, EatMontage) == 0x000A48, "Member 'UGA_DefaultPlayer_Consumable_C::EatMontage' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

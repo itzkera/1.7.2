@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C
 // 0x0030 (0x0288 - 0x0258)
@@ -37,21 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyAlterationGroup_Widget_C">();
+		BP_STATIC_CLASS_IMPL("LegacyAlterationGroup_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyAlterationGroup_Widget_C")
 	}
 	static class ULegacyAlterationGroup_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyAlterationGroup_Widget_C>();
 	}
 };
-static_assert(alignof(ULegacyAlterationGroup_Widget_C) == 0x000008, "Wrong alignment on ULegacyAlterationGroup_Widget_C");
-static_assert(sizeof(ULegacyAlterationGroup_Widget_C) == 0x000288, "Wrong size on ULegacyAlterationGroup_Widget_C");
-static_assert(offsetof(ULegacyAlterationGroup_Widget_C, UberGraphFrame) == 0x000258, "Member 'ULegacyAlterationGroup_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyAlterationGroup_Widget_C, AlterationWidget) == 0x000260, "Member 'ULegacyAlterationGroup_Widget_C::AlterationWidget' has a wrong offset!");
-static_assert(offsetof(ULegacyAlterationGroup_Widget_C, AlterationWidget_0) == 0x000268, "Member 'ULegacyAlterationGroup_Widget_C::AlterationWidget_0' has a wrong offset!");
-static_assert(offsetof(ULegacyAlterationGroup_Widget_C, AlterationWidget_1) == 0x000270, "Member 'ULegacyAlterationGroup_Widget_C::AlterationWidget_1' has a wrong offset!");
-static_assert(offsetof(ULegacyAlterationGroup_Widget_C, VerticalBoxAlterations) == 0x000278, "Member 'ULegacyAlterationGroup_Widget_C::VerticalBoxAlterations' has a wrong offset!");
-static_assert(offsetof(ULegacyAlterationGroup_Widget_C, bTextOnly) == 0x000280, "Member 'ULegacyAlterationGroup_Widget_C::bTextOnly' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

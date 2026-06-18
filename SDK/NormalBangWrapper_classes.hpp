@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass NormalBangWrapper.NormalBangWrapper_C
 // 0x0070 (0x02C0 - 0x0250)
@@ -53,30 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NormalBangWrapper_C">();
+		BP_STATIC_CLASS_IMPL("NormalBangWrapper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NormalBangWrapper_C")
 	}
 	static class UNormalBangWrapper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNormalBangWrapper_C>();
 	}
 };
-static_assert(alignof(UNormalBangWrapper_C) == 0x000008, "Wrong alignment on UNormalBangWrapper_C");
-static_assert(sizeof(UNormalBangWrapper_C) == 0x0002C0, "Wrong size on UNormalBangWrapper_C");
-static_assert(offsetof(UNormalBangWrapper_C, UberGraphFrame) == 0x000250, "Member 'UNormalBangWrapper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, TutorialGlow) == 0x000258, "Member 'UNormalBangWrapper_C::TutorialGlow' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, BigBang) == 0x000260, "Member 'UNormalBangWrapper_C::BigBang' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, BigBangCount) == 0x000268, "Member 'UNormalBangWrapper_C::BigBangCount' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, CommonTextBlock_0) == 0x000270, "Member 'UNormalBangWrapper_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, CommonTextBlock_5) == 0x000278, "Member 'UNormalBangWrapper_C::CommonTextBlock_5' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, Content) == 0x000280, "Member 'UNormalBangWrapper_C::Content' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, CountText) == 0x000288, "Member 'UNormalBangWrapper_C::CountText' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, ModeSwitcher) == 0x000290, "Member 'UNormalBangWrapper_C::ModeSwitcher' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, NoCount) == 0x000298, "Member 'UNormalBangWrapper_C::NoCount' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, SmallBang) == 0x0002A0, "Member 'UNormalBangWrapper_C::SmallBang' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, SmallBangCount) == 0x0002A8, "Member 'UNormalBangWrapper_C::SmallBangCount' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, TutorialBorder) == 0x0002B0, "Member 'UNormalBangWrapper_C::TutorialBorder' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, UseSmallVersion) == 0x0002B8, "Member 'UNormalBangWrapper_C::UseSmallVersion' has a wrong offset!");
-static_assert(offsetof(UNormalBangWrapper_C, Count) == 0x0002BC, "Member 'UNormalBangWrapper_C::Count' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

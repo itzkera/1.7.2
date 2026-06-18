@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WM_Camera.WM_Camera_C
 // 0x00B0 (0x0970 - 0x08C0)
@@ -61,30 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WM_Camera_C">();
+		BP_STATIC_CLASS_IMPL("WM_Camera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WM_Camera_C")
 	}
 	static class AWM_Camera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWM_Camera_C>();
 	}
 };
-static_assert(alignof(AWM_Camera_C) == 0x000010, "Wrong alignment on AWM_Camera_C");
-static_assert(sizeof(AWM_Camera_C) == 0x000970, "Wrong size on AWM_Camera_C");
-static_assert(offsetof(AWM_Camera_C, UberGraphFrame) == 0x0008C0, "Member 'AWM_Camera_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, TL_CameraDeactivateAnim_OutCurve_73E7DC7546C4C2FD98109BAD51037AF1) == 0x0008C8, "Member 'AWM_Camera_C::TL_CameraDeactivateAnim_OutCurve_73E7DC7546C4C2FD98109BAD51037AF1' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, TL_CameraDeactivateAnim__Direction_73E7DC7546C4C2FD98109BAD51037AF1) == 0x0008CC, "Member 'AWM_Camera_C::TL_CameraDeactivateAnim__Direction_73E7DC7546C4C2FD98109BAD51037AF1' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, TL_CameraDeactivateAnim) == 0x0008D0, "Member 'AWM_Camera_C::TL_CameraDeactivateAnim' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, TL_CameraActivateAnim_NewTrack_4_ED6153E9442CF8BBFC62D28E1B56763B) == 0x0008D8, "Member 'AWM_Camera_C::TL_CameraActivateAnim_NewTrack_4_ED6153E9442CF8BBFC62D28E1B56763B' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, TL_CameraActivateAnim__Direction_ED6153E9442CF8BBFC62D28E1B56763B) == 0x0008DC, "Member 'AWM_Camera_C::TL_CameraActivateAnim__Direction_ED6153E9442CF8BBFC62D28E1B56763B' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, TL_CameraActivateAnim) == 0x0008E0, "Member 'AWM_Camera_C::TL_CameraActivateAnim' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, CameraNoise_Noise3_CAC0C7484A50FFB26B3B348FCDF148B0) == 0x0008E8, "Member 'AWM_Camera_C::CameraNoise_Noise3_CAC0C7484A50FFB26B3B348FCDF148B0' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, CameraNoise_Noise2_CAC0C7484A50FFB26B3B348FCDF148B0) == 0x0008EC, "Member 'AWM_Camera_C::CameraNoise_Noise2_CAC0C7484A50FFB26B3B348FCDF148B0' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, CameraNoise_Noise1_CAC0C7484A50FFB26B3B348FCDF148B0) == 0x0008F0, "Member 'AWM_Camera_C::CameraNoise_Noise1_CAC0C7484A50FFB26B3B348FCDF148B0' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, CameraNoise__Direction_CAC0C7484A50FFB26B3B348FCDF148B0) == 0x0008F4, "Member 'AWM_Camera_C::CameraNoise__Direction_CAC0C7484A50FFB26B3B348FCDF148B0' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, CameraNoise) == 0x0008F8, "Member 'AWM_Camera_C::CameraNoise' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, InitialPosition) == 0x000900, "Member 'AWM_Camera_C::InitialPosition' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, ZoomPosition) == 0x000930, "Member 'AWM_Camera_C::ZoomPosition' has a wrong offset!");
-static_assert(offsetof(AWM_Camera_C, AllPinsArray) == 0x000960, "Member 'AWM_Camera_C::AllPinsArray' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

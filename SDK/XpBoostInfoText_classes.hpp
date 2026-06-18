@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBoostInfoText.XpBoostInfoText_C
 // 0x0018 (0x0250 - 0x0238)
@@ -36,18 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBoostInfoText_C">();
+		BP_STATIC_CLASS_IMPL("XpBoostInfoText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBoostInfoText_C")
 	}
 	static class UXpBoostInfoText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBoostInfoText_C>();
 	}
 };
-static_assert(alignof(UXpBoostInfoText_C) == 0x000008, "Wrong alignment on UXpBoostInfoText_C");
-static_assert(sizeof(UXpBoostInfoText_C) == 0x000250, "Wrong size on UXpBoostInfoText_C");
-static_assert(offsetof(UXpBoostInfoText_C, UberGraphFrame) == 0x000238, "Member 'UXpBoostInfoText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBoostInfoText_C, BoostText) == 0x000240, "Member 'UXpBoostInfoText_C::BoostText' has a wrong offset!");
-static_assert(offsetof(UXpBoostInfoText_C, ScrollBox_Description) == 0x000248, "Member 'UXpBoostInfoText_C::ScrollBox_Description' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

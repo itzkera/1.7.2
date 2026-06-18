@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ProgressBarType.ProgressBarType
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class EProgressBarType : uint8
 	ProgressBarType_MAX                      = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

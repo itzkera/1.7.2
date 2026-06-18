@@ -14,8 +14,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass UseableWeaponsObject.UseableWeaponsObject_C
 // 0x0018 (0x0040 - 0x0028)
@@ -31,17 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UseableWeaponsObject_C">();
+		BP_STATIC_CLASS_IMPL("UseableWeaponsObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UseableWeaponsObject_C")
 	}
 	static class UUseableWeaponsObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUseableWeaponsObject_C>();
 	}
 };
-static_assert(alignof(UUseableWeaponsObject_C) == 0x000008, "Wrong alignment on UUseableWeaponsObject_C");
-static_assert(sizeof(UUseableWeaponsObject_C) == 0x000040, "Wrong size on UUseableWeaponsObject_C");
-static_assert(offsetof(UUseableWeaponsObject_C, UberGraphFrame) == 0x000028, "Member 'UUseableWeaponsObject_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUseableWeaponsObject_C, UseableWeaponsArray) == 0x000030, "Member 'UUseableWeaponsObject_C::UseableWeaponsArray' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

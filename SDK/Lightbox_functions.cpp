@@ -14,8 +14,7 @@
 #include "Lightbox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Lightbox.Lightbox_C.ExecuteUbergraph_Lightbox
 // ()
@@ -140,5 +139,5 @@ void ULightbox_C::RemoveContent()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "MtxOffersList_2_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MtxOffersList_2.MtxOffersList_2_C.ExecuteUbergraph_MtxOffersList_2
 // (HasDefaults)
@@ -88,7 +87,7 @@ void UMtxOffersList_2_C::OnPurchaseComplete(bool bSuccess)
 // Function MtxOffersList_2.MtxOffersList_2_C.OnBuyItem
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           OfferId                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    OfferId                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UMtxOffersList_2_C::OnBuyItem(const class FString& OfferId)
 {
@@ -108,7 +107,7 @@ void UMtxOffersList_2_C::OnBuyItem(const class FString& OfferId)
 // Function MtxOffersList_2.MtxOffersList_2_C.OnPackagesListed
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FMtxPackage>              Offers                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<struct FMtxPackage>&       Offers                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UMtxOffersList_2_C::OnPackagesListed(const TArray<struct FMtxPackage>& Offers)
 {
@@ -166,5 +165,5 @@ void UMtxOffersList_2_C::PlayMtxOfferAnimation_MouseLeave()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

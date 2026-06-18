@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C
 // 0x00D8 (0x0350 - 0x0278)
@@ -113,43 +112,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LocalPlayerBannerEditor_C">();
+		BP_STATIC_CLASS_IMPL("BP_LocalPlayerBannerEditor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LocalPlayerBannerEditor_C")
 	}
 	static class UBP_LocalPlayerBannerEditor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_LocalPlayerBannerEditor_C>();
 	}
 };
-static_assert(alignof(UBP_LocalPlayerBannerEditor_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerBannerEditor_C");
-static_assert(sizeof(UBP_LocalPlayerBannerEditor_C) == 0x000350, "Wrong size on UBP_LocalPlayerBannerEditor_C");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, UberGraphFrame) == 0x000278, "Member 'UBP_LocalPlayerBannerEditor_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, ApplyButton) == 0x000280, "Member 'UBP_LocalPlayerBannerEditor_C::ApplyButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, CategoryText) == 0x000288, "Member 'UBP_LocalPlayerBannerEditor_C::CategoryText' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, CloseEditorButton) == 0x000290, "Member 'UBP_LocalPlayerBannerEditor_C::CloseEditorButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, ColorBangWrapper) == 0x000298, "Member 'UBP_LocalPlayerBannerEditor_C::ColorBangWrapper' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, CommonTileView_0) == 0x0002A0, "Member 'UBP_LocalPlayerBannerEditor_C::CommonTileView_0' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, EditColorButton) == 0x0002A8, "Member 'UBP_LocalPlayerBannerEditor_C::EditColorButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, EditIconButton) == 0x0002B0, "Member 'UBP_LocalPlayerBannerEditor_C::EditIconButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, FoundersNoteText) == 0x0002B8, "Member 'UBP_LocalPlayerBannerEditor_C::FoundersNoteText' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, HomebaseBanner) == 0x0002C0, "Member 'UBP_LocalPlayerBannerEditor_C::HomebaseBanner' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, HomebaseImage) == 0x0002C8, "Member 'UBP_LocalPlayerBannerEditor_C::HomebaseImage' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, IconBangWrapper) == 0x0002D0, "Member 'UBP_LocalPlayerBannerEditor_C::IconBangWrapper' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, LeftArrowButton) == 0x0002D8, "Member 'UBP_LocalPlayerBannerEditor_C::LeftArrowButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, LeftCategoryBang) == 0x0002E0, "Member 'UBP_LocalPlayerBannerEditor_C::LeftCategoryBang' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, LeftTriggerAction) == 0x0002E8, "Member 'UBP_LocalPlayerBannerEditor_C::LeftTriggerAction' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, RightArrowButton) == 0x0002F0, "Member 'UBP_LocalPlayerBannerEditor_C::RightArrowButton' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, RightCategoryBang) == 0x0002F8, "Member 'UBP_LocalPlayerBannerEditor_C::RightCategoryBang' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, RightTriggerAction) == 0x000300, "Member 'UBP_LocalPlayerBannerEditor_C::RightTriggerAction' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, CloseBannerEditor) == 0x000308, "Member 'UBP_LocalPlayerBannerEditor_C::CloseBannerEditor' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, IconCategoryIndex) == 0x000318, "Member 'UBP_LocalPlayerBannerEditor_C::IconCategoryIndex' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, ColorCategoryIndex) == 0x00031C, "Member 'UBP_LocalPlayerBannerEditor_C::ColorCategoryIndex' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, CurrentCategory) == 0x000320, "Member 'UBP_LocalPlayerBannerEditor_C::CurrentCategory' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, bViewingIcons) == 0x000328, "Member 'UBP_LocalPlayerBannerEditor_C::bViewingIcons' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, bPickingTile) == 0x000329, "Member 'UBP_LocalPlayerBannerEditor_C::bPickingTile' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, TempChosenIcon) == 0x000330, "Member 'UBP_LocalPlayerBannerEditor_C::TempChosenIcon' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, TempChosenColor) == 0x000338, "Member 'UBP_LocalPlayerBannerEditor_C::TempChosenColor' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, ButtonGroup) == 0x000340, "Member 'UBP_LocalPlayerBannerEditor_C::ButtonGroup' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerBannerEditor_C, UpdateBangTimerHandle) == 0x000348, "Member 'UBP_LocalPlayerBannerEditor_C::UpdateBangTimerHandle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

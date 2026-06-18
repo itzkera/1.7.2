@@ -15,8 +15,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_DtB_LightningZap.B_DtB_LightningZap_C
 // 0x0030 (0x03B8 - 0x0388)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_DtB_LightningZap_C">();
+		BP_STATIC_CLASS_IMPL("B_DtB_LightningZap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_DtB_LightningZap_C")
 	}
 	static class AB_DtB_LightningZap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_DtB_LightningZap_C>();
 	}
 };
-static_assert(alignof(AB_DtB_LightningZap_C) == 0x000008, "Wrong alignment on AB_DtB_LightningZap_C");
-static_assert(sizeof(AB_DtB_LightningZap_C) == 0x0003B8, "Wrong size on AB_DtB_LightningZap_C");
-static_assert(offsetof(AB_DtB_LightningZap_C, UberGraphFrame) == 0x000388, "Member 'AB_DtB_LightningZap_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_DtB_LightningZap_C, P_DtBRiftLightningZap) == 0x000390, "Member 'AB_DtB_LightningZap_C::P_DtBRiftLightningZap' has a wrong offset!");
-static_assert(offsetof(AB_DtB_LightningZap_C, DefaultSceneRoot) == 0x000398, "Member 'AB_DtB_LightningZap_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_DtB_LightningZap_C, RiftLocation) == 0x0003A0, "Member 'AB_DtB_LightningZap_C::RiftLocation' has a wrong offset!");
-static_assert(offsetof(AB_DtB_LightningZap_C, TickDuration) == 0x0003AC, "Member 'AB_DtB_LightningZap_C::TickDuration' has a wrong offset!");
-static_assert(offsetof(AB_DtB_LightningZap_C, TickCounter) == 0x0003B0, "Member 'AB_DtB_LightningZap_C::TickCounter' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

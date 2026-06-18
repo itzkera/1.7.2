@@ -14,8 +14,7 @@
 #include "AthenaNews_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaNews.AthenaNews_C.ExecuteUbergraph_AthenaNews
 // (HasDefaults)
@@ -90,5 +89,5 @@ ESlateVisibility UAthenaNews_C::Get_RegionNews_Visibility()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

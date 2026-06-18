@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C
 // 0x0038 (0x0268 - 0x0230)
@@ -37,20 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionRewardItem-Tooltip_C">();
+		BP_STATIC_CLASS_IMPL("MissionRewardItem-Tooltip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionRewardItem-Tooltip_C")
 	}
 	static class UMissionRewardItem_Tooltip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionRewardItem_Tooltip_C>();
 	}
 };
-static_assert(alignof(UMissionRewardItem_Tooltip_C) == 0x000008, "Wrong alignment on UMissionRewardItem_Tooltip_C");
-static_assert(sizeof(UMissionRewardItem_Tooltip_C) == 0x000268, "Wrong size on UMissionRewardItem_Tooltip_C");
-static_assert(offsetof(UMissionRewardItem_Tooltip_C, Border) == 0x000230, "Member 'UMissionRewardItem_Tooltip_C::Border' has a wrong offset!");
-static_assert(offsetof(UMissionRewardItem_Tooltip_C, Icon) == 0x000238, "Member 'UMissionRewardItem_Tooltip_C::Icon' has a wrong offset!");
-static_assert(offsetof(UMissionRewardItem_Tooltip_C, TextField) == 0x000240, "Member 'UMissionRewardItem_Tooltip_C::TextField' has a wrong offset!");
-static_assert(offsetof(UMissionRewardItem_Tooltip_C, Item) == 0x000248, "Member 'UMissionRewardItem_Tooltip_C::Item' has a wrong offset!");
-static_assert(offsetof(UMissionRewardItem_Tooltip_C, DisplayName) == 0x000250, "Member 'UMissionRewardItem_Tooltip_C::DisplayName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

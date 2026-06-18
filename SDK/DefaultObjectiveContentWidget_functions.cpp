@@ -14,8 +14,7 @@
 #include "DefaultObjectiveContentWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.ExecuteUbergraph_DefaultObjectiveContentWidget
 // ()
@@ -60,7 +59,7 @@ void UDefaultObjectiveContentWidget_C::HandleUpdate(class AFortMissionState* Mis
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.HandleObjectiveVisibilityChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AFortObjectiveBase*               Objective                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortObjectiveBase*         Objective                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bNewVisibility                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UDefaultObjectiveContentWidget_C::HandleObjectiveVisibilityChanged(const class AFortObjectiveBase* Objective, bool bNewVisibility)
@@ -82,7 +81,7 @@ void UDefaultObjectiveContentWidget_C::HandleObjectiveVisibilityChanged(const cl
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.HandleObjectiveStatusChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AFortObjectiveBase*               Objective                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortObjectiveBase*         Objective                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EFortObjectiveStatus                    NewStatus                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UDefaultObjectiveContentWidget_C::HandleObjectiveStatusChanged(const class AFortObjectiveBase* Objective, EFortObjectiveStatus NewStatus)
@@ -140,7 +139,7 @@ void UDefaultObjectiveContentWidget_C::Update()
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.GetRichTextBlock
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMissionRichText_C*               MissionRichTextBlock                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMissionRichText_C**              MissionRichTextBlock                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UDefaultObjectiveContentWidget_C::GetRichTextBlock(class UMissionRichText_C** MissionRichTextBlock)
 {
@@ -161,7 +160,7 @@ void UDefaultObjectiveContentWidget_C::GetRichTextBlock(class UMissionRichText_C
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.CreateRichTextBlock
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 
 void UDefaultObjectiveContentWidget_C::CreateRichTextBlock(const class FText& Text)
 {
@@ -201,7 +200,7 @@ void UDefaultObjectiveContentWidget_C::HandleTimerComponentUpdated(class UFortMi
 // Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.GetHeightEstimate
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UDefaultObjectiveContentWidget_C::GetHeightEstimate(float* Height)
 {
@@ -218,5 +217,5 @@ void UDefaultObjectiveContentWidget_C::GetHeightEstimate(float* Height)
 		*Height = Parms.Height;
 }
 
-}
 
+SDK_NAMESPACE_END

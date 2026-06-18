@@ -14,8 +14,7 @@
 #include "DailyRewardsEpic_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DailyRewardsEpic.DailyRewardsEpic_C.ExecuteUbergraph_DailyRewardsEpic
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UDailyRewardsEpic_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

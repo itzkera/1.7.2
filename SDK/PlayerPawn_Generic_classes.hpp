@@ -18,13 +18,12 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerPawn_Generic.PlayerPawn_Generic_C
 // 0x04F0 (0x1C30 - 0x1740)
 #pragma pack(push, 0x1)
-class alignas(0x10) APlayerPawn_Generic_C : public APlayerPawn_Generic_Parent_C
+class SDK_ALIGN(0x10) APlayerPawn_Generic_C : public APlayerPawn_Generic_Parent_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_PlayerPawn_Generic_C;               // 0x1740(0x0008)(Transient, DuplicateTransient)
@@ -274,7 +273,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerPawn_Generic_C">();
+		BP_STATIC_CLASS_IMPL("PlayerPawn_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawn_Generic_C")
 	}
 	static class APlayerPawn_Generic_C* GetDefaultObj()
 	{
@@ -282,156 +285,5 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APlayerPawn_Generic_C) == 0x000010, "Wrong alignment on APlayerPawn_Generic_C");
-static_assert(sizeof(APlayerPawn_Generic_C) == 0x001C30, "Wrong size on APlayerPawn_Generic_C");
-static_assert(offsetof(APlayerPawn_Generic_C, UberGraphFrame_PlayerPawn_Generic_C) == 0x001740, "Member 'APlayerPawn_Generic_C::UberGraphFrame_PlayerPawn_Generic_C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Run_Land) == 0x001748, "Member 'APlayerPawn_Generic_C::Effect_Player_Run_Land' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Walk_Land) == 0x001750, "Member 'APlayerPawn_Generic_C::Effect_Player_Walk_Land' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, playerPush_WindVector) == 0x001758, "Member 'APlayerPawn_Generic_C::playerPush_WindVector' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Stand_Water) == 0x001760, "Member 'APlayerPawn_Generic_C::Effect_Player_Stand_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Walk_Water) == 0x001768, "Member 'APlayerPawn_Generic_C::Effect_Player_Walk_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Run_Water) == 0x001770, "Member 'APlayerPawn_Generic_C::Effect_Player_Run_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_WaterInteraction_FX) == 0x001778, "Member 'APlayerPawn_Generic_C::Effect_WaterInteraction_FX' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, AnimTrailPS) == 0x001780, "Member 'APlayerPawn_Generic_C::AnimTrailPS' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HitDamageParticles) == 0x001788, "Member 'APlayerPawn_Generic_C::HitDamageParticles' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, SpeechBubbleComponent) == 0x001790, "Member 'APlayerPawn_Generic_C::SpeechBubbleComponent' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerLight) == 0x001798, "Member 'APlayerPawn_Generic_C::PlayerLight' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CapsuleFadeTL_RemoveShadow_018B40864B973FCD649A23BAC2709F23) == 0x0017A0, "Member 'APlayerPawn_Generic_C::CapsuleFadeTL_RemoveShadow_018B40864B973FCD649A23BAC2709F23' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CapsuleFadeTL__Direction_018B40864B973FCD649A23BAC2709F23) == 0x0017A4, "Member 'APlayerPawn_Generic_C::CapsuleFadeTL__Direction_018B40864B973FCD649A23BAC2709F23' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CapsuleFadeTL) == 0x0017A8, "Member 'APlayerPawn_Generic_C::CapsuleFadeTL' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Full_Shield_Health_Push_6222ABB047B8F22E3C9FC983BD70CEA6) == 0x0017B0, "Member 'APlayerPawn_Generic_C::Full_Shield_Health_Push_6222ABB047B8F22E3C9FC983BD70CEA6' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Full_Shield_Health_Impact_6222ABB047B8F22E3C9FC983BD70CEA6) == 0x0017B4, "Member 'APlayerPawn_Generic_C::Full_Shield_Health_Impact_6222ABB047B8F22E3C9FC983BD70CEA6' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Full_Shield_Health__Direction_6222ABB047B8F22E3C9FC983BD70CEA6) == 0x0017B8, "Member 'APlayerPawn_Generic_C::Full_Shield_Health__Direction_6222ABB047B8F22E3C9FC983BD70CEA6' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Full_Shield_Health) == 0x0017C0, "Member 'APlayerPawn_Generic_C::Full_Shield_Health' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_DamageTimeline_Impact_6DC09F024CD096186AE1389FB8061E30) == 0x0017C8, "Member 'APlayerPawn_Generic_C::Shield_DamageTimeline_Impact_6DC09F024CD096186AE1389FB8061E30' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_DamageTimeline__Direction_6DC09F024CD096186AE1389FB8061E30) == 0x0017CC, "Member 'APlayerPawn_Generic_C::Shield_DamageTimeline__Direction_6DC09F024CD096186AE1389FB8061E30' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_DamageTimeline) == 0x0017D0, "Member 'APlayerPawn_Generic_C::Shield_DamageTimeline' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Regen_Timeline_Opacity_3DC9958C47D4CEFA60E68699D92BA374) == 0x0017D8, "Member 'APlayerPawn_Generic_C::Shield_Regen_Timeline_Opacity_3DC9958C47D4CEFA60E68699D92BA374' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Regen_Timeline_Push_3DC9958C47D4CEFA60E68699D92BA374) == 0x0017DC, "Member 'APlayerPawn_Generic_C::Shield_Regen_Timeline_Push_3DC9958C47D4CEFA60E68699D92BA374' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Regen_Timeline__Direction_3DC9958C47D4CEFA60E68699D92BA374) == 0x0017E0, "Member 'APlayerPawn_Generic_C::Shield_Regen_Timeline__Direction_3DC9958C47D4CEFA60E68699D92BA374' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Regen_Timeline) == 0x0017E8, "Member 'APlayerPawn_Generic_C::Shield_Regen_Timeline' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_ShatterTimeline_Push_F3223F2D4A6B8642F950B0A15F8C6699) == 0x0017F0, "Member 'APlayerPawn_Generic_C::Shield_ShatterTimeline_Push_F3223F2D4A6B8642F950B0A15F8C6699' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_ShatterTimeline_Opacity_F3223F2D4A6B8642F950B0A15F8C6699) == 0x0017F4, "Member 'APlayerPawn_Generic_C::Shield_ShatterTimeline_Opacity_F3223F2D4A6B8642F950B0A15F8C6699' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_ShatterTimeline_HighlightCracks_F3223F2D4A6B8642F950B0A15F8C6699) == 0x0017F8, "Member 'APlayerPawn_Generic_C::Shield_ShatterTimeline_HighlightCracks_F3223F2D4A6B8642F950B0A15F8C6699' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_ShatterTimeline__Direction_F3223F2D4A6B8642F950B0A15F8C6699) == 0x0017FC, "Member 'APlayerPawn_Generic_C::Shield_ShatterTimeline__Direction_F3223F2D4A6B8642F950B0A15F8C6699' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_ShatterTimeline) == 0x001800, "Member 'APlayerPawn_Generic_C::Shield_ShatterTimeline' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HealthSweep_SafetyOpacity_2A96303441845D0EAAAB1EB68183F8A8) == 0x001808, "Member 'APlayerPawn_Generic_C::HealthSweep_SafetyOpacity_2A96303441845D0EAAAB1EB68183F8A8' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HealthSweep_Sweep_2A96303441845D0EAAAB1EB68183F8A8) == 0x00180C, "Member 'APlayerPawn_Generic_C::HealthSweep_Sweep_2A96303441845D0EAAAB1EB68183F8A8' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HealthSweep__Direction_2A96303441845D0EAAAB1EB68183F8A8) == 0x001810, "Member 'APlayerPawn_Generic_C::HealthSweep__Direction_2A96303441845D0EAAAB1EB68183F8A8' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HealthSweep) == 0x001818, "Member 'APlayerPawn_Generic_C::HealthSweep' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ScreenEffect_PlayerHealthDamageDirection) == 0x001820, "Member 'APlayerPawn_Generic_C::ScreenEffect_PlayerHealthDamageDirection' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ScreenEffect_PlayerHealthDamage) == 0x001828, "Member 'APlayerPawn_Generic_C::ScreenEffect_PlayerHealthDamage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ScreenEffect_PlayerShieldDamageDirection) == 0x001830, "Member 'APlayerPawn_Generic_C::ScreenEffect_PlayerShieldDamageDirection' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ScreenEffect_PlayerShieldDamage) == 0x001838, "Member 'APlayerPawn_Generic_C::ScreenEffect_PlayerShieldDamage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HitByHuskProjectileClass) == 0x001840, "Member 'APlayerPawn_Generic_C::HitByHuskProjectileClass' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HitByHuskRangedSound) == 0x001848, "Member 'APlayerPawn_Generic_C::HitByHuskRangedSound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HitByHuskMeleeSound) == 0x001850, "Member 'APlayerPawn_Generic_C::HitByHuskMeleeSound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, SoulSuckVictimMontage) == 0x001858, "Member 'APlayerPawn_Generic_C::SoulSuckVictimMontage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerSpeed) == 0x001860, "Member 'APlayerPawn_Generic_C::PlayerSpeed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Run_Particle_Activate_Speed) == 0x001864, "Member 'APlayerPawn_Generic_C::Run_Particle_Activate_Speed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Walk_Dust_Activate_Speed) == 0x001868, "Member 'APlayerPawn_Generic_C::Walk_Dust_Activate_Speed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Walk_Particle_Reset_Speed) == 0x00186C, "Member 'APlayerPawn_Generic_C::Walk_Particle_Reset_Speed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PreviousVelocityVector) == 0x001870, "Member 'APlayerPawn_Generic_C::PreviousVelocityVector' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CanSpawnRunKickupFX_) == 0x00187C, "Member 'APlayerPawn_Generic_C::CanSpawnRunKickupFX_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CanSpawnWalkKickupFX_) == 0x00187D, "Member 'APlayerPawn_Generic_C::CanSpawnWalkKickupFX_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CanSpawnDustLandFX_) == 0x00187E, "Member 'APlayerPawn_Generic_C::CanSpawnDustLandFX_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, IsInWater) == 0x00187F, "Member 'APlayerPawn_Generic_C::IsInWater' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, RunWalkParticleRotation) == 0x001880, "Member 'APlayerPawn_Generic_C::RunWalkParticleRotation' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, IsNinjaInShadowStance_) == 0x00188C, "Member 'APlayerPawn_Generic_C::IsNinjaInShadowStance_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, GameplayTagsForHitByHuskMeleeSound) == 0x001890, "Member 'APlayerPawn_Generic_C::GameplayTagsForHitByHuskMeleeSound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Material) == 0x0018B0, "Member 'APlayerPawn_Generic_C::Adrenaline_Material' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, AdrenalineRush_HeadAnimatingMIDS) == 0x0018B8, "Member 'APlayerPawn_Generic_C::AdrenalineRush_HeadAnimatingMIDS' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, AdrenalineRush_BodyAnimatingMIDS) == 0x0018C8, "Member 'APlayerPawn_Generic_C::AdrenalineRush_BodyAnimatingMIDS' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Color_Outer_Direct) == 0x0018D8, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Color_Outer_Direct' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Color_Inner_Direct) == 0x0018E8, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Color_Inner_Direct' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_WPO_Offset) == 0x0018F8, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_WPO_Offset' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, P_AdrenalineRushSparklesRunning) == 0x001900, "Member 'APlayerPawn_Generic_C::P_AdrenalineRushSparklesRunning' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Material) == 0x001908, "Member 'APlayerPawn_Generic_C::Shield_Material' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, BodyShieldMIDArray) == 0x001910, "Member 'APlayerPawn_Generic_C::BodyShieldMIDArray' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HeadShieldMIDArray) == 0x001920, "Member 'APlayerPawn_Generic_C::HeadShieldMIDArray' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Active) == 0x001930, "Member 'APlayerPawn_Generic_C::Shield_Active' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WaterCounter) == 0x001934, "Member 'APlayerPawn_Generic_C::WaterCounter' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Tick_Delta_Seconds) == 0x001938, "Member 'APlayerPawn_Generic_C::Tick_Delta_Seconds' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Damage_Wave_Animation) == 0x00193C, "Member 'APlayerPawn_Generic_C::Shield_Damage_Wave_Animation' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Overall_Shield_Damage_Wave_Animation_Length) == 0x001940, "Member 'APlayerPawn_Generic_C::Overall_Shield_Damage_Wave_Animation_Length' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, size) == 0x001944, "Member 'APlayerPawn_Generic_C::size' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Dying) == 0x001948, "Member 'APlayerPawn_Generic_C::Dying' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CanRippleAgain) == 0x001949, "Member 'APlayerPawn_Generic_C::CanRippleAgain' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Sound_Shield_Impact) == 0x001950, "Member 'APlayerPawn_Generic_C::Sound_Shield_Impact' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Sound_Shield_Destroyed) == 0x001958, "Member 'APlayerPawn_Generic_C::Sound_Shield_Destroyed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Sound_Shield_FullyCharged) == 0x001960, "Member 'APlayerPawn_Generic_C::Sound_Shield_FullyCharged' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Sound_Shield_StartRecharge) == 0x001968, "Member 'APlayerPawn_Generic_C::Sound_Shield_StartRecharge' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_Shatter_Opacity) == 0x001970, "Member 'APlayerPawn_Generic_C::Shield_Shatter_Opacity' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Regen_Opacity) == 0x001974, "Member 'APlayerPawn_Generic_C::Regen_Opacity' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Damage_Opacity) == 0x001978, "Member 'APlayerPawn_Generic_C::Damage_Opacity' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Default_Shield_opacity) == 0x00197C, "Member 'APlayerPawn_Generic_C::Default_Shield_opacity' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_PushMinValue) == 0x001980, "Member 'APlayerPawn_Generic_C::Shield_PushMinValue' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ShieldVisible_Hit) == 0x001984, "Member 'APlayerPawn_Generic_C::ShieldVisible_Hit' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ShieldVisible_Recover) == 0x001985, "Member 'APlayerPawn_Generic_C::ShieldVisible_Recover' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ShieldVisible_Shatter) == 0x001986, "Member 'APlayerPawn_Generic_C::ShieldVisible_Shatter' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, ShieldVisible_FullHealth) == 0x001987, "Member 'APlayerPawn_Generic_C::ShieldVisible_FullHealth' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Fully_Regened_Shield_health_Opacity) == 0x001988, "Member 'APlayerPawn_Generic_C::Fully_Regened_Shield_health_Opacity' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, TC_GameplayCueDamageShielded) == 0x001990, "Member 'APlayerPawn_Generic_C::TC_GameplayCueDamageShielded' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, LatestDamageIsShieldDamage) == 0x0019B0, "Member 'APlayerPawn_Generic_C::LatestDamageIsShieldDamage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Damage_Taken) == 0x0019B4, "Member 'APlayerPawn_Generic_C::Damage_Taken' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Last_Shield_Damage_Time) == 0x0019B8, "Member 'APlayerPawn_Generic_C::Last_Shield_Damage_Time' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, NewVar_1) == 0x0019C0, "Member 'APlayerPawn_Generic_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CharmShieldMIDArray) == 0x0019C8, "Member 'APlayerPawn_Generic_C::CharmShieldMIDArray' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, BodyValid) == 0x0019D8, "Member 'APlayerPawn_Generic_C::BodyValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, BackpackValid) == 0x0019D9, "Member 'APlayerPawn_Generic_C::BackpackValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HatValid) == 0x0019DA, "Member 'APlayerPawn_Generic_C::HatValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, FaceValid) == 0x0019DB, "Member 'APlayerPawn_Generic_C::FaceValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CharmValid) == 0x0019DC, "Member 'APlayerPawn_Generic_C::CharmValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, HeadValid) == 0x0019DD, "Member 'APlayerPawn_Generic_C::HeadValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, AdrenalineRush_CharmAnimatingMIDS) == 0x0019E0, "Member 'APlayerPawn_Generic_C::AdrenalineRush_CharmAnimatingMIDS' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_MID_Collection) == 0x0019F0, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_MID_Collection' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, P_DBNOResurrect) == 0x001A00, "Member 'APlayerPawn_Generic_C::P_DBNOResurrect' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, DBNOResurrectSound) == 0x001A08, "Member 'APlayerPawn_Generic_C::DBNOResurrectSound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, On_Player_Built_Floor) == 0x001A10, "Member 'APlayerPawn_Generic_C::On_Player_Built_Floor' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Event_NeedRoadsActive) == 0x001A18, "Member 'APlayerPawn_Generic_C::Event_NeedRoadsActive' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Event_NeedRoadsDeactive) == 0x001A20, "Member 'APlayerPawn_Generic_C::Event_NeedRoadsDeactive' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, TC_WhereWereGoingWeNeedRoads) == 0x001A28, "Member 'APlayerPawn_Generic_C::TC_WhereWereGoingWeNeedRoads' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_LandedDust) == 0x001A48, "Member 'APlayerPawn_Generic_C::Effect_Player_LandedDust' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, P_GravitySphere_LeftFoot) == 0x001A50, "Member 'APlayerPawn_Generic_C::P_GravitySphere_LeftFoot' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, TempArray) == 0x001A58, "Member 'APlayerPawn_Generic_C::TempArray' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, P_GravitySphere_RightFoot) == 0x001A68, "Member 'APlayerPawn_Generic_C::P_GravitySphere_RightFoot' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_GravitySphereFeet) == 0x001A70, "Member 'APlayerPawn_Generic_C::Effect_Player_GravitySphereFeet' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_BodySkeletalMesh) == 0x001A78, "Member 'APlayerPawn_Generic_C::Shield_BodySkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_HeadSkeletalMesh) == 0x001A80, "Member 'APlayerPawn_Generic_C::Shield_HeadSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Shield_CharmSkeletalMesh) == 0x001A88, "Member 'APlayerPawn_Generic_C::Shield_CharmSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Body) == 0x001A90, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Body' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Head) == 0x001A98, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Head' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Charm) == 0x001AA0, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Charm' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Sound_Player_Hit) == 0x001AA8, "Member 'APlayerPawn_Generic_C::Sound_Player_Hit' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, DamageForceFeedback) == 0x001AB0, "Member 'APlayerPawn_Generic_C::DamageForceFeedback' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, DBNOParticles) == 0x001AB8, "Member 'APlayerPawn_Generic_C::DBNOParticles' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Effect_Player_Landed_WindVector_P) == 0x001AC0, "Member 'APlayerPawn_Generic_C::Effect_Player_Landed_WindVector_P' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, SpeechBubbleWidgetClass) == 0x001AC8, "Member 'APlayerPawn_Generic_C::SpeechBubbleWidgetClass' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, LastSpeechText) == 0x001AD0, "Member 'APlayerPawn_Generic_C::LastSpeechText' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, DamageCameraShake) == 0x001AE8, "Member 'APlayerPawn_Generic_C::DamageCameraShake' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, UseAnimTrailsNotifies) == 0x001AF0, "Member 'APlayerPawn_Generic_C::UseAnimTrailsNotifies' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Time_when_you_ll_be_able_to_splash_again) == 0x001AF4, "Member 'APlayerPawn_Generic_C::Time_when_you_ll_be_able_to_splash_again' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, CurrentWaterMeshActor) == 0x001AF8, "Member 'APlayerPawn_Generic_C::CurrentWaterMeshActor' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WaterTraceHitLocation) == 0x001B00, "Member 'APlayerPawn_Generic_C::WaterTraceHitLocation' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, StableVelocityVector) == 0x001B88, "Member 'APlayerPawn_Generic_C::StableVelocityVector' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerRunTemplate_Ground) == 0x001B98, "Member 'APlayerPawn_Generic_C::PlayerRunTemplate_Ground' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerWalkTemplate_Ground) == 0x001BA0, "Member 'APlayerPawn_Generic_C::PlayerWalkTemplate_Ground' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerRunTemplate_Water) == 0x001BA8, "Member 'APlayerPawn_Generic_C::PlayerRunTemplate_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, PlayerWalkTemplate_Water) == 0x001BB0, "Member 'APlayerPawn_Generic_C::PlayerWalkTemplate_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Pawn_Charm_Skeletal_Mesh) == 0x001BB8, "Member 'APlayerPawn_Generic_C::Pawn_Charm_Skeletal_Mesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, DefaultShieldOpacity) == 0x001BC0, "Member 'APlayerPawn_Generic_C::DefaultShieldOpacity' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, AnimTrailsPS_Ref) == 0x001BC8, "Member 'APlayerPawn_Generic_C::AnimTrailsPS_Ref' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Color_Outer_Periodic) == 0x001BD0, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Color_Outer_Periodic' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WeaponMaterialOverride) == 0x001BE0, "Member 'APlayerPawn_Generic_C::WeaponMaterialOverride' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Adrenaline_Rush_Color_Inner_Periodic) == 0x001BE8, "Member 'APlayerPawn_Generic_C::Adrenaline_Rush_Color_Inner_Periodic' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, TickWaterLevel) == 0x001BF8, "Member 'APlayerPawn_Generic_C::TickWaterLevel' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WetnessDepthTexture) == 0x001C00, "Member 'APlayerPawn_Generic_C::WetnessDepthTexture' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WaterLevelMID) == 0x001C08, "Member 'APlayerPawn_Generic_C::WaterLevelMID' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WaterDecayMID) == 0x001C10, "Member 'APlayerPawn_Generic_C::WaterDecayMID' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Was_RTT_Enabled_Var_Set) == 0x001C18, "Member 'APlayerPawn_Generic_C::Was_RTT_Enabled_Var_Set' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, Is_RTT_Enabled) == 0x001C19, "Member 'APlayerPawn_Generic_C::Is_RTT_Enabled' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, StartingMinCapsuleShadowVis) == 0x001C1C, "Member 'APlayerPawn_Generic_C::StartingMinCapsuleShadowVis' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_C, WildRiftLightning) == 0x001C20, "Member 'APlayerPawn_Generic_C::WildRiftLightning' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

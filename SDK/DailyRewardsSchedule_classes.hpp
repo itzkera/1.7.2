@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DailyRewardsSchedule.DailyRewardsSchedule_C
 // 0x0038 (0x0308 - 0x02D0)
@@ -40,23 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DailyRewardsSchedule_C">();
+		BP_STATIC_CLASS_IMPL("DailyRewardsSchedule_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DailyRewardsSchedule_C")
 	}
 	static class UDailyRewardsSchedule_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDailyRewardsSchedule_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsSchedule_C) == 0x000008, "Wrong alignment on UDailyRewardsSchedule_C");
-static_assert(sizeof(UDailyRewardsSchedule_C) == 0x000308, "Wrong size on UDailyRewardsSchedule_C");
-static_assert(offsetof(UDailyRewardsSchedule_C, UberGraphFrame) == 0x0002D0, "Member 'UDailyRewardsSchedule_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, AvailableRewards) == 0x0002D8, "Member 'UDailyRewardsSchedule_C::AvailableRewards' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, DailyRewardsBox) == 0x0002E0, "Member 'UDailyRewardsSchedule_C::DailyRewardsBox' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, EpicRewardsBox) == 0x0002E8, "Member 'UDailyRewardsSchedule_C::EpicRewardsBox' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, ScheduleTitle) == 0x0002F0, "Member 'UDailyRewardsSchedule_C::ScheduleTitle' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, UpcomingText) == 0x0002F8, "Member 'UDailyRewardsSchedule_C::UpcomingText' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, NumMaxEpicRewards) == 0x000300, "Member 'UDailyRewardsSchedule_C::NumMaxEpicRewards' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsSchedule_C, Length_Of_Week) == 0x000304, "Member 'UDailyRewardsSchedule_C::Length_Of_Week' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,14 +14,13 @@
 #include "GCN_RiftZapPlayer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCN_RiftZapPlayer.GCN_RiftZapPlayer_C.OnExecute
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UGCN_RiftZapPlayer_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
@@ -41,5 +40,5 @@ bool UGCN_RiftZapPlayer_C::OnExecute(class AActor* MyTarget, const struct FGamep
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

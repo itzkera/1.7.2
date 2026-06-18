@@ -16,8 +16,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DeathWidget.DeathWidget_C.ExecuteUbergraph_DeathWidget
 // 0x0030 (0x0030 - 0x0000)
@@ -28,14 +28,8 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(struct FFortPlayerDeathReport& DeathReport)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortPlayerDeathReport& DeathReport)> K2Node_CreateDelegate_OutputDelegate2; // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(DeathWidget_C_ExecuteUbergraph_DeathWidget) == 0x000008, "Wrong alignment on DeathWidget_C_ExecuteUbergraph_DeathWidget");
-static_assert(sizeof(DeathWidget_C_ExecuteUbergraph_DeathWidget) == 0x000030, "Wrong size on DeathWidget_C_ExecuteUbergraph_DeathWidget");
-static_assert(offsetof(DeathWidget_C_ExecuteUbergraph_DeathWidget, EntryPoint) == 0x000000, "Member 'DeathWidget_C_ExecuteUbergraph_DeathWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ExecuteUbergraph_DeathWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'DeathWidget_C_ExecuteUbergraph_DeathWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ExecuteUbergraph_DeathWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'DeathWidget_C_ExecuteUbergraph_DeathWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ExecuteUbergraph_DeathWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'DeathWidget_C_ExecuteUbergraph_DeathWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function DeathWidget.DeathWidget_C.OnPawnSpawned
 // 0x0020 (0x0020 - 0x0000)
@@ -48,12 +42,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DeathWidget_C_OnPawnSpawned) == 0x000008, "Wrong alignment on DeathWidget_C_OnPawnSpawned");
-static_assert(sizeof(DeathWidget_C_OnPawnSpawned) == 0x000020, "Wrong size on DeathWidget_C_OnPawnSpawned");
-static_assert(offsetof(DeathWidget_C_OnPawnSpawned, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'DeathWidget_C_OnPawnSpawned::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnSpawned, K2Node_DynamicCast_AsFort_Player_Controller_Zone) == 0x000008, "Member 'DeathWidget_C_OnPawnSpawned::K2Node_DynamicCast_AsFort_Player_Controller_Zone' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnSpawned, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'DeathWidget_C_OnPawnSpawned::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnSpawned, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'DeathWidget_C_OnPawnSpawned::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function DeathWidget.DeathWidget_C.OnPawnDied
 // 0x0180 (0x0180 - 0x0000)
@@ -80,24 +68,6 @@ public:
 	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0178(0x0008)(NoDestructor)
 };
-static_assert(alignof(DeathWidget_C_OnPawnDied) == 0x000008, "Wrong alignment on DeathWidget_C_OnPawnDied");
-static_assert(sizeof(DeathWidget_C_OnPawnDied) == 0x000180, "Wrong size on DeathWidget_C_OnPawnDied");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, DeathReport) == 0x000000, "Member 'DeathWidget_C_OnPawnDied::DeathReport' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetOwningPlayer_ReturnValue) == 0x000050, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, K2Node_DynamicCast_AsFort_Player_Controller_Zone) == 0x000058, "Member 'DeathWidget_C_OnPawnDied::K2Node_DynamicCast_AsFort_Player_Controller_Zone' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'DeathWidget_C_OnPawnDied::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, K2Node_CreateDelegate_OutputDelegate) == 0x000068, "Member 'DeathWidget_C_OnPawnDied::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetContext_ReturnValue) == 0x000078, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetContext_ReturnValue2) == 0x000080, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetKillerVisualInfoFromDeathReport_ReturnValue) == 0x000088, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetKillerVisualInfoFromDeathReport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetContext_ReturnValue3) == 0x000130, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetContext_ReturnValue4) == 0x000138, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetGameStateZone_ReturnValue) == 0x000140, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetGameStateZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetHeroData_HeroData) == 0x000148, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetHeroData_HeroData' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetHeroData_ReturnValue) == 0x000168, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetHeroData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_GetServerWorldTimeSeconds_ReturnValue) == 0x00016C, "Member 'DeathWidget_C_OnPawnDied::CallFunc_GetServerWorldTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000170, "Member 'DeathWidget_C_OnPawnDied::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnPawnDied, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000178, "Member 'DeathWidget_C_OnPawnDied::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function DeathWidget.DeathWidget_C.ConfigureRespawnTimer
 // 0x00A8 (0x00A8 - 0x0000)
@@ -135,34 +105,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x00A0(0x0008)(NoDestructor)
 };
-static_assert(alignof(DeathWidget_C_ConfigureRespawnTimer) == 0x000008, "Wrong alignment on DeathWidget_C_ConfigureRespawnTimer");
-static_assert(sizeof(DeathWidget_C_ConfigureRespawnTimer) == 0x0000A8, "Wrong size on DeathWidget_C_ConfigureRespawnTimer");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, ServerRespawnTime) == 0x000000, "Member 'DeathWidget_C_ConfigureRespawnTimer::ServerRespawnTime' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, ServerResurrectTime) == 0x000004, "Member 'DeathWidget_C_ConfigureRespawnTimer::ServerResurrectTime' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, ResurrectTimeRemainingFloat) == 0x000008, "Member 'DeathWidget_C_ConfigureRespawnTimer::ResurrectTimeRemainingFloat' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, ReleaseTimeRemainingFloat) == 0x00000C, "Member 'DeathWidget_C_ConfigureRespawnTimer::ReleaseTimeRemainingFloat' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, TimerDelay) == 0x000010, "Member 'DeathWidget_C_ConfigureRespawnTimer::TimerDelay' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'DeathWidget_C_ConfigureRespawnTimer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetGameStateZone_ReturnValue) == 0x000030, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetGameStateZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetServerWorldTimeSeconds_ReturnValue) == 0x000038, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetServerWorldTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_Fraction_ReturnValue) == 0x00003C, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_Fraction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000040, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000044, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_Greater_IntInt_ReturnValue) == 0x000045, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_FCeil_ReturnValue) == 0x000048, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetGameStateZone_ReturnValue2) == 0x000060, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetGameStateZone_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetGameStateZone_ReturnValue3) == 0x000068, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetGameStateZone_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetServerWorldTimeSeconds_ReturnValue2) == 0x000070, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetServerWorldTimeSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_GetServerWorldTimeSeconds_ReturnValue3) == 0x000074, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_GetServerWorldTimeSeconds_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000078, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x00007C, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000080, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_FCeil_ReturnValue2) == 0x000088, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_FCeil_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, K2Node_CreateDelegate_OutputDelegate2) == 0x000090, "Member 'DeathWidget_C_ConfigureRespawnTimer::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ConfigureRespawnTimer, CallFunc_K2_SetTimerDelegate_ReturnValue2) == 0x0000A0, "Member 'DeathWidget_C_ConfigureRespawnTimer::CallFunc_K2_SetTimerDelegate_ReturnValue2' has a wrong offset!");
 
 // Function DeathWidget.DeathWidget_C.OnRespawnTimerUpdate
 // 0x0028 (0x0028 - 0x0000)
@@ -176,13 +118,6 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue2;             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DeathWidget_C_OnRespawnTimerUpdate) == 0x000008, "Wrong alignment on DeathWidget_C_OnRespawnTimerUpdate");
-static_assert(sizeof(DeathWidget_C_OnRespawnTimerUpdate) == 0x000028, "Wrong size on DeathWidget_C_OnRespawnTimerUpdate");
-static_assert(offsetof(DeathWidget_C_OnRespawnTimerUpdate, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'DeathWidget_C_OnRespawnTimerUpdate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnRespawnTimerUpdate, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'DeathWidget_C_OnRespawnTimerUpdate::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnRespawnTimerUpdate, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'DeathWidget_C_OnRespawnTimerUpdate::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnRespawnTimerUpdate, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000020, "Member 'DeathWidget_C_OnRespawnTimerUpdate::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_OnRespawnTimerUpdate, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'DeathWidget_C_OnRespawnTimerUpdate::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function DeathWidget.DeathWidget_C.SetRespawnTimerText
 // 0x0130 (0x0130 - 0x0000)
@@ -201,19 +136,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0118(0x0018)()
 };
-static_assert(alignof(DeathWidget_C_SetRespawnTimerText) == 0x000008, "Wrong alignment on DeathWidget_C_SetRespawnTimerText");
-static_assert(sizeof(DeathWidget_C_SetRespawnTimerText) == 0x000130, "Wrong size on DeathWidget_C_SetRespawnTimerText");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, K2Node_MakeStruct_SlateColor) == 0x000000, "Member 'DeathWidget_C_SetRespawnTimerText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, CallFunc_Max_ReturnValue) == 0x000028, "Member 'DeathWidget_C_SetRespawnTimerText::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, CallFunc_Max_ReturnValue2) == 0x00002C, "Member 'DeathWidget_C_SetRespawnTimerText::CallFunc_Max_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'DeathWidget_C_SetRespawnTimerText::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, CallFunc_Conv_IntToText_ReturnValue2) == 0x000048, "Member 'DeathWidget_C_SetRespawnTimerText::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'DeathWidget_C_SetRespawnTimerText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, K2Node_MakeStruct_FormatArgumentData2) == 0x0000A0, "Member 'DeathWidget_C_SetRespawnTimerText::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, K2Node_MakeArray_Array) == 0x0000E0, "Member 'DeathWidget_C_SetRespawnTimerText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, K2Node_MakeArray_Array2) == 0x0000F0, "Member 'DeathWidget_C_SetRespawnTimerText::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, CallFunc_Format_ReturnValue) == 0x000100, "Member 'DeathWidget_C_SetRespawnTimerText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_SetRespawnTimerText, CallFunc_Format_ReturnValue2) == 0x000118, "Member 'DeathWidget_C_SetRespawnTimerText::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
 // Function DeathWidget.DeathWidget_C.ShowExtraLivesText
 // 0x0150 (0x0150 - 0x0000)
@@ -225,7 +147,7 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerStateZone*                   CallFunc_GetPlayerStateZone_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput;    // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput; // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute; // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -246,28 +168,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0100(0x0028)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor2;                     // 0x0128(0x0028)()
 };
-static_assert(alignof(DeathWidget_C_ShowExtraLivesText) == 0x000008, "Wrong alignment on DeathWidget_C_ShowExtraLivesText");
-static_assert(sizeof(DeathWidget_C_ShowExtraLivesText) == 0x000150, "Wrong size on DeathWidget_C_ShowExtraLivesText");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_MakeLiteralText_ReturnValue) == 0x000000, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_MakeLiteralText_ReturnValue2) == 0x000018, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_GetPlayerStateZone_ReturnValue) == 0x000038, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_GetPlayerStateZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000040, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000048, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000058, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute) == 0x000059, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue) == 0x00005C, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_FTrunc_ReturnValue) == 0x000060, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000064, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_Conv_IntToText_ReturnValue) == 0x000068, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, K2Node_MakeStruct_FormatArgumentData) == 0x000080, "Member 'DeathWidget_C_ShowExtraLivesText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000C0, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, K2Node_MakeArray_Array) == 0x0000C8, "Member 'DeathWidget_C_ShowExtraLivesText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_BooleanAND_ReturnValue) == 0x0000D8, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, CallFunc_BooleanAND_ReturnValue2) == 0x0000F8, "Member 'DeathWidget_C_ShowExtraLivesText::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, K2Node_MakeStruct_SlateColor) == 0x000100, "Member 'DeathWidget_C_ShowExtraLivesText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(DeathWidget_C_ShowExtraLivesText, K2Node_MakeStruct_SlateColor2) == 0x000128, "Member 'DeathWidget_C_ShowExtraLivesText::K2Node_MakeStruct_SlateColor2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

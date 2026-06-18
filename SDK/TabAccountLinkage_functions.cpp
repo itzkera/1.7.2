@@ -14,8 +14,7 @@
 #include "TabAccountLinkage_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabAccountLinkage.TabAccountLinkage_C.ExecuteUbergraph_TabAccountLinkage
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UTabAccountLinkage_C::BndEvt__URLButton_K2Node_ComponentBoundEvent_75_Commo
 // Function TabAccountLinkage.TabAccountLinkage_C.BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class FText                             NewTooltipText                                         (Parm)
+// const class FText&                      NewTooltipText                                         (Parm)
 
 void UTabAccountLinkage_C::BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature(const class FText& NewTooltipText)
 {
@@ -214,5 +213,5 @@ void UTabAccountLinkage_C::InitializeWebsiteConfiguration()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class OodleHandlerComponent.OodleTrainerCommandlet
 // 0x0000 (0x0080 - 0x0080)
@@ -23,15 +22,16 @@ class UOodleTrainerCommandlet final : public UCommandlet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OodleTrainerCommandlet">();
+		STATIC_CLASS_IMPL("OodleTrainerCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OodleTrainerCommandlet")
 	}
 	static class UOodleTrainerCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOodleTrainerCommandlet>();
 	}
 };
-static_assert(alignof(UOodleTrainerCommandlet) == 0x000008, "Wrong alignment on UOodleTrainerCommandlet");
-static_assert(sizeof(UOodleTrainerCommandlet) == 0x000080, "Wrong size on UOodleTrainerCommandlet");
 
-}
-
+SDK_NAMESPACE_END

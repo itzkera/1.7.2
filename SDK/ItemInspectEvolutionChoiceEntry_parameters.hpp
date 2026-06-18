@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.ExecuteUbergraph_ItemInspectEvolutionChoiceEntry
 // 0x0030 (0x0030 - 0x0000)
@@ -28,14 +28,6 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry) == 0x000030, "Wrong size on ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry, EntryPoint) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry, K2Node_ComponentBoundEvent_Button4) == 0x000008, "Member 'ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry, K2Node_ComponentBoundEvent_Button3) == 0x000010, "Member 'ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry, K2Node_ComponentBoundEvent_Button2) == 0x000018, "Member 'ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry, K2Node_Event_IsDesignTime) == 0x000020, "Member 'ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'ItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -44,9 +36,6 @@ struct ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -55,9 +44,6 @@ struct ItemInspectEvolutionChoiceEntry_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_PreConstruct) == 0x000001, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_PreConstruct");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_PreConstruct) == 0x000001, "Wrong size on ItemInspectEvolutionChoiceEntry_C_PreConstruct");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -66,9 +52,6 @@ struct ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -77,9 +60,6 @@ struct ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -88,9 +68,6 @@ struct ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.SetItemToRepresent
 // 0x0028 (0x0028 - 0x0000)
@@ -103,12 +80,6 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DisableReasonText;                                 // 0x0010(0x0018)(Edit)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent) == 0x000028, "Wrong size on ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent, Item) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent::Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent, RecipeIndex) == 0x000008, "Member 'ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent::RecipeIndex' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent, EnabledChoice) == 0x00000C, "Member 'ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent::EnabledChoice' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent, DisableReasonText) == 0x000010, "Member 'ItemInspectEvolutionChoiceEntry_C_SetItemToRepresent::DisableReasonText' has a wrong offset!");
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.DoDesignTimeRandomization
 // 0x0040 (0x0040 - 0x0000)
@@ -126,16 +97,6 @@ public:
 	class UFortItemDefinition*                    K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization) == 0x000008, "Wrong alignment on ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization");
-static_assert(sizeof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization) == 0x000040, "Wrong size on ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, Temp_int_Variable) == 0x000000, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, Temp_object_Variable) == 0x000008, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, Temp_object_Variable2) == 0x000010, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, Temp_object_Variable3) == 0x000018, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, Temp_object_Variable4) == 0x000020, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::Temp_object_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, CallFunc_RandomInteger_ReturnValue) == 0x000028, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, K2Node_Select_Default) == 0x000030, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000038, "Member 'ItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass HeroesCamera_Blueprint.HeroesCamera_Blueprint_C
 // 0x0020 (0x08E0 - 0x08C0)
@@ -43,18 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroesCamera_Blueprint_C">();
+		BP_STATIC_CLASS_IMPL("HeroesCamera_Blueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroesCamera_Blueprint_C")
 	}
 	static class AHeroesCamera_Blueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHeroesCamera_Blueprint_C>();
 	}
 };
-static_assert(alignof(AHeroesCamera_Blueprint_C) == 0x000010, "Wrong alignment on AHeroesCamera_Blueprint_C");
-static_assert(sizeof(AHeroesCamera_Blueprint_C) == 0x0008E0, "Wrong size on AHeroesCamera_Blueprint_C");
-static_assert(offsetof(AHeroesCamera_Blueprint_C, UberGraphFrame) == 0x0008C0, "Member 'AHeroesCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHeroesCamera_Blueprint_C, MouseDown) == 0x0008C8, "Member 'AHeroesCamera_Blueprint_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(AHeroesCamera_Blueprint_C, Cached_Pawn) == 0x0008D0, "Member 'AHeroesCamera_Blueprint_C::Cached_Pawn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

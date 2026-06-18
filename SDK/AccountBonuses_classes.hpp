@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AccountBonuses.AccountBonuses_C
 // 0x0080 (0x02B8 - 0x0238)
@@ -51,31 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AccountBonuses_C">();
+		BP_STATIC_CLASS_IMPL("AccountBonuses_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AccountBonuses_C")
 	}
 	static class UAccountBonuses_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAccountBonuses_C>();
 	}
 };
-static_assert(alignof(UAccountBonuses_C) == 0x000008, "Wrong alignment on UAccountBonuses_C");
-static_assert(sizeof(UAccountBonuses_C) == 0x0002B8, "Wrong size on UAccountBonuses_C");
-static_assert(offsetof(UAccountBonuses_C, UberGraphFrame) == 0x000238, "Member 'UAccountBonuses_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, Divider) == 0x000240, "Member 'UAccountBonuses_C::Divider' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, FounderBadge) == 0x000248, "Member 'UAccountBonuses_C::FounderBadge' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, FoundersText) == 0x000250, "Member 'UAccountBonuses_C::FoundersText' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, FounderVertBox) == 0x000258, "Member 'UAccountBonuses_C::FounderVertBox' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, HBoxEmpty) == 0x000260, "Member 'UAccountBonuses_C::HBoxEmpty' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, HBoxFoundersBadge) == 0x000268, "Member 'UAccountBonuses_C::HBoxFoundersBadge' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, HBoxVipBadge) == 0x000270, "Member 'UAccountBonuses_C::HBoxVipBadge' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, Image_6) == 0x000278, "Member 'UAccountBonuses_C::Image_6' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, MonthlyVIPText) == 0x000280, "Member 'UAccountBonuses_C::MonthlyVIPText' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, MonthlyVIPTitle) == 0x000288, "Member 'UAccountBonuses_C::MonthlyVIPTitle' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, SafeZone_0) == 0x000290, "Member 'UAccountBonuses_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, VerticalBox_0) == 0x000298, "Member 'UAccountBonuses_C::VerticalBox_0' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, VIPVertBox) == 0x0002A0, "Member 'UAccountBonuses_C::VIPVertBox' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, MonthlyVIPDefinition) == 0x0002A8, "Member 'UAccountBonuses_C::MonthlyVIPDefinition' has a wrong offset!");
-static_assert(offsetof(UAccountBonuses_C, FounderDefinition) == 0x0002B0, "Member 'UAccountBonuses_C::FounderDefinition' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

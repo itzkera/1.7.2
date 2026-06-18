@@ -14,8 +14,7 @@
 #include "CheckFrontEndDailyRewardsAction_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.ExecuteUbergraph_CheckFrontEndDailyRewardsAction
 // (HasDefaults)
@@ -42,7 +41,7 @@ void ACheckFrontEndDailyRewardsAction_C::ExecuteUbergraph_CheckFrontEndDailyRewa
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ACheckFrontEndDailyRewardsAction_C::HandleClientEvent_FinishedModalQueue(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -64,7 +63,7 @@ void ACheckFrontEndDailyRewardsAction_C::HandleClientEvent_FinishedModalQueue(cl
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.Execute
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortScriptedActionParams        Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortScriptedActionParams& Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ACheckFrontEndDailyRewardsAction_C::Execute(const struct FFortScriptedActionParams& Params_0)
 {
@@ -126,7 +125,7 @@ void ACheckFrontEndDailyRewardsAction_C::CompleteDailyRewardAction()
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.Daily Rewards Open
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bRunning                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bRunning                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ACheckFrontEndDailyRewardsAction_C::Daily_Rewards_Open(bool* bRunning)
 {
@@ -147,7 +146,7 @@ void ACheckFrontEndDailyRewardsAction_C::Daily_Rewards_Open(bool* bRunning)
 // Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.IsFrontEndRewards Running
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsRunning                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsRunning                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ACheckFrontEndDailyRewardsAction_C::IsFrontEndRewards_Running(bool* IsRunning)
 {
@@ -164,5 +163,5 @@ void ACheckFrontEndDailyRewardsAction_C::IsFrontEndRewards_Running(bool* IsRunni
 		*IsRunning = Parms.IsRunning;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -19,8 +19,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function RewardsWidget.RewardsWidget_C.ExecuteUbergraph_RewardsWidget
 // 0x0108 (0x0108 - 0x0000)
@@ -42,21 +42,6 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortBaseButton*                        K2Node_ComponentBoundEvent_Button3;                // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget) == 0x000008, "Wrong alignment on RewardsWidget_C_ExecuteUbergraph_RewardsWidget");
-static_assert(sizeof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget) == 0x000108, "Wrong size on RewardsWidget_C_ExecuteUbergraph_RewardsWidget");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, EntryPoint) == 0x000000, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, CallFunc_GetQuestManager_ReturnValue) == 0x000010, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_ComponentBoundEvent_Button2) == 0x000018, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_Event_Quest) == 0x000020, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_Event_Quest' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_HandleClientEvent_EventSource) == 0x000028, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_HandleClientEvent_EventFocus) == 0x000030, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_HandleClientEvent_ClientEvent) == 0x000038, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_ComponentBoundEvent_Button) == 0x000058, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, CallFunc_GetChestImage_MissionIcon) == 0x000060, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::CallFunc_GetChestImage_MissionIcon' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_MakeStruct_SlateBrush) == 0x000068, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, CallFunc_SpawnSound2D_ReturnValue) == 0x0000F8, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_ExecuteUbergraph_RewardsWidget, K2Node_ComponentBoundEvent_Button3) == 0x000100, "Member 'RewardsWidget_C_ExecuteUbergraph_RewardsWidget::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +50,6 @@ struct RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_Fo
 public:
 	class UFortBaseButton*                        Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature");
-static_assert(sizeof(RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature");
-static_assert(offsetof(RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.HandleClientEvent_ConversationFinished
 // 0x0030 (0x0030 - 0x0000)
@@ -78,11 +60,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_HandleClientEvent_ConversationFinished) == 0x000008, "Wrong alignment on RewardsWidget_C_HandleClientEvent_ConversationFinished");
-static_assert(sizeof(RewardsWidget_C_HandleClientEvent_ConversationFinished) == 0x000030, "Wrong size on RewardsWidget_C_HandleClientEvent_ConversationFinished");
-static_assert(offsetof(RewardsWidget_C_HandleClientEvent_ConversationFinished, EventSource) == 0x000000, "Member 'RewardsWidget_C_HandleClientEvent_ConversationFinished::EventSource' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_HandleClientEvent_ConversationFinished, EventFocus) == 0x000008, "Member 'RewardsWidget_C_HandleClientEvent_ConversationFinished::EventFocus' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_HandleClientEvent_ConversationFinished, ClientEvent) == 0x000010, "Member 'RewardsWidget_C_HandleClientEvent_ConversationFinished::ClientEvent' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.SetQuest
 // 0x0008 (0x0008 - 0x0000)
@@ -91,9 +68,6 @@ struct RewardsWidget_C_SetQuest final
 public:
 	const class UFortQuestItem*                   Quest;                                             // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_SetQuest) == 0x000008, "Wrong alignment on RewardsWidget_C_SetQuest");
-static_assert(sizeof(RewardsWidget_C_SetQuest) == 0x000008, "Wrong size on RewardsWidget_C_SetQuest");
-static_assert(offsetof(RewardsWidget_C_SetQuest, Quest) == 0x000000, "Member 'RewardsWidget_C_SetQuest::Quest' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -102,9 +76,6 @@ struct RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_
 public:
 	class UFortBaseButton*                        Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature");
-static_assert(sizeof(RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature");
-static_assert(offsetof(RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +84,6 @@ struct RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_For
 public:
 	class UFortBaseButton*                        Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature");
-static_assert(sizeof(RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature");
-static_assert(offsetof(RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.PopulateFromQuest
 // 0x0018 (0x0018 - 0x0000)
@@ -125,10 +93,6 @@ public:
 	class UFortQuestItem*                         Quest;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortItemInstanceQuantityPair>  CallFunc_GetPreviewRewards_ReturnValue;            // 0x0008(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(RewardsWidget_C_PopulateFromQuest) == 0x000008, "Wrong alignment on RewardsWidget_C_PopulateFromQuest");
-static_assert(sizeof(RewardsWidget_C_PopulateFromQuest) == 0x000018, "Wrong size on RewardsWidget_C_PopulateFromQuest");
-static_assert(offsetof(RewardsWidget_C_PopulateFromQuest, Quest) == 0x000000, "Member 'RewardsWidget_C_PopulateFromQuest::Quest' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateFromQuest, CallFunc_GetPreviewRewards_ReturnValue) == 0x000008, "Member 'RewardsWidget_C_PopulateFromQuest::CallFunc_GetPreviewRewards_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.PopulateQuestUI
 // 0x0108 (0x0108 - 0x0000)
@@ -160,29 +124,6 @@ public:
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_GetItemSmallPreviewImageBrush_ReturnValue; // 0x0078(0x0090)()
 };
-static_assert(alignof(RewardsWidget_C_PopulateQuestUI) == 0x000008, "Wrong alignment on RewardsWidget_C_PopulateQuestUI");
-static_assert(sizeof(RewardsWidget_C_PopulateQuestUI) == 0x000108, "Wrong size on RewardsWidget_C_PopulateQuestUI");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Quest) == 0x000000, "Member 'RewardsWidget_C_PopulateQuestUI::Quest' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, RewardSelect) == 0x000008, "Member 'RewardsWidget_C_PopulateQuestUI::RewardSelect' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Temp_byte_Variable) == 0x000009, "Member 'RewardsWidget_C_PopulateQuestUI::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000010, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetQuestDefinitionBP_ReturnValue2) == 0x000018, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetQuestDefinitionBP_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetSelectRewardsConversation_ReturnValue) == 0x000020, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetSelectRewardsConversation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetCompletionText_ReturnValue) == 0x000028, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetCompletionText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_TextIsEmpty_ReturnValue) == 0x000040, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetDisplayName_ReturnValue) == 0x000048, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetClaimConversation_ReturnValue) == 0x000060, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetClaimConversation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_IsValid_ReturnValue2) == 0x000068, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_IsValid_ReturnValue3) == 0x000069, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Temp_byte_Variable2) == 0x00006A, "Member 'RewardsWidget_C_PopulateQuestUI::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Temp_bool_Variable) == 0x00006B, "Member 'RewardsWidget_C_PopulateQuestUI::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Temp_byte_Variable3) == 0x00006C, "Member 'RewardsWidget_C_PopulateQuestUI::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, K2Node_Select_Default) == 0x00006D, "Member 'RewardsWidget_C_PopulateQuestUI::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Temp_byte_Variable4) == 0x00006E, "Member 'RewardsWidget_C_PopulateQuestUI::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, Temp_bool_Variable2) == 0x00006F, "Member 'RewardsWidget_C_PopulateQuestUI::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, K2Node_Select2_Default) == 0x000070, "Member 'RewardsWidget_C_PopulateQuestUI::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateQuestUI, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000078, "Member 'RewardsWidget_C_PopulateQuestUI::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.PopulateFromQuestWithRewards
 // 0x0018 (0x0018 - 0x0000)
@@ -192,10 +133,6 @@ public:
 	class UFortQuestItem*                         Quest;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortItemInstanceQuantityPair>  Rewards;                                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(RewardsWidget_C_PopulateFromQuestWithRewards) == 0x000008, "Wrong alignment on RewardsWidget_C_PopulateFromQuestWithRewards");
-static_assert(sizeof(RewardsWidget_C_PopulateFromQuestWithRewards) == 0x000018, "Wrong size on RewardsWidget_C_PopulateFromQuestWithRewards");
-static_assert(offsetof(RewardsWidget_C_PopulateFromQuestWithRewards, Quest) == 0x000000, "Member 'RewardsWidget_C_PopulateFromQuestWithRewards::Quest' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateFromQuestWithRewards, Rewards) == 0x000008, "Member 'RewardsWidget_C_PopulateFromQuestWithRewards::Rewards' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.SetupUI
 // 0x0160 (0x0160 - 0x0000)
@@ -214,17 +151,6 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush2;                     // 0x00C8(0x0090)()
 	class UTexture2D*                             CallFunc_GetChestImage_MissionIcon;                // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_SetupUI) == 0x000008, "Wrong alignment on RewardsWidget_C_SetupUI");
-static_assert(sizeof(RewardsWidget_C_SetupUI) == 0x000160, "Wrong size on RewardsWidget_C_SetupUI");
-static_assert(offsetof(RewardsWidget_C_SetupUI, RewardType) == 0x000000, "Member 'RewardsWidget_C_SetupUI::RewardType' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, HeaderImage) == 0x000008, "Member 'RewardsWidget_C_SetupUI::HeaderImage' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, HeaderText) == 0x000010, "Member 'RewardsWidget_C_SetupUI::HeaderText' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'RewardsWidget_C_SetupUI::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, K2Node_SwitchEnum2_CmpSuccess) == 0x000029, "Member 'RewardsWidget_C_SetupUI::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, CallFunc_GetClosedChestImage_ChestImage) == 0x000030, "Member 'RewardsWidget_C_SetupUI::CallFunc_GetClosedChestImage_ChestImage' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, K2Node_MakeStruct_SlateBrush) == 0x000038, "Member 'RewardsWidget_C_SetupUI::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, K2Node_MakeStruct_SlateBrush2) == 0x0000C8, "Member 'RewardsWidget_C_SetupUI::K2Node_MakeStruct_SlateBrush2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupUI, CallFunc_GetChestImage_MissionIcon) == 0x000158, "Member 'RewardsWidget_C_SetupUI::CallFunc_GetChestImage_MissionIcon' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.PopulateMissionUI
 // 0x0078 (0x0078 - 0x0000)
@@ -235,11 +161,6 @@ public:
 	class FText                                   CallFunc_SelectText_ReturnValue;                   // 0x0048(0x0018)()
 	class FText                                   CallFunc_SelectText_ReturnValue2;                  // 0x0060(0x0018)()
 };
-static_assert(alignof(RewardsWidget_C_PopulateMissionUI) == 0x000008, "Wrong alignment on RewardsWidget_C_PopulateMissionUI");
-static_assert(sizeof(RewardsWidget_C_PopulateMissionUI) == 0x000078, "Wrong size on RewardsWidget_C_PopulateMissionUI");
-static_assert(offsetof(RewardsWidget_C_PopulateMissionUI, Mission) == 0x000000, "Member 'RewardsWidget_C_PopulateMissionUI::Mission' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateMissionUI, CallFunc_SelectText_ReturnValue) == 0x000048, "Member 'RewardsWidget_C_PopulateMissionUI::CallFunc_SelectText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateMissionUI, CallFunc_SelectText_ReturnValue2) == 0x000060, "Member 'RewardsWidget_C_PopulateMissionUI::CallFunc_SelectText_ReturnValue2' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.PopulateFromMissionWithRewards
 // 0x0058 (0x0058 - 0x0000)
@@ -249,10 +170,6 @@ public:
 	struct FFortLastMissionInfo                   LastMissionInfo;                                   // 0x0000(0x0048)(Parm)
 	TArray<struct FFortItemInstanceQuantityPair>  MissionRewards;                                    // 0x0048(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(RewardsWidget_C_PopulateFromMissionWithRewards) == 0x000008, "Wrong alignment on RewardsWidget_C_PopulateFromMissionWithRewards");
-static_assert(sizeof(RewardsWidget_C_PopulateFromMissionWithRewards) == 0x000058, "Wrong size on RewardsWidget_C_PopulateFromMissionWithRewards");
-static_assert(offsetof(RewardsWidget_C_PopulateFromMissionWithRewards, LastMissionInfo) == 0x000000, "Member 'RewardsWidget_C_PopulateFromMissionWithRewards::LastMissionInfo' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PopulateFromMissionWithRewards, MissionRewards) == 0x000048, "Member 'RewardsWidget_C_PopulateFromMissionWithRewards::MissionRewards' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.SelectText
 // 0x0068 (0x0068 - 0x0000)
@@ -267,14 +184,6 @@ public:
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0050(0x0018)()
 };
-static_assert(alignof(RewardsWidget_C_SelectText) == 0x000008, "Wrong alignment on RewardsWidget_C_SelectText");
-static_assert(sizeof(RewardsWidget_C_SelectText) == 0x000068, "Wrong size on RewardsWidget_C_SelectText");
-static_assert(offsetof(RewardsWidget_C_SelectText, InText) == 0x000000, "Member 'RewardsWidget_C_SelectText::InText' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectText, Default) == 0x000018, "Member 'RewardsWidget_C_SelectText::Default' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectText, ReturnValue) == 0x000030, "Member 'RewardsWidget_C_SelectText::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectText, Temp_bool_Variable) == 0x000048, "Member 'RewardsWidget_C_SelectText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectText, CallFunc_TextIsEmpty_ReturnValue) == 0x000049, "Member 'RewardsWidget_C_SelectText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectText, K2Node_Select_Default) == 0x000050, "Member 'RewardsWidget_C_SelectText::K2Node_Select_Default' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.GetChestImage
 // 0x0028 (0x0028 - 0x0000)
@@ -288,14 +197,6 @@ public:
 	int32                                         CallFunc_GetRewardDisplayLevel_ReturnValue;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_GetChestImage) == 0x000008, "Wrong alignment on RewardsWidget_C_GetChestImage");
-static_assert(sizeof(RewardsWidget_C_GetChestImage) == 0x000028, "Wrong size on RewardsWidget_C_GetChestImage");
-static_assert(offsetof(RewardsWidget_C_GetChestImage, MissionIcon) == 0x000000, "Member 'RewardsWidget_C_GetChestImage::MissionIcon' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetChestImage, Header_Image_0) == 0x000008, "Member 'RewardsWidget_C_GetChestImage::Header_Image_0' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetChestImage, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'RewardsWidget_C_GetChestImage::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetChestImage, CallFunc_GetLastMissionRewardReport_ReturnValue) == 0x000018, "Member 'RewardsWidget_C_GetChestImage::CallFunc_GetLastMissionRewardReport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetChestImage, CallFunc_GetRewardDisplayLevel_ReturnValue) == 0x000020, "Member 'RewardsWidget_C_GetChestImage::CallFunc_GetRewardDisplayLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetChestImage, K2Node_SwitchInteger_CmpSuccess) == 0x000024, "Member 'RewardsWidget_C_GetChestImage::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.PlayQuestConversation
 // 0x0070 (0x0070 - 0x0000)
@@ -310,14 +211,6 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AAnnounce_Gen_Quest_Conversation_C*     CallFunc_FinishSpawningActor_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_PlayQuestConversation) == 0x000010, "Wrong alignment on RewardsWidget_C_PlayQuestConversation");
-static_assert(sizeof(RewardsWidget_C_PlayQuestConversation) == 0x000070, "Wrong size on RewardsWidget_C_PlayQuestConversation");
-static_assert(offsetof(RewardsWidget_C_PlayQuestConversation, Conversation) == 0x000000, "Member 'RewardsWidget_C_PlayQuestConversation::Conversation' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PlayQuestConversation, K2Node_MakeStruct_FortClientAnnouncementData_Conversation) == 0x000008, "Member 'RewardsWidget_C_PlayQuestConversation::K2Node_MakeStruct_FortClientAnnouncementData_Conversation' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PlayQuestConversation, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000018, "Member 'RewardsWidget_C_PlayQuestConversation::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PlayQuestConversation, CallFunc_MakeTransform_ReturnValue) == 0x000030, "Member 'RewardsWidget_C_PlayQuestConversation::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PlayQuestConversation, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000060, "Member 'RewardsWidget_C_PlayQuestConversation::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_PlayQuestConversation, CallFunc_FinishSpawningActor_ReturnValue) == 0x000068, "Member 'RewardsWidget_C_PlayQuestConversation::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.SelectRewards
 // 0x0028 (0x0028 - 0x0000)
@@ -335,16 +228,6 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_SelectRewards) == 0x000008, "Wrong alignment on RewardsWidget_C_SelectRewards");
-static_assert(sizeof(RewardsWidget_C_SelectRewards) == 0x000028, "Wrong size on RewardsWidget_C_SelectRewards");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, RewardIndex) == 0x000000, "Member 'RewardsWidget_C_SelectRewards::RewardIndex' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, Temp_int_Array_Index_Variable) == 0x000004, "Member 'RewardsWidget_C_SelectRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'RewardsWidget_C_SelectRewards::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'RewardsWidget_C_SelectRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, CallFunc_Array_Get_Item) == 0x000010, "Member 'RewardsWidget_C_SelectRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'RewardsWidget_C_SelectRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'RewardsWidget_C_SelectRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SelectRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'RewardsWidget_C_SelectRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.CreateRewardChoice
 // 0x00B0 (0x00B0 - 0x0000)
@@ -377,28 +260,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_CreateRewardChoice) == 0x000008, "Wrong alignment on RewardsWidget_C_CreateRewardChoice");
-static_assert(sizeof(RewardsWidget_C_CreateRewardChoice) == 0x0000B0, "Wrong size on RewardsWidget_C_CreateRewardChoice");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Rewards) == 0x000000, "Member 'RewardsWidget_C_CreateRewardChoice::Rewards' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, RewardIndex) == 0x000010, "Member 'RewardsWidget_C_CreateRewardChoice::RewardIndex' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, IsRewardSelection) == 0x000014, "Member 'RewardsWidget_C_CreateRewardChoice::IsRewardSelection' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Temp_text_Variable) == 0x000018, "Member 'RewardsWidget_C_CreateRewardChoice::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000030, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_Create_ReturnValue) == 0x000038, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_GetOwningPlayer_ReturnValue) == 0x000040, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Temp_bool_Variable) == 0x000048, "Member 'RewardsWidget_C_CreateRewardChoice::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_Create_ReturnValue2) == 0x000050, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_AddChild_ReturnValue) == 0x000058, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Temp_text_Variable2) == 0x000060, "Member 'RewardsWidget_C_CreateRewardChoice::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_AddChild_ReturnValue2) == 0x000078, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_AddChild_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Temp_bool_Variable2) == 0x000080, "Member 'RewardsWidget_C_CreateRewardChoice::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_Array_Add_ReturnValue) == 0x000084, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Temp_byte_Variable) == 0x000088, "Member 'RewardsWidget_C_CreateRewardChoice::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_Not_PreBool_ReturnValue) == 0x000089, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, K2Node_Select_Default) == 0x000090, "Member 'RewardsWidget_C_CreateRewardChoice::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, CallFunc_BooleanAND_ReturnValue) == 0x0000A8, "Member 'RewardsWidget_C_CreateRewardChoice::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, Temp_byte_Variable2) == 0x0000A9, "Member 'RewardsWidget_C_CreateRewardChoice::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_CreateRewardChoice, K2Node_Select2_Default) == 0x0000AA, "Member 'RewardsWidget_C_CreateRewardChoice::K2Node_Select2_Default' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.SetupQuestRewardsChoice
 // 0x0058 (0x0058 - 0x0000)
@@ -416,17 +277,6 @@ public:
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsWidget_C_SetupQuestRewardsChoice) == 0x000008, "Wrong alignment on RewardsWidget_C_SetupQuestRewardsChoice");
-static_assert(sizeof(RewardsWidget_C_SetupQuestRewardsChoice) == 0x000058, "Wrong size on RewardsWidget_C_SetupQuestRewardsChoice");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, Quest) == 0x000000, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::Quest' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, HeaderText) == 0x000008, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::HeaderText' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000020, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, CallFunc_GetSelectableRewards_BP_ReturnValue) == 0x000028, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::CallFunc_GetSelectableRewards_BP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, CallFunc_Array_LastIndex_ReturnValue) == 0x000038, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, Temp_int_Variable) == 0x00003C, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, CallFunc_GetPreviewSelectableRewards_ReturnValue) == 0x000040, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::CallFunc_GetPreviewSelectableRewards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000050, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_SetupQuestRewardsChoice, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'RewardsWidget_C_SetupQuestRewardsChoice::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.TerminateQuestConverstation
 // 0x0001 (0x0001 - 0x0000)
@@ -435,9 +285,6 @@ struct RewardsWidget_C_TerminateQuestConverstation final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_TerminateQuestConverstation) == 0x000001, "Wrong alignment on RewardsWidget_C_TerminateQuestConverstation");
-static_assert(sizeof(RewardsWidget_C_TerminateQuestConverstation) == 0x000001, "Wrong size on RewardsWidget_C_TerminateQuestConverstation");
-static_assert(offsetof(RewardsWidget_C_TerminateQuestConverstation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'RewardsWidget_C_TerminateQuestConverstation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.GetClosedChestImage
 // 0x0028 (0x0028 - 0x0000)
@@ -451,14 +298,6 @@ public:
 	int32                                         CallFunc_GetRewardDisplayLevel_ReturnValue;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_GetClosedChestImage) == 0x000008, "Wrong alignment on RewardsWidget_C_GetClosedChestImage");
-static_assert(sizeof(RewardsWidget_C_GetClosedChestImage) == 0x000028, "Wrong size on RewardsWidget_C_GetClosedChestImage");
-static_assert(offsetof(RewardsWidget_C_GetClosedChestImage, ChestImage) == 0x000000, "Member 'RewardsWidget_C_GetClosedChestImage::ChestImage' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetClosedChestImage, ClosedChestImage) == 0x000008, "Member 'RewardsWidget_C_GetClosedChestImage::ClosedChestImage' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetClosedChestImage, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'RewardsWidget_C_GetClosedChestImage::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetClosedChestImage, CallFunc_GetLastMissionRewardReport_ReturnValue) == 0x000018, "Member 'RewardsWidget_C_GetClosedChestImage::CallFunc_GetLastMissionRewardReport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetClosedChestImage, CallFunc_GetRewardDisplayLevel_ReturnValue) == 0x000020, "Member 'RewardsWidget_C_GetClosedChestImage::CallFunc_GetRewardDisplayLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_GetClosedChestImage, K2Node_SwitchInteger_CmpSuccess) == 0x000024, "Member 'RewardsWidget_C_GetClosedChestImage::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.On_ClosedChest_MouseButtonDown_1
 // 0x0238 (0x0238 - 0x0000)
@@ -473,14 +312,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0220(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0230(0x0008)(NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1) == 0x000008, "Wrong alignment on RewardsWidget_C_On_ClosedChest_MouseButtonDown_1");
-static_assert(sizeof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1) == 0x000238, "Wrong size on RewardsWidget_C_On_ClosedChest_MouseButtonDown_1");
-static_assert(offsetof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1, MyGeometry) == 0x000000, "Member 'RewardsWidget_C_On_ClosedChest_MouseButtonDown_1::MyGeometry' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1, MouseEvent) == 0x000038, "Member 'RewardsWidget_C_On_ClosedChest_MouseButtonDown_1::MouseEvent' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1, ReturnValue) == 0x0000B0, "Member 'RewardsWidget_C_On_ClosedChest_MouseButtonDown_1::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1, CallFunc_Handled_ReturnValue) == 0x000168, "Member 'RewardsWidget_C_On_ClosedChest_MouseButtonDown_1::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1, K2Node_CreateDelegate_OutputDelegate) == 0x000220, "Member 'RewardsWidget_C_On_ClosedChest_MouseButtonDown_1::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_On_ClosedChest_MouseButtonDown_1, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000230, "Member 'RewardsWidget_C_On_ClosedChest_MouseButtonDown_1::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function RewardsWidget.RewardsWidget_C.OnHandleAction
 // 0x0190 (0x0190 - 0x0000)
@@ -494,13 +325,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0188(0x0008)(NoDestructor)
 };
-static_assert(alignof(RewardsWidget_C_OnHandleAction) == 0x000008, "Wrong alignment on RewardsWidget_C_OnHandleAction");
-static_assert(sizeof(RewardsWidget_C_OnHandleAction) == 0x000190, "Wrong size on RewardsWidget_C_OnHandleAction");
-static_assert(offsetof(RewardsWidget_C_OnHandleAction, Result) == 0x000000, "Member 'RewardsWidget_C_OnHandleAction::Result' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_OnHandleAction, bPassThrough) == 0x0000B8, "Member 'RewardsWidget_C_OnHandleAction::bPassThrough' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_OnHandleAction, CallFunc_Handled_ReturnValue) == 0x0000C0, "Member 'RewardsWidget_C_OnHandleAction::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_OnHandleAction, K2Node_CreateDelegate_OutputDelegate) == 0x000178, "Member 'RewardsWidget_C_OnHandleAction::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(RewardsWidget_C_OnHandleAction, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000188, "Member 'RewardsWidget_C_OnHandleAction::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

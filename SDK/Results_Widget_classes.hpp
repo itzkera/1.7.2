@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_Widget.Results_Widget_C
 // 0x0140 (0x05E0 - 0x04A0)
@@ -113,56 +112,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_Widget_C">();
+		BP_STATIC_CLASS_IMPL("Results_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_Widget_C")
 	}
 	static class UResults_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_Widget_C>();
 	}
 };
-static_assert(alignof(UResults_Widget_C) == 0x000008, "Wrong alignment on UResults_Widget_C");
-static_assert(sizeof(UResults_Widget_C) == 0x0005E0, "Wrong size on UResults_Widget_C");
-static_assert(offsetof(UResults_Widget_C, UberGraphFrame) == 0x0004A0, "Member 'UResults_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_TeleportPadIntro) == 0x0004A8, "Member 'UResults_Widget_C::Anim_TeleportPadIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPOutro) == 0x0004B0, "Member 'UResults_Widget_C::Anim_CommanderXPOutro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_CommanderXPIntro) == 0x0004B8, "Member 'UResults_Widget_C::Anim_CommanderXPIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_GradientOutro) == 0x0004C0, "Member 'UResults_Widget_C::Anim_GradientOutro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_GradientIntro) == 0x0004C8, "Member 'UResults_Widget_C::Anim_GradientIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_VideoOutro) == 0x0004D0, "Member 'UResults_Widget_C::Anim_VideoOutro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Anim_VideoIntro) == 0x0004D8, "Member 'UResults_Widget_C::Anim_VideoIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, BadgeLoot) == 0x0004E0, "Member 'UResults_Widget_C::BadgeLoot' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, BorderVideo) == 0x0004E8, "Member 'UResults_Widget_C::BorderVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, CommanderXP) == 0x0004F0, "Member 'UResults_Widget_C::CommanderXP' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, MovieWidgetVideo) == 0x0004F8, "Member 'UResults_Widget_C::MovieWidgetVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, SafeZone_0) == 0x000500, "Member 'UResults_Widget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, SafeZone_3) == 0x000508, "Member 'UResults_Widget_C::SafeZone_3' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, Summary) == 0x000510, "Member 'UResults_Widget_C::Summary' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamMicStack) == 0x000518, "Member 'UResults_Widget_C::TeamMicStack' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamScore) == 0x000520, "Member 'UResults_Widget_C::TeamScore' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamTotalScore) == 0x000528, "Member 'UResults_Widget_C::TeamTotalScore' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeleportPad) == 0x000530, "Member 'UResults_Widget_C::TeleportPad' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TextZoneCompletion) == 0x000538, "Member 'UResults_Widget_C::TextZoneCompletion' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TopPanel) == 0x000540, "Member 'UResults_Widget_C::TopPanel' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, WidgetSwitcherMain) == 0x000548, "Member 'UResults_Widget_C::WidgetSwitcherMain' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, AnalyticsTimeStart) == 0x000550, "Member 'UResults_Widget_C::AnalyticsTimeStart' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, MediaPlayer) == 0x000558, "Member 'UResults_Widget_C::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ResultsStartVictory) == 0x000560, "Member 'UResults_Widget_C::ResultsStartVictory' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ResultsStartDefeat) == 0x000568, "Member 'UResults_Widget_C::ResultsStartDefeat' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ACResultsStart) == 0x000570, "Member 'UResults_Widget_C::ACResultsStart' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ResultsFinished) == 0x000578, "Member 'UResults_Widget_C::ResultsFinished' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ACResultsFinished) == 0x000580, "Member 'UResults_Widget_C::ACResultsFinished' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, VictoryIntro) == 0x000588, "Member 'UResults_Widget_C::VictoryIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, DefeatIntro) == 0x000590, "Member 'UResults_Widget_C::DefeatIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, DefeatVideo) == 0x000598, "Member 'UResults_Widget_C::DefeatVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, ZoneCompletionResult) == 0x0005A0, "Member 'UResults_Widget_C::ZoneCompletionResult' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, DelayBetweenVideoAndIntro) == 0x0005A4, "Member 'UResults_Widget_C::DelayBetweenVideoAndIntro' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, bCanSkipVideo) == 0x0005A8, "Member 'UResults_Widget_C::bCanSkipVideo' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, VictoryStart) == 0x0005B0, "Member 'UResults_Widget_C::VictoryStart' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TeamScoreWhoosh) == 0x0005B8, "Member 'UResults_Widget_C::TeamScoreWhoosh' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, CommanderXPWhoosh) == 0x0005C0, "Member 'UResults_Widget_C::CommanderXPWhoosh' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, InputSkip) == 0x0005C8, "Member 'UResults_Widget_C::InputSkip' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, bVideoSkipped) == 0x0005D8, "Member 'UResults_Widget_C::bVideoSkipped' has a wrong offset!");
-static_assert(offsetof(UResults_Widget_C, TPAnalyticsTimeStart) == 0x0005DC, "Member 'UResults_Widget_C::TPAnalyticsTimeStart' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

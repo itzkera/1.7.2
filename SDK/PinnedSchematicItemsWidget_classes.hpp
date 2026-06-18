@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C
 // 0x0020 (0x0280 - 0x0260)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PinnedSchematicItemsWidget_C">();
+		BP_STATIC_CLASS_IMPL("PinnedSchematicItemsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PinnedSchematicItemsWidget_C")
 	}
 	static class UPinnedSchematicItemsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPinnedSchematicItemsWidget_C>();
 	}
 };
-static_assert(alignof(UPinnedSchematicItemsWidget_C) == 0x000008, "Wrong alignment on UPinnedSchematicItemsWidget_C");
-static_assert(sizeof(UPinnedSchematicItemsWidget_C) == 0x000280, "Wrong size on UPinnedSchematicItemsWidget_C");
-static_assert(offsetof(UPinnedSchematicItemsWidget_C, UberGraphFrame) == 0x000260, "Member 'UPinnedSchematicItemsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemsWidget_C, PinnedSchematicItem0) == 0x000268, "Member 'UPinnedSchematicItemsWidget_C::PinnedSchematicItem0' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemsWidget_C, PinnedSchematicItem1) == 0x000270, "Member 'UPinnedSchematicItemsWidget_C::PinnedSchematicItem1' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemsWidget_C, VerticalBoxPinnedList) == 0x000278, "Member 'UPinnedSchematicItemsWidget_C::VerticalBoxPinnedList' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

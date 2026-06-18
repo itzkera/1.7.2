@@ -14,24 +14,23 @@
 #include "MissionObjectiveWidgetProviderInterface_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C.GetObjectiveContentWidgetClass
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass*                           Objective_WIdget_Class                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass**                          Objective_WIdget_Class                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void IMissionObjectiveWidgetProviderInterface_C::GetObjectiveContentWidgetClass(class UClass** Objective_WIdget_Class)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MissionObjectiveWidgetProviderInterface_C", "GetObjectiveContentWidgetClass");
+		Func = AsUObject()->Class->GetFunction("MissionObjectiveWidgetProviderInterface_C", "GetObjectiveContentWidgetClass");
 
 	Params::MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (Objective_WIdget_Class != nullptr)
 		*Objective_WIdget_Class = Parms.Objective_WIdget_Class;
@@ -41,22 +40,22 @@ void IMissionObjectiveWidgetProviderInterface_C::GetObjectiveContentWidgetClass(
 // Function MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C.GetObjectiveBulletIcon
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      BulletIcon                                             (Parm, OutParm)
+// struct FSlateBrush*                     BulletIcon                                             (Parm, OutParm)
 
 void IMissionObjectiveWidgetProviderInterface_C::GetObjectiveBulletIcon(struct FSlateBrush* BulletIcon)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MissionObjectiveWidgetProviderInterface_C", "GetObjectiveBulletIcon");
+		Func = AsUObject()->Class->GetFunction("MissionObjectiveWidgetProviderInterface_C", "GetObjectiveBulletIcon");
 
 	Params::MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (BulletIcon != nullptr)
 		*BulletIcon = std::move(Parms.BulletIcon);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaCompass.AthenaCompass_C
 // 0x0048 (0x02A8 - 0x0260)
@@ -41,23 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaCompass_C">();
+		BP_STATIC_CLASS_IMPL("AthenaCompass_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaCompass_C")
 	}
 	static class UAthenaCompass_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaCompass_C>();
 	}
 };
-static_assert(alignof(UAthenaCompass_C) == 0x000008, "Wrong alignment on UAthenaCompass_C");
-static_assert(sizeof(UAthenaCompass_C) == 0x0002A8, "Wrong size on UAthenaCompass_C");
-static_assert(offsetof(UAthenaCompass_C, UberGraphFrame) == 0x000260, "Member 'UAthenaCompass_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, CompassImage) == 0x000268, "Member 'UAthenaCompass_C::CompassImage' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, Marker0) == 0x000270, "Member 'UAthenaCompass_C::Marker0' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, Marker1) == 0x000278, "Member 'UAthenaCompass_C::Marker1' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, Marker2) == 0x000280, "Member 'UAthenaCompass_C::Marker2' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, Marker3) == 0x000288, "Member 'UAthenaCompass_C::Marker3' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, CompassMaterial) == 0x000290, "Member 'UAthenaCompass_C::CompassMaterial' has a wrong offset!");
-static_assert(offsetof(UAthenaCompass_C, Markers) == 0x000298, "Member 'UAthenaCompass_C::Markers' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HUD-PickupItemWidget.HUD-PickupItemWidget_C
 // 0x0038 (0x0270 - 0x0238)
@@ -41,22 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HUD-PickupItemWidget_C">();
+		BP_STATIC_CLASS_IMPL("HUD-PickupItemWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUD-PickupItemWidget_C")
 	}
 	static class UHUD_PickupItemWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUD_PickupItemWidget_C>();
 	}
 };
-static_assert(alignof(UHUD_PickupItemWidget_C) == 0x000008, "Wrong alignment on UHUD_PickupItemWidget_C");
-static_assert(sizeof(UHUD_PickupItemWidget_C) == 0x000270, "Wrong size on UHUD_PickupItemWidget_C");
-static_assert(offsetof(UHUD_PickupItemWidget_C, UberGraphFrame) == 0x000238, "Member 'UHUD_PickupItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_PickupItemWidget_C, ImageBackpack) == 0x000240, "Member 'UHUD_PickupItemWidget_C::ImageBackpack' has a wrong offset!");
-static_assert(offsetof(UHUD_PickupItemWidget_C, ItemHeaderWidget) == 0x000248, "Member 'UHUD_PickupItemWidget_C::ItemHeaderWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_PickupItemWidget_C, SizeBoxInteractionFailure) == 0x000250, "Member 'UHUD_PickupItemWidget_C::SizeBoxInteractionFailure' has a wrong offset!");
-static_assert(offsetof(UHUD_PickupItemWidget_C, TextInteractionFailure) == 0x000258, "Member 'UHUD_PickupItemWidget_C::TextInteractionFailure' has a wrong offset!");
-static_assert(offsetof(UHUD_PickupItemWidget_C, Pickup) == 0x000260, "Member 'UHUD_PickupItemWidget_C::Pickup' has a wrong offset!");
-static_assert(offsetof(UHUD_PickupItemWidget_C, PickupItem) == 0x000268, "Member 'UHUD_PickupItemWidget_C::PickupItem' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

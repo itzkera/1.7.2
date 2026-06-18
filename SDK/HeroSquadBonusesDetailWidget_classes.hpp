@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HeroSquadBonusesDetailWidget.HeroSquadBonusesDetailWidget_C
 // 0x0018 (0x0288 - 0x0270)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroSquadBonusesDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("HeroSquadBonusesDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroSquadBonusesDetailWidget_C")
 	}
 	static class UHeroSquadBonusesDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroSquadBonusesDetailWidget_C>();
 	}
 };
-static_assert(alignof(UHeroSquadBonusesDetailWidget_C) == 0x000008, "Wrong alignment on UHeroSquadBonusesDetailWidget_C");
-static_assert(sizeof(UHeroSquadBonusesDetailWidget_C) == 0x000288, "Wrong size on UHeroSquadBonusesDetailWidget_C");
-static_assert(offsetof(UHeroSquadBonusesDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UHeroSquadBonusesDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonusesDetailWidget_C, SupportPerkWidget) == 0x000278, "Member 'UHeroSquadBonusesDetailWidget_C::SupportPerkWidget' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonusesDetailWidget_C, TacticalPerkWidget) == 0x000280, "Member 'UHeroSquadBonusesDetailWidget_C::TacticalPerkWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

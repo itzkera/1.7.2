@@ -14,8 +14,7 @@
 #include "AnimNotifyState_DisablePawnRotation_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C.Received_NotifyBegin
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -68,5 +67,5 @@ bool UAnimNotifyState_DisablePawnRotation_C::Received_NotifyEnd(class USkeletalM
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

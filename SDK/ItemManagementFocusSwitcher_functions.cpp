@@ -14,14 +14,13 @@
 #include "ItemManagementFocusSwitcher_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.OnFocusReceived
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FFocusEvent                      InFocusEvent                                           (Parm, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FFocusEvent&               InFocusEvent                                           (Parm, NoDestructor)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UItemManagementFocusSwitcher_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
@@ -69,5 +68,5 @@ void UItemManagementFocusSwitcher_C::ExecuteFocusSwitch()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

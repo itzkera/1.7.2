@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.ExecuteUbergraph_MissionDetailsModifierRow
 // 0x0004 (0x0004 - 0x0000)
@@ -24,9 +24,6 @@ struct MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow) == 0x000004, "Wrong alignment on MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow");
-static_assert(sizeof(MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow) == 0x000004, "Wrong size on MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow");
-static_assert(offsetof(MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow, EntryPoint) == 0x000000, "Member 'MissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow::EntryPoint' has a wrong offset!");
 
 // Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.Init
 // 0x0078 (0x0078 - 0x0000)
@@ -56,28 +53,6 @@ public:
 	float                                         K2Node_Select2_Default;                            // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionDetailsModifierRow_C_Init) == 0x000008, "Wrong alignment on MissionDetailsModifierRow_C_Init");
-static_assert(sizeof(MissionDetailsModifierRow_C_Init) == 0x000078, "Wrong size on MissionDetailsModifierRow_C_Init");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierName) == 0x000000, "Member 'MissionDetailsModifierRow_C_Init::ModifierName' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierDescription) == 0x000018, "Member 'MissionDetailsModifierRow_C_Init::ModifierDescription' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, ModifierIcon) == 0x000030, "Member 'MissionDetailsModifierRow_C_Init::ModifierIcon' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, TextStyle) == 0x000038, "Member 'MissionDetailsModifierRow_C_Init::TextStyle' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, Show_Description) == 0x000040, "Member 'MissionDetailsModifierRow_C_Init::Show_Description' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, UseSmallIcon) == 0x000041, "Member 'MissionDetailsModifierRow_C_Init::UseSmallIcon' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, NormalSize) == 0x000044, "Member 'MissionDetailsModifierRow_C_Init::NormalSize' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, SmallSize) == 0x00004C, "Member 'MissionDetailsModifierRow_C_Init::SmallSize' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, Temp_bool_Variable) == 0x000054, "Member 'MissionDetailsModifierRow_C_Init::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, Temp_bool_Variable2) == 0x000055, "Member 'MissionDetailsModifierRow_C_Init::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, Temp_byte_Variable) == 0x000056, "Member 'MissionDetailsModifierRow_C_Init::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, Temp_byte_Variable2) == 0x000057, "Member 'MissionDetailsModifierRow_C_Init::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, Temp_bool_Variable3) == 0x000058, "Member 'MissionDetailsModifierRow_C_Init::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, CallFunc_BreakVector2D_X) == 0x00005C, "Member 'MissionDetailsModifierRow_C_Init::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, CallFunc_BreakVector2D_Y) == 0x000060, "Member 'MissionDetailsModifierRow_C_Init::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, CallFunc_BreakVector2D_X2) == 0x000064, "Member 'MissionDetailsModifierRow_C_Init::CallFunc_BreakVector2D_X2' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, CallFunc_BreakVector2D_Y2) == 0x000068, "Member 'MissionDetailsModifierRow_C_Init::CallFunc_BreakVector2D_Y2' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, K2Node_Select_Default) == 0x00006C, "Member 'MissionDetailsModifierRow_C_Init::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, K2Node_Select2_Default) == 0x000070, "Member 'MissionDetailsModifierRow_C_Init::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(MissionDetailsModifierRow_C_Init, K2Node_Select3_Default) == 0x000074, "Member 'MissionDetailsModifierRow_C_Init::K2Node_Select3_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

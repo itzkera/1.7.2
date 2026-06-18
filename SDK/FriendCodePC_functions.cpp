@@ -14,8 +14,7 @@
 #include "FriendCodePC_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FriendCodePC.FriendCodePC_C.ExecuteUbergraph_FriendCodePC
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UFriendCodePC_C::OnClicked()
 // Function FriendCodePC.FriendCodePC_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UFriendCodePC_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -74,8 +73,8 @@ void UFriendCodePC_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 // Function FriendCodePC.FriendCodePC_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UFriendCodePC_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -110,7 +109,7 @@ void UFriendCodePC_C::Construct()
 // Function FriendCodePC.FriendCodePC_C.GetFriendCodeUrl
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Result                                                 (Parm, OutParm)
+// class FText*                            Result                                                 (Parm, OutParm)
 
 void UFriendCodePC_C::GetFriendCodeUrl(class FText* Result)
 {
@@ -127,5 +126,5 @@ void UFriendCodePC_C::GetFriendCodeUrl(class FText* Result)
 		*Result = std::move(Parms.Result);
 }
 
-}
 
+SDK_NAMESPACE_END

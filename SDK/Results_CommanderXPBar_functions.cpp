@@ -14,8 +14,7 @@
 #include "Results_CommanderXPBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.ExecuteUbergraph_Results_CommanderXPBar
 // (HasDefaults)
@@ -278,7 +277,7 @@ void UResults_CommanderXPBar_C::UpdateProgressBarPercent(class FName ParameterNa
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.GetHoveredProgressBarSection
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             XpSectionName                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            XpSectionName                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UResults_CommanderXPBar_C::GetHoveredProgressBarSection(class FName* XpSectionName)
 {
@@ -329,5 +328,5 @@ void UResults_CommanderXPBar_C::DebugSections()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

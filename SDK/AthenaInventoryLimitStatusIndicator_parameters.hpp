@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.ExecuteUbergraph_AthenaInventoryLimitStatusIndicator
 // 0x0040 (0x0040 - 0x0000)
@@ -28,15 +28,8 @@ public:
 	TArray<class UFortWorldItem*>                 K2Node_CustomEvent_ItemsAdded;                     // 0x0008(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 K2Node_CustomEvent_ItemsRemoved;                   // 0x0018(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate; // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator) == 0x000008, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
-static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator) == 0x000040, "Wrong size on AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, EntryPoint) == 0x000000, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsAdded) == 0x000008, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsAdded' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsRemoved) == 0x000018, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsRemoved' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'AthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.HandleWorldItemListChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -46,23 +39,15 @@ public:
 	TArray<class UFortWorldItem*>                 ItemsAdded;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 ItemsRemoved;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged) == 0x000008, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged");
-static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged) == 0x000020, "Wrong size on AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged, ItemsAdded) == 0x000000, "Member 'AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged::ItemsAdded' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged, ItemsRemoved) == 0x000010, "Member 'AthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.TrackWorldInventory
 // 0x0018 (0x0018 - 0x0000)
 struct AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory final
 {
 public:
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory) == 0x000008, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory");
-static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory) == 0x000018, "Wrong size on AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaInventoryLimitStatusIndicator_C_TrackWorldInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.RefreshWorldInventoryStatus
 // 0x0180 (0x0180 - 0x0000)
@@ -98,33 +83,6 @@ public:
 	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0158(0x0028)()
 };
-static_assert(alignof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x000008, "Wrong alignment on AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
-static_assert(sizeof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x000180, "Wrong size on AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_struct_Variable) == 0x000000, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_bool_Variable) == 0x000010, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Get_Theme_Color_Theme_Color) == 0x000020, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Get_Theme_Color_Theme_Color' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetBackpackItemCounts_ItemsCount) == 0x000030, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetBackpackItemCounts_ItemsCount' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetBackpackItemCounts_MaxItemsCount) == 0x000034, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetBackpackItemCounts_MaxItemsCount' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetBackpackItemCounts_OverflowItemsCount) == 0x000038, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetBackpackItemCounts_OverflowItemsCount' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Get_Theme_Color_Theme_Color2) == 0x00003C, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Get_Theme_Color_Theme_Color2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeStruct_FormatArgumentData2) == 0x000090, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeArray_Array) == 0x0000D0, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeArray_Array2) == 0x0000E0, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Format_ReturnValue) == 0x0000F0, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Format_ReturnValue2) == 0x000108, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000120, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000124, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_FMax_ReturnValue) == 0x000128, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00012C, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Less_FloatFloat_ReturnValue) == 0x000130, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Less_FloatFloat_ReturnValue2) == 0x000131, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Less_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_bool_Variable2) == 0x000132, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_Select_Default) == 0x000134, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_Select2_Default) == 0x000144, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeStruct_SlateColor) == 0x000158, "Member 'AthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

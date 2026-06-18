@@ -13,8 +13,7 @@
 #include "Athena_PlayerCameraModeBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Athena_PlayerCameraModeSniper.Athena_PlayerCameraModeSniper_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class UAthena_PlayerCameraModeSniper_C : public UAthena_PlayerCameraModeBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeSniper_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeSniper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeSniper_C")
 	}
 	static class UAthena_PlayerCameraModeSniper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeSniper_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeSniper_C) == 0x000008, "Wrong alignment on UAthena_PlayerCameraModeSniper_C");
-static_assert(sizeof(UAthena_PlayerCameraModeSniper_C) == 0x000110, "Wrong size on UAthena_PlayerCameraModeSniper_C");
 
-}
-
+SDK_NAMESPACE_END

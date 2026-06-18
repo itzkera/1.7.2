@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TutorialWindow.TutorialWindow_C.ExecuteUbergraph_TutorialWindow
 // 0x0010 (0x0010 - 0x0000)
@@ -23,10 +23,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TutorialWindow_C_ExecuteUbergraph_TutorialWindow) == 0x000008, "Wrong alignment on TutorialWindow_C_ExecuteUbergraph_TutorialWindow");
-static_assert(sizeof(TutorialWindow_C_ExecuteUbergraph_TutorialWindow) == 0x000010, "Wrong size on TutorialWindow_C_ExecuteUbergraph_TutorialWindow");
-static_assert(offsetof(TutorialWindow_C_ExecuteUbergraph_TutorialWindow, EntryPoint) == 0x000000, "Member 'TutorialWindow_C_ExecuteUbergraph_TutorialWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TutorialWindow_C_ExecuteUbergraph_TutorialWindow, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'TutorialWindow_C_ExecuteUbergraph_TutorialWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function TutorialWindow.TutorialWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +31,6 @@ struct TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TutorialWindow.TutorialWindow_C.SetDescription
 // 0x0018 (0x0018 - 0x0000)
@@ -46,9 +39,6 @@ struct TutorialWindow_C_SetDescription final
 public:
 	class FText                                   Description_0;                                     // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(TutorialWindow_C_SetDescription) == 0x000008, "Wrong alignment on TutorialWindow_C_SetDescription");
-static_assert(sizeof(TutorialWindow_C_SetDescription) == 0x000018, "Wrong size on TutorialWindow_C_SetDescription");
-static_assert(offsetof(TutorialWindow_C_SetDescription, Description_0) == 0x000000, "Member 'TutorialWindow_C_SetDescription::Description_0' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

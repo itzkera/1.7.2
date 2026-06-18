@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WindManager.WindManager_C
 // 0x0098 (0x0670 - 0x05D8)
@@ -63,36 +62,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WindManager_C">();
+		BP_STATIC_CLASS_IMPL("WindManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindManager_C")
 	}
 	static class AWindManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWindManager_C>();
 	}
 };
-static_assert(alignof(AWindManager_C) == 0x000008, "Wrong alignment on AWindManager_C");
-static_assert(sizeof(AWindManager_C) == 0x000670, "Wrong size on AWindManager_C");
-static_assert(offsetof(AWindManager_C, UberGraphFrame) == 0x0005D8, "Member 'AWindManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, EmptyStaticMesh) == 0x0005E0, "Member 'AWindManager_C::EmptyStaticMesh' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, ParticleSystem) == 0x0005E8, "Member 'AWindManager_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, TopDownCaptureActorOfTheWorld) == 0x0005F0, "Member 'AWindManager_C::TopDownCaptureActorOfTheWorld' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, DebugParticleSystem) == 0x0005F8, "Member 'AWindManager_C::DebugParticleSystem' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, SceneCaptureComponent2D03) == 0x000600, "Member 'AWindManager_C::SceneCaptureComponent2D03' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, SceneCaptureComponent2D02) == 0x000608, "Member 'AWindManager_C::SceneCaptureComponent2D02' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, SceneCaptureComponent2D01) == 0x000610, "Member 'AWindManager_C::SceneCaptureComponent2D01' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, DefaultSceneRoot) == 0x000618, "Member 'AWindManager_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, SmallerRenderTargetOrthoWidth) == 0x000620, "Member 'AWindManager_C::SmallerRenderTargetOrthoWidth' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, LargestRenderTargetOrthoWidth) == 0x000624, "Member 'AWindManager_C::LargestRenderTargetOrthoWidth' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, MidSizedRenderTargetOrthoWidth) == 0x000628, "Member 'AWindManager_C::MidSizedRenderTargetOrthoWidth' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, External_Test_Actor) == 0x000630, "Member 'AWindManager_C::External_Test_Actor' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, DebugParticleBasedWind) == 0x000640, "Member 'AWindManager_C::DebugParticleBasedWind' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, World_Terrain_Meshes) == 0x000648, "Member 'AWindManager_C::World_Terrain_Meshes' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Camera_Height_Offset) == 0x000658, "Member 'AWindManager_C::Camera_Height_Offset' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Character_Initialized) == 0x000664, "Member 'AWindManager_C::Character_Initialized' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Particle_Z_Offset) == 0x000668, "Member 'AWindManager_C::Particle_Z_Offset' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Activate_Grass_Wind_And_Top_Down_Z_Depth_Texture_Renders_Of_the_World) == 0x00066C, "Member 'AWindManager_C::Activate_Grass_Wind_And_Top_Down_Z_Depth_Texture_Renders_Of_the_World' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Has_Water_Interaction_Enabled_Variable_Been_Set) == 0x00066D, "Member 'AWindManager_C::Has_Water_Interaction_Enabled_Variable_Been_Set' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Is_Water_Interaction_Enabled) == 0x00066E, "Member 'AWindManager_C::Is_Water_Interaction_Enabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

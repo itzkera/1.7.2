@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BasicInteractionWidget.BasicInteractionWidget_C
 // 0x0028 (0x0260 - 0x0238)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BasicInteractionWidget_C">();
+		BP_STATIC_CLASS_IMPL("BasicInteractionWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BasicInteractionWidget_C")
 	}
 	static class UBasicInteractionWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBasicInteractionWidget_C>();
 	}
 };
-static_assert(alignof(UBasicInteractionWidget_C) == 0x000008, "Wrong alignment on UBasicInteractionWidget_C");
-static_assert(sizeof(UBasicInteractionWidget_C) == 0x000260, "Wrong size on UBasicInteractionWidget_C");
-static_assert(offsetof(UBasicInteractionWidget_C, UberGraphFrame) == 0x000238, "Member 'UBasicInteractionWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBasicInteractionWidget_C, TextDescription) == 0x000240, "Member 'UBasicInteractionWidget_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UBasicInteractionWidget_C, Description) == 0x000248, "Member 'UBasicInteractionWidget_C::Description' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

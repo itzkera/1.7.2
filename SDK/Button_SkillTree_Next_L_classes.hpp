@@ -13,8 +13,7 @@
 #include "Button_SkillTree_L_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Button-SkillTree-Next-L.Button-SkillTree-Next-L_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButton_SkillTree_Next_L_C final : public UButton_SkillTree_L_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Button-SkillTree-Next-L_C">();
+		BP_STATIC_CLASS_IMPL("Button-SkillTree-Next-L_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Button-SkillTree-Next-L_C")
 	}
 	static class UButton_SkillTree_Next_L_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButton_SkillTree_Next_L_C>();
 	}
 };
-static_assert(alignof(UButton_SkillTree_Next_L_C) == 0x000008, "Wrong alignment on UButton_SkillTree_Next_L_C");
-static_assert(sizeof(UButton_SkillTree_Next_L_C) == 0x000530, "Wrong size on UButton_SkillTree_Next_L_C");
 
-}
-
+SDK_NAMESPACE_END

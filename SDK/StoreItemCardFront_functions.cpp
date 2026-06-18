@@ -14,8 +14,7 @@
 #include "StoreItemCardFront_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreItemCardFront.StoreItemCardFront_C.ExecuteUbergraph_StoreItemCardFront
 // (HasDefaults)
@@ -94,7 +93,7 @@ void UStoreItemCardFront_C::Construct()
 // Function StoreItemCardFront.StoreItemCardFront_C.Initialize_Card
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FCard                            inCard                                                 (Parm, NoDestructor)
+// const struct FCard&                     inCard                                                 (Parm, NoDestructor)
 
 void UStoreItemCardFront_C::Initialize_Card(const struct FCard& inCard)
 {
@@ -148,7 +147,7 @@ class FText UStoreItemCardFront_C::Get_Card_Name_Text()
 // Function StoreItemCardFront.StoreItemCardFront_C.Get Type Text
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             OutText                                                (Parm, OutParm)
+// class FText*                            OutText                                                (Parm, OutParm)
 
 void UStoreItemCardFront_C::Get_Type_Text(class FText* OutText)
 {
@@ -165,5 +164,5 @@ void UStoreItemCardFront_C::Get_Type_Text(class FText* OutText)
 		*OutText = std::move(Parms.OutText);
 }
 
-}
 
+SDK_NAMESPACE_END

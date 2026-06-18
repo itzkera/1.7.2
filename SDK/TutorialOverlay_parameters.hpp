@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TutorialOverlay.TutorialOverlay_C.ExecuteUbergraph_TutorialOverlay
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay) == 0x000004, "Wrong alignment on TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay");
-static_assert(sizeof(TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay) == 0x000004, "Wrong size on TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay");
-static_assert(offsetof(TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay, EntryPoint) == 0x000000, "Member 'TutorialOverlay_C_ExecuteUbergraph_TutorialOverlay::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

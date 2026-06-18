@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MessageCenterWidget.MessageCenterWidget_C.ExecuteUbergraph_MessageCenterWidget
 // 0x00A0 (0x00A0 - 0x0000)
@@ -44,26 +44,6 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue2;          // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget) == 0x000008, "Wrong alignment on MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget");
-static_assert(sizeof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget) == 0x0000A0, "Wrong size on MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, EntryPoint) == 0x000000, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_ComponentBoundEvent_Button3) == 0x000028, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, CallFunc_GetInputManager_ReturnValue) == 0x000038, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_ComponentBoundEvent_Item) == 0x000040, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_ComponentBoundEvent_bIsSelected) == 0x000048, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_ComponentBoundEvent_bIsSelected' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_ComponentBoundEvent_Button2) == 0x000050, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_ComponentBoundEvent_Button) == 0x000058, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, CallFunc_GetSelectedItem_ReturnValue) == 0x000060, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, CallFunc_GetSelectedItem_ReturnValue2) == 0x000068, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::CallFunc_GetSelectedItem_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_DynamicCast_AsFort_UINotification) == 0x000070, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_DynamicCast_AsFort_UINotification' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_DynamicCast_AsFort_UINotification2) == 0x000080, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_DynamicCast_AsFort_UINotification2' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, K2Node_DynamicCast_bSuccess2) == 0x000088, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000090, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x000098, "Member 'MessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
 
 // Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +52,6 @@ struct MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -83,9 +60,6 @@ struct MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_Co
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -95,10 +69,6 @@ public:
 	class UObject*                                Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsSelected;                                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature) == 0x000008, "Wrong alignment on MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature");
-static_assert(sizeof(MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature) == 0x000010, "Wrong size on MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature");
-static_assert(offsetof(MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature, Item) == 0x000000, "Member 'MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature::Item' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature, bIsSelected) == 0x000008, "Member 'MessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature::bIsSelected' has a wrong offset!");
 
 // Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +77,6 @@ struct MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MessageCenterWidget.MessageCenterWidget_C.HandleMessageSelected
 // 0x0030 (0x0030 - 0x0000)
@@ -128,17 +95,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MessageCenterWidget_C_HandleMessageSelected) == 0x000008, "Wrong alignment on MessageCenterWidget_C_HandleMessageSelected");
-static_assert(sizeof(MessageCenterWidget_C_HandleMessageSelected) == 0x000030, "Wrong size on MessageCenterWidget_C_HandleMessageSelected");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, Item) == 0x000000, "Member 'MessageCenterWidget_C_HandleMessageSelected::Item' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, Selected) == 0x000008, "Member 'MessageCenterWidget_C_HandleMessageSelected::Selected' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, MESSAGE) == 0x000010, "Member 'MessageCenterWidget_C_HandleMessageSelected::MESSAGE' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, Temp_bool_Variable) == 0x000018, "Member 'MessageCenterWidget_C_HandleMessageSelected::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, K2Node_DynamicCast_AsFort_UINotification) == 0x000020, "Member 'MessageCenterWidget_C_HandleMessageSelected::K2Node_DynamicCast_AsFort_UINotification' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'MessageCenterWidget_C_HandleMessageSelected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, Temp_byte_Variable) == 0x000029, "Member 'MessageCenterWidget_C_HandleMessageSelected::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, Temp_byte_Variable2) == 0x00002A, "Member 'MessageCenterWidget_C_HandleMessageSelected::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MessageCenterWidget_C_HandleMessageSelected, K2Node_Select_Default) == 0x00002B, "Member 'MessageCenterWidget_C_HandleMessageSelected::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

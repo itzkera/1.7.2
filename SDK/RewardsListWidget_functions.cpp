@@ -14,14 +14,13 @@
 #include "RewardsListWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RewardsListWidget.RewardsListWidget_C.PopulateRewards
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FFortItemInstanceQuantityPair>SelectableRewards                                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&SelectableRewards                                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void URewardsListWidget_C::PopulateRewards(TArray<struct FFortItemInstanceQuantityPair>& Rewards, TArray<struct FFortItemInstanceQuantityPair>& SelectableRewards)
 {
@@ -59,7 +58,7 @@ void URewardsListWidget_C::PresentNextReward()
 // Function RewardsListWidget.RewardsListWidget_C.CreateReward
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortItemInstanceQuantityPair    FortItemInstanceQuantityPair                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortItemInstanceQuantityPair&FortItemInstanceQuantityPair                           (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 // bool                                    Selectable                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URewardsListWidget_C::CreateReward(const struct FFortItemInstanceQuantityPair& FortItemInstanceQuantityPair, bool Selectable)
@@ -82,8 +81,8 @@ void URewardsListWidget_C::CreateReward(const struct FFortItemInstanceQuantityPa
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UHomeScreenQuestRewardItem_C*     Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             DisplayName                                            (Parm)
-// class UFrontEndRewardWrapperWidget_C*   OutputPin                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      DisplayName                                            (Parm)
+// class UFrontEndRewardWrapperWidget_C**  OutputPin                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsListWidget_C::CreateRewardWrapper(class UHomeScreenQuestRewardItem_C* Item, const class FText& DisplayName, class UFrontEndRewardWrapperWidget_C** OutputPin)
 {
@@ -117,5 +116,5 @@ void URewardsListWidget_C::PresentAllRewards()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

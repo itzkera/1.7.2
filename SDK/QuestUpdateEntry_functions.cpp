@@ -14,8 +14,7 @@
 #include "QuestUpdateEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestUpdateEntry.QuestUpdateEntry_C.ExecuteUbergraph_QuestUpdateEntry
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UQuestUpdateEntry_C::Construct()
 // Function QuestUpdateEntry.QuestUpdateEntry_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestUpdateEntry_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -76,8 +75,8 @@ void UQuestUpdateEntry_C::Tick(const struct FGeometry& MyGeometry, float InDelta
 // Function QuestUpdateEntry.QuestUpdateEntry_C.OnReceiveQuestUpdate
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          QuestUpdateInfo                                        (Parm, HasGetValueTypeHash)
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FDynamicQuestUpdateInfo&   QuestUpdateInfo                                        (Parm, HasGetValueTypeHash)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::OnReceiveQuestUpdate(const struct FDynamicQuestUpdateInfo& QuestUpdateInfo, bool* Success)
 {
@@ -100,8 +99,8 @@ void UQuestUpdateEntry_C::OnReceiveQuestUpdate(const struct FDynamicQuestUpdateI
 // Function QuestUpdateEntry.QuestUpdateEntry_C.CanAddUpdate
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          UpdateToAdd                                            (Parm, HasGetValueTypeHash)
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FDynamicQuestUpdateInfo&   UpdateToAdd                                            (Parm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::CanAddUpdate(const struct FDynamicQuestUpdateInfo& UpdateToAdd, bool* Result)
 {
@@ -153,7 +152,7 @@ void UQuestUpdateEntry_C::TryStartUpdates()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   UpdateIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::CanStartUpdate(int32 UpdateIndex, bool* Result)
 {
@@ -176,8 +175,8 @@ void UQuestUpdateEntry_C::CanStartUpdate(int32 UpdateIndex, bool* Result)
 // Function QuestUpdateEntry.QuestUpdateEntry_C.HasUpdateFinished
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          Update                                                 (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FDynamicQuestUpdateInfo&         Update                                                 (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::HasUpdateFinished(struct FDynamicQuestUpdateInfo& Update, bool* Result)
 {
@@ -216,8 +215,8 @@ void UQuestUpdateEntry_C::OnUpdateFinished()
 // Function QuestUpdateEntry.QuestUpdateEntry_C.HasUpdateStarted
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          Update                                                 (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FDynamicQuestUpdateInfo&         Update                                                 (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::HasUpdateStarted(struct FDynamicQuestUpdateInfo& Update, bool* Result)
 {
@@ -243,7 +242,7 @@ void UQuestUpdateEntry_C::HasUpdateStarted(struct FDynamicQuestUpdateInfo& Updat
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortQuestObjectiveInfo*          QuestObjective                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UQuestObjectiveEntry_C*           ObjectiveWidget                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UQuestObjectiveEntry_C**          ObjectiveWidget                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestUpdateEntry_C::GetObjectiveWidget(class UFortQuestObjectiveInfo* QuestObjective, class UQuestObjectiveEntry_C** ObjectiveWidget)
 {
@@ -266,8 +265,8 @@ void UQuestUpdateEntry_C::GetObjectiveWidget(class UFortQuestObjectiveInfo* Ques
 // Function QuestUpdateEntry.QuestUpdateEntry_C.IsUpdateActive
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          Update                                                 (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FDynamicQuestUpdateInfo&         Update                                                 (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::IsUpdateActive(struct FDynamicQuestUpdateInfo& Update, bool* Result)
 {
@@ -292,7 +291,7 @@ void UQuestUpdateEntry_C::IsUpdateActive(struct FDynamicQuestUpdateInfo& Update,
 // Function QuestUpdateEntry.QuestUpdateEntry_C.HaveAllUpdatesFinished
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdateEntry_C::HaveAllUpdatesFinished(bool* Result)
 {
@@ -363,7 +362,7 @@ void UQuestUpdateEntry_C::CreateObjectiveEntryWidget(class UFortQuestObjectiveIn
 // Function QuestUpdateEntry.QuestUpdateEntry_C.GetNumDisplayedObjectives
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   NumObjectives                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  NumObjectives                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestUpdateEntry_C::GetNumDisplayedObjectives(int32* NumObjectives)
 {
@@ -380,5 +379,5 @@ void UQuestUpdateEntry_C::GetNumDisplayedObjectives(int32* NumObjectives)
 		*NumObjectives = Parms.NumObjectives;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Frontend.FrontEnd_C.ExecuteUbergraph_FrontEnd
 // 0x0018 (0x0018 - 0x0000)
@@ -24,11 +24,6 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsMobileApp_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEnd_C_ExecuteUbergraph_FrontEnd) == 0x000008, "Wrong alignment on FrontEnd_C_ExecuteUbergraph_FrontEnd");
-static_assert(sizeof(FrontEnd_C_ExecuteUbergraph_FrontEnd) == 0x000018, "Wrong size on FrontEnd_C_ExecuteUbergraph_FrontEnd");
-static_assert(offsetof(FrontEnd_C_ExecuteUbergraph_FrontEnd, EntryPoint) == 0x000000, "Member 'FrontEnd_C_ExecuteUbergraph_FrontEnd::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FrontEnd_C_ExecuteUbergraph_FrontEnd, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'FrontEnd_C_ExecuteUbergraph_FrontEnd::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEnd_C_ExecuteUbergraph_FrontEnd, CallFunc_IsMobileApp_ReturnValue) == 0x000010, "Member 'FrontEnd_C_ExecuteUbergraph_FrontEnd::CallFunc_IsMobileApp_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

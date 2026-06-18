@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FortTwitchLogin.FortTwitchLogin_C
 // 0x0068 (0x02F8 - 0x0290)
@@ -60,25 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortTwitchLogin_C">();
+		BP_STATIC_CLASS_IMPL("FortTwitchLogin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortTwitchLogin_C")
 	}
 	static class UFortTwitchLogin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortTwitchLogin_C>();
 	}
 };
-static_assert(alignof(UFortTwitchLogin_C) == 0x000008, "Wrong alignment on UFortTwitchLogin_C");
-static_assert(sizeof(UFortTwitchLogin_C) == 0x0002F8, "Wrong size on UFortTwitchLogin_C");
-static_assert(offsetof(UFortTwitchLogin_C, UberGraphFrame) == 0x000290, "Member 'UFortTwitchLogin_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, NotSignedInBox) == 0x000298, "Member 'UFortTwitchLogin_C::NotSignedInBox' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignedInBox) == 0x0002A0, "Member 'UFortTwitchLogin_C::SignedInBox' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignInButton) == 0x0002A8, "Member 'UFortTwitchLogin_C::SignInButton' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignInStatusSwitcher) == 0x0002B0, "Member 'UFortTwitchLogin_C::SignInStatusSwitcher' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignOutButton) == 0x0002B8, "Member 'UFortTwitchLogin_C::SignOutButton' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, TwitchIdEntry) == 0x0002C0, "Member 'UFortTwitchLogin_C::TwitchIdEntry' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, NoLinkedAccountText) == 0x0002C8, "Member 'UFortTwitchLogin_C::NoLinkedAccountText' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, OnRequestToolTipChange) == 0x0002E0, "Member 'UFortTwitchLogin_C::OnRequestToolTipChange' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, bShowingError) == 0x0002F0, "Member 'UFortTwitchLogin_C::bShowingError' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

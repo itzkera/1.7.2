@@ -14,8 +14,7 @@
 #include "Results_Badge_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_Badge.Results_Badge_C.ExecuteUbergraph_Results_Badge
 // ()
@@ -136,7 +135,7 @@ void UResults_Badge_C::SetItem(class UFortItem* Item)
 // Function Results_Badge.Results_Badge_C.HasValidItem
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    HasValidItem_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HasValidItem_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_Badge_C::HasValidItem(bool* HasValidItem_0)
 {
@@ -215,5 +214,5 @@ void UResults_Badge_C::DoDesignTimeRandomization()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

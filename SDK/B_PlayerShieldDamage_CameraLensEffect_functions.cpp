@@ -14,8 +14,7 @@
 #include "B_PlayerShieldDamage_CameraLensEffect_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C.ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect
 // ()
@@ -70,5 +69,5 @@ void AB_PlayerShieldDamage_CameraLensEffect_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

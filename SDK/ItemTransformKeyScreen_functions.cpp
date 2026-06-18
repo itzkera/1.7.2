@@ -14,8 +14,7 @@
 #include "ItemTransformKeyScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.ExecuteUbergraph_ItemTransformKeyScreen
 // ()
@@ -176,7 +175,7 @@ void UItemTransformKeyScreen_C::ResetScreen()
 // Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Get Selected Item
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        SelectedKey                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem**                       SelectedKey                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformKeyScreen_C::Get_Selected_Item(class UFortItem** SelectedKey)
 {
@@ -232,7 +231,7 @@ void UItemTransformKeyScreen_C::NavigateToFirstItem()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             TabNameID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EConversionControlKeyRequest            RequestType                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EConversionControlKeyRequest*           RequestType                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransformKeyScreen_C::Determine_Key_Types_to_See(class FName TabNameID, EConversionControlKeyRequest* RequestType)
 {
@@ -256,7 +255,7 @@ void UItemTransformKeyScreen_C::Determine_Key_Types_to_See(class FName TabNameID
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FName                             TabNameID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Text                                                   (Parm, OutParm)
+// class FText*                            Text                                                   (Parm, OutParm)
 
 void UItemTransformKeyScreen_C::Determine_Tab_List_Title(class FName TabNameID, class FText* Text)
 {
@@ -275,5 +274,5 @@ void UItemTransformKeyScreen_C::Determine_Tab_List_Title(class FName TabNameID, 
 		*Text = std::move(Parms.Text);
 }
 
-}
 
+SDK_NAMESPACE_END

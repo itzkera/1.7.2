@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookPageCompletionRewardWidget.CollectionBookPageCompletionRewardWidget_C
 // 0x0020 (0x0270 - 0x0250)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookPageCompletionRewardWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookPageCompletionRewardWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookPageCompletionRewardWidget_C")
 	}
 	static class UCollectionBookPageCompletionRewardWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookPageCompletionRewardWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPageCompletionRewardWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageCompletionRewardWidget_C");
-static_assert(sizeof(UCollectionBookPageCompletionRewardWidget_C) == 0x000270, "Wrong size on UCollectionBookPageCompletionRewardWidget_C");
-static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, UberGraphFrame) == 0x000250, "Member 'UCollectionBookPageCompletionRewardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, ArrowImage) == 0x000258, "Member 'UCollectionBookPageCompletionRewardWidget_C::ArrowImage' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, CheckImage) == 0x000260, "Member 'UCollectionBookPageCompletionRewardWidget_C::CheckImage' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageCompletionRewardWidget_C, RewardStatusSwitcher) == 0x000268, "Member 'UCollectionBookPageCompletionRewardWidget_C::RewardStatusSwitcher' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

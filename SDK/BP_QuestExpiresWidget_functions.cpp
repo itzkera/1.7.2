@@ -14,8 +14,7 @@
 #include "BP_QuestExpiresWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.ExecuteUbergraph_BP_QuestExpiresWidget
 // ()
@@ -114,7 +113,7 @@ void UBP_QuestExpiresWidget_C::Refresh_Expiration_Timer(class UFortQuestItem* Qu
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.GetFortPC
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            AsFort_Player_Controller                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerController**           AsFort_Player_Controller                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_QuestExpiresWidget_C::GetFortPC(class AFortPlayerController** AsFort_Player_Controller)
 {
@@ -131,5 +130,5 @@ void UBP_QuestExpiresWidget_C::GetFortPC(class AFortPlayerController** AsFort_Pl
 		*AsFort_Player_Controller = Parms.AsFort_Player_Controller;
 }
 
-}
 
+SDK_NAMESPACE_END

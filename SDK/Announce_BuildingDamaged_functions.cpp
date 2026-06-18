@@ -14,8 +14,7 @@
 #include "Announce_BuildingDamaged_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_BuildingDamaged.Announce_BuildingDamaged_C.ExecuteUbergraph_Announce_BuildingDamaged
 // ()
@@ -64,5 +63,5 @@ void AAnnounce_BuildingDamaged_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

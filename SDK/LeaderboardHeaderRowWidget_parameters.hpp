@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.ExecuteUbergraph_LeaderboardHeaderRowWidget
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget) == 0x000004, "Wrong alignment on LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget");
-static_assert(sizeof(LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget) == 0x000004, "Wrong size on LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget");
-static_assert(offsetof(LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget, EntryPoint) == 0x000000, "Member 'LeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget::EntryPoint' has a wrong offset!");
 
 // Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.SetStatNameText
 // 0x0018 (0x0018 - 0x0000)
@@ -32,9 +29,6 @@ struct LeaderboardHeaderRowWidget_C_SetStatNameText final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(LeaderboardHeaderRowWidget_C_SetStatNameText) == 0x000008, "Wrong alignment on LeaderboardHeaderRowWidget_C_SetStatNameText");
-static_assert(sizeof(LeaderboardHeaderRowWidget_C_SetStatNameText) == 0x000018, "Wrong size on LeaderboardHeaderRowWidget_C_SetStatNameText");
-static_assert(offsetof(LeaderboardHeaderRowWidget_C_SetStatNameText, Text) == 0x000000, "Member 'LeaderboardHeaderRowWidget_C_SetStatNameText::Text' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

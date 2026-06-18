@@ -13,8 +13,7 @@
 #include "TextStyle_Base_XS_Blue_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-Base-XS-B-NavyBlueFade.TextStyle-Base-XS-B-NavyBlueFade_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_Base_XS_B_NavyBlueFade_C final : public UTextStyle_Base_XS_Blue
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Base-XS-B-NavyBlueFade_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Base-XS-B-NavyBlueFade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Base-XS-B-NavyBlueFade_C")
 	}
 	static class UTextStyle_Base_XS_B_NavyBlueFade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Base_XS_B_NavyBlueFade_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Base_XS_B_NavyBlueFade_C) == 0x000008, "Wrong alignment on UTextStyle_Base_XS_B_NavyBlueFade_C");
-static_assert(sizeof(UTextStyle_Base_XS_B_NavyBlueFade_C) == 0x0000D0, "Wrong size on UTextStyle_Base_XS_B_NavyBlueFade_C");
 
-}
-
+SDK_NAMESPACE_END

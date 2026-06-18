@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformKeyInfo.ItemTransformKeyInfo_C
 // 0x0048 (0x0280 - 0x0238)
@@ -41,24 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformKeyInfo_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformKeyInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformKeyInfo_C")
 	}
 	static class UItemTransformKeyInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformKeyInfo_C>();
 	}
 };
-static_assert(alignof(UItemTransformKeyInfo_C) == 0x000008, "Wrong alignment on UItemTransformKeyInfo_C");
-static_assert(sizeof(UItemTransformKeyInfo_C) == 0x000280, "Wrong size on UItemTransformKeyInfo_C");
-static_assert(offsetof(UItemTransformKeyInfo_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformKeyInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, KeyCard) == 0x000240, "Member 'UItemTransformKeyInfo_C::KeyCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, KeyDescriptionText) == 0x000248, "Member 'UItemTransformKeyInfo_C::KeyDescriptionText' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, KeyInfoSwitcher) == 0x000250, "Member 'UItemTransformKeyInfo_C::KeyInfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, KeyInfoWidget) == 0x000258, "Member 'UItemTransformKeyInfo_C::KeyInfoWidget' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, KeyNameText) == 0x000260, "Member 'UItemTransformKeyInfo_C::KeyNameText' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, KeyRarityText) == 0x000268, "Member 'UItemTransformKeyInfo_C::KeyRarityText' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, NoKeyInfoWidget) == 0x000270, "Member 'UItemTransformKeyInfo_C::NoKeyInfoWidget' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyInfo_C, RarityDescriptionText) == 0x000278, "Member 'UItemTransformKeyInfo_C::RarityDescriptionText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

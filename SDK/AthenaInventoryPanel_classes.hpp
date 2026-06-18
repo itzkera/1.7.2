@@ -16,8 +16,7 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaInventoryPanel.AthenaInventoryPanel_C
 // 0x00A8 (0x04F8 - 0x0450)
@@ -39,7 +38,7 @@ public:
 	class UImage*                                 Image_2;                                           // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       InventoryLabel;                                    // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaInventoryLimitStatusIndicator_C* InventoryLimitStatusBackpack;                      // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemInspectionMainItemDetailsHostPanel_C* ItemDetails;                                       // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemInspectionMainItemDetailsHostPanel_C* ItemDetails;                                    // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PageTitle;                                         // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_0;                                        // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bUseRetire;                                        // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -83,39 +82,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaInventoryPanel_C">();
+		BP_STATIC_CLASS_IMPL("AthenaInventoryPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaInventoryPanel_C")
 	}
 	static class UAthenaInventoryPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaInventoryPanel_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryPanel_C) == 0x000008, "Wrong alignment on UAthenaInventoryPanel_C");
-static_assert(sizeof(UAthenaInventoryPanel_C) == 0x0004F8, "Wrong size on UAthenaInventoryPanel_C");
-static_assert(offsetof(UAthenaInventoryPanel_C, UberGraphFrame) == 0x000450, "Member 'UAthenaInventoryPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, FadeMessage) == 0x000458, "Member 'UAthenaInventoryPanel_C::FadeMessage' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, AthenaInventoryDropSlot) == 0x000460, "Member 'UAthenaInventoryPanel_C::AthenaInventoryDropSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, BackpackHeader) == 0x000468, "Member 'UAthenaInventoryPanel_C::BackpackHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, CommonBorderEquipSlots) == 0x000470, "Member 'UAthenaInventoryPanel_C::CommonBorderEquipSlots' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot1) == 0x000478, "Member 'UAthenaInventoryPanel_C::EquipSlot1' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot2) == 0x000480, "Member 'UAthenaInventoryPanel_C::EquipSlot2' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot3) == 0x000488, "Member 'UAthenaInventoryPanel_C::EquipSlot3' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot4) == 0x000490, "Member 'UAthenaInventoryPanel_C::EquipSlot4' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlot5) == 0x000498, "Member 'UAthenaInventoryPanel_C::EquipSlot5' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, EquipSlots) == 0x0004A0, "Member 'UAthenaInventoryPanel_C::EquipSlots' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, Image_0) == 0x0004A8, "Member 'UAthenaInventoryPanel_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, Image_2) == 0x0004B0, "Member 'UAthenaInventoryPanel_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, InventoryLabel) == 0x0004B8, "Member 'UAthenaInventoryPanel_C::InventoryLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, InventoryLimitStatusBackpack) == 0x0004C0, "Member 'UAthenaInventoryPanel_C::InventoryLimitStatusBackpack' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, ItemDetails) == 0x0004C8, "Member 'UAthenaInventoryPanel_C::ItemDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, PageTitle) == 0x0004D0, "Member 'UAthenaInventoryPanel_C::PageTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, SafeZone_0) == 0x0004D8, "Member 'UAthenaInventoryPanel_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bUseRetire) == 0x0004E0, "Member 'UAthenaInventoryPanel_C::bUseRetire' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bHideCount) == 0x0004E1, "Member 'UAthenaInventoryPanel_C::bHideCount' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bHideResources) == 0x0004E2, "Member 'UAthenaInventoryPanel_C::bHideResources' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, bHideTitle) == 0x0004E3, "Member 'UAthenaInventoryPanel_C::bHideTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, MulchQuantitySelector) == 0x0004E8, "Member 'UAthenaInventoryPanel_C::MulchQuantitySelector' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryPanel_C, QuantitySelectorWidget) == 0x0004F0, "Member 'UAthenaInventoryPanel_C::QuantitySelectorWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C
 // 0x0010 (0x0240 - 0x0230)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ReportSpectatingPlayerButton_C">();
+		BP_STATIC_CLASS_IMPL("ReportSpectatingPlayerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReportSpectatingPlayerButton_C")
 	}
 	static class UReportSpectatingPlayerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReportSpectatingPlayerButton_C>();
 	}
 };
-static_assert(alignof(UReportSpectatingPlayerButton_C) == 0x000008, "Wrong alignment on UReportSpectatingPlayerButton_C");
-static_assert(sizeof(UReportSpectatingPlayerButton_C) == 0x000240, "Wrong size on UReportSpectatingPlayerButton_C");
-static_assert(offsetof(UReportSpectatingPlayerButton_C, UberGraphFrame) == 0x000230, "Member 'UReportSpectatingPlayerButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UReportSpectatingPlayerButton_C, IconTextButton) == 0x000238, "Member 'UReportSpectatingPlayerButton_C::IconTextButton' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

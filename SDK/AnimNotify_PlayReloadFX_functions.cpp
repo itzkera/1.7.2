@@ -14,8 +14,7 @@
 #include "AnimNotify_PlayReloadFX_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotify_PlayReloadFX.AnimNotify_PlayReloadFX_C.Received_Notify
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -41,5 +40,5 @@ bool UAnimNotify_PlayReloadFX_C::Received_Notify(class USkeletalMeshComponent* M
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

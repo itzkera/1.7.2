@@ -14,8 +14,7 @@
 #include "AnimNotifyState_TeleportFinished_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotifyState_TeleportFinished.AnimNotifyState_TeleportFinished_C.Received_NotifyBegin
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -68,5 +67,5 @@ bool UAnimNotifyState_TeleportFinished_C::Received_NotifyEnd(class USkeletalMesh
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

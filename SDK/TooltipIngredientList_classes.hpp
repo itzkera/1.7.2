@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TooltipIngredientList.TooltipIngredientList_C
 // 0x0020 (0x0250 - 0x0230)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TooltipIngredientList_C">();
+		BP_STATIC_CLASS_IMPL("TooltipIngredientList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipIngredientList_C")
 	}
 	static class UTooltipIngredientList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipIngredientList_C>();
 	}
 };
-static_assert(alignof(UTooltipIngredientList_C) == 0x000008, "Wrong alignment on UTooltipIngredientList_C");
-static_assert(sizeof(UTooltipIngredientList_C) == 0x000250, "Wrong size on UTooltipIngredientList_C");
-static_assert(offsetof(UTooltipIngredientList_C, UberGraphFrame) == 0x000230, "Member 'UTooltipIngredientList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltipIngredientList_C, HorizontalBoxIngredients) == 0x000238, "Member 'UTooltipIngredientList_C::HorizontalBoxIngredients' has a wrong offset!");
-static_assert(offsetof(UTooltipIngredientList_C, Schematic) == 0x000240, "Member 'UTooltipIngredientList_C::Schematic' has a wrong offset!");
-static_assert(offsetof(UTooltipIngredientList_C, Panel_Mode) == 0x000248, "Member 'UTooltipIngredientList_C::Panel_Mode' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

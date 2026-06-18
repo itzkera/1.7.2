@@ -14,8 +14,7 @@
 #include "ObjectivesPage_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ObjectivesPage.ObjectivesPage_C.ExecuteUbergraph_ObjectivesPage
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UObjectivesPage_C::ExecuteUbergraph_ObjectivesPage(int32 EntryPoint)
 // Function ObjectivesPage.ObjectivesPage_C.OnActiveGameplayModifiersChanged_Event_0
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>AppliedModifiers                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortGameplayModifierItemDefinition*>&AppliedModifiers                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UObjectivesPage_C::OnActiveGameplayModifiersChanged_Event_0(const TArray<class UFortGameplayModifierItemDefinition*>& AppliedModifiers)
 {
@@ -102,7 +101,7 @@ void UObjectivesPage_C::Construct()
 // Function ObjectivesPage.ObjectivesPage_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UObjectivesPage_C::HandleBack(bool* PassThrough)
 {
@@ -145,7 +144,7 @@ void UObjectivesPage_C::HandleSelectedButtonChanged(class UCommonButton* InButto
 // Function ObjectivesPage.ObjectivesPage_C.HandleInventory
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UObjectivesPage_C::HandleInventory(bool* PassThrough)
 {
@@ -186,7 +185,7 @@ void UObjectivesPage_C::ConfigureModifiersView(bool ShowModifiers)
 // Function ObjectivesPage.ObjectivesPage_C.MissionHasModifiers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    MissionHasModifiers_0                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   MissionHasModifiers_0                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UObjectivesPage_C::MissionHasModifiers(bool* MissionHasModifiers_0)
 {
@@ -203,5 +202,5 @@ void UObjectivesPage_C::MissionHasModifiers(bool* MissionHasModifiers_0)
 		*MissionHasModifiers_0 = Parms.MissionHasModifiers_0;
 }
 
-}
 
+SDK_NAMESPACE_END

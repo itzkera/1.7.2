@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass InteractionIndicator.InteractionIndicator_C
 // 0x0038 (0x02D0 - 0x0298)
@@ -46,22 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InteractionIndicator_C">();
+		BP_STATIC_CLASS_IMPL("InteractionIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InteractionIndicator_C")
 	}
 	static class UInteractionIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteractionIndicator_C>();
 	}
 };
-static_assert(alignof(UInteractionIndicator_C) == 0x000008, "Wrong alignment on UInteractionIndicator_C");
-static_assert(sizeof(UInteractionIndicator_C) == 0x0002D0, "Wrong size on UInteractionIndicator_C");
-static_assert(offsetof(UInteractionIndicator_C, UberGraphFrame) == 0x000298, "Member 'UInteractionIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInteractionIndicator_C, BasicInteractionWidget) == 0x0002A0, "Member 'UInteractionIndicator_C::BasicInteractionWidget' has a wrong offset!");
-static_assert(offsetof(UInteractionIndicator_C, HUD_PickupItemWidget) == 0x0002A8, "Member 'UInteractionIndicator_C::HUD_PickupItemWidget' has a wrong offset!");
-static_assert(offsetof(UInteractionIndicator_C, Interaction_DefenderBeacon) == 0x0002B0, "Member 'UInteractionIndicator_C::Interaction_DefenderBeacon' has a wrong offset!");
-static_assert(offsetof(UInteractionIndicator_C, KeybindWidget) == 0x0002B8, "Member 'UInteractionIndicator_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UInteractionIndicator_C, TextUnderKeybindText) == 0x0002C0, "Member 'UInteractionIndicator_C::TextUnderKeybindText' has a wrong offset!");
-static_assert(offsetof(UInteractionIndicator_C, CurrentInteraction) == 0x0002C8, "Member 'UInteractionIndicator_C::CurrentInteraction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

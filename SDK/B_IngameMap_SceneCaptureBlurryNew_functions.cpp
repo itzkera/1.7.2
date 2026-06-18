@@ -14,8 +14,7 @@
 #include "B_IngameMap_SceneCaptureBlurryNew_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_IngameMap_SceneCaptureBlurryNew.B_IngameMap_SceneCaptureBlurryNew_C.ExecuteUbergraph_B_IngameMap_SceneCaptureBlurryNew
 // ()
@@ -64,5 +63,5 @@ void AB_IngameMap_SceneCaptureBlurryNew_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

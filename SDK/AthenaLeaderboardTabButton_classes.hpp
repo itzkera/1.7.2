@@ -16,8 +16,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C
 // 0x0100 (0x09A0 - 0x08A0)
@@ -54,26 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLeaderboardTabButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLeaderboardTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLeaderboardTabButton_C")
 	}
 	static class UAthenaLeaderboardTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLeaderboardTabButton_C>();
 	}
 };
-static_assert(alignof(UAthenaLeaderboardTabButton_C) == 0x000008, "Wrong alignment on UAthenaLeaderboardTabButton_C");
-static_assert(sizeof(UAthenaLeaderboardTabButton_C) == 0x0009A0, "Wrong size on UAthenaLeaderboardTabButton_C");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, UberGraphFrame) == 0x0008A0, "Member 'UAthenaLeaderboardTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, CenterButtonTextWidget) == 0x0008A8, "Member 'UAthenaLeaderboardTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, ContentHB) == 0x0008B0, "Member 'UAthenaLeaderboardTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, LeftSideImage) == 0x0008B8, "Member 'UAthenaLeaderboardTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, ButtonText) == 0x0008C0, "Member 'UAthenaLeaderboardTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, IconBrush) == 0x0008D8, "Member 'UAthenaLeaderboardTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, UseText) == 0x000968, "Member 'UAthenaLeaderboardTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, SelectedIconTint) == 0x00096C, "Member 'UAthenaLeaderboardTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, DeselectedIconTint) == 0x00097C, "Member 'UAthenaLeaderboardTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, HoveredIconTint) == 0x00098C, "Member 'UAthenaLeaderboardTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, bBangEnabled) == 0x00099C, "Member 'UAthenaLeaderboardTabButton_C::bBangEnabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

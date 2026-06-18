@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.ExecuteUbergraph_SurvivorRescuedCounter
 // 0x0050 (0x0050 - 0x0000)
@@ -34,18 +34,6 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter) == 0x000008, "Wrong alignment on SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter");
-static_assert(sizeof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter) == 0x000050, "Wrong size on SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, EntryPoint) == 0x000000, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, K2Node_DynamicCast_AsFort_Game_State_Zone) == 0x000010, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::K2Node_DynamicCast_AsFort_Game_State_Zone' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_GetNumSurvivorsRescued_ReturnValue) == 0x00001C, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_GetNumSurvivorsRescued_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_IsInOutpostZone_ReturnValue) == 0x000028, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_IsInOutpostZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_Not_PreBool_ReturnValue) == 0x000040, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter, CallFunc_GetContext_ReturnValue2) == 0x000048, "Member 'SurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.UpdateSurvivorsRescued
 // 0x0020 (0x0020 - 0x0000)
@@ -56,10 +44,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-static_assert(alignof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued) == 0x000008, "Wrong alignment on SurvivorRescuedCounter_C_UpdateSurvivorsRescued");
-static_assert(sizeof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued) == 0x000020, "Wrong size on SurvivorRescuedCounter_C_UpdateSurvivorsRescued");
-static_assert(offsetof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued, SurvivorsRescued) == 0x000000, "Member 'SurvivorRescuedCounter_C_UpdateSurvivorsRescued::SurvivorsRescued' has a wrong offset!");
-static_assert(offsetof(SurvivorRescuedCounter_C_UpdateSurvivorsRescued, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'SurvivorRescuedCounter_C_UpdateSurvivorsRescued::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

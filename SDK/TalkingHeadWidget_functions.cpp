@@ -14,8 +14,7 @@
 #include "TalkingHeadWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TalkingHeadWidget.TalkingHeadWidget_C.ExecuteUbergraph_TalkingHeadWidget
 // ()
@@ -74,7 +73,7 @@ void UTalkingHeadWidget_C::SetTalkingHeadImage(class UTexture2D* Icon)
 // Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
+// const class FText&                      Title                                                  (Parm)
 
 void UTalkingHeadWidget_C::SetTalkingHeadName(const class FText& Title)
 {
@@ -94,7 +93,7 @@ void UTalkingHeadWidget_C::SetTalkingHeadName(const class FText& Title)
 // Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadSubtitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Subtitle                                               (Parm)
+// const class FText&                      Subtitle                                               (Parm)
 
 void UTalkingHeadWidget_C::SetTalkingHeadSubtitle(const class FText& Subtitle)
 {
@@ -115,8 +114,8 @@ void UTalkingHeadWidget_C::SetTalkingHeadSubtitle(const class FText& Subtitle)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Title                                                  (Parm)
-// class FText                             Subtitle                                               (Parm)
+// const class FText&                      Title                                                  (Parm)
+// const class FText&                      Subtitle                                               (Parm)
 // EFortAnnouncementDisplayPreference      DisplayPreference                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
@@ -150,5 +149,5 @@ void UTalkingHeadWidget_C::HandleTalkingHeadEnd()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AnimNotify_FootStep_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotify_FootStep.AnimNotify_FootStep_C.Received_Notify
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
@@ -41,5 +40,5 @@ bool UAnimNotify_FootStep_C::Received_Notify(class USkeletalMeshComponent* MeshC
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

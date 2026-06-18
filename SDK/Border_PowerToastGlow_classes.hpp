@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-PowerToastGlow.Border-PowerToastGlow_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_PowerToastGlow_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-PowerToastGlow_C">();
+		BP_STATIC_CLASS_IMPL("Border-PowerToastGlow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-PowerToastGlow_C")
 	}
 	static class UBorder_PowerToastGlow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_PowerToastGlow_C>();
 	}
 };
-static_assert(alignof(UBorder_PowerToastGlow_C) == 0x000008, "Wrong alignment on UBorder_PowerToastGlow_C");
-static_assert(sizeof(UBorder_PowerToastGlow_C) == 0x0000B8, "Wrong size on UBorder_PowerToastGlow_C");
 
-}
-
+SDK_NAMESPACE_END

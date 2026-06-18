@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CircleAroundPrimaryAssignmentGoals_Bombshell.CircleAroundPrimaryAssignmentGoals_Bombshell_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UCircleAroundPrimaryAssignmentGoals_Bombshell_C final : public UFortAIGoal
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CircleAroundPrimaryAssignmentGoals_Bombshell_C">();
+		BP_STATIC_CLASS_IMPL("CircleAroundPrimaryAssignmentGoals_Bombshell_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CircleAroundPrimaryAssignmentGoals_Bombshell_C")
 	}
 	static class UCircleAroundPrimaryAssignmentGoals_Bombshell_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCircleAroundPrimaryAssignmentGoals_Bombshell_C>();
 	}
 };
-static_assert(alignof(UCircleAroundPrimaryAssignmentGoals_Bombshell_C) == 0x000008, "Wrong alignment on UCircleAroundPrimaryAssignmentGoals_Bombshell_C");
-static_assert(sizeof(UCircleAroundPrimaryAssignmentGoals_Bombshell_C) == 0x0000D0, "Wrong size on UCircleAroundPrimaryAssignmentGoals_Bombshell_C");
 
-}
-
+SDK_NAMESPACE_END

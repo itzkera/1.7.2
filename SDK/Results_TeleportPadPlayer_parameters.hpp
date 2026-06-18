@@ -16,8 +16,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ExecuteUbergraph_Results_TeleportPadPlayer
 // 0x00F0 (0x00F0 - 0x0000)
@@ -37,18 +37,6 @@ public:
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x00D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
-static_assert(sizeof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer) == 0x0000F0, "Wrong size on Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, EntryPoint) == 0x000000, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, CallFunc_CanInviteParty_bCanInvitePlayer) == 0x000030, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::CallFunc_CanInviteParty_bCanInvitePlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, CallFunc_CanFriend_bCanFriendPlayer) == 0x000031, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::CallFunc_CanFriend_bCanFriendPlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, CallFunc_BooleanOR_ReturnValue) == 0x000032, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button3) == 0x000038, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_MakeStruct_SlateBrush) == 0x000040, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button2) == 0x0000D0, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_MakeStruct_LinearColor) == 0x0000D8, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer, K2Node_ComponentBoundEvent_Button) == 0x0000E8, "Member 'Results_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -57,9 +45,6 @@ struct Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEve
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +53,6 @@ struct Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEve
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +61,6 @@ struct Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Initialize
 // 0x0070 (0x0070 - 0x0000)
@@ -100,17 +79,6 @@ public:
 	class FText                                   CallFunc_GetPlayerName_ReturnValue;                // 0x0050(0x0018)()
 	int32                                         CallFunc_GetScoreReportIndex_ReturnValue;          // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_Initialize) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_Initialize");
-static_assert(sizeof(Results_TeleportPadPlayer_C_Initialize) == 0x000070, "Wrong size on Results_TeleportPadPlayer_C_Initialize");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, InUniqueId) == 0x000000, "Member 'Results_TeleportPadPlayer_C_Initialize::InUniqueId' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, InScoreReport) == 0x000018, "Member 'Results_TeleportPadPlayer_C_Initialize::InScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, InConsoleUniqueId) == 0x000020, "Member 'Results_TeleportPadPlayer_C_Initialize::InConsoleUniqueId' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, ScoreReportIndex) == 0x000038, "Member 'Results_TeleportPadPlayer_C_Initialize::ScoreReportIndex' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, ScoreReport) == 0x000040, "Member 'Results_TeleportPadPlayer_C_Initialize::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, CallFunc_CanFriend_bCanFriendPlayer) == 0x000048, "Member 'Results_TeleportPadPlayer_C_Initialize::CallFunc_CanFriend_bCanFriendPlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, CallFunc_IsLocalPlayer_ReturnValue) == 0x000049, "Member 'Results_TeleportPadPlayer_C_Initialize::CallFunc_IsLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, CallFunc_GetPlayerName_ReturnValue) == 0x000050, "Member 'Results_TeleportPadPlayer_C_Initialize::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Initialize, CallFunc_GetScoreReportIndex_ReturnValue) == 0x000068, "Member 'Results_TeleportPadPlayer_C_Initialize::CallFunc_GetScoreReportIndex_ReturnValue' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsValidPad
 // 0x0001 (0x0001 - 0x0000)
@@ -119,9 +87,6 @@ struct Results_TeleportPadPlayer_C_IsValidPad final
 public:
 	bool                                          bIsValid_0;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_IsValidPad) == 0x000001, "Wrong alignment on Results_TeleportPadPlayer_C_IsValidPad");
-static_assert(sizeof(Results_TeleportPadPlayer_C_IsValidPad) == 0x000001, "Wrong size on Results_TeleportPadPlayer_C_IsValidPad");
-static_assert(offsetof(Results_TeleportPadPlayer_C_IsValidPad, bIsValid_0) == 0x000000, "Member 'Results_TeleportPadPlayer_C_IsValidPad::bIsValid_0' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ThumbsUpPlayer
 // 0x0010 (0x0010 - 0x0000)
@@ -130,9 +95,6 @@ struct Results_TeleportPadPlayer_C_ThumbsUpPlayer final
 public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_ThumbsUpPlayer) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_ThumbsUpPlayer");
-static_assert(sizeof(Results_TeleportPadPlayer_C_ThumbsUpPlayer) == 0x000010, "Wrong size on Results_TeleportPadPlayer_C_ThumbsUpPlayer");
-static_assert(offsetof(Results_TeleportPadPlayer_C_ThumbsUpPlayer, CallFunc_Conv_TextToString_ReturnValue) == 0x000000, "Member 'Results_TeleportPadPlayer_C_ThumbsUpPlayer::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.InvitePlayer
 // 0x0028 (0x0028 - 0x0000)
@@ -145,13 +107,6 @@ public:
 	bool                                          CallFunc_CanInviteParty_bCanInvitePlayer;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanFriend_bCanFriendPlayer;               // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_InvitePlayer) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_InvitePlayer");
-static_assert(sizeof(Results_TeleportPadPlayer_C_InvitePlayer) == 0x000028, "Wrong size on Results_TeleportPadPlayer_C_InvitePlayer");
-static_assert(offsetof(Results_TeleportPadPlayer_C_InvitePlayer, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'Results_TeleportPadPlayer_C_InvitePlayer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_InvitePlayer, CallFunc_Conv_TextToString_ReturnValue) == 0x000008, "Member 'Results_TeleportPadPlayer_C_InvitePlayer::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_InvitePlayer, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'Results_TeleportPadPlayer_C_InvitePlayer::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_InvitePlayer, CallFunc_CanInviteParty_bCanInvitePlayer) == 0x000020, "Member 'Results_TeleportPadPlayer_C_InvitePlayer::CallFunc_CanInviteParty_bCanInvitePlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_InvitePlayer, CallFunc_CanFriend_bCanFriendPlayer) == 0x000021, "Member 'Results_TeleportPadPlayer_C_InvitePlayer::CallFunc_CanFriend_bCanFriendPlayer' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.CanInviteParty
 // 0x0030 (0x0030 - 0x0000)
@@ -168,15 +123,6 @@ public:
 	EFortPartyRestriction                         CallFunc_CanBeInvitedNetID_FailReason;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanBeInvitedNetID_ReturnValue;            // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_CanInviteParty) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_CanInviteParty");
-static_assert(sizeof(Results_TeleportPadPlayer_C_CanInviteParty) == 0x000030, "Wrong size on Results_TeleportPadPlayer_C_CanInviteParty");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, bCanInvitePlayer) == 0x000000, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::bCanInvitePlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, CallFunc_GetPlatformName_ReturnValue) == 0x000008, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000018, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, CallFunc_EqualEqual_StrStr_ReturnValue2) == 0x000019, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::CallFunc_EqualEqual_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, CallFunc_CanBeInvitedNetID_FailReason) == 0x000028, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::CallFunc_CanBeInvitedNetID_FailReason' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanInviteParty, CallFunc_CanBeInvitedNetID_ReturnValue) == 0x000029, "Member 'Results_TeleportPadPlayer_C_CanInviteParty::CallFunc_CanBeInvitedNetID_ReturnValue' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.CanFriend
 // 0x0030 (0x0030 - 0x0000)
@@ -202,25 +148,6 @@ public:
 	bool                                          K2Node_Select2_Default;                            // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortFriendRequestStatus                      CallFunc_GetFriendRequestStatusForPlayer_ReturnValue; // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_CanFriend) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_CanFriend");
-static_assert(sizeof(Results_TeleportPadPlayer_C_CanFriend) == 0x000030, "Wrong size on Results_TeleportPadPlayer_C_CanFriend");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, bCanFriendPlayer) == 0x000000, "Member 'Results_TeleportPadPlayer_C_CanFriend::bCanFriendPlayer' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, FriendRequestStatus) == 0x000001, "Member 'Results_TeleportPadPlayer_C_CanFriend::FriendRequestStatus' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable) == 0x000002, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable2) == 0x000003, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable3) == 0x000004, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable4) == 0x000005, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable5) == 0x000006, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable6) == 0x000007, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'Results_TeleportPadPlayer_C_CanFriend::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_bool_Variable7) == 0x000010, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, Temp_byte_Variable) == 0x000011, "Member 'Results_TeleportPadPlayer_C_CanFriend::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, CallFunc_GetPlatformName_ReturnValue) == 0x000018, "Member 'Results_TeleportPadPlayer_C_CanFriend::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000028, "Member 'Results_TeleportPadPlayer_C_CanFriend::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, K2Node_Select_Default) == 0x000029, "Member 'Results_TeleportPadPlayer_C_CanFriend::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, CallFunc_EqualEqual_StrStr_ReturnValue2) == 0x00002A, "Member 'Results_TeleportPadPlayer_C_CanFriend::CallFunc_EqualEqual_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, K2Node_Select2_Default) == 0x00002B, "Member 'Results_TeleportPadPlayer_C_CanFriend::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(Results_TeleportPadPlayer_C_CanFriend, CallFunc_GetFriendRequestStatusForPlayer_ReturnValue) == 0x00002C, "Member 'Results_TeleportPadPlayer_C_CanFriend::CallFunc_GetFriendRequestStatusForPlayer_ReturnValue' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Focus
 // 0x0008 (0x0008 - 0x0000)
@@ -229,9 +156,6 @@ struct Results_TeleportPadPlayer_C_Focus final
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_Focus) == 0x000008, "Wrong alignment on Results_TeleportPadPlayer_C_Focus");
-static_assert(sizeof(Results_TeleportPadPlayer_C_Focus) == 0x000008, "Wrong size on Results_TeleportPadPlayer_C_Focus");
-static_assert(offsetof(Results_TeleportPadPlayer_C_Focus, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'Results_TeleportPadPlayer_C_Focus::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsLocalPlayersPad
 // 0x0001 (0x0001 - 0x0000)
@@ -240,9 +164,6 @@ struct Results_TeleportPadPlayer_C_IsLocalPlayersPad final
 public:
 	bool                                          bIsLocalPlayersPad;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeleportPadPlayer_C_IsLocalPlayersPad) == 0x000001, "Wrong alignment on Results_TeleportPadPlayer_C_IsLocalPlayersPad");
-static_assert(sizeof(Results_TeleportPadPlayer_C_IsLocalPlayersPad) == 0x000001, "Wrong size on Results_TeleportPadPlayer_C_IsLocalPlayersPad");
-static_assert(offsetof(Results_TeleportPadPlayer_C_IsLocalPlayersPad, bIsLocalPlayersPad) == 0x000000, "Member 'Results_TeleportPadPlayer_C_IsLocalPlayersPad::bIsLocalPlayersPad' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

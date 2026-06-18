@@ -14,8 +14,7 @@
 #include "AthenaLocalPlayerHitPointInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLocalPlayerHitPointInfo.AthenaLocalPlayerHitPointInfo_C.ExecuteUbergraph_AthenaLocalPlayerHitPointInfo
 // ()
@@ -50,5 +49,5 @@ void UAthenaLocalPlayerHitPointInfo_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

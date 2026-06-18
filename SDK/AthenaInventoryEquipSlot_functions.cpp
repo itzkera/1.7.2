@@ -14,8 +14,7 @@
 #include "AthenaInventoryEquipSlot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.ExecuteUbergraph_AthenaInventoryEquipSlot
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UAthenaInventoryEquipSlot_C::OnQuickbarContentsChanged_Event_0(EFortQuickBa
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaInventoryEquipSlot_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -102,7 +101,7 @@ void UAthenaInventoryEquipSlot_C::BndEvt__InputActionWidget_K2Node_ComponentBoun
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnFocusLost
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFocusEvent                      InFocusEvent                                           (Parm, NoDestructor)
+// const struct FFocusEvent&               InFocusEvent                                           (Parm, NoDestructor)
 
 void UAthenaInventoryEquipSlot_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 {
@@ -150,8 +149,8 @@ void UAthenaInventoryEquipSlot_C::RefreshItem()
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnDrop
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    PointerEvent                                           (Parm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             PointerEvent                                           (Parm)
 // class UDragDropOperation*               Operation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
@@ -177,8 +176,8 @@ bool UAthenaInventoryEquipSlot_C::OnDrop(const struct FGeometry& MyGeometry, con
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UAthenaInventoryEquipSlot_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -202,9 +201,9 @@ struct FEventReply UAthenaInventoryEquipSlot_C::OnMouseButtonDown(const struct F
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnDragDetected
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    PointerEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
-// class UDragDropOperation*               Operation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             PointerEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// class UDragDropOperation**              Operation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaInventoryEquipSlot_C::OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation)
 {
@@ -248,8 +247,8 @@ void UAthenaInventoryEquipSlot_C::SetSelected(bool Selected)
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.OnFocusReceived
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FFocusEvent                      InFocusEvent                                           (Parm, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FFocusEvent&               InFocusEvent                                           (Parm, NoDestructor)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UAthenaInventoryEquipSlot_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
@@ -273,7 +272,7 @@ struct FEventReply UAthenaInventoryEquipSlot_C::OnFocusReceived(const struct FGe
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.IsSelected
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Selected                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Selected                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaInventoryEquipSlot_C::IsSelected(bool* Selected)
 {
@@ -290,5 +289,5 @@ void UAthenaInventoryEquipSlot_C::IsSelected(bool* Selected)
 		*Selected = Parms.Selected;
 }
 
-}
 
+SDK_NAMESPACE_END

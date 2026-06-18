@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestInfo_Widget.QuestInfo_Widget_C
 // 0x0040 (0x0278 - 0x0238)
@@ -46,23 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestInfo_Widget_C">();
+		BP_STATIC_CLASS_IMPL("QuestInfo_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestInfo_Widget_C")
 	}
 	static class UQuestInfo_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestInfo_Widget_C>();
 	}
 };
-static_assert(alignof(UQuestInfo_Widget_C) == 0x000008, "Wrong alignment on UQuestInfo_Widget_C");
-static_assert(sizeof(UQuestInfo_Widget_C) == 0x000278, "Wrong size on UQuestInfo_Widget_C");
-static_assert(offsetof(UQuestInfo_Widget_C, UberGraphFrame) == 0x000238, "Member 'UQuestInfo_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, ImageQuestIcon) == 0x000240, "Member 'UQuestInfo_Widget_C::ImageQuestIcon' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, ObjectiveList) == 0x000248, "Member 'UQuestInfo_Widget_C::ObjectiveList' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, RewardList) == 0x000250, "Member 'UQuestInfo_Widget_C::RewardList' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, ScrollBoxDescription) == 0x000258, "Member 'UQuestInfo_Widget_C::ScrollBoxDescription' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, TextBlockQuestDescription) == 0x000260, "Member 'UQuestInfo_Widget_C::TextBlockQuestDescription' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, TextBlockQuestName) == 0x000268, "Member 'UQuestInfo_Widget_C::TextBlockQuestName' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_Widget_C, Quest) == 0x000270, "Member 'UQuestInfo_Widget_C::Quest' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

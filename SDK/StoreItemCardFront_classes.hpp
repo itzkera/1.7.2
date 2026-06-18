@@ -17,8 +17,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StoreItemCardFront.StoreItemCardFront_C
 // 0x0070 (0x02A0 - 0x0230)
@@ -51,26 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreItemCardFront_C">();
+		BP_STATIC_CLASS_IMPL("StoreItemCardFront_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreItemCardFront_C")
 	}
 	static class UStoreItemCardFront_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreItemCardFront_C>();
 	}
 };
-static_assert(alignof(UStoreItemCardFront_C) == 0x000008, "Wrong alignment on UStoreItemCardFront_C");
-static_assert(sizeof(UStoreItemCardFront_C) == 0x0002A0, "Wrong size on UStoreItemCardFront_C");
-static_assert(offsetof(UStoreItemCardFront_C, UberGraphFrame) == 0x000230, "Member 'UStoreItemCardFront_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, Card_ScaleBox) == 0x000238, "Member 'UStoreItemCardFront_C::Card_ScaleBox' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, GradientFill) == 0x000240, "Member 'UStoreItemCardFront_C::GradientFill' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, ItemCard) == 0x000248, "Member 'UStoreItemCardFront_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, ItemStackCounter) == 0x000250, "Member 'UStoreItemCardFront_C::ItemStackCounter' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, Mask) == 0x000258, "Member 'UStoreItemCardFront_C::Mask' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, TextItemName) == 0x000260, "Member 'UStoreItemCardFront_C::TextItemName' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, TextRarity) == 0x000268, "Member 'UStoreItemCardFront_C::TextRarity' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, CardData) == 0x000270, "Member 'UStoreItemCardFront_C::CardData' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, CurrentRarity) == 0x000288, "Member 'UStoreItemCardFront_C::CurrentRarity' has a wrong offset!");
-static_assert(offsetof(UStoreItemCardFront_C, SpacingText) == 0x000290, "Member 'UStoreItemCardFront_C::SpacingText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

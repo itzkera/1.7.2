@@ -10,19 +10,19 @@
 
 #include "Basic.hpp"
 
+#include "ItemTextureSet_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "ItemTextureSet_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "ItemDisplayMode_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.ExecuteUbergraph_LegacyItem_DO_NOT_USE
 // 0x0150 (0x0150 - 0x0000)
@@ -47,7 +47,7 @@ public:
 	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            K2Node_CustomEvent_CursorModeContentWidget;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bCursorModeEnabled, class FName ActionName, class UUserWidget* CursorModeContentWidget)> K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bCursorModeEnabled, class FName ActionName, class UUserWidget* CursorModeContentWidget)> K2Node_CreateDelegate_OutputDelegate; // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x0034)(IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00A0(0x0078)(ConstParm)
@@ -63,34 +63,6 @@ public:
 	class UWidget*                                CallFunc_Get_Item_Tooltip_ReturnValue;             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Get_Item_Tooltip_ReturnValue2;            // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE) == 0x000150, "Wrong size on LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, EntryPoint) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_IsInCursorMode_ReturnValue) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_IsInCursorMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc__BPGetCurrentUIState_ReturnValue) == 0x000019, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc__BPGetCurrentUIState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc__BPGetCurrentUIState_ReturnValue2) == 0x000029, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc__BPGetCurrentUIState_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_Event_IsDesignTime) == 0x00002A, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_Event_NewItem) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_Event_NewItem' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_CustomEvent_bCursorModeEnabled) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_CustomEvent_bCursorModeEnabled' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_CustomEvent_ActionName) == 0x000040, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_CustomEvent_ActionName' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_CustomEvent_CursorModeContentWidget) == 0x000048, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_CustomEvent_CursorModeContentWidget' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_CreateDelegate_OutputDelegate) == 0x000058, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_Event_MyGeometry) == 0x000068, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_Event_MouseEvent) == 0x0000A0, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_Event_NewCooldownSeconds) == 0x000118, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_Event_NewCooldownSeconds' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, K2Node_Event_bNewActivatable) == 0x00011C, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::K2Node_Event_bNewActivatable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000120, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_FromSeconds_ReturnValue) == 0x000128, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_GetContext_ReturnValue2) == 0x000130, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_Get_Num_in_Stack_ReturnValue) == 0x000138, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_Get_Num_in_Stack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_Get_Num_in_Stack_ReturnValue2) == 0x00013C, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_Get_Num_in_Stack_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_Get_Item_Tooltip_ReturnValue) == 0x000140, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_Get_Item_Tooltip_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE, CallFunc_Get_Item_Tooltip_ReturnValue2) == 0x000148, "Member 'LegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE::CallFunc_Get_Item_Tooltip_ReturnValue2' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnActivatableChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -99,9 +71,6 @@ struct LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged final
 public:
 	bool                                          bNewActivatable;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged) == 0x000001, "Wrong size on LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged, bNewActivatable) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_BPOnActivatableChanged::bNewActivatable' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnCooldownSecondsChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -110,9 +79,6 @@ struct LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged final
 public:
 	int32                                         NewCooldownSeconds;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged) == 0x000004, "Wrong size on LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged, NewCooldownSeconds) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged::NewCooldownSeconds' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseEnter
 // 0x00B0 (0x00B0 - 0x0000)
@@ -123,10 +89,6 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseEnter) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseEnter");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseEnter) == 0x0000B0, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseEnter");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnCursorModeChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -138,11 +100,6 @@ public:
 	class FName                                   ActionName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CursorModeContentWidget;                           // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnCursorModeChanged) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnCursorModeChanged");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnCursorModeChanged) == 0x000018, "Wrong size on LegacyItem_DO_NOT_USE_C_OnCursorModeChanged");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnCursorModeChanged, bCursorModeEnabled) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnCursorModeChanged::bCursorModeEnabled' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnCursorModeChanged, ActionName) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_OnCursorModeChanged::ActionName' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnCursorModeChanged, CursorModeContentWidget) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_OnCursorModeChanged::CursorModeContentWidget' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnItemSet
 // 0x0008 (0x0008 - 0x0000)
@@ -151,9 +108,6 @@ struct LegacyItem_DO_NOT_USE_C_BPOnItemSet final
 public:
 	class UFortItem*                              NewItem;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_BPOnItemSet) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_BPOnItemSet");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_BPOnItemSet) == 0x000008, "Wrong size on LegacyItem_DO_NOT_USE_C_BPOnItemSet");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_BPOnItemSet, NewItem) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_BPOnItemSet::NewItem' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -162,9 +116,6 @@ struct LegacyItem_DO_NOT_USE_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_PreConstruct) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_PreConstruct");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_PreConstruct) == 0x000001, "Wrong size on LegacyItem_DO_NOT_USE_C_PreConstruct");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Base Material
 // 0x00F0 (0x00F0 - 0x0000)
@@ -197,27 +148,6 @@ public:
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Base_Material) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Base_Material");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Base_Material) == 0x0000F0, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Base_Material");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Icon_Material) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Icon_Material' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Base_Material) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Base_Material' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Temp_byte_Variable) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Temp_byte_Variable2) == 0x000021, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000024, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_NotEqual_ByteByte_ReturnValue2) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_NotEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_NotEqual_ByteByte_ReturnValue3) == 0x000029, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_NotEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_BooleanAND_ReturnValue) == 0x00002A, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Conv_BoolToFloat_ReturnValue2) == 0x00002C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_Conv_BoolToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, Temp_bool_Variable) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, K2Node_Select_Default) == 0x000031, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Get_Texture2D_From_Multi_Size_Brush_Texture2D) == 0x0000C8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_Get_Texture2D_From_Multi_Size_Brush_Texture2D' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Get_Texture2D_From_Multi_Size_Brush_Success) == 0x0000D0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_Get_Texture2D_From_Multi_Size_Brush_Success' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Get_Texture2D_From_Multi_Size_Brush_Texture2D2) == 0x0000D8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_Get_Texture2D_From_Multi_Size_Brush_Texture2D2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_Get_Texture2D_From_Multi_Size_Brush_Success2) == 0x0000E0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_Get_Texture2D_From_Multi_Size_Brush_Success2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Material, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x0000E8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Material::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Item Data
 // 0x0098 (0x0098 - 0x0000)
@@ -232,14 +162,6 @@ public:
 	EItemDisplayStyle                             CallFunc_Get_Display_Style_Style;                  // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Item_Data) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Item_Data");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Item_Data) == 0x000098, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Item_Data");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, Item_Data) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::Item_Data' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_GetRarity_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_BPGetRarityData_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_GetType_ReturnValue) == 0x000090, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_Get_Display_Style_Style) == 0x000091, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_Get_Display_Style_Style' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Item_Data, CallFunc_IsValid_ReturnValue) == 0x000092, "Member 'LegacyItem_DO_NOT_USE_C_Set_Item_Data::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Stack Counter
 // 0x000C (0x000C - 0x0000)
@@ -253,13 +175,6 @@ public:
 	int32                                         CallFunc_Get_Num_in_Stack_ReturnValue;             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Stack_Counter");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter) == 0x00000C, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Stack_Counter");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, Temp_bool_Variable) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Stack_Counter::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, Temp_byte_Variable) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Update_Stack_Counter::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, Temp_byte_Variable2) == 0x000002, "Member 'LegacyItem_DO_NOT_USE_C_Update_Stack_Counter::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, CallFunc_Get_Num_in_Stack_ReturnValue) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Stack_Counter::CallFunc_Get_Num_in_Stack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Stack_Counter, K2Node_Select_Default) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Stack_Counter::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update All
 // 0x0A78 (0x0A78 - 0x0000)
@@ -279,17 +194,6 @@ public:
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FItemTextureSet                        CallFunc_Get_Item_Texture_Set_Texture_Set;         // 0x0050(0x0A28)(HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_All) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_All");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_All) == 0x000A78, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_All");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_GetCooldownMaterial_CooldownMat) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_GetCooldownMaterial_CooldownMat' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_IsActivatable_FailureReason) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_IsActivatable_FailureReason' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_IsActivatable_ReturnValue) == 0x000048, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_IsActivatable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_IsValid_ReturnValue) == 0x000049, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_All, CallFunc_Get_Item_Texture_Set_Texture_Set) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_Update_All::CallFunc_Get_Item_Texture_Set_Texture_Set' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDown
 // 0x0390 (0x0390 - 0x0000)
@@ -304,14 +208,6 @@ public:
 	struct FEventReply                            CallFunc_DetectDragIfPressed_ReturnValue;          // 0x0220(0x00B8)()
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x02D8(0x00B8)()
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseButtonDown");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown) == 0x000390, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseButtonDown");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, Result) == 0x000168, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::Result' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, CallFunc_DetectDragIfPressed_ReturnValue) == 0x000220, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::CallFunc_DetectDragIfPressed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x0002D8, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDragDetected
 // 0x0118 (0x0118 - 0x0000)
@@ -333,20 +229,6 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnDragDetected) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnDragDetected");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnDragDetected) == 0x000118, "Wrong size on LegacyItem_DO_NOT_USE_C_OnDragDetected");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, PointerEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::PointerEvent' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, Operation) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::Operation' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, Drag_Icon_Texture) == 0x0000B8, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::Drag_Icon_Texture' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, CallFunc_CreateDragDropOperation_ReturnValue) == 0x0000C0, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::CallFunc_CreateDragDropOperation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x0000D0, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000F0, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, CallFunc_Conv_AssetToObject_ReturnValue) == 0x0000F8, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::CallFunc_Conv_AssetToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, CallFunc_Create_ReturnValue) == 0x000100, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, K2Node_DynamicCast_AsTexture_2D) == 0x000108, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDragDetected, K2Node_DynamicCast_bSuccess) == 0x000110, "Member 'LegacyItem_DO_NOT_USE_C_OnDragDetected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Size Box
 // 0x0010 (0x0010 - 0x0000)
@@ -357,11 +239,6 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Size_Box) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Size_Box");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Size_Box) == 0x000010, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Size_Box");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Size_Box, CallFunc_Get_Item_Size_Item_Size) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Size_Box::CallFunc_Get_Item_Size_Item_Size' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Size_Box, CallFunc_BreakVector2D_X) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Size_Box::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Size_Box, CallFunc_BreakVector2D_Y) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Size_Box::CallFunc_BreakVector2D_Y' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Item Texture Set
 // 0x1EA8 (0x1EA8 - 0x0000)
@@ -386,21 +263,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x1EA0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x1EA1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set) == 0x001EA8, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Display_Style) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Display_Style' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Texture_Set) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Texture_Set' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Item_Texture_Set) == 0x000A30, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Item_Texture_Set' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Temp_bool_True_if_break_was_hit_Variable) == 0x001458, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Temp_int_Array_Index_Variable) == 0x00145C, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_Not_PreBool_ReturnValue) == 0x001460, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, Temp_int_Loop_Counter_Variable) == 0x001464, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_Add_IntInt_ReturnValue) == 0x001468, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_Array_Length_ReturnValue) == 0x00146C, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_Less_IntInt_ReturnValue) == 0x001470, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_Array_Get_Item) == 0x001478, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_BooleanAND_ReturnValue) == 0x001EA0, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x001EA1, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Primary Icon
 // 0x0068 (0x0068 - 0x0000)
@@ -426,24 +288,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Primary_Icon");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon) == 0x000068, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Primary_Icon");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Mid) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Mid' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Icon_Size) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Icon_Size' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Temp_byte_Variable) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Temp_byte_Variable2) == 0x000011, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, Temp_bool_Variable) == 0x000012, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000013, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_NotEqual_ByteByte_ReturnValue2) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_NotEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_Conv_BoolToFloat_ReturnValue2) == 0x00001C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_Conv_BoolToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, K2Node_Select_Default) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_Conv_AssetToObject_ReturnValue) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_Conv_AssetToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, K2Node_DynamicCast_AsTexture_2D) == 0x000058, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Primary_Icon, CallFunc_IsValid_ReturnValue) == 0x000061, "Member 'LegacyItem_DO_NOT_USE_C_Update_Primary_Icon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Tier Badge
 // 0x0050 (0x0050 - 0x0000)
@@ -469,23 +313,6 @@ public:
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemTier                                 CallFunc_GetMaxTier_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Tier_Badge");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge) == 0x000050, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Tier_Badge");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_byte_Variable) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable2) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable3) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable4) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable5) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, Temp_float_Variable6) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::Temp_float_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, K2Node_Select_Default) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, K2Node_MakeStruct_Margin) == 0x00002C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, CallFunc_IsValid_ReturnValue) == 0x00003C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, CallFunc_GetTier_ReturnValue) == 0x00003D, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::CallFunc_GetTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, CallFunc_GetMaxLevel_ReturnValue) == 0x000040, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::CallFunc_GetMaxLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, CallFunc_GetLevel_ReturnValue) == 0x000044, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Tier_Badge, CallFunc_GetMaxTier_ReturnValue) == 0x000048, "Member 'LegacyItem_DO_NOT_USE_C_Update_Tier_Badge::CallFunc_GetMaxTier_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Display Style
 // 0x0039 (0x0039 - 0x0000)
@@ -550,65 +377,6 @@ public:
 	EItemDisplayStyle                             Temp_byte_Variable54;                              // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EItemDisplayStyle                             K2Node_Select_Default;                             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Display_Style) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Display_Style");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Display_Style) == 0x000039, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Display_Style");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Item_Type) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Item_Type' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Style_0) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Style_0' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable) == 0x000002, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable2) == 0x000003, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable3) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable4) == 0x000005, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable5) == 0x000006, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable6) == 0x000007, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable7) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable8) == 0x000009, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable9) == 0x00000A, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable10) == 0x00000B, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable11) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable11' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable12) == 0x00000D, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable13) == 0x00000E, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable13' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable14) == 0x00000F, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable14' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable15) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable15' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable16) == 0x000011, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable16' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable17) == 0x000012, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable17' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable18) == 0x000013, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable18' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable19) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable19' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable20) == 0x000015, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable20' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable21) == 0x000016, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable21' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable22) == 0x000017, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable22' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable23) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable23' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable24) == 0x000019, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable24' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable25) == 0x00001A, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable25' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable26) == 0x00001B, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable26' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable27) == 0x00001C, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable27' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable28) == 0x00001D, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable28' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable29) == 0x00001E, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable29' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable30) == 0x00001F, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable30' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable31) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable31' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable32) == 0x000021, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable32' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable33) == 0x000022, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable33' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable34) == 0x000023, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable34' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable35) == 0x000024, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable35' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable36) == 0x000025, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable36' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable37) == 0x000026, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable37' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable38) == 0x000027, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable38' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable39) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable39' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable40) == 0x000029, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable40' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable41) == 0x00002A, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable41' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable42) == 0x00002B, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable42' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable43) == 0x00002C, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable43' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable44) == 0x00002D, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable44' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable45) == 0x00002E, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable45' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable46) == 0x00002F, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable46' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable47) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable47' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable48) == 0x000031, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable48' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable49) == 0x000032, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable49' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable50) == 0x000033, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable50' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable51) == 0x000034, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable51' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable52) == 0x000035, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable52' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable53) == 0x000036, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable53' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, Temp_byte_Variable54) == 0x000037, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::Temp_byte_Variable54' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Display_Style, K2Node_Select_Default) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Get_Display_Style::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Subtype Icons & Ammo
 // 0x07A8 (0x07A8 - 0x0000)
@@ -775,144 +543,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue6;                  // 0x07A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue7;                  // 0x07A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo) == 0x0007A8, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_IconBrush) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_IconBrush' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_FillBrush) == 0x000090, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_FillBrush' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_FrameBrush) == 0x000120, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_FrameBrush' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Local_BrushSize) == 0x0001B0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Local_BrushSize' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, HorizontalAlign) == 0x0001B1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::HorizontalAlign' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, VerticalAlign) == 0x0001B2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::VerticalAlign' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, UnitPadding) == 0x0001B4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::UnitPadding' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable) == 0x0001B8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable2) == 0x0001B9, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable3) == 0x0001BA, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable4) == 0x0001BB, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable5) == 0x0001BC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable6) == 0x0001BD, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable) == 0x0001BE, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable7) == 0x0001BF, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable8) == 0x0001C0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable9) == 0x0001C1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable9' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable10) == 0x0001C2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable10' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable11) == 0x0001C3, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable11' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable12) == 0x0001C4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable13) == 0x0001C5, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable13' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable) == 0x0001C8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable2) == 0x0001CC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable2) == 0x0001D0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable3) == 0x0001D4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable4) == 0x0001D8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable5) == 0x0001DC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable6) == 0x0001E0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable7) == 0x0001E4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable7' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable8) == 0x0001E8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable8' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable14) == 0x0001EC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable14' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable3) == 0x0001ED, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable4) == 0x0001EE, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable5) == 0x0001EF, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable6) == 0x0001F0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select_Default) == 0x0001F1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable7) == 0x0001F2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable8) == 0x0001F3, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable9) == 0x0001F4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable10) == 0x0001F5, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable11) == 0x0001F6, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable11' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable12) == 0x0001F7, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable13) == 0x0001F8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable13' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable14) == 0x0001F9, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable14' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable15) == 0x0001FA, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable15' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable16) == 0x0001FB, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable16' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable17) == 0x0001FC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable17' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable18) == 0x0001FD, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable18' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable19) == 0x0001FE, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable19' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable20) == 0x0001FF, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable20' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable21) == 0x000200, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable21' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable22) == 0x000201, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable22' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable23) == 0x000202, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable23' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable24) == 0x000203, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable24' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable25) == 0x000204, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable25' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable26) == 0x000205, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable26' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetRemainingAmmo_ReturnValue) == 0x000208, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetRemainingAmmo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000210, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_DynamicCast_AsFort_Weapon_Ranged_Item_Definition) == 0x000218, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_DynamicCast_AsFort_Weapon_Ranged_Item_Definition' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_DynamicCast_bSuccess) == 0x000220, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetAmmoWorldItemDefinition_BP_ReturnValue) == 0x000228, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetAmmoWorldItemDefinition_BP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_IsValid_ReturnValue) == 0x000230, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000231, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_float_Variable9) == 0x000234, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_float_Variable9' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000238, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetRemainingAmmo_ReturnValue2) == 0x00023C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetRemainingAmmo_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable15) == 0x000240, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable15' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000241, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue) == 0x000242, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable16) == 0x000243, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable16' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable17) == 0x000244, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable17' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable18) == 0x000245, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable18' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000248, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetTertiaryCategory_ItemCategoryText) == 0x000250, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetTertiaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetTertiaryCategory_ItemCategoryBrush) == 0x000268, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetTertiaryCategory_ItemCategoryBrush' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetTertiaryCategory_ReturnValue) == 0x0002F8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetTertiaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable19) == 0x0002F9, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable19' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable20) == 0x0002FA, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable20' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select2_Default) == 0x0002FB, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetSecondaryCategory_ItemCategoryText) == 0x000300, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetSecondaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetSecondaryCategory_ItemCategoryBrush) == 0x000318, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetSecondaryCategory_ItemCategoryBrush' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetSecondaryCategory_ReturnValue) == 0x0003A8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetSecondaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_IsValid_ReturnValue2) == 0x0003A9, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_MakeStruct_Margin) == 0x0003AC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select3_Default) == 0x0003BC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select4_Default) == 0x0003BD, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x0003C0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select5_Default) == 0x0003C8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select6_Default) == 0x0003CC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable21) == 0x0003D0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable21' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select7_Default) == 0x0003D1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select7_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue2) == 0x0003D2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003D3, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select8_Default) == 0x0003D4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select8_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable27) == 0x0003D8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable27' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable22) == 0x0003D9, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable22' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select9_Default) == 0x0003DA, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select9_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue3) == 0x0003DB, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_Not_PreBool_ReturnValue) == 0x0003DC, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x0003E0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable23) == 0x000470, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable23' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable24) == 0x000471, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable24' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2) == 0x000478, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable25) == 0x000508, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable25' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable26) == 0x000509, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable26' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable27) == 0x00050A, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable27' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue3) == 0x000510, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable28) == 0x0005A0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable28' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable28) == 0x0005A1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable28' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select10_Default) == 0x0005A2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select10_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_MakeStruct_Margin2) == 0x0005A4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_MakeStruct_Margin2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanOR_ReturnValue) == 0x0005B4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable29) == 0x0005B5, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable29' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue4) == 0x0005B6, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue) == 0x0005B8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000620, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select11_Default) == 0x000624, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select11_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue5) == 0x000628, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable30) == 0x000629, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable30' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00062C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue2) == 0x000630, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_MakeStruct_Margin3) == 0x000638, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_MakeStruct_Margin3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable29) == 0x000648, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable29' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000650, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select12_Default) == 0x000658, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue4) == 0x000660, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable31) == 0x0006F0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable31' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_byte_Variable32) == 0x0006F1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_byte_Variable32' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, Temp_bool_Variable30) == 0x0006F2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::Temp_bool_Variable30' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, K2Node_Select13_Default) == 0x0006F3, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::K2Node_Select13_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x0006F4, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetSecondaryCategory_ItemCategoryText2) == 0x0006F8, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetSecondaryCategory_ItemCategoryText2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetSecondaryCategory_ItemCategoryBrush2) == 0x000710, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetSecondaryCategory_ItemCategoryBrush2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_GetSecondaryCategory_ReturnValue2) == 0x0007A0, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_GetSecondaryCategory_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue6) == 0x0007A1, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo, CallFunc_BooleanAND_ReturnValue7) == 0x0007A2, "Member 'LegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo::CallFunc_BooleanAND_ReturnValue7' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Ammo Count
 // 0x0050 (0x0050 - 0x0000)
@@ -926,13 +556,6 @@ public:
 	class FText                                   Temp_text_Variable;                                // 0x0020(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0038(0x0018)()
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Ammo_Count");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count) == 0x000050, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Ammo_Count");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count, Count) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Ammo_Count::Count' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count, Temp_bool_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Set_Ammo_Count::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Set_Ammo_Count::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count, Temp_text_Variable) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Set_Ammo_Count::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Ammo_Count, K2Node_Select_Default) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Set_Ammo_Count::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Display Mode
 // 0x0007 (0x0007 - 0x0000)
@@ -947,15 +570,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EItemDisplayMode                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Display_Mode");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode) == 0x000007, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Display_Mode");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, Current_UI_State) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::Current_UI_State' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, Cursor_Mode) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::Cursor_Mode' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, Temp_byte_Variable) == 0x000002, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, K2Node_SwitchEnum_CmpSuccess) == 0x000003, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, Temp_byte_Variable2) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, Temp_bool_Variable) == 0x000005, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Mode, K2Node_Select_Default) == 0x000006, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Mode::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Item Tooltip
 // 0x0040 (0x0040 - 0x0000)
@@ -973,16 +587,6 @@ public:
 	class UWidget*                                CallFunc_Create_Item_Tooltip_Return_Value;         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_Create_Compare_Item_Tooltip_Return_Value; // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip) == 0x000040, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, OverrideStackCount) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::OverrideStackCount' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, ComparedItem) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::ComparedItem' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, CallFunc_GetItemToCompare_ReturnValue) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::CallFunc_GetItemToCompare_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, CallFunc_Create_Item_Tooltip_Return_Value) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::CallFunc_Create_Item_Tooltip_Return_Value' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip, CallFunc_Create_Compare_Item_Tooltip_Return_Value) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Get_Item_Tooltip::CallFunc_Create_Compare_Item_Tooltip_Return_Value' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Tooltip Header
 // 0x0020 (0x0020 - 0x0000)
@@ -992,10 +596,6 @@ public:
 	class FText                                   Header_Text;                                       // 0x0000(0x0018)(Parm)
 	class USlateBrushAsset*                       Icon_Brush;                                        // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header) == 0x000020, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header, Header_Text) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header::Header_Text' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header, Icon_Brush) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Set_Tooltip_Header::Icon_Brush' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Durability Meter
 // 0x0068 (0x0068 - 0x0000)
@@ -1024,27 +624,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0060(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Durability_Meter");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter) == 0x000068, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Durability_Meter");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, DurabilityBarHeight) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::DurabilityBarHeight' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable2) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable3) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable4) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable5) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_float_Variable6) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_float_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, Temp_byte_Variable) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, K2Node_Select_Default) == 0x00002C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_Get_Item_Icon_Size_Icon_Size) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_Get_Item_Icon_Size_Icon_Size' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, K2Node_MakeStruct_Margin) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_BreakVector2D_X) == 0x000048, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_BreakVector2D_Y) == 0x00004C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_FCeil_ReturnValue) == 0x000054, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_GetNormalizedDurability_ReturnValue) == 0x000058, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_GetNormalizedDurability_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00005C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Durability_Meter, CallFunc_MakeVector2D_ReturnValue) == 0x000060, "Member 'LegacyItem_DO_NOT_USE_C_Update_Durability_Meter::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Durability
 // 0x0004 (0x0004 - 0x0000)
@@ -1053,9 +632,6 @@ struct LegacyItem_DO_NOT_USE_C_Set_Durability final
 public:
 	float                                         Durability;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Durability) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Durability");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Durability) == 0x000004, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Durability");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Durability, Durability) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Durability::Durability' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Stack Count
 // 0x0004 (0x0004 - 0x0000)
@@ -1064,9 +640,6 @@ struct LegacyItem_DO_NOT_USE_C_Set_Stack_Count final
 public:
 	int32                                         Count;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Stack_Count) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Stack_Count");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Stack_Count) == 0x000004, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Stack_Count");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Stack_Count, Count) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Stack_Count::Count' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Refresh
 // 0x001C (0x001C - 0x0000)
@@ -1083,15 +656,6 @@ public:
 	float                                         CallFunc_GetNormalizedDurability_ReturnValue;      // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Refresh) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Refresh");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Refresh) == 0x00001C, "Wrong size on LegacyItem_DO_NOT_USE_C_Refresh");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_GetMaxLevel_ReturnValue) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_GetMaxLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_GetLevel_ReturnValue) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_GetTier_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_GetTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_GetRemainingAmmo_ReturnValue) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_GetRemainingAmmo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_Refresh_Visibility_Visible) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_Refresh_Visibility_Visible' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_GetNormalizedDurability_ReturnValue) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_GetNormalizedDurability_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Refresh, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Refresh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Resize
 // 0x0002 (0x0002 - 0x0000)
@@ -1101,10 +665,6 @@ public:
 	EFortBrushSize                                Brush_Size;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Resize) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Resize");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Resize) == 0x000002, "Wrong size on LegacyItem_DO_NOT_USE_C_Resize");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Resize, Brush_Size) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Resize::Brush_Size' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Resize, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Resize::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDoubleClick
 // 0x02F8 (0x02F8 - 0x0000)
@@ -1123,18 +683,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ActivateItem_ReturnValue;                 // 0x02F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick) == 0x0002F8, "Wrong size on LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, InMyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::InMyGeometry' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, InMouseEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::InMouseEvent' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, ReturnValue) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, CallFunc_Handled_ReturnValue) == 0x000168, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, CallFunc_GetContext_ReturnValue) == 0x000220, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, CallFunc_Unhandled_ReturnValue) == 0x000228, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, CallFunc_GetItem_ReturnValue) == 0x0002E0, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::CallFunc_GetItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, K2Node_DynamicCast_AsFort_World_Item) == 0x0002E8, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, K2Node_DynamicCast_bSuccess) == 0x0002F0, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick, CallFunc_ActivateItem_ReturnValue) == 0x0002F1, "Member 'LegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick::CallFunc_ActivateItem_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Subtype Icons & Ammo Color
 // 0x0088 (0x0088 - 0x0000)
@@ -1157,19 +705,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0050(0x0028)()
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0078(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color) == 0x000088, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Override_Secondary_Icon_Color) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Override_Secondary_Icon_Color' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Secondary_Icon_Override_Color) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Secondary_Icon_Override_Color' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Override_Tertiary_Icon_Color) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Override_Tertiary_Icon_Color' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Tertiary_Icon_Override_Color) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Tertiary_Icon_Override_Color' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Temp_bool_Variable) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, Temp_bool_Variable2) == 0x000029, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, K2Node_SwitchEnum_CmpSuccess) == 0x00002A, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, K2Node_Select_Default) == 0x00002C, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, K2Node_Select2_Default) == 0x00003C, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color, K2Node_MakeStruct_LinearColor) == 0x000078, "Member 'LegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Primary Icon Visibility
 // 0x0024 (0x0024 - 0x0000)
@@ -1213,44 +748,6 @@ public:
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select5_Default;                            // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility) == 0x000024, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Override_Icon_Visibility) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Override_Icon_Visibility' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Item_Icon_Visibility) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Item_Icon_Visibility' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, LocalItemType) == 0x000002, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::LocalItemType' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable) == 0x000003, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable2) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable3) == 0x000005, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable4) == 0x000006, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_byte_Variable) == 0x000007, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable5) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable6) == 0x000009, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable7) == 0x00000A, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable8) == 0x00000B, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable9) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable9' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable10) == 0x00000D, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable10' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable11) == 0x00000E, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable11' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_byte_Variable2) == 0x00000F, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable12) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable13) == 0x000011, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable13' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable14) == 0x000012, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable14' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable15) == 0x000013, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable15' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable16) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable16' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable17) == 0x000015, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable17' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable18) == 0x000016, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable18' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable19) == 0x000017, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable19' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_byte_Variable3) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_byte_Variable4) == 0x000019, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_bool_Variable20) == 0x00001A, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_bool_Variable20' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, Temp_byte_Variable5) == 0x00001B, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, CallFunc_Not_PreBool_ReturnValue) == 0x00001C, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, K2Node_Select_Default) == 0x00001D, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, CallFunc_BooleanAND_ReturnValue) == 0x00001E, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, K2Node_Select2_Default) == 0x00001F, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, CallFunc_BooleanOR_ReturnValue) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, K2Node_Select3_Default) == 0x000021, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, K2Node_Select4_Default) == 0x000022, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility, K2Node_Select5_Default) == 0x000023, "Member 'LegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility::K2Node_Select5_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Display Style
 // 0x0002 (0x0002 - 0x0000)
@@ -1260,10 +757,6 @@ public:
 	bool                                          Override_Display_Style;                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EItemDisplayStyle                             DisplayStyle_0;                                    // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Set_Display_Style) == 0x000001, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Set_Display_Style");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Set_Display_Style) == 0x000002, "Wrong size on LegacyItem_DO_NOT_USE_C_Set_Display_Style");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Style, Override_Display_Style) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Style::Override_Display_Style' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Set_Display_Style, DisplayStyle_0) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Set_Display_Style::DisplayStyle_0' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Num in Stack
 // 0x000C (0x000C - 0x0000)
@@ -1274,11 +767,6 @@ public:
 	int32                                         CallFunc_GetStackCount_ReturnValue;                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack) == 0x000004, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack) == 0x00000C, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack, ReturnValue) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack::ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack, CallFunc_GetStackCount_ReturnValue) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack::CallFunc_GetStackCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Get_Num_in_Stack::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Texture2D From Multi Size Brush
 // 0x0418 (0x0418 - 0x0000)
@@ -1295,15 +783,6 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush) == 0x000418, "Wrong size on LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Multi_Size_Brush) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Multi_Size_Brush' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Brush_Size) == 0x000360, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Brush_Size' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Texture2D) == 0x000368, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Texture2D' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, Success) == 0x000370, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::Success' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000378, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, K2Node_DynamicCast_AsTexture_2D) == 0x000408, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush, K2Node_DynamicCast_bSuccess) == 0x000410, "Member 'LegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Rating Tag
 // 0x0058 (0x0058 - 0x0000)
@@ -1341,37 +820,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Rating_Tag");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag) == 0x000058, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Rating_Tag");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, ShowRating) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::ShowRating' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_byte_Variable) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable2) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable3) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable4) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable5) == 0x000014, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_float_Variable6) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_float_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable) == 0x00001C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_byte_Variable2) == 0x00001D, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_byte_Variable3) == 0x00001E, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, K2Node_Select_Default) == 0x00001F, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable2) == 0x000020, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable3) == 0x000021, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable4) == 0x000022, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable5) == 0x000023, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable6) == 0x000024, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_bool_Variable7) == 0x000025, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, Temp_byte_Variable4) == 0x000026, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, K2Node_Select2_Default) == 0x000027, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, K2Node_Select3_Default) == 0x000028, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000030, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, K2Node_MakeStruct_Margin) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_GetRating_ReturnValue) == 0x000048, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_GetRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_GetRating_ReturnValue2) == 0x00004C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_GetRating_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_Greater_IntInt_ReturnValue) == 0x000050, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_BooleanAND_ReturnValue) == 0x000051, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Rating_Tag, CallFunc_IsValid_ReturnValue) == 0x000052, "Member 'LegacyItem_DO_NOT_USE_C_Update_Rating_Tag::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Activatable State
 // 0x0020 (0x0020 - 0x0000)
@@ -1388,15 +836,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Activatable_State");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State) == 0x000020, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Activatable_State");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, Activatable) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::Activatable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, Temp_bool_Variable) == 0x000001, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, Temp_float_Variable) == 0x000004, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, Temp_float_Variable2) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Activatable_State, K2Node_Select_Default) == 0x000018, "Member 'LegacyItem_DO_NOT_USE_C_Update_Activatable_State::K2Node_Select_Default' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Base Opacity
 // 0x0010 (0x0010 - 0x0000)
@@ -1408,11 +847,6 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_BoolToFloat_ReturnValue;             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_Update_Base_Opacity");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity) == 0x000010, "Wrong size on LegacyItem_DO_NOT_USE_C_Update_Base_Opacity");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Opacity::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000008, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Opacity::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_Update_Base_Opacity, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x00000C, "Member 'LegacyItem_DO_NOT_USE_C_Update_Base_Opacity::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDrop
 // 0x00C0 (0x00C0 - 0x0000)
@@ -1425,12 +859,6 @@ public:
 	class UDragDropOperation*                     Operation;                                         // 0x00B0(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegacyItem_DO_NOT_USE_C_OnDrop) == 0x000008, "Wrong alignment on LegacyItem_DO_NOT_USE_C_OnDrop");
-static_assert(sizeof(LegacyItem_DO_NOT_USE_C_OnDrop) == 0x0000C0, "Wrong size on LegacyItem_DO_NOT_USE_C_OnDrop");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, MyGeometry) == 0x000000, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, PointerEvent) == 0x000038, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::PointerEvent' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, Operation) == 0x0000B0, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::Operation' has a wrong offset!");
-static_assert(offsetof(LegacyItem_DO_NOT_USE_C_OnDrop, ReturnValue) == 0x0000B8, "Member 'LegacyItem_DO_NOT_USE_C_OnDrop::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "XpBarToolTip_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBarToolTip.XpBarToolTip_C.GetHeaderText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
@@ -116,5 +115,5 @@ class FText UXpBarToolTip_C::GetBodyText()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HordeWaveModifiersWidget.HordeWaveModifiersWidget_C
 // 0x0030 (0x0270 - 0x0240)
@@ -34,19 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HordeWaveModifiersWidget_C">();
+		BP_STATIC_CLASS_IMPL("HordeWaveModifiersWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HordeWaveModifiersWidget_C")
 	}
 	static class UHordeWaveModifiersWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHordeWaveModifiersWidget_C>();
 	}
 };
-static_assert(alignof(UHordeWaveModifiersWidget_C) == 0x000008, "Wrong alignment on UHordeWaveModifiersWidget_C");
-static_assert(sizeof(UHordeWaveModifiersWidget_C) == 0x000270, "Wrong size on UHordeWaveModifiersWidget_C");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierVertBox) == 0x000240, "Member 'UHordeWaveModifiersWidget_C::ModifierVertBox' has a wrong offset!");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, ModifierWidgets) == 0x000248, "Member 'UHordeWaveModifiersWidget_C::ModifierWidgets' has a wrong offset!");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, CurPresentedIdx) == 0x000258, "Member 'UHordeWaveModifiersWidget_C::CurPresentedIdx' has a wrong offset!");
-static_assert(offsetof(UHordeWaveModifiersWidget_C, OnAllModifiersPresented) == 0x000260, "Member 'UHordeWaveModifiersWidget_C::OnAllModifiersPresented' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

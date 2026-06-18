@@ -14,8 +14,7 @@
 #include "AthenaPlayerInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaPlayerInfo.AthenaPlayerInfo_C.ExecuteUbergraph_AthenaPlayerInfo
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UAthenaPlayerInfo_C::Destruct()
 // Function AthenaPlayerInfo.AthenaPlayerInfo_C.HandlePlayerStateChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTeamMemberInfo&       PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaPlayerInfo_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
@@ -88,7 +87,7 @@ void UAthenaPlayerInfo_C::Construct()
 // Function AthenaPlayerInfo.AthenaPlayerInfo_C.UpdateLocalPlayerInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Player_Info                                            (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             Player_Info                                            (Parm, OutParm, ReferenceParm)
 
 void UAthenaPlayerInfo_C::UpdateLocalPlayerInfo(struct FFortTeamMemberInfo& Player_Info)
 {
@@ -106,5 +105,5 @@ void UAthenaPlayerInfo_C::UpdateLocalPlayerInfo(struct FFortTeamMemberInfo& Play
 	Player_Info = std::move(Parms.Player_Info);
 }
 
-}
 
+SDK_NAMESPACE_END

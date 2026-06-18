@@ -14,13 +14,12 @@
 #include "ScoreDetailsRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ScoreDetailsRow.ScoreDetailsRow_C.UpdateRow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             PlayerName_0                                           (Parm)
+// const class FText&                      PlayerName_0                                           (Parm)
 // int32                                   TotalScore_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Combat_0                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Building_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,5 +43,5 @@ void UScoreDetailsRow_C::UpdateRow(const class FText& PlayerName_0, int32 TotalS
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

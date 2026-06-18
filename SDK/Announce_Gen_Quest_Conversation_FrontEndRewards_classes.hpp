@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C
 // 0x0028 (0x0470 - 0x0448)
@@ -37,18 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_Gen_Quest_Conversation_FrontEndRewards_C">();
+		BP_STATIC_CLASS_IMPL("Announce_Gen_Quest_Conversation_FrontEndRewards_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_Gen_Quest_Conversation_FrontEndRewards_C")
 	}
 	static class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C>();
 	}
 };
-static_assert(alignof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000008, "Wrong alignment on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
-static_assert(sizeof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C) == 0x000470, "Wrong size on AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C");
-static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, UberGraphFrame) == 0x000448, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnNewSentence) == 0x000450, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnNewSentence' has a wrong offset!");
-static_assert(offsetof(AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C, OnCurrentConversationFinished) == 0x000460, "Member 'AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFinished' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

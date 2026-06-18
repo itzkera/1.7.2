@@ -14,8 +14,7 @@
 #include "WM_PinManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WM_PinManager.WM_PinManager_C.ExecuteUbergraph_WM_PinManager
 // ()
@@ -68,7 +67,7 @@ void AWM_PinManager_C::UserConstructionScript()
 // Function WM_PinManager.WM_PinManager_C.CreateWorldMapPin
 // (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           TheaterId                                              (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    TheaterId                                              (Parm, ZeroConstructor, HasGetValueTypeHash)
 // class AWorldMapPin*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class AWorldMapPin* AWM_PinManager_C::CreateWorldMapPin(const class FString& TheaterId)
@@ -87,5 +86,5 @@ class AWorldMapPin* AWM_PinManager_C::CreateWorldMapPin(const class FString& The
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

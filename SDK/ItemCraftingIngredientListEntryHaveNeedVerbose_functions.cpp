@@ -14,8 +14,7 @@
 #include "ItemCraftingIngredientListEntryHaveNeedVerbose_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose.ItemCraftingIngredientListEntryHaveNeedVerbose_C.ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose
 // ()
@@ -40,7 +39,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_C::ExecuteUbergraph_ItemCra
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose.ItemCraftingIngredientListEntryHaveNeedVerbose_C.HandleDifferentItemOrQuantitySetBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset)
 {
@@ -104,5 +103,5 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_C::Refresh()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

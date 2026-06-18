@@ -14,8 +14,7 @@
 #include "Tooltip_BasicMultiLine_S_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.ExecuteUbergraph_Tooltip-BasicMultiLine-S
 // ()
@@ -104,5 +103,5 @@ struct FSlateBrush UTooltip_BasicMultiLine_S_C::Get_Icon_Brush()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

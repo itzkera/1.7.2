@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Announcement_ZoneModifiers.Announcement_ZoneModifiers_C
 // 0x0018 (0x0258 - 0x0240)
@@ -36,18 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announcement_ZoneModifiers_C">();
+		BP_STATIC_CLASS_IMPL("Announcement_ZoneModifiers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announcement_ZoneModifiers_C")
 	}
 	static class UAnnouncement_ZoneModifiers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnnouncement_ZoneModifiers_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_ZoneModifiers_C) == 0x000008, "Wrong alignment on UAnnouncement_ZoneModifiers_C");
-static_assert(sizeof(UAnnouncement_ZoneModifiers_C) == 0x000258, "Wrong size on UAnnouncement_ZoneModifiers_C");
-static_assert(offsetof(UAnnouncement_ZoneModifiers_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_ZoneModifiers_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_ZoneModifiers_C, MissionDetailsModifierList) == 0x000248, "Member 'UAnnouncement_ZoneModifiers_C::MissionDetailsModifierList' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_ZoneModifiers_C, ZoneModifiersAnnouncement) == 0x000250, "Member 'UAnnouncement_ZoneModifiers_C::ZoneModifiersAnnouncement' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class SlateCore.FontBulkData
 // 0x0098 (0x00C0 - 0x0028)
@@ -26,49 +25,73 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FontBulkData">();
+		STATIC_CLASS_IMPL("FontBulkData")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FontBulkData")
 	}
 	static class UFontBulkData* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFontBulkData>();
 	}
 };
-static_assert(alignof(UFontBulkData) == 0x000008, "Wrong alignment on UFontBulkData");
-static_assert(sizeof(UFontBulkData) == 0x0000C0, "Wrong size on UFontBulkData");
 
 // Class SlateCore.FontFaceInterface
-// 0x0000 (0x0028 - 0x0028)
-class IFontFaceInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IFontFaceInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FontFaceInterface">();
+		STATIC_CLASS_IMPL("FontFaceInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FontFaceInterface")
 	}
 	static class IFontFaceInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IFontFaceInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IFontFaceInterface) == 0x000008, "Wrong alignment on IFontFaceInterface");
-static_assert(sizeof(IFontFaceInterface) == 0x000028, "Wrong size on IFontFaceInterface");
 
 // Class SlateCore.FontProviderInterface
-// 0x0000 (0x0028 - 0x0028)
-class IFontProviderInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IFontProviderInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FontProviderInterface">();
+		STATIC_CLASS_IMPL("FontProviderInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FontProviderInterface")
 	}
 	static class IFontProviderInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IFontProviderInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IFontProviderInterface) == 0x000008, "Wrong alignment on IFontProviderInterface");
-static_assert(sizeof(IFontProviderInterface) == 0x000028, "Wrong size on IFontProviderInterface");
 
 // Class SlateCore.SlateTypes
 // 0x0000 (0x0028 - 0x0028)
@@ -77,32 +100,45 @@ class USlateTypes final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateTypes">();
+		STATIC_CLASS_IMPL("SlateTypes")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateTypes")
 	}
 	static class USlateTypes* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateTypes>();
 	}
 };
-static_assert(alignof(USlateTypes) == 0x000008, "Wrong alignment on USlateTypes");
-static_assert(sizeof(USlateTypes) == 0x000028, "Wrong size on USlateTypes");
 
 // Class SlateCore.SlateWidgetStyleContainerInterface
-// 0x0000 (0x0028 - 0x0028)
-class ISlateWidgetStyleContainerInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ISlateWidgetStyleContainerInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateWidgetStyleContainerInterface">();
+		STATIC_CLASS_IMPL("SlateWidgetStyleContainerInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateWidgetStyleContainerInterface")
 	}
 	static class ISlateWidgetStyleContainerInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ISlateWidgetStyleContainerInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ISlateWidgetStyleContainerInterface) == 0x000008, "Wrong alignment on ISlateWidgetStyleContainerInterface");
-static_assert(sizeof(ISlateWidgetStyleContainerInterface) == 0x000028, "Wrong size on ISlateWidgetStyleContainerInterface");
 
 // Class SlateCore.SlateWidgetStyleContainerBase
 // 0x0008 (0x0030 - 0x0028)
@@ -114,15 +150,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateWidgetStyleContainerBase">();
+		STATIC_CLASS_IMPL("SlateWidgetStyleContainerBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateWidgetStyleContainerBase")
 	}
 	static class USlateWidgetStyleContainerBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateWidgetStyleContainerBase>();
 	}
 };
-static_assert(alignof(USlateWidgetStyleContainerBase) == 0x000008, "Wrong alignment on USlateWidgetStyleContainerBase");
-static_assert(sizeof(USlateWidgetStyleContainerBase) == 0x000030, "Wrong size on USlateWidgetStyleContainerBase");
 
 // Class SlateCore.SlateWidgetStyleAsset
 // 0x0008 (0x0030 - 0x0028)
@@ -134,16 +172,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SlateWidgetStyleAsset">();
+		STATIC_CLASS_IMPL("SlateWidgetStyleAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateWidgetStyleAsset")
 	}
 	static class USlateWidgetStyleAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateWidgetStyleAsset>();
 	}
 };
-static_assert(alignof(USlateWidgetStyleAsset) == 0x000008, "Wrong alignment on USlateWidgetStyleAsset");
-static_assert(sizeof(USlateWidgetStyleAsset) == 0x000030, "Wrong size on USlateWidgetStyleAsset");
-static_assert(offsetof(USlateWidgetStyleAsset, CustomStyle) == 0x000028, "Member 'USlateWidgetStyleAsset::CustomStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

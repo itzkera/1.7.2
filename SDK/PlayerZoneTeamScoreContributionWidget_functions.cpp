@@ -14,8 +14,7 @@
 #include "PlayerZoneTeamScoreContributionWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget
 // ()
@@ -84,5 +83,5 @@ void UPlayerZoneTeamScoreContributionWidget_C::Update_Contribution_LERP(float LE
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

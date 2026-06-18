@@ -14,8 +14,7 @@
 #include "LegacyAlterationGroup_Widget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C.ExecuteUbergraph_LegacyAlterationGroup_Widget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ULegacyAlterationGroup_Widget_C::ExecuteUbergraph_LegacyAlterationGroup_Wid
 // Function LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C.OnGenerateAlteration
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortUIAlteration                AlterationInfo                                         (Parm, NoDestructor)
+// const struct FFortUIAlteration&         AlterationInfo                                         (Parm, NoDestructor)
 
 void ULegacyAlterationGroup_Widget_C::OnGenerateAlteration(const struct FFortUIAlteration& AlterationInfo)
 {
@@ -70,5 +69,5 @@ void ULegacyAlterationGroup_Widget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

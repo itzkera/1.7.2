@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GCNS_GM_OnDeathAreaHeal.GCNS_GM_OnDeathAreaHeal_C.OnStartParticleSystemSpawned
 // 0x00D0 (0x00D0 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x00C0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned) == 0x000008, "Wrong alignment on GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned");
-static_assert(sizeof(GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned) == 0x0000D0, "Wrong size on GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned");
-static_assert(offsetof(GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned, SpawnedParticleSysComponent) == 0x000000, "Member 'GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned::SpawnedParticleSysComponent' has a wrong offset!");
-static_assert(offsetof(GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned, Parameters) == 0x000008, "Member 'GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned, CallFunc_MakeVector_ReturnValue) == 0x0000C0, "Member 'GCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

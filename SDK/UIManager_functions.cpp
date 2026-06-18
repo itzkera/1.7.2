@@ -14,8 +14,7 @@
 #include "UIManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function UIManager.UIManager_C.ExecuteUbergraph_UIManager
 // (HasDefaults)
@@ -68,7 +67,7 @@ void UUIManager_C::CloseConfirmationWindow()
 // Function UIManager.UIManager_C.PopActivatablePanelInModalLayer
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonActivatablePanel*          Panel                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UCommonActivatablePanel*    Panel                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UUIManager_C::PopActivatablePanelInModalLayer(const class UCommonActivatablePanel* Panel)
 {
@@ -102,7 +101,7 @@ void UUIManager_C::OnStateEnded()
 // Function UIManager.UIManager_C.QueueActivatablePanelIntoModalLayer
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonActivatablePanel*          Panel                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UCommonActivatablePanel*    Panel                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UUIManager_C::QueueActivatablePanelIntoModalLayer(const class UCommonActivatablePanel* Panel)
 {
@@ -142,7 +141,7 @@ void UUIManager_C::UpdateStateWidgetContent(class UFortUIStateWidget_NUI* StateW
 // Function UIManager.UIManager_C.OnShowConfirmation_NUI
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortDialogDescription_NUI       Description                                            (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FFortDialogDescription_NUI&Description                                            (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
 void UUIManager_C::OnShowConfirmation_NUI(const struct FFortDialogDescription_NUI& Description)
 {
@@ -190,7 +189,7 @@ void UUIManager_C::DebugToggleInvalidationPanel()
 // Function UIManager.UIManager_C.DisplayErrorDialog
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortErrorInfo                   Info                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortErrorInfo&            Info                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UUIManager_C::DisplayErrorDialog(const struct FFortErrorInfo& Info)
 {
@@ -416,7 +415,7 @@ void UUIManager_C::ShowNextConfirmation()
 // Function UIManager.UIManager_C.QueueConfirmation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDialogDescription_NUI       ConfirmationDescription                                (Parm, ContainsInstancedReference)
+// const struct FFortDialogDescription_NUI&ConfirmationDescription                                (Parm, ContainsInstancedReference)
 
 void UUIManager_C::QueueConfirmation(const struct FFortDialogDescription_NUI& ConfirmationDescription)
 {
@@ -490,7 +489,7 @@ void UUIManager_C::HandleDeactivatedPanelModalLayer(class UCommonActivatablePane
 // Function UIManager.UIManager_C.ShowErrorInErrorWindow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortErrorInfo                   ErrorInfo                                              (Parm)
+// const struct FFortErrorInfo&            ErrorInfo                                              (Parm)
 
 void UUIManager_C::ShowErrorInErrorWindow(const struct FFortErrorInfo& ErrorInfo)
 {
@@ -531,7 +530,7 @@ void UUIManager_C::HandleDeactivatedErrorWindow(class UCommonActivatablePanel* D
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                          WebWidget                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           OfferId                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    OfferId                                                (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UUIManager_C::DisplayWebPurchase(class UWidget* WebWidget, const class FString& OfferId)
 {
@@ -586,7 +585,7 @@ bool UUIManager_C::IsConsole()
 // Function UIManager.UIManager_C.OnEndLatentWaitForConfirmationDialog
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDialogExternalLatentActionHandleWaitingDialogHandle                                    (Parm, OutParm, ReferenceParm, NoDestructor)
+// struct FFortDialogExternalLatentActionHandle&WaitingDialogHandle                                    (Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UUIManager_C::OnEndLatentWaitForConfirmationDialog(struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
@@ -702,7 +701,7 @@ void UUIManager_C::ClearConfirmationLayer()
 // Function UIManager.UIManager_C.IsShowingModalsConfirmationsErrors
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bShowing                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bShowing                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UUIManager_C::IsShowingModalsConfirmationsErrors(bool* bShowing)
 {
@@ -719,5 +718,5 @@ void UUIManager_C::IsShowingModalsConfirmationsErrors(bool* bShowing)
 		*bShowing = Parms.bShowing;
 }
 
-}
 
+SDK_NAMESPACE_END

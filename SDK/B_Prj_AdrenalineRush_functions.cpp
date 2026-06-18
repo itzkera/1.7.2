@@ -14,8 +14,7 @@
 #include "B_Prj_AdrenalineRush_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Prj_AdrenalineRush.B_Prj_AdrenalineRush_C.ExecuteUbergraph_B_Prj_AdrenalineRush
 // (HasDefaults)
@@ -124,5 +123,5 @@ void AB_Prj_AdrenalineRush_C::DestroyPP()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

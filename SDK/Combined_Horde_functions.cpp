@@ -14,8 +14,7 @@
 #include "Combined_Horde_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Combined_Horde.Combined_Horde_C.ExecuteUbergraph_Combined_Horde
 // ()
@@ -70,5 +69,5 @@ void UCombined_Horde_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

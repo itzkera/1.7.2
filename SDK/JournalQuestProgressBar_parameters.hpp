@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function JournalQuestProgressBar.JournalQuestProgressBar_C.ExecuteUbergraph_JournalQuestProgressBar
 // 0x0250 (0x0250 - 0x0000)
@@ -44,26 +44,6 @@ public:
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x024A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar) == 0x000008, "Wrong alignment on JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar");
-static_assert(sizeof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar) == 0x000250, "Wrong size on JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, EntryPoint) == 0x000000, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_SpawnTooltipContext_ReturnValue) == 0x000010, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_SpawnTooltipContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetCombinedDescription_OutDescription) == 0x000018, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetCombinedDescription_ReturnValue) == 0x000030, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_SpawnTooltipContext_ReturnValue2) == 0x000038, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_SpawnTooltipContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_IsVisibleToUser_ReturnValue) == 0x000050, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_IsVisibleToUser_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetContext_ReturnValue2) == 0x000058, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, K2Node_MakeStruct_ProgressBarStyle) == 0x000060, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::K2Node_MakeStruct_ProgressBarStyle' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetQuestManager_ReturnValue) == 0x000218, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetContext_ReturnValue3) == 0x000220, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetTooltipNumericValue_Value) == 0x000228, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetTooltipNumericValue_Value' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetTooltipNumericValue_ReturnValue) == 0x00022C, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetTooltipNumericValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetTooltipTextFromToken_OutText) == 0x000230, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetTooltipTextFromToken_OutText' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GetTooltipTextFromToken_ReturnValue) == 0x000248, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GetTooltipTextFromToken_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000249, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar, CallFunc_IsValid_ReturnValue) == 0x00024A, "Member 'JournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

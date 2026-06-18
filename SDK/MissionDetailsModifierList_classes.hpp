@@ -14,8 +14,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionDetailsModifierList.MissionDetailsModifierList_C
 // 0x0028 (0x0260 - 0x0238)
@@ -25,7 +24,7 @@ public:
 	class UCommonBorder*                          BorderExtra;                                       // 0x0238(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextMore;                                          // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VBoxModifiers;                                     // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UFortGameplayModifierItemDefinition*> DebugMods;                                         // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UFortGameplayModifierItemDefinition*> DebugMods;                                    // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
 	void PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool Show_Descriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons);
@@ -34,19 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionDetailsModifierList_C">();
+		BP_STATIC_CLASS_IMPL("MissionDetailsModifierList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionDetailsModifierList_C")
 	}
 	static class UMissionDetailsModifierList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionDetailsModifierList_C>();
 	}
 };
-static_assert(alignof(UMissionDetailsModifierList_C) == 0x000008, "Wrong alignment on UMissionDetailsModifierList_C");
-static_assert(sizeof(UMissionDetailsModifierList_C) == 0x000260, "Wrong size on UMissionDetailsModifierList_C");
-static_assert(offsetof(UMissionDetailsModifierList_C, BorderExtra) == 0x000238, "Member 'UMissionDetailsModifierList_C::BorderExtra' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, TextMore) == 0x000240, "Member 'UMissionDetailsModifierList_C::TextMore' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, VBoxModifiers) == 0x000248, "Member 'UMissionDetailsModifierList_C::VBoxModifiers' has a wrong offset!");
-static_assert(offsetof(UMissionDetailsModifierList_C, DebugMods) == 0x000250, "Member 'UMissionDetailsModifierList_C::DebugMods' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

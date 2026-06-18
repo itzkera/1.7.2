@@ -17,8 +17,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TopBar.TopBar_C.ExecuteUbergraph_TopBar
 // 0x0130 (0x0130 - 0x0000)
@@ -33,7 +33,7 @@ public:
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,43 +74,6 @@ public:
 	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              K2Node_Select_Default;                             // 0x0124(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_ExecuteUbergraph_TopBar) == 0x000008, "Wrong alignment on TopBar_C_ExecuteUbergraph_TopBar");
-static_assert(sizeof(TopBar_C_ExecuteUbergraph_TopBar) == 0x000130, "Wrong size on TopBar_C_ExecuteUbergraph_TopBar");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, EntryPoint) == 0x000000, "Member 'TopBar_C_ExecuteUbergraph_TopBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_IsInZone_ReturnValue) == 0x000010, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_Not_PreBool_ReturnValue) == 0x000020, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_CustomEvent_Result) == 0x000038, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_CustomEvent_ResultName) == 0x000040, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, Temp_name_Variable) == 0x000048, "Member 'TopBar_C_ExecuteUbergraph_TopBar::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, Temp_byte_Variable) == 0x000050, "Member 'TopBar_C_ExecuteUbergraph_TopBar::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_CreateDelegate_OutputDelegate2) == 0x000060, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_AreSocialFeaturesEnabled_ReturnValue) == 0x000070, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_AreSocialFeaturesEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetContext_ReturnValue4) == 0x000078, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetSubGame_ReturnValue) == 0x000080, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, Temp_struct_Variable) == 0x000084, "Member 'TopBar_C_ExecuteUbergraph_TopBar::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_SwitchEnum_CmpSuccess) == 0x00008C, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000090, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_ComponentBoundEvent_Button2) == 0x000098, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_HandleCloseAction_PassThrough) == 0x0000A0, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_HandleCloseAction_PassThrough' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_Event_IsDesignTime) == 0x0000A1, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_CreateDelegate_OutputDelegate3) == 0x0000A8, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, Temp_struct_Variable2) == 0x0000B8, "Member 'TopBar_C_ExecuteUbergraph_TopBar::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_Event_Animation) == 0x0000C0, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000C8, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_IsAnimationPlayingForward_ReturnValue) == 0x0000C9, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_IsAnimationPlayingForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_CustomEvent_Message) == 0x0000D0, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_CustomEvent_Message' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetContext_ReturnValue5) == 0x0000E8, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue) == 0x0000F0, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_GetInputManager_ReturnValue) == 0x0000F8, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_IsValid_ReturnValue) == 0x000100, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_MakeStruct_Margin) == 0x000104, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_ComponentBoundEvent_Button) == 0x000118, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, Temp_bool_Variable) == 0x000120, "Member 'TopBar_C_ExecuteUbergraph_TopBar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_Select_Default) == 0x000124, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_Select_Default' has a wrong offset!");
 
 // Function TopBar.TopBar_C.BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -119,9 +82,6 @@ struct TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButto
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TopBar.TopBar_C.ShowSocialConfirmation
 // 0x0018 (0x0018 - 0x0000)
@@ -130,9 +90,6 @@ struct TopBar_C_ShowSocialConfirmation final
 public:
 	class FText                                   MESSAGE;                                           // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(TopBar_C_ShowSocialConfirmation) == 0x000008, "Wrong alignment on TopBar_C_ShowSocialConfirmation");
-static_assert(sizeof(TopBar_C_ShowSocialConfirmation) == 0x000018, "Wrong size on TopBar_C_ShowSocialConfirmation");
-static_assert(offsetof(TopBar_C_ShowSocialConfirmation, MESSAGE) == 0x000000, "Member 'TopBar_C_ShowSocialConfirmation::MESSAGE' has a wrong offset!");
 
 // Function TopBar.TopBar_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -141,9 +98,6 @@ struct TopBar_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_OnAnimationFinished) == 0x000008, "Wrong alignment on TopBar_C_OnAnimationFinished");
-static_assert(sizeof(TopBar_C_OnAnimationFinished) == 0x000008, "Wrong size on TopBar_C_OnAnimationFinished");
-static_assert(offsetof(TopBar_C_OnAnimationFinished, Animation) == 0x000000, "Member 'TopBar_C_OnAnimationFinished::Animation' has a wrong offset!");
 
 // Function TopBar.TopBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -152,9 +106,6 @@ struct TopBar_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_PreConstruct) == 0x000001, "Wrong alignment on TopBar_C_PreConstruct");
-static_assert(sizeof(TopBar_C_PreConstruct) == 0x000001, "Wrong size on TopBar_C_PreConstruct");
-static_assert(offsetof(TopBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'TopBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function TopBar.TopBar_C.BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -163,9 +114,6 @@ struct TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TopBar.TopBar_C.DialogResult_32D813B145A5E184B01A15AABE16B774
 // 0x0010 (0x0010 - 0x0000)
@@ -176,10 +124,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774) == 0x000008, "Wrong alignment on TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774");
-static_assert(sizeof(TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774) == 0x000010, "Wrong size on TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774");
-static_assert(offsetof(TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774, Result) == 0x000000, "Member 'TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774::Result' has a wrong offset!");
-static_assert(offsetof(TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774, ResultName) == 0x000008, "Member 'TopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774::ResultName' has a wrong offset!");
 
 // Function TopBar.TopBar_C.OpenMainMenu
 // 0x0014 (0x0014 - 0x0000)
@@ -189,10 +133,6 @@ public:
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0000(0x0010)(NoDestructor)
 	float                                         CallFunc_GetAnimationCurrentTime_ReturnValue;      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_OpenMainMenu) == 0x000004, "Wrong alignment on TopBar_C_OpenMainMenu");
-static_assert(sizeof(TopBar_C_OpenMainMenu) == 0x000014, "Wrong size on TopBar_C_OpenMainMenu");
-static_assert(offsetof(TopBar_C_OpenMainMenu, K2Node_MakeStruct_Margin) == 0x000000, "Member 'TopBar_C_OpenMainMenu::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenMainMenu, CallFunc_GetAnimationCurrentTime_ReturnValue) == 0x000010, "Member 'TopBar_C_OpenMainMenu::CallFunc_GetAnimationCurrentTime_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.CloseMainMenu
 // 0x0020 (0x0020 - 0x0000)
@@ -205,13 +145,6 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_CloseMainMenu) == 0x000008, "Wrong alignment on TopBar_C_CloseMainMenu");
-static_assert(sizeof(TopBar_C_CloseMainMenu) == 0x000020, "Wrong size on TopBar_C_CloseMainMenu");
-static_assert(offsetof(TopBar_C_CloseMainMenu, K2Node_MakeStruct_Margin) == 0x000000, "Member 'TopBar_C_CloseMainMenu::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(TopBar_C_CloseMainMenu, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBar_C_CloseMainMenu::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_CloseMainMenu, CallFunc_GetSubGame_ReturnValue) == 0x000018, "Member 'TopBar_C_CloseMainMenu::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_CloseMainMenu, K2Node_SwitchEnum_CmpSuccess) == 0x000019, "Member 'TopBar_C_CloseMainMenu::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(TopBar_C_CloseMainMenu, CallFunc_IsAnimationPlaying_ReturnValue) == 0x00001A, "Member 'TopBar_C_CloseMainMenu::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.BindPanelControl
 // 0x0020 (0x0020 - 0x0000)
@@ -221,10 +154,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(TopBar_C_BindPanelControl) == 0x000008, "Wrong alignment on TopBar_C_BindPanelControl");
-static_assert(sizeof(TopBar_C_BindPanelControl) == 0x000020, "Wrong size on TopBar_C_BindPanelControl");
-static_assert(offsetof(TopBar_C_BindPanelControl, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBar_C_BindPanelControl::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindPanelControl, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'TopBar_C_BindPanelControl::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function TopBar.TopBar_C.HandleCloseAction
 // 0x0020 (0x0020 - 0x0000)
@@ -237,12 +166,6 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_HandleCloseAction) == 0x000008, "Wrong alignment on TopBar_C_HandleCloseAction");
-static_assert(sizeof(TopBar_C_HandleCloseAction) == 0x000020, "Wrong size on TopBar_C_HandleCloseAction");
-static_assert(offsetof(TopBar_C_HandleCloseAction, PassThrough) == 0x000000, "Member 'TopBar_C_HandleCloseAction::PassThrough' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleCloseAction, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TopBar_C_HandleCloseAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleCloseAction, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'TopBar_C_HandleCloseAction::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleCloseAction, CallFunc_IsInZone_ReturnValue) == 0x000018, "Member 'TopBar_C_HandleCloseAction::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.CreateWidgets
 // 0x0010 (0x0010 - 0x0000)
@@ -252,10 +175,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFeedback_C*                            CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_CreateWidgets) == 0x000008, "Wrong alignment on TopBar_C_CreateWidgets");
-static_assert(sizeof(TopBar_C_CreateWidgets) == 0x000010, "Wrong size on TopBar_C_CreateWidgets");
-static_assert(offsetof(TopBar_C_CreateWidgets, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'TopBar_C_CreateWidgets::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_CreateWidgets, CallFunc_Create_ReturnValue) == 0x000008, "Member 'TopBar_C_CreateWidgets::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.GetSocialMenuContent
 // 0x0020 (0x0020 - 0x0000)
@@ -267,12 +186,6 @@ public:
 	class USlateContentCalloutMenu_C*             CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USizeBox*                               CallFunc_Get_Size_Box_Size_Box;                    // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_GetSocialMenuContent) == 0x000008, "Wrong alignment on TopBar_C_GetSocialMenuContent");
-static_assert(sizeof(TopBar_C_GetSocialMenuContent) == 0x000020, "Wrong size on TopBar_C_GetSocialMenuContent");
-static_assert(offsetof(TopBar_C_GetSocialMenuContent, ReturnValue) == 0x000000, "Member 'TopBar_C_GetSocialMenuContent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetSocialMenuContent, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'TopBar_C_GetSocialMenuContent::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetSocialMenuContent, CallFunc_Create_ReturnValue) == 0x000010, "Member 'TopBar_C_GetSocialMenuContent::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetSocialMenuContent, CallFunc_Get_Size_Box_Size_Box) == 0x000018, "Member 'TopBar_C_GetSocialMenuContent::CallFunc_Get_Size_Box_Size_Box' has a wrong offset!");
 
 // Function TopBar.TopBar_C.ForceMenuOpen
 // 0x0010 (0x0010 - 0x0000)
@@ -282,10 +195,6 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_ForceMenuOpen) == 0x000008, "Wrong alignment on TopBar_C_ForceMenuOpen");
-static_assert(sizeof(TopBar_C_ForceMenuOpen) == 0x000010, "Wrong size on TopBar_C_ForceMenuOpen");
-static_assert(offsetof(TopBar_C_ForceMenuOpen, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'TopBar_C_ForceMenuOpen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ForceMenuOpen, CallFunc_GetInputManager_ReturnValue) == 0x000008, "Member 'TopBar_C_ForceMenuOpen::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.BindNavigationDelegates
 // 0x0018 (0x0018 - 0x0000)
@@ -295,10 +204,6 @@ public:
 	TDelegate<void(EFortUIFeature Feature)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_BindNavigationDelegates) == 0x000008, "Wrong alignment on TopBar_C_BindNavigationDelegates");
-static_assert(sizeof(TopBar_C_BindNavigationDelegates) == 0x000018, "Wrong size on TopBar_C_BindNavigationDelegates");
-static_assert(offsetof(TopBar_C_BindNavigationDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBar_C_BindNavigationDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindNavigationDelegates, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'TopBar_C_BindNavigationDelegates::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.UnbindNavigationDelegates
 // 0x0020 (0x0020 - 0x0000)
@@ -309,11 +214,6 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_UnbindNavigationDelegates) == 0x000008, "Wrong alignment on TopBar_C_UnbindNavigationDelegates");
-static_assert(sizeof(TopBar_C_UnbindNavigationDelegates) == 0x000020, "Wrong size on TopBar_C_UnbindNavigationDelegates");
-static_assert(offsetof(TopBar_C_UnbindNavigationDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBar_C_UnbindNavigationDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UnbindNavigationDelegates, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'TopBar_C_UnbindNavigationDelegates::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UnbindNavigationDelegates, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'TopBar_C_UnbindNavigationDelegates::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.HandleFeatureSwitchOp
 // 0x0018 (0x0018 - 0x0000)
@@ -325,11 +225,6 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_HandleFeatureSwitchOp) == 0x000008, "Wrong alignment on TopBar_C_HandleFeatureSwitchOp");
-static_assert(sizeof(TopBar_C_HandleFeatureSwitchOp) == 0x000018, "Wrong size on TopBar_C_HandleFeatureSwitchOp");
-static_assert(offsetof(TopBar_C_HandleFeatureSwitchOp, Feature) == 0x000000, "Member 'TopBar_C_HandleFeatureSwitchOp::Feature' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleFeatureSwitchOp, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'TopBar_C_HandleFeatureSwitchOp::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleFeatureSwitchOp, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'TopBar_C_HandleFeatureSwitchOp::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function TopBar.TopBar_C.HandleSwitchProfileAction
 // 0x0030 (0x0030 - 0x0000)
@@ -339,18 +234,11 @@ public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 ControllerIndex, bool bUserSwitched)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const int32 ControllerIndex, const bool bUserSwitched)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_GetPlayerControllerID_ReturnValue;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_HandleSwitchProfileAction) == 0x000008, "Wrong alignment on TopBar_C_HandleSwitchProfileAction");
-static_assert(sizeof(TopBar_C_HandleSwitchProfileAction) == 0x000030, "Wrong size on TopBar_C_HandleSwitchProfileAction");
-static_assert(offsetof(TopBar_C_HandleSwitchProfileAction, PassThrough) == 0x000000, "Member 'TopBar_C_HandleSwitchProfileAction::PassThrough' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleSwitchProfileAction, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'TopBar_C_HandleSwitchProfileAction::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleSwitchProfileAction, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'TopBar_C_HandleSwitchProfileAction::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleSwitchProfileAction, CallFunc_GetPlayerControllerID_ReturnValue) == 0x000020, "Member 'TopBar_C_HandleSwitchProfileAction::CallFunc_GetPlayerControllerID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleSwitchProfileAction, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'TopBar_C_HandleSwitchProfileAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.BindSwitchProfileAction
 // 0x0050 (0x0050 - 0x0000)
@@ -368,16 +256,6 @@ public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0038(0x0010)(NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_BindSwitchProfileAction) == 0x000008, "Wrong alignment on TopBar_C_BindSwitchProfileAction");
-static_assert(sizeof(TopBar_C_BindSwitchProfileAction) == 0x000050, "Wrong size on TopBar_C_BindSwitchProfileAction");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'TopBar_C_BindSwitchProfileAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TopBar_C_BindSwitchProfileAction::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, CallFunc_IsInZone_ReturnValue) == 0x000018, "Member 'TopBar_C_BindSwitchProfileAction::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, CallFunc_GetPlatformName_ReturnValue) == 0x000020, "Member 'TopBar_C_BindSwitchProfileAction::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, CallFunc_Not_PreBool_ReturnValue) == 0x000030, "Member 'TopBar_C_BindSwitchProfileAction::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000031, "Member 'TopBar_C_BindSwitchProfileAction::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, K2Node_MakeStruct_DataTableRowHandle) == 0x000038, "Member 'TopBar_C_BindSwitchProfileAction::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindSwitchProfileAction, CallFunc_BooleanAND_ReturnValue) == 0x000048, "Member 'TopBar_C_BindSwitchProfileAction::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.BindActiveFriendsCountChangedEvent
 // 0x0048 (0x0048 - 0x0000)
@@ -391,13 +269,6 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0018)()
 };
-static_assert(alignof(TopBar_C_BindActiveFriendsCountChangedEvent) == 0x000008, "Wrong alignment on TopBar_C_BindActiveFriendsCountChangedEvent");
-static_assert(sizeof(TopBar_C_BindActiveFriendsCountChangedEvent) == 0x000048, "Wrong size on TopBar_C_BindActiveFriendsCountChangedEvent");
-static_assert(offsetof(TopBar_C_BindActiveFriendsCountChangedEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBar_C_BindActiveFriendsCountChangedEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindActiveFriendsCountChangedEvent, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBar_C_BindActiveFriendsCountChangedEvent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindActiveFriendsCountChangedEvent, CallFunc_GetActiveFriendsList_OutActiveFriends) == 0x000018, "Member 'TopBar_C_BindActiveFriendsCountChangedEvent::CallFunc_GetActiveFriendsList_OutActiveFriends' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindActiveFriendsCountChangedEvent, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'TopBar_C_BindActiveFriendsCountChangedEvent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_BindActiveFriendsCountChangedEvent, CallFunc_Conv_IntToText_ReturnValue) == 0x000030, "Member 'TopBar_C_BindActiveFriendsCountChangedEvent::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.HandleActiveFriendsCountChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -408,10 +279,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-static_assert(alignof(TopBar_C_HandleActiveFriendsCountChanged) == 0x000008, "Wrong alignment on TopBar_C_HandleActiveFriendsCountChanged");
-static_assert(sizeof(TopBar_C_HandleActiveFriendsCountChanged) == 0x000020, "Wrong size on TopBar_C_HandleActiveFriendsCountChanged");
-static_assert(offsetof(TopBar_C_HandleActiveFriendsCountChanged, ActiveFriendsCount) == 0x000000, "Member 'TopBar_C_HandleActiveFriendsCountChanged::ActiveFriendsCount' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleActiveFriendsCountChanged, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'TopBar_C_HandleActiveFriendsCountChanged::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.UnbindActiveFriendsCountChangedEvent
 // 0x0018 (0x0018 - 0x0000)
@@ -421,10 +288,6 @@ public:
 	TDelegate<void(int32 ActiveFriendsCount)>     K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_UnbindActiveFriendsCountChangedEvent) == 0x000008, "Wrong alignment on TopBar_C_UnbindActiveFriendsCountChangedEvent");
-static_assert(sizeof(TopBar_C_UnbindActiveFriendsCountChangedEvent) == 0x000018, "Wrong size on TopBar_C_UnbindActiveFriendsCountChangedEvent");
-static_assert(offsetof(TopBar_C_UnbindActiveFriendsCountChangedEvent, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'TopBar_C_UnbindActiveFriendsCountChangedEvent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UnbindActiveFriendsCountChangedEvent, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBar_C_UnbindActiveFriendsCountChangedEvent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.HandleAccountPickerResult
 // 0x0020 (0x0020 - 0x0000)
@@ -440,15 +303,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_HandleAccountPickerResult) == 0x000008, "Wrong alignment on TopBar_C_HandleAccountPickerResult");
-static_assert(sizeof(TopBar_C_HandleAccountPickerResult) == 0x000020, "Wrong size on TopBar_C_HandleAccountPickerResult");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, ControllerIndex) == 0x000000, "Member 'TopBar_C_HandleAccountPickerResult::ControllerIndex' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, UserSwitched) == 0x000004, "Member 'TopBar_C_HandleAccountPickerResult::UserSwitched' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'TopBar_C_HandleAccountPickerResult::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBar_C_HandleAccountPickerResult::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, CallFunc_GetPlayerControllerID_ReturnValue) == 0x000018, "Member 'TopBar_C_HandleAccountPickerResult::CallFunc_GetPlayerControllerID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'TopBar_C_HandleAccountPickerResult::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleAccountPickerResult, CallFunc_BooleanAND_ReturnValue) == 0x00001D, "Member 'TopBar_C_HandleAccountPickerResult::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.HandleActiveInvitesCountChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -458,10 +312,6 @@ public:
 	int32                                         ActiveInvitesCount;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_HandleActiveInvitesCountChanged) == 0x000004, "Wrong alignment on TopBar_C_HandleActiveInvitesCountChanged");
-static_assert(sizeof(TopBar_C_HandleActiveInvitesCountChanged) == 0x000008, "Wrong size on TopBar_C_HandleActiveInvitesCountChanged");
-static_assert(offsetof(TopBar_C_HandleActiveInvitesCountChanged, ActiveInvitesCount) == 0x000000, "Member 'TopBar_C_HandleActiveInvitesCountChanged::ActiveInvitesCount' has a wrong offset!");
-static_assert(offsetof(TopBar_C_HandleActiveInvitesCountChanged, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'TopBar_C_HandleActiveInvitesCountChanged::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.GetFriendsTooltipWidget
 // 0x0058 (0x0058 - 0x0000)
@@ -476,15 +326,6 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_GetFriendsTooltipWidget) == 0x000008, "Wrong alignment on TopBar_C_GetFriendsTooltipWidget");
-static_assert(sizeof(TopBar_C_GetFriendsTooltipWidget) == 0x000058, "Wrong size on TopBar_C_GetFriendsTooltipWidget");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, ReturnValue) == 0x000000, "Member 'TopBar_C_GetFriendsTooltipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'TopBar_C_GetFriendsTooltipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'TopBar_C_GetFriendsTooltipWidget::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, CallFunc_MakeLiteralText_ReturnValue2) == 0x000028, "Member 'TopBar_C_GetFriendsTooltipWidget::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'TopBar_C_GetFriendsTooltipWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, CallFunc_Create_Basic_Tooltip_Output) == 0x000048, "Member 'TopBar_C_GetFriendsTooltipWidget::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetFriendsTooltipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000050, "Member 'TopBar_C_GetFriendsTooltipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.GetMainMenuTooltipWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -497,13 +338,6 @@ public:
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_GetMainMenuTooltipWidget) == 0x000008, "Wrong alignment on TopBar_C_GetMainMenuTooltipWidget");
-static_assert(sizeof(TopBar_C_GetMainMenuTooltipWidget) == 0x000028, "Wrong size on TopBar_C_GetMainMenuTooltipWidget");
-static_assert(offsetof(TopBar_C_GetMainMenuTooltipWidget, ReturnValue) == 0x000000, "Member 'TopBar_C_GetMainMenuTooltipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetMainMenuTooltipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'TopBar_C_GetMainMenuTooltipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetMainMenuTooltipWidget, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TopBar_C_GetMainMenuTooltipWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetMainMenuTooltipWidget, CallFunc_Create_Basic_Tooltip_Output) == 0x000018, "Member 'TopBar_C_GetMainMenuTooltipWidget::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
-static_assert(offsetof(TopBar_C_GetMainMenuTooltipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000020, "Member 'TopBar_C_GetMainMenuTooltipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.FireOpenAnalyticsEvent
 // 0x0068 (0x0068 - 0x0000)
@@ -519,15 +353,6 @@ public:
 	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0048(0x0020)()
 };
-static_assert(alignof(TopBar_C_FireOpenAnalyticsEvent) == 0x000008, "Wrong alignment on TopBar_C_FireOpenAnalyticsEvent");
-static_assert(sizeof(TopBar_C_FireOpenAnalyticsEvent) == 0x000068, "Wrong size on TopBar_C_FireOpenAnalyticsEvent");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'TopBar_C_FireOpenAnalyticsEvent::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000008, "Member 'TopBar_C_FireOpenAnalyticsEvent::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'TopBar_C_FireOpenAnalyticsEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, CallFunc_GetGameAccountId_ReturnValue) == 0x000018, "Member 'TopBar_C_FireOpenAnalyticsEvent::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, CallFunc_GetPlayerInfoFromUniqueID_ReturnValue) == 0x000030, "Member 'TopBar_C_FireOpenAnalyticsEvent::CallFunc_GetPlayerInfoFromUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, CallFunc_GetPlayerName_ReturnValue) == 0x000038, "Member 'TopBar_C_FireOpenAnalyticsEvent::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_FireOpenAnalyticsEvent, CallFunc_ConstructAnalyticsAttribute_ReturnValue) == 0x000048, "Member 'TopBar_C_FireOpenAnalyticsEvent::CallFunc_ConstructAnalyticsAttribute_ReturnValue' has a wrong offset!");
 
 // Function TopBar.TopBar_C.OpenSocialMenu
 // 0x0080 (0x0080 - 0x0000)
@@ -550,21 +375,6 @@ public:
 	class UPartyFinder_C*                         K2Node_DynamicCast_AsParty_Finder;                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_OpenSocialMenu) == 0x000008, "Wrong alignment on TopBar_C_OpenSocialMenu");
-static_assert(sizeof(TopBar_C_OpenSocialMenu) == 0x000080, "Wrong size on TopBar_C_OpenSocialMenu");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, Temp_text_Variable) == 0x000000, "Member 'TopBar_C_OpenSocialMenu::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'TopBar_C_OpenSocialMenu::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_IsDesktopPlatform_ReturnValue) == 0x000020, "Member 'TopBar_C_OpenSocialMenu::CallFunc_IsDesktopPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_GetFeatureState_ReturnValue) == 0x000021, "Member 'TopBar_C_OpenSocialMenu::CallFunc_GetFeatureState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000022, "Member 'TopBar_C_OpenSocialMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000023, "Member 'TopBar_C_OpenSocialMenu::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, Temp_text_Variable2) == 0x000028, "Member 'TopBar_C_OpenSocialMenu::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, Temp_bool_Variable) == 0x000040, "Member 'TopBar_C_OpenSocialMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000048, "Member 'TopBar_C_OpenSocialMenu::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, CallFunc_GetCachedWidget_ReturnValue) == 0x000050, "Member 'TopBar_C_OpenSocialMenu::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, K2Node_Select_Default) == 0x000058, "Member 'TopBar_C_OpenSocialMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, K2Node_DynamicCast_AsParty_Finder) == 0x000070, "Member 'TopBar_C_OpenSocialMenu::K2Node_DynamicCast_AsParty_Finder' has a wrong offset!");
-static_assert(offsetof(TopBar_C_OpenSocialMenu, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'TopBar_C_OpenSocialMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function TopBar.TopBar_C.ConfigureVisibleItemsForSubGame
 // 0x0010 (0x0010 - 0x0000)
@@ -575,11 +385,6 @@ public:
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_ConfigureVisibleItemsForSubGame) == 0x000008, "Wrong alignment on TopBar_C_ConfigureVisibleItemsForSubGame");
-static_assert(sizeof(TopBar_C_ConfigureVisibleItemsForSubGame) == 0x000010, "Wrong size on TopBar_C_ConfigureVisibleItemsForSubGame");
-static_assert(offsetof(TopBar_C_ConfigureVisibleItemsForSubGame, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'TopBar_C_ConfigureVisibleItemsForSubGame::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ConfigureVisibleItemsForSubGame, CallFunc_GetSubGame_ReturnValue) == 0x000008, "Member 'TopBar_C_ConfigureVisibleItemsForSubGame::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ConfigureVisibleItemsForSubGame, K2Node_SwitchEnum_CmpSuccess) == 0x000009, "Member 'TopBar_C_ConfigureVisibleItemsForSubGame::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

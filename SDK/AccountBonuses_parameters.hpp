@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AccountBonuses.AccountBonuses_C.ExecuteUbergraph_AccountBonuses
 // 0x0020 (0x0020 - 0x0000)
@@ -28,11 +28,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses) == 0x000008, "Wrong alignment on AccountBonuses_C_ExecuteUbergraph_AccountBonuses");
-static_assert(sizeof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses) == 0x000020, "Wrong size on AccountBonuses_C_ExecuteUbergraph_AccountBonuses");
-static_assert(offsetof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses, EntryPoint) == 0x000000, "Member 'AccountBonuses_C_ExecuteUbergraph_AccountBonuses::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AccountBonuses_C_ExecuteUbergraph_AccountBonuses::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_ExecuteUbergraph_AccountBonuses, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AccountBonuses_C_ExecuteUbergraph_AccountBonuses::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AccountBonuses.AccountBonuses_C.Has Founder Badge
 // 0x0030 (0x0030 - 0x0000)
@@ -49,15 +44,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountBonuses_C_Has_Founder_Badge) == 0x000008, "Wrong alignment on AccountBonuses_C_Has_Founder_Badge");
-static_assert(sizeof(AccountBonuses_C_Has_Founder_Badge) == 0x000030, "Wrong size on AccountBonuses_C_Has_Founder_Badge");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, Result) == 0x000000, "Member 'AccountBonuses_C_Has_Founder_Badge::Result' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AccountBonuses_C_Has_Founder_Badge::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000010, "Member 'AccountBonuses_C_Has_Founder_Badge::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'AccountBonuses_C_Has_Founder_Badge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, K2Node_DynamicCast_AsFort_Account_Buff_Item) == 0x000020, "Member 'AccountBonuses_C_Has_Founder_Badge::K2Node_DynamicCast_AsFort_Account_Buff_Item' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AccountBonuses_C_Has_Founder_Badge::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_Founder_Badge, CallFunc_IsActive_ReturnValue) == 0x000029, "Member 'AccountBonuses_C_Has_Founder_Badge::CallFunc_IsActive_ReturnValue' has a wrong offset!");
 
 // Function AccountBonuses.AccountBonuses_C.Has VIP Badge
 // 0x0030 (0x0030 - 0x0000)
@@ -74,15 +60,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountBonuses_C_Has_VIP_Badge) == 0x000008, "Wrong alignment on AccountBonuses_C_Has_VIP_Badge");
-static_assert(sizeof(AccountBonuses_C_Has_VIP_Badge) == 0x000030, "Wrong size on AccountBonuses_C_Has_VIP_Badge");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, Result) == 0x000000, "Member 'AccountBonuses_C_Has_VIP_Badge::Result' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AccountBonuses_C_Has_VIP_Badge::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000010, "Member 'AccountBonuses_C_Has_VIP_Badge::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'AccountBonuses_C_Has_VIP_Badge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, K2Node_DynamicCast_AsFort_Account_Buff_Item) == 0x000020, "Member 'AccountBonuses_C_Has_VIP_Badge::K2Node_DynamicCast_AsFort_Account_Buff_Item' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AccountBonuses_C_Has_VIP_Badge::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Has_VIP_Badge, CallFunc_IsActive_ReturnValue) == 0x000029, "Member 'AccountBonuses_C_Has_VIP_Badge::CallFunc_IsActive_ReturnValue' has a wrong offset!");
 
 // Function AccountBonuses.AccountBonuses_C.Update Badges
 // 0x0120 (0x0120 - 0x0000)
@@ -128,39 +105,6 @@ public:
 	bool                                          Temp_bool_Variable2;                               // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountBonuses_C_Update_Badges) == 0x000008, "Wrong alignment on AccountBonuses_C_Update_Badges");
-static_assert(sizeof(AccountBonuses_C_Update_Badges) == 0x000120, "Wrong size on AccountBonuses_C_Update_Badges");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue2) == 0x000008, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetContext_ReturnValue3) == 0x000010, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000018, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_DynamicCast_AsFort_Account_Buff_Item) == 0x000020, "Member 'AccountBonuses_C_Update_Badges::K2Node_DynamicCast_AsFort_Account_Buff_Item' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AccountBonuses_C_Update_Badges::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable) == 0x000029, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Has_Founder_Badge_Result) == 0x00002A, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Has_Founder_Badge_Result' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Has_VIP_Badge_Result) == 0x00002B, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Has_VIP_Badge_Result' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_BooleanOR_ReturnValue) == 0x00002C, "Member 'AccountBonuses_C_Update_Badges::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable2) == 0x00002D, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_bool_Variable) == 0x00002E, "Member 'AccountBonuses_C_Update_Badges::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000038, "Member 'AccountBonuses_C_Update_Badges::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Has_VIP_Badge_Result2) == 0x000040, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Has_VIP_Badge_Result2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetCombinedDescription_OutDescription) == 0x000048, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetCombinedDescription_ReturnValue) == 0x000060, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetCombinedDescription_OutDescription2) == 0x000068, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetCombinedDescription_OutDescription2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetCombinedDescription_ReturnValue2) == 0x000080, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetCombinedDescription_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Has_Founder_Badge_Result2) == 0x000081, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Has_Founder_Badge_Result2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_Select_Default) == 0x000082, "Member 'AccountBonuses_C_Update_Badges::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_UtcNow_ReturnValue) == 0x000088, "Member 'AccountBonuses_C_Update_Badges::CallFunc_UtcNow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable3) == 0x000090, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Subtract_DateTimeDateTime_ReturnValue) == 0x000098, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Subtract_DateTimeDateTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_GetDays_ReturnValue) == 0x0000A0, "Member 'AccountBonuses_C_Update_Badges::CallFunc_GetDays_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_MakeStruct_FormatArgumentData) == 0x0000A8, "Member 'AccountBonuses_C_Update_Badges::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_byte_Variable4) == 0x0000E8, "Member 'AccountBonuses_C_Update_Badges::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_MakeArray_Array) == 0x0000F0, "Member 'AccountBonuses_C_Update_Badges::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, CallFunc_Format_ReturnValue) == 0x000100, "Member 'AccountBonuses_C_Update_Badges::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, Temp_bool_Variable2) == 0x000118, "Member 'AccountBonuses_C_Update_Badges::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(AccountBonuses_C_Update_Badges, K2Node_Select2_Default) == 0x000119, "Member 'AccountBonuses_C_Update_Badges::K2Node_Select2_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

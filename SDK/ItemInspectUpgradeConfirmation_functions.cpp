@@ -14,8 +14,7 @@
 #include "ItemInspectUpgradeConfirmation_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.ExecuteUbergraph_ItemInspectUpgradeConfirmation
 // ()
@@ -142,7 +141,7 @@ void UItemInspectUpgradeConfirmation_C::RefreshOnUpgrade()
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.IsUpgradeAvailable
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    UpgradeAvailable                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   UpgradeAvailable                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectUpgradeConfirmation_C::IsUpgradeAvailable(bool* UpgradeAvailable)
 {
@@ -163,7 +162,7 @@ void UItemInspectUpgradeConfirmation_C::IsUpgradeAvailable(bool* UpgradeAvailabl
 // Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.CanAffordUpgrade
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    CanAfford                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   CanAfford                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectUpgradeConfirmation_C::CanAffordUpgrade(bool* CanAfford)
 {
@@ -208,5 +207,5 @@ void UItemInspectUpgradeConfirmation_C::RefreshLevelInfo()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

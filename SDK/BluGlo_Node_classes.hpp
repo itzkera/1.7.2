@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BluGlo_Node.BluGlo_Node_C
 // 0x00E0 (0x10B0 - 0x0FD0)
@@ -72,39 +71,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BluGlo_Node_C">();
+		BP_STATIC_CLASS_IMPL("BluGlo_Node_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BluGlo_Node_C")
 	}
 	static class ABluGlo_Node_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABluGlo_Node_C>();
 	}
 };
-static_assert(alignof(ABluGlo_Node_C) == 0x000010, "Wrong alignment on ABluGlo_Node_C");
-static_assert(sizeof(ABluGlo_Node_C) == 0x0010B0, "Wrong size on ABluGlo_Node_C");
-static_assert(offsetof(ABluGlo_Node_C, UberGraphFrame) == 0x000FD0, "Member 'ABluGlo_Node_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, bluLight) == 0x000FD8, "Member 'ABluGlo_Node_C::bluLight' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, IdleParticles) == 0x000FE0, "Member 'ABluGlo_Node_C::IdleParticles' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, bluglomesh) == 0x000FE8, "Member 'ABluGlo_Node_C::bluglomesh' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, Fort_BluGlo_loop_AudioComponent) == 0x000FF0, "Member 'ABluGlo_Node_C::Fort_BluGlo_loop_AudioComponent' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, FortMiniMap) == 0x000FF8, "Member 'ABluGlo_Node_C::FortMiniMap' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, BluGloSpawnparticle) == 0x001000, "Member 'ABluGlo_Node_C::BluGloSpawnparticle' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, Trail_HorizontalMovement_EEEFB2FD467DE31D5FDEDEA006F5C10F) == 0x001008, "Member 'ABluGlo_Node_C::Trail_HorizontalMovement_EEEFB2FD467DE31D5FDEDEA006F5C10F' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, Trail_VerticalMovement_EEEFB2FD467DE31D5FDEDEA006F5C10F) == 0x00100C, "Member 'ABluGlo_Node_C::Trail_VerticalMovement_EEEFB2FD467DE31D5FDEDEA006F5C10F' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, Trail__Direction_EEEFB2FD467DE31D5FDEDEA006F5C10F) == 0x001010, "Member 'ABluGlo_Node_C::Trail__Direction_EEEFB2FD467DE31D5FDEDEA006F5C10F' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, Trail) == 0x001018, "Member 'ABluGlo_Node_C::Trail' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, ActivateEffects) == 0x001020, "Member 'ABluGlo_Node_C::ActivateEffects' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, DeActivateEffects) == 0x001021, "Member 'ABluGlo_Node_C::DeActivateEffects' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, CanInteract) == 0x001022, "Member 'ABluGlo_Node_C::CanInteract' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, BluGloQuantity) == 0x001028, "Member 'ABluGlo_Node_C::BluGloQuantity' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, NewVar) == 0x001040, "Member 'ABluGlo_Node_C::NewVar' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, StartLocation) == 0x001048, "Member 'ABluGlo_Node_C::StartLocation' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, TrailEffect) == 0x001058, "Member 'ABluGlo_Node_C::TrailEffect' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, Sound_BluGloLoop) == 0x001060, "Member 'ABluGlo_Node_C::Sound_BluGloLoop' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, RandomSpawnRotation) == 0x001068, "Member 'ABluGlo_Node_C::RandomSpawnRotation' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, BlugloRef) == 0x001078, "Member 'ABluGlo_Node_C::BlugloRef' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, PickupForceFeedback) == 0x001080, "Member 'ABluGlo_Node_C::PickupForceFeedback' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, BlugloItemDef) == 0x001088, "Member 'ABluGlo_Node_C::BlugloItemDef' has a wrong offset!");
-static_assert(offsetof(ABluGlo_Node_C, CollectText) == 0x001090, "Member 'ABluGlo_Node_C::CollectText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

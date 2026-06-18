@@ -14,8 +14,7 @@
 #include "AccountBonuses_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AccountBonuses.AccountBonuses_C.ExecuteUbergraph_AccountBonuses
 // ()
@@ -68,7 +67,7 @@ void UAccountBonuses_C::Construct()
 // Function AccountBonuses.AccountBonuses_C.Has Founder Badge
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAccountBonuses_C::Has_Founder_Badge(bool* Result)
 {
@@ -89,7 +88,7 @@ void UAccountBonuses_C::Has_Founder_Badge(bool* Result)
 // Function AccountBonuses.AccountBonuses_C.Has VIP Badge
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAccountBonuses_C::Has_VIP_Badge(bool* Result)
 {
@@ -120,5 +119,5 @@ void UAccountBonuses_C::Update_Badges()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

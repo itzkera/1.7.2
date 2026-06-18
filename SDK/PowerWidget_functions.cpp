@@ -14,8 +14,7 @@
 #include "PowerWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PowerWidget.PowerWidget_C.ExecuteUbergraph_PowerWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UPowerWidget_C::ExecuteUbergraph_PowerWidget(int32 EntryPoint)
 // Function PowerWidget.PowerWidget_C.OnPlayerInfoChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewInfo                                                (Parm)
+// const struct FFortTeamMemberInfo&       NewInfo                                                (Parm)
 
 void UPowerWidget_C::OnPlayerInfoChanged(const struct FFortTeamMemberInfo& NewInfo)
 {
@@ -108,7 +107,7 @@ void UPowerWidget_C::Update_Rating()
 // Function PowerWidget.PowerWidget_C.SetState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPowerWidget_C::SetState(bool* PassThrough)
 {
@@ -193,5 +192,5 @@ void UPowerWidget_C::Check_For_Power_Change()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

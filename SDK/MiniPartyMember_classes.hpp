@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MiniPartyMember.MiniPartyMember_C
 // 0x01F0 (0x0450 - 0x0260)
@@ -57,28 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MiniPartyMember_C">();
+		BP_STATIC_CLASS_IMPL("MiniPartyMember_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MiniPartyMember_C")
 	}
 	static class UMiniPartyMember_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMiniPartyMember_C>();
 	}
 };
-static_assert(alignof(UMiniPartyMember_C) == 0x000008, "Wrong alignment on UMiniPartyMember_C");
-static_assert(sizeof(UMiniPartyMember_C) == 0x000450, "Wrong size on UMiniPartyMember_C");
-static_assert(offsetof(UMiniPartyMember_C, UberGraphFrame) == 0x000260, "Member 'UMiniPartyMember_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, ButtonPartyFinder) == 0x000268, "Member 'UMiniPartyMember_C::ButtonPartyFinder' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, ConnectedOverlay) == 0x000270, "Member 'UMiniPartyMember_C::ConnectedOverlay' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, ConnectingSizeBox) == 0x000278, "Member 'UMiniPartyMember_C::ConnectingSizeBox' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, Image_571) == 0x000280, "Member 'UMiniPartyMember_C::Image_571' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, LeaderImage) == 0x000288, "Member 'UMiniPartyMember_C::LeaderImage' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, MemberStatusSwitcher) == 0x000290, "Member 'UMiniPartyMember_C::MemberStatusSwitcher' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, OpenImage) == 0x000298, "Member 'UMiniPartyMember_C::OpenImage' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, OverlayOpen) == 0x0002A0, "Member 'UMiniPartyMember_C::OverlayOpen' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, PlayerBanner) == 0x0002A8, "Member 'UMiniPartyMember_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, MemberInfo) == 0x0002B0, "Member 'UMiniPartyMember_C::MemberInfo' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, UIManager) == 0x000440, "Member 'UMiniPartyMember_C::UIManager' has a wrong offset!");
-static_assert(offsetof(UMiniPartyMember_C, PartyFinder) == 0x000448, "Member 'UMiniPartyMember_C::PartyFinder' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

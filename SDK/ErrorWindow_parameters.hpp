@@ -13,8 +13,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ErrorWindow.ErrorWindow_C.ExecuteUbergraph_ErrorWindow
 // 0x0018 (0x0018 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow) == 0x000008, "Wrong alignment on ErrorWindow_C_ExecuteUbergraph_ErrorWindow");
-static_assert(sizeof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow) == 0x000018, "Wrong size on ErrorWindow_C_ExecuteUbergraph_ErrorWindow");
-static_assert(offsetof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow, EntryPoint) == 0x000000, "Member 'ErrorWindow_C_ExecuteUbergraph_ErrorWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'ErrorWindow_C_ExecuteUbergraph_ErrorWindow::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_ExecuteUbergraph_ErrorWindow, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ErrorWindow_C_ExecuteUbergraph_ErrorWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +34,6 @@ struct ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +42,6 @@ struct ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.AddError
 // 0x00D0 (0x00D0 - 0x0000)
@@ -74,19 +63,6 @@ public:
 	class UErrorEntry_C*                          K2Node_DynamicCast_AsError_Entry;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ErrorWindow_C_AddError) == 0x000010, "Wrong alignment on ErrorWindow_C_AddError");
-static_assert(sizeof(ErrorWindow_C_AddError) == 0x0000D0, "Wrong size on ErrorWindow_C_AddError");
-static_assert(offsetof(ErrorWindow_C_AddError, ErrorInfo) == 0x000000, "Member 'ErrorWindow_C_AddError::ErrorInfo' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, First_Error) == 0x000080, "Member 'ErrorWindow_C_AddError::First_Error' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, ErrorEntry) == 0x000088, "Member 'ErrorWindow_C_AddError::ErrorEntry' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, CallFunc_Array_Add_ReturnValue) == 0x000090, "Member 'ErrorWindow_C_AddError::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, CallFunc_Center_on_Widget_Did_Center) == 0x000094, "Member 'ErrorWindow_C_AddError::CallFunc_Center_on_Widget_Did_Center' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, CallFunc_GetUINavigationManager_ReturnValue) == 0x000098, "Member 'ErrorWindow_C_AddError::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, CallFunc_Array_Add_ReturnValue2) == 0x0000A0, "Member 'ErrorWindow_C_AddError::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, CallFunc_GetErrorEntry_ReturnValue) == 0x0000A8, "Member 'ErrorWindow_C_AddError::CallFunc_GetErrorEntry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, CallFunc_AddChild_ReturnValue) == 0x0000B0, "Member 'ErrorWindow_C_AddError::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, K2Node_DynamicCast_AsError_Entry) == 0x0000B8, "Member 'ErrorWindow_C_AddError::K2Node_DynamicCast_AsError_Entry' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_AddError, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'ErrorWindow_C_AddError::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.Initialize
 // 0x0040 (0x0040 - 0x0000)
@@ -100,14 +76,6 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetInputPriority_ReturnValue;             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorWindow_C_Initialize) == 0x000008, "Wrong alignment on ErrorWindow_C_Initialize");
-static_assert(sizeof(ErrorWindow_C_Initialize) == 0x000040, "Wrong size on ErrorWindow_C_Initialize");
-static_assert(offsetof(ErrorWindow_C_Initialize, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ErrorWindow_C_Initialize::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_Initialize, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'ErrorWindow_C_Initialize::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ErrorWindow_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_Initialize, CallFunc_GetInputManager_ReturnValue) == 0x000028, "Member 'ErrorWindow_C_Initialize::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_Initialize, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'ErrorWindow_C_Initialize::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ErrorWindow_C_Initialize, CallFunc_GetInputPriority_ReturnValue) == 0x000038, "Member 'ErrorWindow_C_Initialize::CallFunc_GetInputPriority_ReturnValue' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.GetShouldLogout
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +84,6 @@ struct ErrorWindow_C_GetShouldLogout final
 public:
 	bool                                          Return_Value;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ErrorWindow_C_GetShouldLogout) == 0x000001, "Wrong alignment on ErrorWindow_C_GetShouldLogout");
-static_assert(sizeof(ErrorWindow_C_GetShouldLogout) == 0x000001, "Wrong size on ErrorWindow_C_GetShouldLogout");
-static_assert(offsetof(ErrorWindow_C_GetShouldLogout, Return_Value) == 0x000000, "Member 'ErrorWindow_C_GetShouldLogout::Return_Value' has a wrong offset!");
 
 // Function ErrorWindow.ErrorWindow_C.CloseErrorWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -127,9 +92,6 @@ struct ErrorWindow_C_CloseErrorWindow final
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ErrorWindow_C_CloseErrorWindow) == 0x000008, "Wrong alignment on ErrorWindow_C_CloseErrorWindow");
-static_assert(sizeof(ErrorWindow_C_CloseErrorWindow) == 0x000008, "Wrong size on ErrorWindow_C_CloseErrorWindow");
-static_assert(offsetof(ErrorWindow_C_CloseErrorWindow, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'ErrorWindow_C_CloseErrorWindow::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

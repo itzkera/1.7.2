@@ -14,8 +14,7 @@
 #include "LegacyAlteration_Widget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.ExecuteUbergraph_LegacyAlteration_Widget
 // (HasDefaults)
@@ -118,5 +117,5 @@ void ULegacyAlteration_Widget_C::InitSmallAlteration()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AlterationsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AlterationsWidget.AlterationsWidget_C.ExecuteUbergraph_AlterationsWidget
 // (HasDefaults)
@@ -82,7 +81,7 @@ void UAlterationsWidget_C::OnItemChanged()
 // Function AlterationsWidget.AlterationsWidget_C.OnGenerateAlteration
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortUIAlteration                AlterationInfo                                         (Parm, NoDestructor)
+// const struct FFortUIAlteration&         AlterationInfo                                         (Parm, NoDestructor)
 
 void UAlterationsWidget_C::OnGenerateAlteration(const struct FFortUIAlteration& AlterationInfo)
 {
@@ -112,5 +111,5 @@ void UAlterationsWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "PlayerPawn_Generic_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerPawn_Commando.PlayerPawn_Commando_C
 // 0x0140 (0x1D70 - 0x1C30)
@@ -61,31 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerPawn_Commando_C">();
+		BP_STATIC_CLASS_IMPL("PlayerPawn_Commando_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawn_Commando_C")
 	}
 	static class APlayerPawn_Commando_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerPawn_Commando_C>();
 	}
 };
-static_assert(alignof(APlayerPawn_Commando_C) == 0x000010, "Wrong alignment on APlayerPawn_Commando_C");
-static_assert(sizeof(APlayerPawn_Commando_C) == 0x001D70, "Wrong size on APlayerPawn_Commando_C");
-static_assert(offsetof(APlayerPawn_Commando_C, UberGraphFrame_PlayerPawn_Commando_C) == 0x001C28, "Member 'APlayerPawn_Commando_C::UberGraphFrame_PlayerPawn_Commando_C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, TargetHead) == 0x001C30, "Member 'APlayerPawn_Commando_C::TargetHead' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, TargetBody) == 0x001C38, "Member 'APlayerPawn_Commando_C::TargetBody' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, PawnHeadMaterials_0) == 0x001C40, "Member 'APlayerPawn_Commando_C::PawnHeadMaterials_0' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, PawnBodyMaterials_0) == 0x001C50, "Member 'APlayerPawn_Commando_C::PawnBodyMaterials_0' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, P_IncendiaryRound) == 0x001C60, "Member 'APlayerPawn_Commando_C::P_IncendiaryRound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, P_MakeItRain) == 0x001C68, "Member 'APlayerPawn_Commando_C::P_MakeItRain' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, TC_FlakVest) == 0x001C70, "Member 'APlayerPawn_Commando_C::TC_FlakVest' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, Event_Data) == 0x001C90, "Member 'APlayerPawn_Commando_C::Event_Data' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, EventSpawnEffect) == 0x001D38, "Member 'APlayerPawn_Commando_C::EventSpawnEffect' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, ShockwaveRefractionRingHeight) == 0x001D40, "Member 'APlayerPawn_Commando_C::ShockwaveRefractionRingHeight' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, P_Shockwave) == 0x001D48, "Member 'APlayerPawn_Commando_C::P_Shockwave' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, ShockwaveForceFeedback) == 0x001D50, "Member 'APlayerPawn_Commando_C::ShockwaveForceFeedback' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, ShockwaveCameraShake) == 0x001D58, "Member 'APlayerPawn_Commando_C::ShockwaveCameraShake' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, IsMale) == 0x001D60, "Member 'APlayerPawn_Commando_C::IsMale' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Commando_C, MenuGoingCommandowWeapon) == 0x001D68, "Member 'APlayerPawn_Commando_C::MenuGoingCommandowWeapon' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

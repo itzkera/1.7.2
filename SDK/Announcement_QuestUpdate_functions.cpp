@@ -14,8 +14,7 @@
 #include "Announcement_QuestUpdate_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announcement_QuestUpdate.Announcement_QuestUpdate_C.ExecuteUbergraph_Announcement_QuestUpdate
 // ()
@@ -76,5 +75,5 @@ void UAnnouncement_QuestUpdate_C::UpdateWidgetData(class AFortClientAnnouncement
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

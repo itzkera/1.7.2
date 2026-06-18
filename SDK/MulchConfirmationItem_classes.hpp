@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MulchConfirmationItem.MulchConfirmationItem_C
 // 0x0020 (0x0250 - 0x0230)
@@ -34,19 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MulchConfirmationItem_C">();
+		BP_STATIC_CLASS_IMPL("MulchConfirmationItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MulchConfirmationItem_C")
 	}
 	static class UMulchConfirmationItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMulchConfirmationItem_C>();
 	}
 };
-static_assert(alignof(UMulchConfirmationItem_C) == 0x000008, "Wrong alignment on UMulchConfirmationItem_C");
-static_assert(sizeof(UMulchConfirmationItem_C) == 0x000250, "Wrong size on UMulchConfirmationItem_C");
-static_assert(offsetof(UMulchConfirmationItem_C, UberGraphFrame) == 0x000230, "Member 'UMulchConfirmationItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchConfirmationItem_C, ItemCard) == 0x000238, "Member 'UMulchConfirmationItem_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UMulchConfirmationItem_C, Item) == 0x000240, "Member 'UMulchConfirmationItem_C::Item' has a wrong offset!");
-static_assert(offsetof(UMulchConfirmationItem_C, Quantity) == 0x000248, "Member 'UMulchConfirmationItem_C::Quantity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

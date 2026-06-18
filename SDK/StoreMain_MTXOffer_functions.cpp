@@ -14,8 +14,7 @@
 #include "StoreMain_MTXOffer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ExecuteUbergraph_StoreMain_MTXOffer
 // ()
@@ -126,5 +125,5 @@ void UStoreMain_MTXOffer_C::ShowDetails()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

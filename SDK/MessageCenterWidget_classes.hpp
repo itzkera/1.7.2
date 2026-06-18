@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MessageCenterWidget.MessageCenterWidget_C
 // 0x0038 (0x0448 - 0x0410)
@@ -47,22 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MessageCenterWidget_C">();
+		BP_STATIC_CLASS_IMPL("MessageCenterWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MessageCenterWidget_C")
 	}
 	static class UMessageCenterWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMessageCenterWidget_C>();
 	}
 };
-static_assert(alignof(UMessageCenterWidget_C) == 0x000008, "Wrong alignment on UMessageCenterWidget_C");
-static_assert(sizeof(UMessageCenterWidget_C) == 0x000448, "Wrong size on UMessageCenterWidget_C");
-static_assert(offsetof(UMessageCenterWidget_C, UberGraphFrame) == 0x000410, "Member 'UMessageCenterWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, ClearButton) == 0x000418, "Member 'UMessageCenterWidget_C::ClearButton' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, CloseButton) == 0x000420, "Member 'UMessageCenterWidget_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, DescriptionText) == 0x000428, "Member 'UMessageCenterWidget_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, Lightbox) == 0x000430, "Member 'UMessageCenterWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, OpenButton) == 0x000438, "Member 'UMessageCenterWidget_C::OpenButton' has a wrong offset!");
-static_assert(offsetof(UMessageCenterWidget_C, SafeZone_2) == 0x000440, "Member 'UMessageCenterWidget_C::SafeZone_2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

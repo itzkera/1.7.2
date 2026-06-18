@@ -14,8 +14,7 @@
 #include "ItemCalledOutAttributesDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.ExecuteUbergraph_ItemCalledOutAttributesDetailWidget
 // ()
@@ -54,7 +53,7 @@ void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet(
 // Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.GetDisplayAttributesToCallOut
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<struct FFortDisplayAttribute>    Attributes                                             (Parm, OutParm, ZeroConstructor)
+// TArray<struct FFortDisplayAttribute>*   Attributes                                             (Parm, OutParm, ZeroConstructor)
 
 void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArray<struct FFortDisplayAttribute>* Attributes)
 {
@@ -85,5 +84,5 @@ void UItemCalledOutAttributesDetailWidget_C::UpdateStats()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

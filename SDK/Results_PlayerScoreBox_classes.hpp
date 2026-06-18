@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_PlayerScoreBox.Results_PlayerScoreBox_C
 // 0x0068 (0x02A0 - 0x0238)
@@ -57,30 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_PlayerScoreBox_C">();
+		BP_STATIC_CLASS_IMPL("Results_PlayerScoreBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_PlayerScoreBox_C")
 	}
 	static class UResults_PlayerScoreBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_PlayerScoreBox_C>();
 	}
 };
-static_assert(alignof(UResults_PlayerScoreBox_C) == 0x000008, "Wrong alignment on UResults_PlayerScoreBox_C");
-static_assert(sizeof(UResults_PlayerScoreBox_C) == 0x0002A0, "Wrong size on UResults_PlayerScoreBox_C");
-static_assert(offsetof(UResults_PlayerScoreBox_C, UberGraphFrame) == 0x000238, "Member 'UResults_PlayerScoreBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, Anim_Glare) == 0x000240, "Member 'UResults_PlayerScoreBox_C::Anim_Glare' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, Anim_Spark) == 0x000248, "Member 'UResults_PlayerScoreBox_C::Anim_Spark' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, Anim_Intro) == 0x000250, "Member 'UResults_PlayerScoreBox_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, ImageBackground) == 0x000258, "Member 'UResults_PlayerScoreBox_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, TextScore) == 0x000260, "Member 'UResults_PlayerScoreBox_C::TextScore' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, CountInterpolationTime) == 0x000268, "Member 'UResults_PlayerScoreBox_C::CountInterpolationTime' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, Score) == 0x00026C, "Member 'UResults_PlayerScoreBox_C::Score' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, bIsValidScoreBox) == 0x000270, "Member 'UResults_PlayerScoreBox_C::bIsValidScoreBox' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, bIsBestScore) == 0x000271, "Member 'UResults_PlayerScoreBox_C::bIsBestScore' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, PlayRate) == 0x000274, "Member 'UResults_PlayerScoreBox_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, TimeBetweenIntroAndCount) == 0x000278, "Member 'UResults_PlayerScoreBox_C::TimeBetweenIntroAndCount' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, TopScoreColor) == 0x00027C, "Member 'UResults_PlayerScoreBox_C::TopScoreColor' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, NormalScoreColor) == 0x00028C, "Member 'UResults_PlayerScoreBox_C::NormalScoreColor' has a wrong offset!");
-static_assert(offsetof(UResults_PlayerScoreBox_C, bSkippingToEnd) == 0x00029C, "Member 'UResults_PlayerScoreBox_C::bSkippingToEnd' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

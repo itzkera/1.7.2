@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaDeathWidget.AthenaDeathWidget_C
 // 0x00F8 (0x04D8 - 0x03E0)
@@ -72,41 +71,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDeathWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDeathWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDeathWidget_C")
 	}
 	static class UAthenaDeathWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDeathWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaDeathWidget_C) == 0x000008, "Wrong alignment on UAthenaDeathWidget_C");
-static_assert(sizeof(UAthenaDeathWidget_C) == 0x0004D8, "Wrong size on UAthenaDeathWidget_C");
-static_assert(offsetof(UAthenaDeathWidget_C, UberGraphFrame) == 0x0003E0, "Member 'UAthenaDeathWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaGamePhaseWidget) == 0x0003E8, "Member 'UAthenaDeathWidget_C::AthenaGamePhaseWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaKillerPortraitWidget) == 0x0003F0, "Member 'UAthenaDeathWidget_C::AthenaKillerPortraitWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaKillFeedWidget) == 0x0003F8, "Member 'UAthenaDeathWidget_C::AthenaKillFeedWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaKillsWidget_102) == 0x000400, "Member 'UAthenaDeathWidget_C::AthenaKillsWidget_102' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaPlayersLeftWidget) == 0x000408, "Member 'UAthenaDeathWidget_C::AthenaPlayersLeftWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaSessionId) == 0x000410, "Member 'UAthenaDeathWidget_C::AthenaSessionId' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, AthenaViewTargetHitPointInfo) == 0x000418, "Member 'UAthenaDeathWidget_C::AthenaViewTargetHitPointInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, CommonTextBlock_PrimaryDeathText) == 0x000420, "Member 'UAthenaDeathWidget_C::CommonTextBlock_PrimaryDeathText' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, FollowNextTeammate) == 0x000428, "Member 'UAthenaDeathWidget_C::FollowNextTeammate' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, InvalidationBox_0) == 0x000430, "Member 'UAthenaDeathWidget_C::InvalidationBox_0' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, LeaveButton) == 0x000438, "Member 'UAthenaDeathWidget_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, MinimapContainer) == 0x000440, "Member 'UAthenaDeathWidget_C::MinimapContainer' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, PlaceText) == 0x000448, "Member 'UAthenaDeathWidget_C::PlaceText' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, ReportPlayer) == 0x000450, "Member 'UAthenaDeathWidget_C::ReportPlayer' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, TeamInfo) == 0x000458, "Member 'UAthenaDeathWidget_C::TeamInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, TeamMembersActorCanvas) == 0x000460, "Member 'UAthenaDeathWidget_C::TeamMembersActorCanvas' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, WinnerBox) == 0x000468, "Member 'UAthenaDeathWidget_C::WinnerBox' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, WinnerPlayerName) == 0x000470, "Member 'UAthenaDeathWidget_C::WinnerPlayerName' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, YouDiedOrSpectating) == 0x000478, "Member 'UAthenaDeathWidget_C::YouDiedOrSpectating' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, YouPlacedBox) == 0x000480, "Member 'UAthenaDeathWidget_C::YouPlacedBox' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, YouPlacedText) == 0x000488, "Member 'UAthenaDeathWidget_C::YouPlacedText' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, YouDied) == 0x000490, "Member 'UAthenaDeathWidget_C::YouDied' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, Spectating) == 0x0004A8, "Member 'UAthenaDeathWidget_C::Spectating' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, IsWaitingForTeamEliminationForPlacement) == 0x0004C0, "Member 'UAthenaDeathWidget_C::IsWaitingForTeamEliminationForPlacement' has a wrong offset!");
-static_assert(offsetof(UAthenaDeathWidget_C, TeamMemberIndicators) == 0x0004C8, "Member 'UAthenaDeathWidget_C::TeamMemberIndicators' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

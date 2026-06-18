@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PrivacyWidget.PrivacyWidget_C.ExecuteUbergraph_PrivacyWidget
 // 0x0090 (0x0090 - 0x0000)
@@ -42,24 +42,6 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget) == 0x000008, "Wrong alignment on PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget");
-static_assert(sizeof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget) == 0x000090, "Wrong size on PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, EntryPoint) == 0x000000, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button10) == 0x000008, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button10' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button9) == 0x000010, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button9' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button8) == 0x000018, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button8' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button7) == 0x000020, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button6) == 0x000028, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button5) == 0x000030, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, Temp_bool_Variable) == 0x000038, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button4) == 0x000040, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button3) == 0x000048, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, CallFunc_GetSelected_ReturnValue) == 0x000050, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button2) == 0x000058, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, K2Node_Select_Default) == 0x000068, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000080, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000088, "Member 'PrivacyWidget_C_ExecuteUbergraph_PrivacyWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -68,9 +50,6 @@ struct PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -79,9 +58,6 @@ struct PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonCl
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -90,9 +66,6 @@ struct PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBound
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -101,9 +74,6 @@ struct PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBound
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -112,9 +82,6 @@ struct PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -123,9 +90,6 @@ struct PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -134,9 +98,6 @@ struct PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -145,9 +106,6 @@ struct PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -156,9 +114,6 @@ struct PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -167,9 +122,6 @@ struct PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PrivacyWidget.PrivacyWidget_C.SetMode
 // 0x01B0 (0x01B0 - 0x0000)
@@ -191,21 +143,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x01AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x01AE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PrivacyWidget_C_SetMode) == 0x000008, "Wrong alignment on PrivacyWidget_C_SetMode");
-static_assert(sizeof(PrivacyWidget_C_SetMode) == 0x0001B0, "Wrong size on PrivacyWidget_C_SetMode");
-static_assert(offsetof(PrivacyWidget_C_SetMode, Temp_bool_Variable) == 0x000000, "Member 'PrivacyWidget_C_SetMode::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, Temp_byte_Variable) == 0x000001, "Member 'PrivacyWidget_C_SetMode::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, Temp_byte_Variable2) == 0x000002, "Member 'PrivacyWidget_C_SetMode::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PrivacyWidget_C_SetMode::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'PrivacyWidget_C_SetMode::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000018, "Member 'PrivacyWidget_C_SetMode::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_IsMatchmakingLocal_ReturnValue) == 0x0001A8, "Member 'PrivacyWidget_C_SetMode::CallFunc_IsMatchmakingLocal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_Not_PreBool_ReturnValue) == 0x0001A9, "Member 'PrivacyWidget_C_SetMode::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_IsInLobby_ReturnValue) == 0x0001AA, "Member 'PrivacyWidget_C_SetMode::CallFunc_IsInLobby_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_Not_PreBool_ReturnValue2) == 0x0001AB, "Member 'PrivacyWidget_C_SetMode::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_BooleanAND_ReturnValue) == 0x0001AC, "Member 'PrivacyWidget_C_SetMode::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, CallFunc_BooleanAND_ReturnValue2) == 0x0001AD, "Member 'PrivacyWidget_C_SetMode::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PrivacyWidget_C_SetMode, K2Node_Select_Default) == 0x0001AE, "Member 'PrivacyWidget_C_SetMode::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

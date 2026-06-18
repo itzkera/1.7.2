@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Announce_NameHomeBase.Announce_NameHomeBase_C.ExecuteUbergraph_Announce_NameHomeBase
 // 0x0020 (0x0020 - 0x0000)
@@ -28,14 +28,6 @@ public:
 	int32                                         K2Node_Event_SentenceIdx;                          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger2_CmpSuccess;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase) == 0x000008, "Wrong alignment on Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase");
-static_assert(sizeof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase) == 0x000020, "Wrong size on Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase");
-static_assert(offsetof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase, EntryPoint) == 0x000000, "Member 'Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase, K2Node_Event_SentenceIdx2) == 0x000010, "Member 'Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase::K2Node_Event_SentenceIdx2' has a wrong offset!");
-static_assert(offsetof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase, K2Node_SwitchInteger_CmpSuccess) == 0x000014, "Member 'Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase, K2Node_Event_SentenceIdx) == 0x000018, "Member 'Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase::K2Node_Event_SentenceIdx' has a wrong offset!");
-static_assert(offsetof(Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase, K2Node_SwitchInteger2_CmpSuccess) == 0x00001C, "Member 'Announce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase::K2Node_SwitchInteger2_CmpSuccess' has a wrong offset!");
 
 // Function Announce_NameHomeBase.Announce_NameHomeBase_C.HandleSentenceStop_UI
 // 0x0004 (0x0004 - 0x0000)
@@ -44,9 +36,6 @@ struct Announce_NameHomeBase_C_HandleSentenceStop_UI final
 public:
 	int32                                         SentenceIdx;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_NameHomeBase_C_HandleSentenceStop_UI) == 0x000004, "Wrong alignment on Announce_NameHomeBase_C_HandleSentenceStop_UI");
-static_assert(sizeof(Announce_NameHomeBase_C_HandleSentenceStop_UI) == 0x000004, "Wrong size on Announce_NameHomeBase_C_HandleSentenceStop_UI");
-static_assert(offsetof(Announce_NameHomeBase_C_HandleSentenceStop_UI, SentenceIdx) == 0x000000, "Member 'Announce_NameHomeBase_C_HandleSentenceStop_UI::SentenceIdx' has a wrong offset!");
 
 // Function Announce_NameHomeBase.Announce_NameHomeBase_C.HandleSentenceStart_UI
 // 0x0004 (0x0004 - 0x0000)
@@ -55,9 +44,6 @@ struct Announce_NameHomeBase_C_HandleSentenceStart_UI final
 public:
 	int32                                         SentenceIdx;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_NameHomeBase_C_HandleSentenceStart_UI) == 0x000004, "Wrong alignment on Announce_NameHomeBase_C_HandleSentenceStart_UI");
-static_assert(sizeof(Announce_NameHomeBase_C_HandleSentenceStart_UI) == 0x000004, "Wrong size on Announce_NameHomeBase_C_HandleSentenceStart_UI");
-static_assert(offsetof(Announce_NameHomeBase_C_HandleSentenceStart_UI, SentenceIdx) == 0x000000, "Member 'Announce_NameHomeBase_C_HandleSentenceStart_UI::SentenceIdx' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

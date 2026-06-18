@@ -14,8 +14,7 @@
 #include "SquadSlotDetailsPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.ExecuteUbergraph_SquadSlotDetailsPanel
 // (HasDefaults)
@@ -130,8 +129,8 @@ void USquadSlotDetailsPanel_C::UpdateSkillTreeButtonVisibility()
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.GetRestrictionReasonsAsText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<EFortSquadSlottingRestrictionReason>Reasons                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             Text                                                   (Parm, OutParm)
+// TArray<EFortSquadSlottingRestrictionReason>&Reasons                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class FText*                            Text                                                   (Parm, OutParm)
 
 void USquadSlotDetailsPanel_C::GetRestrictionReasonsAsText(TArray<EFortSquadSlottingRestrictionReason>& Reasons, class FText* Text)
 {
@@ -166,5 +165,5 @@ void USquadSlotDetailsPanel_C::Set_Scroll_Box_to_Nav_Scroll_Widget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

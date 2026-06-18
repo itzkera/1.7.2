@@ -11,15 +11,14 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "FortUIStylesheet_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
-#include "FortUIStylesheet_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C
 // 0x0CE0 (0x0FF8 - 0x0318)
@@ -70,39 +69,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tooltip-DisplayAttribute_C">();
+		BP_STATIC_CLASS_IMPL("Tooltip-DisplayAttribute_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tooltip-DisplayAttribute_C")
 	}
 	static class UTooltip_DisplayAttribute_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltip_DisplayAttribute_C>();
 	}
 };
-static_assert(alignof(UTooltip_DisplayAttribute_C) == 0x000008, "Wrong alignment on UTooltip_DisplayAttribute_C");
-static_assert(sizeof(UTooltip_DisplayAttribute_C) == 0x000FF8, "Wrong size on UTooltip_DisplayAttribute_C");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, UberGraphFrame) == 0x000318, "Member 'UTooltip_DisplayAttribute_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Blink) == 0x000320, "Member 'UTooltip_DisplayAttribute_C::Blink' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, BorderBasicPairedValue) == 0x000328, "Member 'UTooltip_DisplayAttribute_C::BorderBasicPairedValue' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, BorderBasicSingleValue) == 0x000330, "Member 'UTooltip_DisplayAttribute_C::BorderBasicSingleValue' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, ButtonHover) == 0x000338, "Member 'UTooltip_DisplayAttribute_C::ButtonHover' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, ImageHorizontalRuler) == 0x000340, "Member 'UTooltip_DisplayAttribute_C::ImageHorizontalRuler' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, ImagePairedBuffArrow) == 0x000348, "Member 'UTooltip_DisplayAttribute_C::ImagePairedBuffArrow' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, ImageSingleBuffArrow) == 0x000350, "Member 'UTooltip_DisplayAttribute_C::ImageSingleBuffArrow' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Paired) == 0x000358, "Member 'UTooltip_DisplayAttribute_C::Paired' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Single) == 0x000360, "Member 'UTooltip_DisplayAttribute_C::Single' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, SwitcherDisplayType) == 0x000368, "Member 'UTooltip_DisplayAttribute_C::SwitcherDisplayType' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, TextBasicPairedLabel) == 0x000370, "Member 'UTooltip_DisplayAttribute_C::TextBasicPairedLabel' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, TextBasicPairedValue) == 0x000378, "Member 'UTooltip_DisplayAttribute_C::TextBasicPairedValue' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, TextBasicSingleValue) == 0x000380, "Member 'UTooltip_DisplayAttribute_C::TextBasicSingleValue' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, WidgetGradient) == 0x000388, "Member 'UTooltip_DisplayAttribute_C::WidgetGradient' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, TooltipData) == 0x000390, "Member 'UTooltip_DisplayAttribute_C::TooltipData' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Display_Type) == 0x000400, "Member 'UTooltip_DisplayAttribute_C::Display_Type' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Buff_State) == 0x000401, "Member 'UTooltip_DisplayAttribute_C::Buff_State' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Comparison_Type) == 0x000402, "Member 'UTooltip_DisplayAttribute_C::Comparison_Type' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Blank) == 0x000404, "Member 'UTooltip_DisplayAttribute_C::Blank' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Base_Color) == 0x000414, "Member 'UTooltip_DisplayAttribute_C::Base_Color' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Buff_Color) == 0x000424, "Member 'UTooltip_DisplayAttribute_C::Buff_Color' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Default_White) == 0x000434, "Member 'UTooltip_DisplayAttribute_C::Default_White' has a wrong offset!");
-static_assert(offsetof(UTooltip_DisplayAttribute_C, Stylesheet) == 0x000448, "Member 'UTooltip_DisplayAttribute_C::Stylesheet' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

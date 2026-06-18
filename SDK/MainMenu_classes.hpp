@@ -18,8 +18,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MainMenu.MainMenu_C
 // 0x01D8 (0x0410 - 0x0238)
@@ -187,71 +186,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainMenu_C">();
+		BP_STATIC_CLASS_IMPL("MainMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainMenu_C")
 	}
 	static class UMainMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainMenu_C>();
 	}
 };
-static_assert(alignof(UMainMenu_C) == 0x000008, "Wrong alignment on UMainMenu_C");
-static_assert(sizeof(UMainMenu_C) == 0x000410, "Wrong size on UMainMenu_C");
-static_assert(offsetof(UMainMenu_C, UberGraphFrame) == 0x000238, "Member 'UMainMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, AthenaPartyPrivacyButton) == 0x000240, "Member 'UMainMenu_C::AthenaPartyPrivacyButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, BoostsButton) == 0x000248, "Member 'UMainMenu_C::BoostsButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ButtonCredits) == 0x000250, "Member 'UMainMenu_C::ButtonCredits' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ButtonNews) == 0x000258, "Member 'UMainMenu_C::ButtonNews' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ButtonOutpostPermissions) == 0x000260, "Member 'UMainMenu_C::ButtonOutpostPermissions' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ChangeSubgameButton) == 0x000268, "Member 'UMainMenu_C::ChangeSubgameButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, CodeOfConduct) == 0x000270, "Member 'UMainMenu_C::CodeOfConduct' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ContextualHelpText) == 0x000278, "Member 'UMainMenu_C::ContextualHelpText' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, DailyRewardsButton) == 0x000280, "Member 'UMainMenu_C::DailyRewardsButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ExitButton) == 0x000288, "Member 'UMainMenu_C::ExitButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Feedback) == 0x000290, "Member 'UMainMenu_C::Feedback' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, FriendsListButton) == 0x000298, "Member 'UMainMenu_C::FriendsListButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_1) == 0x0002A0, "Member 'UMainMenu_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_2) == 0x0002A8, "Member 'UMainMenu_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_3) == 0x0002B0, "Member 'UMainMenu_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_4) == 0x0002B8, "Member 'UMainMenu_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_5) == 0x0002C0, "Member 'UMainMenu_C::Image_5' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_6) == 0x0002C8, "Member 'UMainMenu_C::Image_6' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Image_8) == 0x0002D0, "Member 'UMainMenu_C::Image_8' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ImagePartyInvite) == 0x0002D8, "Member 'UMainMenu_C::ImagePartyInvite' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, InviteCodesButton) == 0x0002E0, "Member 'UMainMenu_C::InviteCodesButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, InviteCodesCountText) == 0x0002E8, "Member 'UMainMenu_C::InviteCodesCountText' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, LeaveButton) == 0x0002F0, "Member 'UMainMenu_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Legal) == 0x0002F8, "Member 'UMainMenu_C::Legal' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, LogoutButton) == 0x000300, "Member 'UMainMenu_C::LogoutButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, MessagesButton) == 0x000308, "Member 'UMainMenu_C::MessagesButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, PartyBarContainer) == 0x000310, "Member 'UMainMenu_C::PartyBarContainer' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, PartyInvites) == 0x000318, "Member 'UMainMenu_C::PartyInvites' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, PrivacyButton) == 0x000320, "Member 'UMainMenu_C::PrivacyButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, SettingsButton) == 0x000328, "Member 'UMainMenu_C::SettingsButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, SizeBox_IconButtonList) == 0x000330, "Member 'UMainMenu_C::SizeBox_IconButtonList' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, SocialButtonsVB) == 0x000338, "Member 'UMainMenu_C::SocialButtonsVB' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, TestUIButton) == 0x000340, "Member 'UMainMenu_C::TestUIButton' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, MessageCenter) == 0x000348, "Member 'UMainMenu_C::MessageCenter' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, OptionsMenu) == 0x000350, "Member 'UMainMenu_C::OptionsMenu' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, OnRequestShowFeedbackWidget) == 0x000358, "Member 'UMainMenu_C::OnRequestShowFeedbackWidget' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Legal_Widget) == 0x000368, "Member 'UMainMenu_C::Legal_Widget' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, OnboardingQuest) == 0x000370, "Member 'UMainMenu_C::OnboardingQuest' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, tutorialComplete_) == 0x000378, "Member 'UMainMenu_C::tutorialComplete_' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, QuestScreen) == 0x000380, "Member 'UMainMenu_C::QuestScreen' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, CreditsWidget) == 0x000388, "Member 'UMainMenu_C::CreditsWidget' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, StormShieldPermissions) == 0x000390, "Member 'UMainMenu_C::StormShieldPermissions' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, NewsWidget) == 0x000398, "Member 'UMainMenu_C::NewsWidget' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, FriendCodesSelectionWindow) == 0x0003A0, "Member 'UMainMenu_C::FriendCodesSelectionWindow' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, PrivacyWidget) == 0x0003A8, "Member 'UMainMenu_C::PrivacyWidget' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, PartyFinder) == 0x0003B0, "Member 'UMainMenu_C::PartyFinder' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, PrivacyConfirmOptions) == 0x0003B8, "Member 'UMainMenu_C::PrivacyConfirmOptions' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, DeclineAction) == 0x0003C8, "Member 'UMainMenu_C::DeclineAction' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Public) == 0x0003D0, "Member 'UMainMenu_C::Public' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Friends) == 0x0003D8, "Member 'UMainMenu_C::Friends' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, Private) == 0x0003E0, "Member 'UMainMenu_C::Private' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, isMatchmaking) == 0x0003E8, "Member 'UMainMenu_C::isMatchmaking' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, FriendCodes) == 0x0003F0, "Member 'UMainMenu_C::FriendCodes' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, LocalTeam) == 0x000400, "Member 'UMainMenu_C::LocalTeam' has a wrong offset!");
-static_assert(offsetof(UMainMenu_C, ChangeSubgameButton_0) == 0x000408, "Member 'UMainMenu_C::ChangeSubgameButton_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FrontEndRewards_CurrentReward_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.ExecuteUbergraph_FrontEndRewards_CurrentReward
 // (HasDefaults)
@@ -288,5 +287,5 @@ void UFrontEndRewards_CurrentReward_C::Reset_Canvas_Panel_Slot_Alignment_and_Anc
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AthenaTabsScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaTabsScreen.AthenaTabsScreen_C.ExecuteUbergraph_AthenaTabsScreen
 // ()
@@ -162,5 +161,5 @@ void UAthenaTabsScreen_C::HandleTabSelected(class FName TabName)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

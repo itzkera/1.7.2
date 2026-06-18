@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StoreMain_Root.StoreMain_Root_C
 // 0x0040 (0x0460 - 0x0420)
@@ -55,25 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreMain_Root_C">();
+		BP_STATIC_CLASS_IMPL("StoreMain_Root_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreMain_Root_C")
 	}
 	static class UStoreMain_Root_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreMain_Root_C>();
 	}
 };
-static_assert(alignof(UStoreMain_Root_C) == 0x000008, "Wrong alignment on UStoreMain_Root_C");
-static_assert(sizeof(UStoreMain_Root_C) == 0x000460, "Wrong size on UStoreMain_Root_C");
-static_assert(offsetof(UStoreMain_Root_C, UberGraphFrame) == 0x000420, "Member 'UStoreMain_Root_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NoOffersText) == 0x000428, "Member 'UStoreMain_Root_C::NoOffersText' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, OffersHorizontalScrollBox) == 0x000430, "Member 'UStoreMain_Root_C::OffersHorizontalScrollBox' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, OverlayInstructions) == 0x000438, "Member 'UStoreMain_Root_C::OverlayInstructions' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, ProgressSpinner) == 0x000440, "Member 'UStoreMain_Root_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, SwitcherItemsProgress) == 0x000448, "Member 'UStoreMain_Root_C::SwitcherItemsProgress' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, VboxOffers) == 0x000450, "Member 'UStoreMain_Root_C::VboxOffers' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NavigatingToDetails) == 0x000458, "Member 'UStoreMain_Root_C::NavigatingToDetails' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NavigatingToChat) == 0x000459, "Member 'UStoreMain_Root_C::NavigatingToChat' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, ShowUpsellUI) == 0x00045A, "Member 'UStoreMain_Root_C::ShowUpsellUI' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

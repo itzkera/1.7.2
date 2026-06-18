@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaWinWidget.AthenaWinWidget_C
 // 0x0088 (0x0468 - 0x03E0)
@@ -47,28 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaWinWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaWinWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaWinWidget_C")
 	}
 	static class UAthenaWinWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaWinWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaWinWidget_C) == 0x000008, "Wrong alignment on UAthenaWinWidget_C");
-static_assert(sizeof(UAthenaWinWidget_C) == 0x000468, "Wrong size on UAthenaWinWidget_C");
-static_assert(offsetof(UAthenaWinWidget_C, UberGraphFrame) == 0x0003E0, "Member 'UAthenaWinWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, AthenaKillFeedWidget) == 0x0003E8, "Member 'UAthenaWinWidget_C::AthenaKillFeedWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, AthenaKillsWidget_78) == 0x0003F0, "Member 'UAthenaWinWidget_C::AthenaKillsWidget_78' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, AthenaPlayersLeftWidget_65) == 0x0003F8, "Member 'UAthenaWinWidget_C::AthenaPlayersLeftWidget_65' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, CommonTextBlock_PrimaryDeathText) == 0x000400, "Member 'UAthenaWinWidget_C::CommonTextBlock_PrimaryDeathText' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, Image_0) == 0x000408, "Member 'UAthenaWinWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, LeaveButton) == 0x000410, "Member 'UAthenaWinWidget_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, RespawnTimerHandle) == 0x000418, "Member 'UAthenaWinWidget_C::RespawnTimerHandle' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, ReleaseTimeRemaining) == 0x000420, "Member 'UAthenaWinWidget_C::ReleaseTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, ReadyToRespawnText) == 0x000428, "Member 'UAthenaWinWidget_C::ReadyToRespawnText' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, ShowExtraLivesTimerHandle) == 0x000440, "Member 'UAthenaWinWidget_C::ShowExtraLivesTimerHandle' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, ResurrectTimeRemaining) == 0x000448, "Member 'UAthenaWinWidget_C::ResurrectTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UAthenaWinWidget_C, PlacePrefixText) == 0x000450, "Member 'UAthenaWinWidget_C::PlacePrefixText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

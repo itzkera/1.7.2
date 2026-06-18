@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ObjectivesPage.ObjectivesPage_C
 // 0x0080 (0x0460 - 0x03E0)
@@ -54,31 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ObjectivesPage_C">();
+		BP_STATIC_CLASS_IMPL("ObjectivesPage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ObjectivesPage_C")
 	}
 	static class UObjectivesPage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UObjectivesPage_C>();
 	}
 };
-static_assert(alignof(UObjectivesPage_C) == 0x000008, "Wrong alignment on UObjectivesPage_C");
-static_assert(sizeof(UObjectivesPage_C) == 0x000460, "Wrong size on UObjectivesPage_C");
-static_assert(offsetof(UObjectivesPage_C, UberGraphFrame) == 0x0003E0, "Member 'UObjectivesPage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ActiveModifiersPanelContent) == 0x0003E8, "Member 'UObjectivesPage_C::ActiveModifiersPanelContent' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, BadgesButton) == 0x0003F0, "Member 'UObjectivesPage_C::BadgesButton' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, BadgesEarnedPanelContent_0) == 0x0003F8, "Member 'UObjectivesPage_C::BadgesEarnedPanelContent_0' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ContentPanelScrollBox) == 0x000400, "Member 'UObjectivesPage_C::ContentPanelScrollBox' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ContentPanelSwitcher) == 0x000408, "Member 'UObjectivesPage_C::ContentPanelSwitcher' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, MissionButton) == 0x000410, "Member 'UObjectivesPage_C::MissionButton' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, MissionPanelContent_0) == 0x000418, "Member 'UObjectivesPage_C::MissionPanelContent_0' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ModifiersButton) == 0x000420, "Member 'UObjectivesPage_C::ModifiersButton' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ObjectivesButton) == 0x000428, "Member 'UObjectivesPage_C::ObjectivesButton' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ObjectivesPanelContent_0) == 0x000430, "Member 'UObjectivesPage_C::ObjectivesPanelContent_0' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, SafeZone_0) == 0x000438, "Member 'UObjectivesPage_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, Scorebutton) == 0x000440, "Member 'UObjectivesPage_C::Scorebutton' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, TeamScorePanelContent_0) == 0x000448, "Member 'UObjectivesPage_C::TeamScorePanelContent_0' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ZoneDetails) == 0x000450, "Member 'UObjectivesPage_C::ZoneDetails' has a wrong offset!");
-static_assert(offsetof(UObjectivesPage_C, ButtonGroup) == 0x000458, "Member 'UObjectivesPage_C::ButtonGroup' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

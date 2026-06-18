@@ -14,8 +14,7 @@
 #include "ItemAlterationsListDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.ExecuteUbergraph_ItemAlterationsListDetailWidget
 // ()
@@ -84,5 +83,5 @@ void UItemAlterationsListDetailWidget_C::SetState(EFortAlterationWidgetState Sta
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

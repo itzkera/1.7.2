@@ -14,8 +14,7 @@
 #include "B_PlayerHealthDamage_CameraLensEffect_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C
 // 0x0000 (0x0450 - 0x0450)
@@ -32,16 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_PlayerShieldDamage_CameraLensEffect_C">();
+		BP_STATIC_CLASS_IMPL("B_PlayerShieldDamage_CameraLensEffect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_PlayerShieldDamage_CameraLensEffect_C")
 	}
 	static class AB_PlayerShieldDamage_CameraLensEffect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_PlayerShieldDamage_CameraLensEffect_C>();
 	}
 };
-static_assert(alignof(AB_PlayerShieldDamage_CameraLensEffect_C) == 0x000010, "Wrong alignment on AB_PlayerShieldDamage_CameraLensEffect_C");
-static_assert(sizeof(AB_PlayerShieldDamage_CameraLensEffect_C) == 0x000450, "Wrong size on AB_PlayerShieldDamage_CameraLensEffect_C");
-static_assert(offsetof(AB_PlayerShieldDamage_CameraLensEffect_C, UberGraphFrame_B_PlayerShieldDamage_CameraLensEffect_C) == 0x000448, "Member 'AB_PlayerShieldDamage_CameraLensEffect_C::UberGraphFrame_B_PlayerShieldDamage_CameraLensEffect_C' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CollectionBookSectionPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.ExecuteUbergraph_CollectionBookSectionPanel
 // ()
@@ -54,7 +53,7 @@ void UCollectionBookSectionPanel_C::OnActivated()
 // Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.OnSectionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UFortCollectionBookSection*       Section                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortCollectionBookSection* Section                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCollectionBookSectionPanel_C::OnSectionChanged(const class UFortCollectionBookSection* Section)
 {
@@ -148,5 +147,5 @@ void UCollectionBookSectionPanel_C::OnInspectItem(class UFortItem* Item, bool Al
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

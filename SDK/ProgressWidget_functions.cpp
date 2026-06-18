@@ -14,13 +14,12 @@
 #include "ProgressWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ProgressWidget.ProgressWidget_C.SetTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title_0                                                (Parm)
+// const class FText&                      Title_0                                                (Parm)
 
 void UProgressWidget_C::SetTitle(const class FText& Title_0)
 {
@@ -40,7 +39,7 @@ void UProgressWidget_C::SetTitle(const class FText& Title_0)
 // Function ProgressWidget.ProgressWidget_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description_0                                          (Parm)
+// const class FText&                      Description_0                                          (Parm)
 
 void UProgressWidget_C::SetDescription(const class FText& Description_0)
 {
@@ -60,7 +59,7 @@ void UProgressWidget_C::SetDescription(const class FText& Description_0)
 // Function ProgressWidget.ProgressWidget_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush                                              (Parm)
+// const struct FSlateBrush&               IconBrush                                              (Parm)
 
 void UProgressWidget_C::SetIcon(const struct FSlateBrush& IconBrush)
 {
@@ -76,5 +75,5 @@ void UProgressWidget_C::SetIcon(const struct FSlateBrush& IconBrush)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

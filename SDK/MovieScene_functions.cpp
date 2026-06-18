@@ -14,8 +14,7 @@
 #include "MovieScene_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
 // (Final, Native, Public, BlueprintCallable)
@@ -27,7 +26,12 @@ void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 	if (Func == nullptr)
 		Func = Class->GetFunction("MovieSceneSequencePlayer", "ChangePlaybackDirection");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -41,7 +45,12 @@ void UMovieSceneSequencePlayer::Pause()
 	if (Func == nullptr)
 		Func = Class->GetFunction("MovieSceneSequencePlayer", "Pause");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -55,7 +64,12 @@ void UMovieSceneSequencePlayer::Play()
 	if (Func == nullptr)
 		Func = Class->GetFunction("MovieSceneSequencePlayer", "Play");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -75,7 +89,12 @@ void UMovieSceneSequencePlayer::PlayLooping(int32 NumLoops)
 
 	Parms.NumLoops = NumLoops;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -89,7 +108,12 @@ void UMovieSceneSequencePlayer::PlayReverse()
 	if (Func == nullptr)
 		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayReverse");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -109,15 +133,20 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 
 	Parms.NewPlaybackPosition = NewPlaybackPosition;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                                   NewStartTime                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   NewEndTime                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             NewStartTime                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             NewEndTime                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UMovieSceneSequencePlayer::SetPlaybackRange(const float NewStartTime, const float NewEndTime)
 {
@@ -131,7 +160,12 @@ void UMovieSceneSequencePlayer::SetPlaybackRange(const float NewStartTime, const
 	Parms.NewStartTime = NewStartTime;
 	Parms.NewEndTime = NewEndTime;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -151,7 +185,12 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 
 	Parms.PlayRate = PlayRate;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -165,7 +204,12 @@ void UMovieSceneSequencePlayer::StartPlayingNextTick()
 	if (Func == nullptr)
 		Func = Class->GetFunction("MovieSceneSequencePlayer", "StartPlayingNextTick");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -179,7 +223,12 @@ void UMovieSceneSequencePlayer::Stop()
 	if (Func == nullptr)
 		Func = Class->GetFunction("MovieSceneSequencePlayer", "Stop");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -197,7 +246,12 @@ float UMovieSceneSequencePlayer::GetLength() const
 
 	Params::MovieSceneSequencePlayer_GetLength Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -217,7 +271,12 @@ float UMovieSceneSequencePlayer::GetPlaybackEnd() const
 
 	Params::MovieSceneSequencePlayer_GetPlaybackEnd Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -237,7 +296,12 @@ float UMovieSceneSequencePlayer::GetPlaybackPosition() const
 
 	Params::MovieSceneSequencePlayer_GetPlaybackPosition Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -257,7 +321,12 @@ float UMovieSceneSequencePlayer::GetPlaybackStart() const
 
 	Params::MovieSceneSequencePlayer_GetPlaybackStart Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -277,7 +346,12 @@ float UMovieSceneSequencePlayer::GetPlayRate() const
 
 	Params::MovieSceneSequencePlayer_GetPlayRate Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -297,10 +371,15 @@ bool UMovieSceneSequencePlayer::IsPlaying() const
 
 	Params::MovieSceneSequencePlayer_IsPlaying Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

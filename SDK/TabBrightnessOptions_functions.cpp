@@ -14,8 +14,7 @@
 #include "TabBrightnessOptions_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabBrightnessOptions.TabBrightnessOptions_C.ExecuteUbergraph_TabBrightnessOptions
 // ()
@@ -140,5 +139,5 @@ void UTabBrightnessOptions_C::Set_Default_Call_Out()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

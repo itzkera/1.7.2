@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.ExecuteUbergraph_TeamScoreDetailsContent
 // 0x0040 (0x0040 - 0x0000)
@@ -31,17 +31,6 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent) == 0x000008, "Wrong alignment on TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent");
-static_assert(sizeof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent) == 0x000040, "Wrong size on TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, EntryPoint) == 0x000000, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, Temp_int_Variable) == 0x000010, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_GetScoreReport_ReturnValue) == 0x000018, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_GetScoreReport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_GetPlayerCount_ReturnValue) == 0x000024, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_GetPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_Subtract_IntInt_ReturnValue) == 0x000038, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00003C, "Member 'TeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.SetRowData
 // 0x0070 (0x0070 - 0x0000)
@@ -69,24 +58,6 @@ public:
 	class UScoreDetailsRow_C*                     CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamScoreDetailsContent_C_SetRowData) == 0x000008, "Wrong alignment on TeamScoreDetailsContent_C_SetRowData");
-static_assert(sizeof(TeamScoreDetailsContent_C_SetRowData) == 0x000070, "Wrong size on TeamScoreDetailsContent_C_SetRowData");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, RowIdx) == 0x000000, "Member 'TeamScoreDetailsContent_C_SetRowData::RowIdx' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetChildrenCount_ReturnValue) == 0x000010, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, K2Node_DynamicCast_AsScore_Details_Row) == 0x000018, "Member 'TeamScoreDetailsContent_C_SetRowData::K2Node_DynamicCast_AsScore_Details_Row' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'TeamScoreDetailsContent_C_SetRowData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue) == 0x00002C, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue2) == 0x000030, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue3) == 0x000034, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerScore_ReturnValue4) == 0x000038, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerScore_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetPlayerName_ReturnValue) == 0x000040, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_Create_ReturnValue) == 0x000060, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_SetRowData, CallFunc_AddChild_ReturnValue) == 0x000068, "Member 'TeamScoreDetailsContent_C_SetRowData::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.TrimUnusedRows
 // 0x001C (0x001C - 0x0000)
@@ -102,15 +73,6 @@ public:
 	int32                                         CallFunc_GetChildrenCount_ReturnValue2;            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TeamScoreDetailsContent_C_TrimUnusedRows) == 0x000004, "Wrong alignment on TeamScoreDetailsContent_C_TrimUnusedRows");
-static_assert(sizeof(TeamScoreDetailsContent_C_TrimUnusedRows) == 0x00001C, "Wrong size on TeamScoreDetailsContent_C_TrimUnusedRows");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_GetPlayerCount_ReturnValue) == 0x000000, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_GetPlayerCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_GetChildrenCount_ReturnValue) == 0x000004, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_RemoveChildAt_ReturnValue) == 0x000010, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_RemoveChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_GetChildrenCount_ReturnValue2) == 0x000014, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_GetChildrenCount_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TeamScoreDetailsContent_C_TrimUnusedRows, CallFunc_Greater_IntInt_ReturnValue) == 0x000018, "Member 'TeamScoreDetailsContent_C_TrimUnusedRows::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Party_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Party.PartyMemberState.IsLocalPlayer
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -31,7 +30,12 @@ bool UPartyMemberState::IsLocalPlayer() const
 
 	Params::PartyMemberState_IsLocalPlayer Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -51,10 +55,15 @@ bool UPartyMemberState::IsPartyLeader() const
 
 	Params::PartyMemberState_IsPartyLeader Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

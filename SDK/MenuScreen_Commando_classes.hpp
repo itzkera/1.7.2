@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass MenuScreen_Commando.MenuScreen_Commando_C
 // 0x0618 (0x09E8 - 0x03D0)
@@ -48,29 +47,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MenuScreen_Commando_C">();
+		BP_STATIC_CLASS_IMPL("MenuScreen_Commando_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MenuScreen_Commando_C")
 	}
 	static class UMenuScreen_Commando_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMenuScreen_Commando_C>();
 	}
 };
-static_assert(alignof(UMenuScreen_Commando_C) == 0x000008, "Wrong alignment on UMenuScreen_Commando_C");
-static_assert(sizeof(UMenuScreen_Commando_C) == 0x0009E8, "Wrong size on UMenuScreen_Commando_C");
-static_assert(offsetof(UMenuScreen_Commando_C, UberGraphFrame) == 0x0003D0, "Member 'UMenuScreen_Commando_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_Root_F70AA5C441806953E84736BA8BC1318A) == 0x0003D8, "Member 'UMenuScreen_Commando_C::AnimGraphNode_Root_F70AA5C441806953E84736BA8BC1318A' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_TwoBoneIK_91B5767B40519A79E7AEC38404372807) == 0x000420, "Member 'UMenuScreen_Commando_C::AnimGraphNode_TwoBoneIK_91B5767B40519A79E7AEC38404372807' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_TwoBoneIK_4B2EDC5B4B1A02DB26673C9C5AA47EF2) == 0x0004E0, "Member 'UMenuScreen_Commando_C::AnimGraphNode_TwoBoneIK_4B2EDC5B4B1A02DB26673C9C5AA47EF2' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_LocalToComponentSpace_476FB3144FF01CDECEC25D9FCA0BF170) == 0x0005A0, "Member 'UMenuScreen_Commando_C::AnimGraphNode_LocalToComponentSpace_476FB3144FF01CDECEC25D9FCA0BF170' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_ComponentToLocalSpace_78BB02D34BB0CD13E52B729CD15EC48B) == 0x0005E8, "Member 'UMenuScreen_Commando_C::AnimGraphNode_ComponentToLocalSpace_78BB02D34BB0CD13E52B729CD15EC48B' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_TwoBoneIK_43CBCFD8445ED0E03161C4B571134CE9) == 0x000630, "Member 'UMenuScreen_Commando_C::AnimGraphNode_TwoBoneIK_43CBCFD8445ED0E03161C4B571134CE9' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_TwoBoneIK_3695B48646E0C5839953A39C17D3DEF9) == 0x0006F0, "Member 'UMenuScreen_Commando_C::AnimGraphNode_TwoBoneIK_3695B48646E0C5839953A39C17D3DEF9' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_Slot_30CEFFAA4FD7F57FD5A6EDB40D31DE9D) == 0x0007B0, "Member 'UMenuScreen_Commando_C::AnimGraphNode_Slot_30CEFFAA4FD7F57FD5A6EDB40D31DE9D' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_SequencePlayer_ECCC70F04489C85C49B82FB532A3D3A9) == 0x000810, "Member 'UMenuScreen_Commando_C::AnimGraphNode_SequencePlayer_ECCC70F04489C85C49B82FB532A3D3A9' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B) == 0x000880, "Member 'UMenuScreen_Commando_C::AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, AnimGraphNode_SequencePlayer_CDEB41CC42B9DE30260861A50A7F4D48) == 0x000960, "Member 'UMenuScreen_Commando_C::AnimGraphNode_SequencePlayer_CDEB41CC42B9DE30260861A50A7F4D48' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, MenuScreenDispatcher) == 0x0009D0, "Member 'UMenuScreen_Commando_C::MenuScreenDispatcher' has a wrong offset!");
-static_assert(offsetof(UMenuScreen_Commando_C, HasBeenSelected) == 0x0009E0, "Member 'UMenuScreen_Commando_C::HasBeenSelected' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

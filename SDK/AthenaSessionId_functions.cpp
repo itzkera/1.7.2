@@ -14,8 +14,7 @@
 #include "AthenaSessionId_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaSessionId.AthenaSessionId_C.ExecuteUbergraph_AthenaSessionId
 // ()
@@ -64,5 +63,5 @@ void UAthenaSessionId_C::UpdateSessionId()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

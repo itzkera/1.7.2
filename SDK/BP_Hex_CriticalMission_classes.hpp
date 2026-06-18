@@ -15,8 +15,7 @@
 #include "BP_Hex_PARENT_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Hex_CriticalMission.BP_Hex_CriticalMission_C
 // 0x00C8 (0x07F0 - 0x0728)
@@ -61,39 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Hex_CriticalMission_C">();
+		BP_STATIC_CLASS_IMPL("BP_Hex_CriticalMission_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Hex_CriticalMission_C")
 	}
 	static class ABP_Hex_CriticalMission_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Hex_CriticalMission_C>();
 	}
 };
-static_assert(alignof(ABP_Hex_CriticalMission_C) == 0x000008, "Wrong alignment on ABP_Hex_CriticalMission_C");
-static_assert(sizeof(ABP_Hex_CriticalMission_C) == 0x0007F0, "Wrong size on ABP_Hex_CriticalMission_C");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, UberGraphFrame_BP_Hex_CriticalMission_C) == 0x000728, "Member 'ABP_Hex_CriticalMission_C::UberGraphFrame_BP_Hex_CriticalMission_C' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, P_QuickplaySmoke) == 0x000730, "Member 'ABP_Hex_CriticalMission_C::P_QuickplaySmoke' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, Particle03) == 0x000738, "Member 'ABP_Hex_CriticalMission_C::Particle03' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, Particle01) == 0x000740, "Member 'ABP_Hex_CriticalMission_C::Particle01' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudRadar_Wire) == 0x000748, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudRadar_Wire' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudRadar_02) == 0x000750, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudRadar_02' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudRadar_01) == 0x000758, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudRadar_01' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudRadar_03) == 0x000760, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudRadar_03' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, SM_CriticalMission_Rotate01) == 0x000768, "Member 'ABP_Hex_CriticalMission_C::SM_CriticalMission_Rotate01' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudCircle_04) == 0x000770, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudCircle_04' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudCircle_03) == 0x000778, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudCircle_03' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexCloudCircle_02) == 0x000780, "Member 'ABP_Hex_CriticalMission_C::S_HexCloudCircle_02' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, CloudRotateDummy) == 0x000788, "Member 'ABP_Hex_CriticalMission_C::CloudRotateDummy' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, S_HexRadarFalloffMesh) == 0x000790, "Member 'ABP_Hex_CriticalMission_C::S_HexRadarFalloffMesh' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, Rotate_MPCRotation_0011687F41B08479D913F5901B8B4F9D) == 0x000798, "Member 'ABP_Hex_CriticalMission_C::Rotate_MPCRotation_0011687F41B08479D913F5901B8B4F9D' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, Rotate_MeshRotation_0011687F41B08479D913F5901B8B4F9D) == 0x00079C, "Member 'ABP_Hex_CriticalMission_C::Rotate_MeshRotation_0011687F41B08479D913F5901B8B4F9D' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, Rotate__Direction_0011687F41B08479D913F5901B8B4F9D) == 0x0007A0, "Member 'ABP_Hex_CriticalMission_C::Rotate__Direction_0011687F41B08479D913F5901B8B4F9D' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, Rotate) == 0x0007A8, "Member 'ABP_Hex_CriticalMission_C::Rotate' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, ActiveTilesArray) == 0x0007B0, "Member 'ABP_Hex_CriticalMission_C::ActiveTilesArray' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, RadarWireMID) == 0x0007C0, "Member 'ABP_Hex_CriticalMission_C::RadarWireMID' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, CloudHeightZ) == 0x0007C8, "Member 'ABP_Hex_CriticalMission_C::CloudHeightZ' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, DM_Cloud01) == 0x0007D0, "Member 'ABP_Hex_CriticalMission_C::DM_Cloud01' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, DM_Cloud02) == 0x0007D8, "Member 'ABP_Hex_CriticalMission_C::DM_Cloud02' has a wrong offset!");
-static_assert(offsetof(ABP_Hex_CriticalMission_C, CloudLightVector) == 0x0007E0, "Member 'ABP_Hex_CriticalMission_C::CloudLightVector' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

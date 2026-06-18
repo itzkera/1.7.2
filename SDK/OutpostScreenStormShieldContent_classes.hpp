@@ -15,8 +15,7 @@
 #include "Party_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C
 // 0x0170 (0x0550 - 0x03E0)
@@ -92,50 +91,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OutpostScreenStormShieldContent_C">();
+		BP_STATIC_CLASS_IMPL("OutpostScreenStormShieldContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OutpostScreenStormShieldContent_C")
 	}
 	static class UOutpostScreenStormShieldContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOutpostScreenStormShieldContent_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenStormShieldContent_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShieldContent_C");
-static_assert(sizeof(UOutpostScreenStormShieldContent_C) == 0x000550, "Wrong size on UOutpostScreenStormShieldContent_C");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, UberGraphFrame) == 0x0003E0, "Member 'UOutpostScreenStormShieldContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, ButtonHelp) == 0x0003E8, "Member 'UOutpostScreenStormShieldContent_C::ButtonHelp' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, ExpandShieldText) == 0x0003F0, "Member 'UOutpostScreenStormShieldContent_C::ExpandShieldText' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, HBoxRequestHelp) == 0x0003F8, "Member 'UOutpostScreenStormShieldContent_C::HBoxRequestHelp' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, Image_11) == 0x000400, "Member 'UOutpostScreenStormShieldContent_C::Image_11' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, Image_12) == 0x000408, "Member 'UOutpostScreenStormShieldContent_C::Image_12' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, LeaveButton) == 0x000410, "Member 'UOutpostScreenStormShieldContent_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, OutpostShieldContent) == 0x000418, "Member 'UOutpostScreenStormShieldContent_C::OutpostShieldContent' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_2) == 0x000420, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_2' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_3) == 0x000428, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_3' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_4) == 0x000430, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_4' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_5) == 0x000438, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_5' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_6) == 0x000440, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_6' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_7) == 0x000448, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_7' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_8) == 0x000450, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_8' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_9) == 0x000458, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_9' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_10) == 0x000460, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_10' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_1a) == 0x000468, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_1a' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, PowerLevel_1b) == 0x000470, "Member 'UOutpostScreenStormShieldContent_C::PowerLevel_1b' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, TextReady) == 0x000478, "Member 'UOutpostScreenStormShieldContent_C::TextReady' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, Upgrade_Button) == 0x000480, "Member 'UOutpostScreenStormShieldContent_C::Upgrade_Button' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, WoodResource) == 0x000488, "Member 'UOutpostScreenStormShieldContent_C::WoodResource' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, OutpostCoreBuilding) == 0x0004A0, "Member 'UOutpostScreenStormShieldContent_C::OutpostCoreBuilding' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, Upgradeable) == 0x0004A8, "Member 'UOutpostScreenStormShieldContent_C::Upgradeable' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, Amplifier) == 0x0004A9, "Member 'UOutpostScreenStormShieldContent_C::Amplifier' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, AdvanceCampaignText) == 0x0004B0, "Member 'UOutpostScreenStormShieldContent_C::AdvanceCampaignText' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, ShieldExpandingText) == 0x0004C8, "Member 'UOutpostScreenStormShieldContent_C::ShieldExpandingText' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, MaxLevelText) == 0x0004E0, "Member 'UOutpostScreenStormShieldContent_C::MaxLevelText' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, InstallShieldText) == 0x0004F8, "Member 'UOutpostScreenStormShieldContent_C::InstallShieldText' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, GetHelp) == 0x000510, "Member 'UOutpostScreenStormShieldContent_C::GetHelp' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, CloseOutpostScreen) == 0x000518, "Member 'UOutpostScreenStormShieldContent_C::CloseOutpostScreen' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, ParentReference) == 0x000528, "Member 'UOutpostScreenStormShieldContent_C::ParentReference' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, shouldUpdateButtons_) == 0x000530, "Member 'UOutpostScreenStormShieldContent_C::shouldUpdateButtons_' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, OutpostIsDefined) == 0x000538, "Member 'UOutpostScreenStormShieldContent_C::OutpostIsDefined' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldContent_C, ReadyToExpand_) == 0x000548, "Member 'UOutpostScreenStormShieldContent_C::ReadyToExpand_' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

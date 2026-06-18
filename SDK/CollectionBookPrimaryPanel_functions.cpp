@@ -14,8 +14,7 @@
 #include "CollectionBookPrimaryPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C.ExecuteUbergraph_CollectionBookPrimaryPanel
 // ()
@@ -54,7 +53,7 @@ void UCollectionBookPrimaryPanel_C::HandleDisplayInfoBox()
 // Function CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C.OnSummonInfoPanelExecuted
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCollectionBookPrimaryPanel_C::OnSummonInfoPanelExecuted(bool* bPassThrough)
 {
@@ -71,5 +70,5 @@ void UCollectionBookPrimaryPanel_C::OnSummonInfoPanelExecuted(bool* bPassThrough
 		*bPassThrough = Parms.bPassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

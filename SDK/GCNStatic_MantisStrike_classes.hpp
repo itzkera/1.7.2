@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCNStatic_MantisStrike.GCNStatic_MantisStrike_C
 // 0x0000 (0x0040 - 0x0040)
@@ -26,15 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNStatic_MantisStrike_C">();
+		BP_STATIC_CLASS_IMPL("GCNStatic_MantisStrike_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNStatic_MantisStrike_C")
 	}
 	static class UGCNStatic_MantisStrike_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCNStatic_MantisStrike_C>();
 	}
 };
-static_assert(alignof(UGCNStatic_MantisStrike_C) == 0x000008, "Wrong alignment on UGCNStatic_MantisStrike_C");
-static_assert(sizeof(UGCNStatic_MantisStrike_C) == 0x000040, "Wrong size on UGCNStatic_MantisStrike_C");
 
-}
-
+SDK_NAMESPACE_END

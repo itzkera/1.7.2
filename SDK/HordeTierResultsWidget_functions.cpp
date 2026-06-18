@@ -14,8 +14,7 @@
 #include "HordeTierResultsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.InitializeMovie
 // (Protected, BlueprintCallable, BlueprintEvent)
@@ -54,7 +53,7 @@ void UHordeTierResultsWidget_C::Initialize(EFortCompletionResult Result)
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.ChooseMediaToUse
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMediaSource*                     MediaToUse                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMediaSource**                    MediaToUse                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHordeTierResultsWidget_C::ChooseMediaToUse(class UMediaSource** MediaToUse)
 {
@@ -89,8 +88,8 @@ void UHordeTierResultsWidget_C::OnEndOfMovieReached()
 // Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnHandleAction
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FEventReply*                     Result                                                 (Parm, OutParm)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UHordeTierResultsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
@@ -110,5 +109,5 @@ void UHordeTierResultsWidget_C::OnHandleAction(struct FEventReply* Result, bool*
 		*bPassThrough = Parms.bPassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

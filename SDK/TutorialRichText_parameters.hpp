@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TutorialRichText.TutorialRichText_C.ExecuteUbergraph_TutorialRichText
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct TutorialRichText_C_ExecuteUbergraph_TutorialRichText final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TutorialRichText_C_ExecuteUbergraph_TutorialRichText) == 0x000004, "Wrong alignment on TutorialRichText_C_ExecuteUbergraph_TutorialRichText");
-static_assert(sizeof(TutorialRichText_C_ExecuteUbergraph_TutorialRichText) == 0x000004, "Wrong size on TutorialRichText_C_ExecuteUbergraph_TutorialRichText");
-static_assert(offsetof(TutorialRichText_C_ExecuteUbergraph_TutorialRichText, EntryPoint) == 0x000000, "Member 'TutorialRichText_C_ExecuteUbergraph_TutorialRichText::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

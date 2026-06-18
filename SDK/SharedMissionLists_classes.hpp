@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SharedMissionLists.SharedMissionLists_C
 // 0x0000 (0x0158 - 0x0158)
@@ -23,15 +22,16 @@ class USharedMissionLists_C final : public UFortSharedMissionLists
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SharedMissionLists_C">();
+		BP_STATIC_CLASS_IMPL("SharedMissionLists_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SharedMissionLists_C")
 	}
 	static class USharedMissionLists_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USharedMissionLists_C>();
 	}
 };
-static_assert(alignof(USharedMissionLists_C) == 0x000008, "Wrong alignment on USharedMissionLists_C");
-static_assert(sizeof(USharedMissionLists_C) == 0x000158, "Wrong size on USharedMissionLists_C");
 
-}
-
+SDK_NAMESPACE_END

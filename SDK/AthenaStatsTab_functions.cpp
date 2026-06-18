@@ -14,8 +14,7 @@
 #include "AthenaStatsTab_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaStatsTab.AthenaStatsTab_C.ExecuteUbergraph_AthenaStatsTab
 // (HasDefaults)
@@ -160,5 +159,5 @@ void UAthenaStatsTab_C::UpdateLastUpdatedTime()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

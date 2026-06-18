@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TabAccountLinkage.TabAccountLinkage_C.ExecuteUbergraph_TabAccountLinkage
 // 0x0078 (0x0078 - 0x0000)
@@ -44,23 +44,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShowWebURL_ReturnValue;                   // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage) == 0x000008, "Wrong alignment on TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage");
-static_assert(sizeof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage) == 0x000078, "Wrong size on TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, EntryPoint) == 0x000000, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_IsAccountLinkingUIURLButtonEnabled_ReturnValue) == 0x000004, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_IsAccountLinkingUIURLButtonEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, K2Node_ComponentBoundEvent_NewTooltipText) == 0x000008, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::K2Node_ComponentBoundEvent_NewTooltipText' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000020, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000028, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000038, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_GetAccountLinkingUIURL_ReturnValue) == 0x000040, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_GetAccountLinkingUIURL_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_Len_ReturnValue) == 0x000050, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_Greater_IntInt_ReturnValue) == 0x000054, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_GetUINavigationManager_ReturnValue) == 0x000058, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_BooleanAND_ReturnValue) == 0x000070, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage, CallFunc_ShowWebURL_ReturnValue) == 0x000071, "Member 'TabAccountLinkage_C_ExecuteUbergraph_TabAccountLinkage::CallFunc_ShowWebURL_ReturnValue' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -69,9 +52,6 @@ struct TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TabAccountLinkage_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -80,9 +60,6 @@ struct TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_
 public:
 	class FText                                   NewTooltipText;                                    // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature) == 0x000008, "Wrong alignment on TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature");
-static_assert(sizeof(TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature) == 0x000018, "Wrong size on TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature");
-static_assert(offsetof(TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature, NewTooltipText) == 0x000000, "Member 'TabAccountLinkage_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature::NewTooltipText' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.Initialize Data
 // 0x0010 (0x0010 - 0x0000)
@@ -95,12 +72,6 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAccountLinkage_C_Initialize_Data) == 0x000008, "Wrong alignment on TabAccountLinkage_C_Initialize_Data");
-static_assert(sizeof(TabAccountLinkage_C_Initialize_Data) == 0x000010, "Wrong size on TabAccountLinkage_C_Initialize_Data");
-static_assert(offsetof(TabAccountLinkage_C_Initialize_Data, Temp_bool_Variable) == 0x000000, "Member 'TabAccountLinkage_C_Initialize_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Initialize_Data, CallFunc_GetAccountLinkingUIConfig_ReturnValue) == 0x000001, "Member 'TabAccountLinkage_C_Initialize_Data::CallFunc_GetAccountLinkingUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Initialize_Data, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'TabAccountLinkage_C_Initialize_Data::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Initialize_Data, K2Node_Select_Default) == 0x000008, "Member 'TabAccountLinkage_C_Initialize_Data::K2Node_Select_Default' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.Fire Enter Live Stream Analytic
 // 0x0050 (0x0050 - 0x0000)
@@ -111,11 +82,6 @@ public:
 	struct FFortAnalyticsEventAttribute           CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue; // 0x0020(0x0020)()
 	TArray<struct FFortAnalyticsEventAttribute>   K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic) == 0x000008, "Wrong alignment on TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic");
-static_assert(sizeof(TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic) == 0x000050, "Wrong size on TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic");
-static_assert(offsetof(TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic, CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue) == 0x000000, "Member 'TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic::CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic, CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue) == 0x000020, "Member 'TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic::CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic, K2Node_MakeArray_Array) == 0x000040, "Member 'TabAccountLinkage_C_Fire_Enter_Live_Stream_Analytic::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.Build Player Name Analytic Attribute
 // 0x0088 (0x0088 - 0x0000)
@@ -132,16 +98,6 @@ public:
 	class FString                                 CallFunc_GetPlayerName_ReturnValue;                // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0068(0x0020)()
 };
-static_assert(alignof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute) == 0x000008, "Wrong alignment on TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute");
-static_assert(sizeof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute) == 0x000088, "Wrong size on TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, ReturnValue) == 0x000000, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000028, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, CallFunc_GetGameAccountId_ReturnValue) == 0x000038, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, CallFunc_GetPlayerInfoFromUniqueID_ReturnValue) == 0x000050, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::CallFunc_GetPlayerInfoFromUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, CallFunc_GetPlayerName_ReturnValue) == 0x000058, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute, CallFunc_ConstructAnalyticsAttribute_ReturnValue) == 0x000068, "Member 'TabAccountLinkage_C_Build_Player_Name_Analytic_Attribute::CallFunc_ConstructAnalyticsAttribute_ReturnValue' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.Build Player Id Analytic Attribute
 // 0x0080 (0x0080 - 0x0000)
@@ -157,15 +113,6 @@ public:
 	class FString                                 CallFunc_GetDebugStringForUniqueId_ReturnValue;    // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FFortAnalyticsEventAttribute           CallFunc_ConstructAnalyticsAttribute_ReturnValue;  // 0x0060(0x0020)()
 };
-static_assert(alignof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute) == 0x000008, "Wrong alignment on TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute");
-static_assert(sizeof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute) == 0x000080, "Wrong size on TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, ReturnValue) == 0x000000, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000028, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, CallFunc_GetGameAccountId_ReturnValue) == 0x000038, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, CallFunc_GetDebugStringForUniqueId_ReturnValue) == 0x000050, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::CallFunc_GetDebugStringForUniqueId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute, CallFunc_ConstructAnalyticsAttribute_ReturnValue) == 0x000060, "Member 'TabAccountLinkage_C_Build_Player_Id_Analytic_Attribute::CallFunc_ConstructAnalyticsAttribute_ReturnValue' has a wrong offset!");
 
 // Function TabAccountLinkage.TabAccountLinkage_C.InitializeWebsiteConfiguration
 // 0x0088 (0x0088 - 0x0000)
@@ -190,23 +137,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x006F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class FText                                   K2Node_Select2_Default;                            // 0x0070(0x0018)()
 };
-static_assert(alignof(TabAccountLinkage_C_InitializeWebsiteConfiguration) == 0x000008, "Wrong alignment on TabAccountLinkage_C_InitializeWebsiteConfiguration");
-static_assert(sizeof(TabAccountLinkage_C_InitializeWebsiteConfiguration) == 0x000088, "Wrong size on TabAccountLinkage_C_InitializeWebsiteConfiguration");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, Temp_bool_Variable) == 0x000000, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, Temp_byte_Variable) == 0x000001, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, Temp_byte_Variable2) == 0x000002, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, Temp_bool_Variable2) == 0x000003, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, Temp_text_Variable) == 0x000008, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, Temp_text_Variable2) == 0x000020, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_IsAccountLinkingUIURLButtonEnabled_ReturnValue) == 0x000038, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_IsAccountLinkingUIURLButtonEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_GetAccountLinkingUIURL_ReturnValue) == 0x000040, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_GetAccountLinkingUIURL_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_Len_ReturnValue) == 0x000068, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_Greater_IntInt_ReturnValue) == 0x00006C, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_GetAccountLinkingUIConfig_ReturnValue) == 0x00006D, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_GetAccountLinkingUIConfig_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00006E, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, K2Node_Select_Default) == 0x00006F, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabAccountLinkage_C_InitializeWebsiteConfiguration, K2Node_Select2_Default) == 0x000070, "Member 'TabAccountLinkage_C_InitializeWebsiteConfiguration::K2Node_Select2_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

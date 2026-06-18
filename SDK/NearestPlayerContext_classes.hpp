@@ -14,8 +14,7 @@
 #include "AIModule_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass NearestPlayerContext.NearestPlayerContext_C
 // 0x0040 (0x0070 - 0x0030)
@@ -37,22 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NearestPlayerContext_C">();
+		BP_STATIC_CLASS_IMPL("NearestPlayerContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NearestPlayerContext_C")
 	}
 	static class UNearestPlayerContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNearestPlayerContext_C>();
 	}
 };
-static_assert(alignof(UNearestPlayerContext_C) == 0x000008, "Wrong alignment on UNearestPlayerContext_C");
-static_assert(sizeof(UNearestPlayerContext_C) == 0x000070, "Wrong size on UNearestPlayerContext_C");
-static_assert(offsetof(UNearestPlayerContext_C, QuerierLocation) == 0x000030, "Member 'UNearestPlayerContext_C::QuerierLocation' has a wrong offset!");
-static_assert(offsetof(UNearestPlayerContext_C, GoalActorLocation) == 0x00003C, "Member 'UNearestPlayerContext_C::GoalActorLocation' has a wrong offset!");
-static_assert(offsetof(UNearestPlayerContext_C, DistanceBetweenQuerierAndGoal) == 0x000048, "Member 'UNearestPlayerContext_C::DistanceBetweenQuerierAndGoal' has a wrong offset!");
-static_assert(offsetof(UNearestPlayerContext_C, FinalHuntingRadiusToUse) == 0x00004C, "Member 'UNearestPlayerContext_C::FinalHuntingRadiusToUse' has a wrong offset!");
-static_assert(offsetof(UNearestPlayerContext_C, FinalHuntingRadiusLocationToUse) == 0x000050, "Member 'UNearestPlayerContext_C::FinalHuntingRadiusLocationToUse' has a wrong offset!");
-static_assert(offsetof(UNearestPlayerContext_C, Querier) == 0x000060, "Member 'UNearestPlayerContext_C::Querier' has a wrong offset!");
-static_assert(offsetof(UNearestPlayerContext_C, Debug) == 0x000068, "Member 'UNearestPlayerContext_C::Debug' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

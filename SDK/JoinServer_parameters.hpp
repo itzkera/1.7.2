@@ -14,8 +14,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function JoinServer.JoinServer_C.ExecuteUbergraph_JoinServer
 // 0x0158 (0x0158 - 0x0000)
@@ -46,7 +46,7 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate5;             // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate5; // 0x00C8(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -65,42 +65,6 @@ public:
 	struct FFortClientEvent                       K2Node_HandleClientEvent_ClientEvent;              // 0x0130(0x0020)(ConstParm, NoDestructor)
 	EFortUIState                                  K2Node_Event_PreviousUIState;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x000008, "Wrong alignment on JoinServer_C_ExecuteUbergraph_JoinServer");
-static_assert(sizeof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x000158, "Wrong size on JoinServer_C_ExecuteUbergraph_JoinServer");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, EntryPoint) == 0x000000, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CreateDelegate_OutputDelegate4) == 0x000040, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_ShouldPromptToSkipTutorial_ReturnValue) == 0x000060, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_ShouldPromptToSkipTutorial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue) == 0x000068, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, Temp_byte_Variable) == 0x000071, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleClientEvent_EventSource2) == 0x000078, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_HandleClientEvent_EventSource2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleClientEvent_EventFocus2) == 0x000080, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_HandleClientEvent_EventFocus2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleClientEvent_ClientEvent2) == 0x000088, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_HandleClientEvent_ClientEvent2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_SwitchEnum_CmpSuccess) == 0x0000A8, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, Temp_name_Variable) == 0x0000B0, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CustomEvent_Result) == 0x0000B8, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CustomEvent_ResultName) == 0x0000C0, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_CreateDelegate_OutputDelegate5) == 0x0000C8, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D8, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_DynamicCast_AsFort_Player_Controller) == 0x0000E0, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_RejoinSession_ReturnValue) == 0x0000F0, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_RejoinSession_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_GetOwningPlayer_ReturnValue2) == 0x0000F8, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_DynamicCast_AsFort_Player_Controller2) == 0x000100, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_DynamicCast_AsFort_Player_Controller2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_DynamicCast_bSuccess2) == 0x000108, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_AbandonSession_ReturnValue) == 0x000110, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_AbandonSession_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_IsValid_ReturnValue2) == 0x000118, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, CallFunc_IsValid_ReturnValue3) == 0x000119, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleClientEvent_EventSource) == 0x000120, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleClientEvent_EventFocus) == 0x000128, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_HandleClientEvent_ClientEvent) == 0x000130, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_Event_PreviousUIState) == 0x000150, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_Event_PreviousUIState' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.OnEnterState
 // 0x0001 (0x0001 - 0x0000)
@@ -109,9 +73,6 @@ struct JoinServer_C_OnEnterState final
 public:
 	EFortUIState                                  PreviousUIState;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_OnEnterState) == 0x000001, "Wrong alignment on JoinServer_C_OnEnterState");
-static_assert(sizeof(JoinServer_C_OnEnterState) == 0x000001, "Wrong size on JoinServer_C_OnEnterState");
-static_assert(offsetof(JoinServer_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'JoinServer_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleClientEvent_OnboardingStartMatchmaking
 // 0x0030 (0x0030 - 0x0000)
@@ -122,11 +83,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking) == 0x000008, "Wrong alignment on JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking");
-static_assert(sizeof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking) == 0x000030, "Wrong size on JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking");
-static_assert(offsetof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking, EventSource) == 0x000000, "Member 'JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking::EventSource' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking, EventFocus) == 0x000008, "Member 'JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking::EventFocus' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking, ClientEvent) == 0x000010, "Member 'JoinServer_C_HandleClientEvent_OnboardingStartMatchmaking::ClientEvent' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleClientEvent_RejoinStart
 // 0x0030 (0x0030 - 0x0000)
@@ -137,11 +93,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleClientEvent_RejoinStart) == 0x000008, "Wrong alignment on JoinServer_C_HandleClientEvent_RejoinStart");
-static_assert(sizeof(JoinServer_C_HandleClientEvent_RejoinStart) == 0x000030, "Wrong size on JoinServer_C_HandleClientEvent_RejoinStart");
-static_assert(offsetof(JoinServer_C_HandleClientEvent_RejoinStart, EventSource) == 0x000000, "Member 'JoinServer_C_HandleClientEvent_RejoinStart::EventSource' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleClientEvent_RejoinStart, EventFocus) == 0x000008, "Member 'JoinServer_C_HandleClientEvent_RejoinStart::EventFocus' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleClientEvent_RejoinStart, ClientEvent) == 0x000010, "Member 'JoinServer_C_HandleClientEvent_RejoinStart::ClientEvent' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF
 // 0x0010 (0x0010 - 0x0000)
@@ -152,10 +103,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF) == 0x000008, "Wrong alignment on JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF");
-static_assert(sizeof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF) == 0x000010, "Wrong size on JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF");
-static_assert(offsetof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF, Result) == 0x000000, "Member 'JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF::Result' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF, ResultName) == 0x000008, "Member 'JoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF::ResultName' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.Initialize
 // 0x00B8 (0x00B8 - 0x0000)
@@ -173,28 +120,11 @@ public:
 	TDelegate<void(int32 CurrentTime)>            K2Node_CreateDelegate_OutputDelegate4;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	class UTutorialWindow_C*                      CallFunc_Create_ReturnValue3;                      // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EMatchmakingState OldState, EMatchmakingState NewState)> K2Node_CreateDelegate_OutputDelegate6;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EMatchmakingCompleteResult Result)> K2Node_CreateDelegate_OutputDelegate7;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMatchmakingState OldState, EMatchmakingState NewState)> K2Node_CreateDelegate_OutputDelegate6; // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMatchmakingCompleteResult Result)> K2Node_CreateDelegate_OutputDelegate7;        // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate8;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue;                   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_Initialize) == 0x000008, "Wrong alignment on JoinServer_C_Initialize");
-static_assert(sizeof(JoinServer_C_Initialize) == 0x0000B8, "Wrong size on JoinServer_C_Initialize");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'JoinServer_C_Initialize::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000028, "Member 'JoinServer_C_Initialize::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_Create_ReturnValue) == 0x000030, "Member 'JoinServer_C_Initialize::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_Create_ReturnValue2) == 0x000038, "Member 'JoinServer_C_Initialize::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_GetOwningPlayer_ReturnValue3) == 0x000050, "Member 'JoinServer_C_Initialize::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate4) == 0x000058, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_Create_ReturnValue3) == 0x000068, "Member 'JoinServer_C_Initialize::CallFunc_Create_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate5) == 0x000070, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate6) == 0x000080, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate7) == 0x000090, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, K2Node_CreateDelegate_OutputDelegate8) == 0x0000A0, "Member 'JoinServer_C_Initialize::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x0000B0, "Member 'JoinServer_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleMatchmakingComplete
 // 0x0030 (0x0030 - 0x0000)
@@ -209,14 +139,6 @@ public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleMatchmakingComplete) == 0x000008, "Wrong alignment on JoinServer_C_HandleMatchmakingComplete");
-static_assert(sizeof(JoinServer_C_HandleMatchmakingComplete) == 0x000030, "Wrong size on JoinServer_C_HandleMatchmakingComplete");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingComplete, Result) == 0x000000, "Member 'JoinServer_C_HandleMatchmakingComplete::Result' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingComplete, MatchmakingResult) == 0x000001, "Member 'JoinServer_C_HandleMatchmakingComplete::MatchmakingResult' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingComplete, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'JoinServer_C_HandleMatchmakingComplete::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingComplete, CallFunc_GetMatchmakingError_ErrorText) == 0x000008, "Member 'JoinServer_C_HandleMatchmakingComplete::CallFunc_GetMatchmakingError_ErrorText' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingComplete, CallFunc_PopWigdet_ReturnValue) == 0x000020, "Member 'JoinServer_C_HandleMatchmakingComplete::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingComplete, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'JoinServer_C_HandleMatchmakingComplete::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleMatchmakingStateChange
 // 0x0018 (0x0018 - 0x0000)
@@ -231,14 +153,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleMatchmakingStateChange) == 0x000008, "Wrong alignment on JoinServer_C_HandleMatchmakingStateChange");
-static_assert(sizeof(JoinServer_C_HandleMatchmakingStateChange) == 0x000018, "Wrong size on JoinServer_C_HandleMatchmakingStateChange");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingStateChange, OldState) == 0x000000, "Member 'JoinServer_C_HandleMatchmakingStateChange::OldState' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingStateChange, NewState) == 0x000001, "Member 'JoinServer_C_HandleMatchmakingStateChange::NewState' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingStateChange, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'JoinServer_C_HandleMatchmakingStateChange::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingStateChange, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JoinServer_C_HandleMatchmakingStateChange::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingStateChange, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'JoinServer_C_HandleMatchmakingStateChange::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleMatchmakingStateChange, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000014, "Member 'JoinServer_C_HandleMatchmakingStateChange::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleEnterState
 // 0x0020 (0x0020 - 0x0000)
@@ -252,13 +166,6 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleEnterState) == 0x000008, "Wrong alignment on JoinServer_C_HandleEnterState");
-static_assert(sizeof(JoinServer_C_HandleEnterState) == 0x000020, "Wrong size on JoinServer_C_HandleEnterState");
-static_assert(offsetof(JoinServer_C_HandleEnterState, PreviousState) == 0x000000, "Member 'JoinServer_C_HandleEnterState::PreviousState' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleEnterState, LocalPreviousState) == 0x000001, "Member 'JoinServer_C_HandleEnterState::LocalPreviousState' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleEnterState, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JoinServer_C_HandleEnterState::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleEnterState, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'JoinServer_C_HandleEnterState::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleEnterState, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'JoinServer_C_HandleEnterState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.StartTutorialMatchmakingFlow
 // 0x0018 (0x0018 - 0x0000)
@@ -269,11 +176,6 @@ public:
 	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_StartOnboardingMission_ReturnValue;       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_StartTutorialMatchmakingFlow) == 0x000008, "Wrong alignment on JoinServer_C_StartTutorialMatchmakingFlow");
-static_assert(sizeof(JoinServer_C_StartTutorialMatchmakingFlow) == 0x000018, "Wrong size on JoinServer_C_StartTutorialMatchmakingFlow");
-static_assert(offsetof(JoinServer_C_StartTutorialMatchmakingFlow, CallFunc_PopWigdet_ReturnValue) == 0x000000, "Member 'JoinServer_C_StartTutorialMatchmakingFlow::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_StartTutorialMatchmakingFlow, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JoinServer_C_StartTutorialMatchmakingFlow::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_StartTutorialMatchmakingFlow, CallFunc_StartOnboardingMission_ReturnValue) == 0x000010, "Member 'JoinServer_C_StartTutorialMatchmakingFlow::CallFunc_StartOnboardingMission_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.SkipTutorial
 // 0x0010 (0x0010 - 0x0000)
@@ -283,10 +185,6 @@ public:
 	class UFortTutorialContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_SkipTutorial) == 0x000008, "Wrong alignment on JoinServer_C_SkipTutorial");
-static_assert(sizeof(JoinServer_C_SkipTutorial) == 0x000010, "Wrong size on JoinServer_C_SkipTutorial");
-static_assert(offsetof(JoinServer_C_SkipTutorial, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'JoinServer_C_SkipTutorial::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_SkipTutorial, CallFunc_PopWigdet_ReturnValue) == 0x000008, "Member 'JoinServer_C_SkipTutorial::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleLobbyTimeUpdated
 // 0x0020 (0x0020 - 0x0000)
@@ -299,12 +197,6 @@ public:
 	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue2;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsWorldRecordLoaded_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HandleLobbyTimeUpdated) == 0x000008, "Wrong alignment on JoinServer_C_HandleLobbyTimeUpdated");
-static_assert(sizeof(JoinServer_C_HandleLobbyTimeUpdated) == 0x000020, "Wrong size on JoinServer_C_HandleLobbyTimeUpdated");
-static_assert(offsetof(JoinServer_C_HandleLobbyTimeUpdated, TimeRemaining) == 0x000000, "Member 'JoinServer_C_HandleLobbyTimeUpdated::TimeRemaining' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleLobbyTimeUpdated, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'JoinServer_C_HandleLobbyTimeUpdated::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleLobbyTimeUpdated, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'JoinServer_C_HandleLobbyTimeUpdated::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_HandleLobbyTimeUpdated, CallFunc_IsWorldRecordLoaded_ReturnValue) == 0x000018, "Member 'JoinServer_C_HandleLobbyTimeUpdated::CallFunc_IsWorldRecordLoaded_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.GetMatchmakingError
 // 0x0100 (0x0100 - 0x0000)
@@ -326,20 +218,6 @@ public:
 	class FText                                   Temp_text_Variable8;                               // 0x00D0(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0018)()
 };
-static_assert(alignof(JoinServer_C_GetMatchmakingError) == 0x000008, "Wrong alignment on JoinServer_C_GetMatchmakingError");
-static_assert(sizeof(JoinServer_C_GetMatchmakingError) == 0x000100, "Wrong size on JoinServer_C_GetMatchmakingError");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, MatchMakingError) == 0x000000, "Member 'JoinServer_C_GetMatchmakingError::MatchMakingError' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, ErrorText) == 0x000008, "Member 'JoinServer_C_GetMatchmakingError::ErrorText' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_byte_Variable) == 0x000020, "Member 'JoinServer_C_GetMatchmakingError::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable) == 0x000028, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable2) == 0x000040, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable3) == 0x000058, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable4) == 0x000070, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable5) == 0x000088, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable6) == 0x0000A0, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable7) == 0x0000B8, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, Temp_text_Variable8) == 0x0000D0, "Member 'JoinServer_C_GetMatchmakingError::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_GetMatchmakingError, K2Node_Select_Default) == 0x0000E8, "Member 'JoinServer_C_GetMatchmakingError::K2Node_Select_Default' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ShowTutorialCanceled
 // 0x0008 (0x0008 - 0x0000)
@@ -348,9 +226,6 @@ struct JoinServer_C_ShowTutorialCanceled final
 public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ShowTutorialCanceled) == 0x000008, "Wrong alignment on JoinServer_C_ShowTutorialCanceled");
-static_assert(sizeof(JoinServer_C_ShowTutorialCanceled) == 0x000008, "Wrong size on JoinServer_C_ShowTutorialCanceled");
-static_assert(offsetof(JoinServer_C_ShowTutorialCanceled, CallFunc_PopWigdet_ReturnValue) == 0x000000, "Member 'JoinServer_C_ShowTutorialCanceled::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HandleGetMainMenuContent
 // 0x0008 (0x0008 - 0x0000)
@@ -359,9 +234,6 @@ struct JoinServer_C_HandleGetMainMenuContent final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_HandleGetMainMenuContent) == 0x000008, "Wrong alignment on JoinServer_C_HandleGetMainMenuContent");
-static_assert(sizeof(JoinServer_C_HandleGetMainMenuContent) == 0x000008, "Wrong size on JoinServer_C_HandleGetMainMenuContent");
-static_assert(offsetof(JoinServer_C_HandleGetMainMenuContent, ReturnValue) == 0x000000, "Member 'JoinServer_C_HandleGetMainMenuContent::ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ShowRejoinWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -370,9 +242,6 @@ struct JoinServer_C_ShowRejoinWindow final
 public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ShowRejoinWindow) == 0x000008, "Wrong alignment on JoinServer_C_ShowRejoinWindow");
-static_assert(sizeof(JoinServer_C_ShowRejoinWindow) == 0x000008, "Wrong size on JoinServer_C_ShowRejoinWindow");
-static_assert(offsetof(JoinServer_C_ShowRejoinWindow, CallFunc_PopWigdet_ReturnValue) == 0x000000, "Member 'JoinServer_C_ShowRejoinWindow::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.HideRejoinWindow
 // 0x0001 (0x0001 - 0x0000)
@@ -381,9 +250,6 @@ struct JoinServer_C_HideRejoinWindow final
 public:
 	bool                                          AbandonSession_0;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinServer_C_HideRejoinWindow) == 0x000001, "Wrong alignment on JoinServer_C_HideRejoinWindow");
-static_assert(sizeof(JoinServer_C_HideRejoinWindow) == 0x000001, "Wrong size on JoinServer_C_HideRejoinWindow");
-static_assert(offsetof(JoinServer_C_HideRejoinWindow, AbandonSession_0) == 0x000000, "Member 'JoinServer_C_HideRejoinWindow::AbandonSession_0' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ShowRejoiningProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -392,9 +258,6 @@ struct JoinServer_C_ShowRejoiningProgress final
 public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ShowRejoiningProgress) == 0x000008, "Wrong alignment on JoinServer_C_ShowRejoiningProgress");
-static_assert(sizeof(JoinServer_C_ShowRejoiningProgress) == 0x000008, "Wrong size on JoinServer_C_ShowRejoiningProgress");
-static_assert(offsetof(JoinServer_C_ShowRejoiningProgress, CallFunc_PopWigdet_ReturnValue) == 0x000000, "Member 'JoinServer_C_ShowRejoiningProgress::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ShowRetryRejoinSession
 // 0x0010 (0x0010 - 0x0000)
@@ -408,13 +271,6 @@ public:
 	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ShowRetryRejoinSession) == 0x000008, "Wrong alignment on JoinServer_C_ShowRetryRejoinSession");
-static_assert(sizeof(JoinServer_C_ShowRetryRejoinSession) == 0x000010, "Wrong size on JoinServer_C_ShowRetryRejoinSession");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinSession, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'JoinServer_C_ShowRetryRejoinSession::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinSession, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'JoinServer_C_ShowRetryRejoinSession::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinSession, CallFunc_IsJoinableGameAvailable_ReturnValue) == 0x000009, "Member 'JoinServer_C_ShowRetryRejoinSession::CallFunc_IsJoinableGameAvailable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinSession, CallFunc_Less_IntInt_ReturnValue) == 0x00000A, "Member 'JoinServer_C_ShowRetryRejoinSession::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinSession, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'JoinServer_C_ShowRetryRejoinSession::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ShowRetryRejoinWindow
 // 0x0028 (0x0028 - 0x0000)
@@ -426,11 +282,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ShowRetryRejoinWindow) == 0x000008, "Wrong alignment on JoinServer_C_ShowRetryRejoinWindow");
-static_assert(sizeof(JoinServer_C_ShowRetryRejoinWindow) == 0x000028, "Wrong size on JoinServer_C_ShowRetryRejoinWindow");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinWindow, Failure) == 0x000000, "Member 'JoinServer_C_ShowRetryRejoinWindow::Failure' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinWindow, AllowRetry) == 0x000018, "Member 'JoinServer_C_ShowRetryRejoinWindow::AllowRetry' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ShowRetryRejoinWindow, CallFunc_PopWigdet_ReturnValue) == 0x000020, "Member 'JoinServer_C_ShowRetryRejoinWindow::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ShowAbandoningProgress
 // 0x0008 (0x0008 - 0x0000)
@@ -439,9 +290,6 @@ struct JoinServer_C_ShowAbandoningProgress final
 public:
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ShowAbandoningProgress) == 0x000008, "Wrong alignment on JoinServer_C_ShowAbandoningProgress");
-static_assert(sizeof(JoinServer_C_ShowAbandoningProgress) == 0x000008, "Wrong size on JoinServer_C_ShowAbandoningProgress");
-static_assert(offsetof(JoinServer_C_ShowAbandoningProgress, CallFunc_PopWigdet_ReturnValue) == 0x000000, "Member 'JoinServer_C_ShowAbandoningProgress::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

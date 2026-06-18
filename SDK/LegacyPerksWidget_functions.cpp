@@ -14,8 +14,7 @@
 #include "LegacyPerksWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyPerksWidget.LegacyPerksWidget_C.ExecuteUbergraph_LegacyPerksWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ULegacyPerksWidget_C::ExecuteUbergraph_LegacyPerksWidget(int32 EntryPoint)
 // Function LegacyPerksWidget.LegacyPerksWidget_C.OnGeneratePerkTier
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortUIPerkTier                  FortPerkTier                                           (Parm, NoDestructor)
+// const struct FFortUIPerkTier&           FortPerkTier                                           (Parm, NoDestructor)
 
 void ULegacyPerksWidget_C::OnGeneratePerkTier(const struct FFortUIPerkTier& FortPerkTier)
 {
@@ -70,5 +69,5 @@ void ULegacyPerksWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

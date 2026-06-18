@@ -14,8 +14,7 @@
 #include "Results_BadgeLootBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_BadgeLootBar.Results_BadgeLootBar_C.ExecuteUbergraph_Results_BadgeLootBar
 // (HasDefaults)
@@ -199,7 +198,7 @@ void UResults_BadgeLootBar_C::SetLootLevel(int32 Level)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UResults_Badge_C*                 Badge                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Points                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Points                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UResults_BadgeLootBar_C::GetBadgePoints(class UResults_Badge_C* Badge, int32* Points)
 {
@@ -271,7 +270,7 @@ void UResults_BadgeLootBar_C::SkipToFinalState()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   LootPoints                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NextLootLevelPoints                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  NextLootLevelPoints                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UResults_BadgeLootBar_C::GetNextLootLevelPoints(int32 LootPoints, int32* NextLootLevelPoints)
 {
@@ -290,5 +289,5 @@ void UResults_BadgeLootBar_C::GetNextLootLevelPoints(int32 LootPoints, int32* Ne
 		*NextLootLevelPoints = Parms.NextLootLevelPoints;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GAB_GenericStunned.GAB_GenericStunned_C
 // 0x0030 (0x0A70 - 0x0A40)
@@ -38,21 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_GenericStunned_C">();
+		BP_STATIC_CLASS_IMPL("GAB_GenericStunned_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_GenericStunned_C")
 	}
 	static class UGAB_GenericStunned_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_GenericStunned_C>();
 	}
 };
-static_assert(alignof(UGAB_GenericStunned_C) == 0x000008, "Wrong alignment on UGAB_GenericStunned_C");
-static_assert(sizeof(UGAB_GenericStunned_C) == 0x000A70, "Wrong size on UGAB_GenericStunned_C");
-static_assert(offsetof(UGAB_GenericStunned_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_GenericStunned_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericStunned_C, StunActiveEffect) == 0x000A48, "Member 'UGAB_GenericStunned_C::StunActiveEffect' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericStunned_C, ActiveStun) == 0x000A50, "Member 'UGAB_GenericStunned_C::ActiveStun' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericStunned_C, RestoreControlResistEffect) == 0x000A58, "Member 'UGAB_GenericStunned_C::RestoreControlResistEffect' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericStunned_C, GE_ImpactImmunity) == 0x000A60, "Member 'UGAB_GenericStunned_C::GE_ImpactImmunity' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericStunned_C, ActiveImpactImmunity) == 0x000A68, "Member 'UGAB_GenericStunned_C::ActiveImpactImmunity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

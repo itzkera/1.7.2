@@ -14,8 +14,7 @@
 #include "AthenaHUD_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaHUD.AthenaHUD_C.ExecuteUbergraph_AthenaHUD
 // (HasDefaults)
@@ -68,8 +67,8 @@ void UAthenaHUD_C::On_Team_Won()
 // Function AthenaHUD.AthenaHUD_C.OnUnableToPerformAction
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            FailedReason                                           (Parm)
-// class FText                             FailureText                                            (Parm)
+// const struct FGameplayTagContainer&     FailedReason                                           (Parm)
+// const class FText&                      FailureText                                            (Parm)
 
 void UAthenaHUD_C::OnUnableToPerformAction(const struct FGameplayTagContainer& FailedReason, const class FText& FailureText)
 {
@@ -146,7 +145,7 @@ void UAthenaHUD_C::PrepareToShowEndGameUI()
 // Function AthenaHUD.AthenaHUD_C.On Player Died
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           DeathReport                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortPlayerDeathReport&    DeathReport                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaHUD_C::On_Player_Died(const struct FFortPlayerDeathReport& DeathReport)
 {
@@ -243,7 +242,7 @@ void UAthenaHUD_C::Destruct()
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 
 void UAthenaHUD_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
@@ -264,7 +263,7 @@ void UAthenaHUD_C::PushContentWidgetInternal(class UWidget* Widget, const struct
 // Function AthenaHUD.AthenaHUD_C.QuestsCompleted
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortQuestItem*>           Quests                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortQuestItem*>&    Quests                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaHUD_C::QuestsCompleted(const TArray<class UFortQuestItem*>& Quests)
 {
@@ -406,8 +405,8 @@ void UAthenaHUD_C::SetQuickbarSizes()
 // Function AthenaHUD.AthenaHUD_C.OnHandleAction
 // (HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FEventReply*                     Result                                                 (Parm, OutParm)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
@@ -466,7 +465,7 @@ void UAthenaHUD_C::OnPlayerTargetingChanged(bool IsTargeting)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UUserWidget*                      CustomWidget                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ActionName                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName&                            ActionName                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaHUD_C::SetCursorModeContent(class UUserWidget* CustomWidget, class FName& ActionName)
 {
@@ -608,7 +607,7 @@ void UAthenaHUD_C::ShowPicker(EFortPickerMode Mode, int32 InitialOption, bool Ig
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           PointOfInterest                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             DisplayText                                            (Parm)
+// const class FText&                      DisplayText                                            (Parm)
 // class UTexture2D*                       DisplayImage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaHUD_C::HandleOnPointOfInterestAdded(class AActor* PointOfInterest, const class FText& DisplayText, class UTexture2D* DisplayImage)
@@ -665,7 +664,7 @@ void UAthenaHUD_C::CreateInterestIndicatorWidget()
 // Function AthenaHUD.AthenaHUD_C.PopContentWidgetInternal
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* UAthenaHUD_C::PopContentWidgetInternal(const struct FContentPushState& State)
@@ -688,7 +687,7 @@ class UWidget* UAthenaHUD_C::PopContentWidgetInternal(const struct FContentPushS
 // Function AthenaHUD.AthenaHUD_C.OnHUDElementVisibilityChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer&           HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
 
 void UAthenaHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer& HiddenHUDElementTags)
 {
@@ -710,9 +709,9 @@ void UAthenaHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer& H
 // Function AthenaHUD.AthenaHUD_C.CheckHUDElementVisibility
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     HUDElementTagToCheck                                   (Parm, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          HUDElement                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer&           HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              HUDElementTagToCheck                                   (Parm, NoDestructor, HasGetValueTypeHash)
+// class UWidget*&                         HUDElement                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaHUD_C::CheckHUDElementVisibility(struct FGameplayTagContainer& HiddenHUDElementTags, const struct FGameplayTag& HUDElementTagToCheck, class UWidget*& HUDElement)
 {
@@ -769,5 +768,5 @@ void UAthenaHUD_C::AddTeamMemberIndicator(class AFortPlayerStateAthena* Player_S
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

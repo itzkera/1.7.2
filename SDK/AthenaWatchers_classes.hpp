@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaWatchers.AthenaWatchers_C
 // 0x0008 (0x0268 - 0x0260)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaWatchers_C">();
+		BP_STATIC_CLASS_IMPL("AthenaWatchers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaWatchers_C")
 	}
 	static class UAthenaWatchers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaWatchers_C>();
 	}
 };
-static_assert(alignof(UAthenaWatchers_C) == 0x000008, "Wrong alignment on UAthenaWatchers_C");
-static_assert(sizeof(UAthenaWatchers_C) == 0x000268, "Wrong size on UAthenaWatchers_C");
-static_assert(offsetof(UAthenaWatchers_C, Image_50) == 0x000260, "Member 'UAthenaWatchers_C::Image_50' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

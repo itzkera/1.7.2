@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C
 // 0x00B0 (0x02E8 - 0x0238)
@@ -55,34 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamScoreToPlayerXPRewardWidget_C">();
+		BP_STATIC_CLASS_IMPL("TeamScoreToPlayerXPRewardWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamScoreToPlayerXPRewardWidget_C")
 	}
 	static class UTeamScoreToPlayerXPRewardWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamScoreToPlayerXPRewardWidget_C>();
 	}
 };
-static_assert(alignof(UTeamScoreToPlayerXPRewardWidget_C) == 0x000008, "Wrong alignment on UTeamScoreToPlayerXPRewardWidget_C");
-static_assert(sizeof(UTeamScoreToPlayerXPRewardWidget_C) == 0x0002E8, "Wrong size on UTeamScoreToPlayerXPRewardWidget_C");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, UberGraphFrame) == 0x000238, "Member 'UTeamScoreToPlayerXPRewardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, Image_1) == 0x000240, "Member 'UTeamScoreToPlayerXPRewardWidget_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, ImageBarFrame) == 0x000248, "Member 'UTeamScoreToPlayerXPRewardWidget_C::ImageBarFrame' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, NumericTextXPAmount) == 0x000250, "Member 'UTeamScoreToPlayerXPRewardWidget_C::NumericTextXPAmount' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, OverlayHeroInfo) == 0x000258, "Member 'UTeamScoreToPlayerXPRewardWidget_C::OverlayHeroInfo' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, OverlayPlayerNameplate) == 0x000260, "Member 'UTeamScoreToPlayerXPRewardWidget_C::OverlayPlayerNameplate' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, PlayerName) == 0x000268, "Member 'UTeamScoreToPlayerXPRewardWidget_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, ProgressBarXP) == 0x000270, "Member 'UTeamScoreToPlayerXPRewardWidget_C::ProgressBarXP' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, SizeBoxFrame) == 0x000278, "Member 'UTeamScoreToPlayerXPRewardWidget_C::SizeBoxFrame' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, SizeBoxNameplate) == 0x000280, "Member 'UTeamScoreToPlayerXPRewardWidget_C::SizeBoxNameplate' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, TextXPBonusInfo) == 0x000288, "Member 'UTeamScoreToPlayerXPRewardWidget_C::TextXPBonusInfo' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, VerticalBoxXPInfo) == 0x000290, "Member 'UTeamScoreToPlayerXPRewardWidget_C::VerticalBoxXPInfo' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, InitialPlayerXPCount) == 0x000298, "Member 'UTeamScoreToPlayerXPRewardWidget_C::InitialPlayerXPCount' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, InitialPlayerLevel) == 0x00029C, "Member 'UTeamScoreToPlayerXPRewardWidget_C::InitialPlayerLevel' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, LastLevelSeen) == 0x0002A0, "Member 'UTeamScoreToPlayerXPRewardWidget_C::LastLevelSeen' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, LevelUpSound) == 0x0002A8, "Member 'UTeamScoreToPlayerXPRewardWidget_C::LevelUpSound' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, XPinfo) == 0x0002B0, "Member 'UTeamScoreToPlayerXPRewardWidget_C::XPinfo' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, bConstructing) == 0x0002DC, "Member 'UTeamScoreToPlayerXPRewardWidget_C::bConstructing' has a wrong offset!");
-static_assert(offsetof(UTeamScoreToPlayerXPRewardWidget_C, ScoreReport) == 0x0002E0, "Member 'UTeamScoreToPlayerXPRewardWidget_C::ScoreReport' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

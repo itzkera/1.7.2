@@ -14,8 +14,7 @@
 #include "CollectionBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBar.CollectionBar_C.ExecuteUbergraph_CollectionBar
 // ()
@@ -55,7 +54,7 @@ void UCollectionBar_C::Construct()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   AchievedCount_0                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Percentage                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Percentage                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCollectionBar_C::GetProgressBarPercentage(int32 AchievedCount_0, float* Percentage)
 {
@@ -112,7 +111,7 @@ void UCollectionBar_C::SetAchievedCount(int32 InAchievedCount)
 // Function CollectionBar.CollectionBar_C.IsAchievedCountInRange
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsInRange                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsInRange                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCollectionBar_C::IsAchievedCountInRange(bool* bIsInRange)
 {
@@ -133,7 +132,7 @@ void UCollectionBar_C::IsAchievedCountInRange(bool* bIsInRange)
 // Function CollectionBar.CollectionBar_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      InIcon                                                 (Parm)
+// const struct FSlateBrush&               InIcon                                                 (Parm)
 
 void UCollectionBar_C::SetIcon(const struct FSlateBrush& InIcon)
 {
@@ -149,5 +148,5 @@ void UCollectionBar_C::SetIcon(const struct FSlateBrush& InIcon)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

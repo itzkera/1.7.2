@@ -18,8 +18,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.ExecuteUbergraph_Results_CommanderXPBar
 // 0x0048 (0x0048 - 0x0000)
@@ -45,22 +45,6 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
-static_assert(sizeof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar) == 0x000048, "Wrong size on Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, EntryPoint) == 0x000000, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue3) == 0x000006, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000020, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_BooleanOR_ReturnValue4) == 0x000024, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_SpawnSound2D_ReturnValue) == 0x000028, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_Array_LastIndex_ReturnValue) == 0x000030, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000034, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, K2Node_Event_IsDesignTime) == 0x00003C, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'Results_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +53,6 @@ struct Results_CommanderXPBar_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_PreConstruct) == 0x000001, "Wrong alignment on Results_CommanderXPBar_C_PreConstruct");
-static_assert(sizeof(Results_CommanderXPBar_C_PreConstruct) == 0x000001, "Wrong size on Results_CommanderXPBar_C_PreConstruct");
-static_assert(offsetof(Results_CommanderXPBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_CommanderXPBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.UpdateCount
 // 0x0108 (0x0108 - 0x0000)
@@ -110,36 +91,6 @@ public:
 	float                                         CallFunc_GetLevelProgress_ReturnValue2;            // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_UpdateCount) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_UpdateCount");
-static_assert(sizeof(Results_CommanderXPBar_C_UpdateCount) == 0x000108, "Wrong size on Results_CommanderXPBar_C_UpdateCount");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, checkStartXP) == 0x000000, "Member 'Results_CommanderXPBar_C_UpdateCount::checkStartXP' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, checkEndXP) == 0x000004, "Member 'Results_CommanderXPBar_C_UpdateCount::checkEndXP' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, timePassed) == 0x000008, "Member 'Results_CommanderXPBar_C_UpdateCount::timePassed' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item) == 0x000010, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item2) == 0x000038, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Array_Index_Variable) == 0x000060, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Get_Item3) == 0x000068, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Add_IntInt_ReturnValue) == 0x000090, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Array_Length_ReturnValue) == 0x000094, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetXpToCompleteLevel_ReturnValue) == 0x000098, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetXpToCompleteLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_IntInt_ReturnValue2) == 0x00009C, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, K2Node_MakeStruct_Results_CommanderXP_Data) == 0x0000A0, "Member 'Results_CommanderXPBar_C_UpdateCount::K2Node_MakeStruct_Results_CommanderXP_Data' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000C8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x0000CC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000D0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000D4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000D8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FMin_ReturnValue) == 0x0000DC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FInterpEaseInOut_ReturnValue) == 0x0000E0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FInterpEaseInOut_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_FTrunc_ReturnValue) == 0x0000E4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelProgress_ReturnValue) == 0x0000E8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, Temp_int_Loop_Counter_Variable) == 0x0000EC, "Member 'Results_CommanderXPBar_C_UpdateCount::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Less_IntInt_ReturnValue) == 0x0000F0, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_Add_IntInt_ReturnValue2) == 0x0000F4, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000F8, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_GetLevelProgress_ReturnValue2) == 0x0000FC, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_GetLevelProgress_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateCount, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000100, "Member 'Results_CommanderXPBar_C_UpdateCount::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.Initialize
 // 0x02F0 (0x02F0 - 0x0000)
@@ -202,53 +153,6 @@ public:
 	struct FFortUIXpInfo                          CallFunc_GetXpInfo_OutXpInfo;                      // 0x02BC(0x002C)(NoDestructor)
 	bool                                          CallFunc_GetXpInfo_ReturnValue;                    // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_Initialize) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_Initialize");
-static_assert(sizeof(Results_CommanderXPBar_C_Initialize) == 0x0002F0, "Wrong size on Results_CommanderXPBar_C_Initialize");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_CommanderXPBar_C_Initialize::InScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, PlayRate_0) == 0x000008, "Member 'Results_CommanderXPBar_C_Initialize::PlayRate_0' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, ExperienceDelta) == 0x00000C, "Member 'Results_CommanderXPBar_C_Initialize::ExperienceDelta' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, BonusScoreType) == 0x000030, "Member 'Results_CommanderXPBar_C_Initialize::BonusScoreType' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, LocalPlayerXPInfo) == 0x000034, "Member 'Results_CommanderXPBar_C_Initialize::LocalPlayerXPInfo' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, currentPlayerIndex) == 0x000060, "Member 'Results_CommanderXPBar_C_Initialize::currentPlayerIndex' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue) == 0x000064, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item) == 0x000068, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data) == 0x000090, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue) == 0x0000B8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data2) == 0x0000C0, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue2) == 0x0000E8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Greater_IntInt_ReturnValue) == 0x0000EC, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Greater_IntInt_ReturnValue2) == 0x0000ED, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue2) == 0x0000F0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue3) == 0x0000F4, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item2) == 0x0000F8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item3) == 0x000120, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue3) == 0x000148, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item4) == 0x000150, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data3) == 0x000178, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001A0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data4) == 0x0001A8, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue) == 0x0001D0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue4) == 0x0001D4, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Greater_IntInt_ReturnValue3) == 0x0001D8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data5) == 0x0001E0, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data5' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue2) == 0x000208, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue3) == 0x00020C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_LastIndex_ReturnValue4) == 0x000210, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_LastIndex_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Get_Item5) == 0x000218, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Get_Item5' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Add_IntInt_ReturnValue5) == 0x000240, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Add_IntInt_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_MakeStruct_Results_CommanderXP_Data6) == 0x000248, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_MakeStruct_Results_CommanderXP_Data6' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue4) == 0x000270, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue5) == 0x000274, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Array_Add_ReturnValue6) == 0x000278, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Array_Add_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00027C, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetLevelProgress_ReturnValue) == 0x000280, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x000288, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_AsFort_Player_State) == 0x000290, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, K2Node_DynamicCast_bSuccess) == 0x000298, "Member 'Results_CommanderXPBar_C_Initialize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetUniqueID_ReturnValue) == 0x0002A0, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetScoreReportIndex_ReturnValue) == 0x0002B8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetScoreReportIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetXpInfo_OutXpInfo) == 0x0002BC, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetXpInfo_OutXpInfo' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_Initialize, CallFunc_GetXpInfo_ReturnValue) == 0x0002E8, "Member 'Results_CommanderXPBar_C_Initialize::CallFunc_GetXpInfo_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.SetSkippingToEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -257,9 +161,6 @@ struct Results_CommanderXPBar_C_SetSkippingToEnd final
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_SetSkippingToEnd) == 0x000001, "Wrong alignment on Results_CommanderXPBar_C_SetSkippingToEnd");
-static_assert(sizeof(Results_CommanderXPBar_C_SetSkippingToEnd) == 0x000001, "Wrong size on Results_CommanderXPBar_C_SetSkippingToEnd");
-static_assert(offsetof(Results_CommanderXPBar_C_SetSkippingToEnd, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'Results_CommanderXPBar_C_SetSkippingToEnd::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.PlayAnimationCommon
 // 0x0008 (0x0008 - 0x0000)
@@ -268,9 +169,6 @@ struct Results_CommanderXPBar_C_PlayAnimationCommon final
 public:
 	class UWidgetAnimation*                       Animation;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_PlayAnimationCommon) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_PlayAnimationCommon");
-static_assert(sizeof(Results_CommanderXPBar_C_PlayAnimationCommon) == 0x000008, "Wrong size on Results_CommanderXPBar_C_PlayAnimationCommon");
-static_assert(offsetof(Results_CommanderXPBar_C_PlayAnimationCommon, Animation) == 0x000000, "Member 'Results_CommanderXPBar_C_PlayAnimationCommon::Animation' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.updateXpType
 // 0x0088 (0x0088 - 0x0000)
@@ -294,20 +192,6 @@ public:
 	TScriptInterface<class IFortClientAnnouncement_ConversationCodeInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface3; // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess3;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_updateXpType) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_updateXpType");
-static_assert(sizeof(Results_CommanderXPBar_C_updateXpType) == 0x000088, "Wrong size on Results_CommanderXPBar_C_updateXpType");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, XPAmount) == 0x000000, "Member 'Results_CommanderXPBar_C_updateXpType::XPAmount' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, XPType) == 0x000008, "Member 'Results_CommanderXPBar_C_updateXpType::XPType' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, bEarnedXP) == 0x000010, "Member 'Results_CommanderXPBar_C_updateXpType::bEarnedXP' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_SwitchName_CmpSuccess) == 0x000011, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, CallFunc_Array_Get_Item) == 0x000018, "Member 'Results_CommanderXPBar_C_updateXpType::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface) == 0x000040, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, CallFunc_Greater_IntInt_ReturnValue) == 0x000051, "Member 'Results_CommanderXPBar_C_updateXpType::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface2) == 0x000058, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_DynamicCast_bSuccess2) == 0x000068, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface3) == 0x000070, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_DynamicCast_AsFort_Client_Announcement_Conversation_Code_Interface3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_updateXpType, K2Node_DynamicCast_bSuccess3) == 0x000080, "Member 'Results_CommanderXPBar_C_updateXpType::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.RandomizeDesignView
 // 0x0060 (0x0060 - 0x0000)
@@ -331,20 +215,6 @@ public:
 	class FName                                   CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_RandomizeDesignView) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_RandomizeDesignView");
-static_assert(sizeof(Results_CommanderXPBar_C_RandomizeDesignView) == 0x000060, "Wrong size on Results_CommanderXPBar_C_RandomizeDesignView");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, UsedPercent) == 0x000000, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::UsedPercent' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, Temp_int_Array_Index_Variable) == 0x000004, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_RandomFloatInRange_ReturnValue) == 0x000008, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_MakeLiteralName_ReturnValue) == 0x000010, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_MakeLiteralName_ReturnValue2) == 0x000020, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_MakeLiteralName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_MakeLiteralName_ReturnValue3) == 0x000030, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_MakeLiteralName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, K2Node_MakeArray_Array) == 0x000038, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Array_Get_Item) == 0x000050, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_RandomizeDesignView, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'Results_CommanderXPBar_C_RandomizeDesignView::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.UpdateProgressBarPercent
 // 0x0070 (0x0070 - 0x0000)
@@ -380,32 +250,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue5;         // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_CommanderXPBar_C_UpdateProgressBarPercent) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_UpdateProgressBarPercent");
-static_assert(sizeof(Results_CommanderXPBar_C_UpdateProgressBarPercent) == 0x000070, "Wrong size on Results_CommanderXPBar_C_UpdateProgressBarPercent");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, ParameterName) == 0x000000, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::ParameterName' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, ProgressBarPercent) == 0x000008, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::ProgressBarPercent' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, MatInfoFound) == 0x00000C, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::MatInfoFound' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, Temp_int_Array_Index_Variable) == 0x000010, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, Temp_bool_True_if_break_was_hit_Variable) == 0x00001C, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Not_PreBool_ReturnValue) == 0x00001D, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, K2Node_MakeStruct_Results_CommanderXP_MaterialData) == 0x000020, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::K2Node_MakeStruct_Results_CommanderXP_MaterialData' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000030, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x000031, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x000032, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x000033, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_K2_GetScalarParameterValue_ReturnValue) == 0x000038, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_K2_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_K2_GetScalarParameterValue_ReturnValue2) == 0x00003C, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_K2_GetScalarParameterValue_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000040, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Array_Add_ReturnValue) == 0x000044, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000048, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_Array_Get_Item) == 0x000058, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_BooleanAND_ReturnValue) == 0x000068, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_UpdateProgressBarPercent, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x000069, "Member 'Results_CommanderXPBar_C_UpdateProgressBarPercent::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.GetHoveredProgressBarSection
 // 0x0030 (0x0030 - 0x0000)
@@ -421,16 +265,6 @@ public:
 	float                                         MouseY;                                            // 0x0028(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         MouseX;                                            // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_GetHoveredProgressBarSection) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_GetHoveredProgressBarSection");
-static_assert(sizeof(Results_CommanderXPBar_C_GetHoveredProgressBarSection) == 0x000030, "Wrong size on Results_CommanderXPBar_C_GetHoveredProgressBarSection");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, XpSectionName) == 0x000000, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::XpSectionName' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, ProgressBarSize) == 0x000008, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::ProgressBarSize' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, ProgressBarPos) == 0x000010, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::ProgressBarPos' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, MousePos) == 0x000018, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::MousePos' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, ProgressBarWidth) == 0x000020, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::ProgressBarWidth' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, ProgressBarX) == 0x000024, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::ProgressBarX' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, MouseY) == 0x000028, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::MouseY' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_GetHoveredProgressBarSection, MouseX) == 0x00002C, "Member 'Results_CommanderXPBar_C_GetHoveredProgressBarSection::MouseX' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.Get_ProgressBarNew_ToolTipWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -439,9 +273,6 @@ struct Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget");
-static_assert(sizeof(Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget) == 0x000008, "Wrong size on Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget");
-static_assert(offsetof(Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget, ReturnValue) == 0x000000, "Member 'Results_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget::ReturnValue' has a wrong offset!");
 
 // Function Results_CommanderXPBar.Results_CommanderXPBar_C.DebugSections
 // 0x00C0 (0x00C0 - 0x0000)
@@ -464,22 +295,6 @@ public:
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue3;            // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue4;               // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_CommanderXPBar_C_DebugSections) == 0x000008, "Wrong alignment on Results_CommanderXPBar_C_DebugSections");
-static_assert(sizeof(Results_CommanderXPBar_C_DebugSections) == 0x0000C0, "Wrong size on Results_CommanderXPBar_C_DebugSections");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Results_CommanderXPBar_C_DebugSections::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Results_CommanderXPBar_C_DebugSections::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_IntToString_ReturnValue) == 0x000008, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue) == 0x000018, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Array_Get_Item) == 0x000030, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_NameToString_ReturnValue) == 0x000060, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_IntToString_ReturnValue2) == 0x000070, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_IntToString_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue2) == 0x000080, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue3) == 0x000090, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Conv_IntToString_ReturnValue3) == 0x0000A0, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Conv_IntToString_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_CommanderXPBar_C_DebugSections, CallFunc_Concat_StrStr_ReturnValue4) == 0x0000B0, "Member 'Results_CommanderXPBar_C_DebugSections::CallFunc_Concat_StrStr_ReturnValue4' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

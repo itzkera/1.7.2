@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PBW_BP_Parent.PBW_BP_Parent_C.ExecuteUbergraph_PBW_BP_Parent
 // 0x0020 (0x0020 - 0x0000)
@@ -29,15 +29,6 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                            CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent) == 0x000008, "Wrong alignment on PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent");
-static_assert(sizeof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent) == 0x000020, "Wrong size on PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, EntryPoint) == 0x000000, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_HasAuthority_ReturnValue) == 0x000004, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_Array_Length_ReturnValue2) == 0x000010, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000014, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent, CallFunc_Array_Get_Item) == 0x000018, "Member 'PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent::CallFunc_Array_Get_Item' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

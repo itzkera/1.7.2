@@ -14,8 +14,7 @@
 #include "ItemInspectEvolutionChoiceEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.ExecuteUbergraph_ItemInspectEvolutionChoiceEntry
 // ()
@@ -202,5 +201,5 @@ void UItemInspectEvolutionChoiceEntry_C::UnselectEvolutionChoice()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

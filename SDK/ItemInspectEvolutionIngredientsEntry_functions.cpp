@@ -14,8 +14,7 @@
 #include "ItemInspectEvolutionIngredientsEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C.ExecuteUbergraph_ItemInspectEvolutionIngredientsEntry
 // (HasDefaults)
@@ -55,7 +54,7 @@ void UItemInspectEvolutionIngredientsEntry_C::Construct()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItemDefinition*              ItemDefinition                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                      Brush                                                  (Parm, OutParm)
+// struct FSlateBrush*                     Brush                                                  (Parm, OutParm)
 
 void UItemInspectEvolutionIngredientsEntry_C::GetIconBrush(class UFortItemDefinition* ItemDefinition, struct FSlateBrush* Brush)
 {
@@ -92,7 +91,7 @@ void UItemInspectEvolutionIngredientsEntry_C::SetIngredientCount()
 // Function ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C.GetHaveQuantity
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortItemQuantityPair            InPair                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortItemQuantityPair&     InPair                                                 (ConstParm, Parm, OutParm, ReferenceParm)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 int32 UItemInspectEvolutionIngredientsEntry_C::GetHaveQuantity(const struct FFortItemQuantityPair& InPair)
@@ -111,5 +110,5 @@ int32 UItemInspectEvolutionIngredientsEntry_C::GetHaveQuantity(const struct FFor
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-MainModal-Dark.Border-MainModal-Dark_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_MainModal_Dark_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-MainModal-Dark_C">();
+		BP_STATIC_CLASS_IMPL("Border-MainModal-Dark_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-MainModal-Dark_C")
 	}
 	static class UBorder_MainModal_Dark_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_MainModal_Dark_C>();
 	}
 };
-static_assert(alignof(UBorder_MainModal_Dark_C) == 0x000008, "Wrong alignment on UBorder_MainModal_Dark_C");
-static_assert(sizeof(UBorder_MainModal_Dark_C) == 0x0000B8, "Wrong size on UBorder_MainModal_Dark_C");
 
-}
-
+SDK_NAMESPACE_END

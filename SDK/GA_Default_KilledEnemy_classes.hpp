@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Default_KilledEnemy.GA_Default_KilledEnemy_C
 // 0x0008 (0x0A48 - 0x0A40)
@@ -31,16 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Default_KilledEnemy_C">();
+		BP_STATIC_CLASS_IMPL("GA_Default_KilledEnemy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Default_KilledEnemy_C")
 	}
 	static class UGA_Default_KilledEnemy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Default_KilledEnemy_C>();
 	}
 };
-static_assert(alignof(UGA_Default_KilledEnemy_C) == 0x000008, "Wrong alignment on UGA_Default_KilledEnemy_C");
-static_assert(sizeof(UGA_Default_KilledEnemy_C) == 0x000A48, "Wrong size on UGA_Default_KilledEnemy_C");
-static_assert(offsetof(UGA_Default_KilledEnemy_C, UberGraphFrame) == 0x000A40, "Member 'UGA_Default_KilledEnemy_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

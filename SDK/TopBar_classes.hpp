@@ -16,8 +16,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TopBar.TopBar_C
 // 0x0108 (0x0518 - 0x0410)
@@ -106,47 +105,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TopBar_C">();
+		BP_STATIC_CLASS_IMPL("TopBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TopBar_C")
 	}
 	static class UTopBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTopBar_C>();
 	}
 };
-static_assert(alignof(UTopBar_C) == 0x000008, "Wrong alignment on UTopBar_C");
-static_assert(sizeof(UTopBar_C) == 0x000518, "Wrong size on UTopBar_C");
-static_assert(offsetof(UTopBar_C, UberGraphFrame) == 0x000410, "Member 'UTopBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, PartyJoinFlash) == 0x000418, "Member 'UTopBar_C::PartyJoinFlash' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, IntroMainMenu) == 0x000420, "Member 'UTopBar_C::IntroMainMenu' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, BP_FortLiveStreamGrantWindowExpires) == 0x000428, "Member 'UTopBar_C::BP_FortLiveStreamGrantWindowExpires' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, FortniteLogo) == 0x000430, "Member 'UTopBar_C::FortniteLogo' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, FriendInviteBang) == 0x000438, "Member 'UTopBar_C::FriendInviteBang' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, LobbyTimer_112) == 0x000440, "Member 'UTopBar_C::LobbyTimer_112' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MainMenu) == 0x000448, "Member 'UTopBar_C::MainMenu' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MainMenuBorder) == 0x000450, "Member 'UTopBar_C::MainMenuBorder' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MainMenuButton) == 0x000458, "Member 'UTopBar_C::MainMenuButton' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MiniPartyBar) == 0x000460, "Member 'UTopBar_C::MiniPartyBar' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MTXButton) == 0x000468, "Member 'UTopBar_C::MTXButton' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MTXButtonContainer) == 0x000470, "Member 'UTopBar_C::MTXButtonContainer' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, PartyFlash) == 0x000478, "Member 'UTopBar_C::PartyFlash' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, PowerWidget) == 0x000480, "Member 'UTopBar_C::PowerWidget' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, SafeZone_0) == 0x000488, "Member 'UTopBar_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, Social) == 0x000490, "Member 'UTopBar_C::Social' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, SocialMenuAnchor) == 0x000498, "Member 'UTopBar_C::SocialMenuAnchor' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, TopBarSkillPoints) == 0x0004A0, "Member 'UTopBar_C::TopBarSkillPoints' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MainMenuShown) == 0x0004A8, "Member 'UTopBar_C::MainMenuShown' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, Sound_StoreButtonClicked_Error) == 0x0004B0, "Member 'UTopBar_C::Sound_StoreButtonClicked_Error' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, Sound_StoreMusic) == 0x0004B8, "Member 'UTopBar_C::Sound_StoreMusic' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, Fort_Entry_Music_Controller) == 0x0004C0, "Member 'UTopBar_C::Fort_Entry_Music_Controller' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, LastNavigationRequestCameraState) == 0x0004C8, "Member 'UTopBar_C::LastNavigationRequestCameraState' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, HeroSquadPulseTimer) == 0x0004D0, "Member 'UTopBar_C::HeroSquadPulseTimer' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, DisableHeroSquadPulseTimer) == 0x0004D8, "Member 'UTopBar_C::DisableHeroSquadPulseTimer' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MainMenuStateChanged) == 0x0004E0, "Member 'UTopBar_C::MainMenuStateChanged' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, FeedbackWidget) == 0x0004F0, "Member 'UTopBar_C::FeedbackWidget' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, fEdgePower) == 0x0004F8, "Member 'UTopBar_C::fEdgePower' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, OpenAccountPicker) == 0x000500, "Member 'UTopBar_C::OpenAccountPicker' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, UseAnimation) == 0x000510, "Member 'UTopBar_C::UseAnimation' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, IsMainMenuOpen) == 0x000511, "Member 'UTopBar_C::IsMainMenuOpen' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

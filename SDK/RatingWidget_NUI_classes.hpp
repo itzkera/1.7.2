@@ -16,8 +16,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RatingWidget_NUI.RatingWidget_NUI_C
 // 0x15C8 (0x1800 - 0x0238)
@@ -74,42 +73,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RatingWidget_NUI_C">();
+		BP_STATIC_CLASS_IMPL("RatingWidget_NUI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RatingWidget_NUI_C")
 	}
 	static class URatingWidget_NUI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URatingWidget_NUI_C>();
 	}
 };
-static_assert(alignof(URatingWidget_NUI_C) == 0x000008, "Wrong alignment on URatingWidget_NUI_C");
-static_assert(sizeof(URatingWidget_NUI_C) == 0x001800, "Wrong size on URatingWidget_NUI_C");
-static_assert(offsetof(URatingWidget_NUI_C, UberGraphFrame) == 0x000238, "Member 'URatingWidget_NUI_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, CommonNumericTextRatingValue) == 0x000240, "Member 'URatingWidget_NUI_C::CommonNumericTextRatingValue' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, HorizontalBox) == 0x000248, "Member 'URatingWidget_NUI_C::HorizontalBox' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Image_0) == 0x000250, "Member 'URatingWidget_NUI_C::Image_0' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, SizeBox) == 0x000258, "Member 'URatingWidget_NUI_C::SizeBox' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, RatingValue) == 0x000260, "Member 'URatingWidget_NUI_C::RatingValue' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, UniqueId) == 0x000268, "Member 'URatingWidget_NUI_C::UniqueId' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, InterpDuration) == 0x000280, "Member 'URatingWidget_NUI_C::InterpDuration' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MBrush_Silhouette) == 0x000288, "Member 'URatingWidget_NUI_C::MBrush_Silhouette' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MBrush_Chamfer) == 0x0005E8, "Member 'URatingWidget_NUI_C::MBrush_Chamfer' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MBrush_Shadow) == 0x000948, "Member 'URatingWidget_NUI_C::MBrush_Shadow' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MBrush_Icon) == 0x000CA8, "Member 'URatingWidget_NUI_C::MBrush_Icon' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, OverrideDefaultColor) == 0x001008, "Member 'URatingWidget_NUI_C::OverrideDefaultColor' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Color_Light) == 0x00100C, "Member 'URatingWidget_NUI_C::Color_Light' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Color_Medium) == 0x00101C, "Member 'URatingWidget_NUI_C::Color_Medium' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Color_Dark) == 0x00102C, "Member 'URatingWidget_NUI_C::Color_Dark' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Default_Color_Light) == 0x00103C, "Member 'URatingWidget_NUI_C::Default_Color_Light' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Default_Color_Medium) == 0x00104C, "Member 'URatingWidget_NUI_C::Default_Color_Medium' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Default_Color_Dark) == 0x00105C, "Member 'URatingWidget_NUI_C::Default_Color_Dark' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MBrush_Icon_Alt) == 0x001070, "Member 'URatingWidget_NUI_C::MBrush_Icon_Alt' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, UseAlternateIcon) == 0x0013D0, "Member 'URatingWidget_NUI_C::UseAlternateIcon' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MBrush_Shadow_Alt) == 0x0013D8, "Member 'URatingWidget_NUI_C::MBrush_Shadow_Alt' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MMargin_Alt) == 0x001738, "Member 'URatingWidget_NUI_C::MMargin_Alt' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, MMargin) == 0x001798, "Member 'URatingWidget_NUI_C::MMargin' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, ShowTeamPowerRating) == 0x0017F8, "Member 'URatingWidget_NUI_C::ShowTeamPowerRating' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, Brush_Size) == 0x0017F9, "Member 'URatingWidget_NUI_C::Brush_Size' has a wrong offset!");
-static_assert(offsetof(URatingWidget_NUI_C, bUseRatingValuesFromPlayer) == 0x0017FA, "Member 'URatingWidget_NUI_C::bUseRatingValuesFromPlayer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SubtitlesWidgets.FortMediaSubtitlesPlayer.BindToMediaPlayer
 // 0x0008 (0x0008 - 0x0000)
@@ -21,9 +21,6 @@ struct FortMediaSubtitlesPlayer_BindToMediaPlayer final
 public:
 	class UMediaPlayer*                           InMediaPlayer;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMediaSubtitlesPlayer_BindToMediaPlayer) == 0x000008, "Wrong alignment on FortMediaSubtitlesPlayer_BindToMediaPlayer");
-static_assert(sizeof(FortMediaSubtitlesPlayer_BindToMediaPlayer) == 0x000008, "Wrong size on FortMediaSubtitlesPlayer_BindToMediaPlayer");
-static_assert(offsetof(FortMediaSubtitlesPlayer_BindToMediaPlayer, InMediaPlayer) == 0x000000, "Member 'FortMediaSubtitlesPlayer_BindToMediaPlayer::InMediaPlayer' has a wrong offset!");
 
 // Function SubtitlesWidgets.FortMediaSubtitlesPlayer.SetSubtitles
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct FortMediaSubtitlesPlayer_SetSubtitles final
 public:
 	class UOverlays*                              Subtitles;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FortMediaSubtitlesPlayer_SetSubtitles) == 0x000008, "Wrong alignment on FortMediaSubtitlesPlayer_SetSubtitles");
-static_assert(sizeof(FortMediaSubtitlesPlayer_SetSubtitles) == 0x000008, "Wrong size on FortMediaSubtitlesPlayer_SetSubtitles");
-static_assert(offsetof(FortMediaSubtitlesPlayer_SetSubtitles, Subtitles) == 0x000000, "Member 'FortMediaSubtitlesPlayer_SetSubtitles::Subtitles' has a wrong offset!");
 
 // Function SubtitlesWidgets.SubtitleDisplay.HasSubtitles
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +37,6 @@ struct SubtitleDisplay_HasSubtitles final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(SubtitleDisplay_HasSubtitles) == 0x000001, "Wrong alignment on SubtitleDisplay_HasSubtitles");
-static_assert(sizeof(SubtitleDisplay_HasSubtitles) == 0x000001, "Wrong size on SubtitleDisplay_HasSubtitles");
-static_assert(offsetof(SubtitleDisplay_HasSubtitles, ReturnValue) == 0x000000, "Member 'SubtitleDisplay_HasSubtitles::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

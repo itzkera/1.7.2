@@ -14,13 +14,12 @@
 #include "McpProfileSys_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function McpProfileSys.McpProfile.DeleteAllProfiles
 // (Final, Net, NetReliable, NetRequest, Native, Event, Private, HasOutParams)
 // Parameters:
-// struct FClientUrlContext                Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
+// struct FClientUrlContext*               Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
 void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 {
@@ -31,7 +30,12 @@ void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 
 	Params::McpProfile_DeleteAllProfiles Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
 		*Context = std::move(Parms.Context);
@@ -41,7 +45,7 @@ void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 // Function McpProfileSys.McpProfile.DeleteProfile
 // (Final, Net, NetReliable, NetRequest, Native, Event, Private, HasOutParams)
 // Parameters:
-// struct FClientUrlContext                Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
+// struct FClientUrlContext*               Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
 void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 {
@@ -52,7 +56,12 @@ void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 
 	Params::McpProfile_DeleteProfile Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
 		*Context = std::move(Parms.Context);
@@ -62,9 +71,9 @@ void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 // Function McpProfileSys.McpProfile.LockProfileForWrite
 // (Final, Net, NetReliable, NetRequest, Native, Event, Private, HasOutParams)
 // Parameters:
-// class FString                           Code                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Code                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Timeout                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDedicatedServerUrlContext       Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
+// struct FDedicatedServerUrlContext*      Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
 void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, struct FDedicatedServerUrlContext* Context)
 {
@@ -78,7 +87,12 @@ void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, 
 	Parms.Code = std::move(Code);
 	Parms.Timeout = Timeout;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
 		*Context = std::move(Parms.Context);
@@ -88,7 +102,7 @@ void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, 
 // Function McpProfileSys.McpProfile.QueryProfile
 // (Final, Net, NetReliable, NetRequest, Native, Event, Private, HasOutParams)
 // Parameters:
-// struct FBaseUrlContext                  Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
+// struct FBaseUrlContext*                 Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
 void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 {
@@ -99,7 +113,12 @@ void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 
 	Params::McpProfile_QueryProfile Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
 		*Context = std::move(Parms.Context);
@@ -109,8 +128,8 @@ void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 // Function McpProfileSys.McpProfile.UnlockProfileForWrite
 // (Final, Net, NetReliable, NetRequest, Native, Event, Private, HasOutParams)
 // Parameters:
-// class FString                           Code                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FDedicatedServerUrlContext       Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
+// const class FString&                    Code                                                   (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FDedicatedServerUrlContext*      Context                                                (Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 
 void UMcpProfile::UnlockProfileForWrite(const class FString& Code, struct FDedicatedServerUrlContext* Context)
 {
@@ -123,11 +142,16 @@ void UMcpProfile::UnlockProfileForWrite(const class FString& Code, struct FDedic
 
 	Parms.Code = std::move(Code);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
 		*Context = std::move(Parms.Context);
 }
 
-}
 
+SDK_NAMESPACE_END

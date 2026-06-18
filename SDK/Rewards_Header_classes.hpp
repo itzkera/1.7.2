@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Rewards_Header.Rewards_Header_C
 // 0x0038 (0x0270 - 0x0238)
@@ -47,22 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Rewards_Header_C">();
+		BP_STATIC_CLASS_IMPL("Rewards_Header_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Rewards_Header_C")
 	}
 	static class URewards_Header_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewards_Header_C>();
 	}
 };
-static_assert(alignof(URewards_Header_C) == 0x000008, "Wrong alignment on URewards_Header_C");
-static_assert(sizeof(URewards_Header_C) == 0x000270, "Wrong size on URewards_Header_C");
-static_assert(offsetof(URewards_Header_C, UberGraphFrame) == 0x000238, "Member 'URewards_Header_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, AnimFadeSubHeader) == 0x000240, "Member 'URewards_Header_C::AnimFadeSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, BorderSubHeader) == 0x000248, "Member 'URewards_Header_C::BorderSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, TextBlockHeader) == 0x000250, "Member 'URewards_Header_C::TextBlockHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, TextBlockSubHeader) == 0x000258, "Member 'URewards_Header_C::TextBlockSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, UseSubHeader) == 0x000260, "Member 'URewards_Header_C::UseSubHeader' has a wrong offset!");
-static_assert(offsetof(URewards_Header_C, Reward) == 0x000268, "Member 'URewards_Header_C::Reward' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

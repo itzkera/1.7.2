@@ -14,8 +14,7 @@
 #include "MtxStoreRoot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MtxStoreRoot.MtxStoreRoot_C.ExecuteUbergraph_MtxStoreRoot
 // ()
@@ -104,5 +103,5 @@ void UMtxStoreRoot_C::ClosePopup()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

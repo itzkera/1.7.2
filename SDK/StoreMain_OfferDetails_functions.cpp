@@ -14,8 +14,7 @@
 #include "StoreMain_OfferDetails_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.ExecuteUbergraph_StoreMain_OfferDetails
 // (HasDefaults)
@@ -136,7 +135,7 @@ void UStoreMain_OfferDetails_C::OnActivated()
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 {
@@ -181,5 +180,5 @@ void UStoreMain_OfferDetails_C::PopDetails()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionDetailsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.ExecuteUbergraph_BP_FortExpeditionDetailsWidget
 // (HasDefaults)
@@ -145,7 +144,7 @@ void UBP_FortExpeditionDetailsWidget_C::SetData(class UFortExpeditionItem* InIte
 // EFortDialogResult                       Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                             ResultName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bWaitingForLatentActionCompletion                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortDialogExternalLatentActionHandleWaitingDialogHandle                                    (Parm, NoDestructor)
+// const struct FFortDialogExternalLatentActionHandle&WaitingDialogHandle                                    (Parm, NoDestructor)
 
 void UBP_FortExpeditionDetailsWidget_C::DialogResult_11B7688B48FDD9A59A2D55A7B4F60124(EFortDialogResult Result, class FName ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
@@ -243,7 +242,7 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Description(class UFortItem* Item_0)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortExpeditionItemDefinition*    Item_Def                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItemDefinition**   Item_Def                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionDetailsWidget_C::Get_Expedition_Item_Definition(class UFortItem* Item_0, class UFortExpeditionItemDefinition** Item_Def)
 {
@@ -440,12 +439,12 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Bonus_Criteria(class UFortExpedition
 // Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Get Bonus Display Name and Brush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTag                     Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 // bool                                    Condition                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortRarity                             Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                      OutBrush_Brush_M                                       (Parm, OutParm)
-// class FText                             OutDisplayName                                         (Parm, OutParm)
-// struct FLinearColor                     OutRarityColor                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush*                     OutBrush_Brush_M                                       (Parm, OutParm)
+// class FText*                            OutDisplayName                                         (Parm, OutParm)
+// struct FLinearColor*                    OutRarityColor                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionDetailsWidget_C::Get_Bonus_Display_Name_and_Brush(const struct FGameplayTag& Tag, bool Condition, EFortRarity Rarity, struct FSlateBrush* OutBrush_Brush_M, class FText* OutDisplayName, struct FLinearColor* OutRarityColor)
 {
@@ -472,5 +471,5 @@ void UBP_FortExpeditionDetailsWidget_C::Get_Bonus_Display_Name_and_Brush(const s
 		*OutRarityColor = std::move(Parms.OutRarityColor);
 }
 
-}
 
+SDK_NAMESPACE_END

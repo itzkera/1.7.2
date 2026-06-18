@@ -14,8 +14,7 @@
 #include "BP_ItemTransform_TabButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.ExecuteUbergraph_BP_ItemTransform_TabButton
 // (HasDefaults)
@@ -110,7 +109,7 @@ void UBP_ItemTransform_TabButton_C::Construct()
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.SetTabLabelInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortTabButtonLabelInfo          TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTabButtonLabelInfo&   TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UBP_ItemTransform_TabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
@@ -164,7 +163,7 @@ void UBP_ItemTransform_TabButton_C::OnCurrentTextStyleChanged()
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ButtonText_0                                           (Parm)
+// const class FText&                      ButtonText_0                                           (Parm)
 
 void UBP_ItemTransform_TabButton_C::Set_Text(const class FText& ButtonText_0)
 {
@@ -184,7 +183,7 @@ void UBP_ItemTransform_TabButton_C::Set_Text(const class FText& ButtonText_0)
 // Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush_0                                            (Parm)
+// const struct FSlateBrush&               IconBrush_0                                            (Parm)
 
 void UBP_ItemTransform_TabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
@@ -304,5 +303,5 @@ void UBP_ItemTransform_TabButton_C::Update_Air_Vehicles()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "B_Pickups_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Pickups.B_Pickups_C.ExecuteUbergraph_B_Pickups
 // (HasDefaults)
@@ -194,5 +193,5 @@ void AB_Pickups_C::CreateHologramMIDs()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

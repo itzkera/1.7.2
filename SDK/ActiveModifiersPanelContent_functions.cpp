@@ -14,8 +14,7 @@
 #include "ActiveModifiersPanelContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.ExecuteUbergraph_ActiveModifiersPanelContent
 // ()
@@ -54,7 +53,7 @@ void UActiveModifiersPanelContent_C::Construct()
 // Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.Init
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>inModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>&inModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItemDefinition*>& inModifiers)
 {
@@ -72,5 +71,5 @@ void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItem
 	inModifiers = std::move(Parms.inModifiers);
 }
 
-}
 
+SDK_NAMESPACE_END

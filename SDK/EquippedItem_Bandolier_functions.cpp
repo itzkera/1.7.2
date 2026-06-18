@@ -14,8 +14,7 @@
 #include "EquippedItem_Bandolier_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCurrent
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -60,5 +59,5 @@ void UEquippedItem_Bandolier_C::UpdateCapacity(int32 Capacity, class UFortAmmoIt
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

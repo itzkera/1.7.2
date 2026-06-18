@@ -14,8 +14,7 @@
 #include "PartyFinder_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PartyFinder.PartyFinder_C.ExecuteUbergraph_PartyFinder
 // (HasDefaults)
@@ -94,7 +93,7 @@ void UPartyFinder_C::BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_0_Comm
 // Function PartyFinder.PartyFinder_C.OnSocialListChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortSocialItem*>          SocialItems                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortSocialItem*>&   SocialItems                                            (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UPartyFinder_C::OnSocialListChanged(const TArray<class UFortSocialItem*>& SocialItems)
 {
@@ -196,7 +195,7 @@ void UPartyFinder_C::BndEvt__InviteButton_K2Node_ComponentBoundEvent_15_CommonBu
 // Function PartyFinder.PartyFinder_C.HandlePartyDataChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPartyState                      PartyData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPartyState&               PartyData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPartyFinder_C::HandlePartyDataChanged(const struct FPartyState& PartyData)
 {
@@ -306,7 +305,7 @@ void UPartyFinder_C::HandlePartyTransitionStarted(EFortPartyTransition Transitio
 // Function PartyFinder.PartyFinder_C.HandleSocialListChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortSocialItem*>          SocialItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortSocialItem*>&         SocialItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                                    bExpandAll                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPartyFinder_C::HandleSocialListChanged(TArray<class UFortSocialItem*>& SocialItems, bool bExpandAll)
@@ -424,7 +423,7 @@ TArray<class UObject*> UPartyFinder_C::SocialTreeView_GetChildrenForCategory(cla
 // Function PartyFinder.PartyFinder_C.HandleFriendPresenceUpdated
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 FriendId                                               (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// struct FUniqueNetIdRepl&                FriendId                                               (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
 void UPartyFinder_C::HandleFriendPresenceUpdated(struct FUniqueNetIdRepl& FriendId)
 {
@@ -456,5 +455,5 @@ void UPartyFinder_C::UpdateDetailsEmpty()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-Solid-Square-CollectionBook.ButtonStyle-Solid-Square-CollectionBook_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_Solid_Square_CollectionBook_C final : public UCommonButtonSty
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Solid-Square-CollectionBook_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Solid-Square-CollectionBook_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Solid-Square-CollectionBook_C")
 	}
 	static class UButtonStyle_Solid_Square_CollectionBook_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Solid_Square_CollectionBook_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Solid_Square_CollectionBook_C) == 0x000008, "Wrong alignment on UButtonStyle_Solid_Square_CollectionBook_C");
-static_assert(sizeof(UButtonStyle_Solid_Square_CollectionBook_C) == 0x000530, "Wrong size on UButtonStyle_Solid_Square_CollectionBook_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "TeamMicStack_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TeamMicStack.TeamMicStack_C.ExecuteUbergraph_TeamMicStack
 // (HasDefaults)
@@ -88,7 +87,7 @@ void UTeamMicStack_C::HandleTeamMemberRemoved(int32 Member_Index)
 // Function TeamMicStack.TeamMicStack_C.HandleTeamMemberChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Member_Info                                            (Parm)
+// const struct FFortTeamMemberInfo&       Member_Info                                            (Parm)
 
 void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info)
 {
@@ -108,7 +107,7 @@ void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& 
 // Function TeamMicStack.TeamMicStack_C.ShiftTeamMembers
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
 // int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTeamMicStack_C::ShiftTeamMembers(struct FFortTeamMemberInfo& TeamMemberInfo, int32 Index_0)
@@ -132,7 +131,7 @@ void UTeamMicStack_C::ShiftTeamMembers(struct FFortTeamMemberInfo& TeamMemberInf
 // Function TeamMicStack.TeamMicStack_C.AppendTeamMember
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
 
 void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -164,5 +163,5 @@ void UTeamMicStack_C::ClearContents()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

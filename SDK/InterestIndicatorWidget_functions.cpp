@@ -14,8 +14,7 @@
 #include "InterestIndicatorWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function InterestIndicatorWidget.InterestIndicatorWidget_C.ExecuteUbergraph_InterestIndicatorWidget
 // ()
@@ -68,7 +67,7 @@ void UInterestIndicatorWidget_C::Construct()
 // Function InterestIndicatorWidget.InterestIndicatorWidget_C.SetDisplayText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description                                            (Parm)
+// const class FText&                      Description                                            (Parm)
 
 void UInterestIndicatorWidget_C::SetDisplayText(const class FText& Description)
 {
@@ -109,7 +108,7 @@ void UInterestIndicatorWidget_C::SetDisplayImage(class UTexture2D* Icon)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           PointOfInterest                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             DisplayText                                            (Parm)
+// const class FText&                      DisplayText                                            (Parm)
 // class UTexture2D*                       DisplayImage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UInterestIndicatorWidget_C::InitPointOfInterest(class AActor* PointOfInterest, const class FText& DisplayText, class UTexture2D* DisplayImage)
@@ -133,7 +132,7 @@ void UInterestIndicatorWidget_C::InitPointOfInterest(class AActor* PointOfIntere
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           PointOfInterest                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Removed                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Removed                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UInterestIndicatorWidget_C::RemovePointOfInterest(class AActor* PointOfInterest, bool* Removed)
 {
@@ -152,5 +151,5 @@ void UInterestIndicatorWidget_C::RemovePointOfInterest(class AActor* PointOfInte
 		*Removed = Parms.Removed;
 }
 
-}
 
+SDK_NAMESPACE_END

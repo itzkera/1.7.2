@@ -10,12 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "FortniteGame_classes.hpp"
 #include "DynamicQuestUpdateInfo_structs.hpp"
+#include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_QuestUpdate.Announce_QuestUpdate_C
 // 0x0028 (0x0420 - 0x03F8)
@@ -31,17 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_QuestUpdate_C">();
+		BP_STATIC_CLASS_IMPL("Announce_QuestUpdate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_QuestUpdate_C")
 	}
 	static class AAnnounce_QuestUpdate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_QuestUpdate_C>();
 	}
 };
-static_assert(alignof(AAnnounce_QuestUpdate_C) == 0x000008, "Wrong alignment on AAnnounce_QuestUpdate_C");
-static_assert(sizeof(AAnnounce_QuestUpdate_C) == 0x000420, "Wrong size on AAnnounce_QuestUpdate_C");
-static_assert(offsetof(AAnnounce_QuestUpdate_C, DefaultSceneRoot) == 0x0003F8, "Member 'AAnnounce_QuestUpdate_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAnnounce_QuestUpdate_C, QuestUpdateInfo) == 0x000400, "Member 'AAnnounce_QuestUpdate_C::QuestUpdateInfo' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

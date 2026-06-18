@@ -14,8 +14,7 @@
 #include "ItemInspectUpgradeCallout_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ExecuteUbergraph_ItemInspectUpgradeCallout
 // ()
@@ -170,7 +169,7 @@ void UItemInspectUpgradeCallout_C::RefreshOnUpgrade()
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.IsUpgradeReady
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    UpgradeReady                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   UpgradeReady                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectUpgradeCallout_C::IsUpgradeReady(bool* UpgradeReady)
 {
@@ -219,7 +218,7 @@ void UItemInspectUpgradeCallout_C::ShowEvolutionInfo()
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.IsEvolutionReady
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    EvolutionReady                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   EvolutionReady                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectUpgradeCallout_C::IsEvolutionReady(bool* EvolutionReady)
 {
@@ -236,5 +235,5 @@ void UItemInspectUpgradeCallout_C::IsEvolutionReady(bool* EvolutionReady)
 		*EvolutionReady = Parms.EvolutionReady;
 }
 
-}
 
+SDK_NAMESPACE_END

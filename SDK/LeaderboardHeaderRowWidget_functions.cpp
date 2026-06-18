@@ -14,8 +14,7 @@
 #include "LeaderboardHeaderRowWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.ExecuteUbergraph_LeaderboardHeaderRowWidget
 // ()
@@ -54,7 +53,7 @@ void ULeaderboardHeaderRowWidget_C::Construct()
 // Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.SetStatNameText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 
 void ULeaderboardHeaderRowWidget_C::SetStatNameText(const class FText& Text)
 {
@@ -70,5 +69,5 @@ void ULeaderboardHeaderRowWidget_C::SetStatNameText(const class FText& Text)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

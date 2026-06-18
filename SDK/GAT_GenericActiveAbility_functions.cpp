@@ -14,8 +14,7 @@
 #include "GAT_GenericActiveAbility_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAT_GenericActiveAbility.GAT_GenericActiveAbility_C.ExecuteUbergraph_GAT_GenericActiveAbility
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UGAT_GenericActiveAbility_C::K2_ActivateAbility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

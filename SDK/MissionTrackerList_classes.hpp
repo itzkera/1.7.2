@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionTrackerList.MissionTrackerList_C
 // 0x0000 (0x02C8 - 0x02C8)
@@ -23,15 +22,16 @@ class UMissionTrackerList_C final : public UFortMissionTrackerList
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionTrackerList_C">();
+		BP_STATIC_CLASS_IMPL("MissionTrackerList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionTrackerList_C")
 	}
 	static class UMissionTrackerList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionTrackerList_C>();
 	}
 };
-static_assert(alignof(UMissionTrackerList_C) == 0x000008, "Wrong alignment on UMissionTrackerList_C");
-static_assert(sizeof(UMissionTrackerList_C) == 0x0002C8, "Wrong size on UMissionTrackerList_C");
 
-}
-
+SDK_NAMESPACE_END

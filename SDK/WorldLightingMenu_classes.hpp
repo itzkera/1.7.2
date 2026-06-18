@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WorldLightingMenu.WorldLightingMenu_C
 // 0x0000 (0x03A0 - 0x03A0)
@@ -23,15 +22,16 @@ class AWorldLightingMenu_C final : public AFortLevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WorldLightingMenu_C">();
+		BP_STATIC_CLASS_IMPL("WorldLightingMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorldLightingMenu_C")
 	}
 	static class AWorldLightingMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWorldLightingMenu_C>();
 	}
 };
-static_assert(alignof(AWorldLightingMenu_C) == 0x000008, "Wrong alignment on AWorldLightingMenu_C");
-static_assert(sizeof(AWorldLightingMenu_C) == 0x0003A0, "Wrong size on AWorldLightingMenu_C");
 
-}
-
+SDK_NAMESPACE_END

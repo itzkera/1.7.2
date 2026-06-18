@@ -14,8 +14,7 @@
 #include "AnimNotifyState_AttachAsset_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotifyState_AttachAsset.AnimNotifyState_AttachAsset_C.Received_NotifyBegin
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
@@ -68,5 +67,5 @@ bool UAnimNotifyState_AttachAsset_C::Received_NotifyEnd(class USkeletalMeshCompo
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

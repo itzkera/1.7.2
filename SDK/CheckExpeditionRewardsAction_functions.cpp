@@ -14,8 +14,7 @@
 #include "CheckExpeditionRewardsAction_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.ExecuteUbergraph_CheckExpeditionRewardsAction
 // (HasDefaults)
@@ -54,7 +53,7 @@ void ACheckExpeditionRewardsAction_C::Handle_Rewards_Running()
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Execute
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortScriptedActionParams        Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortScriptedActionParams& Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ACheckExpeditionRewardsAction_C::Execute(const struct FFortScriptedActionParams& Params_0)
 {
@@ -102,7 +101,7 @@ void ACheckExpeditionRewardsAction_C::CompleteRewardsAction()
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.GetCompletedQuests
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortQuestItem*>           Completed_Quests                                       (Parm, OutParm, ZeroConstructor)
+// TArray<class UFortQuestItem*>*          Completed_Quests                                       (Parm, OutParm, ZeroConstructor)
 
 void ACheckExpeditionRewardsAction_C::GetCompletedQuests(TArray<class UFortQuestItem*>* Completed_Quests)
 {
@@ -233,7 +232,7 @@ void ACheckExpeditionRewardsAction_C::HandleRewardsClaimError(class UFrontEndRew
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Is FrontEndRewards Running
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bRunning                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bRunning                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ACheckExpeditionRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 {
@@ -254,7 +253,7 @@ void ACheckExpeditionRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Find First Valid Player Controller
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            FoundPC1                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerController**           FoundPC1                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ACheckExpeditionRewardsAction_C::Find_First_Valid_Player_Controller(class AFortPlayerController** FoundPC1)
 {
@@ -271,5 +270,5 @@ void ACheckExpeditionRewardsAction_C::Find_First_Valid_Player_Controller(class A
 		*FoundPC1 = Parms.FoundPC1;
 }
 
-}
 
+SDK_NAMESPACE_END

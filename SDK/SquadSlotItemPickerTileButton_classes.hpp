@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C
 // 0x0048 (0x0930 - 0x08E8)
@@ -43,24 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadSlotItemPickerTileButton_C">();
+		BP_STATIC_CLASS_IMPL("SquadSlotItemPickerTileButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadSlotItemPickerTileButton_C")
 	}
 	static class USquadSlotItemPickerTileButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadSlotItemPickerTileButton_C>();
 	}
 };
-static_assert(alignof(USquadSlotItemPickerTileButton_C) == 0x000008, "Wrong alignment on USquadSlotItemPickerTileButton_C");
-static_assert(sizeof(USquadSlotItemPickerTileButton_C) == 0x000930, "Wrong size on USquadSlotItemPickerTileButton_C");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, UberGraphFrame) == 0x0008E8, "Member 'USquadSlotItemPickerTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, CurrentlySlottedIndicatorLayer) == 0x0008F0, "Member 'USquadSlotItemPickerTileButton_C::CurrentlySlottedIndicatorLayer' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, NullItemBorder) == 0x0008F8, "Member 'USquadSlotItemPickerTileButton_C::NullItemBorder' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, OverlayTypeSwitcher) == 0x000900, "Member 'USquadSlotItemPickerTileButton_C::OverlayTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, RootWidgetSwitcher) == 0x000908, "Member 'USquadSlotItemPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, SlottedSquadIcon) == 0x000910, "Member 'USquadSlotItemPickerTileButton_C::SlottedSquadIcon' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, SlottingRestrictedIndicator) == 0x000918, "Member 'USquadSlotItemPickerTileButton_C::SlottingRestrictedIndicator' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, SlottingRestrictedIndicatorLayer) == 0x000920, "Member 'USquadSlotItemPickerTileButton_C::SlottingRestrictedIndicatorLayer' has a wrong offset!");
-static_assert(offsetof(USquadSlotItemPickerTileButton_C, IsSlottedSomewhere) == 0x000928, "Member 'USquadSlotItemPickerTileButton_C::IsSlottedSomewhere' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

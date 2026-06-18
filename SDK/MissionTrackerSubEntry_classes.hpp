@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionTrackerSubEntry.MissionTrackerSubEntry_C
 // 0x01A0 (0x0410 - 0x0270)
@@ -66,32 +65,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionTrackerSubEntry_C">();
+		BP_STATIC_CLASS_IMPL("MissionTrackerSubEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionTrackerSubEntry_C")
 	}
 	static class UMissionTrackerSubEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionTrackerSubEntry_C>();
 	}
 };
-static_assert(alignof(UMissionTrackerSubEntry_C) == 0x000008, "Wrong alignment on UMissionTrackerSubEntry_C");
-static_assert(sizeof(UMissionTrackerSubEntry_C) == 0x000410, "Wrong size on UMissionTrackerSubEntry_C");
-static_assert(offsetof(UMissionTrackerSubEntry_C, UberGraphFrame) == 0x000270, "Member 'UMissionTrackerSubEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, NewObjectiveCreation) == 0x000278, "Member 'UMissionTrackerSubEntry_C::NewObjectiveCreation' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, DrawAttentionAnimation) == 0x000280, "Member 'UMissionTrackerSubEntry_C::DrawAttentionAnimation' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, CompletionFlashAnimation) == 0x000288, "Member 'UMissionTrackerSubEntry_C::CompletionFlashAnimation' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, QuestionMarkAnimation) == 0x000290, "Member 'UMissionTrackerSubEntry_C::QuestionMarkAnimation' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, CrossMarkAnimation) == 0x000298, "Member 'UMissionTrackerSubEntry_C::CrossMarkAnimation' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, CheckmarkAnimation) == 0x0002A0, "Member 'UMissionTrackerSubEntry_C::CheckmarkAnimation' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, BorderFlash) == 0x0002A8, "Member 'UMissionTrackerSubEntry_C::BorderFlash' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, BulletImage) == 0x0002B0, "Member 'UMissionTrackerSubEntry_C::BulletImage' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, Checkmark) == 0x0002B8, "Member 'UMissionTrackerSubEntry_C::Checkmark' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, Crossmark) == 0x0002C0, "Member 'UMissionTrackerSubEntry_C::Crossmark' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, ObjectiveContentSlot) == 0x0002C8, "Member 'UMissionTrackerSubEntry_C::ObjectiveContentSlot' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, Questionmark) == 0x0002D0, "Member 'UMissionTrackerSubEntry_C::Questionmark' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, ObjectiveActor) == 0x0002D8, "Member 'UMissionTrackerSubEntry_C::ObjectiveActor' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, WidgetVisibilityChanged) == 0x0002E0, "Member 'UMissionTrackerSubEntry_C::WidgetVisibilityChanged' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, DefaultBulletBrush) == 0x0002F0, "Member 'UMissionTrackerSubEntry_C::DefaultBulletBrush' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerSubEntry_C, DefaultNonHUDBulletBrush) == 0x000380, "Member 'UMissionTrackerSubEntry_C::DefaultNonHUDBulletBrush' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

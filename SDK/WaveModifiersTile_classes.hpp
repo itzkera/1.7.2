@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WaveModifiersTile.WaveModifiersTile_C
 // 0x0038 (0x0278 - 0x0240)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WaveModifiersTile_C">();
+		BP_STATIC_CLASS_IMPL("WaveModifiersTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaveModifiersTile_C")
 	}
 	static class UWaveModifiersTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaveModifiersTile_C>();
 	}
 };
-static_assert(alignof(UWaveModifiersTile_C) == 0x000008, "Wrong alignment on UWaveModifiersTile_C");
-static_assert(sizeof(UWaveModifiersTile_C) == 0x000278, "Wrong size on UWaveModifiersTile_C");
-static_assert(offsetof(UWaveModifiersTile_C, UberGraphFrame) == 0x000240, "Member 'UWaveModifiersTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWaveModifiersTile_C, Intro) == 0x000248, "Member 'UWaveModifiersTile_C::Intro' has a wrong offset!");
-static_assert(offsetof(UWaveModifiersTile_C, ModifierDesc) == 0x000250, "Member 'UWaveModifiersTile_C::ModifierDesc' has a wrong offset!");
-static_assert(offsetof(UWaveModifiersTile_C, ModifierImage) == 0x000258, "Member 'UWaveModifiersTile_C::ModifierImage' has a wrong offset!");
-static_assert(offsetof(UWaveModifiersTile_C, ModifierName) == 0x000260, "Member 'UWaveModifiersTile_C::ModifierName' has a wrong offset!");
-static_assert(offsetof(UWaveModifiersTile_C, OnReadyForNextModifierPresentation) == 0x000268, "Member 'UWaveModifiersTile_C::OnReadyForNextModifierPresentation' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

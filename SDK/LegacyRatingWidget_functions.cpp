@@ -14,8 +14,7 @@
 #include "LegacyRatingWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyRatingWidget.LegacyRatingWidget_C.ExecuteUbergraph_LegacyRatingWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ULegacyRatingWidget_C::ExecuteUbergraph_LegacyRatingWidget(int32 EntryPoint
 // Function LegacyRatingWidget.LegacyRatingWidget_C.PlayerStateChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTeamMemberInfo&       PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULegacyRatingWidget_C::PlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
@@ -74,7 +73,7 @@ void ULegacyRatingWidget_C::Construct()
 // Function LegacyRatingWidget.LegacyRatingWidget_C.PlayerInfoChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 UniqueId_0                                             (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          UniqueId_0                                             (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
 void ULegacyRatingWidget_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& UniqueId_0)
 {
@@ -176,7 +175,7 @@ void ULegacyRatingWidget_C::Update()
 // Function LegacyRatingWidget.LegacyRatingWidget_C.Set Unique ID
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 ID                                                     (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          ID                                                     (Parm, HasGetValueTypeHash)
 
 void ULegacyRatingWidget_C::Set_Unique_ID(const struct FUniqueNetIdRepl& ID)
 {
@@ -226,7 +225,7 @@ void ULegacyRatingWidget_C::Update_Base_Material()
 // Parameters:
 // class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             Parameter                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortMultiSizeBrush              MBrush                                                 (Parm)
+// const struct FFortMultiSizeBrush&       MBrush                                                 (Parm)
 
 void ULegacyRatingWidget_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class UMaterialInstanceDynamic* Mid, class FName Parameter, const struct FFortMultiSizeBrush& MBrush)
 {
@@ -249,9 +248,9 @@ void ULegacyRatingWidget_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class 
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Override                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                     Light_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Medium_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Dark_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Light_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Medium_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Dark_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyRatingWidget_C::Override_Default_Color_Set(bool Override, const struct FLinearColor& Light_Color, const struct FLinearColor& Medium_Color, const struct FLinearColor& Dark_Color)
 {
@@ -290,5 +289,5 @@ void ULegacyRatingWidget_C::SetShouldShowTeamPowerRating(bool ShowTeamRating)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

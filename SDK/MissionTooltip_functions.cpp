@@ -14,8 +14,7 @@
 #include "MissionTooltip_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionTooltip.MissionTooltip_C.ExecuteUbergraph_MissionTooltip
 // ()
@@ -108,7 +107,7 @@ void UMissionTooltip_C::HandleMissionRewards()
 // Function MissionTooltip.MissionTooltip_C.HandleGameplayModifiers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>GameplayModifiers                                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>&GameplayModifiers                                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UMissionTooltip_C::HandleGameplayModifiers(TArray<class UFortGameplayModifierItemDefinition*>& GameplayModifiers)
 {
@@ -126,5 +125,5 @@ void UMissionTooltip_C::HandleGameplayModifiers(TArray<class UFortGameplayModifi
 	GameplayModifiers = std::move(Parms.GameplayModifiers);
 }
 
-}
 
+SDK_NAMESPACE_END

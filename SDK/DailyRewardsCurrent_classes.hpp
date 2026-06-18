@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DailyRewardsCurrent.DailyRewardsCurrent_C
 // 0x0060 (0x02A8 - 0x0248)
@@ -45,25 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DailyRewardsCurrent_C">();
+		BP_STATIC_CLASS_IMPL("DailyRewardsCurrent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DailyRewardsCurrent_C")
 	}
 	static class UDailyRewardsCurrent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDailyRewardsCurrent_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsCurrent_C) == 0x000008, "Wrong alignment on UDailyRewardsCurrent_C");
-static_assert(sizeof(UDailyRewardsCurrent_C) == 0x0002A8, "Wrong size on UDailyRewardsCurrent_C");
-static_assert(offsetof(UDailyRewardsCurrent_C, UberGraphFrame) == 0x000248, "Member 'UDailyRewardsCurrent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, Flare_Backing) == 0x000250, "Member 'UDailyRewardsCurrent_C::Flare_Backing' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, FortItemCard) == 0x000258, "Member 'UDailyRewardsCurrent_C::FortItemCard' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, ImageRarityFlare) == 0x000260, "Member 'UDailyRewardsCurrent_C::ImageRarityFlare' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, ScheduleText) == 0x000268, "Member 'UDailyRewardsCurrent_C::ScheduleText' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, Spacer_LFT) == 0x000270, "Member 'UDailyRewardsCurrent_C::Spacer_LFT' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, Spacer_RGT) == 0x000278, "Member 'UDailyRewardsCurrent_C::Spacer_RGT' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, ScheduleName) == 0x000280, "Member 'UDailyRewardsCurrent_C::ScheduleName' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, IsClaiming) == 0x000298, "Member 'UDailyRewardsCurrent_C::IsClaiming' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsCurrent_C, RarityFlare_MID) == 0x0002A0, "Member 'UDailyRewardsCurrent_C::RarityFlare_MID' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

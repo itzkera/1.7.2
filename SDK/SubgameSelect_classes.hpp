@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SubgameSelect.SubgameSelect_C
 // 0x0028 (0x0428 - 0x0400)
@@ -42,20 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameSelect_C">();
+		BP_STATIC_CLASS_IMPL("SubgameSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameSelect_C")
 	}
 	static class USubgameSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameSelect_C>();
 	}
 };
-static_assert(alignof(USubgameSelect_C) == 0x000008, "Wrong alignment on USubgameSelect_C");
-static_assert(sizeof(USubgameSelect_C) == 0x000428, "Wrong size on USubgameSelect_C");
-static_assert(offsetof(USubgameSelect_C, UberGraphFrame) == 0x000400, "Member 'USubgameSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, BottomBar) == 0x000408, "Member 'USubgameSelect_C::BottomBar' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, BuildWatermark) == 0x000410, "Member 'USubgameSelect_C::BuildWatermark' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, MainContentStack) == 0x000418, "Member 'USubgameSelect_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, TopBar) == 0x000420, "Member 'USubgameSelect_C::TopBar' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -10,13 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "HeroCoreStat_structs.hpp"
 #include "Engine_structs.hpp"
+#include "HeroCoreStat_structs.hpp"
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Tooltip-CoreStat.Tooltip-CoreStat_C
 // 0x03E8 (0x0618 - 0x0230)
@@ -40,23 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tooltip-CoreStat_C">();
+		BP_STATIC_CLASS_IMPL("Tooltip-CoreStat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tooltip-CoreStat_C")
 	}
 	static class UTooltip_CoreStat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltip_CoreStat_C>();
 	}
 };
-static_assert(alignof(UTooltip_CoreStat_C) == 0x000008, "Wrong alignment on UTooltip_CoreStat_C");
-static_assert(sizeof(UTooltip_CoreStat_C) == 0x000618, "Wrong size on UTooltip_CoreStat_C");
-static_assert(offsetof(UTooltip_CoreStat_C, UberGraphFrame) == 0x000230, "Member 'UTooltip_CoreStat_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, ImageStatIcon) == 0x000238, "Member 'UTooltip_CoreStat_C::ImageStatIcon' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, ImageStatShadow) == 0x000240, "Member 'UTooltip_CoreStat_C::ImageStatShadow' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, TextStatDesc) == 0x000248, "Member 'UTooltip_CoreStat_C::TextStatDesc' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, TextStatLabel) == 0x000250, "Member 'UTooltip_CoreStat_C::TextStatLabel' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, TextStatValue) == 0x000258, "Member 'UTooltip_CoreStat_C::TextStatValue' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, Data) == 0x000260, "Member 'UTooltip_CoreStat_C::Data' has a wrong offset!");
-static_assert(offsetof(UTooltip_CoreStat_C, Value) == 0x000610, "Member 'UTooltip_CoreStat_C::Value' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

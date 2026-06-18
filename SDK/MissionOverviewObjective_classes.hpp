@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionOverviewObjective.MissionOverviewObjective_C
 // 0x0048 (0x0280 - 0x0238)
@@ -35,20 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionOverviewObjective_C">();
+		BP_STATIC_CLASS_IMPL("MissionOverviewObjective_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionOverviewObjective_C")
 	}
 	static class UMissionOverviewObjective_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionOverviewObjective_C>();
 	}
 };
-static_assert(alignof(UMissionOverviewObjective_C) == 0x000008, "Wrong alignment on UMissionOverviewObjective_C");
-static_assert(sizeof(UMissionOverviewObjective_C) == 0x000280, "Wrong size on UMissionOverviewObjective_C");
-static_assert(offsetof(UMissionOverviewObjective_C, UberGraphFrame) == 0x000238, "Member 'UMissionOverviewObjective_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionOverviewObjective_C, Description) == 0x000240, "Member 'UMissionOverviewObjective_C::Description' has a wrong offset!");
-static_assert(offsetof(UMissionOverviewObjective_C, Heading) == 0x000248, "Member 'UMissionOverviewObjective_C::Heading' has a wrong offset!");
-static_assert(offsetof(UMissionOverviewObjective_C, HeadingText) == 0x000250, "Member 'UMissionOverviewObjective_C::HeadingText' has a wrong offset!");
-static_assert(offsetof(UMissionOverviewObjective_C, DescriptionText) == 0x000268, "Member 'UMissionOverviewObjective_C::DescriptionText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

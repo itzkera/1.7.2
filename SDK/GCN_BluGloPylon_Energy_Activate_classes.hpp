@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_BluGloPylon_Energy_Activate.GCN_BluGloPylon_Energy_Activate_C
 // 0x0008 (0x0470 - 0x0468)
@@ -31,16 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_BluGloPylon_Energy_Activate_C">();
+		BP_STATIC_CLASS_IMPL("GCN_BluGloPylon_Energy_Activate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_BluGloPylon_Energy_Activate_C")
 	}
 	static class AGCN_BluGloPylon_Energy_Activate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_BluGloPylon_Energy_Activate_C>();
 	}
 };
-static_assert(alignof(AGCN_BluGloPylon_Energy_Activate_C) == 0x000008, "Wrong alignment on AGCN_BluGloPylon_Energy_Activate_C");
-static_assert(sizeof(AGCN_BluGloPylon_Energy_Activate_C) == 0x000470, "Wrong size on AGCN_BluGloPylon_Energy_Activate_C");
-static_assert(offsetof(AGCN_BluGloPylon_Energy_Activate_C, IconTexture) == 0x000468, "Member 'AGCN_BluGloPylon_Energy_Activate_C::IconTexture' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-PanelSelector.ButtonStyle-PanelSelector_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_PanelSelector_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-PanelSelector_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-PanelSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-PanelSelector_C")
 	}
 	static class UButtonStyle_PanelSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_PanelSelector_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_PanelSelector_C) == 0x000008, "Wrong alignment on UButtonStyle_PanelSelector_C");
-static_assert(sizeof(UButtonStyle_PanelSelector_C) == 0x000530, "Wrong size on UButtonStyle_PanelSelector_C");
 
-}
-
+SDK_NAMESPACE_END

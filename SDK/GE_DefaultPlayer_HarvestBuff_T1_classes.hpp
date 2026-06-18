@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_DefaultPlayer_HarvestBuff_T1.GE_DefaultPlayer_HarvestBuff_T1_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_DefaultPlayer_HarvestBuff_T1_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_DefaultPlayer_HarvestBuff_T1_C">();
+		BP_STATIC_CLASS_IMPL("GE_DefaultPlayer_HarvestBuff_T1_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_DefaultPlayer_HarvestBuff_T1_C")
 	}
 	static class UGE_DefaultPlayer_HarvestBuff_T1_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_DefaultPlayer_HarvestBuff_T1_C>();
 	}
 };
-static_assert(alignof(UGE_DefaultPlayer_HarvestBuff_T1_C) == 0x000010, "Wrong alignment on UGE_DefaultPlayer_HarvestBuff_T1_C");
-static_assert(sizeof(UGE_DefaultPlayer_HarvestBuff_T1_C) == 0x000660, "Wrong size on UGE_DefaultPlayer_HarvestBuff_T1_C");
 
-}
-
+SDK_NAMESPACE_END

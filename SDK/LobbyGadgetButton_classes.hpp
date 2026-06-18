@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LobbyGadgetButton.LobbyGadgetButton_C
 // 0x0060 (0x0298 - 0x0238)
@@ -45,24 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LobbyGadgetButton_C">();
+		BP_STATIC_CLASS_IMPL("LobbyGadgetButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyGadgetButton_C")
 	}
 	static class ULobbyGadgetButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyGadgetButton_C>();
 	}
 };
-static_assert(alignof(ULobbyGadgetButton_C) == 0x000008, "Wrong alignment on ULobbyGadgetButton_C");
-static_assert(sizeof(ULobbyGadgetButton_C) == 0x000298, "Wrong size on ULobbyGadgetButton_C");
-static_assert(offsetof(ULobbyGadgetButton_C, UberGraphFrame) == 0x000238, "Member 'ULobbyGadgetButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, Button) == 0x000240, "Member 'ULobbyGadgetButton_C::Button' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, EmptySlot) == 0x000248, "Member 'ULobbyGadgetButton_C::EmptySlot' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, Item) == 0x000250, "Member 'ULobbyGadgetButton_C::Item' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, DesignTestItemDefinitions) == 0x000258, "Member 'ULobbyGadgetButton_C::DesignTestItemDefinitions' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, GadgetItem) == 0x000268, "Member 'ULobbyGadgetButton_C::GadgetItem' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, OnButtonClicked) == 0x000270, "Member 'ULobbyGadgetButton_C::OnButtonClicked' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, OnButtonHovered) == 0x000280, "Member 'ULobbyGadgetButton_C::OnButtonHovered' has a wrong offset!");
-static_assert(offsetof(ULobbyGadgetButton_C, bLocked) == 0x000290, "Member 'ULobbyGadgetButton_C::bLocked' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

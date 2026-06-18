@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SetBonus_MaxShield_High.SetBonus_MaxShield_High_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class USetBonus_MaxShield_High_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SetBonus_MaxShield_High_C">();
+		BP_STATIC_CLASS_IMPL("SetBonus_MaxShield_High_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SetBonus_MaxShield_High_C")
 	}
 	static class USetBonus_MaxShield_High_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USetBonus_MaxShield_High_C>();
 	}
 };
-static_assert(alignof(USetBonus_MaxShield_High_C) == 0x000010, "Wrong alignment on USetBonus_MaxShield_High_C");
-static_assert(sizeof(USetBonus_MaxShield_High_C) == 0x000660, "Wrong size on USetBonus_MaxShield_High_C");
 
-}
-
+SDK_NAMESPACE_END

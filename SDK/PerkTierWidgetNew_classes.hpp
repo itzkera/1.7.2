@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PerkTierWidgetNew.PerkTierWidgetNew_C
 // 0x0030 (0x02B8 - 0x0288)
@@ -42,24 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PerkTierWidgetNew_C">();
+		BP_STATIC_CLASS_IMPL("PerkTierWidgetNew_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PerkTierWidgetNew_C")
 	}
 	static class UPerkTierWidgetNew_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPerkTierWidgetNew_C>();
 	}
 };
-static_assert(alignof(UPerkTierWidgetNew_C) == 0x000008, "Wrong alignment on UPerkTierWidgetNew_C");
-static_assert(sizeof(UPerkTierWidgetNew_C) == 0x0002B8, "Wrong size on UPerkTierWidgetNew_C");
-static_assert(offsetof(UPerkTierWidgetNew_C, UberGraphFrame) == 0x000288, "Member 'UPerkTierWidgetNew_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, PerkList) == 0x000290, "Member 'UPerkTierWidgetNew_C::PerkList' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, PerkWidget) == 0x000298, "Member 'UPerkTierWidgetNew_C::PerkWidget' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, PerkWidget_0) == 0x0002A0, "Member 'UPerkTierWidgetNew_C::PerkWidget_0' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, PerkWidget_1) == 0x0002A8, "Member 'UPerkTierWidgetNew_C::PerkWidget_1' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, bIncludeName) == 0x0002B0, "Member 'UPerkTierWidgetNew_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, bFirstPerkDone) == 0x0002B1, "Member 'UPerkTierWidgetNew_C::bFirstPerkDone' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, bIncludeDescription) == 0x0002B2, "Member 'UPerkTierWidgetNew_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UPerkTierWidgetNew_C, IconSize) == 0x0002B3, "Member 'UPerkTierWidgetNew_C::IconSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

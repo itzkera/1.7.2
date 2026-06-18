@@ -13,8 +13,8 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TT_Generic_AdrenalineRush.TT_Generic_AdrenalineRush_C.InitializeAbilityInstanceInternal
 // 0x0020 (0x0020 - 0x0000)
@@ -26,12 +26,6 @@ public:
 	class UGA_Generic_AdrenalineRush_C*           K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal");
-static_assert(sizeof(TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal) == 0x000020, "Wrong size on TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal, AbilityInstance) == 0x000000, "Member 'TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal, Context) == 0x000008, "Member 'TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal::Context' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal, K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush) == 0x000010, "Member 'TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal::K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'TT_Generic_AdrenalineRush_C_InitializeAbilityInstanceInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function TT_Generic_AdrenalineRush.TT_Generic_AdrenalineRush_C.GetTextForTokenFromAbilityInstanceInternal
 // 0x0150 (0x0150 - 0x0000)
@@ -69,32 +63,6 @@ public:
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select2_Default;                            // 0x0138(0x0018)()
 };
-static_assert(alignof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal");
-static_assert(sizeof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000150, "Wrong size on TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, AbilityInstance) == 0x000000, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Tag) == 0x000008, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Tag' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Context) == 0x000010, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Context' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Token) == 0x000018, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Token' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, OutText) == 0x000020, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::OutText' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, ReturnValue) == 0x000038, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, AdrenalineRush) == 0x000040, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::AdrenalineRush' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000048, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush) == 0x000050, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_IsValid_ReturnValue) == 0x000059, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable) == 0x000060, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Round_ReturnValue) == 0x000078, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue) == 0x000080, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_FloatToText_ReturnValue) == 0x000098, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable2) == 0x0000B0, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable) == 0x0000C8, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Round_ReturnValue2) == 0x0000CC, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Round_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select_Default) == 0x0000D0, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue2) == 0x0000E8, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable3) == 0x000100, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable4) == 0x000118, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable2) == 0x000130, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select2_Default) == 0x000138, "Member 'TT_Generic_AdrenalineRush_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select2_Default' has a wrong offset!");
 
 // Function TT_Generic_AdrenalineRush.TT_Generic_AdrenalineRush_C.GetApplicationTag
 // 0x0028 (0x0028 - 0x0000)
@@ -108,13 +76,6 @@ public:
 	class UGA_Generic_AdrenalineRush_C*           K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush;   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TT_Generic_AdrenalineRush_C_GetApplicationTag) == 0x000008, "Wrong alignment on TT_Generic_AdrenalineRush_C_GetApplicationTag");
-static_assert(sizeof(TT_Generic_AdrenalineRush_C_GetApplicationTag) == 0x000028, "Wrong size on TT_Generic_AdrenalineRush_C_GetApplicationTag");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetApplicationTag, AbilityInstance) == 0x000000, "Member 'TT_Generic_AdrenalineRush_C_GetApplicationTag::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetApplicationTag, OutTag) == 0x000008, "Member 'TT_Generic_AdrenalineRush_C_GetApplicationTag::OutTag' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetApplicationTag, ReturnValue) == 0x000010, "Member 'TT_Generic_AdrenalineRush_C_GetApplicationTag::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetApplicationTag, K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush) == 0x000018, "Member 'TT_Generic_AdrenalineRush_C_GetApplicationTag::K2Node_DynamicCast_AsGA_Generic_Adrenaline_Rush' has a wrong offset!");
-static_assert(offsetof(TT_Generic_AdrenalineRush_C_GetApplicationTag, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'TT_Generic_AdrenalineRush_C_GetApplicationTag::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

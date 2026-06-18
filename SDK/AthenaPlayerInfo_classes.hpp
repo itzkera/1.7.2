@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaPlayerInfo.AthenaPlayerInfo_C
 // 0x0020 (0x0280 - 0x0260)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaPlayerInfo_C">();
+		BP_STATIC_CLASS_IMPL("AthenaPlayerInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaPlayerInfo_C")
 	}
 	static class UAthenaPlayerInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaPlayerInfo_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayerInfo_C) == 0x000008, "Wrong alignment on UAthenaPlayerInfo_C");
-static_assert(sizeof(UAthenaPlayerInfo_C) == 0x000280, "Wrong size on UAthenaPlayerInfo_C");
-static_assert(offsetof(UAthenaPlayerInfo_C, UberGraphFrame) == 0x000260, "Member 'UAthenaPlayerInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerInfo_C, _Horizontal_Box__Player_Info) == 0x000268, "Member 'UAthenaPlayerInfo_C::_Horizontal_Box__Player_Info' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerInfo_C, LeaderImage) == 0x000270, "Member 'UAthenaPlayerInfo_C::LeaderImage' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerInfo_C, TextPlayerName) == 0x000278, "Member 'UAthenaPlayerInfo_C::TextPlayerName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

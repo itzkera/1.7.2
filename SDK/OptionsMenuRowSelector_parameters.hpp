@@ -14,8 +14,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.ExecuteUbergraph_OptionsMenuRowSelector
 // 0x00F8 (0x00F8 - 0x0000)
@@ -42,27 +42,8 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate; // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector");
-static_assert(sizeof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector) == 0x0000F8, "Wrong size on OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, EntryPoint) == 0x000000, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::EntryPoint' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000004, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_Create_ReturnValue) == 0x000008, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_CustomEvent_AssociatedButton) == 0x000010, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_CustomEvent_AssociatedButton' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_CustomEvent_ButtonIndex) == 0x000018, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_CustomEvent_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_Event_MouseEvent) == 0x000020, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_SpawnObject_ReturnValue) == 0x000098, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_Event_IsDesignTime) == 0x0000A0, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_AddChild_ReturnValue) == 0x0000A8, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, Temp_text_Variable) == 0x0000B0, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_DynamicCast_AsHorizontal_Box_Slot) == 0x0000C8, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_DynamicCast_AsHorizontal_Box_Slot' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_MakeStruct_SlateChildSize) == 0x0000D4, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, Temp_int_Variable) == 0x0000DC, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000E0, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, CallFunc_Add_IntInt_ReturnValue) == 0x0000E4, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector, K2Node_CreateDelegate_OutputDelegate) == 0x0000E8, "Member 'OptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +52,6 @@ struct OptionsMenuRowSelector_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_PreConstruct) == 0x000001, "Wrong alignment on OptionsMenuRowSelector_C_PreConstruct");
-static_assert(sizeof(OptionsMenuRowSelector_C_PreConstruct) == 0x000001, "Wrong size on OptionsMenuRowSelector_C_PreConstruct");
-static_assert(offsetof(OptionsMenuRowSelector_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'OptionsMenuRowSelector_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnMouseLeave
 // 0x0078 (0x0078 - 0x0000)
@@ -82,9 +60,6 @@ struct OptionsMenuRowSelector_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuRowSelector_C_OnMouseLeave) == 0x000078, "Wrong size on OptionsMenuRowSelector_C_OnMouseLeave");
-static_assert(offsetof(OptionsMenuRowSelector_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuRowSelector_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnSelectedButtonChanged_Event_0
 // 0x0010 (0x0010 - 0x0000)
@@ -94,10 +69,6 @@ public:
 	class UCommonButton*                          AssociatedButton;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ButtonIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0");
-static_assert(sizeof(OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0) == 0x000010, "Wrong size on OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0");
-static_assert(offsetof(OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0, AssociatedButton) == 0x000000, "Member 'OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0::AssociatedButton' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0, ButtonIndex) == 0x000008, "Member 'OptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0::ButtonIndex' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Initialize Row Selector
 // 0x00B0 (0x00B0 - 0x0000)
@@ -125,25 +96,6 @@ public:
 	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_Initialize_Row_Selector) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_Initialize_Row_Selector");
-static_assert(sizeof(OptionsMenuRowSelector_C_Initialize_Row_Selector) == 0x0000B0, "Wrong size on OptionsMenuRowSelector_C_Initialize_Row_Selector");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Row_Text) == 0x000000, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Row_Text' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Buttons) == 0x000018, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Buttons' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Hover_Texts_0) == 0x000028, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Hover_Texts_0' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Require_Selection) == 0x000038, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Require_Selection' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Tab_Tooltip) == 0x000040, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Tab_Tooltip' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Temp_int_Array_Index_Variable) == 0x000048, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, Temp_int_Loop_Counter_Variable) == 0x00004C, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, CallFunc_Create_ReturnValue) == 0x000058, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, CallFunc_Array_Get_Item) == 0x000060, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, K2Node_MakeStruct_SlateChildSize) == 0x000080, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, K2Node_CreateDelegate_OutputDelegate) == 0x000088, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, CallFunc_AddChild_ReturnValue) == 0x000098, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, K2Node_DynamicCast_AsHorizontal_Box_Slot) == 0x0000A0, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::K2Node_DynamicCast_AsHorizontal_Box_Slot' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Initialize_Row_Selector, K2Node_DynamicCast_bSuccess) == 0x0000A8, "Member 'OptionsMenuRowSelector_C_Initialize_Row_Selector::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Update Row Selector
 // 0x0004 (0x0004 - 0x0000)
@@ -152,9 +104,6 @@ struct OptionsMenuRowSelector_C_Update_Row_Selector final
 public:
 	int32                                         Tab_Number;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_Update_Row_Selector) == 0x000004, "Wrong alignment on OptionsMenuRowSelector_C_Update_Row_Selector");
-static_assert(sizeof(OptionsMenuRowSelector_C_Update_Row_Selector) == 0x000004, "Wrong size on OptionsMenuRowSelector_C_Update_Row_Selector");
-static_assert(offsetof(OptionsMenuRowSelector_C_Update_Row_Selector, Tab_Number) == 0x000000, "Member 'OptionsMenuRowSelector_C_Update_Row_Selector::Tab_Number' has a wrong offset!");
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Button Hovered
 // 0x0040 (0x0040 - 0x0000)
@@ -171,16 +120,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRowSelector_C_Button_Hovered) == 0x000008, "Wrong alignment on OptionsMenuRowSelector_C_Button_Hovered");
-static_assert(sizeof(OptionsMenuRowSelector_C_Button_Hovered) == 0x000040, "Wrong size on OptionsMenuRowSelector_C_Button_Hovered");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, Button_Hovered_0) == 0x000000, "Member 'OptionsMenuRowSelector_C_Button_Hovered::Button_Hovered_0' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, CallFunc_GetChildrenCount_ReturnValue) == 0x000008, "Member 'OptionsMenuRowSelector_C_Button_Hovered::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, Temp_int_Variable) == 0x00000C, "Member 'OptionsMenuRowSelector_C_Button_Hovered::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'OptionsMenuRowSelector_C_Button_Hovered::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, CallFunc_Array_Get_Item) == 0x000018, "Member 'OptionsMenuRowSelector_C_Button_Hovered::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, CallFunc_GetChildAt_ReturnValue) == 0x000030, "Member 'OptionsMenuRowSelector_C_Button_Hovered::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000038, "Member 'OptionsMenuRowSelector_C_Button_Hovered::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRowSelector_C_Button_Hovered, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000039, "Member 'OptionsMenuRowSelector_C_Button_Hovered::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

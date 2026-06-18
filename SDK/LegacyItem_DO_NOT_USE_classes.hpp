@@ -10,21 +10,20 @@
 
 #include "Basic.hpp"
 
-#include "FortniteUI_structs.hpp"
-#include "FortniteUI_classes.hpp"
 #include "ItemTextureSet_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
 #include "ItemDisplayStyle_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "ItemDisplayMode_structs.hpp"
 #include "ItemTextureStylesheet_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "FortniteUI_structs.hpp"
+#include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C
 // 0x1508 (0x1DA8 - 0x08A0)
@@ -127,60 +126,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyItem_DO_NOT_USE_C">();
+		BP_STATIC_CLASS_IMPL("LegacyItem_DO_NOT_USE_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyItem_DO_NOT_USE_C")
 	}
 	static class ULegacyItem_DO_NOT_USE_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyItem_DO_NOT_USE_C>();
 	}
 };
-static_assert(alignof(ULegacyItem_DO_NOT_USE_C) == 0x000008, "Wrong alignment on ULegacyItem_DO_NOT_USE_C");
-static_assert(sizeof(ULegacyItem_DO_NOT_USE_C) == 0x001DA8, "Wrong size on ULegacyItem_DO_NOT_USE_C");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, UberGraphFrame) == 0x0008A0, "Member 'ULegacyItem_DO_NOT_USE_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Border_SecondaryIconFill) == 0x0008A8, "Member 'ULegacyItem_DO_NOT_USE_C::Border_SecondaryIconFill' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Border_SecondaryIconFrame) == 0x0008B0, "Member 'ULegacyItem_DO_NOT_USE_C::Border_SecondaryIconFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Border_TertiaryIconFill) == 0x0008B8, "Member 'ULegacyItem_DO_NOT_USE_C::Border_TertiaryIconFill' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Border_TertiaryIconFrame) == 0x0008C0, "Member 'ULegacyItem_DO_NOT_USE_C::Border_TertiaryIconFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, HorizontalBox_SubtypeIcons) == 0x0008C8, "Member 'ULegacyItem_DO_NOT_USE_C::HorizontalBox_SubtypeIcons' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Image_BaseMaterial) == 0x0008D0, "Member 'ULegacyItem_DO_NOT_USE_C::Image_BaseMaterial' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Image_Chamfer) == 0x0008D8, "Member 'ULegacyItem_DO_NOT_USE_C::Image_Chamfer' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Image_PrimaryIcon) == 0x0008E0, "Member 'ULegacyItem_DO_NOT_USE_C::Image_PrimaryIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Image_SecondaryIcon) == 0x0008E8, "Member 'ULegacyItem_DO_NOT_USE_C::Image_SecondaryIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Image_TertiaryIcon) == 0x0008F0, "Member 'ULegacyItem_DO_NOT_USE_C::Image_TertiaryIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, SizeBox) == 0x0008F8, "Member 'ULegacyItem_DO_NOT_USE_C::SizeBox' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Text_AmmoCounter) == 0x000900, "Member 'ULegacyItem_DO_NOT_USE_C::Text_AmmoCounter' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, VerticalBox_SubtypeIconsAmmoCount) == 0x000908, "Member 'ULegacyItem_DO_NOT_USE_C::VerticalBox_SubtypeIconsAmmoCount' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Widget_CooldownMeter) == 0x000910, "Member 'ULegacyItem_DO_NOT_USE_C::Widget_CooldownMeter' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Widget_DurabilityMeter) == 0x000918, "Member 'ULegacyItem_DO_NOT_USE_C::Widget_DurabilityMeter' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Widget_Rating) == 0x000920, "Member 'ULegacyItem_DO_NOT_USE_C::Widget_Rating' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Widget_StackCounter) == 0x000928, "Member 'ULegacyItem_DO_NOT_USE_C::Widget_StackCounter' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Widget_TierBadge) == 0x000930, "Member 'ULegacyItem_DO_NOT_USE_C::Widget_TierBadge' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, RarityData) == 0x000938, "Member 'ULegacyItem_DO_NOT_USE_C::RarityData' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, CanBeDragged) == 0x0009B8, "Member 'ULegacyItem_DO_NOT_USE_C::CanBeDragged' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, DragTagString) == 0x0009C0, "Member 'ULegacyItem_DO_NOT_USE_C::DragTagString' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, ItemData) == 0x0009D0, "Member 'ULegacyItem_DO_NOT_USE_C::ItemData' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, DisplayMode) == 0x0009D8, "Member 'ULegacyItem_DO_NOT_USE_C::DisplayMode' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, DisplayStyle) == 0x0009D9, "Member 'ULegacyItem_DO_NOT_USE_C::DisplayStyle' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Item_Textures) == 0x0009E0, "Member 'ULegacyItem_DO_NOT_USE_C::Item_Textures' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Item_Texture_Stylesheet) == 0x001408, "Member 'ULegacyItem_DO_NOT_USE_C::Item_Texture_Stylesheet' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Subtype_Icon_Frame) == 0x001418, "Member 'ULegacyItem_DO_NOT_USE_C::Subtype_Icon_Frame' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, AmmoMultiFont) == 0x001778, "Member 'ULegacyItem_DO_NOT_USE_C::AmmoMultiFont' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, TooltipHeaderText) == 0x0019E8, "Member 'ULegacyItem_DO_NOT_USE_C::TooltipHeaderText' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, TooltipHeaderIcon) == 0x001A00, "Member 'ULegacyItem_DO_NOT_USE_C::TooltipHeaderIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, InfiniteAmmo) == 0x001A08, "Member 'ULegacyItem_DO_NOT_USE_C::InfiniteAmmo' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, DemoItemData) == 0x001A10, "Member 'ULegacyItem_DO_NOT_USE_C::DemoItemData' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Subtype_Icon_Fill) == 0x001A18, "Member 'ULegacyItem_DO_NOT_USE_C::Subtype_Icon_Fill' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Subtype_Fill_Color) == 0x001D78, "Member 'ULegacyItem_DO_NOT_USE_C::Subtype_Fill_Color' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, Subtype_Frame_Color) == 0x001D88, "Member 'ULegacyItem_DO_NOT_USE_C::Subtype_Frame_Color' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, OverrideSecondaryTypeIconColor) == 0x001D98, "Member 'ULegacyItem_DO_NOT_USE_C::OverrideSecondaryTypeIconColor' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, ShowSecondaryTypeIcon) == 0x001D99, "Member 'ULegacyItem_DO_NOT_USE_C::ShowSecondaryTypeIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, ShowTertiaryTypeIcon) == 0x001D9A, "Member 'ULegacyItem_DO_NOT_USE_C::ShowTertiaryTypeIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, OverrideTertiaryTypeIconColor) == 0x001D9B, "Member 'ULegacyItem_DO_NOT_USE_C::OverrideTertiaryTypeIconColor' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, OverridePrimaryIconVisibility) == 0x001D9C, "Member 'ULegacyItem_DO_NOT_USE_C::OverridePrimaryIconVisibility' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, ShowStackCounter) == 0x001D9D, "Member 'ULegacyItem_DO_NOT_USE_C::ShowStackCounter' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, OverrideDisplayStyle) == 0x001D9E, "Member 'ULegacyItem_DO_NOT_USE_C::OverrideDisplayStyle' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, ShowPrimaryIcon) == 0x001D9F, "Member 'ULegacyItem_DO_NOT_USE_C::ShowPrimaryIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyItem_DO_NOT_USE_C, bDropOccured) == 0x001DA0, "Member 'ULegacyItem_DO_NOT_USE_C::bDropOccured' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

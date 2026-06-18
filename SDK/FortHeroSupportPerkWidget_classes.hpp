@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C
 // 0x0090 (0x0648 - 0x05B8)
@@ -61,35 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortHeroSupportPerkWidget_C">();
+		BP_STATIC_CLASS_IMPL("FortHeroSupportPerkWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortHeroSupportPerkWidget_C")
 	}
 	static class UFortHeroSupportPerkWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortHeroSupportPerkWidget_C>();
 	}
 };
-static_assert(alignof(UFortHeroSupportPerkWidget_C) == 0x000008, "Wrong alignment on UFortHeroSupportPerkWidget_C");
-static_assert(sizeof(UFortHeroSupportPerkWidget_C) == 0x000648, "Wrong size on UFortHeroSupportPerkWidget_C");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, UberGraphFrame) == 0x0005B8, "Member 'UFortHeroSupportPerkWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, BorderShell) == 0x0005C0, "Member 'UFortHeroSupportPerkWidget_C::BorderShell' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, DescriptionTextSwitcher) == 0x0005C8, "Member 'UFortHeroSupportPerkWidget_C::DescriptionTextSwitcher' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, EvolutionBorder) == 0x0005D0, "Member 'UFortHeroSupportPerkWidget_C::EvolutionBorder' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, HighlightBorder) == 0x0005D8, "Member 'UFortHeroSupportPerkWidget_C::HighlightBorder' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, ImageSquadBonusType) == 0x0005E0, "Member 'UFortHeroSupportPerkWidget_C::ImageSquadBonusType' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, ImageSquadBonusTypeShadow) == 0x0005E8, "Member 'UFortHeroSupportPerkWidget_C::ImageSquadBonusTypeShadow' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, InvalidForSlotImage) == 0x0005F0, "Member 'UFortHeroSupportPerkWidget_C::InvalidForSlotImage' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, InvalidSlotText) == 0x0005F8, "Member 'UFortHeroSupportPerkWidget_C::InvalidSlotText' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, LockedPerkImage) == 0x000600, "Member 'UFortHeroSupportPerkWidget_C::LockedPerkImage' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, PerkBoxBorder) == 0x000608, "Member 'UFortHeroSupportPerkWidget_C::PerkBoxBorder' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, SquadBonusTypeText) == 0x000610, "Member 'UFortHeroSupportPerkWidget_C::SquadBonusTypeText' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, StarsRequired) == 0x000618, "Member 'UFortHeroSupportPerkWidget_C::StarsRequired' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, UnlockAtText) == 0x000620, "Member 'UFortHeroSupportPerkWidget_C::UnlockAtText' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, UnlockText) == 0x000628, "Member 'UFortHeroSupportPerkWidget_C::UnlockText' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, Name_Text_Style) == 0x000630, "Member 'UFortHeroSupportPerkWidget_C::Name_Text_Style' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, Description_Text_Style) == 0x000638, "Member 'UFortHeroSupportPerkWidget_C::Description_Text_Style' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, SupportTypeMatchesDisplay) == 0x000640, "Member 'UFortHeroSupportPerkWidget_C::SupportTypeMatchesDisplay' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, DisplayHeaderIfActive) == 0x000641, "Member 'UFortHeroSupportPerkWidget_C::DisplayHeaderIfActive' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_C, DisplayedOutsideOfHeroSquad) == 0x000642, "Member 'UFortHeroSupportPerkWidget_C::DisplayedOutsideOfHeroSquad' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

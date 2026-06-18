@@ -17,8 +17,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BuildingBar.BuildingBar_C.ExecuteUbergraph_BuildingBar
 // 0x0008 (0x0008 - 0x0000)
@@ -28,10 +28,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_ExecuteUbergraph_BuildingBar) == 0x000004, "Wrong alignment on BuildingBar_C_ExecuteUbergraph_BuildingBar");
-static_assert(sizeof(BuildingBar_C_ExecuteUbergraph_BuildingBar) == 0x000008, "Wrong size on BuildingBar_C_ExecuteUbergraph_BuildingBar");
-static_assert(offsetof(BuildingBar_C_ExecuteUbergraph_BuildingBar, EntryPoint) == 0x000000, "Member 'BuildingBar_C_ExecuteUbergraph_BuildingBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_ExecuteUbergraph_BuildingBar, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BuildingBar_C_ExecuteUbergraph_BuildingBar::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -40,9 +36,6 @@ struct BuildingBar_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_PreConstruct) == 0x000001, "Wrong alignment on BuildingBar_C_PreConstruct");
-static_assert(sizeof(BuildingBar_C_PreConstruct) == 0x000001, "Wrong size on BuildingBar_C_PreConstruct");
-static_assert(offsetof(BuildingBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BuildingBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Max HP Value
 // 0x0090 (0x0090 - 0x0000)
@@ -57,15 +50,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
 	bool                                          CallFunc_EqualEqual_FloatFloat_ReturnValue;        // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Update_Max_HP_Value) == 0x000008, "Wrong alignment on BuildingBar_C_Update_Max_HP_Value");
-static_assert(sizeof(BuildingBar_C_Update_Max_HP_Value) == 0x000090, "Wrong size on BuildingBar_C_Update_Max_HP_Value");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, Max) == 0x000000, "Member 'BuildingBar_C_Update_Max_HP_Value::Max' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, CallFunc_FCeil_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update_Max_HP_Value::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Max_HP_Value::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'BuildingBar_C_Update_Max_HP_Value::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, K2Node_MakeArray_Array) == 0x000060, "Member 'BuildingBar_C_Update_Max_HP_Value::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, CallFunc_Format_ReturnValue) == 0x000070, "Member 'BuildingBar_C_Update_Max_HP_Value::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_HP_Value, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000088, "Member 'BuildingBar_C_Update_Max_HP_Value::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Current HP Value
 // 0x0028 (0x0028 - 0x0000)
@@ -78,12 +62,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
 };
-static_assert(alignof(BuildingBar_C_Update_Current_HP_Value) == 0x000008, "Wrong alignment on BuildingBar_C_Update_Current_HP_Value");
-static_assert(sizeof(BuildingBar_C_Update_Current_HP_Value) == 0x000028, "Wrong size on BuildingBar_C_Update_Current_HP_Value");
-static_assert(offsetof(BuildingBar_C_Update_Current_HP_Value, Current) == 0x000000, "Member 'BuildingBar_C_Update_Current_HP_Value::Current' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Current_HP_Value, CallFunc_FCeil_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update_Current_HP_Value::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Current_HP_Value, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Current_HP_Value::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Current_HP_Value, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'BuildingBar_C_Update_Current_HP_Value::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update HP Fill Bar
 // 0x0050 (0x0050 - 0x0000)
@@ -110,24 +88,6 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x003C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingBar_C_Update_HP_Fill_Bar) == 0x000008, "Wrong alignment on BuildingBar_C_Update_HP_Fill_Bar");
-static_assert(sizeof(BuildingBar_C_Update_HP_Fill_Bar) == 0x000050, "Wrong size on BuildingBar_C_Update_HP_Fill_Bar");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000000, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, Temp_float_Variable) == 0x000004, "Member 'BuildingBar_C_Update_HP_Fill_Bar::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, K2Node_DynamicCast_AsSize_Box_Slot) == 0x000008, "Member 'BuildingBar_C_Update_HP_Fill_Bar::K2Node_DynamicCast_AsSize_Box_Slot' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BuildingBar_C_Update_HP_Fill_Bar::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_BreakVector2D_X) == 0x000014, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_BreakVector2D_Y) == 0x000018, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, Temp_bool_Variable) == 0x000020, "Member 'BuildingBar_C_Update_HP_Fill_Bar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000021, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000028, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Add_FloatFloat_ReturnValue) == 0x00002C, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000030, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000034, "Member 'BuildingBar_C_Update_HP_Fill_Bar::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, K2Node_Select_Default) == 0x000038, "Member 'BuildingBar_C_Update_HP_Fill_Bar::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Fill_Bar, K2Node_MakeStruct_LinearColor) == 0x00003C, "Member 'BuildingBar_C_Update_HP_Fill_Bar::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update HP Delta Bar
 // 0x0008 (0x0008 - 0x0000)
@@ -137,10 +97,6 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Update_HP_Delta_Bar) == 0x000004, "Wrong alignment on BuildingBar_C_Update_HP_Delta_Bar");
-static_assert(sizeof(BuildingBar_C_Update_HP_Delta_Bar) == 0x000008, "Wrong size on BuildingBar_C_Update_HP_Delta_Bar");
-static_assert(offsetof(BuildingBar_C_Update_HP_Delta_Bar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000000, "Member 'BuildingBar_C_Update_HP_Delta_Bar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_HP_Delta_Bar, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update_HP_Delta_Bar::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update
 // 0x0008 (0x0008 - 0x0000)
@@ -151,10 +107,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingBar_C_Update) == 0x000004, "Wrong alignment on BuildingBar_C_Update");
-static_assert(sizeof(BuildingBar_C_Update) == 0x000008, "Wrong size on BuildingBar_C_Update");
-static_assert(offsetof(BuildingBar_C_Update, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000000, "Member 'BuildingBar_C_Update::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update, CallFunc_Lerp_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Set Timer
 // 0x0028 (0x0028 - 0x0000)
@@ -168,12 +120,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Set_Timer) == 0x000008, "Wrong alignment on BuildingBar_C_Set_Timer");
-static_assert(sizeof(BuildingBar_C_Set_Timer) == 0x000028, "Wrong size on BuildingBar_C_Set_Timer");
-static_assert(offsetof(BuildingBar_C_Set_Timer, Enabled) == 0x000000, "Member 'BuildingBar_C_Set_Timer::Enabled' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Timer, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BuildingBar_C_Set_Timer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Timer, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000018, "Member 'BuildingBar_C_Set_Timer::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Timer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'BuildingBar_C_Set_Timer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Initialize Bar
 // 0x0010 (0x0010 - 0x0000)
@@ -183,10 +129,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingBar_C_Initialize_Bar) == 0x000008, "Wrong alignment on BuildingBar_C_Initialize_Bar");
-static_assert(sizeof(BuildingBar_C_Initialize_Bar) == 0x000010, "Wrong size on BuildingBar_C_Initialize_Bar");
-static_assert(offsetof(BuildingBar_C_Initialize_Bar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000000, "Member 'BuildingBar_C_Initialize_Bar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Initialize_Bar, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000008, "Member 'BuildingBar_C_Initialize_Bar::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Max Durability Value
 // 0x000C (0x000C - 0x0000)
@@ -198,12 +140,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue2;           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Update_Max_Durability_Value) == 0x000004, "Wrong alignment on BuildingBar_C_Update_Max_Durability_Value");
-static_assert(sizeof(BuildingBar_C_Update_Max_Durability_Value) == 0x00000C, "Wrong size on BuildingBar_C_Update_Max_Durability_Value");
-static_assert(offsetof(BuildingBar_C_Update_Max_Durability_Value, Max) == 0x000000, "Member 'BuildingBar_C_Update_Max_Durability_Value::Max' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_Durability_Value, CallFunc_Round_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update_Max_Durability_Value::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_Durability_Value, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Max_Durability_Value::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Max_Durability_Value, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000009, "Member 'BuildingBar_C_Update_Max_Durability_Value::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Current Durability Value
 // 0x000C (0x000C - 0x0000)
@@ -214,11 +150,6 @@ public:
 	int32                                         CallFunc_Round_ReturnValue;                        // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_Update_Current_Durability_Value) == 0x000004, "Wrong alignment on BuildingBar_C_Update_Current_Durability_Value");
-static_assert(sizeof(BuildingBar_C_Update_Current_Durability_Value) == 0x00000C, "Wrong size on BuildingBar_C_Update_Current_Durability_Value");
-static_assert(offsetof(BuildingBar_C_Update_Current_Durability_Value, CurrentDurability) == 0x000000, "Member 'BuildingBar_C_Update_Current_Durability_Value::CurrentDurability' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Current_Durability_Value, CallFunc_Round_ReturnValue) == 0x000004, "Member 'BuildingBar_C_Update_Current_Durability_Value::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Current_Durability_Value, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Current_Durability_Value::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Update Durability Text
 // 0x00E8 (0x00E8 - 0x0000)
@@ -236,16 +167,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00D0(0x0018)()
 };
-static_assert(alignof(BuildingBar_C_Update_Durability_Text) == 0x000008, "Wrong alignment on BuildingBar_C_Update_Durability_Text");
-static_assert(sizeof(BuildingBar_C_Update_Durability_Text) == 0x0000E8, "Wrong size on BuildingBar_C_Update_Durability_Text");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, Temp_bool_Variable) == 0x000000, "Member 'BuildingBar_C_Update_Durability_Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'BuildingBar_C_Update_Durability_Text::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'BuildingBar_C_Update_Durability_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, K2Node_MakeStruct_FormatArgumentData2) == 0x000060, "Member 'BuildingBar_C_Update_Durability_Text::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A0, "Member 'BuildingBar_C_Update_Durability_Text::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, K2Node_MakeArray_Array) == 0x0000A8, "Member 'BuildingBar_C_Update_Durability_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, CallFunc_Format_ReturnValue) == 0x0000B8, "Member 'BuildingBar_C_Update_Durability_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Update_Durability_Text, K2Node_Select_Default) == 0x0000D0, "Member 'BuildingBar_C_Update_Durability_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.Set Display Mode
 // 0x00E8 (0x00E8 - 0x0000)
@@ -294,43 +215,6 @@ public:
 	int32                                         K2Node_Select5_Default;                            // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select6_Default;                            // 0x00D8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BuildingBar_C_Set_Display_Mode) == 0x000008, "Wrong alignment on BuildingBar_C_Set_Display_Mode");
-static_assert(sizeof(BuildingBar_C_Set_Display_Mode) == 0x0000E8, "Wrong size on BuildingBar_C_Set_Display_Mode");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Display_Mode) == 0x000000, "Member 'BuildingBar_C_Set_Display_Mode::Display_Mode' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable) == 0x000004, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable2) == 0x000008, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable3) == 0x00000C, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable) == 0x000010, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable2) == 0x000011, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable3) == 0x000012, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable4) == 0x000013, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable5) == 0x000014, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable6) == 0x000015, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable7) == 0x000016, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable8) == 0x000017, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable9) == 0x000018, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_struct_Variable) == 0x00001C, "Member 'BuildingBar_C_Set_Display_Mode::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_struct_Variable2) == 0x00002C, "Member 'BuildingBar_C_Set_Display_Mode::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable10) == 0x00003C, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_struct_Variable3) == 0x000040, "Member 'BuildingBar_C_Set_Display_Mode::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_struct_Variable4) == 0x000050, "Member 'BuildingBar_C_Set_Display_Mode::Temp_struct_Variable4' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable11) == 0x000060, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable11' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_struct_Variable5) == 0x000064, "Member 'BuildingBar_C_Set_Display_Mode::Temp_struct_Variable5' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_struct_Variable6) == 0x000074, "Member 'BuildingBar_C_Set_Display_Mode::Temp_struct_Variable6' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable12) == 0x000084, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000085, "Member 'BuildingBar_C_Set_Display_Mode::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select_Default) == 0x000086, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable4) == 0x000088, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable4' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable5) == 0x00008C, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable5' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable6) == 0x000090, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable6' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select2_Default) == 0x000094, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select3_Default) == 0x0000A4, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_int_Variable7) == 0x0000B4, "Member 'BuildingBar_C_Set_Display_Mode::Temp_int_Variable7' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000B8, "Member 'BuildingBar_C_Set_Display_Mode::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, Temp_byte_Variable13) == 0x0000C0, "Member 'BuildingBar_C_Set_Display_Mode::Temp_byte_Variable13' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select4_Default) == 0x0000C4, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select5_Default) == 0x0000D4, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_Set_Display_Mode, K2Node_Select6_Default) == 0x0000D8, "Member 'BuildingBar_C_Set_Display_Mode::K2Node_Select6_Default' has a wrong offset!");
 
 // Function BuildingBar.BuildingBar_C.UpdateBuildingTrap
 // 0x0080 (0x0080 - 0x0000)
@@ -353,20 +237,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BuildingBar_C_UpdateBuildingTrap) == 0x000008, "Wrong alignment on BuildingBar_C_UpdateBuildingTrap");
-static_assert(sizeof(BuildingBar_C_UpdateBuildingTrap) == 0x000080, "Wrong size on BuildingBar_C_UpdateBuildingTrap");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, BuildingTrap) == 0x000000, "Member 'BuildingBar_C_UpdateBuildingTrap::BuildingTrap' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, Temp_byte_Variable) == 0x000008, "Member 'BuildingBar_C_UpdateBuildingTrap::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_GetTrapLevel_ReturnValue) == 0x00000C, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_GetTrapLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000018, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_GetRarityColor_ReturnValue) == 0x000020, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_GetRarityColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_IsValid_ReturnValue2) == 0x000030, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, K2Node_MakeStruct_SlateColor) == 0x000038, "Member 'BuildingBar_C_UpdateBuildingTrap::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, CallFunc_GetShortDisplayName_ReturnValue) == 0x000060, "Member 'BuildingBar_C_UpdateBuildingTrap::CallFunc_GetShortDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, Temp_byte_Variable2) == 0x000078, "Member 'BuildingBar_C_UpdateBuildingTrap::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, Temp_bool_Variable) == 0x000079, "Member 'BuildingBar_C_UpdateBuildingTrap::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BuildingBar_C_UpdateBuildingTrap, K2Node_Select_Default) == 0x00007A, "Member 'BuildingBar_C_UpdateBuildingTrap::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

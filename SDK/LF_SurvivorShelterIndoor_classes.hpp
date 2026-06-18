@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass LF_SurvivorShelterIndoor.LF_SurvivorShelterIndoor_C
 // 0x0000 (0x1080 - 0x1080)
@@ -23,15 +22,16 @@ class ALF_SurvivorShelterIndoor_C final : public ABuildingFoundation5x5
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LF_SurvivorShelterIndoor_C">();
+		BP_STATIC_CLASS_IMPL("LF_SurvivorShelterIndoor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LF_SurvivorShelterIndoor_C")
 	}
 	static class ALF_SurvivorShelterIndoor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALF_SurvivorShelterIndoor_C>();
 	}
 };
-static_assert(alignof(ALF_SurvivorShelterIndoor_C) == 0x000010, "Wrong alignment on ALF_SurvivorShelterIndoor_C");
-static_assert(sizeof(ALF_SurvivorShelterIndoor_C) == 0x001080, "Wrong size on ALF_SurvivorShelterIndoor_C");
 
-}
-
+SDK_NAMESPACE_END

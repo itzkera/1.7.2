@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCNS_Constructor_KineticOverload.GCNS_Constructor_KineticOverload_C
 // 0x0000 (0x0070 - 0x0070)
@@ -23,15 +22,16 @@ class UGCNS_Constructor_KineticOverload_C final : public UFortGameplayCueNotify_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNS_Constructor_KineticOverload_C">();
+		BP_STATIC_CLASS_IMPL("GCNS_Constructor_KineticOverload_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNS_Constructor_KineticOverload_C")
 	}
 	static class UGCNS_Constructor_KineticOverload_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCNS_Constructor_KineticOverload_C>();
 	}
 };
-static_assert(alignof(UGCNS_Constructor_KineticOverload_C) == 0x000008, "Wrong alignment on UGCNS_Constructor_KineticOverload_C");
-static_assert(sizeof(UGCNS_Constructor_KineticOverload_C) == 0x000070, "Wrong size on UGCNS_Constructor_KineticOverload_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OptionsMenuSlider_Light.OptionsMenuSlider_Light_C
 // 0x0070 (0x02A0 - 0x0230)
@@ -50,26 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuSlider_Light_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuSlider_Light_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuSlider_Light_C")
 	}
 	static class UOptionsMenuSlider_Light_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuSlider_Light_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuSlider_Light_C) == 0x000008, "Wrong alignment on UOptionsMenuSlider_Light_C");
-static_assert(sizeof(UOptionsMenuSlider_Light_C) == 0x0002A0, "Wrong size on UOptionsMenuSlider_Light_C");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, UberGraphFrame) == 0x000230, "Member 'UOptionsMenuSlider_Light_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, Button_0) == 0x000238, "Member 'UOptionsMenuSlider_Light_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, MenuSlider) == 0x000240, "Member 'UOptionsMenuSlider_Light_C::MenuSlider' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, SliderBackground) == 0x000248, "Member 'UOptionsMenuSlider_Light_C::SliderBackground' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, SliderText) == 0x000250, "Member 'UOptionsMenuSlider_Light_C::SliderText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, SliderValue) == 0x000258, "Member 'UOptionsMenuSlider_Light_C::SliderValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, SliderChanged) == 0x000260, "Member 'UOptionsMenuSlider_Light_C::SliderChanged' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, Total_Width) == 0x000270, "Member 'UOptionsMenuSlider_Light_C::Total_Width' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, Slider_Texture) == 0x000278, "Member 'UOptionsMenuSlider_Light_C::Slider_Texture' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, Tab_Tooltip_Text) == 0x000280, "Member 'UOptionsMenuSlider_Light_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuSlider_Light_C, Hover_Text) == 0x000288, "Member 'UOptionsMenuSlider_Light_C::Hover_Text' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

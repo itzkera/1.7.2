@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Announcement_QuestUpdate.Announcement_QuestUpdate_C
 // 0x0010 (0x0250 - 0x0240)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announcement_QuestUpdate_C">();
+		BP_STATIC_CLASS_IMPL("Announcement_QuestUpdate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announcement_QuestUpdate_C")
 	}
 	static class UAnnouncement_QuestUpdate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnnouncement_QuestUpdate_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_QuestUpdate_C) == 0x000008, "Wrong alignment on UAnnouncement_QuestUpdate_C");
-static_assert(sizeof(UAnnouncement_QuestUpdate_C) == 0x000250, "Wrong size on UAnnouncement_QuestUpdate_C");
-static_assert(offsetof(UAnnouncement_QuestUpdate_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_QuestUpdate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_QuestUpdate_C, QuestUpdateEntry) == 0x000248, "Member 'UAnnouncement_QuestUpdate_C::QuestUpdateEntry' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

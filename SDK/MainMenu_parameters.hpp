@@ -17,8 +17,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
 // 0x0418 (0x0418 - 0x0000)
@@ -99,7 +99,7 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0220(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate4; // 0x0220(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button30;               // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue2; // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -132,12 +132,12 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result2;                        // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName2;                    // 0x0308(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0310(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate5; // 0x0310(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button18;               // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button17;               // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button16;               // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue18;                 // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState)> K2Node_CreateDelegate_OutputDelegate6;             // 0x0340(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState)> K2Node_CreateDelegate_OutputDelegate6; // 0x0340(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsInZone_ReturnValue2;                    // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_351[0x7];                                      // 0x0351(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button15;               // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -164,130 +164,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0408(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000008, "Wrong alignment on MainMenu_C_ExecuteUbergraph_MainMenu");
-static_assert(sizeof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000418, "Wrong size on MainMenu_C_ExecuteUbergraph_MainMenu");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, EntryPoint) == 0x000000, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue4) == 0x000030, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue5) == 0x000038, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetInputManager_ReturnValue) == 0x000040, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue6) == 0x000048, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue7) == 0x000050, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUITestingClass_ReturnValue) == 0x000058, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUITestingClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetInputManager_ReturnValue2) == 0x000060, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetInputManager_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsValidClass_ReturnValue) == 0x000068, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue8) == 0x000070, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue9) == 0x000078, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue10) == 0x000080, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsInZone_ReturnValue) == 0x000088, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue11) == 0x000090, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue12) == 0x000098, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue13) == 0x0000A0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsUsingGamepad_ReturnValue) == 0x0000A8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate2) == 0x0000B0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_bool_Variable) == 0x0000C0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate3) == 0x0000C8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable) == 0x0000D8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable2) == 0x0000D9, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue14) == 0x0000E0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetAthenaCodeOfConductURL_ReturnValue) == 0x0000E8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetAthenaCodeOfConductURL_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_ShowWebURL_ReturnValue) == 0x0000F8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_ShowWebURL_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue15) == 0x000100, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue15' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue) == 0x000108, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button49) == 0x000110, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button49' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000120, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button48) == 0x000128, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button48' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button47) == 0x000130, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button47' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button46) == 0x000138, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button46' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button45) == 0x000140, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button45' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button44) == 0x000148, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button44' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetEmptyText_ReturnValue) == 0x000150, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable3) == 0x000168, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_SwitchEnum_CmpSuccess) == 0x000169, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button43) == 0x000170, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button43' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button42) == 0x000178, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button42' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button41) == 0x000180, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button41' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button40) == 0x000188, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button40' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button39) == 0x000190, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button39' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button38) == 0x000198, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button38' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button37) == 0x0001A0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button37' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button36) == 0x0001A8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button36' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_Button4) == 0x0001B0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_Button4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetButton_Leave) == 0x0001B8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetButton_Leave' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_Button3) == 0x0001C0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_Button3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetButton_Leave2) == 0x0001C8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetButton_Leave2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button35) == 0x0001D0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button35' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_name_Variable) == 0x0001D8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button34) == 0x0001E0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button34' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetButton_Leave3) == 0x0001E8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetButton_Leave3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button33) == 0x0001F0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button33' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button32) == 0x0001F8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button32' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button31) == 0x000200, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button31' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue16) == 0x000208, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue16' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_Result) == 0x000210, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_ResultName) == 0x000218, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate4) == 0x000220, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button30) == 0x000230, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button30' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue2) == 0x000238, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsValid_ReturnValue2) == 0x000240, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button29) == 0x000248, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button29' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button28) == 0x000250, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button28' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button27) == 0x000258, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button27' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x000260, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button26) == 0x000268, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button26' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetCachedWidget_ReturnValue) == 0x000270, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUIManagerWidget_ReturnValue3) == 0x000278, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUIManagerWidget_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button25) == 0x000280, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button25' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button24) == 0x000288, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button24' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button23) == 0x000290, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button23' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button22) == 0x000298, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button22' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button21) == 0x0002A0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button21' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUIManagerWidget_ReturnValue4) == 0x0002A8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUIManagerWidget_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button20) == 0x0002B0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button20' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUIManagerWidget_ReturnValue5) == 0x0002B8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUIManagerWidget_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button19) == 0x0002C0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button19' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_byte_Variable4) == 0x0002C8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, Temp_name_Variable2) == 0x0002D0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::Temp_name_Variable2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_SwitchEnum2_CmpSuccess) == 0x0002D8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue17) == 0x0002E0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue17' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetOwningPlayer_ReturnValue) == 0x0002E8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetInputManager_ReturnValue3) == 0x0002F0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetInputManager_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_Create_ReturnValue) == 0x0002F8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_Result2) == 0x000300, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_Result2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_ResultName2) == 0x000308, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_ResultName2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate5) == 0x000310, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button18) == 0x000320, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button18' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button17) == 0x000328, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button17' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button16) == 0x000330, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button16' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetContext_ReturnValue18) == 0x000338, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetContext_ReturnValue18' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate6) == 0x000340, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsInZone_ReturnValue2) == 0x000350, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsInZone_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button15) == 0x000358, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button15' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button14) == 0x000360, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button14' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button13) == 0x000368, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button13' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button12) == 0x000370, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button12' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button11) == 0x000378, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button11' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button10) == 0x000380, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button10' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button9) == 0x000388, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button9' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button8) == 0x000390, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button8' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button7) == 0x000398, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetEmptyText_ReturnValue2) == 0x0003A0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetEmptyText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CreateDelegate_OutputDelegate7) == 0x0003B8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button6) == 0x0003C8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button5) == 0x0003D0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_Button2) == 0x0003D8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_Button2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_CustomEvent_Button) == 0x0003E0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetUINavigationManager_ReturnValue) == 0x0003E8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Visibility) == 0x0003F0, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Visibility' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Select_Default) == 0x0003F1, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button4) == 0x0003F8, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button3) == 0x000400, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button2) == 0x000408, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_ComponentBoundEvent_Button) == 0x000410, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -296,9 +172,6 @@ struct MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -307,9 +180,6 @@ struct MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_60
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -318,9 +188,6 @@ struct MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_54
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -329,9 +196,6 @@ struct MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_48
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update Visibility__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -340,9 +204,6 @@ struct MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visi
 public:
 	bool                                          Visibility_0;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature) == 0x000001, "Wrong alignment on MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature) == 0x000001, "Wrong size on MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature, Visibility_0) == 0x000000, "Member 'MainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature::Visibility_0' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.Handle Game Mode Hovered
 // 0x0008 (0x0008 - 0x0000)
@@ -351,9 +212,6 @@ struct MainMenu_C_Handle_Game_Mode_Hovered final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_Handle_Game_Mode_Hovered) == 0x000008, "Wrong alignment on MainMenu_C_Handle_Game_Mode_Hovered");
-static_assert(sizeof(MainMenu_C_Handle_Game_Mode_Hovered) == 0x000008, "Wrong size on MainMenu_C_Handle_Game_Mode_Hovered");
-static_assert(offsetof(MainMenu_C_Handle_Game_Mode_Hovered, Button) == 0x000000, "Member 'MainMenu_C_Handle_Game_Mode_Hovered::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.Handle Game Mode Unhovered
 // 0x0008 (0x0008 - 0x0000)
@@ -362,9 +220,6 @@ struct MainMenu_C_Handle_Game_Mode_Unhovered final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_Handle_Game_Mode_Unhovered) == 0x000008, "Wrong alignment on MainMenu_C_Handle_Game_Mode_Unhovered");
-static_assert(sizeof(MainMenu_C_Handle_Game_Mode_Unhovered) == 0x000008, "Wrong size on MainMenu_C_Handle_Game_Mode_Unhovered");
-static_assert(offsetof(MainMenu_C_Handle_Game_Mode_Unhovered, Button) == 0x000000, "Member 'MainMenu_C_Handle_Game_Mode_Unhovered::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -373,9 +228,6 @@ struct MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -384,9 +236,6 @@ struct MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -395,9 +244,6 @@ struct MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -406,9 +252,6 @@ struct MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -417,9 +260,6 @@ struct MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -428,9 +268,6 @@ struct MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -439,9 +276,6 @@ struct MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -450,9 +284,6 @@ struct MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -461,9 +292,6 @@ struct MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -472,9 +300,6 @@ struct MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -483,9 +308,6 @@ struct MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonCl
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -494,9 +316,6 @@ struct MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -505,9 +324,6 @@ struct MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButto
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -516,9 +332,6 @@ struct MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -527,9 +340,6 @@ struct MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButt
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -538,9 +348,6 @@ struct MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -549,9 +356,6 @@ struct MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -560,9 +364,6 @@ struct MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -571,9 +372,6 @@ struct MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -582,9 +380,6 @@ struct MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_45
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -593,9 +388,6 @@ struct MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_42
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -604,9 +396,6 @@ struct MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButt
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -615,9 +404,6 @@ struct MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -626,9 +412,6 @@ struct MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonCl
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -637,9 +420,6 @@ struct MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -648,9 +428,6 @@ struct MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_25
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -659,9 +436,6 @@ struct MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButt
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -670,9 +444,6 @@ struct MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButt
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -681,9 +452,6 @@ struct MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButt
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -692,9 +460,6 @@ struct MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -703,9 +468,6 @@ struct MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClick
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.LeaveGameHovered
 // 0x0008 (0x0008 - 0x0000)
@@ -714,9 +476,6 @@ struct MainMenu_C_LeaveGameHovered final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_LeaveGameHovered) == 0x000008, "Wrong alignment on MainMenu_C_LeaveGameHovered");
-static_assert(sizeof(MainMenu_C_LeaveGameHovered) == 0x000008, "Wrong size on MainMenu_C_LeaveGameHovered");
-static_assert(offsetof(MainMenu_C_LeaveGameHovered, Button) == 0x000000, "Member 'MainMenu_C_LeaveGameHovered::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.LeaveUnhovered
 // 0x0008 (0x0008 - 0x0000)
@@ -725,9 +484,6 @@ struct MainMenu_C_LeaveUnhovered final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_LeaveUnhovered) == 0x000008, "Wrong alignment on MainMenu_C_LeaveUnhovered");
-static_assert(sizeof(MainMenu_C_LeaveUnhovered) == 0x000008, "Wrong size on MainMenu_C_LeaveUnhovered");
-static_assert(offsetof(MainMenu_C_LeaveUnhovered, Button) == 0x000000, "Member 'MainMenu_C_LeaveUnhovered::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -736,9 +492,6 @@ struct MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButt
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -747,9 +500,6 @@ struct MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonCl
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -758,9 +508,6 @@ struct MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -769,9 +516,6 @@ struct MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -780,9 +524,6 @@ struct MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -791,9 +532,6 @@ struct MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -802,9 +540,6 @@ struct MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClick
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -813,9 +548,6 @@ struct MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonCl
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -824,9 +556,6 @@ struct MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -835,9 +564,6 @@ struct MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -846,9 +572,6 @@ struct MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -857,9 +580,6 @@ struct MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonBu
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -868,9 +588,6 @@ struct MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -879,9 +596,6 @@ struct MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClick
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7
 // 0x0010 (0x0010 - 0x0000)
@@ -892,10 +606,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7) == 0x000008, "Wrong alignment on MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7");
-static_assert(sizeof(MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7) == 0x000010, "Wrong size on MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7");
-static_assert(offsetof(MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7, Result) == 0x000000, "Member 'MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7::Result' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7, ResultName) == 0x000008, "Member 'MainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7::ResultName' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0
 // 0x0010 (0x0010 - 0x0000)
@@ -906,10 +616,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0) == 0x000008, "Wrong alignment on MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0");
-static_assert(sizeof(MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0) == 0x000010, "Wrong size on MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0");
-static_assert(offsetof(MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0, Result) == 0x000000, "Member 'MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0::Result' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0, ResultName) == 0x000008, "Member 'MainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0::ResultName' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.SetupTestUI
 // 0x0030 (0x0030 - 0x0000)
@@ -925,15 +631,6 @@ public:
 	class UFortQuestItem*                         CallFunc_GetQuestWithDefinition_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_SetupTestUI) == 0x000008, "Wrong alignment on MainMenu_C_SetupTestUI");
-static_assert(sizeof(MainMenu_C_SetupTestUI) == 0x000030, "Wrong size on MainMenu_C_SetupTestUI");
-static_assert(offsetof(MainMenu_C_SetupTestUI, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'MainMenu_C_SetupTestUI::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetupTestUI, CallFunc_CheckFlag_OutStatus) == 0x000008, "Member 'MainMenu_C_SetupTestUI::CallFunc_CheckFlag_OutStatus' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetupTestUI, K2Node_SwitchEnum_CmpSuccess) == 0x000009, "Member 'MainMenu_C_SetupTestUI::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetupTestUI, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'MainMenu_C_SetupTestUI::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetupTestUI, CallFunc_GetQuestManager_ReturnValue) == 0x000018, "Member 'MainMenu_C_SetupTestUI::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetupTestUI, CallFunc_GetQuestWithDefinition_ReturnValue) == 0x000020, "Member 'MainMenu_C_SetupTestUI::CallFunc_GetQuestWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetupTestUI, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'MainMenu_C_SetupTestUI::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.InitializeMainMenu
 // 0x00D0 (0x00D0 - 0x0000)
@@ -991,50 +688,6 @@ public:
 	class UOptionsMenu_C*                         CallFunc_Create_ReturnValue7;                      // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMessageCenterWidget_C*                 CallFunc_Create_ReturnValue8;                      // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_InitializeMainMenu) == 0x000008, "Wrong alignment on MainMenu_C_InitializeMainMenu");
-static_assert(sizeof(MainMenu_C_InitializeMainMenu) == 0x0000D0, "Wrong size on MainMenu_C_InitializeMainMenu");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_IsInZone_ReturnValue) == 0x000008, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'MainMenu_C_InitializeMainMenu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_byte_Variable) == 0x000010, "Member 'MainMenu_C_InitializeMainMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_byte_Variable2) == 0x000011, "Member 'MainMenu_C_InitializeMainMenu::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_bool_Variable) == 0x000012, "Member 'MainMenu_C_InitializeMainMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, K2Node_Select_Default) == 0x000013, "Member 'MainMenu_C_InitializeMainMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, K2Node_MakeArray_Array) == 0x000018, "Member 'MainMenu_C_InitializeMainMenu::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Array_Get_Item) == 0x000030, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue) == 0x000038, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetContext_ReturnValue2) == 0x000048, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'MainMenu_C_InitializeMainMenu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_ArePartyFeaturesEnabled_ReturnValue) == 0x000054, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_ArePartyFeaturesEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Less_IntInt_ReturnValue) == 0x000055, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000060, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetContext_ReturnValue3) == 0x000068, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue2) == 0x000070, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_AllowQuit_ReturnValue) == 0x000078, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_AllowQuit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_IsInZone_ReturnValue2) == 0x000079, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_IsInZone_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_byte_Variable3) == 0x00007A, "Member 'MainMenu_C_InitializeMainMenu::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Not_PreBool_ReturnValue) == 0x00007B, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_BooleanAND_ReturnValue) == 0x00007C, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_IsOutpostOwner_OutpostOwner) == 0x00007D, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_IsOutpostOwner_OutpostOwner' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetContext_ReturnValue4) == 0x000080, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_AllowLogout_ReturnValue) == 0x000088, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_AllowLogout_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_byte_Variable4) == 0x000089, "Member 'MainMenu_C_InitializeMainMenu::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_byte_Variable5) == 0x00008A, "Member 'MainMenu_C_InitializeMainMenu::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_bool_Variable2) == 0x00008B, "Member 'MainMenu_C_InitializeMainMenu::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, K2Node_Select2_Default) == 0x00008C, "Member 'MainMenu_C_InitializeMainMenu::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_byte_Variable6) == 0x00008D, "Member 'MainMenu_C_InitializeMainMenu::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, Temp_bool_Variable3) == 0x00008E, "Member 'MainMenu_C_InitializeMainMenu::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_GetOwningPlayer_ReturnValue3) == 0x000090, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, K2Node_Select3_Default) == 0x000098, "Member 'MainMenu_C_InitializeMainMenu::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue3) == 0x0000A0, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue4) == 0x0000A8, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue5) == 0x0000B0, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue6) == 0x0000B8, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue7) == 0x0000C0, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_InitializeMainMenu, CallFunc_Create_ReturnValue8) == 0x0000C8, "Member 'MainMenu_C_InitializeMainMenu::CallFunc_Create_ReturnValue8' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.UpdateDescriptionText
 // 0x0018 (0x0018 - 0x0000)
@@ -1043,9 +696,6 @@ struct MainMenu_C_UpdateDescriptionText final
 public:
 	class FText                                   HelpText;                                          // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(MainMenu_C_UpdateDescriptionText) == 0x000008, "Wrong alignment on MainMenu_C_UpdateDescriptionText");
-static_assert(sizeof(MainMenu_C_UpdateDescriptionText) == 0x000018, "Wrong size on MainMenu_C_UpdateDescriptionText");
-static_assert(offsetof(MainMenu_C_UpdateDescriptionText, HelpText) == 0x000000, "Member 'MainMenu_C_UpdateDescriptionText::HelpText' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.UpdateButtonStates
 // 0x0040 (0x0040 - 0x0000)
@@ -1065,17 +715,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasCompletedQuest_ReturnValue;            // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_UpdateButtonStates) == 0x000008, "Wrong alignment on MainMenu_C_UpdateButtonStates");
-static_assert(sizeof(MainMenu_C_UpdateButtonStates) == 0x000040, "Wrong size on MainMenu_C_UpdateButtonStates");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_IsOutpostOwner_OutpostOwner) == 0x000000, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_IsOutpostOwner_OutpostOwner' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'MainMenu_C_UpdateButtonStates::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MainMenu_C_UpdateButtonStates::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_GetQuestManager_ReturnValue) == 0x000020, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_GetQuestWithDefinition_ReturnValue) == 0x000030, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_GetQuestWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_IsValid_ReturnValue2) == 0x000038, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdateButtonStates, CallFunc_HasCompletedQuest_ReturnValue) == 0x000039, "Member 'MainMenu_C_UpdateButtonStates::CallFunc_HasCompletedQuest_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.PushDailyRewards
 // 0x0050 (0x0050 - 0x0000)
@@ -1095,18 +734,6 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue4;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_PushDailyRewards) == 0x000008, "Wrong alignment on MainMenu_C_PushDailyRewards");
-static_assert(sizeof(MainMenu_C_PushDailyRewards) == 0x000050, "Wrong size on MainMenu_C_PushDailyRewards");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, K2Node_DynamicCast_AsDaily_Rewards) == 0x000018, "Member 'MainMenu_C_PushDailyRewards::K2Node_DynamicCast_AsDaily_Rewards' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'MainMenu_C_PushDailyRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetInputManager_ReturnValue) == 0x000030, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetContext_ReturnValue3) == 0x000038, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_IsInZone_ReturnValue) == 0x000040, "Member 'MainMenu_C_PushDailyRewards::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_PushDailyRewards, CallFunc_GetContext_ReturnValue4) == 0x000048, "Member 'MainMenu_C_PushDailyRewards::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.IsOutpostOwner
 // 0x0020 (0x0020 - 0x0000)
@@ -1120,13 +747,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsOutpostOwner_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_IsOutpostOwner) == 0x000008, "Wrong alignment on MainMenu_C_IsOutpostOwner");
-static_assert(sizeof(MainMenu_C_IsOutpostOwner) == 0x000020, "Wrong size on MainMenu_C_IsOutpostOwner");
-static_assert(offsetof(MainMenu_C_IsOutpostOwner, OutpostOwner) == 0x000000, "Member 'MainMenu_C_IsOutpostOwner::OutpostOwner' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_IsOutpostOwner, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MainMenu_C_IsOutpostOwner::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_IsOutpostOwner, K2Node_DynamicCast_AsFort_Player_Controller_Outpost) == 0x000010, "Member 'MainMenu_C_IsOutpostOwner::K2Node_DynamicCast_AsFort_Player_Controller_Outpost' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_IsOutpostOwner, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MainMenu_C_IsOutpostOwner::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_IsOutpostOwner, CallFunc_IsOutpostOwner_ReturnValue) == 0x000019, "Member 'MainMenu_C_IsOutpostOwner::CallFunc_IsOutpostOwner_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.UpdatePrivacyButton
 // 0x0018 (0x0018 - 0x0000)
@@ -1144,17 +764,6 @@ public:
 	bool                                          CallFunc_GetPartyPrivacySetting_OutLeaderInvitesOnly; // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetPartyPrivacySetting_ReturnValue;       // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_UpdatePrivacyButton) == 0x000008, "Wrong alignment on MainMenu_C_UpdatePrivacyButton");
-static_assert(sizeof(MainMenu_C_UpdatePrivacyButton) == 0x000018, "Wrong size on MainMenu_C_UpdatePrivacyButton");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, Overide_Party_Type) == 0x000000, "Member 'MainMenu_C_UpdatePrivacyButton::Overide_Party_Type' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, Use_Overide_Party_Type) == 0x000001, "Member 'MainMenu_C_UpdatePrivacyButton::Use_Overide_Party_Type' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, Party_Type) == 0x000002, "Member 'MainMenu_C_UpdatePrivacyButton::Party_Type' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, K2Node_SwitchEnum_CmpSuccess) == 0x000003, "Member 'MainMenu_C_UpdatePrivacyButton::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MainMenu_C_UpdatePrivacyButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, CallFunc_GetPartyPrivacySetting_OutPartyType) == 0x000010, "Member 'MainMenu_C_UpdatePrivacyButton::CallFunc_GetPartyPrivacySetting_OutPartyType' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, CallFunc_GetPartyPrivacySetting_OutLeaderFriendsOnly) == 0x000011, "Member 'MainMenu_C_UpdatePrivacyButton::CallFunc_GetPartyPrivacySetting_OutLeaderFriendsOnly' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, CallFunc_GetPartyPrivacySetting_OutLeaderInvitesOnly) == 0x000012, "Member 'MainMenu_C_UpdatePrivacyButton::CallFunc_GetPartyPrivacySetting_OutLeaderInvitesOnly' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_UpdatePrivacyButton, CallFunc_GetPartyPrivacySetting_ReturnValue) == 0x000013, "Member 'MainMenu_C_UpdatePrivacyButton::CallFunc_GetPartyPrivacySetting_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.SetPrivacyButtonData
 // 0x00B0 (0x00B0 - 0x0000)
@@ -1165,11 +774,6 @@ public:
 	class FText                                   Button_Text;                                       // 0x0008(0x0018)(Parm)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0020(0x0090)()
 };
-static_assert(alignof(MainMenu_C_SetPrivacyButtonData) == 0x000008, "Wrong alignment on MainMenu_C_SetPrivacyButtonData");
-static_assert(sizeof(MainMenu_C_SetPrivacyButtonData) == 0x0000B0, "Wrong size on MainMenu_C_SetPrivacyButtonData");
-static_assert(offsetof(MainMenu_C_SetPrivacyButtonData, Image) == 0x000000, "Member 'MainMenu_C_SetPrivacyButtonData::Image' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetPrivacyButtonData, Button_Text) == 0x000008, "Member 'MainMenu_C_SetPrivacyButtonData::Button_Text' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetPrivacyButtonData, K2Node_MakeStruct_SlateBrush) == 0x000020, "Member 'MainMenu_C_SetPrivacyButtonData::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.OpenPartyInvites
 // 0x0028 (0x0028 - 0x0000)
@@ -1183,27 +787,15 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_OpenPartyInvites) == 0x000008, "Wrong alignment on MainMenu_C_OpenPartyInvites");
-static_assert(sizeof(MainMenu_C_OpenPartyInvites) == 0x000028, "Wrong size on MainMenu_C_OpenPartyInvites");
-static_assert(offsetof(MainMenu_C_OpenPartyInvites, UIManager) == 0x000000, "Member 'MainMenu_C_OpenPartyInvites::UIManager' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OpenPartyInvites, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'MainMenu_C_OpenPartyInvites::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OpenPartyInvites, CallFunc_GetCachedWidget_ReturnValue) == 0x000010, "Member 'MainMenu_C_OpenPartyInvites::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OpenPartyInvites, K2Node_DynamicCast_AsParty_Finder) == 0x000018, "Member 'MainMenu_C_OpenPartyInvites::K2Node_DynamicCast_AsParty_Finder' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OpenPartyInvites, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'MainMenu_C_OpenPartyInvites::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OpenPartyInvites, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'MainMenu_C_OpenPartyInvites::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.OpenPartyPrivacy
 // 0x0018 (0x0018 - 0x0000)
 struct MainMenu_C_OpenPartyPrivacy final
 {
 public:
-	TDelegate<void(EPartyType PrivacyType, bool bAllowFriendsOfFriends)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPartyType PrivacyType, bool bAllowFriendsOfFriends)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_OpenPartyPrivacy) == 0x000008, "Wrong alignment on MainMenu_C_OpenPartyPrivacy");
-static_assert(sizeof(MainMenu_C_OpenPartyPrivacy) == 0x000018, "Wrong size on MainMenu_C_OpenPartyPrivacy");
-static_assert(offsetof(MainMenu_C_OpenPartyPrivacy, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'MainMenu_C_OpenPartyPrivacy::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OpenPartyPrivacy, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000010, "Member 'MainMenu_C_OpenPartyPrivacy::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandlePrivacySelected
 // 0x0020 (0x0020 - 0x0000)
@@ -1214,16 +806,9 @@ public:
 	bool                                          FriendsOfFriends;                                  // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPartyType PrivacyType, bool bAllowFriendsOfFriends)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EPartyType PrivacyType, bool bAllowFriendsOfFriends)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_HandlePrivacySelected) == 0x000008, "Wrong alignment on MainMenu_C_HandlePrivacySelected");
-static_assert(sizeof(MainMenu_C_HandlePrivacySelected) == 0x000020, "Wrong size on MainMenu_C_HandlePrivacySelected");
-static_assert(offsetof(MainMenu_C_HandlePrivacySelected, PartyPrivacyType) == 0x000000, "Member 'MainMenu_C_HandlePrivacySelected::PartyPrivacyType' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePrivacySelected, FriendsOfFriends) == 0x000001, "Member 'MainMenu_C_HandlePrivacySelected::FriendsOfFriends' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePrivacySelected, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'MainMenu_C_HandlePrivacySelected::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePrivacySelected, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MainMenu_C_HandlePrivacySelected::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePrivacySelected, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'MainMenu_C_HandlePrivacySelected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandleLocalPlayerStateChanged
 // 0x0190 (0x0190 - 0x0000)
@@ -1232,9 +817,6 @@ struct MainMenu_C_HandleLocalPlayerStateChanged final
 public:
 	struct FFortTeamMemberInfo                    MemberState;                                       // 0x0000(0x0190)(Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(MainMenu_C_HandleLocalPlayerStateChanged) == 0x000008, "Wrong alignment on MainMenu_C_HandleLocalPlayerStateChanged");
-static_assert(sizeof(MainMenu_C_HandleLocalPlayerStateChanged) == 0x000190, "Wrong size on MainMenu_C_HandleLocalPlayerStateChanged");
-static_assert(offsetof(MainMenu_C_HandleLocalPlayerStateChanged, MemberState) == 0x000000, "Member 'MainMenu_C_HandleLocalPlayerStateChanged::MemberState' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandleRemotePlayerStateChanged
 // 0x0190 (0x0190 - 0x0000)
@@ -1243,9 +825,6 @@ struct MainMenu_C_HandleRemotePlayerStateChanged final
 public:
 	struct FFortTeamMemberInfo                    NewMemberState;                                    // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(MainMenu_C_HandleRemotePlayerStateChanged) == 0x000008, "Wrong alignment on MainMenu_C_HandleRemotePlayerStateChanged");
-static_assert(sizeof(MainMenu_C_HandleRemotePlayerStateChanged) == 0x000190, "Wrong size on MainMenu_C_HandleRemotePlayerStateChanged");
-static_assert(offsetof(MainMenu_C_HandleRemotePlayerStateChanged, NewMemberState) == 0x000000, "Member 'MainMenu_C_HandleRemotePlayerStateChanged::NewMemberState' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandleRemotePlayerRemoved
 // 0x0004 (0x0004 - 0x0000)
@@ -1254,9 +833,6 @@ struct MainMenu_C_HandleRemotePlayerRemoved final
 public:
 	int32                                         RemovedIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_HandleRemotePlayerRemoved) == 0x000004, "Wrong alignment on MainMenu_C_HandleRemotePlayerRemoved");
-static_assert(sizeof(MainMenu_C_HandleRemotePlayerRemoved) == 0x000004, "Wrong size on MainMenu_C_HandleRemotePlayerRemoved");
-static_assert(offsetof(MainMenu_C_HandleRemotePlayerRemoved, RemovedIndex) == 0x000000, "Member 'MainMenu_C_HandleRemotePlayerRemoved::RemovedIndex' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandlePartybarUIFeatureChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -1276,20 +852,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_HandlePartybarUIFeatureChanged) == 0x000008, "Wrong alignment on MainMenu_C_HandlePartybarUIFeatureChanged");
-static_assert(sizeof(MainMenu_C_HandlePartybarUIFeatureChanged) == 0x000018, "Wrong size on MainMenu_C_HandlePartybarUIFeatureChanged");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, Feature) == 0x000000, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::Feature' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, FeatureState) == 0x000001, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::FeatureState' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable) == 0x000002, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000003, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable2) == 0x000004, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable3) == 0x000005, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable4) == 0x000006, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, Temp_byte_Variable5) == 0x000007, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, CallFunc_GetSubGame_ReturnValue) == 0x000010, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, K2Node_Select_Default) == 0x000011, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartybarUIFeatureChanged, K2Node_SwitchEnum_CmpSuccess) == 0x000012, "Member 'MainMenu_C_HandlePartybarUIFeatureChanged::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandlePartyTypeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -1298,9 +860,6 @@ struct MainMenu_C_HandlePartyTypeChanged final
 public:
 	EPartyType                                    Party_Type;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_HandlePartyTypeChanged) == 0x000001, "Wrong alignment on MainMenu_C_HandlePartyTypeChanged");
-static_assert(sizeof(MainMenu_C_HandlePartyTypeChanged) == 0x000001, "Wrong size on MainMenu_C_HandlePartyTypeChanged");
-static_assert(offsetof(MainMenu_C_HandlePartyTypeChanged, Party_Type) == 0x000000, "Member 'MainMenu_C_HandlePartyTypeChanged::Party_Type' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandleActiveInvitesAmountChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -1310,10 +869,6 @@ public:
 	int32                                         ActiveInvitesAmount;                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_HandleActiveInvitesAmountChanged) == 0x000004, "Wrong alignment on MainMenu_C_HandleActiveInvitesAmountChanged");
-static_assert(sizeof(MainMenu_C_HandleActiveInvitesAmountChanged) == 0x000008, "Wrong size on MainMenu_C_HandleActiveInvitesAmountChanged");
-static_assert(offsetof(MainMenu_C_HandleActiveInvitesAmountChanged, ActiveInvitesAmount) == 0x000000, "Member 'MainMenu_C_HandleActiveInvitesAmountChanged::ActiveInvitesAmount' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandleActiveInvitesAmountChanged, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'MainMenu_C_HandleActiveInvitesAmountChanged::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandleMatchmakingComplete
 // 0x0002 (0x0002 - 0x0000)
@@ -1323,10 +878,6 @@ public:
 	EMatchmakingCompleteResult                    Result;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_HandleMatchmakingComplete) == 0x000001, "Wrong alignment on MainMenu_C_HandleMatchmakingComplete");
-static_assert(sizeof(MainMenu_C_HandleMatchmakingComplete) == 0x000002, "Wrong size on MainMenu_C_HandleMatchmakingComplete");
-static_assert(offsetof(MainMenu_C_HandleMatchmakingComplete, Result) == 0x000000, "Member 'MainMenu_C_HandleMatchmakingComplete::Result' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandleMatchmakingComplete, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'MainMenu_C_HandleMatchmakingComplete::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.HandlePartyStateChanged
 // 0x000D (0x000D - 0x0000)
@@ -1347,21 +898,6 @@ public:
 	bool                                          Temp_bool_Variable10;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_HandlePartyStateChanged) == 0x000001, "Wrong alignment on MainMenu_C_HandlePartyStateChanged");
-static_assert(sizeof(MainMenu_C_HandlePartyStateChanged) == 0x00000D, "Wrong size on MainMenu_C_HandlePartyStateChanged");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, New_State) == 0x000000, "Member 'MainMenu_C_HandlePartyStateChanged::New_State' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_byte_Variable) == 0x000001, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable) == 0x000002, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable2) == 0x000003, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable3) == 0x000004, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable4) == 0x000005, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable5) == 0x000006, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable6) == 0x000007, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable7) == 0x000008, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable8) == 0x000009, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable9) == 0x00000A, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable9' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, Temp_bool_Variable10) == 0x00000B, "Member 'MainMenu_C_HandlePartyStateChanged::Temp_bool_Variable10' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_HandlePartyStateChanged, K2Node_Select_Default) == 0x00000C, "Member 'MainMenu_C_HandlePartyStateChanged::K2Node_Select_Default' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.RefreshFriendCodesButton
 // 0x0028 (0x0028 - 0x0000)
@@ -1374,12 +910,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0018)()
 };
-static_assert(alignof(MainMenu_C_RefreshFriendCodesButton) == 0x000008, "Wrong alignment on MainMenu_C_RefreshFriendCodesButton");
-static_assert(sizeof(MainMenu_C_RefreshFriendCodesButton) == 0x000028, "Wrong size on MainMenu_C_RefreshFriendCodesButton");
-static_assert(offsetof(MainMenu_C_RefreshFriendCodesButton, CallFunc_GetTotalNumFriendCodes_Num_Codes) == 0x000000, "Member 'MainMenu_C_RefreshFriendCodesButton::CallFunc_GetTotalNumFriendCodes_Num_Codes' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_RefreshFriendCodesButton, CallFunc_GetTotalNumFriendCodes_Num_Codes2) == 0x000004, "Member 'MainMenu_C_RefreshFriendCodesButton::CallFunc_GetTotalNumFriendCodes_Num_Codes2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_RefreshFriendCodesButton, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'MainMenu_C_RefreshFriendCodesButton::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_RefreshFriendCodesButton, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'MainMenu_C_RefreshFriendCodesButton::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.OnQueryUnredeemedFriendCodes
 // 0x0018 (0x0018 - 0x0000)
@@ -1390,10 +920,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FFriendCode>                    FriendCodes_0;                                     // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(MainMenu_C_OnQueryUnredeemedFriendCodes) == 0x000008, "Wrong alignment on MainMenu_C_OnQueryUnredeemedFriendCodes");
-static_assert(sizeof(MainMenu_C_OnQueryUnredeemedFriendCodes) == 0x000018, "Wrong size on MainMenu_C_OnQueryUnredeemedFriendCodes");
-static_assert(offsetof(MainMenu_C_OnQueryUnredeemedFriendCodes, Success) == 0x000000, "Member 'MainMenu_C_OnQueryUnredeemedFriendCodes::Success' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OnQueryUnredeemedFriendCodes, FriendCodes_0) == 0x000008, "Member 'MainMenu_C_OnQueryUnredeemedFriendCodes::FriendCodes_0' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.GetTotalNumFriendCodes
 // 0x0020 (0x0020 - 0x0000)
@@ -1407,13 +933,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_GetTotalNumFriendCodes) == 0x000008, "Wrong alignment on MainMenu_C_GetTotalNumFriendCodes");
-static_assert(sizeof(MainMenu_C_GetTotalNumFriendCodes) == 0x000020, "Wrong size on MainMenu_C_GetTotalNumFriendCodes");
-static_assert(offsetof(MainMenu_C_GetTotalNumFriendCodes, Num_Codes) == 0x000000, "Member 'MainMenu_C_GetTotalNumFriendCodes::Num_Codes' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_GetTotalNumFriendCodes, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'MainMenu_C_GetTotalNumFriendCodes::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_GetTotalNumFriendCodes, CallFunc_GetNumFriendCodesToIssue_ReturnValue) == 0x000010, "Member 'MainMenu_C_GetTotalNumFriendCodes::CallFunc_GetNumFriendCodesToIssue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_GetTotalNumFriendCodes, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'MainMenu_C_GetTotalNumFriendCodes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_GetTotalNumFriendCodes, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'MainMenu_C_GetTotalNumFriendCodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.OnIssueFriendCodes
 // 0x0040 (0x0040 - 0x0000)
@@ -1424,27 +943,17 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFriendCode                            FriendCode;                                        // 0x0008(0x0020)(Parm, OutParm, ReferenceParm)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bSuccess, TArray<struct FFriendCode>& FriendCodes)> K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bSuccess, const TArray<struct FFriendCode>& FriendCodes)> K2Node_CreateDelegate_OutputDelegate; // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_OnIssueFriendCodes) == 0x000008, "Wrong alignment on MainMenu_C_OnIssueFriendCodes");
-static_assert(sizeof(MainMenu_C_OnIssueFriendCodes) == 0x000040, "Wrong size on MainMenu_C_OnIssueFriendCodes");
-static_assert(offsetof(MainMenu_C_OnIssueFriendCodes, Success) == 0x000000, "Member 'MainMenu_C_OnIssueFriendCodes::Success' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OnIssueFriendCodes, FriendCode) == 0x000008, "Member 'MainMenu_C_OnIssueFriendCodes::FriendCode' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OnIssueFriendCodes, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'MainMenu_C_OnIssueFriendCodes::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_OnIssueFriendCodes, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'MainMenu_C_OnIssueFriendCodes::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.ProcessFriendCodes
 // 0x0018 (0x0018 - 0x0000)
 struct MainMenu_C_ProcessFriendCodes final
 {
 public:
-	TDelegate<void(bool bSuccess, struct FFriendCode& FriendCode)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bSuccess, const struct FFriendCode& FriendCode)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_ProcessFriendCodes) == 0x000008, "Wrong alignment on MainMenu_C_ProcessFriendCodes");
-static_assert(sizeof(MainMenu_C_ProcessFriendCodes) == 0x000018, "Wrong size on MainMenu_C_ProcessFriendCodes");
-static_assert(offsetof(MainMenu_C_ProcessFriendCodes, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'MainMenu_C_ProcessFriendCodes::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ProcessFriendCodes, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'MainMenu_C_ProcessFriendCodes::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.BindDelegates
 // 0x0140 (0x0140 - 0x0000)
@@ -1458,7 +967,7 @@ public:
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate6;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EMatchmakingCompleteResult Result)> K2Node_CreateDelegate_OutputDelegate7;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMatchmakingCompleteResult Result)> K2Node_CreateDelegate_OutputDelegate7;        // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1466,44 +975,17 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue4;                  // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate9;             // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue5;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState)> K2Node_CreateDelegate_OutputDelegate10;            // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState)> K2Node_CreateDelegate_OutputDelegate10; // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue6;                  // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate11;            // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate11; // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate12;            // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate13;            // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate13; // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMatchmakingContext*                CallFunc_GetContext_ReturnValue7;                  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate14;            // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue8;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FFortTeamMemberInfo& PlayerInfo)> K2Node_CreateDelegate_OutputDelegate15;            // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& PlayerInfo)> K2Node_CreateDelegate_OutputDelegate15; // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue9;                  // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MainMenu_C_BindDelegates) == 0x000008, "Wrong alignment on MainMenu_C_BindDelegates");
-static_assert(sizeof(MainMenu_C_BindDelegates) == 0x000140, "Wrong size on MainMenu_C_BindDelegates");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate3) == 0x000020, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate4) == 0x000030, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate5) == 0x000048, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate6) == 0x000058, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate7) == 0x000068, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue2) == 0x000078, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue3) == 0x000080, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000088, "Member 'MainMenu_C_BindDelegates::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate8) == 0x000090, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue4) == 0x0000A0, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate9) == 0x0000A8, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate9' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue5) == 0x0000B8, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate10) == 0x0000C0, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate10' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue6) == 0x0000D0, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate11) == 0x0000D8, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate11' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate12) == 0x0000E8, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate13) == 0x0000F8, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate13' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue7) == 0x000108, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate14) == 0x000110, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate14' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue8) == 0x000120, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate15) == 0x000128, "Member 'MainMenu_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate15' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_BindDelegates, CallFunc_GetContext_ReturnValue9) == 0x000138, "Member 'MainMenu_C_BindDelegates::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.Set Icon Button List Column Width
 // 0x0001 (0x0001 - 0x0000)
@@ -1512,9 +994,6 @@ struct MainMenu_C_Set_Icon_Button_List_Column_Width final
 public:
 	bool                                          IsUsingGamepad;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_Set_Icon_Button_List_Column_Width) == 0x000001, "Wrong alignment on MainMenu_C_Set_Icon_Button_List_Column_Width");
-static_assert(sizeof(MainMenu_C_Set_Icon_Button_List_Column_Width) == 0x000001, "Wrong size on MainMenu_C_Set_Icon_Button_List_Column_Width");
-static_assert(offsetof(MainMenu_C_Set_Icon_Button_List_Column_Width, IsUsingGamepad) == 0x000000, "Member 'MainMenu_C_Set_Icon_Button_List_Column_Width::IsUsingGamepad' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.ConfigureSubGameWidgets
 // 0x0038 (0x0038 - 0x0000)
@@ -1529,15 +1008,6 @@ public:
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_ConfigureSubGameWidgets) == 0x000008, "Wrong alignment on MainMenu_C_ConfigureSubGameWidgets");
-static_assert(sizeof(MainMenu_C_ConfigureSubGameWidgets) == 0x000038, "Wrong size on MainMenu_C_ConfigureSubGameWidgets");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'MainMenu_C_ConfigureSubGameWidgets::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MainMenu_C_ConfigureSubGameWidgets::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, CallFunc_Create_ReturnValue) == 0x000018, "Member 'MainMenu_C_ConfigureSubGameWidgets::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, CallFunc_AddChild_ReturnValue) == 0x000020, "Member 'MainMenu_C_ConfigureSubGameWidgets::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'MainMenu_C_ConfigureSubGameWidgets::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, CallFunc_GetSubGame_ReturnValue) == 0x000030, "Member 'MainMenu_C_ConfigureSubGameWidgets::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ConfigureSubGameWidgets, K2Node_SwitchEnum_CmpSuccess) == 0x000031, "Member 'MainMenu_C_ConfigureSubGameWidgets::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

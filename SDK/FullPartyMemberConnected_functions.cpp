@@ -14,8 +14,7 @@
 #include "FullPartyMemberConnected_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.ExecuteUbergraph_FullPartyMemberConnected
 // ()
@@ -74,7 +73,7 @@ void UFullPartyMemberConnected_C::PreConstruct(bool IsDesignTime)
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateMemberInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewMemberInfo                                          (Parm)
+// const struct FFortTeamMemberInfo&       NewMemberInfo                                          (Parm)
 
 void UFullPartyMemberConnected_C::UpdateMemberInfo(const struct FFortTeamMemberInfo& NewMemberInfo)
 {
@@ -94,7 +93,7 @@ void UFullPartyMemberConnected_C::UpdateMemberInfo(const struct FFortTeamMemberI
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateDimensions
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        NewDimensions                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 NewDimensions                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFullPartyMemberConnected_C::UpdateDimensions(const struct FVector2D& NewDimensions)
 {
@@ -110,5 +109,5 @@ void UFullPartyMemberConnected_C::UpdateDimensions(const struct FVector2D& NewDi
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

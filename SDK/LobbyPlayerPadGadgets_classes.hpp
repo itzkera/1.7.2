@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C
 // 0x0040 (0x0278 - 0x0238)
@@ -42,21 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LobbyPlayerPadGadgets_C">();
+		BP_STATIC_CLASS_IMPL("LobbyPlayerPadGadgets_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyPlayerPadGadgets_C")
 	}
 	static class ULobbyPlayerPadGadgets_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyPlayerPadGadgets_C>();
 	}
 };
-static_assert(alignof(ULobbyPlayerPadGadgets_C) == 0x000008, "Wrong alignment on ULobbyPlayerPadGadgets_C");
-static_assert(sizeof(ULobbyPlayerPadGadgets_C) == 0x000278, "Wrong size on ULobbyPlayerPadGadgets_C");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, UberGraphFrame) == 0x000238, "Member 'ULobbyPlayerPadGadgets_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, Gadget1) == 0x000240, "Member 'ULobbyPlayerPadGadgets_C::Gadget1' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, Gadget2) == 0x000248, "Member 'ULobbyPlayerPadGadgets_C::Gadget2' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, PlayerIndex) == 0x000250, "Member 'ULobbyPlayerPadGadgets_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, OnGadgetsMouseEntered) == 0x000258, "Member 'ULobbyPlayerPadGadgets_C::OnGadgetsMouseEntered' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadGadgets_C, OnGadgetsMouseLeft) == 0x000268, "Member 'ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

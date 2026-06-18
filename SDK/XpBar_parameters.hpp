@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function XpBar.XpBar_C.ExecuteUbergraph_XpBar
 // 0x0068 (0x0068 - 0x0000)
@@ -30,20 +30,9 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0038(0x0010)(NoDestructor)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate2; // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_ExecuteUbergraph_XpBar) == 0x000008, "Wrong alignment on XpBar_C_ExecuteUbergraph_XpBar");
-static_assert(sizeof(XpBar_C_ExecuteUbergraph_XpBar) == 0x000068, "Wrong size on XpBar_C_ExecuteUbergraph_XpBar");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, EntryPoint) == 0x000000, "Member 'XpBar_C_ExecuteUbergraph_XpBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'XpBar_C_ExecuteUbergraph_XpBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, CallFunc_GetCurrentlyViewedAccountInfo_Result) == 0x000010, "Member 'XpBar_C_ExecuteUbergraph_XpBar::CallFunc_GetCurrentlyViewedAccountInfo_Result' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'XpBar_C_ExecuteUbergraph_XpBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'XpBar_C_ExecuteUbergraph_XpBar::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, K2Node_CustomEvent_NewInfo) == 0x000038, "Member 'XpBar_C_ExecuteUbergraph_XpBar::K2Node_CustomEvent_NewInfo' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'XpBar_C_ExecuteUbergraph_XpBar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, K2Node_CreateDelegate_OutputDelegate2) == 0x000050, "Member 'XpBar_C_ExecuteUbergraph_XpBar::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ExecuteUbergraph_XpBar, K2Node_CustomEvent_BoostAmount) == 0x000060, "Member 'XpBar_C_ExecuteUbergraph_XpBar::K2Node_CustomEvent_BoostAmount' has a wrong offset!");
 
 // Function XpBar.XpBar_C.Xp Boost Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -52,9 +41,6 @@ struct XpBar_C_Xp_Boost_Changed final
 public:
 	int32                                         BoostAmount;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_Xp_Boost_Changed) == 0x000004, "Wrong alignment on XpBar_C_Xp_Boost_Changed");
-static_assert(sizeof(XpBar_C_Xp_Boost_Changed) == 0x000004, "Wrong size on XpBar_C_Xp_Boost_Changed");
-static_assert(offsetof(XpBar_C_Xp_Boost_Changed, BoostAmount) == 0x000000, "Member 'XpBar_C_Xp_Boost_Changed::BoostAmount' has a wrong offset!");
 
 // Function XpBar.XpBar_C.Account Info Changed
 // 0x0010 (0x0010 - 0x0000)
@@ -63,9 +49,6 @@ struct XpBar_C_Account_Info_Changed final
 public:
 	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(XpBar_C_Account_Info_Changed) == 0x000004, "Wrong alignment on XpBar_C_Account_Info_Changed");
-static_assert(sizeof(XpBar_C_Account_Info_Changed) == 0x000010, "Wrong size on XpBar_C_Account_Info_Changed");
-static_assert(offsetof(XpBar_C_Account_Info_Changed, NewInfo) == 0x000000, "Member 'XpBar_C_Account_Info_Changed::NewInfo' has a wrong offset!");
 
 // Function XpBar.XpBar_C.Update Xp Bar
 // 0x0068 (0x0068 - 0x0000)
@@ -92,24 +75,6 @@ public:
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue3;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue4;             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_Update_Xp_Bar) == 0x000008, "Wrong alignment on XpBar_C_Update_Xp_Bar");
-static_assert(sizeof(XpBar_C_Update_Xp_Bar) == 0x000068, "Wrong size on XpBar_C_Update_Xp_Bar");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, Account_Info) == 0x000000, "Member 'XpBar_C_Update_Xp_Bar::Account_Info' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnValue) == 0x000010, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_ScaledCommanderBalance_ReturnValue) == 0x000018, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_ScaledCommanderBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001D, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_GetXpBoostBalance_ReturnValue) == 0x000028, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_GetXpBoostBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000038, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_GetRestXpBalance_ReturnValue) == 0x00003C, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_GetRestXpBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000040, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000044, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000048, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnValue2) == 0x000050, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_MakeLiteralName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnValue3) == 0x000058, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_MakeLiteralName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(XpBar_C_Update_Xp_Bar, CallFunc_MakeLiteralName_ReturnValue4) == 0x000060, "Member 'XpBar_C_Update_Xp_Bar::CallFunc_MakeLiteralName_ReturnValue4' has a wrong offset!");
 
 // Function XpBar.XpBar_C.GetExperienceToolTipWidget
 // 0x02B8 (0x02B8 - 0x0000)
@@ -153,40 +118,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue4;                      // 0x0298(0x0018)()
 	class UCommonUserWidget*                      CallFunc_CreateXPTooltip_Out;                      // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_GetExperienceToolTipWidget) == 0x000008, "Wrong alignment on XpBar_C_GetExperienceToolTipWidget");
-static_assert(sizeof(XpBar_C_GetExperienceToolTipWidget) == 0x0002B8, "Wrong size on XpBar_C_GetExperienceToolTipWidget");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, ReturnValue) == 0x000000, "Member 'XpBar_C_GetExperienceToolTipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, XPToLevel) == 0x000008, "Member 'XpBar_C_GetExperienceToolTipWidget::XPToLevel' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CurrentXP) == 0x00000C, "Member 'XpBar_C_GetExperienceToolTipWidget::CurrentXP' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000020, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_GetCurrentlyViewedAccountInfo_Result) == 0x000030, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_GetCurrentlyViewedAccountInfo_Result' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_ScaledRestBalance_ReturnValue) == 0x000040, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_ScaledRestBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000048, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeArray_Array) == 0x000088, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Add_IntInt_ReturnValue) == 0x000098, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Format_ReturnValue) == 0x0000A0, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_GetAccountLevelUpRewards_Rewards) == 0x0000B8, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_GetAccountLevelUpRewards_Rewards' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_ScaledBoostBalance_ReturnValue) == 0x0000C8, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_ScaledBoostBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Array_Length_ReturnValue) == 0x0000CC, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeStruct_FormatArgumentData2) == 0x0000D0, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000110, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeArray_Array2) == 0x000118, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Format_ReturnValue2) == 0x000128, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Array_Get_Item) == 0x000140, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000168, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeStruct_FormatArgumentData3) == 0x000180, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeStruct_FormatArgumentData4) == 0x0001C0, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeArray_Array3) == 0x000200, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Format_ReturnValue3) == 0x000210, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Format_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeStruct_FormatArgumentData5) == 0x000228, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000268, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, K2Node_MakeArray_Array4) == 0x000270, "Member 'XpBar_C_GetExperienceToolTipWidget::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_MakeLiteralText_ReturnValue) == 0x000280, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_Format_ReturnValue4) == 0x000298, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_Format_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(XpBar_C_GetExperienceToolTipWidget, CallFunc_CreateXPTooltip_Out) == 0x0002B0, "Member 'XpBar_C_GetExperienceToolTipWidget::CallFunc_CreateXPTooltip_Out' has a wrong offset!");
 
 // Function XpBar.XpBar_C.ScaledBoostBalance
 // 0x0030 (0x0030 - 0x0000)
@@ -205,18 +136,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_ScaledBoostBalance) == 0x000008, "Wrong alignment on XpBar_C_ScaledBoostBalance");
-static_assert(sizeof(XpBar_C_ScaledBoostBalance) == 0x000030, "Wrong size on XpBar_C_ScaledBoostBalance");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, AmountToLevel) == 0x000000, "Member 'XpBar_C_ScaledBoostBalance::AmountToLevel' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, ReturnValue) == 0x000004, "Member 'XpBar_C_ScaledBoostBalance::ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000018, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_GetXpBoostBalance_ReturnValue) == 0x00001C, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_GetXpBoostBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000020, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000028, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledBoostBalance, CallFunc_FTrunc_ReturnValue) == 0x00002C, "Member 'XpBar_C_ScaledBoostBalance::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function XpBar.XpBar_C.ScaledRestBalance
 // 0x0030 (0x0030 - 0x0000)
@@ -235,18 +154,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_ScaledRestBalance) == 0x000008, "Wrong alignment on XpBar_C_ScaledRestBalance");
-static_assert(sizeof(XpBar_C_ScaledRestBalance) == 0x000030, "Wrong size on XpBar_C_ScaledRestBalance");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, AmountToLevel) == 0x000000, "Member 'XpBar_C_ScaledRestBalance::AmountToLevel' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, ReturnValue) == 0x000004, "Member 'XpBar_C_ScaledRestBalance::ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'XpBar_C_ScaledRestBalance::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'XpBar_C_ScaledRestBalance::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000018, "Member 'XpBar_C_ScaledRestBalance::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_GetRestXpBalance_ReturnValue) == 0x00001C, "Member 'XpBar_C_ScaledRestBalance::CallFunc_GetRestXpBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000020, "Member 'XpBar_C_ScaledRestBalance::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'XpBar_C_ScaledRestBalance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000028, "Member 'XpBar_C_ScaledRestBalance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledRestBalance, CallFunc_FTrunc_ReturnValue) == 0x00002C, "Member 'XpBar_C_ScaledRestBalance::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function XpBar.XpBar_C.ScaledCommanderBalance
 // 0x0018 (0x0018 - 0x0000)
@@ -260,14 +167,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBar_C_ScaledCommanderBalance) == 0x000004, "Wrong alignment on XpBar_C_ScaledCommanderBalance");
-static_assert(sizeof(XpBar_C_ScaledCommanderBalance) == 0x000018, "Wrong size on XpBar_C_ScaledCommanderBalance");
-static_assert(offsetof(XpBar_C_ScaledCommanderBalance, LeveXP) == 0x000000, "Member 'XpBar_C_ScaledCommanderBalance::LeveXP' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledCommanderBalance, InInt2) == 0x000004, "Member 'XpBar_C_ScaledCommanderBalance::InInt2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledCommanderBalance, ReturnValue) == 0x000008, "Member 'XpBar_C_ScaledCommanderBalance::ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledCommanderBalance, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'XpBar_C_ScaledCommanderBalance::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledCommanderBalance, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000010, "Member 'XpBar_C_ScaledCommanderBalance::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBar_C_ScaledCommanderBalance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000014, "Member 'XpBar_C_ScaledCommanderBalance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

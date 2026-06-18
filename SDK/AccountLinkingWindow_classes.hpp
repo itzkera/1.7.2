@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AccountLinkingWindow.AccountLinkingWindow_C
 // 0x01E8 (0x0628 - 0x0440)
@@ -102,53 +101,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AccountLinkingWindow_C">();
+		BP_STATIC_CLASS_IMPL("AccountLinkingWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AccountLinkingWindow_C")
 	}
 	static class UAccountLinkingWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAccountLinkingWindow_C>();
 	}
 };
-static_assert(alignof(UAccountLinkingWindow_C) == 0x000008, "Wrong alignment on UAccountLinkingWindow_C");
-static_assert(sizeof(UAccountLinkingWindow_C) == 0x000628, "Wrong size on UAccountLinkingWindow_C");
-static_assert(offsetof(UAccountLinkingWindow_C, UberGraphFrame) == 0x000440, "Member 'UAccountLinkingWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonLogIn) == 0x000448, "Member 'UAccountLinkingWindow_C::ButtonLogIn' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonLogInFromPurchase) == 0x000450, "Member 'UAccountLinkingWindow_C::ButtonLogInFromPurchase' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonNoThanks) == 0x000458, "Member 'UAccountLinkingWindow_C::ButtonNoThanks' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonPurchasePack) == 0x000460, "Member 'UAccountLinkingWindow_C::ButtonPurchasePack' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonSIGNUP) == 0x000468, "Member 'UAccountLinkingWindow_C::ButtonSIGNUP' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonSkipSignInLogIn) == 0x000470, "Member 'UAccountLinkingWindow_C::ButtonSkipSignInLogIn' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonSkipSignInNoThanks) == 0x000478, "Member 'UAccountLinkingWindow_C::ButtonSkipSignInNoThanks' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ButtonSkipSignInSignup) == 0x000480, "Member 'UAccountLinkingWindow_C::ButtonSkipSignInSignup' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, CircularThrobberArtificialDelay) == 0x000488, "Member 'UAccountLinkingWindow_C::CircularThrobberArtificialDelay' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, CommonTextSignInText) == 0x000490, "Member 'UAccountLinkingWindow_C::CommonTextSignInText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, HaveEpicAccountBlur) == 0x000498, "Member 'UAccountLinkingWindow_C::HaveEpicAccountBlur' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, IconTextButton) == 0x0004A0, "Member 'UAccountLinkingWindow_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ImageLowerSpacer) == 0x0004A8, "Member 'UAccountLinkingWindow_C::ImageLowerSpacer' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, MainWidgetSwitcher) == 0x0004B0, "Member 'UAccountLinkingWindow_C::MainWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, PurchasePackBlur) == 0x0004B8, "Member 'UAccountLinkingWindow_C::PurchasePackBlur' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, RedeemCodeButton) == 0x0004C0, "Member 'UAccountLinkingWindow_C::RedeemCodeButton' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, SkipSignInBlur) == 0x0004C8, "Member 'UAccountLinkingWindow_C::SkipSignInBlur' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, VerticalBoxBuyAccess) == 0x0004D0, "Member 'UAccountLinkingWindow_C::VerticalBoxBuyAccess' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, VerticalBoxHaveEpicAccount) == 0x0004D8, "Member 'UAccountLinkingWindow_C::VerticalBoxHaveEpicAccount' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, VerticalBoxSkipSignIn) == 0x0004E0, "Member 'UAccountLinkingWindow_C::VerticalBoxSkipSignIn' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, WidgetSwitcherNoThanksSwitcher) == 0x0004E8, "Member 'UAccountLinkingWindow_C::WidgetSwitcherNoThanksSwitcher' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OpeningStoreText) == 0x0004F0, "Member 'UAccountLinkingWindow_C::OpeningStoreText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, CheckingPurchasesText) == 0x000508, "Member 'UAccountLinkingWindow_C::CheckingPurchasesText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, PurchasePackText) == 0x000520, "Member 'UAccountLinkingWindow_C::PurchasePackText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, PurchaseFreePackText) == 0x000538, "Member 'UAccountLinkingWindow_C::PurchaseFreePackText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, CreatingAccountText) == 0x000550, "Member 'UAccountLinkingWindow_C::CreatingAccountText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, CreateHeadlessAccountFailedText) == 0x000568, "Member 'UAccountLinkingWindow_C::CreateHeadlessAccountFailedText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, ProceedingWithoutLinkingAccountsText) == 0x000580, "Member 'UAccountLinkingWindow_C::ProceedingWithoutLinkingAccountsText' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnRequestAutoLogin) == 0x000598, "Member 'UAccountLinkingWindow_C::OnRequestAutoLogin' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnAccountLinkingComplete) == 0x0005A8, "Member 'UAccountLinkingWindow_C::OnAccountLinkingComplete' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnRequestSignIn) == 0x0005B8, "Member 'UAccountLinkingWindow_C::OnRequestSignIn' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnAccountLinkingFailed) == 0x0005C8, "Member 'UAccountLinkingWindow_C::OnAccountLinkingFailed' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnPushStatus) == 0x0005D8, "Member 'UAccountLinkingWindow_C::OnPushStatus' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnPopStatus) == 0x0005E8, "Member 'UAccountLinkingWindow_C::OnPopStatus' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OnViewEula) == 0x0005F8, "Member 'UAccountLinkingWindow_C::OnViewEula' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, bLinkedAccountNeedsPurchase) == 0x000608, "Member 'UAccountLinkingWindow_C::bLinkedAccountNeedsPurchase' has a wrong offset!");
-static_assert(offsetof(UAccountLinkingWindow_C, OpeningCodeRedemption) == 0x000610, "Member 'UAccountLinkingWindow_C::OpeningCodeRedemption' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

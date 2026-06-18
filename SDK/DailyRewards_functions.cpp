@@ -14,8 +14,7 @@
 #include "DailyRewards_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DailyRewards.DailyRewards_C.ExecuteUbergraph_DailyRewards
 // (HasDefaults)
@@ -68,7 +67,7 @@ void UDailyRewards_C::OnDeactivated()
 // Function DailyRewards.DailyRewards_C.ClaimResultReceived
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Loot                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<struct FFortItemInstanceQuantityPair>&Loot                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UDailyRewards_C::ClaimResultReceived(const TArray<struct FFortItemInstanceQuantityPair>& Loot)
 {
@@ -178,7 +177,7 @@ void UDailyRewards_C::Set_Input_Action_Handlers()
 // Function DailyRewards.DailyRewards_C.Handle Close
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UDailyRewards_C::Handle_Close(bool* PassThrough)
 {
@@ -199,7 +198,7 @@ void UDailyRewards_C::Handle_Close(bool* PassThrough)
 // Function DailyRewards.DailyRewards_C.Handle Collect
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UDailyRewards_C::Handle_Collect(bool* PassThrough)
 {
@@ -216,5 +215,5 @@ void UDailyRewards_C::Handle_Collect(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

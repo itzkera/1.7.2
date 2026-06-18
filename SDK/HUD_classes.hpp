@@ -18,8 +18,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HUD.HUD_C
 // 0x0270 (0x0670 - 0x0400)
@@ -150,93 +149,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HUD_C">();
+		BP_STATIC_CLASS_IMPL("HUD_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUD_C")
 	}
 	static class UHUD_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUD_C>();
 	}
 };
-static_assert(alignof(UHUD_C) == 0x000008, "Wrong alignment on UHUD_C");
-static_assert(sizeof(UHUD_C) == 0x000670, "Wrong size on UHUD_C");
-static_assert(offsetof(UHUD_C, UberGraphFrame) == 0x000400, "Member 'UHUD_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Actor_Canvas__Indicators) == 0x000408, "Member 'UHUD_C::_Actor_Canvas__Indicators' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Horizontal_Box__Top_Right_Content) == 0x000410, "Member 'UHUD_C::_Horizontal_Box__Top_Right_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Overlay__Camera_Mode_Content) == 0x000418, "Member 'UHUD_C::_Overlay__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Overlay__Cursor_Mode_Content) == 0x000420, "Member 'UHUD_C::_Overlay__Cursor_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Overlay__Persistent_HUD_Content) == 0x000428, "Member 'UHUD_C::_Overlay__Persistent_HUD_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Size_Box__Bottom_Right_Content) == 0x000430, "Member 'UHUD_C::_Size_Box__Bottom_Right_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Slot__CursorModeContent) == 0x000438, "Member 'UHUD_C::_Slot__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Switcher__CursorModeContent) == 0x000440, "Member 'UHUD_C::_Switcher__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UHUD_C, Radar) == 0x000448, "Member 'UHUD_C::Radar' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Switcher__Mode_Content) == 0x000450, "Member 'UHUD_C::_Switcher__Mode_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Vertical_Box__Bottom_Left_Content) == 0x000458, "Member 'UHUD_C::_Vertical_Box__Bottom_Left_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Vertical_Box__Top_Left_Content) == 0x000460, "Member 'UHUD_C::_Vertical_Box__Top_Left_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, _Vertical_Box__Top_Right_Content) == 0x000468, "Member 'UHUD_C::_Vertical_Box__Top_Right_Content' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ActiveModifiersHUD) == 0x000470, "Member 'UHUD_C::ActiveModifiersHUD' has a wrong offset!");
-static_assert(offsetof(UHUD_C, Announcement_Layout) == 0x000478, "Member 'UHUD_C::Announcement_Layout' has a wrong offset!");
-static_assert(offsetof(UHUD_C, BottomBarWidget) == 0x000480, "Member 'UHUD_C::BottomBarWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, BP_FortLiveStreamGrantWindowExpires) == 0x000488, "Member 'UHUD_C::BP_FortLiveStreamGrantWindowExpires' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ChatWidget) == 0x000490, "Member 'UHUD_C::ChatWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, CraftingBar) == 0x000498, "Member 'UHUD_C::CraftingBar' has a wrong offset!");
-static_assert(offsetof(UHUD_C, DeathWidget) == 0x0004A0, "Member 'UHUD_C::DeathWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, EquippedItemWidget) == 0x0004A8, "Member 'UHUD_C::EquippedItemWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, FortBangWrapper_0) == 0x0004B0, "Member 'UHUD_C::FortBangWrapper_0' has a wrong offset!");
-static_assert(offsetof(UHUD_C, HordeWaveAlertWidget) == 0x0004B8, "Member 'UHUD_C::HordeWaveAlertWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, HUD_TeamInfo) == 0x0004C0, "Member 'UHUD_C::HUD_TeamInfo' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxBottomLeft) == 0x0004C8, "Member 'UHUD_C::InvalidationBoxBottomLeft' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxBottomRight) == 0x0004D0, "Member 'UHUD_C::InvalidationBoxBottomRight' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxCameraMode) == 0x0004D8, "Member 'UHUD_C::InvalidationBoxCameraMode' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxCenterPopup) == 0x0004E0, "Member 'UHUD_C::InvalidationBoxCenterPopup' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxChat) == 0x0004E8, "Member 'UHUD_C::InvalidationBoxChat' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxCursorMode) == 0x0004F0, "Member 'UHUD_C::InvalidationBoxCursorMode' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxDeathWidget) == 0x0004F8, "Member 'UHUD_C::InvalidationBoxDeathWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxHordeTierComplete) == 0x000500, "Member 'UHUD_C::InvalidationBoxHordeTierComplete' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxPickupManager) == 0x000508, "Member 'UHUD_C::InvalidationBoxPickupManager' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxPlayerHitpointinfo) == 0x000510, "Member 'UHUD_C::InvalidationBoxPlayerHitpointinfo' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxPlayerInfo) == 0x000518, "Member 'UHUD_C::InvalidationBoxPlayerInfo' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxTopRight) == 0x000520, "Member 'UHUD_C::InvalidationBoxTopRight' has a wrong offset!");
-static_assert(offsetof(UHUD_C, InvalidationBoxZoneComplete) == 0x000528, "Member 'UHUD_C::InvalidationBoxZoneComplete' has a wrong offset!");
-static_assert(offsetof(UHUD_C, LocalPlayerHitPointInfo) == 0x000530, "Member 'UHUD_C::LocalPlayerHitPointInfo' has a wrong offset!");
-static_assert(offsetof(UHUD_C, MainContentStack) == 0x000538, "Member 'UHUD_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(UHUD_C, MinimapContainer) == 0x000540, "Member 'UHUD_C::MinimapContainer' has a wrong offset!");
-static_assert(offsetof(UHUD_C, MissionTracker) == 0x000548, "Member 'UHUD_C::MissionTracker' has a wrong offset!");
-static_assert(offsetof(UHUD_C, OverlayIndicatorContent) == 0x000550, "Member 'UHUD_C::OverlayIndicatorContent' has a wrong offset!");
-static_assert(offsetof(UHUD_C, PickupManager) == 0x000558, "Member 'UHUD_C::PickupManager' has a wrong offset!");
-static_assert(offsetof(UHUD_C, PinnedSchematicItemsWidget) == 0x000560, "Member 'UHUD_C::PinnedSchematicItemsWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, PlayerInfo) == 0x000568, "Member 'UHUD_C::PlayerInfo' has a wrong offset!");
-static_assert(offsetof(UHUD_C, PopupCenterMessageWidget) == 0x000570, "Member 'UHUD_C::PopupCenterMessageWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, QuestUpdatesLog) == 0x000578, "Member 'UHUD_C::QuestUpdatesLog' has a wrong offset!");
-static_assert(offsetof(UHUD_C, QuickbarBorder) == 0x000580, "Member 'UHUD_C::QuickbarBorder' has a wrong offset!");
-static_assert(offsetof(UHUD_C, QuickbarPrimary) == 0x000588, "Member 'UHUD_C::QuickbarPrimary' has a wrong offset!");
-static_assert(offsetof(UHUD_C, QuickbarSecondary) == 0x000590, "Member 'UHUD_C::QuickbarSecondary' has a wrong offset!");
-static_assert(offsetof(UHUD_C, RadialPicker) == 0x000598, "Member 'UHUD_C::RadialPicker' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ResourceAggregationWidget) == 0x0005A0, "Member 'UHUD_C::ResourceAggregationWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, Reticle) == 0x0005A8, "Member 'UHUD_C::Reticle' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ReticleStatusWidget) == 0x0005B0, "Member 'UHUD_C::ReticleStatusWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SafeZone_0) == 0x0005B8, "Member 'UHUD_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SafeZone_1) == 0x0005C0, "Member 'UHUD_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SafeZone_2) == 0x0005C8, "Member 'UHUD_C::SafeZone_2' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SafeZone_3) == 0x0005D0, "Member 'UHUD_C::SafeZone_3' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SafeZone_4) == 0x0005D8, "Member 'UHUD_C::SafeZone_4' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ScoreBarsWidget) == 0x0005E0, "Member 'UHUD_C::ScoreBarsWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SizeBox_1) == 0x0005E8, "Member 'UHUD_C::SizeBox_1' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SizeBoxPinnedSchematics) == 0x0005F0, "Member 'UHUD_C::SizeBoxPinnedSchematics' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SlotHordeTierComplete) == 0x0005F8, "Member 'UHUD_C::SlotHordeTierComplete' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SlotZoneComplete) == 0x000600, "Member 'UHUD_C::SlotZoneComplete' has a wrong offset!");
-static_assert(offsetof(UHUD_C, Subtitles) == 0x000608, "Member 'UHUD_C::Subtitles' has a wrong offset!");
-static_assert(offsetof(UHUD_C, SwitcherEndOfDayTalkingHead) == 0x000610, "Member 'UHUD_C::SwitcherEndOfDayTalkingHead' has a wrong offset!");
-static_assert(offsetof(UHUD_C, TalkingHeadWidget) == 0x000618, "Member 'UHUD_C::TalkingHeadWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, TopBar) == 0x000620, "Member 'UHUD_C::TopBar' has a wrong offset!");
-static_assert(offsetof(UHUD_C, VerticalBoxMissionWidgets) == 0x000628, "Member 'UHUD_C::VerticalBoxMissionWidgets' has a wrong offset!");
-static_assert(offsetof(UHUD_C, Widget_BuildWatermark) == 0x000630, "Member 'UHUD_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ZoneScoreWidget) == 0x000638, "Member 'UHUD_C::ZoneScoreWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_C, FocusedQuickbar) == 0x000640, "Member 'UHUD_C::FocusedQuickbar' has a wrong offset!");
-static_assert(offsetof(UHUD_C, UnfocusedQuickbarScale) == 0x000644, "Member 'UHUD_C::UnfocusedQuickbarScale' has a wrong offset!");
-static_assert(offsetof(UHUD_C, CursorModeEnabled) == 0x00064C, "Member 'UHUD_C::CursorModeEnabled' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ZoneCompleted) == 0x00064D, "Member 'UHUD_C::ZoneCompleted' has a wrong offset!");
-static_assert(offsetof(UHUD_C, AvailableInterestIndicators) == 0x000650, "Member 'UHUD_C::AvailableInterestIndicators' has a wrong offset!");
-static_assert(offsetof(UHUD_C, ActiveInterestIndicators) == 0x000660, "Member 'UHUD_C::ActiveInterestIndicators' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

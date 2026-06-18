@@ -14,8 +14,7 @@
 #include "AthenaHitPointBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaHitPointBar.AthenaHitPointBar_C.ExecuteUbergraph_AthenaHitPointBar
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UAthenaHitPointBar_C::ExecuteUbergraph_AthenaHitPointBar(int32 EntryPoint)
 // Function AthenaHitPointBar.AthenaHitPointBar_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaHitPointBar_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -258,5 +257,5 @@ void UAthenaHitPointBar_C::UpdateDBNOState(bool bIsDBNO)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

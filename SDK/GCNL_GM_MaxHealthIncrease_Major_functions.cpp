@@ -14,8 +14,7 @@
 #include "GCNL_GM_MaxHealthIncrease_Major_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCNL_GM_MaxHealthIncrease_Major.GCNL_GM_MaxHealthIncrease_Major_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -35,7 +34,7 @@ void AGCNL_GM_MaxHealthIncrease_Major_C::UserConstructionScript()
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool AGCNL_GM_MaxHealthIncrease_Major_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
@@ -55,5 +54,5 @@ bool AGCNL_GM_MaxHealthIncrease_Major_C::OnActive(class AActor* MyTarget, const 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

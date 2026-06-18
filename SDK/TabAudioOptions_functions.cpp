@@ -14,8 +14,7 @@
 #include "TabAudioOptions_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabAudioOptions.TabAudioOptions_C.ExecuteUbergraph_TabAudioOptions
 // ()
@@ -266,5 +265,5 @@ void UTabAudioOptions_C::InitializeData()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

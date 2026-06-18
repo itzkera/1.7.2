@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestTreeEntry.QuestTreeEntry_C
 // 0x00B0 (0x0960 - 0x08B0)
@@ -73,35 +72,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestTreeEntry_C">();
+		BP_STATIC_CLASS_IMPL("QuestTreeEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestTreeEntry_C")
 	}
 	static class UQuestTreeEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestTreeEntry_C>();
 	}
 };
-static_assert(alignof(UQuestTreeEntry_C) == 0x000008, "Wrong alignment on UQuestTreeEntry_C");
-static_assert(sizeof(UQuestTreeEntry_C) == 0x000960, "Wrong size on UQuestTreeEntry_C");
-static_assert(offsetof(UQuestTreeEntry_C, UberGraphFrame) == 0x0008B0, "Member 'UQuestTreeEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, BP_QuestExpiresWidget) == 0x0008B8, "Member 'UQuestTreeEntry_C::BP_QuestExpiresWidget' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, ExpansionIndicator) == 0x0008C0, "Member 'UQuestTreeEntry_C::ExpansionIndicator' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, ImageComplete) == 0x0008C8, "Member 'UQuestTreeEntry_C::ImageComplete' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, MainOrSubCategory) == 0x0008D0, "Member 'UQuestTreeEntry_C::MainOrSubCategory' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, Name_0) == 0x0008D8, "Member 'UQuestTreeEntry_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, NormalBangWrapper) == 0x0008E0, "Member 'UQuestTreeEntry_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PercentageComplete) == 0x0008E8, "Member 'UQuestTreeEntry_C::PercentageComplete' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PercentageCompleteIndicator) == 0x0008F0, "Member 'UQuestTreeEntry_C::PercentageCompleteIndicator' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PinnedEmptyBox) == 0x0008F8, "Member 'UQuestTreeEntry_C::PinnedEmptyBox' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PinnedImage) == 0x000900, "Member 'UQuestTreeEntry_C::PinnedImage' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, PinnedSwitcher) == 0x000908, "Member 'UQuestTreeEntry_C::PinnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, QuestIconOverlay) == 0x000910, "Member 'UQuestTreeEntry_C::QuestIconOverlay' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, QuestTreeIcon) == 0x000918, "Member 'UQuestTreeEntry_C::QuestTreeIcon' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, WidgetSwitcherProgress) == 0x000920, "Member 'UQuestTreeEntry_C::WidgetSwitcherProgress' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, CurrentQuest) == 0x000928, "Member 'UQuestTreeEntry_C::CurrentQuest' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, isPinned_) == 0x000930, "Member 'UQuestTreeEntry_C::isPinned_' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, CurrentQuestCategory) == 0x000938, "Member 'UQuestTreeEntry_C::CurrentQuestCategory' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, TwitchIconColor) == 0x000940, "Member 'UQuestTreeEntry_C::TwitchIconColor' has a wrong offset!");
-static_assert(offsetof(UQuestTreeEntry_C, DefaultIconColor) == 0x000950, "Member 'UQuestTreeEntry_C::DefaultIconColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

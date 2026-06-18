@@ -14,8 +14,7 @@
 #include "Results_TeleportPad_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeleportPad.Results_TeleportPad_C.ExecuteUbergraph_Results_TeleportPad
 // (HasDefaults)
@@ -140,8 +139,8 @@ void UResults_TeleportPad_C::BndEvt__ButtonReturnHome_K2Node_ComponentBoundEvent
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -162,8 +161,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_6_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -184,8 +183,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_5_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -206,8 +205,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_4_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -228,8 +227,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_3_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -250,8 +249,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad4_K2Node_ComponentBoundEvent_2_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -272,8 +271,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad3_K2Node_ComponentBoundEvent_1_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -294,8 +293,8 @@ void UResults_TeleportPad_C::BndEvt__TeleportPad2_K2Node_ComponentBoundEvent_0_O
 // Function Results_TeleportPad.Results_TeleportPad_C.BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_TeleportPad_C::BndEvt__TeleportPad1_K2Node_ComponentBoundEvent_35_OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -574,7 +573,7 @@ void UResults_TeleportPad_C::Enable()
 // Function Results_TeleportPad.Results_TeleportPad_C.Should Hide Exit Timer
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bHideExitTimer                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bHideExitTimer                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeleportPad_C::Should_Hide_Exit_Timer(bool* bHideExitTimer)
 {
@@ -591,5 +590,5 @@ void UResults_TeleportPad_C::Should_Hide_Exit_Timer(bool* bHideExitTimer)
 		*bHideExitTimer = Parms.bHideExitTimer;
 }
 
-}
 
+SDK_NAMESPACE_END

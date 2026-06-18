@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function B_Rift_Portals.B_Rift_Portals_C.ExecuteUbergraph_B_Rift_Portals
 // 0x02C8 (0x02C8 - 0x0000)
@@ -111,79 +111,6 @@ public:
 	uint8                                         Pad_2C2[0x2];                                      // 0x02C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals) == 0x000008, "Wrong alignment on B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals");
-static_assert(sizeof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals) == 0x0002C8, "Wrong size on B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, EntryPoint) == 0x000000, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue) == 0x000004, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_Event_EndPlayReason) == 0x000008, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00000C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue2) == 0x000010, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_MakeRotator_ReturnValue) == 0x000014, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue3) == 0x000020, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_MakeVector_ReturnValue) == 0x000024, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_int_Array_Index_Variable) == 0x000030, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000034, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000040, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_SpawnEmitterAtLocation_ReturnValue2) == 0x000048, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_SpawnEmitterAtLocation_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_SpawnDecalAtLocation_ReturnValue) == 0x000050, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_SpawnDecalAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_AddWorldRotation_SweepHitResult) == 0x000058, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_AddWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x0000E0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000F0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_int_Loop_Counter_Variable) == 0x0000F8, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Length_ReturnValue) == 0x0000FC, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_IntInt_ReturnValue) == 0x000100, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_MakeArray_Array) == 0x000108, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Get_Item) == 0x000118, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Length_ReturnValue2) == 0x000120, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_DynamicCast_AsCar_Copper) == 0x000128, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_DynamicCast_AsCar_Copper' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_DynamicCast_bSuccess) == 0x000130, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Less_IntInt_ReturnValue) == 0x000131, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Add_ReturnValue) == 0x000134, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_LinearColorLerp_ReturnValue) == 0x000138, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue) == 0x000148, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue2) == 0x00014C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x000150, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue3) == 0x000154, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_bool_Has_Been_Initd_Variable) == 0x000158, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_RandomFloatInRange_ReturnValue4) == 0x00015C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_RandomFloatInRange_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000160, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000164, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_CustomEvent_Delay) == 0x000168, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_CustomEvent_Delay' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_CustomEvent_RiftLightningDuration) == 0x00016C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_CustomEvent_RiftLightningDuration' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_CustomEvent_SpawnImpactParticles) == 0x000170, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_CustomEvent_SpawnImpactParticles' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_float_Variable) == 0x000174, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_bool_IsClosed_Variable) == 0x000178, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_bool_Variable) == 0x000179, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue3) == 0x00017C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue4) == 0x000180, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_object_Variable) == 0x000188, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_FloatFloat_ReturnValue) == 0x000198, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_SphereOverlapActors_OutActors) == 0x0001A0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_SphereOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_SphereOverlapActors_ReturnValue) == 0x0001B0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_SphereOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0001B4, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0001B8, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_Select_Default) == 0x0001BC, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_FloatFloat_ReturnValue2) == 0x0001C0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Divide_FloatFloat_ReturnValue4) == 0x0001C4, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Divide_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_MakeVector_ReturnValue2) == 0x0001C8, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001D4, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x0001E0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_VectorVector_ReturnValue) == 0x000268, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue5) == 0x000274, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameTimeInSeconds_ReturnValue6) == 0x000278, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameTimeInSeconds_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x00027C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_IsDedicatedServer_ReturnValue) == 0x00028C, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Lerp_ReturnValue3) == 0x000290, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Lerp_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_IsDedicatedServer_ReturnValue2) == 0x000294, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_IsDedicatedServer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_int_Array_Index_Variable2) == 0x000298, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Array_Get_Item2) == 0x0002A0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_IsValid_ReturnValue) == 0x0002A8, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetGameUserSettings_ReturnValue) == 0x0002B0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_GetVisualEffectQuality_ReturnValue) == 0x0002B8, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_GetVisualEffectQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, Temp_int_Loop_Counter_Variable2) == 0x0002BC, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, K2Node_SwitchInteger_CmpSuccess) == 0x0002C0, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Less_IntInt_ReturnValue2) == 0x0002C1, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals, CallFunc_Add_IntInt_ReturnValue2) == 0x0002C4, "Member 'B_Rift_Portals_C_ExecuteUbergraph_B_Rift_Portals::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function B_Rift_Portals.B_Rift_Portals_C.PatrolEnemySuckIn
 // 0x000C (0x000C - 0x0000)
@@ -194,11 +121,6 @@ public:
 	float                                         RiftLightningDuration_0;                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SpawnImpactParticles_0;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Rift_Portals_C_PatrolEnemySuckIn) == 0x000004, "Wrong alignment on B_Rift_Portals_C_PatrolEnemySuckIn");
-static_assert(sizeof(B_Rift_Portals_C_PatrolEnemySuckIn) == 0x00000C, "Wrong size on B_Rift_Portals_C_PatrolEnemySuckIn");
-static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, Delay) == 0x000000, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::Delay' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, RiftLightningDuration_0) == 0x000004, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::RiftLightningDuration_0' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_PatrolEnemySuckIn, SpawnImpactParticles_0) == 0x000008, "Member 'B_Rift_Portals_C_PatrolEnemySuckIn::SpawnImpactParticles_0' has a wrong offset!");
 
 // Function B_Rift_Portals.B_Rift_Portals_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -207,9 +129,6 @@ struct B_Rift_Portals_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Rift_Portals_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on B_Rift_Portals_C_ReceiveEndPlay");
-static_assert(sizeof(B_Rift_Portals_C_ReceiveEndPlay) == 0x000001, "Wrong size on B_Rift_Portals_C_ReceiveEndPlay");
-static_assert(offsetof(B_Rift_Portals_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'B_Rift_Portals_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
 
 // Function B_Rift_Portals.B_Rift_Portals_C.UserConstructionScript
 // 0x0120 (0x0120 - 0x0000)
@@ -270,57 +189,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetLightColor_ReturnValue;                // 0x0110(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Rift_Portals_C_UserConstructionScript) == 0x000008, "Wrong alignment on B_Rift_Portals_C_UserConstructionScript");
-static_assert(sizeof(B_Rift_Portals_C_UserConstructionScript) == 0x000120, "Wrong size on B_Rift_Portals_C_UserConstructionScript");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetGameUserSettings_ReturnValue) == 0x000008, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetVisualEffectQuality_ReturnValue) == 0x000010, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetVisualEffectQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, K2Node_SwitchInteger_CmpSuccess) == 0x000014, "Member 'B_Rift_Portals_C_UserConstructionScript::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X) == 0x000018, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y) == 0x00001C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z) == 0x000020, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X2) == 0x000024, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y2) == 0x000028, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z2) == 0x00002C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue) == 0x000030, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X) == 0x000034, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y) == 0x000038, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue2) == 0x00003C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue3) == 0x000040, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue) == 0x000044, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X2) == 0x000050, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y2) == 0x000054, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X3) == 0x000058, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y3) == 0x00005C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z3) == 0x000060, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue4) == 0x000064, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector_ReturnValue2) == 0x000068, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue5) == 0x000074, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector2D_ReturnValue) == 0x000078, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X3) == 0x000080, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y3) == 0x000084, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y3' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, K2Node_MakeStruct_LinearColor) == 0x000088, "Member 'B_Rift_Portals_C_UserConstructionScript::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue6) == 0x000098, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X4) == 0x00009C, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y4) == 0x0000A0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X5) == 0x0000A4, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X5' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y5) == 0x0000A8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y5' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000AC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue7) == 0x0000B8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x0000BC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue8) == 0x0000CC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_MakeVector2D_ReturnValue2) == 0x0000D0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_MakeVector2D_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_X6) == 0x0000D8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_X6' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector2D_Y6) == 0x0000DC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector2D_Y6' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_X4) == 0x0000E0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_X4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Y4) == 0x0000E4, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Y4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_BreakVector_Z4) == 0x0000E8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_BreakVector_Z4' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000EC, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue9) == 0x0000F0, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000F8, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_RandomFloatInRange_ReturnValue10) == 0x000100, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_RandomFloatInRange_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000108, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Rift_Portals_C_UserConstructionScript, CallFunc_GetLightColor_ReturnValue) == 0x000110, "Member 'B_Rift_Portals_C_UserConstructionScript::CallFunc_GetLightColor_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

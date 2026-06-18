@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionBuildSquadWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget
 // (HasDefaults)
@@ -325,7 +324,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Construct()
 // EFortDialogResult                       Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                             ResultName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bWaitingForLatentActionCompletion                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortDialogExternalLatentActionHandleWaitingDialogHandle                                    (Parm, NoDestructor)
+// const struct FFortDialogExternalLatentActionHandle&WaitingDialogHandle                                    (Parm, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::DialogResult_B738291040F33B805332A7B633B3ACBD(EFortDialogResult Result, class FName ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
@@ -348,7 +347,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::DialogResult_B738291040F33B805332A7B6
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Back
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back(bool* PassThrough)
 {
@@ -458,7 +457,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Item_Data()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortExpeditionItem*              Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortExpeditionItemDefinition*    ItemDef                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItemDefinition**   ItemDef                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Expedition_Item_Definition(class UFortExpeditionItem* Item_0, class UFortExpeditionItemDefinition** ItemDef)
 {
@@ -541,7 +540,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Rewards(class UFortExpeditionItem
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Change Vehicle
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Change_Vehicle(bool* PassThrough)
 {
@@ -576,7 +575,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Squad_Widgets()
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Vehicle Name
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHomebaseSquad                   HomebaseSquad                                          (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FHomebaseSquad&            HomebaseSquad                                          (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Vehicle_Name(const struct FHomebaseSquad& HomebaseSquad)
 {
@@ -705,7 +704,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Expedition_Power()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortExpeditionItem*              Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortItem*>                SlottedItems                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortItem*>&         SlottedItems                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Bonus_Criteria(class UFortExpeditionItem* Item_0, const TArray<class UFortItem*>& SlottedItems)
 {
@@ -740,7 +739,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::HACK_SetCursorToSquadSlotSlotted()
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Picker List View
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortItemTileView*                PickerTileView                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemTileView**               PickerTileView                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Picker_List_View(class UFortItemTileView** PickerTileView)
 {
@@ -823,7 +822,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Start_Expedition_Widget_State(
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Slot Item Action
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* PassThrough)
 {
@@ -844,7 +843,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* PassThr
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Close Picker Action
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* PassThrough)
 {
@@ -907,7 +906,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed()
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Start Expedition
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* PassThrough)
 {
@@ -928,7 +927,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* PassThr
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Open Picker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* PassThrough)
 {
@@ -1009,7 +1008,7 @@ EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Slot_Item_State()
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Back with Squad Clear
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* PassThrough)
 {
@@ -1052,7 +1051,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_For_Preview(class UFortItem* I
 // Parameters:
 // float                                   Preview                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Current                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortBuffState                          State                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EFortBuffState*                         State                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Determine_Preview_State(float Preview, float Current, EFortBuffState* State)
 {
@@ -1077,7 +1076,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Determine_Preview_State(float Preview
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortItem*>                SlottedItems1                                          (Parm, OutParm, ZeroConstructor)
+// TArray<class UFortItem*>*               SlottedItems1                                          (Parm, OutParm, ZeroConstructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Power_and_Rating_for_Preview(class UFortItem* Item_0, TArray<class UFortItem*>* SlottedItems1)
 {
@@ -1232,7 +1231,7 @@ float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Previ
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Purchase Slot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Purchase_Slot(bool* PassThrough)
 {
@@ -1293,7 +1292,7 @@ int32 UBP_FortExpeditionBuildSquadWidget_C::Get_Selected_Slot__SAFE_()
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Inspect
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Inspect(bool* PassThrough)
 {
@@ -1362,12 +1361,12 @@ class UFortItem* UBP_FortExpeditionBuildSquadWidget_C::Get_Item_In_Selected_Squa
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Bonus Display Name and Brush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTag                     Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 // bool                                    Condition                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortRarity                             Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                      OutBrush_Brush_M                                       (Parm, OutParm)
-// class FText                             OutDisplayName                                         (Parm, OutParm)
-// struct FLinearColor                     OutRarityColor                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush*                     OutBrush_Brush_M                                       (Parm, OutParm)
+// class FText*                            OutDisplayName                                         (Parm, OutParm)
+// struct FLinearColor*                    OutRarityColor                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Bonus_Display_Name_and_Brush(const struct FGameplayTag& Tag, bool Condition, EFortRarity Rarity, struct FSlateBrush* OutBrush_Brush_M, class FText* OutDisplayName, struct FLinearColor* OutRarityColor)
 {
@@ -1454,5 +1453,5 @@ struct FTimespan UBP_FortExpeditionBuildSquadWidget_C::Get_Utc_Now_Offset()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

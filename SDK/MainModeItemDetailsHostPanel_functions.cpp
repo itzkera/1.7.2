@@ -14,8 +14,7 @@
 #include "MainModeItemDetailsHostPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C.ExecuteUbergraph_MainModeItemDetailsHostPanel
 // ()
@@ -78,5 +77,5 @@ void UMainModeItemDetailsHostPanel_C::UpdateDescriptionVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

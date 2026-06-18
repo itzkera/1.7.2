@@ -14,8 +14,7 @@
 #include "AthenaLobby_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLobby.AthenaLobby_C.ExecuteUbergraph_AthenaLobby
 // ()
@@ -276,7 +275,7 @@ void UAthenaLobby_C::Refresh()
 // Function AthenaLobby.AthenaLobby_C.OnTeamMemberAdded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void UAthenaLobby_C::OnTeamMemberAdded(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -316,7 +315,7 @@ void UAthenaLobby_C::OnTeamMemberRemoved(int32 EmptySlot)
 // Function AthenaLobby.AthenaLobby_C.OnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void UAthenaLobby_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -350,7 +349,7 @@ void UAthenaLobby_C::RefreshPlayerHeroes()
 // Function AthenaLobby.AthenaLobby_C.OnInputCancel
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::OnInputCancel(bool* bCommited)
 {
@@ -399,7 +398,7 @@ void UAthenaLobby_C::InitializeContextEvents()
 // Function AthenaLobby.AthenaLobby_C.OnInputAbandon
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::OnInputAbandon(bool* bCommited)
 {
@@ -434,7 +433,7 @@ void UAthenaLobby_C::RefreshInput()
 // Function AthenaLobby.AthenaLobby_C.ShouldAddCancel
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bShouldAdd                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bShouldAdd                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::ShouldAddCancel(bool* bShouldAdd)
 {
@@ -455,7 +454,7 @@ void UAthenaLobby_C::ShouldAddCancel(bool* bShouldAdd)
 // Function AthenaLobby.AthenaLobby_C.ShouldAddScroll
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bShouldAdd                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bShouldAdd                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::ShouldAddScroll(bool* bShouldAdd)
 {
@@ -476,8 +475,8 @@ void UAthenaLobby_C::ShouldAddScroll(bool* bShouldAdd)
 // Function AthenaLobby.AthenaLobby_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UAthenaLobby_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -623,7 +622,7 @@ void UAthenaLobby_C::InitializeInput()
 // Function AthenaLobby.AthenaLobby_C.ShouldAddPlay
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bShouldAdd                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bShouldAdd                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::ShouldAddPlay(bool* bShouldAdd)
 {
@@ -706,7 +705,7 @@ void UAthenaLobby_C::SetHoveredPlayer(int32 PlayerIndex)
 // Function AthenaLobby.AthenaLobby_C.CanNavigatePlayers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCanNavigatePlayers                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCanNavigatePlayers                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::CanNavigatePlayers(bool* bCanNavigatePlayers)
 {
@@ -748,7 +747,7 @@ void UAthenaLobby_C::OnSelect(int32 PlayerIndex)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   PlayerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsLocalPlayer_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsLocalPlayer_0                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::IsLocalPlayer(int32 PlayerIndex, bool* IsLocalPlayer_0)
 {
@@ -771,7 +770,7 @@ void UAthenaLobby_C::IsLocalPlayer(int32 PlayerIndex, bool* IsLocalPlayer_0)
 // Function AthenaLobby.AthenaLobby_C.OnInputPlaylistChangeGamepad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::OnInputPlaylistChangeGamepad(bool* bCommited)
 {
@@ -792,7 +791,7 @@ void UAthenaLobby_C::OnInputPlaylistChangeGamepad(bool* bCommited)
 // Function AthenaLobby.AthenaLobby_C.OnInputFillChangeGamepad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobby_C::OnInputFillChangeGamepad(bool* bCommited)
 {
@@ -809,5 +808,5 @@ void UAthenaLobby_C::OnInputFillChangeGamepad(bool* bCommited)
 		*bCommited = Parms.bCommited;
 }
 
-}
 
+SDK_NAMESPACE_END

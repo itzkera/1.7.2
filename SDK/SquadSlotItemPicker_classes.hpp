@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPicker.SquadSlotItemPicker_C
 // 0x0000 (0x0370 - 0x0370)
@@ -23,15 +22,16 @@ class USquadSlotItemPicker_C final : public UFortSquadSlotItemPicker
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadSlotItemPicker_C">();
+		BP_STATIC_CLASS_IMPL("SquadSlotItemPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadSlotItemPicker_C")
 	}
 	static class USquadSlotItemPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadSlotItemPicker_C>();
 	}
 };
-static_assert(alignof(USquadSlotItemPicker_C) == 0x000008, "Wrong alignment on USquadSlotItemPicker_C");
-static_assert(sizeof(USquadSlotItemPicker_C) == 0x000370, "Wrong size on USquadSlotItemPicker_C");
 
-}
-
+SDK_NAMESPACE_END

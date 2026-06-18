@@ -14,8 +14,7 @@
 #include "HeroSquadBonuses_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroSquadBonuses.HeroSquadBonuses_C.OnSquadSlotSelected
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -36,5 +35,5 @@ void UHeroSquadBonuses_C::OnSquadSlotSelected(int32 SquadSlotIndex)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

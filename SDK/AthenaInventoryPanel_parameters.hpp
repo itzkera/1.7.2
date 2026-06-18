@@ -15,8 +15,8 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.ExecuteUbergraph_AthenaInventoryPanel
 // 0x0050 (0x0050 - 0x0000)
@@ -41,22 +41,6 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_SlotIndex;              // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel");
-static_assert(sizeof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel) == 0x000050, "Wrong size on AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, EntryPoint) == 0x000000, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_QuickBarType) == 0x000004, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_QuickBarType' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetSelectedInventoryItem_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetSelectedInventoryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_Item2) == 0x000020, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_Item2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_Event_Item) == 0x000028, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_Event_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_ComponentBoundEvent_SlotIndex5) == 0x000034, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_ComponentBoundEvent_SlotIndex5' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_ComponentBoundEvent_SlotIndex4) == 0x000038, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_ComponentBoundEvent_SlotIndex4' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_ComponentBoundEvent_SlotIndex3) == 0x00003C, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_ComponentBoundEvent_SlotIndex3' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_ComponentBoundEvent_SlotIndex2) == 0x000040, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_ComponentBoundEvent_SlotIndex2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, K2Node_ComponentBoundEvent_SlotIndex) == 0x000044, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::K2Node_ComponentBoundEvent_SlotIndex' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel, CallFunc_GetContext_ReturnValue2) == 0x000048, "Member 'AthenaInventoryPanel_C_ExecuteUbergraph_AthenaInventoryPanel::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -65,9 +49,6 @@ struct AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_O
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature, SlotIndex) == 0x000000, "Member 'AthenaInventoryPanel_C_BndEvt__EquipSlot5_K2Node_ComponentBoundEvent_15_OnEquipRequested__DelegateSignature::SlotIndex' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -76,9 +57,6 @@ struct AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_O
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature, SlotIndex) == 0x000000, "Member 'AthenaInventoryPanel_C_BndEvt__EquipSlot4_K2Node_ComponentBoundEvent_10_OnEquipRequested__DelegateSignature::SlotIndex' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -87,9 +65,6 @@ struct AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_On
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature, SlotIndex) == 0x000000, "Member 'AthenaInventoryPanel_C_BndEvt__EquipSlot3_K2Node_ComponentBoundEvent_6_OnEquipRequested__DelegateSignature::SlotIndex' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -98,9 +73,6 @@ struct AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_On
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature, SlotIndex) == 0x000000, "Member 'AthenaInventoryPanel_C_BndEvt__EquipSlot2_K2Node_ComponentBoundEvent_3_OnEquipRequested__DelegateSignature::SlotIndex' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -109,9 +81,6 @@ struct AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_On
 public:
 	int32                                         SlotIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong alignment on AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature");
-static_assert(sizeof(AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature) == 0x000004, "Wrong size on AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature");
-static_assert(offsetof(AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature, SlotIndex) == 0x000000, "Member 'AthenaInventoryPanel_C_BndEvt__EquipSlot1_K2Node_ComponentBoundEvent_1_OnEquipRequested__DelegateSignature::SlotIndex' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.OnInventoryItemSelected
 // 0x0008 (0x0008 - 0x0000)
@@ -120,9 +89,6 @@ struct AthenaInventoryPanel_C_OnInventoryItemSelected final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_OnInventoryItemSelected) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_OnInventoryItemSelected");
-static_assert(sizeof(AthenaInventoryPanel_C_OnInventoryItemSelected) == 0x000008, "Wrong size on AthenaInventoryPanel_C_OnInventoryItemSelected");
-static_assert(offsetof(AthenaInventoryPanel_C_OnInventoryItemSelected, Item) == 0x000000, "Member 'AthenaInventoryPanel_C_OnInventoryItemSelected::Item' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RequestEquip
 // 0x0008 (0x0008 - 0x0000)
@@ -131,9 +97,6 @@ struct AthenaInventoryPanel_C_RequestEquip final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_RequestEquip) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RequestEquip");
-static_assert(sizeof(AthenaInventoryPanel_C_RequestEquip) == 0x000008, "Wrong size on AthenaInventoryPanel_C_RequestEquip");
-static_assert(offsetof(AthenaInventoryPanel_C_RequestEquip, Item) == 0x000000, "Member 'AthenaInventoryPanel_C_RequestEquip::Item' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleQuickBarChangedBP
 // 0x0001 (0x0001 - 0x0000)
@@ -142,9 +105,6 @@ struct AthenaInventoryPanel_C_HandleQuickBarChangedBP final
 public:
 	EFortQuickBars                                QuickBarType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_HandleQuickBarChangedBP) == 0x000001, "Wrong alignment on AthenaInventoryPanel_C_HandleQuickBarChangedBP");
-static_assert(sizeof(AthenaInventoryPanel_C_HandleQuickBarChangedBP) == 0x000001, "Wrong size on AthenaInventoryPanel_C_HandleQuickBarChangedBP");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleQuickBarChangedBP, QuickBarType) == 0x000000, "Member 'AthenaInventoryPanel_C_HandleQuickBarChangedBP::QuickBarType' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.ProcessSlotAction
 // 0x0038 (0x0038 - 0x0000)
@@ -163,16 +123,6 @@ public:
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_ProcessSlotAction) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_ProcessSlotAction");
-static_assert(sizeof(AthenaInventoryPanel_C_ProcessSlotAction) == 0x000038, "Wrong size on AthenaInventoryPanel_C_ProcessSlotAction");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, SelectedSlot) == 0x000000, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::SelectedSlot' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_GetSelectedInventoryItem_ReturnValue) == 0x000020, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_GetSelectedInventoryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_GetSelectedEquipSlot_Slot) == 0x000028, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_GetSelectedEquipSlot_Slot' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_DropItemOnQuickBar_ReturnValue) == 0x00002C, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_DropItemOnQuickBar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_ProcessSlotAction, CallFunc_GetUINavigationManager_ReturnValue) == 0x000030, "Member 'AthenaInventoryPanel_C_ProcessSlotAction::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.GetSelectedEquipSlot
 // 0x0040 (0x0040 - 0x0000)
@@ -196,21 +146,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_GetSelectedEquipSlot) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_GetSelectedEquipSlot");
-static_assert(sizeof(AthenaInventoryPanel_C_GetSelectedEquipSlot) == 0x000040, "Wrong size on AthenaInventoryPanel_C_GetSelectedEquipSlot");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, Slot_0) == 0x000000, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::Slot_0' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, Temp_bool_True_if_break_was_hit_Variable) == 0x000004, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, Temp_int_Array_Index_Variable) == 0x000008, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_Add_IntInt_ReturnValue2) == 0x000018, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, K2Node_MakeArray_Array) == 0x000020, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_Array_Get_Item) == 0x000030, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_IsSelected_Selected) == 0x00003C, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_IsSelected_Selected' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_Less_IntInt_ReturnValue) == 0x00003D, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_GetSelectedEquipSlot, CallFunc_BooleanAND_ReturnValue) == 0x00003E, "Member 'AthenaInventoryPanel_C_GetSelectedEquipSlot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleClose
 // 0x0010 (0x0010 - 0x0000)
@@ -221,10 +156,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_HandleClose) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_HandleClose");
-static_assert(sizeof(AthenaInventoryPanel_C_HandleClose) == 0x000010, "Wrong size on AthenaInventoryPanel_C_HandleClose");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, PassThrough) == 0x000000, "Member 'AthenaInventoryPanel_C_HandleClose::PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleClose, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_HandleClose::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RegisterBack
 // 0x0020 (0x0020 - 0x0000)
@@ -234,10 +165,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_RegisterBack) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RegisterBack");
-static_assert(sizeof(AthenaInventoryPanel_C_RegisterBack) == 0x000020, "Wrong size on AthenaInventoryPanel_C_RegisterBack");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterBack, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaInventoryPanel_C_RegisterBack::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterBack, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'AthenaInventoryPanel_C_RegisterBack::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RegisterEquip
 // 0x00C0 (0x00C0 - 0x0000)
@@ -277,33 +204,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x00B0(0x0010)(NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_RegisterEquip) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RegisterEquip");
-static_assert(sizeof(AthenaInventoryPanel_C_RegisterEquip) == 0x0000C0, "Wrong size on AthenaInventoryPanel_C_RegisterEquip");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, Temp_byte_Variable) == 0x000000, "Member 'AthenaInventoryPanel_C_RegisterEquip::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetSelectedInventoryItem_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetSelectedInventoryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, Temp_byte_Variable2) == 0x000018, "Member 'AthenaInventoryPanel_C_RegisterEquip::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, Temp_bool_Variable) == 0x00001A, "Member 'AthenaInventoryPanel_C_RegisterEquip::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'AthenaInventoryPanel_C_RegisterEquip::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, K2Node_MakeStruct_DataTableRowHandle) == 0x000030, "Member 'AthenaInventoryPanel_C_RegisterEquip::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetContext_ReturnValue2) == 0x000040, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetSelectedInventoryItem_ReturnValue2) == 0x000048, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetSelectedInventoryItem_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetContext_ReturnValue3) == 0x000050, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_DoesMatchSearchString_ReturnValue) == 0x000058, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_DoesMatchSearchString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetSelectedInventoryItem_ReturnValue3) == 0x000060, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetSelectedInventoryItem_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_Not_PreBool_ReturnValue) == 0x000068, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_IsSlotted_ReturnValue) == 0x000069, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_IsSlotted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetOwningController_ReturnValue) == 0x000070, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetOwningController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_IsEquipable_ReturnValue) == 0x000078, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_IsEquipable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetContext_ReturnValue4) == 0x000080, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_BooleanAND_ReturnValue) == 0x000088, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetSelectedInventoryItem_ReturnValue4) == 0x000090, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetSelectedInventoryItem_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_GetType_ReturnValue) == 0x000098, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, K2Node_Select_Default) == 0x000099, "Member 'AthenaInventoryPanel_C_RegisterEquip::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00009A, "Member 'AthenaInventoryPanel_C_RegisterEquip::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, K2Node_CreateDelegate_OutputDelegate2) == 0x0000A0, "Member 'AthenaInventoryPanel_C_RegisterEquip::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterEquip, K2Node_MakeStruct_DataTableRowHandle2) == 0x0000B0, "Member 'AthenaInventoryPanel_C_RegisterEquip::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleEquip
 // 0x0028 (0x0028 - 0x0000)
@@ -317,13 +217,6 @@ public:
 	class UFortItem*                              K2Node_DynamicCast_AsFort_Item;                    // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_HandleEquip) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_HandleEquip");
-static_assert(sizeof(AthenaInventoryPanel_C_HandleEquip) == 0x000028, "Wrong size on AthenaInventoryPanel_C_HandleEquip");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleEquip, PassThrough) == 0x000000, "Member 'AthenaInventoryPanel_C_HandleEquip::PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleEquip, Item) == 0x000008, "Member 'AthenaInventoryPanel_C_HandleEquip::Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleEquip, CallFunc_GetSelectedItem_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_HandleEquip::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleEquip, K2Node_DynamicCast_AsFort_Item) == 0x000018, "Member 'AthenaInventoryPanel_C_HandleEquip::K2Node_DynamicCast_AsFort_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleEquip, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AthenaInventoryPanel_C_HandleEquip::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RegisterLeaveInventory
 // 0x0020 (0x0020 - 0x0000)
@@ -333,10 +226,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_RegisterLeaveInventory) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RegisterLeaveInventory");
-static_assert(sizeof(AthenaInventoryPanel_C_RegisterLeaveInventory) == 0x000020, "Wrong size on AthenaInventoryPanel_C_RegisterLeaveInventory");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterLeaveInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaInventoryPanel_C_RegisterLeaveInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterLeaveInventory, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'AthenaInventoryPanel_C_RegisterLeaveInventory::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.PerformEquip
 // 0x0038 (0x0038 - 0x0000)
@@ -356,18 +245,6 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue3;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoveItemFromQuickBar_ReturnValue;       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_PerformEquip) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_PerformEquip");
-static_assert(sizeof(AthenaInventoryPanel_C_PerformEquip) == 0x000038, "Wrong size on AthenaInventoryPanel_C_PerformEquip");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, Item) == 0x000000, "Member 'AthenaInventoryPanel_C_PerformEquip::Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_HandleClose_PassThrough) == 0x000008, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_HandleClose_PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_IsSlotted_ReturnValue) == 0x000009, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_IsSlotted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_GetType_ReturnValue) == 0x00000A, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00000B, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_IsUsingGamepad_ReturnValue) == 0x000020, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_PerformEquip, CallFunc_RemoveItemFromQuickBar_ReturnValue) == 0x000030, "Member 'AthenaInventoryPanel_C_PerformEquip::CallFunc_RemoveItemFromQuickBar_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RegisterDrop
 // 0x0038 (0x0038 - 0x0000)
@@ -380,13 +257,6 @@ public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0020(0x0010)(NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_RegisterDrop) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RegisterDrop");
-static_assert(sizeof(AthenaInventoryPanel_C_RegisterDrop) == 0x000038, "Wrong size on AthenaInventoryPanel_C_RegisterDrop");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_GetSelectedInventoryItem_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_GetSelectedInventoryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, K2Node_MakeStruct_DataTableRowHandle) == 0x000020, "Member 'AthenaInventoryPanel_C_RegisterDrop::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RegisterDrop, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'AthenaInventoryPanel_C_RegisterDrop::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleDrop
 // 0x0040 (0x0040 - 0x0000)
@@ -395,7 +265,7 @@ struct AthenaInventoryPanel_C_HandleDrop final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 ChosenValue, class UFortItem* FortItem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 ChosenValue, class UFortItem* FortItem)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UAthenaHUDContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_GetSelectedInventoryItem_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -404,16 +274,6 @@ public:
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_HandleDrop) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_HandleDrop");
-static_assert(sizeof(AthenaInventoryPanel_C_HandleDrop) == 0x000040, "Wrong size on AthenaInventoryPanel_C_HandleDrop");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, PassThrough) == 0x000000, "Member 'AthenaInventoryPanel_C_HandleDrop::PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaInventoryPanel_C_HandleDrop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_HandleDrop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, CallFunc_GetSelectedInventoryItem_ReturnValue) == 0x000020, "Member 'AthenaInventoryPanel_C_HandleDrop::CallFunc_GetSelectedInventoryItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, K2Node_DynamicCast_AsFort_World_Item) == 0x000028, "Member 'AthenaInventoryPanel_C_HandleDrop::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'AthenaInventoryPanel_C_HandleDrop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, CallFunc_GetNumInStack_ReturnValue) == 0x000034, "Member 'AthenaInventoryPanel_C_HandleDrop::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDrop, CallFunc_Greater_IntInt_ReturnValue) == 0x000038, "Member 'AthenaInventoryPanel_C_HandleDrop::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.DropItem
 // 0x0020 (0x0020 - 0x0000)
@@ -427,13 +287,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_DropItem) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_DropItem");
-static_assert(sizeof(AthenaInventoryPanel_C_DropItem) == 0x000020, "Wrong size on AthenaInventoryPanel_C_DropItem");
-static_assert(offsetof(AthenaInventoryPanel_C_DropItem, Item) == 0x000000, "Member 'AthenaInventoryPanel_C_DropItem::Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_DropItem, Quantity) == 0x000008, "Member 'AthenaInventoryPanel_C_DropItem::Quantity' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_GetNumInStack_ReturnValue) == 0x00000C, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_DropItem, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'AthenaInventoryPanel_C_DropItem::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.RefocusOnInventory
 // 0x0010 (0x0010 - 0x0000)
@@ -443,10 +296,6 @@ public:
 	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_RefocusOnInventory) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_RefocusOnInventory");
-static_assert(sizeof(AthenaInventoryPanel_C_RefocusOnInventory) == 0x000010, "Wrong size on AthenaInventoryPanel_C_RefocusOnInventory");
-static_assert(offsetof(AthenaInventoryPanel_C_RefocusOnInventory, CallFunc_GetSelectedItem_ReturnValue) == 0x000000, "Member 'AthenaInventoryPanel_C_RefocusOnInventory::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_RefocusOnInventory, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'AthenaInventoryPanel_C_RefocusOnInventory::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.CreateQuantitySelectorWidget
 // 0x0048 (0x0048 - 0x0000)
@@ -463,15 +312,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UQuantitySelector_C*                    CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_CreateQuantitySelectorWidget");
-static_assert(sizeof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget) == 0x000048, "Wrong size on AthenaInventoryPanel_C_CreateQuantitySelectorWidget");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, Item) == 0x000000, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, ConfirmationText) == 0x000008, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::ConfirmationText' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, CallFunc_GetNumInStack_ReturnValue) == 0x000020, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000028, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, CallFunc_Divide_IntInt_ReturnValue) == 0x000030, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_CreateQuantitySelectorWidget, CallFunc_Create_ReturnValue) == 0x000040, "Member 'AthenaInventoryPanel_C_CreateQuantitySelectorWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.DestroyQuantitySelectorWidget
 // 0x0001 (0x0001 - 0x0000)
@@ -480,9 +320,6 @@ struct AthenaInventoryPanel_C_DestroyQuantitySelectorWidget final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_DestroyQuantitySelectorWidget) == 0x000001, "Wrong alignment on AthenaInventoryPanel_C_DestroyQuantitySelectorWidget");
-static_assert(sizeof(AthenaInventoryPanel_C_DestroyQuantitySelectorWidget) == 0x000001, "Wrong size on AthenaInventoryPanel_C_DestroyQuantitySelectorWidget");
-static_assert(offsetof(AthenaInventoryPanel_C_DestroyQuantitySelectorWidget, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'AthenaInventoryPanel_C_DestroyQuantitySelectorWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleDropItemConfirmationCallback
 // 0x0020 (0x0020 - 0x0000)
@@ -495,12 +332,6 @@ public:
 	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback) == 0x000008, "Wrong alignment on AthenaInventoryPanel_C_HandleDropItemConfirmationCallback");
-static_assert(sizeof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback) == 0x000020, "Wrong size on AthenaInventoryPanel_C_HandleDropItemConfirmationCallback");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback, ChosenQuantity) == 0x000000, "Member 'AthenaInventoryPanel_C_HandleDropItemConfirmationCallback::ChosenQuantity' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback, Item) == 0x000008, "Member 'AthenaInventoryPanel_C_HandleDropItemConfirmationCallback::Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback, K2Node_DynamicCast_AsFort_World_Item) == 0x000010, "Member 'AthenaInventoryPanel_C_HandleDropItemConfirmationCallback::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryPanel_C_HandleDropItemConfirmationCallback, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaInventoryPanel_C_HandleDropItemConfirmationCallback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

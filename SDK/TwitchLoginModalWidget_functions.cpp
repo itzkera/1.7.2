@@ -14,8 +14,7 @@
 #include "TwitchLoginModalWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TwitchLoginModalWidget.TwitchLoginModalWidget_C.ExecuteUbergraph_TwitchLoginModalWidget
 // ()
@@ -56,5 +55,5 @@ void UTwitchLoginModalWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEven
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ItemManagementModeDetailsPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementModeDetailsPanel.ItemManagementModeDetailsPanel_C.ExecuteUbergraph_ItemManagementModeDetailsPanel
 // ()
@@ -50,5 +49,5 @@ void UItemManagementModeDetailsPanel_C::HandleDifferentItemManagementModeSetBP()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,8 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.ExecuteUbergraph_GA_Commando_AmmoRecovery
 // 0x00D8 (0x00D8 - 0x0000)
@@ -33,16 +33,6 @@ public:
 	float                                         CallFunc_RandomFloat_ReturnValue;                  // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery) == 0x000008, "Wrong alignment on GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery");
-static_assert(sizeof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery) == 0x0000D8, "Wrong size on GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, EntryPoint) == 0x000000, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, K2Node_Event_EventData) == 0x000008, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, CallFunc_GetController_ReturnValue) == 0x0000B0, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, K2Node_DynamicCast_AsFort_Player_Controller) == 0x0000B8, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0000C8, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, CallFunc_RandomFloat_ReturnValue) == 0x0000D0, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::CallFunc_RandomFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0000D4, "Member 'GA_Commando_AmmoRecovery_C_ExecuteUbergraph_GA_Commando_AmmoRecovery::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.K2_ActivateAbilityFromEvent
 // 0x00A8 (0x00A8 - 0x0000)
@@ -51,9 +41,6 @@ struct GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData_0;                                       // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent, EventData_0) == 0x000000, "Member 'GA_Commando_AmmoRecovery_C_K2_ActivateAbilityFromEvent::EventData_0' has a wrong offset!");
 
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.SetupAbility
 // 0x0020 (0x0020 - 0x0000)
@@ -64,11 +51,6 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue;   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_AmmoRecovery_C_SetupAbility) == 0x000008, "Wrong alignment on GA_Commando_AmmoRecovery_C_SetupAbility");
-static_assert(sizeof(GA_Commando_AmmoRecovery_C_SetupAbility) == 0x000020, "Wrong size on GA_Commando_AmmoRecovery_C_SetupAbility");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_SetupAbility, AbilitySystem) == 0x000000, "Member 'GA_Commando_AmmoRecovery_C_SetupAbility::AbilitySystem' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000008, "Member 'GA_Commando_AmmoRecovery_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000018, "Member 'GA_Commando_AmmoRecovery_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
 
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.K2_ShouldAbilityRespondToEvent
 // 0x0120 (0x0120 - 0x0000)
@@ -84,15 +66,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasTags_ReturnValue;                      // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent) == 0x000008, "Wrong alignment on GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent");
-static_assert(sizeof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent) == 0x000120, "Wrong size on GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, ActorInfo) == 0x000000, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::ActorInfo' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, Payload) == 0x000040, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::Payload' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, ReturnValue) == 0x0000E8, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x0000F0, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, K2Node_DynamicCast_AsFort_Pawn) == 0x000110, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent, CallFunc_HasTags_ReturnValue) == 0x000119, "Member 'GA_Commando_AmmoRecovery_C_K2_ShouldAbilityRespondToEvent::CallFunc_HasTags_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

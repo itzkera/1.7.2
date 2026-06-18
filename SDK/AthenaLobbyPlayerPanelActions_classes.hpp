@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C
 // 0x01D8 (0x0410 - 0x0238)
@@ -62,24 +61,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLobbyPlayerPanelActions_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLobbyPlayerPanelActions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLobbyPlayerPanelActions_C")
 	}
 	static class UAthenaLobbyPlayerPanelActions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLobbyPlayerPanelActions_C>();
 	}
 };
-static_assert(alignof(UAthenaLobbyPlayerPanelActions_C) == 0x000008, "Wrong alignment on UAthenaLobbyPlayerPanelActions_C");
-static_assert(sizeof(UAthenaLobbyPlayerPanelActions_C) == 0x000410, "Wrong size on UAthenaLobbyPlayerPanelActions_C");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, UberGraphFrame) == 0x000238, "Member 'UAthenaLobbyPlayerPanelActions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, BoxActions) == 0x000240, "Member 'UAthenaLobbyPlayerPanelActions_C::BoxActions' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, ButtonAddFriend) == 0x000248, "Member 'UAthenaLobbyPlayerPanelActions_C::ButtonAddFriend' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, ButtonInviteParty) == 0x000250, "Member 'UAthenaLobbyPlayerPanelActions_C::ButtonInviteParty' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, ButtonManage) == 0x000258, "Member 'UAthenaLobbyPlayerPanelActions_C::ButtonManage' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, ViewProfileButton) == 0x000260, "Member 'UAthenaLobbyPlayerPanelActions_C::ViewProfileButton' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, HoveredActionButton) == 0x000268, "Member 'UAthenaLobbyPlayerPanelActions_C::HoveredActionButton' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, OnGadgetsClicked) == 0x000270, "Member 'UAthenaLobbyPlayerPanelActions_C::OnGadgetsClicked' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelActions_C, TeamMemberInfo) == 0x000280, "Member 'UAthenaLobbyPlayerPanelActions_C::TeamMemberInfo' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

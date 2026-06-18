@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_GCSteps.BP_GCSteps_C
 // 0x0000 (0x0160 - 0x0160)
@@ -23,15 +22,16 @@ class UBP_GCSteps_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GCSteps_C">();
+		BP_STATIC_CLASS_IMPL("BP_GCSteps_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GCSteps_C")
 	}
 	static class UBP_GCSteps_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_GCSteps_C>();
 	}
 };
-static_assert(alignof(UBP_GCSteps_C) == 0x000008, "Wrong alignment on UBP_GCSteps_C");
-static_assert(sizeof(UBP_GCSteps_C) == 0x000160, "Wrong size on UBP_GCSteps_C");
 
-}
-
+SDK_NAMESPACE_END

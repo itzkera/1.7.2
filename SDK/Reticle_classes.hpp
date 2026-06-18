@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Reticle.Reticle_C
 // 0x0000 (0x0288 - 0x0288)
@@ -23,15 +22,16 @@ class UReticle_C final : public UFortReticle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Reticle_C">();
+		BP_STATIC_CLASS_IMPL("Reticle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Reticle_C")
 	}
 	static class UReticle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReticle_C>();
 	}
 };
-static_assert(alignof(UReticle_C) == 0x000008, "Wrong alignment on UReticle_C");
-static_assert(sizeof(UReticle_C) == 0x000288, "Wrong size on UReticle_C");
 
-}
-
+SDK_NAMESPACE_END

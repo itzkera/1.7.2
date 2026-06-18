@@ -14,8 +14,7 @@
 #include "T1_Main_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function T1_Main.T1_Main_C.ExecuteUbergraph_T1_Main
 // ()
@@ -70,5 +69,5 @@ void UT1_Main_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

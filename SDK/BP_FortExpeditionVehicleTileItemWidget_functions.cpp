@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionVehicleTileItemWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget
 // ()
@@ -76,7 +75,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::SetData(class UObject* InData, c
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Icon
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             SquadId_0                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      SquadId_0                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const class FName& SquadId_0)
 {
@@ -96,7 +95,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const class FName& Squa
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Rating
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             SquadId_0                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      SquadId_0                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const class FName& SquadId_0)
 {
@@ -116,7 +115,7 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const class FName& Sq
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Name
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             SquadId_0                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName                       SquadId_0                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const class FName SquadId_0)
 {
@@ -132,5 +131,5 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const class FName Squad
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

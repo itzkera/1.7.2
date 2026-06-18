@@ -14,13 +14,12 @@
 #include "ChoiceCardName_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ChoiceCardName.ChoiceCardName_C.UpdateText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             DisplayText_0                                          (Parm)
+// const class FText&                      DisplayText_0                                          (Parm)
 // EFortRarity                             Rarity                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UChoiceCardName_C::UpdateText(const class FText& DisplayText_0, EFortRarity Rarity)
@@ -38,5 +37,5 @@ void UChoiceCardName_C::UpdateText(const class FText& DisplayText_0, EFortRarity
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

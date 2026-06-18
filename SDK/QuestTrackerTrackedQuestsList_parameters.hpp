@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestTrackerTrackedQuestsList.QuestTrackerTrackedQuestsList_C.GetQuestsToDisplay
 // 0x0040 (0x0040 - 0x0000)
@@ -27,14 +27,6 @@ public:
 	TArray<class UFortQuestItem*>                 CallFunc_GetPinnedQuests_OutPinnedQuestItems;      // 0x0028(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay) == 0x000008, "Wrong alignment on QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay");
-static_assert(sizeof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay) == 0x000040, "Wrong size on QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay");
-static_assert(offsetof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay, ReturnValue) == 0x000000, "Member 'QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay::ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay, CallFunc_GetQuestManager_ReturnValue) == 0x000018, "Member 'QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay, CallFunc_GetPinnedQuests_OutPinnedQuestItems) == 0x000028, "Member 'QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay::CallFunc_GetPinnedQuests_OutPinnedQuestItems' has a wrong offset!");
-static_assert(offsetof(QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay, CallFunc_IsValid_ReturnValue2) == 0x000038, "Member 'QuestTrackerTrackedQuestsList_C_GetQuestsToDisplay::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

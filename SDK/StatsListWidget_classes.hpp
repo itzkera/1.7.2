@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StatsListWidget.StatsListWidget_C
 // 0x0030 (0x0298 - 0x0268)
@@ -41,20 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatsListWidget_C">();
+		BP_STATIC_CLASS_IMPL("StatsListWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatsListWidget_C")
 	}
 	static class UStatsListWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatsListWidget_C>();
 	}
 };
-static_assert(alignof(UStatsListWidget_C) == 0x000008, "Wrong alignment on UStatsListWidget_C");
-static_assert(sizeof(UStatsListWidget_C) == 0x000298, "Wrong size on UStatsListWidget_C");
-static_assert(offsetof(UStatsListWidget_C, UberGraphFrame) == 0x000268, "Member 'UStatsListWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, HBoxCapMessage) == 0x000270, "Member 'UStatsListWidget_C::HBoxCapMessage' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, StatsList) == 0x000278, "Member 'UStatsListWidget_C::StatsList' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, RowMargin) == 0x000280, "Member 'UStatsListWidget_C::RowMargin' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, ClampedAttributeCount) == 0x000290, "Member 'UStatsListWidget_C::ClampedAttributeCount' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

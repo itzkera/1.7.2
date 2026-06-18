@@ -14,8 +14,7 @@
 #include "Results_TeleportPadPlayer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ExecuteUbergraph_Results_TeleportPadPlayer
 // (HasDefaults)
@@ -170,9 +169,9 @@ void UResults_TeleportPadPlayer_C::Team_Score_Screen_Intro()
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Initialize
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 InUniqueId                                             (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// class UFortUIScoreReport*               InScoreReport                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FUniqueNetIdRepl                 InConsoleUniqueId                                      (Parm, HasGetValueTypeHash)
+// struct FUniqueNetIdRepl&                InUniqueId                                             (Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// class UFortUIScoreReport*&              InScoreReport                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          InConsoleUniqueId                                      (Parm, HasGetValueTypeHash)
 
 void UResults_TeleportPadPlayer_C::Initialize(struct FUniqueNetIdRepl& InUniqueId, class UFortUIScoreReport*& InScoreReport, const struct FUniqueNetIdRepl& InConsoleUniqueId)
 {
@@ -211,7 +210,7 @@ void UResults_TeleportPadPlayer_C::SetIsValidPad()
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsValidPad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bIsValid_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsValid_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeleportPadPlayer_C::IsValidPad(bool* bIsValid_0)
 {
@@ -260,7 +259,7 @@ void UResults_TeleportPadPlayer_C::InvitePlayer()
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.CanInviteParty
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCanInvitePlayer                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCanInvitePlayer                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeleportPadPlayer_C::CanInviteParty(bool* bCanInvitePlayer)
 {
@@ -281,7 +280,7 @@ void UResults_TeleportPadPlayer_C::CanInviteParty(bool* bCanInvitePlayer)
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.CanFriend
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCanFriendPlayer                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCanFriendPlayer                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeleportPadPlayer_C::CanFriend(bool* bCanFriendPlayer)
 {
@@ -316,7 +315,7 @@ void UResults_TeleportPadPlayer_C::Focus()
 // Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsLocalPlayersPad
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bIsLocalPlayersPad                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsLocalPlayersPad                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeleportPadPlayer_C::IsLocalPlayersPad(bool* bIsLocalPlayersPad)
 {
@@ -333,5 +332,5 @@ void UResults_TeleportPadPlayer_C::IsLocalPlayersPad(bool* bIsLocalPlayersPad)
 		*bIsLocalPlayersPad = Parms.bIsLocalPlayersPad;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_DtB_FloatingRift.B_DtB_FloatingRift_C
 // 0x0130 (0x0970 - 0x0840)
@@ -74,50 +73,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_DtB_FloatingRift_C">();
+		BP_STATIC_CLASS_IMPL("B_DtB_FloatingRift_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_DtB_FloatingRift_C")
 	}
 	static class AB_DtB_FloatingRift_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_DtB_FloatingRift_C>();
 	}
 };
-static_assert(alignof(AB_DtB_FloatingRift_C) == 0x000010, "Wrong alignment on AB_DtB_FloatingRift_C");
-static_assert(sizeof(AB_DtB_FloatingRift_C) == 0x000970, "Wrong size on AB_DtB_FloatingRift_C");
-static_assert(offsetof(AB_DtB_FloatingRift_C, UberGraphFrame) == 0x000840, "Member 'AB_DtB_FloatingRift_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Electricity_Spark_Zaps_Audio_Component) == 0x000848, "Member 'AB_DtB_FloatingRift_C::Electricity_Spark_Zaps_Audio_Component' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_ground_04) == 0x000850, "Member 'AB_DtB_FloatingRift_C::dtb_rift_ground_04' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_ground_03) == 0x000858, "Member 'AB_DtB_FloatingRift_C::dtb_rift_ground_03' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_ground_02) == 0x000860, "Member 'AB_DtB_FloatingRift_C::dtb_rift_ground_02' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_ground_01) == 0x000868, "Member 'AB_DtB_FloatingRift_C::dtb_rift_ground_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, DispatcherCallOutVolume) == 0x000870, "Member 'AB_DtB_FloatingRift_C::DispatcherCallOutVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, Decal_Ground) == 0x000878, "Member 'AB_DtB_FloatingRift_C::Decal_Ground' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, SM_DtB_GroundFog) == 0x000880, "Member 'AB_DtB_FloatingRift_C::SM_DtB_GroundFog' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, SM_DtB_GroundTendril) == 0x000888, "Member 'AB_DtB_FloatingRift_C::SM_DtB_GroundTendril' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_orb_01) == 0x000890, "Member 'AB_DtB_FloatingRift_C::dtb_rift_orb_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh2) == 0x000898, "Member 'AB_DtB_FloatingRift_C::StaticMesh2' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh1) == 0x0008A0, "Member 'AB_DtB_FloatingRift_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaticMesh) == 0x0008A8, "Member 'AB_DtB_FloatingRift_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_floating_pieces_01) == 0x0008B0, "Member 'AB_DtB_FloatingRift_C::dtb_rift_floating_pieces_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, S_Elevation_Ground_Z) == 0x0008B8, "Member 'AB_DtB_FloatingRift_C::S_Elevation_Ground_Z' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, dtb_rift_center_01) == 0x0008C0, "Member 'AB_DtB_FloatingRift_C::dtb_rift_center_01' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, P_StormFog) == 0x0008C8, "Member 'AB_DtB_FloatingRift_C::P_StormFog' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, AmbientClose_small) == 0x0008D0, "Member 'AB_DtB_FloatingRift_C::AmbientClose_small' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, AmbientLoopingSound_large) == 0x0008D8, "Member 'AB_DtB_FloatingRift_C::AmbientLoopingSound_large' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, FortMiniMap) == 0x0008E0, "Member 'AB_DtB_FloatingRift_C::FortMiniMap' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, KillVolume) == 0x0008E8, "Member 'AB_DtB_FloatingRift_C::KillVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, StaminaVolume) == 0x0008F0, "Member 'AB_DtB_FloatingRift_C::StaminaVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, DamageVolume) == 0x0008F8, "Member 'AB_DtB_FloatingRift_C::DamageVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, P_Rift_Arcs) == 0x000900, "Member 'AB_DtB_FloatingRift_C::P_Rift_Arcs' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, RiftArcTriggerVolume) == 0x000908, "Member 'AB_DtB_FloatingRift_C::RiftArcTriggerVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, CampSlime) == 0x000910, "Member 'AB_DtB_FloatingRift_C::CampSlime' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, PostProcess) == 0x000918, "Member 'AB_DtB_FloatingRift_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, PostProcessVolume) == 0x000920, "Member 'AB_DtB_FloatingRift_C::PostProcessVolume' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, P_DtBRiftCoreFloating) == 0x000928, "Member 'AB_DtB_FloatingRift_C::P_DtBRiftCoreFloating' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, DefaultSceneRoot) == 0x000930, "Member 'AB_DtB_FloatingRift_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, bIsRiftArcsActive_) == 0x000938, "Member 'AB_DtB_FloatingRift_C::bIsRiftArcsActive_' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, AIPawnAbilitySystemComponent) == 0x000940, "Member 'AB_DtB_FloatingRift_C::AIPawnAbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, RiftLocated) == 0x000948, "Member 'AB_DtB_FloatingRift_C::RiftLocated' has a wrong offset!");
-static_assert(offsetof(AB_DtB_FloatingRift_C, CallOutVolumeOverlap) == 0x000958, "Member 'AB_DtB_FloatingRift_C::CallOutVolumeOverlap' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

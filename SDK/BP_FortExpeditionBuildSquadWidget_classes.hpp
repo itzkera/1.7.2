@@ -20,8 +20,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C
 // 0x02B8 (0x06F8 - 0x0440)
@@ -156,59 +155,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionBuildSquadWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionBuildSquadWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionBuildSquadWidget_C")
 	}
 	static class UBP_FortExpeditionBuildSquadWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionBuildSquadWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionBuildSquadWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionBuildSquadWidget_C");
-static_assert(sizeof(UBP_FortExpeditionBuildSquadWidget_C) == 0x0006F8, "Wrong size on UBP_FortExpeditionBuildSquadWidget_C");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, UberGraphFrame) == 0x000440, "Member 'UBP_FortExpeditionBuildSquadWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BasicRatingWidget) == 0x000448, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BasicRatingWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BonusSet) == 0x000450, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BonusSet' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BP_FortExpeditionExpiresWidget) == 0x000458, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BP_FortExpeditionExpiresWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CommonBorder_5) == 0x000460, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CommonBorder_5' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CommonBorder_18) == 0x000468, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CommonBorder_18' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CommonWidgetSwitcher_0) == 0x000470, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CostSlots) == 0x000478, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CostSlots' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, ExpeditionDescription) == 0x000480, "Member 'UBP_FortExpeditionBuildSquadWidget_C::ExpeditionDescription' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, ExpeditionDuration) == 0x000488, "Member 'UBP_FortExpeditionBuildSquadWidget_C::ExpeditionDuration' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, ExpeditionName) == 0x000490, "Member 'UBP_FortExpeditionBuildSquadWidget_C::ExpeditionName' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, InfoAction) == 0x000498, "Member 'UBP_FortExpeditionBuildSquadWidget_C::InfoAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, PreviewBuffArrow_Chance) == 0x0004A0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::PreviewBuffArrow_Chance' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, PreviewBuffArrow_Rating) == 0x0004A8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::PreviewBuffArrow_Rating' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, RarityBorder) == 0x0004B0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::RarityBorder' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, RequirementsSlots) == 0x0004B8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::RequirementsSlots' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, RewardsSet) == 0x0004C0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::RewardsSet' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, SafeZone_0) == 0x0004C8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, SquadRating) == 0x0004D0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::SquadRating' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, SuccessChance) == 0x0004D8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::SuccessChance' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, VBoxBonuses) == 0x0004E0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::VBoxBonuses' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, VehicleImage) == 0x0004E8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::VehicleImage' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, VehicleName) == 0x0004F0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::VehicleName' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, ViewInfoButton_NoText) == 0x0004F8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::ViewInfoButton_NoText' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BackInputAction) == 0x000500, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BackInputAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, ChangeVehicleActon) == 0x000510, "Member 'UBP_FortExpeditionBuildSquadWidget_C::ChangeVehicleActon' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, SlotItemAction) == 0x000520, "Member 'UBP_FortExpeditionBuildSquadWidget_C::SlotItemAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CloseAction) == 0x000530, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CloseAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, StartExpeditionAction) == 0x000540, "Member 'UBP_FortExpeditionBuildSquadWidget_C::StartExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, OpenPickerAction) == 0x000550, "Member 'UBP_FortExpeditionBuildSquadWidget_C::OpenPickerAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, Current_Squad_Info) == 0x000560, "Member 'UBP_FortExpeditionBuildSquadWidget_C::Current_Squad_Info' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, NoVehicleBrush) == 0x0005E8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::NoVehicleBrush' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, Expedition_Pick_Vehicle_Class) == 0x000678, "Member 'UBP_FortExpeditionBuildSquadWidget_C::Expedition_Pick_Vehicle_Class' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CancelInputActionName) == 0x000680, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CancelInputActionName' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, SelectedSlot) == 0x000688, "Member 'UBP_FortExpeditionBuildSquadWidget_C::SelectedSlot' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, RewardInfoWindow) == 0x000690, "Member 'UBP_FortExpeditionBuildSquadWidget_C::RewardInfoWindow' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, WaitingForDialogHandle) == 0x000698, "Member 'UBP_FortExpeditionBuildSquadWidget_C::WaitingForDialogHandle' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, BuffColor) == 0x00069C, "Member 'UBP_FortExpeditionBuildSquadWidget_C::BuffColor' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, DebuffColor) == 0x0006AC, "Member 'UBP_FortExpeditionBuildSquadWidget_C::DebuffColor' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, PurchaseSlotAction) == 0x0006C0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::PurchaseSlotAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, InspectAction) == 0x0006D0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::InspectAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, InspectItem) == 0x0006E0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::InspectItem' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CachedExpeditionSquadSlotsView) == 0x0006E8, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CachedExpeditionSquadSlotsView' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionBuildSquadWidget_C, CachedExpeditionSquadSlotPicker) == 0x0006F0, "Member 'UBP_FortExpeditionBuildSquadWidget_C::CachedExpeditionSquadSlotPicker' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

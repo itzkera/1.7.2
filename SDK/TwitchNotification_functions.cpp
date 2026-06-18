@@ -14,8 +14,7 @@
 #include "TwitchNotification_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TwitchNotification.TwitchNotification_C.GetImageOverride
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -36,5 +35,5 @@ class UTexture2D* UTwitchNotification_C::GetImageOverride()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

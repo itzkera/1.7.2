@@ -11,12 +11,11 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "B_Ranged_Generic_classes.hpp"
 #include "Engine_structs.hpp"
+#include "B_Ranged_Generic_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_GoinCommandoWeapon.B_GoinCommandoWeapon_C
 // 0x00B8 (0x0EA0 - 0x0DE8)
@@ -63,36 +62,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_GoinCommandoWeapon_C">();
+		BP_STATIC_CLASS_IMPL("B_GoinCommandoWeapon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_GoinCommandoWeapon_C")
 	}
 	static class AB_GoinCommandoWeapon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_GoinCommandoWeapon_C>();
 	}
 };
-static_assert(alignof(AB_GoinCommandoWeapon_C) == 0x000008, "Wrong alignment on AB_GoinCommandoWeapon_C");
-static_assert(sizeof(AB_GoinCommandoWeapon_C) == 0x000EA0, "Wrong size on AB_GoinCommandoWeapon_C");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, UberGraphFrame_B_GoinCommandoWeapon_C) == 0x000DE8, "Member 'AB_GoinCommandoWeapon_C::UberGraphFrame_B_GoinCommandoWeapon_C' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, P_GoingCommando_ChargeUp_01) == 0x000DF0, "Member 'AB_GoinCommandoWeapon_C::P_GoingCommando_ChargeUp_01' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, SpinDownSound) == 0x000DF8, "Member 'AB_GoinCommandoWeapon_C::SpinDownSound' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, SpinUpSound) == 0x000E00, "Member 'AB_GoinCommandoWeapon_C::SpinUpSound' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, ChargeUp_ChargingTime_46AF3CCF4ABF9B1069FB7989793B0F32) == 0x000E08, "Member 'AB_GoinCommandoWeapon_C::ChargeUp_ChargingTime_46AF3CCF4ABF9B1069FB7989793B0F32' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, ChargeUp__Direction_46AF3CCF4ABF9B1069FB7989793B0F32) == 0x000E0C, "Member 'AB_GoinCommandoWeapon_C::ChargeUp__Direction_46AF3CCF4ABF9B1069FB7989793B0F32' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, ChargeUp) == 0x000E10, "Member 'AB_GoinCommandoWeapon_C::ChargeUp' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, Boomstick) == 0x000E18, "Member 'AB_GoinCommandoWeapon_C::Boomstick' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, BulletImpact_Lvl0_4) == 0x000E20, "Member 'AB_GoinCommandoWeapon_C::BulletImpact_Lvl0_4' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, BulletImpact_Lvl5) == 0x000E28, "Member 'AB_GoinCommandoWeapon_C::BulletImpact_Lvl5' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, DecalMaterialLvl0_4) == 0x000E30, "Member 'AB_GoinCommandoWeapon_C::DecalMaterialLvl0_4' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, DecalMaterialLvl5) == 0x000E38, "Member 'AB_GoinCommandoWeapon_C::DecalMaterialLvl5' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, MuzzleLvl5) == 0x000E40, "Member 'AB_GoinCommandoWeapon_C::MuzzleLvl5' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, MuzzleLvl0_4) == 0x000E48, "Member 'AB_GoinCommandoWeapon_C::MuzzleLvl0_4' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, TracerLvl5) == 0x000E50, "Member 'AB_GoinCommandoWeapon_C::TracerLvl5' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, TracerLvl0_4) == 0x000E58, "Member 'AB_GoinCommandoWeapon_C::TracerLvl0_4' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, TC_Boomstick) == 0x000E60, "Member 'AB_GoinCommandoWeapon_C::TC_Boomstick' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, Effect_GoingCommando_WeaponArcs) == 0x000E80, "Member 'AB_GoinCommandoWeapon_C::Effect_GoingCommando_WeaponArcs' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, ChargeupLvl0_4) == 0x000E88, "Member 'AB_GoinCommandoWeapon_C::ChargeupLvl0_4' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, ChargeupLvl5) == 0x000E90, "Member 'AB_GoinCommandoWeapon_C::ChargeupLvl5' has a wrong offset!");
-static_assert(offsetof(AB_GoinCommandoWeapon_C, CurrentChargeTime) == 0x000E98, "Member 'AB_GoinCommandoWeapon_C::CurrentChargeTime' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

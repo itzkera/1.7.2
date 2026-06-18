@@ -14,8 +14,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ProgressWidget.ProgressWidget_C
 // 0x0030 (0x0268 - 0x0238)
@@ -37,21 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ProgressWidget_C">();
+		BP_STATIC_CLASS_IMPL("ProgressWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProgressWidget_C")
 	}
 	static class UProgressWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProgressWidget_C>();
 	}
 };
-static_assert(alignof(UProgressWidget_C) == 0x000008, "Wrong alignment on UProgressWidget_C");
-static_assert(sizeof(UProgressWidget_C) == 0x000268, "Wrong size on UProgressWidget_C");
-static_assert(offsetof(UProgressWidget_C, Description) == 0x000238, "Member 'UProgressWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, MainIcon) == 0x000240, "Member 'UProgressWidget_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, ProgressSizeBox) == 0x000248, "Member 'UProgressWidget_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, ProgressSpinner) == 0x000250, "Member 'UProgressWidget_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, ProgressVBox) == 0x000258, "Member 'UProgressWidget_C::ProgressVBox' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, Title) == 0x000260, "Member 'UProgressWidget_C::Title' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

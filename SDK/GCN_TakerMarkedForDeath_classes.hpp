@@ -16,8 +16,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C
 // 0x0050 (0x04B8 - 0x0468)
@@ -43,24 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_TakerMarkedForDeath_C">();
+		BP_STATIC_CLASS_IMPL("GCN_TakerMarkedForDeath_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_TakerMarkedForDeath_C")
 	}
 	static class AGCN_TakerMarkedForDeath_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_TakerMarkedForDeath_C>();
 	}
 };
-static_assert(alignof(AGCN_TakerMarkedForDeath_C) == 0x000008, "Wrong alignment on AGCN_TakerMarkedForDeath_C");
-static_assert(sizeof(AGCN_TakerMarkedForDeath_C) == 0x0004B8, "Wrong size on AGCN_TakerMarkedForDeath_C");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, UberGraphFrame) == 0x000468, "Member 'AGCN_TakerMarkedForDeath_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, OverHeadEffect) == 0x000470, "Member 'AGCN_TakerMarkedForDeath_C::OverHeadEffect' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, MiniMapCrosshair) == 0x000478, "Member 'AGCN_TakerMarkedForDeath_C::MiniMapCrosshair' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, MiniMapIconBackground) == 0x000480, "Member 'AGCN_TakerMarkedForDeath_C::MiniMapIconBackground' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, TakerFeedbackEvent) == 0x000488, "Member 'AGCN_TakerMarkedForDeath_C::TakerFeedbackEvent' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, TakerFeedbackRepeatDelay) == 0x0004A0, "Member 'AGCN_TakerMarkedForDeath_C::TakerFeedbackRepeatDelay' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, TakerFeedbackInitialDelay) == 0x0004A4, "Member 'AGCN_TakerMarkedForDeath_C::TakerFeedbackInitialDelay' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, TC_GameplayStatusStun) == 0x0004A8, "Member 'AGCN_TakerMarkedForDeath_C::TC_GameplayStatusStun' has a wrong offset!");
-static_assert(offsetof(AGCN_TakerMarkedForDeath_C, PlayerIsStunned) == 0x0004B0, "Member 'AGCN_TakerMarkedForDeath_C::PlayerIsStunned' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum EFortUIThemeColor.EFortUIThemeColor
 // NumValues: 0x0007
@@ -27,5 +26,4 @@ enum class EFortUIThemeColor : uint8
 	EFortUIThemeColor_MAX                    = 6,
 };
 
-}
-
+SDK_NAMESPACE_END

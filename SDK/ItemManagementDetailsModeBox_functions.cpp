@@ -14,8 +14,7 @@
 #include "ItemManagementDetailsModeBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.ExecuteUbergraph_ItemManagementDetailsModeBox
 // ()
@@ -206,7 +205,7 @@ void UItemManagementDetailsModeBox_C::BndEvt__DetailPanelWidgetSwitcher_K2Node_C
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleClose
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleClose(bool* PassThrough)
 {
@@ -227,7 +226,7 @@ void UItemManagementDetailsModeBox_C::HandleClose(bool* PassThrough)
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleInspect
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleInspect(bool* PassThrough)
 {
@@ -248,7 +247,7 @@ void UItemManagementDetailsModeBox_C::HandleInspect(bool* PassThrough)
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCompare
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleCompare(bool* PassThrough)
 {
@@ -269,7 +268,7 @@ void UItemManagementDetailsModeBox_C::HandleCompare(bool* PassThrough)
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleMulch
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleMulch(bool* PassThrough)
 {
@@ -290,7 +289,7 @@ void UItemManagementDetailsModeBox_C::HandleMulch(bool* PassThrough)
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleSort
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleSort(bool* PassThrough)
 {
@@ -325,7 +324,7 @@ void UItemManagementDetailsModeBox_C::TrySetupInputHandling()
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleConsumeItem
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleConsumeItem(bool* PassThrough)
 {
@@ -346,7 +345,7 @@ void UItemManagementDetailsModeBox_C::HandleConsumeItem(bool* PassThrough)
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCraft
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleCraft(bool* PassThrough)
 {
@@ -381,7 +380,7 @@ void UItemManagementDetailsModeBox_C::ShowSelection()
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleDrop
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleDrop(bool* PassThrough)
 {
@@ -548,7 +547,7 @@ void UItemManagementDetailsModeBox_C::RegisterTrack()
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleTrack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleTrack(bool* PassThrough)
 {
@@ -583,7 +582,7 @@ void UItemManagementDetailsModeBox_C::RegisterEquip()
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleEquip
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleEquip(bool* PassThrough)
 {
@@ -680,8 +679,8 @@ void UItemManagementDetailsModeBox_C::RegisterInventoryInspect()
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleWorldItemListChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorldItem*>&          ItemsAdded                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorldItem*>&          ItemsRemoved                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemManagementDetailsModeBox_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -747,7 +746,7 @@ void UItemManagementDetailsModeBox_C::RegisterCraftAndSlot()
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCraftAndSlot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementDetailsModeBox_C::HandleCraftAndSlot(bool* PassThrough)
 {
@@ -803,7 +802,7 @@ void UItemManagementDetailsModeBox_C::DestroyQuantitySelectorWidget()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortWorldItem*                   Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             ConfirmationText                                       (Parm)
+// const class FText&                      ConfirmationText                                       (Parm)
 
 void UItemManagementDetailsModeBox_C::CreateQuantitySelectorWidget(class UFortWorldItem* Item, const class FText& ConfirmationText)
 {
@@ -960,5 +959,5 @@ void UItemManagementDetailsModeBox_C::RegisterInspectUpgrade()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

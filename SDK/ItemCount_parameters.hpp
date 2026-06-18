@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemCount.ItemCount_C.ExecuteUbergraph_ItemCount
 // 0x0010 (0x0010 - 0x0000)
@@ -32,18 +32,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCount_C_ExecuteUbergraph_ItemCount) == 0x000004, "Wrong alignment on ItemCount_C_ExecuteUbergraph_ItemCount");
-static_assert(sizeof(ItemCount_C_ExecuteUbergraph_ItemCount) == 0x000010, "Wrong size on ItemCount_C_ExecuteUbergraph_ItemCount");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, EntryPoint) == 0x000000, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000006, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, CallFunc_BooleanOR_ReturnValue) == 0x000007, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, Temp_byte_Variable) == 0x000008, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, Temp_byte_Variable2) == 0x000009, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, Temp_bool_Variable) == 0x00000A, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, CallFunc_TextIsEmpty_ReturnValue) == 0x00000B, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_ExecuteUbergraph_ItemCount, K2Node_Select_Default) == 0x00000C, "Member 'ItemCount_C_ExecuteUbergraph_ItemCount::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemCount.ItemCount_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +40,6 @@ struct ItemCount_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCount_C_PreConstruct) == 0x000001, "Wrong alignment on ItemCount_C_PreConstruct");
-static_assert(sizeof(ItemCount_C_PreConstruct) == 0x000001, "Wrong size on ItemCount_C_PreConstruct");
-static_assert(offsetof(ItemCount_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemCount_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemCount.ItemCount_C.SetItemDefinition
 // 0x0008 (0x0008 - 0x0000)
@@ -63,9 +48,6 @@ struct ItemCount_C_SetItemDefinition final
 public:
 	class UFortItemDefinition*                    ItemDefinition_0;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCount_C_SetItemDefinition) == 0x000008, "Wrong alignment on ItemCount_C_SetItemDefinition");
-static_assert(sizeof(ItemCount_C_SetItemDefinition) == 0x000008, "Wrong size on ItemCount_C_SetItemDefinition");
-static_assert(offsetof(ItemCount_C_SetItemDefinition, ItemDefinition_0) == 0x000000, "Member 'ItemCount_C_SetItemDefinition::ItemDefinition_0' has a wrong offset!");
 
 // Function ItemCount.ItemCount_C.SetIsBeingPreviewed
 // 0x0005 (0x0005 - 0x0000)
@@ -78,13 +60,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCount_C_SetIsBeingPreviewed) == 0x000001, "Wrong alignment on ItemCount_C_SetIsBeingPreviewed");
-static_assert(sizeof(ItemCount_C_SetIsBeingPreviewed) == 0x000005, "Wrong size on ItemCount_C_SetIsBeingPreviewed");
-static_assert(offsetof(ItemCount_C_SetIsBeingPreviewed, BeingPreviewed) == 0x000000, "Member 'ItemCount_C_SetIsBeingPreviewed::BeingPreviewed' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_SetIsBeingPreviewed, Temp_bool_Variable) == 0x000001, "Member 'ItemCount_C_SetIsBeingPreviewed::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_SetIsBeingPreviewed, Temp_byte_Variable) == 0x000002, "Member 'ItemCount_C_SetIsBeingPreviewed::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_SetIsBeingPreviewed, Temp_byte_Variable2) == 0x000003, "Member 'ItemCount_C_SetIsBeingPreviewed::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemCount_C_SetIsBeingPreviewed, K2Node_Select_Default) == 0x000004, "Member 'ItemCount_C_SetIsBeingPreviewed::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

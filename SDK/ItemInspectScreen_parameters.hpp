@@ -18,8 +18,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemInspectScreen.ItemInspectScreen_C.ExecuteUbergraph_ItemInspectScreen
 // 0x0108 (0x0108 - 0x0000)
@@ -63,7 +63,7 @@ public:
 	TDelegate<void(bool bCursorModeEnabled)>      K2Node_CreateDelegate_OutputDelegate;              // 0x00A8(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_HandleUpgrade_PassThrough;                // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TArray<struct FFortItemInstanceQuantityPair>& ItemsQuantities)> K2Node_CreateDelegate_OutputDelegate2;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FFortItemInstanceQuantityPair>& ItemsQuantities)> K2Node_CreateDelegate_OutputDelegate2; // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetMaxLevel_ReturnValue;                  // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -75,48 +75,6 @@ public:
 	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_TabButton;              // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen) == 0x000008, "Wrong alignment on ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen");
-static_assert(sizeof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen) == 0x000108, "Wrong size on ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, EntryPoint) == 0x000000, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue3) == 0x000018, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue4) == 0x000020, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue5) == 0x000028, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue6) == 0x000030, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetInputManager_ReturnValue) == 0x000038, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue7) == 0x000040, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue8) == 0x000048, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_HandleBack_PassThrough) == 0x000050, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_HandleBack_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_bItemChanged) == 0x000051, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_bItemChanged' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_bAmmoChanged) == 0x000052, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_bAmmoChanged' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_bIngredientsChanged) == 0x000053, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_bIngredientsChanged' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_HandleBack_PassThrough2) == 0x000054, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_HandleBack_PassThrough2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue9) == 0x000058, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_Item3) == 0x000060, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_Item3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_Item2) == 0x000068, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_Item2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_Item) == 0x000070, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_RecipeIndex) == 0x000078, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_RecipeIndex' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetContext_ReturnValue10) == 0x000080, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetContext_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_Event_ItemToInspect) == 0x000088, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_Event_ItemToInspect' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_Event_Mode) == 0x000090, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_Event_Mode' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_Event_ShouldAllowUpgrading) == 0x000091, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_Event_ShouldAllowUpgrading' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_Event_ShouldAllowEvolution) == 0x000092, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_Event_ShouldAllowEvolution' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_Event_ShouldAllowFavorite) == 0x000093, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_Event_ShouldAllowFavorite' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_Event_IsTemporaryItem) == 0x000094, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_Event_IsTemporaryItem' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_UpgradeItem_ReturnValue) == 0x000098, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_UpgradeItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_CreateDelegate_OutputDelegate) == 0x0000A8, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_HandleUpgrade_PassThrough) == 0x0000B8, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_HandleUpgrade_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_CreateDelegate_OutputDelegate2) == 0x0000C0, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetLevel_ReturnValue) == 0x0000D0, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_GetMaxLevel_ReturnValue) == 0x0000D4, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_GetMaxLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_Less_IntInt_ReturnValue) == 0x0000D8, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_HandleEvolution_PassThrough) == 0x0000D9, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_HandleEvolution_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_CreateDelegate_OutputDelegate3) == 0x0000E0, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, CallFunc_IsPanelOnStack_ReturnValue) == 0x0000F0, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::CallFunc_IsPanelOnStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_TabId) == 0x0000F8, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen, K2Node_ComponentBoundEvent_TabButton) == 0x000100, "Member 'ItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__DetailPanelTabList-PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -126,10 +84,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'ItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.OpenItemInspect
 // 0x0010 (0x0010 - 0x0000)
@@ -143,14 +97,6 @@ public:
 	bool                                          ShouldAllowFavorite;                               // 0x000B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          IsTemporaryItem;                                   // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_OpenItemInspect) == 0x000008, "Wrong alignment on ItemInspectScreen_C_OpenItemInspect");
-static_assert(sizeof(ItemInspectScreen_C_OpenItemInspect) == 0x000010, "Wrong size on ItemInspectScreen_C_OpenItemInspect");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect, ItemToInspect) == 0x000000, "Member 'ItemInspectScreen_C_OpenItemInspect::ItemToInspect' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect, Mode) == 0x000008, "Member 'ItemInspectScreen_C_OpenItemInspect::Mode' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect, ShouldAllowUpgrading) == 0x000009, "Member 'ItemInspectScreen_C_OpenItemInspect::ShouldAllowUpgrading' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect, ShouldAllowEvolution) == 0x00000A, "Member 'ItemInspectScreen_C_OpenItemInspect::ShouldAllowEvolution' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect, ShouldAllowFavorite) == 0x00000B, "Member 'ItemInspectScreen_C_OpenItemInspect::ShouldAllowFavorite' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect, IsTemporaryItem) == 0x00000C, "Member 'ItemInspectScreen_C_OpenItemInspect::IsTemporaryItem' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -160,10 +106,6 @@ public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature");
-static_assert(sizeof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature) == 0x000010, "Wrong size on ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature, Item) == 0x000000, "Member 'ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature::Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature, RecipeIndex) == 0x000008, "Member 'ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature::RecipeIndex' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +114,6 @@ struct ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_Compo
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature");
-static_assert(sizeof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature, Item) == 0x000000, "Member 'ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature::Item' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -183,9 +122,6 @@ struct ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_Compo
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature) == 0x000008, "Wrong alignment on ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature");
-static_assert(sizeof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature) == 0x000008, "Wrong size on ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature, Item) == 0x000000, "Member 'ItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature::Item' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature
 // 0x0003 (0x0003 - 0x0000)
@@ -196,11 +132,6 @@ public:
 	bool                                          bAmmoChanged;                                      // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bIngredientsChanged;                               // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature) == 0x000001, "Wrong alignment on ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature");
-static_assert(sizeof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature) == 0x000003, "Wrong size on ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature, bItemChanged) == 0x000000, "Member 'ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature::bItemChanged' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature, bAmmoChanged) == 0x000001, "Member 'ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature::bAmmoChanged' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature, bIngredientsChanged) == 0x000002, "Member 'ItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature::bIngredientsChanged' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.SetItemToRepresent
 // 0x0390 (0x0390 - 0x0000)
@@ -244,34 +175,6 @@ public:
 	struct FGameplayTagQuery                      CallFunc_MakeGameplayTagQuery_ReturnValue;         // 0x0340(0x0048)()
 	bool                                          CallFunc_RegisterFortTab_ReturnValue4;             // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_SetItemToRepresent) == 0x000008, "Wrong alignment on ItemInspectScreen_C_SetItemToRepresent");
-static_assert(sizeof(ItemInspectScreen_C_SetItemToRepresent) == 0x000390, "Wrong size on ItemInspectScreen_C_SetItemToRepresent");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, Item) == 0x000000, "Member 'ItemInspectScreen_C_SetItemToRepresent::Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_MakeStruct_FortTabButtonLabelInfo) == 0x000010, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_MakeStruct_FortTabButtonLabelInfo' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_GetContext_ReturnValue) == 0x0000B8, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_RegisterFortTab_ReturnValue) == 0x0000C0, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_RegisterFortTab_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue) == 0x0000C8, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_AsCustom_Character_Part_Owner_Interface) == 0x0000D0, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_AsCustom_Character_Part_Owner_Interface' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_bSuccess) == 0x0000E0, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_IsValid_ReturnValue2) == 0x0000E1, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_AsFort_Worker) == 0x0000E8, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_AsFort_Worker' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_bSuccess2) == 0x0000F0, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_AsFort_Hero) == 0x0000F8, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_bSuccess3) == 0x000100, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_GetAlterations_ReturnValue) == 0x000108, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_GetAlterations_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_IsSchematic_ReturnValue) == 0x000118, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_IsSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_Array_Length_ReturnValue) == 0x00011C, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_Greater_IntInt_ReturnValue) == 0x000120, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_AsFort_Hero2) == 0x000128, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_AsFort_Hero2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_DynamicCast_bSuccess4) == 0x000130, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_MakeStruct_FortTabButtonLabelInfo2) == 0x000138, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_MakeStruct_FortTabButtonLabelInfo2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_MakeStruct_FortTabButtonLabelInfo3) == 0x0001E0, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_MakeStruct_FortTabButtonLabelInfo3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_RegisterFortTab_ReturnValue2) == 0x000288, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_RegisterFortTab_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, K2Node_MakeStruct_FortTabButtonLabelInfo4) == 0x000290, "Member 'ItemInspectScreen_C_SetItemToRepresent::K2Node_MakeStruct_FortTabButtonLabelInfo4' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_RegisterFortTab_ReturnValue3) == 0x000338, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_RegisterFortTab_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_MakeGameplayTagQuery_ReturnValue) == 0x000340, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_MakeGameplayTagQuery_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetItemToRepresent, CallFunc_RegisterFortTab_ReturnValue4) == 0x000388, "Member 'ItemInspectScreen_C_SetItemToRepresent::CallFunc_RegisterFortTab_ReturnValue4' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleBack
 // 0x0048 (0x0048 - 0x0000)
@@ -292,18 +195,6 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleBack) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleBack");
-static_assert(sizeof(ItemInspectScreen_C_HandleBack) == 0x000048, "Wrong size on ItemInspectScreen_C_HandleBack");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, PassThrough) == 0x000000, "Member 'ItemInspectScreen_C_HandleBack::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue) == 0x000020, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, K2Node_SwitchEnum_CmpSuccess) == 0x000034, "Member 'ItemInspectScreen_C_HandleBack::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_Greater_IntInt_ReturnValue) == 0x000035, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000038, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleBack, CallFunc_BooleanAND_ReturnValue) == 0x000040, "Member 'ItemInspectScreen_C_HandleBack::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleFavorite
 // 0x0020 (0x0020 - 0x0000)
@@ -318,14 +209,6 @@ public:
 	bool                                          CallFunc_IsFavorite_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleFavorite) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleFavorite");
-static_assert(sizeof(ItemInspectScreen_C_HandleFavorite) == 0x000020, "Wrong size on ItemInspectScreen_C_HandleFavorite");
-static_assert(offsetof(ItemInspectScreen_C_HandleFavorite, PassThrough) == 0x000000, "Member 'ItemInspectScreen_C_HandleFavorite::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleFavorite, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_HandleFavorite::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleFavorite, K2Node_DynamicCast_AsFort_Account_Item) == 0x000010, "Member 'ItemInspectScreen_C_HandleFavorite::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleFavorite, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemInspectScreen_C_HandleFavorite::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleFavorite, CallFunc_IsFavorite_ReturnValue) == 0x000019, "Member 'ItemInspectScreen_C_HandleFavorite::CallFunc_IsFavorite_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleFavorite, CallFunc_Not_PreBool_ReturnValue) == 0x00001A, "Member 'ItemInspectScreen_C_HandleFavorite::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleView
 // 0x0001 (0x0001 - 0x0000)
@@ -334,9 +217,6 @@ struct ItemInspectScreen_C_HandleView final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleView) == 0x000001, "Wrong alignment on ItemInspectScreen_C_HandleView");
-static_assert(sizeof(ItemInspectScreen_C_HandleView) == 0x000001, "Wrong size on ItemInspectScreen_C_HandleView");
-static_assert(offsetof(ItemInspectScreen_C_HandleView, PassThrough) == 0x000000, "Member 'ItemInspectScreen_C_HandleView::PassThrough' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolution
 // 0x0001 (0x0001 - 0x0000)
@@ -345,9 +225,6 @@ struct ItemInspectScreen_C_HandleEvolution final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleEvolution) == 0x000001, "Wrong alignment on ItemInspectScreen_C_HandleEvolution");
-static_assert(sizeof(ItemInspectScreen_C_HandleEvolution) == 0x000001, "Wrong size on ItemInspectScreen_C_HandleEvolution");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolution, PassThrough) == 0x000000, "Member 'ItemInspectScreen_C_HandleEvolution::PassThrough' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleUpgrade
 // 0x0001 (0x0001 - 0x0000)
@@ -356,9 +233,6 @@ struct ItemInspectScreen_C_HandleUpgrade final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleUpgrade) == 0x000001, "Wrong alignment on ItemInspectScreen_C_HandleUpgrade");
-static_assert(sizeof(ItemInspectScreen_C_HandleUpgrade) == 0x000001, "Wrong size on ItemInspectScreen_C_HandleUpgrade");
-static_assert(offsetof(ItemInspectScreen_C_HandleUpgrade, PassThrough) == 0x000000, "Member 'ItemInspectScreen_C_HandleUpgrade::PassThrough' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.SetInspectMode
 // 0x0002 (0x0002 - 0x0000)
@@ -368,10 +242,6 @@ public:
 	EFortItemInspectionMode                       NewInspectMode;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_SetInspectMode) == 0x000001, "Wrong alignment on ItemInspectScreen_C_SetInspectMode");
-static_assert(sizeof(ItemInspectScreen_C_SetInspectMode) == 0x000002, "Wrong size on ItemInspectScreen_C_SetInspectMode");
-static_assert(offsetof(ItemInspectScreen_C_SetInspectMode, NewInspectMode) == 0x000000, "Member 'ItemInspectScreen_C_SetInspectMode::NewInspectMode' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetInspectMode, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'ItemInspectScreen_C_SetInspectMode::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionChoiceHovered
 // 0x0008 (0x0008 - 0x0000)
@@ -380,9 +250,6 @@ struct ItemInspectScreen_C_HandleEvolutionChoiceHovered final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleEvolutionChoiceHovered) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleEvolutionChoiceHovered");
-static_assert(sizeof(ItemInspectScreen_C_HandleEvolutionChoiceHovered) == 0x000008, "Wrong size on ItemInspectScreen_C_HandleEvolutionChoiceHovered");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionChoiceHovered, Item) == 0x000000, "Member 'ItemInspectScreen_C_HandleEvolutionChoiceHovered::Item' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionChoiceUnhovered
 // 0x0008 (0x0008 - 0x0000)
@@ -391,9 +258,6 @@ struct ItemInspectScreen_C_HandleEvolutionChoiceUnhovered final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleEvolutionChoiceUnhovered) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleEvolutionChoiceUnhovered");
-static_assert(sizeof(ItemInspectScreen_C_HandleEvolutionChoiceUnhovered) == 0x000008, "Wrong size on ItemInspectScreen_C_HandleEvolutionChoiceUnhovered");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionChoiceUnhovered, Item) == 0x000000, "Member 'ItemInspectScreen_C_HandleEvolutionChoiceUnhovered::Item' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionChoiceSelected
 // 0x0010 (0x0010 - 0x0000)
@@ -403,10 +267,6 @@ public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RecipeIndex;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleEvolutionChoiceSelected) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleEvolutionChoiceSelected");
-static_assert(sizeof(ItemInspectScreen_C_HandleEvolutionChoiceSelected) == 0x000010, "Wrong size on ItemInspectScreen_C_HandleEvolutionChoiceSelected");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionChoiceSelected, Item) == 0x000000, "Member 'ItemInspectScreen_C_HandleEvolutionChoiceSelected::Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionChoiceSelected, RecipeIndex) == 0x000008, "Member 'ItemInspectScreen_C_HandleEvolutionChoiceSelected::RecipeIndex' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.GetFirstEvolutionOption
 // 0x00F8 (0x00F8 - 0x0000)
@@ -436,26 +296,6 @@ public:
 	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_GetFirstEvolutionOption) == 0x000008, "Wrong alignment on ItemInspectScreen_C_GetFirstEvolutionOption");
-static_assert(sizeof(ItemInspectScreen_C_GetFirstEvolutionOption) == 0x0000F8, "Wrong size on ItemInspectScreen_C_GetFirstEvolutionOption");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, EvolutionItem) == 0x000000, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::EvolutionItem' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, Results) == 0x000008, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::Results' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000020, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Greater_IntInt_ReturnValue) == 0x000038, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Array_Get_Item) == 0x000040, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetContext_ReturnValue2) == 0x000068, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000070, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x000078, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue) == 0x000080, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_GetConversionRecipesFromItemDefintion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Array_Get_Item2) == 0x000098, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Array_Length_ReturnValue2) == 0x0000E8, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_Greater_IntInt_ReturnValue2) == 0x0000EC, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_GetFirstEvolutionOption, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x0000F0, "Member 'ItemInspectScreen_C_GetFirstEvolutionOption::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.SetupActionHandlers
 // 0x00C0 (0x00C0 - 0x0000)
@@ -477,22 +317,6 @@ public:
 	class UFortQuestItem*                         CallFunc_GetQuestWithDefinition_ReturnValue;       // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_SetupActionHandlers) == 0x000008, "Wrong alignment on ItemInspectScreen_C_SetupActionHandlers");
-static_assert(sizeof(ItemInspectScreen_C_SetupActionHandlers) == 0x0000C0, "Wrong size on ItemInspectScreen_C_SetupActionHandlers");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle) == 0x000000, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle2) == 0x000010, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle3) == 0x000040, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate3) == 0x000050, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle4) == 0x000060, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle4' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate4) == 0x000070, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_MakeStruct_DataTableRowHandle5) == 0x000080, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_MakeStruct_DataTableRowHandle5' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate5) == 0x000090, "Member 'ItemInspectScreen_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, CallFunc_GetContext_ReturnValue) == 0x0000A0, "Member 'ItemInspectScreen_C_SetupActionHandlers::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, CallFunc_GetQuestManager_ReturnValue) == 0x0000A8, "Member 'ItemInspectScreen_C_SetupActionHandlers::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, CallFunc_GetQuestWithDefinition_ReturnValue) == 0x0000B0, "Member 'ItemInspectScreen_C_SetupActionHandlers::CallFunc_GetQuestWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetupActionHandlers, CallFunc_IsValid_ReturnValue) == 0x0000B8, "Member 'ItemInspectScreen_C_SetupActionHandlers::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.OpenItemInspect (Function)
 // 0x0010 (0x0010 - 0x0000)
@@ -506,14 +330,6 @@ public:
 	bool                                          ShouldAllowFavoriting;                             // 0x000B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShouldShowPreviewDisplay;                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_OpenItemInspect__Function_) == 0x000008, "Wrong alignment on ItemInspectScreen_C_OpenItemInspect__Function_");
-static_assert(sizeof(ItemInspectScreen_C_OpenItemInspect__Function_) == 0x000010, "Wrong size on ItemInspectScreen_C_OpenItemInspect__Function_");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect__Function_, ItemToInspect) == 0x000000, "Member 'ItemInspectScreen_C_OpenItemInspect__Function_::ItemToInspect' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect__Function_, Mode) == 0x000008, "Member 'ItemInspectScreen_C_OpenItemInspect__Function_::Mode' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect__Function_, ShouldAllowUpgrading) == 0x000009, "Member 'ItemInspectScreen_C_OpenItemInspect__Function_::ShouldAllowUpgrading' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect__Function_, ShouldAllowEvolution) == 0x00000A, "Member 'ItemInspectScreen_C_OpenItemInspect__Function_::ShouldAllowEvolution' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect__Function_, ShouldAllowFavoriting) == 0x00000B, "Member 'ItemInspectScreen_C_OpenItemInspect__Function_::ShouldAllowFavoriting' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_OpenItemInspect__Function_, ShouldShowPreviewDisplay) == 0x00000C, "Member 'ItemInspectScreen_C_OpenItemInspect__Function_::ShouldShowPreviewDisplay' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleCursorModeChanging
 // 0x0005 (0x0005 - 0x0000)
@@ -526,13 +342,6 @@ public:
 	bool                                          CallFunc_IsActivated_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleCursorModeChanging) == 0x000001, "Wrong alignment on ItemInspectScreen_C_HandleCursorModeChanging");
-static_assert(sizeof(ItemInspectScreen_C_HandleCursorModeChanging) == 0x000005, "Wrong size on ItemInspectScreen_C_HandleCursorModeChanging");
-static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, IsEnabled) == 0x000000, "Member 'ItemInspectScreen_C_HandleCursorModeChanging::IsEnabled' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, CallFunc_HandleBack_PassThrough) == 0x000001, "Member 'ItemInspectScreen_C_HandleCursorModeChanging::CallFunc_HandleBack_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'ItemInspectScreen_C_HandleCursorModeChanging::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, CallFunc_IsActivated_ReturnValue) == 0x000003, "Member 'ItemInspectScreen_C_HandleCursorModeChanging::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleCursorModeChanging, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'ItemInspectScreen_C_HandleCursorModeChanging::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionComplete
 // 0x0028 (0x0028 - 0x0000)
@@ -544,12 +353,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_HandleEvolutionComplete) == 0x000008, "Wrong alignment on ItemInspectScreen_C_HandleEvolutionComplete");
-static_assert(sizeof(ItemInspectScreen_C_HandleEvolutionComplete) == 0x000028, "Wrong size on ItemInspectScreen_C_HandleEvolutionComplete");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, ResultingItems) == 0x000000, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::ResultingItems' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, CallFunc_Array_Get_Item) == 0x000010, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_HandleEvolutionComplete, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'ItemInspectScreen_C_HandleEvolutionComplete::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.RefreshActionHandlers
 // 0x001C (0x001C - 0x0000)
@@ -574,24 +377,6 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select2_Default;                            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_RefreshActionHandlers) == 0x000004, "Wrong alignment on ItemInspectScreen_C_RefreshActionHandlers");
-static_assert(sizeof(ItemInspectScreen_C_RefreshActionHandlers) == 0x00001C, "Wrong size on ItemInspectScreen_C_RefreshActionHandlers");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, Temp_byte_Variable) == 0x000000, "Member 'ItemInspectScreen_C_RefreshActionHandlers::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, Temp_byte_Variable2) == 0x000001, "Member 'ItemInspectScreen_C_RefreshActionHandlers::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, Temp_bool_Variable) == 0x000002, "Member 'ItemInspectScreen_C_RefreshActionHandlers::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, Temp_byte_Variable3) == 0x000003, "Member 'ItemInspectScreen_C_RefreshActionHandlers::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, Temp_byte_Variable4) == 0x000004, "Member 'ItemInspectScreen_C_RefreshActionHandlers::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, K2Node_Select_Default) == 0x000006, "Member 'ItemInspectScreen_C_RefreshActionHandlers::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, Temp_bool_Variable2) == 0x000007, "Member 'ItemInspectScreen_C_RefreshActionHandlers::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_HasEvolutions_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_HasEvolutions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_GetMaxLevel_ReturnValue) == 0x00000C, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_GetMaxLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_GetLevel_ReturnValue) == 0x000010, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_BooleanAND_ReturnValue) == 0x000015, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, CallFunc_BooleanAND_ReturnValue2) == 0x000016, "Member 'ItemInspectScreen_C_RefreshActionHandlers::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, K2Node_SwitchEnum_CmpSuccess) == 0x000017, "Member 'ItemInspectScreen_C_RefreshActionHandlers::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_RefreshActionHandlers, K2Node_Select2_Default) == 0x000018, "Member 'ItemInspectScreen_C_RefreshActionHandlers::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.RefreshCallout
 // 0x0001 (0x0001 - 0x0000)
@@ -600,9 +385,6 @@ struct ItemInspectScreen_C_RefreshCallout final
 public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_RefreshCallout) == 0x000001, "Wrong alignment on ItemInspectScreen_C_RefreshCallout");
-static_assert(sizeof(ItemInspectScreen_C_RefreshCallout) == 0x000001, "Wrong size on ItemInspectScreen_C_RefreshCallout");
-static_assert(offsetof(ItemInspectScreen_C_RefreshCallout, CallFunc_BooleanAND_ReturnValue) == 0x000000, "Member 'ItemInspectScreen_C_RefreshCallout::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.Handle3DView
 // 0x0020 (0x0020 - 0x0000)
@@ -615,12 +397,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UView3DModel_C*                         CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInspectScreen_C_Handle3DView) == 0x000008, "Wrong alignment on ItemInspectScreen_C_Handle3DView");
-static_assert(sizeof(ItemInspectScreen_C_Handle3DView) == 0x000020, "Wrong size on ItemInspectScreen_C_Handle3DView");
-static_assert(offsetof(ItemInspectScreen_C_Handle3DView, PassThrough) == 0x000000, "Member 'ItemInspectScreen_C_Handle3DView::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_Handle3DView, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemInspectScreen_C_Handle3DView::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_Handle3DView, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'ItemInspectScreen_C_Handle3DView::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_Handle3DView, CallFunc_Create_ReturnValue) == 0x000018, "Member 'ItemInspectScreen_C_Handle3DView::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.ShowPreviewHeader
 // 0x0005 (0x0005 - 0x0000)
@@ -633,13 +409,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_ShowPreviewHeader) == 0x000001, "Wrong alignment on ItemInspectScreen_C_ShowPreviewHeader");
-static_assert(sizeof(ItemInspectScreen_C_ShowPreviewHeader) == 0x000005, "Wrong size on ItemInspectScreen_C_ShowPreviewHeader");
-static_assert(offsetof(ItemInspectScreen_C_ShowPreviewHeader, ShowPreviewLabel) == 0x000000, "Member 'ItemInspectScreen_C_ShowPreviewHeader::ShowPreviewLabel' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ShowPreviewHeader, Temp_bool_Variable) == 0x000001, "Member 'ItemInspectScreen_C_ShowPreviewHeader::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ShowPreviewHeader, Temp_byte_Variable) == 0x000002, "Member 'ItemInspectScreen_C_ShowPreviewHeader::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ShowPreviewHeader, Temp_byte_Variable2) == 0x000003, "Member 'ItemInspectScreen_C_ShowPreviewHeader::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_ShowPreviewHeader, K2Node_Select_Default) == 0x000004, "Member 'ItemInspectScreen_C_ShowPreviewHeader::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemInspectScreen.ItemInspectScreen_C.SetTabButtonStyle
 // 0x0018 (0x0018 - 0x0000)
@@ -650,11 +419,6 @@ public:
 	class UIconTextButton_C*                      K2Node_DynamicCast_AsIcon_Text_Button;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemInspectScreen_C_SetTabButtonStyle) == 0x000008, "Wrong alignment on ItemInspectScreen_C_SetTabButtonStyle");
-static_assert(sizeof(ItemInspectScreen_C_SetTabButtonStyle) == 0x000018, "Wrong size on ItemInspectScreen_C_SetTabButtonStyle");
-static_assert(offsetof(ItemInspectScreen_C_SetTabButtonStyle, Object) == 0x000000, "Member 'ItemInspectScreen_C_SetTabButtonStyle::Object' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetTabButtonStyle, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000008, "Member 'ItemInspectScreen_C_SetTabButtonStyle::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(ItemInspectScreen_C_SetTabButtonStyle, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemInspectScreen_C_SetTabButtonStyle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

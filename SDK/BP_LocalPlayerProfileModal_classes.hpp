@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C
 // 0x0068 (0x0478 - 0x0410)
@@ -53,25 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LocalPlayerProfileModal_C">();
+		BP_STATIC_CLASS_IMPL("BP_LocalPlayerProfileModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LocalPlayerProfileModal_C")
 	}
 	static class UBP_LocalPlayerProfileModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_LocalPlayerProfileModal_C>();
 	}
 };
-static_assert(alignof(UBP_LocalPlayerProfileModal_C) == 0x000008, "Wrong alignment on UBP_LocalPlayerProfileModal_C");
-static_assert(sizeof(UBP_LocalPlayerProfileModal_C) == 0x000478, "Wrong size on UBP_LocalPlayerProfileModal_C");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, UberGraphFrame) == 0x000410, "Member 'UBP_LocalPlayerProfileModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, BP_LocalPlayerBannerEditor) == 0x000418, "Member 'UBP_LocalPlayerProfileModal_C::BP_LocalPlayerBannerEditor' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, BP_LocalPlayerProfileManagement) == 0x000420, "Member 'UBP_LocalPlayerProfileModal_C::BP_LocalPlayerProfileManagement' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, CommonWidgetSwitcher_0) == 0x000428, "Member 'UBP_LocalPlayerProfileModal_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, Lightbox) == 0x000430, "Member 'UBP_LocalPlayerProfileModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, CloseAction) == 0x000438, "Member 'UBP_LocalPlayerProfileModal_C::CloseAction' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, LastChosenIcon) == 0x000448, "Member 'UBP_LocalPlayerProfileModal_C::LastChosenIcon' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, LastChosenColor) == 0x000450, "Member 'UBP_LocalPlayerProfileModal_C::LastChosenColor' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, PreviousAction) == 0x000458, "Member 'UBP_LocalPlayerProfileModal_C::PreviousAction' has a wrong offset!");
-static_assert(offsetof(UBP_LocalPlayerProfileModal_C, NextAction) == 0x000468, "Member 'UBP_LocalPlayerProfileModal_C::NextAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

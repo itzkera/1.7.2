@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuickbarBase.QuickbarBase_C
 // 0x0028 (0x0288 - 0x0260)
@@ -51,20 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuickbarBase_C">();
+		BP_STATIC_CLASS_IMPL("QuickbarBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickbarBase_C")
 	}
 	static class UQuickbarBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickbarBase_C>();
 	}
 };
-static_assert(alignof(UQuickbarBase_C) == 0x000008, "Wrong alignment on UQuickbarBase_C");
-static_assert(sizeof(UQuickbarBase_C) == 0x000288, "Wrong size on UQuickbarBase_C");
-static_assert(offsetof(UQuickbarBase_C, UberGraphFrame) == 0x000260, "Member 'UQuickbarBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuickbarBase_C, MyQuickbarIndex) == 0x000268, "Member 'UQuickbarBase_C::MyQuickbarIndex' has a wrong offset!");
-static_assert(offsetof(UQuickbarBase_C, FocusedSlot) == 0x00026C, "Member 'UQuickbarBase_C::FocusedSlot' has a wrong offset!");
-static_assert(offsetof(UQuickbarBase_C, QuickbarSlots) == 0x000270, "Member 'UQuickbarBase_C::QuickbarSlots' has a wrong offset!");
-static_assert(offsetof(UQuickbarBase_C, IsMaximized) == 0x000280, "Member 'UQuickbarBase_C::IsMaximized' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

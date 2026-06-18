@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RadialPickerItem.RadialPickerItem_C
 // 0x0058 (0x0290 - 0x0238)
@@ -45,24 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RadialPickerItem_C">();
+		BP_STATIC_CLASS_IMPL("RadialPickerItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadialPickerItem_C")
 	}
 	static class URadialPickerItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadialPickerItem_C>();
 	}
 };
-static_assert(alignof(URadialPickerItem_C) == 0x000008, "Wrong alignment on URadialPickerItem_C");
-static_assert(sizeof(URadialPickerItem_C) == 0x000290, "Wrong size on URadialPickerItem_C");
-static_assert(offsetof(URadialPickerItem_C, UberGraphFrame) == 0x000238, "Member 'URadialPickerItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, BorderItemBorder) == 0x000240, "Member 'URadialPickerItem_C::BorderItemBorder' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, Image) == 0x000248, "Member 'URadialPickerItem_C::Image' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, ImageItemNotSelected) == 0x000250, "Member 'URadialPickerItem_C::ImageItemNotSelected' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, ImageOrItemSwitcher) == 0x000258, "Member 'URadialPickerItem_C::ImageOrItemSwitcher' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, KeybindWidget) == 0x000260, "Member 'URadialPickerItem_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, PickerItem) == 0x000268, "Member 'URadialPickerItem_C::PickerItem' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, TextLabel) == 0x000270, "Member 'URadialPickerItem_C::TextLabel' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, PickerItemText) == 0x000278, "Member 'URadialPickerItem_C::PickerItemText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

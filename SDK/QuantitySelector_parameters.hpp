@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuantitySelector.QuantitySelector_C.ExecuteUbergraph_QuantitySelector
 // 0x0070 (0x0070 - 0x0000)
@@ -45,26 +45,6 @@ public:
 	bool                                          CallFunc_HandleCancelPressed_PassThrough;          // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_CustomEvent_bUsingGamepad;                  // 0x006F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector) == 0x000008, "Wrong alignment on QuantitySelector_C_ExecuteUbergraph_QuantitySelector");
-static_assert(sizeof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector) == 0x000070, "Wrong size on QuantitySelector_C_ExecuteUbergraph_QuantitySelector");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, EntryPoint) == 0x000000, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_IsUsingGamepad_ReturnValue) == 0x000018, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, K2Node_ComponentBoundEvent_Button3) == 0x000030, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_Subtract_IntInt_ReturnValue) == 0x000038, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, K2Node_ComponentBoundEvent_Button2) == 0x000040, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, K2Node_ComponentBoundEvent_Value) == 0x000048, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, K2Node_ComponentBoundEvent_Button) == 0x000050, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000058, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_Round_ReturnValue) == 0x00005C, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_GetUINavigationManager_ReturnValue) == 0x000060, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_HandleMaxPressed_PassThrough) == 0x00006C, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_HandleMaxPressed_PassThrough' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_HandleTransferPressed_PassThrough) == 0x00006D, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_HandleTransferPressed_PassThrough' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, CallFunc_HandleCancelPressed_PassThrough) == 0x00006E, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::CallFunc_HandleCancelPressed_PassThrough' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_ExecuteUbergraph_QuantitySelector, K2Node_CustomEvent_bUsingGamepad) == 0x00006F, "Member 'QuantitySelector_C_ExecuteUbergraph_QuantitySelector::K2Node_CustomEvent_bUsingGamepad' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.HandleChangeInputMode
 // 0x0001 (0x0001 - 0x0000)
@@ -73,9 +53,6 @@ struct QuantitySelector_C_HandleChangeInputMode final
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_HandleChangeInputMode) == 0x000001, "Wrong alignment on QuantitySelector_C_HandleChangeInputMode");
-static_assert(sizeof(QuantitySelector_C_HandleChangeInputMode) == 0x000001, "Wrong size on QuantitySelector_C_HandleChangeInputMode");
-static_assert(offsetof(QuantitySelector_C_HandleChangeInputMode, bUsingGamepad) == 0x000000, "Member 'QuantitySelector_C_HandleChangeInputMode::bUsingGamepad' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -84,9 +61,6 @@ struct QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'QuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -95,9 +69,6 @@ struct QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong alignment on QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(sizeof(QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature) == 0x000004, "Wrong size on QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature");
-static_assert(offsetof(QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature, Value) == 0x000000, "Member 'QuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature::Value' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -106,9 +77,6 @@ struct QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'QuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -117,9 +85,6 @@ struct QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'QuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.SetSplitData
 // 0x0078 (0x0078 - 0x0000)
@@ -140,21 +105,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue4;             // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_SetSplitData) == 0x000008, "Wrong alignment on QuantitySelector_C_SetSplitData");
-static_assert(sizeof(QuantitySelector_C_SetSplitData) == 0x000078, "Wrong size on QuantitySelector_C_SetSplitData");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, StartingCount) == 0x000000, "Member 'QuantitySelector_C_SetSplitData::StartingCount' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, MaximumCount) == 0x000004, "Member 'QuantitySelector_C_SetSplitData::MaximumCount' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, Item_0) == 0x000008, "Member 'QuantitySelector_C_SetSplitData::Item_0' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, TitleText) == 0x000010, "Member 'QuantitySelector_C_SetSplitData::TitleText' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, ButtonText) == 0x000028, "Member 'QuantitySelector_C_SetSplitData::ButtonText' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, AdditionalInfoText) == 0x000040, "Member 'QuantitySelector_C_SetSplitData::AdditionalInfoText' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000058, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x00005C, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Subtract_IntInt_ReturnValue) == 0x000060, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000064, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000068, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x00006C, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetSplitData, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000070, "Member 'QuantitySelector_C_SetSplitData::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.SetAdditionalText
 // 0x0020 (0x0020 - 0x0000)
@@ -168,14 +118,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_SetAdditionalText) == 0x000008, "Wrong alignment on QuantitySelector_C_SetAdditionalText");
-static_assert(sizeof(QuantitySelector_C_SetAdditionalText) == 0x000020, "Wrong size on QuantitySelector_C_SetAdditionalText");
-static_assert(offsetof(QuantitySelector_C_SetAdditionalText, AdditionalInfoText) == 0x000000, "Member 'QuantitySelector_C_SetAdditionalText::AdditionalInfoText' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetAdditionalText, Temp_byte_Variable) == 0x000018, "Member 'QuantitySelector_C_SetAdditionalText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetAdditionalText, CallFunc_TextIsEmpty_ReturnValue) == 0x000019, "Member 'QuantitySelector_C_SetAdditionalText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetAdditionalText, Temp_byte_Variable2) == 0x00001A, "Member 'QuantitySelector_C_SetAdditionalText::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetAdditionalText, Temp_bool_Variable) == 0x00001B, "Member 'QuantitySelector_C_SetAdditionalText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetAdditionalText, K2Node_Select_Default) == 0x00001C, "Member 'QuantitySelector_C_SetAdditionalText::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.CloseSelector
 // 0x0008 (0x0008 - 0x0000)
@@ -184,9 +126,6 @@ struct QuantitySelector_C_CloseSelector final
 public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_CloseSelector) == 0x000008, "Wrong alignment on QuantitySelector_C_CloseSelector");
-static_assert(sizeof(QuantitySelector_C_CloseSelector) == 0x000008, "Wrong size on QuantitySelector_C_CloseSelector");
-static_assert(offsetof(QuantitySelector_C_CloseSelector, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'QuantitySelector_C_CloseSelector::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.HandleMaxPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -195,9 +134,6 @@ struct QuantitySelector_C_HandleMaxPressed final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_HandleMaxPressed) == 0x000001, "Wrong alignment on QuantitySelector_C_HandleMaxPressed");
-static_assert(sizeof(QuantitySelector_C_HandleMaxPressed) == 0x000001, "Wrong size on QuantitySelector_C_HandleMaxPressed");
-static_assert(offsetof(QuantitySelector_C_HandleMaxPressed, PassThrough) == 0x000000, "Member 'QuantitySelector_C_HandleMaxPressed::PassThrough' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.HandleTransferPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -206,9 +142,6 @@ struct QuantitySelector_C_HandleTransferPressed final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_HandleTransferPressed) == 0x000001, "Wrong alignment on QuantitySelector_C_HandleTransferPressed");
-static_assert(sizeof(QuantitySelector_C_HandleTransferPressed) == 0x000001, "Wrong size on QuantitySelector_C_HandleTransferPressed");
-static_assert(offsetof(QuantitySelector_C_HandleTransferPressed, PassThrough) == 0x000000, "Member 'QuantitySelector_C_HandleTransferPressed::PassThrough' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.HandleCancelPressed
 // 0x0001 (0x0001 - 0x0000)
@@ -217,9 +150,6 @@ struct QuantitySelector_C_HandleCancelPressed final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_HandleCancelPressed) == 0x000001, "Wrong alignment on QuantitySelector_C_HandleCancelPressed");
-static_assert(sizeof(QuantitySelector_C_HandleCancelPressed) == 0x000001, "Wrong size on QuantitySelector_C_HandleCancelPressed");
-static_assert(offsetof(QuantitySelector_C_HandleCancelPressed, PassThrough) == 0x000000, "Member 'QuantitySelector_C_HandleCancelPressed::PassThrough' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.SliderValueChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -228,9 +158,6 @@ struct QuantitySelector_C_SliderValueChanged final
 public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuantitySelector_C_SliderValueChanged) == 0x000004, "Wrong alignment on QuantitySelector_C_SliderValueChanged");
-static_assert(sizeof(QuantitySelector_C_SliderValueChanged) == 0x000004, "Wrong size on QuantitySelector_C_SliderValueChanged");
-static_assert(offsetof(QuantitySelector_C_SliderValueChanged, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000000, "Member 'QuantitySelector_C_SliderValueChanged::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function QuantitySelector.QuantitySelector_C.SetupForInputMode
 // 0x0018 (0x0018 - 0x0000)
@@ -243,12 +170,6 @@ public:
 	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuantitySelector_C_SetupForInputMode) == 0x000008, "Wrong alignment on QuantitySelector_C_SetupForInputMode");
-static_assert(sizeof(QuantitySelector_C_SetupForInputMode) == 0x000018, "Wrong size on QuantitySelector_C_SetupForInputMode");
-static_assert(offsetof(QuantitySelector_C_SetupForInputMode, IsUsingGamepad) == 0x000000, "Member 'QuantitySelector_C_SetupForInputMode::IsUsingGamepad' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetupForInputMode, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuantitySelector_C_SetupForInputMode::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetupForInputMode, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'QuantitySelector_C_SetupForInputMode::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuantitySelector_C_SetupForInputMode, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'QuantitySelector_C_SetupForInputMode::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

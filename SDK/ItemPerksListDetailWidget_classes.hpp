@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemPerksListDetailWidget.ItemPerksListDetailWidget_C
 // 0x0018 (0x0288 - 0x0270)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemPerksListDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemPerksListDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemPerksListDetailWidget_C")
 	}
 	static class UItemPerksListDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemPerksListDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemPerksListDetailWidget_C) == 0x000008, "Wrong alignment on UItemPerksListDetailWidget_C");
-static_assert(sizeof(UItemPerksListDetailWidget_C) == 0x000288, "Wrong size on UItemPerksListDetailWidget_C");
-static_assert(offsetof(UItemPerksListDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemPerksListDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemPerksListDetailWidget_C, PerksList) == 0x000278, "Member 'UItemPerksListDetailWidget_C::PerksList' has a wrong offset!");
-static_assert(offsetof(UItemPerksListDetailWidget_C, ShowActiveAbilitiesOnly) == 0x000280, "Member 'UItemPerksListDetailWidget_C::ShowActiveAbilitiesOnly' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

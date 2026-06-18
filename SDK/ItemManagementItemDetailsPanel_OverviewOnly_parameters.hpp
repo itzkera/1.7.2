@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.ExecuteUbergraph_ItemManagementItemDetailsPanel-OverviewOnly
 // 0x0028 (0x0028 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly) == 0x000008, "Wrong alignment on ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly");
-static_assert(sizeof(ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly) == 0x000028, "Wrong size on ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly, EntryPoint) == 0x000000, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.SetDescriptionText
 // 0x0088 (0x0088 - 0x0000)
@@ -56,22 +51,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText) == 0x000008, "Wrong alignment on ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText");
-static_assert(sizeof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText) == 0x000088, "Wrong size on ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, Temp_byte_Variable) == 0x000008, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_GetDescription_ReturnValue) == 0x000010, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, Temp_byte_Variable2) == 0x000028, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, Temp_bool_Variable) == 0x000029, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, Temp_bool_Variable2) == 0x00002A, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000038, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_GetCombinedDescription_OutDescription) == 0x000048, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_GetCombinedDescription_ReturnValue) == 0x000060, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, K2Node_Select_Default) == 0x000068, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, CallFunc_TextIsEmpty_ReturnValue) == 0x000080, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText, K2Node_Select2_Default) == 0x000081, "Member 'ItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText::K2Node_Select2_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

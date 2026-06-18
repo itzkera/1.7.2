@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TT_Generic_AdrenalineRush.TT_Generic_AdrenalineRush_C
 // 0x0008 (0x0120 - 0x0118)
@@ -31,16 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TT_Generic_AdrenalineRush_C">();
+		BP_STATIC_CLASS_IMPL("TT_Generic_AdrenalineRush_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TT_Generic_AdrenalineRush_C")
 	}
 	static class UTT_Generic_AdrenalineRush_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTT_Generic_AdrenalineRush_C>();
 	}
 };
-static_assert(alignof(UTT_Generic_AdrenalineRush_C) == 0x000008, "Wrong alignment on UTT_Generic_AdrenalineRush_C");
-static_assert(sizeof(UTT_Generic_AdrenalineRush_C) == 0x000120, "Wrong size on UTT_Generic_AdrenalineRush_C");
-static_assert(offsetof(UTT_Generic_AdrenalineRush_C, AdrenalineRushAbilityInstance) == 0x000118, "Member 'UTT_Generic_AdrenalineRush_C::AdrenalineRushAbilityInstance' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

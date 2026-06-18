@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C
 // 0x0008 (0x0470 - 0x0468)
@@ -32,16 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Commando_IncendiaryRoundsDOT_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Commando_IncendiaryRoundsDOT_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Commando_IncendiaryRoundsDOT_C")
 	}
 	static class AGCN_Commando_IncendiaryRoundsDOT_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Commando_IncendiaryRoundsDOT_C>();
 	}
 };
-static_assert(alignof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000008, "Wrong alignment on AGCN_Commando_IncendiaryRoundsDOT_C");
-static_assert(sizeof(AGCN_Commando_IncendiaryRoundsDOT_C) == 0x000470, "Wrong size on AGCN_Commando_IncendiaryRoundsDOT_C");
-static_assert(offsetof(AGCN_Commando_IncendiaryRoundsDOT_C, UberGraphFrame) == 0x000468, "Member 'AGCN_Commando_IncendiaryRoundsDOT_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -16,8 +16,8 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.ExecuteUbergraph_GA_Generic_AdrenalineRush
 // 0x00C0 (0x00C0 - 0x0000)
@@ -26,8 +26,8 @@ struct GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0028(0x0020)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0050(0x0008)(NoDestructor, HasGetValueTypeHash)
@@ -41,21 +41,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x0098(0x0020)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x00B8(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush) == 0x000008, "Wrong alignment on GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush");
-static_assert(sizeof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush) == 0x0000C0, "Wrong size on GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, EntryPoint) == 0x000000, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, K2Node_CustomEvent_TargetData) == 0x000028, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, K2Node_CustomEvent_ApplicationTag) == 0x000048, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, Temp_struct_Variable) == 0x000050, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, Temp_struct_Variable2) == 0x000058, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, CallFunc_TargetDataHasActor_ReturnValue) == 0x000078, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::CallFunc_TargetDataHasActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, CallFunc_WaitTargetSelection_ReturnValue) == 0x000080, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::CallFunc_WaitTargetSelection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000090, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, K2Node_CustomEvent_TargetData2) == 0x000098, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::K2Node_CustomEvent_TargetData2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush, K2Node_CustomEvent_ApplicationTag2) == 0x0000B8, "Member 'GA_Generic_AdrenalineRush_C_ExecuteUbergraph_GA_Generic_AdrenalineRush::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.Targeted_96CD2D2546A5DCD7B7C14BBA26232864
 // 0x0028 (0x0028 - 0x0000)
@@ -65,10 +50,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864) == 0x000008, "Wrong alignment on GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864");
-static_assert(sizeof(GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864) == 0x000028, "Wrong size on GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864, TargetData) == 0x000000, "Member 'GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864, ApplicationTag) == 0x000020, "Member 'GA_Generic_AdrenalineRush_C_Targeted_96CD2D2546A5DCD7B7C14BBA26232864::ApplicationTag' has a wrong offset!");
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.Cancelled_96CD2D2546A5DCD7B7C14BBA26232864
 // 0x0028 (0x0028 - 0x0000)
@@ -78,10 +59,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864) == 0x000008, "Wrong alignment on GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864");
-static_assert(sizeof(GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864) == 0x000028, "Wrong size on GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864, TargetData) == 0x000000, "Member 'GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864, ApplicationTag) == 0x000020, "Member 'GA_Generic_AdrenalineRush_C_Cancelled_96CD2D2546A5DCD7B7C14BBA26232864::ApplicationTag' has a wrong offset!");
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.ApplyGadgetEffects
 // 0x0180 (0x0180 - 0x0000)
@@ -136,46 +113,6 @@ public:
 	struct FGameplayEffectSpecHandle              CallFunc_AssignSetByCallerMagnitude_ReturnValue3;  // 0x0158(0x0018)()
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue2; // 0x0170(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects) == 0x000008, "Wrong alignment on GA_Generic_AdrenalineRush_C_ApplyGadgetEffects");
-static_assert(sizeof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects) == 0x000180, "Wrong size on GA_Generic_AdrenalineRush_C_ApplyGadgetEffects");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, TargetData) == 0x000000, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CurrentLoopFortPawn) == 0x000020, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CurrentLoopFortPawn' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_GetDataCountFromTargetData_ReturnValue) == 0x00002C, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_GetDataCountFromTargetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Subtract_IntInt_ReturnValue) == 0x000034, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, Temp_int_Array_Index_Variable) == 0x000038, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, K2Node_DynamicCast_AsFort_AIPawn) == 0x000040, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::K2Node_DynamicCast_AsFort_AIPawn' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_IsDBNO_ReturnValue) == 0x000049, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_IsDBNO_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000050, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_IsDBNO_ReturnValue2) == 0x000059, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_IsDBNO_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_GetController_ReturnValue) == 0x000060, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000068, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x00006C, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000070, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_AssignSetByCallerMagnitude_ReturnValue) == 0x000088, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_AssignSetByCallerMagnitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_AssignSetByCallerMagnitude_ReturnValue2) == 0x0000A0, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_AssignSetByCallerMagnitude_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, Temp_int_Variable) == 0x0000B8, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_GetActorsFromTargetData_ReturnValue) == 0x0000C8, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_GetActorsFromTargetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, K2Node_DynamicCast_AsFort_Pawn) == 0x0000D8, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, K2Node_DynamicCast_bSuccess3) == 0x0000E0, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Array_Length_ReturnValue) == 0x0000E4, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Greater_IntInt_ReturnValue) == 0x0000E8, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x0000F0, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000110, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Array_Get_Item2) == 0x000120, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Array_Add_ReturnValue) == 0x00012C, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000130, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Add_IntInt_ReturnValue2) == 0x000134, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Array_Length_ReturnValue2) == 0x000138, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_Less_IntInt_ReturnValue) == 0x00013C, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2) == 0x000140, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_AssignSetByCallerMagnitude_ReturnValue3) == 0x000158, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_AssignSetByCallerMagnitude_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_ApplyGadgetEffects, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue2) == 0x000170, "Member 'GA_Generic_AdrenalineRush_C_ApplyGadgetEffects::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue2' has a wrong offset!");
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.SpawnVisuals
 // 0x0110 (0x0110 - 0x0000)
@@ -190,15 +127,6 @@ public:
 	class AB_Prj_AdrenalineRush_C*                K2Node_DynamicCast_AsB_Prj_Adrenaline_Rush;        // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Generic_AdrenalineRush_C_SpawnVisuals) == 0x000008, "Wrong alignment on GA_Generic_AdrenalineRush_C_SpawnVisuals");
-static_assert(sizeof(GA_Generic_AdrenalineRush_C_SpawnVisuals) == 0x000110, "Wrong size on GA_Generic_AdrenalineRush_C_SpawnVisuals");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, CallFunc_MakeGameplayEffectContainerSpec_ReturnValue) == 0x000000, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::CallFunc_MakeGameplayEffectContainerSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, CallFunc_Array_Get_Item) == 0x000080, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000E0, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000EC, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, CallFunc_SpawnProjectile_ReturnValue) == 0x0000F8, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::CallFunc_SpawnProjectile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, K2Node_DynamicCast_AsB_Prj_Adrenaline_Rush) == 0x000100, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::K2Node_DynamicCast_AsB_Prj_Adrenaline_Rush' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_SpawnVisuals, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'GA_Generic_AdrenalineRush_C_SpawnVisuals::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.Setup_Ability
 // 0x01E0 (0x01E0 - 0x0000)
@@ -240,34 +168,6 @@ public:
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTag                           K2Node_Select3_Default;                            // 0x01D8(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Generic_AdrenalineRush_C_Setup_Ability) == 0x000008, "Wrong alignment on GA_Generic_AdrenalineRush_C_Setup_Ability");
-static_assert(sizeof(GA_Generic_AdrenalineRush_C_Setup_Ability) == 0x0001E0, "Wrong size on GA_Generic_AdrenalineRush_C_Setup_Ability");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, AbilitySystemComponent_Ref) == 0x000000, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::AbilitySystemComponent_Ref' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute) == 0x000008, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue) == 0x00000C, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x000010, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000030, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess) == 0x000034, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue) == 0x000038, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x00003C, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, Temp_float_Variable) == 0x000040, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000044, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, Temp_bool_Variable) == 0x000048, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_GetDataTableRowFromName_OutRow) == 0x000050, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000170, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, Temp_bool_Variable2) == 0x000171, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, K2Node_Select_Default) == 0x000174, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000178, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000188, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000190, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x0001A0, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, K2Node_Select2_Default) == 0x0001A4, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x0001A8, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x0001B8, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, Temp_bool_Variable3) == 0x0001B9, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x0001C0, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x0001D0, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(GA_Generic_AdrenalineRush_C_Setup_Ability, K2Node_Select3_Default) == 0x0001D8, "Member 'GA_Generic_AdrenalineRush_C_Setup_Ability::K2Node_Select3_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

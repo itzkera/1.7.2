@@ -14,8 +14,7 @@
 #include "Results_PlayerScoreBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.ExecuteUbergraph_Results_PlayerScoreBox
 // ()
@@ -41,7 +40,7 @@ void UResults_PlayerScoreBox_C::ExecuteUbergraph_Results_PlayerScoreBox(int32 En
 // (BlueprintEvent)
 // Parameters:
 // class UCommonNumericTextBlock*          NumericTextBlock                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    HadCompleted                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              HadCompleted                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_PlayerScoreBox_C::BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted)
 {
@@ -214,7 +213,7 @@ void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool bIsValidScoreBox_0)
 // Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.GetIsValidScoreBox
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bIsValidScoreBox_0                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsValidScoreBox_0                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* bIsValidScoreBox_0)
 {
@@ -231,5 +230,5 @@ void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* bIsValidScoreBox_0)
 		*bIsValidScoreBox_0 = Parms.bIsValidScoreBox_0;
 }
 
-}
 
+SDK_NAMESPACE_END

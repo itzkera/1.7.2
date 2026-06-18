@@ -14,8 +14,7 @@
 #include "ItemDurabilityMeter_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDurabilityMeter.ItemDurabilityMeter_C.ExecuteUbergraph_ItemDurabilityMeter
 // ()
@@ -54,7 +53,7 @@ void UItemDurabilityMeter_C::Construct()
 // Function ItemDurabilityMeter.ItemDurabilityMeter_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        Draw_Size                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 Draw_Size                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Durability                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemDurabilityMeter_C::Update(const struct FVector2D& Draw_Size, float Durability)
@@ -96,7 +95,7 @@ void UItemDurabilityMeter_C::Set_Durability(float Durability)
 // Function ItemDurabilityMeter.ItemDurabilityMeter_C.Set Backfill Color
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Backfill_Color_0                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Backfill_Color_0                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemDurabilityMeter_C::Set_Backfill_Color(const struct FLinearColor& Backfill_Color_0)
 {
@@ -112,5 +111,5 @@ void UItemDurabilityMeter_C::Set_Backfill_Color(const struct FLinearColor& Backf
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

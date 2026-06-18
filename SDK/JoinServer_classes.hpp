@@ -16,8 +16,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass JoinServer.JoinServer_C
 // 0x0080 (0x0480 - 0x0400)
@@ -82,31 +81,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JoinServer_C">();
+		BP_STATIC_CLASS_IMPL("JoinServer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinServer_C")
 	}
 	static class UJoinServer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinServer_C>();
 	}
 };
-static_assert(alignof(UJoinServer_C) == 0x000008, "Wrong alignment on UJoinServer_C");
-static_assert(sizeof(UJoinServer_C) == 0x000480, "Wrong size on UJoinServer_C");
-static_assert(offsetof(UJoinServer_C, UberGraphFrame) == 0x000400, "Member 'UJoinServer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, BuildWatermark) == 0x000408, "Member 'UJoinServer_C::BuildWatermark' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, MainContentStack) == 0x000410, "Member 'UJoinServer_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, ManualStart) == 0x000418, "Member 'UJoinServer_C::ManualStart' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, TutorialCanceledConfirmActions) == 0x000420, "Member 'UJoinServer_C::TutorialCanceledConfirmActions' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, NoneAction) == 0x000430, "Member 'UJoinServer_C::NoneAction' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, SoundPromptTutorial) == 0x000438, "Member 'UJoinServer_C::SoundPromptTutorial' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, MatchmakingAttempts) == 0x000440, "Member 'UJoinServer_C::MatchmakingAttempts' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, TutorialMatchmakingStarted) == 0x000444, "Member 'UJoinServer_C::TutorialMatchmakingStarted' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, ProgressWidget) == 0x000448, "Member 'UJoinServer_C::ProgressWidget' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, TutorialWindow) == 0x000450, "Member 'UJoinServer_C::TutorialWindow' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, AbandonSession) == 0x000458, "Member 'UJoinServer_C::AbandonSession' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, MenuWidget) == 0x000460, "Member 'UJoinServer_C::MenuWidget' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, MaxMatchmakingAttempts) == 0x000468, "Member 'UJoinServer_C::MaxMatchmakingAttempts' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, RejoinWindow) == 0x000470, "Member 'UJoinServer_C::RejoinWindow' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, RejoinAttemptCount) == 0x000478, "Member 'UJoinServer_C::RejoinAttemptCount' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MissionGen_Athena.MissionGen_Athena_C
 // 0x0000 (0x06A8 - 0x06A8)
@@ -23,15 +22,16 @@ class UMissionGen_Athena_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Athena_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Athena_C")
 	}
 	static class UMissionGen_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Athena_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Athena_C) == 0x000008, "Wrong alignment on UMissionGen_Athena_C");
-static_assert(sizeof(UMissionGen_Athena_C) == 0x0006A8, "Wrong size on UMissionGen_Athena_C");
 
-}
-
+SDK_NAMESPACE_END

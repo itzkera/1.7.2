@@ -13,8 +13,7 @@
 #include "TextStyle_Base_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-BaseParent.TextStyle-BaseParent_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_BaseParent_C : public UTextStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-BaseParent_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-BaseParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-BaseParent_C")
 	}
 	static class UTextStyle_BaseParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_BaseParent_C>();
 	}
 };
-static_assert(alignof(UTextStyle_BaseParent_C) == 0x000008, "Wrong alignment on UTextStyle_BaseParent_C");
-static_assert(sizeof(UTextStyle_BaseParent_C) == 0x0000D0, "Wrong size on UTextStyle_BaseParent_C");
 
-}
-
+SDK_NAMESPACE_END

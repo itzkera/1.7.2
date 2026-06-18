@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TeamTotalScore.Results_TeamTotalScore_C
 // 0x00C8 (0x0300 - 0x0238)
@@ -78,46 +77,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TeamTotalScore_C">();
+		BP_STATIC_CLASS_IMPL("Results_TeamTotalScore_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TeamTotalScore_C")
 	}
 	static class UResults_TeamTotalScore_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TeamTotalScore_C>();
 	}
 };
-static_assert(alignof(UResults_TeamTotalScore_C) == 0x000008, "Wrong alignment on UResults_TeamTotalScore_C");
-static_assert(sizeof(UResults_TeamTotalScore_C) == 0x000300, "Wrong size on UResults_TeamTotalScore_C");
-static_assert(offsetof(UResults_TeamTotalScore_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamTotalScore_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_SkipToConvertScoreFinalState) == 0x000240, "Member 'UResults_TeamTotalScore_C::Anim_SkipToConvertScoreFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_TeleportPadIntro) == 0x000248, "Member 'UResults_TeamTotalScore_C::Anim_TeleportPadIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_CommanderXPOutro) == 0x000250, "Member 'UResults_TeamTotalScore_C::Anim_CommanderXPOutro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_ConvertScore) == 0x000258, "Member 'UResults_TeamTotalScore_C::Anim_ConvertScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_CommanderXPIntro) == 0x000260, "Member 'UResults_TeamTotalScore_C::Anim_CommanderXPIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_SkipToScoreFinalState) == 0x000268, "Member 'UResults_TeamTotalScore_C::Anim_SkipToScoreFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_CountScore) == 0x000270, "Member 'UResults_TeamTotalScore_C::Anim_CountScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_SubtotalsIntro) == 0x000278, "Member 'UResults_TeamTotalScore_C::Anim_SubtotalsIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Anim_CountScoreIntro) == 0x000280, "Member 'UResults_TeamTotalScore_C::Anim_CountScoreIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, ImageTotalScoreOverlay) == 0x000288, "Member 'UResults_TeamTotalScore_C::ImageTotalScoreOverlay' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, SubtotalBuilding) == 0x000290, "Member 'UResults_TeamTotalScore_C::SubtotalBuilding' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, SubtotalCombat) == 0x000298, "Member 'UResults_TeamTotalScore_C::SubtotalCombat' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, SubtotalMission) == 0x0002A0, "Member 'UResults_TeamTotalScore_C::SubtotalMission' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, SubtotalUtility) == 0x0002A8, "Member 'UResults_TeamTotalScore_C::SubtotalUtility' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, TextTotalScore) == 0x0002B0, "Member 'UResults_TeamTotalScore_C::TextTotalScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, TotalScore) == 0x0002B8, "Member 'UResults_TeamTotalScore_C::TotalScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, CountScoreInterpolationTime) == 0x0002BC, "Member 'UResults_TeamTotalScore_C::CountScoreInterpolationTime' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, ConvertScoreInterpolationTime) == 0x0002C0, "Member 'UResults_TeamTotalScore_C::ConvertScoreInterpolationTime' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, ConvertScoreInterpolationEndEarlyTime) == 0x0002C4, "Member 'UResults_TeamTotalScore_C::ConvertScoreInterpolationEndEarlyTime' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, CountScorePlayRate) == 0x0002C8, "Member 'UResults_TeamTotalScore_C::CountScorePlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, bSkippedToCountScoreEnd) == 0x0002CC, "Member 'UResults_TeamTotalScore_C::bSkippedToCountScoreEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, bSkippingToCountScoreEnd) == 0x0002CD, "Member 'UResults_TeamTotalScore_C::bSkippingToCountScoreEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, Count_Score_Finished) == 0x0002D0, "Member 'UResults_TeamTotalScore_C::Count_Score_Finished' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, bCountingScore) == 0x0002E0, "Member 'UResults_TeamTotalScore_C::bCountingScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, bSkippedToConvertScoreEnd) == 0x0002E1, "Member 'UResults_TeamTotalScore_C::bSkippedToConvertScoreEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, bSkippingToConvertScoreEnd) == 0x0002E2, "Member 'UResults_TeamTotalScore_C::bSkippingToConvertScoreEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, ConvertScorePlayRate) == 0x0002E4, "Member 'UResults_TeamTotalScore_C::ConvertScorePlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, CountUpLoop) == 0x0002E8, "Member 'UResults_TeamTotalScore_C::CountUpLoop' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, CountUpEnd) == 0x0002F0, "Member 'UResults_TeamTotalScore_C::CountUpEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamTotalScore_C, loopedCountUpSound) == 0x0002F8, "Member 'UResults_TeamTotalScore_C::loopedCountUpSound' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

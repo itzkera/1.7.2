@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CraftingBar.CraftingBar_C
 // 0x0000 (0x0288 - 0x0288)
@@ -23,15 +22,16 @@ class UCraftingBar_C final : public UFortCraftingBarWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CraftingBar_C">();
+		BP_STATIC_CLASS_IMPL("CraftingBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CraftingBar_C")
 	}
 	static class UCraftingBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCraftingBar_C>();
 	}
 };
-static_assert(alignof(UCraftingBar_C) == 0x000008, "Wrong alignment on UCraftingBar_C");
-static_assert(sizeof(UCraftingBar_C) == 0x000288, "Wrong size on UCraftingBar_C");
 
-}
-
+SDK_NAMESPACE_END

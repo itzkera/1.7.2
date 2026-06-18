@@ -14,8 +14,7 @@
 #include "AthenaViewTargetHitPointInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaViewTargetHitPointInfo.AthenaViewTargetHitPointInfo_C.ExecuteUbergraph_AthenaViewTargetHitPointInfo
 // ()
@@ -50,5 +49,5 @@ void UAthenaViewTargetHitPointInfo_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

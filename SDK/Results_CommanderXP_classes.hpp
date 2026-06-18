@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_CommanderXP.Results_CommanderXP_C
 // 0x00F8 (0x0330 - 0x0238)
@@ -89,49 +88,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_CommanderXP_C">();
+		BP_STATIC_CLASS_IMPL("Results_CommanderXP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_CommanderXP_C")
 	}
 	static class UResults_CommanderXP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_CommanderXP_C>();
 	}
 };
-static_assert(alignof(UResults_CommanderXP_C) == 0x000008, "Wrong alignment on UResults_CommanderXP_C");
-static_assert(sizeof(UResults_CommanderXP_C) == 0x000330, "Wrong size on UResults_CommanderXP_C");
-static_assert(offsetof(UResults_CommanderXP_C, UberGraphFrame) == 0x000238, "Member 'UResults_CommanderXP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_SkipToFinalState) == 0x000240, "Member 'UResults_CommanderXP_C::Anim_SkipToFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_SkillPointIncrement2) == 0x000248, "Member 'UResults_CommanderXP_C::Anim_SkillPointIncrement2' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_ContinueButtonOutro) == 0x000250, "Member 'UResults_CommanderXP_C::Anim_ContinueButtonOutro' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_ContinueButtonIntro) == 0x000258, "Member 'UResults_CommanderXP_C::Anim_ContinueButtonIntro' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_Intro) == 0x000260, "Member 'UResults_CommanderXP_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_SkillPointIncrement1) == 0x000268, "Member 'UResults_CommanderXP_C::Anim_SkillPointIncrement1' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Anim_SkillPointIncrementBase) == 0x000270, "Member 'UResults_CommanderXP_C::Anim_SkillPointIncrementBase' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, ButtonContinue) == 0x000278, "Member 'UResults_CommanderXP_C::ButtonContinue' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, ImageSkillPointDynamic1) == 0x000280, "Member 'UResults_CommanderXP_C::ImageSkillPointDynamic1' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, ImageSkillPointDynamic2) == 0x000288, "Member 'UResults_CommanderXP_C::ImageSkillPointDynamic2' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, ImageSkillPointStatic) == 0x000290, "Member 'UResults_CommanderXP_C::ImageSkillPointStatic' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, PlayerBanner) == 0x000298, "Member 'UResults_CommanderXP_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, SafeZone_0) == 0x0002A0, "Member 'UResults_CommanderXP_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TextFortName) == 0x0002A8, "Member 'UResults_CommanderXP_C::TextFortName' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TextSkillPointIncrement) == 0x0002B0, "Member 'UResults_CommanderXP_C::TextSkillPointIncrement' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TextSkillPoints) == 0x0002B8, "Member 'UResults_CommanderXP_C::TextSkillPoints' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, XpBar) == 0x0002C0, "Member 'UResults_CommanderXP_C::XpBar' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, PlayRate) == 0x0002C8, "Member 'UResults_CommanderXP_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TimeBetweenIntroAndCount) == 0x0002CC, "Member 'UResults_CommanderXP_C::TimeBetweenIntroAndCount' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TeamTotalScore) == 0x0002D0, "Member 'UResults_CommanderXP_C::TeamTotalScore' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, Finished) == 0x0002D8, "Member 'UResults_CommanderXP_C::Finished' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, SkillPointsItem) == 0x0002E8, "Member 'UResults_CommanderXP_C::SkillPointsItem' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, CurrentSkillPoints) == 0x0002F0, "Member 'UResults_CommanderXP_C::CurrentSkillPoints' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, bSkippedToEnd) == 0x0002F4, "Member 'UResults_CommanderXP_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, bSkippingToEnd) == 0x0002F5, "Member 'UResults_CommanderXP_C::bSkippingToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TimeBetweenSkipAndContinue) == 0x0002F8, "Member 'UResults_CommanderXP_C::TimeBetweenSkipAndContinue' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, FinalSkillPoints) == 0x0002FC, "Member 'UResults_CommanderXP_C::FinalSkillPoints' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, bCanSkipToEnd) == 0x000300, "Member 'UResults_CommanderXP_C::bCanSkipToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, XPBarAppear) == 0x000308, "Member 'UResults_CommanderXP_C::XPBarAppear' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, XPBadge) == 0x000310, "Member 'UResults_CommanderXP_C::XPBadge' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, PlayerSkillPoint) == 0x000318, "Member 'UResults_CommanderXP_C::PlayerSkillPoint' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, XPBadgeIncrement) == 0x000320, "Member 'UResults_CommanderXP_C::XPBadgeIncrement' has a wrong offset!");
-static_assert(offsetof(UResults_CommanderXP_C, TextSkillPointIncrement_0) == 0x000328, "Member 'UResults_CommanderXP_C::TextSkillPointIncrement_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

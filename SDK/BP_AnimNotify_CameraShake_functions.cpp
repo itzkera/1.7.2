@@ -14,8 +14,7 @@
 #include "BP_AnimNotify_CameraShake_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C.Received_Notify
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
@@ -41,5 +40,5 @@ bool UBP_AnimNotify_CameraShake_C::Received_Notify(class USkeletalMeshComponent*
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

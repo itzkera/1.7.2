@@ -14,8 +14,7 @@
 #include "PlayerPawn_Athena_Generic_Parent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent
 // (HasDefaults)
@@ -55,7 +54,7 @@ void APlayerPawn_Athena_Generic_Parent_C::ReceiveBeginPlay()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_In(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -77,7 +76,7 @@ void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_In(EGameplayCueEv
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_Out(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -112,7 +111,7 @@ void APlayerPawn_Athena_Generic_Parent_C::UserConstructionScript()
 // Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.Teleport
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayCueParameters           GameplayCueParameters                                  (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    GameplayCueParameters                                  (Parm, ContainsInstancedReference)
 // bool                                    TeleportOut_                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                                   Default_PlayLength                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -132,5 +131,5 @@ void APlayerPawn_Athena_Generic_Parent_C::Teleport(const struct FGameplayCuePara
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

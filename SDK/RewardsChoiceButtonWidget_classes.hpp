@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C
 // 0x0020 (0x0888 - 0x0868)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardsChoiceButtonWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardsChoiceButtonWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardsChoiceButtonWidget_C")
 	}
 	static class URewardsChoiceButtonWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardsChoiceButtonWidget_C>();
 	}
 };
-static_assert(alignof(URewardsChoiceButtonWidget_C) == 0x000008, "Wrong alignment on URewardsChoiceButtonWidget_C");
-static_assert(sizeof(URewardsChoiceButtonWidget_C) == 0x000888, "Wrong size on URewardsChoiceButtonWidget_C");
-static_assert(offsetof(URewardsChoiceButtonWidget_C, RewardsBorderHighlight) == 0x000868, "Member 'URewardsChoiceButtonWidget_C::RewardsBorderHighlight' has a wrong offset!");
-static_assert(offsetof(URewardsChoiceButtonWidget_C, RewardsListWidget) == 0x000870, "Member 'URewardsChoiceButtonWidget_C::RewardsListWidget' has a wrong offset!");
-static_assert(offsetof(URewardsChoiceButtonWidget_C, Owner) == 0x000878, "Member 'URewardsChoiceButtonWidget_C::Owner' has a wrong offset!");
-static_assert(offsetof(URewardsChoiceButtonWidget_C, RewardIndex) == 0x000880, "Member 'URewardsChoiceButtonWidget_C::RewardIndex' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

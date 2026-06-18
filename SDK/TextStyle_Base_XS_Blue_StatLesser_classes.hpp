@@ -13,8 +13,7 @@
 #include "TextStyle_Base_XS_Blue_StatNormal_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-Base-XS-Blue-StatLesser.TextStyle-Base-XS-Blue-StatLesser_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_Base_XS_Blue_StatLesser_C final : public UTextStyle_Base_XS_Blu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Base-XS-Blue-StatLesser_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Base-XS-Blue-StatLesser_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Base-XS-Blue-StatLesser_C")
 	}
 	static class UTextStyle_Base_XS_Blue_StatLesser_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Base_XS_Blue_StatLesser_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Base_XS_Blue_StatLesser_C) == 0x000008, "Wrong alignment on UTextStyle_Base_XS_Blue_StatLesser_C");
-static_assert(sizeof(UTextStyle_Base_XS_Blue_StatLesser_C) == 0x0000D0, "Wrong size on UTextStyle_Base_XS_Blue_StatLesser_C");
 
-}
-
+SDK_NAMESPACE_END

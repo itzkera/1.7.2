@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ItemUIFunctionLibrary.ItemUIFunctionLibrary_C
 // 0x0000 (0x0028 - 0x0028)
@@ -30,15 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemUIFunctionLibrary_C">();
+		BP_STATIC_CLASS_IMPL("ItemUIFunctionLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemUIFunctionLibrary_C")
 	}
 	static class UItemUIFunctionLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemUIFunctionLibrary_C>();
 	}
 };
-static_assert(alignof(UItemUIFunctionLibrary_C) == 0x000008, "Wrong alignment on UItemUIFunctionLibrary_C");
-static_assert(sizeof(UItemUIFunctionLibrary_C) == 0x000028, "Wrong size on UItemUIFunctionLibrary_C");
 
-}
-
+SDK_NAMESPACE_END

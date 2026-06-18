@@ -17,8 +17,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StatItemLarge.StatItemLarge_C
 // 0x00D0 (0x0400 - 0x0330)
@@ -50,23 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatItemLarge_C">();
+		BP_STATIC_CLASS_IMPL("StatItemLarge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatItemLarge_C")
 	}
 	static class UStatItemLarge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatItemLarge_C>();
 	}
 };
-static_assert(alignof(UStatItemLarge_C) == 0x000008, "Wrong alignment on UStatItemLarge_C");
-static_assert(sizeof(UStatItemLarge_C) == 0x000400, "Wrong size on UStatItemLarge_C");
-static_assert(offsetof(UStatItemLarge_C, UberGraphFrame) == 0x000330, "Member 'UStatItemLarge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, Icon) == 0x000338, "Member 'UStatItemLarge_C::Icon' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, Name_0) == 0x000340, "Member 'UStatItemLarge_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, Value) == 0x000348, "Member 'UStatItemLarge_C::Value' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, SoundCueValueUp) == 0x000350, "Member 'UStatItemLarge_C::SoundCueValueUp' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, SoundCueValueDown) == 0x000358, "Member 'UStatItemLarge_C::SoundCueValueDown' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, IconBrush) == 0x000360, "Member 'UStatItemLarge_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UStatItemLarge_C, IconColor) == 0x0003F0, "Member 'UStatItemLarge_C::IconColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

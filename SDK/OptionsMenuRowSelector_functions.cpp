@@ -14,8 +14,7 @@
 #include "OptionsMenuRowSelector_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.ExecuteUbergraph_OptionsMenuRowSelector
 // (HasDefaults)
@@ -74,7 +73,7 @@ void UOptionsMenuRowSelector_C::Destruct()
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuRowSelector_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -130,9 +129,9 @@ void UOptionsMenuRowSelector_C::Construct()
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Initialize Row Selector
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Row_Text                                               (Parm)
-// TArray<class FText>                     Buttons                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class FText>                     Hover_Texts_0                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const class FText&                      Row_Text                                               (Parm)
+// TArray<class FText>&                    Buttons                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class FText>&                    Hover_Texts_0                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                                    Require_Selection                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonTextBlock*                 Tab_Tooltip                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -211,5 +210,5 @@ void UOptionsMenuRowSelector_C::Button_Hovered(class UCommonButton* Button_Hover
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionModifierItem.MissionModifierItem_C
 // 0x0038 (0x0278 - 0x0240)
@@ -40,23 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionModifierItem_C">();
+		BP_STATIC_CLASS_IMPL("MissionModifierItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionModifierItem_C")
 	}
 	static class UMissionModifierItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionModifierItem_C>();
 	}
 };
-static_assert(alignof(UMissionModifierItem_C) == 0x000008, "Wrong alignment on UMissionModifierItem_C");
-static_assert(sizeof(UMissionModifierItem_C) == 0x000278, "Wrong size on UMissionModifierItem_C");
-static_assert(offsetof(UMissionModifierItem_C, UberGraphFrame) == 0x000240, "Member 'UMissionModifierItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, IconSizeBox) == 0x000248, "Member 'UMissionModifierItem_C::IconSizeBox' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, ModifierIcon) == 0x000250, "Member 'UMissionModifierItem_C::ModifierIcon' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, WidgetSizeBox) == 0x000258, "Member 'UMissionModifierItem_C::WidgetSizeBox' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, ModifierItemDef) == 0x000260, "Member 'UMissionModifierItem_C::ModifierItemDef' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, IconHeightOverride) == 0x000268, "Member 'UMissionModifierItem_C::IconHeightOverride' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, IconWidthOverride) == 0x00026C, "Member 'UMissionModifierItem_C::IconWidthOverride' has a wrong offset!");
-static_assert(offsetof(UMissionModifierItem_C, WidgetHeightOverride) == 0x000270, "Member 'UMissionModifierItem_C::WidgetHeightOverride' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

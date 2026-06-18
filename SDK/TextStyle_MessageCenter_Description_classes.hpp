@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-MessageCenter-Description.TextStyle-MessageCenter-Description_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_MessageCenter_Description_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-MessageCenter-Description_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-MessageCenter-Description_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-MessageCenter-Description_C")
 	}
 	static class UTextStyle_MessageCenter_Description_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_MessageCenter_Description_C>();
 	}
 };
-static_assert(alignof(UTextStyle_MessageCenter_Description_C) == 0x000008, "Wrong alignment on UTextStyle_MessageCenter_Description_C");
-static_assert(sizeof(UTextStyle_MessageCenter_Description_C) == 0x0000D0, "Wrong size on UTextStyle_MessageCenter_Description_C");
 
-}
-
+SDK_NAMESPACE_END

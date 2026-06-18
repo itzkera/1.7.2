@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaGameOverScreen.AthenaGameOverScreen_C
 // 0x0020 (0x0280 - 0x0260)
@@ -39,19 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaGameOverScreen_C">();
+		BP_STATIC_CLASS_IMPL("AthenaGameOverScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaGameOverScreen_C")
 	}
 	static class UAthenaGameOverScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaGameOverScreen_C>();
 	}
 };
-static_assert(alignof(UAthenaGameOverScreen_C) == 0x000008, "Wrong alignment on UAthenaGameOverScreen_C");
-static_assert(sizeof(UAthenaGameOverScreen_C) == 0x000280, "Wrong size on UAthenaGameOverScreen_C");
-static_assert(offsetof(UAthenaGameOverScreen_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGameOverScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverScreen_C, GameOverStack) == 0x000268, "Member 'UAthenaGameOverScreen_C::GameOverStack' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverScreen_C, SafeZone_0) == 0x000270, "Member 'UAthenaGameOverScreen_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaGameOverScreen_C, ShowingGameOverScreen) == 0x000278, "Member 'UAthenaGameOverScreen_C::ShowingGameOverScreen' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

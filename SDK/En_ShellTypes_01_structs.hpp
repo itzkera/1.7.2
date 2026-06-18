@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum En_ShellTypes_01.En_ShellTypes_01
 // NumValues: 0x0006
@@ -26,5 +25,4 @@ enum class En_ShellTypes_01 : uint8
 	En_ShellTypes_MAX                        = 5,
 };
 
-}
-
+SDK_NAMESPACE_END

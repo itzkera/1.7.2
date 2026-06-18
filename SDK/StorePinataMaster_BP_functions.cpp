@@ -14,8 +14,7 @@
 #include "StorePinataMaster_BP_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.ExecuteUbergraph_StorePinataMaster_BP
 // (HasDefaults)
@@ -297,7 +296,7 @@ void AStorePinataMaster_BP_C::OnLoaded_34AE763040BC26E1AD2CE4842CE48F91(class UC
 // (BlueprintEvent)
 // Parameters:
 // ETouchIndex                             FingerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AStorePinataMaster_BP_C::InpTchEvt_Pressed(ETouchIndex FingerIndex, const struct FVector& Location)
 {
@@ -319,7 +318,7 @@ void AStorePinataMaster_BP_C::InpTchEvt_Pressed(ETouchIndex FingerIndex, const s
 // (BlueprintEvent)
 // Parameters:
 // ETouchIndex                             FingerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AStorePinataMaster_BP_C::InpTchEvt_Released(ETouchIndex FingerIndex, const struct FVector& Location)
 {
@@ -340,7 +339,7 @@ void AStorePinataMaster_BP_C::InpTchEvt_Released(ETouchIndex FingerIndex, const 
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStorePinataMaster_BP_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4(const struct FKey& Key)
 {
@@ -360,7 +359,7 @@ void AStorePinataMaster_BP_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEven
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStorePinataMaster_BP_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
@@ -380,7 +379,7 @@ void AStorePinataMaster_BP_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEven
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStorePinataMaster_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
@@ -400,7 +399,7 @@ void AStorePinataMaster_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(c
 // Function StorePinataMaster_BP.StorePinataMaster_BP_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStorePinataMaster_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
@@ -1004,5 +1003,5 @@ void AStorePinataMaster_BP_C::PackPersonalitySounds()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

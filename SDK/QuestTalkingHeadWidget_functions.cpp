@@ -14,8 +14,7 @@
 #include "QuestTalkingHeadWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.ExecuteUbergraph_QuestTalkingHeadWidget
 // ()
@@ -74,7 +73,7 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadImage(class UTexture2D* Icon)
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
+// const class FText&                      Title                                                  (Parm)
 
 void UQuestTalkingHeadWidget_C::SetTalkingHeadName(const class FText& Title)
 {
@@ -94,7 +93,7 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadName(const class FText& Title)
 // Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadSubtitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Subtitle                                               (Parm)
+// const class FText&                      Subtitle                                               (Parm)
 
 void UQuestTalkingHeadWidget_C::SetTalkingHeadSubtitle(const class FText& Subtitle)
 {
@@ -115,8 +114,8 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadSubtitle(const class FText& Subtit
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Title                                                  (Parm)
-// class FText                             Subtitle                                               (Parm)
+// const class FText&                      Title                                                  (Parm)
+// const class FText&                      Subtitle                                               (Parm)
 // EFortAnnouncementDisplayPreference      DisplayPreference_0                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference_0)
@@ -184,5 +183,5 @@ void UQuestTalkingHeadWidget_C::UpdateVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

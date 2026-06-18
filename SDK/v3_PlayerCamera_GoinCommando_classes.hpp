@@ -13,8 +13,7 @@
 #include "v3_PlayerCameraModeBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass v3_PlayerCamera_GoinCommando.v3_PlayerCamera_GoinCommando_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class Uv3_PlayerCamera_GoinCommando_C final : public Uv3_PlayerCameraModeBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v3_PlayerCamera_GoinCommando_C">();
+		BP_STATIC_CLASS_IMPL("v3_PlayerCamera_GoinCommando_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v3_PlayerCamera_GoinCommando_C")
 	}
 	static class Uv3_PlayerCamera_GoinCommando_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv3_PlayerCamera_GoinCommando_C>();
 	}
 };
-static_assert(alignof(Uv3_PlayerCamera_GoinCommando_C) == 0x000008, "Wrong alignment on Uv3_PlayerCamera_GoinCommando_C");
-static_assert(sizeof(Uv3_PlayerCamera_GoinCommando_C) == 0x000110, "Wrong size on Uv3_PlayerCamera_GoinCommando_C");
 
-}
-
+SDK_NAMESPACE_END

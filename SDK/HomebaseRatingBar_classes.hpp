@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HomebaseRatingBar.HomebaseRatingBar_C
 // 0x0000 (0x0390 - 0x0390)
@@ -23,15 +22,16 @@ class UHomebaseRatingBar_C final : public UFortMaterialProgressBar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HomebaseRatingBar_C">();
+		BP_STATIC_CLASS_IMPL("HomebaseRatingBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HomebaseRatingBar_C")
 	}
 	static class UHomebaseRatingBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHomebaseRatingBar_C>();
 	}
 };
-static_assert(alignof(UHomebaseRatingBar_C) == 0x000008, "Wrong alignment on UHomebaseRatingBar_C");
-static_assert(sizeof(UHomebaseRatingBar_C) == 0x000390, "Wrong size on UHomebaseRatingBar_C");
 
-}
-
+SDK_NAMESPACE_END

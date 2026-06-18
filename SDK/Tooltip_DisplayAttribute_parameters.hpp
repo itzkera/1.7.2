@@ -16,8 +16,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.ExecuteUbergraph_Tooltip-DisplayAttribute
 // 0x0088 (0x0088 - 0x0000)
@@ -32,13 +32,6 @@ public:
 	float                                         K2Node_Event_Delta;                                // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetToolTipWidget_ReturnValue;             // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute) == 0x000008, "Wrong alignment on Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute");
-static_assert(sizeof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute) == 0x000088, "Wrong size on Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute, EntryPoint) == 0x000000, "Member 'Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute, CallFunc_SetDisplayAttribute_DeltaAttribute) == 0x000008, "Member 'Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute::CallFunc_SetDisplayAttribute_DeltaAttribute' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute, CallFunc_SetDisplayAttribute_ReturnValue) == 0x000078, "Member 'Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute::CallFunc_SetDisplayAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute, K2Node_Event_Delta) == 0x00007C, "Member 'Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute::K2Node_Event_Delta' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute, CallFunc_GetToolTipWidget_ReturnValue) == 0x000080, "Member 'Tooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute::CallFunc_GetToolTipWidget_ReturnValue' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.ValueChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -47,9 +40,6 @@ struct Tooltip_DisplayAttribute_C_ValueChanged final
 public:
 	float                                         Delta;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tooltip_DisplayAttribute_C_ValueChanged) == 0x000004, "Wrong alignment on Tooltip_DisplayAttribute_C_ValueChanged");
-static_assert(sizeof(Tooltip_DisplayAttribute_C_ValueChanged) == 0x000004, "Wrong size on Tooltip_DisplayAttribute_C_ValueChanged");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_ValueChanged, Delta) == 0x000000, "Member 'Tooltip_DisplayAttribute_C_ValueChanged::Delta' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Update
 // 0x0138 (0x0138 - 0x0000)
@@ -93,39 +83,6 @@ public:
 	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select7_Default;                            // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tooltip_DisplayAttribute_C_Update) == 0x000008, "Wrong alignment on Tooltip_DisplayAttribute_C_Update");
-static_assert(sizeof(Tooltip_DisplayAttribute_C_Update) == 0x000138, "Wrong size on Tooltip_DisplayAttribute_C_Update");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable) == 0x000000, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable2) == 0x000001, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable3) == 0x000002, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable4) == 0x000003, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable5) == 0x000004, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable6) == 0x000005, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_bool_Variable) == 0x000006, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable7) == 0x000007, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable) == 0x000008, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable2) == 0x00000C, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable3) == 0x000010, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable3' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable4) == 0x000014, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable4' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable8) == 0x000018, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable9) == 0x000019, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute) == 0x000020, "Member 'Tooltip_DisplayAttribute_C_Update::CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable5) == 0x000090, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable5' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable6) == 0x000094, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable6' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select_Default) == 0x000098, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select2_Default) == 0x00009C, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable7) == 0x0000AC, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable7' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_float_Variable8) == 0x0000B0, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_float_Variable8' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, Temp_byte_Variable10) == 0x0000B4, "Member 'Tooltip_DisplayAttribute_C_Update::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select3_Default) == 0x0000B8, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_MakeStruct_LinearColor) == 0x0000BC, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select4_Default) == 0x0000CC, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_MakeStruct_LinearColor2) == 0x0000D0, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_MakeStruct_LinearColor2' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select5_Default) == 0x0000E0, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_MakeStruct_SlateColor) == 0x0000F0, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000118, "Member 'Tooltip_DisplayAttribute_C_Update::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select6_Default) == 0x00011C, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update, K2Node_Select7_Default) == 0x000130, "Member 'Tooltip_DisplayAttribute_C_Update::K2Node_Select7_Default' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Update Base & Buff Colors
 // 0x0020 (0x0020 - 0x0000)
@@ -135,10 +92,6 @@ public:
 	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Base;              // 0x0000(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Get_Base___Buff_Colors_Buff;              // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors) == 0x000004, "Wrong alignment on Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors");
-static_assert(sizeof(Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors) == 0x000020, "Wrong size on Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors, CallFunc_Get_Base___Buff_Colors_Base) == 0x000000, "Member 'Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors::CallFunc_Get_Base___Buff_Colors_Base' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors, CallFunc_Get_Base___Buff_Colors_Buff) == 0x000010, "Member 'Tooltip_DisplayAttribute_C_Update_Base___Buff_Colors::CallFunc_Get_Base___Buff_Colors_Buff' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.UpdateValueText
 // 0x0070 (0x0070 - 0x0000)
@@ -147,9 +100,6 @@ struct Tooltip_DisplayAttribute_C_UpdateValueText final
 public:
 	struct FFortDisplayAttribute                  CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x0000(0x0070)()
 };
-static_assert(alignof(Tooltip_DisplayAttribute_C_UpdateValueText) == 0x000008, "Wrong alignment on Tooltip_DisplayAttribute_C_UpdateValueText");
-static_assert(sizeof(Tooltip_DisplayAttribute_C_UpdateValueText) == 0x000070, "Wrong size on Tooltip_DisplayAttribute_C_UpdateValueText");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_UpdateValueText, CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute) == 0x000000, "Member 'Tooltip_DisplayAttribute_C_UpdateValueText::CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute' has a wrong offset!");
 
 // Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.GetToolTipWidget
 // 0x0088 (0x0088 - 0x0000)
@@ -161,12 +111,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tooltip_DisplayAttribute_C_GetToolTipWidget) == 0x000008, "Wrong alignment on Tooltip_DisplayAttribute_C_GetToolTipWidget");
-static_assert(sizeof(Tooltip_DisplayAttribute_C_GetToolTipWidget) == 0x000088, "Wrong size on Tooltip_DisplayAttribute_C_GetToolTipWidget");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_GetToolTipWidget, ReturnValue) == 0x000000, "Member 'Tooltip_DisplayAttribute_C_GetToolTipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_GetToolTipWidget, CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute) == 0x000008, "Member 'Tooltip_DisplayAttribute_C_GetToolTipWidget::CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_GetToolTipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'Tooltip_DisplayAttribute_C_GetToolTipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_DisplayAttribute_C_GetToolTipWidget, CallFunc_Create_Basic_Tooltip_Output) == 0x000080, "Member 'Tooltip_DisplayAttribute_C_GetToolTipWidget::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

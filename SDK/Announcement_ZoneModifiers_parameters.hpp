@@ -15,8 +15,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.ExecuteUbergraph_Announcement_ZoneModifiers
 // 0x00F0 (0x00F0 - 0x0000)
@@ -48,27 +48,6 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortClientAnnouncement_Conversation*   CallFunc_FinishSpawningActor_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers) == 0x000010, "Wrong alignment on Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers");
-static_assert(sizeof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers) == 0x0000F0, "Wrong size on Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, EntryPoint) == 0x000000, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_K2_SetTimerDelegate_ReturnValue2) == 0x000038, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_K2_SetTimerDelegate_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_Event_Announcement) == 0x000040, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_Event_Announcement' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_DynamicCast_AsFort_Client_Announcement_Zone_Modifiers) == 0x000048, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_DynamicCast_AsFort_Client_Announcement_Zone_Modifiers' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_MakeStruct_FortClientAnnouncementData_Conversation) == 0x000058, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_MakeStruct_FortClientAnnouncementData_Conversation' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_CreateDelegate_OutputDelegate3) == 0x000068, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_K2_SetTimerDelegate_ReturnValue3) == 0x000080, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_K2_SetTimerDelegate_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000088, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_DynamicCast_bSuccess2) == 0x000090, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, K2Node_MakeArray_Array) == 0x000098, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_MakeTransform_ReturnValue) == 0x0000B0, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000E0, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000E8, "Member 'Announcement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.UpdateWidgetData
 // 0x0008 (0x0008 - 0x0000)
@@ -77,9 +56,6 @@ struct Announcement_ZoneModifiers_C_UpdateWidgetData final
 public:
 	class AFortClientAnnouncement*                Announcement;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announcement_ZoneModifiers_C_UpdateWidgetData) == 0x000008, "Wrong alignment on Announcement_ZoneModifiers_C_UpdateWidgetData");
-static_assert(sizeof(Announcement_ZoneModifiers_C_UpdateWidgetData) == 0x000008, "Wrong size on Announcement_ZoneModifiers_C_UpdateWidgetData");
-static_assert(offsetof(Announcement_ZoneModifiers_C_UpdateWidgetData, Announcement) == 0x000000, "Member 'Announcement_ZoneModifiers_C_UpdateWidgetData::Announcement' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

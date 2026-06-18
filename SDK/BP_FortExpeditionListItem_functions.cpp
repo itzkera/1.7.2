@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionListItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.ExecuteUbergraph_BP_FortExpeditionListItem
 // ()
@@ -181,7 +180,7 @@ void UBP_FortExpeditionListItem_C::Set_Name(class UFortItem* Item_0)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortExpeditionItemDefinition*    Item_Def                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItemDefinition**   Item_Def                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionListItem_C::Get_Expedition_Item_Definition(class UFortItem* Item_0, class UFortExpeditionItemDefinition** Item_Def)
 {
@@ -324,7 +323,7 @@ void UBP_FortExpeditionListItem_C::Set_Expedition_Returns_Data(class UFortExpedi
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.Set Vehicle Icon
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Expedition                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortExpeditionItem*        Expedition                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionListItem_C::Set_Vehicle_Icon(const class UFortExpeditionItem* Expedition)
 {
@@ -380,5 +379,5 @@ void UBP_FortExpeditionListItem_C::Update_Bang_State(class UFortAccountItem* Ite
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

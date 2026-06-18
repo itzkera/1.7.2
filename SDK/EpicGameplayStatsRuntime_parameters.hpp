@@ -13,8 +13,8 @@
 #include "EpicGameplayStatsRuntime_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.EqualEqual_GameplayStatTagGameplayStatTag
 // 0x0028 (0x0028 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag) == 0x000008, "Wrong alignment on BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag");
-static_assert(sizeof(BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag) == 0x000028, "Wrong size on BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag");
-static_assert(offsetof(BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag, A) == 0x000000, "Member 'BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag::A' has a wrong offset!");
-static_assert(offsetof(BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag, B) == 0x000010, "Member 'BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag::B' has a wrong offset!");
-static_assert(offsetof(BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag, ReturnValue) == 0x000020, "Member 'BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag::ReturnValue' has a wrong offset!");
 
 // Function EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.NotEqual_GameplayStatTagGameplayStatTag
 // 0x0028 (0x0028 - 0x0000)
@@ -42,11 +37,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag) == 0x000008, "Wrong alignment on BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag");
-static_assert(sizeof(BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag) == 0x000028, "Wrong size on BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag");
-static_assert(offsetof(BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag, A) == 0x000000, "Member 'BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag::A' has a wrong offset!");
-static_assert(offsetof(BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag, B) == 0x000010, "Member 'BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag::B' has a wrong offset!");
-static_assert(offsetof(BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag, ReturnValue) == 0x000020, "Member 'BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

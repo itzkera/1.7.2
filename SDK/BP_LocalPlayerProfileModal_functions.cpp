@@ -14,8 +14,7 @@
 #include "BP_LocalPlayerProfileModal_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.ExecuteUbergraph_BP_LocalPlayerProfileModal
 // ()
@@ -194,7 +193,7 @@ void UBP_LocalPlayerProfileModal_C::Activate_Widget(int32 Selection)
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandleCloseAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_LocalPlayerProfileModal_C::HandleCloseAction(bool* PassThrough)
 {
@@ -229,7 +228,7 @@ void UBP_LocalPlayerProfileModal_C::Setup_Input_Action_Handlers()
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandlePreviousAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_LocalPlayerProfileModal_C::HandlePreviousAction(bool* PassThrough)
 {
@@ -250,7 +249,7 @@ void UBP_LocalPlayerProfileModal_C::HandlePreviousAction(bool* PassThrough)
 // Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandleNextAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_LocalPlayerProfileModal_C::HandleNextAction(bool* PassThrough)
 {
@@ -281,5 +280,5 @@ void UBP_LocalPlayerProfileModal_C::Handle_Leaving_Banner_Editor()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

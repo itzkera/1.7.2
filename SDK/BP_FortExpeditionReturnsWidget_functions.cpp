@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionReturnsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.ExecuteUbergraph_BP_FortExpeditionReturnsWidget
 // (HasDefaults)
@@ -169,7 +168,7 @@ void UBP_FortExpeditionReturnsWidget_C::Set_Expedition_Return_Progress(class UFo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortExpeditionItem*              Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortExpeditionItemDefinition*    ItemDef                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItemDefinition**   ItemDef                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionReturnsWidget_C::Get_Expedition_Item_Definition(class UFortExpeditionItem* Item_0, class UFortExpeditionItemDefinition** ItemDef)
 {
@@ -208,5 +207,5 @@ struct FTimespan UBP_FortExpeditionReturnsWidget_C::Get_Utc_Now_Offset()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

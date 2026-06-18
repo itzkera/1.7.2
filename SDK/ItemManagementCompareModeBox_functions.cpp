@@ -14,8 +14,7 @@
 #include "ItemManagementCompareModeBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.ExecuteUbergraph_ItemManagementCompareModeBox
 // (HasDefaults)
@@ -124,7 +123,7 @@ void UItemManagementCompareModeBox_C::UpdateFocusedItems()
 // Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementCompareModeBox_C::HandleBack(bool* PassThrough)
 {
@@ -141,5 +140,5 @@ void UItemManagementCompareModeBox_C::HandleBack(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

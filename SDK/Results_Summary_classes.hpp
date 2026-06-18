@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_Summary.Results_Summary_C
 // 0x0070 (0x02A8 - 0x0238)
@@ -49,28 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_Summary_C">();
+		BP_STATIC_CLASS_IMPL("Results_Summary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_Summary_C")
 	}
 	static class UResults_Summary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_Summary_C>();
 	}
 };
-static_assert(alignof(UResults_Summary_C) == 0x000008, "Wrong alignment on UResults_Summary_C");
-static_assert(sizeof(UResults_Summary_C) == 0x0002A8, "Wrong size on UResults_Summary_C");
-static_assert(offsetof(UResults_Summary_C, UberGraphFrame) == 0x000238, "Member 'UResults_Summary_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, ButtonClose) == 0x000240, "Member 'UResults_Summary_C::ButtonClose' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, GridBadges) == 0x000248, "Member 'UResults_Summary_C::GridBadges' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, ImageLootChest) == 0x000250, "Member 'UResults_Summary_C::ImageLootChest' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, OverlayRewards) == 0x000258, "Member 'UResults_Summary_C::OverlayRewards' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, SafeZone_0) == 0x000260, "Member 'UResults_Summary_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, TextLootLevel) == 0x000268, "Member 'UResults_Summary_C::TextLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, TextTeamScore) == 0x000270, "Member 'UResults_Summary_C::TextTeamScore' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, VerticalBoxPlayerScores) == 0x000278, "Member 'UResults_Summary_C::VerticalBoxPlayerScores' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, OnReturnClicked) == 0x000280, "Member 'UResults_Summary_C::OnReturnClicked' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, NumberGridBadgeRows) == 0x000290, "Member 'UResults_Summary_C::NumberGridBadgeRows' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, PointsPerLootLevel) == 0x000294, "Member 'UResults_Summary_C::PointsPerLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_Summary_C, ChestIcons) == 0x000298, "Member 'UResults_Summary_C::ChestIcons' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

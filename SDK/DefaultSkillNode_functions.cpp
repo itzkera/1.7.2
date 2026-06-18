@@ -14,8 +14,7 @@
 #include "DefaultSkillNode_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DefaultSkillNode.DefaultSkillNode_C.ExecuteUbergraph_DefaultSkillNode
 // (HasDefaults)
@@ -252,5 +251,5 @@ void UDefaultSkillNode_C::SetBackgroundColor()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

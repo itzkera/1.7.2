@@ -14,8 +14,7 @@
 #include "GAB_PlayerDBNOResurrect_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.ExecuteUbergraph_GAB_PlayerDBNOResurrect
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UGAB_PlayerDBNOResurrect_C::K2_OnEndAbility()
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGAB_PlayerDBNOResurrect_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -74,8 +73,8 @@ void UGAB_PlayerDBNOResurrect_C::K2_ActivateAbilityFromEvent(const struct FGamep
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_PlayerDBNOResurrect_C::Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -96,8 +95,8 @@ void UGAB_PlayerDBNOResurrect_C::Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(const
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_PlayerDBNOResurrect_C::Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -118,8 +117,8 @@ void UGAB_PlayerDBNOResurrect_C::Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(cons
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Triggered_0B41E4DC44D3371D619734A714E9FE50
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_PlayerDBNOResurrect_C::Triggered_0B41E4DC44D3371D619734A714E9FE50(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -140,8 +139,8 @@ void UGAB_PlayerDBNOResurrect_C::Triggered_0B41E4DC44D3371D619734A714E9FE50(cons
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_0B41E4DC44D3371D619734A714E9FE50
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_PlayerDBNOResurrect_C::Cancelled_0B41E4DC44D3371D619734A714E9FE50(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -162,8 +161,8 @@ void UGAB_PlayerDBNOResurrect_C::Cancelled_0B41E4DC44D3371D619734A714E9FE50(cons
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Completed_0B41E4DC44D3371D619734A714E9FE50
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_PlayerDBNOResurrect_C::Completed_0B41E4DC44D3371D619734A714E9FE50(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -180,5 +179,5 @@ void UGAB_PlayerDBNOResurrect_C::Completed_0B41E4DC44D3371D619734A714E9FE50(cons
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

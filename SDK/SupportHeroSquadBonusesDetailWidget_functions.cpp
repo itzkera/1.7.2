@@ -14,8 +14,7 @@
 #include "SupportHeroSquadBonusesDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget
 // ()
@@ -110,7 +109,7 @@ void USupportHeroSquadBonusesDetailWidget_C::UpdatePerkWidgets()
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.SetState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortSupportPerkWidgetState             InState                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const EFortSupportPerkWidgetState       InState                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USupportHeroSquadBonusesDetailWidget_C::SetState(const EFortSupportPerkWidgetState InState)
 {
@@ -126,5 +125,5 @@ void USupportHeroSquadBonusesDetailWidget_C::SetState(const EFortSupportPerkWidg
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Athena_PlayerController_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Athena_PlayerController.Athena_PlayerController_C.ExecuteUbergraph_Athena_PlayerController
 // (HasDefaults)
@@ -98,5 +97,5 @@ void AAthena_PlayerController_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

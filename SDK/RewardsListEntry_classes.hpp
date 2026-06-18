@@ -12,14 +12,13 @@
 
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "RewardListEntryType_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "RewardListEntryType_structs.hpp"
 #include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardsListEntry.RewardsListEntry_C
 // 0x0098 (0x02D0 - 0x0238)
@@ -54,30 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardsListEntry_C">();
+		BP_STATIC_CLASS_IMPL("RewardsListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardsListEntry_C")
 	}
 	static class URewardsListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardsListEntry_C>();
 	}
 };
-static_assert(alignof(URewardsListEntry_C) == 0x000008, "Wrong alignment on URewardsListEntry_C");
-static_assert(sizeof(URewardsListEntry_C) == 0x0002D0, "Wrong size on URewardsListEntry_C");
-static_assert(offsetof(URewardsListEntry_C, UberGraphFrame) == 0x000238, "Member 'URewardsListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, CommonTextBlock_5) == 0x000240, "Member 'URewardsListEntry_C::CommonTextBlock_5' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, FortItemCard_XXSSchematicItemCard) == 0x000248, "Member 'URewardsListEntry_C::FortItemCard_XXSSchematicItemCard' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, Image_3) == 0x000250, "Member 'URewardsListEntry_C::Image_3' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, Image_4) == 0x000258, "Member 'URewardsListEntry_C::Image_4' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, ImageFoundersReward) == 0x000260, "Member 'URewardsListEntry_C::ImageFoundersReward' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, RewardCount) == 0x000268, "Member 'URewardsListEntry_C::RewardCount' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, RewardIcon) == 0x000270, "Member 'URewardsListEntry_C::RewardIcon' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, RewardName) == 0x000278, "Member 'URewardsListEntry_C::RewardName' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, SwitcherRewardType) == 0x000280, "Member 'URewardsListEntry_C::SwitcherRewardType' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, SwitcherSpecialRewardType) == 0x000288, "Member 'URewardsListEntry_C::SwitcherSpecialRewardType' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, RewardItem) == 0x000290, "Member 'URewardsListEntry_C::RewardItem' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, TextColour) == 0x000298, "Member 'URewardsListEntry_C::TextColour' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, RewardType) == 0x0002C0, "Member 'URewardsListEntry_C::RewardType' has a wrong offset!");
-static_assert(offsetof(URewardsListEntry_C, ItemDef) == 0x0002C8, "Member 'URewardsListEntry_C::ItemDef' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

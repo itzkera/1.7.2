@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MtxOffersList_2.MtxOffersList_2_C.ExecuteUbergraph_MtxOffersList_2
 // 0x0198 (0x0198 - 0x0000)
@@ -37,7 +37,7 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TArray<struct FMtxPackage>& Offers)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FMtxPackage>& Offers)> K2Node_CreateDelegate_OutputDelegate2; // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMtxPackage                            CallFunc_Array_Get_Item;                           // 0x0088(0x00A0)()
@@ -60,38 +60,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue5;                  // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2) == 0x000008, "Wrong alignment on MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2");
-static_assert(sizeof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2) == 0x000198, "Wrong size on MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, EntryPoint) == 0x000000, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Create_ReturnValue) == 0x000020, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_CustomEvent_Offers) == 0x000028, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_CustomEvent_Offers' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Array_Length_ReturnValue2) == 0x00003C, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Greater_IntInt_ReturnValue) == 0x000040, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_CustomEvent_OfferId) == 0x000048, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_CustomEvent_OfferId' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_CustomEvent_bSuccess) == 0x000058, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_AddChild_ReturnValue) == 0x000060, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, Temp_int_Array_Index_Variable) == 0x000068, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_CreateDelegate_OutputDelegate2) == 0x000070, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000080, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Array_Get_Item) == 0x000088, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000128, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetContext_ReturnValue) == 0x000130, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetContext_ReturnValue2) == 0x000138, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetContext_ReturnValue3) == 0x000140, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetContext_ReturnValue4) == 0x000148, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetUINavigationManager_ReturnValue) == 0x000150, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_CreateDelegate_OutputDelegate3) == 0x000158, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000168, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, Temp_int_Loop_Counter_Variable) == 0x000170, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetCachedWidget_ReturnValue) == 0x000178, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_DynamicCast_AsMtx_Store_Root) == 0x000180, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_DynamicCast_AsMtx_Store_Root' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, K2Node_DynamicCast_bSuccess) == 0x000188, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Less_IntInt_ReturnValue) == 0x000189, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_Add_IntInt_ReturnValue) == 0x00018C, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2, CallFunc_GetContext_ReturnValue5) == 0x000190, "Member 'MtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_2::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
 
 // Function MtxOffersList_2.MtxOffersList_2_C.OnPurchaseComplete
 // 0x0001 (0x0001 - 0x0000)
@@ -100,9 +68,6 @@ struct MtxOffersList_2_C_OnPurchaseComplete final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MtxOffersList_2_C_OnPurchaseComplete) == 0x000001, "Wrong alignment on MtxOffersList_2_C_OnPurchaseComplete");
-static_assert(sizeof(MtxOffersList_2_C_OnPurchaseComplete) == 0x000001, "Wrong size on MtxOffersList_2_C_OnPurchaseComplete");
-static_assert(offsetof(MtxOffersList_2_C_OnPurchaseComplete, bSuccess) == 0x000000, "Member 'MtxOffersList_2_C_OnPurchaseComplete::bSuccess' has a wrong offset!");
 
 // Function MtxOffersList_2.MtxOffersList_2_C.OnBuyItem
 // 0x0010 (0x0010 - 0x0000)
@@ -111,9 +76,6 @@ struct MtxOffersList_2_C_OnBuyItem final
 public:
 	class FString                                 OfferId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MtxOffersList_2_C_OnBuyItem) == 0x000008, "Wrong alignment on MtxOffersList_2_C_OnBuyItem");
-static_assert(sizeof(MtxOffersList_2_C_OnBuyItem) == 0x000010, "Wrong size on MtxOffersList_2_C_OnBuyItem");
-static_assert(offsetof(MtxOffersList_2_C_OnBuyItem, OfferId) == 0x000000, "Member 'MtxOffersList_2_C_OnBuyItem::OfferId' has a wrong offset!");
 
 // Function MtxOffersList_2.MtxOffersList_2_C.OnPackagesListed
 // 0x0010 (0x0010 - 0x0000)
@@ -122,9 +84,6 @@ struct MtxOffersList_2_C_OnPackagesListed final
 public:
 	TArray<struct FMtxPackage>                    Offers;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(MtxOffersList_2_C_OnPackagesListed) == 0x000008, "Wrong alignment on MtxOffersList_2_C_OnPackagesListed");
-static_assert(sizeof(MtxOffersList_2_C_OnPackagesListed) == 0x000010, "Wrong size on MtxOffersList_2_C_OnPackagesListed");
-static_assert(offsetof(MtxOffersList_2_C_OnPackagesListed, Offers) == 0x000000, "Member 'MtxOffersList_2_C_OnPackagesListed::Offers' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

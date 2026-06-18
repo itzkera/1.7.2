@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TextRotator.TextRotator_C.ExecuteUbergraph_TextRotator
 // 0x0018 (0x0018 - 0x0000)
@@ -24,11 +24,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button2;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TextRotator_C_ExecuteUbergraph_TextRotator) == 0x000008, "Wrong alignment on TextRotator_C_ExecuteUbergraph_TextRotator");
-static_assert(sizeof(TextRotator_C_ExecuteUbergraph_TextRotator) == 0x000018, "Wrong size on TextRotator_C_ExecuteUbergraph_TextRotator");
-static_assert(offsetof(TextRotator_C_ExecuteUbergraph_TextRotator, EntryPoint) == 0x000000, "Member 'TextRotator_C_ExecuteUbergraph_TextRotator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TextRotator_C_ExecuteUbergraph_TextRotator, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'TextRotator_C_ExecuteUbergraph_TextRotator::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(TextRotator_C_ExecuteUbergraph_TextRotator, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'TextRotator_C_ExecuteUbergraph_TextRotator::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function TextRotator.TextRotator_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +32,6 @@ struct TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TextRotator.TextRotator_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -48,9 +40,6 @@ struct TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButto
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

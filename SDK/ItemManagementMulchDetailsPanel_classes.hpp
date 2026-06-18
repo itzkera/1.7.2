@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C
 // 0x0040 (0x0290 - 0x0250)
@@ -44,22 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementMulchDetailsPanel_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementMulchDetailsPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementMulchDetailsPanel_C")
 	}
 	static class UItemManagementMulchDetailsPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementMulchDetailsPanel_C>();
 	}
 };
-static_assert(alignof(UItemManagementMulchDetailsPanel_C) == 0x000008, "Wrong alignment on UItemManagementMulchDetailsPanel_C");
-static_assert(sizeof(UItemManagementMulchDetailsPanel_C) == 0x000290, "Wrong size on UItemManagementMulchDetailsPanel_C");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, UberGraphFrame) == 0x000250, "Member 'UItemManagementMulchDetailsPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, DoneButton) == 0x000258, "Member 'UItemManagementMulchDetailsPanel_C::DoneButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, MulchPromptText) == 0x000260, "Member 'UItemManagementMulchDetailsPanel_C::MulchPromptText' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, MulchResourceBox) == 0x000268, "Member 'UItemManagementMulchDetailsPanel_C::MulchResourceBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, ResourceListWidgetSwitcher) == 0x000270, "Member 'UItemManagementMulchDetailsPanel_C::ResourceListWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, RecyclingAnimateItems) == 0x000278, "Member 'UItemManagementMulchDetailsPanel_C::RecyclingAnimateItems' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchDetailsPanel_C, MulchListChanged) == 0x000280, "Member 'UItemManagementMulchDetailsPanel_C::MulchListChanged' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

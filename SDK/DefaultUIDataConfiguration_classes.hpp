@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass DefaultUIDataConfiguration.DefaultUIDataConfiguration_C
 // 0x0000 (0x2548 - 0x2548)
@@ -23,15 +22,16 @@ class UDefaultUIDataConfiguration_C final : public UFortUIDataConfiguration
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultUIDataConfiguration_C">();
+		BP_STATIC_CLASS_IMPL("DefaultUIDataConfiguration_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultUIDataConfiguration_C")
 	}
 	static class UDefaultUIDataConfiguration_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefaultUIDataConfiguration_C>();
 	}
 };
-static_assert(alignof(UDefaultUIDataConfiguration_C) == 0x000008, "Wrong alignment on UDefaultUIDataConfiguration_C");
-static_assert(sizeof(UDefaultUIDataConfiguration_C) == 0x002548, "Wrong size on UDefaultUIDataConfiguration_C");
 
-}
-
+SDK_NAMESPACE_END

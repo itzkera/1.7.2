@@ -15,8 +15,7 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GAT_TriggeredAbility.GAT_TriggeredAbility_C
 // 0x0010 (0x0A50 - 0x0A40)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_TriggeredAbility_C">();
+		BP_STATIC_CLASS_IMPL("GAT_TriggeredAbility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_TriggeredAbility_C")
 	}
 	static class UGAT_TriggeredAbility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_TriggeredAbility_C>();
 	}
 };
-static_assert(alignof(UGAT_TriggeredAbility_C) == 0x000008, "Wrong alignment on UGAT_TriggeredAbility_C");
-static_assert(sizeof(UGAT_TriggeredAbility_C) == 0x000A50, "Wrong size on UGAT_TriggeredAbility_C");
-static_assert(offsetof(UGAT_TriggeredAbility_C, UberGraphFrame) == 0x000A40, "Member 'UGAT_TriggeredAbility_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAT_TriggeredAbility_C, TC_AbilitiesGenericTriggeredAbilityActivate) == 0x000A48, "Member 'UGAT_TriggeredAbility_C::TC_AbilitiesGenericTriggeredAbilityActivate' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

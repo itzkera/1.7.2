@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-Hamburger.ButtonStyle-Hamburger_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_Hamburger_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Hamburger_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Hamburger_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Hamburger_C")
 	}
 	static class UButtonStyle_Hamburger_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Hamburger_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Hamburger_C) == 0x000008, "Wrong alignment on UButtonStyle_Hamburger_C");
-static_assert(sizeof(UButtonStyle_Hamburger_C) == 0x000530, "Wrong size on UButtonStyle_Hamburger_C");
 
-}
-
+SDK_NAMESPACE_END

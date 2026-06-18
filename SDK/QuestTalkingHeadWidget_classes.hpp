@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestTalkingHeadWidget.QuestTalkingHeadWidget_C
 // 0x0040 (0x0280 - 0x0240)
@@ -49,25 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestTalkingHeadWidget_C">();
+		BP_STATIC_CLASS_IMPL("QuestTalkingHeadWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestTalkingHeadWidget_C")
 	}
 	static class UQuestTalkingHeadWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestTalkingHeadWidget_C>();
 	}
 };
-static_assert(alignof(UQuestTalkingHeadWidget_C) == 0x000008, "Wrong alignment on UQuestTalkingHeadWidget_C");
-static_assert(sizeof(UQuestTalkingHeadWidget_C) == 0x000280, "Wrong size on UQuestTalkingHeadWidget_C");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, UberGraphFrame) == 0x000240, "Member 'UQuestTalkingHeadWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, Image_0) == 0x000248, "Member 'UQuestTalkingHeadWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, RootOverlay) == 0x000250, "Member 'UQuestTalkingHeadWidget_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, TalkingHeadIcon) == 0x000258, "Member 'UQuestTalkingHeadWidget_C::TalkingHeadIcon' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, TextName) == 0x000260, "Member 'UQuestTalkingHeadWidget_C::TextName' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, TextSeparator) == 0x000268, "Member 'UQuestTalkingHeadWidget_C::TextSeparator' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, TextSubtitles) == 0x000270, "Member 'UQuestTalkingHeadWidget_C::TextSubtitles' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, DisplayPreference) == 0x000278, "Member 'UQuestTalkingHeadWidget_C::DisplayPreference' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, BlockTalkingHeadDisplay) == 0x000279, "Member 'UQuestTalkingHeadWidget_C::BlockTalkingHeadDisplay' has a wrong offset!");
-static_assert(offsetof(UQuestTalkingHeadWidget_C, SubtitleIsPlaying) == 0x00027A, "Member 'UQuestTalkingHeadWidget_C::SubtitleIsPlaying' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

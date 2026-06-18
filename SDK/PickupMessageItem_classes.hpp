@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PickupMessageItem.PickupMessageItem_C
 // 0x0058 (0x02D8 - 0x0280)
@@ -46,26 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PickupMessageItem_C">();
+		BP_STATIC_CLASS_IMPL("PickupMessageItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PickupMessageItem_C")
 	}
 	static class UPickupMessageItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPickupMessageItem_C>();
 	}
 };
-static_assert(alignof(UPickupMessageItem_C) == 0x000008, "Wrong alignment on UPickupMessageItem_C");
-static_assert(sizeof(UPickupMessageItem_C) == 0x0002D8, "Wrong size on UPickupMessageItem_C");
-static_assert(offsetof(UPickupMessageItem_C, UberGraphFrame) == 0x000280, "Member 'UPickupMessageItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, Disappear) == 0x000288, "Member 'UPickupMessageItem_C::Disappear' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, Appear) == 0x000290, "Member 'UPickupMessageItem_C::Appear' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, _Size_Box__Message_Size) == 0x000298, "Member 'UPickupMessageItem_C::_Size_Box__Message_Size' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, _Stack_Counter__Count) == 0x0002A0, "Member 'UPickupMessageItem_C::_Stack_Counter__Count' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, BorderBackground) == 0x0002A8, "Member 'UPickupMessageItem_C::BorderBackground' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, Image_0) == 0x0002B0, "Member 'UPickupMessageItem_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, ItemIcon) == 0x0002B8, "Member 'UPickupMessageItem_C::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, SizeBoxItemImage) == 0x0002C0, "Member 'UPickupMessageItem_C::SizeBoxItemImage' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, TextItemName) == 0x0002C8, "Member 'UPickupMessageItem_C::TextItemName' has a wrong offset!");
-static_assert(offsetof(UPickupMessageItem_C, Picked_Up_Item) == 0x0002D0, "Member 'UPickupMessageItem_C::Picked_Up_Item' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

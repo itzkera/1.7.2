@@ -14,8 +14,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCurrent
 // 0x00B8 (0x00B8 - 0x0000)
@@ -32,16 +32,6 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x0090)()
 };
-static_assert(alignof(EquippedItem_Bandolier_C_UpdateCurrent) == 0x000008, "Wrong alignment on EquippedItem_Bandolier_C_UpdateCurrent");
-static_assert(sizeof(EquippedItem_Bandolier_C_UpdateCurrent) == 0x0000B8, "Wrong size on EquippedItem_Bandolier_C_UpdateCurrent");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, Current) == 0x000000, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::Current' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, AmmoData) == 0x000008, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::AmmoData' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, CallFunc_Clamp_ReturnValue) == 0x000010, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, CallFunc_BreakVector2D_X) == 0x000014, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, CallFunc_BreakVector2D_Y) == 0x000018, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, CallFunc_Multiply_IntFloat_ReturnValue) == 0x00001C, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCurrent, K2Node_MakeStruct_SlateBrush) == 0x000028, "Member 'EquippedItem_Bandolier_C_UpdateCurrent::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCapacity
 // 0x00B8 (0x00B8 - 0x0000)
@@ -58,16 +48,6 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0028(0x0090)()
 };
-static_assert(alignof(EquippedItem_Bandolier_C_UpdateCapacity) == 0x000008, "Wrong alignment on EquippedItem_Bandolier_C_UpdateCapacity");
-static_assert(sizeof(EquippedItem_Bandolier_C_UpdateCapacity) == 0x0000B8, "Wrong size on EquippedItem_Bandolier_C_UpdateCapacity");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, Capacity) == 0x000000, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::Capacity' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, AmmoData) == 0x000008, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::AmmoData' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, CallFunc_Clamp_ReturnValue) == 0x000010, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, CallFunc_BreakVector2D_X) == 0x000014, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, CallFunc_BreakVector2D_Y) == 0x000018, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, CallFunc_Multiply_IntFloat_ReturnValue) == 0x00001C, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EquippedItem_Bandolier_C_UpdateCapacity, K2Node_MakeStruct_SlateBrush) == 0x000028, "Member 'EquippedItem_Bandolier_C_UpdateCapacity::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

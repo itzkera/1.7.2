@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_Generic_Stunned.GCN_Generic_Stunned_C
 // 0x0000 (0x0468 - 0x0468)
@@ -23,15 +22,16 @@ class AGCN_Generic_Stunned_C final : public AFortGameplayCueNotify_Looping
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Generic_Stunned_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Generic_Stunned_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Generic_Stunned_C")
 	}
 	static class AGCN_Generic_Stunned_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Generic_Stunned_C>();
 	}
 };
-static_assert(alignof(AGCN_Generic_Stunned_C) == 0x000008, "Wrong alignment on AGCN_Generic_Stunned_C");
-static_assert(sizeof(AGCN_Generic_Stunned_C) == 0x000468, "Wrong size on AGCN_Generic_Stunned_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C
 // 0x0010 (0x10C0 - 0x10B0)
@@ -34,16 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_W1_QuarterWallS_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_W1_QuarterWallS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_W1_QuarterWallS_C")
 	}
 	static class APBWA_W1_QuarterWallS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_W1_QuarterWallS_C>();
 	}
 };
-static_assert(alignof(APBWA_W1_QuarterWallS_C) == 0x000010, "Wrong alignment on APBWA_W1_QuarterWallS_C");
-static_assert(sizeof(APBWA_W1_QuarterWallS_C) == 0x0010C0, "Wrong size on APBWA_W1_QuarterWallS_C");
-static_assert(offsetof(APBWA_W1_QuarterWallS_C, UberGraphFrame) == 0x0010B0, "Member 'APBWA_W1_QuarterWallS_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

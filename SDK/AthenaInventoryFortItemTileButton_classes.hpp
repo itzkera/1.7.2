@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaInventoryFortItemTileButton.AthenaInventoryFortItemTileButton_C
 // 0x0030 (0x0900 - 0x08D0)
@@ -49,21 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaInventoryFortItemTileButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaInventoryFortItemTileButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaInventoryFortItemTileButton_C")
 	}
 	static class UAthenaInventoryFortItemTileButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaInventoryFortItemTileButton_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryFortItemTileButton_C) == 0x000008, "Wrong alignment on UAthenaInventoryFortItemTileButton_C");
-static_assert(sizeof(UAthenaInventoryFortItemTileButton_C) == 0x000900, "Wrong size on UAthenaInventoryFortItemTileButton_C");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, UberGraphFrame) == 0x0008D0, "Member 'UAthenaInventoryFortItemTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, DropTarget) == 0x0008D8, "Member 'UAthenaInventoryFortItemTileButton_C::DropTarget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, EquipSlotBorder) == 0x0008E0, "Member 'UAthenaInventoryFortItemTileButton_C::EquipSlotBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, EquipSlotOverlay) == 0x0008E8, "Member 'UAthenaInventoryFortItemTileButton_C::EquipSlotOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, InputActionWrapper) == 0x0008F0, "Member 'UAthenaInventoryFortItemTileButton_C::InputActionWrapper' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryFortItemTileButton_C, ItemWidgetHolder) == 0x0008F8, "Member 'UAthenaInventoryFortItemTileButton_C::ItemWidgetHolder' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

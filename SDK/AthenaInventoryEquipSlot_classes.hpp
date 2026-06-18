@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C
 // 0x0050 (0x0290 - 0x0240)
@@ -53,24 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaInventoryEquipSlot_C">();
+		BP_STATIC_CLASS_IMPL("AthenaInventoryEquipSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaInventoryEquipSlot_C")
 	}
 	static class UAthenaInventoryEquipSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaInventoryEquipSlot_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryEquipSlot_C) == 0x000008, "Wrong alignment on UAthenaInventoryEquipSlot_C");
-static_assert(sizeof(UAthenaInventoryEquipSlot_C) == 0x000290, "Wrong size on UAthenaInventoryEquipSlot_C");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, UberGraphFrame) == 0x000240, "Member 'UAthenaInventoryEquipSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, DropTarget) == 0x000248, "Member 'UAthenaInventoryEquipSlot_C::DropTarget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, EmptyImage) == 0x000250, "Member 'UAthenaInventoryEquipSlot_C::EmptyImage' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, InputActionOverlay) == 0x000258, "Member 'UAthenaInventoryEquipSlot_C::InputActionOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, InputActionWidget) == 0x000260, "Member 'UAthenaInventoryEquipSlot_C::InputActionWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, ItemCard) == 0x000268, "Member 'UAthenaInventoryEquipSlot_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, Selection) == 0x000270, "Member 'UAthenaInventoryEquipSlot_C::Selection' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, SlotIndex) == 0x000278, "Member 'UAthenaInventoryEquipSlot_C::SlotIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryEquipSlot_C, OnEquipRequested) == 0x000280, "Member 'UAthenaInventoryEquipSlot_C::OnEquipRequested' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

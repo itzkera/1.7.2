@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabAccountLinkage.TabAccountLinkage_C
 // 0x0050 (0x0298 - 0x0248)
@@ -52,25 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabAccountLinkage_C">();
+		BP_STATIC_CLASS_IMPL("TabAccountLinkage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabAccountLinkage_C")
 	}
 	static class UTabAccountLinkage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabAccountLinkage_C>();
 	}
 };
-static_assert(alignof(UTabAccountLinkage_C) == 0x000008, "Wrong alignment on UTabAccountLinkage_C");
-static_assert(sizeof(UTabAccountLinkage_C) == 0x000298, "Wrong size on UTabAccountLinkage_C");
-static_assert(offsetof(UTabAccountLinkage_C, UberGraphFrame) == 0x000248, "Member 'UTabAccountLinkage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, AccountLinkText) == 0x000250, "Member 'UTabAccountLinkage_C::AccountLinkText' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, ConfigurationSwitcher) == 0x000258, "Member 'UTabAccountLinkage_C::ConfigurationSwitcher' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, DefaultConfigurationBox) == 0x000260, "Member 'UTabAccountLinkage_C::DefaultConfigurationBox' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, FortTwitchLogin) == 0x000268, "Member 'UTabAccountLinkage_C::FortTwitchLogin' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, Image_0) == 0x000270, "Member 'UTabAccountLinkage_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, StaticURLText) == 0x000278, "Member 'UTabAccountLinkage_C::StaticURLText' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, TooltipTextBox) == 0x000280, "Member 'UTabAccountLinkage_C::TooltipTextBox' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, URLButton) == 0x000288, "Member 'UTabAccountLinkage_C::URLButton' has a wrong offset!");
-static_assert(offsetof(UTabAccountLinkage_C, WebsiteConfigurationBox) == 0x000290, "Member 'UTabAccountLinkage_C::WebsiteConfigurationBox' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

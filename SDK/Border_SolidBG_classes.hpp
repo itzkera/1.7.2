@@ -13,8 +13,7 @@
 #include "Border_ShellTopBar_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-SolidBG.Border-SolidBG_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_SolidBG_C final : public UBorder_ShellTopBar_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-SolidBG_C">();
+		BP_STATIC_CLASS_IMPL("Border-SolidBG_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-SolidBG_C")
 	}
 	static class UBorder_SolidBG_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_SolidBG_C>();
 	}
 };
-static_assert(alignof(UBorder_SolidBG_C) == 0x000008, "Wrong alignment on UBorder_SolidBG_C");
-static_assert(sizeof(UBorder_SolidBG_C) == 0x0000B8, "Wrong size on UBorder_SolidBG_C");
 
-}
-
+SDK_NAMESPACE_END

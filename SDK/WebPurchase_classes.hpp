@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WebPurchase.WebPurchase_C
 // 0x0028 (0x0408 - 0x03E0)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WebPurchase_C">();
+		BP_STATIC_CLASS_IMPL("WebPurchase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebPurchase_C")
 	}
 	static class UWebPurchase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebPurchase_C>();
 	}
 };
-static_assert(alignof(UWebPurchase_C) == 0x000008, "Wrong alignment on UWebPurchase_C");
-static_assert(sizeof(UWebPurchase_C) == 0x000408, "Wrong size on UWebPurchase_C");
-static_assert(offsetof(UWebPurchase_C, UberGraphFrame) == 0x0003E0, "Member 'UWebPurchase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, Throbber) == 0x0003E8, "Member 'UWebPurchase_C::Throbber' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, WebContent) == 0x0003F0, "Member 'UWebPurchase_C::WebContent' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, BackAction) == 0x0003F8, "Member 'UWebPurchase_C::BackAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

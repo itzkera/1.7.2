@@ -14,8 +14,7 @@
 #include "ItemInspectEvolutionConfirmation_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ExecuteUbergraph_ItemInspectEvolutionConfirmation
 // ()
@@ -180,7 +179,7 @@ void UItemInspectEvolutionConfirmation_C::SetupEvolutionOptions()
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.GetNumEvolutionOptions
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NumRecipes                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  NumRecipes                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemInspectEvolutionConfirmation_C::GetNumEvolutionOptions(int32* NumRecipes)
 {
@@ -287,5 +286,5 @@ void UItemInspectEvolutionConfirmation_C::SetEvolutionRestrictions()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

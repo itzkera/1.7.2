@@ -14,8 +14,7 @@
 #include "WindManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WindManager.WindManager_C.ExecuteUbergraph_WindManager
 // (HasDefaults)
@@ -95,7 +94,7 @@ void AWindManager_C::OnWorldReady()
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UParticleSystem*                  EmitterTemplate                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                       InTransform                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
+// const struct FTransform&                InTransform                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 
 void AWindManager_C::Add_Render_To_Texture_Particle(class UParticleSystem* EmitterTemplate, const struct FTransform& InTransform)
 {
@@ -205,5 +204,5 @@ struct FVector AWindManager_C::CeilVector(float Scale, class USceneCaptureCompon
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

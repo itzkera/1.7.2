@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Announcement_Tutorial.Announcement_Tutorial_C
 // 0x0078 (0x02B8 - 0x0240)
@@ -53,27 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announcement_Tutorial_C">();
+		BP_STATIC_CLASS_IMPL("Announcement_Tutorial_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announcement_Tutorial_C")
 	}
 	static class UAnnouncement_Tutorial_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnnouncement_Tutorial_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_Tutorial_C) == 0x000008, "Wrong alignment on UAnnouncement_Tutorial_C");
-static_assert(sizeof(UAnnouncement_Tutorial_C) == 0x0002B8, "Wrong size on UAnnouncement_Tutorial_C");
-static_assert(offsetof(UAnnouncement_Tutorial_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_Tutorial_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, ChatBox) == 0x000248, "Member 'UAnnouncement_Tutorial_C::ChatBox' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, ContentBox) == 0x000250, "Member 'UAnnouncement_Tutorial_C::ContentBox' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, Image_0) == 0x000258, "Member 'UAnnouncement_Tutorial_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, Image_1) == 0x000260, "Member 'UAnnouncement_Tutorial_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, Lightbox) == 0x000268, "Member 'UAnnouncement_Tutorial_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, SystemText) == 0x000270, "Member 'UAnnouncement_Tutorial_C::SystemText' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, TitleText) == 0x000278, "Member 'UAnnouncement_Tutorial_C::TitleText' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, TopOverlay) == 0x000280, "Member 'UAnnouncement_Tutorial_C::TopOverlay' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, TextLines) == 0x000288, "Member 'UAnnouncement_Tutorial_C::TextLines' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, LastText) == 0x000298, "Member 'UAnnouncement_Tutorial_C::LastText' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Tutorial_C, ContinueTutorialTimer) == 0x0002B0, "Member 'UAnnouncement_Tutorial_C::ContinueTutorialTimer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

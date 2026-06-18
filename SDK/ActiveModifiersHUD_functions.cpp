@@ -14,8 +14,7 @@
 #include "ActiveModifiersHUD_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ActiveModifiersHUD.ActiveModifiersHUD_C.ExecuteUbergraph_ActiveModifiersHUD
 // ()
@@ -54,7 +53,7 @@ void UActiveModifiersHUD_C::Construct()
 // Function ActiveModifiersHUD.ActiveModifiersHUD_C.OnActiveGameplayModifiersChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>AppliedModifiers                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortGameplayModifierItemDefinition*>&AppliedModifiers                                       (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UActiveModifiersHUD_C::OnActiveGameplayModifiersChanged(const TArray<class UFortGameplayModifierItemDefinition*>& AppliedModifiers)
 {
@@ -74,7 +73,7 @@ void UActiveModifiersHUD_C::OnActiveGameplayModifiersChanged(const TArray<class 
 // Function ActiveModifiersHUD.ActiveModifiersHUD_C.PopulateModifiers
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>inModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>&inModifiers                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifierItemDefinition*>& inModifiers)
 {
@@ -92,5 +91,5 @@ void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifier
 	inModifiers = std::move(Parms.inModifiers);
 }
 
-}
 
+SDK_NAMESPACE_END

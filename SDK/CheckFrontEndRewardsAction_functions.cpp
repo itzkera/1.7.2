@@ -14,8 +14,7 @@
 #include "CheckFrontEndRewardsAction_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.ExecuteUbergraph_CheckFrontEndRewardsAction
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ACheckFrontEndRewardsAction_C::ExecuteUbergraph_CheckFrontEndRewardsAction(
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Execute
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortScriptedActionParams        Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortScriptedActionParams& Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ACheckFrontEndRewardsAction_C::Execute(const struct FFortScriptedActionParams& Params_0)
 {
@@ -130,7 +129,7 @@ void ACheckFrontEndRewardsAction_C::PopulateNewQuests()
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.GetCompletedQuests
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortQuestItem*>           Completed_Quests                                       (Parm, OutParm, ZeroConstructor)
+// TArray<class UFortQuestItem*>*          Completed_Quests                                       (Parm, OutParm, ZeroConstructor)
 
 void ACheckFrontEndRewardsAction_C::GetCompletedQuests(TArray<class UFortQuestItem*>* Completed_Quests)
 {
@@ -281,7 +280,7 @@ void ACheckFrontEndRewardsAction_C::PopulateMissionAlertRewards()
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Is FrontEndRewards Running
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bRunning                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bRunning                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ACheckFrontEndRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 {
@@ -318,5 +317,5 @@ bool ACheckFrontEndRewardsAction_C::CanShowFrontendRewards()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

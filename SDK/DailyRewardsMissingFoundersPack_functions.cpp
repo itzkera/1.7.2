@@ -14,8 +14,7 @@
 #include "DailyRewardsMissingFoundersPack_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DailyRewardsMissingFoundersPack.DailyRewardsMissingFoundersPack_C.ExecuteUbergraph_DailyRewardsMissingFoundersPack
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UDailyRewardsMissingFoundersPack_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

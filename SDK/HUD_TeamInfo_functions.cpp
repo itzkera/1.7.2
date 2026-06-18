@@ -14,8 +14,7 @@
 #include "HUD_TeamInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.ExecuteUbergraph_HUD_TeamInfo
 // (HasDefaults)
@@ -88,7 +87,7 @@ void UHUD_TeamInfo_C::HandleTeamMemberRemoved(int32 Member_Index)
 // Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamMemberChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Member_Info                                            (Parm)
+// const struct FFortTeamMemberInfo&       Member_Info                                            (Parm)
 
 void UHUD_TeamInfo_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info)
 {
@@ -108,7 +107,7 @@ void UHUD_TeamInfo_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& 
 // Function HUD_TeamInfo.HUD_TeamInfo_C.ShiftTeamMembers
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
 // int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHUD_TeamInfo_C::ShiftTeamMembers(struct FFortTeamMemberInfo& TeamMemberInfo, int32 Index_0)
@@ -132,7 +131,7 @@ void UHUD_TeamInfo_C::ShiftTeamMembers(struct FFortTeamMemberInfo& TeamMemberInf
 // Function HUD_TeamInfo.HUD_TeamInfo_C.AppendTeamMember
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             TeamMemberInfo                                         (Parm, OutParm, ReferenceParm)
 
 void UHUD_TeamInfo_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -168,8 +167,8 @@ void UHUD_TeamInfo_C::ClearContents()
 // Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamHitInfoChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<float>                           HealthFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                           ShieldFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<float>&                          HealthFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<float>&                          ShieldFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UHUD_TeamInfo_C::HandleTeamHitInfoChanged(TArray<float>& HealthFractions, TArray<float>& ShieldFractions)
 {
@@ -189,5 +188,5 @@ void UHUD_TeamInfo_C::HandleTeamHitInfoChanged(TArray<float>& HealthFractions, T
 	ShieldFractions = std::move(Parms.ShieldFractions);
 }
 
-}
 
+SDK_NAMESPACE_END

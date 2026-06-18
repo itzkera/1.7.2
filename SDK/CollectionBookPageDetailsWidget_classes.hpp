@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C
 // 0x0018 (0x02B8 - 0x02A0)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookPageDetailsWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookPageDetailsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookPageDetailsWidget_C")
 	}
 	static class UCollectionBookPageDetailsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookPageDetailsWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPageDetailsWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageDetailsWidget_C");
-static_assert(sizeof(UCollectionBookPageDetailsWidget_C) == 0x0002B8, "Wrong size on UCollectionBookPageDetailsWidget_C");
-static_assert(offsetof(UCollectionBookPageDetailsWidget_C, UberGraphFrame) == 0x0002A0, "Member 'UCollectionBookPageDetailsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_0) == 0x0002A8, "Member 'UCollectionBookPageDetailsWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageDetailsWidget_C, Image_2) == 0x0002B0, "Member 'UCollectionBookPageDetailsWidget_C::Image_2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

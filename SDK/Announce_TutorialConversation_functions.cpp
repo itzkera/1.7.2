@@ -14,8 +14,7 @@
 #include "Announce_TutorialConversation_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.ExecuteUbergraph_Announce_TutorialConversation
 // (HasDefaults)
@@ -54,7 +53,7 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnSentenceFinished
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        Sentence                                               (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortConversationSentence& Sentence                                               (ConstParm, Parm, OutParm, ReferenceParm)
 // int32                                   SentenceIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AAnnounce_TutorialConversation_C::OnSentenceFinished(const struct FFortConversationSentence& Sentence, int32 SentenceIndex)
@@ -76,7 +75,7 @@ void AAnnounce_TutorialConversation_C::OnSentenceFinished(const struct FFortConv
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnConversationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        FinishingSentence                                      (Parm)
+// const struct FFortConversationSentence& FinishingSentence                                      (Parm)
 // int32                                   FinishingSentenceSentenceIndex                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AAnnounce_TutorialConversation_C::OnConversationFinished(const struct FFortConversationSentence& FinishingSentence, int32 FinishingSentenceSentenceIndex)
@@ -98,7 +97,7 @@ void AAnnounce_TutorialConversation_C::OnConversationFinished(const struct FFort
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnSentenceStarted
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        Sentence                                               (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortConversationSentence& Sentence                                               (ConstParm, Parm, OutParm, ReferenceParm)
 // int32                                   SentenceIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AAnnounce_TutorialConversation_C::OnSentenceStarted(const struct FFortConversationSentence& Sentence, int32 SentenceIndex)
@@ -198,5 +197,5 @@ void AAnnounce_TutorialConversation_C::HandleSentenceStop_UI(int32 SentenceIdx)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

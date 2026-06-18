@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCNL_GM_OnDmg_SpeedBuff.GCNL_GM_OnDmg_SpeedBuff_C
 // 0x0000 (0x0468 - 0x0468)
@@ -28,15 +27,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_GM_OnDmg_SpeedBuff_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_GM_OnDmg_SpeedBuff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_GM_OnDmg_SpeedBuff_C")
 	}
 	static class AGCNL_GM_OnDmg_SpeedBuff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_GM_OnDmg_SpeedBuff_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_OnDmg_SpeedBuff_C) == 0x000008, "Wrong alignment on AGCNL_GM_OnDmg_SpeedBuff_C");
-static_assert(sizeof(AGCNL_GM_OnDmg_SpeedBuff_C) == 0x000468, "Wrong size on AGCNL_GM_OnDmg_SpeedBuff_C");
 
-}
-
+SDK_NAMESPACE_END

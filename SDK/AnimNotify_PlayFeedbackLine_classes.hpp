@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AnimNotify_PlayFeedbackLine.AnimNotify_PlayFeedbackLine_C
 // 0x0020 (0x0058 - 0x0038)
@@ -31,17 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_PlayFeedbackLine_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_PlayFeedbackLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayFeedbackLine_C")
 	}
 	static class UAnimNotify_PlayFeedbackLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_PlayFeedbackLine_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayFeedbackLine_C) == 0x000008, "Wrong alignment on UAnimNotify_PlayFeedbackLine_C");
-static_assert(sizeof(UAnimNotify_PlayFeedbackLine_C) == 0x000058, "Wrong size on UAnimNotify_PlayFeedbackLine_C");
-static_assert(offsetof(UAnimNotify_PlayFeedbackLine_C, Event) == 0x000038, "Member 'UAnimNotify_PlayFeedbackLine_C::Event' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayFeedbackLine_C, bAllowReplication) == 0x000050, "Member 'UAnimNotify_PlayFeedbackLine_C::bAllowReplication' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

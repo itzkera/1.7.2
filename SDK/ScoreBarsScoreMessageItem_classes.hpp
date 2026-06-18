@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C
 // 0x0048 (0x02C8 - 0x0280)
@@ -46,24 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ScoreBarsScoreMessageItem_C">();
+		BP_STATIC_CLASS_IMPL("ScoreBarsScoreMessageItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreBarsScoreMessageItem_C")
 	}
 	static class UScoreBarsScoreMessageItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreBarsScoreMessageItem_C>();
 	}
 };
-static_assert(alignof(UScoreBarsScoreMessageItem_C) == 0x000008, "Wrong alignment on UScoreBarsScoreMessageItem_C");
-static_assert(sizeof(UScoreBarsScoreMessageItem_C) == 0x0002C8, "Wrong size on UScoreBarsScoreMessageItem_C");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, UberGraphFrame) == 0x000280, "Member 'UScoreBarsScoreMessageItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, Disappear) == 0x000288, "Member 'UScoreBarsScoreMessageItem_C::Disappear' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, StackBump) == 0x000290, "Member 'UScoreBarsScoreMessageItem_C::StackBump' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, Appear) == 0x000298, "Member 'UScoreBarsScoreMessageItem_C::Appear' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, _Size_Box__Message_Size) == 0x0002A0, "Member 'UScoreBarsScoreMessageItem_C::_Size_Box__Message_Size' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, ItemStackCounter) == 0x0002A8, "Member 'UScoreBarsScoreMessageItem_C::ItemStackCounter' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, Label) == 0x0002B0, "Member 'UScoreBarsScoreMessageItem_C::Label' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, Base_Delta) == 0x0002B8, "Member 'UScoreBarsScoreMessageItem_C::Base_Delta' has a wrong offset!");
-static_assert(offsetof(UScoreBarsScoreMessageItem_C, ScoreValueWidget) == 0x0002C0, "Member 'UScoreBarsScoreMessageItem_C::ScoreValueWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MainPlayerCamera.MainPlayerCamera_C
 // 0x0000 (0x1F80 - 0x1F80)
@@ -23,15 +22,16 @@ class AMainPlayerCamera_C final : public AFortPlayerCameraBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainPlayerCamera_C">();
+		BP_STATIC_CLASS_IMPL("MainPlayerCamera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainPlayerCamera_C")
 	}
 	static class AMainPlayerCamera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMainPlayerCamera_C>();
 	}
 };
-static_assert(alignof(AMainPlayerCamera_C) == 0x000010, "Wrong alignment on AMainPlayerCamera_C");
-static_assert(sizeof(AMainPlayerCamera_C) == 0x001F80, "Wrong size on AMainPlayerCamera_C");
 
-}
-
+SDK_NAMESPACE_END

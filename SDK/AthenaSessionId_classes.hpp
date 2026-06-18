@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaSessionId.AthenaSessionId_C
 // 0x0010 (0x0270 - 0x0260)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSessionId_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSessionId_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSessionId_C")
 	}
 	static class UAthenaSessionId_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSessionId_C>();
 	}
 };
-static_assert(alignof(UAthenaSessionId_C) == 0x000008, "Wrong alignment on UAthenaSessionId_C");
-static_assert(sizeof(UAthenaSessionId_C) == 0x000270, "Wrong size on UAthenaSessionId_C");
-static_assert(offsetof(UAthenaSessionId_C, UberGraphFrame) == 0x000260, "Member 'UAthenaSessionId_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSessionId_C, Text) == 0x000268, "Member 'UAthenaSessionId_C::Text' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

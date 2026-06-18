@@ -16,8 +16,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class SubtitlesWidgets.FortMediaSubtitlesPlayer
 // 0x0030 (0x0058 - 0x0028)
@@ -37,16 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FortMediaSubtitlesPlayer">();
+		STATIC_CLASS_IMPL("FortMediaSubtitlesPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortMediaSubtitlesPlayer")
 	}
 	static class UFortMediaSubtitlesPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortMediaSubtitlesPlayer>();
 	}
 };
-static_assert(alignof(UFortMediaSubtitlesPlayer) == 0x000008, "Wrong alignment on UFortMediaSubtitlesPlayer");
-static_assert(sizeof(UFortMediaSubtitlesPlayer) == 0x000058, "Wrong size on UFortMediaSubtitlesPlayer");
-static_assert(offsetof(UFortMediaSubtitlesPlayer, SourceSubtitles) == 0x000040, "Member 'UFortMediaSubtitlesPlayer::SourceSubtitles' has a wrong offset!");
 
 // Class SubtitlesWidgets.SubtitleDisplay
 // 0x02B0 (0x03C8 - 0x0118)
@@ -64,18 +64,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubtitleDisplay">();
+		STATIC_CLASS_IMPL("SubtitleDisplay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubtitleDisplay")
 	}
 	static class USubtitleDisplay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubtitleDisplay>();
 	}
 };
-static_assert(alignof(USubtitleDisplay) == 0x000008, "Wrong alignment on USubtitleDisplay");
-static_assert(sizeof(USubtitleDisplay) == 0x0003C8, "Wrong size on USubtitleDisplay");
-static_assert(offsetof(USubtitleDisplay, FontInfo) == 0x000118, "Member 'USubtitleDisplay::FontInfo' has a wrong offset!");
-static_assert(offsetof(USubtitleDisplay, ColorAndOpacity) == 0x000180, "Member 'USubtitleDisplay::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(USubtitleDisplay, WrapTextAt) == 0x000190, "Member 'USubtitleDisplay::WrapTextAt' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

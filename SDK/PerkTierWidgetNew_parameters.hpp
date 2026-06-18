@@ -14,8 +14,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.ExecuteUbergraph_PerkTierWidgetNew
 // 0x00C0 (0x00C0 - 0x0000)
@@ -33,16 +33,6 @@ public:
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue2;                    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew) == 0x000008, "Wrong alignment on PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew");
-static_assert(sizeof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew) == 0x0000C0, "Wrong size on PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, EntryPoint) == 0x000000, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, CallFunc_Create_ReturnValue) == 0x000008, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, CallFunc_AddChild_ReturnValue) == 0x000010, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, K2Node_Event_Perk) == 0x000018, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::K2Node_Event_Perk' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, K2Node_Event_PerkWidget) == 0x0000A0, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::K2Node_Event_PerkWidget' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, K2Node_DynamicCast_AsPerk_Widget_New) == 0x0000A8, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::K2Node_DynamicCast_AsPerk_Widget_New' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, K2Node_DynamicCast_bSuccess) == 0x0000B0, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew, CallFunc_AddChild_ReturnValue2) == 0x0000B8, "Member 'PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew::CallFunc_AddChild_ReturnValue2' has a wrong offset!");
 
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.OnGeneratePerk
 // 0x0090 (0x0090 - 0x0000)
@@ -52,10 +42,6 @@ public:
 	struct FFortUIPerk                            Perk;                                              // 0x0000(0x0088)(Parm)
 	class UFortPerkWidget_NUI*                    PerkWidget_0;                                      // 0x0088(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerkTierWidgetNew_C_OnGeneratePerk) == 0x000008, "Wrong alignment on PerkTierWidgetNew_C_OnGeneratePerk");
-static_assert(sizeof(PerkTierWidgetNew_C_OnGeneratePerk) == 0x000090, "Wrong size on PerkTierWidgetNew_C_OnGeneratePerk");
-static_assert(offsetof(PerkTierWidgetNew_C_OnGeneratePerk, Perk) == 0x000000, "Member 'PerkTierWidgetNew_C_OnGeneratePerk::Perk' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_OnGeneratePerk, PerkWidget_0) == 0x000088, "Member 'PerkTierWidgetNew_C_OnGeneratePerk::PerkWidget_0' has a wrong offset!");
 
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.InitializeSettings
 // 0x0028 (0x0028 - 0x0000)
@@ -68,12 +54,6 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortUIPerkTier                        FortPerkTier_0;                                    // 0x0008(0x0020)(Parm, NoDestructor)
 };
-static_assert(alignof(PerkTierWidgetNew_C_InitializeSettings) == 0x000008, "Wrong alignment on PerkTierWidgetNew_C_InitializeSettings");
-static_assert(sizeof(PerkTierWidgetNew_C_InitializeSettings) == 0x000028, "Wrong size on PerkTierWidgetNew_C_InitializeSettings");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, bIncludeName_0) == 0x000000, "Member 'PerkTierWidgetNew_C_InitializeSettings::bIncludeName_0' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, bIncludeDescription_0) == 0x000001, "Member 'PerkTierWidgetNew_C_InitializeSettings::bIncludeDescription_0' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, IconSize_0) == 0x000002, "Member 'PerkTierWidgetNew_C_InitializeSettings::IconSize_0' has a wrong offset!");
-static_assert(offsetof(PerkTierWidgetNew_C_InitializeSettings, FortPerkTier_0) == 0x000008, "Member 'PerkTierWidgetNew_C_InitializeSettings::FortPerkTier_0' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CollectionBookSectionTileWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C.ExecuteUbergraph_CollectionBookSectionTileWidget
 // ()
@@ -60,5 +59,5 @@ void UCollectionBookSectionTileWidget_C::OnSectionSlotUpdate(int32 NumFilledSlot
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

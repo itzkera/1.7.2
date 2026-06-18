@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass StoreCamera_Blueprint.StoreCamera_Blueprint_C
 // 0x0080 (0x0940 - 0x08C0)
@@ -62,32 +61,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreCamera_Blueprint_C">();
+		BP_STATIC_CLASS_IMPL("StoreCamera_Blueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreCamera_Blueprint_C")
 	}
 	static class AStoreCamera_Blueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AStoreCamera_Blueprint_C>();
 	}
 };
-static_assert(alignof(AStoreCamera_Blueprint_C) == 0x000010, "Wrong alignment on AStoreCamera_Blueprint_C");
-static_assert(sizeof(AStoreCamera_Blueprint_C) == 0x000940, "Wrong size on AStoreCamera_Blueprint_C");
-static_assert(offsetof(AStoreCamera_Blueprint_C, UberGraphFrame) == 0x0008C0, "Member 'AStoreCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, Mesh_DarkenBG) == 0x0008C8, "Member 'AStoreCamera_Blueprint_C::Mesh_DarkenBG' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CameraPlaceholderGround) == 0x0008D0, "Member 'AStoreCamera_Blueprint_C::CameraPlaceholderGround' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, ChoicePack_NewTrack_0_ACA3841D4D5084BE3482FA8EBB7CE9C0) == 0x0008D8, "Member 'AStoreCamera_Blueprint_C::ChoicePack_NewTrack_0_ACA3841D4D5084BE3482FA8EBB7CE9C0' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, ChoicePack__Direction_ACA3841D4D5084BE3482FA8EBB7CE9C0) == 0x0008DC, "Member 'AStoreCamera_Blueprint_C::ChoicePack__Direction_ACA3841D4D5084BE3482FA8EBB7CE9C0' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, ChoicePack) == 0x0008E0, "Member 'AStoreCamera_Blueprint_C::ChoicePack' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, Timeline_0_NewTrack_0_6555812E4B246E6144D3C99FC49F7FE9) == 0x0008E8, "Member 'AStoreCamera_Blueprint_C::Timeline_0_NewTrack_0_6555812E4B246E6144D3C99FC49F7FE9' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, Timeline_0__Direction_6555812E4B246E6144D3C99FC49F7FE9) == 0x0008EC, "Member 'AStoreCamera_Blueprint_C::Timeline_0__Direction_6555812E4B246E6144D3C99FC49F7FE9' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, Timeline_0) == 0x0008F0, "Member 'AStoreCamera_Blueprint_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CameraGroundLoc) == 0x0008F8, "Member 'AStoreCamera_Blueprint_C::CameraGroundLoc' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CameraGroundRot) == 0x000904, "Member 'AStoreCamera_Blueprint_C::CameraGroundRot' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CameraOriginalLoc) == 0x000910, "Member 'AStoreCamera_Blueprint_C::CameraOriginalLoc' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CameraOriginalRot) == 0x00091C, "Member 'AStoreCamera_Blueprint_C::CameraOriginalRot' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CameraInStartPos) == 0x000928, "Member 'AStoreCamera_Blueprint_C::CameraInStartPos' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, MouseDown) == 0x000929, "Member 'AStoreCamera_Blueprint_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, PinataInLevel) == 0x000930, "Member 'AStoreCamera_Blueprint_C::PinataInLevel' has a wrong offset!");
-static_assert(offsetof(AStoreCamera_Blueprint_C, CardRevealInLevel) == 0x000938, "Member 'AStoreCamera_Blueprint_C::CardRevealInLevel' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

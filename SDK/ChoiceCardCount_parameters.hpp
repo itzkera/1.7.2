@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ChoiceCardCount.ChoiceCardCount_C.UpdateText
 // 0x0070 (0x0070 - 0x0000)
@@ -27,12 +27,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0058(0x0018)()
 };
-static_assert(alignof(ChoiceCardCount_C_UpdateText) == 0x000008, "Wrong alignment on ChoiceCardCount_C_UpdateText");
-static_assert(sizeof(ChoiceCardCount_C_UpdateText) == 0x000070, "Wrong size on ChoiceCardCount_C_UpdateText");
-static_assert(offsetof(ChoiceCardCount_C_UpdateText, InventoryCount) == 0x000000, "Member 'ChoiceCardCount_C_UpdateText::InventoryCount' has a wrong offset!");
-static_assert(offsetof(ChoiceCardCount_C_UpdateText, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'ChoiceCardCount_C_UpdateText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ChoiceCardCount_C_UpdateText, K2Node_MakeArray_Array) == 0x000048, "Member 'ChoiceCardCount_C_UpdateText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ChoiceCardCount_C_UpdateText, CallFunc_Format_ReturnValue) == 0x000058, "Member 'ChoiceCardCount_C_UpdateText::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

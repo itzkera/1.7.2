@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct Results_CommanderXP_Data.Results_CommanderXP_Data
 // 0x0028 (0x0028 - 0x0000)
@@ -24,12 +23,5 @@ public:
 	class FName                                   XpType_16_9D3D2CAC4D8BDBDD7D4576B43E2E09C9;        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   XpName_11_C48BC1F24ECBE5D14FC7DA97D62DEFD2;        // 0x0010(0x0018)(Edit, BlueprintVisible)
 };
-static_assert(alignof(FResults_CommanderXP_Data) == 0x000008, "Wrong alignment on FResults_CommanderXP_Data");
-static_assert(sizeof(FResults_CommanderXP_Data) == 0x000028, "Wrong size on FResults_CommanderXP_Data");
-static_assert(offsetof(FResults_CommanderXP_Data, XpMax_2_125B68224E5B5DEA584907B5B4D334FC) == 0x000000, "Member 'FResults_CommanderXP_Data::XpMax_2_125B68224E5B5DEA584907B5B4D334FC' has a wrong offset!");
-static_assert(offsetof(FResults_CommanderXP_Data, XpAmount_6_62330CC14533BA207EB39B86BA02A1E7) == 0x000004, "Member 'FResults_CommanderXP_Data::XpAmount_6_62330CC14533BA207EB39B86BA02A1E7' has a wrong offset!");
-static_assert(offsetof(FResults_CommanderXP_Data, XpType_16_9D3D2CAC4D8BDBDD7D4576B43E2E09C9) == 0x000008, "Member 'FResults_CommanderXP_Data::XpType_16_9D3D2CAC4D8BDBDD7D4576B43E2E09C9' has a wrong offset!");
-static_assert(offsetof(FResults_CommanderXP_Data, XpName_11_C48BC1F24ECBE5D14FC7DA97D62DEFD2) == 0x000010, "Member 'FResults_CommanderXP_Data::XpName_11_C48BC1F24ECBE5D14FC7DA97D62DEFD2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

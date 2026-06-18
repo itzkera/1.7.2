@@ -14,8 +14,7 @@
 #include "AthenaInventoryDropSlot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.ExecuteUbergraph_AthenaInventoryDropSlot
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UAthenaInventoryDropSlot_C::ExecuteUbergraph_AthenaInventoryDropSlot(int32 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaInventoryDropSlot_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -62,8 +61,8 @@ void UAthenaInventoryDropSlot_C::Tick(const struct FGeometry& MyGeometry, float 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnDrop
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    PointerEvent                                           (Parm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             PointerEvent                                           (Parm)
 // class UDragDropOperation*               Operation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
@@ -85,5 +84,5 @@ bool UAthenaInventoryDropSlot_C::OnDrop(const struct FGeometry& MyGeometry, cons
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

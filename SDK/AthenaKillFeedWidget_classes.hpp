@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaKillFeedWidget.AthenaKillFeedWidget_C
 // 0x0038 (0x0298 - 0x0260)
@@ -39,22 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaKillFeedWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaKillFeedWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaKillFeedWidget_C")
 	}
 	static class UAthenaKillFeedWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaKillFeedWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaKillFeedWidget_C) == 0x000008, "Wrong alignment on UAthenaKillFeedWidget_C");
-static_assert(sizeof(UAthenaKillFeedWidget_C) == 0x000298, "Wrong size on UAthenaKillFeedWidget_C");
-static_assert(offsetof(UAthenaKillFeedWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaKillFeedWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed1) == 0x000268, "Member 'UAthenaKillFeedWidget_C::KillFeed1' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed2) == 0x000270, "Member 'UAthenaKillFeedWidget_C::KillFeed2' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed3) == 0x000278, "Member 'UAthenaKillFeedWidget_C::KillFeed3' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed4) == 0x000280, "Member 'UAthenaKillFeedWidget_C::KillFeed4' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedWidget_C, KillFeed5) == 0x000288, "Member 'UAthenaKillFeedWidget_C::KillFeed5' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedWidget_C, GameState) == 0x000290, "Member 'UAthenaKillFeedWidget_C::GameState' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

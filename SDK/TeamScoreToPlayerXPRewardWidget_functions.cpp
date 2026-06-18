@@ -14,8 +14,7 @@
 #include "TeamScoreToPlayerXPRewardWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget
 // ()
@@ -88,7 +87,7 @@ void UTeamScoreToPlayerXPRewardWidget_C::Update_XP_LERP(float LERP_Factor)
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortUIXpInfo                    XPinfo_0                                               (Parm, NoDestructor)
+// const struct FFortUIXpInfo&             XPinfo_0                                               (Parm, NoDestructor)
 
 void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& XPinfo_0)
 {
@@ -104,5 +103,5 @@ void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

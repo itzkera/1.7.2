@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_ListRewards.FrontEndRewards_ListRewards_C
 // 0x00D8 (0x0338 - 0x0260)
@@ -97,41 +96,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_ListRewards_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_ListRewards_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_ListRewards_C")
 	}
 	static class UFrontEndRewards_ListRewards_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_ListRewards_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_ListRewards_C) == 0x000008, "Wrong alignment on UFrontEndRewards_ListRewards_C");
-static_assert(sizeof(UFrontEndRewards_ListRewards_C) == 0x000338, "Wrong size on UFrontEndRewards_ListRewards_C");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, UberGraphFrame) == 0x000260, "Member 'UFrontEndRewards_ListRewards_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, ShowHideDescription) == 0x000268, "Member 'UFrontEndRewards_ListRewards_C::ShowHideDescription' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, AnimOutro) == 0x000270, "Member 'UFrontEndRewards_ListRewards_C::AnimOutro' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, RibbonExpand) == 0x000278, "Member 'UFrontEndRewards_ListRewards_C::RibbonExpand' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, arrow_left) == 0x000280, "Member 'UFrontEndRewards_ListRewards_C::arrow_left' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, arrow_right) == 0x000288, "Member 'UFrontEndRewards_ListRewards_C::arrow_right' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, CanvasCardQueue) == 0x000290, "Member 'UFrontEndRewards_ListRewards_C::CanvasCardQueue' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, dots_margin) == 0x000298, "Member 'UFrontEndRewards_ListRewards_C::dots_margin' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, OverlayMain) == 0x0002A0, "Member 'UFrontEndRewards_ListRewards_C::OverlayMain' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, ScrollBoxDescription) == 0x0002A8, "Member 'UFrontEndRewards_ListRewards_C::ScrollBoxDescription' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, SizeBoxDescription) == 0x0002B0, "Member 'UFrontEndRewards_ListRewards_C::SizeBoxDescription' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, TextBlockHeader) == 0x0002B8, "Member 'UFrontEndRewards_ListRewards_C::TextBlockHeader' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, TextDescriptionHeader) == 0x0002C0, "Member 'UFrontEndRewards_ListRewards_C::TextDescriptionHeader' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, TextDescriptionSummary) == 0x0002C8, "Member 'UFrontEndRewards_ListRewards_C::TextDescriptionSummary' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, CardList) == 0x0002D0, "Member 'UFrontEndRewards_ListRewards_C::CardList' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, CurrentSelectionIndex) == 0x0002E0, "Member 'UFrontEndRewards_ListRewards_C::CurrentSelectionIndex' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, CardSlideStaggerDelay) == 0x0002E4, "Member 'UFrontEndRewards_ListRewards_C::CardSlideStaggerDelay' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, IsBusy) == 0x0002E8, "Member 'UFrontEndRewards_ListRewards_C::IsBusy' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, cardOffset) == 0x0002EC, "Member 'UFrontEndRewards_ListRewards_C::cardOffset' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, ScrollAction) == 0x0002F0, "Member 'UFrontEndRewards_ListRewards_C::ScrollAction' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, CollectAllAction) == 0x000300, "Member 'UFrontEndRewards_ListRewards_C::CollectAllAction' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, InspectAction) == 0x000310, "Member 'UFrontEndRewards_ListRewards_C::InspectAction' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, TransitionInHandle) == 0x000320, "Member 'UFrontEndRewards_ListRewards_C::TransitionInHandle' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, TransitionInStaggerDelay) == 0x000328, "Member 'UFrontEndRewards_ListRewards_C::TransitionInStaggerDelay' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, TransitionInIndex) == 0x00032C, "Member 'UFrontEndRewards_ListRewards_C::TransitionInIndex' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ListRewards_C, IsTransitioningIn) == 0x000330, "Member 'UFrontEndRewards_ListRewards_C::IsTransitioningIn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

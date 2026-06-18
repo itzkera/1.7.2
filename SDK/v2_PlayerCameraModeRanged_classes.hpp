@@ -13,8 +13,7 @@
 #include "v2_PlayerCameraModeBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass v2_PlayerCameraModeRanged.v2_PlayerCameraModeRanged_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class Uv2_PlayerCameraModeRanged_C : public Uv2_PlayerCameraModeBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v2_PlayerCameraModeRanged_C">();
+		BP_STATIC_CLASS_IMPL("v2_PlayerCameraModeRanged_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v2_PlayerCameraModeRanged_C")
 	}
 	static class Uv2_PlayerCameraModeRanged_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv2_PlayerCameraModeRanged_C>();
 	}
 };
-static_assert(alignof(Uv2_PlayerCameraModeRanged_C) == 0x000008, "Wrong alignment on Uv2_PlayerCameraModeRanged_C");
-static_assert(sizeof(Uv2_PlayerCameraModeRanged_C) == 0x000110, "Wrong size on Uv2_PlayerCameraModeRanged_C");
 
-}
-
+SDK_NAMESPACE_END

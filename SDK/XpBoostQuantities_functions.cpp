@@ -14,8 +14,7 @@
 #include "XpBoostQuantities_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBoostQuantities.XpBoostQuantities_C.ExecuteUbergraph_XpBoostQuantities
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UXpBoostQuantities_C::Xp_Boost_Changed(int32 BoostAmount)
 // Function XpBoostQuantities.XpBoostQuantities_C.HandleAccountUpdate
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           NewInfo                                                (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    NewInfo                                                (Parm, NoDestructor)
 
 void UXpBoostQuantities_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
@@ -150,5 +149,5 @@ int32 UXpBoostQuantities_C::ScaledRestBalance(int32 AmountToLevel)
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

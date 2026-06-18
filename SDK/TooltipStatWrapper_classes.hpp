@@ -11,13 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "TooltipStat_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "TooltipStat_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TooltipStatWrapper.TooltipStatWrapper_C
 // 0x0078 (0x02A8 - 0x0230)
@@ -43,24 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TooltipStatWrapper_C">();
+		BP_STATIC_CLASS_IMPL("TooltipStatWrapper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipStatWrapper_C")
 	}
 	static class UTooltipStatWrapper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipStatWrapper_C>();
 	}
 };
-static_assert(alignof(UTooltipStatWrapper_C) == 0x000008, "Wrong alignment on UTooltipStatWrapper_C");
-static_assert(sizeof(UTooltipStatWrapper_C) == 0x0002A8, "Wrong size on UTooltipStatWrapper_C");
-static_assert(offsetof(UTooltipStatWrapper_C, UberGraphFrame) == 0x000230, "Member 'UTooltipStatWrapper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, Container_HBox) == 0x000238, "Member 'UTooltipStatWrapper_C::Container_HBox' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, PreviewHighlight_Image) == 0x000240, "Member 'UTooltipStatWrapper_C::PreviewHighlight_Image' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, Stat_Widget) == 0x000248, "Member 'UTooltipStatWrapper_C::Stat_Widget' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, Upgrade_Border) == 0x000250, "Member 'UTooltipStatWrapper_C::Upgrade_Border' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, Upgrade_Image) == 0x000258, "Member 'UTooltipStatWrapper_C::Upgrade_Image' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, ShowAsPreview) == 0x000260, "Member 'UTooltipStatWrapper_C::ShowAsPreview' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, inTooltipData) == 0x000268, "Member 'UTooltipStatWrapper_C::inTooltipData' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWrapper_C, inHoverEnabled) == 0x0002A0, "Member 'UTooltipStatWrapper_C::inHoverEnabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

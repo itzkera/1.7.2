@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C
 // 0x0060 (0x03E8 - 0x0388)
@@ -57,26 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultWeaponPlacementHelper_C">();
+		BP_STATIC_CLASS_IMPL("VaultWeaponPlacementHelper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultWeaponPlacementHelper_C")
 	}
 	static class AVaultWeaponPlacementHelper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultWeaponPlacementHelper_C>();
 	}
 };
-static_assert(alignof(AVaultWeaponPlacementHelper_C) == 0x000008, "Wrong alignment on AVaultWeaponPlacementHelper_C");
-static_assert(sizeof(AVaultWeaponPlacementHelper_C) == 0x0003E8, "Wrong size on AVaultWeaponPlacementHelper_C");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, UberGraphFrame) == 0x000388, "Member 'AVaultWeaponPlacementHelper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, Cube) == 0x000390, "Member 'AVaultWeaponPlacementHelper_C::Cube' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Sparkle) == 0x000398, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Sparkle' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Swirl02) == 0x0003A0, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Swirl02' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Swirl01) == 0x0003A8, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Swirl01' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, CharacterPlacement) == 0x0003B0, "Member 'AVaultWeaponPlacementHelper_C::CharacterPlacement' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, Root) == 0x0003B8, "Member 'AVaultWeaponPlacementHelper_C::Root' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PlayerID) == 0x0003C0, "Member 'AVaultWeaponPlacementHelper_C::PlayerID' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, Mesh) == 0x0003C8, "Member 'AVaultWeaponPlacementHelper_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, bIsPlayerSelected) == 0x0003D0, "Member 'AVaultWeaponPlacementHelper_C::bIsPlayerSelected' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, NewEventDispatcher_0) == 0x0003D8, "Member 'AVaultWeaponPlacementHelper_C::NewEventDispatcher_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

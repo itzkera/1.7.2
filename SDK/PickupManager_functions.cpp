@@ -14,8 +14,7 @@
 #include "PickupManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PickupManager.PickupManager_C.ExecuteUbergraph_PickupManager
 // ()
@@ -54,8 +53,8 @@ void UPickupManager_C::Destruct()
 // Function PickupManager.PickupManager_C.HandleWorldItemListChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UPickupManager_C::HandleWorldItemListChanged(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -184,5 +183,5 @@ void UPickupManager_C::UpdateKeybinds()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

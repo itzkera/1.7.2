@@ -14,8 +14,7 @@
 #include "AthenaEquippedItemWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaEquippedItemWidget.AthenaEquippedItemWidget_C.ExecuteUbergraph_AthenaEquippedItemWidget
 // ()
@@ -239,7 +238,7 @@ void UAthenaEquippedItemWidget_C::UpdateResourceCount()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // int32                                   CurrentAmmoCount                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             CurrentAmmoText                                        (Parm, OutParm)
+// class FText*                            CurrentAmmoText                                        (Parm, OutParm)
 
 void UAthenaEquippedItemWidget_C::GetCurrentAmmoText(int32 CurrentAmmoCount, class FText* CurrentAmmoText) const
 {
@@ -258,5 +257,5 @@ void UAthenaEquippedItemWidget_C::GetCurrentAmmoText(int32 CurrentAmmoCount, cla
 		*CurrentAmmoText = std::move(Parms.CurrentAmmoText);
 }
 
-}
 
+SDK_NAMESPACE_END

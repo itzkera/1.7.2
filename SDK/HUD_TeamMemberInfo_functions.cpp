@@ -14,8 +14,7 @@
 #include "HUD_TeamMemberInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.ExecuteUbergraph_HUD-TeamMemberInfo
 // ()
@@ -54,7 +53,7 @@ void UHUD_TeamMemberInfo_C::Construct()
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              UpdatedMemberInfo                                      (Parm)
+// const struct FFortTeamMemberInfo&       UpdatedMemberInfo                                      (Parm)
 
 void UHUD_TeamMemberInfo_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo)
 {
@@ -90,5 +89,5 @@ void UHUD_TeamMemberInfo_C::SetHealth(float Value)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

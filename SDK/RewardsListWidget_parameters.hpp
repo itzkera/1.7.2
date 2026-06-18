@@ -15,8 +15,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function RewardsListWidget.RewardsListWidget_C.PopulateRewards
 // 0x0080 (0x0080 - 0x0000)
@@ -46,26 +46,6 @@ public:
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortItemInstanceQuantityPair          CallFunc_Array_Get_Item2;                          // 0x0070(0x0010)(NoDestructor)
 };
-static_assert(alignof(RewardsListWidget_C_PopulateRewards) == 0x000008, "Wrong alignment on RewardsListWidget_C_PopulateRewards");
-static_assert(sizeof(RewardsListWidget_C_PopulateRewards) == 0x000080, "Wrong size on RewardsListWidget_C_PopulateRewards");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Rewards) == 0x000000, "Member 'RewardsListWidget_C_PopulateRewards::Rewards' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, SelectableRewards) == 0x000010, "Member 'RewardsListWidget_C_PopulateRewards::SelectableRewards' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'RewardsListWidget_C_PopulateRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Length_ReturnValue2) == 0x00002C, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Length_ReturnValue3) == 0x000030, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Length_ReturnValue4) == 0x000034, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Length_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Subtract_IntInt_ReturnValue) == 0x00003C, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Temp_int_Array_Index_Variable) == 0x000040, "Member 'RewardsListWidget_C_PopulateRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Get_Item) == 0x000048, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Temp_int_Loop_Counter_Variable2) == 0x000058, "Member 'RewardsListWidget_C_PopulateRewards::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Add_IntInt_ReturnValue2) == 0x00005C, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Less_IntInt_ReturnValue2) == 0x000060, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Add_IntInt_ReturnValue3) == 0x000064, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, Temp_int_Array_Index_Variable2) == 0x000068, "Member 'RewardsListWidget_C_PopulateRewards::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PopulateRewards, CallFunc_Array_Get_Item2) == 0x000070, "Member 'RewardsListWidget_C_PopulateRewards::CallFunc_Array_Get_Item2' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.PresentNextReward
 // 0x0028 (0x0028 - 0x0000)
@@ -82,16 +62,6 @@ public:
 	class UFrontEndRewardWrapperWidget_C*         CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_PresentNextReward) == 0x000008, "Wrong alignment on RewardsListWidget_C_PresentNextReward");
-static_assert(sizeof(RewardsListWidget_C_PresentNextReward) == 0x000028, "Wrong size on RewardsListWidget_C_PresentNextReward");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Array_Length_ReturnValue) == 0x000000, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Subtract_IntInt_ReturnValue2) == 0x00000C, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Subtract_IntInt_ReturnValue3) == 0x000014, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Subtract_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_Array_Get_Item) == 0x000018, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentNextReward, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000020, "Member 'RewardsListWidget_C_PresentNextReward::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.CreateReward
 // 0x0108 (0x0108 - 0x0000)
@@ -117,24 +87,6 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_CreateReward) == 0x000008, "Wrong alignment on RewardsListWidget_C_CreateReward");
-static_assert(sizeof(RewardsListWidget_C_CreateReward) == 0x000108, "Wrong size on RewardsListWidget_C_CreateReward");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, FortItemInstanceQuantityPair) == 0x000000, "Member 'RewardsListWidget_C_CreateReward::FortItemInstanceQuantityPair' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, Selectable) == 0x000010, "Member 'RewardsListWidget_C_CreateReward::Selectable' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, Quantity) == 0x000014, "Member 'RewardsListWidget_C_CreateReward::Quantity' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, Item) == 0x000018, "Member 'RewardsListWidget_C_CreateReward::Item' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, K2Node_MakeStruct_FormatArgumentData) == 0x000020, "Member 'RewardsListWidget_C_CreateReward::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_GetDisplayName_ReturnValue) == 0x000060, "Member 'RewardsListWidget_C_CreateReward::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, K2Node_MakeStruct_FormatArgumentData2) == 0x000078, "Member 'RewardsListWidget_C_CreateReward::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, K2Node_MakeArray_Array) == 0x0000B8, "Member 'RewardsListWidget_C_CreateReward::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_Format_ReturnValue) == 0x0000C8, "Member 'RewardsListWidget_C_CreateReward::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_GetType_ReturnValue) == 0x0000E0, "Member 'RewardsListWidget_C_CreateReward::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0000E1, "Member 'RewardsListWidget_C_CreateReward::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000E8, "Member 'RewardsListWidget_C_CreateReward::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_Create_ReturnValue) == 0x0000F0, "Member 'RewardsListWidget_C_CreateReward::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_CreateRewardWrapper_OutputPin) == 0x0000F8, "Member 'RewardsListWidget_C_CreateReward::CallFunc_CreateRewardWrapper_OutputPin' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_Array_Add_ReturnValue) == 0x000100, "Member 'RewardsListWidget_C_CreateReward::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateReward, CallFunc_Array_Add_ReturnValue2) == 0x000104, "Member 'RewardsListWidget_C_CreateReward::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.CreateRewardWrapper
 // 0x0048 (0x0048 - 0x0000)
@@ -148,14 +100,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFrontEndRewardWrapperWidget_C*         CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_CreateRewardWrapper) == 0x000008, "Wrong alignment on RewardsListWidget_C_CreateRewardWrapper");
-static_assert(sizeof(RewardsListWidget_C_CreateRewardWrapper) == 0x000048, "Wrong size on RewardsListWidget_C_CreateRewardWrapper");
-static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, Item) == 0x000000, "Member 'RewardsListWidget_C_CreateRewardWrapper::Item' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, DisplayName) == 0x000008, "Member 'RewardsListWidget_C_CreateRewardWrapper::DisplayName' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, OutputPin) == 0x000020, "Member 'RewardsListWidget_C_CreateRewardWrapper::OutputPin' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'RewardsListWidget_C_CreateRewardWrapper::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'RewardsListWidget_C_CreateRewardWrapper::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_CreateRewardWrapper, CallFunc_Create_ReturnValue) == 0x000040, "Member 'RewardsListWidget_C_CreateRewardWrapper::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function RewardsListWidget.RewardsListWidget_C.PresentAllRewards
 // 0x0090 (0x0090 - 0x0000)
@@ -188,28 +132,6 @@ public:
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue3;       // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RewardsListWidget_C_PresentAllRewards) == 0x000008, "Wrong alignment on RewardsListWidget_C_PresentAllRewards");
-static_assert(sizeof(RewardsListWidget_C_PresentAllRewards) == 0x000090, "Wrong size on RewardsListWidget_C_PresentAllRewards");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'RewardsListWidget_C_PresentAllRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'RewardsListWidget_C_PresentAllRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, Temp_int_Array_Index_Variable2) == 0x000010, "Member 'RewardsListWidget_C_PresentAllRewards::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, K2Node_MakeStruct_Margin) == 0x000014, "Member 'RewardsListWidget_C_PresentAllRewards::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, K2Node_MakeStruct_Margin2) == 0x000024, "Member 'RewardsListWidget_C_PresentAllRewards::K2Node_MakeStruct_Margin2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, Temp_int_Loop_Counter_Variable2) == 0x000034, "Member 'RewardsListWidget_C_PresentAllRewards::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Array_Get_Item) == 0x000038, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000048, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Add_IntInt_ReturnValue2) == 0x000054, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Create_ReturnValue) == 0x000060, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Array_Get_Item2) == 0x000068, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Array_Length_ReturnValue2) == 0x000070, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_AddChildToVerticalBox_ReturnValue2) == 0x000078, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_AddChildToVerticalBox_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_Less_IntInt_ReturnValue2) == 0x000080, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListWidget_C_PresentAllRewards, CallFunc_AddChildToVerticalBox_ReturnValue3) == 0x000088, "Member 'RewardsListWidget_C_PresentAllRewards::CallFunc_AddChildToVerticalBox_ReturnValue3' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

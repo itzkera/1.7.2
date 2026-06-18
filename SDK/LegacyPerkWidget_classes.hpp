@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyPerkWidget.LegacyPerkWidget_C
 // 0x0150 (0x0418 - 0x02C8)
@@ -73,41 +72,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyPerkWidget_C">();
+		BP_STATIC_CLASS_IMPL("LegacyPerkWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyPerkWidget_C")
 	}
 	static class ULegacyPerkWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyPerkWidget_C>();
 	}
 };
-static_assert(alignof(ULegacyPerkWidget_C) == 0x000008, "Wrong alignment on ULegacyPerkWidget_C");
-static_assert(sizeof(ULegacyPerkWidget_C) == 0x000418, "Wrong size on ULegacyPerkWidget_C");
-static_assert(offsetof(ULegacyPerkWidget_C, UberGraphFrame) == 0x0002C8, "Member 'ULegacyPerkWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, BorderAbility) == 0x0002D0, "Member 'ULegacyPerkWidget_C::BorderAbility' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, BorderFrame) == 0x0002D8, "Member 'ULegacyPerkWidget_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, BorderHighlightBorder) == 0x0002E0, "Member 'ULegacyPerkWidget_C::BorderHighlightBorder' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, BorderHightlightBackground) == 0x0002E8, "Member 'ULegacyPerkWidget_C::BorderHightlightBackground' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, ImageAbilityIcon) == 0x0002F0, "Member 'ULegacyPerkWidget_C::ImageAbilityIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, ImageHeroBonusIcon) == 0x0002F8, "Member 'ULegacyPerkWidget_C::ImageHeroBonusIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, ImagePerkIcon) == 0x000300, "Member 'ULegacyPerkWidget_C::ImagePerkIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, ImageTier) == 0x000308, "Member 'ULegacyPerkWidget_C::ImageTier' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, LevelText) == 0x000310, "Member 'ULegacyPerkWidget_C::LevelText' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, NamedSlotTextOnlyContent) == 0x000318, "Member 'ULegacyPerkWidget_C::NamedSlotTextOnlyContent' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, OverlayAbilityPerk) == 0x000320, "Member 'ULegacyPerkWidget_C::OverlayAbilityPerk' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, OverlayBadge) == 0x000328, "Member 'ULegacyPerkWidget_C::OverlayBadge' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, OverlayBasicPerk) == 0x000330, "Member 'ULegacyPerkWidget_C::OverlayBasicPerk' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, OverlayImagePerk) == 0x000338, "Member 'ULegacyPerkWidget_C::OverlayImagePerk' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, OverlayLevel) == 0x000340, "Member 'ULegacyPerkWidget_C::OverlayLevel' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, ScaleBoxHoldingBox) == 0x000348, "Member 'ULegacyPerkWidget_C::ScaleBoxHoldingBox' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, TextBlock_Perkname) == 0x000350, "Member 'ULegacyPerkWidget_C::TextBlock_Perkname' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, TextBlock_SquadBonusType) == 0x000358, "Member 'ULegacyPerkWidget_C::TextBlock_SquadBonusType' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, VBox_TextInfo) == 0x000360, "Member 'ULegacyPerkWidget_C::VBox_TextInfo' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, WidgetSwitcherBasicPerkOrAbilityPerk) == 0x000368, "Member 'ULegacyPerkWidget_C::WidgetSwitcherBasicPerkOrAbilityPerk' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, WidgetSwitcherTextOrImage) == 0x000370, "Member 'ULegacyPerkWidget_C::WidgetSwitcherTextOrImage' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, WidgetSwitcherTierOrLevel) == 0x000378, "Member 'ULegacyPerkWidget_C::WidgetSwitcherTierOrLevel' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, DemoImage) == 0x000380, "Member 'ULegacyPerkWidget_C::DemoImage' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, bTextOnly) == 0x000410, "Member 'ULegacyPerkWidget_C::bTextOnly' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkWidget_C, ShowTextWithIcon) == 0x000411, "Member 'ULegacyPerkWidget_C::ShowTextWithIcon' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

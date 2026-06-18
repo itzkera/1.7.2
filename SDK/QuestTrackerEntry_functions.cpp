@@ -14,8 +14,7 @@
 #include "QuestTrackerEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestTrackerEntry.QuestTrackerEntry_C.ExecuteUbergraph_QuestTrackerEntry
 // (HasDefaults)
@@ -64,5 +63,5 @@ void UQuestTrackerEntry_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

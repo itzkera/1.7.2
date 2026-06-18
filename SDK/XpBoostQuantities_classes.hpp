@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBoostQuantities.XpBoostQuantities_C
 // 0x0020 (0x0258 - 0x0238)
@@ -39,19 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBoostQuantities_C">();
+		BP_STATIC_CLASS_IMPL("XpBoostQuantities_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBoostQuantities_C")
 	}
 	static class UXpBoostQuantities_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBoostQuantities_C>();
 	}
 };
-static_assert(alignof(UXpBoostQuantities_C) == 0x000008, "Wrong alignment on UXpBoostQuantities_C");
-static_assert(sizeof(UXpBoostQuantities_C) == 0x000258, "Wrong size on UXpBoostQuantities_C");
-static_assert(offsetof(UXpBoostQuantities_C, UberGraphFrame) == 0x000238, "Member 'UXpBoostQuantities_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBoostQuantities_C, TextBoostXPQuant) == 0x000240, "Member 'UXpBoostQuantities_C::TextBoostXPQuant' has a wrong offset!");
-static_assert(offsetof(UXpBoostQuantities_C, TextDBXPQuant) == 0x000248, "Member 'UXpBoostQuantities_C::TextDBXPQuant' has a wrong offset!");
-static_assert(offsetof(UXpBoostQuantities_C, TextNormalXPQuant) == 0x000250, "Member 'UXpBoostQuantities_C::TextNormalXPQuant' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

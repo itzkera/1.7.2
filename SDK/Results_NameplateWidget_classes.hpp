@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_NameplateWidget.Results_NameplateWidget_C
 // 0x0048 (0x0288 - 0x0240)
@@ -45,23 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_NameplateWidget_C">();
+		BP_STATIC_CLASS_IMPL("Results_NameplateWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_NameplateWidget_C")
 	}
 	static class UResults_NameplateWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_NameplateWidget_C>();
 	}
 };
-static_assert(alignof(UResults_NameplateWidget_C) == 0x000008, "Wrong alignment on UResults_NameplateWidget_C");
-static_assert(sizeof(UResults_NameplateWidget_C) == 0x000288, "Wrong size on UResults_NameplateWidget_C");
-static_assert(offsetof(UResults_NameplateWidget_C, UberGraphFrame) == 0x000240, "Member 'UResults_NameplateWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, Anim_Outro) == 0x000248, "Member 'UResults_NameplateWidget_C::Anim_Outro' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, Anim_Intro) == 0x000250, "Member 'UResults_NameplateWidget_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, TextZoneCompletion) == 0x000258, "Member 'UResults_NameplateWidget_C::TextZoneCompletion' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, Post_Intro_Delay) == 0x000260, "Member 'UResults_NameplateWidget_C::Post_Intro_Delay' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, IntroComplete) == 0x000268, "Member 'UResults_NameplateWidget_C::IntroComplete' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, SoundCue_InitialMusic) == 0x000278, "Member 'UResults_NameplateWidget_C::SoundCue_InitialMusic' has a wrong offset!");
-static_assert(offsetof(UResults_NameplateWidget_C, Skipped) == 0x000280, "Member 'UResults_NameplateWidget_C::Skipped' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C
 // 0x0068 (0x03F0 - 0x0388)
@@ -63,28 +62,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Fort_Entry_Music_Controller_BP_C">();
+		BP_STATIC_CLASS_IMPL("Fort_Entry_Music_Controller_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Fort_Entry_Music_Controller_BP_C")
 	}
 	static class AFort_Entry_Music_Controller_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFort_Entry_Music_Controller_BP_C>();
 	}
 };
-static_assert(alignof(AFort_Entry_Music_Controller_BP_C) == 0x000008, "Wrong alignment on AFort_Entry_Music_Controller_BP_C");
-static_assert(sizeof(AFort_Entry_Music_Controller_BP_C) == 0x0003F0, "Wrong size on AFort_Entry_Music_Controller_BP_C");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, UberGraphFrame) == 0x000388, "Member 'AFort_Entry_Music_Controller_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MenuMusic_B) == 0x000390, "Member 'AFort_Entry_Music_Controller_BP_C::MenuMusic_B' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MenuMusic_A) == 0x000398, "Member 'AFort_Entry_Music_Controller_BP_C::MenuMusic_A' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, Hexmap_Music) == 0x0003A0, "Member 'AFort_Entry_Music_Controller_BP_C::Hexmap_Music' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, Homebase_Music) == 0x0003A8, "Member 'AFort_Entry_Music_Controller_BP_C::Homebase_Music' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, OverView_Music) == 0x0003B0, "Member 'AFort_Entry_Music_Controller_BP_C::OverView_Music' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, LobbyMusic) == 0x0003B8, "Member 'AFort_Entry_Music_Controller_BP_C::LobbyMusic' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, LlamaVO) == 0x0003C0, "Member 'AFort_Entry_Music_Controller_BP_C::LlamaVO' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, LoginMusic) == 0x0003C8, "Member 'AFort_Entry_Music_Controller_BP_C::LoginMusic' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, DefaultSceneRoot) == 0x0003D0, "Member 'AFort_Entry_Music_Controller_BP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, FadeOutTime) == 0x0003D8, "Member 'AFort_Entry_Music_Controller_BP_C::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, Sound_Current_Music_A) == 0x0003E0, "Member 'AFort_Entry_Music_Controller_BP_C::Sound_Current_Music_A' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, Sound_Current_Music_B) == 0x0003E8, "Member 'AFort_Entry_Music_Controller_BP_C::Sound_Current_Music_B' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

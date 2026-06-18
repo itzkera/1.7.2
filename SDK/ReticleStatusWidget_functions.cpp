@@ -14,8 +14,7 @@
 #include "ReticleStatusWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ReticleStatusWidget.ReticleStatusWidget_C.ExecuteUbergraph_ReticleStatusWidget
 // (HasDefaults)
@@ -40,8 +39,8 @@ void UReticleStatusWidget_C::ExecuteUbergraph_ReticleStatusWidget(int32 EntryPoi
 // Function ReticleStatusWidget.ReticleStatusWidget_C.OnUnableToPerformAction
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            FailedReason                                           (Parm)
-// class FText                             FailureText                                            (Parm)
+// const struct FGameplayTagContainer&     FailedReason                                           (Parm)
+// const class FText&                      FailureText                                            (Parm)
 
 void UReticleStatusWidget_C::OnUnableToPerformAction(const struct FGameplayTagContainer& FailedReason, const class FText& FailureText)
 {
@@ -72,5 +71,5 @@ void UReticleStatusWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

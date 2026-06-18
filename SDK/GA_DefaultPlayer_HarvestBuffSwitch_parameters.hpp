@@ -13,8 +13,8 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C.ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch
 // 0x01B8 (0x01B8 - 0x0000)
@@ -52,30 +52,6 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput; // 0x01A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue4;  // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch) == 0x000008, "Wrong alignment on GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
-static_assert(sizeof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch) == 0x0001B8, "Wrong size on GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, EntryPoint) == 0x000000, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_K2_CommitAbility_ReturnValue) == 0x000004, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, K2Node_Event_EventData) == 0x000008, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_GetActorInfo_ReturnValue) == 0x0000B0, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000F8, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000108, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000110, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, K2Node_DynamicCast_AsFort_Weapon) == 0x000130, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::K2Node_DynamicCast_AsFort_Weapon' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, K2Node_DynamicCast_bSuccess2) == 0x000138, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000140, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000150, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000160, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000168, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000178, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x00017C, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x000188, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x000198, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_BooleanAND_ReturnValue) == 0x000199, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput) == 0x0001A0, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch, CallFunc_HasAllMatchingGameplayTags_ReturnValue4) == 0x0001B0, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch::CallFunc_HasAllMatchingGameplayTags_ReturnValue4' has a wrong offset!");
 
 // Function GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C.K2_ActivateAbilityFromEvent
 // 0x00A8 (0x00A8 - 0x0000)
@@ -84,9 +60,6 @@ struct GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

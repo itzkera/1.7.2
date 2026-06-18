@@ -14,8 +14,7 @@
 #include "MiniCraftingIngredientList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.ExecuteUbergraph_MiniCraftingIngredientList
 // ()
@@ -56,5 +55,5 @@ void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

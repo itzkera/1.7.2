@@ -14,8 +14,7 @@
 #include "InteractionIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function InteractionIndicator.InteractionIndicator_C.ExecuteUbergraph_InteractionIndicator
 // ()
@@ -172,5 +171,5 @@ void UInteractionIndicator_C::UpdateKeybinds()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

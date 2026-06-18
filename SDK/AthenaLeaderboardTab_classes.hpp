@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaLeaderboardTab.AthenaLeaderboardTab_C
 // 0x00A8 (0x0578 - 0x04D0)
@@ -67,34 +66,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLeaderboardTab_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLeaderboardTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLeaderboardTab_C")
 	}
 	static class UAthenaLeaderboardTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLeaderboardTab_C>();
 	}
 };
-static_assert(alignof(UAthenaLeaderboardTab_C) == 0x000008, "Wrong alignment on UAthenaLeaderboardTab_C");
-static_assert(sizeof(UAthenaLeaderboardTab_C) == 0x000578, "Wrong size on UAthenaLeaderboardTab_C");
-static_assert(offsetof(UAthenaLeaderboardTab_C, UberGraphFrame) == 0x0004D0, "Member 'UAthenaLeaderboardTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, ComingSoonPlaceholderWidget) == 0x0004D8, "Member 'UAthenaLeaderboardTab_C::ComingSoonPlaceholderWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, ContentBox) == 0x0004E0, "Member 'UAthenaLeaderboardTab_C::ContentBox' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, EnableWidgetSwitcher) == 0x0004E8, "Member 'UAthenaLeaderboardTab_C::EnableWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, ErrorMessage) == 0x0004F0, "Member 'UAthenaLeaderboardTab_C::ErrorMessage' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, ErrorMessageText) == 0x0004F8, "Member 'UAthenaLeaderboardTab_C::ErrorMessageText' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, FilterBox) == 0x000500, "Member 'UAthenaLeaderboardTab_C::FilterBox' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, FriendsOnlyBox) == 0x000508, "Member 'UAthenaLeaderboardTab_C::FriendsOnlyBox' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, LeaderboardHeaderRow) == 0x000510, "Member 'UAthenaLeaderboardTab_C::LeaderboardHeaderRow' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, LeaderboardListView) == 0x000518, "Member 'UAthenaLeaderboardTab_C::LeaderboardListView' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, LeaderboardsHeader) == 0x000520, "Member 'UAthenaLeaderboardTab_C::LeaderboardsHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, LeaderboardSwitcher) == 0x000528, "Member 'UAthenaLeaderboardTab_C::LeaderboardSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, LeaderboardThrobber) == 0x000530, "Member 'UAthenaLeaderboardTab_C::LeaderboardThrobber' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, LocalUserRow) == 0x000538, "Member 'UAthenaLeaderboardTab_C::LocalUserRow' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, OverlayMain) == 0x000540, "Member 'UAthenaLeaderboardTab_C::OverlayMain' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, ResetTimeBox) == 0x000548, "Member 'UAthenaLeaderboardTab_C::ResetTimeBox' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, PlaylistChange) == 0x000550, "Member 'UAthenaLeaderboardTab_C::PlaylistChange' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, FriendTypeChange) == 0x000560, "Member 'UAthenaLeaderboardTab_C::FriendTypeChange' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTab_C, QueryTimerHandle) == 0x000570, "Member 'UAthenaLeaderboardTab_C::QueryTimerHandle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

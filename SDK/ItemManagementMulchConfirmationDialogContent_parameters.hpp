@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C.ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent
 // 0x0060 (0x0060 - 0x0000)
@@ -40,21 +40,6 @@ public:
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent) == 0x000008, "Wrong alignment on ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent");
-static_assert(sizeof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent) == 0x000060, "Wrong size on ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, EntryPoint) == 0x000000, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, Temp_int_Array_Index_Variable) == 0x000004, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, K2Node_Event_IsDesignTime) == 0x000010, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, K2Node_MakeStruct_Margin) == 0x000014, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_Array_Get_Item) == 0x000028, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_Create_ReturnValue) == 0x000038, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_AddChild_ReturnValue) == 0x000048, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_Array_Get_Item2) == 0x000050, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent, CallFunc_GetUINavigationManager_ReturnValue) == 0x000058, "Member 'ItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -63,9 +48,6 @@ struct ItemManagementMulchConfirmationDialogContent_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementMulchConfirmationDialogContent_C_PreConstruct) == 0x000001, "Wrong alignment on ItemManagementMulchConfirmationDialogContent_C_PreConstruct");
-static_assert(sizeof(ItemManagementMulchConfirmationDialogContent_C_PreConstruct) == 0x000001, "Wrong size on ItemManagementMulchConfirmationDialogContent_C_PreConstruct");
-static_assert(offsetof(ItemManagementMulchConfirmationDialogContent_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemManagementMulchConfirmationDialogContent_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

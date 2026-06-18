@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum Rejoin.ERejoinStatus
 // NumValues: 0x0006
@@ -26,5 +25,4 @@ enum class ERejoinStatus : uint8
 	ERejoinStatus_MAX                        = 5,
 };
 
-}
-
+SDK_NAMESPACE_END

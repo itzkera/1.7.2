@@ -14,8 +14,7 @@
 #include "ItemManagementItemDetailsPanel_OverviewOnly_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.ExecuteUbergraph_ItemManagementItemDetailsPanel-OverviewOnly
 // (HasDefaults)
@@ -64,5 +63,5 @@ void UItemManagementItemDetailsPanel_OverviewOnly_C::SetDescriptionText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

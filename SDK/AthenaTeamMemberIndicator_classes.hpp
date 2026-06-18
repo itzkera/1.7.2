@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C
 // 0x0028 (0x02C0 - 0x0298)
@@ -40,20 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTeamMemberIndicator_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTeamMemberIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTeamMemberIndicator_C")
 	}
 	static class UAthenaTeamMemberIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTeamMemberIndicator_C>();
 	}
 };
-static_assert(alignof(UAthenaTeamMemberIndicator_C) == 0x000008, "Wrong alignment on UAthenaTeamMemberIndicator_C");
-static_assert(sizeof(UAthenaTeamMemberIndicator_C) == 0x0002C0, "Wrong size on UAthenaTeamMemberIndicator_C");
-static_assert(offsetof(UAthenaTeamMemberIndicator_C, UberGraphFrame) == 0x000298, "Member 'UAthenaTeamMemberIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberIndicator_C, DBNOIndicator) == 0x0002A0, "Member 'UAthenaTeamMemberIndicator_C::DBNOIndicator' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberIndicator_C, PlayerName) == 0x0002A8, "Member 'UAthenaTeamMemberIndicator_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberIndicator_C, Player_State) == 0x0002B0, "Member 'UAthenaTeamMemberIndicator_C::Player_State' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberIndicator_C, Team_Member_Index) == 0x0002B8, "Member 'UAthenaTeamMemberIndicator_C::Team_Member_Index' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

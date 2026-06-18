@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DefenderAnimBlueprint.DefenderAnimBlueprint_C.ExecuteUbergraph_DefenderAnimBlueprint
 // 0x0064 (0x0064 - 0x0000)
@@ -53,39 +53,6 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue7;         // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue7;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint) == 0x000004, "Wrong alignment on DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint");
-static_assert(sizeof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint) == 0x000064, "Wrong size on DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, EntryPoint) == 0x000000, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue2) == 0x000005, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue3) == 0x000006, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue) == 0x000008, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00000C, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue2) == 0x000010, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000014, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000018, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x00001C, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue3) == 0x000020, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x000024, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000028, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue4) == 0x00002C, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue4) == 0x000030, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue4) == 0x000034, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue5) == 0x000038, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue5) == 0x00003C, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue5) == 0x000040, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue6) == 0x000044, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue4) == 0x000048, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_BooleanOR_ReturnValue) == 0x000049, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue5) == 0x00004A, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_BooleanOR_ReturnValue2) == 0x00004B, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Not_PreBool_ReturnValue6) == 0x00004C, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Not_PreBool_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_BooleanOR_ReturnValue3) == 0x00004D, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue6) == 0x000050, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_GetCurveValue_ReturnValue7) == 0x000054, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_GetCurveValue_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue6) == 0x000058, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Subtract_FloatFloat_ReturnValue7) == 0x00005C, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Subtract_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint, CallFunc_Multiply_FloatFloat_ReturnValue7) == 0x000060, "Member 'DefenderAnimBlueprint_C_ExecuteUbergraph_DefenderAnimBlueprint::CallFunc_Multiply_FloatFloat_ReturnValue7' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

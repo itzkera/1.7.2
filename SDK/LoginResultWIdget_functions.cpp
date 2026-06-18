@@ -14,8 +14,7 @@
 #include "LoginResultWIdget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LoginResultWIdget.LoginResultWIdget_C.ExecuteUbergraph_LoginResultWIdget
 // ()
@@ -74,7 +73,7 @@ void ULoginResultWIdget_C::BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_C
 // Function LoginResultWIdget.LoginResultWIdget_C.SetTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
+// const class FText&                      Title                                                  (Parm)
 // bool                                    bShowError                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULoginResultWIdget_C::SetTitle(const class FText& Title, bool bShowError)
@@ -96,7 +95,7 @@ void ULoginResultWIdget_C::SetTitle(const class FText& Title, bool bShowError)
 // Function LoginResultWIdget.LoginResultWIdget_C.SetDescription
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description                                            (Parm)
+// const class FText&                      Description                                            (Parm)
 
 void ULoginResultWIdget_C::SetDescription(const class FText& Description)
 {
@@ -116,9 +115,9 @@ void ULoginResultWIdget_C::SetDescription(const class FText& Description)
 // Function LoginResultWIdget.LoginResultWIdget_C.SetResultsData
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
+// const class FText&                      Title                                                  (Parm)
 // bool                                    bShowError                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Description                                            (Parm)
+// const class FText&                      Description                                            (Parm)
 
 void ULoginResultWIdget_C::SetResultsData(const class FText& Title, bool bShowError, const class FText& Description)
 {
@@ -136,5 +135,5 @@ void ULoginResultWIdget_C::SetResultsData(const class FText& Title, bool bShowEr
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

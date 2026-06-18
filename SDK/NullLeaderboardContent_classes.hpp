@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass NullLeaderboardContent.NullLeaderboardContent_C
 // 0x0000 (0x0238 - 0x0238)
@@ -23,15 +22,16 @@ class UNullLeaderboardContent_C final : public UCommonUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NullLeaderboardContent_C">();
+		BP_STATIC_CLASS_IMPL("NullLeaderboardContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NullLeaderboardContent_C")
 	}
 	static class UNullLeaderboardContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNullLeaderboardContent_C>();
 	}
 };
-static_assert(alignof(UNullLeaderboardContent_C) == 0x000008, "Wrong alignment on UNullLeaderboardContent_C");
-static_assert(sizeof(UNullLeaderboardContent_C) == 0x000238, "Wrong size on UNullLeaderboardContent_C");
 
-}
-
+SDK_NAMESPACE_END

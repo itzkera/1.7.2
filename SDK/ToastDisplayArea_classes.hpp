@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ToastDisplayArea.ToastDisplayArea_C
 // 0x0038 (0x0270 - 0x0238)
@@ -44,22 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToastDisplayArea_C">();
+		BP_STATIC_CLASS_IMPL("ToastDisplayArea_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToastDisplayArea_C")
 	}
 	static class UToastDisplayArea_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToastDisplayArea_C>();
 	}
 };
-static_assert(alignof(UToastDisplayArea_C) == 0x000008, "Wrong alignment on UToastDisplayArea_C");
-static_assert(sizeof(UToastDisplayArea_C) == 0x000270, "Wrong size on UToastDisplayArea_C");
-static_assert(offsetof(UToastDisplayArea_C, UberGraphFrame) == 0x000238, "Member 'UToastDisplayArea_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, PowerToastWidget) == 0x000240, "Member 'UToastDisplayArea_C::PowerToastWidget' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, SafeZone_0) == 0x000248, "Member 'UToastDisplayArea_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, ToastWidget) == 0x000250, "Member 'UToastDisplayArea_C::ToastWidget' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, ToastQueue) == 0x000258, "Member 'UToastDisplayArea_C::ToastQueue' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, CurrentToast) == 0x000260, "Member 'UToastDisplayArea_C::CurrentToast' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, bCurrentlyDisplayingToast) == 0x000268, "Member 'UToastDisplayArea_C::bCurrentlyDisplayingToast' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "JournalQuestDetails_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function JournalQuestDetails.JournalQuestDetails_C.ExecuteUbergraph_JournalQuestDetails
 // ()
@@ -83,8 +82,8 @@ void UJournalQuestDetails_C::Setup()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Title                                                  (Parm)
-// class FText                             Subtitle                                               (Parm)
+// const class FText&                      Title                                                  (Parm)
+// const class FText&                      Subtitle                                               (Parm)
 // EFortAnnouncementDisplayPreference      DisplayPreference                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UJournalQuestDetails_C::HandleOnBeginSpokenDialog(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
@@ -164,7 +163,7 @@ void UJournalQuestDetails_C::UpdatePanelInfo()
 // Function JournalQuestDetails.JournalQuestDetails_C.AbandonQuest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    questAbandoned_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   questAbandoned_                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UJournalQuestDetails_C::AbandonQuest(bool* questAbandoned_)
 {
@@ -223,7 +222,7 @@ void UJournalQuestDetails_C::StartConversation(class UFortConversation* Conversa
 // Function JournalQuestDetails.JournalQuestDetails_C.IsQuestAudioPlaying
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsQuestAudioPlaying_0                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsQuestAudioPlaying_0                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* IsQuestAudioPlaying_0)
 {
@@ -244,7 +243,7 @@ void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* IsQuestAudioPlaying_0)
 // Function JournalQuestDetails.JournalQuestDetails_C.Set Quest Display Name
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             InText                                                 (Parm)
+// const class FText&                      InText                                                 (Parm)
 
 void UJournalQuestDetails_C::Set_Quest_Display_Name(const class FText& InText)
 {
@@ -264,7 +263,7 @@ void UJournalQuestDetails_C::Set_Quest_Display_Name(const class FText& InText)
 // Function JournalQuestDetails.JournalQuestDetails_C.Get Quest Item Def
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortQuestItemDefinition*         AsFort_Quest_Item_Definition                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortQuestItemDefinition**        AsFort_Quest_Item_Definition                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UJournalQuestDetails_C::Get_Quest_Item_Def(class UFortQuestItemDefinition** AsFort_Quest_Item_Definition)
 {
@@ -285,7 +284,7 @@ void UJournalQuestDetails_C::Get_Quest_Item_Def(class UFortQuestItemDefinition**
 // Function JournalQuestDetails.JournalQuestDetails_C.Is Streaming Quest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bStreamingQuest                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bStreamingQuest                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UJournalQuestDetails_C::Is_Streaming_Quest(bool* bStreamingQuest)
 {
@@ -322,5 +321,5 @@ class FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

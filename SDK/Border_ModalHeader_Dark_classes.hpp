@@ -13,8 +13,7 @@
 #include "Border_ModalHeader_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-ModalHeader-Dark.Border-ModalHeader-Dark_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_ModalHeader_Dark_C final : public UBorder_ModalHeader_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-ModalHeader-Dark_C">();
+		BP_STATIC_CLASS_IMPL("Border-ModalHeader-Dark_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-ModalHeader-Dark_C")
 	}
 	static class UBorder_ModalHeader_Dark_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_ModalHeader_Dark_C>();
 	}
 };
-static_assert(alignof(UBorder_ModalHeader_Dark_C) == 0x000008, "Wrong alignment on UBorder_ModalHeader_Dark_C");
-static_assert(sizeof(UBorder_ModalHeader_Dark_C) == 0x0000B8, "Wrong size on UBorder_ModalHeader_Dark_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SignInWidget.SignInWidget_C
 // 0x0068 (0x0478 - 0x0410)
@@ -50,27 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SignInWidget_C">();
+		BP_STATIC_CLASS_IMPL("SignInWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SignInWidget_C")
 	}
 	static class USignInWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USignInWidget_C>();
 	}
 };
-static_assert(alignof(USignInWidget_C) == 0x000008, "Wrong alignment on USignInWidget_C");
-static_assert(sizeof(USignInWidget_C) == 0x000478, "Wrong size on USignInWidget_C");
-static_assert(offsetof(USignInWidget_C, UberGraphFrame) == 0x000410, "Member 'USignInWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, ButtonSlot) == 0x000418, "Member 'USignInWidget_C::ButtonSlot' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, CommonLazyImage_0) == 0x000420, "Member 'USignInWidget_C::CommonLazyImage_0' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, ContentBox) == 0x000428, "Member 'USignInWidget_C::ContentBox' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, Description) == 0x000430, "Member 'USignInWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, EmailBorder) == 0x000438, "Member 'USignInWidget_C::EmailBorder' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, IconTextButton) == 0x000440, "Member 'USignInWidget_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, PasswordBorder) == 0x000448, "Member 'USignInWidget_C::PasswordBorder' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, Title) == 0x000450, "Member 'USignInWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, LoginInputAction) == 0x000458, "Member 'USignInWidget_C::LoginInputAction' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, HighlightBorderStyle) == 0x000468, "Member 'USignInWidget_C::HighlightBorderStyle' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, NormalBorderStyle) == 0x000470, "Member 'USignInWidget_C::NormalBorderStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

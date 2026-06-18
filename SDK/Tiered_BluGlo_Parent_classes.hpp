@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Tiered_BluGlo_Parent.Tiered_BluGlo_Parent_C
 // 0x0000 (0x10D0 - 0x10D0)
@@ -23,15 +22,16 @@ class ATiered_BluGlo_Parent_C final : public ABuildingContainer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tiered_BluGlo_Parent_C">();
+		BP_STATIC_CLASS_IMPL("Tiered_BluGlo_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tiered_BluGlo_Parent_C")
 	}
 	static class ATiered_BluGlo_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATiered_BluGlo_Parent_C>();
 	}
 };
-static_assert(alignof(ATiered_BluGlo_Parent_C) == 0x000010, "Wrong alignment on ATiered_BluGlo_Parent_C");
-static_assert(sizeof(ATiered_BluGlo_Parent_C) == 0x0010D0, "Wrong size on ATiered_BluGlo_Parent_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LobbyPlayerPadTop.LobbyPlayerPadTop_C
 // 0x01E0 (0x0418 - 0x0238)
@@ -58,27 +57,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LobbyPlayerPadTop_C">();
+		BP_STATIC_CLASS_IMPL("LobbyPlayerPadTop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyPlayerPadTop_C")
 	}
 	static class ULobbyPlayerPadTop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyPlayerPadTop_C>();
 	}
 };
-static_assert(alignof(ULobbyPlayerPadTop_C) == 0x000008, "Wrong alignment on ULobbyPlayerPadTop_C");
-static_assert(sizeof(ULobbyPlayerPadTop_C) == 0x000418, "Wrong size on ULobbyPlayerPadTop_C");
-static_assert(offsetof(ULobbyPlayerPadTop_C, UberGraphFrame) == 0x000238, "Member 'ULobbyPlayerPadTop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, LeaderImage) == 0x000240, "Member 'ULobbyPlayerPadTop_C::LeaderImage' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, OverlayInputAction) == 0x000248, "Member 'ULobbyPlayerPadTop_C::OverlayInputAction' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, PlayerBanner_92) == 0x000250, "Member 'ULobbyPlayerPadTop_C::PlayerBanner_92' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, PowerBox) == 0x000258, "Member 'ULobbyPlayerPadTop_C::PowerBox' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, ReadyStatusBox) == 0x000260, "Member 'ULobbyPlayerPadTop_C::ReadyStatusBox' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, ReadyUpStatusText) == 0x000268, "Member 'ULobbyPlayerPadTop_C::ReadyUpStatusText' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, TextHomeBasePower) == 0x000270, "Member 'ULobbyPlayerPadTop_C::TextHomeBasePower' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, TextPlayerName) == 0x000278, "Member 'ULobbyPlayerPadTop_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, TeamMemberInfo) == 0x000280, "Member 'ULobbyPlayerPadTop_C::TeamMemberInfo' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, PlayerIndex) == 0x000410, "Member 'ULobbyPlayerPadTop_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerPadTop_C, bHovered) == 0x000414, "Member 'ULobbyPlayerPadTop_C::bHovered' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

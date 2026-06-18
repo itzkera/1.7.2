@@ -14,8 +14,7 @@
 #include "InfoEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function InfoEntry.InfoEntry_C.ExecuteUbergraph_InfoEntry
 // ()
@@ -204,7 +203,7 @@ void UInfoEntry_C::SetExpanded(bool bExpanded)
 // Function InfoEntry.InfoEntry_C.RegisterOnClicked
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// const TDelegate<void(class UUserWidget* Widget)>&Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 
 void UInfoEntry_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
 {
@@ -342,5 +341,5 @@ int32 UInfoEntry_C::DoesItemHaveChildren() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

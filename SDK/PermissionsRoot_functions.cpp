@@ -14,8 +14,7 @@
 #include "PermissionsRoot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PermissionsRoot.PermissionsRoot_C.ExecuteUbergraph_PermissionsRoot
 // (HasDefaults)
@@ -82,7 +81,7 @@ void UPermissionsRoot_C::RefreshOutpostInfo()
 // Function PermissionsRoot.PermissionsRoot_C.Input Handle Back
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPermissionsRoot_C::Input_Handle_Back(bool* PassThrough)
 {
@@ -99,5 +98,5 @@ void UPermissionsRoot_C::Input_Handle_Back(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

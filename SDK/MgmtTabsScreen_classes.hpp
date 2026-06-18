@@ -15,8 +15,7 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MgmtTabsScreen.MgmtTabsScreen_C
 // 0x0028 (0x0408 - 0x03E0)
@@ -44,20 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MgmtTabsScreen_C">();
+		BP_STATIC_CLASS_IMPL("MgmtTabsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MgmtTabsScreen_C")
 	}
 	static class UMgmtTabsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMgmtTabsScreen_C>();
 	}
 };
-static_assert(alignof(UMgmtTabsScreen_C) == 0x000008, "Wrong alignment on UMgmtTabsScreen_C");
-static_assert(sizeof(UMgmtTabsScreen_C) == 0x000408, "Wrong size on UMgmtTabsScreen_C");
-static_assert(offsetof(UMgmtTabsScreen_C, UberGraphFrame) == 0x0003E0, "Member 'UMgmtTabsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, PlayerHitThrob) == 0x0003E8, "Member 'UMgmtTabsScreen_C::PlayerHitThrob' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, SafeZone_6) == 0x0003F0, "Member 'UMgmtTabsScreen_C::SafeZone_6' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, TopTabContentWidgetSwitcher) == 0x0003F8, "Member 'UMgmtTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UMgmtTabsScreen_C, TopTabList) == 0x000400, "Member 'UMgmtTabsScreen_C::TopTabList' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

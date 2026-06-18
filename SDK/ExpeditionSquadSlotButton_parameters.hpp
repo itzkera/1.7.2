@@ -14,8 +14,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.ExecuteUbergraph_ExpeditionSquadSlotButton
 // 0x0088 (0x0088 - 0x0000)
@@ -45,27 +45,6 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton) == 0x000008, "Wrong alignment on ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton) == 0x000088, "Wrong size on ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, EntryPoint) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_byte_Variable) == 0x000004, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable) == 0x000008, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable2) == 0x000010, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable2' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable3) == 0x000018, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable3' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable4) == 0x000020, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable4' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable5) == 0x000028, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable5' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable6) == 0x000030, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable6' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, Temp_class_Variable7) == 0x000038, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::Temp_class_Variable7' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, K2Node_Select_Default) == 0x000040, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, K2Node_Event_IsDesignTime) == 0x000048, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_IsSquadSlotLockedBP_ReturnValue) == 0x000049, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_IsSquadSlotLockedBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetOwningLocalPlayer_ReturnValue) == 0x000050, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetOwningLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetItemInSquadSlotBP_ReturnValue) == 0x000058, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetItemInSquadSlotBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetOwningLocalPlayer_ReturnValue2) == 0x000060, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetOwningLocalPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetItemInSquadSlotBP_ReturnValue2) == 0x000068, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetItemInSquadSlotBP_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_IsSquadSlotLockedBP_ReturnValue2) == 0x000070, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_IsSquadSlotLockedBP_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_GetContext_ReturnValue) == 0x000078, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton, CallFunc_IsUsingGamepad_ReturnValue) == 0x000080, "Member 'ExpeditionSquadSlotButton_C_ExecuteUbergraph_ExpeditionSquadSlotButton::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -74,9 +53,6 @@ struct ExpeditionSquadSlotButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ExpeditionSquadSlotButton_C_PreConstruct) == 0x000001, "Wrong alignment on ExpeditionSquadSlotButton_C_PreConstruct");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_PreConstruct) == 0x000001, "Wrong size on ExpeditionSquadSlotButton_C_PreConstruct");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.Get Squad Data
 // 0x0128 (0x0128 - 0x0000)
@@ -97,18 +73,6 @@ public:
 	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHomebaseSquadSlot                     CallFunc_Array_Get_Item;                           // 0x00C8(0x0060)()
 };
-static_assert(alignof(ExpeditionSquadSlotButton_C_Get_Squad_Data) == 0x000008, "Wrong alignment on ExpeditionSquadSlotButton_C_Get_Squad_Data");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_Get_Squad_Data) == 0x000128, "Wrong size on ExpeditionSquadSlotButton_C_Get_Squad_Data");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, OutSquadId) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::OutSquadId' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, OutSquadSlotIndex) == 0x000008, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, ItemTypes) == 0x000010, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::ItemTypes' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000028, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x000030, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_IsValid_ReturnValue) == 0x000034, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad) == 0x000038, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_TryGetHomebaseSquadData_ReturnValue) == 0x0000C0, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_TryGetHomebaseSquadData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Get_Squad_Data, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'ExpeditionSquadSlotButton_C_Get_Squad_Data::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.Send to Skill Tree
 // 0x0028 (0x0028 - 0x0000)
@@ -123,14 +87,6 @@ public:
 	class FName                                   CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree) == 0x000008, "Wrong alignment on ExpeditionSquadSlotButton_C_Send_to_Skill_Tree");
-static_assert(sizeof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree) == 0x000028, "Wrong size on ExpeditionSquadSlotButton_C_Send_to_Skill_Tree");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000000, "Member 'ExpeditionSquadSlotButton_C_Send_to_Skill_Tree::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x000008, "Member 'ExpeditionSquadSlotButton_C_Send_to_Skill_Tree::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree, CallFunc_IsSquadSlotLockedBP_ReturnValue) == 0x00000C, "Member 'ExpeditionSquadSlotButton_C_Send_to_Skill_Tree::CallFunc_IsSquadSlotLockedBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ExpeditionSquadSlotButton_C_Send_to_Skill_Tree::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree, CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue) == 0x000018, "Member 'ExpeditionSquadSlotButton_C_Send_to_Skill_Tree::CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ExpeditionSquadSlotButton_C_Send_to_Skill_Tree, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'ExpeditionSquadSlotButton_C_Send_to_Skill_Tree::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

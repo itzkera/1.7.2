@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AlterationWidget.AlterationWidget_C
 // 0x00F0 (0x0340 - 0x0250)
@@ -74,49 +73,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlterationWidget_C">();
+		BP_STATIC_CLASS_IMPL("AlterationWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlterationWidget_C")
 	}
 	static class UAlterationWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAlterationWidget_C>();
 	}
 };
-static_assert(alignof(UAlterationWidget_C) == 0x000008, "Wrong alignment on UAlterationWidget_C");
-static_assert(sizeof(UAlterationWidget_C) == 0x000340, "Wrong size on UAlterationWidget_C");
-static_assert(offsetof(UAlterationWidget_C, UberGraphFrame) == 0x000250, "Member 'UAlterationWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, AlterationDescription) == 0x000258, "Member 'UAlterationWidget_C::AlterationDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, AlterationName) == 0x000260, "Member 'UAlterationWidget_C::AlterationName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, AlterationShortDescription) == 0x000268, "Member 'UAlterationWidget_C::AlterationShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, EvolutionBorder) == 0x000270, "Member 'UAlterationWidget_C::EvolutionBorder' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Image_6) == 0x000278, "Member 'UAlterationWidget_C::Image_6' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Image_7) == 0x000280, "Member 'UAlterationWidget_C::Image_7' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Image_8) == 0x000288, "Member 'UAlterationWidget_C::Image_8' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Image_22) == 0x000290, "Member 'UAlterationWidget_C::Image_22' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Image_26) == 0x000298, "Member 'UAlterationWidget_C::Image_26' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Image_32) == 0x0002A0, "Member 'UAlterationWidget_C::Image_32' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageAlteration) == 0x0002A8, "Member 'UAlterationWidget_C::ImageAlteration' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageBackground) == 0x0002B0, "Member 'UAlterationWidget_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageLocked) == 0x0002B8, "Member 'UAlterationWidget_C::ImageLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageLockPerk) == 0x0002C0, "Member 'UAlterationWidget_C::ImageLockPerk' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, InfoSwitcher) == 0x0002C8, "Member 'UAlterationWidget_C::InfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LargeInfo) == 0x0002D0, "Member 'UAlterationWidget_C::LargeInfo' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LevelRequired) == 0x0002D8, "Member 'UAlterationWidget_C::LevelRequired' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LevelText) == 0x0002E0, "Member 'UAlterationWidget_C::LevelText' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LockedBox) == 0x0002E8, "Member 'UAlterationWidget_C::LockedBox' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LockedRaritySwitcher) == 0x0002F0, "Member 'UAlterationWidget_C::LockedRaritySwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, PrimarySwitcher) == 0x0002F8, "Member 'UAlterationWidget_C::PrimarySwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, RaritySwitcher) == 0x000300, "Member 'UAlterationWidget_C::RaritySwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ScaleBoxIcon) == 0x000308, "Member 'UAlterationWidget_C::ScaleBoxIcon' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, SmallInfo) == 0x000310, "Member 'UAlterationWidget_C::SmallInfo' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, UnlockedRaritySwitcher) == 0x000318, "Member 'UAlterationWidget_C::UnlockedRaritySwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bIncludeName) == 0x000320, "Member 'UAlterationWidget_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bIncludeShortDescription) == 0x000321, "Member 'UAlterationWidget_C::bIncludeShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bIncludeDescription) == 0x000322, "Member 'UAlterationWidget_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, IconSize) == 0x000323, "Member 'UAlterationWidget_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bUseLargeFormatName) == 0x000324, "Member 'UAlterationWidget_C::bUseLargeFormatName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Locked_Description_Style) == 0x000328, "Member 'UAlterationWidget_C::Locked_Description_Style' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Locked_Text_Style) == 0x000330, "Member 'UAlterationWidget_C::Locked_Text_Style' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ShouldShowRarity) == 0x000338, "Member 'UAlterationWidget_C::ShouldShowRarity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

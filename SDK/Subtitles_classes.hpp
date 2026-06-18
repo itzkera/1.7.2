@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Subtitles.Subtitles_C
 // 0x0018 (0x0278 - 0x0260)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Subtitles_C">();
+		BP_STATIC_CLASS_IMPL("Subtitles_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Subtitles_C")
 	}
 	static class USubtitles_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubtitles_C>();
 	}
 };
-static_assert(alignof(USubtitles_C) == 0x000008, "Wrong alignment on USubtitles_C");
-static_assert(sizeof(USubtitles_C) == 0x000278, "Wrong size on USubtitles_C");
-static_assert(offsetof(USubtitles_C, UberGraphFrame) == 0x000260, "Member 'USubtitles_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubtitles_C, SubtitleDisplay) == 0x000268, "Member 'USubtitles_C::SubtitleDisplay' has a wrong offset!");
-static_assert(offsetof(USubtitles_C, VerticalBoxRoot) == 0x000270, "Member 'USubtitles_C::VerticalBoxRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

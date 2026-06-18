@@ -14,8 +14,7 @@
 #include "MissionDetailsModifierList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionDetailsModifierList.MissionDetailsModifierList_C.PopulateModifiers
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -24,7 +23,7 @@ namespace SDK
 // class UClass*                           NameTextStyle                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                           DescriptionTextStyle                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Show_Descriptions                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UFortGameplayModifierItemDefinition*>ModifierItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>&ModifierItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                                    UseSmallIcons                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMissionDetailsModifierList_C::PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool Show_Descriptions, TArray<class UFortGameplayModifierItemDefinition*>& ModifierItems, bool UseSmallIcons)
@@ -52,7 +51,7 @@ void UMissionDetailsModifierList_C::PopulateModifiers(bool UseTrunctatedList, cl
 // Function MissionDetailsModifierList.MissionDetailsModifierList_C.CreateDebugModifiers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>Modifiers                                              (Parm, OutParm, ZeroConstructor)
+// TArray<class UFortGameplayModifierItemDefinition*>*Modifiers                                              (Parm, OutParm, ZeroConstructor)
 
 void UMissionDetailsModifierList_C::CreateDebugModifiers(TArray<class UFortGameplayModifierItemDefinition*>* Modifiers)
 {
@@ -69,5 +68,5 @@ void UMissionDetailsModifierList_C::CreateDebugModifiers(TArray<class UFortGamep
 		*Modifiers = std::move(Parms.Modifiers);
 }
 
-}
 
+SDK_NAMESPACE_END

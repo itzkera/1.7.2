@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SurvivorTraitsDetailWidget.SurvivorTraitsDetailWidget_C
 // 0x0038 (0x02A8 - 0x0270)
@@ -38,22 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SurvivorTraitsDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("SurvivorTraitsDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SurvivorTraitsDetailWidget_C")
 	}
 	static class USurvivorTraitsDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USurvivorTraitsDetailWidget_C>();
 	}
 };
-static_assert(alignof(USurvivorTraitsDetailWidget_C) == 0x000008, "Wrong alignment on USurvivorTraitsDetailWidget_C");
-static_assert(sizeof(USurvivorTraitsDetailWidget_C) == 0x0002A8, "Wrong size on USurvivorTraitsDetailWidget_C");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'USurvivorTraitsDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, ParentSizeBox) == 0x000278, "Member 'USurvivorTraitsDetailWidget_C::ParentSizeBox' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, SecondaryBorder) == 0x000280, "Member 'USurvivorTraitsDetailWidget_C::SecondaryBorder' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, SecondaryCategoryIndicator) == 0x000288, "Member 'USurvivorTraitsDetailWidget_C::SecondaryCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TertiaryBorder) == 0x000290, "Member 'USurvivorTraitsDetailWidget_C::TertiaryBorder' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TertiaryCategoryIndicator) == 0x000298, "Member 'USurvivorTraitsDetailWidget_C::TertiaryCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TextTertiaryHeader) == 0x0002A0, "Member 'USurvivorTraitsDetailWidget_C::TextTertiaryHeader' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

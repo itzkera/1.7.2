@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C
 // 0x0020 (0x0258 - 0x0238)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaInventoryLimitStatusIndicator_C">();
+		BP_STATIC_CLASS_IMPL("AthenaInventoryLimitStatusIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaInventoryLimitStatusIndicator_C")
 	}
 	static class UAthenaInventoryLimitStatusIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaInventoryLimitStatusIndicator_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryLimitStatusIndicator_C) == 0x000008, "Wrong alignment on UAthenaInventoryLimitStatusIndicator_C");
-static_assert(sizeof(UAthenaInventoryLimitStatusIndicator_C) == 0x000258, "Wrong size on UAthenaInventoryLimitStatusIndicator_C");
-static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, UberGraphFrame) == 0x000238, "Member 'UAthenaInventoryLimitStatusIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, InventoryLabel) == 0x000240, "Member 'UAthenaInventoryLimitStatusIndicator_C::InventoryLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, ItemStorageCountLabel) == 0x000248, "Member 'UAthenaInventoryLimitStatusIndicator_C::ItemStorageCountLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryLimitStatusIndicator_C, ItemStorageLimitLabel) == 0x000250, "Member 'UAthenaInventoryLimitStatusIndicator_C::ItemStorageLimitLabel' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

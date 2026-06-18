@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardInfoButtonWidget.RewardInfoButtonWidget_C
 // 0x0048 (0x0908 - 0x08C0)
@@ -39,20 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardInfoButtonWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardInfoButtonWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardInfoButtonWidget_C")
 	}
 	static class URewardInfoButtonWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardInfoButtonWidget_C>();
 	}
 };
-static_assert(alignof(URewardInfoButtonWidget_C) == 0x000008, "Wrong alignment on URewardInfoButtonWidget_C");
-static_assert(sizeof(URewardInfoButtonWidget_C) == 0x000908, "Wrong size on URewardInfoButtonWidget_C");
-static_assert(offsetof(URewardInfoButtonWidget_C, UberGraphFrame) == 0x0008C0, "Member 'URewardInfoButtonWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, ItemDetails) == 0x0008C8, "Member 'URewardInfoButtonWidget_C::ItemDetails' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, ItemInfo) == 0x0008D0, "Member 'URewardInfoButtonWidget_C::ItemInfo' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, DisplayNameText) == 0x0008D8, "Member 'URewardInfoButtonWidget_C::DisplayNameText' has a wrong offset!");
-static_assert(offsetof(URewardInfoButtonWidget_C, DisplayQuantity) == 0x0008F0, "Member 'URewardInfoButtonWidget_C::DisplayQuantity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

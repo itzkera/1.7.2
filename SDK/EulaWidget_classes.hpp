@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass EulaWidget.EulaWidget_C
 // 0x0060 (0x0468 - 0x0408)
@@ -47,25 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EulaWidget_C">();
+		BP_STATIC_CLASS_IMPL("EulaWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EulaWidget_C")
 	}
 	static class UEulaWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEulaWidget_C>();
 	}
 };
-static_assert(alignof(UEulaWidget_C) == 0x000008, "Wrong alignment on UEulaWidget_C");
-static_assert(sizeof(UEulaWidget_C) == 0x000468, "Wrong size on UEulaWidget_C");
-static_assert(offsetof(UEulaWidget_C, UberGraphFrame) == 0x000410, "Member 'UEulaWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, ButtonsHBox) == 0x000418, "Member 'UEulaWidget_C::ButtonsHBox' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, ConfirmButton) == 0x000420, "Member 'UEulaWidget_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, DeclineButton) == 0x000428, "Member 'UEulaWidget_C::DeclineButton' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, DescriptionText) == 0x000430, "Member 'UEulaWidget_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, SafeZone) == 0x000438, "Member 'UEulaWidget_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, ScrollBox_1) == 0x000440, "Member 'UEulaWidget_C::ScrollBox_1' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, TitleText) == 0x000448, "Member 'UEulaWidget_C::TitleText' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, OnEulaResponse) == 0x000450, "Member 'UEulaWidget_C::OnEulaResponse' has a wrong offset!");
-static_assert(offsetof(UEulaWidget_C, SelectedResponse) == 0x000460, "Member 'UEulaWidget_C::SelectedResponse' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

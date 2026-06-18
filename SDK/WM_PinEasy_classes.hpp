@@ -13,8 +13,7 @@
 #include "WM_Pin_Master_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WM_PinEasy.WM_PinEasy_C
 // 0x0000 (0x04B8 - 0x04B8)
@@ -23,15 +22,16 @@ class AWM_PinEasy_C final : public AWM_Pin_Master_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WM_PinEasy_C">();
+		BP_STATIC_CLASS_IMPL("WM_PinEasy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WM_PinEasy_C")
 	}
 	static class AWM_PinEasy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWM_PinEasy_C>();
 	}
 };
-static_assert(alignof(AWM_PinEasy_C) == 0x000008, "Wrong alignment on AWM_PinEasy_C");
-static_assert(sizeof(AWM_PinEasy_C) == 0x0004B8, "Wrong size on AWM_PinEasy_C");
 
-}
-
+SDK_NAMESPACE_END

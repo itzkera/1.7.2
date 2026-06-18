@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.ExecuteUbergraph_AccountLinkingWindow
 // 0x01C8 (0x01C8 - 0x0000)
@@ -26,7 +26,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortAsyncAction_WebCreateEpicAccountAndLink* CallFunc_WebCreateEpicAccountAndLink_ReturnValue;  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_WebCreateEpicAccountAndLink* CallFunc_WebCreateEpicAccountAndLink_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -44,12 +44,12 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00A8(0x0008)(NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate8;             // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate9;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortAsyncAction_CheckHasRedeemForAccess* CallFunc_CheckHasRedeemForAccess_ReturnValue;      // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_CheckHasRedeemForAccess* CallFunc_CheckHasRedeemForAccess_ReturnValue;    // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate10;            // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate11;            // 0x00F0(0x0010)(ZeroConstructor, NoDestructor)
-	class UFortAsyncAction_ShowPlatformRedeemCode* CallFunc_ShowPlatformRedeemCode_ReturnValue;       // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_ShowPlatformRedeemCode* CallFunc_ShowPlatformRedeemCode_ReturnValue;      // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button10;               // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -72,50 +72,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate14;            // 0x01B0(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow");
-static_assert(sizeof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow) == 0x0001C8, "Wrong size on AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, EntryPoint) == 0x000000, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_WebCreateEpicAccountAndLink_ReturnValue) == 0x000028, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_WebCreateEpicAccountAndLink_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate4) == 0x000048, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_ShowPlatformStoreForPurchase_ReturnValue) == 0x000058, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_ShowPlatformStoreForPurchase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate5) == 0x000060, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_IsValid_ReturnValue2) == 0x000070, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate6) == 0x000078, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_CreateHeadlessAccount_ReturnValue) == 0x000088, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_CreateHeadlessAccount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, Temp_bool_Variable) == 0x000090, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_IsValid_ReturnValue3) == 0x000091, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate7) == 0x000098, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000A8, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate8) == 0x0000B0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate9) == 0x0000C0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate9' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_CheckHasRedeemForAccess_ReturnValue) == 0x0000D0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_CheckHasRedeemForAccess_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate10) == 0x0000D8, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate10' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_IsValid_ReturnValue4) == 0x0000E8, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate11) == 0x0000F0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate11' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_ShowPlatformRedeemCode_ReturnValue) == 0x000100, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_ShowPlatformRedeemCode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button10) == 0x000108, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button10' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_IsValid_ReturnValue5) == 0x000110, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button9) == 0x000118, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button9' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button8) == 0x000120, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button8' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button7) == 0x000128, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button7' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button6) == 0x000130, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button6' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button5) == 0x000138, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button5' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button4) == 0x000140, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button4' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate12) == 0x000148, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_IsPurchaseFree_ReturnValue) == 0x000158, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_IsPurchaseFree_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_Select_Default) == 0x000160, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_GetUINavigationManager_ReturnValue) == 0x000178, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_GetUINavigationManager_ReturnValue2) == 0x000180, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_GetUINavigationManager_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, CallFunc_GetUINavigationManager_ReturnValue3) == 0x000188, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::CallFunc_GetUINavigationManager_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button3) == 0x000190, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button3' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button2) == 0x000198, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate13) == 0x0001A0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate13' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_CreateDelegate_OutputDelegate14) == 0x0001B0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_CreateDelegate_OutputDelegate14' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow, K2Node_ComponentBoundEvent_Button) == 0x0001C0, "Member 'AccountLinkingWindow_C_ExecuteUbergraph_AccountLinkingWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -124,9 +80,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonPurchasePack_K2Node_ComponentBoundEvent_175_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -135,9 +88,6 @@ struct AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_305_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -146,9 +96,6 @@ struct AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -157,9 +104,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonSkipSignInNoThanks_K2Node_ComponentBoundEvent_483_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -168,9 +112,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoun
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonSkipSignInLogIn_K2Node_ComponentBoundEvent_463_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -179,9 +120,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonSkipSignInSignIn_K2Node_ComponentBoundEvent_444_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -190,9 +128,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_41
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonSignUp_K2Node_ComponentBoundEvent_416_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -201,9 +136,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonLogIn_K2Node_ComponentBoundEvent_431_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -212,9 +144,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonLogInFromPurchase_K2Node_ComponentBoundEvent_464_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -223,9 +152,6 @@ struct AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AccountLinkingWindow_C_BndEvt__ButtonNoThanks_K2Node_ComponentBoundEvent_447_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.SetLinkedAccountNeedsPurchase
 // 0x0001 (0x0001 - 0x0000)
@@ -234,9 +160,6 @@ struct AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase final
 public:
 	bool                                          bInLinkedAccountNeedsPurchase;                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase) == 0x000001, "Wrong alignment on AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase");
-static_assert(sizeof(AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase) == 0x000001, "Wrong size on AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase");
-static_assert(offsetof(AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase, bInLinkedAccountNeedsPurchase) == 0x000000, "Member 'AccountLinkingWindow_C_SetLinkedAccountNeedsPurchase::bInLinkedAccountNeedsPurchase' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.HideLinkOptions
 // 0x0004 (0x0004 - 0x0000)
@@ -248,12 +171,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountLinkingWindow_C_HideLinkOptions) == 0x000001, "Wrong alignment on AccountLinkingWindow_C_HideLinkOptions");
-static_assert(sizeof(AccountLinkingWindow_C_HideLinkOptions) == 0x000004, "Wrong size on AccountLinkingWindow_C_HideLinkOptions");
-static_assert(offsetof(AccountLinkingWindow_C_HideLinkOptions, Temp_byte_Variable) == 0x000000, "Member 'AccountLinkingWindow_C_HideLinkOptions::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_HideLinkOptions, Temp_byte_Variable2) == 0x000001, "Member 'AccountLinkingWindow_C_HideLinkOptions::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_HideLinkOptions, Temp_bool_Variable) == 0x000002, "Member 'AccountLinkingWindow_C_HideLinkOptions::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_HideLinkOptions, K2Node_Select_Default) == 0x000003, "Member 'AccountLinkingWindow_C_HideLinkOptions::K2Node_Select_Default' has a wrong offset!");
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.SetupLinkText
 // 0x0018 (0x0018 - 0x0000)
@@ -264,11 +181,6 @@ public:
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue2;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccountLinkingWindow_C_SetupLinkText) == 0x000008, "Wrong alignment on AccountLinkingWindow_C_SetupLinkText");
-static_assert(sizeof(AccountLinkingWindow_C_SetupLinkText) == 0x000018, "Wrong size on AccountLinkingWindow_C_SetupLinkText");
-static_assert(offsetof(AccountLinkingWindow_C_SetupLinkText, CallFunc_GetPlatformName_ReturnValue) == 0x000000, "Member 'AccountLinkingWindow_C_SetupLinkText::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_SetupLinkText, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000010, "Member 'AccountLinkingWindow_C_SetupLinkText::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccountLinkingWindow_C_SetupLinkText, CallFunc_EqualEqual_StrStr_ReturnValue2) == 0x000011, "Member 'AccountLinkingWindow_C_SetupLinkText::CallFunc_EqualEqual_StrStr_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

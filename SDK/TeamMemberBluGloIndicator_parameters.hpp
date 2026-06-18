@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.SetPlayer
 // 0x0090 (0x0090 - 0x0000)
@@ -41,23 +41,6 @@ public:
 	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(TeamMemberBluGloIndicator_C_SetPlayer) == 0x000008, "Wrong alignment on TeamMemberBluGloIndicator_C_SetPlayer");
-static_assert(sizeof(TeamMemberBluGloIndicator_C_SetPlayer) == 0x000090, "Wrong size on TeamMemberBluGloIndicator_C_SetPlayer");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, PlayerNetId) == 0x000000, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::PlayerNetId' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, Temp_int_Array_Index_Variable) == 0x000018, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_GetGameState_ReturnValue) == 0x000028, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_Array_Get_Item) == 0x000040, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, K2Node_DynamicCast_AsFort_Player_State_Zone) == 0x000050, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::K2Node_DynamicCast_AsFort_Player_State_Zone' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_Less_IntInt_ReturnValue) == 0x000059, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_GetUniqueID_ReturnValue) == 0x000060, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x000078, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, CallFunc_IsValid_ReturnValue) == 0x000079, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_SetPlayer, K2Node_CreateDelegate_OutputDelegate2) == 0x000080, "Member 'TeamMemberBluGloIndicator_C_SetPlayer::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.OnPlayerAccumulatedItemsUpdated
 // 0x000C (0x000C - 0x0000)
@@ -69,11 +52,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated) == 0x000004, "Wrong alignment on TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated");
-static_assert(sizeof(TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated) == 0x00000C, "Wrong size on TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated, CallFunc_GetNumOfAccumulatedItem_ReturnValue) == 0x000000, "Member 'TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated::CallFunc_GetNumOfAccumulatedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'TeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

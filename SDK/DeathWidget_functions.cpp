@@ -14,8 +14,7 @@
 #include "DeathWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DeathWidget.DeathWidget_C.ExecuteUbergraph_DeathWidget
 // ()
@@ -68,7 +67,7 @@ void UDeathWidget_C::OnPawnSpawned()
 // Function DeathWidget.DeathWidget_C.OnPawnDied
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           DeathReport                                            (Parm, OutParm, ReferenceParm)
+// struct FFortPlayerDeathReport&          DeathReport                                            (Parm, OutParm, ReferenceParm)
 
 void UDeathWidget_C::OnPawnDied(struct FFortPlayerDeathReport& DeathReport)
 {
@@ -150,5 +149,5 @@ void UDeathWidget_C::ShowExtraLivesText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

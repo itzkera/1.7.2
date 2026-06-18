@@ -14,15 +14,14 @@
 #include "UsedPlacementActorsContext_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function UsedPlacementActorsContext.UsedPlacementActorsContext_C.ProvideActorsSet
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class AActor*>                   ResultingActorsSet                                     (Parm, OutParm, ZeroConstructor)
+// TArray<class AActor*>*                  ResultingActorsSet                                     (Parm, OutParm, ZeroConstructor)
 
 void UUsedPlacementActorsContext_C::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const
 {
@@ -42,5 +41,5 @@ void UUsedPlacementActorsContext_C::ProvideActorsSet(class UObject* QuerierObjec
 		*ResultingActorsSet = std::move(Parms.ResultingActorsSet);
 }
 
-}
 
+SDK_NAMESPACE_END

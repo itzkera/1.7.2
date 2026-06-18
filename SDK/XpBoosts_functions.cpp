@@ -14,8 +14,7 @@
 #include "XpBoosts_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBoosts.XpBoosts_C.ExecuteUbergraph_XpBoosts
 // (HasDefaults)
@@ -88,7 +87,7 @@ void UXpBoosts_C::On_Party_Left()
 // Function XpBoosts.XpBoosts_C.Give Boost Clicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 Player_To_Boost_0                                      (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          Player_To_Boost_0                                      (Parm, HasGetValueTypeHash)
 
 void UXpBoosts_C::Give_Boost_Clicked(const struct FUniqueNetIdRepl& Player_To_Boost_0)
 {
@@ -184,7 +183,7 @@ void UXpBoosts_C::Update_Total_Boost_Amounts()
 // Function XpBoosts.XpBoosts_C.HandleOnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewMemberState                                         (Parm)
+// const struct FFortTeamMemberInfo&       NewMemberState                                         (Parm)
 
 void UXpBoosts_C::HandleOnTeamMemberStateChanged(const struct FFortTeamMemberInfo& NewMemberState)
 {
@@ -242,5 +241,5 @@ void UXpBoosts_C::Activate()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

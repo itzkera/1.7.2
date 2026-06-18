@@ -14,8 +14,7 @@
 #include "Results_TopPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TopPanel.Results_TopPanel_C.ExecuteUbergraph_Results_TopPanel
 // ()
@@ -84,5 +83,5 @@ void UResults_TopPanel_C::Initialize(EFortCompletionResult CompletionResult)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

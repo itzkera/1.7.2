@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PowerWidget.PowerWidget_C
 // 0x0098 (0x02F8 - 0x0260)
@@ -60,33 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerWidget_C">();
+		BP_STATIC_CLASS_IMPL("PowerWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerWidget_C")
 	}
 	static class UPowerWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPowerWidget_C>();
 	}
 };
-static_assert(alignof(UPowerWidget_C) == 0x000008, "Wrong alignment on UPowerWidget_C");
-static_assert(sizeof(UPowerWidget_C) == 0x0002F8, "Wrong size on UPowerWidget_C");
-static_assert(offsetof(UPowerWidget_C, UberGraphFrame) == 0x000260, "Member 'UPowerWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, BarBG) == 0x000268, "Member 'UPowerWidget_C::BarBG' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, HomebaseRatingBar) == 0x000270, "Member 'UPowerWidget_C::HomebaseRatingBar' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, Image_Power) == 0x000278, "Member 'UPowerWidget_C::Image_Power' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, NumericText_RatingValue) == 0x000280, "Member 'UPowerWidget_C::NumericText_RatingValue' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, OuterGlow) == 0x000288, "Member 'UPowerWidget_C::OuterGlow' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, Overlay_1) == 0x000290, "Member 'UPowerWidget_C::Overlay_1' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, PowerIconGlow) == 0x000298, "Member 'UPowerWidget_C::PowerIconGlow' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, RatingValue) == 0x0002A0, "Member 'UPowerWidget_C::RatingValue' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, InterpDuration) == 0x0002A4, "Member 'UPowerWidget_C::InterpDuration' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, ShowProgress) == 0x0002A8, "Member 'UPowerWidget_C::ShowProgress' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, CurrentRating) == 0x0002AC, "Member 'UPowerWidget_C::CurrentRating' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, cParty) == 0x0002B0, "Member 'UPowerWidget_C::cParty' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, cSolo) == 0x0002C0, "Member 'UPowerWidget_C::cSolo' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, LocalPlayerWidget) == 0x0002D0, "Member 'UPowerWidget_C::LocalPlayerWidget' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, Power_Increased) == 0x0002D8, "Member 'UPowerWidget_C::Power_Increased' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, Previously_Had_Teammates) == 0x0002E8, "Member 'UPowerWidget_C::Previously_Had_Teammates' has a wrong offset!");
-static_assert(offsetof(UPowerWidget_C, Power_Increased_Sound) == 0x0002F0, "Member 'UPowerWidget_C::Power_Increased_Sound' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

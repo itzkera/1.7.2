@@ -14,8 +14,7 @@
 #include "HeroSquadManagementScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.ExecuteUbergraph_HeroSquadManagementScreen
 // ()
@@ -164,7 +163,7 @@ ESlateVisibility UHeroSquadManagementScreen_C::GetInZoneVisibility()
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.HandleClosePicker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UHeroSquadManagementScreen_C::HandleClosePicker(bool* bPassThrough)
 {
@@ -185,8 +184,8 @@ void UHeroSquadManagementScreen_C::HandleClosePicker(bool* bPassThrough)
 // Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.ShowSlotInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             HeaderText                                             (Parm)
-// class FText                             BodyText                                               (Parm)
+// const class FText&                      HeaderText                                             (Parm)
+// const class FText&                      BodyText                                               (Parm)
 
 void UHeroSquadManagementScreen_C::ShowSlotInfo(const class FText& HeaderText, const class FText& BodyText)
 {
@@ -265,5 +264,5 @@ void UHeroSquadManagementScreen_C::UpdateSquadSlotInfoPanel(int32 SquadSlotIndex
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

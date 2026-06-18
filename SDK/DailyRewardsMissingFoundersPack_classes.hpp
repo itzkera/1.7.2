@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DailyRewardsMissingFoundersPack.DailyRewardsMissingFoundersPack_C
 // 0x0028 (0x02F8 - 0x02D0)
@@ -36,21 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DailyRewardsMissingFoundersPack_C">();
+		BP_STATIC_CLASS_IMPL("DailyRewardsMissingFoundersPack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DailyRewardsMissingFoundersPack_C")
 	}
 	static class UDailyRewardsMissingFoundersPack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDailyRewardsMissingFoundersPack_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsMissingFoundersPack_C) == 0x000008, "Wrong alignment on UDailyRewardsMissingFoundersPack_C");
-static_assert(sizeof(UDailyRewardsMissingFoundersPack_C) == 0x0002F8, "Wrong size on UDailyRewardsMissingFoundersPack_C");
-static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, UberGraphFrame) == 0x0002D0, "Member 'UDailyRewardsMissingFoundersPack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, FortItemCard) == 0x0002D8, "Member 'UDailyRewardsMissingFoundersPack_C::FortItemCard' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, MESSAGE) == 0x0002E0, "Member 'UDailyRewardsMissingFoundersPack_C::MESSAGE' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, NumMaxEpicRewards) == 0x0002E8, "Member 'UDailyRewardsMissingFoundersPack_C::NumMaxEpicRewards' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, Length_Of_Week) == 0x0002EC, "Member 'UDailyRewardsMissingFoundersPack_C::Length_Of_Week' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsMissingFoundersPack_C, Founder_Item) == 0x0002F0, "Member 'UDailyRewardsMissingFoundersPack_C::Founder_Item' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

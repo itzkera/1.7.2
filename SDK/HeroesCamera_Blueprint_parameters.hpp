@@ -14,8 +14,8 @@
 #include "InputCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.ExecuteUbergraph_HeroesCamera_Blueprint
 // 0x0120 (0x0120 - 0x0000)
@@ -53,33 +53,6 @@ public:
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortTimeOfDayManager*                  CallFunc_GetTimeOfDayManagerFromContext_ReturnValue; // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint) == 0x000008, "Wrong alignment on HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint");
-static_assert(sizeof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint) == 0x000120, "Wrong size on HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, EntryPoint) == 0x000000, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, K2Node_InputKeyEvent_Key3) == 0x000008, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::K2Node_InputKeyEvent_Key3' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, Temp_struct_Variable) == 0x000020, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, K2Node_InputKeyEvent_Key2) == 0x000038, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::K2Node_InputKeyEvent_Key2' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, K2Node_InputKeyEvent_Key) == 0x000050, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::K2Node_InputKeyEvent_Key' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, Temp_struct_Variable2) == 0x000068, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetPlayerController_ReturnValue) == 0x000080, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, K2Node_InputKeyEvent_Key4) == 0x000088, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::K2Node_InputKeyEvent_Key4' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, K2Node_Event_DeltaSeconds) == 0x0000A0, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetPlayerController_ReturnValue2) == 0x0000A8, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetPlayerController_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetInputMouseDelta_DeltaX) == 0x0000B0, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetInputMouseDelta_DeltaX' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetInputMouseDelta_DeltaY) == 0x0000B4, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetInputMouseDelta_DeltaY' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000B8, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors) == 0x0000C0, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000E0, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_BreakRotator_Roll) == 0x0000EC, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_BreakRotator_Pitch) == 0x0000F0, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_BreakRotator_Yaw) == 0x0000F4, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetPlayerController_ReturnValue3) == 0x0000F8, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetPlayerController_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000100, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_MakeRotator_ReturnValue) == 0x000104, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000110, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000118, "Member 'HeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -88,9 +61,6 @@ struct HeroesCamera_Blueprint_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_ReceiveTick) == 0x000004, "Wrong alignment on HeroesCamera_Blueprint_C_ReceiveTick");
-static_assert(sizeof(HeroesCamera_Blueprint_C_ReceiveTick) == 0x000004, "Wrong size on HeroesCamera_Blueprint_C_ReceiveTick");
-static_assert(offsetof(HeroesCamera_Blueprint_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'HeroesCamera_Blueprint_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4
 // 0x0018 (0x0018 - 0x0000)
@@ -99,9 +69,6 @@ struct HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4) == 0x000008, "Wrong alignment on HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4");
-static_assert(sizeof(HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4) == 0x000018, "Wrong size on HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4");
-static_assert(offsetof(HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4, Key) == 0x000000, "Member 'HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4::Key' has a wrong offset!");
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5
 // 0x0018 (0x0018 - 0x0000)
@@ -110,9 +77,6 @@ struct HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5) == 0x000008, "Wrong alignment on HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5");
-static_assert(sizeof(HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5) == 0x000018, "Wrong size on HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5");
-static_assert(offsetof(HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5, Key) == 0x000000, "Member 'HeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5::Key' has a wrong offset!");
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6
 // 0x0018 (0x0018 - 0x0000)
@@ -121,9 +85,6 @@ struct HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6) == 0x000008, "Wrong alignment on HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6");
-static_assert(sizeof(HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6) == 0x000018, "Wrong size on HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6");
-static_assert(offsetof(HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6, Key) == 0x000000, "Member 'HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6::Key' has a wrong offset!");
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7
 // 0x0018 (0x0018 - 0x0000)
@@ -132,9 +93,6 @@ struct HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7) == 0x000008, "Wrong alignment on HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7");
-static_assert(sizeof(HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7) == 0x000018, "Wrong size on HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7");
-static_assert(offsetof(HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7, Key) == 0x000000, "Member 'HeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7::Key' has a wrong offset!");
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.HandleMousePress
 // 0x0018 (0x0018 - 0x0000)
@@ -145,11 +103,6 @@ public:
 	class AFortPlayerPawn*                        CallFunc_GetHeroPlayerPawnByIndex_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroesCamera_Blueprint_C_HandleMousePress) == 0x000008, "Wrong alignment on HeroesCamera_Blueprint_C_HandleMousePress");
-static_assert(sizeof(HeroesCamera_Blueprint_C_HandleMousePress) == 0x000018, "Wrong size on HeroesCamera_Blueprint_C_HandleMousePress");
-static_assert(offsetof(HeroesCamera_Blueprint_C_HandleMousePress, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'HeroesCamera_Blueprint_C_HandleMousePress::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_HandleMousePress, CallFunc_GetHeroPlayerPawnByIndex_ReturnValue) == 0x000008, "Member 'HeroesCamera_Blueprint_C_HandleMousePress::CallFunc_GetHeroPlayerPawnByIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroesCamera_Blueprint_C_HandleMousePress, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'HeroesCamera_Blueprint_C_HandleMousePress::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

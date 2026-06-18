@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_SimpleItemWidget.BP_SimpleItemWidget_C.ExecuteUbergraph_BP_SimpleItemWidget
 // 0x0078 (0x0078 - 0x0000)
@@ -33,17 +33,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
 };
-static_assert(alignof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget) == 0x000008, "Wrong alignment on BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget");
-static_assert(sizeof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget) == 0x000078, "Wrong size on BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, EntryPoint) == 0x000000, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, Temp_bool_Variable) == 0x000004, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, Temp_byte_Variable) == 0x000005, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, Temp_byte_Variable2) == 0x000006, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000007, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, K2Node_Select_Default) == 0x000008, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, K2Node_MakeArray_Array) == 0x000050, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget, CallFunc_Format_ReturnValue) == 0x000060, "Member 'BP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

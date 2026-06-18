@@ -14,8 +14,7 @@
 #include "AthenaQuickbarSecondary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.ExecuteUbergraph_AthenaQuickbarSecondary
 // ()
@@ -244,5 +243,5 @@ void UAthenaQuickbarSecondary_C::HandleShowHideRail()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

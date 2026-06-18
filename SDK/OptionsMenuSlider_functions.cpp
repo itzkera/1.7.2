@@ -14,8 +14,7 @@
 #include "OptionsMenuSlider_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OptionsMenuSlider.OptionsMenuSlider_C.ExecuteUbergraph_OptionsMenuSlider
 // (HasDefaults)
@@ -108,8 +107,8 @@ void UOptionsMenuSlider_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMo
 // Function OptionsMenuSlider.OptionsMenuSlider_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuSlider_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -130,7 +129,7 @@ void UOptionsMenuSlider_C::OnMouseEnter(const struct FGeometry& MyGeometry, cons
 // Function OptionsMenuSlider.OptionsMenuSlider_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuSlider_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -164,9 +163,9 @@ void UOptionsMenuSlider_C::Construct()
 // Function OptionsMenuSlider.OptionsMenuSlider_C.Update Slider
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Slider_Text                                            (Parm)
+// const class FText&                      Slider_Text                                            (Parm)
 // float                                   Slider_Value                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Hover_Text_0                                           (Parm)
+// const class FText&                      Hover_Text_0                                           (Parm)
 // class UCommonTextBlock*                 Tooltip_Text_Block                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UOptionsMenuSlider_C::Update_Slider(const class FText& Slider_Text, float Slider_Value, const class FText& Hover_Text_0, class UCommonTextBlock* Tooltip_Text_Block)
@@ -200,5 +199,5 @@ void UOptionsMenuSlider_C::Center_on_Widget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

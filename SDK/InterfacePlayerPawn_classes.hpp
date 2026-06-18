@@ -13,12 +13,11 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass InterfacePlayerPawn.InterfacePlayerPawn_C
-// 0x0000 (0x0028 - 0x0028)
-class IInterfacePlayerPawn_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IInterfacePlayerPawn_C final
 {
 public:
 	void MeleeSwingRight();
@@ -30,15 +29,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InterfacePlayerPawn_C">();
+		BP_STATIC_CLASS_IMPL("InterfacePlayerPawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterfacePlayerPawn_C")
 	}
 	static class IInterfacePlayerPawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IInterfacePlayerPawn_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IInterfacePlayerPawn_C) == 0x000008, "Wrong alignment on IInterfacePlayerPawn_C");
-static_assert(sizeof(IInterfacePlayerPawn_C) == 0x000028, "Wrong size on IInterfacePlayerPawn_C");
 
-}
-
+SDK_NAMESPACE_END

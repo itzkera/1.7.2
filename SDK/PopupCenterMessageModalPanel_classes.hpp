@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PopupCenterMessageModalPanel.PopupCenterMessageModalPanel_C
 // 0x0078 (0x0480 - 0x0408)
@@ -45,23 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PopupCenterMessageModalPanel_C">();
+		BP_STATIC_CLASS_IMPL("PopupCenterMessageModalPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCenterMessageModalPanel_C")
 	}
 	static class UPopupCenterMessageModalPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCenterMessageModalPanel_C>();
 	}
 };
-static_assert(alignof(UPopupCenterMessageModalPanel_C) == 0x000008, "Wrong alignment on UPopupCenterMessageModalPanel_C");
-static_assert(sizeof(UPopupCenterMessageModalPanel_C) == 0x000480, "Wrong size on UPopupCenterMessageModalPanel_C");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, UberGraphFrame) == 0x000410, "Member 'UPopupCenterMessageModalPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, CenterMessageText) == 0x000418, "Member 'UPopupCenterMessageModalPanel_C::CenterMessageText' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, LeaveButton) == 0x000420, "Member 'UPopupCenterMessageModalPanel_C::LeaveButton' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, MessageOverlay) == 0x000428, "Member 'UPopupCenterMessageModalPanel_C::MessageOverlay' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, WaitingForPlayersText) == 0x000430, "Member 'UPopupCenterMessageModalPanel_C::WaitingForPlayersText' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, WaitingForOutpostOwnerText) == 0x000448, "Member 'UPopupCenterMessageModalPanel_C::WaitingForOutpostOwnerText' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, MatchTimerHandle) == 0x000460, "Member 'UPopupCenterMessageModalPanel_C::MatchTimerHandle' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageModalPanel_C, WaitingForMatchToBeginText) == 0x000468, "Member 'UPopupCenterMessageModalPanel_C::WaitingForMatchToBeginText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

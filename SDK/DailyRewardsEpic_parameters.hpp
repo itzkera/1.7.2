@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DailyRewardsEpic.DailyRewardsEpic_C.ExecuteUbergraph_DailyRewardsEpic
 // 0x00C8 (0x00C8 - 0x0000)
@@ -44,26 +44,6 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic) == 0x000008, "Wrong alignment on DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic");
-static_assert(sizeof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic) == 0x0000C8, "Wrong size on DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, EntryPoint) == 0x000000, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable) == 0x000004, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable2) == 0x000005, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable3) == 0x000006, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable4) == 0x000007, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable5) == 0x000008, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable6) == 0x000009, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable7) == 0x00000A, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, CallFunc_GetRarity_ReturnValue) == 0x000030, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable8) == 0x000031, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, CallFunc_BPGetRarityData_ReturnValue) == 0x000038, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable9) == 0x0000B8, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable10) == 0x0000B9, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, Temp_byte_Variable11) == 0x0000BA, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::Temp_byte_Variable11' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000BC, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic, K2Node_Select_Default) == 0x0000C0, "Member 'DailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

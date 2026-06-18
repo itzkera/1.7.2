@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C
 // 0x0020 (0x0258 - 0x0238)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestInfo_BulletListEntry_C">();
+		BP_STATIC_CLASS_IMPL("QuestInfo_BulletListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestInfo_BulletListEntry_C")
 	}
 	static class UQuestInfo_BulletListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestInfo_BulletListEntry_C>();
 	}
 };
-static_assert(alignof(UQuestInfo_BulletListEntry_C) == 0x000008, "Wrong alignment on UQuestInfo_BulletListEntry_C");
-static_assert(sizeof(UQuestInfo_BulletListEntry_C) == 0x000258, "Wrong size on UQuestInfo_BulletListEntry_C");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageBorder) == 0x000238, "Member 'UQuestInfo_BulletListEntry_C::ImageBorder' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, ImageEntryIcon) == 0x000240, "Member 'UQuestInfo_BulletListEntry_C::ImageEntryIcon' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, SizeBoxIcon) == 0x000248, "Member 'UQuestInfo_BulletListEntry_C::SizeBoxIcon' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletListEntry_C, TextBoxEntryText) == 0x000250, "Member 'UQuestInfo_BulletListEntry_C::TextBoxEntryText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

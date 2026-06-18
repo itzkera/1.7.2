@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C
 // 0x0028 (0x0260 - 0x0238)
@@ -44,20 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultObjectiveContentWidget_C">();
+		BP_STATIC_CLASS_IMPL("DefaultObjectiveContentWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultObjectiveContentWidget_C")
 	}
 	static class UDefaultObjectiveContentWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefaultObjectiveContentWidget_C>();
 	}
 };
-static_assert(alignof(UDefaultObjectiveContentWidget_C) == 0x000008, "Wrong alignment on UDefaultObjectiveContentWidget_C");
-static_assert(sizeof(UDefaultObjectiveContentWidget_C) == 0x000260, "Wrong size on UDefaultObjectiveContentWidget_C");
-static_assert(offsetof(UDefaultObjectiveContentWidget_C, UberGraphFrame) == 0x000238, "Member 'UDefaultObjectiveContentWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDefaultObjectiveContentWidget_C, MissionObjectiveProgressBarsManager) == 0x000240, "Member 'UDefaultObjectiveContentWidget_C::MissionObjectiveProgressBarsManager' has a wrong offset!");
-static_assert(offsetof(UDefaultObjectiveContentWidget_C, RichTextSlot) == 0x000248, "Member 'UDefaultObjectiveContentWidget_C::RichTextSlot' has a wrong offset!");
-static_assert(offsetof(UDefaultObjectiveContentWidget_C, TrackedObjective) == 0x000250, "Member 'UDefaultObjectiveContentWidget_C::TrackedObjective' has a wrong offset!");
-static_assert(offsetof(UDefaultObjectiveContentWidget_C, bConfigureAsHUD) == 0x000258, "Member 'UDefaultObjectiveContentWidget_C::bConfigureAsHUD' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

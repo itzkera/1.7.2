@@ -14,8 +14,7 @@
 #include "BP_PlayerControllerOutpost_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C.ExecuteUbergraph_BP_PlayerControllerOutpost
 // ()
@@ -70,5 +69,5 @@ void ABP_PlayerControllerOutpost_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

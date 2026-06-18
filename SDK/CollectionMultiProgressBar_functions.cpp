@@ -14,8 +14,7 @@
 #include "CollectionMultiProgressBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.ExecuteUbergraph_CollectionMultiProgressBar
 // ()
@@ -54,7 +53,7 @@ void UCollectionMultiProgressBar_C::Construct()
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Setup
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FCollectionMissionBadgeDisplayInfo>InBarInfos                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FCollectionMissionBadgeDisplayInfo>&InBarInfos                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   AchievedCount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCollectionMultiProgressBar_C::Setup(TArray<struct FCollectionMissionBadgeDisplayInfo>& InBarInfos, int32 AchievedCount)
@@ -122,5 +121,5 @@ void UCollectionMultiProgressBar_C::PlayFlashAnimation()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

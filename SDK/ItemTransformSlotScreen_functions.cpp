@@ -14,8 +14,7 @@
 #include "ItemTransformSlotScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.ExecuteUbergraph_ItemTransformSlotScreen
 // ()
@@ -332,9 +331,9 @@ void UItemTransformSlotScreen_C::ResetScreen()
 // Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.Get Transform Data
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                SacrificeItems_0                                       (Parm, OutParm, ZeroConstructor)
-// int32                                   CurrentSacrificePoints                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTier                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UFortItem*>*               SacrificeItems_0                                       (Parm, OutParm, ZeroConstructor)
+// int32*                                  CurrentSacrificePoints                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  CurrentTier                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformSlotScreen_C::Get_Transform_Data(TArray<class UFortItem*>* SacrificeItems_0, int32* CurrentSacrificePoints, int32* CurrentTier)
 {
@@ -391,5 +390,5 @@ class UItemTransformSlotEntry_C* UItemTransformSlotScreen_C::GetSlotFromIndex()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

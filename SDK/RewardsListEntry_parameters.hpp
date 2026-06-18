@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
-#include "RewardListEntryType_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "RewardListEntryType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function RewardsListEntry.RewardsListEntry_C.ExecuteUbergraph_RewardsListEntry
 // 0x0438 (0x0438 - 0x0000)
@@ -79,52 +79,6 @@ public:
 	ERewardListEntryType                          Temp_byte_Variable7;                               // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x0431(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry) == 0x000008, "Wrong alignment on RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry");
-static_assert(sizeof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry) == 0x000438, "Wrong size on RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, EntryPoint) == 0x000000, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable) == 0x000004, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable2) == 0x000005, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_int_Variable) == 0x000008, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_int_Variable2) == 0x00000C, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_int_Variable3) == 0x000010, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_bool_Variable) == 0x000014, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable3) == 0x000015, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable4) == 0x000016, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetType_ReturnValue) == 0x000017, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000020, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetRarityColor_ReturnValue) == 0x0000B0, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetRarityColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeStruct_SlateColor) == 0x0000C0, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue2) == 0x0000E8, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetDisplayName_ReturnValue) == 0x000178, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable5) == 0x000190, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeStruct_FormatArgumentData) == 0x000198, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeArray_Array) == 0x0001D8, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_Format_ReturnValue) == 0x0001E8, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetRarityColor_ReturnValue2) == 0x000200, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetRarityColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeStruct_SlateColor2) == 0x000210, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeStruct_SlateColor2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_Select_Default) == 0x000238, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetNumInStack_ReturnValue) == 0x00023C, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetDisplayName_ReturnValue2) == 0x000240, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetDisplayName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000258, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_Greater_IntInt_ReturnValue) == 0x00025C, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_Select2_Default) == 0x00025D, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetEmptyText_ReturnValue) == 0x000260, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetDisplayName_ReturnValue3) == 0x000278, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetDisplayName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_EqualEqual_TextText_ReturnValue) == 0x000290, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetPrimaryCategory_ItemCategoryText) == 0x000298, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetPrimaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetPrimaryCategory_ReturnValue) == 0x0002B0, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetPrimaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue3) == 0x0002B8, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable6) == 0x000348, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetPrimaryCategory_ItemCategoryText2) == 0x000350, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetPrimaryCategory_ItemCategoryText2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetPrimaryCategory_ReturnValue2) == 0x000368, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetPrimaryCategory_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeStruct_FormatArgumentData2) == 0x000370, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_GetDisplayName_ReturnValue4) == 0x0003B0, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_GetDisplayName_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeStruct_FormatArgumentData3) == 0x0003C8, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_MakeArray_Array2) == 0x000408, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, CallFunc_Format_ReturnValue2) == 0x000418, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, Temp_byte_Variable7) == 0x000430, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry, K2Node_Select3_Default) == 0x000431, "Member 'RewardsListEntry_C_ExecuteUbergraph_RewardsListEntry::K2Node_Select3_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

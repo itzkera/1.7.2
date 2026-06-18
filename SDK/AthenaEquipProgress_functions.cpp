@@ -14,8 +14,7 @@
 #include "AthenaEquipProgress_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaEquipProgress.AthenaEquipProgress_C.ExecuteUbergraph_AthenaEquipProgress
 // (HasDefaults)
@@ -56,7 +55,7 @@ void UAthenaEquipProgress_C::Destruct()
 // Parameters:
 // class FName                             CueName                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
 void UAthenaEquipProgress_C::OnUIGameplayCue_Event_0(class FName CueName, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -92,7 +91,7 @@ void UAthenaEquipProgress_C::Construct()
 // Function AthenaEquipProgress.AthenaEquipProgress_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaEquipProgress_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -110,5 +109,5 @@ void UAthenaEquipProgress_C::Tick(const struct FGeometry& MyGeometry, float InDe
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

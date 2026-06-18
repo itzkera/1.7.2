@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "ItemDisplayMode_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "ItemDisplayMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Item_TierBadge.Item_TierBadge_C.Update
 // 0x0210 (0x0210 - 0x0000)
@@ -91,62 +91,6 @@ public:
 	float                                         K2Node_Select4_Default;                            // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x01FC(0x0010)(NoDestructor)
 };
-static_assert(alignof(Item_TierBadge_C_Update) == 0x000008, "Wrong alignment on Item_TierBadge_C_Update");
-static_assert(sizeof(Item_TierBadge_C_Update) == 0x000210, "Wrong size on Item_TierBadge_C_Update");
-static_assert(offsetof(Item_TierBadge_C_Update, Current_Tier) == 0x000000, "Member 'Item_TierBadge_C_Update::Current_Tier' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Max_Tier) == 0x000001, "Member 'Item_TierBadge_C_Update::Max_Tier' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Brush_Size) == 0x000002, "Member 'Item_TierBadge_C_Update::Brush_Size' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Item_Display_Style) == 0x000003, "Member 'Item_TierBadge_C_Update::Item_Display_Style' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Item_Display_Mode) == 0x000004, "Member 'Item_TierBadge_C_Update::Item_Display_Mode' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Rarity_Colors) == 0x000008, "Member 'Item_TierBadge_C_Update::Rarity_Colors' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Current_Level) == 0x000088, "Member 'Item_TierBadge_C_Update::Current_Level' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Max_Level) == 0x00008C, "Member 'Item_TierBadge_C_Update::Max_Level' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, MaxLevel) == 0x000090, "Member 'Item_TierBadge_C_Update::MaxLevel' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CurrentLevel) == 0x000094, "Member 'Item_TierBadge_C_Update::CurrentLevel' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, RarityData) == 0x000098, "Member 'Item_TierBadge_C_Update::RarityData' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, DisplayMode) == 0x000118, "Member 'Item_TierBadge_C_Update::DisplayMode' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, DisplayStyle) == 0x000119, "Member 'Item_TierBadge_C_Update::DisplayStyle' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, BrushSize) == 0x00011A, "Member 'Item_TierBadge_C_Update::BrushSize' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, MaxTier) == 0x00011B, "Member 'Item_TierBadge_C_Update::MaxTier' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CurrentTier) == 0x00011C, "Member 'Item_TierBadge_C_Update::CurrentTier' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, MaxTierInt) == 0x000120, "Member 'Item_TierBadge_C_Update::MaxTierInt' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CurrentTierInt) == 0x000124, "Member 'Item_TierBadge_C_Update::CurrentTierInt' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable) == 0x000128, "Member 'Item_TierBadge_C_Update::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable2) == 0x00012C, "Member 'Item_TierBadge_C_Update::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable3) == 0x000130, "Member 'Item_TierBadge_C_Update::Temp_float_Variable3' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable4) == 0x000134, "Member 'Item_TierBadge_C_Update::Temp_float_Variable4' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable5) == 0x000138, "Member 'Item_TierBadge_C_Update::Temp_float_Variable5' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_byte_Variable) == 0x00013C, "Member 'Item_TierBadge_C_Update::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable6) == 0x000140, "Member 'Item_TierBadge_C_Update::Temp_float_Variable6' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable7) == 0x000144, "Member 'Item_TierBadge_C_Update::Temp_float_Variable7' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable8) == 0x000148, "Member 'Item_TierBadge_C_Update::Temp_float_Variable8' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable9) == 0x00014C, "Member 'Item_TierBadge_C_Update::Temp_float_Variable9' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable10) == 0x000150, "Member 'Item_TierBadge_C_Update::Temp_float_Variable10' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable11) == 0x000154, "Member 'Item_TierBadge_C_Update::Temp_float_Variable11' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_bool_Variable) == 0x000158, "Member 'Item_TierBadge_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable12) == 0x00015C, "Member 'Item_TierBadge_C_Update::Temp_float_Variable12' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, K2Node_MakeStruct_SlateColor) == 0x000160, "Member 'Item_TierBadge_C_Update::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_Refresh_Visibility_Visible) == 0x000188, "Member 'Item_TierBadge_C_Update::CallFunc_Refresh_Visibility_Visible' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000190, "Member 'Item_TierBadge_C_Update::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_byte_Variable2) == 0x000198, "Member 'Item_TierBadge_C_Update::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, K2Node_Select_Default) == 0x00019C, "Member 'Item_TierBadge_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, K2Node_Select2_Default) == 0x0001A0, "Member 'Item_TierBadge_C_Update::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_GetOwningPlayer_ReturnValue) == 0x0001A8, "Member 'Item_TierBadge_C_Update::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_bool_Variable2) == 0x0001B0, "Member 'Item_TierBadge_C_Update::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_Create_ReturnValue) == 0x0001B8, "Member 'Item_TierBadge_C_Update::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x0001C0, "Member 'Item_TierBadge_C_Update::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_int_Variable) == 0x0001C8, "Member 'Item_TierBadge_C_Update::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001CC, "Member 'Item_TierBadge_C_Update::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0001CD, "Member 'Item_TierBadge_C_Update::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, K2Node_Select3_Default) == 0x0001D0, "Member 'Item_TierBadge_C_Update::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x0001E0, "Member 'Item_TierBadge_C_Update::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_Add_IntInt_ReturnValue) == 0x0001E4, "Member 'Item_TierBadge_C_Update::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_Convert_Tier_To_Integer_Numeric_Tier) == 0x0001E8, "Member 'Item_TierBadge_C_Update::CallFunc_Convert_Tier_To_Integer_Numeric_Tier' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_Max_ReturnValue) == 0x0001EC, "Member 'Item_TierBadge_C_Update::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, CallFunc_Convert_Tier_To_Integer_Numeric_Tier2) == 0x0001F0, "Member 'Item_TierBadge_C_Update::CallFunc_Convert_Tier_To_Integer_Numeric_Tier2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, Temp_float_Variable13) == 0x0001F4, "Member 'Item_TierBadge_C_Update::Temp_float_Variable13' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, K2Node_Select4_Default) == 0x0001F8, "Member 'Item_TierBadge_C_Update::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Update, K2Node_MakeStruct_Margin) == 0x0001FC, "Member 'Item_TierBadge_C_Update::K2Node_MakeStruct_Margin' has a wrong offset!");
 
 // Function Item_TierBadge.Item_TierBadge_C.Refresh Visibility
 // 0x0010 (0x0010 - 0x0000)
@@ -170,24 +114,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Item_TierBadge_C_Refresh_Visibility) == 0x000001, "Wrong alignment on Item_TierBadge_C_Refresh_Visibility");
-static_assert(sizeof(Item_TierBadge_C_Refresh_Visibility) == 0x000010, "Wrong size on Item_TierBadge_C_Refresh_Visibility");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Brush_Size) == 0x000000, "Member 'Item_TierBadge_C_Refresh_Visibility::Brush_Size' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Display_Mode) == 0x000001, "Member 'Item_TierBadge_C_Refresh_Visibility::Display_Mode' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Current_Tier) == 0x000002, "Member 'Item_TierBadge_C_Refresh_Visibility::Current_Tier' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Visible) == 0x000003, "Member 'Item_TierBadge_C_Refresh_Visibility::Visible' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Temp_byte_Variable) == 0x000004, "Member 'Item_TierBadge_C_Refresh_Visibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000006, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000007, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x000008, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_BooleanOR_ReturnValue) == 0x000009, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Temp_byte_Variable2) == 0x00000A, "Member 'Item_TierBadge_C_Refresh_Visibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_BooleanOR_ReturnValue2) == 0x00000B, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_BooleanOR_ReturnValue3) == 0x00000C, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, Temp_bool_Variable) == 0x00000D, "Member 'Item_TierBadge_C_Refresh_Visibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, CallFunc_Not_PreBool_ReturnValue) == 0x00000E, "Member 'Item_TierBadge_C_Refresh_Visibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Refresh_Visibility, K2Node_Select_Default) == 0x00000F, "Member 'Item_TierBadge_C_Refresh_Visibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function Item_TierBadge.Item_TierBadge_C.Set Level
 // 0x0020 (0x0020 - 0x0000)
@@ -198,11 +124,6 @@ public:
 	int32                                         Max_Level;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-static_assert(alignof(Item_TierBadge_C_Set_Level) == 0x000008, "Wrong alignment on Item_TierBadge_C_Set_Level");
-static_assert(sizeof(Item_TierBadge_C_Set_Level) == 0x000020, "Wrong size on Item_TierBadge_C_Set_Level");
-static_assert(offsetof(Item_TierBadge_C_Set_Level, Current_Level) == 0x000000, "Member 'Item_TierBadge_C_Set_Level::Current_Level' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Set_Level, Max_Level) == 0x000004, "Member 'Item_TierBadge_C_Set_Level::Max_Level' has a wrong offset!");
-static_assert(offsetof(Item_TierBadge_C_Set_Level, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'Item_TierBadge_C_Set_Level::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

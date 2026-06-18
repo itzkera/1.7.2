@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass HeroNotificationHandler.HeroNotificationHandler_C
 // 0x0000 (0x01F0 - 0x01F0)
@@ -26,15 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroNotificationHandler_C">();
+		BP_STATIC_CLASS_IMPL("HeroNotificationHandler_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroNotificationHandler_C")
 	}
 	static class UHeroNotificationHandler_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroNotificationHandler_C>();
 	}
 };
-static_assert(alignof(UHeroNotificationHandler_C) == 0x000010, "Wrong alignment on UHeroNotificationHandler_C");
-static_assert(sizeof(UHeroNotificationHandler_C) == 0x0001F0, "Wrong size on UHeroNotificationHandler_C");
 
-}
-
+SDK_NAMESPACE_END

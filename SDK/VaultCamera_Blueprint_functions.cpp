@@ -14,8 +14,7 @@
 #include "VaultCamera_Blueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.ExecuteUbergraph_VaultCamera_Blueprint
 // (HasDefaults)
@@ -88,7 +87,7 @@ void AVaultCamera_Blueprint_C::ReceiveTick(float DeltaSeconds)
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4(const struct FKey& Key)
 {
@@ -108,7 +107,7 @@ void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4(
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
@@ -128,7 +127,7 @@ void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5(
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
@@ -148,7 +147,7 @@ void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
@@ -178,5 +177,5 @@ void AVaultCamera_Blueprint_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

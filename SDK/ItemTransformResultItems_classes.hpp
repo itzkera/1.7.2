@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformResultItems.ItemTransformResultItems_C
 // 0x00A0 (0x02D8 - 0x0238)
@@ -54,34 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformResultItems_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformResultItems_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformResultItems_C")
 	}
 	static class UItemTransformResultItems_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformResultItems_C>();
 	}
 };
-static_assert(alignof(UItemTransformResultItems_C) == 0x000008, "Wrong alignment on UItemTransformResultItems_C");
-static_assert(sizeof(UItemTransformResultItems_C) == 0x0002D8, "Wrong size on UItemTransformResultItems_C");
-static_assert(offsetof(UItemTransformResultItems_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformResultItems_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, ResultsList) == 0x000240, "Member 'UItemTransformResultItems_C::ResultsList' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, ResultsSwitcher) == 0x000248, "Member 'UItemTransformResultItems_C::ResultsSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardHeroXPIcon) == 0x000250, "Member 'UItemTransformResultItems_C::RewardHeroXPIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardHeroXPInfo) == 0x000258, "Member 'UItemTransformResultItems_C::RewardHeroXPInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardHeroXPQuantity) == 0x000260, "Member 'UItemTransformResultItems_C::RewardHeroXPQuantity' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardHeroXPText) == 0x000268, "Member 'UItemTransformResultItems_C::RewardHeroXPText' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardItemDisplayName) == 0x000270, "Member 'UItemTransformResultItems_C::RewardItemDisplayName' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardItemIcon) == 0x000278, "Member 'UItemTransformResultItems_C::RewardItemIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardItemInfo) == 0x000280, "Member 'UItemTransformResultItems_C::RewardItemInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardSchematicXPIcon) == 0x000288, "Member 'UItemTransformResultItems_C::RewardSchematicXPIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardSchematicXPInfo) == 0x000290, "Member 'UItemTransformResultItems_C::RewardSchematicXPInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardSchematicXPQuantity) == 0x000298, "Member 'UItemTransformResultItems_C::RewardSchematicXPQuantity' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardSchematicXPText) == 0x0002A0, "Member 'UItemTransformResultItems_C::RewardSchematicXPText' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardWorkerXPIcon) == 0x0002A8, "Member 'UItemTransformResultItems_C::RewardWorkerXPIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardWorkerXPInfo) == 0x0002B0, "Member 'UItemTransformResultItems_C::RewardWorkerXPInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardWorkerXPQuantity) == 0x0002B8, "Member 'UItemTransformResultItems_C::RewardWorkerXPQuantity' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, RewardWorkerXPText) == 0x0002C0, "Member 'UItemTransformResultItems_C::RewardWorkerXPText' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultItems_C, TextColor) == 0x0002C8, "Member 'UItemTransformResultItems_C::TextColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

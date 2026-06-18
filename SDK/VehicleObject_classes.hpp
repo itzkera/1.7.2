@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass VehicleObject.VehicleObject_C
 // 0x0008 (0x0030 - 0x0028)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VehicleObject_C">();
+		BP_STATIC_CLASS_IMPL("VehicleObject_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleObject_C")
 	}
 	static class UVehicleObject_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVehicleObject_C>();
 	}
 };
-static_assert(alignof(UVehicleObject_C) == 0x000008, "Wrong alignment on UVehicleObject_C");
-static_assert(sizeof(UVehicleObject_C) == 0x000030, "Wrong size on UVehicleObject_C");
-static_assert(offsetof(UVehicleObject_C, SquadId) == 0x000028, "Member 'UVehicleObject_C::SquadId' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

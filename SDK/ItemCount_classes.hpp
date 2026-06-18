@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCount.ItemCount_C
 // 0x0070 (0x02A8 - 0x0238)
@@ -51,28 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCount_C">();
+		BP_STATIC_CLASS_IMPL("ItemCount_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCount_C")
 	}
 	static class UItemCount_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCount_C>();
 	}
 };
-static_assert(alignof(UItemCount_C) == 0x000008, "Wrong alignment on UItemCount_C");
-static_assert(sizeof(UItemCount_C) == 0x0002A8, "Wrong size on UItemCount_C");
-static_assert(offsetof(UItemCount_C, UberGraphFrame) == 0x000238, "Member 'UItemCount_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, Border) == 0x000240, "Member 'UItemCount_C::Border' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, CountText) == 0x000248, "Member 'UItemCount_C::CountText' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, DisplayName) == 0x000250, "Member 'UItemCount_C::DisplayName' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, IconLeft) == 0x000258, "Member 'UItemCount_C::IconLeft' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, IconRight) == 0x000260, "Member 'UItemCount_C::IconRight' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, ItemDefinition) == 0x000268, "Member 'UItemCount_C::ItemDefinition' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, TextStyle) == 0x000270, "Member 'UItemCount_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, CountStyle) == 0x000278, "Member 'UItemCount_C::CountStyle' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, OverrideValue) == 0x00027C, "Member 'UItemCount_C::OverrideValue' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, BrushSize) == 0x000280, "Member 'UItemCount_C::BrushSize' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, Name_0) == 0x000288, "Member 'UItemCount_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UItemCount_C, DisplayIconLeftSide) == 0x0002A0, "Member 'UItemCount_C::DisplayIconLeftSide' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

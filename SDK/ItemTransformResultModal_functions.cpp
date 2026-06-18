@@ -14,8 +14,7 @@
 #include "ItemTransformResultModal_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformResultModal.ItemTransformResultModal_C.ExecuteUbergraph_ItemTransformResultModal
 // ()
@@ -108,8 +107,8 @@ void UItemTransformResultModal_C::OpenInspect()
 // Function ItemTransformResultModal.ItemTransformResultModal_C.OpenResult
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>RewardItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FFortItemInstanceQuantityPair>SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&RewardItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemTransformResultModal_C::OpenResult(TArray<struct FFortItemInstanceQuantityPair>& RewardItems, TArray<struct FFortItemInstanceQuantityPair>& SacrificeItems)
 {
@@ -129,5 +128,5 @@ void UItemTransformResultModal_C::OpenResult(TArray<struct FFortItemInstanceQuan
 	SacrificeItems = std::move(Parms.SacrificeItems);
 }
 
-}
 
+SDK_NAMESPACE_END

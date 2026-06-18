@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SquadSlotDetailsPanel.SquadSlotDetailsPanel_C
 // 0x0078 (0x0310 - 0x0298)
@@ -51,26 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadSlotDetailsPanel_C">();
+		BP_STATIC_CLASS_IMPL("SquadSlotDetailsPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadSlotDetailsPanel_C")
 	}
 	static class USquadSlotDetailsPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadSlotDetailsPanel_C>();
 	}
 };
-static_assert(alignof(USquadSlotDetailsPanel_C) == 0x000008, "Wrong alignment on USquadSlotDetailsPanel_C");
-static_assert(sizeof(USquadSlotDetailsPanel_C) == 0x000310, "Wrong size on USquadSlotDetailsPanel_C");
-static_assert(offsetof(USquadSlotDetailsPanel_C, UberGraphFrame) == 0x000298, "Member 'USquadSlotDetailsPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, LockedSlotDetailsPanel) == 0x0002A0, "Member 'USquadSlotDetailsPanel_C::LockedSlotDetailsPanel' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, PreviewEmptySlotTextBlock) == 0x0002A8, "Member 'USquadSlotDetailsPanel_C::PreviewEmptySlotTextBlock' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, SelectionHintTextBlock) == 0x0002B0, "Member 'USquadSlotDetailsPanel_C::SelectionHintTextBlock' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, ShowInSkillTreeButton) == 0x0002B8, "Member 'USquadSlotDetailsPanel_C::ShowInSkillTreeButton' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, SlottedItemDetailsSwitcher) == 0x0002C0, "Member 'USquadSlotDetailsPanel_C::SlottedItemDetailsSwitcher' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, SlottingRestrictionsBox) == 0x0002C8, "Member 'USquadSlotDetailsPanel_C::SlottingRestrictionsBox' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, SlottingRestrictionsTextBlock) == 0x0002D0, "Member 'USquadSlotDetailsPanel_C::SlottingRestrictionsTextBlock' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, SquadSlotLabelTextBlock) == 0x0002D8, "Member 'USquadSlotDetailsPanel_C::SquadSlotLabelTextBlock' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, DisplayName) == 0x0002E0, "Member 'USquadSlotDetailsPanel_C::DisplayName' has a wrong offset!");
-static_assert(offsetof(USquadSlotDetailsPanel_C, ItemType) == 0x0002F8, "Member 'USquadSlotDetailsPanel_C::ItemType' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

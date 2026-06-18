@@ -15,8 +15,7 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C
 // 0x00C0 (0x1740 - 0x1680)
@@ -48,28 +47,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerPawn_Generic_Parent_C">();
+		BP_STATIC_CLASS_IMPL("PlayerPawn_Generic_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawn_Generic_Parent_C")
 	}
 	static class APlayerPawn_Generic_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerPawn_Generic_Parent_C>();
 	}
 };
-static_assert(alignof(APlayerPawn_Generic_Parent_C) == 0x000010, "Wrong alignment on APlayerPawn_Generic_Parent_C");
-static_assert(sizeof(APlayerPawn_Generic_Parent_C) == 0x001740, "Wrong size on APlayerPawn_Generic_Parent_C");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, UberGraphFrame) == 0x001680, "Member 'APlayerPawn_Generic_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, Default_Weapon_Materials) == 0x001688, "Member 'APlayerPawn_Generic_Parent_C::Default_Weapon_Materials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnBackpackMaterials) == 0x001698, "Member 'APlayerPawn_Generic_Parent_C::PawnBackpackMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnHatMaterials) == 0x0016A8, "Member 'APlayerPawn_Generic_Parent_C::PawnHatMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnHeadMaterials) == 0x0016B8, "Member 'APlayerPawn_Generic_Parent_C::PawnHeadMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnBodyMaterials) == 0x0016C8, "Member 'APlayerPawn_Generic_Parent_C::PawnBodyMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnCharmMaterials) == 0x0016D8, "Member 'APlayerPawn_Generic_Parent_C::PawnCharmMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnFaceMaterials) == 0x0016E8, "Member 'APlayerPawn_Generic_Parent_C::PawnFaceMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnLegsMaterials) == 0x0016F8, "Member 'APlayerPawn_Generic_Parent_C::PawnLegsMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnTorsoMaterials) == 0x001708, "Member 'APlayerPawn_Generic_Parent_C::PawnTorsoMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PlayerPostProcessFX) == 0x001718, "Member 'APlayerPawn_Generic_Parent_C::PlayerPostProcessFX' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, SkeletalMeshes) == 0x001720, "Member 'APlayerPawn_Generic_Parent_C::SkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnMaterials_ALL) == 0x001730, "Member 'APlayerPawn_Generic_Parent_C::PawnMaterials_ALL' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

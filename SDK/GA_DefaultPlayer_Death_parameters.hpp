@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C.ExecuteUbergraph_GA_DefaultPlayer_Death
 // 0x0020 (0x0020 - 0x0000)
@@ -25,12 +25,6 @@ public:
 	class APlayerPawn_Generic_C*                  K2Node_DynamicCast_AsPlayer_Pawn_Generic;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death");
-static_assert(sizeof(GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death) == 0x000020, "Wrong size on GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death");
-static_assert(offsetof(GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death, EntryPoint) == 0x000000, "Member 'GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death, CallFunc_GetActivatingPawn_ReturnValue) == 0x000008, "Member 'GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death, K2Node_DynamicCast_AsPlayer_Pawn_Generic) == 0x000010, "Member 'GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death::K2Node_DynamicCast_AsPlayer_Pawn_Generic' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

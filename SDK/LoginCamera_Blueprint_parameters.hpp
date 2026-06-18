@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LoginCamera_Blueprint.LoginCamera_Blueprint_C.ExecuteUbergraph_LoginCamera_Blueprint
 // 0x0028 (0x0028 - 0x0000)
@@ -25,12 +25,6 @@ public:
 	TArray<class ATVPostProcessBP_C*>             CallFunc_GetAllActorsOfClass_OutActors;            // 0x0010(0x0010)(ZeroConstructor, ReferenceParm)
 	class ATVPostProcessBP_C*                     CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint) == 0x000008, "Wrong alignment on LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint");
-static_assert(sizeof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint) == 0x000028, "Wrong size on LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, EntryPoint) == 0x000000, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000008, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors) == 0x000010, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_Array_Get_Item) == 0x000020, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_Array_Get_Item' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

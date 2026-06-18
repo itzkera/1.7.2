@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestUpdateEntry.QuestUpdateEntry_C
 // 0x0070 (0x02A8 - 0x0238)
@@ -62,29 +61,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestUpdateEntry_C">();
+		BP_STATIC_CLASS_IMPL("QuestUpdateEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestUpdateEntry_C")
 	}
 	static class UQuestUpdateEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestUpdateEntry_C>();
 	}
 };
-static_assert(alignof(UQuestUpdateEntry_C) == 0x000008, "Wrong alignment on UQuestUpdateEntry_C");
-static_assert(sizeof(UQuestUpdateEntry_C) == 0x0002A8, "Wrong size on UQuestUpdateEntry_C");
-static_assert(offsetof(UQuestUpdateEntry_C, UberGraphFrame) == 0x000238, "Member 'UQuestUpdateEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, Disappear) == 0x000240, "Member 'UQuestUpdateEntry_C::Disappear' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, Appear) == 0x000248, "Member 'UQuestUpdateEntry_C::Appear' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, ObjectivesBox) == 0x000250, "Member 'UQuestUpdateEntry_C::ObjectivesBox' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, OuterBorder) == 0x000258, "Member 'UQuestUpdateEntry_C::OuterBorder' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, QuestName) == 0x000260, "Member 'UQuestUpdateEntry_C::QuestName' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, Separator) == 0x000268, "Member 'UQuestUpdateEntry_C::Separator' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, AllQuestUpdatesFinished) == 0x000270, "Member 'UQuestUpdateEntry_C::AllQuestUpdatesFinished' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, QuestUpdates) == 0x000280, "Member 'UQuestUpdateEntry_C::QuestUpdates' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, UpdateTweenTime) == 0x000290, "Member 'UQuestUpdateEntry_C::UpdateTweenTime' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, PostUpdatesDelay) == 0x000294, "Member 'UQuestUpdateEntry_C::PostUpdatesDelay' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, PostUpdatesDelayTimerHandle) == 0x000298, "Member 'UQuestUpdateEntry_C::PostUpdatesDelayTimerHandle' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, bIsAppearAnimationFinished) == 0x0002A0, "Member 'UQuestUpdateEntry_C::bIsAppearAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UQuestUpdateEntry_C, bConfigureAsAnnouncement) == 0x0002A1, "Member 'UQuestUpdateEntry_C::bConfigureAsAnnouncement' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

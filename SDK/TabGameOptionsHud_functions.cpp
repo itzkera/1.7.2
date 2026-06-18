@@ -14,8 +14,7 @@
 #include "TabGameOptionsHud_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabGameOptionsHud.TabGameOptionsHud_C.ExecuteUbergraph_TabGameOptionsHud
 // (HasDefaults)
@@ -41,7 +40,7 @@ void UTabGameOptionsHud_C::ExecuteUbergraph_TabGameOptionsHud(int32 EntryPoint)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Selected_Index                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                     Gameplay_Tag                                           (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Gameplay_Tag                                           (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UTabGameOptionsHud_C::HUD_Changed(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag)
 {
@@ -140,5 +139,5 @@ void UTabGameOptionsHud_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

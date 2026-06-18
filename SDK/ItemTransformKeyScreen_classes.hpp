@@ -15,8 +15,7 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformKeyScreen.ItemTransformKeyScreen_C
 // 0x0068 (0x02A0 - 0x0238)
@@ -53,25 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformKeyScreen_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformKeyScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformKeyScreen_C")
 	}
 	static class UItemTransformKeyScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformKeyScreen_C>();
 	}
 };
-static_assert(alignof(UItemTransformKeyScreen_C) == 0x000008, "Wrong alignment on UItemTransformKeyScreen_C");
-static_assert(sizeof(UItemTransformKeyScreen_C) == 0x0002A0, "Wrong size on UItemTransformKeyScreen_C");
-static_assert(offsetof(UItemTransformKeyScreen_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformKeyScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, HorizontalTabList) == 0x000240, "Member 'UItemTransformKeyScreen_C::HorizontalTabList' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, ItemTransformKeyInfo) == 0x000248, "Member 'UItemTransformKeyScreen_C::ItemTransformKeyInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, ItemTransformKeyPicker) == 0x000250, "Member 'UItemTransformKeyScreen_C::ItemTransformKeyPicker' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, TabLabelText) == 0x000258, "Member 'UItemTransformKeyScreen_C::TabLabelText' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, CurrentKey) == 0x000260, "Member 'UItemTransformKeyScreen_C::CurrentKey' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, KeyItems) == 0x000268, "Member 'UItemTransformKeyScreen_C::KeyItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, OnKeySelected) == 0x000278, "Member 'UItemTransformKeyScreen_C::OnKeySelected' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, OnKeyConfirmed) == 0x000288, "Member 'UItemTransformKeyScreen_C::OnKeyConfirmed' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyScreen_C, CurrentTab) == 0x000298, "Member 'UItemTransformKeyScreen_C::CurrentTab' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

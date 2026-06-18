@@ -18,8 +18,7 @@
 #include "RewardType_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardsWidget.RewardsWidget_C
 // 0x01A8 (0x0410 - 0x0268)
@@ -97,50 +96,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardsWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardsWidget_C")
 	}
 	static class URewardsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardsWidget_C>();
 	}
 };
-static_assert(alignof(URewardsWidget_C) == 0x000008, "Wrong alignment on URewardsWidget_C");
-static_assert(sizeof(URewardsWidget_C) == 0x000410, "Wrong size on URewardsWidget_C");
-static_assert(offsetof(URewardsWidget_C, UberGraphFrame) == 0x000268, "Member 'URewardsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, OpenChestAni_open) == 0x000270, "Member 'URewardsWidget_C::OpenChestAni_open' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, OpenChestAni) == 0x000278, "Member 'URewardsWidget_C::OpenChestAni' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ButtonClaimRewards) == 0x000280, "Member 'URewardsWidget_C::ButtonClaimRewards' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ChoicePromptText) == 0x000288, "Member 'URewardsWidget_C::ChoicePromptText' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ClosedChest) == 0x000290, "Member 'URewardsWidget_C::ClosedChest' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Image_0) == 0x000298, "Member 'URewardsWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Image_8) == 0x0002A0, "Member 'URewardsWidget_C::Image_8' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Image_Details_Icon) == 0x0002A8, "Member 'URewardsWidget_C::Image_Details_Icon' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Image_GodRays) == 0x0002B0, "Member 'URewardsWidget_C::Image_GodRays' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Image_Header) == 0x0002B8, "Member 'URewardsWidget_C::Image_Header' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, MissionRewardsIntroOverlay) == 0x0002C0, "Member 'URewardsWidget_C::MissionRewardsIntroOverlay' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, OpenChestButton) == 0x0002C8, "Member 'URewardsWidget_C::OpenChestButton' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, OverlayRewards) == 0x0002D0, "Member 'URewardsWidget_C::OverlayRewards' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, PopupFrame) == 0x0002D8, "Member 'URewardsWidget_C::PopupFrame' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, QuestRewardBackground1) == 0x0002E0, "Member 'URewardsWidget_C::QuestRewardBackground1' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, QuestRewardBackgroundCircle) == 0x0002E8, "Member 'URewardsWidget_C::QuestRewardBackgroundCircle' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, RewardScrollBox) == 0x0002F0, "Member 'URewardsWidget_C::RewardScrollBox' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Text_Details_Description) == 0x0002F8, "Member 'URewardsWidget_C::Text_Details_Description' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Text_Details_Name) == 0x000300, "Member 'URewardsWidget_C::Text_Details_Name' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, TextBlock_Header) == 0x000308, "Member 'URewardsWidget_C::TextBlock_Header' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, VerticalBoxBody) == 0x000310, "Member 'URewardsWidget_C::VerticalBoxBody' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Audio) == 0x000318, "Member 'URewardsWidget_C::Audio' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, QuestConversation) == 0x000320, "Member 'URewardsWidget_C::QuestConversation' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, Header_Image) == 0x000328, "Member 'URewardsWidget_C::Header_Image' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, IsSelectingRewards) == 0x000330, "Member 'URewardsWidget_C::IsSelectingRewards' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, RewardsQuest) == 0x000338, "Member 'URewardsWidget_C::RewardsQuest' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ThisWidget) == 0x000340, "Member 'URewardsWidget_C::ThisWidget' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, RewardsToPopulate) == 0x000348, "Member 'URewardsWidget_C::RewardsToPopulate' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ConversationActor) == 0x000358, "Member 'URewardsWidget_C::ConversationActor' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ClaimedQuest) == 0x000360, "Member 'URewardsWidget_C::ClaimedQuest' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, RewardsWidgets) == 0x000368, "Member 'URewardsWidget_C::RewardsWidgets' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, ChestIntroImage) == 0x000378, "Member 'URewardsWidget_C::ChestIntroImage' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, bRewardsShown) == 0x000408, "Member 'URewardsWidget_C::bRewardsShown' has a wrong offset!");
-static_assert(offsetof(URewardsWidget_C, PlayerChoice) == 0x00040C, "Member 'URewardsWidget_C::PlayerChoice' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

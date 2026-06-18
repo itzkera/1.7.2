@@ -14,8 +14,7 @@
 #include "VaultWeaponPlacementHelper_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ExecuteUbergraph_VaultWeaponPlacementHelper
 // ()
@@ -186,7 +185,7 @@ void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewC
 // Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnTeamMemberAdded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void AVaultWeaponPlacementHelper_C::OnTeamMemberAdded(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -226,7 +225,7 @@ void AVaultWeaponPlacementHelper_C::OnTeamMemberRemoved(int32 TeamMemberInfo)
 // Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void AVaultWeaponPlacementHelper_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -276,5 +275,5 @@ void AVaultWeaponPlacementHelper_C::OnLobbyPlayerUnhovered(int32 PlayerIndex)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

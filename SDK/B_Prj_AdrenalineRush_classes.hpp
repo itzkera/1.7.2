@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_Prj_AdrenalineRush.B_Prj_AdrenalineRush_C
 // 0x0098 (0x0890 - 0x07F8)
@@ -55,32 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_AdrenalineRush_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_AdrenalineRush_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_AdrenalineRush_C")
 	}
 	static class AB_Prj_AdrenalineRush_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_AdrenalineRush_C>();
 	}
 };
-static_assert(alignof(AB_Prj_AdrenalineRush_C) == 0x000008, "Wrong alignment on AB_Prj_AdrenalineRush_C");
-static_assert(sizeof(AB_Prj_AdrenalineRush_C) == 0x000890, "Wrong size on AB_Prj_AdrenalineRush_C");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, UberGraphFrame) == 0x000800, "Member 'AB_Prj_AdrenalineRush_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, P_AdrenalineRush_HealingSparkleInit_01) == 0x000808, "Member 'AB_Prj_AdrenalineRush_C::P_AdrenalineRush_HealingSparkleInit_01' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, ShockwavePostProcess) == 0x000810, "Member 'AB_Prj_AdrenalineRush_C::ShockwavePostProcess' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, Shockwave) == 0x000818, "Member 'AB_Prj_AdrenalineRush_C::Shockwave' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, PP_Shockwave_Transition_9A3E45BA49610747DB8700A8BAA24ED4) == 0x000820, "Member 'AB_Prj_AdrenalineRush_C::PP_Shockwave_Transition_9A3E45BA49610747DB8700A8BAA24ED4' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, PP_Shockwave_Fader_9A3E45BA49610747DB8700A8BAA24ED4) == 0x000824, "Member 'AB_Prj_AdrenalineRush_C::PP_Shockwave_Fader_9A3E45BA49610747DB8700A8BAA24ED4' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, PP_Shockwave__Direction_9A3E45BA49610747DB8700A8BAA24ED4) == 0x000828, "Member 'AB_Prj_AdrenalineRush_C::PP_Shockwave__Direction_9A3E45BA49610747DB8700A8BAA24ED4' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, PP_Shockwave) == 0x000830, "Member 'AB_Prj_AdrenalineRush_C::PP_Shockwave' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, Shockwave_Ring_Size_Z) == 0x000838, "Member 'AB_Prj_AdrenalineRush_C::Shockwave_Ring_Size_Z' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, ShockwavePP) == 0x000840, "Member 'AB_Prj_AdrenalineRush_C::ShockwavePP' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, PP_Shockwave_PlayRate) == 0x000848, "Member 'AB_Prj_AdrenalineRush_C::PP_Shockwave_PlayRate' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, PP_Shockwave_SpawnRate) == 0x000858, "Member 'AB_Prj_AdrenalineRush_C::PP_Shockwave_SpawnRate' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, Shockwave_Particle_Max_Radius_Clamp) == 0x000868, "Member 'AB_Prj_AdrenalineRush_C::Shockwave_Particle_Max_Radius_Clamp' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, Sound_AdrenalineRush_Start) == 0x000870, "Member 'AB_Prj_AdrenalineRush_C::Sound_AdrenalineRush_Start' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, Sound_AdrenalineShockWave_FP) == 0x000878, "Member 'AB_Prj_AdrenalineRush_C::Sound_AdrenalineShockWave_FP' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, Sound_AdrenalineShockWave_TP) == 0x000880, "Member 'AB_Prj_AdrenalineRush_C::Sound_AdrenalineShockWave_TP' has a wrong offset!");
-static_assert(offsetof(AB_Prj_AdrenalineRush_C, ShockWave_PlayRate) == 0x000888, "Member 'AB_Prj_AdrenalineRush_C::ShockWave_PlayRate' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

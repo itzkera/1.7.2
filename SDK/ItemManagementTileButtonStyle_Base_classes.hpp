@@ -13,8 +13,7 @@
 #include "ButtonStyle_Base_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ItemManagementTileButtonStyle-Base.ItemManagementTileButtonStyle-Base_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UItemManagementTileButtonStyle_Base_C : public UButtonStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementTileButtonStyle-Base_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementTileButtonStyle-Base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementTileButtonStyle-Base_C")
 	}
 	static class UItemManagementTileButtonStyle_Base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementTileButtonStyle_Base_C>();
 	}
 };
-static_assert(alignof(UItemManagementTileButtonStyle_Base_C) == 0x000008, "Wrong alignment on UItemManagementTileButtonStyle_Base_C");
-static_assert(sizeof(UItemManagementTileButtonStyle_Base_C) == 0x000530, "Wrong size on UItemManagementTileButtonStyle_Base_C");
 
-}
-
+SDK_NAMESPACE_END

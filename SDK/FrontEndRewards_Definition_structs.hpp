@@ -13,8 +13,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct FrontEndRewards_Definition.FrontEndRewards_Definition
 // 0x0048 (0x0048 - 0x0000)
@@ -29,14 +28,5 @@ public:
 	TArray<class UFortExpeditionItem*>            Expeditions_10_F1E594504A730C86DC1574996D8CD6F5;   // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 	TArray<struct FFortCollectionBookRewards>     CollectionBookRewards_14_257477CC44DB7B3E9CE221BEFD80F48E; // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 };
-static_assert(alignof(FFrontEndRewards_Definition) == 0x000008, "Wrong alignment on FFrontEndRewards_Definition");
-static_assert(sizeof(FFrontEndRewards_Definition) == 0x000048, "Wrong size on FFrontEndRewards_Definition");
-static_assert(offsetof(FFrontEndRewards_Definition, ShowMissionRewards_1_C7BDE40E456913658E82C99BDF716FD0) == 0x000000, "Member 'FFrontEndRewards_Definition::ShowMissionRewards_1_C7BDE40E456913658E82C99BDF716FD0' has a wrong offset!");
-static_assert(offsetof(FFrontEndRewards_Definition, ShowMissionAlertRewards_16_45DFCE744858A450CF7A6F8DDB3019E2) == 0x000001, "Member 'FFrontEndRewards_Definition::ShowMissionAlertRewards_16_45DFCE744858A450CF7A6F8DDB3019E2' has a wrong offset!");
-static_assert(offsetof(FFrontEndRewards_Definition, CompletedQuests_5_F0B57A5444C985942CB6438097704985) == 0x000008, "Member 'FFrontEndRewards_Definition::CompletedQuests_5_F0B57A5444C985942CB6438097704985' has a wrong offset!");
-static_assert(offsetof(FFrontEndRewards_Definition, NewQuests_7_9B70ABD44C42EFEED67C05BAA7B44AC7) == 0x000018, "Member 'FFrontEndRewards_Definition::NewQuests_7_9B70ABD44C42EFEED67C05BAA7B44AC7' has a wrong offset!");
-static_assert(offsetof(FFrontEndRewards_Definition, Expeditions_10_F1E594504A730C86DC1574996D8CD6F5) == 0x000028, "Member 'FFrontEndRewards_Definition::Expeditions_10_F1E594504A730C86DC1574996D8CD6F5' has a wrong offset!");
-static_assert(offsetof(FFrontEndRewards_Definition, CollectionBookRewards_14_257477CC44DB7B3E9CE221BEFD80F48E) == 0x000038, "Member 'FFrontEndRewards_Definition::CollectionBookRewards_14_257477CC44DB7B3E9CE221BEFD80F48E' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

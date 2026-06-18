@@ -14,8 +14,7 @@
 #include "AthenaInventoryDragVisual_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.ExecuteUbergraph_AthenaInventoryDragVisual
 // ()
@@ -70,5 +69,5 @@ void UAthenaInventoryDragVisual_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "RewardInfoButtonWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.ExecuteUbergraph_RewardInfoButtonWidget
 // (HasDefaults)
@@ -74,7 +73,7 @@ void URewardInfoButtonWidget_C::SetShowDescriptionBP(bool bInShowDescription)
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.GetDisplayName
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             DisplayName                                            (Parm, OutParm)
+// class FText*                            DisplayName                                            (Parm, OutParm)
 
 void URewardInfoButtonWidget_C::GetDisplayName(class FText* DisplayName)
 {
@@ -91,5 +90,5 @@ void URewardInfoButtonWidget_C::GetDisplayName(class FText* DisplayName)
 		*DisplayName = std::move(Parms.DisplayName);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "PhysXVehicles_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PhysXVehicles.VehicleAnimInstance.GetVehicle
 // (Final, Native, Public, BlueprintCallable)
@@ -31,7 +30,12 @@ class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 
 	Params::VehicleAnimInstance_GetVehicle Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -61,7 +65,12 @@ void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, 
 	Parms.InHandbrakeInput = InHandbrakeInput;
 	Parms.CurrentGear = CurrentGear;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -81,7 +90,12 @@ void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 
 	Parms.bEnable = bEnable;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -101,14 +115,19 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int32 GroupFlags)
 
 	Parms.GroupFlags = GroupFlags;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FNavAvoidanceMask                GroupMask                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FNavAvoidanceMask&         GroupMask                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
 {
@@ -121,7 +140,12 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAv
 
 	Parms.GroupMask = std::move(GroupMask);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -141,7 +165,12 @@ void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 
 	Parms.Brake = Brake;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -161,7 +190,12 @@ void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 
 	Parms.bNewGearDown = bNewGearDown;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -181,7 +215,12 @@ void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 
 	Parms.bNewGearUp = bNewGearUp;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -201,14 +240,19 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int32 GroupFlags)
 
 	Parms.GroupFlags = GroupFlags;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FNavAvoidanceMask                GroupMask                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FNavAvoidanceMask&         GroupMask                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
 {
@@ -221,7 +265,12 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvo
 
 	Parms.GroupMask = std::move(GroupMask);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -241,14 +290,19 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32 GroupFlags)
 
 	Parms.GroupFlags = GroupFlags;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FNavAvoidanceMask                GroupMask                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FNavAvoidanceMask&         GroupMask                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
 {
@@ -261,7 +315,12 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAv
 
 	Parms.GroupMask = std::move(GroupMask);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -281,7 +340,12 @@ void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 
 	Parms.bNewHandbrake = bNewHandbrake;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -301,7 +365,12 @@ void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 
 	Parms.Steering = Steering;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -323,7 +392,12 @@ void UWheeledVehicleMovementComponent::SetTargetGear(int32 GearNum, bool bImmedi
 	Parms.GearNum = GearNum;
 	Parms.bImmediate = bImmediate;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -343,7 +417,12 @@ void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 
 	Parms.Throttle = Throttle;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -363,7 +442,12 @@ void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 
 	Parms.bUseAuto = bUseAuto;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -381,7 +465,12 @@ int32 UWheeledVehicleMovementComponent::GetCurrentGear() const
 
 	Params::WheeledVehicleMovementComponent_GetCurrentGear Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -401,7 +490,12 @@ float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed() const
 
 	Params::WheeledVehicleMovementComponent_GetEngineMaxRotationSpeed Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -421,7 +515,12 @@ float UWheeledVehicleMovementComponent::GetEngineRotationSpeed() const
 
 	Params::WheeledVehicleMovementComponent_GetEngineRotationSpeed Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -441,7 +540,12 @@ float UWheeledVehicleMovementComponent::GetForwardSpeed() const
 
 	Params::WheeledVehicleMovementComponent_GetForwardSpeed Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -461,7 +565,12 @@ int32 UWheeledVehicleMovementComponent::GetTargetGear() const
 
 	Params::WheeledVehicleMovementComponent_GetTargetGear Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -481,7 +590,12 @@ bool UWheeledVehicleMovementComponent::GetUseAutoGears() const
 
 	Params::WheeledVehicleMovementComponent_GetUseAutoGears Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -505,7 +619,12 @@ void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, i
 	Parms.BrakeTorque = BrakeTorque;
 	Parms.WheelIndex = WheelIndex;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -527,7 +646,12 @@ void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, i
 	Parms.DriveTorque = DriveTorque;
 	Parms.WheelIndex = WheelIndex;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -549,7 +673,12 @@ void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int
 	Parms.SteerAngle = SteerAngle;
 	Parms.WheelIndex = WheelIndex;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -567,7 +696,12 @@ float UVehicleWheel::GetRotationAngle() const
 
 	Params::VehicleWheel_GetRotationAngle Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -587,7 +721,12 @@ float UVehicleWheel::GetSteerAngle() const
 
 	Params::VehicleWheel_GetSteerAngle Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -607,10 +746,15 @@ float UVehicleWheel::GetSuspensionOffset() const
 
 	Params::VehicleWheel_GetSuspensionOffset Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "QuestInfo_Widget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.ExecuteUbergraph_QuestInfo_Widget
 // ()
@@ -74,7 +73,7 @@ void UQuestInfo_Widget_C::Construct()
 // Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateFromQuest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortQuestItem*                   InQuest                                                (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortQuestItem*&                  InQuest                                                (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestInfo_Widget_C::PopulateFromQuest(class UFortQuestItem*& InQuest)
 {
@@ -176,5 +175,5 @@ void UQuestInfo_Widget_C::SetQuestText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

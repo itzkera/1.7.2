@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LobbyTimer.LobbyTimer_C
 // 0x0030 (0x0260 - 0x0230)
@@ -42,21 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LobbyTimer_C">();
+		BP_STATIC_CLASS_IMPL("LobbyTimer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyTimer_C")
 	}
 	static class ULobbyTimer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyTimer_C>();
 	}
 };
-static_assert(alignof(ULobbyTimer_C) == 0x000008, "Wrong alignment on ULobbyTimer_C");
-static_assert(sizeof(ULobbyTimer_C) == 0x000260, "Wrong size on ULobbyTimer_C");
-static_assert(offsetof(ULobbyTimer_C, UberGraphFrame) == 0x000230, "Member 'ULobbyTimer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULobbyTimer_C, TimerIntro) == 0x000238, "Member 'ULobbyTimer_C::TimerIntro' has a wrong offset!");
-static_assert(offsetof(ULobbyTimer_C, LobbyTimerBorder) == 0x000240, "Member 'ULobbyTimer_C::LobbyTimerBorder' has a wrong offset!");
-static_assert(offsetof(ULobbyTimer_C, LobbyTimerText) == 0x000248, "Member 'ULobbyTimer_C::LobbyTimerText' has a wrong offset!");
-static_assert(offsetof(ULobbyTimer_C, SoundCue_Countdown_10SecLeft) == 0x000250, "Member 'ULobbyTimer_C::SoundCue_Countdown_10SecLeft' has a wrong offset!");
-static_assert(offsetof(ULobbyTimer_C, SoundCue_Countdown_10SecTick) == 0x000258, "Member 'ULobbyTimer_C::SoundCue_Countdown_10SecTick' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

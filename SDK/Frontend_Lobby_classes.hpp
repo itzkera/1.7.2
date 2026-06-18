@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Frontend_Lobby.Frontend_Lobby_C
 // 0x0008 (0x03A8 - 0x03A0)
@@ -31,16 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Frontend_Lobby_C">();
+		BP_STATIC_CLASS_IMPL("Frontend_Lobby_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Frontend_Lobby_C")
 	}
 	static class AFrontend_Lobby_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontend_Lobby_C>();
 	}
 };
-static_assert(alignof(AFrontend_Lobby_C) == 0x000008, "Wrong alignment on AFrontend_Lobby_C");
-static_assert(sizeof(AFrontend_Lobby_C) == 0x0003A8, "Wrong size on AFrontend_Lobby_C");
-static_assert(offsetof(AFrontend_Lobby_C, UberGraphFrame) == 0x0003A0, "Member 'AFrontend_Lobby_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

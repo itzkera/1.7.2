@@ -16,8 +16,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyRatingWidget.LegacyRatingWidget_C
 // 0x15C8 (0x1E30 - 0x0868)
@@ -75,40 +74,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyRatingWidget_C">();
+		BP_STATIC_CLASS_IMPL("LegacyRatingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyRatingWidget_C")
 	}
 	static class ULegacyRatingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyRatingWidget_C>();
 	}
 };
-static_assert(alignof(ULegacyRatingWidget_C) == 0x000008, "Wrong alignment on ULegacyRatingWidget_C");
-static_assert(sizeof(ULegacyRatingWidget_C) == 0x001E30, "Wrong size on ULegacyRatingWidget_C");
-static_assert(offsetof(ULegacyRatingWidget_C, UberGraphFrame) == 0x000868, "Member 'ULegacyRatingWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Border_Base) == 0x000870, "Member 'ULegacyRatingWidget_C::Border_Base' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, HorizontalBox) == 0x000878, "Member 'ULegacyRatingWidget_C::HorizontalBox' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, NumericText_RatingValue) == 0x000880, "Member 'ULegacyRatingWidget_C::NumericText_RatingValue' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, SizeBox) == 0x000888, "Member 'ULegacyRatingWidget_C::SizeBox' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, RatingValue) == 0x000890, "Member 'ULegacyRatingWidget_C::RatingValue' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, UniqueId) == 0x000898, "Member 'ULegacyRatingWidget_C::UniqueId' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, InterpDuration) == 0x0008B0, "Member 'ULegacyRatingWidget_C::InterpDuration' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MBrush_Silhouette) == 0x0008B8, "Member 'ULegacyRatingWidget_C::MBrush_Silhouette' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MBrush_Chamfer) == 0x000C18, "Member 'ULegacyRatingWidget_C::MBrush_Chamfer' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MBrush_Shadow) == 0x000F78, "Member 'ULegacyRatingWidget_C::MBrush_Shadow' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MBrush_Icon) == 0x0012D8, "Member 'ULegacyRatingWidget_C::MBrush_Icon' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, OverrideDefaultColor) == 0x001638, "Member 'ULegacyRatingWidget_C::OverrideDefaultColor' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Color_Light) == 0x00163C, "Member 'ULegacyRatingWidget_C::Color_Light' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Color_Medium) == 0x00164C, "Member 'ULegacyRatingWidget_C::Color_Medium' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Color_Dark) == 0x00165C, "Member 'ULegacyRatingWidget_C::Color_Dark' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Default_Color_Light) == 0x00166C, "Member 'ULegacyRatingWidget_C::Default_Color_Light' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Default_Color_Medium) == 0x00167C, "Member 'ULegacyRatingWidget_C::Default_Color_Medium' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, Default_Color_Dark) == 0x00168C, "Member 'ULegacyRatingWidget_C::Default_Color_Dark' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MBrush_Icon_Alt) == 0x0016A0, "Member 'ULegacyRatingWidget_C::MBrush_Icon_Alt' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, UseAlternateIcon) == 0x001A00, "Member 'ULegacyRatingWidget_C::UseAlternateIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MBrush_Shadow_Alt) == 0x001A08, "Member 'ULegacyRatingWidget_C::MBrush_Shadow_Alt' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MMargin_Alt) == 0x001D68, "Member 'ULegacyRatingWidget_C::MMargin_Alt' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, MMargin) == 0x001DC8, "Member 'ULegacyRatingWidget_C::MMargin' has a wrong offset!");
-static_assert(offsetof(ULegacyRatingWidget_C, ShowTeamPowerRating) == 0x001E28, "Member 'ULegacyRatingWidget_C::ShowTeamPowerRating' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

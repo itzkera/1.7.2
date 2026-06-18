@@ -14,8 +14,7 @@
 #include "PrimaryHeroActiveAbilitiesListDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C.ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget
 // (HasDefaults)
@@ -78,5 +77,5 @@ void UPrimaryHeroActiveAbilitiesListDetailWidget_C::HandlePostDifferentItemToDet
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

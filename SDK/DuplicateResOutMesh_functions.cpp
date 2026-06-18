@@ -14,8 +14,7 @@
 #include "DuplicateResOutMesh_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.ExecuteUbergraph_DuplicateResOutMesh
 // (HasDefaults)
@@ -40,8 +39,8 @@ void ADuplicateResOutMesh_C::ExecuteUbergraph_DuplicateResOutMesh(int32 EntryPoi
 // Function DuplicateResOutMesh.DuplicateResOutMesh_C.UpdateExternalParameters
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UMaterialInstanceDynamic*> MID_Array                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class USkeletalMeshComponent*>   External_MEsh_Component_Array                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UMaterialInstanceDynamic*>&MID_Array                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class USkeletalMeshComponent*>&External_MEsh_Component_Array                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void ADuplicateResOutMesh_C::UpdateExternalParameters(const TArray<class UMaterialInstanceDynamic*>& MID_Array, const TArray<class USkeletalMeshComponent*>& External_MEsh_Component_Array)
 {
@@ -204,5 +203,5 @@ void ADuplicateResOutMesh_C::Make_internal_mids_and_append_external_and_intermal
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

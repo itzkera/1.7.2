@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function XpBoosts.XpBoosts_C.ExecuteUbergraph_XpBoosts
 // 0x00B0 (0x00B0 - 0x0000)
@@ -42,27 +42,8 @@ public:
 	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_BoostAmount;                    // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FUniqueNetIdRepl& Player_To_Boost)> K2Node_CreateDelegate_OutputDelegate4;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FUniqueNetIdRepl& Player_To_Boost)> K2Node_CreateDelegate_OutputDelegate4; // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(XpBoosts_C_ExecuteUbergraph_XpBoosts) == 0x000008, "Wrong alignment on XpBoosts_C_ExecuteUbergraph_XpBoosts");
-static_assert(sizeof(XpBoosts_C_ExecuteUbergraph_XpBoosts) == 0x0000B0, "Wrong size on XpBoosts_C_ExecuteUbergraph_XpBoosts");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, EntryPoint) == 0x000000, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::EntryPoint' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, Temp_int_Array_Index_Variable) == 0x000040, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, Temp_int_Loop_Counter_Variable) == 0x000044, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_CustomEvent_Player_To_Boost) == 0x000050, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_CustomEvent_Player_To_Boost' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_MakeArray_Array) == 0x000068, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_GetContext_ReturnValue2) == 0x000078, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_GetContext_ReturnValue3) == 0x000080, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_Array_Get_Item) == 0x000088, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_Array_Length_ReturnValue) == 0x000090, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, CallFunc_Less_IntInt_ReturnValue) == 0x000094, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_CustomEvent_BoostAmount) == 0x000098, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_CustomEvent_BoostAmount' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_ExecuteUbergraph_XpBoosts, K2Node_CreateDelegate_OutputDelegate4) == 0x0000A0, "Member 'XpBoosts_C_ExecuteUbergraph_XpBoosts::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Xp Boost Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -71,9 +52,6 @@ struct XpBoosts_C_Xp_Boost_Changed final
 public:
 	int32                                         BoostAmount;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoosts_C_Xp_Boost_Changed) == 0x000004, "Wrong alignment on XpBoosts_C_Xp_Boost_Changed");
-static_assert(sizeof(XpBoosts_C_Xp_Boost_Changed) == 0x000004, "Wrong size on XpBoosts_C_Xp_Boost_Changed");
-static_assert(offsetof(XpBoosts_C_Xp_Boost_Changed, BoostAmount) == 0x000000, "Member 'XpBoosts_C_Xp_Boost_Changed::BoostAmount' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Give Boost Clicked
 // 0x0018 (0x0018 - 0x0000)
@@ -82,9 +60,6 @@ struct XpBoosts_C_Give_Boost_Clicked final
 public:
 	struct FUniqueNetIdRepl                       Player_To_Boost_0;                                 // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoosts_C_Give_Boost_Clicked) == 0x000008, "Wrong alignment on XpBoosts_C_Give_Boost_Clicked");
-static_assert(sizeof(XpBoosts_C_Give_Boost_Clicked) == 0x000018, "Wrong size on XpBoosts_C_Give_Boost_Clicked");
-static_assert(offsetof(XpBoosts_C_Give_Boost_Clicked, Player_To_Boost_0) == 0x000000, "Member 'XpBoosts_C_Give_Boost_Clicked::Player_To_Boost_0' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Update Current Boosts
 // 0x04F0 (0x04F0 - 0x0000)
@@ -108,22 +83,6 @@ public:
 	uint8                                         Pad_35E[0x2];                                      // 0x035E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortTeamMemberInfo                    K2Node_Select_Default;                             // 0x0360(0x0190)()
 };
-static_assert(alignof(XpBoosts_C_Update_Current_Boosts) == 0x000008, "Wrong alignment on XpBoosts_C_Update_Current_Boosts");
-static_assert(sizeof(XpBoosts_C_Update_Current_Boosts) == 0x0004F0, "Wrong size on XpBoosts_C_Update_Current_Boosts");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, Temp_struct_Variable) == 0x000000, "Member 'XpBoosts_C_Update_Current_Boosts::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_GetContext_ReturnValue) == 0x000190, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000198, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_GetTeamMembers_TeamMembers) == 0x0001A0, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_GetTeamMembers_TeamMembers' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, Temp_int_Array_Index_Variable) == 0x0001B0, "Member 'XpBoosts_C_Update_Current_Boosts::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, Temp_int_Loop_Counter_Variable) == 0x0001B4, "Member 'XpBoosts_C_Update_Current_Boosts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_Array_Get_Item) == 0x0001B8, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_Add_IntInt_ReturnValue) == 0x000348, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_Array_IsValidIndex_ReturnValue) == 0x00034C, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_Array_Get_Item2) == 0x000350, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_Array_Length_ReturnValue) == 0x000358, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, Temp_bool_Variable) == 0x00035C, "Member 'XpBoosts_C_Update_Current_Boosts::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, CallFunc_Less_IntInt_ReturnValue) == 0x00035D, "Member 'XpBoosts_C_Update_Current_Boosts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Current_Boosts, K2Node_Select_Default) == 0x000360, "Member 'XpBoosts_C_Update_Current_Boosts::K2Node_Select_Default' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Bind Party Delegates
 // 0x0040 (0x0040 - 0x0000)
@@ -131,18 +90,11 @@ struct XpBoosts_C_Bind_Party_Delegates final
 {
 public:
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate3; // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(XpBoosts_C_Bind_Party_Delegates) == 0x000008, "Wrong alignment on XpBoosts_C_Bind_Party_Delegates");
-static_assert(sizeof(XpBoosts_C_Bind_Party_Delegates) == 0x000040, "Wrong size on XpBoosts_C_Bind_Party_Delegates");
-static_assert(offsetof(XpBoosts_C_Bind_Party_Delegates, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'XpBoosts_C_Bind_Party_Delegates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'XpBoosts_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Bind_Party_Delegates, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000018, "Member 'XpBoosts_C_Bind_Party_Delegates::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'XpBoosts_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Bind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'XpBoosts_C_Bind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.HandleRemotePlayerRemoved
 // 0x0004 (0x0004 - 0x0000)
@@ -151,9 +103,6 @@ struct XpBoosts_C_HandleRemotePlayerRemoved final
 public:
 	int32                                         RemovedIndex;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoosts_C_HandleRemotePlayerRemoved) == 0x000004, "Wrong alignment on XpBoosts_C_HandleRemotePlayerRemoved");
-static_assert(sizeof(XpBoosts_C_HandleRemotePlayerRemoved) == 0x000004, "Wrong size on XpBoosts_C_HandleRemotePlayerRemoved");
-static_assert(offsetof(XpBoosts_C_HandleRemotePlayerRemoved, RemovedIndex) == 0x000000, "Member 'XpBoosts_C_HandleRemotePlayerRemoved::RemovedIndex' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Update Total Boost Amounts
 // 0x00C0 (0x00C0 - 0x0000)
@@ -185,28 +134,6 @@ public:
 	int32                                         CallFunc_GetPlayersXPPercentContributionToLocalPlayer_ReturnValue; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue4;                  // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoosts_C_Update_Total_Boost_Amounts) == 0x000008, "Wrong alignment on XpBoosts_C_Update_Total_Boost_Amounts");
-static_assert(sizeof(XpBoosts_C_Update_Total_Boost_Amounts) == 0x0000C0, "Wrong size on XpBoosts_C_Update_Total_Boost_Amounts");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, Temp_int_Array_Index_Variable) == 0x000000, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, Temp_int_Array_Index_Variable2) == 0x00000C, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, Temp_int_Loop_Counter_Variable2) == 0x000010, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Array_Get_Item) == 0x000018, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntInt_ReturnValue2) == 0x000028, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, K2Node_MakeArray_Array) == 0x000070, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Format_ReturnValue) == 0x000080, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Get_Current_Boost_Boost_Amount) == 0x000098, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Get_Current_Boost_Boost_Amount' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntInt_ReturnValue3) == 0x00009C, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_GetContext_ReturnValue) == 0x0000A0, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Array_Get_Item2) == 0x0000A8, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Array_Length_ReturnValue2) == 0x0000B0, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Less_IntInt_ReturnValue2) == 0x0000B4, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_GetPlayersXPPercentContributionToLocalPlayer_ReturnValue) == 0x0000B8, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_GetPlayersXPPercentContributionToLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boost_Amounts, CallFunc_Add_IntInt_ReturnValue4) == 0x0000BC, "Member 'XpBoosts_C_Update_Total_Boost_Amounts::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.HandleOnTeamMemberStateChanged
 // 0x0190 (0x0190 - 0x0000)
@@ -215,28 +142,18 @@ struct XpBoosts_C_HandleOnTeamMemberStateChanged final
 public:
 	struct FFortTeamMemberInfo                    NewMemberState;                                    // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(XpBoosts_C_HandleOnTeamMemberStateChanged) == 0x000008, "Wrong alignment on XpBoosts_C_HandleOnTeamMemberStateChanged");
-static_assert(sizeof(XpBoosts_C_HandleOnTeamMemberStateChanged) == 0x000190, "Wrong size on XpBoosts_C_HandleOnTeamMemberStateChanged");
-static_assert(offsetof(XpBoosts_C_HandleOnTeamMemberStateChanged, NewMemberState) == 0x000000, "Member 'XpBoosts_C_HandleOnTeamMemberStateChanged::NewMemberState' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Unbind Party Delegates
 // 0x0040 (0x0040 - 0x0000)
 struct XpBoosts_C_Unbind_Party_Delegates final
 {
 public:
-	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& TeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate3; // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                        CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoosts_C_Unbind_Party_Delegates) == 0x000008, "Wrong alignment on XpBoosts_C_Unbind_Party_Delegates");
-static_assert(sizeof(XpBoosts_C_Unbind_Party_Delegates) == 0x000040, "Wrong size on XpBoosts_C_Unbind_Party_Delegates");
-static_assert(offsetof(XpBoosts_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'XpBoosts_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'XpBoosts_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Unbind_Party_Delegates, K2Node_CreateDelegate_OutputDelegate3) == 0x000020, "Member 'XpBoosts_C_Unbind_Party_Delegates::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Unbind_Party_Delegates, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'XpBoosts_C_Unbind_Party_Delegates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Unbind_Party_Delegates, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000038, "Member 'XpBoosts_C_Unbind_Party_Delegates::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
 
 // Function XpBoosts.XpBoosts_C.Update Total Boosts
 // 0x0020 (0x0020 - 0x0000)
@@ -254,16 +171,6 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(XpBoosts_C_Update_Total_Boosts) == 0x000008, "Wrong alignment on XpBoosts_C_Update_Total_Boosts");
-static_assert(sizeof(XpBoosts_C_Update_Total_Boosts) == 0x000020, "Wrong size on XpBoosts_C_Update_Total_Boosts");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, Player_Boosted) == 0x000000, "Member 'XpBoosts_C_Update_Total_Boosts::Player_Boosted' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, Other_Boosted) == 0x000001, "Member 'XpBoosts_C_Update_Total_Boosts::Other_Boosted' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, Temp_int_Array_Index_Variable) == 0x000004, "Member 'XpBoosts_C_Update_Total_Boosts::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, CallFunc_Array_Get_Item) == 0x000008, "Member 'XpBoosts_C_Update_Total_Boosts::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'XpBoosts_C_Update_Total_Boosts::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'XpBoosts_C_Update_Total_Boosts::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'XpBoosts_C_Update_Total_Boosts::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBoosts_C_Update_Total_Boosts, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'XpBoosts_C_Update_Total_Boosts::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

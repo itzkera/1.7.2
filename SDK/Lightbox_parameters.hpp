@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Lightbox.Lightbox_C.ExecuteUbergraph_Lightbox
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct Lightbox_C_ExecuteUbergraph_Lightbox final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Lightbox_C_ExecuteUbergraph_Lightbox) == 0x000004, "Wrong alignment on Lightbox_C_ExecuteUbergraph_Lightbox");
-static_assert(sizeof(Lightbox_C_ExecuteUbergraph_Lightbox) == 0x000004, "Wrong size on Lightbox_C_ExecuteUbergraph_Lightbox");
-static_assert(offsetof(Lightbox_C_ExecuteUbergraph_Lightbox, EntryPoint) == 0x000000, "Member 'Lightbox_C_ExecuteUbergraph_Lightbox::EntryPoint' has a wrong offset!");
 
 // Function Lightbox.Lightbox_C.AddContent
 // 0x0010 (0x0010 - 0x0000)
@@ -33,10 +30,6 @@ public:
 	class UCommonUserWidget*                      Content_0;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Lightbox_C_AddContent) == 0x000008, "Wrong alignment on Lightbox_C_AddContent");
-static_assert(sizeof(Lightbox_C_AddContent) == 0x000010, "Wrong size on Lightbox_C_AddContent");
-static_assert(offsetof(Lightbox_C_AddContent, Content_0) == 0x000000, "Member 'Lightbox_C_AddContent::Content_0' has a wrong offset!");
-static_assert(offsetof(Lightbox_C_AddContent, CallFunc_AddChild_ReturnValue) == 0x000008, "Member 'Lightbox_C_AddContent::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function Lightbox.Lightbox_C.RemoveContent
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +38,6 @@ struct Lightbox_C_RemoveContent final
 public:
 	bool                                          CallFunc_HasAnyChildren_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Lightbox_C_RemoveContent) == 0x000001, "Wrong alignment on Lightbox_C_RemoveContent");
-static_assert(sizeof(Lightbox_C_RemoveContent) == 0x000001, "Wrong size on Lightbox_C_RemoveContent");
-static_assert(offsetof(Lightbox_C_RemoveContent, CallFunc_HasAnyChildren_ReturnValue) == 0x000000, "Member 'Lightbox_C_RemoveContent::CallFunc_HasAnyChildren_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

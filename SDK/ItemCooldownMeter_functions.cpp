@@ -14,8 +14,7 @@
 #include "ItemCooldownMeter_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -40,7 +39,7 @@ void UItemCooldownMeter_C::Update(EFortBrushSize Brush_Size)
 // Function ItemCooldownMeter.ItemCooldownMeter_C.Set Cooldown
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FTimespan                        Time_Left                                              (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FTimespan&                 Time_Left                                              (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UItemCooldownMeter_C::Set_Cooldown(const struct FTimespan& Time_Left)
 {
@@ -85,7 +84,7 @@ int32 UItemCooldownMeter_C::GetSecondsCorrectedMinutes(int32 Minutes, int32 Seco
 // Function ItemCooldownMeter.ItemCooldownMeter_C.GetCooldownMaterial
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstanceDynamic*         CooldownMat                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic**        CooldownMat                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemCooldownMeter_C::GetCooldownMaterial(class UMaterialInstanceDynamic** CooldownMat)
 {
@@ -102,5 +101,5 @@ void UItemCooldownMeter_C::GetCooldownMaterial(class UMaterialInstanceDynamic** 
 		*CooldownMat = Parms.CooldownMat;
 }
 
-}
 
+SDK_NAMESPACE_END

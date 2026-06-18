@@ -16,8 +16,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.ExecuteUbergraph_SquadSlotDetailsPanel
 // 0x0338 (0x0338 - 0x0000)
@@ -95,61 +95,6 @@ public:
 	class UWidget*                                K2Node_Select4_Default;                            // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select5_Default;                            // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel");
-static_assert(sizeof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel) == 0x000338, "Wrong size on SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, EntryPoint) == 0x000000, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeArray_Array) == 0x000048, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_byte_Variable) == 0x000058, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Format_ReturnValue) == 0x000060, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_byte_Variable2) == 0x000078, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetOwningLocalPlayer_ReturnValue) == 0x000080, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetOwningLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetItemInSquadSlotBP_ReturnValue) == 0x000088, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetItemInSquadSlotBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_TryGetItemToPreviewInSlot_OutItemToPreviewInSlot) == 0x000098, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_TryGetItemToPreviewInSlot_OutItemToPreviewInSlot' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_TryGetItemToPreviewInSlot_ReturnValue) == 0x0000A0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_TryGetItemToPreviewInSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_bool_Variable) == 0x0000A1, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_IsValid_ReturnValue2) == 0x0000A2, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_IsSquadSlotLockedBP_ReturnValue) == 0x0000A3, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_IsSquadSlotLockedBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x0000A8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x0000B0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B4, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_ComponentBoundEvent_Button) == 0x0000B8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetUINavigationManager_ReturnValue) == 0x0000C0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2) == 0x0000C8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2) == 0x0000D0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetContext_ReturnValue) == 0x0000D8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetContext_ReturnValue2) == 0x0000E0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_IsValid_ReturnValue3) == 0x0000E8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad) == 0x0000F0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_TryGetHomebaseSquadData_ReturnValue) == 0x000178, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_TryGetHomebaseSquadData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_IsInZone_ReturnValue) == 0x000179, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Array_Get_Item) == 0x000180, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001E0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Array_Get_Item2) == 0x0001E1, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001E2, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_ToText_ReturnValue) == 0x0001E8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_ToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_BooleanAND_ReturnValue) == 0x000200, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetContext_ReturnValue3) == 0x000208, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue) == 0x000210, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_bool_Variable2) == 0x000218, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_NotEqual_NameName_ReturnValue) == 0x000219, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetSlottingRestrictionReasons_ReturnValue) == 0x000220, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetSlottingRestrictionReasons_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Array_Length_ReturnValue) == 0x000230, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_GetRestrictionReasonsAsText_Text) == 0x000238, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_GetRestrictionReasonsAsText_Text' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Greater_IntInt_ReturnValue) == 0x000250, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_Select_Default) == 0x000251, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeStruct_FormatArgumentData2) == 0x000258, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_bool_Variable3) == 0x000298, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeStruct_FormatArgumentData3) == 0x0002A0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_Select2_Default) == 0x0002E0, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_MakeArray_Array2) == 0x0002E8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_bool_Variable4) == 0x0002F8, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, CallFunc_Format_ReturnValue2) == 0x000300, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, Temp_bool_Variable5) == 0x000318, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_Select3_Default) == 0x000320, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_Select4_Default) == 0x000328, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel, K2Node_Select5_Default) == 0x000330, "Member 'SquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel::K2Node_Select5_Default' has a wrong offset!");
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -158,9 +103,6 @@ struct SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.UpdateSkillTreeButtonVisibility
 // 0x0040 (0x0040 - 0x0000)
@@ -183,20 +125,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility");
-static_assert(sizeof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility) == 0x000040, "Wrong size on SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, Temp_byte_Variable) == 0x000000, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, Temp_byte_Variable2) == 0x000001, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_IsInZone_ReturnValue) == 0x000018, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000020, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x000028, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, Temp_bool_Variable) == 0x00002C, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue) == 0x000030, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000038, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, CallFunc_BooleanOR_ReturnValue) == 0x000039, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility, K2Node_Select_Default) == 0x00003A, "Member 'SquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.GetRestrictionReasonsAsText
 // 0x0180 (0x0180 - 0x0000)
@@ -227,28 +155,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0158(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0168(0x0018)()
 };
-static_assert(alignof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText) == 0x000008, "Wrong alignment on SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText");
-static_assert(sizeof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText) == 0x000180, "Wrong size on SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Reasons) == 0x000000, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Reasons' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Text) == 0x000010, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Text' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Result) == 0x000028, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Result' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_text_Variable) == 0x000040, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_text_Variable2) == 0x000060, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_int_Array_Index_Variable) == 0x000078, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_int_Loop_Counter_Variable) == 0x00007C, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, CallFunc_Array_Get_Item) == 0x000080, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, CallFunc_Less_IntInt_ReturnValue) == 0x000081, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, CallFunc_Add_IntInt_ReturnValue) == 0x000084, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_text_Variable3) == 0x000088, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, K2Node_MakeStruct_FormatArgumentData) == 0x0000A0, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_text_Variable4) == 0x0000E0, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, CallFunc_TextIsEmpty_ReturnValue) == 0x0000F8, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, Temp_byte_Variable) == 0x0000F9, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, K2Node_Select_Default) == 0x000100, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, K2Node_MakeStruct_FormatArgumentData2) == 0x000118, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, K2Node_MakeArray_Array) == 0x000158, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText, CallFunc_Format_ReturnValue) == 0x000168, "Member 'SquadSlotDetailsPanel_C_GetRestrictionReasonsAsText::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

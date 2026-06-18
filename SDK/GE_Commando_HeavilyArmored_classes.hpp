@@ -13,8 +13,7 @@
 #include "GE_Commando_Armored_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Commando_HeavilyArmored.GE_Commando_HeavilyArmored_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_Commando_HeavilyArmored_C final : public UGE_Commando_Armored_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Commando_HeavilyArmored_C">();
+		BP_STATIC_CLASS_IMPL("GE_Commando_HeavilyArmored_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Commando_HeavilyArmored_C")
 	}
 	static class UGE_Commando_HeavilyArmored_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Commando_HeavilyArmored_C>();
 	}
 };
-static_assert(alignof(UGE_Commando_HeavilyArmored_C) == 0x000010, "Wrong alignment on UGE_Commando_HeavilyArmored_C");
-static_assert(sizeof(UGE_Commando_HeavilyArmored_C) == 0x000660, "Wrong size on UGE_Commando_HeavilyArmored_C");
 
-}
-
+SDK_NAMESPACE_END

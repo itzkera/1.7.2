@@ -14,8 +14,7 @@
 #include "OptionsMenuInput_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OptionsMenuInput.OptionsMenuInput_C.ExecuteUbergraph_OptionsMenuInput
 // (HasDefaults)
@@ -60,8 +59,8 @@ void UOptionsMenuInput_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_
 // Function OptionsMenuInput.OptionsMenuInput_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuInput_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -82,7 +81,7 @@ void UOptionsMenuInput_C::OnMouseEnter(const struct FGeometry& MyGeometry, const
 // Function OptionsMenuInput.OptionsMenuInput_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuInput_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -252,7 +251,7 @@ void UOptionsMenuInput_C::SetExpanded(bool bExpanded)
 // Function OptionsMenuInput.OptionsMenuInput_C.RegisterOnClicked
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// const TDelegate<void(class UUserWidget* Widget)>&Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 
 void UOptionsMenuInput_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
 {
@@ -329,7 +328,7 @@ void UOptionsMenuInput_C::Center_on_Widget()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Primary_Key                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Key_To_Sets                                            (Parm)
+// const class FText&                      Key_To_Sets                                            (Parm)
 
 void UOptionsMenuInput_C::Change_Key(bool Primary_Key, const class FText& Key_To_Sets)
 {
@@ -426,5 +425,5 @@ int32 UOptionsMenuInput_C::DoesItemHaveChildren() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

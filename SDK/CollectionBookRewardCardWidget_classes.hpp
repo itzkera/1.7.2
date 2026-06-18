@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookRewardCardWidget.CollectionBookRewardCardWidget_C
 // 0x0028 (0x02E0 - 0x02B8)
@@ -35,20 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookRewardCardWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookRewardCardWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookRewardCardWidget_C")
 	}
 	static class UCollectionBookRewardCardWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookRewardCardWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookRewardCardWidget_C) == 0x000008, "Wrong alignment on UCollectionBookRewardCardWidget_C");
-static_assert(sizeof(UCollectionBookRewardCardWidget_C) == 0x0002E0, "Wrong size on UCollectionBookRewardCardWidget_C");
-static_assert(offsetof(UCollectionBookRewardCardWidget_C, UberGraphFrame) == 0x0002B8, "Member 'UCollectionBookRewardCardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookRewardCardWidget_C, Image_0) == 0x0002C0, "Member 'UCollectionBookRewardCardWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCollectionBookRewardCardWidget_C, Image_1) == 0x0002C8, "Member 'UCollectionBookRewardCardWidget_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UCollectionBookRewardCardWidget_C, Image_2) == 0x0002D0, "Member 'UCollectionBookRewardCardWidget_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UCollectionBookRewardCardWidget_C, Image_7) == 0x0002D8, "Member 'UCollectionBookRewardCardWidget_C::Image_7' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

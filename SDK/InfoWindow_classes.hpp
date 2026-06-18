@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass InfoWindow.InfoWindow_C
 // 0x0038 (0x0448 - 0x0410)
@@ -47,22 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InfoWindow_C">();
+		BP_STATIC_CLASS_IMPL("InfoWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InfoWindow_C")
 	}
 	static class UInfoWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInfoWindow_C>();
 	}
 };
-static_assert(alignof(UInfoWindow_C) == 0x000008, "Wrong alignment on UInfoWindow_C");
-static_assert(sizeof(UInfoWindow_C) == 0x000448, "Wrong size on UInfoWindow_C");
-static_assert(offsetof(UInfoWindow_C, UberGraphFrame) == 0x000410, "Member 'UInfoWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInfoWindow_C, CloseButton) == 0x000418, "Member 'UInfoWindow_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UInfoWindow_C, EntryIcon) == 0x000420, "Member 'UInfoWindow_C::EntryIcon' has a wrong offset!");
-static_assert(offsetof(UInfoWindow_C, EntryText) == 0x000428, "Member 'UInfoWindow_C::EntryText' has a wrong offset!");
-static_assert(offsetof(UInfoWindow_C, Lightbox) == 0x000430, "Member 'UInfoWindow_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UInfoWindow_C, SizeBox_1) == 0x000438, "Member 'UInfoWindow_C::SizeBox_1' has a wrong offset!");
-static_assert(offsetof(UInfoWindow_C, Title) == 0x000440, "Member 'UInfoWindow_C::Title' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

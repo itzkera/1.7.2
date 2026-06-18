@@ -14,8 +14,7 @@
 #include "MessageCenterWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MessageCenterWidget.MessageCenterWidget_C.ExecuteUbergraph_MessageCenterWidget
 // ()
@@ -210,5 +209,5 @@ void UMessageCenterWidget_C::HandleMessageSelected(class UObject* Item, bool Sel
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

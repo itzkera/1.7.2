@@ -13,8 +13,7 @@
 #include "CollectionHeader_Level_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CollectionHeader-PageProgress.CollectionHeader-PageProgress_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UCollectionHeader_PageProgress_C final : public UCollectionHeader_Level_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionHeader-PageProgress_C">();
+		BP_STATIC_CLASS_IMPL("CollectionHeader-PageProgress_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionHeader-PageProgress_C")
 	}
 	static class UCollectionHeader_PageProgress_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionHeader_PageProgress_C>();
 	}
 };
-static_assert(alignof(UCollectionHeader_PageProgress_C) == 0x000008, "Wrong alignment on UCollectionHeader_PageProgress_C");
-static_assert(sizeof(UCollectionHeader_PageProgress_C) == 0x0000B8, "Wrong size on UCollectionHeader_PageProgress_C");
 
-}
-
+SDK_NAMESPACE_END

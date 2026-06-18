@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestVerticalRewardInfo.QuestVerticalRewardInfo_C
 // 0x0000 (0x02C0 - 0x02C0)
@@ -23,15 +22,16 @@ class UQuestVerticalRewardInfo_C final : public UFortRewardInfoWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestVerticalRewardInfo_C">();
+		BP_STATIC_CLASS_IMPL("QuestVerticalRewardInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestVerticalRewardInfo_C")
 	}
 	static class UQuestVerticalRewardInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestVerticalRewardInfo_C>();
 	}
 };
-static_assert(alignof(UQuestVerticalRewardInfo_C) == 0x000008, "Wrong alignment on UQuestVerticalRewardInfo_C");
-static_assert(sizeof(UQuestVerticalRewardInfo_C) == 0x0002C0, "Wrong size on UQuestVerticalRewardInfo_C");
 
-}
-
+SDK_NAMESPACE_END

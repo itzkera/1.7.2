@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Tooltip-DescriptionText.Tooltip-DescriptionText_C
 // 0x0028 (0x0258 - 0x0230)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tooltip-DescriptionText_C">();
+		BP_STATIC_CLASS_IMPL("Tooltip-DescriptionText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tooltip-DescriptionText_C")
 	}
 	static class UTooltip_DescriptionText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltip_DescriptionText_C>();
 	}
 };
-static_assert(alignof(UTooltip_DescriptionText_C) == 0x000008, "Wrong alignment on UTooltip_DescriptionText_C");
-static_assert(sizeof(UTooltip_DescriptionText_C) == 0x000258, "Wrong size on UTooltip_DescriptionText_C");
-static_assert(offsetof(UTooltip_DescriptionText_C, UberGraphFrame) == 0x000230, "Member 'UTooltip_DescriptionText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltip_DescriptionText_C, TextItemDescription) == 0x000238, "Member 'UTooltip_DescriptionText_C::TextItemDescription' has a wrong offset!");
-static_assert(offsetof(UTooltip_DescriptionText_C, DescriptionText) == 0x000240, "Member 'UTooltip_DescriptionText_C::DescriptionText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

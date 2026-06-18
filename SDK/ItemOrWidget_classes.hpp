@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemOrWidget.ItemOrWidget_C
 // 0x0038 (0x0268 - 0x0230)
@@ -37,22 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemOrWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemOrWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemOrWidget_C")
 	}
 	static class UItemOrWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemOrWidget_C>();
 	}
 };
-static_assert(alignof(UItemOrWidget_C) == 0x000008, "Wrong alignment on UItemOrWidget_C");
-static_assert(sizeof(UItemOrWidget_C) == 0x000268, "Wrong size on UItemOrWidget_C");
-static_assert(offsetof(UItemOrWidget_C, UberGraphFrame) == 0x000230, "Member 'UItemOrWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemOrWidget_C, CommonWidgetSwitcher_0) == 0x000238, "Member 'UItemOrWidget_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UItemOrWidget_C, Image_3) == 0x000240, "Member 'UItemOrWidget_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UItemOrWidget_C, Image_154) == 0x000248, "Member 'UItemOrWidget_C::Image_154' has a wrong offset!");
-static_assert(offsetof(UItemOrWidget_C, Image_156) == 0x000250, "Member 'UItemOrWidget_C::Image_156' has a wrong offset!");
-static_assert(offsetof(UItemOrWidget_C, Image_157) == 0x000258, "Member 'UItemOrWidget_C::Image_157' has a wrong offset!");
-static_assert(offsetof(UItemOrWidget_C, IsVerticalList) == 0x000260, "Member 'UItemOrWidget_C::IsVerticalList' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

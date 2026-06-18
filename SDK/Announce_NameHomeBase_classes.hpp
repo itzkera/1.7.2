@@ -14,8 +14,7 @@
 #include "Announce_TutorialConversation_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_NameHomeBase.Announce_NameHomeBase_C
 // 0x0008 (0x05D0 - 0x05C8)
@@ -34,16 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_NameHomeBase_C">();
+		BP_STATIC_CLASS_IMPL("Announce_NameHomeBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_NameHomeBase_C")
 	}
 	static class AAnnounce_NameHomeBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_NameHomeBase_C>();
 	}
 };
-static_assert(alignof(AAnnounce_NameHomeBase_C) == 0x000008, "Wrong alignment on AAnnounce_NameHomeBase_C");
-static_assert(sizeof(AAnnounce_NameHomeBase_C) == 0x0005D0, "Wrong size on AAnnounce_NameHomeBase_C");
-static_assert(offsetof(AAnnounce_NameHomeBase_C, UberGraphFrame_Announce_NameHomeBase_C) == 0x0005C8, "Member 'AAnnounce_NameHomeBase_C::UberGraphFrame_Announce_NameHomeBase_C' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

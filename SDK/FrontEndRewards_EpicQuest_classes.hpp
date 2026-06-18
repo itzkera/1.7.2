@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C
 // 0x0028 (0x0288 - 0x0260)
@@ -41,19 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_EpicQuest_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_EpicQuest_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_EpicQuest_C")
 	}
 	static class UFrontEndRewards_EpicQuest_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_EpicQuest_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_EpicQuest_C) == 0x000008, "Wrong alignment on UFrontEndRewards_EpicQuest_C");
-static_assert(sizeof(UFrontEndRewards_EpicQuest_C) == 0x000288, "Wrong size on UFrontEndRewards_EpicQuest_C");
-static_assert(offsetof(UFrontEndRewards_EpicQuest_C, UberGraphFrame) == 0x000260, "Member 'UFrontEndRewards_EpicQuest_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_EpicQuest_C, QuestInfo_Widget) == 0x000268, "Member 'UFrontEndRewards_EpicQuest_C::QuestInfo_Widget' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_EpicQuest_C, Quest) == 0x000270, "Member 'UFrontEndRewards_EpicQuest_C::Quest' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_EpicQuest_C, ReplayAction) == 0x000278, "Member 'UFrontEndRewards_EpicQuest_C::ReplayAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

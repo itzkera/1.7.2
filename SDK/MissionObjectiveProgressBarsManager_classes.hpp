@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C
 // 0x0018 (0x0250 - 0x0238)
@@ -38,18 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionObjectiveProgressBarsManager_C">();
+		BP_STATIC_CLASS_IMPL("MissionObjectiveProgressBarsManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionObjectiveProgressBarsManager_C")
 	}
 	static class UMissionObjectiveProgressBarsManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionObjectiveProgressBarsManager_C>();
 	}
 };
-static_assert(alignof(UMissionObjectiveProgressBarsManager_C) == 0x000008, "Wrong alignment on UMissionObjectiveProgressBarsManager_C");
-static_assert(sizeof(UMissionObjectiveProgressBarsManager_C) == 0x000250, "Wrong size on UMissionObjectiveProgressBarsManager_C");
-static_assert(offsetof(UMissionObjectiveProgressBarsManager_C, ProgressBarBox) == 0x000238, "Member 'UMissionObjectiveProgressBarsManager_C::ProgressBarBox' has a wrong offset!");
-static_assert(offsetof(UMissionObjectiveProgressBarsManager_C, TrackedObjective) == 0x000240, "Member 'UMissionObjectiveProgressBarsManager_C::TrackedObjective' has a wrong offset!");
-static_assert(offsetof(UMissionObjectiveProgressBarsManager_C, bConfigureAsHUD) == 0x000248, "Member 'UMissionObjectiveProgressBarsManager_C::bConfigureAsHUD' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

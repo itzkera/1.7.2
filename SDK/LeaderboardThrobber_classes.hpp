@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LeaderboardThrobber.LeaderboardThrobber_C
 // 0x0030 (0x0270 - 0x0240)
@@ -34,19 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaderboardThrobber_C">();
+		BP_STATIC_CLASS_IMPL("LeaderboardThrobber_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaderboardThrobber_C")
 	}
 	static class ULeaderboardThrobber_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaderboardThrobber_C>();
 	}
 };
-static_assert(alignof(ULeaderboardThrobber_C) == 0x000008, "Wrong alignment on ULeaderboardThrobber_C");
-static_assert(sizeof(ULeaderboardThrobber_C) == 0x000270, "Wrong size on ULeaderboardThrobber_C");
-static_assert(offsetof(ULeaderboardThrobber_C, UberGraphFrame) == 0x000240, "Member 'ULeaderboardThrobber_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaderboardThrobber_C, ProgressSpinner) == 0x000248, "Member 'ULeaderboardThrobber_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(ULeaderboardThrobber_C, TextMessage) == 0x000250, "Member 'ULeaderboardThrobber_C::TextMessage' has a wrong offset!");
-static_assert(offsetof(ULeaderboardThrobber_C, UpdatingText) == 0x000258, "Member 'ULeaderboardThrobber_C::UpdatingText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

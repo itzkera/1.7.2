@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MtxStoreRoot.MtxStoreRoot_C
 // 0x0048 (0x0450 - 0x0408)
@@ -42,23 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MtxStoreRoot_C">();
+		BP_STATIC_CLASS_IMPL("MtxStoreRoot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MtxStoreRoot_C")
 	}
 	static class UMtxStoreRoot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMtxStoreRoot_C>();
 	}
 };
-static_assert(alignof(UMtxStoreRoot_C) == 0x000008, "Wrong alignment on UMtxStoreRoot_C");
-static_assert(sizeof(UMtxStoreRoot_C) == 0x000450, "Wrong size on UMtxStoreRoot_C");
-static_assert(offsetof(UMtxStoreRoot_C, UberGraphFrame) == 0x000410, "Member 'UMtxStoreRoot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, CancelButton) == 0x000418, "Member 'UMtxStoreRoot_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, Image_583) == 0x000420, "Member 'UMtxStoreRoot_C::Image_583' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, Lightbox) == 0x000428, "Member 'UMtxStoreRoot_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, MTXButton_465) == 0x000430, "Member 'UMtxStoreRoot_C::MTXButton_465' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, MtxOffersList_2) == 0x000438, "Member 'UMtxStoreRoot_C::MtxOffersList_2' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, Fort_Entry_Music_Controller) == 0x000440, "Member 'UMtxStoreRoot_C::Fort_Entry_Music_Controller' has a wrong offset!");
-static_assert(offsetof(UMtxStoreRoot_C, StoreSoundLoop) == 0x000448, "Member 'UMtxStoreRoot_C::StoreSoundLoop' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

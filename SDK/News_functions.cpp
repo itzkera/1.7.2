@@ -14,8 +14,7 @@
 #include "News_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function News.News_C.ExecuteUbergraph_News
 // ()
@@ -74,7 +73,7 @@ void UNews_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClic
 // Function News.News_C.AddEntry
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             inEntryText                                            (Parm)
+// const class FText&                      inEntryText                                            (Parm)
 
 void UNews_C::AddEntry(const class FText& inEntryText)
 {
@@ -94,9 +93,9 @@ void UNews_C::AddEntry(const class FText& inEntryText)
 // Function News.News_C.PopulateEntries
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isEmpty                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsEmpty                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UNews_C::PopulateEntries(bool* isEmpty)
+void UNews_C::PopulateEntries(bool* IsEmpty)
 {
 	static class UFunction* Func = nullptr;
 
@@ -107,8 +106,8 @@ void UNews_C::PopulateEntries(bool* isEmpty)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (isEmpty != nullptr)
-		*isEmpty = Parms.isEmpty;
+	if (IsEmpty != nullptr)
+		*IsEmpty = Parms.IsEmpty;
 }
 
 
@@ -129,7 +128,7 @@ void UNews_C::Init()
 // Function News.News_C.UpdateInfoPanel
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             BodyText                                               (Parm)
+// const class FText&                      BodyText                                               (Parm)
 
 void UNews_C::UpdateInfoPanel(const class FText& BodyText)
 {
@@ -145,5 +144,5 @@ void UNews_C::UpdateInfoPanel(const class FText& BodyText)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

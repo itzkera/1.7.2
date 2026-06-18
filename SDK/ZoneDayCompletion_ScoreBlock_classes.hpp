@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C
 // 0x0088 (0x02C0 - 0x0238)
@@ -58,29 +57,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ZoneDayCompletion_ScoreBlock_C">();
+		BP_STATIC_CLASS_IMPL("ZoneDayCompletion_ScoreBlock_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneDayCompletion_ScoreBlock_C")
 	}
 	static class UZoneDayCompletion_ScoreBlock_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneDayCompletion_ScoreBlock_C>();
 	}
 };
-static_assert(alignof(UZoneDayCompletion_ScoreBlock_C) == 0x000008, "Wrong alignment on UZoneDayCompletion_ScoreBlock_C");
-static_assert(sizeof(UZoneDayCompletion_ScoreBlock_C) == 0x0002C0, "Wrong size on UZoneDayCompletion_ScoreBlock_C");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, UberGraphFrame) == 0x000238, "Member 'UZoneDayCompletion_ScoreBlock_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NumericTextScore) == 0x000240, "Member 'UZoneDayCompletion_ScoreBlock_C::NumericTextScore' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SizeBoxRoot) == 0x000248, "Member 'UZoneDayCompletion_ScoreBlock_C::SizeBoxRoot' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, CurrentValue) == 0x000250, "Member 'UZoneDayCompletion_ScoreBlock_C::CurrentValue' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, IntroComplete) == 0x000258, "Member 'UZoneDayCompletion_ScoreBlock_C::IntroComplete' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, NextValue) == 0x000268, "Member 'UZoneDayCompletion_ScoreBlock_C::NextValue' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, IncrementComplete) == 0x000270, "Member 'UZoneDayCompletion_ScoreBlock_C::IncrementComplete' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, ScoreType) == 0x000280, "Member 'UZoneDayCompletion_ScoreBlock_C::ScoreType' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, OutroComplete) == 0x000288, "Member 'UZoneDayCompletion_ScoreBlock_C::OutroComplete' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, OverfillActive) == 0x000298, "Member 'UZoneDayCompletion_ScoreBlock_C::OverfillActive' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, AC_ScoreCountLoop) == 0x0002A0, "Member 'UZoneDayCompletion_ScoreBlock_C::AC_ScoreCountLoop' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountStart) == 0x0002A8, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountStart' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountLoop) == 0x0002B0, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountLoop' has a wrong offset!");
-static_assert(offsetof(UZoneDayCompletion_ScoreBlock_C, SoundCue_ScoreCountEnd) == 0x0002B8, "Member 'UZoneDayCompletion_ScoreBlock_C::SoundCue_ScoreCountEnd' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

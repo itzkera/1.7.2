@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextScrollStyle-NoFade.TextScrollStyle-NoFade_C
 // 0x0000 (0x0040 - 0x0040)
@@ -23,15 +22,16 @@ class UTextScrollStyle_NoFade_C final : public UCommonTextScrollStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextScrollStyle-NoFade_C">();
+		BP_STATIC_CLASS_IMPL("TextScrollStyle-NoFade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextScrollStyle-NoFade_C")
 	}
 	static class UTextScrollStyle_NoFade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextScrollStyle_NoFade_C>();
 	}
 };
-static_assert(alignof(UTextScrollStyle_NoFade_C) == 0x000008, "Wrong alignment on UTextScrollStyle_NoFade_C");
-static_assert(sizeof(UTextScrollStyle_NoFade_C) == 0x000040, "Wrong size on UTextScrollStyle_NoFade_C");
 
-}
-
+SDK_NAMESPACE_END

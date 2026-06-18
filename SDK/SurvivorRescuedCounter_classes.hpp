@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SurvivorRescuedCounter.SurvivorRescuedCounter_C
 // 0x0010 (0x0248 - 0x0238)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SurvivorRescuedCounter_C">();
+		BP_STATIC_CLASS_IMPL("SurvivorRescuedCounter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SurvivorRescuedCounter_C")
 	}
 	static class USurvivorRescuedCounter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USurvivorRescuedCounter_C>();
 	}
 };
-static_assert(alignof(USurvivorRescuedCounter_C) == 0x000008, "Wrong alignment on USurvivorRescuedCounter_C");
-static_assert(sizeof(USurvivorRescuedCounter_C) == 0x000248, "Wrong size on USurvivorRescuedCounter_C");
-static_assert(offsetof(USurvivorRescuedCounter_C, UberGraphFrame) == 0x000238, "Member 'USurvivorRescuedCounter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USurvivorRescuedCounter_C, NumberSurvivors) == 0x000240, "Member 'USurvivorRescuedCounter_C::NumberSurvivors' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

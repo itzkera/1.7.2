@@ -14,8 +14,7 @@
 #include "InputCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum Slate.ETextFlowDirection
 // NumValues: 0x0004
@@ -140,9 +139,6 @@ public:
 	uint8                                         bCmd : 1;                                          // 0x0018(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FInputChord) == 0x000008, "Wrong alignment on FInputChord");
-static_assert(sizeof(FInputChord) == 0x000020, "Wrong size on FInputChord");
-static_assert(offsetof(FInputChord, Key) == 0x000000, "Member 'FInputChord::Key' has a wrong offset!");
 
 // ScriptStruct Slate.Anchors
 // 0x0010 (0x0010 - 0x0000)
@@ -152,10 +148,5 @@ public:
 	struct FVector2D                              Minimum;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                              Maximum;                                           // 0x0008(0x0008)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAnchors) == 0x000004, "Wrong alignment on FAnchors");
-static_assert(sizeof(FAnchors) == 0x000010, "Wrong size on FAnchors");
-static_assert(offsetof(FAnchors, Minimum) == 0x000000, "Member 'FAnchors::Minimum' has a wrong offset!");
-static_assert(offsetof(FAnchors, Maximum) == 0x000008, "Member 'FAnchors::Maximum' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

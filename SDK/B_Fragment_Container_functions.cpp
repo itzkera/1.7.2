@@ -14,8 +14,7 @@
 #include "B_Fragment_Container_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Fragment_Container.B_Fragment_Container_C.ExecuteUbergraph_B_Fragment_Container
 // (HasDefaults)
@@ -217,7 +216,7 @@ void AB_Fragment_Container_C::BndEvt__Awaken_Collision_K2Node_ComponentBoundEven
 // class UPrimitiveComponent*              OtherComp                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   OtherBodyIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bFromSweep                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult                       SweepResult                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                SweepResult                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void AB_Fragment_Container_C::BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
@@ -256,7 +255,7 @@ void AB_Fragment_Container_C::ActivateFX()
 // Function B_Fragment_Container.B_Fragment_Container_C.BlueprintOnInteract
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_Fragment_Container_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn)
 {
@@ -277,12 +276,12 @@ void AB_Fragment_Container_C::BlueprintOnInteract(const class AFortPawn* Interac
 // (BlueprintAuthorityOnly, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                      InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void AB_Fragment_Container_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -392,7 +391,7 @@ void AB_Fragment_Container_C::UserConstructionScript()
 // Function B_Fragment_Container.B_Fragment_Container_C.BlueprintGetInteractionString
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 class FText AB_Fragment_Container_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn)
@@ -559,7 +558,7 @@ void AB_Fragment_Container_C::ForceFeedbackInteract(bool Soft)
 // Function B_Fragment_Container.B_Fragment_Container_C.BlueprintCanInteract
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool AB_Fragment_Container_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn) const
@@ -582,7 +581,7 @@ bool AB_Fragment_Container_C::BlueprintCanInteract(const class AFortPawn* Intera
 // Function B_Fragment_Container.B_Fragment_Container_C.BlueprintGetFailedInteractionString
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 class FText AB_Fragment_Container_C::BlueprintGetFailedInteractionString(const class AFortPawn* InteractingPawn) const
@@ -601,5 +600,5 @@ class FText AB_Fragment_Container_C::BlueprintGetFailedInteractionString(const c
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "HeroSquadBonus_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroSquadBonus.HeroSquadBonus_C.ExecuteUbergraph_HeroSquadBonus
 // ()
@@ -152,5 +151,5 @@ class UWidget* UHeroSquadBonus_C::Get_ToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

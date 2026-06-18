@@ -14,8 +14,7 @@
 #include "MissionObjectiveContentWidgetInterface_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionObjectiveContentWidgetInterface.MissionObjectiveContentWidgetInterface_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -28,36 +27,36 @@ void IMissionObjectiveContentWidgetInterface_C::Setup(class AFortObjectiveBase* 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MissionObjectiveContentWidgetInterface_C", "Setup");
+		Func = AsUObject()->Class->GetFunction("MissionObjectiveContentWidgetInterface_C", "Setup");
 
 	Params::MissionObjectiveContentWidgetInterface_C_Setup Parms{};
 
 	Parms.Objective = Objective;
 	Parms.bInConfigureAsHUD = bInConfigureAsHUD;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
 // Function MissionObjectiveContentWidgetInterface.MissionObjectiveContentWidgetInterface_C.GetHeightEstimate
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void IMissionObjectiveContentWidgetInterface_C::GetHeightEstimate(float* Height)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MissionObjectiveContentWidgetInterface_C", "GetHeightEstimate");
+		Func = AsUObject()->Class->GetFunction("MissionObjectiveContentWidgetInterface_C", "GetHeightEstimate");
 
 	Params::MissionObjectiveContentWidgetInterface_C_GetHeightEstimate Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (Height != nullptr)
 		*Height = Parms.Height;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C
 // 0x0058 (0x0300 - 0x02A8)
@@ -31,7 +30,7 @@ public:
 	class UItemPerksListDetailWidget_C*           ItemPerksListDetailWidget;                         // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MarkedForMulchingBackgroundImage;                  // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeImage*                    MarkedForMulchingIndicatorImage;                   // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMiniItemCraftingIngredientsDetailWidget_C* MiniItemCraftingIngredientsDetailWidget_9;         // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMiniItemCraftingIngredientsDetailWidget_C* MiniItemCraftingIngredientsDetailWidget_9;     // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USurvivorTraitsDetailWidget_C*          SurvivorTraitsDetailWidget;                        // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          ShowActiveAbilitiesOnly;                           // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          ShowSurvivorDetails;                               // 0x02F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -46,28 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainModeItemDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("MainModeItemDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainModeItemDetailsHostPanel_C")
 	}
 	static class UMainModeItemDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainModeItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UMainModeItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UMainModeItemDetailsHostPanel_C");
-static_assert(sizeof(UMainModeItemDetailsHostPanel_C) == 0x000300, "Wrong size on UMainModeItemDetailsHostPanel_C");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, UberGraphFrame) == 0x0002A8, "Member 'UMainModeItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, HeaderWidget) == 0x0002B0, "Member 'UMainModeItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, ItemAlterationsListDetailWidget) == 0x0002B8, "Member 'UMainModeItemDetailsHostPanel_C::ItemAlterationsListDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, ItemCalledOutAttributesDetailWidget_2) == 0x0002C0, "Member 'UMainModeItemDetailsHostPanel_C::ItemCalledOutAttributesDetailWidget_2' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, ItemDescriptionDetailWidget) == 0x0002C8, "Member 'UMainModeItemDetailsHostPanel_C::ItemDescriptionDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, ItemPerksListDetailWidget) == 0x0002D0, "Member 'UMainModeItemDetailsHostPanel_C::ItemPerksListDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, MarkedForMulchingBackgroundImage) == 0x0002D8, "Member 'UMainModeItemDetailsHostPanel_C::MarkedForMulchingBackgroundImage' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, MarkedForMulchingIndicatorImage) == 0x0002E0, "Member 'UMainModeItemDetailsHostPanel_C::MarkedForMulchingIndicatorImage' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, MiniItemCraftingIngredientsDetailWidget_9) == 0x0002E8, "Member 'UMainModeItemDetailsHostPanel_C::MiniItemCraftingIngredientsDetailWidget_9' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, SurvivorTraitsDetailWidget) == 0x0002F0, "Member 'UMainModeItemDetailsHostPanel_C::SurvivorTraitsDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, ShowActiveAbilitiesOnly) == 0x0002F8, "Member 'UMainModeItemDetailsHostPanel_C::ShowActiveAbilitiesOnly' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, ShowSurvivorDetails) == 0x0002F9, "Member 'UMainModeItemDetailsHostPanel_C::ShowSurvivorDetails' has a wrong offset!");
-static_assert(offsetof(UMainModeItemDetailsHostPanel_C, HideItemDescription) == 0x0002FA, "Member 'UMainModeItemDetailsHostPanel_C::HideItemDescription' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

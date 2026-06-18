@@ -14,8 +14,7 @@
 #include "AthenaKillFeedWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaKillFeedWidget.AthenaKillFeedWidget_C.ExecuteUbergraph_AthenaKillFeedWidget
 // ()
@@ -78,5 +77,5 @@ void UAthenaKillFeedWidget_C::UpdateKillFeed()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

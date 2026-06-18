@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.ExecuteUbergraph_ItemTransformConfirmationModal
 // 0x0030 (0x0030 - 0x0000)
@@ -27,14 +27,6 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue2;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal) == 0x000008, "Wrong alignment on ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal");
-static_assert(sizeof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal) == 0x000030, "Wrong size on ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal");
-static_assert(offsetof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal, EntryPoint) == 0x000000, "Member 'ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal, CallFunc_GetUINavigationManager_ReturnValue) == 0x000018, "Member 'ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000020, "Member 'ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x000028, "Member 'ItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
 
 // Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +35,6 @@ struct ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +43,6 @@ struct ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.UpdateTransformInfo
 // 0x0070 (0x0070 - 0x0000)
@@ -82,22 +68,6 @@ public:
 	class UFortItem*                              CallFunc_Array_Get_Item5;                          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformConfirmationModal_C_UpdateTransformInfo) == 0x000008, "Wrong alignment on ItemTransformConfirmationModal_C_UpdateTransformInfo");
-static_assert(sizeof(ItemTransformConfirmationModal_C_UpdateTransformInfo) == 0x000070, "Wrong size on ItemTransformConfirmationModal_C_UpdateTransformInfo");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, TransformKey) == 0x000000, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::TransformKey' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, SacrificeItems) == 0x000008, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::SacrificeItems' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, SacrificePoints) == 0x000018, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::SacrificePoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CurrentTier) == 0x00001C, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CurrentTier' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_Array_Get_Item) == 0x000020, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_Array_Get_Item2) == 0x000030, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_IsValid_ReturnValue2) == 0x000038, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_Array_Get_Item3) == 0x000040, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_IsValid_ReturnValue3) == 0x000048, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_Array_Get_Item4) == 0x000050, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_Array_Get_Item4' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_IsValid_ReturnValue4) == 0x000058, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_Array_Get_Item5) == 0x000060, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_Array_Get_Item5' has a wrong offset!");
-static_assert(offsetof(ItemTransformConfirmationModal_C_UpdateTransformInfo, CallFunc_IsValid_ReturnValue5) == 0x000068, "Member 'ItemTransformConfirmationModal_C_UpdateTransformInfo::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

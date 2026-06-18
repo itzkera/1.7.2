@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_SummaryBadge.Results_SummaryBadge_C.ExecuteUbergraph_Results_SummaryBadge
 // 0x00A8 (0x00A8 - 0x0000)
@@ -34,21 +34,6 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0090(0x0018)()
 };
-static_assert(alignof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge) == 0x000008, "Wrong alignment on Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge");
-static_assert(sizeof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge) == 0x0000A8, "Wrong size on Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, EntryPoint) == 0x000000, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_int_Variable) == 0x000004, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable) == 0x000008, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable2) == 0x000018, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable3) == 0x000028, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable3' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable4) == 0x000038, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable4' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable5) == 0x000048, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable5' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable6) == 0x000058, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable6' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, Temp_string_Variable7) == 0x000068, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::Temp_string_Variable7' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, K2Node_Event_IsDesignTime) == 0x000078, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, CallFunc_RandomInteger_ReturnValue) == 0x00007C, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, K2Node_Select_Default) == 0x000080, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge, CallFunc_Conv_StringToText_ReturnValue) == 0x000090, "Member 'Results_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function Results_SummaryBadge.Results_SummaryBadge_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +42,6 @@ struct Results_SummaryBadge_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_SummaryBadge_C_PreConstruct) == 0x000001, "Wrong alignment on Results_SummaryBadge_C_PreConstruct");
-static_assert(sizeof(Results_SummaryBadge_C_PreConstruct) == 0x000001, "Wrong size on Results_SummaryBadge_C_PreConstruct");
-static_assert(offsetof(Results_SummaryBadge_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_SummaryBadge_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_SummaryBadge.Results_SummaryBadge_C.Initialize
 // 0x0028 (0x0028 - 0x0000)
@@ -70,11 +52,6 @@ public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0008(0x0018)()
 	class UFortItemDefinition*                    CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_SummaryBadge_C_Initialize) == 0x000008, "Wrong alignment on Results_SummaryBadge_C_Initialize");
-static_assert(sizeof(Results_SummaryBadge_C_Initialize) == 0x000028, "Wrong size on Results_SummaryBadge_C_Initialize");
-static_assert(offsetof(Results_SummaryBadge_C_Initialize, BadgeItem) == 0x000000, "Member 'Results_SummaryBadge_C_Initialize::BadgeItem' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_Initialize, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'Results_SummaryBadge_C_Initialize::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_SummaryBadge_C_Initialize, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'Results_SummaryBadge_C_Initialize::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PlayerBanner.PlayerBanner_C
 // 0x00E0 (0x0318 - 0x0238)
@@ -50,24 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerBanner_C">();
+		BP_STATIC_CLASS_IMPL("PlayerBanner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerBanner_C")
 	}
 	static class UPlayerBanner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerBanner_C>();
 	}
 };
-static_assert(alignof(UPlayerBanner_C) == 0x000008, "Wrong alignment on UPlayerBanner_C");
-static_assert(sizeof(UPlayerBanner_C) == 0x000318, "Wrong size on UPlayerBanner_C");
-static_assert(offsetof(UPlayerBanner_C, UberGraphFrame) == 0x000238, "Member 'UPlayerBanner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, BannerImage) == 0x000240, "Member 'UPlayerBanner_C::BannerImage' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, LoadGuard) == 0x000248, "Member 'UPlayerBanner_C::LoadGuard' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, Brush) == 0x000250, "Member 'UPlayerBanner_C::Brush' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, bUseLargeTexture) == 0x0002E0, "Member 'UPlayerBanner_C::bUseLargeTexture' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, OwnerNetID) == 0x0002E8, "Member 'UPlayerBanner_C::OwnerNetID' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, CurrentBannerColorId) == 0x000300, "Member 'UPlayerBanner_C::CurrentBannerColorId' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, bShouldUseIconRepresentation) == 0x000308, "Member 'UPlayerBanner_C::bShouldUseIconRepresentation' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, CurrentBannerIconId) == 0x000310, "Member 'UPlayerBanner_C::CurrentBannerIconId' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

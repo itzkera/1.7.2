@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TextRotator.TextRotator_C
 // 0x0008 (0x0938 - 0x0930)
@@ -33,16 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextRotator_C">();
+		BP_STATIC_CLASS_IMPL("TextRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextRotator_C")
 	}
 	static class UTextRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextRotator_C>();
 	}
 };
-static_assert(alignof(UTextRotator_C) == 0x000008, "Wrong alignment on UTextRotator_C");
-static_assert(sizeof(UTextRotator_C) == 0x000938, "Wrong size on UTextRotator_C");
-static_assert(offsetof(UTextRotator_C, UberGraphFrame) == 0x000930, "Member 'UTextRotator_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

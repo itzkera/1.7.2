@@ -14,13 +14,12 @@
 #include "AthenaKillerPortraitWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C.Init
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           DeathReport                                            (Parm, OutParm, ReferenceParm)
+// struct FFortPlayerDeathReport&          DeathReport                                            (Parm, OutParm, ReferenceParm)
 
 void UAthenaKillerPortraitWidget_C::Init(struct FFortPlayerDeathReport& DeathReport)
 {
@@ -42,7 +41,7 @@ void UAthenaKillerPortraitWidget_C::Init(struct FFortPlayerDeathReport& DeathRep
 // Function AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C.GetOwningPlayerState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AFortPlayerStateAthena*           AsFort_Player_State_Athena                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerStateAthena**          AsFort_Player_State_Athena                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaKillerPortraitWidget_C::GetOwningPlayerState(class AFortPlayerStateAthena** AsFort_Player_State_Athena)
 {
@@ -59,5 +58,5 @@ void UAthenaKillerPortraitWidget_C::GetOwningPlayerState(class AFortPlayerStateA
 		*AsFort_Player_State_Athena = Parms.AsFort_Player_State_Athena;
 }
 
-}
 
+SDK_NAMESPACE_END

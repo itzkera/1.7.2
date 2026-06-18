@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestUpdatesLog.QuestUpdatesLog_C
 // 0x0090 (0x02F0 - 0x0260)
@@ -51,26 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestUpdatesLog_C">();
+		BP_STATIC_CLASS_IMPL("QuestUpdatesLog_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestUpdatesLog_C")
 	}
 	static class UQuestUpdatesLog_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestUpdatesLog_C>();
 	}
 };
-static_assert(alignof(UQuestUpdatesLog_C) == 0x000008, "Wrong alignment on UQuestUpdatesLog_C");
-static_assert(sizeof(UQuestUpdatesLog_C) == 0x0002F0, "Wrong size on UQuestUpdatesLog_C");
-static_assert(offsetof(UQuestUpdatesLog_C, UberGraphFrame) == 0x000260, "Member 'UQuestUpdatesLog_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, QuestUpdatesBox) == 0x000268, "Member 'UQuestUpdatesLog_C::QuestUpdatesBox' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, PinnedQuests) == 0x000270, "Member 'UQuestUpdatesLog_C::PinnedQuests' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, RequiredQuest) == 0x000280, "Member 'UQuestUpdatesLog_C::RequiredQuest' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, PinnedQuestSingularText) == 0x000288, "Member 'UQuestUpdatesLog_C::PinnedQuestSingularText' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, PinnedQuestsPluralText) == 0x0002A0, "Member 'UQuestUpdatesLog_C::PinnedQuestsPluralText' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, QueuedDynamicQuestStatusUpdates) == 0x0002B8, "Member 'UQuestUpdatesLog_C::QueuedDynamicQuestStatusUpdates' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, MaxDisplayedQuestUpdates) == 0x0002C8, "Member 'UQuestUpdatesLog_C::MaxDisplayedQuestUpdates' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, QuestUpdateWidgets) == 0x0002D0, "Member 'UQuestUpdatesLog_C::QuestUpdateWidgets' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, TryDisplayNextUpdateTimerHandle) == 0x0002E0, "Member 'UQuestUpdatesLog_C::TryDisplayNextUpdateTimerHandle' has a wrong offset!");
-static_assert(offsetof(UQuestUpdatesLog_C, MaxDisplayedQuestObjectives) == 0x0002E8, "Member 'UQuestUpdatesLog_C::MaxDisplayedQuestObjectives' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

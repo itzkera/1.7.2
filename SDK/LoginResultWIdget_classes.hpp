@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LoginResultWIdget.LoginResultWIdget_C
 // 0x0038 (0x0418 - 0x03E0)
@@ -40,21 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginResultWIdget_C">();
+		BP_STATIC_CLASS_IMPL("LoginResultWIdget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginResultWIdget_C")
 	}
 	static class ULoginResultWIdget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginResultWIdget_C>();
 	}
 };
-static_assert(alignof(ULoginResultWIdget_C) == 0x000008, "Wrong alignment on ULoginResultWIdget_C");
-static_assert(sizeof(ULoginResultWIdget_C) == 0x000418, "Wrong size on ULoginResultWIdget_C");
-static_assert(offsetof(ULoginResultWIdget_C, UberGraphFrame) == 0x0003E0, "Member 'ULoginResultWIdget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoginResultWIdget_C, CommonLazyImage_0) == 0x0003E8, "Member 'ULoginResultWIdget_C::CommonLazyImage_0' has a wrong offset!");
-static_assert(offsetof(ULoginResultWIdget_C, ContinueButton) == 0x0003F0, "Member 'ULoginResultWIdget_C::ContinueButton' has a wrong offset!");
-static_assert(offsetof(ULoginResultWIdget_C, DescriptionText) == 0x0003F8, "Member 'ULoginResultWIdget_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(ULoginResultWIdget_C, TitleText) == 0x000400, "Member 'ULoginResultWIdget_C::TitleText' has a wrong offset!");
-static_assert(offsetof(ULoginResultWIdget_C, OnResultConfirmed) == 0x000408, "Member 'ULoginResultWIdget_C::OnResultConfirmed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "GA_DefaultPlayer_Consumable_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C.ExecuteUbergraph_GA_DefaultPlayer_Consumable
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGA_DefaultPlayer_Consumable_C::ExecuteUbergraph_GA_DefaultPlayer_Consumabl
 // Function GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGA_DefaultPlayer_Consumable_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -60,8 +59,8 @@ void UGA_DefaultPlayer_Consumable_C::K2_ActivateAbilityFromEvent(const struct FG
 // Function GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C.Triggered_A3A081314405D22C4EED5CB989DC8CB1
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGA_DefaultPlayer_Consumable_C::Triggered_A3A081314405D22C4EED5CB989DC8CB1(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -82,8 +81,8 @@ void UGA_DefaultPlayer_Consumable_C::Triggered_A3A081314405D22C4EED5CB989DC8CB1(
 // Function GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C.Cancelled_A3A081314405D22C4EED5CB989DC8CB1
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGA_DefaultPlayer_Consumable_C::Cancelled_A3A081314405D22C4EED5CB989DC8CB1(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -104,8 +103,8 @@ void UGA_DefaultPlayer_Consumable_C::Cancelled_A3A081314405D22C4EED5CB989DC8CB1(
 // Function GA_DefaultPlayer_Consumable.GA_DefaultPlayer_Consumable_C.Completed_A3A081314405D22C4EED5CB989DC8CB1
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGA_DefaultPlayer_Consumable_C::Completed_A3A081314405D22C4EED5CB989DC8CB1(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -122,5 +121,5 @@ void UGA_DefaultPlayer_Consumable_C::Completed_A3A081314405D22C4EED5CB989DC8CB1(
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

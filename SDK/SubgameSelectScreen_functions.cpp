@@ -14,8 +14,7 @@
 #include "SubgameSelectScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.ExecuteUbergraph_SubgameSelectScreen
 // (HasDefaults)
@@ -508,5 +507,5 @@ void USubgameSelectScreen_C::InitializeShortDescriptions()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

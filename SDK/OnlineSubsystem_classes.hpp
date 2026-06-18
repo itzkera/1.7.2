@@ -14,8 +14,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class OnlineSubsystem.NamedInterfaces
 // 0x0098 (0x00C0 - 0x0028)
@@ -29,21 +28,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NamedInterfaces">();
+		STATIC_CLASS_IMPL("NamedInterfaces")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NamedInterfaces")
 	}
 	static class UNamedInterfaces* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNamedInterfaces>();
 	}
 };
-static_assert(alignof(UNamedInterfaces) == 0x000008, "Wrong alignment on UNamedInterfaces");
-static_assert(sizeof(UNamedInterfaces) == 0x0000C0, "Wrong size on UNamedInterfaces");
-static_assert(offsetof(UNamedInterfaces, NamedInterfaces) == 0x000028, "Member 'UNamedInterfaces::NamedInterfaces' has a wrong offset!");
-static_assert(offsetof(UNamedInterfaces, NamedInterfaceDefs) == 0x000038, "Member 'UNamedInterfaces::NamedInterfaceDefs' has a wrong offset!");
 
 // Class OnlineSubsystem.TurnBasedMatchInterface
-// 0x0000 (0x0028 - 0x0028)
-class ITurnBasedMatchInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ITurnBasedMatchInterface final
 {
 public:
 	void OnMatchEnded(const class FString& Match);
@@ -52,15 +51,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TurnBasedMatchInterface">();
+		STATIC_CLASS_IMPL("TurnBasedMatchInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TurnBasedMatchInterface")
 	}
 	static class ITurnBasedMatchInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ITurnBasedMatchInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ITurnBasedMatchInterface) == 0x000008, "Wrong alignment on ITurnBasedMatchInterface");
-static_assert(sizeof(ITurnBasedMatchInterface) == 0x000028, "Wrong size on ITurnBasedMatchInterface");
 
-}
-
+SDK_NAMESPACE_END

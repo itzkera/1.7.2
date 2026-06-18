@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AthenaInventoryDragDrop.AthenaInventoryDragDrop_C
 // 0x0008 (0x0090 - 0x0088)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaInventoryDragDrop_C">();
+		BP_STATIC_CLASS_IMPL("AthenaInventoryDragDrop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaInventoryDragDrop_C")
 	}
 	static class UAthenaInventoryDragDrop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaInventoryDragDrop_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryDragDrop_C) == 0x000008, "Wrong alignment on UAthenaInventoryDragDrop_C");
-static_assert(sizeof(UAthenaInventoryDragDrop_C) == 0x000090, "Wrong size on UAthenaInventoryDragDrop_C");
-static_assert(offsetof(UAthenaInventoryDragDrop_C, SplitTheStack) == 0x000088, "Member 'UAthenaInventoryDragDrop_C::SplitTheStack' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

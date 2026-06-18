@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C
 // 0x0010 (0x0280 - 0x0270)
@@ -34,17 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCraftingIngredientsDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemCraftingIngredientsDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCraftingIngredientsDetailWidget_C")
 	}
 	static class UItemCraftingIngredientsDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCraftingIngredientsDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientsDetailWidget_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientsDetailWidget_C");
-static_assert(sizeof(UItemCraftingIngredientsDetailWidget_C) == 0x000280, "Wrong size on UItemCraftingIngredientsDetailWidget_C");
-static_assert(offsetof(UItemCraftingIngredientsDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemCraftingIngredientsDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientsDetailWidget_C, ItemCraftingIngredientList) == 0x000278, "Member 'UItemCraftingIngredientsDetailWidget_C::ItemCraftingIngredientList' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

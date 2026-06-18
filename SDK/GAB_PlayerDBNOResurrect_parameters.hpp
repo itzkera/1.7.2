@@ -17,8 +17,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.ExecuteUbergraph_GAB_PlayerDBNOResurrect
 // 0x0590 (0x0590 - 0x0000)
@@ -27,13 +27,13 @@ struct GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate2; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData2;                    // 0x0028(0x0020)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag2;                // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0050(0x0020)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0070(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate3; // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable2;                             // 0x0090(0x0020)()
 	int32                                         CallFunc_GetDataCountFromTargetData_ReturnValue;   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -47,7 +47,7 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_FC[0x4];                                       // 0x00FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0100(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate4; // 0x0100(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable3;                             // 0x0110(0x0020)()
 	struct FGameplayTag                           Temp_struct_Variable4;                             // 0x0130(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0138(0x00A8)(ConstParm)
@@ -104,7 +104,7 @@ public:
 	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x04EC(0x0008)(NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4F4[0x4];                                      // 0x04F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue;            // 0x04F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0500(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate5; // 0x0500(0x0010)(ZeroConstructor, NoDestructor)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0510(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x051C(0x000C)(IsPlainOldData, NoDestructor)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData4;                    // 0x0528(0x0020)(ConstParm)
@@ -113,82 +113,6 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0580(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect) == 0x000010, "Wrong alignment on GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect) == 0x000590, "Wrong size on GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, EntryPoint) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_TargetData2) == 0x000028, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_TargetData2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_ApplicationTag2) == 0x000048, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_TargetData) == 0x000050, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_ApplicationTag) == 0x000070, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate3) == 0x000078, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_struct_Variable) == 0x000088, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_struct_Variable2) == 0x000090, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetDataCountFromTargetData_ReturnValue) == 0x0000B0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetDataCountFromTargetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000B4, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_WaitTargetSelection_ReturnValue) == 0x0000B8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_WaitTargetSelection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_IsValid_ReturnValue) == 0x0000C0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_TargetData5) == 0x0000C8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_TargetData5' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_ApplicationTag5) == 0x0000E8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_ApplicationTag5' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_int_Loop_Counter_Variable) == 0x0000F0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Add_IntInt_ReturnValue) == 0x0000F4, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_int_Array_Index_Variable) == 0x0000F8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate4) == 0x000100, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_struct_Variable3) == 0x000110, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_struct_Variable4) == 0x000130, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_struct_Variable4' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_Event_EventData) == 0x000138, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue) == 0x0001E0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_MakeGameplayEffectContainerSpec_ReturnValue) == 0x0001E8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_MakeGameplayEffectContainerSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_IsValid_ReturnValue2) == 0x000268, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Array_Get_Item) == 0x000270, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetActorInfo_ReturnValue) == 0x0002D0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000310, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_DynamicCast_bSuccess) == 0x000318, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetSocketLocation_ReturnValue) == 0x00031C, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BreakVector_X) == 0x000328, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BreakVector_Y) == 0x00032C, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BreakVector_Z) == 0x000330, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetSocketRotation_ReturnValue) == 0x000334, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetSocketRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_MakeStruct_Vector_NetQuantize10) == 0x000340, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_MakeStruct_Vector_NetQuantize10' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Conv_RotatorToVector_ReturnValue) == 0x00034C, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Conv_RotatorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BreakVector_X2) == 0x000358, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BreakVector_X2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BreakVector_Y2) == 0x00035C, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BreakVector_Y2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BreakVector_Z2) == 0x000360, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BreakVector_Z2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, Temp_int_Variable) == 0x000364, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_MakeStruct_Vector_NetQuantizeNormal) == 0x000368, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_MakeStruct_Vector_NetQuantizeNormal' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetActorsFromTargetData_ReturnValue) == 0x000378, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetActorsFromTargetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_MakeStruct_GameplayCueParameters) == 0x000388, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_MakeStruct_GameplayCueParameters' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Array_Length_ReturnValue) == 0x000440, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Greater_IntInt_ReturnValue) == 0x000444, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Array_Get_Item2) == 0x000448, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_IsValid_ReturnValue3) == 0x000450, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000451, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Add_IntInt_ReturnValue2) == 0x000454, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000458, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000460, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_TargetData3) == 0x000470, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_TargetData3' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_ApplicationTag3) == 0x000490, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_ApplicationTag3' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Array_Add_ReturnValue) == 0x000498, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Array_Get_Item3) == 0x0004A0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Array_Length_ReturnValue2) == 0x0004A8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_DynamicCast_AsFort_Pawn) == 0x0004B0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_DynamicCast_bSuccess2) == 0x0004B8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Less_IntInt_ReturnValue) == 0x0004B9, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetAbilitySystemComponent_ReturnValue2) == 0x0004C0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetAbilitySystemComponent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x0004C8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0004D4, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_Normal_ReturnValue) == 0x0004E0, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x0004EC, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_GetActivatingPawn_ReturnValue) == 0x0004F8, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CreateDelegate_OutputDelegate5) == 0x000500, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000510, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x00051C, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_TargetData4) == 0x000528, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_TargetData4' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, K2Node_CustomEvent_ApplicationTag4) == 0x000548, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::K2Node_CustomEvent_ApplicationTag4' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_MakeTransform_ReturnValue) == 0x000550, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000580, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect, CallFunc_FinishSpawningActor_ReturnValue) == 0x000588, "Member 'GAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.K2_ActivateAbilityFromEvent
 // 0x00A8 (0x00A8 - 0x0000)
@@ -197,9 +121,6 @@ struct GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6
 // 0x0028 (0x0028 - 0x0000)
@@ -209,10 +130,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::TargetData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6
 // 0x0028 (0x0028 - 0x0000)
@@ -222,10 +139,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::TargetData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Triggered_0B41E4DC44D3371D619734A714E9FE50
 // 0x0028 (0x0028 - 0x0000)
@@ -235,10 +148,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50::TargetData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_0B41E4DC44D3371D619734A714E9FE50
 // 0x0028 (0x0028 - 0x0000)
@@ -248,10 +157,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50::TargetData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50::ApplicationTag' has a wrong offset!");
 
 // Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Completed_0B41E4DC44D3371D619734A714E9FE50
 // 0x0028 (0x0028 - 0x0000)
@@ -261,10 +166,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50) == 0x000008, "Wrong alignment on GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(sizeof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50) == 0x000028, "Wrong size on GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50, TargetData) == 0x000000, "Member 'GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50::TargetData' has a wrong offset!");
-static_assert(offsetof(GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50, ApplicationTag) == 0x000020, "Member 'GAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50::ApplicationTag' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

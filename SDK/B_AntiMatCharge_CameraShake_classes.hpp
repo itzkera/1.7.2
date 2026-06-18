@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_AntiMatCharge_CameraShake.B_AntiMatCharge_CameraShake_C
 // 0x0000 (0x0160 - 0x0160)
@@ -23,15 +22,16 @@ class UB_AntiMatCharge_CameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_AntiMatCharge_CameraShake_C">();
+		BP_STATIC_CLASS_IMPL("B_AntiMatCharge_CameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_AntiMatCharge_CameraShake_C")
 	}
 	static class UB_AntiMatCharge_CameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UB_AntiMatCharge_CameraShake_C>();
 	}
 };
-static_assert(alignof(UB_AntiMatCharge_CameraShake_C) == 0x000008, "Wrong alignment on UB_AntiMatCharge_CameraShake_C");
-static_assert(sizeof(UB_AntiMatCharge_CameraShake_C) == 0x000160, "Wrong size on UB_AntiMatCharge_CameraShake_C");
 
-}
-
+SDK_NAMESPACE_END

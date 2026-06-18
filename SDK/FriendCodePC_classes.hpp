@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FriendCodePC.FriendCodePC_C
 // 0x0048 (0x08E8 - 0x08A0)
@@ -41,21 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FriendCodePC_C">();
+		BP_STATIC_CLASS_IMPL("FriendCodePC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FriendCodePC_C")
 	}
 	static class UFriendCodePC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriendCodePC_C>();
 	}
 };
-static_assert(alignof(UFriendCodePC_C) == 0x000008, "Wrong alignment on UFriendCodePC_C");
-static_assert(sizeof(UFriendCodePC_C) == 0x0008E8, "Wrong size on UFriendCodePC_C");
-static_assert(offsetof(UFriendCodePC_C, UberGraphFrame) == 0x0008A0, "Member 'UFriendCodePC_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFriendCodePC_C, CodeText) == 0x0008A8, "Member 'UFriendCodePC_C::CodeText' has a wrong offset!");
-static_assert(offsetof(UFriendCodePC_C, CopyLinkText) == 0x0008B0, "Member 'UFriendCodePC_C::CopyLinkText' has a wrong offset!");
-static_assert(offsetof(UFriendCodePC_C, UrlText) == 0x0008B8, "Member 'UFriendCodePC_C::UrlText' has a wrong offset!");
-static_assert(offsetof(UFriendCodePC_C, FriendCode) == 0x0008C0, "Member 'UFriendCodePC_C::FriendCode' has a wrong offset!");
-static_assert(offsetof(UFriendCodePC_C, NewVar_0) == 0x0008E0, "Member 'UFriendCodePC_C::NewVar_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

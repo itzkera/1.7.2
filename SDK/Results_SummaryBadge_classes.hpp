@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_SummaryBadge.Results_SummaryBadge_C
 // 0x0018 (0x0250 - 0x0238)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_SummaryBadge_C">();
+		BP_STATIC_CLASS_IMPL("Results_SummaryBadge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_SummaryBadge_C")
 	}
 	static class UResults_SummaryBadge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_SummaryBadge_C>();
 	}
 };
-static_assert(alignof(UResults_SummaryBadge_C) == 0x000008, "Wrong alignment on UResults_SummaryBadge_C");
-static_assert(sizeof(UResults_SummaryBadge_C) == 0x000250, "Wrong size on UResults_SummaryBadge_C");
-static_assert(offsetof(UResults_SummaryBadge_C, UberGraphFrame) == 0x000238, "Member 'UResults_SummaryBadge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_SummaryBadge_C, Badge) == 0x000240, "Member 'UResults_SummaryBadge_C::Badge' has a wrong offset!");
-static_assert(offsetof(UResults_SummaryBadge_C, TextBadgeName) == 0x000248, "Member 'UResults_SummaryBadge_C::TextBadgeName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

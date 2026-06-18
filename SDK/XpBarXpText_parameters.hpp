@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function XpBarXpText.XpBarXpText_C.ExecuteUbergraph_XpBarXpText
 // 0x0040 (0x0040 - 0x0000)
@@ -25,17 +25,10 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortPublicAccountInfo                 K2Node_CustomEvent_NewInfo;                        // 0x0004(0x0010)(NoDestructor)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortPublicAccountInfo& NewInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortPublicAccountInfo                 CallFunc_GetCurrentlyViewedAccountInfo_Result;     // 0x0030(0x0010)(NoDestructor)
 };
-static_assert(alignof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText) == 0x000008, "Wrong alignment on XpBarXpText_C_ExecuteUbergraph_XpBarXpText");
-static_assert(sizeof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText) == 0x000040, "Wrong size on XpBarXpText_C_ExecuteUbergraph_XpBarXpText");
-static_assert(offsetof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText, EntryPoint) == 0x000000, "Member 'XpBarXpText_C_ExecuteUbergraph_XpBarXpText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText, K2Node_CustomEvent_NewInfo) == 0x000004, "Member 'XpBarXpText_C_ExecuteUbergraph_XpBarXpText::K2Node_CustomEvent_NewInfo' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'XpBarXpText_C_ExecuteUbergraph_XpBarXpText::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'XpBarXpText_C_ExecuteUbergraph_XpBarXpText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_ExecuteUbergraph_XpBarXpText, CallFunc_GetCurrentlyViewedAccountInfo_Result) == 0x000030, "Member 'XpBarXpText_C_ExecuteUbergraph_XpBarXpText::CallFunc_GetCurrentlyViewedAccountInfo_Result' has a wrong offset!");
 
 // Function XpBarXpText.XpBarXpText_C.HandleAccountUpdate
 // 0x0010 (0x0010 - 0x0000)
@@ -44,9 +37,6 @@ struct XpBarXpText_C_HandleAccountUpdate final
 public:
 	struct FFortPublicAccountInfo                 NewInfo;                                           // 0x0000(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(XpBarXpText_C_HandleAccountUpdate) == 0x000004, "Wrong alignment on XpBarXpText_C_HandleAccountUpdate");
-static_assert(sizeof(XpBarXpText_C_HandleAccountUpdate) == 0x000010, "Wrong size on XpBarXpText_C_HandleAccountUpdate");
-static_assert(offsetof(XpBarXpText_C_HandleAccountUpdate, NewInfo) == 0x000000, "Member 'XpBarXpText_C_HandleAccountUpdate::NewInfo' has a wrong offset!");
 
 // Function XpBarXpText.XpBarXpText_C.Update Xp Text
 // 0x0148 (0x0148 - 0x0000)
@@ -67,19 +57,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0120(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0130(0x0018)()
 };
-static_assert(alignof(XpBarXpText_C_Update_Xp_Text) == 0x000008, "Wrong alignment on XpBarXpText_C_Update_Xp_Text");
-static_assert(sizeof(XpBarXpText_C_Update_Xp_Text) == 0x000148, "Wrong size on XpBarXpText_C_Update_Xp_Text");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, Account_Info) == 0x000000, "Member 'XpBarXpText_C_Update_Xp_Text::Account_Info' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeStruct_FormatArgumentData2) == 0x000050, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000090, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeArray_Array) == 0x000098, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_Format_ReturnValue) == 0x0000A8, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_MakeLiteralText_ReturnValue) == 0x0000C0, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_Get_Skill_Points_For_Next_Level_Next_Level_Skill_Points) == 0x0000D8, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_Get_Skill_Points_For_Next_Level_Next_Level_Skill_Points' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeStruct_FormatArgumentData3) == 0x0000E0, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, K2Node_MakeArray_Array2) == 0x000120, "Member 'XpBarXpText_C_Update_Xp_Text::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Update_Xp_Text, CallFunc_Format_ReturnValue2) == 0x000130, "Member 'XpBarXpText_C_Update_Xp_Text::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
 // Function XpBarXpText.XpBarXpText_C.Get Skill Points For Next Level
 // 0x0068 (0x0068 - 0x0000)
@@ -95,15 +72,6 @@ public:
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetAccountLevelUpRewards_Rewards;         // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
 	struct FFortItemQuantityPair                  CallFunc_Array_Get_Item;                           // 0x0040(0x0028)()
 };
-static_assert(alignof(XpBarXpText_C_Get_Skill_Points_For_Next_Level) == 0x000008, "Wrong alignment on XpBarXpText_C_Get_Skill_Points_For_Next_Level");
-static_assert(sizeof(XpBarXpText_C_Get_Skill_Points_For_Next_Level) == 0x000068, "Wrong size on XpBarXpText_C_Get_Skill_Points_For_Next_Level");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, Next_Level_Skill_Points) == 0x000000, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::Next_Level_Skill_Points' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_GetLocalAccountInfo_Result) == 0x000018, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_GetLocalAccountInfo_Result' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_GetAccountLevelUpRewards_Rewards) == 0x000030, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_GetAccountLevelUpRewards_Rewards' has a wrong offset!");
-static_assert(offsetof(XpBarXpText_C_Get_Skill_Points_For_Next_Level, CallFunc_Array_Get_Item) == 0x000040, "Member 'XpBarXpText_C_Get_Skill_Points_For_Next_Level::CallFunc_Array_Get_Item' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

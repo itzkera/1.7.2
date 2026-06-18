@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PanelButton.PanelButton_C.ExecuteUbergraph_PanelButton
 // 0x0028 (0x0028 - 0x0000)
@@ -34,18 +34,6 @@ public:
 	struct FDataTableRowHandle                    K2Node_Event_NewTriggeredAction;                   // 0x0010(0x0010)(ConstParm, NoDestructor)
 	float                                         K2Node_Event_HeldPercent;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PanelButton_C_ExecuteUbergraph_PanelButton) == 0x000008, "Wrong alignment on PanelButton_C_ExecuteUbergraph_PanelButton");
-static_assert(sizeof(PanelButton_C_ExecuteUbergraph_PanelButton) == 0x000028, "Wrong size on PanelButton_C_ExecuteUbergraph_PanelButton");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, EntryPoint) == 0x000000, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, Temp_byte_Variable) == 0x000004, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, Temp_byte_Variable2) == 0x000005, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, K2Node_Event_IsDesignTime) == 0x000006, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, CallFunc_HasAnyChildren_ReturnValue) == 0x000007, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::CallFunc_HasAnyChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, Temp_bool_Variable) == 0x000008, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, K2Node_ComponentBoundEvent_bUsingGamepad) == 0x000009, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::K2Node_ComponentBoundEvent_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, K2Node_Select_Default) == 0x00000A, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, K2Node_Event_NewTriggeredAction) == 0x000010, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::K2Node_Event_NewTriggeredAction' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_ExecuteUbergraph_PanelButton, K2Node_Event_HeldPercent) == 0x000020, "Member 'PanelButton_C_ExecuteUbergraph_PanelButton::K2Node_Event_HeldPercent' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.OnActionProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -54,9 +42,6 @@ struct PanelButton_C_OnActionProgress final
 public:
 	float                                         HeldPercent;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PanelButton_C_OnActionProgress) == 0x000004, "Wrong alignment on PanelButton_C_OnActionProgress");
-static_assert(sizeof(PanelButton_C_OnActionProgress) == 0x000004, "Wrong size on PanelButton_C_OnActionProgress");
-static_assert(offsetof(PanelButton_C_OnActionProgress, HeldPercent) == 0x000000, "Member 'PanelButton_C_OnActionProgress::HeldPercent' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.OnTriggeredInputActionChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -65,9 +50,6 @@ struct PanelButton_C_OnTriggeredInputActionChanged final
 public:
 	struct FDataTableRowHandle                    NewTriggeredAction;                                // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(PanelButton_C_OnTriggeredInputActionChanged) == 0x000008, "Wrong alignment on PanelButton_C_OnTriggeredInputActionChanged");
-static_assert(sizeof(PanelButton_C_OnTriggeredInputActionChanged) == 0x000010, "Wrong size on PanelButton_C_OnTriggeredInputActionChanged");
-static_assert(offsetof(PanelButton_C_OnTriggeredInputActionChanged, NewTriggeredAction) == 0x000000, "Member 'PanelButton_C_OnTriggeredInputActionChanged::NewTriggeredAction' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +58,6 @@ struct PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature) == 0x000001, "Wrong alignment on PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
-static_assert(sizeof(PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature) == 0x000001, "Wrong size on PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
-static_assert(offsetof(PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature, bUsingGamepad) == 0x000000, "Member 'PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature::bUsingGamepad' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +66,6 @@ struct PanelButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PanelButton_C_PreConstruct) == 0x000001, "Wrong alignment on PanelButton_C_PreConstruct");
-static_assert(sizeof(PanelButton_C_PreConstruct) == 0x000001, "Wrong size on PanelButton_C_PreConstruct");
-static_assert(offsetof(PanelButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PanelButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.UpdateTextAndStyle
 // 0x0010 (0x0010 - 0x0000)
@@ -99,10 +75,6 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PanelButton_C_UpdateTextAndStyle) == 0x000008, "Wrong alignment on PanelButton_C_UpdateTextAndStyle");
-static_assert(sizeof(PanelButton_C_UpdateTextAndStyle) == 0x000010, "Wrong size on PanelButton_C_UpdateTextAndStyle");
-static_assert(offsetof(PanelButton_C_UpdateTextAndStyle, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'PanelButton_C_UpdateTextAndStyle::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_UpdateTextAndStyle, CallFunc_IsUsingGamepad_ReturnValue) == 0x000008, "Member 'PanelButton_C_UpdateTextAndStyle::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function PanelButton.PanelButton_C.UpdateStyle
 // 0x0020 (0x0020 - 0x0000)
@@ -113,10 +85,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ActionText;                                        // 0x0008(0x0018)(Edit)
 };
-static_assert(alignof(PanelButton_C_UpdateStyle) == 0x000008, "Wrong alignment on PanelButton_C_UpdateStyle");
-static_assert(sizeof(PanelButton_C_UpdateStyle) == 0x000020, "Wrong size on PanelButton_C_UpdateStyle");
-static_assert(offsetof(PanelButton_C_UpdateStyle, bUsingGamepad) == 0x000000, "Member 'PanelButton_C_UpdateStyle::bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(PanelButton_C_UpdateStyle, ActionText) == 0x000008, "Member 'PanelButton_C_UpdateStyle::ActionText' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

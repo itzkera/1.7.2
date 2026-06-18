@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ActiveModifiersPanelContent.ActiveModifiersPanelContent_C
 // 0x0018 (0x0250 - 0x0238)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActiveModifiersPanelContent_C">();
+		BP_STATIC_CLASS_IMPL("ActiveModifiersPanelContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActiveModifiersPanelContent_C")
 	}
 	static class UActiveModifiersPanelContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActiveModifiersPanelContent_C>();
 	}
 };
-static_assert(alignof(UActiveModifiersPanelContent_C) == 0x000008, "Wrong alignment on UActiveModifiersPanelContent_C");
-static_assert(sizeof(UActiveModifiersPanelContent_C) == 0x000250, "Wrong size on UActiveModifiersPanelContent_C");
-static_assert(offsetof(UActiveModifiersPanelContent_C, UberGraphFrame) == 0x000238, "Member 'UActiveModifiersPanelContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActiveModifiersPanelContent_C, Image_0) == 0x000240, "Member 'UActiveModifiersPanelContent_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UActiveModifiersPanelContent_C, MissionDetailsModifierList) == 0x000248, "Member 'UActiveModifiersPanelContent_C::MissionDetailsModifierList' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

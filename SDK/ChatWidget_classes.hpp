@@ -17,8 +17,7 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ChatWidget.ChatWidget_C
 // 0x0080 (0x0488 - 0x0408)
@@ -59,26 +58,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChatWidget_C">();
+		BP_STATIC_CLASS_IMPL("ChatWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatWidget_C")
 	}
 	static class UChatWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatWidget_C>();
 	}
 };
-static_assert(alignof(UChatWidget_C) == 0x000008, "Wrong alignment on UChatWidget_C");
-static_assert(sizeof(UChatWidget_C) == 0x000488, "Wrong size on UChatWidget_C");
-static_assert(offsetof(UChatWidget_C, UberGraphFrame) == 0x000410, "Member 'UChatWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, ConsoleChatShortcut) == 0x000418, "Member 'UChatWidget_C::ConsoleChatShortcut' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CursorModeSwitcher) == 0x000420, "Member 'UChatWidget_C::CursorModeSwitcher' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, FortChat) == 0x000428, "Member 'UChatWidget_C::FortChat' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, HudContentHBox) == 0x000430, "Member 'UChatWidget_C::HudContentHBox' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, KeybindWidget) == 0x000438, "Member 'UChatWidget_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CloseUserListAction) == 0x000440, "Member 'UChatWidget_C::CloseUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, OpenUserListAction) == 0x000450, "Member 'UChatWidget_C::OpenUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CurrentUserListAction) == 0x000460, "Member 'UChatWidget_C::CurrentUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, bEnteringChat) == 0x000470, "Member 'UChatWidget_C::bEnteringChat' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, AboutToEnterChat) == 0x000478, "Member 'UChatWidget_C::AboutToEnterChat' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

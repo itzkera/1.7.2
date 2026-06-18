@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AlterationsWidget.AlterationsWidget_C.ExecuteUbergraph_AlterationsWidget
 // 0x0070 (0x0070 - 0x0000)
@@ -38,21 +38,6 @@ public:
 	EFortItemType                                 CallFunc_GetType_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget) == 0x000008, "Wrong alignment on AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget");
-static_assert(sizeof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget) == 0x000070, "Wrong size on AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, EntryPoint) == 0x000000, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_Create_ReturnValue) == 0x000010, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000018, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_IsAlterationUnlocked_ReturnValue) == 0x000020, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_IsAlterationUnlocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, K2Node_Event_AlterationInfo) == 0x000028, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::K2Node_Event_AlterationInfo' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_AddChildToVerticalBox_ReturnValue2) == 0x000040, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_AddChildToVerticalBox_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_Create_ReturnValue2) == 0x000048, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_Create_ReturnValue3) == 0x000050, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_Create_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_AddChildToVerticalBox_ReturnValue3) == 0x000058, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_AddChildToVerticalBox_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_AddChildToVerticalBox_ReturnValue4) == 0x000060, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_AddChildToVerticalBox_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_GetType_ReturnValue) == 0x000068, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000069, "Member 'AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function AlterationsWidget.AlterationsWidget_C.OnGenerateAlteration
 // 0x0018 (0x0018 - 0x0000)
@@ -61,9 +46,6 @@ struct AlterationsWidget_C_OnGenerateAlteration final
 public:
 	struct FFortUIAlteration                      AlterationInfo;                                    // 0x0000(0x0018)(Parm, NoDestructor)
 };
-static_assert(alignof(AlterationsWidget_C_OnGenerateAlteration) == 0x000008, "Wrong alignment on AlterationsWidget_C_OnGenerateAlteration");
-static_assert(sizeof(AlterationsWidget_C_OnGenerateAlteration) == 0x000018, "Wrong size on AlterationsWidget_C_OnGenerateAlteration");
-static_assert(offsetof(AlterationsWidget_C_OnGenerateAlteration, AlterationInfo) == 0x000000, "Member 'AlterationsWidget_C_OnGenerateAlteration::AlterationInfo' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

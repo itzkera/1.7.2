@@ -14,8 +14,7 @@
 #include "DailyRewardsItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DailyRewardsItem.DailyRewardsItem_C.ExecuteUbergraph_DailyRewardsItem
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UDailyRewardsItem_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

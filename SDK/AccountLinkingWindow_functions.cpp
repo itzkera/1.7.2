@@ -14,8 +14,7 @@
 #include "AccountLinkingWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AccountLinkingWindow.AccountLinkingWindow_C.ExecuteUbergraph_AccountLinkingWindow
 // (HasDefaults)
@@ -564,5 +563,5 @@ void UAccountLinkingWindow_C::SetupLinkText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

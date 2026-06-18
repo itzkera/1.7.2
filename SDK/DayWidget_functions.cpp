@@ -14,8 +14,7 @@
 #include "DayWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DayWidget.DayWidget_C.ExecuteUbergraph_DayWidget
 // ()
@@ -64,5 +63,5 @@ void UDayWidget_C::Update()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "MovieSceneCapture_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
@@ -31,7 +30,12 @@ float UMovieSceneCaptureEnvironment::GetCaptureElapsedTime()
 
 	Params::MovieSceneCaptureEnvironment_GetCaptureElapsedTime Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -51,10 +55,15 @@ int32 UMovieSceneCaptureEnvironment::GetCaptureFrameNumber()
 
 	Params::MovieSceneCaptureEnvironment_GetCaptureFrameNumber Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

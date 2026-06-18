@@ -14,8 +14,7 @@
 #include "MissionTrackerSubEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionTrackerSubEntry.MissionTrackerSubEntry_C.ExecuteUbergraph_MissionTrackerSubEntry
 // ()
@@ -279,7 +278,7 @@ void UMissionTrackerSubEntry_C::DrawAttention()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortMissionState*                MissionElement                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            EventTags                                              (Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer&           EventTags                                              (Parm, OutParm, ReferenceParm)
 
 void UMissionTrackerSubEntry_C::HandleMissionUIEvent(class AFortMissionState* MissionElement, struct FGameplayTagContainer& EventTags)
 {
@@ -332,5 +331,5 @@ float UMissionTrackerSubEntry_C::GetHeightEstimate() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

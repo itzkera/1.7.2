@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C
 // 0x0030 (0x0940 - 0x0910)
@@ -37,21 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookSectionTileWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookSectionTileWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookSectionTileWidget_C")
 	}
 	static class UCollectionBookSectionTileWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookSectionTileWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSectionTileWidget_C) == 0x000008, "Wrong alignment on UCollectionBookSectionTileWidget_C");
-static_assert(sizeof(UCollectionBookSectionTileWidget_C) == 0x000940, "Wrong size on UCollectionBookSectionTileWidget_C");
-static_assert(offsetof(UCollectionBookSectionTileWidget_C, UberGraphFrame) == 0x000910, "Member 'UCollectionBookSectionTileWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileWidget_C, SlotBorder) == 0x000918, "Member 'UCollectionBookSectionTileWidget_C::SlotBorder' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileWidget_C, NormalTextStyle) == 0x000920, "Member 'UCollectionBookSectionTileWidget_C::NormalTextStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileWidget_C, CompletedTextStyle) == 0x000928, "Member 'UCollectionBookSectionTileWidget_C::CompletedTextStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileWidget_C, NormalBorderStyle) == 0x000930, "Member 'UCollectionBookSectionTileWidget_C::NormalBorderStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileWidget_C, CompletedBorderStyle) == 0x000938, "Member 'UCollectionBookSectionTileWidget_C::CompletedBorderStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

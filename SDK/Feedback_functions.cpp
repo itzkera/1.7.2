@@ -14,8 +14,7 @@
 #include "Feedback_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Feedback.Feedback_C.ExecuteUbergraph_Feedback
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UFeedback_C::OnActivated()
 // Function Feedback.Feedback_C.HandleTextChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UFeedback_C::HandleTextChanged(const class FText& Text)
 {
@@ -218,7 +217,7 @@ void UFeedback_C::InitializeFeedback()
 // Function Feedback.Feedback_C.Setup For Reporting Player
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Player_Name                                            (Parm)
+// const class FText&                      Player_Name                                            (Parm)
 
 void UFeedback_C::Setup_For_Reporting_Player(const class FText& Player_Name)
 {
@@ -234,5 +233,5 @@ void UFeedback_C::Setup_For_Reporting_Player(const class FText& Player_Name)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Results_NameplateWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_NameplateWidget.Results_NameplateWidget_C.ExecuteUbergraph_Results_NameplateWidget
 // ()
@@ -126,5 +125,5 @@ void UResults_NameplateWidget_C::Outro()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

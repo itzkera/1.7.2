@@ -14,8 +14,7 @@
 #include "WM_Pin_Master_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WM_Pin_Master.WM_Pin_Master_C.ExecuteUbergraph_WM_Pin_Master
 // (HasDefaults)
@@ -95,7 +94,7 @@ void AWM_Pin_Master_C::HandleOnBeginCursorOver(class AActor* TouchedActor)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           TouchedActor                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             ButtonPressed                                          (Parm, HasGetValueTypeHash)
+// const struct FKey&                      ButtonPressed                                          (Parm, HasGetValueTypeHash)
 
 void AWM_Pin_Master_C::HandleOnClicked(class AActor* TouchedActor, const struct FKey& ButtonPressed)
 {
@@ -144,7 +143,7 @@ void AWM_Pin_Master_C::UserConstructionScript()
 // Function WM_Pin_Master.WM_Pin_Master_C.IsLeader
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Enabled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Enabled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AWM_Pin_Master_C::IsLeader(bool* Enabled)
 {
@@ -165,7 +164,7 @@ void AWM_Pin_Master_C::IsLeader(bool* Enabled)
 // Function WM_Pin_Master.WM_Pin_Master_C.CanAccessPin
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Accessible                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Accessible                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AWM_Pin_Master_C::CanAccessPin(bool* Accessible)
 {
@@ -186,7 +185,7 @@ void AWM_Pin_Master_C::CanAccessPin(bool* Accessible)
 // Function WM_Pin_Master.WM_Pin_Master_C.GetRequiredText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             RequirementText                                        (Parm, OutParm)
+// class FText*                            RequirementText                                        (Parm, OutParm)
 
 void AWM_Pin_Master_C::GetRequiredText(class FText* RequirementText)
 {
@@ -235,7 +234,7 @@ void AWM_Pin_Master_C::InitializeContextEvents()
 // Function WM_Pin_Master.WM_Pin_Master_C.OnSetPreviewedSceneTheater
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           PreviewedTheaterId_0                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    PreviewedTheaterId_0                                   (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AWM_Pin_Master_C::OnSetPreviewedSceneTheater(const class FString& PreviewedTheaterId_0)
 {
@@ -255,7 +254,7 @@ void AWM_Pin_Master_C::OnSetPreviewedSceneTheater(const class FString& Previewed
 // Function WM_Pin_Master.WM_Pin_Master_C.OnTheaterSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           TheaterId_0                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    TheaterId_0                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void AWM_Pin_Master_C::OnTheaterSelected(const class FString& TheaterId_0)
 {
@@ -275,7 +274,7 @@ void AWM_Pin_Master_C::OnTheaterSelected(const class FString& TheaterId_0)
 // Function WM_Pin_Master.WM_Pin_Master_C.OnQuestsCompleted
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortQuestItem*>           QuestItems                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortQuestItem*>&          QuestItems                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void AWM_Pin_Master_C::OnQuestsCompleted(TArray<class UFortQuestItem*>& QuestItems)
 {
@@ -307,5 +306,5 @@ void AWM_Pin_Master_C::UpdateSelectionState()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

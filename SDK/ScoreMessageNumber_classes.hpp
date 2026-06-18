@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ScoreMessageNumber.ScoreMessageNumber_C
 // 0x0030 (0x0268 - 0x0238)
@@ -39,20 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ScoreMessageNumber_C">();
+		BP_STATIC_CLASS_IMPL("ScoreMessageNumber_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreMessageNumber_C")
 	}
 	static class UScoreMessageNumber_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreMessageNumber_C>();
 	}
 };
-static_assert(alignof(UScoreMessageNumber_C) == 0x000008, "Wrong alignment on UScoreMessageNumber_C");
-static_assert(sizeof(UScoreMessageNumber_C) == 0x000268, "Wrong size on UScoreMessageNumber_C");
-static_assert(offsetof(UScoreMessageNumber_C, UberGraphFrame) == 0x000238, "Member 'UScoreMessageNumber_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UScoreMessageNumber_C, ScoreValue) == 0x000240, "Member 'UScoreMessageNumber_C::ScoreValue' has a wrong offset!");
-static_assert(offsetof(UScoreMessageNumber_C, Score) == 0x000248, "Member 'UScoreMessageNumber_C::Score' has a wrong offset!");
-static_assert(offsetof(UScoreMessageNumber_C, OnScoreValueSet) == 0x000250, "Member 'UScoreMessageNumber_C::OnScoreValueSet' has a wrong offset!");
-static_assert(offsetof(UScoreMessageNumber_C, ScoreCategory) == 0x000260, "Member 'UScoreMessageNumber_C::ScoreCategory' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

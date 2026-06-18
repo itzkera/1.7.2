@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TracerGeneric.TracerGeneric_C
 // 0x0068 (0x0478 - 0x0410)
@@ -52,28 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TracerGeneric_C">();
+		BP_STATIC_CLASS_IMPL("TracerGeneric_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TracerGeneric_C")
 	}
 	static class ATracerGeneric_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATracerGeneric_C>();
 	}
 };
-static_assert(alignof(ATracerGeneric_C) == 0x000008, "Wrong alignment on ATracerGeneric_C");
-static_assert(sizeof(ATracerGeneric_C) == 0x000478, "Wrong size on ATracerGeneric_C");
-static_assert(offsetof(ATracerGeneric_C, UberGraphFrame) == 0x000410, "Member 'ATracerGeneric_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PreviousPlaneDotProd) == 0x000418, "Member 'ATracerGeneric_C::PreviousPlaneDotProd' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, bHasPlayedPassBySound) == 0x00041C, "Member 'ATracerGeneric_C::bHasPlayedPassBySound' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, CachedDirectionVector) == 0x000420, "Member 'ATracerGeneric_C::CachedDirectionVector' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, Start) == 0x00042C, "Member 'ATracerGeneric_C::Start' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, End) == 0x000438, "Member 'ATracerGeneric_C::End' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PassByRadiusMin) == 0x000444, "Member 'ATracerGeneric_C::PassByRadiusMin' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PassByRadiusMax) == 0x000448, "Member 'ATracerGeneric_C::PassByRadiusMax' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PassByFarSound) == 0x000450, "Member 'ATracerGeneric_C::PassByFarSound' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PassByCloseSound) == 0x000458, "Member 'ATracerGeneric_C::PassByCloseSound' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PassByClosenessIntensity) == 0x000460, "Member 'ATracerGeneric_C::PassByClosenessIntensity' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, PassByPawn) == 0x000468, "Member 'ATracerGeneric_C::PassByPawn' has a wrong offset!");
-static_assert(offsetof(ATracerGeneric_C, CachedPassDistance) == 0x000470, "Member 'ATracerGeneric_C::CachedPassDistance' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

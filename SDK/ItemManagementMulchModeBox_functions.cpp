@@ -14,8 +14,7 @@
 #include "ItemManagementMulchModeBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.ExecuteUbergraph_ItemManagementMulchModeBox
 // (HasDefaults)
@@ -96,7 +95,7 @@ void UItemManagementMulchModeBox_C::HandleDifferentItemToDetailSetBP()
 // Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementMulchModeBox_C::HandleBack(bool* PassThrough)
 {
@@ -117,7 +116,7 @@ void UItemManagementMulchModeBox_C::HandleBack(bool* PassThrough)
 // Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleInfo
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Pass_Through                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Pass_Through                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementMulchModeBox_C::HandleInfo(bool* Pass_Through)
 {
@@ -172,7 +171,7 @@ void UItemManagementMulchModeBox_C::HandleCursorModeChanging(bool IsEnabled)
 // Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleLeaveInventory
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementMulchModeBox_C::HandleLeaveInventory(bool* PassThrough)
 {
@@ -189,5 +188,5 @@ void UItemManagementMulchModeBox_C::HandleLeaveInventory(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

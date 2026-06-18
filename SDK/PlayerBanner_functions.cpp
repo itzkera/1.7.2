@@ -14,8 +14,7 @@
 #include "PlayerBanner_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerBanner.PlayerBanner_C.ExecuteUbergraph_PlayerBanner
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UPlayerBanner_C::PreConstruct(bool IsDesignTime)
 // Function PlayerBanner.PlayerBanner_C.OnTeamMemberStateChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void UPlayerBanner_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -80,8 +79,8 @@ void UPlayerBanner_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo&
 // Function PlayerBanner.PlayerBanner_C.SetBannerImage
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortHomeBaseInfo                Image_info                                             (Parm)
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FFortHomeBaseInfo&         Image_info                                             (Parm)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info, bool* Success)
 {
@@ -144,7 +143,7 @@ void UPlayerBanner_C::SetBannerColorId(class FName InBannerColorId)
 // Function PlayerBanner.PlayerBanner_C.SetBannerOwner
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 OwnerId                                                (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          OwnerId                                                (Parm, HasGetValueTypeHash)
 
 void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId)
 {
@@ -164,7 +163,7 @@ void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId)
 // Function PlayerBanner.PlayerBanner_C.GetBannerMID
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UMaterialInstanceDynamic*         BannerMID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic**        BannerMID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID)
 {
@@ -215,5 +214,5 @@ void UPlayerBanner_C::ClearBannerState()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

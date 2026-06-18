@@ -18,8 +18,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.ExecuteUbergraph_Rewards_ItemCard
 // 0x0028 (0x0028 - 0x0000)
@@ -32,12 +32,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard");
-static_assert(sizeof(Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard) == 0x000028, "Wrong size on Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard");
-static_assert(offsetof(Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard, EntryPoint) == 0x000000, "Member 'Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard, K2Node_Event_IsDesignTime) == 0x000020, "Member 'Rewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +40,6 @@ struct Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Rewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -57,9 +48,6 @@ struct Rewards_ItemCard_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_PreConstruct) == 0x000001, "Wrong alignment on Rewards_ItemCard_C_PreConstruct");
-static_assert(sizeof(Rewards_ItemCard_C_PreConstruct) == 0x000001, "Wrong size on Rewards_ItemCard_C_PreConstruct");
-static_assert(offsetof(Rewards_ItemCard_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Rewards_ItemCard_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.InitDesignView
 // 0x0010 (0x0010 - 0x0000)
@@ -69,10 +57,6 @@ public:
 	class UFortItemDefinition*                    TempItemDefinition;                                // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                              CallFunc_CreateTemporaryItemInstanceBP_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_InitDesignView) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_InitDesignView");
-static_assert(sizeof(Rewards_ItemCard_C_InitDesignView) == 0x000010, "Wrong size on Rewards_ItemCard_C_InitDesignView");
-static_assert(offsetof(Rewards_ItemCard_C_InitDesignView, TempItemDefinition) == 0x000000, "Member 'Rewards_ItemCard_C_InitDesignView::TempItemDefinition' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDesignView, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_InitDesignView::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetItemToRepresent
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +65,6 @@ struct Rewards_ItemCard_C_SetItemToRepresent final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_SetItemToRepresent) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_SetItemToRepresent");
-static_assert(sizeof(Rewards_ItemCard_C_SetItemToRepresent) == 0x000008, "Wrong size on Rewards_ItemCard_C_SetItemToRepresent");
-static_assert(offsetof(Rewards_ItemCard_C_SetItemToRepresent, Item) == 0x000000, "Member 'Rewards_ItemCard_C_SetItemToRepresent::Item' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.TickSlideAnimation
 // 0x0110 (0x0110 - 0x0000)
@@ -137,53 +118,6 @@ public:
 	class UCanvasPanelSlot*                       K2Node_DynamicCast_AsCanvas_Panel_Slot;            // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_TickSlideAnimation) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_TickSlideAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_TickSlideAnimation) == 0x000110, "Wrong size on Rewards_ItemCard_C_TickSlideAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CanvasSlot) == 0x000000, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CanvasSlot' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, Alpha) == 0x000008, "Member 'Rewards_ItemCard_C_TickSlideAnimation::Alpha' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00000C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X) == 0x000010, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y) == 0x000014, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X2) == 0x000018, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y2) == 0x00001C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_GetOffsets_ReturnValue) == 0x000020, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_GetOffsets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000030, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue) == 0x000034, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue2) == 0x000038, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue3) == 0x00003C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_MakeVector2D_ReturnValue) == 0x000040, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X3) == 0x000048, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y3) == 0x00004C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X4) == 0x000050, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y4) == 0x000054, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X5) == 0x000058, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X5' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y5) == 0x00005C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y5' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X6) == 0x000060, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X6' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y6) == 0x000064, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y6' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue4) == 0x000068, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue5) == 0x00006C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue6) == 0x000070, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue7) == 0x000074, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_MakeVector2D_ReturnValue2) == 0x000078, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_MakeVector2D_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_MakeVector2D_ReturnValue3) == 0x000080, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_MakeVector2D_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, K2Node_MakeStruct_Anchors) == 0x000088, "Member 'Rewards_ItemCard_C_TickSlideAnimation::K2Node_MakeStruct_Anchors' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue8) == 0x000098, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, K2Node_MakeStruct_Margin) == 0x00009C, "Member 'Rewards_ItemCard_C_TickSlideAnimation::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue9) == 0x0000AC, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_MakeVector2D_ReturnValue4) == 0x0000B0, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_MakeVector2D_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X7) == 0x0000B8, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X7' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y7) == 0x0000BC, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y7' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, K2Node_MakeStruct_WidgetTransform) == 0x0000C0, "Member 'Rewards_ItemCard_C_TickSlideAnimation::K2Node_MakeStruct_WidgetTransform' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_X8) == 0x0000DC, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_X8' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_BreakVector2D_Y8) == 0x0000E0, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_BreakVector2D_Y8' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000E4, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue10) == 0x0000E8, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000EC, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_Ease_ReturnValue11) == 0x0000F0, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_Ease_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_FMin_ReturnValue) == 0x0000F4, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, CallFunc_MakeVector2D_ReturnValue5) == 0x0000F8, "Member 'Rewards_ItemCard_C_TickSlideAnimation::CallFunc_MakeVector2D_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, K2Node_DynamicCast_AsCanvas_Panel_Slot) == 0x000100, "Member 'Rewards_ItemCard_C_TickSlideAnimation::K2Node_DynamicCast_AsCanvas_Panel_Slot' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickSlideAnimation, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'Rewards_ItemCard_C_TickSlideAnimation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PlaySlideAnimation
 // 0x0098 (0x0098 - 0x0000)
@@ -213,27 +147,6 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_PlaySlideAnimation) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_PlaySlideAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_PlaySlideAnimation) == 0x000098, "Wrong size on Rewards_ItemCard_C_PlaySlideAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, TargetAlignment) == 0x000000, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::TargetAlignment' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, TargetAnchors) == 0x000008, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::TargetAnchors' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, TargetScale) == 0x000018, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::TargetScale' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, TargetOffset) == 0x00001C, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::TargetOffset' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, TargetAngle) == 0x000020, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::TargetAngle' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, Duration) == 0x000024, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::Duration' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, StaggerDelay) == 0x000028, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::StaggerDelay' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, TargetTranslation) == 0x00002C, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::TargetTranslation' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000034, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000048, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000050, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, K2Node_DynamicCast_AsCanvas_Panel_Slot) == 0x000058, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::K2Node_DynamicCast_AsCanvas_Panel_Slot' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_GetOffsets_ReturnValue) == 0x000064, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_GetOffsets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_GetAnchors_ReturnValue) == 0x000074, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_GetAnchors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_GetAlignment_ReturnValue) == 0x000084, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_GetAlignment_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_BreakVector2D_X) == 0x00008C, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlaySlideAnimation, CallFunc_BreakVector2D_Y) == 0x000090, "Member 'Rewards_ItemCard_C_PlaySlideAnimation::CallFunc_BreakVector2D_Y' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.StartSlideAnimation
 // 0x0020 (0x0020 - 0x0000)
@@ -245,11 +158,6 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_StartSlideAnimation) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_StartSlideAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_StartSlideAnimation) == 0x000020, "Wrong size on Rewards_ItemCard_C_StartSlideAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_StartSlideAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Rewards_ItemCard_C_StartSlideAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_StartSlideAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_StartSlideAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_StartSlideAnimation, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Rewards_ItemCard_C_StartSlideAnimation::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PlayScaleAnimation
 // 0x0038 (0x0038 - 0x0000)
@@ -267,17 +175,6 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_PlayScaleAnimation) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_PlayScaleAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_PlayScaleAnimation) == 0x000038, "Wrong size on Rewards_ItemCard_C_PlayScaleAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, TargetScale) == 0x000000, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::TargetScale' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, Duration) == 0x000004, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::Duration' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, DropShadowDepth) == 0x000008, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, CallFunc_GetDropShadowDepth_DropShadowDepth) == 0x00000C, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::CallFunc_GetDropShadowDepth_DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000020, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000028, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, CallFunc_BreakVector2D_X) == 0x000030, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_PlayScaleAnimation, CallFunc_BreakVector2D_Y) == 0x000034, "Member 'Rewards_ItemCard_C_PlayScaleAnimation::CallFunc_BreakVector2D_Y' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.TickScaleAnimation
 // 0x0044 (0x0044 - 0x0000)
@@ -296,18 +193,6 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0020(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x0028(0x001C)(NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_TickScaleAnimation) == 0x000004, "Wrong alignment on Rewards_ItemCard_C_TickScaleAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_TickScaleAnimation) == 0x000044, "Wrong size on Rewards_ItemCard_C_TickScaleAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, Alpha) == 0x000000, "Member 'Rewards_ItemCard_C_TickScaleAnimation::Alpha' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_Ease_ReturnValue) == 0x000004, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00000C, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000014, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_FMin_ReturnValue) == 0x000018, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_Ease_ReturnValue2) == 0x00001C, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_Ease_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, CallFunc_MakeVector2D_ReturnValue) == 0x000020, "Member 'Rewards_ItemCard_C_TickScaleAnimation::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickScaleAnimation, K2Node_MakeStruct_WidgetTransform) == 0x000028, "Member 'Rewards_ItemCard_C_TickScaleAnimation::K2Node_MakeStruct_WidgetTransform' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetInspectAction
 // 0x0010 (0x0010 - 0x0000)
@@ -316,9 +201,6 @@ struct Rewards_ItemCard_C_SetInspectAction final
 public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0000(0x0010)(NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_SetInspectAction) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_SetInspectAction");
-static_assert(sizeof(Rewards_ItemCard_C_SetInspectAction) == 0x000010, "Wrong size on Rewards_ItemCard_C_SetInspectAction");
-static_assert(offsetof(Rewards_ItemCard_C_SetInspectAction, K2Node_MakeStruct_DataTableRowHandle) == 0x000000, "Member 'Rewards_ItemCard_C_SetInspectAction::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetItemToRepresent
 // 0x0008 (0x0008 - 0x0000)
@@ -327,9 +209,6 @@ struct Rewards_ItemCard_C_GetItemToRepresent final
 public:
 	class UFortItem*                              ItemToRepresent_0;                                 // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_GetItemToRepresent) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_GetItemToRepresent");
-static_assert(sizeof(Rewards_ItemCard_C_GetItemToRepresent) == 0x000008, "Wrong size on Rewards_ItemCard_C_GetItemToRepresent");
-static_assert(offsetof(Rewards_ItemCard_C_GetItemToRepresent, ItemToRepresent_0) == 0x000000, "Member 'Rewards_ItemCard_C_GetItemToRepresent::ItemToRepresent_0' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetCardSize
 // 0x0030 (0x0030 - 0x0000)
@@ -347,16 +226,6 @@ public:
 	uint8                                         Pad_23[0x1];                                       // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_GetCardDimensions_ReturnValue;            // 0x0024(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_GetCardSize) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_GetCardSize");
-static_assert(sizeof(Rewards_ItemCard_C_GetCardSize) == 0x000030, "Wrong size on Rewards_ItemCard_C_GetCardSize");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, ReturnValue) == 0x000000, "Member 'Rewards_ItemCard_C_GetCardSize::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_GetCardSize::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, CallFunc_GetCardSize_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_GetCardSize::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, K2Node_DynamicCast_AsFort_Cheat_Manager) == 0x000018, "Member 'Rewards_ItemCard_C_GetCardSize::K2Node_DynamicCast_AsFort_Cheat_Manager' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Rewards_ItemCard_C_GetCardSize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000021, "Member 'Rewards_ItemCard_C_GetCardSize::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, CallFunc_BooleanAND_ReturnValue) == 0x000022, "Member 'Rewards_ItemCard_C_GetCardSize::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetCardSize, CallFunc_GetCardDimensions_ReturnValue) == 0x000024, "Member 'Rewards_ItemCard_C_GetCardSize::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SizeDown
 // 0x00E8 (0x00E8 - 0x0000)
@@ -421,57 +290,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue5;                  // 0x00E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_SizeDown) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_SizeDown");
-static_assert(sizeof(Rewards_ItemCard_C_SizeDown) == 0x0000E8, "Wrong size on Rewards_ItemCard_C_SizeDown");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, Duration) == 0x000000, "Member 'Rewards_ItemCard_C_SizeDown::Duration' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, Delay) == 0x000004, "Member 'Rewards_ItemCard_C_SizeDown::Delay' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, DropShadowDepth) == 0x000008, "Member 'Rewards_ItemCard_C_SizeDown::DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000018, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_AsFort_Cheat_Manager) == 0x000020, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_AsFort_Cheat_Manager' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_AsFort_Cheat_Manager2) == 0x000030, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_AsFort_Cheat_Manager2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_bSuccess2) == 0x000038, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000039, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_ShouldUseNewItemCards_ReturnValue2) == 0x00003A, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_ShouldUseNewItemCards_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BooleanAND_ReturnValue) == 0x00003B, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BooleanAND_ReturnValue2) == 0x00003C, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardSize_ReturnValue) == 0x00003D, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardSize_ReturnValue2) == 0x00003E, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardSize_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetOwningPlayer_ReturnValue3) == 0x000040, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetOwningPlayer_ReturnValue4) == 0x000048, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetOwningPlayer_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_AsFort_Cheat_Manager3) == 0x000050, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_AsFort_Cheat_Manager3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_bSuccess3) == 0x000058, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_AsFort_Cheat_Manager4) == 0x000060, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_AsFort_Cheat_Manager4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_DynamicCast_bSuccess4) == 0x000068, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_ShouldUseNewItemCards_ReturnValue3) == 0x000069, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_ShouldUseNewItemCards_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_ShouldUseNewItemCards_ReturnValue4) == 0x00006A, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_ShouldUseNewItemCards_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BooleanAND_ReturnValue3) == 0x00006B, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BooleanAND_ReturnValue4) == 0x00006C, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardDimensions_ReturnValue) == 0x000070, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardDimensions_ReturnValue2) == 0x000078, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardDimensions_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_X) == 0x000080, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_Y) == 0x000084, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_X2) == 0x000088, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_X2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_Y2) == 0x00008C, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_Y2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000090, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardSize_ReturnValue3) == 0x000094, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardSize_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardDimensions_ReturnValue3) == 0x000098, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardDimensions_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardSize_ReturnValue4) == 0x0000A0, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardSize_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_X3) == 0x0000A4, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_X3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_Y3) == 0x0000A8, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_Y3' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetCardDimensions_ReturnValue4) == 0x0000AC, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetCardDimensions_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_X4) == 0x0000B4, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_X4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BreakVector2D_Y4) == 0x0000B8, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BreakVector2D_Y4' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x0000BC, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_GetDropShadowDepth_DropShadowDepth) == 0x0000C0, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_GetDropShadowDepth_DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000C4, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, K2Node_CreateDelegate_OutputDelegate) == 0x0000C8, "Member 'Rewards_ItemCard_C_SizeDown::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000D8, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0000E0, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_Not_PreBool_ReturnValue) == 0x0000E1, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000E2, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeDown, CallFunc_BooleanAND_ReturnValue5) == 0x0000E3, "Member 'Rewards_ItemCard_C_SizeDown::CallFunc_BooleanAND_ReturnValue5' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.TickResizeAnimation
 // 0x0050 (0x0050 - 0x0000)
@@ -500,27 +318,6 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_TickResizeAnimation) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_TickResizeAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_TickResizeAnimation) == 0x000050, "Wrong size on Rewards_ItemCard_C_TickResizeAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, Alpha) == 0x000000, "Member 'Rewards_ItemCard_C_TickResizeAnimation::Alpha' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000004, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, K2Node_DynamicCast_AsFort_Cheat_Manager) == 0x000010, "Member 'Rewards_ItemCard_C_TickResizeAnimation::K2Node_DynamicCast_AsFort_Cheat_Manager' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Rewards_ItemCard_C_TickResizeAnimation::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000019, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_GetCardSize_ReturnValue) == 0x00001B, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_Ease_ReturnValue) == 0x00001C, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_Ease_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_GetCardDimensions_ReturnValue) == 0x000020, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000028, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00002C, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000030, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_FMin_ReturnValue) == 0x000034, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x000038, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_Ease_ReturnValue2) == 0x00003C, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_Ease_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000040, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_BreakVector2D_X) == 0x000048, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_TickResizeAnimation, CallFunc_BreakVector2D_Y) == 0x00004C, "Member 'Rewards_ItemCard_C_TickResizeAnimation::CallFunc_BreakVector2D_Y' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SizeUp
 // 0x0090 (0x0090 - 0x0000)
@@ -562,38 +359,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_SizeUp) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_SizeUp");
-static_assert(sizeof(Rewards_ItemCard_C_SizeUp) == 0x000090, "Wrong size on Rewards_ItemCard_C_SizeUp");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, Duration) == 0x000000, "Member 'Rewards_ItemCard_C_SizeUp::Duration' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, Delay) == 0x000004, "Member 'Rewards_ItemCard_C_SizeUp::Delay' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, DropShadowDepth) == 0x000008, "Member 'Rewards_ItemCard_C_SizeUp::DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000018, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, K2Node_DynamicCast_AsFort_Cheat_Manager) == 0x000020, "Member 'Rewards_ItemCard_C_SizeUp::K2Node_DynamicCast_AsFort_Cheat_Manager' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'Rewards_ItemCard_C_SizeUp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, K2Node_DynamicCast_AsFort_Cheat_Manager2) == 0x000030, "Member 'Rewards_ItemCard_C_SizeUp::K2Node_DynamicCast_AsFort_Cheat_Manager2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, K2Node_DynamicCast_bSuccess2) == 0x000038, "Member 'Rewards_ItemCard_C_SizeUp::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000039, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_ShouldUseNewItemCards_ReturnValue2) == 0x00003A, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_ShouldUseNewItemCards_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BooleanAND_ReturnValue) == 0x00003B, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BooleanAND_ReturnValue2) == 0x00003C, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetCardSize_ReturnValue) == 0x00003D, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetCardSize_ReturnValue2) == 0x00003E, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetCardSize_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetCardDimensions_ReturnValue) == 0x000040, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetCardDimensions_ReturnValue2) == 0x000048, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetCardDimensions_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BreakVector2D_X) == 0x000050, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BreakVector2D_Y) == 0x000054, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BreakVector2D_X2) == 0x000058, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BreakVector2D_X2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BreakVector2D_Y2) == 0x00005C, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BreakVector2D_Y2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000060, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_GetDropShadowDepth_DropShadowDepth) == 0x000064, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_GetDropShadowDepth_DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, K2Node_CreateDelegate_OutputDelegate) == 0x000068, "Member 'Rewards_ItemCard_C_SizeUp::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000078, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000080, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000088, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_Not_PreBool_ReturnValue) == 0x000089, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00008A, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SizeUp, CallFunc_BooleanAND_ReturnValue3) == 0x00008B, "Member 'Rewards_ItemCard_C_SizeUp::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.StartResizeAnimation
 // 0x0020 (0x0020 - 0x0000)
@@ -605,11 +370,6 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_StartResizeAnimation) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_StartResizeAnimation");
-static_assert(sizeof(Rewards_ItemCard_C_StartResizeAnimation) == 0x000020, "Wrong size on Rewards_ItemCard_C_StartResizeAnimation");
-static_assert(offsetof(Rewards_ItemCard_C_StartResizeAnimation, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Rewards_ItemCard_C_StartResizeAnimation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_StartResizeAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_StartResizeAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_StartResizeAnimation, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'Rewards_ItemCard_C_StartResizeAnimation::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.ShowDropShadow
 // 0x0004 (0x0004 - 0x0000)
@@ -618,9 +378,6 @@ struct Rewards_ItemCard_C_ShowDropShadow final
 public:
 	float                                         ShadowDepth;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_ShowDropShadow) == 0x000004, "Wrong alignment on Rewards_ItemCard_C_ShowDropShadow");
-static_assert(sizeof(Rewards_ItemCard_C_ShowDropShadow) == 0x000004, "Wrong size on Rewards_ItemCard_C_ShowDropShadow");
-static_assert(offsetof(Rewards_ItemCard_C_ShowDropShadow, ShadowDepth) == 0x000000, "Member 'Rewards_ItemCard_C_ShowDropShadow::ShadowDepth' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetDropShadowDepth
 // 0x0010 (0x0010 - 0x0000)
@@ -631,11 +388,6 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0008(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_SetDropShadowDepth) == 0x000004, "Wrong alignment on Rewards_ItemCard_C_SetDropShadowDepth");
-static_assert(sizeof(Rewards_ItemCard_C_SetDropShadowDepth) == 0x000010, "Wrong size on Rewards_ItemCard_C_SetDropShadowDepth");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowDepth, ShadowDepth) == 0x000000, "Member 'Rewards_ItemCard_C_SetDropShadowDepth::ShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowDepth, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000004, "Member 'Rewards_ItemCard_C_SetDropShadowDepth::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowDepth, CallFunc_MakeVector2D_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_SetDropShadowDepth::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetDropShadowSize
 // 0x0038 (0x0038 - 0x0000)
@@ -657,20 +409,6 @@ public:
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_SetDropShadowSize) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_SetDropShadowSize");
-static_assert(sizeof(Rewards_ItemCard_C_SetDropShadowSize) == 0x000038, "Wrong size on Rewards_ItemCard_C_SetDropShadowSize");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, Scale) == 0x000000, "Member 'Rewards_ItemCard_C_SetDropShadowSize::Scale' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000010, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, K2Node_DynamicCast_AsFort_Cheat_Manager) == 0x000018, "Member 'Rewards_ItemCard_C_SetDropShadowSize::K2Node_DynamicCast_AsFort_Cheat_Manager' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Rewards_ItemCard_C_SetDropShadowSize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000021, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_BooleanAND_ReturnValue) == 0x000022, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_GetCardSize_ReturnValue) == 0x000023, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_GetCardSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_GetCardDimensions_ReturnValue) == 0x000024, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_BreakVector2D_X) == 0x00002C, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_BreakVector2D_Y) == 0x000030, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetDropShadowSize, CallFunc_Add_FloatFloat_ReturnValue) == 0x000034, "Member 'Rewards_ItemCard_C_SetDropShadowSize::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.InitDropShadow
 // 0x0038 (0x0038 - 0x0000)
@@ -691,19 +429,6 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue2;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_InitDropShadow) == 0x000008, "Wrong alignment on Rewards_ItemCard_C_InitDropShadow");
-static_assert(sizeof(Rewards_ItemCard_C_InitDropShadow) == 0x000038, "Wrong size on Rewards_ItemCard_C_InitDropShadow");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, K2Node_DynamicCast_AsFort_Cheat_Manager) == 0x000010, "Member 'Rewards_ItemCard_C_InitDropShadow::K2Node_DynamicCast_AsFort_Cheat_Manager' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Rewards_ItemCard_C_InitDropShadow::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_ShouldUseNewItemCards_ReturnValue) == 0x000019, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_ShouldUseNewItemCards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_GetCardDimensions_ReturnValue) == 0x00001C, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_GetCardDimensions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_BreakVector2D_X) == 0x000024, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_BreakVector2D_Y) == 0x000028, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_Add_FloatFloat_ReturnValue) == 0x00002C, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_InitDropShadow, CallFunc_Add_FloatFloat_ReturnValue2) == 0x000030, "Member 'Rewards_ItemCard_C_InitDropShadow::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetDropShadowDepth
 // 0x000C (0x000C - 0x0000)
@@ -714,11 +439,6 @@ public:
 	float                                         CallFunc_BreakVector2D_X;                          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector2D_Y;                          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Rewards_ItemCard_C_GetDropShadowDepth) == 0x000004, "Wrong alignment on Rewards_ItemCard_C_GetDropShadowDepth");
-static_assert(sizeof(Rewards_ItemCard_C_GetDropShadowDepth) == 0x00000C, "Wrong size on Rewards_ItemCard_C_GetDropShadowDepth");
-static_assert(offsetof(Rewards_ItemCard_C_GetDropShadowDepth, DropShadowDepth) == 0x000000, "Member 'Rewards_ItemCard_C_GetDropShadowDepth::DropShadowDepth' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetDropShadowDepth, CallFunc_BreakVector2D_X) == 0x000004, "Member 'Rewards_ItemCard_C_GetDropShadowDepth::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_GetDropShadowDepth, CallFunc_BreakVector2D_Y) == 0x000008, "Member 'Rewards_ItemCard_C_GetDropShadowDepth::CallFunc_BreakVector2D_Y' has a wrong offset!");
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetOutpostInventoryNotification
 // 0x0005 (0x0005 - 0x0000)
@@ -731,13 +451,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Rewards_ItemCard_C_SetOutpostInventoryNotification) == 0x000001, "Wrong alignment on Rewards_ItemCard_C_SetOutpostInventoryNotification");
-static_assert(sizeof(Rewards_ItemCard_C_SetOutpostInventoryNotification) == 0x000005, "Wrong size on Rewards_ItemCard_C_SetOutpostInventoryNotification");
-static_assert(offsetof(Rewards_ItemCard_C_SetOutpostInventoryNotification, ShouldShow) == 0x000000, "Member 'Rewards_ItemCard_C_SetOutpostInventoryNotification::ShouldShow' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetOutpostInventoryNotification, Temp_bool_Variable) == 0x000001, "Member 'Rewards_ItemCard_C_SetOutpostInventoryNotification::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetOutpostInventoryNotification, Temp_byte_Variable) == 0x000002, "Member 'Rewards_ItemCard_C_SetOutpostInventoryNotification::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetOutpostInventoryNotification, Temp_byte_Variable2) == 0x000003, "Member 'Rewards_ItemCard_C_SetOutpostInventoryNotification::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(Rewards_ItemCard_C_SetOutpostInventoryNotification, K2Node_Select_Default) == 0x000004, "Member 'Rewards_ItemCard_C_SetOutpostInventoryNotification::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

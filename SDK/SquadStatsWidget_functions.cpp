@@ -14,8 +14,7 @@
 #include "SquadStatsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SquadStatsWidget.SquadStatsWidget_C.ExecuteUbergraph_SquadStatsWidget
 // ()
@@ -270,5 +269,5 @@ void USquadStatsWidget_C::HandleAbilitySystemChanged()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

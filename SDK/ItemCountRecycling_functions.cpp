@@ -14,8 +14,7 @@
 #include "ItemCountRecycling_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCountRecycling.ItemCountRecycling_C.ExecuteUbergraph_ItemCountRecycling
 // (HasDefaults)
@@ -90,5 +89,5 @@ void UItemCountRecycling_C::SetItemDefinition(class UFortItemDefinition* ItemDef
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

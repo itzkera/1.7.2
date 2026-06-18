@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionExpiresWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.ExecuteUbergraph_BP_FortExpeditionExpiresWidget
 // ()
@@ -130,5 +129,5 @@ struct FTimespan UBP_FortExpeditionExpiresWidget_C::Get_Utc_Now_Offset()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

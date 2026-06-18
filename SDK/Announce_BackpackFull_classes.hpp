@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_BackpackFull.Announce_BackpackFull_C
 // 0x0010 (0x04F8 - 0x04E8)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_BackpackFull_C">();
+		BP_STATIC_CLASS_IMPL("Announce_BackpackFull_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_BackpackFull_C")
 	}
 	static class AAnnounce_BackpackFull_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_BackpackFull_C>();
 	}
 };
-static_assert(alignof(AAnnounce_BackpackFull_C) == 0x000008, "Wrong alignment on AAnnounce_BackpackFull_C");
-static_assert(sizeof(AAnnounce_BackpackFull_C) == 0x0004F8, "Wrong size on AAnnounce_BackpackFull_C");
-static_assert(offsetof(AAnnounce_BackpackFull_C, UberGraphFrame) == 0x0004E8, "Member 'AAnnounce_BackpackFull_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_BackpackFull_C, DefaultSceneRoot) == 0x0004F0, "Member 'AAnnounce_BackpackFull_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -16,8 +16,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FullPartyMember.FullPartyMember_C.ExecuteUbergraph_FullPartyMember
 // 0x0280 (0x0280 - 0x0000)
@@ -43,7 +43,7 @@ public:
 	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULocalPlayer*                           CallFunc_GetOwningLocalPlayer_ReturnValue;         // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ULocalPlayer*                           CallFunc_GetOwningLocalPlayer_ReturnValue2;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortAsyncAction_ShowPartyDialog*       CallFunc_ShowPartyLeaderManageDialog_ReturnValue;  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAsyncAction_ShowPartyDialog*       CallFunc_ShowPartyMemberManageDialog_ReturnValue;  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -70,43 +70,6 @@ public:
 	uint8                                         Pad_EB[0x5];                                       // 0x00EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortTeamMemberInfo                    K2Node_Event_NewInfo;                              // 0x00F0(0x0190)()
 };
-static_assert(alignof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember) == 0x000008, "Wrong alignment on FullPartyMember_C_ExecuteUbergraph_FullPartyMember");
-static_assert(sizeof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember) == 0x000280, "Wrong size on FullPartyMember_C_ExecuteUbergraph_FullPartyMember");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, EntryPoint) == 0x000000, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_Event_IsDesignTime) == 0x000004, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_DuplicateConnectedWidget_ReturnValue) == 0x000008, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_DuplicateConnectedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, Temp_byte_Variable) == 0x000010, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, Temp_name_Variable) == 0x000018, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000020, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_DynamicCast_AsUIManager) == 0x000028, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_DynamicCast_AsUIManager' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_CustomEvent_Result) == 0x000031, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_CustomEvent_ResultName) == 0x000038, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_MakeLocalPlayerConfirmActions_OutConfirmActions) == 0x000040, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_MakeLocalPlayerConfirmActions_OutConfirmActions' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_Greater_IntInt_ReturnValue) == 0x000054, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetOwningLocalPlayer_ReturnValue) == 0x000058, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetOwningLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetOwningLocalPlayer_ReturnValue2) == 0x000060, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetOwningLocalPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_CreateDelegate_OutputDelegate) == 0x000068, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_ShowPartyLeaderManageDialog_ReturnValue) == 0x000078, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_ShowPartyLeaderManageDialog_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_ShowPartyMemberManageDialog_ReturnValue) == 0x000080, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_ShowPartyMemberManageDialog_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_IsValid_ReturnValue) == 0x000088, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_IsValid_ReturnValue2) == 0x000089, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetContext_ReturnValue) == 0x000090, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_IsLocalPlayerPartyLeader_ReturnValue) == 0x000098, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_IsLocalPlayerPartyLeader_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_ShowConfirmationDialog_NUI_ReturnValue) == 0x0000A0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_ShowConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_IsValid_ReturnValue3) == 0x0000A8, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x0000B0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_Create_ReturnValue) == 0x0000B8, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_IsValid_ReturnValue4) == 0x0000C0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetContext_ReturnValue2) == 0x0000C8, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_GetPartyMemberDisplayState_ReturnValue) == 0x0000D8, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_GetPartyMemberDisplayState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_Create_ReturnValue2) == 0x0000E0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_SwitchEnum_CmpSuccess) == 0x0000E8, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_IsPlayerInOurParty_ReturnValue) == 0x0000E9, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_IsPlayerInOurParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, CallFunc_BooleanAND_ReturnValue) == 0x0000EA, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ExecuteUbergraph_FullPartyMember, K2Node_Event_NewInfo) == 0x0000F0, "Member 'FullPartyMember_C_ExecuteUbergraph_FullPartyMember::K2Node_Event_NewInfo' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.OnPlayerInfoChanged
 // 0x0190 (0x0190 - 0x0000)
@@ -115,9 +78,6 @@ struct FullPartyMember_C_OnPlayerInfoChanged final
 public:
 	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(FullPartyMember_C_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on FullPartyMember_C_OnPlayerInfoChanged");
-static_assert(sizeof(FullPartyMember_C_OnPlayerInfoChanged) == 0x000190, "Wrong size on FullPartyMember_C_OnPlayerInfoChanged");
-static_assert(offsetof(FullPartyMember_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'FullPartyMember_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -126,9 +86,6 @@ struct FullPartyMember_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_PreConstruct) == 0x000001, "Wrong alignment on FullPartyMember_C_PreConstruct");
-static_assert(sizeof(FullPartyMember_C_PreConstruct) == 0x000001, "Wrong size on FullPartyMember_C_PreConstruct");
-static_assert(offsetof(FullPartyMember_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'FullPartyMember_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.DialogResult_1F64669049EA0B1762273C8ED9CBB619
 // 0x0010 (0x0010 - 0x0000)
@@ -139,10 +96,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619) == 0x000008, "Wrong alignment on FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619");
-static_assert(sizeof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619) == 0x000010, "Wrong size on FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619");
-static_assert(offsetof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619, Result) == 0x000000, "Member 'FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619::Result' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619, ResultName) == 0x000008, "Member 'FullPartyMember_C_DialogResult_1F64669049EA0B1762273C8ED9CBB619::ResultName' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateMemberInfo
 // 0x01A0 (0x01A0 - 0x0000)
@@ -154,12 +107,6 @@ public:
 	EFortPartyMemberDisplayState                  CallFunc_GetPartyMemberDisplayState_ReturnValue;   // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0199(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_UpdateMemberInfo) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateMemberInfo");
-static_assert(sizeof(FullPartyMember_C_UpdateMemberInfo) == 0x0001A0, "Wrong size on FullPartyMember_C_UpdateMemberInfo");
-static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, NewMemberInfo) == 0x000000, "Member 'FullPartyMember_C_UpdateMemberInfo::NewMemberInfo' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, CallFunc_GetContext_ReturnValue) == 0x000190, "Member 'FullPartyMember_C_UpdateMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, CallFunc_GetPartyMemberDisplayState_ReturnValue) == 0x000198, "Member 'FullPartyMember_C_UpdateMemberInfo::CallFunc_GetPartyMemberDisplayState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateMemberInfo, K2Node_SwitchEnum_CmpSuccess) == 0x000199, "Member 'FullPartyMember_C_UpdateMemberInfo::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.ShowConnected
 // 0x0040 (0x0040 - 0x0000)
@@ -189,28 +136,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_ShowConnected) == 0x000008, "Wrong alignment on FullPartyMember_C_ShowConnected");
-static_assert(sizeof(FullPartyMember_C_ShowConnected) == 0x000040, "Wrong size on FullPartyMember_C_ShowConnected");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable) == 0x000000, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'FullPartyMember_C_ShowConnected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_bool_Variable) == 0x000010, "Member 'FullPartyMember_C_ShowConnected::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_bool_Variable2) == 0x000011, "Member 'FullPartyMember_C_ShowConnected::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable2) == 0x000012, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable3) == 0x000013, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable4) == 0x000014, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_bool_Variable3) == 0x000015, "Member 'FullPartyMember_C_ShowConnected::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable5) == 0x000016, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_byte_Variable6) == 0x000017, "Member 'FullPartyMember_C_ShowConnected::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, Temp_bool_Variable4) == 0x000018, "Member 'FullPartyMember_C_ShowConnected::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_Greater_IntInt_ReturnValue) == 0x000019, "Member 'FullPartyMember_C_ShowConnected::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_IsValidNetID_ReturnValue) == 0x00001A, "Member 'FullPartyMember_C_ShowConnected::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, K2Node_Select_Default) == 0x000020, "Member 'FullPartyMember_C_ShowConnected::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_IsInLocalPlayersParty_ReturnValue) == 0x000038, "Member 'FullPartyMember_C_ShowConnected::CallFunc_IsInLocalPlayersParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, K2Node_Select2_Default) == 0x000039, "Member 'FullPartyMember_C_ShowConnected::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, K2Node_Select3_Default) == 0x00003A, "Member 'FullPartyMember_C_ShowConnected::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_BooleanAND_ReturnValue) == 0x00003B, "Member 'FullPartyMember_C_ShowConnected::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, CallFunc_BooleanAND_ReturnValue2) == 0x00003C, "Member 'FullPartyMember_C_ShowConnected::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_ShowConnected, K2Node_Select4_Default) == 0x00003D, "Member 'FullPartyMember_C_ShowConnected::K2Node_Select4_Default' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateDimensions
 // 0x0008 (0x0008 - 0x0000)
@@ -219,9 +144,6 @@ struct FullPartyMember_C_UpdateDimensions final
 public:
 	struct FVector2D                              NewDimensions;                                     // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_UpdateDimensions) == 0x000004, "Wrong alignment on FullPartyMember_C_UpdateDimensions");
-static_assert(sizeof(FullPartyMember_C_UpdateDimensions) == 0x000008, "Wrong size on FullPartyMember_C_UpdateDimensions");
-static_assert(offsetof(FullPartyMember_C_UpdateDimensions, NewDimensions) == 0x000000, "Member 'FullPartyMember_C_UpdateDimensions::NewDimensions' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.DuplicateConnectedWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -232,11 +154,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFullPartyMemberConnected_C*            CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_DuplicateConnectedWidget) == 0x000008, "Wrong alignment on FullPartyMember_C_DuplicateConnectedWidget");
-static_assert(sizeof(FullPartyMember_C_DuplicateConnectedWidget) == 0x000018, "Wrong size on FullPartyMember_C_DuplicateConnectedWidget");
-static_assert(offsetof(FullPartyMember_C_DuplicateConnectedWidget, ReturnValue) == 0x000000, "Member 'FullPartyMember_C_DuplicateConnectedWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_DuplicateConnectedWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'FullPartyMember_C_DuplicateConnectedWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_DuplicateConnectedWidget, CallFunc_Create_ReturnValue) == 0x000010, "Member 'FullPartyMember_C_DuplicateConnectedWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateLocalPlayerAction
 // 0x0028 (0x0028 - 0x0000)
@@ -249,13 +166,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_UpdateLocalPlayerAction) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateLocalPlayerAction");
-static_assert(sizeof(FullPartyMember_C_UpdateLocalPlayerAction) == 0x000028, "Wrong size on FullPartyMember_C_UpdateLocalPlayerAction");
-static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'FullPartyMember_C_UpdateLocalPlayerAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000008, "Member 'FullPartyMember_C_UpdateLocalPlayerAction::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_GetTeamMemberIDs_TeamMemberIDs) == 0x000010, "Member 'FullPartyMember_C_UpdateLocalPlayerAction::CallFunc_GetTeamMemberIDs_TeamMemberIDs' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'FullPartyMember_C_UpdateLocalPlayerAction::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateLocalPlayerAction, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000024, "Member 'FullPartyMember_C_UpdateLocalPlayerAction::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.HandleLocalPlayerActionsResult
 // 0x0028 (0x0028 - 0x0000)
@@ -272,15 +182,6 @@ public:
 	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_HandleLocalPlayerActionsResult) == 0x000008, "Wrong alignment on FullPartyMember_C_HandleLocalPlayerActionsResult");
-static_assert(sizeof(FullPartyMember_C_HandleLocalPlayerActionsResult) == 0x000028, "Wrong size on FullPartyMember_C_HandleLocalPlayerActionsResult");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, Result) == 0x000000, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::Result' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, ResultName) == 0x000008, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::ResultName' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000019, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x00001A, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HandleLocalPlayerActionsResult, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'FullPartyMember_C_HandleLocalPlayerActionsResult::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.MakeLocalPlayerConfirmActions
 // 0x01E8 (0x01E8 - 0x0000)
@@ -301,19 +202,6 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x01E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_MakeLocalPlayerConfirmActions) == 0x000008, "Wrong alignment on FullPartyMember_C_MakeLocalPlayerConfirmActions");
-static_assert(sizeof(FullPartyMember_C_MakeLocalPlayerConfirmActions) == 0x0001E8, "Wrong size on FullPartyMember_C_MakeLocalPlayerConfirmActions");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, LocalPlayerAlone) == 0x000000, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::LocalPlayerAlone' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, OutConfirmActions) == 0x000008, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::OutConfirmActions' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, ConfirmActions) == 0x000018, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::ConfirmActions' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_GetPlatformName_ReturnValue) == 0x000028, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000038, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_EqualEqual_StrStr_ReturnValue2) == 0x000039, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_EqualEqual_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_BooleanOR_ReturnValue) == 0x00003A, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, K2Node_MakeStruct_ConfirmationDialogAction) == 0x000040, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::K2Node_MakeStruct_ConfirmationDialogAction' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, K2Node_MakeStruct_ConfirmationDialogAction2) == 0x000110, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::K2Node_MakeStruct_ConfirmationDialogAction2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_Array_Add_ReturnValue) == 0x0001E0, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_MakeLocalPlayerConfirmActions, CallFunc_Array_Add_ReturnValue2) == 0x0001E4, "Member 'FullPartyMember_C_MakeLocalPlayerConfirmActions::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.InitializeConnectedWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -322,9 +210,6 @@ struct FullPartyMember_C_InitializeConnectedWidget final
 public:
 	class UFullPartyMemberConnected_C*            ConnectedWidget;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_InitializeConnectedWidget) == 0x000008, "Wrong alignment on FullPartyMember_C_InitializeConnectedWidget");
-static_assert(sizeof(FullPartyMember_C_InitializeConnectedWidget) == 0x000008, "Wrong size on FullPartyMember_C_InitializeConnectedWidget");
-static_assert(offsetof(FullPartyMember_C_InitializeConnectedWidget, ConnectedWidget) == 0x000000, "Member 'FullPartyMember_C_InitializeConnectedWidget::ConnectedWidget' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateStatDisplays
 // 0x0748 (0x0748 - 0x0000)
@@ -408,80 +293,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array16;                          // 0x0720(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue16;                     // 0x0730(0x0018)()
 };
-static_assert(alignof(FullPartyMember_C_UpdateStatDisplays) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateStatDisplays");
-static_assert(sizeof(FullPartyMember_C_UpdateStatDisplays) == 0x000748, "Wrong size on FullPartyMember_C_UpdateStatDisplays");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, BaseStatFormatString) == 0x000000, "Member 'FullPartyMember_C_UpdateStatDisplays::BaseStatFormatString' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, ModifiedStatTextStyle) == 0x000018, "Member 'FullPartyMember_C_UpdateStatDisplays::ModifiedStatTextStyle' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, SoloStatTextStyle) == 0x000020, "Member 'FullPartyMember_C_UpdateStatDisplays::SoloStatTextStyle' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, TeamStatTextStyle) == 0x000028, "Member 'FullPartyMember_C_UpdateStatDisplays::TeamStatTextStyle' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, ModifiedStatFormatString) == 0x000030, "Member 'FullPartyMember_C_UpdateStatDisplays::ModifiedStatFormatString' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, SoloStatFormatString) == 0x000048, "Member 'FullPartyMember_C_UpdateStatDisplays::SoloStatFormatString' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, TeamStatFormatString) == 0x000060, "Member 'FullPartyMember_C_UpdateStatDisplays::TeamStatFormatString' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetModifiedFortitude_ReturnValue) == 0x000078, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetModifiedFortitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetModifiedOffense_ReturnValue) == 0x00007C, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetModifiedOffense_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData) == 0x000080, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData2) == 0x0000C0, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array) == 0x000100, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array2) == 0x000110, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue) == 0x000120, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue2) == 0x000138, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetModifiedResistance_ReturnValue) == 0x000150, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetModifiedResistance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetModifiedTech_ReturnValue) == 0x000154, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetModifiedTech_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData3) == 0x000158, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData4) == 0x000198, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array3) == 0x0001D8, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array4) == 0x0001E8, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue3) == 0x0001F8, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue4) == 0x000210, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetTech_ReturnValue) == 0x000228, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetTech_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetResistance_ReturnValue) == 0x00022C, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetResistance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData5) == 0x000230, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData6) == 0x000270, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData6' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array5) == 0x0002B0, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array5' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array6) == 0x0002C0, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array6' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue5) == 0x0002D0, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue6) == 0x0002E8, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetOffense_ReturnValue) == 0x000300, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetOffense_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetFortitude_ReturnValue) == 0x000304, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetFortitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData7) == 0x000308, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData7' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData8) == 0x000348, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData8' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array7) == 0x000388, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array7' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array8) == 0x000398, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array8' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue7) == 0x0003A8, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue8) == 0x0003C0, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetTech_ReturnValue2) == 0x0003D8, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetTech_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetResistance_ReturnValue2) == 0x0003DC, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetResistance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData9) == 0x0003E0, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData9' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData10) == 0x000420, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData10' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array9) == 0x000460, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array9' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array10) == 0x000470, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array10' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue9) == 0x000480, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue10) == 0x000498, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetOffense_ReturnValue2) == 0x0004B0, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetOffense_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetFortitude_ReturnValue2) == 0x0004B4, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetFortitude_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData11) == 0x0004B8, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData11' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData12) == 0x0004F8, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData12' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array11) == 0x000538, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array11' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array12) == 0x000548, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue11) == 0x000558, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue12) == 0x000570, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_HasModifiedStats_ReturnValue) == 0x000588, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_HasModifiedStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetTeamTech_ReturnValue) == 0x00058C, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetTeamTech_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData13) == 0x000590, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData13' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array13) == 0x0005D0, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array13' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetTeamResistance_ReturnValue) == 0x0005E0, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetTeamResistance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData14) == 0x0005E8, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData14' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetTeamOffense_ReturnValue) == 0x000628, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetTeamOffense_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array14) == 0x000630, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array14' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData15) == 0x000640, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData15' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array15) == 0x000680, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array15' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue13) == 0x000690, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue14) == 0x0006A8, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue15) == 0x0006C0, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue15' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_GetTeamFortitude_ReturnValue) == 0x0006D8, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_GetTeamFortitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeStruct_FormatArgumentData16) == 0x0006E0, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeStruct_FormatArgumentData16' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, K2Node_MakeArray_Array16) == 0x000720, "Member 'FullPartyMember_C_UpdateStatDisplays::K2Node_MakeArray_Array16' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateStatDisplays, CallFunc_Format_ReturnValue16) == 0x000730, "Member 'FullPartyMember_C_UpdateStatDisplays::CallFunc_Format_ReturnValue16' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.UpdateHomebaseRating
 // 0x00B0 (0x00B0 - 0x0000)
@@ -508,24 +319,6 @@ public:
 	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_UpdateHomebaseRating) == 0x000008, "Wrong alignment on FullPartyMember_C_UpdateHomebaseRating");
-static_assert(sizeof(FullPartyMember_C_UpdateHomebaseRating) == 0x0000B0, "Wrong size on FullPartyMember_C_UpdateHomebaseRating");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, BaseHomebaseRatingFormatString) == 0x000000, "Member 'FullPartyMember_C_UpdateHomebaseRating::BaseHomebaseRatingFormatString' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_Rating) == 0x000018, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_ProgressFraction) == 0x00001C, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_ReturnValue) == 0x000020, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'FullPartyMember_C_UpdateHomebaseRating::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, K2Node_MakeArray_Array) == 0x000068, "Member 'FullPartyMember_C_UpdateHomebaseRating::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_Format_ReturnValue) == 0x000078, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetModifiedHomebaseRating_Rating) == 0x000090, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetModifiedHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetModifiedHomebaseRating_ProgressFraction) == 0x000094, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetModifiedHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetModifiedHomebaseRating_ReturnValue) == 0x000098, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetModifiedHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00009C, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_Rating2) == 0x0000A0, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_Rating2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_ProgressFraction2) == 0x0000A4, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_ProgressFraction2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_GetHomebaseRating_ReturnValue2) == 0x0000A8, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_GetHomebaseRating_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_HasModifiedStats_ReturnValue) == 0x0000A9, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_HasModifiedStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_UpdateHomebaseRating, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x0000AC, "Member 'FullPartyMember_C_UpdateHomebaseRating::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.SetStatDisplayStyle
 // 0x0008 (0x0008 - 0x0000)
@@ -534,9 +327,6 @@ struct FullPartyMember_C_SetStatDisplayStyle final
 public:
 	class UClass*                                 InStyle;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_SetStatDisplayStyle) == 0x000008, "Wrong alignment on FullPartyMember_C_SetStatDisplayStyle");
-static_assert(sizeof(FullPartyMember_C_SetStatDisplayStyle) == 0x000008, "Wrong size on FullPartyMember_C_SetStatDisplayStyle");
-static_assert(offsetof(FullPartyMember_C_SetStatDisplayStyle, InStyle) == 0x000000, "Member 'FullPartyMember_C_SetStatDisplayStyle::InStyle' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.SetSecondaryStatDisplayVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -545,9 +335,6 @@ struct FullPartyMember_C_SetSecondaryStatDisplayVisibility final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMember_C_SetSecondaryStatDisplayVisibility) == 0x000001, "Wrong alignment on FullPartyMember_C_SetSecondaryStatDisplayVisibility");
-static_assert(sizeof(FullPartyMember_C_SetSecondaryStatDisplayVisibility) == 0x000001, "Wrong size on FullPartyMember_C_SetSecondaryStatDisplayVisibility");
-static_assert(offsetof(FullPartyMember_C_SetSecondaryStatDisplayVisibility, InVisibility) == 0x000000, "Member 'FullPartyMember_C_SetSecondaryStatDisplayVisibility::InVisibility' has a wrong offset!");
 
 // Function FullPartyMember.FullPartyMember_C.HighlightEmptyBanner
 // 0x0020 (0x0020 - 0x0000)
@@ -561,13 +348,6 @@ public:
 	class UTexture2D*                             Temp_object_Variable2;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMember_C_HighlightEmptyBanner) == 0x000008, "Wrong alignment on FullPartyMember_C_HighlightEmptyBanner");
-static_assert(sizeof(FullPartyMember_C_HighlightEmptyBanner) == 0x000020, "Wrong size on FullPartyMember_C_HighlightEmptyBanner");
-static_assert(offsetof(FullPartyMember_C_HighlightEmptyBanner, BannerIsHighlighted) == 0x000000, "Member 'FullPartyMember_C_HighlightEmptyBanner::BannerIsHighlighted' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HighlightEmptyBanner, Temp_bool_Variable) == 0x000001, "Member 'FullPartyMember_C_HighlightEmptyBanner::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HighlightEmptyBanner, Temp_object_Variable) == 0x000008, "Member 'FullPartyMember_C_HighlightEmptyBanner::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HighlightEmptyBanner, Temp_object_Variable2) == 0x000010, "Member 'FullPartyMember_C_HighlightEmptyBanner::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(FullPartyMember_C_HighlightEmptyBanner, K2Node_Select_Default) == 0x000018, "Member 'FullPartyMember_C_HighlightEmptyBanner::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

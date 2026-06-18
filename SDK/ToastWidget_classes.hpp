@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ToastWidget.ToastWidget_C
 // 0x0068 (0x02A0 - 0x0238)
@@ -54,27 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToastWidget_C">();
+		BP_STATIC_CLASS_IMPL("ToastWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToastWidget_C")
 	}
 	static class UToastWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToastWidget_C>();
 	}
 };
-static_assert(alignof(UToastWidget_C) == 0x000008, "Wrong alignment on UToastWidget_C");
-static_assert(sizeof(UToastWidget_C) == 0x0002A0, "Wrong size on UToastWidget_C");
-static_assert(offsetof(UToastWidget_C, UberGraphFrame) == 0x000238, "Member 'UToastWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, Outro) == 0x000240, "Member 'UToastWidget_C::Outro' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, Intro) == 0x000248, "Member 'UToastWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, Description) == 0x000250, "Member 'UToastWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, ImageBorder) == 0x000258, "Member 'UToastWidget_C::ImageBorder' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, NotificationImage) == 0x000260, "Member 'UToastWidget_C::NotificationImage' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, OpenButton) == 0x000268, "Member 'UToastWidget_C::OpenButton' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, Title) == 0x000270, "Member 'UToastWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, ToastNotification) == 0x000278, "Member 'UToastWidget_C::ToastNotification' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, AnimationFinishedDelay) == 0x000280, "Member 'UToastWidget_C::AnimationFinishedDelay' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, OnFinishedToast) == 0x000288, "Member 'UToastWidget_C::OnFinishedToast' has a wrong offset!");
-static_assert(offsetof(UToastWidget_C, AnimationDelayTimer) == 0x000298, "Member 'UToastWidget_C::AnimationDelayTimer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

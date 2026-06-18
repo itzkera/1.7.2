@@ -15,8 +15,7 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementMulchModeBox.ItemManagementMulchModeBox_C
 // 0x0010 (0x0440 - 0x0430)
@@ -41,17 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementMulchModeBox_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementMulchModeBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementMulchModeBox_C")
 	}
 	static class UItemManagementMulchModeBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementMulchModeBox_C>();
 	}
 };
-static_assert(alignof(UItemManagementMulchModeBox_C) == 0x000008, "Wrong alignment on UItemManagementMulchModeBox_C");
-static_assert(sizeof(UItemManagementMulchModeBox_C) == 0x000440, "Wrong size on UItemManagementMulchModeBox_C");
-static_assert(offsetof(UItemManagementMulchModeBox_C, UberGraphFrame) == 0x000430, "Member 'UItemManagementMulchModeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementMulchModeBox_C, Recycle_Info_Window) == 0x000438, "Member 'UItemManagementMulchModeBox_C::Recycle_Info_Window' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

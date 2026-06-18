@@ -14,8 +14,7 @@
 #include "Interaction_DefenderBeacon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.ExecuteUbergraph_Interaction_DefenderBeacon
 // (HasDefaults)
@@ -118,7 +117,7 @@ void UInteraction_DefenderBeacon_C::DisplayWeaponType()
 // Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.CheckAmmoValid
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    AmmoValid                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   AmmoValid                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UInteraction_DefenderBeacon_C::CheckAmmoValid(bool* AmmoValid)
 {
@@ -135,5 +134,5 @@ void UInteraction_DefenderBeacon_C::CheckAmmoValid(bool* AmmoValid)
 		*AmmoValid = Parms.AmmoValid;
 }
 
-}
 
+SDK_NAMESPACE_END

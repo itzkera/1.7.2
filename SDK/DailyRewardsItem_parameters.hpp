@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DailyRewardsItem.DailyRewardsItem_C.ExecuteUbergraph_DailyRewardsItem
 // 0x0110 (0x0110 - 0x0000)
@@ -70,47 +70,6 @@ public:
 	struct FLinearColor                           K2Node_Select7_Default;                            // 0x00FC(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select8_Default;                            // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem) == 0x000008, "Wrong alignment on DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem");
-static_assert(sizeof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem) == 0x000110, "Wrong size on DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, EntryPoint) == 0x000000, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable) == 0x000004, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable2) == 0x000005, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable) == 0x000008, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable2) == 0x000018, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable3) == 0x000028, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_byte_Variable) == 0x000029, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_byte_Variable2) == 0x00002A, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable4) == 0x00002B, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_float_Variable) == 0x00002C, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_float_Variable2) == 0x000030, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable5) == 0x000034, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable3) == 0x000038, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable4) == 0x000040, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable4' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable6) == 0x000048, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable5) == 0x00004C, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable5' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable6) == 0x00005C, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable6' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable7) == 0x00006C, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable7) == 0x000070, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable7' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_struct_Variable8) == 0x000080, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_struct_Variable8' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select_Default) == 0x000090, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select2_Default) == 0x000094, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, CallFunc_Conv_IntToText_ReturnValue) == 0x0000A0, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select3_Default) == 0x0000B8, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, CallFunc_Conv_TextToString_ReturnValue) == 0x0000C8, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, CallFunc_Len_ReturnValue) == 0x0000D8, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, CallFunc_Greater_IntInt_ReturnValue) == 0x0000DC, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_byte_Variable3) == 0x0000DD, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_byte_Variable4) == 0x0000DE, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_bool_Variable8) == 0x0000DF, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_byte_Variable5) == 0x0000E0, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select4_Default) == 0x0000E1, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, Temp_byte_Variable6) == 0x0000E2, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, CallFunc_BooleanAND_ReturnValue) == 0x0000E3, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, CallFunc_BooleanOR_ReturnValue) == 0x0000E4, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select5_Default) == 0x0000E8, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select6_Default) == 0x0000F8, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select7_Default) == 0x0000FC, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select7_Default' has a wrong offset!");
-static_assert(offsetof(DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem, K2Node_Select8_Default) == 0x00010C, "Member 'DailyRewardsItem_C_ExecuteUbergraph_DailyRewardsItem::K2Node_Select8_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

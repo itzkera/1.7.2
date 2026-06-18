@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TODM_A.TODM_A_C
 // 0x01D0 (0x0DC0 - 0x0BF0)
@@ -122,88 +121,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TODM_A_C">();
+		BP_STATIC_CLASS_IMPL("TODM_A_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TODM_A_C")
 	}
 	static class ATODM_A_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATODM_A_C>();
 	}
 };
-static_assert(alignof(ATODM_A_C) == 0x000008, "Wrong alignment on ATODM_A_C");
-static_assert(sizeof(ATODM_A_C) == 0x000DC0, "Wrong size on ATODM_A_C");
-static_assert(offsetof(ATODM_A_C, UberGraphFrame) == 0x000BF0, "Member 'ATODM_A_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, EditorPostProcessMaterial_HackToWorkAroundTheOutlineShaderBeingInjectedByCodeAtRuntime_) == 0x000BF8, "Member 'ATODM_A_C::EditorPostProcessMaterial_HackToWorkAroundTheOutlineShaderBeingInjectedByCodeAtRuntime_' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, New_Storm_Timeline_Wind_Strength_A54B465A45C4FA058D4E33A79E94EB3C) == 0x000C00, "Member 'ATODM_A_C::New_Storm_Timeline_Wind_Strength_A54B465A45C4FA058D4E33A79E94EB3C' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, New_Storm_Timeline_RainInt_A54B465A45C4FA058D4E33A79E94EB3C) == 0x000C04, "Member 'ATODM_A_C::New_Storm_Timeline_RainInt_A54B465A45C4FA058D4E33A79E94EB3C' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, New_Storm_Timeline_Lightning_Modulator_A54B465A45C4FA058D4E33A79E94EB3C) == 0x000C08, "Member 'ATODM_A_C::New_Storm_Timeline_Lightning_Modulator_A54B465A45C4FA058D4E33A79E94EB3C' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, New_Storm_Timeline_Storm_Ramp_In_Value_A54B465A45C4FA058D4E33A79E94EB3C) == 0x000C0C, "Member 'ATODM_A_C::New_Storm_Timeline_Storm_Ramp_In_Value_A54B465A45C4FA058D4E33A79E94EB3C' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, New_Storm_Timeline__Direction_A54B465A45C4FA058D4E33A79E94EB3C) == 0x000C10, "Member 'ATODM_A_C::New_Storm_Timeline__Direction_A54B465A45C4FA058D4E33A79E94EB3C' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, New_Storm_Timeline) == 0x000C18, "Member 'ATODM_A_C::New_Storm_Timeline' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FlashLightning_LightningColorLERP_2BD0C1B54C66FC6DE051729F8F094D6E) == 0x000C20, "Member 'ATODM_A_C::FlashLightning_LightningColorLERP_2BD0C1B54C66FC6DE051729F8F094D6E' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FlashLightning_lightning_alpha_2BD0C1B54C66FC6DE051729F8F094D6E) == 0x000C24, "Member 'ATODM_A_C::FlashLightning_lightning_alpha_2BD0C1B54C66FC6DE051729F8F094D6E' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FlashLightning_Lightning_Intensity_2BD0C1B54C66FC6DE051729F8F094D6E) == 0x000C28, "Member 'ATODM_A_C::FlashLightning_Lightning_Intensity_2BD0C1B54C66FC6DE051729F8F094D6E' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FlashLightning__Direction_2BD0C1B54C66FC6DE051729F8F094D6E) == 0x000C2C, "Member 'ATODM_A_C::FlashLightning__Direction_2BD0C1B54C66FC6DE051729F8F094D6E' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FlashLightning) == 0x000C30, "Member 'ATODM_A_C::FlashLightning' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, WindSpeed) == 0x000C38, "Member 'ATODM_A_C::WindSpeed' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, RandomWeatherWaitTime) == 0x000C3C, "Member 'ATODM_A_C::RandomWeatherWaitTime' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, CurrentAmountOfRandomWeatherTimeLeft) == 0x000C40, "Member 'ATODM_A_C::CurrentAmountOfRandomWeatherTimeLeft' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, NewWeatherLerpAmount) == 0x000C44, "Member 'ATODM_A_C::NewWeatherLerpAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, WindStrength) == 0x000C48, "Member 'ATODM_A_C::WindStrength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FutureWindStrength) == 0x000C4C, "Member 'ATODM_A_C::FutureWindStrength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, FutureWindSpeed) == 0x000C50, "Member 'ATODM_A_C::FutureWindSpeed' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, bPickNewWindConditions) == 0x000C54, "Member 'ATODM_A_C::bPickNewWindConditions' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, LightningStrength) == 0x000C58, "Member 'ATODM_A_C::LightningStrength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, ThreatCloudStormAmount) == 0x000C5C, "Member 'ATODM_A_C::ThreatCloudStormAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, UseRainWithStorms) == 0x000C60, "Member 'ATODM_A_C::UseRainWithStorms' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Play_a_Particle_Effect_Near_the_players_Feet) == 0x000C61, "Member 'ATODM_A_C::Play_a_Particle_Effect_Near_the_players_Feet' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, WindEffects_Should_be_Active) == 0x000C62, "Member 'ATODM_A_C::WindEffects_Should_be_Active' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Storm_Foot_Particle_Outdoor) == 0x000C68, "Member 'ATODM_A_C::Storm_Foot_Particle_Outdoor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Storm_Foot_Particle_While_on_Terrain) == 0x000C70, "Member 'ATODM_A_C::Storm_Foot_Particle_While_on_Terrain' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Storm_Foot_Particle_Indoor) == 0x000C78, "Member 'ATODM_A_C::Storm_Foot_Particle_Indoor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Storm_Foot_Particle_While_NOT_on_Terrain) == 0x000C80, "Member 'ATODM_A_C::Storm_Foot_Particle_While_NOT_on_Terrain' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Storm_Wind_Strength) == 0x000C88, "Member 'ATODM_A_C::Storm_Wind_Strength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Generate_Foliage_Wind_Gusts) == 0x000C8C, "Member 'ATODM_A_C::Generate_Foliage_Wind_Gusts' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, LightningStrikeTimerHandle) == 0x000C90, "Member 'ATODM_A_C::LightningStrikeTimerHandle' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, PreviousDirectionalLightColor) == 0x000C98, "Member 'ATODM_A_C::PreviousDirectionalLightColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Lightning_Flash_Color) == 0x000CA8, "Member 'ATODM_A_C::Lightning_Flash_Color' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Lightning_Flash_Timeline_Min) == 0x000CB8, "Member 'ATODM_A_C::Lightning_Flash_Timeline_Min' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Lightning_Flash_Timeline_Max) == 0x000CBC, "Member 'ATODM_A_C::Lightning_Flash_Timeline_Max' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, ShootingStarParticleSystem) == 0x000CC0, "Member 'ATODM_A_C::ShootingStarParticleSystem' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, Spawn_Shooting_Stars) == 0x000CC8, "Member 'ATODM_A_C::Spawn_Shooting_Stars' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningColor) == 0x000CCC, "Member 'ATODM_A_C::SkyboxFogMorningColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningLitColor) == 0x000CDC, "Member 'ATODM_A_C::SkyboxFogMorningLitColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningDistance) == 0x000CEC, "Member 'ATODM_A_C::SkyboxFogMorningDistance' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningDiffuseAmount) == 0x000CF0, "Member 'ATODM_A_C::SkyboxFogMorningDiffuseAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningEmissiveAmount) == 0x000CF4, "Member 'ATODM_A_C::SkyboxFogMorningEmissiveAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningLitLength) == 0x000CF8, "Member 'ATODM_A_C::SkyboxFogMorningLitLength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningLitRotation) == 0x000CFC, "Member 'ATODM_A_C::SkyboxFogMorningLitRotation' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogMorningLitOffset) == 0x000D00, "Member 'ATODM_A_C::SkyboxFogMorningLitOffset' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayColor) == 0x000D04, "Member 'ATODM_A_C::SkyboxFogDayColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayLitColor) == 0x000D14, "Member 'ATODM_A_C::SkyboxFogDayLitColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayDistance) == 0x000D24, "Member 'ATODM_A_C::SkyboxFogDayDistance' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayDiffuseAmount) == 0x000D28, "Member 'ATODM_A_C::SkyboxFogDayDiffuseAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayEmissiveAmount) == 0x000D2C, "Member 'ATODM_A_C::SkyboxFogDayEmissiveAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayLitLength) == 0x000D30, "Member 'ATODM_A_C::SkyboxFogDayLitLength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayLitRotation) == 0x000D34, "Member 'ATODM_A_C::SkyboxFogDayLitRotation' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogDayLitOffset) == 0x000D38, "Member 'ATODM_A_C::SkyboxFogDayLitOffset' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningColor) == 0x000D3C, "Member 'ATODM_A_C::SkyboxFogEveningColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningLitColor) == 0x000D4C, "Member 'ATODM_A_C::SkyboxFogEveningLitColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningDistance) == 0x000D5C, "Member 'ATODM_A_C::SkyboxFogEveningDistance' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningDiffuseAmount) == 0x000D60, "Member 'ATODM_A_C::SkyboxFogEveningDiffuseAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningEmissiveAmount) == 0x000D64, "Member 'ATODM_A_C::SkyboxFogEveningEmissiveAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningLitLength) == 0x000D68, "Member 'ATODM_A_C::SkyboxFogEveningLitLength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningLitRotation) == 0x000D6C, "Member 'ATODM_A_C::SkyboxFogEveningLitRotation' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogEveningLitOffset) == 0x000D70, "Member 'ATODM_A_C::SkyboxFogEveningLitOffset' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightColor) == 0x000D74, "Member 'ATODM_A_C::SkyboxFogNightColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightLitColor) == 0x000D84, "Member 'ATODM_A_C::SkyboxFogNightLitColor' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightDistance) == 0x000D94, "Member 'ATODM_A_C::SkyboxFogNightDistance' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightDiffuseAmount) == 0x000D98, "Member 'ATODM_A_C::SkyboxFogNightDiffuseAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightEmissiveAmount) == 0x000D9C, "Member 'ATODM_A_C::SkyboxFogNightEmissiveAmount' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightLitLength) == 0x000DA0, "Member 'ATODM_A_C::SkyboxFogNightLitLength' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightLitRotation) == 0x000DA4, "Member 'ATODM_A_C::SkyboxFogNightLitRotation' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, SkyboxFogNightLitOffset) == 0x000DA8, "Member 'ATODM_A_C::SkyboxFogNightLitOffset' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, World_Border_Cloud_Base_Color_Brightness) == 0x000DAC, "Member 'ATODM_A_C::World_Border_Cloud_Base_Color_Brightness' has a wrong offset!");
-static_assert(offsetof(ATODM_A_C, World_Border_Cloud_Sub_Surface_Color_and_Opacity) == 0x000DB0, "Member 'ATODM_A_C::World_Border_Cloud_Sub_Surface_Color_and_Opacity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

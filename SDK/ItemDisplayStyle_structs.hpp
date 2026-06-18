@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ItemDisplayStyle.ItemDisplayStyle
 // NumValues: 0x0008
@@ -28,5 +27,4 @@ enum class EItemDisplayStyle : uint8
 	ItemDisplayStyle_MAX                     = 7,
 };
 
-}
-
+SDK_NAMESPACE_END

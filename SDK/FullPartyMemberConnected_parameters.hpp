@@ -16,8 +16,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.ExecuteUbergraph_FullPartyMemberConnected
 // 0x0008 (0x0008 - 0x0000)
@@ -27,10 +27,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected) == 0x000004, "Wrong alignment on FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected");
-static_assert(sizeof(FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected) == 0x000008, "Wrong size on FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected");
-static_assert(offsetof(FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected, EntryPoint) == 0x000000, "Member 'FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected, K2Node_Event_IsDesignTime) == 0x000004, "Member 'FullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +35,6 @@ struct FullPartyMemberConnected_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FullPartyMemberConnected_C_PreConstruct) == 0x000001, "Wrong alignment on FullPartyMemberConnected_C_PreConstruct");
-static_assert(sizeof(FullPartyMemberConnected_C_PreConstruct) == 0x000001, "Wrong size on FullPartyMemberConnected_C_PreConstruct");
-static_assert(offsetof(FullPartyMemberConnected_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'FullPartyMemberConnected_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateMemberInfo
 // 0x0200 (0x0200 - 0x0000)
@@ -80,35 +73,6 @@ public:
 	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMemberConnected_C_UpdateMemberInfo) == 0x000008, "Wrong alignment on FullPartyMemberConnected_C_UpdateMemberInfo");
-static_assert(sizeof(FullPartyMemberConnected_C_UpdateMemberInfo) == 0x000200, "Wrong size on FullPartyMemberConnected_C_UpdateMemberInfo");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, NewMemberInfo) == 0x000000, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::NewMemberInfo' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, PlayerNetId) == 0x000190, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::PlayerNetId' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_GetContext_ReturnValue) == 0x0001A8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_bool_Variable) == 0x0001B0, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_bool_Variable2) == 0x0001B1, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_byte_Variable) == 0x0001B2, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_byte_Variable2) == 0x0001B3, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_GetContext_ReturnValue2) == 0x0001B8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_byte_Variable3) == 0x0001C0, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_byte_Variable4) == 0x0001C1, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_bool_Variable3) == 0x0001C2, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_IsInLocalPlayersParty_ReturnValue) == 0x0001C3, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_IsInLocalPlayersParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_byte_Variable5) == 0x0001C4, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, K2Node_Select_Default) == 0x0001C5, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_byte_Variable6) == 0x0001C6, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, Temp_bool_Variable4) == 0x0001C7, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, K2Node_Select2_Default) == 0x0001C8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_Greater_IntInt_ReturnValue) == 0x0001C9, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_BooleanAND_ReturnValue) == 0x0001CA, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_IsValidNetID_ReturnValue) == 0x0001CB, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_BooleanAND_ReturnValue2) == 0x0001CC, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, K2Node_Select3_Default) == 0x0001D0, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, K2Node_Select4_Default) == 0x0001E8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_GetTotalHomebaseRating_Rating) == 0x0001EC, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_GetTotalHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_GetTotalHomebaseRating_ProgressFraction) == 0x0001F0, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_GetTotalHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_GetTotalHomebaseRating_ReturnValue) == 0x0001F4, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_GetTotalHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateMemberInfo, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0001F8, "Member 'FullPartyMemberConnected_C_UpdateMemberInfo::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateDimensions
 // 0x0008 (0x0008 - 0x0000)
@@ -117,9 +81,6 @@ struct FullPartyMemberConnected_C_UpdateDimensions final
 public:
 	struct FVector2D                              NewDimensions;                                     // 0x0000(0x0008)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FullPartyMemberConnected_C_UpdateDimensions) == 0x000004, "Wrong alignment on FullPartyMemberConnected_C_UpdateDimensions");
-static_assert(sizeof(FullPartyMemberConnected_C_UpdateDimensions) == 0x000008, "Wrong size on FullPartyMemberConnected_C_UpdateDimensions");
-static_assert(offsetof(FullPartyMemberConnected_C_UpdateDimensions, NewDimensions) == 0x000000, "Member 'FullPartyMemberConnected_C_UpdateDimensions::NewDimensions' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

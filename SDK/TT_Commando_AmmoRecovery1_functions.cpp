@@ -14,14 +14,13 @@
 #include "TT_Commando_AmmoRecovery1_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TT_Commando_AmmoRecovery1.TT_Commando_AmmoRecovery1_C.InitializeAbilityInstanceInternal
 // (Event, Protected, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UGameplayAbility*                 AbilityInstance                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortTooltipContext*              Context                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UGameplayAbility*           AbilityInstance                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortTooltipContext*        Context                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTT_Commando_AmmoRecovery1_C::InitializeAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const class UFortTooltipContext* Context) const
 {
@@ -42,11 +41,11 @@ void UTT_Commando_AmmoRecovery1_C::InitializeAbilityInstanceInternal(const class
 // Function TT_Commando_AmmoRecovery1.TT_Commando_AmmoRecovery1_C.GetTextForTokenFromAbilityInstanceInternal
 // (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UGameplayAbility*                 AbilityInstance                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                     Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// class UFortTooltipContext*              Context                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                     Token                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// class FText                             OutText                                                (Parm, OutParm)
+// const class UGameplayAbility*           AbilityInstance                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Tag                                                    (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// const class UFortTooltipContext*        Context                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              Token                                                  (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// class FText*                            OutText                                                (Parm, OutParm)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UTT_Commando_AmmoRecovery1_C::GetTextForTokenFromAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const struct FGameplayTag& Tag, const class UFortTooltipContext* Context, const struct FGameplayTag& Token, class FText* OutText) const
@@ -71,5 +70,5 @@ bool UTT_Commando_AmmoRecovery1_C::GetTextForTokenFromAbilityInstanceInternal(co
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

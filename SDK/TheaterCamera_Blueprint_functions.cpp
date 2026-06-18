@@ -14,8 +14,7 @@
 #include "TheaterCamera_Blueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ExecuteUbergraph_TheaterCamera_Blueprint
 // (HasDefaults)
@@ -96,7 +95,7 @@ void ATheaterCamera_Blueprint_C::PingFromHex()
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ForceTileFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          HexWorldLoc                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HexWorldLoc                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ATheaterCamera_Blueprint_C::ForceTileFocus(const struct FVector& HexWorldLoc)
 {
@@ -226,7 +225,7 @@ void ATheaterCamera_Blueprint_C::OnActivated()
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_4(const struct FKey& Key)
 {
@@ -246,7 +245,7 @@ void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyE
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
@@ -266,7 +265,7 @@ void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEv
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
@@ -286,7 +285,7 @@ void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
@@ -452,7 +451,7 @@ void ATheaterCamera_Blueprint_C::ZoomCameraStep(bool Forward)
 // Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.HandleTheaterSelected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           TheaterId                                              (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    TheaterId                                              (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ATheaterCamera_Blueprint_C::HandleTheaterSelected(const class FString& TheaterId)
 {
@@ -533,5 +532,5 @@ bool ATheaterCamera_Blueprint_C::IsInputSuspended()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

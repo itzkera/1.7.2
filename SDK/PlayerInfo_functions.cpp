@@ -14,8 +14,7 @@
 #include "PlayerInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerInfo.PlayerInfo_C.ExecuteUbergraph_PlayerInfo
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UPlayerInfo_C::Destruct()
 // Function PlayerInfo.PlayerInfo_C.HandlePlayerStateChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTeamMemberInfo&       PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPlayerInfo_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
@@ -88,7 +87,7 @@ void UPlayerInfo_C::Construct()
 // Function PlayerInfo.PlayerInfo_C.UpdateLocalPlayerInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              Player_Info                                            (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             Player_Info                                            (Parm, OutParm, ReferenceParm)
 
 void UPlayerInfo_C::UpdateLocalPlayerInfo(struct FFortTeamMemberInfo& Player_Info)
 {
@@ -106,5 +105,5 @@ void UPlayerInfo_C::UpdateLocalPlayerInfo(struct FFortTeamMemberInfo& Player_Inf
 	Player_Info = std::move(Parms.Player_Info);
 }
 
-}
 
+SDK_NAMESPACE_END

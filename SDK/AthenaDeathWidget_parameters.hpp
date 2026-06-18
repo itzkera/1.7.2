@@ -15,8 +15,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.ExecuteUbergraph_AthenaDeathWidget
 // 0x0168 (0x0168 - 0x0000)
@@ -35,7 +35,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& WinnerPlayerName)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& WinnerPlayerName)> K2Node_CreateDelegate_OutputDelegate4;    // 0x0060(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -82,55 +82,6 @@ public:
 	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena3; // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess6;                      // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget");
-static_assert(sizeof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget) == 0x000168, "Wrong size on AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, EntryPoint) == 0x000000, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, Temp_int_Array_Index_Variable) == 0x000004, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, Temp_int_Array_Index_Variable2) == 0x000020, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_ComponentBoundEvent_Button2) == 0x000028, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000038, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x000048, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetGameState_ReturnValue) == 0x000058, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_CreateDelegate_OutputDelegate4) == 0x000060, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000070, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000080, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000088, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_bSuccess2) == 0x000090, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetGameState_ReturnValue2) == 0x000098, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetGameState_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_AsFort_Game_State_Athena2) == 0x0000A0, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_AsFort_Game_State_Athena2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_bSuccess3) == 0x0000A8, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetOwningPlayer_ReturnValue2) == 0x0000B0, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x0000B8, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_bSuccess4) == 0x0000C0, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_AnyTeamMembersStillAlive_AnyAlive) == 0x0000C1, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_AnyTeamMembersStillAlive_AnyAlive' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_K2_SetTimer_ReturnValue) == 0x0000C8, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_CreateDelegate_OutputDelegate5) == 0x0000D0, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Array_Get_Item) == 0x0000E0, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Array_Length_ReturnValue) == 0x0000E8, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetContext_ReturnValue2) == 0x0000F0, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetOwningPlayer_ReturnValue3) == 0x0000F8, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetOwningPlayer_ReturnValue4) == 0x000100, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetOwningPlayer_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_AsFort_Player_Controller_Athena2) == 0x000108, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_AsFort_Player_Controller_Athena2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_bSuccess5) == 0x000110, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Array_Get_Item2) == 0x000118, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_RemoveChild_ReturnValue) == 0x000120, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000121, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Array_Length_ReturnValue2) == 0x000124, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Less_IntInt_ReturnValue) == 0x000128, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, Temp_int_Loop_Counter_Variable2) == 0x00012C, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Less_IntInt_ReturnValue2) == 0x000130, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_Add_IntInt_ReturnValue2) == 0x000134, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000138, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_Event_IsDesignTime) == 0x000140, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_ComponentBoundEvent_Button) == 0x000148, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, CallFunc_GetOwningPlayer_ReturnValue5) == 0x000150, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::CallFunc_GetOwningPlayer_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_AsFort_Player_Controller_Athena3) == 0x000158, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_AsFort_Player_Controller_Athena3' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget, K2Node_DynamicCast_bSuccess6) == 0x000160, "Member 'AthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget::K2Node_DynamicCast_bSuccess6' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -139,9 +90,6 @@ struct AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -150,9 +98,6 @@ struct AthenaDeathWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaDeathWidget_C_PreConstruct");
-static_assert(sizeof(AthenaDeathWidget_C_PreConstruct) == 0x000001, "Wrong size on AthenaDeathWidget_C_PreConstruct");
-static_assert(offsetof(AthenaDeathWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaDeathWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -161,9 +106,6 @@ struct AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.OnPawnDied
 // 0x00A0 (0x00A0 - 0x0000)
@@ -185,20 +127,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_AnyTeamMembersStillAlive_AnyAlive;        // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_OnPawnDied) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_OnPawnDied");
-static_assert(sizeof(AthenaDeathWidget_C_OnPawnDied) == 0x0000A0, "Wrong size on AthenaDeathWidget_C_OnPawnDied");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, DeathReport) == 0x000000, "Member 'AthenaDeathWidget_C_OnPawnDied::DeathReport' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, Temp_bool_Variable) == 0x000050, "Member 'AthenaDeathWidget_C_OnPawnDied::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, Temp_byte_Variable) == 0x000051, "Member 'AthenaDeathWidget_C_OnPawnDied::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, Temp_byte_Variable2) == 0x000052, "Member 'AthenaDeathWidget_C_OnPawnDied::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'AthenaDeathWidget_C_OnPawnDied::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, CallFunc_GetOwningPlayer_ReturnValue) == 0x000060, "Member 'AthenaDeathWidget_C_OnPawnDied::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, K2Node_Select_Default) == 0x000068, "Member 'AthenaDeathWidget_C_OnPawnDied::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, CallFunc_Conv_StringToText_ReturnValue) == 0x000070, "Member 'AthenaDeathWidget_C_OnPawnDied::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000088, "Member 'AthenaDeathWidget_C_OnPawnDied::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000090, "Member 'AthenaDeathWidget_C_OnPawnDied::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'AthenaDeathWidget_C_OnPawnDied::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPawnDied, CallFunc_AnyTeamMembersStillAlive_AnyAlive) == 0x000099, "Member 'AthenaDeathWidget_C_OnPawnDied::CallFunc_AnyTeamMembersStillAlive_AnyAlive' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.OnPlaceChanged
 // 0x00E8 (0x00E8 - 0x0000)
@@ -224,22 +152,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00D0(0x0018)()
 };
-static_assert(alignof(AthenaDeathWidget_C_OnPlaceChanged) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_OnPlaceChanged");
-static_assert(sizeof(AthenaDeathWidget_C_OnPlaceChanged) == 0x0000E8, "Wrong size on AthenaDeathWidget_C_OnPlaceChanged");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, Temp_bool_Variable) == 0x000000, "Member 'AthenaDeathWidget_C_OnPlaceChanged::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, Temp_text_Variable) == 0x000008, "Member 'AthenaDeathWidget_C_OnPlaceChanged::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, Temp_text_Variable2) == 0x000020, "Member 'AthenaDeathWidget_C_OnPlaceChanged::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'AthenaDeathWidget_C_OnPlaceChanged::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000040, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_DynamicCast_AsFort_Player_State_Athena) == 0x000050, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_DynamicCast_AsFort_Player_State_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'AthenaDeathWidget_C_OnPlaceChanged::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A0, "Member 'AthenaDeathWidget_C_OnPlaceChanged::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_MakeArray_Array) == 0x0000A8, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, CallFunc_Format_ReturnValue) == 0x0000B8, "Member 'AthenaDeathWidget_C_OnPlaceChanged::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnPlaceChanged, K2Node_Select_Default) == 0x0000D0, "Member 'AthenaDeathWidget_C_OnPlaceChanged::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.OnViewTargetChanged
 // 0x0050 (0x0050 - 0x0000)
@@ -256,16 +168,6 @@ public:
 	int32                                         CallFunc_Len_ReturnValue;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_OnViewTargetChanged) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_OnViewTargetChanged");
-static_assert(sizeof(AthenaDeathWidget_C_OnViewTargetChanged) == 0x000050, "Wrong size on AthenaDeathWidget_C_OnViewTargetChanged");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, CallFunc_K2_SetTimer_ReturnValue) == 0x000000, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000010, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, CallFunc_GetSpectatingPlayerName_ReturnValue) == 0x000020, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::CallFunc_GetSpectatingPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, CallFunc_Conv_StringToText_ReturnValue) == 0x000030, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, CallFunc_Len_ReturnValue) == 0x000048, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnViewTargetChanged, CallFunc_Greater_IntInt_ReturnValue) == 0x00004C, "Member 'AthenaDeathWidget_C_OnViewTargetChanged::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.OnWinnerAnnounced
 // 0x0040 (0x0040 - 0x0000)
@@ -278,13 +180,6 @@ public:
 	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_OnWinnerAnnounced) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_OnWinnerAnnounced");
-static_assert(sizeof(AthenaDeathWidget_C_OnWinnerAnnounced) == 0x000040, "Wrong size on AthenaDeathWidget_C_OnWinnerAnnounced");
-static_assert(offsetof(AthenaDeathWidget_C_OnWinnerAnnounced, Winner) == 0x000000, "Member 'AthenaDeathWidget_C_OnWinnerAnnounced::Winner' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnWinnerAnnounced, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'AthenaDeathWidget_C_OnWinnerAnnounced::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnWinnerAnnounced, CallFunc_GetGameState_ReturnValue) == 0x000028, "Member 'AthenaDeathWidget_C_OnWinnerAnnounced::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnWinnerAnnounced, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000030, "Member 'AthenaDeathWidget_C_OnWinnerAnnounced::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_OnWinnerAnnounced, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'AthenaDeathWidget_C_OnWinnerAnnounced::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.AnyTeamMembersStillAlive
 // 0x0040 (0x0040 - 0x0000)
@@ -309,21 +204,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_AnyTeamMembersStillAlive) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_AnyTeamMembersStillAlive");
-static_assert(sizeof(AthenaDeathWidget_C_AnyTeamMembersStillAlive) == 0x000040, "Wrong size on AthenaDeathWidget_C_AnyTeamMembersStillAlive");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, PlayerController) == 0x000000, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::PlayerController' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, AnyAlive) == 0x000008, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::AnyAlive' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, Any_Alive) == 0x000009, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::Any_Alive' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_GetTeamDead_DeadStates) == 0x000010, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_GetTeamDead_DeadStates' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, Temp_bool_True_if_break_was_hit_Variable) == 0x000020, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_Not_PreBool_ReturnValue) == 0x000028, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, Temp_int_Array_Index_Variable) == 0x00002C, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_Array_Get_Item) == 0x000034, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_Less_IntInt_ReturnValue) == 0x000035, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AnyTeamMembersStillAlive, CallFunc_BooleanAND_ReturnValue) == 0x00003C, "Member 'AthenaDeathWidget_C_AnyTeamMembersStillAlive::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.AddTeamMemberIndicator
 // 0x0040 (0x0040 - 0x0000)
@@ -341,16 +221,6 @@ public:
 	class UFortActorCanvasSlot*                   CallFunc_AddActorIndicator_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDeathWidget_C_AddTeamMemberIndicator) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_AddTeamMemberIndicator");
-static_assert(sizeof(AthenaDeathWidget_C_AddTeamMemberIndicator) == 0x000040, "Wrong size on AthenaDeathWidget_C_AddTeamMemberIndicator");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, Player_State) == 0x000000, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::Player_State' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, Team_Member_Index) == 0x000008, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::Team_Member_Index' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000018, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000020, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, CallFunc_Create_ReturnValue) == 0x000028, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, CallFunc_AddActorIndicator_ReturnValue) == 0x000030, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::CallFunc_AddActorIndicator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_AddTeamMemberIndicator, CallFunc_Array_Add_ReturnValue) == 0x000038, "Member 'AthenaDeathWidget_C_AddTeamMemberIndicator::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.UpdateFollowNextTeammateVisibility
 // 0x0060 (0x0060 - 0x0000)
@@ -384,28 +254,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility) == 0x000008, "Wrong alignment on AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility");
-static_assert(sizeof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility) == 0x000060, "Wrong size on AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, NumTeammatesAlive) == 0x000000, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::NumTeammatesAlive' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, Temp_byte_Variable) == 0x000004, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, Temp_byte_Variable2) == 0x000005, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, Temp_int_Array_Index_Variable) == 0x000014, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, Temp_bool_Variable) == 0x000019, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Greater_IntInt_ReturnValue) == 0x00001A, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Add_IntInt_ReturnValue2) == 0x00001C, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, K2Node_Select_Default) == 0x000020, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000030, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_GetTeamDead_DeadStates) == 0x000040, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_GetTeamDead_DeadStates' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Array_Get_Item) == 0x000050, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000059, "Member 'AthenaDeathWidget_C_UpdateFollowNextTeammateVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

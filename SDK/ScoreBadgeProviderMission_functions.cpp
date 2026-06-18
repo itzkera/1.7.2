@@ -14,27 +14,26 @@
 #include "ScoreBadgeProviderMission_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ScoreBadgeProviderMission.ScoreBadgeProviderMission_C.GetScoreBadgeInfos
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EStatCategory                           ScoreCategory                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FCollectionMissionBadgeDisplayInfo>BadgeInfos                                             (Parm, OutParm, ZeroConstructor)
+// TArray<struct FCollectionMissionBadgeDisplayInfo>*BadgeInfos                                             (Parm, OutParm, ZeroConstructor)
 
 void IScoreBadgeProviderMission_C::GetScoreBadgeInfos(EStatCategory ScoreCategory, TArray<struct FCollectionMissionBadgeDisplayInfo>* BadgeInfos)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ScoreBadgeProviderMission_C", "GetScoreBadgeInfos");
+		Func = AsUObject()->Class->GetFunction("ScoreBadgeProviderMission_C", "GetScoreBadgeInfos");
 
 	Params::ScoreBadgeProviderMission_C_GetScoreBadgeInfos Parms{};
 
 	Parms.ScoreCategory = ScoreCategory;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (BadgeInfos != nullptr)
 		*BadgeInfos = std::move(Parms.BadgeInfos);
@@ -45,24 +44,24 @@ void IScoreBadgeProviderMission_C::GetScoreBadgeInfos(EStatCategory ScoreCategor
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EStatCategory                           ScoreCategory                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Score                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Score                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void IScoreBadgeProviderMission_C::GetTotalScore(EStatCategory ScoreCategory, int32* Score)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ScoreBadgeProviderMission_C", "GetTotalScore");
+		Func = AsUObject()->Class->GetFunction("ScoreBadgeProviderMission_C", "GetTotalScore");
 
 	Params::ScoreBadgeProviderMission_C_GetTotalScore Parms{};
 
 	Parms.ScoreCategory = ScoreCategory;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (Score != nullptr)
 		*Score = Parms.Score;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "GeometryCache_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -31,7 +30,12 @@ class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent() 
 
 	Params::GeometryCacheActor_GetGeometryCacheComponent Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -47,7 +51,12 @@ void UGeometryCacheComponent::Pause()
 	if (Func == nullptr)
 		Func = Class->GetFunction("GeometryCacheComponent", "Pause");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -61,7 +70,12 @@ void UGeometryCacheComponent::Play()
 	if (Func == nullptr)
 		Func = Class->GetFunction("GeometryCacheComponent", "Play");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -75,7 +89,12 @@ void UGeometryCacheComponent::PlayFromStart()
 	if (Func == nullptr)
 		Func = Class->GetFunction("GeometryCacheComponent", "PlayFromStart");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -89,7 +108,12 @@ void UGeometryCacheComponent::PlayReversed()
 	if (Func == nullptr)
 		Func = Class->GetFunction("GeometryCacheComponent", "PlayReversed");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -103,7 +127,12 @@ void UGeometryCacheComponent::PlayReversedFromEnd()
 	if (Func == nullptr)
 		Func = Class->GetFunction("GeometryCacheComponent", "PlayReversedFromEnd");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -124,7 +153,12 @@ bool UGeometryCacheComponent::SetGeometryCache(class UGeometryCache* NewGeomCach
 
 	Parms.NewGeomCache = NewGeomCache;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -133,7 +167,7 @@ bool UGeometryCacheComponent::SetGeometryCache(class UGeometryCache* NewGeomCach
 // Function GeometryCache.GeometryCacheComponent.SetLooping
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    bNewLooping                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bNewLooping                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGeometryCacheComponent::SetLooping(const bool bNewLooping)
 {
@@ -146,14 +180,19 @@ void UGeometryCacheComponent::SetLooping(const bool bNewLooping)
 
 	Parms.bNewLooping = bNewLooping;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                                   NewPlaybackSpeed                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const float                             NewPlaybackSpeed                                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGeometryCacheComponent::SetPlaybackSpeed(const float NewPlaybackSpeed)
 {
@@ -166,7 +205,12 @@ void UGeometryCacheComponent::SetPlaybackSpeed(const float NewPlaybackSpeed)
 
 	Parms.NewPlaybackSpeed = NewPlaybackSpeed;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -180,7 +224,12 @@ void UGeometryCacheComponent::Stop()
 	if (Func == nullptr)
 		Func = Class->GetFunction("GeometryCacheComponent", "Stop");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -198,7 +247,12 @@ float UGeometryCacheComponent::GetPlaybackSpeed() const
 
 	Params::GeometryCacheComponent_GetPlaybackSpeed Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -218,7 +272,12 @@ bool UGeometryCacheComponent::IsLooping() const
 
 	Params::GeometryCacheComponent_IsLooping Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -238,7 +297,12 @@ bool UGeometryCacheComponent::IsPlaying() const
 
 	Params::GeometryCacheComponent_IsPlaying Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -258,7 +322,12 @@ bool UGeometryCacheComponent::IsPlayingReversed() const
 
 	Params::GeometryCacheComponent_IsPlayingReversed Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -267,8 +336,8 @@ bool UGeometryCacheComponent::IsPlayingReversed() const
 // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
 // (Final, Native, Public, HasOutParams)
 // Parameters:
-// struct FGeometryCacheMeshData           MeshData                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// float                                   SampleTime                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FGeometryCacheMeshData&    MeshData                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const float                             SampleTime                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(const struct FGeometryCacheMeshData& MeshData, const float SampleTime)
 {
@@ -282,14 +351,19 @@ void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(const struct FGeometry
 	Parms.MeshData = std::move(MeshData);
 	Parms.SampleTime = SampleTime;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
 // (Final, Native, Public, HasOutParams)
 // Parameters:
-// struct FGeometryCacheMeshData           NewMeshData                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FGeometryCacheMeshData&    NewMeshData                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGeometryCacheTrack_TransformAnimation::SetMesh(const struct FGeometryCacheMeshData& NewMeshData)
 {
@@ -302,14 +376,19 @@ void UGeometryCacheTrack_TransformAnimation::SetMesh(const struct FGeometryCache
 
 	Parms.NewMeshData = std::move(NewMeshData);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
 // (Final, Native, Public, HasOutParams)
 // Parameters:
-// struct FGeometryCacheMeshData           NewMeshData                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FGeometryCacheMeshData&    NewMeshData                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 
 void UGeometryCacheTrack_TransformGroupAnimation::SetMesh(const struct FGeometryCacheMeshData& NewMeshData)
 {
@@ -322,8 +401,13 @@ void UGeometryCacheTrack_TransformGroupAnimation::SetMesh(const struct FGeometry
 
 	Parms.NewMeshData = std::move(NewMeshData);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

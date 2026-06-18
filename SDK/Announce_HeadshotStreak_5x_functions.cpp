@@ -14,8 +14,7 @@
 #include "Announce_HeadshotStreak_5x_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_HeadshotStreak_5x.Announce_HeadshotStreak_5x_C.ExecuteUbergraph_Announce_HeadshotStreak_5x
 // ()
@@ -64,5 +63,5 @@ void AAnnounce_HeadshotStreak_5x_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

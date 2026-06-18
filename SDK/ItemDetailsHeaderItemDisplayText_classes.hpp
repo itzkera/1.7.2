@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C
 // 0x0018 (0x0288 - 0x0270)
@@ -37,18 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDetailsHeaderItemDisplayText_C">();
+		BP_STATIC_CLASS_IMPL("ItemDetailsHeaderItemDisplayText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDetailsHeaderItemDisplayText_C")
 	}
 	static class UItemDetailsHeaderItemDisplayText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDetailsHeaderItemDisplayText_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeaderItemDisplayText_C) == 0x000008, "Wrong alignment on UItemDetailsHeaderItemDisplayText_C");
-static_assert(sizeof(UItemDetailsHeaderItemDisplayText_C) == 0x000288, "Wrong size on UItemDetailsHeaderItemDisplayText_C");
-static_assert(offsetof(UItemDetailsHeaderItemDisplayText_C, UberGraphFrame) == 0x000270, "Member 'UItemDetailsHeaderItemDisplayText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeaderItemDisplayText_C, ItemDisplayName) == 0x000278, "Member 'UItemDetailsHeaderItemDisplayText_C::ItemDisplayName' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeaderItemDisplayText_C, Show_New_System) == 0x000280, "Member 'UItemDetailsHeaderItemDisplayText_C::Show_New_System' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

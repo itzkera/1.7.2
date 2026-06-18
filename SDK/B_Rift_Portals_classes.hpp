@@ -16,8 +16,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_Rift_Portals.B_Rift_Portals_C
 // 0x01C8 (0x09A0 - 0x07D8)
@@ -120,78 +119,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Rift_Portals_C">();
+		BP_STATIC_CLASS_IMPL("B_Rift_Portals_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Rift_Portals_C")
 	}
 	static class AB_Rift_Portals_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Rift_Portals_C>();
 	}
 };
-static_assert(alignof(AB_Rift_Portals_C) == 0x000008, "Wrong alignment on AB_Rift_Portals_C");
-static_assert(sizeof(AB_Rift_Portals_C) == 0x0009A0, "Wrong size on AB_Rift_Portals_C");
-static_assert(offsetof(AB_Rift_Portals_C, UberGraphFrame) == 0x0007E0, "Member 'AB_Rift_Portals_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Storm_Small_Vortex_Cue) == 0x0007E8, "Member 'AB_Rift_Portals_C::Storm_Small_Vortex_Cue' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, P_Rift_RandomLightning_01) == 0x0007F0, "Member 'AB_Rift_Portals_C::P_Rift_RandomLightning_01' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, RiftVortex) == 0x0007F8, "Member 'AB_Rift_Portals_C::RiftVortex' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, FortMiniMap) == 0x000800, "Member 'AB_Rift_Portals_C::FortMiniMap' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, P_Rift_Active) == 0x000808, "Member 'AB_Rift_Portals_C::P_Rift_Active' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, PointLight) == 0x000810, "Member 'AB_Rift_Portals_C::PointLight' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Audio1) == 0x000818, "Member 'AB_Rift_Portals_C::Audio1' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ScaleLightOnOff_LERP_9100A5CB43D5BF71190A45AB7C00C2B9) == 0x000820, "Member 'AB_Rift_Portals_C::ScaleLightOnOff_LERP_9100A5CB43D5BF71190A45AB7C00C2B9' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ScaleLightOnOff__Direction_9100A5CB43D5BF71190A45AB7C00C2B9) == 0x000824, "Member 'AB_Rift_Portals_C::ScaleLightOnOff__Direction_9100A5CB43D5BF71190A45AB7C00C2B9' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ScaleLightOnOff) == 0x000828, "Member 'AB_Rift_Portals_C::ScaleLightOnOff' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, BoostLight_LERP_B8E171DC42A8E999600BC085D7EDCE3D) == 0x000830, "Member 'AB_Rift_Portals_C::BoostLight_LERP_B8E171DC42A8E999600BC085D7EDCE3D' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, BoostLight__Direction_B8E171DC42A8E999600BC085D7EDCE3D) == 0x000834, "Member 'AB_Rift_Portals_C::BoostLight__Direction_B8E171DC42A8E999600BC085D7EDCE3D' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, BoostLight) == 0x000838, "Member 'AB_Rift_Portals_C::BoostLight' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, SpawnCloud) == 0x000840, "Member 'AB_Rift_Portals_C::SpawnCloud' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, SwipeMaterial) == 0x000848, "Member 'AB_Rift_Portals_C::SwipeMaterial' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Plasma_Particles) == 0x000850, "Member 'AB_Rift_Portals_C::Plasma_Particles' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Lightning_Strike_Particles) == 0x000858, "Member 'AB_Rift_Portals_C::Lightning_Strike_Particles' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Decal_Material) == 0x000860, "Member 'AB_Rift_Portals_C::Decal_Material' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ImpactLocation) == 0x000868, "Member 'AB_Rift_Portals_C::ImpactLocation' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Decal) == 0x000878, "Member 'AB_Rift_Portals_C::Decal' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Impact_Vector_Field) == 0x000880, "Member 'AB_Rift_Portals_C::Impact_Vector_Field' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wind_Impulse) == 0x000888, "Member 'AB_Rift_Portals_C::Wind_Impulse' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wind_Impulse_Default_Strength) == 0x00088C, "Member 'AB_Rift_Portals_C::Wind_Impulse_Default_Strength' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wind_location) == 0x000890, "Member 'AB_Rift_Portals_C::Wind_location' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wind_Radius) == 0x00089C, "Member 'AB_Rift_Portals_C::Wind_Radius' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Overlapping_Actors) == 0x0008A0, "Member 'AB_Rift_Portals_C::Overlapping_Actors' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ArrayOfNearbyCars) == 0x0008B0, "Member 'AB_Rift_Portals_C::ArrayOfNearbyCars' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Color_Idle) == 0x0008C0, "Member 'AB_Rift_Portals_C::Light_Color_Idle' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Color_Active) == 0x0008D0, "Member 'AB_Rift_Portals_C::Light_Color_Active' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Intensity_Idle) == 0x0008E0, "Member 'AB_Rift_Portals_C::Light_Intensity_Idle' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Intensity_Active) == 0x0008E4, "Member 'AB_Rift_Portals_C::Light_Intensity_Active' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Radius_Idle) == 0x0008E8, "Member 'AB_Rift_Portals_C::Light_Radius_Idle' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Radius_Active) == 0x0008EC, "Member 'AB_Rift_Portals_C::Light_Radius_Active' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ParticlesBaseMID) == 0x0008F0, "Member 'AB_Rift_Portals_C::ParticlesBaseMID' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, LightEnabled) == 0x0008F8, "Member 'AB_Rift_Portals_C::LightEnabled' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Fade_In_Time) == 0x0008FC, "Member 'AB_Rift_Portals_C::Light_Fade_In_Time' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Light_Fade_Out_Time) == 0x000900, "Member 'AB_Rift_Portals_C::Light_Fade_Out_Time' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, SpawnImpactParticles) == 0x000904, "Member 'AB_Rift_Portals_C::SpawnImpactParticles' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, ManualDeactivateDelayBeforeDestory) == 0x000908, "Member 'AB_Rift_Portals_C::ManualDeactivateDelayBeforeDestory' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, RiftLightningDuration) == 0x00090C, "Member 'AB_Rift_Portals_C::RiftLightningDuration' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, VortexSize) == 0x000910, "Member 'AB_Rift_Portals_C::VortexSize' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, VortexSizeMin) == 0x00091C, "Member 'AB_Rift_Portals_C::VortexSizeMin' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, VortexSizeMax) == 0x000928, "Member 'AB_Rift_Portals_C::VortexSizeMax' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Twist_Amount_Min) == 0x000934, "Member 'AB_Rift_Portals_C::Twist_Amount_Min' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Twist_Amount_Max) == 0x000938, "Member 'AB_Rift_Portals_C::Twist_Amount_Max' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Strength_Min) == 0x00093C, "Member 'AB_Rift_Portals_C::Wiggle_Strength_Min' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Strength_Max) == 0x000940, "Member 'AB_Rift_Portals_C::Wiggle_Strength_Max' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, RiftVortexMID) == 0x000948, "Member 'AB_Rift_Portals_C::RiftVortexMID' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Twist_Amount) == 0x000950, "Member 'AB_Rift_Portals_C::Twist_Amount' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Strength) == 0x000954, "Member 'AB_Rift_Portals_C::Wiggle_Strength' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, WPO_Strength) == 0x000958, "Member 'AB_Rift_Portals_C::WPO_Strength' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Model_Height) == 0x00095C, "Member 'AB_Rift_Portals_C::Model_Height' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, UV_Tile_Multiplier_Min) == 0x000960, "Member 'AB_Rift_Portals_C::UV_Tile_Multiplier_Min' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, UV_Tile_Multiplier_Max) == 0x000968, "Member 'AB_Rift_Portals_C::UV_Tile_Multiplier_Max' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Frequency_Min) == 0x000970, "Member 'AB_Rift_Portals_C::Wiggle_Frequency_Min' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Frequency_Max) == 0x000974, "Member 'AB_Rift_Portals_C::Wiggle_Frequency_Max' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Speed_Min) == 0x000978, "Member 'AB_Rift_Portals_C::Wiggle_Speed_Min' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Wiggle_Speed_Max) == 0x000980, "Member 'AB_Rift_Portals_C::Wiggle_Speed_Max' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Lightning_Spawn_Loc) == 0x000988, "Member 'AB_Rift_Portals_C::Lightning_Spawn_Loc' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, Lightning_Bloat) == 0x000994, "Member 'AB_Rift_Portals_C::Lightning_Bloat' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, RiftVortexFadeInTime) == 0x000998, "Member 'AB_Rift_Portals_C::RiftVortexFadeInTime' has a wrong offset!");
-static_assert(offsetof(AB_Rift_Portals_C, RiftVortexFadeOutTime) == 0x00099C, "Member 'AB_Rift_Portals_C::RiftVortexFadeOutTime' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

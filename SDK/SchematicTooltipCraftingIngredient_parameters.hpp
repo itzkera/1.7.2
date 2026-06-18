@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.ExecuteUbergraph_SchematicTooltipCraftingIngredient
 // 0x0004 (0x0004 - 0x0000)
@@ -24,9 +24,6 @@ struct SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCra
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient) == 0x000004, "Wrong alignment on SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient");
-static_assert(sizeof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient) == 0x000004, "Wrong size on SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient, EntryPoint) == 0x000000, "Member 'SchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient::EntryPoint' has a wrong offset!");
 
 // Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.Refresh
 // 0x00C0 (0x00C0 - 0x0000)
@@ -44,17 +41,6 @@ public:
 	class UWidget*                                K2Node_Select2_Default;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0030(0x0090)()
 };
-static_assert(alignof(SchematicTooltipCraftingIngredient_C_Refresh) == 0x000008, "Wrong alignment on SchematicTooltipCraftingIngredient_C_Refresh");
-static_assert(sizeof(SchematicTooltipCraftingIngredient_C_Refresh) == 0x0000C0, "Wrong size on SchematicTooltipCraftingIngredient_C_Refresh");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, TotalCount) == 0x000000, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::TotalCount' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, Temp_bool_Variable) == 0x000004, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, Temp_byte_Variable) == 0x000005, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, Temp_byte_Variable2) == 0x000006, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, Temp_bool_Variable2) == 0x000007, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, K2Node_Select_Default) == 0x000020, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, K2Node_Select2_Default) == 0x000028, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Refresh, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x000030, "Member 'SchematicTooltipCraftingIngredient_C_Refresh::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 
 // Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.Get Tooltip
 // 0x0048 (0x0048 - 0x0000)
@@ -67,13 +53,6 @@ public:
 	class FText                                   CallFunc_GetSingleLineDescription_ReturnValue;     // 0x0028(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SchematicTooltipCraftingIngredient_C_Get_Tooltip) == 0x000008, "Wrong alignment on SchematicTooltipCraftingIngredient_C_Get_Tooltip");
-static_assert(sizeof(SchematicTooltipCraftingIngredient_C_Get_Tooltip) == 0x000048, "Wrong size on SchematicTooltipCraftingIngredient_C_Get_Tooltip");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Get_Tooltip, ReturnValue) == 0x000000, "Member 'SchematicTooltipCraftingIngredient_C_Get_Tooltip::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Get_Tooltip, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'SchematicTooltipCraftingIngredient_C_Get_Tooltip::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Get_Tooltip, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'SchematicTooltipCraftingIngredient_C_Get_Tooltip::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Get_Tooltip, CallFunc_GetSingleLineDescription_ReturnValue) == 0x000028, "Member 'SchematicTooltipCraftingIngredient_C_Get_Tooltip::CallFunc_GetSingleLineDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SchematicTooltipCraftingIngredient_C_Get_Tooltip, CallFunc_Create_Basic_Tooltip_Output) == 0x000040, "Member 'SchematicTooltipCraftingIngredient_C_Get_Tooltip::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

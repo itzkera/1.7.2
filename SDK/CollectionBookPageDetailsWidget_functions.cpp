@@ -14,8 +14,7 @@
 #include "CollectionBookPageDetailsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C.ExecuteUbergraph_CollectionBookPageDetailsWidget
 // ()
@@ -60,5 +59,5 @@ void UCollectionBookPageDetailsWidget_C::OnPageProgressionUpdated(int32 TotalFil
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

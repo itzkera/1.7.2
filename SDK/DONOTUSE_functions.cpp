@@ -14,8 +14,7 @@
 #include "DONOTUSE_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DONOTUSE.DONOTUSE_C.ExecuteUbergraph_DONOTUSE
 // ()
@@ -64,5 +63,5 @@ void UDONOTUSE_C::Refresh()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "GCNL_GM_OnDmg_SpeedBuff_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCNL_GM_OnDmg_SpeedBuff.GCNL_GM_OnDmg_SpeedBuff_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -35,7 +34,7 @@ void AGCNL_GM_OnDmg_SpeedBuff_C::UserConstructionScript()
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class UParticleSystemComponent*         WhileActiveParticleSysComponent                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
 void AGCNL_GM_OnDmg_SpeedBuff_C::OnWhileActiveParticleSystemActivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
 {
@@ -52,5 +51,5 @@ void AGCNL_GM_OnDmg_SpeedBuff_C::OnWhileActiveParticleSystemActivate(class UPart
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

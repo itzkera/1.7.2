@@ -14,8 +14,7 @@
 #include "T4_Horde_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function T4_Horde.T4_Horde_C.ExecuteUbergraph_T4_Horde
 // ()
@@ -70,5 +69,5 @@ void UT4_Horde_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

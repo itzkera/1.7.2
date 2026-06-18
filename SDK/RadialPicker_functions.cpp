@@ -14,8 +14,7 @@
 #include "RadialPicker_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RadialPicker.RadialPicker_C.ExecuteUbergraph_RadialPicker
 // (HasDefaults)
@@ -130,7 +129,7 @@ void URadialPicker_C::Construct()
 // Function RadialPicker.RadialPicker_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URadialPicker_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -175,7 +174,7 @@ void URadialPicker_C::InitializePicker(EFortPickerMode PickerMode_0, int32 Initi
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Option                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Position                                               (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Position                                               (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URadialPicker_C::GetOptionPosition(int32 Option, struct FVector2D* Position)
 {
@@ -200,7 +199,7 @@ void URadialPicker_C::GetOptionPosition(int32 Option, struct FVector2D* Position
 // Parameters:
 // float                                   AngleA                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   AngleB                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Difference                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Difference                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URadialPicker_C::GetAngleDifference(float AngleA, float AngleB, float* Difference)
 {
@@ -225,7 +224,7 @@ void URadialPicker_C::GetAngleDifference(float AngleA, float AngleB, float* Diff
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Option                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URadialPicker_C::GetOptionAngle(int32 Option, float* Angle)
 {
@@ -296,7 +295,7 @@ void URadialPicker_C::SetInputMode()
 // Function RadialPicker.RadialPicker_C.CanConfirm
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    CanAccept                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   CanAccept                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URadialPicker_C::CanConfirm(bool* CanAccept)
 {
@@ -385,7 +384,7 @@ void URadialPicker_C::SetShowMouseCursor(bool InShowMouseCursor)
 // Function RadialPicker.RadialPicker_C.IsGamepadInPickerDeadZone
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                                    bIsInDeadZone                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsInDeadZone                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void URadialPicker_C::IsGamepadInPickerDeadZone(bool* bIsInDeadZone) const
 {
@@ -402,5 +401,5 @@ void URadialPicker_C::IsGamepadInPickerDeadZone(bool* bIsInDeadZone) const
 		*bIsInDeadZone = Parms.bIsInDeadZone;
 }
 
-}
 
+SDK_NAMESPACE_END

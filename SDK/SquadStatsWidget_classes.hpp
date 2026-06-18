@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SquadStatsWidget.SquadStatsWidget_C
 // 0x00F8 (0x0368 - 0x0270)
@@ -76,46 +75,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadStatsWidget_C">();
+		BP_STATIC_CLASS_IMPL("SquadStatsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadStatsWidget_C")
 	}
 	static class USquadStatsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadStatsWidget_C>();
 	}
 };
-static_assert(alignof(USquadStatsWidget_C) == 0x000008, "Wrong alignment on USquadStatsWidget_C");
-static_assert(sizeof(USquadStatsWidget_C) == 0x000368, "Wrong size on USquadStatsWidget_C");
-static_assert(offsetof(USquadStatsWidget_C, UberGraphFrame) == 0x000270, "Member 'USquadStatsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BasicStatsBorder) == 0x000278, "Member 'USquadStatsWidget_C::BasicStatsBorder' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BorderFortitude) == 0x000280, "Member 'USquadStatsWidget_C::BorderFortitude' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BorderOffense) == 0x000288, "Member 'USquadStatsWidget_C::BorderOffense' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BorderResist) == 0x000290, "Member 'USquadStatsWidget_C::BorderResist' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BorderTech) == 0x000298, "Member 'USquadStatsWidget_C::BorderTech' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BordertFortitude) == 0x0002A0, "Member 'USquadStatsWidget_C::BordertFortitude' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BordertOffense) == 0x0002A8, "Member 'USquadStatsWidget_C::BordertOffense' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BordertResist) == 0x0002B0, "Member 'USquadStatsWidget_C::BordertResist' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, BordertTech) == 0x0002B8, "Member 'USquadStatsWidget_C::BordertTech' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, CloseDetailedStats) == 0x0002C0, "Member 'USquadStatsWidget_C::CloseDetailedStats' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, CoreStat0) == 0x0002C8, "Member 'USquadStatsWidget_C::CoreStat0' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, CoreStat1) == 0x0002D0, "Member 'USquadStatsWidget_C::CoreStat1' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, CoreStat2) == 0x0002D8, "Member 'USquadStatsWidget_C::CoreStat2' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, CoreStat3) == 0x0002E0, "Member 'USquadStatsWidget_C::CoreStat3' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, DetailedStatsBorder) == 0x0002E8, "Member 'USquadStatsWidget_C::DetailedStatsBorder' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, DetailedStatsCommonBorder) == 0x0002F0, "Member 'USquadStatsWidget_C::DetailedStatsCommonBorder' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, DetailedStatsVbox) == 0x0002F8, "Member 'USquadStatsWidget_C::DetailedStatsVbox' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, ExtraContentSlot) == 0x000300, "Member 'USquadStatsWidget_C::ExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, LargeStat0) == 0x000308, "Member 'USquadStatsWidget_C::LargeStat0' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, LargeStat1) == 0x000310, "Member 'USquadStatsWidget_C::LargeStat1' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, SeeDetailedStats) == 0x000318, "Member 'USquadStatsWidget_C::SeeDetailedStats' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, StatsSwitcher) == 0x000320, "Member 'USquadStatsWidget_C::StatsSwitcher' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, TeamCoreStat0) == 0x000328, "Member 'USquadStatsWidget_C::TeamCoreStat0' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, TeamCoreStat1) == 0x000330, "Member 'USquadStatsWidget_C::TeamCoreStat1' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, TeamCoreStat2) == 0x000338, "Member 'USquadStatsWidget_C::TeamCoreStat2' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, TeamCoreStat3) == 0x000340, "Member 'USquadStatsWidget_C::TeamCoreStat3' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, bViewingDetailedStats) == 0x000348, "Member 'USquadStatsWidget_C::bViewingDetailedStats' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, DetailedStatsClosed) == 0x000350, "Member 'USquadStatsWidget_C::DetailedStatsClosed' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, bStatsNeedUpdate) == 0x000360, "Member 'USquadStatsWidget_C::bStatsNeedUpdate' has a wrong offset!");
-static_assert(offsetof(USquadStatsWidget_C, bIsActive) == 0x000361, "Member 'USquadStatsWidget_C::bIsActive' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

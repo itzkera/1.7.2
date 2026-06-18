@@ -14,8 +14,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TooltipHeroBonuses.TooltipHeroBonuses_C.ExecuteUbergraph_TooltipHeroBonuses
 // 0x0140 (0x0140 - 0x0000)
@@ -57,35 +57,6 @@ public:
 	float                                         K2Node_Select2_Default;                            // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x012C(0x0010)(NoDestructor)
 };
-static_assert(alignof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses) == 0x000008, "Wrong alignment on TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses");
-static_assert(sizeof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses) == 0x000140, "Wrong size on TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, EntryPoint) == 0x000000, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_bool_Variable) == 0x000004, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_int_Array_Index_Variable) == 0x000010, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_Create_ReturnValue) == 0x000020, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_int_Variable) == 0x000028, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_Array_Get_Item) == 0x000030, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_Array_Length_ReturnValue) == 0x0000B8, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_Less_IntInt_ReturnValue) == 0x0000BC, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000C0, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_int_Variable2) == 0x0000C8, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, K2Node_MakeStruct_Margin) == 0x0000CC, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_GetContext_ReturnValue) == 0x0000E0, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_GetOwningPlayer_ReturnValue2) == 0x0000E8, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_GetSupportBonusPerks_SupportBonusPerks) == 0x0000F0, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_GetSupportBonusPerks_SupportBonusPerks' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_GetSupportBonusPerks_ReturnValue) == 0x000100, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_GetSupportBonusPerks_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_Create_ReturnValue2) == 0x000108, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000110, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_bool_Variable2) == 0x000118, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_float_Variable) == 0x00011C, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, K2Node_Select_Default) == 0x000120, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, Temp_float_Variable2) == 0x000124, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, K2Node_Select2_Default) == 0x000128, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses, K2Node_MakeStruct_Margin2) == 0x00012C, "Member 'TooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses::K2Node_MakeStruct_Margin2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

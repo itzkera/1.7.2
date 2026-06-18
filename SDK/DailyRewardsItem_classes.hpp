@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DailyRewardsItem.DailyRewardsItem_C
 // 0x0078 (0x02C0 - 0x0248)
@@ -48,32 +47,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DailyRewardsItem_C">();
+		BP_STATIC_CLASS_IMPL("DailyRewardsItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DailyRewardsItem_C")
 	}
 	static class UDailyRewardsItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDailyRewardsItem_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsItem_C) == 0x000008, "Wrong alignment on UDailyRewardsItem_C");
-static_assert(sizeof(UDailyRewardsItem_C) == 0x0002C0, "Wrong size on UDailyRewardsItem_C");
-static_assert(offsetof(UDailyRewardsItem_C, UberGraphFrame) == 0x000248, "Member 'UDailyRewardsItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, CheckCheckMark) == 0x000250, "Member 'UDailyRewardsItem_C::CheckCheckMark' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, CheckMarkShadow) == 0x000258, "Member 'UDailyRewardsItem_C::CheckMarkShadow' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, Day) == 0x000260, "Member 'UDailyRewardsItem_C::Day' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, DayBorder) == 0x000268, "Member 'UDailyRewardsItem_C::DayBorder' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, DayNumber) == 0x000270, "Member 'UDailyRewardsItem_C::DayNumber' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, FortItemCard) == 0x000278, "Member 'UDailyRewardsItem_C::FortItemCard' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, Image_0) == 0x000280, "Member 'UDailyRewardsItem_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, Image_Claim_Surpress) == 0x000288, "Member 'UDailyRewardsItem_C::Image_Claim_Surpress' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, Image_Current_Highlight) == 0x000290, "Member 'UDailyRewardsItem_C::Image_Current_Highlight' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, ImageEmptyBackground) == 0x000298, "Member 'UDailyRewardsItem_C::ImageEmptyBackground' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, ItemBorder) == 0x0002A0, "Member 'UDailyRewardsItem_C::ItemBorder' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, OverlayTransform) == 0x0002A8, "Member 'UDailyRewardsItem_C::OverlayTransform' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, VerticalBoxMainContent) == 0x0002B0, "Member 'UDailyRewardsItem_C::VerticalBoxMainContent' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, IsDummyWidget) == 0x0002B8, "Member 'UDailyRewardsItem_C::IsDummyWidget' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, IsClaimed) == 0x0002B9, "Member 'UDailyRewardsItem_C::IsClaimed' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsItem_C, IsCurrentWidget) == 0x0002BA, "Member 'UDailyRewardsItem_C::IsCurrentWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

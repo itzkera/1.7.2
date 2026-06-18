@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ToastWidget.ToastWidget_C.ExecuteUbergraph_ToastWidget
 // 0x0170 (0x0170 - 0x0000)
@@ -35,17 +35,6 @@ public:
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00F0(0x0078)(ConstParm)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToastWidget_C_ExecuteUbergraph_ToastWidget) == 0x000008, "Wrong alignment on ToastWidget_C_ExecuteUbergraph_ToastWidget");
-static_assert(sizeof(ToastWidget_C_ExecuteUbergraph_ToastWidget) == 0x000170, "Wrong size on ToastWidget_C_ExecuteUbergraph_ToastWidget");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, EntryPoint) == 0x000000, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x000028, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000038, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_Event_MyGeometry) == 0x000040, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_Event_MouseEvent2) == 0x000078, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_Event_MouseEvent2' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_Event_MouseEvent) == 0x0000F0, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ExecuteUbergraph_ToastWidget, K2Node_ComponentBoundEvent_Button) == 0x000168, "Member 'ToastWidget_C_ExecuteUbergraph_ToastWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function ToastWidget.ToastWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +43,6 @@ struct ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButto
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ToastWidget.ToastWidget_C.OnMouseLeave
 // 0x0078 (0x0078 - 0x0000)
@@ -65,9 +51,6 @@ struct ToastWidget_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ToastWidget_C_OnMouseLeave) == 0x000008, "Wrong alignment on ToastWidget_C_OnMouseLeave");
-static_assert(sizeof(ToastWidget_C_OnMouseLeave) == 0x000078, "Wrong size on ToastWidget_C_OnMouseLeave");
-static_assert(offsetof(ToastWidget_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'ToastWidget_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function ToastWidget.ToastWidget_C.OnMouseEnter
 // 0x00B0 (0x00B0 - 0x0000)
@@ -78,10 +61,6 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ToastWidget_C_OnMouseEnter) == 0x000008, "Wrong alignment on ToastWidget_C_OnMouseEnter");
-static_assert(sizeof(ToastWidget_C_OnMouseEnter) == 0x0000B0, "Wrong size on ToastWidget_C_OnMouseEnter");
-static_assert(offsetof(ToastWidget_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'ToastWidget_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'ToastWidget_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function ToastWidget.ToastWidget_C.SetToast
 // 0x0028 (0x0028 - 0x0000)
@@ -96,14 +75,6 @@ public:
 	class UTexture2D*                             CallFunc_GetImageOverride_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ToastWidget_C_SetToast) == 0x000008, "Wrong alignment on ToastWidget_C_SetToast");
-static_assert(sizeof(ToastWidget_C_SetToast) == 0x000028, "Wrong size on ToastWidget_C_SetToast");
-static_assert(offsetof(ToastWidget_C_SetToast, Toast) == 0x000000, "Member 'ToastWidget_C_SetToast::Toast' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_SetToast, K2Node_DynamicCast_AsTwitch_Notification) == 0x000008, "Member 'ToastWidget_C_SetToast::K2Node_DynamicCast_AsTwitch_Notification' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_SetToast, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ToastWidget_C_SetToast::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_SetToast, CallFunc_GetOpenButtonVisibility_ReturnValue) == 0x000011, "Member 'ToastWidget_C_SetToast::CallFunc_GetOpenButtonVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_SetToast, CallFunc_GetImageOverride_ReturnValue) == 0x000018, "Member 'ToastWidget_C_SetToast::CallFunc_GetImageOverride_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_SetToast, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'ToastWidget_C_SetToast::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ToastWidget.ToastWidget_C.ShowText
 // 0x0048 (0x0048 - 0x0000)
@@ -116,13 +87,6 @@ public:
 	class FText                                   LocalText;                                         // 0x0028(0x0018)(Edit)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ToastWidget_C_ShowText) == 0x000008, "Wrong alignment on ToastWidget_C_ShowText");
-static_assert(sizeof(ToastWidget_C_ShowText) == 0x000048, "Wrong size on ToastWidget_C_ShowText");
-static_assert(offsetof(ToastWidget_C_ShowText, Text) == 0x000000, "Member 'ToastWidget_C_ShowText::Text' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ShowText, TextBlock) == 0x000018, "Member 'ToastWidget_C_ShowText::TextBlock' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ShowText, LocalTextBlock) == 0x000020, "Member 'ToastWidget_C_ShowText::LocalTextBlock' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ShowText, LocalText) == 0x000028, "Member 'ToastWidget_C_ShowText::LocalText' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_ShowText, CallFunc_TextIsEmpty_ReturnValue) == 0x000040, "Member 'ToastWidget_C_ShowText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
 
 // Function ToastWidget.ToastWidget_C.GetOpenButtonVisibility
 // 0x0005 (0x0005 - 0x0000)
@@ -135,13 +99,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ToastWidget_C_GetOpenButtonVisibility) == 0x000001, "Wrong alignment on ToastWidget_C_GetOpenButtonVisibility");
-static_assert(sizeof(ToastWidget_C_GetOpenButtonVisibility) == 0x000005, "Wrong size on ToastWidget_C_GetOpenButtonVisibility");
-static_assert(offsetof(ToastWidget_C_GetOpenButtonVisibility, ReturnValue) == 0x000000, "Member 'ToastWidget_C_GetOpenButtonVisibility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_GetOpenButtonVisibility, Temp_bool_Variable) == 0x000001, "Member 'ToastWidget_C_GetOpenButtonVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_GetOpenButtonVisibility, Temp_byte_Variable) == 0x000002, "Member 'ToastWidget_C_GetOpenButtonVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_GetOpenButtonVisibility, Temp_byte_Variable2) == 0x000003, "Member 'ToastWidget_C_GetOpenButtonVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ToastWidget_C_GetOpenButtonVisibility, K2Node_Select_Default) == 0x000004, "Member 'ToastWidget_C_GetOpenButtonVisibility::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

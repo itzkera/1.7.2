@@ -14,8 +14,7 @@
 #include "QuickbarSlotCooldown_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuickbarSlotCooldown.QuickbarSlotCooldown_C.ExecuteUbergraph_QuickbarSlotCooldown
 // ()
@@ -101,7 +100,7 @@ void UQuickbarSlotCooldown_C::Show_Countdown(bool Show)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EItemDisplayStyle                       QuickbarItemDisplayStyle                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<EFortItemCooldownType>           DesiredCooldownTypesSupported                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<EFortItemCooldownType>&          DesiredCooldownTypesSupported                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UQuickbarSlotCooldown_C::Initialize(EItemDisplayStyle QuickbarItemDisplayStyle, TArray<EFortItemCooldownType>& DesiredCooldownTypesSupported)
 {
@@ -120,5 +119,5 @@ void UQuickbarSlotCooldown_C::Initialize(EItemDisplayStyle QuickbarItemDisplaySt
 	DesiredCooldownTypesSupported = std::move(Parms.DesiredCooldownTypesSupported);
 }
 
-}
 
+SDK_NAMESPACE_END

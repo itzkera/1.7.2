@@ -14,8 +14,7 @@
 #include "HUD_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HUD.HUD_C.ExecuteUbergraph_HUD
 // (HasDefaults)
@@ -103,7 +102,7 @@ void UHUD_C::Destruct()
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 
 void UHUD_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
@@ -138,7 +137,7 @@ void UHUD_C::EndOfDayRecapEnded()
 // Function HUD.HUD_C.EndOfDayRecapStarted
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEndOfDayRecap                   EndOfDayRecap                                          (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FEndOfDayRecap&            EndOfDayRecap                                          (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UHUD_C::EndOfDayRecapStarted(const struct FEndOfDayRecap& EndOfDayRecap)
 {
@@ -192,7 +191,7 @@ void UHUD_C::Construct()
 // Function HUD.HUD_C.QuestsCompleted
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortQuestItem*>           Quests                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortQuestItem*>&    Quests                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UHUD_C::QuestsCompleted(const TArray<class UFortQuestItem*>& Quests)
 {
@@ -320,8 +319,8 @@ void UHUD_C::SetQuickbarSizes()
 // Function HUD.HUD_C.OnHandleAction
 // (HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEventReply                      Result                                                 (Parm, OutParm)
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FEventReply*                     Result                                                 (Parm, OutParm)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
@@ -408,7 +407,7 @@ void UHUD_C::SetGameMode()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UUserWidget*                      CustomWidget                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ActionName                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName&                            ActionName                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHUD_C::SetCursorModeContent(class UUserWidget* CustomWidget, class FName& ActionName)
 {
@@ -584,7 +583,7 @@ void UHUD_C::ShowPicker(EFortPickerMode Mode, int32 InitialOption, bool IgnoreFi
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           PointOfInterest                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             DisplayText                                            (Parm)
+// const class FText&                      DisplayText                                            (Parm)
 // class UTexture2D*                       DisplayImage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHUD_C::HandleOnPointOfInterestAdded(class AActor* PointOfInterest, const class FText& DisplayText, class UTexture2D* DisplayImage)
@@ -641,7 +640,7 @@ void UHUD_C::CreateInterestIndicatorWidget()
 // Function HUD.HUD_C.PopContentWidgetInternal
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* UHUD_C::PopContentWidgetInternal(const struct FContentPushState& State)
@@ -684,7 +683,7 @@ void UHUD_C::OnManagementTabSelected(class FName TabName)
 // Function HUD.HUD_C.OnHUDElementVisibilityChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer&           HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
 
 void UHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer& HiddenHUDElementTags)
 {
@@ -706,9 +705,9 @@ void UHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer& HiddenH
 // Function HUD.HUD_C.CheckHUDElementVisibility
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     HUDElementTagToCheck                                   (Parm, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          HUDElement                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTagContainer&           HiddenHUDElementTags                                   (Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              HUDElementTagToCheck                                   (Parm, NoDestructor, HasGetValueTypeHash)
+// class UWidget*&                         HUDElement                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHUD_C::CheckHUDElementVisibility(struct FGameplayTagContainer& HiddenHUDElementTags, const struct FGameplayTag& HUDElementTagToCheck, class UWidget*& HUDElement)
 {
@@ -729,5 +728,5 @@ void UHUD_C::CheckHUDElementVisibility(struct FGameplayTagContainer& HiddenHUDEl
 	HUDElement = Parms.HUDElement;
 }
 
-}
 
+SDK_NAMESPACE_END

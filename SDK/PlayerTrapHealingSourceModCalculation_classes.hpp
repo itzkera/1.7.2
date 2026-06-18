@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerTrapHealingSourceModCalculation.PlayerTrapHealingSourceModCalculation_C
 // 0x0000 (0x0068 - 0x0068)
@@ -23,15 +22,16 @@ class UPlayerTrapHealingSourceModCalculation_C final : public UPlayerTrapBonusMo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapHealingSourceModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapHealingSourceModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapHealingSourceModCalculation_C")
 	}
 	static class UPlayerTrapHealingSourceModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapHealingSourceModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapHealingSourceModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapHealingSourceModCalculation_C");
-static_assert(sizeof(UPlayerTrapHealingSourceModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapHealingSourceModCalculation_C");
 
-}
-
+SDK_NAMESPACE_END

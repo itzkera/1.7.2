@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionPickVehicleWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget
 // (HasDefaults)
@@ -182,7 +181,7 @@ void UBP_FortExpeditionPickVehicleWidget_C::Construct()
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionPickVehicleWidget_C::HandleBack(bool* PassThrough)
 {
@@ -218,7 +217,7 @@ void UBP_FortExpeditionPickVehicleWidget_C::Setup_Input_Action_Handlers()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        ItemDef                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortExpeditionItemDefinition*    AsFort_Expedition_Item_Definition                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortExpeditionItemDefinition**   AsFort_Expedition_Item_Definition                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionPickVehicleWidget_C::Get_Expedition_Item_Definition(class UFortItem* ItemDef, class UFortExpeditionItemDefinition** AsFort_Expedition_Item_Definition)
 {
@@ -241,7 +240,7 @@ void UBP_FortExpeditionPickVehicleWidget_C::Get_Expedition_Item_Definition(class
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.Determine Available Expedition Squads
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagContainer            RequirementTags                                        (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTagContainer&     RequirementTags                                        (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UBP_FortExpeditionPickVehicleWidget_C::Determine_Available_Expedition_Squads(const struct FGameplayTagContainer& RequirementTags)
 {
@@ -271,5 +270,5 @@ void UBP_FortExpeditionPickVehicleWidget_C::Pre_Select_for_Console()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

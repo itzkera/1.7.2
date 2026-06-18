@@ -14,8 +14,7 @@
 #include "AnimNotify_PlayForceFeedback_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C.Received_Notify
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -41,5 +40,5 @@ bool UAnimNotify_PlayForceFeedback_C::Received_Notify(class USkeletalMeshCompone
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

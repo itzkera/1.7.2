@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HorizontalTabList.HorizontalTabList_C
 // 0x0068 (0x03C8 - 0x0360)
@@ -55,30 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HorizontalTabList_C">();
+		BP_STATIC_CLASS_IMPL("HorizontalTabList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HorizontalTabList_C")
 	}
 	static class UHorizontalTabList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHorizontalTabList_C>();
 	}
 };
-static_assert(alignof(UHorizontalTabList_C) == 0x000008, "Wrong alignment on UHorizontalTabList_C");
-static_assert(sizeof(UHorizontalTabList_C) == 0x0003C8, "Wrong size on UHorizontalTabList_C");
-static_assert(offsetof(UHorizontalTabList_C, UberGraphFrame) == 0x000360, "Member 'UHorizontalTabList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ImageGamepadKeyPrompt) == 0x000368, "Member 'UHorizontalTabList_C::ImageGamepadKeyPrompt' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ImageHorizRule) == 0x000370, "Member 'UHorizontalTabList_C::ImageHorizRule' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NextTabAction) == 0x000378, "Member 'UHorizontalTabList_C::NextTabAction' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NextTabActionWrapper) == 0x000380, "Member 'UHorizontalTabList_C::NextTabActionWrapper' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, PreviousTabAction) == 0x000388, "Member 'UHorizontalTabList_C::PreviousTabAction' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, PreviousTabActionWrapper) == 0x000390, "Member 'UHorizontalTabList_C::PreviousTabActionWrapper' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, TabButtonBox) == 0x000398, "Member 'UHorizontalTabList_C::TabButtonBox' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, TabButtonPadding) == 0x0003A0, "Member 'UHorizontalTabList_C::TabButtonPadding' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ButtonStyle) == 0x0003B0, "Member 'UHorizontalTabList_C::ButtonStyle' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, UseButtonStyle) == 0x0003B8, "Member 'UHorizontalTabList_C::UseButtonStyle' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ShowGamePadInputPrompt) == 0x0003B9, "Member 'UHorizontalTabList_C::ShowGamePadInputPrompt' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ShowRail) == 0x0003BA, "Member 'UHorizontalTabList_C::ShowRail' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, MinTabWidth) == 0x0003BC, "Member 'UHorizontalTabList_C::MinTabWidth' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NewVar_0) == 0x0003C0, "Member 'UHorizontalTabList_C::NewVar_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

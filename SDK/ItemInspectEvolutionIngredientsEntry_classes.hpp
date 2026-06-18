@@ -16,8 +16,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C
 // 0x00A0 (0x02D0 - 0x0230)
@@ -43,23 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectEvolutionIngredientsEntry_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectEvolutionIngredientsEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectEvolutionIngredientsEntry_C")
 	}
 	static class UItemInspectEvolutionIngredientsEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectEvolutionIngredientsEntry_C>();
 	}
 };
-static_assert(alignof(UItemInspectEvolutionIngredientsEntry_C) == 0x000008, "Wrong alignment on UItemInspectEvolutionIngredientsEntry_C");
-static_assert(sizeof(UItemInspectEvolutionIngredientsEntry_C) == 0x0002D0, "Wrong size on UItemInspectEvolutionIngredientsEntry_C");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, UberGraphFrame) == 0x000230, "Member 'UItemInspectEvolutionIngredientsEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, CheckMarkIcon) == 0x000238, "Member 'UItemInspectEvolutionIngredientsEntry_C::CheckMarkIcon' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, ItemIcon) == 0x000240, "Member 'UItemInspectEvolutionIngredientsEntry_C::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, ItemName) == 0x000248, "Member 'UItemInspectEvolutionIngredientsEntry_C::ItemName' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, QuantityText) == 0x000250, "Member 'UItemInspectEvolutionIngredientsEntry_C::QuantityText' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, IngredientItemQuantity) == 0x000258, "Member 'UItemInspectEvolutionIngredientsEntry_C::IngredientItemQuantity' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, NotHaveColor) == 0x000280, "Member 'UItemInspectEvolutionIngredientsEntry_C::NotHaveColor' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionIngredientsEntry_C, HaveColor) == 0x0002A8, "Member 'UItemInspectEvolutionIngredientsEntry_C::HaveColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

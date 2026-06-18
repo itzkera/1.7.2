@@ -14,8 +14,7 @@
 #include "ItemTransformRequiredItems_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformRequiredItems.ItemTransformRequiredItems_C.UpdateItems
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -38,5 +37,5 @@ void UItemTransformRequiredItems_C::UpdateItems(class UFortItem* TransformKey, i
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

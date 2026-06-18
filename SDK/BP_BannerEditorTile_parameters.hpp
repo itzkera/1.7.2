@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.ExecuteUbergraph_BP_BannerEditorTile
 // 0x00E8 (0x00E8 - 0x0000)
@@ -53,31 +53,6 @@ public:
 	class UObject*                                K2Node_Event_InData;                               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        K2Node_Event_OwningList;                           // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile) == 0x000008, "Wrong alignment on BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile");
-static_assert(sizeof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile) == 0x0000E8, "Wrong size on BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, EntryPoint) == 0x000000, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetData_ReturnValue) == 0x000008, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item) == 0x000010, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item) == 0x000020, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_bSuccess2) == 0x000028, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetData_ReturnValue2) == 0x000030, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetData_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item2) == 0x000038, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item2' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_bSuccess3) == 0x000040, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetBannerSmallIconAsset_ReturnValue) == 0x000048, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetBannerSmallIconAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_CustomEvent_Object) == 0x000068, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_CustomEvent_Object' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_CreateDelegate_OutputDelegate) == 0x000070, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_AsTexture_2D) == 0x000080, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_bSuccess4) == 0x000088, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetData_ReturnValue3) == 0x000090, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetData_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item2) == 0x000098, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item2' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_DynamicCast_bSuccess5) == 0x0000A0, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetBannerColorSecondaryColor_ReturnValue) == 0x0000A4, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetBannerColorSecondaryColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetBannerColorPrimaryColor_ReturnValue) == 0x0000B4, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetBannerColorPrimaryColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000C8, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_Event_InData) == 0x0000D8, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_Event_InData' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile, K2Node_Event_OwningList) == 0x0000E0, "Member 'BP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile::K2Node_Event_OwningList' has a wrong offset!");
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.HandleBannerIconLoadGuardFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -86,9 +61,6 @@ struct BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished final
 public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished) == 0x000008, "Wrong alignment on BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished");
-static_assert(sizeof(BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished) == 0x000008, "Wrong size on BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished");
-static_assert(offsetof(BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished, Object) == 0x000000, "Member 'BP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished::Object' has a wrong offset!");
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.SetData
 // 0x0010 (0x0010 - 0x0000)
@@ -98,10 +70,6 @@ public:
 	class UObject*                                InData;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        OwningList;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_BannerEditorTile_C_SetData) == 0x000008, "Wrong alignment on BP_BannerEditorTile_C_SetData");
-static_assert(sizeof(BP_BannerEditorTile_C_SetData) == 0x000010, "Wrong size on BP_BannerEditorTile_C_SetData");
-static_assert(offsetof(BP_BannerEditorTile_C_SetData, InData) == 0x000000, "Member 'BP_BannerEditorTile_C_SetData::InData' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_SetData, OwningList) == 0x000008, "Member 'BP_BannerEditorTile_C_SetData::OwningList' has a wrong offset!");
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.Update Bang State
 // 0x0018 (0x0018 - 0x0000)
@@ -114,13 +82,6 @@ public:
 	bool                                          CallFunc_HasBeenSeenLocally_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_BannerEditorTile_C_Update_Bang_State) == 0x000008, "Wrong alignment on BP_BannerEditorTile_C_Update_Bang_State");
-static_assert(sizeof(BP_BannerEditorTile_C_Update_Bang_State) == 0x000018, "Wrong size on BP_BannerEditorTile_C_Update_Bang_State");
-static_assert(offsetof(BP_BannerEditorTile_C_Update_Bang_State, CallFunc_GetData_ReturnValue) == 0x000000, "Member 'BP_BannerEditorTile_C_Update_Bang_State::CallFunc_GetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Update_Bang_State, K2Node_DynamicCast_AsFort_Account_Item) == 0x000008, "Member 'BP_BannerEditorTile_C_Update_Bang_State::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Update_Bang_State, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_BannerEditorTile_C_Update_Bang_State::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Update_Bang_State, CallFunc_HasBeenSeenLocally_ReturnValue) == 0x000011, "Member 'BP_BannerEditorTile_C_Update_Bang_State::CallFunc_HasBeenSeenLocally_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Update_Bang_State, CallFunc_Not_PreBool_ReturnValue) == 0x000012, "Member 'BP_BannerEditorTile_C_Update_Bang_State::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.Mark Item as Seen
 // 0x0020 (0x0020 - 0x0000)
@@ -134,13 +95,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasBeenSeenLocally_ReturnValue;           // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_BannerEditorTile_C_Mark_Item_as_Seen) == 0x000008, "Wrong alignment on BP_BannerEditorTile_C_Mark_Item_as_Seen");
-static_assert(sizeof(BP_BannerEditorTile_C_Mark_Item_as_Seen) == 0x000020, "Wrong size on BP_BannerEditorTile_C_Mark_Item_as_Seen");
-static_assert(offsetof(BP_BannerEditorTile_C_Mark_Item_as_Seen, bAlreadySeen) == 0x000000, "Member 'BP_BannerEditorTile_C_Mark_Item_as_Seen::bAlreadySeen' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Mark_Item_as_Seen, CallFunc_GetData_ReturnValue) == 0x000008, "Member 'BP_BannerEditorTile_C_Mark_Item_as_Seen::CallFunc_GetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Mark_Item_as_Seen, K2Node_DynamicCast_AsFort_Account_Item) == 0x000010, "Member 'BP_BannerEditorTile_C_Mark_Item_as_Seen::K2Node_DynamicCast_AsFort_Account_Item' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Mark_Item_as_Seen, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_BannerEditorTile_C_Mark_Item_as_Seen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_BannerEditorTile_C_Mark_Item_as_Seen, CallFunc_HasBeenSeenLocally_ReturnValue) == 0x000019, "Member 'BP_BannerEditorTile_C_Mark_Item_as_Seen::CallFunc_HasBeenSeenLocally_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

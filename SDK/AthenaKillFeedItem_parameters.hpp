@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaKillFeedItem.AthenaKillFeedItem_C.SetText
 // 0x0018 (0x0018 - 0x0000)
@@ -21,9 +21,6 @@ struct AthenaKillFeedItem_C_SetText final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(AthenaKillFeedItem_C_SetText) == 0x000008, "Wrong alignment on AthenaKillFeedItem_C_SetText");
-static_assert(sizeof(AthenaKillFeedItem_C_SetText) == 0x000018, "Wrong size on AthenaKillFeedItem_C_SetText");
-static_assert(offsetof(AthenaKillFeedItem_C_SetText, Text) == 0x000000, "Member 'AthenaKillFeedItem_C_SetText::Text' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

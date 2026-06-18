@@ -13,8 +13,7 @@
 #include "Athena_PlayerCameraModeBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Athena_PlayerCameraModeTargetingRifle.Athena_PlayerCameraModeTargetingRifle_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class UAthena_PlayerCameraModeTargetingRifle_C final : public UAthena_PlayerCame
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeTargetingRifle_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeTargetingRifle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeTargetingRifle_C")
 	}
 	static class UAthena_PlayerCameraModeTargetingRifle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeTargetingRifle_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeTargetingRifle_C) == 0x000008, "Wrong alignment on UAthena_PlayerCameraModeTargetingRifle_C");
-static_assert(sizeof(UAthena_PlayerCameraModeTargetingRifle_C) == 0x000110, "Wrong size on UAthena_PlayerCameraModeTargetingRifle_C");
 
-}
-
+SDK_NAMESPACE_END

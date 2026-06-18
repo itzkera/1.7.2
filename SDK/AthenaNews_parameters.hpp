@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaNews.AthenaNews_C.ExecuteUbergraph_AthenaNews
 // 0x0070 (0x0070 - 0x0000)
@@ -29,14 +29,6 @@ public:
 	class FText                                   CallFunc_GetText_Body;                             // 0x0050(0x0018)()
 	bool                                          CallFunc_GetText_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000008, "Wrong alignment on AthenaNews_C_ExecuteUbergraph_AthenaNews");
-static_assert(sizeof(AthenaNews_C_ExecuteUbergraph_AthenaNews) == 0x000070, "Wrong size on AthenaNews_C_ExecuteUbergraph_AthenaNews");
-static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, EntryPoint) == 0x000000, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_Title) == 0x000008, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_Title' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_PlatformBody) == 0x000020, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_PlatformBody' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_RegionBody) == 0x000038, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_RegionBody' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_Body) == 0x000050, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_Body' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_ExecuteUbergraph_AthenaNews, CallFunc_GetText_ReturnValue) == 0x000068, "Member 'AthenaNews_C_ExecuteUbergraph_AthenaNews::CallFunc_GetText_ReturnValue' has a wrong offset!");
 
 // Function AthenaNews.AthenaNews_C.Get_PlatformNews_Visibility
 // 0x0028 (0x0028 - 0x0000)
@@ -52,15 +44,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaNews_C_Get_PlatformNews_Visibility) == 0x000008, "Wrong alignment on AthenaNews_C_Get_PlatformNews_Visibility");
-static_assert(sizeof(AthenaNews_C_Get_PlatformNews_Visibility) == 0x000028, "Wrong size on AthenaNews_C_Get_PlatformNews_Visibility");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, ReturnValue) == 0x000000, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, Temp_bool_Variable) == 0x000001, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, Temp_byte_Variable) == 0x000002, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, Temp_byte_Variable2) == 0x000003, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_PlatformNews_Visibility, K2Node_Select_Default) == 0x000021, "Member 'AthenaNews_C_Get_PlatformNews_Visibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaNews.AthenaNews_C.Get_RegionNews_Visibility
 // 0x0028 (0x0028 - 0x0000)
@@ -76,15 +59,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaNews_C_Get_RegionNews_Visibility) == 0x000008, "Wrong alignment on AthenaNews_C_Get_RegionNews_Visibility");
-static_assert(sizeof(AthenaNews_C_Get_RegionNews_Visibility) == 0x000028, "Wrong size on AthenaNews_C_Get_RegionNews_Visibility");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, ReturnValue) == 0x000000, "Member 'AthenaNews_C_Get_RegionNews_Visibility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, Temp_bool_Variable) == 0x000001, "Member 'AthenaNews_C_Get_RegionNews_Visibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, Temp_byte_Variable) == 0x000002, "Member 'AthenaNews_C_Get_RegionNews_Visibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, Temp_byte_Variable2) == 0x000003, "Member 'AthenaNews_C_Get_RegionNews_Visibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'AthenaNews_C_Get_RegionNews_Visibility::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'AthenaNews_C_Get_RegionNews_Visibility::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNews_C_Get_RegionNews_Visibility, K2Node_Select_Default) == 0x000021, "Member 'AthenaNews_C_Get_RegionNews_Visibility::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

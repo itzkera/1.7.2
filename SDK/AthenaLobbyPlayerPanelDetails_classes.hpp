@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C
 // 0x01B0 (0x03E8 - 0x0238)
@@ -46,20 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLobbyPlayerPanelDetails_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLobbyPlayerPanelDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLobbyPlayerPanelDetails_C")
 	}
 	static class UAthenaLobbyPlayerPanelDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLobbyPlayerPanelDetails_C>();
 	}
 };
-static_assert(alignof(UAthenaLobbyPlayerPanelDetails_C) == 0x000008, "Wrong alignment on UAthenaLobbyPlayerPanelDetails_C");
-static_assert(sizeof(UAthenaLobbyPlayerPanelDetails_C) == 0x0003E8, "Wrong size on UAthenaLobbyPlayerPanelDetails_C");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, UberGraphFrame) == 0x000238, "Member 'UAthenaLobbyPlayerPanelDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, PlayerBanner) == 0x000240, "Member 'UAthenaLobbyPlayerPanelDetails_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, TextInviteSent) == 0x000248, "Member 'UAthenaLobbyPlayerPanelDetails_C::TextInviteSent' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, TextPlayerName) == 0x000250, "Member 'UAthenaLobbyPlayerPanelDetails_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanelDetails_C, TeamMemberInfo) == 0x000258, "Member 'UAthenaLobbyPlayerPanelDetails_C::TeamMemberInfo' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.ExecuteUbergraph_BP_QuestExpiresWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -35,19 +35,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget) == 0x000008, "Wrong alignment on BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget");
-static_assert(sizeof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget) == 0x000018, "Wrong size on BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, EntryPoint) == 0x000000, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, Temp_byte_Variable) == 0x000004, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, CallFunc_DoesQuestExpire_ReturnValue) == 0x000005, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::CallFunc_DoesQuestExpire_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, Temp_byte_Variable2) == 0x000006, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, K2Node_Event_IsDesignTime) == 0x000007, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, K2Node_Event_InItem) == 0x000008, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::K2Node_Event_InItem' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, Temp_bool_Variable) == 0x000010, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, CallFunc_IsValid_ReturnValue2) == 0x000012, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, CallFunc_BooleanAND_ReturnValue) == 0x000013, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget, K2Node_Select_Default) == 0x000014, "Member 'BP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.SetData
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +43,6 @@ struct BP_QuestExpiresWidget_C_SetData final
 public:
 	class UFortQuestItem*                         InItem;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_QuestExpiresWidget_C_SetData) == 0x000008, "Wrong alignment on BP_QuestExpiresWidget_C_SetData");
-static_assert(sizeof(BP_QuestExpiresWidget_C_SetData) == 0x000008, "Wrong size on BP_QuestExpiresWidget_C_SetData");
-static_assert(offsetof(BP_QuestExpiresWidget_C_SetData, InItem) == 0x000000, "Member 'BP_QuestExpiresWidget_C_SetData::InItem' has a wrong offset!");
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +51,6 @@ struct BP_QuestExpiresWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_QuestExpiresWidget_C_PreConstruct) == 0x000001, "Wrong alignment on BP_QuestExpiresWidget_C_PreConstruct");
-static_assert(sizeof(BP_QuestExpiresWidget_C_PreConstruct) == 0x000001, "Wrong size on BP_QuestExpiresWidget_C_PreConstruct");
-static_assert(offsetof(BP_QuestExpiresWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BP_QuestExpiresWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.Refresh Expiration Timer
 // 0x0128 (0x0128 - 0x0000)
@@ -92,22 +73,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x00F8(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0110(0x0018)()
 };
-static_assert(alignof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer) == 0x000008, "Wrong alignment on BP_QuestExpiresWidget_C_Refresh_Expiration_Timer");
-static_assert(sizeof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer) == 0x000128, "Wrong size on BP_QuestExpiresWidget_C_Refresh_Expiration_Timer");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, Quest) == 0x000000, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::Quest' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, Temp_bool_Variable) == 0x000008, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_DoesQuestExpire_ReturnValue) == 0x000009, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_DoesQuestExpire_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_GetFortPC_AsFort_Player_Controller) == 0x000010, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_GetFortPC_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_GetPlayerControllerUtcNowMcpOffset_ReturnValue) == 0x000018, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_GetPlayerControllerUtcNowMcpOffset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_GetRemainingExpirationDuration_ReturnValue) == 0x000020, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_GetRemainingExpirationDuration_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_GetTimespanAsText_ReturnValue) == 0x000028, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_GetTimespanAsText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, K2Node_MakeStruct_FormatArgumentData2) == 0x000080, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, K2Node_MakeArray_Array) == 0x0000C0, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, K2Node_MakeArray_Array2) == 0x0000D0, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, CallFunc_Format_ReturnValue2) == 0x0000F8, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_Refresh_Expiration_Timer, K2Node_Select_Default) == 0x000110, "Member 'BP_QuestExpiresWidget_C_Refresh_Expiration_Timer::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.GetFortPC
 // 0x0020 (0x0020 - 0x0000)
@@ -119,12 +84,6 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_QuestExpiresWidget_C_GetFortPC) == 0x000008, "Wrong alignment on BP_QuestExpiresWidget_C_GetFortPC");
-static_assert(sizeof(BP_QuestExpiresWidget_C_GetFortPC) == 0x000020, "Wrong size on BP_QuestExpiresWidget_C_GetFortPC");
-static_assert(offsetof(BP_QuestExpiresWidget_C_GetFortPC, AsFort_Player_Controller) == 0x000000, "Member 'BP_QuestExpiresWidget_C_GetFortPC::AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_GetFortPC, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'BP_QuestExpiresWidget_C_GetFortPC::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_GetFortPC, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'BP_QuestExpiresWidget_C_GetFortPC::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_QuestExpiresWidget_C_GetFortPC, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_QuestExpiresWidget_C_GetFortPC::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

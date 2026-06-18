@@ -14,8 +14,7 @@
 #include "AthenaLobbyPlayerPanelActions_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.ExecuteUbergraph_AthenaLobbyPlayerPanelActions
 // (HasDefaults)
@@ -168,7 +167,7 @@ void UAthenaLobbyPlayerPanelActions_C::Refresh()
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsLocalPlayer
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bIsLocalPlayer                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsLocalPlayer                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::IsLocalPlayer(bool* bIsLocalPlayer)
 {
@@ -189,7 +188,7 @@ void UAthenaLobbyPlayerPanelActions_C::IsLocalPlayer(bool* bIsLocalPlayer)
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsMissionLocalPlayersOutpost
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    isLocalPlayersOutpost                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   isLocalPlayersOutpost                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* isLocalPlayersOutpost)
 {
@@ -210,7 +209,7 @@ void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* isLoca
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanFriend
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCanFriend                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCanFriend                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::CanFriend(bool* bCanFriend)
 {
@@ -231,7 +230,7 @@ void UAthenaLobbyPlayerPanelActions_C::CanFriend(bool* bCanFriend)
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanInviteToParty
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCanInviteToParty                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCanInviteToParty                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::CanInviteToParty(bool* bCanInviteToParty)
 {
@@ -252,7 +251,7 @@ void UAthenaLobbyPlayerPanelActions_C::CanInviteToParty(bool* bCanInviteToParty)
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsInvitationPending
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bIsInvitationPending                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsInvitationPending                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::IsInvitationPending(bool* bIsInvitationPending)
 {
@@ -273,7 +272,7 @@ void UAthenaLobbyPlayerPanelActions_C::IsInvitationPending(bool* bIsInvitationPe
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanManage
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bCanManage                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCanManage                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::CanManage(bool* bCanManage)
 {
@@ -294,7 +293,7 @@ void UAthenaLobbyPlayerPanelActions_C::CanManage(bool* bCanManage)
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.GetFirstActiveActionButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UIconTextButton_C*                IconTextButton                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UIconTextButton_C**               IconTextButton                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaLobbyPlayerPanelActions_C::GetFirstActiveActionButton(class UIconTextButton_C** IconTextButton)
 {
@@ -315,7 +314,7 @@ void UAthenaLobbyPlayerPanelActions_C::GetFirstActiveActionButton(class UIconTex
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.HasValidActions
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bHasValidActions                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bHasValidActions                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::HasValidActions(bool* bHasValidActions)
 {
@@ -404,7 +403,7 @@ void UAthenaLobbyPlayerPanelActions_C::OnActiveFriendsCountUpdated(int32 ActiveF
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo_0                                       (Parm)
 
 void UAthenaLobbyPlayerPanelActions_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
@@ -444,7 +443,7 @@ bool UAthenaLobbyPlayerPanelActions_C::IsTeamMemberLocalPlayer()
 // Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanViewProfile
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    CanView                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   CanView                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelActions_C::CanViewProfile(bool* CanView)
 {
@@ -461,5 +460,5 @@ void UAthenaLobbyPlayerPanelActions_C::CanViewProfile(bool* CanView)
 		*CanView = Parms.CanView;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C
 // 0x0090 (0x02D0 - 0x0240)
@@ -60,31 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectUpgradeCallout_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectUpgradeCallout_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectUpgradeCallout_C")
 	}
 	static class UItemInspectUpgradeCallout_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectUpgradeCallout_C>();
 	}
 };
-static_assert(alignof(UItemInspectUpgradeCallout_C) == 0x000008, "Wrong alignment on UItemInspectUpgradeCallout_C");
-static_assert(sizeof(UItemInspectUpgradeCallout_C) == 0x0002D0, "Wrong size on UItemInspectUpgradeCallout_C");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UberGraphFrame) == 0x000240, "Member 'UItemInspectUpgradeCallout_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, EvolveButton) == 0x000248, "Member 'UItemInspectUpgradeCallout_C::EvolveButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, Image_3) == 0x000250, "Member 'UItemInspectUpgradeCallout_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, ItemCount) == 0x000258, "Member 'UItemInspectUpgradeCallout_C::ItemCount' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, ItemCountBG) == 0x000260, "Member 'UItemInspectUpgradeCallout_C::ItemCountBG' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, MainBorderWidget) == 0x000268, "Member 'UItemInspectUpgradeCallout_C::MainBorderWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, SwitcherButton) == 0x000270, "Member 'UItemInspectUpgradeCallout_C::SwitcherButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeButton) == 0x000278, "Member 'UItemInspectUpgradeCallout_C::UpgradeButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeHighlight) == 0x000280, "Member 'UItemInspectUpgradeCallout_C::UpgradeHighlight' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeText) == 0x000288, "Member 'UItemInspectUpgradeCallout_C::UpgradeText' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeTextOverlay) == 0x000290, "Member 'UItemInspectUpgradeCallout_C::UpgradeTextOverlay' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, Item) == 0x000298, "Member 'UItemInspectUpgradeCallout_C::Item' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeCost) == 0x0002A0, "Member 'UItemInspectUpgradeCallout_C::UpgradeCost' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, OnRequestUpgrade) == 0x0002A8, "Member 'UItemInspectUpgradeCallout_C::OnRequestUpgrade' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, UpgradeColor) == 0x0002B8, "Member 'UItemInspectUpgradeCallout_C::UpgradeColor' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeCallout_C, isMaxLevel) == 0x0002C8, "Member 'UItemInspectUpgradeCallout_C::isMaxLevel' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

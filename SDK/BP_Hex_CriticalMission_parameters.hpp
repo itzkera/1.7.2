@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.ExecuteUbergraph_BP_Hex_CriticalMission
 // 0x0118 (0x0118 - 0x0000)
@@ -44,26 +44,6 @@ public:
 	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission) == 0x000008, "Wrong alignment on BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission");
-static_assert(sizeof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission) == 0x000118, "Wrong size on BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, EntryPoint) == 0x000000, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_MakeRotator_ReturnValue) == 0x000004, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, Temp_int_Array_Index_Variable) == 0x000010, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000014, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_GetForwardVector_ReturnValue) == 0x000020, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000030, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, Temp_int_Loop_Counter_Variable) == 0x0000B8, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Array_Get_Item) == 0x0000C0, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000C8, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Add_IntInt_ReturnValue) == 0x0000D4, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Array_Length_ReturnValue) == 0x0000D8, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Less_IntInt_ReturnValue) == 0x0000DC, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000E0, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000EC, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000F8, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Normal_ReturnValue) == 0x000104, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Dot_VectorVector_ReturnValue) == 0x000110, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000114, "Member 'BP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +52,6 @@ struct BP_Hex_CriticalMission_C_UserConstructionScript final
 public:
 	bool                                          NewLocalVar_0;                                     // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_CriticalMission_C_UserConstructionScript) == 0x000001, "Wrong alignment on BP_Hex_CriticalMission_C_UserConstructionScript");
-static_assert(sizeof(BP_Hex_CriticalMission_C_UserConstructionScript) == 0x000001, "Wrong size on BP_Hex_CriticalMission_C_UserConstructionScript");
-static_assert(offsetof(BP_Hex_CriticalMission_C_UserConstructionScript, NewLocalVar_0) == 0x000000, "Member 'BP_Hex_CriticalMission_C_UserConstructionScript::NewLocalVar_0' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

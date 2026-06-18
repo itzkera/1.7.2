@@ -16,8 +16,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HitPointBar.HitPointBar_C.ExecuteUbergraph_HitPointBar
 // 0x00B8 (0x00B8 - 0x0000)
@@ -26,7 +26,7 @@ struct HitPointBar_C_ExecuteUbergraph_HitPointBar final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(float HitPointValue, EFortHitPointModificationReason ModificationReason)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(float HitPointValue, EFortHitPointModificationReason ModificationReason)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -49,28 +49,6 @@ public:
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0080(0x0034)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_ExecuteUbergraph_HitPointBar) == 0x000008, "Wrong alignment on HitPointBar_C_ExecuteUbergraph_HitPointBar");
-static_assert(sizeof(HitPointBar_C_ExecuteUbergraph_HitPointBar) == 0x0000B8, "Wrong size on HitPointBar_C_ExecuteUbergraph_HitPointBar");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, EntryPoint) == 0x000000, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_SwitchEnum_CmpSuccess) == 0x000018, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_IsDesignTime) == 0x000019, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_K2_GetPawn_ReturnValue) == 0x000038, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000050, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetMaxStamina_ReturnValue) == 0x00005C, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetMaxStamina_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_SwitchEnum2_CmpSuccess) == 0x000060, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetStamina_ReturnValue) == 0x000064, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetStamina_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetMaxHealth_ReturnValue) == 0x000068, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetMaxHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetHealth_ReturnValue) == 0x00006C, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetShield_ReturnValue) == 0x000070, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetShield_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetMaxShield_ReturnValue) == 0x000074, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetMaxShield_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, CallFunc_GetContext_ReturnValue) == 0x000078, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_MyGeometry) == 0x000080, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_ExecuteUbergraph_HitPointBar, K2Node_Event_InDeltaTime) == 0x0000B4, "Member 'HitPointBar_C_ExecuteUbergraph_HitPointBar::K2Node_Event_InDeltaTime' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Tick
 // 0x0038 (0x0038 - 0x0000)
@@ -80,10 +58,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Tick) == 0x000004, "Wrong alignment on HitPointBar_C_Tick");
-static_assert(sizeof(HitPointBar_C_Tick) == 0x000038, "Wrong size on HitPointBar_C_Tick");
-static_assert(offsetof(HitPointBar_C_Tick, MyGeometry) == 0x000000, "Member 'HitPointBar_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Tick, InDeltaTime) == 0x000034, "Member 'HitPointBar_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +66,6 @@ struct HitPointBar_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HitPointBar_C_PreConstruct) == 0x000001, "Wrong alignment on HitPointBar_C_PreConstruct");
-static_assert(sizeof(HitPointBar_C_PreConstruct) == 0x000001, "Wrong size on HitPointBar_C_PreConstruct");
-static_assert(offsetof(HitPointBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HitPointBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.UpdateMaxValue
 // 0x0020 (0x0020 - 0x0000)
@@ -105,10 +76,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0008(0x0018)()
 };
-static_assert(alignof(HitPointBar_C_UpdateMaxValue) == 0x000008, "Wrong alignment on HitPointBar_C_UpdateMaxValue");
-static_assert(sizeof(HitPointBar_C_UpdateMaxValue) == 0x000020, "Wrong size on HitPointBar_C_UpdateMaxValue");
-static_assert(offsetof(HitPointBar_C_UpdateMaxValue, Max) == 0x000000, "Member 'HitPointBar_C_UpdateMaxValue::Max' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateMaxValue, CallFunc_Conv_FloatToText_ReturnValue) == 0x000008, "Member 'HitPointBar_C_UpdateMaxValue::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.UpdateCurrentValue
 // 0x0028 (0x0028 - 0x0000)
@@ -123,13 +90,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0010(0x0018)()
 };
-static_assert(alignof(HitPointBar_C_UpdateCurrentValue) == 0x000008, "Wrong alignment on HitPointBar_C_UpdateCurrentValue");
-static_assert(sizeof(HitPointBar_C_UpdateCurrentValue) == 0x000028, "Wrong size on HitPointBar_C_UpdateCurrentValue");
-static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, Current) == 0x000000, "Member 'HitPointBar_C_UpdateCurrentValue::Current' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, Reason) == 0x000004, "Member 'HitPointBar_C_UpdateCurrentValue::Reason' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'HitPointBar_C_UpdateCurrentValue::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, CallFunc_FMax_ReturnValue) == 0x000008, "Member 'HitPointBar_C_UpdateCurrentValue::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateCurrentValue, CallFunc_Conv_FloatToText_ReturnValue) == 0x000010, "Member 'HitPointBar_C_UpdateCurrentValue::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Update Fill Bar
 // 0x0058 (0x0058 - 0x0000)
@@ -158,26 +118,6 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Update_Fill_Bar) == 0x000008, "Wrong alignment on HitPointBar_C_Update_Fill_Bar");
-static_assert(sizeof(HitPointBar_C_Update_Fill_Bar) == 0x000058, "Wrong size on HitPointBar_C_Update_Fill_Bar");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, Temp_float_Variable) == 0x000000, "Member 'HitPointBar_C_Update_Fill_Bar::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Blueprint_GetSizeX_ReturnValue) == 0x000004, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Blueprint_GetSizeX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, Temp_bool_Variable) == 0x00000C, "Member 'HitPointBar_C_Update_Fill_Bar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, K2Node_DynamicCast_AsSize_Box_Slot) == 0x000010, "Member 'HitPointBar_C_Update_Fill_Bar::K2Node_DynamicCast_AsSize_Box_Slot' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'HitPointBar_C_Update_Fill_Bar::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_BreakVector2D_X) == 0x00001C, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_BreakVector2D_Y) == 0x000020, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000024, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_FMax_ReturnValue) == 0x000028, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_FMax_ReturnValue2) == 0x00002C, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_FMax_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000030, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000034, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Add_FloatFloat_ReturnValue) == 0x000038, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x00003C, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000040, "Member 'HitPointBar_C_Update_Fill_Bar::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, K2Node_Select_Default) == 0x000044, "Member 'HitPointBar_C_Update_Fill_Bar::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Fill_Bar, K2Node_MakeStruct_LinearColor) == 0x000048, "Member 'HitPointBar_C_Update_Fill_Bar::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.UpdateCurrentValueWithoutReason
 // 0x0004 (0x0004 - 0x0000)
@@ -186,9 +126,6 @@ struct HitPointBar_C_UpdateCurrentValueWithoutReason final
 public:
 	float                                         Current;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_UpdateCurrentValueWithoutReason) == 0x000004, "Wrong alignment on HitPointBar_C_UpdateCurrentValueWithoutReason");
-static_assert(sizeof(HitPointBar_C_UpdateCurrentValueWithoutReason) == 0x000004, "Wrong size on HitPointBar_C_UpdateCurrentValueWithoutReason");
-static_assert(offsetof(HitPointBar_C_UpdateCurrentValueWithoutReason, Current) == 0x000000, "Member 'HitPointBar_C_UpdateCurrentValueWithoutReason::Current' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Initialize Bar
 // 0x01E0 (0x01E0 - 0x0000)
@@ -247,51 +184,6 @@ public:
 	struct FLinearColor                           K2Node_Select6_Default;                            // 0x01C0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select7_Default;                            // 0x01D0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Initialize_Bar) == 0x000008, "Wrong alignment on HitPointBar_C_Initialize_Bar");
-static_assert(sizeof(HitPointBar_C_Initialize_Bar) == 0x0001E0, "Wrong size on HitPointBar_C_Initialize_Bar");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable) == 0x000000, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable) == 0x000008, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable2) == 0x000010, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_class_Variable3) == 0x000018, "Member 'HitPointBar_C_Initialize_Bar::Temp_class_Variable3' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable2) == 0x000020, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable) == 0x000024, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable2) == 0x000034, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable3) == 0x000044, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable3) == 0x000054, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable4) == 0x000058, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable4' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable5) == 0x000068, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable5' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable6) == 0x000078, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable6' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable4) == 0x000088, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable7) == 0x00008C, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable7' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable8) == 0x00009C, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable8' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable9) == 0x0000AC, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable9' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_MakeStruct_Margin) == 0x0000BC, "Member 'HitPointBar_C_Initialize_Bar::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable) == 0x0000D0, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x0000D8, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable2) == 0x0000E0, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_object_Variable3) == 0x0000E8, "Member 'HitPointBar_C_Initialize_Bar::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable5) == 0x0000F0, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable10) == 0x0000F4, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable10' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable11) == 0x000104, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable11' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable12) == 0x000114, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable12' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable6) == 0x000124, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable13) == 0x000128, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable13' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable14) == 0x000138, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable14' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000148, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_struct_Variable15) == 0x000150, "Member 'HitPointBar_C_Initialize_Bar::Temp_struct_Variable15' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, Temp_byte_Variable7) == 0x000160, "Member 'HitPointBar_C_Initialize_Bar::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000168, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Blueprint_GetSizeX_ReturnValue) == 0x000170, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Blueprint_GetSizeX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000174, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Blueprint_GetSizeY_ReturnValue) == 0x000178, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Blueprint_GetSizeY_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x00017C, "Member 'HitPointBar_C_Initialize_Bar::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select_Default) == 0x000180, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select2_Default) == 0x000190, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select3_Default) == 0x000198, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select4_Default) == 0x0001A0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select5_Default) == 0x0001B0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select6_Default) == 0x0001C0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Initialize_Bar, K2Node_Select7_Default) == 0x0001D0, "Member 'HitPointBar_C_Initialize_Bar::K2Node_Select7_Default' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Update Delta Bar
 // 0x0008 (0x0008 - 0x0000)
@@ -301,10 +193,6 @@ public:
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Update_Delta_Bar) == 0x000004, "Wrong alignment on HitPointBar_C_Update_Delta_Bar");
-static_assert(sizeof(HitPointBar_C_Update_Delta_Bar) == 0x000008, "Wrong size on HitPointBar_C_Update_Delta_Bar");
-static_assert(offsetof(HitPointBar_C_Update_Delta_Bar, CallFunc_FMax_ReturnValue) == 0x000000, "Member 'HitPointBar_C_Update_Delta_Bar::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update_Delta_Bar, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000004, "Member 'HitPointBar_C_Update_Delta_Bar::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.Update
 // 0x0008 (0x0008 - 0x0000)
@@ -315,10 +203,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HitPointBar_C_Update) == 0x000004, "Wrong alignment on HitPointBar_C_Update");
-static_assert(sizeof(HitPointBar_C_Update) == 0x000008, "Wrong size on HitPointBar_C_Update");
-static_assert(offsetof(HitPointBar_C_Update, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000000, "Member 'HitPointBar_C_Update::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_Update, CallFunc_Lerp_ReturnValue) == 0x000004, "Member 'HitPointBar_C_Update::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 
 // Function HitPointBar.HitPointBar_C.UpdateVolatileForUpdate
 // 0x000C (0x000C - 0x0000)
@@ -332,13 +216,6 @@ public:
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HitPointBar_C_UpdateVolatileForUpdate) == 0x000004, "Wrong alignment on HitPointBar_C_UpdateVolatileForUpdate");
-static_assert(sizeof(HitPointBar_C_UpdateVolatileForUpdate) == 0x00000C, "Wrong size on HitPointBar_C_UpdateVolatileForUpdate");
-static_assert(offsetof(HitPointBar_C_UpdateVolatileForUpdate, NewVolatile) == 0x000000, "Member 'HitPointBar_C_UpdateVolatileForUpdate::NewVolatile' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateVolatileForUpdate, Temp_byte_Variable) == 0x000001, "Member 'HitPointBar_C_UpdateVolatileForUpdate::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateVolatileForUpdate, K2Node_Select_Default) == 0x000004, "Member 'HitPointBar_C_UpdateVolatileForUpdate::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateVolatileForUpdate, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000008, "Member 'HitPointBar_C_UpdateVolatileForUpdate::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HitPointBar_C_UpdateVolatileForUpdate, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000009, "Member 'HitPointBar_C_UpdateVolatileForUpdate::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

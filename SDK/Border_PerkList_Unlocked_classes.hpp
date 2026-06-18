@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-PerkList-Unlocked.Border-PerkList-Unlocked_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_PerkList_Unlocked_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-PerkList-Unlocked_C">();
+		BP_STATIC_CLASS_IMPL("Border-PerkList-Unlocked_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-PerkList-Unlocked_C")
 	}
 	static class UBorder_PerkList_Unlocked_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_PerkList_Unlocked_C>();
 	}
 };
-static_assert(alignof(UBorder_PerkList_Unlocked_C) == 0x000008, "Wrong alignment on UBorder_PerkList_Unlocked_C");
-static_assert(sizeof(UBorder_PerkList_Unlocked_C) == 0x0000B8, "Wrong size on UBorder_PerkList_Unlocked_C");
 
-}
-
+SDK_NAMESPACE_END

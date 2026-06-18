@@ -14,8 +14,7 @@
 #include "ReportSpectatingPlayerButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.ExecuteUbergraph_ReportSpectatingPlayerButton
 // (HasDefaults)
@@ -70,5 +69,5 @@ void UReportSpectatingPlayerButton_C::BndEvt__IconTextButton_K2Node_ComponentBou
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

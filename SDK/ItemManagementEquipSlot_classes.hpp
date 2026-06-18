@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementEquipSlot.ItemManagementEquipSlot_C
 // 0x0048 (0x0288 - 0x0240)
@@ -51,24 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementEquipSlot_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementEquipSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementEquipSlot_C")
 	}
 	static class UItemManagementEquipSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementEquipSlot_C>();
 	}
 };
-static_assert(alignof(UItemManagementEquipSlot_C) == 0x000008, "Wrong alignment on UItemManagementEquipSlot_C");
-static_assert(sizeof(UItemManagementEquipSlot_C) == 0x000288, "Wrong size on UItemManagementEquipSlot_C");
-static_assert(offsetof(UItemManagementEquipSlot_C, UberGraphFrame) == 0x000240, "Member 'UItemManagementEquipSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, DropTarget) == 0x000248, "Member 'UItemManagementEquipSlot_C::DropTarget' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, EmptyImage) == 0x000250, "Member 'UItemManagementEquipSlot_C::EmptyImage' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, InputActionOverlay) == 0x000258, "Member 'UItemManagementEquipSlot_C::InputActionOverlay' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, InputActionWidget) == 0x000260, "Member 'UItemManagementEquipSlot_C::InputActionWidget' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, ItemCard) == 0x000268, "Member 'UItemManagementEquipSlot_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, Selection) == 0x000270, "Member 'UItemManagementEquipSlot_C::Selection' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, SlotIndex) == 0x000278, "Member 'UItemManagementEquipSlot_C::SlotIndex' has a wrong offset!");
-static_assert(offsetof(UItemManagementEquipSlot_C, HostItemManagementScreen) == 0x000280, "Member 'UItemManagementEquipSlot_C::HostItemManagementScreen' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

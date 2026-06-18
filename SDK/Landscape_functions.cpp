@@ -14,8 +14,7 @@
 #include "Landscape_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
 // (Native, Public, BlueprintCallable)
@@ -33,7 +32,12 @@ void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 
 	Parms.InLODDistanceFactor = InLODDistanceFactor;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -73,8 +77,13 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 	Parms.bLowerHeights = bLowerHeights;
 	Parms.PaintLayer = PaintLayer;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

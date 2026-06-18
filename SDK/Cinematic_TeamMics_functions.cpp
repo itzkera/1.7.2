@@ -14,8 +14,7 @@
 #include "Cinematic_TeamMics_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Cinematic-TeamMics.Cinematic-TeamMics_C.ExecuteUbergraph_Cinematic-TeamMics
 // ()
@@ -54,7 +53,7 @@ void UCinematic_TeamMics_C::Construct()
 // Function Cinematic-TeamMics.Cinematic-TeamMics_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              UpdatedMemberInfo                                      (Parm)
+// const struct FFortTeamMemberInfo&       UpdatedMemberInfo                                      (Parm)
 
 void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo)
 {
@@ -70,5 +69,5 @@ void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemb
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

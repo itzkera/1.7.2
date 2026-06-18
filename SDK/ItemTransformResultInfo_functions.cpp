@@ -14,8 +14,7 @@
 #include "ItemTransformResultInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.ExecuteUbergraph_ItemTransformResultInfo
 // ()
@@ -108,7 +107,7 @@ void UItemTransformResultInfo_C::UpdateSacrificePointsBar()
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.UpdateSacrificeInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemTransformResultInfo_C::UpdateSacrificeInfo(TArray<class UFortItem*>& SacrificeItems)
 {
@@ -130,7 +129,7 @@ void UItemTransformResultInfo_C::UpdateSacrificeInfo(TArray<class UFortItem*>& S
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.CalculateCurrentSacrificePoints
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   TotalSacrificePoints                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  TotalSacrificePoints                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformResultInfo_C::CalculateCurrentSacrificePoints(int32* TotalSacrificePoints)
 {
@@ -166,7 +165,7 @@ void UItemTransformResultInfo_C::UpdateTierProgressPercentage()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   Tier                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Points                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Points                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformResultInfo_C::GetPointsForTier(int32 Tier, int32* Points)
 {
@@ -209,8 +208,8 @@ int32 UItemTransformResultInfo_C::CalculateNextTier()
 // Function ItemTransformResultInfo.ItemTransformResultInfo_C.Get Transform Data
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   CurrentSacrificePoints_0                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTier_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  CurrentSacrificePoints_0                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  CurrentTier_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformResultInfo_C::Get_Transform_Data(int32* CurrentSacrificePoints_0, int32* CurrentTier_0)
 {
@@ -250,5 +249,5 @@ bool UItemTransformResultInfo_C::Is_Tranfsorm_Button_Enabled()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

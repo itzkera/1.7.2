@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C
 // 0x0038 (0x08E8 - 0x08B0)
@@ -40,21 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionVehicleTileItemWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionVehicleTileItemWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionVehicleTileItemWidget_C")
 	}
 	static class UBP_FortExpeditionVehicleTileItemWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionVehicleTileItemWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionVehicleTileItemWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionVehicleTileItemWidget_C");
-static_assert(sizeof(UBP_FortExpeditionVehicleTileItemWidget_C) == 0x0008E8, "Wrong size on UBP_FortExpeditionVehicleTileItemWidget_C");
-static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, UberGraphFrame) == 0x0008B0, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, BasicRatingWidget) == 0x0008B8, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::BasicRatingWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, Name_0) == 0x0008C0, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, VehicleIcon) == 0x0008C8, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::VehicleIcon' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, SquadIdName) == 0x0008D0, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::SquadIdName' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionVehicleTileItemWidget_C, OnVehicleSelected) == 0x0008D8, "Member 'UBP_FortExpeditionVehicleTileItemWidget_C::OnVehicleSelected' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

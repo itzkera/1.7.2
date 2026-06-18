@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum Hotfix.EHotfixResult
 // NumValues: 0x0006
@@ -68,5 +67,4 @@ enum class EUpdateState : uint8
 	EUpdateState_MAX                         = 8,
 };
 
-}
-
+SDK_NAMESPACE_END

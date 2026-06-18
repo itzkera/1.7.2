@@ -14,8 +14,8 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.ExecuteUbergraph_GA_Commando_DebilitatingShots
 // 0x0200 (0x0200 - 0x0000)
@@ -52,33 +52,6 @@ public:
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue4; // 0x01E8(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots) == 0x000200, "Wrong size on GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, EntryPoint) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000008, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupDebilitationTraining_EffectspecOutInstant) == 0x000020, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupDebilitationTraining_EffectspecOutInstant' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupDebilitationTraining_EffectspecOutDuration) == 0x000038, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupDebilitationTraining_EffectspecOutDuration' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupAppliedEffect_EffectspecHandleOut) == 0x000050, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupAppliedEffect_EffectspecHandleOut' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000068, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000078, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000080, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000090, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_BooleanAND_ReturnValue) == 0x000091, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000098, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue2) == 0x0000A8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue3) == 0x0000B8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0000C8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, K2Node_Event_EventData) == 0x0000D0, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupGameplayEffect_Target_Data) == 0x000178, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupGameplayEffect_Target_Data' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupGameplayEffect_DebilitatingShots) == 0x000198, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupGameplayEffect_DebilitatingShots' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupGameplayEffect_Effect_Level) == 0x0001A0, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupGameplayEffect_Effect_Level' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupGameplayEffect_Stack_Count) == 0x0001A4, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupGameplayEffect_Stack_Count' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, K2Node_DynamicCast_AsFort_Pawn) == 0x0001A8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, K2Node_DynamicCast_bSuccess) == 0x0001B0, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2) == 0x0001B8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_SetupAppliedEffect_EffectspecHandleOut2) == 0x0001D0, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_SetupAppliedEffect_EffectspecHandleOut2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue4) == 0x0001E8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots, CallFunc_BooleanAND_ReturnValue2) == 0x0001F8, "Member 'GA_Commando_DebilitatingShots_C_ExecuteUbergraph_GA_Commando_DebilitatingShots::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.K2_ActivateAbilityFromEvent
 // 0x00A8 (0x00A8 - 0x0000)
@@ -87,9 +60,6 @@ struct GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent) == 0x0000A8, "Wrong size on GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.SetupGameplayEffect
 // 0x0070 (0x0070 - 0x0000)
@@ -106,17 +76,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0048(0x0020)()
 	bool                                          CallFunc_MatchesTag_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_SetupGameplayEffect");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect) == 0x000070, "Wrong size on GA_Commando_DebilitatingShots_C_SetupGameplayEffect");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, EventTag) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::EventTag' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, HitActor) == 0x000008, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::HitActor' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, OptionalObject) == 0x000010, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::OptionalObject' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, Target_Data) == 0x000018, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::Target_Data' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, DebilitatingShots) == 0x000038, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::DebilitatingShots' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, Effect_Level) == 0x000040, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::Effect_Level' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, Stack_Count) == 0x000044, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::Stack_Count' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000048, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupGameplayEffect, CallFunc_MatchesTag_ReturnValue) == 0x000068, "Member 'GA_Commando_DebilitatingShots_C_SetupGameplayEffect::CallFunc_MatchesTag_ReturnValue' has a wrong offset!");
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.SetupAppliedEffect
 // 0x0088 (0x0088 - 0x0000)
@@ -133,16 +92,6 @@ public:
 	struct FGameplayEffectSpecHandle              CallFunc_AssignSetByCallerMagnitude_ReturnValue2;  // 0x0058(0x0018)()
 	struct FGameplayEffectSpecHandle              CallFunc_SetStackCount_ReturnValue;                // 0x0070(0x0018)()
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_SetupAppliedEffect");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect) == 0x000088, "Wrong size on GA_Commando_DebilitatingShots_C_SetupAppliedEffect");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, Magnitude) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::Magnitude' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, Duration) == 0x000004, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::Duration' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, Stack_Count) == 0x000008, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::Stack_Count' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, EffectSpecHandle) == 0x000010, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::EffectSpecHandle' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, EffectspecHandleOut) == 0x000028, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::EffectspecHandleOut' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, CallFunc_AssignSetByCallerMagnitude_ReturnValue) == 0x000040, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::CallFunc_AssignSetByCallerMagnitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, CallFunc_AssignSetByCallerMagnitude_ReturnValue2) == 0x000058, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::CallFunc_AssignSetByCallerMagnitude_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAppliedEffect, CallFunc_SetStackCount_ReturnValue) == 0x000070, "Member 'GA_Commando_DebilitatingShots_C_SetupAppliedEffect::CallFunc_SetStackCount_ReturnValue' has a wrong offset!");
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.SetupDebilitationTraining
 // 0x0060 (0x0060 - 0x0000)
@@ -154,12 +103,6 @@ public:
 	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x0030(0x0018)()
 	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2; // 0x0048(0x0018)()
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_SetupDebilitationTraining) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_SetupDebilitationTraining");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_SetupDebilitationTraining) == 0x000060, "Wrong size on GA_Commando_DebilitatingShots_C_SetupDebilitationTraining");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupDebilitationTraining, EffectspecOutInstant) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_SetupDebilitationTraining::EffectspecOutInstant' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupDebilitationTraining, EffectspecOutDuration) == 0x000018, "Member 'GA_Commando_DebilitatingShots_C_SetupDebilitationTraining::EffectspecOutDuration' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupDebilitationTraining, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000030, "Member 'GA_Commando_DebilitatingShots_C_SetupDebilitationTraining::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupDebilitationTraining, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2) == 0x000048, "Member 'GA_Commando_DebilitatingShots_C_SetupDebilitationTraining::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue2' has a wrong offset!");
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.SetupAbility
 // 0x0058 (0x0058 - 0x0000)
@@ -180,18 +123,6 @@ public:
 	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput; // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasAllMatchingGameplayTags_ReturnValue3;  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_SetupAbility) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_SetupAbility");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_SetupAbility) == 0x000058, "Wrong size on GA_Commando_DebilitatingShots_C_SetupAbility");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, AbilitySystem) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::AbilitySystem' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_SelectInt_ReturnValue) == 0x000008, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000010, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000020, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput) == 0x000028, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_ReturnValue2) == 0x000038, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, Temp_bool_Variable) == 0x000039, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, K2Node_Select_Default) == 0x00003C, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput) == 0x000040, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_SetupAbility, CallFunc_HasAllMatchingGameplayTags_ReturnValue3) == 0x000050, "Member 'GA_Commando_DebilitatingShots_C_SetupAbility::CallFunc_HasAllMatchingGameplayTags_ReturnValue3' has a wrong offset!");
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.K2_ShouldAbilityRespondToEvent
 // 0x0100 (0x0100 - 0x0000)
@@ -210,18 +141,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent) == 0x000008, "Wrong alignment on GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent");
-static_assert(sizeof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent) == 0x000100, "Wrong size on GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, ActorInfo) == 0x000000, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::ActorInfo' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, Payload) == 0x000040, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::Payload' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, ReturnValue) == 0x0000E8, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, K2Node_DynamicCast_AsFort_Pawn) == 0x0000F0, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, CallFunc_HasTag_ReturnValue) == 0x0000F9, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::CallFunc_HasTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, CallFunc_MatchesTag_ReturnValue) == 0x0000FA, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::CallFunc_MatchesTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue) == 0x0000FB, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanAND_ReturnValue2) == 0x0000FC, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent, CallFunc_BooleanOR_ReturnValue) == 0x0000FD, "Member 'GA_Commando_DebilitatingShots_C_K2_ShouldAbilityRespondToEvent::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

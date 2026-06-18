@@ -14,8 +14,7 @@
 #include "AthenaMainStatTile_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaMainStatTile.AthenaMainStatTile_C.ExecuteUbergraph_AthenaMainStatTile
 // ()
@@ -60,8 +59,8 @@ void UAthenaMainStatTile_C::PreConstruct(bool IsDesignTime)
 // Function AthenaMainStatTile.AthenaMainStatTile_C.SetTagAndDisplayName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Tag                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FText                             DisplayName                                            (Parm)
+// const class FString&                    Tag                                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FText&                      DisplayName                                            (Parm)
 
 void UAthenaMainStatTile_C::SetTagAndDisplayName(const class FString& Tag, const class FText& DisplayName)
 {
@@ -82,7 +81,7 @@ void UAthenaMainStatTile_C::SetTagAndDisplayName(const class FString& Tag, const
 // Function AthenaMainStatTile.AthenaMainStatTile_C.SetStatValue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             StatValueAsText                                        (Parm)
+// const class FText&                      StatValueAsText                                        (Parm)
 
 void UAthenaMainStatTile_C::SetStatValue(const class FText& StatValueAsText)
 {
@@ -98,5 +97,5 @@ void UAthenaMainStatTile_C::SetStatValue(const class FText& StatValueAsText)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

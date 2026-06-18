@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function T3_Research.T3_Research_C.ExecuteUbergraph_T3_Research
 // 0x0010 (0x0010 - 0x0000)
@@ -24,11 +24,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(T3_Research_C_ExecuteUbergraph_T3_Research) == 0x000008, "Wrong alignment on T3_Research_C_ExecuteUbergraph_T3_Research");
-static_assert(sizeof(T3_Research_C_ExecuteUbergraph_T3_Research) == 0x000010, "Wrong size on T3_Research_C_ExecuteUbergraph_T3_Research");
-static_assert(offsetof(T3_Research_C_ExecuteUbergraph_T3_Research, EntryPoint) == 0x000000, "Member 'T3_Research_C_ExecuteUbergraph_T3_Research::EntryPoint' has a wrong offset!");
-static_assert(offsetof(T3_Research_C_ExecuteUbergraph_T3_Research, K2Node_Event_IsDesignTime) == 0x000004, "Member 'T3_Research_C_ExecuteUbergraph_T3_Research::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(T3_Research_C_ExecuteUbergraph_T3_Research, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'T3_Research_C_ExecuteUbergraph_T3_Research::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function T3_Research.T3_Research_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +32,6 @@ struct T3_Research_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(T3_Research_C_PreConstruct) == 0x000001, "Wrong alignment on T3_Research_C_PreConstruct");
-static_assert(sizeof(T3_Research_C_PreConstruct) == 0x000001, "Wrong size on T3_Research_C_PreConstruct");
-static_assert(offsetof(T3_Research_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'T3_Research_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

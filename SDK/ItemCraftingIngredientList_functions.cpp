@@ -14,8 +14,7 @@
 #include "ItemCraftingIngredientList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.ExecuteUbergraph_ItemCraftingIngredientList
 // ()
@@ -128,8 +127,8 @@ void UItemCraftingIngredientList_C::Refresh()
 // Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.HandleWorldItemListChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorldItem*>&          ItemsAdded                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorldItem*>&          ItemsRemoved                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -206,7 +205,7 @@ void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool Amm
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    NeedsTracking                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   NeedsTracking                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* Item, bool* NeedsTracking)
 {
@@ -250,7 +249,7 @@ void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToComp
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemQuantityPair>    ReturnIngredients                                      (Parm, OutParm, ZeroConstructor)
+// TArray<struct FFortItemQuantityPair>*   ReturnIngredients                                      (Parm, OutParm, ZeroConstructor)
 
 void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<struct FFortItemQuantityPair>* ReturnIngredients)
 {
@@ -269,5 +268,5 @@ void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<s
 		*ReturnIngredients = std::move(Parms.ReturnIngredients);
 }
 
-}
 
+SDK_NAMESPACE_END

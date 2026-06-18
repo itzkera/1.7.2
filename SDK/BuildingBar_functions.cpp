@@ -14,8 +14,7 @@
 #include "BuildingBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BuildingBar.BuildingBar_C.ExecuteUbergraph_BuildingBar
 // ()
@@ -280,5 +279,5 @@ void UBuildingBar_C::UpdateBuildingTrap(class ABuildingTrap* BuildingTrap)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

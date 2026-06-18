@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RotatorSelector.RotatorSelector_C
 // 0x0050 (0x0288 - 0x0238)
@@ -45,22 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RotatorSelector_C">();
+		BP_STATIC_CLASS_IMPL("RotatorSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotatorSelector_C")
 	}
 	static class URotatorSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotatorSelector_C>();
 	}
 };
-static_assert(alignof(URotatorSelector_C) == 0x000008, "Wrong alignment on URotatorSelector_C");
-static_assert(sizeof(URotatorSelector_C) == 0x000288, "Wrong size on URotatorSelector_C");
-static_assert(offsetof(URotatorSelector_C, UberGraphFrame) == 0x000238, "Member 'URotatorSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, DisplayText) == 0x000240, "Member 'URotatorSelector_C::DisplayText' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, TextRotator) == 0x000248, "Member 'URotatorSelector_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, SelectedIndex) == 0x000250, "Member 'URotatorSelector_C::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, HoverText) == 0x000258, "Member 'URotatorSelector_C::HoverText' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Selection_Changed) == 0x000270, "Member 'URotatorSelector_C::Selection_Changed' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Tab_Tooltip_Text) == 0x000280, "Member 'URotatorSelector_C::Tab_Tooltip_Text' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

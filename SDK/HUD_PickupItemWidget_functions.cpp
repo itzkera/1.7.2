@@ -14,8 +14,7 @@
 #include "HUD_PickupItemWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.ExecuteUbergraph_HUD-PickupItemWidget
 // ()
@@ -98,5 +97,5 @@ void UHUD_PickupItemWidget_C::SetPickup(class AFortPickup* NewPickup)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

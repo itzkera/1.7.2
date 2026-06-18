@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass EquippedItemWidget.EquippedItemWidget_C
 // 0x0070 (0x02D0 - 0x0260)
@@ -61,32 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EquippedItemWidget_C">();
+		BP_STATIC_CLASS_IMPL("EquippedItemWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EquippedItemWidget_C")
 	}
 	static class UEquippedItemWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEquippedItemWidget_C>();
 	}
 };
-static_assert(alignof(UEquippedItemWidget_C) == 0x000008, "Wrong alignment on UEquippedItemWidget_C");
-static_assert(sizeof(UEquippedItemWidget_C) == 0x0002D0, "Wrong size on UEquippedItemWidget_C");
-static_assert(offsetof(UEquippedItemWidget_C, UberGraphFrame) == 0x000260, "Member 'UEquippedItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, _Image__AmmoIcon) == 0x000268, "Member 'UEquippedItemWidget_C::_Image__AmmoIcon' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, _Image__ResourceIcon) == 0x000270, "Member 'UEquippedItemWidget_C::_Image__ResourceIcon' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, _Image__Separator) == 0x000278, "Member 'UEquippedItemWidget_C::_Image__Separator' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, CommonBorderDivider) == 0x000280, "Member 'UEquippedItemWidget_C::CommonBorderDivider' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, EquippedItem_Bandolier) == 0x000288, "Member 'UEquippedItemWidget_C::EquippedItem_Bandolier' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, Image_0) == 0x000290, "Member 'UEquippedItemWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, KeybindWidget) == 0x000298, "Member 'UEquippedItemWidget_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, SwitcherContent) == 0x0002A0, "Member 'UEquippedItemWidget_C::SwitcherContent' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, TextAmmoOutOverlay) == 0x0002A8, "Member 'UEquippedItemWidget_C::TextAmmoOutOverlay' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, TextMagazineAmmoCount) == 0x0002B0, "Member 'UEquippedItemWidget_C::TextMagazineAmmoCount' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, TextResourceCount) == 0x0002B8, "Member 'UEquippedItemWidget_C::TextResourceCount' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, TextTotalAmmoCount) == 0x0002C0, "Member 'UEquippedItemWidget_C::TextTotalAmmoCount' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, CurrentQuickbar) == 0x0002C8, "Member 'UEquippedItemWidget_C::CurrentQuickbar' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, CursorModeEnabled) == 0x0002CC, "Member 'UEquippedItemWidget_C::CursorModeEnabled' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, InfiniteAmmo) == 0x0002CD, "Member 'UEquippedItemWidget_C::InfiniteAmmo' has a wrong offset!");
-static_assert(offsetof(UEquippedItemWidget_C, InfiniteMagazine) == 0x0002CE, "Member 'UEquippedItemWidget_C::InfiniteMagazine' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

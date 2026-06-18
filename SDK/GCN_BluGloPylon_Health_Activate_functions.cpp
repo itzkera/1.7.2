@@ -14,8 +14,7 @@
 #include "GCN_BluGloPylon_Health_Activate_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCN_BluGloPylon_Health_Activate.GCN_BluGloPylon_Health_Activate_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -35,7 +34,7 @@ void AGCN_BluGloPylon_Health_Activate_C::UserConstructionScript()
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class UParticleSystemComponent*         SpawnedParticleSysComponent                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
 void AGCN_BluGloPylon_Health_Activate_C::OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
 {
@@ -52,5 +51,5 @@ void AGCN_BluGloPylon_Health_Activate_C::OnStartParticleSystemSpawned(class UPar
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "LegacyItem_DO_NOT_USE_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.ExecuteUbergraph_LegacyItem_DO_NOT_USE
 // (HasDefaults)
@@ -80,8 +79,8 @@ void ULegacyItem_DO_NOT_USE_C::BPOnCooldownSecondsChanged(int32 NewCooldownSecon
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULegacyItem_DO_NOT_USE_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -256,8 +255,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_All()
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -281,9 +280,9 @@ struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDown(const struct FGeo
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDragDetected
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    PointerEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
-// class UDragDropOperation*               Operation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             PointerEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// class UDragDropOperation**              Operation                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyItem_DO_NOT_USE_C::OnDragDetected(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation)
 {
@@ -322,7 +321,7 @@ void ULegacyItem_DO_NOT_USE_C::Update_Size_Box()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EItemDisplayStyle                       Display_Style                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FItemTextureSet                  Texture_Set                                            (Parm, OutParm, HasGetValueTypeHash)
+// struct FItemTextureSet*                 Texture_Set                                            (Parm, OutParm, HasGetValueTypeHash)
 
 void ULegacyItem_DO_NOT_USE_C::Get_Item_Texture_Set(EItemDisplayStyle Display_Style, struct FItemTextureSet* Texture_Set)
 {
@@ -374,7 +373,7 @@ void ULegacyItem_DO_NOT_USE_C::Update_Tier_Badge()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortItemType                           Item_Type                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// EItemDisplayStyle                       Style_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EItemDisplayStyle*                      Style_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyItem_DO_NOT_USE_C::Get_Display_Style(EFortItemType Item_Type, EItemDisplayStyle* Style_0)
 {
@@ -476,7 +475,7 @@ class UWidget* ULegacyItem_DO_NOT_USE_C::Get_Item_Tooltip(int32 OverrideStackCou
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Tooltip Header
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Header_Text                                            (Parm)
+// const class FText&                      Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyItem_DO_NOT_USE_C::Set_Tooltip_Header(const class FText& Header_Text, class USlateBrushAsset* Icon_Brush)
@@ -600,8 +599,8 @@ void ULegacyItem_DO_NOT_USE_C::Resize(EFortBrushSize Brush_Size)
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDoubleClick
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        InMyGeometry                                           (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    InMouseEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 InMyGeometry                                           (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             InMouseEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDoubleClick(const struct FGeometry& InMyGeometry, const struct FPointerEvent& InMouseEvent)
@@ -626,9 +625,9 @@ struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDoubleClick(const stru
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Override_Secondary_Icon_Color                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                     Secondary_Icon_Override_Color                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Secondary_Icon_Override_Color                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Override_Tertiary_Icon_Color                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                     Tertiary_Icon_Override_Color                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Tertiary_Icon_Override_Color                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyItem_DO_NOT_USE_C::Set_Subtype_Icons___Ammo_Color(bool Override_Secondary_Icon_Color, const struct FLinearColor& Secondary_Icon_Override_Color, bool Override_Tertiary_Icon_Color, const struct FLinearColor& Tertiary_Icon_Override_Color)
 {
@@ -729,10 +728,10 @@ int32 ULegacyItem_DO_NOT_USE_C::Get_Num_in_Stack()
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Texture2D From Multi Size Brush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortMultiSizeBrush              Multi_Size_Brush                                       (Parm)
+// const struct FFortMultiSizeBrush&       Multi_Size_Brush                                       (Parm)
 // EFortBrushSize                          Brush_Size                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture2D                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UTexture2D**                      Texture2D                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULegacyItem_DO_NOT_USE_C::Get_Texture2D_From_Multi_Size_Brush(const struct FFortMultiSizeBrush& Multi_Size_Brush, EFortBrushSize Brush_Size, class UTexture2D** Texture2D, bool* Success)
 {
@@ -807,8 +806,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Base_Opacity()
 // Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDrop
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    PointerEvent                                           (Parm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             PointerEvent                                           (Parm)
 // class UDragDropOperation*               Operation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
@@ -830,5 +829,5 @@ bool ULegacyItem_DO_NOT_USE_C::OnDrop(const struct FGeometry& MyGeometry, const 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

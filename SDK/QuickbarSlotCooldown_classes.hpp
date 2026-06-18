@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuickbarSlotCooldown.QuickbarSlotCooldown_C
 // 0x0028 (0x02F0 - 0x02C8)
@@ -41,20 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuickbarSlotCooldown_C">();
+		BP_STATIC_CLASS_IMPL("QuickbarSlotCooldown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickbarSlotCooldown_C")
 	}
 	static class UQuickbarSlotCooldown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickbarSlotCooldown_C>();
 	}
 };
-static_assert(alignof(UQuickbarSlotCooldown_C) == 0x000008, "Wrong alignment on UQuickbarSlotCooldown_C");
-static_assert(sizeof(UQuickbarSlotCooldown_C) == 0x0002F0, "Wrong size on UQuickbarSlotCooldown_C");
-static_assert(offsetof(UQuickbarSlotCooldown_C, UberGraphFrame) == 0x0002C8, "Member 'UQuickbarSlotCooldown_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlotCooldown_C, ImageRadialOpacityLayer) == 0x0002D0, "Member 'UQuickbarSlotCooldown_C::ImageRadialOpacityLayer' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlotCooldown_C, ImageRectangularOpacityLayer) == 0x0002D8, "Member 'UQuickbarSlotCooldown_C::ImageRectangularOpacityLayer' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlotCooldown_C, SwitcherOpacityOverlay) == 0x0002E0, "Member 'UQuickbarSlotCooldown_C::SwitcherOpacityOverlay' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlotCooldown_C, ItemDisplayStyle) == 0x0002E8, "Member 'UQuickbarSlotCooldown_C::ItemDisplayStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

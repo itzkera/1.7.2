@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C
 // 0x0030 (0x0410 - 0x03E0)
@@ -46,20 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OutpostScreenStormShieldPermissions_C">();
+		BP_STATIC_CLASS_IMPL("OutpostScreenStormShieldPermissions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OutpostScreenStormShieldPermissions_C")
 	}
 	static class UOutpostScreenStormShieldPermissions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOutpostScreenStormShieldPermissions_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenStormShieldPermissions_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShieldPermissions_C");
-static_assert(sizeof(UOutpostScreenStormShieldPermissions_C) == 0x000410, "Wrong size on UOutpostScreenStormShieldPermissions_C");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, UberGraphFrame) == 0x0003E0, "Member 'UOutpostScreenStormShieldPermissions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, OutpostScreenCanEditPanel) == 0x0003E8, "Member 'UOutpostScreenStormShieldPermissions_C::OutpostScreenCanEditPanel' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, GetHelp) == 0x0003F0, "Member 'UOutpostScreenStormShieldPermissions_C::GetHelp' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, CloseOutpostScreen) == 0x0003F8, "Member 'UOutpostScreenStormShieldPermissions_C::CloseOutpostScreen' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShieldPermissions_C, ParentReference) == 0x000408, "Member 'UOutpostScreenStormShieldPermissions_C::ParentReference' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

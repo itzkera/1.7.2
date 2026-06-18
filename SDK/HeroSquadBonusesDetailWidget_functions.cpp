@@ -14,8 +14,7 @@
 #include "HeroSquadBonusesDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroSquadBonusesDetailWidget.HeroSquadBonusesDetailWidget_C.ExecuteUbergraph_HeroSquadBonusesDetailWidget
 // ()
@@ -64,5 +63,5 @@ void UHeroSquadBonusesDetailWidget_C::UpdatePerkWidgets()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

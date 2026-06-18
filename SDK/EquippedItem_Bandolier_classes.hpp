@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass EquippedItem-Bandolier.EquippedItem-Bandolier_C
 // 0x0018 (0x0250 - 0x0238)
@@ -32,18 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EquippedItem-Bandolier_C">();
+		BP_STATIC_CLASS_IMPL("EquippedItem-Bandolier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EquippedItem-Bandolier_C")
 	}
 	static class UEquippedItem_Bandolier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEquippedItem_Bandolier_C>();
 	}
 };
-static_assert(alignof(UEquippedItem_Bandolier_C) == 0x000008, "Wrong alignment on UEquippedItem_Bandolier_C");
-static_assert(sizeof(UEquippedItem_Bandolier_C) == 0x000250, "Wrong size on UEquippedItem_Bandolier_C");
-static_assert(offsetof(UEquippedItem_Bandolier_C, _Image__Current) == 0x000238, "Member 'UEquippedItem_Bandolier_C::_Image__Current' has a wrong offset!");
-static_assert(offsetof(UEquippedItem_Bandolier_C, _Image__Max) == 0x000240, "Member 'UEquippedItem_Bandolier_C::_Image__Max' has a wrong offset!");
-static_assert(offsetof(UEquippedItem_Bandolier_C, MaxDisplayCapacity) == 0x000248, "Member 'UEquippedItem_Bandolier_C::MaxDisplayCapacity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

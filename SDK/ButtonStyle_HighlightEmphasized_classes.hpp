@@ -13,8 +13,7 @@
 #include "ButtonStyle_MediumTransparentNoCues_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-HighlightEmphasized.ButtonStyle-HighlightEmphasized_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_HighlightEmphasized_C final : public UButtonStyle_MediumTrans
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-HighlightEmphasized_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-HighlightEmphasized_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-HighlightEmphasized_C")
 	}
 	static class UButtonStyle_HighlightEmphasized_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_HighlightEmphasized_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_HighlightEmphasized_C) == 0x000008, "Wrong alignment on UButtonStyle_HighlightEmphasized_C");
-static_assert(sizeof(UButtonStyle_HighlightEmphasized_C) == 0x000530, "Wrong size on UButtonStyle_HighlightEmphasized_C");
 
-}
-
+SDK_NAMESPACE_END

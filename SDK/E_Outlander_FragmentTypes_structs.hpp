@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum E_Outlander_FragmentTypes.E_Outlander_FragmentTypes
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class E_Outlander_FragmentTypes : uint8
 	E_Outlander_MAX                          = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

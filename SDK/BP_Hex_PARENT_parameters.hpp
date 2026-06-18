@@ -16,8 +16,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.ExecuteUbergraph_BP_Hex_PARENT
 // 0x04D8 (0x04D8 - 0x0000)
@@ -60,8 +60,8 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue2;         // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsTilePlayable_ReturnValue;               // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName EventName, float EmitterTime, int32 ParticleTime, const struct FVector& Location, const struct FVector& Velocity, const struct FVector& Direction)> K2Node_CreateDelegate_OutputDelegate;              // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)> K2Node_CreateDelegate_OutputDelegate2;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FName EventName, float EmitterTime, int32 ParticleTime, const struct FVector& Location, const struct FVector& Velocity, const struct FVector& Direction)> K2Node_CreateDelegate_OutputDelegate; // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)> K2Node_CreateDelegate_OutputDelegate2; // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue2;                  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -75,7 +75,7 @@ public:
 	class UHomeBaseContext*                       CallFunc_GetContext_ReturnValue4;                  // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetTotalSkillPointsEarned_ReturnValue;    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)> K2Node_CreateDelegate_OutputDelegate3;             // 0x00E0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)> K2Node_CreateDelegate_OutputDelegate3; // 0x00E0(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue2;          // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue3;          // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_RandomFloatInRange_ReturnValue4;          // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -83,7 +83,7 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue5;                  // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 TeamPower, int32 PersonalPower)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 TeamPower, int32 PersonalPower)> K2Node_CreateDelegate_OutputDelegate4;     // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue6;                  // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -121,84 +121,6 @@ public:
 	struct FVector                                K2Node_CustomEvent_Velocity;                       // 0x04BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_CustomEvent_Direction;                      // 0x04C8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
-static_assert(sizeof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT) == 0x0004D8, "Wrong size on BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, EntryPoint) == 0x000000, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_TeamPower) == 0x000008, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_TeamPower' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_PersonalPower) == 0x00000C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_PersonalPower' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue) == 0x000010, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000018, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000020, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue3) == 0x000028, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_CreateDynamicMaterialInstance_ReturnValue4) == 0x000030, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_CreateDynamicMaterialInstance_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_NewCamera) == 0x000038, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_NewCamera' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_OldCamera) == 0x000039, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_OldCamera' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00003A, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x00003B, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x00003C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_EqualEqual_ByteByte_ReturnValue5) == 0x00003D, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_EqualEqual_ByteByte_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest) == 0x000040, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileValidForMarkedQuest_OutMarkedQuest' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileValidForMarkedQuest_ReturnValue) == 0x000048, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileValidForMarkedQuest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileHidden_ReturnValue) == 0x000049, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileHidden_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_int_Loop_Counter_Variable) == 0x00004C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTileLocked_ReturnValue) == 0x000050, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTileLocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_HasValidMissionData_ReturnValue) == 0x000058, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_HasValidMissionData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetAllActorsOfClass_OutActors) == 0x000060, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Less_IntInt_ReturnValue) == 0x000074, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetPlayerController_ReturnValue) == 0x000078, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetPlayerController_ReturnValue2) == 0x000080, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetPlayerController_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsTilePlayable_ReturnValue) == 0x000088, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsTilePlayable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate) == 0x000090, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate2) == 0x0000A0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue) == 0x0000B0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue2) == 0x0000B8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue3) == 0x0000C0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsUsingGamepad_ReturnValue) == 0x0000C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_IsUsingGamepad_ReturnValue2) == 0x0000C9, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_IsUsingGamepad_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Not_PreBool_ReturnValue) == 0x0000CA, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Not_PreBool_ReturnValue2) == 0x0000CB, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_BooleanAND_ReturnValue) == 0x0000CC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_BooleanAND_ReturnValue2) == 0x0000CD, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue4) == 0x0000D0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTotalSkillPointsEarned_ReturnValue) == 0x0000D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTotalSkillPointsEarned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate3) == 0x0000E0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue2) == 0x0000F0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue3) == 0x0000F4, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_RandomFloatInRange_ReturnValue4) == 0x0000F8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_RandomFloatInRange_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue5) == 0x000100, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000108, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CreateDelegate_OutputDelegate4) == 0x000110, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue6) == 0x000120, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, Temp_int_Array_Index_Variable) == 0x000128, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Array_Get_Item) == 0x000130, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color) == 0x000138, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_For_Specific_Difficulty_Difficulty_Linear_Color' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid) == 0x000148, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_For_Specific_Difficulty_Invalid' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetContext_ReturnValue7) == 0x000150, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_MissionDetails) == 0x000158, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_MissionDetails' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_ReturnValue) == 0x0002B8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0002BC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_AsTexture) == 0x0002C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_AsTexture' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_DynamicCast_bSuccess) == 0x0002D0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_MissionDetails2) == 0x0002D8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_MissionDetails2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_GetTileMissionDetails_ReturnValue2) == 0x000438, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_GetTileMissionDetails_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00043C, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color) == 0x000440, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_Success) == 0x000450, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_Success' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText) == 0x000458, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue) == 0x000470, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EventName2) == 0x000478, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EventName2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EmitterTime2) == 0x000480, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EmitterTime2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Location2) == 0x000484, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Location2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Velocity2) == 0x000490, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Velocity2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EventName) == 0x0004A0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EventName' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_EmitterTime) == 0x0004A8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_EmitterTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_ParticleTime) == 0x0004AC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_ParticleTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Location) == 0x0004B0, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Location' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Velocity) == 0x0004BC, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Velocity' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT, K2Node_CustomEvent_Direction) == 0x0004C8, "Member 'BP_Hex_PARENT_C_ExecuteUbergraph_BP_Hex_PARENT::K2Node_CustomEvent_Direction' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.MissionLightningOff
 // 0x0038 (0x0038 - 0x0000)
@@ -212,14 +134,6 @@ public:
 	struct FVector                                Velocity;                                          // 0x001C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Direction;                                         // 0x0028(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_MissionLightningOff) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_MissionLightningOff");
-static_assert(sizeof(BP_Hex_PARENT_C_MissionLightningOff) == 0x000038, "Wrong size on BP_Hex_PARENT_C_MissionLightningOff");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, EventName) == 0x000000, "Member 'BP_Hex_PARENT_C_MissionLightningOff::EventName' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, EmitterTime) == 0x000008, "Member 'BP_Hex_PARENT_C_MissionLightningOff::EmitterTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, ParticleTime) == 0x00000C, "Member 'BP_Hex_PARENT_C_MissionLightningOff::ParticleTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, Location) == 0x000010, "Member 'BP_Hex_PARENT_C_MissionLightningOff::Location' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, Velocity) == 0x00001C, "Member 'BP_Hex_PARENT_C_MissionLightningOff::Velocity' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightningOff, Direction) == 0x000028, "Member 'BP_Hex_PARENT_C_MissionLightningOff::Direction' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.MissionLightning
 // 0x0028 (0x0028 - 0x0000)
@@ -231,12 +145,6 @@ public:
 	struct FVector                                Location;                                          // 0x000C(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Velocity;                                          // 0x0018(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_MissionLightning) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_MissionLightning");
-static_assert(sizeof(BP_Hex_PARENT_C_MissionLightning) == 0x000028, "Wrong size on BP_Hex_PARENT_C_MissionLightning");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, EventName) == 0x000000, "Member 'BP_Hex_PARENT_C_MissionLightning::EventName' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, EmitterTime) == 0x000008, "Member 'BP_Hex_PARENT_C_MissionLightning::EmitterTime' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, Location) == 0x00000C, "Member 'BP_Hex_PARENT_C_MissionLightning::Location' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_MissionLightning, Velocity) == 0x000018, "Member 'BP_Hex_PARENT_C_MissionLightning::Velocity' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleFrontendCameraChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -246,10 +154,6 @@ public:
 	EFrontEndCamera                               NewCamera;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFrontEndCamera                               OldCamera;                                         // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_PARENT_C_HandleFrontendCameraChanged) == 0x000001, "Wrong alignment on BP_Hex_PARENT_C_HandleFrontendCameraChanged");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleFrontendCameraChanged) == 0x000002, "Wrong size on BP_Hex_PARENT_C_HandleFrontendCameraChanged");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleFrontendCameraChanged, NewCamera) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleFrontendCameraChanged::NewCamera' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleFrontendCameraChanged, OldCamera) == 0x000001, "Member 'BP_Hex_PARENT_C_HandleFrontendCameraChanged::OldCamera' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleTeamPowerChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -259,10 +163,6 @@ public:
 	int32                                         TeamPower;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PersonalPower;                                     // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_HandleTeamPowerChanged) == 0x000004, "Wrong alignment on BP_Hex_PARENT_C_HandleTeamPowerChanged");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleTeamPowerChanged) == 0x000008, "Wrong size on BP_Hex_PARENT_C_HandleTeamPowerChanged");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleTeamPowerChanged, TeamPower) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleTeamPowerChanged::TeamPower' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleTeamPowerChanged, PersonalPower) == 0x000004, "Member 'BP_Hex_PARENT_C_HandleTeamPowerChanged::PersonalPower' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.UserConstructionScript
 // 0x0070 (0x0070 - 0x0000)
@@ -282,18 +182,6 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_Hex_PARENT_C_UserConstructionScript");
-static_assert(sizeof(BP_Hex_PARENT_C_UserConstructionScript) == 0x000070, "Wrong size on BP_Hex_PARENT_C_UserConstructionScript");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_Hex_PARENT_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000038, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000040, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000048, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x000050, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_Array_LastIndex_ReturnValue) == 0x000058, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_Greater_IntInt_ReturnValue) == 0x00005C, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_UserConstructionScript, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000060, "Member 'BP_Hex_PARENT_C_UserConstructionScript::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.GroundSliceSettings
 // 0x0030 (0x0030 - 0x0000)
@@ -310,17 +198,6 @@ public:
 	float                                         TileExistsA;                                       // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         TileExistsB;                                       // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Hex_PARENT_C_GroundSliceSettings) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_GroundSliceSettings");
-static_assert(sizeof(BP_Hex_PARENT_C_GroundSliceSettings) == 0x000030, "Wrong size on BP_Hex_PARENT_C_GroundSliceSettings");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, SourceMaterial) == 0x000000, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::SourceMaterial' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileTypeA) == 0x000008, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileTypeA' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileTypeB) == 0x000010, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileTypeB' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileIsSameRegionA) == 0x000018, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileIsSameRegionA' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileIsSameRegionB) == 0x00001C, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileIsSameRegionB' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileIsHiddenA) == 0x000020, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileIsHiddenA' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileIsHiddenB) == 0x000024, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileIsHiddenB' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileExistsA) == 0x000028, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileExistsA' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_GroundSliceSettings, TileExistsB) == 0x00002C, "Member 'BP_Hex_PARENT_C_GroundSliceSettings::TileExistsB' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleMissionAlert
 // 0x0038 (0x0038 - 0x0000)
@@ -343,22 +220,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_PARENT_C_HandleMissionAlert) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_HandleMissionAlert");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleMissionAlert) == 0x000038, "Wrong size on BP_Hex_PARENT_C_HandleMissionAlert");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetUserWidgetObject_ReturnValue2) == 0x000008, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetUserWidgetObject_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_AsMission_Alert_Indicator) == 0x000010, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_AsMission_Alert_Indicator' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_AsMission_Alert_Indicator2) == 0x000020, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_AsMission_Alert_Indicator2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, K2Node_DynamicCast_bSuccess2) == 0x000028, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_GetMissionAlertCategory_ReturnValue) == 0x000029, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_GetMissionAlertCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_IsTileHidden_ReturnValue) == 0x00002A, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_IsTileHidden_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00002B, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_Not_PreBool_ReturnValue) == 0x00002C, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00002D, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_IsMissionAlertTile_ReturnValue) == 0x00002E, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_IsMissionAlertTile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanOR_ReturnValue) == 0x00002F, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleMissionAlert, CallFunc_BooleanAND_ReturnValue) == 0x000030, "Member 'BP_Hex_PARENT_C_HandleMissionAlert::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_Hex_PARENT.BP_Hex_PARENT_C.HandleUpdatingBannerMesh
 // 0x0078 (0x0078 - 0x0000)
@@ -381,22 +242,6 @@ public:
 	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0058(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_HasCompletedQuest_ReturnValue;            // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh) == 0x000008, "Wrong alignment on BP_Hex_PARENT_C_HandleUpdatingBannerMesh");
-static_assert(sizeof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh) == 0x000078, "Wrong size on BP_Hex_PARENT_C_HandleUpdatingBannerMesh");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, Target) == 0x000000, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::Target' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CompletedQuest) == 0x000008, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CompletedQuest' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, Material_Instance_Dynamic) == 0x000010, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::Material_Instance_Dynamic' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, UniqueId) == 0x000018, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::UniqueId' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, HasCompletedQuest) == 0x000030, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::HasCompletedQuest' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000031, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_NotEqual_ObjectObject_ReturnValue2) == 0x000032, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_NotEqual_ObjectObject_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_IsValidNetID_ReturnValue) == 0x000033, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_BooleanAND_ReturnValue) == 0x000034, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000038, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_Array_Get_Item) == 0x000048, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_GetQuestManager_ReturnValue) == 0x000050, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_GetGameAccountId_ReturnValue) == 0x000058, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Hex_PARENT_C_HandleUpdatingBannerMesh, CallFunc_HasCompletedQuest_ReturnValue) == 0x000070, "Member 'BP_Hex_PARENT_C_HandleUpdatingBannerMesh::CallFunc_HasCompletedQuest_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

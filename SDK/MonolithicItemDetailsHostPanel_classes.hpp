@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MonolithicItemDetailsHostPanel.MonolithicItemDetailsHostPanel_C
 // 0x0050 (0x02F8 - 0x02A8)
@@ -32,7 +31,7 @@ public:
 	class UItemPerksListDetailWidget_C*           ItemPerksListDetailWidget;                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 MarkedForMulchingBackgroundImage;                  // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortMultiSizeImage*                    MarkedForMulchingIndicatorImage;                   // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMiniItemCraftingIngredientsDetailWidget_C* MiniItemCraftingIngredientsDetailWidget_9;         // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMiniItemCraftingIngredientsDetailWidget_C* MiniItemCraftingIngredientsDetailWidget_9;     // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MonolithicItemDetailsHostPanel(int32 EntryPoint);
@@ -41,25 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MonolithicItemDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("MonolithicItemDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MonolithicItemDetailsHostPanel_C")
 	}
 	static class UMonolithicItemDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMonolithicItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UMonolithicItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UMonolithicItemDetailsHostPanel_C");
-static_assert(sizeof(UMonolithicItemDetailsHostPanel_C) == 0x0002F8, "Wrong size on UMonolithicItemDetailsHostPanel_C");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, UberGraphFrame) == 0x0002A8, "Member 'UMonolithicItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, HeaderWidget) == 0x0002B0, "Member 'UMonolithicItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, ItemAlterationsListDetailWidget) == 0x0002B8, "Member 'UMonolithicItemDetailsHostPanel_C::ItemAlterationsListDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, ItemAttributesDetailWidget) == 0x0002C0, "Member 'UMonolithicItemDetailsHostPanel_C::ItemAttributesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, ItemCalledOutAttributesDetailWidget) == 0x0002C8, "Member 'UMonolithicItemDetailsHostPanel_C::ItemCalledOutAttributesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, ItemDescriptionDetailWidget) == 0x0002D0, "Member 'UMonolithicItemDetailsHostPanel_C::ItemDescriptionDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, ItemPerksListDetailWidget) == 0x0002D8, "Member 'UMonolithicItemDetailsHostPanel_C::ItemPerksListDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, MarkedForMulchingBackgroundImage) == 0x0002E0, "Member 'UMonolithicItemDetailsHostPanel_C::MarkedForMulchingBackgroundImage' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, MarkedForMulchingIndicatorImage) == 0x0002E8, "Member 'UMonolithicItemDetailsHostPanel_C::MarkedForMulchingIndicatorImage' has a wrong offset!");
-static_assert(offsetof(UMonolithicItemDetailsHostPanel_C, MiniItemCraftingIngredientsDetailWidget_9) == 0x0002F0, "Member 'UMonolithicItemDetailsHostPanel_C::MiniItemCraftingIngredientsDetailWidget_9' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

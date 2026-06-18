@@ -14,8 +14,7 @@
 #include "GA_DefaultPlayer_Death_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C.ExecuteUbergraph_GA_DefaultPlayer_Death
 // ()
@@ -50,5 +49,5 @@ void UGA_DefaultPlayer_Death_C::PickDeathMontageSection()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

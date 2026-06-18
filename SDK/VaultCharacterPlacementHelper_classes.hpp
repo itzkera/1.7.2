@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C
 // 0x0028 (0x03B0 - 0x0388)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultCharacterPlacementHelper_C">();
+		BP_STATIC_CLASS_IMPL("VaultCharacterPlacementHelper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultCharacterPlacementHelper_C")
 	}
 	static class AVaultCharacterPlacementHelper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultCharacterPlacementHelper_C>();
 	}
 };
-static_assert(alignof(AVaultCharacterPlacementHelper_C) == 0x000008, "Wrong alignment on AVaultCharacterPlacementHelper_C");
-static_assert(sizeof(AVaultCharacterPlacementHelper_C) == 0x0003B0, "Wrong size on AVaultCharacterPlacementHelper_C");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, UberGraphFrame) == 0x000388, "Member 'AVaultCharacterPlacementHelper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, CharacterPlacement) == 0x000390, "Member 'AVaultCharacterPlacementHelper_C::CharacterPlacement' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, Root) == 0x000398, "Member 'AVaultCharacterPlacementHelper_C::Root' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, NewEventDispatcher_0) == 0x0003A0, "Member 'AVaultCharacterPlacementHelper_C::NewEventDispatcher_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

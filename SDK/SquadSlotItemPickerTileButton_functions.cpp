@@ -14,8 +14,7 @@
 #include "SquadSlotItemPickerTileButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.ExecuteUbergraph_SquadSlotItemPickerTileButton
 // (HasDefaults)
@@ -54,7 +53,7 @@ void USquadSlotItemPickerTileButton_C::HandleSlottingRestrictionReasonsChanged()
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.HandleItemSlottedToDifferentSquad
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FHomebaseSquadSlotId             SquadSlotId                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// const struct FHomebaseSquadSlotId&      SquadSlotId                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 
 void USquadSlotItemPickerTileButton_C::HandleItemSlottedToDifferentSquad(const struct FHomebaseSquadSlotId& SquadSlotId)
 {
@@ -106,5 +105,5 @@ void USquadSlotItemPickerTileButton_C::UpdateOverlays()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

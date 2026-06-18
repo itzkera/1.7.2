@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ChoiceCardCount.ChoiceCardCount_C
 // 0x0020 (0x0258 - 0x0238)
@@ -30,17 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChoiceCardCount_C">();
+		BP_STATIC_CLASS_IMPL("ChoiceCardCount_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChoiceCardCount_C")
 	}
 	static class UChoiceCardCount_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChoiceCardCount_C>();
 	}
 };
-static_assert(alignof(UChoiceCardCount_C) == 0x000008, "Wrong alignment on UChoiceCardCount_C");
-static_assert(sizeof(UChoiceCardCount_C) == 0x000258, "Wrong size on UChoiceCardCount_C");
-static_assert(offsetof(UChoiceCardCount_C, TextHave) == 0x000238, "Member 'UChoiceCardCount_C::TextHave' has a wrong offset!");
-static_assert(offsetof(UChoiceCardCount_C, DisplayText) == 0x000240, "Member 'UChoiceCardCount_C::DisplayText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BP_BannerEditorTile_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.ExecuteUbergraph_BP_BannerEditorTile
 // (HasDefaults)
@@ -148,5 +147,5 @@ void UBP_BannerEditorTile_C::Mark_Item_as_Seen()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

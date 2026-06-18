@@ -14,8 +14,7 @@
 #include "GAT_GenericActiveAbilityNoCommit_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAT_GenericActiveAbilityNoCommit.GAT_GenericActiveAbilityNoCommit_C.ExecuteUbergraph_GAT_GenericActiveAbilityNoCommit
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UGAT_GenericActiveAbilityNoCommit_C::K2_ActivateAbility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

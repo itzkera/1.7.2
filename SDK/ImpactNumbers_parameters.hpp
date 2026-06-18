@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ImpactNumbers.ImpactNumbers_C.ExecuteUbergraph_ImpactNumbers
 // 0x00B0 (0x00B0 - 0x0000)
@@ -29,12 +29,6 @@ public:
 	struct FTransform                             CallFunc_init_a_new_number_set_OutCameraTransform; // 0x0070(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_init_a_new_number_set_OutNumberLocation;  // 0x00A0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers) == 0x000010, "Wrong alignment on ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers");
-static_assert(sizeof(ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers) == 0x0000B0, "Wrong size on ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers");
-static_assert(offsetof(ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers, EntryPoint) == 0x000000, "Member 'ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers, K2Node_Event_NewDamageNumberInfo) == 0x000008, "Member 'ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers::K2Node_Event_NewDamageNumberInfo' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers, CallFunc_init_a_new_number_set_OutCameraTransform) == 0x000070, "Member 'ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers::CallFunc_init_a_new_number_set_OutCameraTransform' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers, CallFunc_init_a_new_number_set_OutNumberLocation) == 0x0000A0, "Member 'ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers::CallFunc_init_a_new_number_set_OutNumberLocation' has a wrong offset!");
 
 // Function ImpactNumbers.ImpactNumbers_C.OnNewDamageNumber
 // 0x0068 (0x0068 - 0x0000)
@@ -43,9 +37,6 @@ struct ImpactNumbers_C_OnNewDamageNumber final
 public:
 	struct FFortDamageNumberInfo                  NewDamageNumberInfo;                               // 0x0000(0x0068)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(ImpactNumbers_C_OnNewDamageNumber) == 0x000008, "Wrong alignment on ImpactNumbers_C_OnNewDamageNumber");
-static_assert(sizeof(ImpactNumbers_C_OnNewDamageNumber) == 0x000068, "Wrong size on ImpactNumbers_C_OnNewDamageNumber");
-static_assert(offsetof(ImpactNumbers_C_OnNewDamageNumber, NewDamageNumberInfo) == 0x000000, "Member 'ImpactNumbers_C_OnNewDamageNumber::NewDamageNumberInfo' has a wrong offset!");
 
 // Function ImpactNumbers.ImpactNumbers_C.init a new number set
 // 0x02F0 (0x02F0 - 0x0000)
@@ -109,54 +100,6 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x02B0(0x0030)(IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue3;            // 0x02E0(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ImpactNumbers_C_init_a_new_number_set) == 0x000010, "Wrong alignment on ImpactNumbers_C_init_a_new_number_set");
-static_assert(sizeof(ImpactNumbers_C_init_a_new_number_set) == 0x0002F0, "Wrong size on ImpactNumbers_C_init_a_new_number_set");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, NewDamageHitInfoStruct) == 0x000000, "Member 'ImpactNumbers_C_init_a_new_number_set::NewDamageHitInfoStruct' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, OutCameraTransform) == 0x000070, "Member 'ImpactNumbers_C_init_a_new_number_set::OutCameraTransform' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, OutNumberLocation) == 0x0000A0, "Member 'ImpactNumbers_C_init_a_new_number_set::OutNumberLocation' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, NumberLocation) == 0x0000AC, "Member 'ImpactNumbers_C_init_a_new_number_set::NumberLocation' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, LocationOffset) == 0x0000B8, "Member 'ImpactNumbers_C_init_a_new_number_set::LocationOffset' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CameraTransform) == 0x0000D0, "Member 'ImpactNumbers_C_init_a_new_number_set::CameraTransform' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, Temp_float_Variable) == 0x000100, "Member 'ImpactNumbers_C_init_a_new_number_set::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, Temp_byte_Variable) == 0x000104, "Member 'ImpactNumbers_C_init_a_new_number_set::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, Temp_struct_Variable) == 0x000108, "Member 'ImpactNumbers_C_init_a_new_number_set::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, Temp_byte_Variable2) == 0x000110, "Member 'ImpactNumbers_C_init_a_new_number_set::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Add_VectorVector_ReturnValue) == 0x000114, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetPlayerCharacter_ReturnValue) == 0x000120, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetPlayerCharacter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetPlayerCharacter_ReturnValue2) == 0x000130, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetPlayerCharacter_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_MakeVector2D_ReturnValue) == 0x000138, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_IsValid_ReturnValue2) == 0x000140, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000144, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_BooleanAND_ReturnValue) == 0x000150, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000154, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_MakeVector2D_ReturnValue2) == 0x000158, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_MakeVector2D_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_MakeLiteralFloat_ReturnValue2) == 0x000160, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_MakeLiteralFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, K2Node_Select_Default) == 0x000164, "Member 'ImpactNumbers_C_init_a_new_number_set::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, K2Node_Select2_Default) == 0x00016C, "Member 'ImpactNumbers_C_init_a_new_number_set::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_BreakVector2D_X) == 0x000170, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_BreakVector2D_Y) == 0x000174, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, Temp_bool_Variable) == 0x000178, "Member 'ImpactNumbers_C_init_a_new_number_set::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_BreakTransform_Location) == 0x00017C, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_BreakTransform_Rotation) == 0x000188, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_BreakTransform_Scale) == 0x000194, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult) == 0x0001A0, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, K2Node_Select3_Default) == 0x000228, "Member 'ImpactNumbers_C_init_a_new_number_set::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_RandomFloatInRange_ReturnValue) == 0x000234, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Add_VectorVector_ReturnValue2) == 0x000238, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Add_VectorVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000244, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Add_FloatFloat_ReturnValue) == 0x000248, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Add_FloatFloat_ReturnValue2) == 0x00024C, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000250, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetCameraRotation_ReturnValue) == 0x000258, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetCameraRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_IsValid_ReturnValue3) == 0x000264, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetActorRightVector_ReturnValue) == 0x000268, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000274, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetActorUpVector_ReturnValue) == 0x000280, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_GetCameraLocation_ReturnValue) == 0x00028C, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_GetCameraLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Multiply_VectorFloat_ReturnValue2) == 0x000298, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Multiply_VectorFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_MakeTransform_ReturnValue) == 0x0002B0, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_init_a_new_number_set, CallFunc_Add_VectorVector_ReturnValue3) == 0x0002E0, "Member 'ImpactNumbers_C_init_a_new_number_set::CallFunc_Add_VectorVector_ReturnValue3' has a wrong offset!");
 
 // Function ImpactNumbers.ImpactNumbers_C.Set Material Pararmeters
 // 0x02E0 (0x02E0 - 0x0000)
@@ -280,110 +223,6 @@ public:
 	class FName                                   CallFunc_Array_Get_Item6;                          // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Array_Get_Item7;                          // 0x02D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ImpactNumbers_C_Set_Material_Pararmeters) == 0x000010, "Wrong alignment on ImpactNumbers_C_Set_Material_Pararmeters");
-static_assert(sizeof(ImpactNumbers_C_Set_Material_Pararmeters) == 0x0002E0, "Wrong size on ImpactNumbers_C_Set_Material_Pararmeters");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, NewDamageHitInfoStruct) == 0x000000, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::NewDamageHitInfoStruct' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CameraTransform) == 0x000070, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CameraTransform' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, NumberLocation) == 0x0000A0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::NumberLocation' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, OffsetAccumulatedValue) == 0x0000AC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::OffsetAccumulatedValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, RealGameTime) == 0x0000B0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::RealGameTime' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakTransform_Location) == 0x0000B4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakTransform_Rotation) == 0x0000C0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakTransform_Scale) == 0x0000CC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000D8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_LastIndex_ReturnValue) == 0x0000E4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_VSize_ReturnValue) == 0x0000E8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_LastIndex_ReturnValue2) == 0x0000EC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000F0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_LastIndex_ReturnValue3) == 0x0000F4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_LastIndex_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_FClamp_ReturnValue) == 0x0000F8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000FC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_FClamp_ReturnValue2) == 0x000100, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_FClamp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_LastIndex_ReturnValue4) == 0x000104, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_LastIndex_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_LastIndex_ReturnValue5) == 0x000108, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_LastIndex_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Length_ReturnValue) == 0x00010C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Add_IntInt_ReturnValue) == 0x000110, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000114, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Greater_IntInt_ReturnValue) == 0x000118, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Add_FloatFloat_ReturnValue) == 0x00011C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Length_ReturnValue2) == 0x000120, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000124, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000125, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BooleanAND_ReturnValue) == 0x000126, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SelectFloat_ReturnValue) == 0x000128, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x00012C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000130, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Conv_BoolToFloat_ReturnValue2) == 0x000134, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Conv_BoolToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SelectFloat_ReturnValue2) == 0x000138, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SelectFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Lerp_ReturnValue) == 0x00013C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_RandomFloatInRange_ReturnValue) == 0x000140, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000144, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000148, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue4) == 0x00014C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue5) == 0x000150, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue6) == 0x000154, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue7) == 0x000158, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SelectColor_ReturnValue) == 0x00015C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, Temp_int_Array_Index_Variable) == 0x00016C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SelectColor_ReturnValue2) == 0x000170, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SelectColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item) == 0x000180, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SelectColor_ReturnValue3) == 0x000188, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SelectColor_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, Temp_bool_Variable) == 0x000198, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, Temp_int_Variable) == 0x00019C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Clamp_ReturnValue) == 0x0001A0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001A4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item2) == 0x0001A8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Clamp_ReturnValue2) == 0x0001AC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Clamp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001B0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item3) == 0x0001B4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Clamp_ReturnValue3) == 0x0001B8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Clamp_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x0001BC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item4) == 0x0001C0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item4' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BooleanOR_ReturnValue) == 0x0001C4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x0001C8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SelectFloat_ReturnValue3) == 0x0001CC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SelectFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_EqualEqual_IntInt_ReturnValue3) == 0x0001D0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_EqualEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Add_FloatFloat_ReturnValue2) == 0x0001D4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BooleanAND_ReturnValue2) == 0x0001D8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0001D9, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x0001DC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BooleanOR_ReturnValue2) == 0x0001E0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x0001E4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0001E8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0001EC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BooleanAND_ReturnValue3) == 0x0001F0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue8) == 0x0001F4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Conv_BoolToFloat_ReturnValue3) == 0x0001F8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Conv_BoolToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_MakeVector_ReturnValue) == 0x0001FC, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue9) == 0x000208, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_TransformDirection_ReturnValue) == 0x00020C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_TransformDirection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue10) == 0x000218, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakVector_X) == 0x00021C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakVector_Y) == 0x000220, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakVector_Z) == 0x000224, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakVector_X2) == 0x000228, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakVector_X2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakVector_Y2) == 0x00022C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakVector_Y2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_BreakVector_Z2) == 0x000230, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_BreakVector_Z2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_MakeStruct_LinearColor) == 0x000234, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_SignOfFloat_ReturnValue) == 0x000244, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_SignOfFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Add_IntInt_ReturnValue2) == 0x000248, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Add_FloatFloat_ReturnValue3) == 0x00024C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_MakeStruct_LinearColor2) == 0x000250, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_MakeStruct_LinearColor2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, Temp_int_Variable2) == 0x000260, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000264, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_Select_Default) == 0x000268, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x00026C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_MakeArray_Array) == 0x000270, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item5) == 0x000280, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item5' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Multiply_FloatFloat_ReturnValue11) == 0x000288, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Multiply_FloatFloat_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, Temp_int_Loop_Counter_Variable) == 0x00028C, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_MakeStruct_LinearColor3) == 0x000290, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_MakeStruct_LinearColor3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Less_IntInt_ReturnValue) == 0x0002A0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Add_IntInt_ReturnValue3) == 0x0002A4, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_MakeArray_Array2) == 0x0002A8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, K2Node_MakeArray_Array3) == 0x0002B8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item6) == 0x0002C8, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item6' has a wrong offset!");
-static_assert(offsetof(ImpactNumbers_C_Set_Material_Pararmeters, CallFunc_Array_Get_Item7) == 0x0002D0, "Member 'ImpactNumbers_C_Set_Material_Pararmeters::CallFunc_Array_Get_Item7' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

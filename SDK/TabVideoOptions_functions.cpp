@@ -14,8 +14,7 @@
 #include "TabVideoOptions_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabVideoOptions.TabVideoOptions_C.ExecuteUbergraph_TabVideoOptions
 // (HasDefaults)
@@ -446,5 +445,5 @@ void UTabVideoOptions_C::Initialize_Display_Resolutions()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AnimNotifyState_DisableSteering.AnimNotifyState_DisableSteering_C
 // 0x0000 (0x0030 - 0x0030)
@@ -27,15 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotifyState_DisableSteering_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotifyState_DisableSteering_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_DisableSteering_C")
 	}
 	static class UAnimNotifyState_DisableSteering_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_DisableSteering_C>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_DisableSteering_C) == 0x000008, "Wrong alignment on UAnimNotifyState_DisableSteering_C");
-static_assert(sizeof(UAnimNotifyState_DisableSteering_C) == 0x000030, "Wrong size on UAnimNotifyState_DisableSteering_C");
 
-}
-
+SDK_NAMESPACE_END

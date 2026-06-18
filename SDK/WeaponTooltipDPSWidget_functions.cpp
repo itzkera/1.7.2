@@ -14,8 +14,7 @@
 #include "WeaponTooltipDPSWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WeaponTooltipDPSWidget.WeaponTooltipDPSWidget_C.ExecuteUbergraph_WeaponTooltipDPSWidget
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UWeaponTooltipDPSWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

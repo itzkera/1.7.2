@@ -16,8 +16,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MissionPanelContent.MissionPanelContent_C.ExecuteUbergraph_MissionPanelContent
 // 0x0068 (0x0068 - 0x0000)
@@ -35,16 +35,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate4;             // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent) == 0x000008, "Wrong alignment on MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent");
-static_assert(sizeof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent) == 0x000068, "Wrong size on MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, EntryPoint) == 0x000000, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, K2Node_CreateDelegate_OutputDelegate4) == 0x000048, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent, K2Node_CreateDelegate_OutputDelegate5) == 0x000058, "Member 'MissionPanelContent_C_ExecuteUbergraph_MissionPanelContent::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
 
 // Function MissionPanelContent.MissionPanelContent_C.UpdateMissionDisplay
 // 0x03E0 (0x03E0 - 0x0000)
@@ -57,12 +47,6 @@ public:
 	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x03C8(0x0018)()
 };
-static_assert(alignof(MissionPanelContent_C_UpdateMissionDisplay) == 0x000008, "Wrong alignment on MissionPanelContent_C_UpdateMissionDisplay");
-static_assert(sizeof(MissionPanelContent_C_UpdateMissionDisplay) == 0x0003E0, "Wrong size on MissionPanelContent_C_UpdateMissionDisplay");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionDisplay, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'MissionPanelContent_C_UpdateMissionDisplay::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionDisplay, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000008, "Member 'MissionPanelContent_C_UpdateMissionDisplay::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionDisplay, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x0003C0, "Member 'MissionPanelContent_C_UpdateMissionDisplay::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionDisplay, CallFunc_TextToUpper_ReturnValue) == 0x0003C8, "Member 'MissionPanelContent_C_UpdateMissionDisplay::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
 
 // Function MissionPanelContent.MissionPanelContent_C.UpdateMissionRewards
 // 0x0038 (0x0038 - 0x0000)
@@ -75,13 +59,6 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionPanelContent_C_UpdateMissionRewards) == 0x000008, "Wrong alignment on MissionPanelContent_C_UpdateMissionRewards");
-static_assert(sizeof(MissionPanelContent_C_UpdateMissionRewards) == 0x000038, "Wrong size on MissionPanelContent_C_UpdateMissionRewards");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionRewards, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'MissionPanelContent_C_UpdateMissionRewards::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionRewards, CallFunc_GetMissionRewards_MissionRewards) == 0x000008, "Member 'MissionPanelContent_C_UpdateMissionRewards::CallFunc_GetMissionRewards_MissionRewards' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionRewards, CallFunc_GetMissionRewards_MissionAlertRewards) == 0x000018, "Member 'MissionPanelContent_C_UpdateMissionRewards::CallFunc_GetMissionRewards_MissionAlertRewards' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionRewards, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'MissionPanelContent_C_UpdateMissionRewards::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateMissionRewards, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'MissionPanelContent_C_UpdateMissionRewards::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MissionPanelContent.MissionPanelContent_C.UpdateOverviewObjectives
 // 0x0090 (0x0090 - 0x0000)
@@ -105,20 +82,6 @@ public:
 	uint8                                         Pad_85[0x3];                                       // 0x0085(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionPanelContent_C_UpdateOverviewObjectives) == 0x000008, "Wrong alignment on MissionPanelContent_C_UpdateOverviewObjectives");
-static_assert(sizeof(MissionPanelContent_C_UpdateOverviewObjectives) == 0x000090, "Wrong size on MissionPanelContent_C_UpdateOverviewObjectives");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, Temp_int_Array_Index_Variable) == 0x000000, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_Create_ReturnValue) == 0x000010, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000018, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_GetMissionOverviewObjectives_ReturnValue) == 0x000038, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_GetMissionOverviewObjectives_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_Array_Get_Item) == 0x000048, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_Less_IntInt_ReturnValue) == 0x000084, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_UpdateOverviewObjectives, CallFunc_Add_IntInt_ReturnValue) == 0x000088, "Member 'MissionPanelContent_C_UpdateOverviewObjectives::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MissionPanelContent.MissionPanelContent_C.Setup Mission Rewards
 // 0x0070 (0x0070 - 0x0000)
@@ -141,21 +104,6 @@ public:
 	class URewardsListEntry_C*                    CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionPanelContent_C_Setup_Mission_Rewards) == 0x000008, "Wrong alignment on MissionPanelContent_C_Setup_Mission_Rewards");
-static_assert(sizeof(MissionPanelContent_C_Setup_Mission_Rewards) == 0x000070, "Wrong size on MissionPanelContent_C_Setup_Mission_Rewards");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, Array) == 0x000000, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::Array' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, RewardType) == 0x000010, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::RewardType' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, Temp_int_Array_Index_Variable) == 0x000018, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_Array_Get_Item) == 0x000020, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_Less_IntInt_ReturnValue) == 0x000029, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, K2Node_MakeStruct_SlateColor) == 0x000030, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_GetOwningPlayer_ReturnValue) == 0x000058, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_Create_ReturnValue) == 0x000060, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionPanelContent_C_Setup_Mission_Rewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000068, "Member 'MissionPanelContent_C_Setup_Mission_Rewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

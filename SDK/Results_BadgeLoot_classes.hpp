@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_BadgeLoot.Results_BadgeLoot_C
 // 0x0130 (0x0370 - 0x0240)
@@ -100,56 +99,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_BadgeLoot_C">();
+		BP_STATIC_CLASS_IMPL("Results_BadgeLoot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_BadgeLoot_C")
 	}
 	static class UResults_BadgeLoot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_BadgeLoot_C>();
 	}
 };
-static_assert(alignof(UResults_BadgeLoot_C) == 0x000008, "Wrong alignment on UResults_BadgeLoot_C");
-static_assert(sizeof(UResults_BadgeLoot_C) == 0x000370, "Wrong size on UResults_BadgeLoot_C");
-static_assert(offsetof(UResults_BadgeLoot_C, UberGraphFrame) == 0x000240, "Member 'UResults_BadgeLoot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_SkipToFinalState) == 0x000248, "Member 'UResults_BadgeLoot_C::Anim_SkipToFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_Outro) == 0x000250, "Member 'UResults_BadgeLoot_C::Anim_Outro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_LeveledUp) == 0x000258, "Member 'UResults_BadgeLoot_C::Anim_LeveledUp' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ShiftBadges4) == 0x000260, "Member 'UResults_BadgeLoot_C::Anim_ShiftBadges4' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ShiftBadges3) == 0x000268, "Member 'UResults_BadgeLoot_C::Anim_ShiftBadges3' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ShiftBadges2) == 0x000270, "Member 'UResults_BadgeLoot_C::Anim_ShiftBadges2' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ShiftBadges1) == 0x000278, "Member 'UResults_BadgeLoot_C::Anim_ShiftBadges1' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ZoomIntro) == 0x000280, "Member 'UResults_BadgeLoot_C::Anim_ZoomIntro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ContinueButtonOutro) == 0x000288, "Member 'UResults_BadgeLoot_C::Anim_ContinueButtonOutro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Anim_ContinueButtonIntro) == 0x000290, "Member 'UResults_BadgeLoot_C::Anim_ContinueButtonIntro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Badge1) == 0x000298, "Member 'UResults_BadgeLoot_C::Badge1' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Badge2) == 0x0002A0, "Member 'UResults_BadgeLoot_C::Badge2' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Badge3) == 0x0002A8, "Member 'UResults_BadgeLoot_C::Badge3' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Badge4) == 0x0002B0, "Member 'UResults_BadgeLoot_C::Badge4' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, ButtonContinue) == 0x0002B8, "Member 'UResults_BadgeLoot_C::ButtonContinue' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, LootBar) == 0x0002C0, "Member 'UResults_BadgeLoot_C::LootBar' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, SafeZone_0) == 0x0002C8, "Member 'UResults_BadgeLoot_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, BadgeItems) == 0x0002D0, "Member 'UResults_BadgeLoot_C::BadgeItems' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, Finished) == 0x0002E0, "Member 'UResults_BadgeLoot_C::Finished' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, RewardBadgeItemsIndex) == 0x0002F0, "Member 'UResults_BadgeLoot_C::RewardBadgeItemsIndex' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, CurrentBadgeAdding) == 0x0002F8, "Member 'UResults_BadgeLoot_C::CurrentBadgeAdding' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, BadgeQueue) == 0x000300, "Member 'UResults_BadgeLoot_C::BadgeQueue' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, DelayBetweenBadgeIntros) == 0x000310, "Member 'UResults_BadgeLoot_C::DelayBetweenBadgeIntros' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, DelayBetweenIntroAndAddBadges) == 0x000314, "Member 'UResults_BadgeLoot_C::DelayBetweenIntroAndAddBadges' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, BadgeAnimationQueue) == 0x000318, "Member 'UResults_BadgeLoot_C::BadgeAnimationQueue' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, DelayBetweenAddingBadges) == 0x000328, "Member 'UResults_BadgeLoot_C::DelayBetweenAddingBadges' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, DelayBetweenAddingBadgesAndZoomIn) == 0x00032C, "Member 'UResults_BadgeLoot_C::DelayBetweenAddingBadgesAndZoomIn' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, DelayBetween3DChestIntroAndBadgesIntro) == 0x000330, "Member 'UResults_BadgeLoot_C::DelayBetween3DChestIntroAndBadgesIntro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, DelayBetweenOutroAndFinish) == 0x000334, "Member 'UResults_BadgeLoot_C::DelayBetweenOutroAndFinish' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, PlayRate) == 0x000338, "Member 'UResults_BadgeLoot_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, bSkippedToEnd) == 0x00033C, "Member 'UResults_BadgeLoot_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, bSkippingToEnd) == 0x00033D, "Member 'UResults_BadgeLoot_C::bSkippingToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, bWaitingFor3DChestProgression) == 0x00033E, "Member 'UResults_BadgeLoot_C::bWaitingFor3DChestProgression' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, bCanSkipToEnd) == 0x00033F, "Member 'UResults_BadgeLoot_C::bCanSkipToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, ChestLootUpgrade) == 0x000340, "Member 'UResults_BadgeLoot_C::ChestLootUpgrade' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, ChestSlide) == 0x000348, "Member 'UResults_BadgeLoot_C::ChestSlide' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, ChestReward) == 0x000350, "Member 'UResults_BadgeLoot_C::ChestReward' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, FinalChestReward) == 0x000358, "Member 'UResults_BadgeLoot_C::FinalChestReward' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, ChestDisappear) == 0x000360, "Member 'UResults_BadgeLoot_C::ChestDisappear' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLoot_C, OpenChestLoot) == 0x000368, "Member 'UResults_BadgeLoot_C::OpenChestLoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

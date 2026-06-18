@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C
 // 0x0060 (0x02A0 - 0x0240)
@@ -44,26 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SchematicTooltipCraftingIngredient_C">();
+		BP_STATIC_CLASS_IMPL("SchematicTooltipCraftingIngredient_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SchematicTooltipCraftingIngredient_C")
 	}
 	static class USchematicTooltipCraftingIngredient_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USchematicTooltipCraftingIngredient_C>();
 	}
 };
-static_assert(alignof(USchematicTooltipCraftingIngredient_C) == 0x000008, "Wrong alignment on USchematicTooltipCraftingIngredient_C");
-static_assert(sizeof(USchematicTooltipCraftingIngredient_C) == 0x0002A0, "Wrong size on USchematicTooltipCraftingIngredient_C");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, UberGraphFrame) == 0x000240, "Member 'USchematicTooltipCraftingIngredient_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, BorderPanel_B) == 0x000248, "Member 'USchematicTooltipCraftingIngredient_C::BorderPanel_B' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, BorderTooltip_A) == 0x000250, "Member 'USchematicTooltipCraftingIngredient_C::BorderTooltip_A' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, ImageIcon_A) == 0x000258, "Member 'USchematicTooltipCraftingIngredient_C::ImageIcon_A' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, ImageIcon_B) == 0x000260, "Member 'USchematicTooltipCraftingIngredient_C::ImageIcon_B' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, Switcher) == 0x000268, "Member 'USchematicTooltipCraftingIngredient_C::Switcher' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, TextAmount_A) == 0x000270, "Member 'USchematicTooltipCraftingIngredient_C::TextAmount_A' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, TextAmount_B) == 0x000278, "Member 'USchematicTooltipCraftingIngredient_C::TextAmount_B' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, VerticalBox_831) == 0x000280, "Member 'USchematicTooltipCraftingIngredient_C::VerticalBox_831' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, ingredient) == 0x000288, "Member 'USchematicTooltipCraftingIngredient_C::ingredient' has a wrong offset!");
-static_assert(offsetof(USchematicTooltipCraftingIngredient_C, PanelMode) == 0x000298, "Member 'USchematicTooltipCraftingIngredient_C::PanelMode' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

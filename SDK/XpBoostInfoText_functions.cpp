@@ -14,8 +14,7 @@
 #include "XpBoostInfoText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBoostInfoText.XpBoostInfoText_C.ExecuteUbergraph_XpBoostInfoText
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UXpBoostInfoText_C::Xp_Boost_Changed(int32 BoostAmount)
 // Function XpBoostInfoText.XpBoostInfoText_C.HandleAccountUpdate
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           NewInfo                                                (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    NewInfo                                                (Parm, NoDestructor)
 
 void UXpBoostInfoText_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
@@ -104,5 +103,5 @@ void UXpBoostInfoText_C::Update_Available_Boosts()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

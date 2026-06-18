@@ -13,8 +13,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum MediaAssets.EMediaPlayerTrack
 // NumValues: 0x0008
@@ -41,11 +40,5 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x0010(0x0018)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMediaPlayerOverlay) == 0x000008, "Wrong alignment on FMediaPlayerOverlay");
-static_assert(sizeof(FMediaPlayerOverlay) == 0x000028, "Wrong size on FMediaPlayerOverlay");
-static_assert(offsetof(FMediaPlayerOverlay, HasPosition) == 0x000000, "Member 'FMediaPlayerOverlay::HasPosition' has a wrong offset!");
-static_assert(offsetof(FMediaPlayerOverlay, Position) == 0x000004, "Member 'FMediaPlayerOverlay::Position' has a wrong offset!");
-static_assert(offsetof(FMediaPlayerOverlay, Text) == 0x000010, "Member 'FMediaPlayerOverlay::Text' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

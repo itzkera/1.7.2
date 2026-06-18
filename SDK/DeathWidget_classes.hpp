@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DeathWidget.DeathWidget_C
 // 0x00B0 (0x02E8 - 0x0238)
@@ -57,35 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DeathWidget_C">();
+		BP_STATIC_CLASS_IMPL("DeathWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeathWidget_C")
 	}
 	static class UDeathWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeathWidget_C>();
 	}
 };
-static_assert(alignof(UDeathWidget_C) == 0x000008, "Wrong alignment on UDeathWidget_C");
-static_assert(sizeof(UDeathWidget_C) == 0x0002E8, "Wrong size on UDeathWidget_C");
-static_assert(offsetof(UDeathWidget_C, UberGraphFrame) == 0x000238, "Member 'UDeathWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlock_PrimaryDeathText) == 0x000240, "Member 'UDeathWidget_C::CommonTextBlock_PrimaryDeathText' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlockExtraLives) == 0x000248, "Member 'UDeathWidget_C::CommonTextBlockExtraLives' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlockRespawn) == 0x000250, "Member 'UDeathWidget_C::CommonTextBlockRespawn' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlockResurrect) == 0x000258, "Member 'UDeathWidget_C::CommonTextBlockResurrect' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlockResurrectionTimerText) == 0x000260, "Member 'UDeathWidget_C::CommonTextBlockResurrectionTimerText' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlockWait) == 0x000268, "Member 'UDeathWidget_C::CommonTextBlockWait' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, CommonTextBlockWarningText) == 0x000270, "Member 'UDeathWidget_C::CommonTextBlockWarningText' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, KillerPortraitWidget) == 0x000278, "Member 'UDeathWidget_C::KillerPortraitWidget' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, LeftMouseBase) == 0x000280, "Member 'UDeathWidget_C::LeftMouseBase' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, RespawnBinding) == 0x000288, "Member 'UDeathWidget_C::RespawnBinding' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, RespawnBox) == 0x000290, "Member 'UDeathWidget_C::RespawnBox' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, ResurrectBinding) == 0x000298, "Member 'UDeathWidget_C::ResurrectBinding' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, RightMouseBase) == 0x0002A0, "Member 'UDeathWidget_C::RightMouseBase' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, StartDeathBox) == 0x0002A8, "Member 'UDeathWidget_C::StartDeathBox' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, RespawnTimerHandle) == 0x0002B0, "Member 'UDeathWidget_C::RespawnTimerHandle' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, ReleaseTimeRemaining) == 0x0002B8, "Member 'UDeathWidget_C::ReleaseTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, ReadyToRespawnText) == 0x0002C0, "Member 'UDeathWidget_C::ReadyToRespawnText' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, ShowExtraLivesTimerHandle) == 0x0002D8, "Member 'UDeathWidget_C::ShowExtraLivesTimerHandle' has a wrong offset!");
-static_assert(offsetof(UDeathWidget_C, ResurrectTimeRemaining) == 0x0002E0, "Member 'UDeathWidget_C::ResurrectTimeRemaining' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

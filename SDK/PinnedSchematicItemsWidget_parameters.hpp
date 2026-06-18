@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C.ExecuteUbergraph_PinnedSchematicItemsWidget
 // 0x0040 (0x0040 - 0x0000)
@@ -30,17 +30,6 @@ public:
 	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget) == 0x000008, "Wrong alignment on PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget");
-static_assert(sizeof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget) == 0x000040, "Wrong size on PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, EntryPoint) == 0x000000, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, CallFunc_GetChildrenCount_ReturnValue) == 0x000020, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, Temp_int_Variable) == 0x000028, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, CallFunc_GetChildAt_ReturnValue) == 0x000030, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000038, "Member 'PinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C.Refresh
 // 0x0090 (0x0090 - 0x0000)
@@ -71,27 +60,6 @@ public:
 	class UPinnedSchematicItemWidget_C*           K2Node_DynamicCast_AsPinned_Schematic_Item_Widget2; // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PinnedSchematicItemsWidget_C_Refresh) == 0x000008, "Wrong alignment on PinnedSchematicItemsWidget_C_Refresh");
-static_assert(sizeof(PinnedSchematicItemsWidget_C_Refresh) == 0x000090, "Wrong size on PinnedSchematicItemsWidget_C_Refresh");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, PinnedItem) == 0x000000, "Member 'PinnedSchematicItemsWidget_C_Refresh::PinnedItem' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, Index_0) == 0x000008, "Member 'PinnedSchematicItemsWidget_C_Refresh::Index_0' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, PinnedSchematics) == 0x000010, "Member 'PinnedSchematicItemsWidget_C_Refresh::PinnedSchematics' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, Temp_int_Variable) == 0x000020, "Member 'PinnedSchematicItemsWidget_C_Refresh::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_GetChildAt_ReturnValue) == 0x000028, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, K2Node_DynamicCast_AsPinned_Schematic_Item_Widget) == 0x000030, "Member 'PinnedSchematicItemsWidget_C_Refresh::K2Node_DynamicCast_AsPinned_Schematic_Item_Widget' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'PinnedSchematicItemsWidget_C_Refresh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_Array_Get_Item) == 0x000040, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_GetPinnedSchematicList_PinnedItems) == 0x000058, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_GetPinnedSchematicList_PinnedItems' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_GetChildrenCount_ReturnValue) == 0x000068, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_Subtract_IntInt_ReturnValue) == 0x00006C, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000071, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, CallFunc_GetChildAt_ReturnValue2) == 0x000078, "Member 'PinnedSchematicItemsWidget_C_Refresh::CallFunc_GetChildAt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, K2Node_DynamicCast_AsPinned_Schematic_Item_Widget2) == 0x000080, "Member 'PinnedSchematicItemsWidget_C_Refresh::K2Node_DynamicCast_AsPinned_Schematic_Item_Widget2' has a wrong offset!");
-static_assert(offsetof(PinnedSchematicItemsWidget_C_Refresh, K2Node_DynamicCast_bSuccess2) == 0x000088, "Member 'PinnedSchematicItemsWidget_C_Refresh::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

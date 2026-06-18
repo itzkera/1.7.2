@@ -14,8 +14,7 @@
 #include "HeroNotificationHandler_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroNotificationHandler.HeroNotificationHandler_C.CreateWidget
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -39,5 +38,5 @@ class UUserWidget* UHeroNotificationHandler_C::CreateWidget(class APlayerControl
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

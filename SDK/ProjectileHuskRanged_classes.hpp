@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ProjectileHuskRanged.ProjectileHuskRanged_C
 // 0x0030 (0x0828 - 0x07F8)
@@ -42,20 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ProjectileHuskRanged_C">();
+		BP_STATIC_CLASS_IMPL("ProjectileHuskRanged_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProjectileHuskRanged_C")
 	}
 	static class AProjectileHuskRanged_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AProjectileHuskRanged_C>();
 	}
 };
-static_assert(alignof(AProjectileHuskRanged_C) == 0x000008, "Wrong alignment on AProjectileHuskRanged_C");
-static_assert(sizeof(AProjectileHuskRanged_C) == 0x000828, "Wrong size on AProjectileHuskRanged_C");
-static_assert(offsetof(AProjectileHuskRanged_C, UberGraphFrame) == 0x000800, "Member 'AProjectileHuskRanged_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, Ranged_Projectile_Sound) == 0x000808, "Member 'AProjectileHuskRanged_C::Ranged_Projectile_Sound' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, ProjectileParticleSystem) == 0x000810, "Member 'AProjectileHuskRanged_C::ProjectileParticleSystem' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, GoalActor) == 0x000818, "Member 'AProjectileHuskRanged_C::GoalActor' has a wrong offset!");
-static_assert(offsetof(AProjectileHuskRanged_C, Exploded) == 0x000820, "Member 'AProjectileHuskRanged_C::Exploded' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

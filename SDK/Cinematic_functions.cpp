@@ -14,8 +14,7 @@
 #include "Cinematic_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Cinematic.Cinematic_C.ExecuteUbergraph_Cinematic
 // (HasDefaults)
@@ -95,7 +94,7 @@ void UCinematic_C::OnEnterState(EFortUIState PreviousUIState)
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 
 void UCinematic_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
@@ -118,7 +117,7 @@ void UCinematic_C::PushContentWidgetInternal(class UWidget* Widget, const struct
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UCinematic_C::HandleClientEvent_SkipCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -170,7 +169,7 @@ void UCinematic_C::Destruct()
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UCinematic_C::HandleClientEvent_QueueCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -208,8 +207,8 @@ void UCinematic_C::Construct()
 // Parameters:
 // class UMediaSource*                     MediaSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMediaSoundWave*                  MediaSoundWave                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UNamedSlot*                       MovieSlot_0                                            (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMovieWidget_C*                   MovieWidget_0                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNamedSlot*&                      MovieSlot_0                                            (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMovieWidget_C*&                  MovieWidget_0                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCinematic_C::ShowMovie(class UMediaSource* MediaSource, class UMediaSoundWave* MediaSoundWave, class UNamedSlot*& MovieSlot_0, class UMovieWidget_C*& MovieWidget_0)
 {
@@ -263,7 +262,7 @@ void UCinematic_C::SkipMovie()
 // Function Cinematic.Cinematic_C.PopContentWidgetInternal
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* UCinematic_C::PopContentWidgetInternal(const struct FContentPushState& State)
@@ -286,7 +285,7 @@ class UWidget* UCinematic_C::PopContentWidgetInternal(const struct FContentPushS
 // Function Cinematic.Cinematic_C.ClearMovieSlot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPanelWidget*                     MovieSlotToClear                                       (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget*&                    MovieSlotToClear                                       (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCinematic_C::ClearMovieSlot(class UPanelWidget*& MovieSlotToClear)
 {
@@ -308,7 +307,7 @@ void UCinematic_C::ClearMovieSlot(class UPanelWidget*& MovieSlotToClear)
 // Function Cinematic.Cinematic_C.ClearMovieWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortMovieWidget*                 MovieWidgetToClear                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortMovieWidget*&                MovieWidgetToClear                                     (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCinematic_C::ClearMovieWidget(class UFortMovieWidget*& MovieWidgetToClear)
 {
@@ -386,7 +385,7 @@ void UCinematic_C::StopAndClearSubtitles()
 // Function Cinematic.Cinematic_C.GetAudioTrackIndex
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   AudioTrack                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  AudioTrack                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCinematic_C::GetAudioTrackIndex(int32* AudioTrack)
 {
@@ -403,5 +402,5 @@ void UCinematic_C::GetAudioTrackIndex(int32* AudioTrack)
 		*AudioTrack = Parms.AudioTrack;
 }
 
-}
 
+SDK_NAMESPACE_END

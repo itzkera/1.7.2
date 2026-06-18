@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Hero_Management_HUDWrapper.Hero_Management_HUDWrapper_C
 // 0x0018 (0x0258 - 0x0240)
@@ -28,18 +27,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Hero_Management_HUDWrapper_C">();
+		BP_STATIC_CLASS_IMPL("Hero_Management_HUDWrapper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Hero_Management_HUDWrapper_C")
 	}
 	static class UHero_Management_HUDWrapper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHero_Management_HUDWrapper_C>();
 	}
 };
-static_assert(alignof(UHero_Management_HUDWrapper_C) == 0x000008, "Wrong alignment on UHero_Management_HUDWrapper_C");
-static_assert(sizeof(UHero_Management_HUDWrapper_C) == 0x000258, "Wrong size on UHero_Management_HUDWrapper_C");
-static_assert(offsetof(UHero_Management_HUDWrapper_C, Fill) == 0x000240, "Member 'UHero_Management_HUDWrapper_C::Fill' has a wrong offset!");
-static_assert(offsetof(UHero_Management_HUDWrapper_C, Frame) == 0x000248, "Member 'UHero_Management_HUDWrapper_C::Frame' has a wrong offset!");
-static_assert(offsetof(UHero_Management_HUDWrapper_C, Pattern) == 0x000250, "Member 'UHero_Management_HUDWrapper_C::Pattern' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

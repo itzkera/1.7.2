@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass StoreWeaponMaster_BP.StoreWeaponMaster_BP_C
 // 0x00B8 (0x0440 - 0x0388)
@@ -44,26 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreWeaponMaster_BP_C">();
+		BP_STATIC_CLASS_IMPL("StoreWeaponMaster_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreWeaponMaster_BP_C")
 	}
 	static class AStoreWeaponMaster_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AStoreWeaponMaster_BP_C>();
 	}
 };
-static_assert(alignof(AStoreWeaponMaster_BP_C) == 0x000008, "Wrong alignment on AStoreWeaponMaster_BP_C");
-static_assert(sizeof(AStoreWeaponMaster_BP_C) == 0x000440, "Wrong size on AStoreWeaponMaster_BP_C");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, UberGraphFrame) == 0x000388, "Member 'AStoreWeaponMaster_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, WeaponHiddenLocation) == 0x000390, "Member 'AStoreWeaponMaster_BP_C::WeaponHiddenLocation' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, SKMeleeWeapon) == 0x000398, "Member 'AStoreWeaponMaster_BP_C::SKMeleeWeapon' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, MeleeWeaponDefaultPosition) == 0x0003A0, "Member 'AStoreWeaponMaster_BP_C::MeleeWeaponDefaultPosition' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, WeaponRoot) == 0x0003A8, "Member 'AStoreWeaponMaster_BP_C::WeaponRoot' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, PinataSceneRoot) == 0x0003B0, "Member 'AStoreWeaponMaster_BP_C::PinataSceneRoot' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, SoundWeaponReady) == 0x0003B8, "Member 'AStoreWeaponMaster_BP_C::SoundWeaponReady' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, SoundWeaponSwing) == 0x0003D8, "Member 'AStoreWeaponMaster_BP_C::SoundWeaponSwing' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, SoundWeaponImpact) == 0x0003F8, "Member 'AStoreWeaponMaster_BP_C::SoundWeaponImpact' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, WeaponObject) == 0x000418, "Member 'AStoreWeaponMaster_BP_C::WeaponObject' has a wrong offset!");
-static_assert(offsetof(AStoreWeaponMaster_BP_C, WeaponAssetID) == 0x000420, "Member 'AStoreWeaponMaster_BP_C::WeaponAssetID' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

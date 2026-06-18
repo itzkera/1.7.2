@@ -14,8 +14,7 @@
 #include "T1_Research_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function T1_Research.T1_Research_C.ExecuteUbergraph_T1_Research
 // ()
@@ -70,5 +69,5 @@ void UT1_Research_C::PreConstruct(bool IsDesignTime)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

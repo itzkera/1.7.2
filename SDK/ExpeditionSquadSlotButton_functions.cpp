@@ -14,8 +14,7 @@
 #include "ExpeditionSquadSlotButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.ExecuteUbergraph_ExpeditionSquadSlotButton
 // ()
@@ -130,9 +129,9 @@ void UExpeditionSquadSlotButton_C::PreConstruct(bool IsDesignTime)
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.Get Squad Data
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             OutSquadId                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   OutSquadSlotIndex                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<EFortItemType>                   ItemTypes                                              (Parm, OutParm, ZeroConstructor)
+// class FName*                            OutSquadId                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  OutSquadSlotIndex                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<EFortItemType>*                  ItemTypes                                              (Parm, OutParm, ZeroConstructor)
 
 void UExpeditionSquadSlotButton_C::Get_Squad_Data(class FName* OutSquadId, int32* OutSquadSlotIndex, TArray<EFortItemType>* ItemTypes)
 {
@@ -169,5 +168,5 @@ void UExpeditionSquadSlotButton_C::Send_to_Skill_Tree()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

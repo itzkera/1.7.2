@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CombatManager.CombatManager_C
 // 0x0008 (0x0C08 - 0x0C00)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CombatManager_C">();
+		BP_STATIC_CLASS_IMPL("CombatManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CombatManager_C")
 	}
 	static class ACombatManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACombatManager_C>();
 	}
 };
-static_assert(alignof(ACombatManager_C) == 0x000008, "Wrong alignment on ACombatManager_C");
-static_assert(sizeof(ACombatManager_C) == 0x000C08, "Wrong size on ACombatManager_C");
-static_assert(offsetof(ACombatManager_C, DefaultSceneRoot) == 0x000C00, "Member 'ACombatManager_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

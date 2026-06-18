@@ -14,8 +14,7 @@
 #include "FullPartyBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FullPartyBar.FullPartyBar_C.ExecuteUbergraph_FullPartyBar
 // (HasDefaults)
@@ -375,7 +374,7 @@ bool UFullPartyBar_C::isTeammateSlotPopulated(int32 inSlotNUmber)
 // Function FullPartyBar.FullPartyBar_C.GetTotalNumFriendCodes
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Num_Codes                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Num_Codes                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFullPartyBar_C::GetTotalNumFriendCodes(int32* Num_Codes)
 {
@@ -490,8 +489,8 @@ void UFullPartyBar_C::InitializeStatLabels()
 // Function FullPartyBar.FullPartyBar_C.GetTooltipStat
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTag                     Token                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
-// struct FFortDisplayAttribute            OutDisplayAttribute                                    (Parm, OutParm)
+// const struct FGameplayTag&              Token                                                  (ConstParm, Parm, NoDestructor, HasGetValueTypeHash)
+// struct FFortDisplayAttribute*           OutDisplayAttribute                                    (Parm, OutParm)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UFullPartyBar_C::GetTooltipStat(const struct FGameplayTag& Token, struct FFortDisplayAttribute* OutDisplayAttribute)
@@ -513,5 +512,5 @@ bool UFullPartyBar_C::GetTooltipStat(const struct FGameplayTag& Token, struct FF
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

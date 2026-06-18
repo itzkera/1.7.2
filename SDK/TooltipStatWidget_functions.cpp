@@ -14,8 +14,7 @@
 #include "TooltipStatWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TooltipStatWidget.TooltipStatWidget_C.ExecuteUbergraph_TooltipStatWidget
 // ()
@@ -92,5 +91,5 @@ void UTooltipStatWidget_C::Init()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

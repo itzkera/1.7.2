@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.ExecuteUbergraph_QuestInfo_BulletList
 // 0x0008 (0x0008 - 0x0000)
@@ -24,10 +24,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList) == 0x000004, "Wrong alignment on QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList");
-static_assert(sizeof(QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList) == 0x000008, "Wrong size on QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList");
-static_assert(offsetof(QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList, EntryPoint) == 0x000000, "Member 'QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList, K2Node_Event_IsDesignTime) == 0x000004, "Member 'QuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +32,6 @@ struct QuestInfo_BulletList_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_BulletList_C_PreConstruct) == 0x000001, "Wrong alignment on QuestInfo_BulletList_C_PreConstruct");
-static_assert(sizeof(QuestInfo_BulletList_C_PreConstruct) == 0x000001, "Wrong size on QuestInfo_BulletList_C_PreConstruct");
-static_assert(offsetof(QuestInfo_BulletList_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuestInfo_BulletList_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntry
 // 0x0030 (0x0030 - 0x0000)
@@ -52,13 +45,6 @@ public:
 	class UQuestInfo_BulletListEntry_C*           CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestInfo_BulletList_C_AddEntry) == 0x000008, "Wrong alignment on QuestInfo_BulletList_C_AddEntry");
-static_assert(sizeof(QuestInfo_BulletList_C_AddEntry) == 0x000030, "Wrong size on QuestInfo_BulletList_C_AddEntry");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntry, EntryText) == 0x000000, "Member 'QuestInfo_BulletList_C_AddEntry::EntryText' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntry, CallFunc_GetChildrenCount_ReturnValue) == 0x000018, "Member 'QuestInfo_BulletList_C_AddEntry::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntry, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00001C, "Member 'QuestInfo_BulletList_C_AddEntry::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntry, CallFunc_Create_ReturnValue) == 0x000020, "Member 'QuestInfo_BulletList_C_AddEntry::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntry, CallFunc_AddChild_ReturnValue) == 0x000028, "Member 'QuestInfo_BulletList_C_AddEntry::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.InitDesignView
 // 0x000C (0x000C - 0x0000)
@@ -70,11 +56,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestInfo_BulletList_C_InitDesignView) == 0x000004, "Wrong alignment on QuestInfo_BulletList_C_InitDesignView");
-static_assert(sizeof(QuestInfo_BulletList_C_InitDesignView) == 0x00000C, "Wrong size on QuestInfo_BulletList_C_InitDesignView");
-static_assert(offsetof(QuestInfo_BulletList_C_InitDesignView, Temp_int_Variable) == 0x000000, "Member 'QuestInfo_BulletList_C_InitDesignView::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_InitDesignView, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'QuestInfo_BulletList_C_InitDesignView::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_InitDesignView, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuestInfo_BulletList_C_InitDesignView::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntryWithBrush
 // 0x00C8 (0x00C8 - 0x0000)
@@ -90,15 +71,6 @@ public:
 	uint8                                         Pad_BD[0x3];                                       // 0x00BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestInfo_BulletList_C_AddEntryWithBrush) == 0x000008, "Wrong alignment on QuestInfo_BulletList_C_AddEntryWithBrush");
-static_assert(sizeof(QuestInfo_BulletList_C_AddEntryWithBrush) == 0x0000C8, "Wrong size on QuestInfo_BulletList_C_AddEntryWithBrush");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, EntryText) == 0x000000, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::EntryText' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, EntryIconBrush) == 0x000018, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::EntryIconBrush' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, NewEntry) == 0x0000A8, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::NewEntry' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, CallFunc_Create_ReturnValue) == 0x0000B0, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, CallFunc_GetChildrenCount_ReturnValue) == 0x0000B8, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, CallFunc_Greater_IntInt_ReturnValue) == 0x0000BC, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_BulletList_C_AddEntryWithBrush, CallFunc_AddChild_ReturnValue) == 0x0000C0, "Member 'QuestInfo_BulletList_C_AddEntryWithBrush::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

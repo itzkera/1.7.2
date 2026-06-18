@@ -14,8 +14,7 @@
 #include "FrontEndRewards_EpicQuest_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.ExecuteUbergraph_FrontEndRewards_EpicQuest
 // ()
@@ -116,7 +115,7 @@ void UFrontEndRewards_EpicQuest_C::PopulateFromQuest(class UFortQuestItem* InQue
 // Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.HandleContinueAction
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_EpicQuest_C::HandleContinueAction(bool* Committed)
 {
@@ -161,5 +160,5 @@ void UFrontEndRewards_EpicQuest_C::MarkQuestAsSeen()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

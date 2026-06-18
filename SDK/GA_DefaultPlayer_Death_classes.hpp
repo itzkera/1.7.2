@@ -14,8 +14,7 @@
 #include "GAB_GenericDeath_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C
 // 0x0008 (0x0BD8 - 0x0BD0)
@@ -31,16 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DefaultPlayer_Death_C">();
+		BP_STATIC_CLASS_IMPL("GA_DefaultPlayer_Death_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DefaultPlayer_Death_C")
 	}
 	static class UGA_DefaultPlayer_Death_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DefaultPlayer_Death_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_Death_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Death_C");
-static_assert(sizeof(UGA_DefaultPlayer_Death_C) == 0x000BD8, "Wrong size on UGA_DefaultPlayer_Death_C");
-static_assert(offsetof(UGA_DefaultPlayer_Death_C, UberGraphFrame_GA_DefaultPlayer_Death_C) == 0x000BD0, "Member 'UGA_DefaultPlayer_Death_C::UberGraphFrame_GA_DefaultPlayer_Death_C' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

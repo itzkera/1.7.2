@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_Expedition.FrontEndRewards_Expedition_C
 // 0x0068 (0x0330 - 0x02C8)
@@ -54,26 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_Expedition_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_Expedition_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_Expedition_C")
 	}
 	static class UFrontEndRewards_Expedition_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_Expedition_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_Expedition_C) == 0x000008, "Wrong alignment on UFrontEndRewards_Expedition_C");
-static_assert(sizeof(UFrontEndRewards_Expedition_C) == 0x000330, "Wrong size on UFrontEndRewards_Expedition_C");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, UberGraphFrame) == 0x0002C8, "Member 'UFrontEndRewards_Expedition_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, OverlayCheck) == 0x0002D0, "Member 'UFrontEndRewards_Expedition_C::OverlayCheck' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, OverlayFailure) == 0x0002D8, "Member 'UFrontEndRewards_Expedition_C::OverlayFailure' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, OverlaySuccess) == 0x0002E0, "Member 'UFrontEndRewards_Expedition_C::OverlaySuccess' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, Switcher) == 0x0002E8, "Member 'UFrontEndRewards_Expedition_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, TextChanceSuccess) == 0x0002F0, "Member 'UFrontEndRewards_Expedition_C::TextChanceSuccess' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, TextExpeditionName) == 0x0002F8, "Member 'UFrontEndRewards_Expedition_C::TextExpeditionName' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, VehicleImage) == 0x000300, "Member 'UFrontEndRewards_Expedition_C::VehicleImage' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, ExpeditionItem) == 0x000308, "Member 'UFrontEndRewards_Expedition_C::ExpeditionItem' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, CurrentRewards) == 0x000310, "Member 'UFrontEndRewards_Expedition_C::CurrentRewards' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Expedition_C, OnExpeditionCompleted) == 0x000320, "Member 'UFrontEndRewards_Expedition_C::OnExpeditionCompleted' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

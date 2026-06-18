@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectionMainItemDetailsHostPanel.ItemInspectionMainItemDetailsHostPanel_C
 // 0x0030 (0x02C0 - 0x0290)
@@ -25,27 +24,22 @@ public:
 	class UItemAttributesDetailWidget_C*          ItemAttributesDetailWidget;                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemCalledOutAttributesDetailWidget_C* ItemCalledOutAttributesDetailWidget;               // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemDescriptionDetailWidget_C*         ItemDescriptionDetailWidget;                       // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMiniItemCraftingIngredientsDetailWidget_C* MiniItemCraftingIngredientsDetailWidget;           // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMiniItemCraftingIngredientsDetailWidget_C* MiniItemCraftingIngredientsDetailWidget;       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScrollBox*                             ScrollBox_0;                                       // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectionMainItemDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectionMainItemDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectionMainItemDetailsHostPanel_C")
 	}
 	static class UItemInspectionMainItemDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectionMainItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UItemInspectionMainItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UItemInspectionMainItemDetailsHostPanel_C");
-static_assert(sizeof(UItemInspectionMainItemDetailsHostPanel_C) == 0x0002C0, "Wrong size on UItemInspectionMainItemDetailsHostPanel_C");
-static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, HeaderWidget) == 0x000290, "Member 'UItemInspectionMainItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, ItemAttributesDetailWidget) == 0x000298, "Member 'UItemInspectionMainItemDetailsHostPanel_C::ItemAttributesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, ItemCalledOutAttributesDetailWidget) == 0x0002A0, "Member 'UItemInspectionMainItemDetailsHostPanel_C::ItemCalledOutAttributesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, ItemDescriptionDetailWidget) == 0x0002A8, "Member 'UItemInspectionMainItemDetailsHostPanel_C::ItemDescriptionDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, MiniItemCraftingIngredientsDetailWidget) == 0x0002B0, "Member 'UItemInspectionMainItemDetailsHostPanel_C::MiniItemCraftingIngredientsDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectionMainItemDetailsHostPanel_C, ScrollBox_0) == 0x0002B8, "Member 'UItemInspectionMainItemDetailsHostPanel_C::ScrollBox_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

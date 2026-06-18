@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementScreen.ItemManagementScreen_C
 // 0x0020 (0x0730 - 0x0710)
@@ -52,19 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementScreen_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementScreen_C")
 	}
 	static class UItemManagementScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementScreen_C>();
 	}
 };
-static_assert(alignof(UItemManagementScreen_C) == 0x000008, "Wrong alignment on UItemManagementScreen_C");
-static_assert(sizeof(UItemManagementScreen_C) == 0x000730, "Wrong size on UItemManagementScreen_C");
-static_assert(offsetof(UItemManagementScreen_C, UberGraphFrame) == 0x000710, "Member 'UItemManagementScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, SizeBox_Inventory) == 0x000718, "Member 'UItemManagementScreen_C::SizeBox_Inventory' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, ItemDragEnabled) == 0x000720, "Member 'UItemManagementScreen_C::ItemDragEnabled' has a wrong offset!");
-static_assert(offsetof(UItemManagementScreen_C, SelectedSchematicTileButton) == 0x000728, "Member 'UItemManagementScreen_C::SelectedSchematicTileButton' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

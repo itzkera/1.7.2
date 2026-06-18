@@ -14,24 +14,23 @@
 #include "BPI_StormShieldinterface_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BPI_StormShieldinterface.BPI_StormShieldInterface_C.CanLeaveOutpost
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    AllowedToLeave                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   AllowedToLeave                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void IBPI_StormShieldInterface_C::CanLeaveOutpost(bool* AllowedToLeave)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPI_StormShieldInterface_C", "CanLeaveOutpost");
+		Func = AsUObject()->Class->GetFunction("BPI_StormShieldInterface_C", "CanLeaveOutpost");
 
 	Params::BPI_StormShieldInterface_C_CanLeaveOutpost Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (AllowedToLeave != nullptr)
 		*AllowedToLeave = Parms.AllowedToLeave;
@@ -41,19 +40,19 @@ void IBPI_StormShieldInterface_C::CanLeaveOutpost(bool* AllowedToLeave)
 // Function BPI_StormShieldinterface.BPI_StormShieldInterface_C.GetOutpostReadyState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReadyToExpand                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    ReadyToInstallAmplifier                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ReadyToExpand                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ReadyToInstallAmplifier                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void IBPI_StormShieldInterface_C::GetOutpostReadyState(bool* ReadyToExpand, bool* ReadyToInstallAmplifier)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPI_StormShieldInterface_C", "GetOutpostReadyState");
+		Func = AsUObject()->Class->GetFunction("BPI_StormShieldInterface_C", "GetOutpostReadyState");
 
 	Params::BPI_StormShieldInterface_C_GetOutpostReadyState Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ReadyToExpand != nullptr)
 		*ReadyToExpand = Parms.ReadyToExpand;
@@ -62,5 +61,5 @@ void IBPI_StormShieldInterface_C::GetOutpostReadyState(bool* ReadyToExpand, bool
 		*ReadyToInstallAmplifier = Parms.ReadyToInstallAmplifier;
 }
 
-}
 
+SDK_NAMESPACE_END

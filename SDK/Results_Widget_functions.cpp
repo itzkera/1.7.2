@@ -14,8 +14,7 @@
 #include "Results_Widget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_Widget.Results_Widget_C.ExecuteUbergraph_Results_Widget
 // (HasDefaults)
@@ -84,7 +83,7 @@ void UResults_Widget_C::Wait_for_Replication()
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UResults_Widget_C::HandleClientEvent_PlayerLeftEvent(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -372,8 +371,8 @@ void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_5_
 // Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -394,8 +393,8 @@ void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_
 // Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 TargetId                                               (Parm, HasGetValueTypeHash)
-// class FString                           TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          TargetId                                               (Parm, HasGetValueTypeHash)
+// const class FString&                    TargetName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const class FString& TargetName)
 {
@@ -540,7 +539,7 @@ void UResults_Widget_C::PlayMissionResultSound()
 // Function Results_Widget.Results_Widget_C.LogAnalytics
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           ScreenName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    ScreenName                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
 // bool                                    bSkipped                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_Widget_C::LogAnalytics(const class FString& ScreenName, bool bSkipped)
@@ -562,7 +561,7 @@ void UResults_Widget_C::LogAnalytics(const class FString& ScreenName, bool bSkip
 // Function Results_Widget.Results_Widget_C.OnInputSkip
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bCommited                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_Widget_C::OnInputSkip(bool* bCommited)
 {
@@ -611,7 +610,7 @@ void UResults_Widget_C::Focus()
 // Function Results_Widget.Results_Widget_C.UseVideos
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bVideos                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bVideos                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_Widget_C::UseVideos(bool* bVideos)
 {
@@ -628,5 +627,5 @@ void UResults_Widget_C::UseVideos(bool* bVideos)
 		*bVideos = Parms.bVideos;
 }
 
-}
 
+SDK_NAMESPACE_END

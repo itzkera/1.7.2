@@ -14,8 +14,7 @@
 #include "PlayerChoiceWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerChoiceWidget.PlayerChoiceWidget_C.ExecuteUbergraph_PlayerChoiceWidget
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UPlayerChoiceWidget_C::Destruct()
 // Function PlayerChoiceWidget.PlayerChoiceWidget_C.SetChoices
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FChoiceData                      ChoiceItems                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FChoiceData&               ChoiceItems                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPlayerChoiceWidget_C::SetChoices(const struct FChoiceData& ChoiceItems)
 {
@@ -170,7 +169,7 @@ class FText UPlayerChoiceWidget_C::GetText_0()
 // Function PlayerChoiceWidget.PlayerChoiceWidget_C.CreateButtonAndSetText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FChoiceDataEntry                 ChoiceData                                             (Parm)
+// const struct FChoiceDataEntry&          ChoiceData                                             (Parm)
 // int32                                   ChoiceID                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPlayerChoiceButtonWidget_C*      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -191,5 +190,5 @@ class UPlayerChoiceButtonWidget_C* UPlayerChoiceWidget_C::CreateButtonAndSetText
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

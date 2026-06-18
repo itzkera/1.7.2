@@ -14,8 +14,7 @@
 #include "SchematicTooltipCraftingIngredient_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.ExecuteUbergraph_SchematicTooltipCraftingIngredient
 // ()
@@ -84,5 +83,5 @@ class UWidget* USchematicTooltipCraftingIngredient_C::Get_Tooltip()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

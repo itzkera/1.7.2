@@ -12,13 +12,12 @@
 
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 #include "ItemDisplayMode_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Item_TierBadge.Item_TierBadge_C
 // 0x0020 (0x0250 - 0x0230)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Item_TierBadge_C">();
+		BP_STATIC_CLASS_IMPL("Item_TierBadge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Item_TierBadge_C")
 	}
 	static class UItem_TierBadge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItem_TierBadge_C>();
 	}
 };
-static_assert(alignof(UItem_TierBadge_C) == 0x000008, "Wrong alignment on UItem_TierBadge_C");
-static_assert(sizeof(UItem_TierBadge_C) == 0x000250, "Wrong size on UItem_TierBadge_C");
-static_assert(offsetof(UItem_TierBadge_C, Border_Baseplate) == 0x000230, "Member 'UItem_TierBadge_C::Border_Baseplate' has a wrong offset!");
-static_assert(offsetof(UItem_TierBadge_C, HorizontalBox_StarGroup) == 0x000238, "Member 'UItem_TierBadge_C::HorizontalBox_StarGroup' has a wrong offset!");
-static_assert(offsetof(UItem_TierBadge_C, SizeBox_Container) == 0x000240, "Member 'UItem_TierBadge_C::SizeBox_Container' has a wrong offset!");
-static_assert(offsetof(UItem_TierBadge_C, Text_Level) == 0x000248, "Member 'UItem_TierBadge_C::Text_Level' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

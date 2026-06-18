@@ -15,8 +15,7 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Commando_Survivalist.GA_Commando_Survivalist_C
 // 0x0070 (0x0B80 - 0x0B10)
@@ -46,25 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Commando_Survivalist_C">();
+		BP_STATIC_CLASS_IMPL("GA_Commando_Survivalist_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Commando_Survivalist_C")
 	}
 	static class UGA_Commando_Survivalist_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Commando_Survivalist_C>();
 	}
 };
-static_assert(alignof(UGA_Commando_Survivalist_C) == 0x000008, "Wrong alignment on UGA_Commando_Survivalist_C");
-static_assert(sizeof(UGA_Commando_Survivalist_C) == 0x000B80, "Wrong size on UGA_Commando_Survivalist_C");
-static_assert(offsetof(UGA_Commando_Survivalist_C, UberGraphFrame_GA_Commando_Survivalist_C) == 0x000B10, "Member 'UGA_Commando_Survivalist_C::UberGraphFrame_GA_Commando_Survivalist_C' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, EventActivation) == 0x000B18, "Member 'UGA_Commando_Survivalist_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, GE_SurvivalistHeal) == 0x000B20, "Member 'UGA_Commando_Survivalist_C::GE_SurvivalistHeal' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, EventComplete) == 0x000B28, "Member 'UGA_Commando_Survivalist_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, HealMultiplier) == 0x000B30, "Member 'UGA_Commando_Survivalist_C::HealMultiplier' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, UpgradeHealMultiplier) == 0x000B34, "Member 'UGA_Commando_Survivalist_C::UpgradeHealMultiplier' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, TC_NoTimeToBleed) == 0x000B38, "Member 'UGA_Commando_Survivalist_C::TC_NoTimeToBleed' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, BaseHealMultiplier) == 0x000B58, "Member 'UGA_Commando_Survivalist_C::BaseHealMultiplier' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, NoTimeToBleed) == 0x000B5C, "Member 'UGA_Commando_Survivalist_C::NoTimeToBleed' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_Survivalist_C, TC_RangedWeapon) == 0x000B60, "Member 'UGA_Commando_Survivalist_C::TC_RangedWeapon' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "GET_Stun_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_DBNOResurrectStun.GE_DBNOResurrectStun_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_DBNOResurrectStun_C final : public UGET_Stun_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_DBNOResurrectStun_C">();
+		BP_STATIC_CLASS_IMPL("GE_DBNOResurrectStun_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_DBNOResurrectStun_C")
 	}
 	static class UGE_DBNOResurrectStun_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_DBNOResurrectStun_C>();
 	}
 };
-static_assert(alignof(UGE_DBNOResurrectStun_C) == 0x000010, "Wrong alignment on UGE_DBNOResurrectStun_C");
-static_assert(sizeof(UGE_DBNOResurrectStun_C) == 0x000660, "Wrong size on UGE_DBNOResurrectStun_C");
 
-}
-
+SDK_NAMESPACE_END

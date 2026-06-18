@@ -13,8 +13,7 @@
 #include "WM_Pin_Master_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WM_PinHard.WM_PinHard_C
 // 0x0000 (0x04B8 - 0x04B8)
@@ -23,15 +22,16 @@ class AWM_PinHard_C final : public AWM_Pin_Master_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WM_PinHard_C">();
+		BP_STATIC_CLASS_IMPL("WM_PinHard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WM_PinHard_C")
 	}
 	static class AWM_PinHard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWM_PinHard_C>();
 	}
 };
-static_assert(alignof(AWM_PinHard_C) == 0x000008, "Wrong alignment on AWM_PinHard_C");
-static_assert(sizeof(AWM_PinHard_C) == 0x0004B8, "Wrong size on AWM_PinHard_C");
 
-}
-
+SDK_NAMESPACE_END

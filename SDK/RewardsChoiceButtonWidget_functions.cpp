@@ -14,15 +14,14 @@
 #include "RewardsChoiceButtonWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.PopulateRewards
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class URewardsWidget_C*                 Owner_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   RewardIndex_0                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void URewardsChoiceButtonWidget_C::PopulateRewards(class URewardsWidget_C* Owner_0, int32 RewardIndex_0, TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -46,8 +45,8 @@ void URewardsChoiceButtonWidget_C::PopulateRewards(class URewardsWidget_C* Owner
 // Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.OnPreviewMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply URewardsChoiceButtonWidget_C::OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -101,5 +100,5 @@ void URewardsChoiceButtonWidget_C::SetHighlight(bool EnableHighlight)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

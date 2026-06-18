@@ -15,8 +15,8 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.ExecuteUbergraph_ItemManagementDetailsModeBox
 // 0x0088 (0x0088 - 0x0000)
@@ -46,26 +46,6 @@ public:
 	class UFortItemDetailsHostPanel*              K2Node_DynamicCast_AsFort_Item_Details_Host_Panel2; // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox) == 0x000088, "Wrong size on ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, EntryPoint) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabId) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabButton) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabId4) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabId4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabButton4) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabButton4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabId3) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabId3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabButton3) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabButton3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabId2) == 0x000038, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabId2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_TabButton2) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_TabButton2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_SwitchEnum_CmpSuccess) == 0x000048, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000050, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000058, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_DynamicCast_AsFort_Item_Details_Host_Panel) == 0x000060, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_DynamicCast_AsFort_Item_Details_Host_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x00006C, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000070, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_DynamicCast_AsFort_Item_Details_Host_Panel2) == 0x000078, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_DynamicCast_AsFort_Item_Details_Host_Panel2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox, K2Node_DynamicCast_bSuccess2) == 0x000080, "Member 'ItemManagementDetailsModeBox_C_ExecuteUbergraph_ItemManagementDetailsModeBox::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.BndEvt__DetailPanelTabList-MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -75,10 +55,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.BndEvt__DetailPanelTabList-OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -88,10 +64,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OI_K2Node_ComponentBoundEvent_27_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.BndEvt__DetailPanelTabList-OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -101,10 +73,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OP_K2Node_ComponentBoundEvent_15_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.BndEvt__DetailPanelTabList-OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -114,10 +82,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_OPI_K2Node_ComponentBoundEvent_4_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -127,10 +91,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleClose
 // 0x0018 (0x0018 - 0x0000)
@@ -142,11 +102,6 @@ public:
 	class UItemManagementScreen_C*                K2Node_DynamicCast_AsItem_Management_Screen;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleClose) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleClose");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleClose) == 0x000018, "Wrong size on ItemManagementDetailsModeBox_C_HandleClose");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleClose, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleClose::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleClose, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleClose::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleClose, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleClose::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleInspect
 // 0x0001 (0x0001 - 0x0000)
@@ -155,9 +110,6 @@ struct ItemManagementDetailsModeBox_C_HandleInspect final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleInspect) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleInspect");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleInspect) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_HandleInspect");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleInspect, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleInspect::PassThrough' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCompare
 // 0x0002 (0x0002 - 0x0000)
@@ -167,10 +119,6 @@ public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleCompare) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleCompare");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleCompare) == 0x000002, "Wrong size on ItemManagementDetailsModeBox_C_HandleCompare");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCompare, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleCompare::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCompare, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'ItemManagementDetailsModeBox_C_HandleCompare::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleMulch
 // 0x0001 (0x0001 - 0x0000)
@@ -179,9 +127,6 @@ struct ItemManagementDetailsModeBox_C_HandleMulch final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleMulch) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleMulch");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleMulch) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_HandleMulch");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleMulch, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleMulch::PassThrough' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleSort
 // 0x0001 (0x0001 - 0x0000)
@@ -190,9 +135,6 @@ struct ItemManagementDetailsModeBox_C_HandleSort final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleSort) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleSort");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleSort) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_HandleSort");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleSort, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleSort::PassThrough' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.TrySetupInputHandling
 // 0x0088 (0x0088 - 0x0000)
@@ -202,7 +144,7 @@ public:
 	TDelegate<void(bool bUsingGamepad)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(EFortQuickBars QuickbarIndex)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate4; // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsSchematic_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -217,23 +159,6 @@ public:
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_TrySetupInputHandling) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_TrySetupInputHandling");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_TrySetupInputHandling) == 0x000088, "Wrong size on ItemManagementDetailsModeBox_C_TrySetupInputHandling");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, K2Node_CreateDelegate_OutputDelegate3) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, K2Node_CreateDelegate_OutputDelegate4) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_IsSchematic_ReturnValue) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_IsSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_IsValid_ReturnValue) == 0x000041, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_GetInputActions_InputActionDataRows) == 0x000060, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_GetInputActions_InputActionDataRows' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_GetInputActions_ReturnValue) == 0x000070, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_GetInputActions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_GetContext_ReturnValue4) == 0x000078, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, K2Node_SwitchEnum_CmpSuccess) == 0x000080, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, K2Node_SwitchEnum2_CmpSuccess) == 0x000081, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_TrySetupInputHandling, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000082, "Member 'ItemManagementDetailsModeBox_C_TrySetupInputHandling::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleConsumeItem
 // 0x0058 (0x0058 - 0x0000)
@@ -256,21 +181,6 @@ public:
 	bool                                          CallFunc_CanActivateOnOthers_ReturnValue;          // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanActivateOnSelf_ReturnValue;            // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleConsumeItem) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleConsumeItem");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleConsumeItem) == 0x000058, "Wrong size on ItemManagementDetailsModeBox_C_HandleConsumeItem");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_GetInputManager_ReturnValue) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_Create_ReturnValue) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_IsInZone_ReturnValue) == 0x000038, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_GetContext_ReturnValue4) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, K2Node_DynamicCast_AsFort_Consumable_Account_Item) == 0x000048, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::K2Node_DynamicCast_AsFort_Consumable_Account_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_CanActivateOnOthers_ReturnValue) == 0x000051, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_CanActivateOnOthers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleConsumeItem, CallFunc_CanActivateOnSelf_ReturnValue) == 0x000052, "Member 'ItemManagementDetailsModeBox_C_HandleConsumeItem::CallFunc_CanActivateOnSelf_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCraft
 // 0x0018 (0x0018 - 0x0000)
@@ -282,11 +192,6 @@ public:
 	class UFortSchematicItem*                     K2Node_DynamicCast_AsFort_Schematic_Item;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleCraft) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleCraft");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleCraft) == 0x000018, "Wrong size on ItemManagementDetailsModeBox_C_HandleCraft");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraft, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleCraft::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraft, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleCraft::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraft, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleCraft::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.ShowSelection
 // 0x0001 (0x0001 - 0x0000)
@@ -295,9 +200,6 @@ struct ItemManagementDetailsModeBox_C_ShowSelection final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_ShowSelection) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_ShowSelection");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_ShowSelection) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_ShowSelection");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ShowSelection, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_ShowSelection::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleDrop
 // 0x0030 (0x0030 - 0x0000)
@@ -306,21 +208,13 @@ struct ItemManagementDetailsModeBox_C_HandleDrop final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 ChosenValue, class UFortItem* FortItem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 ChosenValue, class UFortItem* FortItem)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleDrop) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleDrop");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleDrop) == 0x000030, "Wrong size on ItemManagementDetailsModeBox_C_HandleDrop");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDrop, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleDrop::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDrop, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleDrop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDrop, K2Node_DynamicCast_AsFort_World_Item) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_HandleDrop::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDrop, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_HandleDrop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDrop, CallFunc_GetNumInStack_ReturnValue) == 0x000024, "Member 'ItemManagementDetailsModeBox_C_HandleDrop::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDrop, CallFunc_Greater_IntInt_ReturnValue) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_HandleDrop::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterDrop
 // 0x0020 (0x0020 - 0x0000)
@@ -330,10 +224,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterDrop) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterDrop");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterDrop) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterDrop");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterDrop, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterDrop::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterDrop, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterDrop::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterCraft
 // 0x0050 (0x0050 - 0x0000)
@@ -343,18 +233,10 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate2; // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0040(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterCraft) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterCraft");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterCraft) == 0x000050, "Wrong size on ItemManagementDetailsModeBox_C_RegisterCraft");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraft, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterCraft::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraft, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterCraft::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraft, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_RegisterCraft::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraft, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_RegisterCraft::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraft, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_RegisterCraft::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraft, K2Node_MakeStruct_DataTableRowHandle) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_RegisterCraft::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterMulch
 // 0x0020 (0x0020 - 0x0000)
@@ -364,10 +246,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterMulch) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterMulch");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterMulch) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterMulch");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterMulch, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterMulch::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterMulch, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterMulch::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterRetire
 // 0x0020 (0x0020 - 0x0000)
@@ -377,10 +255,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterRetire) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterRetire");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterRetire) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterRetire");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterRetire, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterRetire::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterRetire, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterRetire::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterInspect
 // 0x0020 (0x0020 - 0x0000)
@@ -390,10 +264,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterInspect) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterInspect");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterInspect) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterInspect");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInspect, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterInspect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInspect, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterInspect::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterBack
 // 0x0020 (0x0020 - 0x0000)
@@ -403,10 +273,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterBack) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterBack");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterBack) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterBack");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterBack, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterBack::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterBack, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterBack::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterSort
 // 0x0048 (0x0048 - 0x0000)
@@ -421,14 +287,6 @@ public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle2;             // 0x0028(0x0010)(NoDestructor)
 	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0038(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterSort) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterSort");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterSort) == 0x000048, "Wrong size on ItemManagementDetailsModeBox_C_RegisterSort");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterSort, InGame) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterSort::InGame' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterSort, Temp_bool_Variable) == 0x000001, "Member 'ItemManagementDetailsModeBox_C_RegisterSort::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterSort, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_RegisterSort::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterSort, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_RegisterSort::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterSort, K2Node_MakeStruct_DataTableRowHandle2) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_RegisterSort::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterSort, K2Node_Select_Default) == 0x000038, "Member 'ItemManagementDetailsModeBox_C_RegisterSort::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterConsumeItem
 // 0x0020 (0x0020 - 0x0000)
@@ -438,10 +296,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterConsumeItem) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterConsumeItem");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterConsumeItem) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterConsumeItem");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterConsumeItem, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterConsumeItem::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterConsumeItem, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterConsumeItem::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterCompare
 // 0x0020 (0x0020 - 0x0000)
@@ -451,10 +305,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterCompare) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterCompare");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterCompare) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterCompare");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCompare, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterCompare::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCompare, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterCompare::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterTrack
 // 0x0020 (0x0020 - 0x0000)
@@ -464,10 +314,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterTrack) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterTrack");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterTrack) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterTrack");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterTrack, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterTrack::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterTrack, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterTrack::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleTrack
 // 0x0028 (0x0028 - 0x0000)
@@ -484,16 +330,6 @@ public:
 	bool                                          CallFunc_SetSchematicPinned_ReturnValue2;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSchematicPinned_ReturnValue;            // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleTrack) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleTrack");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleTrack) == 0x000028, "Wrong size on ItemManagementDetailsModeBox_C_HandleTrack");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, CallFunc_SetSchematicPinned_ReturnValue) == 0x000021, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::CallFunc_SetSchematicPinned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, CallFunc_SetSchematicPinned_ReturnValue2) == 0x000022, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::CallFunc_SetSchematicPinned_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleTrack, CallFunc_IsSchematicPinned_ReturnValue) == 0x000023, "Member 'ItemManagementDetailsModeBox_C_HandleTrack::CallFunc_IsSchematicPinned_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterEquip
 // 0x0090 (0x0090 - 0x0000)
@@ -524,26 +360,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select_Default;                             // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterEquip) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterEquip");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterEquip) == 0x000090, "Wrong size on ItemManagementDetailsModeBox_C_RegisterEquip");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, Temp_byte_Variable) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, Temp_byte_Variable2) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_GetType_ReturnValue) == 0x000019, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00001A, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, Temp_bool_Variable) == 0x00001B, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, K2Node_MakeStruct_DataTableRowHandle) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_IsSlotted_ReturnValue) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_IsSlotted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, K2Node_CreateDelegate_OutputDelegate3) == 0x000050, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_DoesMatchSearchString_ReturnValue) == 0x000060, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_DoesMatchSearchString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_GetOwningController_ReturnValue) == 0x000068, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_GetOwningController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_Not_PreBool_ReturnValue) == 0x000070, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_IsEquipable_ReturnValue) == 0x000071, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_IsEquipable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, K2Node_MakeStruct_DataTableRowHandle2) == 0x000078, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, CallFunc_BooleanAND_ReturnValue) == 0x000088, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterEquip, K2Node_Select_Default) == 0x000089, "Member 'ItemManagementDetailsModeBox_C_RegisterEquip::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleEquip
 // 0x0001 (0x0001 - 0x0000)
@@ -552,9 +368,6 @@ struct ItemManagementDetailsModeBox_C_HandleEquip final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleEquip) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleEquip");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleEquip) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_HandleEquip");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleEquip, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleEquip::PassThrough' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.SetupDetailPanels
 // 0x0003 (0x0003 - 0x0000)
@@ -565,11 +378,6 @@ public:
 	bool                                          CallFunc_IsSchematic_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_SetupDetailPanels) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_SetupDetailPanels");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_SetupDetailPanels) == 0x000003, "Wrong size on ItemManagementDetailsModeBox_C_SetupDetailPanels");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_SetupDetailPanels, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_SetupDetailPanels::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_SetupDetailPanels, CallFunc_IsSchematic_ReturnValue) == 0x000001, "Member 'ItemManagementDetailsModeBox_C_SetupDetailPanels::CallFunc_IsSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_SetupDetailPanels, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'ItemManagementDetailsModeBox_C_SetupDetailPanels::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.UpdateConsumeItemButtonState
 // 0x0010 (0x0010 - 0x0000)
@@ -584,15 +392,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState) == 0x000010, "Wrong size on ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, K2Node_DynamicCast_AsFort_Consumable_Account_Item) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::K2Node_DynamicCast_AsFort_Consumable_Account_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, CallFunc_CanActivateOnOthers_ReturnValue) == 0x000009, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::CallFunc_CanActivateOnOthers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, CallFunc_CanActivateOnSelf_ReturnValue) == 0x00000A, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::CallFunc_CanActivateOnSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, CallFunc_Not_PreBool_ReturnValue) == 0x00000B, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, CallFunc_Not_PreBool_ReturnValue2) == 0x00000C, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState, CallFunc_BooleanAND_ReturnValue) == 0x00000D, "Member 'ItemManagementDetailsModeBox_C_UpdateConsumeItemButtonState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.SetTabStyling
 // 0x0018 (0x0018 - 0x0000)
@@ -603,11 +402,6 @@ public:
 	class UIconTextButton_C*                      K2Node_DynamicCast_AsIcon_Text_Button;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_SetTabStyling) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_SetTabStyling");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_SetTabStyling) == 0x000018, "Wrong size on ItemManagementDetailsModeBox_C_SetTabStyling");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_SetTabStyling, Object) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_SetTabStyling::Object' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_SetTabStyling, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_SetTabStyling::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_SetTabStyling, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_SetTabStyling::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterInventoryInspect
 // 0x0038 (0x0038 - 0x0000)
@@ -631,22 +425,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue3;                   // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select_Default;                             // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterInventoryInspect");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect) == 0x000038, "Wrong size on ItemManagementDetailsModeBox_C_RegisterInventoryInspect");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, Temp_bool_Variable) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, Temp_byte_Variable) == 0x000001, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, Temp_byte_Variable2) == 0x000002, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_GetType_ReturnValue) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, K2Node_MakeStruct_DataTableRowHandle) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000031, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000032, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x000033, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_BooleanOR_ReturnValue2) == 0x000035, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, CallFunc_BooleanOR_ReturnValue3) == 0x000036, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInventoryInspect, K2Node_Select_Default) == 0x000037, "Member 'ItemManagementDetailsModeBox_C_RegisterInventoryInspect::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleWorldItemListChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -656,10 +434,6 @@ public:
 	TArray<class UFortWorldItem*>                 ItemsAdded;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 ItemsRemoved;                                      // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleWorldItemListChanged) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleWorldItemListChanged");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleWorldItemListChanged) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_HandleWorldItemListChanged");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleWorldItemListChanged, ItemsAdded) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleWorldItemListChanged::ItemsAdded' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleWorldItemListChanged, ItemsRemoved) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleWorldItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RefreshCraftActions
 // 0x0048 (0x0048 - 0x0000)
@@ -694,32 +468,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select2_Default;                            // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RefreshCraftActions) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RefreshCraftActions");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RefreshCraftActions) == 0x000048, "Wrong size on ItemManagementDetailsModeBox_C_RefreshCraftActions");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, Temp_bool_Variable) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, Temp_byte_Variable) == 0x000009, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, Temp_byte_Variable2) == 0x00000A, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, Temp_byte_Variable3) == 0x000019, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, Temp_byte_Variable4) == 0x00001A, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, Temp_bool_Variable2) == 0x00001B, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_IsUsingGamepad_ReturnValue) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, K2Node_DynamicCast_bSuccess2) == 0x000038, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_GetSchematicResultType_ReturnValue) == 0x000039, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_GetSchematicResultType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_CanCraftSchematic_FailCause) == 0x00003A, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_CanCraftSchematic_FailCause' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_CanCraftSchematic_ReturnValue) == 0x00003B, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_CanCraftSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00003C, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00003D, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, K2Node_Select_Default) == 0x00003E, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x00003F, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_BooleanOR_ReturnValue) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_BooleanOR_ReturnValue2) == 0x000041, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, CallFunc_BooleanAND_ReturnValue) == 0x000042, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshCraftActions, K2Node_Select2_Default) == 0x000043, "Member 'ItemManagementDetailsModeBox_C_RefreshCraftActions::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterCraftAndSlot
 // 0x0038 (0x0038 - 0x0000)
@@ -731,12 +479,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0028(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterCraftAndSlot) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterCraftAndSlot");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterCraftAndSlot) == 0x000038, "Wrong size on ItemManagementDetailsModeBox_C_RegisterCraftAndSlot");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraftAndSlot, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterCraftAndSlot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraftAndSlot, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterCraftAndSlot::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraftAndSlot, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_RegisterCraftAndSlot::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraftAndSlot, K2Node_MakeStruct_DataTableRowHandle) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_RegisterCraftAndSlot::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleCraftAndSlot
 // 0x0028 (0x0028 - 0x0000)
@@ -751,13 +493,6 @@ public:
 	class UFortSchematicItem*                     K2Node_DynamicCast_AsFort_Schematic_Item;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleCraftAndSlot");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot) == 0x000028, "Wrong size on ItemManagementDetailsModeBox_C_HandleCraftAndSlot");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot, PassThrough) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleCraftAndSlot::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot, K2Node_DynamicCast_AsItem_Management_Screen) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleCraftAndSlot::K2Node_DynamicCast_AsItem_Management_Screen' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleCraftAndSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_HandleCraftAndSlot::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleCraftAndSlot, K2Node_DynamicCast_bSuccess2) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_HandleCraftAndSlot::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleInputMethodChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -766,9 +501,6 @@ struct ItemManagementDetailsModeBox_C_HandleInputMethodChanged final
 public:
 	bool                                          UsingGamepad;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleInputMethodChanged) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleInputMethodChanged");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleInputMethodChanged) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_HandleInputMethodChanged");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleInputMethodChanged, UsingGamepad) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleInputMethodChanged::UsingGamepad' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.DestroyQuantitySelectorWidget
 // 0x0001 (0x0001 - 0x0000)
@@ -777,9 +509,6 @@ struct ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget) == 0x000001, "Wrong size on ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.CreateQuantitySelectorWidget
 // 0x0048 (0x0048 - 0x0000)
@@ -796,15 +525,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UQuantitySelector_C*                    CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget) == 0x000048, "Wrong size on ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, Item) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, ConfirmationText) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::ConfirmationText' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, CallFunc_GetNumInStack_ReturnValue) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000028, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, CallFunc_Divide_IntInt_ReturnValue) == 0x000030, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget, CallFunc_Create_ReturnValue) == 0x000040, "Member 'ItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.DropItem
 // 0x0020 (0x0020 - 0x0000)
@@ -818,13 +538,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_DropItem) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_DropItem");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_DropItem) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_DropItem");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_DropItem, Item) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_DropItem::Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_DropItem, Quantity) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_DropItem::Quantity' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_DropItem, CallFunc_GetNumInStack_ReturnValue) == 0x00000C, "Member 'ItemManagementDetailsModeBox_C_DropItem::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_DropItem, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_DropItem::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_DropItem, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_DropItem::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleDropItemCallback
 // 0x0020 (0x0020 - 0x0000)
@@ -837,12 +550,6 @@ public:
 	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleDropItemCallback) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleDropItemCallback");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleDropItemCallback) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_HandleDropItemCallback");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDropItemCallback, ChosenQuantity) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleDropItemCallback::ChosenQuantity' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDropItemCallback, Item) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_HandleDropItemCallback::Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDropItemCallback, K2Node_DynamicCast_AsFort_World_Item) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_HandleDropItemCallback::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleDropItemCallback, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_HandleDropItemCallback::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterCraftingCompare
 // 0x0020 (0x0020 - 0x0000)
@@ -852,10 +559,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterCraftingCompare) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterCraftingCompare");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterCraftingCompare) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterCraftingCompare");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraftingCompare, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterCraftingCompare::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterCraftingCompare, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterCraftingCompare::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.ForceRefreshTab
 // 0x0028 (0x0028 - 0x0000)
@@ -871,15 +574,6 @@ public:
 	class FName                                   CallFunc_GetActiveTab_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_ForceRefreshTab) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_ForceRefreshTab");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_ForceRefreshTab) == 0x000028, "Wrong size on ItemManagementDetailsModeBox_C_ForceRefreshTab");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, TabList) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::TabList' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, TabName) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::TabName' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, CallFunc_SelectTabByID_ReturnValue) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::CallFunc_SelectTabByID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, CallFunc_SelectTabByID_ReturnValue2) == 0x000011, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::CallFunc_SelectTabByID_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, CallFunc_SelectTabByID_ReturnValue3) == 0x000012, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::CallFunc_SelectTabByID_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, CallFunc_GetActiveTab_ReturnValue) == 0x000018, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::CallFunc_GetActiveTab_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_ForceRefreshTab, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_ForceRefreshTab::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RefreshMulchAction
 // 0x0028 (0x0028 - 0x0000)
@@ -894,14 +588,6 @@ public:
 	bool                                          CallFunc_CanItemBeMulched_ReturnValue;             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RefreshMulchAction) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RefreshMulchAction");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RefreshMulchAction) == 0x000028, "Wrong size on ItemManagementDetailsModeBox_C_RefreshMulchAction");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshMulchAction, Temp_bool_Variable) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RefreshMulchAction::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshMulchAction, Temp_byte_Variable) == 0x000001, "Member 'ItemManagementDetailsModeBox_C_RefreshMulchAction::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshMulchAction, Temp_byte_Variable2) == 0x000002, "Member 'ItemManagementDetailsModeBox_C_RefreshMulchAction::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshMulchAction, CallFunc_CanItemBeMulched_OutRestrictionReason) == 0x000008, "Member 'ItemManagementDetailsModeBox_C_RefreshMulchAction::CallFunc_CanItemBeMulched_OutRestrictionReason' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshMulchAction, CallFunc_CanItemBeMulched_ReturnValue) == 0x000020, "Member 'ItemManagementDetailsModeBox_C_RefreshMulchAction::CallFunc_CanItemBeMulched_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RefreshMulchAction, K2Node_Select_Default) == 0x000021, "Member 'ItemManagementDetailsModeBox_C_RefreshMulchAction::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterLeaveInventory
 // 0x0020 (0x0020 - 0x0000)
@@ -911,10 +597,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterLeaveInventory) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterLeaveInventory");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterLeaveInventory) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterLeaveInventory");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterLeaveInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterLeaveInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterLeaveInventory, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterLeaveInventory::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleQuickbarContentsChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -924,10 +606,6 @@ public:
 	EFortQuickBars                                QuickbarIndex;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged) == 0x000001, "Wrong alignment on ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged) == 0x000002, "Wrong size on ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged, QuickbarIndex) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged::QuickbarIndex' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'ItemManagementDetailsModeBox_C_HandleQuickbarContentsChanged::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterInspectUpgrade
 // 0x0020 (0x0020 - 0x0000)
@@ -937,10 +615,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(ItemManagementDetailsModeBox_C_RegisterInspectUpgrade) == 0x000008, "Wrong alignment on ItemManagementDetailsModeBox_C_RegisterInspectUpgrade");
-static_assert(sizeof(ItemManagementDetailsModeBox_C_RegisterInspectUpgrade) == 0x000020, "Wrong size on ItemManagementDetailsModeBox_C_RegisterInspectUpgrade");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInspectUpgrade, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementDetailsModeBox_C_RegisterInspectUpgrade::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementDetailsModeBox_C_RegisterInspectUpgrade, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'ItemManagementDetailsModeBox_C_RegisterInspectUpgrade::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

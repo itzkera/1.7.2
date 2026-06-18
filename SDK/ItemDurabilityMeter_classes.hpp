@@ -16,8 +16,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemDurabilityMeter.ItemDurabilityMeter_C
 // 0x0038 (0x0268 - 0x0230)
@@ -42,22 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDurabilityMeter_C">();
+		BP_STATIC_CLASS_IMPL("ItemDurabilityMeter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDurabilityMeter_C")
 	}
 	static class UItemDurabilityMeter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDurabilityMeter_C>();
 	}
 };
-static_assert(alignof(UItemDurabilityMeter_C) == 0x000008, "Wrong alignment on UItemDurabilityMeter_C");
-static_assert(sizeof(UItemDurabilityMeter_C) == 0x000268, "Wrong size on UItemDurabilityMeter_C");
-static_assert(offsetof(UItemDurabilityMeter_C, UberGraphFrame) == 0x000230, "Member 'UItemDurabilityMeter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, _Image__Backfill) == 0x000238, "Member 'UItemDurabilityMeter_C::_Image__Backfill' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, _Image__Overfill) == 0x000240, "Member 'UItemDurabilityMeter_C::_Image__Overfill' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, Size_Box) == 0x000248, "Member 'UItemDurabilityMeter_C::Size_Box' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, DefaultPadding) == 0x000250, "Member 'UItemDurabilityMeter_C::DefaultPadding' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, MinimumFillHeight) == 0x000254, "Member 'UItemDurabilityMeter_C::MinimumFillHeight' has a wrong offset!");
-static_assert(offsetof(UItemDurabilityMeter_C, Backfill_Color) == 0x000258, "Member 'UItemDurabilityMeter_C::Backfill_Color' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -12,15 +12,14 @@
 
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
+#include "ElementalEnum_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "ElementalEnum_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass EnemyPawn_Parent.EnemyPawn_Parent_C
 // 0x0300 (0x1DF0 - 0x1AF0)
@@ -175,102 +174,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EnemyPawn_Parent_C">();
+		BP_STATIC_CLASS_IMPL("EnemyPawn_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnemyPawn_Parent_C")
 	}
 	static class AEnemyPawn_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEnemyPawn_Parent_C>();
 	}
 };
-static_assert(alignof(AEnemyPawn_Parent_C) == 0x000010, "Wrong alignment on AEnemyPawn_Parent_C");
-static_assert(sizeof(AEnemyPawn_Parent_C) == 0x001DF0, "Wrong size on AEnemyPawn_Parent_C");
-static_assert(offsetof(AEnemyPawn_Parent_C, UberGraphFrame) == 0x001AF0, "Member 'AEnemyPawn_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, WeaponCapsuleCollision) == 0x001AF8, "Member 'AEnemyPawn_Parent_C::WeaponCapsuleCollision' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Layer_Audio_Loop) == 0x001B00, "Member 'AEnemyPawn_Parent_C::Elemental_Layer_Audio_Loop' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, DeathMaterialParamsTL_RemoveShadow_07AA619C445DCC77E615709CFA0BD94D) == 0x001B08, "Member 'AEnemyPawn_Parent_C::DeathMaterialParamsTL_RemoveShadow_07AA619C445DCC77E615709CFA0BD94D' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, DeathMaterialParamsTL__Direction_07AA619C445DCC77E615709CFA0BD94D) == 0x001B0C, "Member 'AEnemyPawn_Parent_C::DeathMaterialParamsTL__Direction_07AA619C445DCC77E615709CFA0BD94D' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, DeathMaterialParamsTL) == 0x001B10, "Member 'AEnemyPawn_Parent_C::DeathMaterialParamsTL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C) == 0x001B18, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL_ColorFadeOutTrack_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C) == 0x001B1C, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL_FadeInTrack_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C) == 0x001B20, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL__Direction_999FBE184F147A4FE3025AB553DBFA9C' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Enemy_Spawn_Out_TL) == 0x001B28, "Member 'AEnemyPawn_Parent_C::Enemy_Spawn_Out_TL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001B30, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_ColorFadeOutTrack_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001B34, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL_FadeInTrack_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88) == 0x001B38, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL__Direction_5C7376B04DFAE1465B97F1BB1B873D88' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, EnemySpawnInTL) == 0x001B40, "Member 'AEnemyPawn_Parent_C::EnemySpawnInTL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Dynamic_Material_Instance_0) == 0x001B48, "Member 'AEnemyPawn_Parent_C::Dynamic_Material_Instance_0' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, StartingMinCapsuleShadowVis) == 0x001B50, "Member 'AEnemyPawn_Parent_C::StartingMinCapsuleShadowVis' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Death_Effects) == 0x001B58, "Member 'AEnemyPawn_Parent_C::Death_Effects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HQ_Death_Particle_System) == 0x001B60, "Member 'AEnemyPawn_Parent_C::HQ_Death_Particle_System' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HQ_DeathFX_SpawnRateScale) == 0x001B68, "Member 'AEnemyPawn_Parent_C::HQ_DeathFX_SpawnRateScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HQ_DeathFX_MaxDistance) == 0x001B6C, "Member 'AEnemyPawn_Parent_C::HQ_DeathFX_MaxDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_Death_Particle_System) == 0x001B70, "Member 'AEnemyPawn_Parent_C::LQ_Death_Particle_System' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_CylinderHeight) == 0x001B78, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_CylinderHeight' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_CylinderRadius) == 0x001B7C, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_CylinderRadius' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_DeathFX_SpawnRateScale) == 0x001B80, "Member 'AEnemyPawn_Parent_C::LQ_DeathFX_SpawnRateScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, LQ_PS_Socket_Attach) == 0x001B88, "Member 'AEnemyPawn_Parent_C::LQ_PS_Socket_Attach' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Death_Socket) == 0x001B90, "Member 'AEnemyPawn_Parent_C::Death_Socket' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, UsePOCScaleAndMaterials) == 0x001B98, "Member 'AEnemyPawn_Parent_C::UsePOCScaleAndMaterials' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCShouldOverrideMaterial) == 0x001B99, "Member 'AEnemyPawn_Parent_C::POCShouldOverrideMaterial' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCShouldOverrideMaterialValues) == 0x001B9A, "Member 'AEnemyPawn_Parent_C::POCShouldOverrideMaterialValues' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCOverrideMaterial) == 0x001BA0, "Member 'AEnemyPawn_Parent_C::POCOverrideMaterial' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialHairColor) == 0x001BA8, "Member 'AEnemyPawn_Parent_C::POCMaterialHairColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialSkinColor) == 0x001BB8, "Member 'AEnemyPawn_Parent_C::POCMaterialSkinColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialPantColor) == 0x001BC8, "Member 'AEnemyPawn_Parent_C::POCMaterialPantColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, POCMaterialShirtColor) == 0x001BD8, "Member 'AEnemyPawn_Parent_C::POCMaterialShirtColor' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, RandomStream) == 0x001BE8, "Member 'AEnemyPawn_Parent_C::RandomStream' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PseudoRandomNetworkedFloat) == 0x001BF0, "Member 'AEnemyPawn_Parent_C::PseudoRandomNetworkedFloat' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, UseRandomColorVariation) == 0x001BF4, "Member 'AEnemyPawn_Parent_C::UseRandomColorVariation' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskHairColors) == 0x001BF8, "Member 'AEnemyPawn_Parent_C::MaleHuskHairColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskSkinColors) == 0x001C08, "Member 'AEnemyPawn_Parent_C::MaleHuskSkinColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskPantColors) == 0x001C18, "Member 'AEnemyPawn_Parent_C::MaleHuskPantColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, MaleHuskShirtColors) == 0x001C28, "Member 'AEnemyPawn_Parent_C::MaleHuskShirtColors' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HieghtDistributionCurve) == 0x001C38, "Member 'AEnemyPawn_Parent_C::HieghtDistributionCurve' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, RandomizeMeshScale) == 0x001C40, "Member 'AEnemyPawn_Parent_C::RandomizeMeshScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnParticlesTransform) == 0x001C50, "Member 'AEnemyPawn_Parent_C::SpawnParticlesTransform' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Dynamic_Material_Instance_1) == 0x001C80, "Member 'AEnemyPawn_Parent_C::Dynamic_Material_Instance_1' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnParticles) == 0x001C88, "Member 'AEnemyPawn_Parent_C::SpawnParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterAmbientParticles) == 0x001C90, "Member 'AEnemyPawn_Parent_C::CharacterAmbientParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AllowHeadshot) == 0x001C98, "Member 'AEnemyPawn_Parent_C::AllowHeadshot' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, TC_RangedWeapon) == 0x001CA0, "Member 'AEnemyPawn_Parent_C::TC_RangedWeapon' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HeadshotParticleSystemComp) == 0x001CC0, "Member 'AEnemyPawn_Parent_C::HeadshotParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Additive_Hit_React_Montage) == 0x001CC8, "Member 'AEnemyPawn_Parent_C::Additive_Hit_React_Montage' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Death_Normal_Sound) == 0x001CD0, "Member 'AEnemyPawn_Parent_C::Death_Normal_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Elemental_Audio_Layer_Sound) == 0x001CD8, "Member 'AEnemyPawn_Parent_C::Elemental_Audio_Layer_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpecialEventHalloweenPumpkinHead) == 0x001CE0, "Member 'AEnemyPawn_Parent_C::SpecialEventHalloweenPumpkinHead' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, TC_NPCCharacterTypeHuskBasic) == 0x001CE8, "Member 'AEnemyPawn_Parent_C::TC_NPCCharacterTypeHuskBasic' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadPercentage) == 0x001D08, "Member 'AEnemyPawn_Parent_C::PumpkinHeadPercentage' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, GE_SpecialEvent_Halloween_PumpkinHead) == 0x001D10, "Member 'AEnemyPawn_Parent_C::GE_SpecialEvent_Halloween_PumpkinHead' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadActiveGE) == 0x001D18, "Member 'AEnemyPawn_Parent_C::PumpkinHeadActiveGE' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Pumpkin_Head_Mesh) == 0x001D20, "Member 'AEnemyPawn_Parent_C::Pumpkin_Head_Mesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Pumpkin_Eyeglow_Mesh) == 0x001D28, "Member 'AEnemyPawn_Parent_C::Pumpkin_Eyeglow_Mesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadRotation) == 0x001D30, "Member 'AEnemyPawn_Parent_C::PumpkinHeadRotation' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadScale) == 0x001D3C, "Member 'AEnemyPawn_Parent_C::PumpkinHeadScale' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, PumpkinHeadOffset) == 0x001D48, "Member 'AEnemyPawn_Parent_C::PumpkinHeadOffset' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Pumpkin_Eye_R) == 0x001D58, "Member 'AEnemyPawn_Parent_C::Pumpkin_Eye_R' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Pumpking_Eye_L) == 0x001D60, "Member 'AEnemyPawn_Parent_C::Pumpking_Eye_L' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Headshot_FX_Socket) == 0x001D68, "Member 'AEnemyPawn_Parent_C::Headshot_FX_Socket' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Material_Alteration_0) == 0x001D70, "Member 'AEnemyPawn_Parent_C::Material_Alteration_0' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Material_Alteration_1) == 0x001D78, "Member 'AEnemyPawn_Parent_C::Material_Alteration_1' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Temp_Disable_Elemental_Effects) == 0x001D80, "Member 'AEnemyPawn_Parent_C::Temp_Disable_Elemental_Effects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, ElementalType) == 0x001D81, "Member 'AEnemyPawn_Parent_C::ElementalType' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Particle_Fire_Ambient) == 0x001D88, "Member 'AEnemyPawn_Parent_C::Particle_Fire_Ambient' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Particle_Ice_Ambient) == 0x001D90, "Member 'AEnemyPawn_Parent_C::Particle_Ice_Ambient' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Particle_Electrical_Ambient) == 0x001D98, "Member 'AEnemyPawn_Parent_C::Particle_Electrical_Ambient' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SleepParticleSystemComp) == 0x001DA0, "Member 'AEnemyPawn_Parent_C::SleepParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Husk_Sleeping_Sound) == 0x001DA8, "Member 'AEnemyPawn_Parent_C::Husk_Sleeping_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HuskSleepSound) == 0x001DB0, "Member 'AEnemyPawn_Parent_C::HuskSleepSound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, WakeUpParticleSystemComp) == 0x001DB8, "Member 'AEnemyPawn_Parent_C::WakeUpParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenMaxDistance) == 0x001DC0, "Member 'AEnemyPawn_Parent_C::AwokenMaxDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenSkeletalMesh) == 0x001DC8, "Member 'AEnemyPawn_Parent_C::AwokenSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenSkelMeshMID) == 0x001DD0, "Member 'AEnemyPawn_Parent_C::AwokenSkelMeshMID' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenFadeInTime) == 0x001DD8, "Member 'AEnemyPawn_Parent_C::AwokenFadeInTime' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenFadeOutTime) == 0x001DDC, "Member 'AEnemyPawn_Parent_C::AwokenFadeOutTime' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, AwokenDuration) == 0x001DE0, "Member 'AEnemyPawn_Parent_C::AwokenDuration' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, Sleeping) == 0x001DE4, "Member 'AEnemyPawn_Parent_C::Sleeping' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, HasGlowColorsAssigned) == 0x001DE5, "Member 'AEnemyPawn_Parent_C::HasGlowColorsAssigned' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, SpawnInTimelineCompletedSuccessfully) == 0x001DE6, "Member 'AEnemyPawn_Parent_C::SpawnInTimelineCompletedSuccessfully' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_C, CharacterSpawnInSafetyCheckHandle) == 0x001DE8, "Member 'AEnemyPawn_Parent_C::CharacterSpawnInSafetyCheckHandle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

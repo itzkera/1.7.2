@@ -14,8 +14,7 @@
 #include "XpBoostDailyBonus_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBoostDailyBonus.XpBoostDailyBonus_C.ExecuteUbergraph_XpBoostDailyBonus
 // ()
@@ -68,7 +67,7 @@ void UXpBoostDailyBonus_C::Update_Daily_Bonus()
 // Function XpBoostDailyBonus.XpBoostDailyBonus_C.Get Current Boost
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Boost_Amount                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Boost_Amount                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UXpBoostDailyBonus_C::Get_Current_Boost(int32* Boost_Amount)
 {
@@ -85,5 +84,5 @@ void UXpBoostDailyBonus_C::Get_Current_Boost(int32* Boost_Amount)
 		*Boost_Amount = Parms.Boost_Amount;
 }
 
-}
 
+SDK_NAMESPACE_END

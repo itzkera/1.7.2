@@ -14,8 +14,7 @@
 #include "Announcement_Tutorial_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announcement_Tutorial.Announcement_Tutorial_C.ExecuteUbergraph_Announcement_Tutorial
 // (HasDefaults)
@@ -56,7 +55,7 @@ void UAnnouncement_Tutorial_C::ResetTutorialAnnoucementWidget()
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingHideUI(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -80,7 +79,7 @@ void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingHideUI(class UObject*
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingShowUI(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -116,7 +115,7 @@ void UAnnouncement_Tutorial_C::Construct()
 // Function Announcement_Tutorial.Announcement_Tutorial_C.HandleUpdateTutorial
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortClientAnnouncementData_TutorialTutorialData                                           (Parm)
+// const struct FFortClientAnnouncementData_Tutorial&TutorialData                                           (Parm)
 // bool                                    bShow                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAnnouncement_Tutorial_C::HandleUpdateTutorial(const struct FFortClientAnnouncementData_Tutorial& TutorialData, bool bShow)
@@ -138,7 +137,7 @@ void UAnnouncement_Tutorial_C::HandleUpdateTutorial(const struct FFortClientAnno
 // Function Announcement_Tutorial.Announcement_Tutorial_C.AddTextLine
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 // bool                                    Transparent                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAnnouncement_Tutorial_C::AddTextLine(const class FText& Text, bool Transparent)
@@ -160,7 +159,7 @@ void UAnnouncement_Tutorial_C::AddTextLine(const class FText& Text, bool Transpa
 // Function Announcement_Tutorial.Announcement_Tutorial_C.UpdateTutorialData
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortClientAnnouncementData_TutorialTutorialData                                           (Parm)
+// const struct FFortClientAnnouncementData_Tutorial&TutorialData                                           (Parm)
 
 void UAnnouncement_Tutorial_C::UpdateTutorialData(const struct FFortClientAnnouncementData_Tutorial& TutorialData)
 {
@@ -194,7 +193,7 @@ void UAnnouncement_Tutorial_C::RefreshTextLines()
 // Function Announcement_Tutorial.Announcement_Tutorial_C.GetLightboxVisibility
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortClientAnnouncementData_TutorialFortClientAnnouncementData_Tutorial                    (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortClientAnnouncementData_Tutorial&FortClientAnnouncementData_Tutorial                    (ConstParm, Parm, OutParm, ReferenceParm)
 // ESlateVisibility                        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 ESlateVisibility UAnnouncement_Tutorial_C::GetLightboxVisibility(const struct FFortClientAnnouncementData_Tutorial& FortClientAnnouncementData_Tutorial)
@@ -217,7 +216,7 @@ ESlateVisibility UAnnouncement_Tutorial_C::GetLightboxVisibility(const struct FF
 // Function Announcement_Tutorial.Announcement_Tutorial_C.CheckContinueTutorial
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortClientAnnouncementData_TutorialTutorialData                                           (Parm)
+// const struct FFortClientAnnouncementData_Tutorial&TutorialData                                           (Parm)
 
 void UAnnouncement_Tutorial_C::CheckContinueTutorial(const struct FFortClientAnnouncementData_Tutorial& TutorialData)
 {
@@ -247,5 +246,5 @@ void UAnnouncement_Tutorial_C::ContinueTutorial()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

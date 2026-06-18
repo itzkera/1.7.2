@@ -14,8 +14,7 @@
 #include "PlayerPawn_Commando_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.ExecuteUbergraph_PlayerPawn_Commando
 // (HasDefaults)
@@ -41,7 +40,7 @@ void APlayerPawn_Commando_C::ExecuteUbergraph_PlayerPawn_Commando(int32 EntryPoi
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Commando_C::GameplayCue_Abilities_Applied_Commando_MakeItRain(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -139,7 +138,7 @@ void APlayerPawn_Commando_C::SetMenuScreenClassName()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Commando_C::GameplayCue_Abilities_Applied_Commando_IncendiaryRounds(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -161,7 +160,7 @@ void APlayerPawn_Commando_C::GameplayCue_Abilities_Applied_Commando_IncendiaryRo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Commando_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -183,7 +182,7 @@ void APlayerPawn_Commando_C::GameplayCue_Abilities_Activation_Generic_HarvestBuf
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Commando_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -205,7 +204,7 @@ void APlayerPawn_Commando_C::GameplayCue_Abilities_Activation_Generic_HarvestBuf
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Commando_C::GameplayCue_Abilities_Activation_Commando_Shockwave(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -256,5 +255,5 @@ void APlayerPawn_Commando_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

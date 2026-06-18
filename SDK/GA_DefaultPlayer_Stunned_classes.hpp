@@ -16,8 +16,7 @@
 #include "GAB_GenericStunned_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C
 // 0x0098 (0x0B08 - 0x0A70)
@@ -61,29 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DefaultPlayer_Stunned_C">();
+		BP_STATIC_CLASS_IMPL("GA_DefaultPlayer_Stunned_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DefaultPlayer_Stunned_C")
 	}
 	static class UGA_DefaultPlayer_Stunned_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DefaultPlayer_Stunned_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_Stunned_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_Stunned_C");
-static_assert(sizeof(UGA_DefaultPlayer_Stunned_C) == 0x000B08, "Wrong size on UGA_DefaultPlayer_Stunned_C");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, UberGraphFrame_GA_DefaultPlayer_Stunned_C) == 0x000A70, "Member 'UGA_DefaultPlayer_Stunned_C::UberGraphFrame_GA_DefaultPlayer_Stunned_C' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, TakerSoulSuckVictimMontage) == 0x000A78, "Member 'UGA_DefaultPlayer_Stunned_C::TakerSoulSuckVictimMontage' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, TC_GT_NPCAbilityAttackMeleeSoulSuck) == 0x000A80, "Member 'UGA_DefaultPlayer_Stunned_C::TC_GT_NPCAbilityAttackMeleeSoulSuck' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, TC_NPCAbilityAttackMeleeSoulSuckRelease) == 0x000A88, "Member 'UGA_DefaultPlayer_Stunned_C::TC_NPCAbilityAttackMeleeSoulSuckRelease' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, TC_NPCAbilityAttackMeleeSoulSuck) == 0x000A90, "Member 'UGA_DefaultPlayer_Stunned_C::TC_NPCAbilityAttackMeleeSoulSuck' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, PlayerPawn) == 0x000AB0, "Member 'UGA_DefaultPlayer_Stunned_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, SoulSuckMontageSection) == 0x000AB8, "Member 'UGA_DefaultPlayer_Stunned_C::SoulSuckMontageSection' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, SoulSuckCurrentMontageSection) == 0x000AC0, "Member 'UGA_DefaultPlayer_Stunned_C::SoulSuckCurrentMontageSection' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, SoulSuckGoalActorNormalizedHealth) == 0x000AC8, "Member 'UGA_DefaultPlayer_Stunned_C::SoulSuckGoalActorNormalizedHealth' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, StunFeedbackEvent) == 0x000AD0, "Member 'UGA_DefaultPlayer_Stunned_C::StunFeedbackEvent' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, SoulSuckCameraShake) == 0x000AE8, "Member 'UGA_DefaultPlayer_Stunned_C::SoulSuckCameraShake' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, SoulSuckCameraAnimInst) == 0x000AF0, "Member 'UGA_DefaultPlayer_Stunned_C::SoulSuckCameraAnimInst' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, PlayerCameraManager) == 0x000AF8, "Member 'UGA_DefaultPlayer_Stunned_C::PlayerCameraManager' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_Stunned_C, PlayerController) == 0x000B00, "Member 'UGA_DefaultPlayer_Stunned_C::PlayerController' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

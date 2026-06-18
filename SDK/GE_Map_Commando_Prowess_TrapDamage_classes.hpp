@@ -13,8 +13,7 @@
 #include "GE_Map_Tech_to_AbilityDamage_TrapDamage_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Map_Commando_Prowess_TrapDamage.GE_Map_Commando_Prowess_TrapDamage_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_Map_Commando_Prowess_TrapDamage_C final : public UGE_Map_Tech_To_Abili
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Map_Commando_Prowess_TrapDamage_C">();
+		BP_STATIC_CLASS_IMPL("GE_Map_Commando_Prowess_TrapDamage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Map_Commando_Prowess_TrapDamage_C")
 	}
 	static class UGE_Map_Commando_Prowess_TrapDamage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Map_Commando_Prowess_TrapDamage_C>();
 	}
 };
-static_assert(alignof(UGE_Map_Commando_Prowess_TrapDamage_C) == 0x000010, "Wrong alignment on UGE_Map_Commando_Prowess_TrapDamage_C");
-static_assert(sizeof(UGE_Map_Commando_Prowess_TrapDamage_C) == 0x000660, "Wrong size on UGE_Map_Commando_Prowess_TrapDamage_C");
 
-}
-
+SDK_NAMESPACE_END

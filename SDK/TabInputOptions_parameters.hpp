@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TabInputOptions.TabInputOptions_C.ExecuteUbergraph_TabInputOptions
 // 0x00C8 (0x00C8 - 0x0000)
@@ -58,39 +58,8 @@ public:
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   K2Node_MakeStruct_Key;                             // 0x00A0(0x0018)(HasGetValueTypeHash)
-	TDelegate<void(int32 Number_in_List, bool Is_Primary_Button)> K2Node_CreateDelegate_OutputDelegate2;             // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 Number_in_List, bool Is_Primary_Button)> K2Node_CreateDelegate_OutputDelegate2; // 0x00B8(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions) == 0x000008, "Wrong alignment on TabInputOptions_C_ExecuteUbergraph_TabInputOptions");
-static_assert(sizeof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions) == 0x0000C8, "Wrong size on TabInputOptions_C_ExecuteUbergraph_TabInputOptions");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, EntryPoint) == 0x000000, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_byte_Variable) == 0x000004, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_CustomEvent_Number_In_List2) == 0x000018, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_CustomEvent_Number_In_List2' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_CustomEvent_Is_Primary_Button) == 0x00001C, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_CustomEvent_Is_Primary_Button' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_byte_Variable2) == 0x00001D, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_GetItemAt_ReturnValue) == 0x000020, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_GetItemAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_GetListWidget_ReturnValue) == 0x000028, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_GetListWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_DynamicCast_AsOptions_Menu_Input) == 0x000030, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_DynamicCast_AsOptions_Menu_Input' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_ComponentBoundEvent_Widget) == 0x000040, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_Event_bUsingGamepad) == 0x000048, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_Event_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_DynamicCast_AsOptions_Menu_Input2) == 0x000050, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_DynamicCast_AsOptions_Menu_Input2' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_MakeLiteralText_ReturnValue) == 0x000060, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_bool_Variable) == 0x000078, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_Not_PreBool_ReturnValue) == 0x000079, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_byte_Variable3) == 0x00007A, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_byte_Variable4) == 0x00007B, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_Not_PreBool_ReturnValue2) == 0x00007C, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, Temp_bool_Variable2) == 0x00007D, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_GetContext_ReturnValue) == 0x000080, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_IsUsingGamepad_ReturnValue) == 0x000088, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_Select_Default) == 0x000089, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, CallFunc_GetUINavigationManager_ReturnValue) == 0x000090, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_CustomEvent_Number_in_List) == 0x000098, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_CustomEvent_Number_in_List' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_Select2_Default) == 0x00009C, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_MakeStruct_Key) == 0x0000A0, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_MakeStruct_Key' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_ExecuteUbergraph_TabInputOptions, K2Node_CreateDelegate_OutputDelegate2) == 0x0000B8, "Member 'TabInputOptions_C_ExecuteUbergraph_TabInputOptions::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.UnbindClicked
 // 0x0004 (0x0004 - 0x0000)
@@ -99,9 +68,6 @@ struct TabInputOptions_C_UnbindClicked final
 public:
 	int32                                         Number_in_List;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabInputOptions_C_UnbindClicked) == 0x000004, "Wrong alignment on TabInputOptions_C_UnbindClicked");
-static_assert(sizeof(TabInputOptions_C_UnbindClicked) == 0x000004, "Wrong size on TabInputOptions_C_UnbindClicked");
-static_assert(offsetof(TabInputOptions_C_UnbindClicked, Number_in_List) == 0x000000, "Member 'TabInputOptions_C_UnbindClicked::Number_in_List' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.HandleUsingGamepadChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -110,9 +76,6 @@ struct TabInputOptions_C_HandleUsingGamepadChanged final
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_HandleUsingGamepadChanged) == 0x000001, "Wrong alignment on TabInputOptions_C_HandleUsingGamepadChanged");
-static_assert(sizeof(TabInputOptions_C_HandleUsingGamepadChanged) == 0x000001, "Wrong size on TabInputOptions_C_HandleUsingGamepadChanged");
-static_assert(offsetof(TabInputOptions_C_HandleUsingGamepadChanged, bUsingGamepad) == 0x000000, "Member 'TabInputOptions_C_HandleUsingGamepadChanged::bUsingGamepad' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -121,9 +84,6 @@ struct TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong alignment on TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature");
-static_assert(sizeof(TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong size on TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature");
-static_assert(offsetof(TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature, Widget) == 0x000000, "Member 'TabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.Input Clicked
 // 0x0008 (0x0008 - 0x0000)
@@ -133,10 +93,6 @@ public:
 	int32                                         Number_in_List;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Is_Primary_Button;                                 // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_Input_Clicked) == 0x000004, "Wrong alignment on TabInputOptions_C_Input_Clicked");
-static_assert(sizeof(TabInputOptions_C_Input_Clicked) == 0x000008, "Wrong size on TabInputOptions_C_Input_Clicked");
-static_assert(offsetof(TabInputOptions_C_Input_Clicked, Number_in_List) == 0x000000, "Member 'TabInputOptions_C_Input_Clicked::Number_in_List' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Input_Clicked, Is_Primary_Button) == 0x000004, "Member 'TabInputOptions_C_Input_Clicked::Is_Primary_Button' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.Overlay Key Pressed
 // 0x0020 (0x0020 - 0x0000)
@@ -146,10 +102,6 @@ public:
 	struct FKey                                   NewKey;                                            // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_Overlay_Key_Pressed) == 0x000008, "Wrong alignment on TabInputOptions_C_Overlay_Key_Pressed");
-static_assert(sizeof(TabInputOptions_C_Overlay_Key_Pressed) == 0x000020, "Wrong size on TabInputOptions_C_Overlay_Key_Pressed");
-static_assert(offsetof(TabInputOptions_C_Overlay_Key_Pressed, NewKey) == 0x000000, "Member 'TabInputOptions_C_Overlay_Key_Pressed::NewKey' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Overlay_Key_Pressed, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000018, "Member 'TabInputOptions_C_Overlay_Key_Pressed::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
 
 // Function TabInputOptions.TabInputOptions_C.Set Input Enabled
 // 0x0040 (0x0040 - 0x0000)
@@ -170,17 +122,6 @@ public:
 	class UOptionsMenuInput_C*                    K2Node_DynamicCast_AsOptions_Menu_Input;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabInputOptions_C_Set_Input_Enabled) == 0x000008, "Wrong alignment on TabInputOptions_C_Set_Input_Enabled");
-static_assert(sizeof(TabInputOptions_C_Set_Input_Enabled) == 0x000040, "Wrong size on TabInputOptions_C_Set_Input_Enabled");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, Temp_int_Variable) == 0x000000, "Member 'TabInputOptions_C_Set_Input_Enabled::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'TabInputOptions_C_Set_Input_Enabled::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'TabInputOptions_C_Set_Input_Enabled::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, CallFunc_GetItemAt_ReturnValue) == 0x000010, "Member 'TabInputOptions_C_Set_Input_Enabled::CallFunc_GetItemAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, CallFunc_GetNumItems_ReturnValue) == 0x000018, "Member 'TabInputOptions_C_Set_Input_Enabled::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, CallFunc_GetListWidget_ReturnValue) == 0x000020, "Member 'TabInputOptions_C_Set_Input_Enabled::CallFunc_GetListWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'TabInputOptions_C_Set_Input_Enabled::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, K2Node_DynamicCast_AsOptions_Menu_Input) == 0x000030, "Member 'TabInputOptions_C_Set_Input_Enabled::K2Node_DynamicCast_AsOptions_Menu_Input' has a wrong offset!");
-static_assert(offsetof(TabInputOptions_C_Set_Input_Enabled, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'TabInputOptions_C_Set_Input_Enabled::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

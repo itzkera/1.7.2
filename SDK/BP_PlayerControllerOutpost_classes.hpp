@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C
 // 0x0020 (0x2A00 - 0x29E0)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PlayerControllerOutpost_C">();
+		BP_STATIC_CLASS_IMPL("BP_PlayerControllerOutpost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PlayerControllerOutpost_C")
 	}
 	static class ABP_PlayerControllerOutpost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PlayerControllerOutpost_C>();
 	}
 };
-static_assert(alignof(ABP_PlayerControllerOutpost_C) == 0x000008, "Wrong alignment on ABP_PlayerControllerOutpost_C");
-static_assert(sizeof(ABP_PlayerControllerOutpost_C) == 0x002A00, "Wrong size on ABP_PlayerControllerOutpost_C");
-static_assert(offsetof(ABP_PlayerControllerOutpost_C, UberGraphFrame) == 0x0029E0, "Member 'ABP_PlayerControllerOutpost_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerControllerOutpost_C, NewVar_0) == 0x0029E8, "Member 'ABP_PlayerControllerOutpost_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerControllerOutpost_C, NewVar_1) == 0x0029F0, "Member 'ABP_PlayerControllerOutpost_C::NewVar_1' has a wrong offset!");
-static_assert(offsetof(ABP_PlayerControllerOutpost_C, GetHelp) == 0x0029F8, "Member 'ABP_PlayerControllerOutpost_C::GetHelp' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

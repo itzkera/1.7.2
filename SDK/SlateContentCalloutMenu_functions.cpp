@@ -14,8 +14,7 @@
 #include "SlateContentCalloutMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SlateContentCalloutMenu.SlateContentCalloutMenu_C.ExecuteUbergraph_SlateContentCalloutMenu
 // ()
@@ -54,7 +53,7 @@ void USlateContentCalloutMenu_C::Construct()
 // Function SlateContentCalloutMenu.SlateContentCalloutMenu_C.Get Size Box
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USizeBox*                         Size_Box                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USizeBox**                        Size_Box                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USlateContentCalloutMenu_C::Get_Size_Box(class USizeBox** Size_Box)
 {
@@ -71,5 +70,5 @@ void USlateContentCalloutMenu_C::Get_Size_Box(class USizeBox** Size_Box)
 		*Size_Box = Parms.Size_Box;
 }
 
-}
 
+SDK_NAMESPACE_END

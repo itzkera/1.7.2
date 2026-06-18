@@ -14,8 +14,7 @@
 #include "BluGloRequestHandler_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BluGloRequestHandler.BluGloRequestHandler_C.ExecuteUbergraph_BluGloRequestHandler
 // (HasDefaults)
@@ -42,7 +41,7 @@ void UBluGloRequestHandler_C::ExecuteUbergraph_BluGloRequestHandler(int32 EntryP
 // Parameters:
 // int32                                   NumBluGloToSpawn_0                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           ActorToSpawnFrom_0                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 NumBluGloToSpawn_0, class AActor* ActorToSpawnFrom_0, const struct FVector& LocationToSpawnFromIfActorInvalid)
 {
@@ -86,7 +85,7 @@ void UBluGloRequestHandler_C::EQSQueryFinished(class UEnvQueryInstanceBlueprintW
 // Function BluGloRequestHandler.BluGloRequestHandler_C.BuildLocationsFromQueryLocations
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FVector>                  QueryResultLocations                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector>&                 QueryResultLocations                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UBluGloRequestHandler_C::BuildLocationsFromQueryLocations(TArray<struct FVector>& QueryResultLocations)
 {
@@ -118,5 +117,5 @@ void UBluGloRequestHandler_C::BuildLocationsRandomly()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PinnedSchematicItemWidget.PinnedSchematicItemWidget_C
 // 0x0038 (0x0270 - 0x0238)
@@ -46,21 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PinnedSchematicItemWidget_C">();
+		BP_STATIC_CLASS_IMPL("PinnedSchematicItemWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PinnedSchematicItemWidget_C")
 	}
 	static class UPinnedSchematicItemWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPinnedSchematicItemWidget_C>();
 	}
 };
-static_assert(alignof(UPinnedSchematicItemWidget_C) == 0x000008, "Wrong alignment on UPinnedSchematicItemWidget_C");
-static_assert(sizeof(UPinnedSchematicItemWidget_C) == 0x000270, "Wrong size on UPinnedSchematicItemWidget_C");
-static_assert(offsetof(UPinnedSchematicItemWidget_C, UberGraphFrame) == 0x000238, "Member 'UPinnedSchematicItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemWidget_C, FortItemCard_XXSSchematicItemCard) == 0x000240, "Member 'UPinnedSchematicItemWidget_C::FortItemCard_XXSSchematicItemCard' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemWidget_C, IngredientBox) == 0x000248, "Member 'UPinnedSchematicItemWidget_C::IngredientBox' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemWidget_C, TextItemName) == 0x000250, "Member 'UPinnedSchematicItemWidget_C::TextItemName' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemWidget_C, PinnedSchematic) == 0x000258, "Member 'UPinnedSchematicItemWidget_C::PinnedSchematic' has a wrong offset!");
-static_assert(offsetof(UPinnedSchematicItemWidget_C, CraftingIngredients) == 0x000260, "Member 'UPinnedSchematicItemWidget_C::CraftingIngredients' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

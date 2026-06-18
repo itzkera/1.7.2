@@ -14,8 +14,7 @@
 #include "B_DtB_LightningZap_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_DtB_LightningZap.B_DtB_LightningZap_C.ExecuteUbergraph_B_DtB_LightningZap
 // (HasDefaults)
@@ -84,5 +83,5 @@ void AB_DtB_LightningZap_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "Border_ItemInfoHeader_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-ItemInfoHeader_BrightBar.Border-ItemInfoHeader_BrightBar_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_ItemInfoHeader_BrightBar_C final : public UBorder_ItemInfoHeader_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-ItemInfoHeader_BrightBar_C">();
+		BP_STATIC_CLASS_IMPL("Border-ItemInfoHeader_BrightBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-ItemInfoHeader_BrightBar_C")
 	}
 	static class UBorder_ItemInfoHeader_BrightBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_ItemInfoHeader_BrightBar_C>();
 	}
 };
-static_assert(alignof(UBorder_ItemInfoHeader_BrightBar_C) == 0x000008, "Wrong alignment on UBorder_ItemInfoHeader_BrightBar_C");
-static_assert(sizeof(UBorder_ItemInfoHeader_BrightBar_C) == 0x0000B8, "Wrong size on UBorder_ItemInfoHeader_BrightBar_C");
 
-}
-
+SDK_NAMESPACE_END

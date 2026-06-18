@@ -14,8 +14,7 @@
 #include "Results_TeleportPadPlayerTop_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.ExecuteUbergraph_Results_TeleportPadPlayerTop
 // (HasDefaults)
@@ -88,7 +87,7 @@ void UResults_TeleportPadPlayerTop_C::IntroName()
 // Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.Initialize
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 UniqueNetID                                            (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          UniqueNetID                                            (Parm, HasGetValueTypeHash)
 // class UFortUIScoreReport*               ScoreReport                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   ScoreReportIndex                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -122,5 +121,5 @@ void UResults_TeleportPadPlayerTop_C::Play_Anim_Intro()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

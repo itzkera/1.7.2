@@ -14,8 +14,7 @@
 #include "GA_Commando_AmmoRecovery_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.ExecuteUbergraph_GA_Commando_AmmoRecovery
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGA_Commando_AmmoRecovery_C::ExecuteUbergraph_GA_Commando_AmmoRecovery(int3
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData_0                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData_0                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGA_Commando_AmmoRecovery_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
@@ -80,8 +79,8 @@ void UGA_Commando_AmmoRecovery_C::SetupAbility(class UAbilitySystemComponent* Ab
 // Function GA_Commando_AmmoRecovery.GA_Commando_AmmoRecovery_C.K2_ShouldAbilityRespondToEvent
 // (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FGameplayAbilityActorInfo        ActorInfo                                              (Parm, ContainsInstancedReference)
-// struct FGameplayEventData               Payload                                                (Parm)
+// const struct FGameplayAbilityActorInfo& ActorInfo                                              (Parm, ContainsInstancedReference)
+// const struct FGameplayEventData&        Payload                                                (Parm)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UGA_Commando_AmmoRecovery_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
@@ -101,5 +100,5 @@ bool UGA_Commando_AmmoRecovery_C::K2_ShouldAbilityRespondToEvent(const struct FG
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

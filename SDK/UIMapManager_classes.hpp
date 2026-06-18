@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass UIMapManager.UIMapManager_C
 // 0x0008 (0x04F0 - 0x04E8)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIMapManager_C">();
+		BP_STATIC_CLASS_IMPL("UIMapManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIMapManager_C")
 	}
 	static class AUIMapManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUIMapManager_C>();
 	}
 };
-static_assert(alignof(AUIMapManager_C) == 0x000008, "Wrong alignment on AUIMapManager_C");
-static_assert(sizeof(AUIMapManager_C) == 0x0004F0, "Wrong size on AUIMapManager_C");
-static_assert(offsetof(AUIMapManager_C, DefaultSceneRoot) == 0x0004E8, "Member 'AUIMapManager_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

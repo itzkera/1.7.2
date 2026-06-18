@@ -14,8 +14,7 @@
 #include "CheckRateExperienceAction_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CheckRateExperienceAction.CheckRateExperienceAction_C.ExecuteUbergraph_CheckRateExperienceAction
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ACheckRateExperienceAction_C::ExecuteUbergraph_CheckRateExperienceAction(in
 // Function CheckRateExperienceAction.CheckRateExperienceAction_C.Execute
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortScriptedActionParams        Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortScriptedActionParams& Params_0                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ACheckRateExperienceAction_C::Execute(const struct FFortScriptedActionParams& Params_0)
 {
@@ -62,7 +61,7 @@ void ACheckRateExperienceAction_C::Execute(const struct FFortScriptedActionParam
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void ACheckRateExperienceAction_C::HandleClientEvent_FinishedModalQueue(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -94,5 +93,5 @@ void ACheckRateExperienceAction_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

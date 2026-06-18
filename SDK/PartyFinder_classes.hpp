@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PartyFinder.PartyFinder_C
 // 0x0128 (0x0530 - 0x0408)
@@ -70,30 +69,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyFinder_C">();
+		BP_STATIC_CLASS_IMPL("PartyFinder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyFinder_C")
 	}
 	static class UPartyFinder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPartyFinder_C>();
 	}
 };
-static_assert(alignof(UPartyFinder_C) == 0x000008, "Wrong alignment on UPartyFinder_C");
-static_assert(sizeof(UPartyFinder_C) == 0x000530, "Wrong size on UPartyFinder_C");
-static_assert(offsetof(UPartyFinder_C, UberGraphFrame) == 0x000410, "Member 'UPartyFinder_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, CloseButton) == 0x000418, "Member 'UPartyFinder_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, IgnoreButton) == 0x000420, "Member 'UPartyFinder_C::IgnoreButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, Image_1) == 0x000428, "Member 'UPartyFinder_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, InviteButton) == 0x000430, "Member 'UPartyFinder_C::InviteButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, InviteIgnoreSwitcher) == 0x000438, "Member 'UPartyFinder_C::InviteIgnoreSwitcher' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, JoinButton) == 0x000440, "Member 'UPartyFinder_C::JoinButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, Lightbox) == 0x000448, "Member 'UPartyFinder_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, PartyInfo) == 0x000450, "Member 'UPartyFinder_C::PartyInfo' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, SocialTreeView) == 0x000458, "Member 'UPartyFinder_C::SocialTreeView' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, ViewProfileButton) == 0x000460, "Member 'UPartyFinder_C::ViewProfileButton' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, ViewProfileVisibility) == 0x000468, "Member 'UPartyFinder_C::ViewProfileVisibility' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, LeaveConfirmationIcon) == 0x000470, "Member 'UPartyFinder_C::LeaveConfirmationIcon' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, LeaveConfirmationTitle) == 0x000500, "Member 'UPartyFinder_C::LeaveConfirmationTitle' has a wrong offset!");
-static_assert(offsetof(UPartyFinder_C, LeaveConfirmationDescription) == 0x000518, "Member 'UPartyFinder_C::LeaveConfirmationDescription' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

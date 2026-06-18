@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StatNumericTextBlock.StatNumericTextBlock_C
 // 0x0028 (0x0260 - 0x0238)
@@ -41,20 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatNumericTextBlock_C">();
+		BP_STATIC_CLASS_IMPL("StatNumericTextBlock_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatNumericTextBlock_C")
 	}
 	static class UStatNumericTextBlock_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatNumericTextBlock_C>();
 	}
 };
-static_assert(alignof(UStatNumericTextBlock_C) == 0x000008, "Wrong alignment on UStatNumericTextBlock_C");
-static_assert(sizeof(UStatNumericTextBlock_C) == 0x000260, "Wrong size on UStatNumericTextBlock_C");
-static_assert(offsetof(UStatNumericTextBlock_C, UberGraphFrame) == 0x000238, "Member 'UStatNumericTextBlock_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, ComparisonArrowImage) == 0x000240, "Member 'UStatNumericTextBlock_C::ComparisonArrowImage' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, NumericText) == 0x000248, "Member 'UStatNumericTextBlock_C::NumericText' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, Buff_State) == 0x000250, "Member 'UStatNumericTextBlock_C::Buff_State' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, Numeric_Text_Style) == 0x000258, "Member 'UStatNumericTextBlock_C::Numeric_Text_Style' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

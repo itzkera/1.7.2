@@ -11,15 +11,15 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WaveModifiersWidget.WaveModifiersWidget_C.OnModifiersAdded
 // 0x0060 (0x0060 - 0x0000)
 struct WaveModifiersWidget_C_OnModifiersAdded final
 {
 public:
-	TArray<class UFortGameplayModifierItemDefinition*> Modifiers;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortGameplayModifierItemDefinition*> Modifiers;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	bool                                          StartPresentationImmediately;                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,21 +35,6 @@ public:
 	class UWaveModifiersTile_C*                   CallFunc_Create_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WaveModifiersWidget_C_OnModifiersAdded) == 0x000008, "Wrong alignment on WaveModifiersWidget_C_OnModifiersAdded");
-static_assert(sizeof(WaveModifiersWidget_C_OnModifiersAdded) == 0x000060, "Wrong size on WaveModifiersWidget_C_OnModifiersAdded");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, Modifiers) == 0x000000, "Member 'WaveModifiersWidget_C_OnModifiersAdded::Modifiers' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, StartPresentationImmediately) == 0x000010, "Member 'WaveModifiersWidget_C_OnModifiersAdded::StartPresentationImmediately' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, Temp_int_Array_Index_Variable) == 0x000014, "Member 'WaveModifiersWidget_C_OnModifiersAdded::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_Array_Get_Item) == 0x000018, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000020, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'WaveModifiersWidget_C_OnModifiersAdded::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'WaveModifiersWidget_C_OnModifiersAdded::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_Add_IntInt_ReturnValue) == 0x000044, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_Create_ReturnValue) == 0x000050, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_OnModifiersAdded, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'WaveModifiersWidget_C_OnModifiersAdded::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function WaveModifiersWidget.WaveModifiersWidget_C.PresentNextModifier
 // 0x0018 (0x0018 - 0x0000)
@@ -61,12 +46,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WaveModifiersWidget_C_PresentNextModifier) == 0x000008, "Wrong alignment on WaveModifiersWidget_C_PresentNextModifier");
-static_assert(sizeof(WaveModifiersWidget_C_PresentNextModifier) == 0x000018, "Wrong size on WaveModifiersWidget_C_PresentNextModifier");
-static_assert(offsetof(WaveModifiersWidget_C_PresentNextModifier, CallFunc_Array_Get_Item) == 0x000000, "Member 'WaveModifiersWidget_C_PresentNextModifier::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_PresentNextModifier, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000008, "Member 'WaveModifiersWidget_C_PresentNextModifier::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_PresentNextModifier, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'WaveModifiersWidget_C_PresentNextModifier::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WaveModifiersWidget_C_PresentNextModifier, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000014, "Member 'WaveModifiersWidget_C_PresentNextModifier::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

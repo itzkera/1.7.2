@@ -14,8 +14,7 @@
 #include "BP_LocalPlayerBannerEditor_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.ExecuteUbergraph_BP_LocalPlayerBannerEditor
 // (HasDefaults)
@@ -352,7 +351,7 @@ void UBP_LocalPlayerBannerEditor_C::OnWidgetActivated()
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Setup Tileview For Icons
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             CategoryRowName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      CategoryRowName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(const class FName& CategoryRowName)
 {
@@ -372,7 +371,7 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(const class FName& 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Setup Tileview For Colorswatches
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             CategoryRowName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      CategoryRowName                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Colorswatches(const class FName& CategoryRowName)
 {
@@ -578,7 +577,7 @@ void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Color()
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Attempt Leave Picker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Left                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Left                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_LocalPlayerBannerEditor_C::Attempt_Leave_Picker(bool* Left)
 {
@@ -925,5 +924,5 @@ void UBP_LocalPlayerBannerEditor_C::Update_Category_Navigation_Visibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

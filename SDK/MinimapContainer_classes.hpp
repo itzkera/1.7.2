@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MinimapContainer.MinimapContainer_C
 // 0x0000 (0x0260 - 0x0260)
@@ -23,15 +22,16 @@ class UMinimapContainer_C final : public UFortHUDElementWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinimapContainer_C">();
+		BP_STATIC_CLASS_IMPL("MinimapContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinimapContainer_C")
 	}
 	static class UMinimapContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinimapContainer_C>();
 	}
 };
-static_assert(alignof(UMinimapContainer_C) == 0x000008, "Wrong alignment on UMinimapContainer_C");
-static_assert(sizeof(UMinimapContainer_C) == 0x000260, "Wrong size on UMinimapContainer_C");
 
-}
-
+SDK_NAMESPACE_END

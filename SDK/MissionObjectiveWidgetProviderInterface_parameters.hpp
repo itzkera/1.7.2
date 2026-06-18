@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C.GetObjectiveContentWidgetClass
 // 0x0008 (0x0008 - 0x0000)
@@ -23,9 +23,6 @@ struct MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass 
 public:
 	class UClass*                                 Objective_WIdget_Class;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass) == 0x000008, "Wrong alignment on MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass");
-static_assert(sizeof(MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass) == 0x000008, "Wrong size on MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass");
-static_assert(offsetof(MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass, Objective_WIdget_Class) == 0x000000, "Member 'MissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass::Objective_WIdget_Class' has a wrong offset!");
 
 // Function MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C.GetObjectiveBulletIcon
 // 0x0090 (0x0090 - 0x0000)
@@ -34,9 +31,6 @@ struct MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon final
 public:
 	struct FSlateBrush                            BulletIcon;                                        // 0x0000(0x0090)(Parm, OutParm)
 };
-static_assert(alignof(MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon) == 0x000008, "Wrong alignment on MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon");
-static_assert(sizeof(MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon) == 0x000090, "Wrong size on MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon");
-static_assert(offsetof(MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon, BulletIcon) == 0x000000, "Member 'MissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon::BulletIcon' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

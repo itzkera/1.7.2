@@ -13,8 +13,7 @@
 #include "Get_DirectDamageParent_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GET_FallingDamage.GET_FallingDamage_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGET_FallingDamage_C final : public UGet_DirectDamageParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_FallingDamage_C">();
+		BP_STATIC_CLASS_IMPL("GET_FallingDamage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_FallingDamage_C")
 	}
 	static class UGET_FallingDamage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_FallingDamage_C>();
 	}
 };
-static_assert(alignof(UGET_FallingDamage_C) == 0x000010, "Wrong alignment on UGET_FallingDamage_C");
-static_assert(sizeof(UGET_FallingDamage_C) == 0x000660, "Wrong size on UGET_FallingDamage_C");
 
-}
-
+SDK_NAMESPACE_END

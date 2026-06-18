@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.ExecuteUbergraph_BadgesEarnedPanelContent
 // 0x0048 (0x0048 - 0x0000)
@@ -32,14 +32,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent");
-static_assert(sizeof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent) == 0x000048, "Wrong size on BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent");
-static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, EntryPoint) == 0x000000, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'BadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.UpdateBadgeWidgets
 // 0x00B0 (0x00B0 - 0x0000)
@@ -75,31 +67,6 @@ public:
 	class UEarnedBadgeTile_C*                     CallFunc_Create_ReturnValue;                       // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_UpdateBadgeWidgets");
-static_assert(sizeof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets) == 0x0000B0, "Wrong size on BadgesEarnedPanelContent_C_UpdateBadgeWidgets");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_GetEarnedBadges_ReturnValue) == 0x000008, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_GetEarnedBadges_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, Temp_int_Array_Index_Variable) == 0x000018, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Array_Length_ReturnValue) == 0x00001C, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Array_Get_Item) == 0x000020, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Array_Length_ReturnValue2) == 0x000050, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, Temp_int_Loop_Counter_Variable) == 0x000054, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000058, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Less_IntInt_ReturnValue) == 0x000059, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, Temp_byte_Variable) == 0x000060, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, Temp_byte_Variable2) == 0x000061, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_GetOwningPlayer_ReturnValue) == 0x000068, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, Temp_bool_Variable) == 0x000070, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000078, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Get_Badge_And_Count_For_Player_Found) == 0x000081, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Get_Badge_And_Count_For_Player_Found' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Get_Badge_And_Count_For_Player_FortPC) == 0x000088, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Get_Badge_And_Count_For_Player_FortPC' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Get_Badge_And_Count_For_Player_Badge) == 0x000090, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Get_Badge_And_Count_For_Player_Badge' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Get_Badge_And_Count_For_Player_Count) == 0x000098, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Get_Badge_And_Count_For_Player_Count' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, K2Node_Select_Default) == 0x00009C, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_Create_ReturnValue) == 0x0000A0, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdateBadgeWidgets, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000A8, "Member 'BadgesEarnedPanelContent_C_UpdateBadgeWidgets::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.UpdatePotentialBadges
 // 0x0070 (0x0070 - 0x0000)
@@ -122,19 +89,6 @@ public:
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_UpdatePotentialBadges) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_UpdatePotentialBadges");
-static_assert(sizeof(BadgesEarnedPanelContent_C_UpdatePotentialBadges) == 0x000070, "Wrong size on BadgesEarnedPanelContent_C_UpdatePotentialBadges");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Create_ReturnValue) == 0x000008, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000010, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_GetPotentialBadges_ReturnValue) == 0x000030, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_GetPotentialBadges_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Array_Get_Item) == 0x000040, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_UpdatePotentialBadges, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'BadgesEarnedPanelContent_C_UpdatePotentialBadges::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.Get Badge And Count For Player
 // 0x00B8 (0x00B8 - 0x0000)
@@ -166,27 +120,6 @@ public:
 	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0098(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player) == 0x000008, "Wrong alignment on BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player");
-static_assert(sizeof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player) == 0x0000B8, "Wrong size on BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, InFortPC) == 0x000000, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::InFortPC' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, EarnedBadgeEntry) == 0x000008, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::EarnedBadgeEntry' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Found) == 0x000038, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Found' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, FortPC) == 0x000040, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::FortPC' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Badge) == 0x000048, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Badge' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Count) == 0x000050, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Count' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, OutCount) == 0x000054, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::OutCount' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, OutFound) == 0x000058, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::OutFound' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Temp_bool_True_if_break_was_hit_Variable) == 0x000059, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_Array_Length_ReturnValue) == 0x00005C, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_Not_PreBool_ReturnValue) == 0x000060, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Temp_int_Array_Index_Variable) == 0x000064, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, Temp_int_Loop_Counter_Variable) == 0x000068, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_Array_Get_Item) == 0x000070, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_Less_IntInt_ReturnValue) == 0x000090, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_BooleanAND_ReturnValue) == 0x000091, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_GetGameAccountId_ReturnValue) == 0x000098, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x0000B0, "Member 'BadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

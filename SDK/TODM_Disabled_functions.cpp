@@ -14,8 +14,7 @@
 #include "TODM_Disabled_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TODM_Disabled.TODM_Disabled_C.ExecuteUbergraph_TODM_Disabled
 // ()
@@ -84,5 +83,5 @@ void ATODM_Disabled_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

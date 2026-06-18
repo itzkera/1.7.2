@@ -14,8 +14,7 @@
 #include "BP_FortLiveStreamGrantWindowExpires_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires
 // (HasDefaults)
@@ -96,7 +95,7 @@ void UBP_FortLiveStreamGrantWindowExpires_C::HandleSimulateExpirationTimer()
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnLiveStreamingQuestWindowSelectedViewers_Event_0
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FText>                     Names                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class FText>&              Names                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowSelectedViewers_Event_0(const TArray<class FText>& Names)
 {
@@ -184,7 +183,7 @@ void UBP_FortLiveStreamGrantWindowExpires_C::PreConstruct(bool IsDesignTime)
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Set Stream Brush
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      InBrush                                                (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FSlateBrush&               InBrush                                                (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Set_Stream_Brush(const struct FSlateBrush& InBrush)
 {
@@ -204,7 +203,7 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Set_Stream_Brush(const struct FSlat
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Update Expiration Text
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FTimespan                        Timespan                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// const struct FTimespan&                 Timespan                                               (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Update_Expiration_Text(const struct FTimespan& Timespan)
 {
@@ -268,5 +267,5 @@ class UWidget* UBP_FortLiveStreamGrantWindowExpires_C::GetToolTipWidget_0()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

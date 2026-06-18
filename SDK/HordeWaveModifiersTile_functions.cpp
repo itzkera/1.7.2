@@ -14,8 +14,7 @@
 #include "HordeWaveModifiersTile_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HordeWaveModifiersTile.HordeWaveModifiersTile_C.ExecuteUbergraph_HordeWaveModifiersTile
 // (HasDefaults)
@@ -104,5 +103,5 @@ void UHordeWaveModifiersTile_C::PlayIntro()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

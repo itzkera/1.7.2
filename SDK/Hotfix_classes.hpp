@@ -15,8 +15,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class Hotfix.OnlineHotfixManager
 // 0x03A8 (0x03D0 - 0x0028)
@@ -35,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineHotfixManager">();
+		STATIC_CLASS_IMPL("OnlineHotfixManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineHotfixManager")
 	}
 	static class UOnlineHotfixManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineHotfixManager>();
 	}
 };
-static_assert(alignof(UOnlineHotfixManager) == 0x000008, "Wrong alignment on UOnlineHotfixManager");
-static_assert(sizeof(UOnlineHotfixManager) == 0x0003D0, "Wrong size on UOnlineHotfixManager");
-static_assert(offsetof(UOnlineHotfixManager, OSSName) == 0x000390, "Member 'UOnlineHotfixManager::OSSName' has a wrong offset!");
-static_assert(offsetof(UOnlineHotfixManager, HotfixManagerClassName) == 0x0003A0, "Member 'UOnlineHotfixManager::HotfixManagerClassName' has a wrong offset!");
-static_assert(offsetof(UOnlineHotfixManager, DebugPrefix) == 0x0003B0, "Member 'UOnlineHotfixManager::DebugPrefix' has a wrong offset!");
-static_assert(offsetof(UOnlineHotfixManager, AssetsHotfixedFromIniFiles) == 0x0003C0, "Member 'UOnlineHotfixManager::AssetsHotfixedFromIniFiles' has a wrong offset!");
 
 // Class Hotfix.UpdateManager
 // 0x0248 (0x0270 - 0x0028)
@@ -76,30 +73,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UpdateManager">();
+		STATIC_CLASS_IMPL("UpdateManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UpdateManager")
 	}
 	static class UUpdateManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUpdateManager>();
 	}
 };
-static_assert(alignof(UUpdateManager) == 0x000008, "Wrong alignment on UUpdateManager");
-static_assert(sizeof(UUpdateManager) == 0x000270, "Wrong size on UUpdateManager");
-static_assert(offsetof(UUpdateManager, HotfixCheckCompleteDelay) == 0x0001F0, "Member 'UUpdateManager::HotfixCheckCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateCheckCompleteDelay) == 0x0001F4, "Member 'UUpdateManager::UpdateCheckCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, HotfixAvailabilityCheckCompleteDelay) == 0x0001F8, "Member 'UUpdateManager::HotfixAvailabilityCheckCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateCheckAvailabilityCompleteDelay) == 0x0001FC, "Member 'UUpdateManager::UpdateCheckAvailabilityCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bPlatformEnvironmentDetected) == 0x000200, "Member 'UUpdateManager::bPlatformEnvironmentDetected' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bInitialUpdateFinished) == 0x000201, "Member 'UUpdateManager::bInitialUpdateFinished' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bCheckHotfixAvailabilityOnly) == 0x000202, "Member 'UUpdateManager::bCheckHotfixAvailabilityOnly' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, CurrentUpdateState) == 0x000203, "Member 'UUpdateManager::CurrentUpdateState' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, WorstNumFilesPendingLoadViewed) == 0x000204, "Member 'UUpdateManager::WorstNumFilesPendingLoadViewed' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastPatchCheckResult) == 0x000208, "Member 'UUpdateManager::LastPatchCheckResult' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastHotfixResult) == 0x000209, "Member 'UUpdateManager::LastHotfixResult' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastUpdateCheck) == 0x000238, "Member 'UUpdateManager::LastUpdateCheck' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastCompletionResult) == 0x000248, "Member 'UUpdateManager::LastCompletionResult' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateStateEnum) == 0x000260, "Member 'UUpdateManager::UpdateStateEnum' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateCompletionEnum) == 0x000268, "Member 'UUpdateManager::UpdateCompletionEnum' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Qos_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Qos.QosBeaconClient.ClientQosResponse
 // (Net, NetReliable, Native, Event, Protected, NetClient)
@@ -33,14 +32,19 @@ void AQosBeaconClient::ClientQosResponse(EQosResponseType Response)
 
 	Parms.Response = Response;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Qos.QosBeaconClient.ServerQosRequest
 // (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// class FString                           InSessionId                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    InSessionId                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void AQosBeaconClient::ServerQosRequest(const class FString& InSessionId)
 {
@@ -53,8 +57,13 @@ void AQosBeaconClient::ServerQosRequest(const class FString& InSessionId)
 
 	Parms.InSessionId = std::move(InSessionId);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

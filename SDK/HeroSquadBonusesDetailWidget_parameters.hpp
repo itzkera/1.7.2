@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HeroSquadBonusesDetailWidget.HeroSquadBonusesDetailWidget_C.ExecuteUbergraph_HeroSquadBonusesDetailWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -31,16 +31,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget) == 0x000008, "Wrong alignment on HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget");
-static_assert(sizeof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget) == 0x000018, "Wrong size on HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, EntryPoint) == 0x000000, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, K2Node_DynamicCast_AsFort_Hero) == 0x000008, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, Temp_byte_Variable) == 0x000011, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, Temp_byte_Variable2) == 0x000013, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, Temp_bool_Variable) == 0x000014, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget, K2Node_Select_Default) == 0x000015, "Member 'HeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

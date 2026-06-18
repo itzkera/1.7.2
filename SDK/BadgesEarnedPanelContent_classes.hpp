@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BadgesEarnedPanelContent.BadgesEarnedPanelContent_C
 // 0x0038 (0x0270 - 0x0238)
@@ -44,22 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BadgesEarnedPanelContent_C">();
+		BP_STATIC_CLASS_IMPL("BadgesEarnedPanelContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BadgesEarnedPanelContent_C")
 	}
 	static class UBadgesEarnedPanelContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBadgesEarnedPanelContent_C>();
 	}
 };
-static_assert(alignof(UBadgesEarnedPanelContent_C) == 0x000008, "Wrong alignment on UBadgesEarnedPanelContent_C");
-static_assert(sizeof(UBadgesEarnedPanelContent_C) == 0x000270, "Wrong size on UBadgesEarnedPanelContent_C");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, UberGraphFrame) == 0x000238, "Member 'UBadgesEarnedPanelContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, EarnedBadges) == 0x000240, "Member 'UBadgesEarnedPanelContent_C::EarnedBadges' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_0) == 0x000248, "Member 'UBadgesEarnedPanelContent_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, Image_1) == 0x000250, "Member 'UBadgesEarnedPanelContent_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, OverlayBadeInfo) == 0x000258, "Member 'UBadgesEarnedPanelContent_C::OverlayBadeInfo' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, PotentialBadges) == 0x000260, "Member 'UBadgesEarnedPanelContent_C::PotentialBadges' has a wrong offset!");
-static_assert(offsetof(UBadgesEarnedPanelContent_C, VBoxEarnedBadges) == 0x000268, "Member 'UBadgesEarnedPanelContent_C::VBoxEarnedBadges' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AthenaPlayerActionAlert_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.ExecuteUbergraph_AthenaPlayerActionAlert
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UAthenaPlayerActionAlert_C::ExecuteUbergraph_AthenaPlayerActionAlert(int32 
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWidgetAnimation*                 Animation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaPlayerActionAlert_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
 {
@@ -61,7 +60,7 @@ void UAthenaPlayerActionAlert_C::OnAnimationFinished(const class UWidgetAnimatio
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // EAthenaPlayerActionAlert                Alert                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             DetailText                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      DetailText                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaPlayerActionAlert_C::AlertPlayer(EAthenaPlayerActionAlert Alert, const class FText& DetailText)
 {
@@ -78,5 +77,5 @@ void UAthenaPlayerActionAlert_C::AlertPlayer(EAthenaPlayerActionAlert Alert, con
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "StatNumericTextBlock_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StatNumericTextBlock.StatNumericTextBlock_C.ExecuteUbergraph_StatNumericTextBlock
 // ()
@@ -104,5 +103,5 @@ void UStatNumericTextBlock_C::SetComparisonState(EFortBuffState Buff_State_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

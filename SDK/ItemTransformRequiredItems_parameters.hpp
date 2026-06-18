@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemTransformRequiredItems.ItemTransformRequiredItems_C.UpdateItems
 // 0x0118 (0x0118 - 0x0000)
@@ -62,38 +62,6 @@ public:
 	bool                                          Temp_bool_Variable4;                               // 0x0112(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0113(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransformRequiredItems_C_UpdateItems) == 0x000008, "Wrong alignment on ItemTransformRequiredItems_C_UpdateItems");
-static_assert(sizeof(ItemTransformRequiredItems_C_UpdateItems) == 0x000118, "Wrong size on ItemTransformRequiredItems_C_UpdateItems");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, TransformKey) == 0x000000, "Member 'ItemTransformRequiredItems_C_UpdateItems::TransformKey' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, SacrificePoints) == 0x000008, "Member 'ItemTransformRequiredItems_C_UpdateItems::SacrificePoints' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, NotHaveColor) == 0x000010, "Member 'ItemTransformRequiredItems_C_UpdateItems::NotHaveColor' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, HaveColor) == 0x000038, "Member 'ItemTransformRequiredItems_C_UpdateItems::HaveColor' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_int_Variable) == 0x000060, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000068, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition) == 0x000070, "Member 'ItemTransformRequiredItems_C_UpdateItems::K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'ItemTransformRequiredItems_C_UpdateItems::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_int_Variable2) == 0x00007C, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_GetRequiredItemQuantity_ReturnValue) == 0x000080, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_GetRequiredItemQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000084, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_Greater_IntInt_ReturnValue) == 0x000088, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_GetRequiredItemDefinition_ReturnValue) == 0x000090, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_GetRequiredItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_bool_Variable) == 0x000098, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_GetDisplayName_ReturnValue) == 0x0000A0, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_GetContext_ReturnValue) == 0x0000B8, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_GetNumInInventory_ReturnValue) == 0x0000C0, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_GetNumInInventory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_Less_IntInt_ReturnValue) == 0x0000C4, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x0000C8, "Member 'ItemTransformRequiredItems_C_UpdateItems::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_bool_Variable2) == 0x0000CC, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_int_Variable3) == 0x0000D0, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, K2Node_Select_Default) == 0x0000D4, "Member 'ItemTransformRequiredItems_C_UpdateItems::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_int_Variable4) == 0x0000D8, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_int_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, K2Node_Select2_Default) == 0x0000E0, "Member 'ItemTransformRequiredItems_C_UpdateItems::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_bool_Variable3) == 0x000108, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, K2Node_Select3_Default) == 0x00010C, "Member 'ItemTransformRequiredItems_C_UpdateItems::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_byte_Variable) == 0x000110, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_byte_Variable2) == 0x000111, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, Temp_bool_Variable4) == 0x000112, "Member 'ItemTransformRequiredItems_C_UpdateItems::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemTransformRequiredItems_C_UpdateItems, K2Node_Select4_Default) == 0x000113, "Member 'ItemTransformRequiredItems_C_UpdateItems::K2Node_Select4_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

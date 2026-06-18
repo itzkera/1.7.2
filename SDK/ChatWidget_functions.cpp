@@ -14,8 +14,7 @@
 #include "ChatWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ChatWidget.ChatWidget_C.ExecuteUbergraph_ChatWidget
 // ()
@@ -298,5 +297,5 @@ void UChatWidget_C::InitializeChat()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

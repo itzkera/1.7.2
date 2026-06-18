@@ -13,8 +13,7 @@
 #include "LegacyButtonStyle_Base_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass LegacyButtonStyle-Transparent.LegacyButtonStyle-Transparent_C
 // 0x0000 (0x1C08 - 0x1C08)
@@ -23,15 +22,16 @@ class ULegacyButtonStyle_Transparent_C final : public ULegacyButtonStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyButtonStyle-Transparent_C">();
+		BP_STATIC_CLASS_IMPL("LegacyButtonStyle-Transparent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyButtonStyle-Transparent_C")
 	}
 	static class ULegacyButtonStyle_Transparent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyButtonStyle_Transparent_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyle_Transparent_C) == 0x000008, "Wrong alignment on ULegacyButtonStyle_Transparent_C");
-static_assert(sizeof(ULegacyButtonStyle_Transparent_C) == 0x001C08, "Wrong size on ULegacyButtonStyle_Transparent_C");
 
-}
-
+SDK_NAMESPACE_END

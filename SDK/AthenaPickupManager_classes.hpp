@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaPickupManager.AthenaPickupManager_C
 // 0x0058 (0x02B8 - 0x0260)
@@ -50,27 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaPickupManager_C">();
+		BP_STATIC_CLASS_IMPL("AthenaPickupManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaPickupManager_C")
 	}
 	static class UAthenaPickupManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaPickupManager_C>();
 	}
 };
-static_assert(alignof(UAthenaPickupManager_C) == 0x000008, "Wrong alignment on UAthenaPickupManager_C");
-static_assert(sizeof(UAthenaPickupManager_C) == 0x0002B8, "Wrong size on UAthenaPickupManager_C");
-static_assert(offsetof(UAthenaPickupManager_C, UberGraphFrame) == 0x000260, "Member 'UAthenaPickupManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, _Pack_Resource__Metal) == 0x000268, "Member 'UAthenaPickupManager_C::_Pack_Resource__Metal' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, _Pack_Resource__Stone) == 0x000270, "Member 'UAthenaPickupManager_C::_Pack_Resource__Stone' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, _Pack_Resource__Wood) == 0x000278, "Member 'UAthenaPickupManager_C::_Pack_Resource__Wood' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, _Vertical_Box__Pickup_Message_Stream) == 0x000280, "Member 'UAthenaPickupManager_C::_Vertical_Box__Pickup_Message_Stream' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, BackpackImage) == 0x000288, "Member 'UAthenaPickupManager_C::BackpackImage' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, KeybindInventory) == 0x000290, "Member 'UAthenaPickupManager_C::KeybindInventory' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, TextInventoryCount) == 0x000298, "Member 'UAthenaPickupManager_C::TextInventoryCount' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, TextInventoryMax) == 0x0002A0, "Member 'UAthenaPickupManager_C::TextInventoryMax' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, MessageManager) == 0x0002A8, "Member 'UAthenaPickupManager_C::MessageManager' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, Max_Displayed_Items) == 0x0002B0, "Member 'UAthenaPickupManager_C::Max_Displayed_Items' has a wrong offset!");
-static_assert(offsetof(UAthenaPickupManager_C, LastUpdateTime) == 0x0002B4, "Member 'UAthenaPickupManager_C::LastUpdateTime' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

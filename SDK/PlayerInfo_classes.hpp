@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PlayerInfo.PlayerInfo_C
 // 0x0028 (0x0288 - 0x0260)
@@ -39,20 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerInfo_C">();
+		BP_STATIC_CLASS_IMPL("PlayerInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerInfo_C")
 	}
 	static class UPlayerInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerInfo_C>();
 	}
 };
-static_assert(alignof(UPlayerInfo_C) == 0x000008, "Wrong alignment on UPlayerInfo_C");
-static_assert(sizeof(UPlayerInfo_C) == 0x000288, "Wrong size on UPlayerInfo_C");
-static_assert(offsetof(UPlayerInfo_C, UberGraphFrame) == 0x000260, "Member 'UPlayerInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerInfo_C, _Horizontal_Box__Player_Info) == 0x000268, "Member 'UPlayerInfo_C::_Horizontal_Box__Player_Info' has a wrong offset!");
-static_assert(offsetof(UPlayerInfo_C, LeaderImage) == 0x000270, "Member 'UPlayerInfo_C::LeaderImage' has a wrong offset!");
-static_assert(offsetof(UPlayerInfo_C, RatingWidget) == 0x000278, "Member 'UPlayerInfo_C::RatingWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerInfo_C, TextPlayerName) == 0x000280, "Member 'UPlayerInfo_C::TextPlayerName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

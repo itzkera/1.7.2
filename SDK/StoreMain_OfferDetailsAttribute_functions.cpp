@@ -14,8 +14,7 @@
 #include "StoreMain_OfferDetailsAttribute_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreMain_OfferDetailsAttribute.StoreMain_OfferDetailsAttribute_C.ExecuteUbergraph_StoreMain_OfferDetailsAttribute
 // ()
@@ -50,5 +49,5 @@ void UStoreMain_OfferDetailsAttribute_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

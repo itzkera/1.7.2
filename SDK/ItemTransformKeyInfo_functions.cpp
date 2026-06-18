@@ -14,8 +14,7 @@
 #include "ItemTransformKeyInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.ExecuteUbergraph_ItemTransformKeyInfo
 // ()
@@ -70,5 +69,5 @@ void UItemTransformKeyInfo_C::SetKeyToRepresent(class UFortItem* Key)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

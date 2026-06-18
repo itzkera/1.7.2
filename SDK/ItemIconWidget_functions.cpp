@@ -14,8 +14,7 @@
 #include "ItemIconWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemIconWidget.ItemIconWidget_C.ExecuteUbergraph_ItemIconWidget
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UItemIconWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

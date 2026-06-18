@@ -18,8 +18,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MissionTooltip.MissionTooltip_C.ExecuteUbergraph_MissionTooltip
 // 0x0020 (0x0020 - 0x0000)
@@ -32,12 +32,6 @@ public:
 	class ABP_Hex_PARENT_C*                       K2Node_DynamicCast_AsBP_Hex_PARENT;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip) == 0x000008, "Wrong alignment on MissionTooltip_C_ExecuteUbergraph_MissionTooltip");
-static_assert(sizeof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip) == 0x000020, "Wrong size on MissionTooltip_C_ExecuteUbergraph_MissionTooltip");
-static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, EntryPoint) == 0x000000, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, K2Node_Event_InitObject) == 0x000008, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::K2Node_Event_InitObject' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, K2Node_DynamicCast_AsBP_Hex_PARENT) == 0x000010, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::K2Node_DynamicCast_AsBP_Hex_PARENT' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_ExecuteUbergraph_MissionTooltip, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'MissionTooltip_C_ExecuteUbergraph_MissionTooltip::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.InitFromObject
 // 0x0008 (0x0008 - 0x0000)
@@ -46,9 +40,6 @@ struct MissionTooltip_C_InitFromObject final
 public:
 	class UObject*                                InitObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTooltip_C_InitFromObject) == 0x000008, "Wrong alignment on MissionTooltip_C_InitFromObject");
-static_assert(sizeof(MissionTooltip_C_InitFromObject) == 0x000008, "Wrong size on MissionTooltip_C_InitFromObject");
-static_assert(offsetof(MissionTooltip_C_InitFromObject, InitObject) == 0x000000, "Member 'MissionTooltip_C_InitFromObject::InitObject' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.UpdateMissionInfo
 // 0x07E0 (0x07E0 - 0x0000)
@@ -65,7 +56,7 @@ public:
 	int32                                         ContentDifficulty;                                 // 0x0200(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalSkillPoints;                                  // 0x0204(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Blank_FText;                                       // 0x0208(0x0018)(Edit)
-	TArray<class UFortGameplayModifierItemDefinition*> GameplayMods;                                      // 0x0220(0x0010)(Edit, ZeroConstructor)
+	TArray<class UFortGameplayModifierItemDefinition*> GameplayMods;                                 // 0x0220(0x0010)(Edit, ZeroConstructor)
 	class FText                                   Temp_text_Variable;                                // 0x0230(0x0018)()
 	class FText                                   Temp_text_Variable2;                               // 0x0248(0x0018)()
 	class FText                                   Temp_text_Variable3;                               // 0x0260(0x0018)()
@@ -153,87 +144,6 @@ public:
 	class FText                                   K2Node_Select4_Default;                            // 0x07C0(0x0018)()
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x07D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionTooltip_C_UpdateMissionInfo) == 0x000008, "Wrong alignment on MissionTooltip_C_UpdateMissionInfo");
-static_assert(sizeof(MissionTooltip_C_UpdateMissionInfo) == 0x0007E0, "Wrong size on MissionTooltip_C_UpdateMissionInfo");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Mission_Details) == 0x000000, "Member 'MissionTooltip_C_UpdateMissionInfo::Mission_Details' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, GameDifficultyInfo) == 0x000008, "Member 'MissionTooltip_C_UpdateMissionInfo::GameDifficultyInfo' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, ConningBucketIndex) == 0x000088, "Member 'MissionTooltip_C_UpdateMissionInfo::ConningBucketIndex' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, ConningColor) == 0x00008C, "Member 'MissionTooltip_C_UpdateMissionInfo::ConningColor' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CollapseDifficulty) == 0x00009C, "Member 'MissionTooltip_C_UpdateMissionInfo::CollapseDifficulty' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, TileMissionDetails) == 0x0000A0, "Member 'MissionTooltip_C_UpdateMissionInfo::TileMissionDetails' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, ContentDifficulty) == 0x000200, "Member 'MissionTooltip_C_UpdateMissionInfo::ContentDifficulty' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, TotalSkillPoints) == 0x000204, "Member 'MissionTooltip_C_UpdateMissionInfo::TotalSkillPoints' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Blank_FText) == 0x000208, "Member 'MissionTooltip_C_UpdateMissionInfo::Blank_FText' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, GameplayMods) == 0x000220, "Member 'MissionTooltip_C_UpdateMissionInfo::GameplayMods' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable) == 0x000230, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable2) == 0x000248, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable3) == 0x000260, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable) == 0x000278, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable4) == 0x000280, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable5) == 0x000298, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetContext_ReturnValue) == 0x0002B0, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable2) == 0x0002B8, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetLocalTeamHomebaseRating_Rating) == 0x0002BC, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetLocalTeamHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetLocalTeamHomebaseRating_ProgressFraction) == 0x0002C0, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetLocalTeamHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetLocalTeamHomebaseRating_ReturnValue) == 0x0002C4, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetLocalTeamHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable6) == 0x0002C8, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_text_Variable7) == 0x0002E0, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable3) == 0x0002F8, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetContext_ReturnValue2) == 0x000300, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetTileMissionDetails_MissionDetails) == 0x000308, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetTileMissionDetails_MissionDetails' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetTileMissionDetails_ReturnValue) == 0x000468, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetTileMissionDetails_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_TextIsEmpty_ReturnValue) == 0x000469, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00046A, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanAND_ReturnValue) == 0x00046B, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x00046C, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanOR_ReturnValue) == 0x00046D, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanOR_ReturnValue2) == 0x00046E, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_SlateColor) == 0x000470, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_LinearColor) == 0x000498, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_SlateColor2) == 0x0004A8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_SlateColor2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0004D0, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_SlateBrush) == 0x0004D8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000568, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanAND_ReturnValue2) == 0x000569, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color) == 0x00056C, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Get_Conning_Color_From_Difficulty_Value_Difficulty_Linear_Color' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Get_Conning_Color_From_Difficulty_Value_Success) == 0x00057C, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Get_Conning_Color_From_Difficulty_Value_Success' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText) == 0x000580, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Get_Conning_Color_From_Difficulty_Value_TooltipText' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue) == 0x000598, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Get_Conning_Color_From_Difficulty_Value_DifficultyValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetContext_ReturnValue3) == 0x0005A0, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetTotalSkillPointsEarned_ReturnValue) == 0x0005A8, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetTotalSkillPointsEarned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable4) == 0x0005AC, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable5) == 0x0005AD, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_bool_Variable) == 0x0005AE, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_SlateColor3) == 0x0005B0, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_SlateColor3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_SlateBrush2) == 0x0005D8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_SlateBrush2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Greater_IntInt_ReturnValue) == 0x000668, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_GetText_ReturnValue) == 0x000670, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_TextIsEmpty_ReturnValue2) == 0x000688, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_TextIsEmpty_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Conv_IntToText_ReturnValue) == 0x000690, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_FormatArgumentData) == 0x0006A8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select_Default) == 0x0006E8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0006E9, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeStruct_FormatArgumentData2) == 0x0006F0, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_IsValid_ReturnValue) == 0x000730, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_MakeArray_Array) == 0x000738, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_Format_ReturnValue) == 0x000748, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000760, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x000761, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_IsValid_ReturnValue2) == 0x000762, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanAND_ReturnValue3) == 0x000763, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanOR_ReturnValue3) == 0x000764, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select2_Default) == 0x000768, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select3_Default) == 0x000780, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_EqualEqual_TextText_ReturnValue) == 0x000798, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanOR_ReturnValue4) == 0x000799, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable6) == 0x00079A, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_byte_Variable7) == 0x00079B, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, Temp_bool_Variable2) == 0x00079C, "Member 'MissionTooltip_C_UpdateMissionInfo::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_EqualEqual_ByteByte_ReturnValue5) == 0x00079D, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_EqualEqual_ByteByte_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_MakeLiteralText_ReturnValue) == 0x0007A0, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, CallFunc_BooleanOR_ReturnValue5) == 0x0007B8, "Member 'MissionTooltip_C_UpdateMissionInfo::CallFunc_BooleanOR_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select4_Default) == 0x0007C0, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_UpdateMissionInfo, K2Node_Select5_Default) == 0x0007D8, "Member 'MissionTooltip_C_UpdateMissionInfo::K2Node_Select5_Default' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.HandleMissionRewards
 // 0x00E8 (0x00E8 - 0x0000)
@@ -252,24 +162,13 @@ public:
 	class UMissionRewardItem_Tooltip_C*           CallFunc_Create_ReturnValue;                       // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTooltip_C_HandleMissionRewards) == 0x000008, "Wrong alignment on MissionTooltip_C_HandleMissionRewards");
-static_assert(sizeof(MissionTooltip_C_HandleMissionRewards) == 0x0000E8, "Wrong size on MissionTooltip_C_HandleMissionRewards");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'MissionTooltip_C_HandleMissionRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'MissionTooltip_C_HandleMissionRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Array_Get_Item) == 0x000010, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Array_Length_ReturnValue) == 0x0000C8, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Less_IntInt_ReturnValue) == 0x0000CC, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D0, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_Create_ReturnValue) == 0x0000D8, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleMissionRewards, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000E0, "Member 'MissionTooltip_C_HandleMissionRewards::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function MissionTooltip.MissionTooltip_C.HandleGameplayModifiers
 // 0x0068 (0x0068 - 0x0000)
 struct MissionTooltip_C_HandleGameplayModifiers final
 {
 public:
-	TArray<class UFortGameplayModifierItemDefinition*> GameplayModifiers;                                 // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortGameplayModifierItemDefinition*> GameplayModifiers;                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -292,24 +191,6 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionTooltip_C_HandleGameplayModifiers) == 0x000008, "Wrong alignment on MissionTooltip_C_HandleGameplayModifiers");
-static_assert(sizeof(MissionTooltip_C_HandleGameplayModifiers) == 0x000068, "Wrong size on MissionTooltip_C_HandleGameplayModifiers");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, GameplayModifiers) == 0x000000, "Member 'MissionTooltip_C_HandleGameplayModifiers::GameplayModifiers' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, Temp_byte_Variable) == 0x000010, "Member 'MissionTooltip_C_HandleGameplayModifiers::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Array_Length_ReturnValue2) == 0x000018, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, Temp_byte_Variable2) == 0x00001C, "Member 'MissionTooltip_C_HandleGameplayModifiers::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Greater_IntInt_ReturnValue) == 0x00001D, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, Temp_int_Array_Index_Variable) == 0x000020, "Member 'MissionTooltip_C_HandleGameplayModifiers::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Array_Get_Item) == 0x000028, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, Temp_bool_Variable) == 0x000030, "Member 'MissionTooltip_C_HandleGameplayModifiers::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Create_ReturnValue) == 0x000040, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, K2Node_Select_Default) == 0x000048, "Member 'MissionTooltip_C_HandleGameplayModifiers::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000050, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'MissionTooltip_C_HandleGameplayModifiers::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionTooltip_C_HandleGameplayModifiers, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'MissionTooltip_C_HandleGameplayModifiers::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

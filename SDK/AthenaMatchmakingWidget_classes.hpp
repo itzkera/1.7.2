@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaMatchmakingWidget.AthenaMatchmakingWidget_C
 // 0x0010 (0x0490 - 0x0480)
@@ -44,17 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingWidget_C")
 	}
 	static class UAthenaMatchmakingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingWidget_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingWidget_C");
-static_assert(sizeof(UAthenaMatchmakingWidget_C) == 0x000490, "Wrong size on UAthenaMatchmakingWidget_C");
-static_assert(offsetof(UAthenaMatchmakingWidget_C, UberGraphFrame) == 0x000480, "Member 'UAthenaMatchmakingWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingWidget_C, MatchmakingSpinner) == 0x000488, "Member 'UAthenaMatchmakingWidget_C::MatchmakingSpinner' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

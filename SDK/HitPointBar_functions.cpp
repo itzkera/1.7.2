@@ -14,8 +14,7 @@
 #include "HitPointBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HitPointBar.HitPointBar_C.ExecuteUbergraph_HitPointBar
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UHitPointBar_C::ExecuteUbergraph_HitPointBar(int32 EntryPoint)
 // Function HitPointBar.HitPointBar_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHitPointBar_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -224,5 +223,5 @@ void UHitPointBar_C::UpdateVolatileForUpdate()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

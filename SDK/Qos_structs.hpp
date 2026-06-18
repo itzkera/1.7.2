@@ -13,8 +13,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum Qos.EQosResponseType
 // NumValues: 0x0004
@@ -56,10 +55,6 @@ public:
 	int32                                         Port;                                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FQosPingServerInfo) == 0x000008, "Wrong alignment on FQosPingServerInfo");
-static_assert(sizeof(FQosPingServerInfo) == 0x000018, "Wrong size on FQosPingServerInfo");
-static_assert(offsetof(FQosPingServerInfo, Address) == 0x000000, "Member 'FQosPingServerInfo::Address' has a wrong offset!");
-static_assert(offsetof(FQosPingServerInfo, Port) == 0x000010, "Member 'FQosPingServerInfo::Port' has a wrong offset!");
 
 // ScriptStruct Qos.QosDatacenterInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -74,14 +69,6 @@ public:
 	uint8                                         Pad_2B[0x5];                                       // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FQosPingServerInfo>             Servers;                                           // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FQosDatacenterInfo) == 0x000008, "Wrong alignment on FQosDatacenterInfo");
-static_assert(sizeof(FQosDatacenterInfo) == 0x000040, "Wrong size on FQosDatacenterInfo");
-static_assert(offsetof(FQosDatacenterInfo, DisplayName) == 0x000000, "Member 'FQosDatacenterInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(FQosDatacenterInfo, RegionId) == 0x000018, "Member 'FQosDatacenterInfo::RegionId' has a wrong offset!");
-static_assert(offsetof(FQosDatacenterInfo, bEnabled) == 0x000028, "Member 'FQosDatacenterInfo::bEnabled' has a wrong offset!");
-static_assert(offsetof(FQosDatacenterInfo, bVisible) == 0x000029, "Member 'FQosDatacenterInfo::bVisible' has a wrong offset!");
-static_assert(offsetof(FQosDatacenterInfo, bBeta) == 0x00002A, "Member 'FQosDatacenterInfo::bBeta' has a wrong offset!");
-static_assert(offsetof(FQosDatacenterInfo, Servers) == 0x000030, "Member 'FQosDatacenterInfo::Servers' has a wrong offset!");
 
 // ScriptStruct Qos.QosRegionInfo
 // 0x0078 (0x0078 - 0x0000)
@@ -97,13 +84,6 @@ public:
 	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              LastCheckTimestamp;                                // 0x0070(0x0008)(Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FQosRegionInfo) == 0x000008, "Wrong alignment on FQosRegionInfo");
-static_assert(sizeof(FQosRegionInfo) == 0x000078, "Wrong size on FQosRegionInfo");
-static_assert(offsetof(FQosRegionInfo, Region) == 0x000000, "Member 'FQosRegionInfo::Region' has a wrong offset!");
-static_assert(offsetof(FQosRegionInfo, Result) == 0x000040, "Member 'FQosRegionInfo::Result' has a wrong offset!");
-static_assert(offsetof(FQosRegionInfo, AvgPingMs) == 0x000044, "Member 'FQosRegionInfo::AvgPingMs' has a wrong offset!");
-static_assert(offsetof(FQosRegionInfo, PingResults) == 0x000058, "Member 'FQosRegionInfo::PingResults' has a wrong offset!");
-static_assert(offsetof(FQosRegionInfo, LastCheckTimestamp) == 0x000070, "Member 'FQosRegionInfo::LastCheckTimestamp' has a wrong offset!");
 
 // ScriptStruct Qos.QosSearchPass
 // 0x0008 (0x0008 - 0x0000)
@@ -113,10 +93,5 @@ public:
 	int32                                         RegionIdx;                                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CurrentSessionIdx;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FQosSearchPass) == 0x000004, "Wrong alignment on FQosSearchPass");
-static_assert(sizeof(FQosSearchPass) == 0x000008, "Wrong size on FQosSearchPass");
-static_assert(offsetof(FQosSearchPass, RegionIdx) == 0x000000, "Member 'FQosSearchPass::RegionIdx' has a wrong offset!");
-static_assert(offsetof(FQosSearchPass, CurrentSessionIdx) == 0x000004, "Member 'FQosSearchPass::CurrentSessionIdx' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

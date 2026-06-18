@@ -14,8 +14,7 @@
 #include "ZoneScoreWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ZoneScoreWidget.ZoneScoreWidget_C.ExecuteUbergraph_ZoneScoreWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UZoneScoreWidget_C::ExecuteUbergraph_ZoneScoreWidget(int32 EntryPoint)
 // Function ZoneScoreWidget.ZoneScoreWidget_C.OnEndOfDayRecap
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FEndOfDayRecap                   EndOfDayRecap                                          (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FEndOfDayRecap&            EndOfDayRecap                                          (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UZoneScoreWidget_C::OnEndOfDayRecap(const struct FEndOfDayRecap& EndOfDayRecap)
 {
@@ -74,7 +73,7 @@ void UZoneScoreWidget_C::Construct()
 // Function ZoneScoreWidget.ZoneScoreWidget_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UZoneScoreWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -244,5 +243,5 @@ void UZoneScoreWidget_C::BindEndOfDayHeaderText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "B_Ranged_Generic_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ExecuteUbergraph_B_Ranged_Generic
 // (HasDefaults)
@@ -160,7 +159,7 @@ void AB_Ranged_Generic_C::ShellsON__onPump_()
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnInitCosmeticAlterations
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// struct FFortCosmeticModification        CosmeticMod                                            (Parm)
+// const struct FFortCosmeticModification& CosmeticMod                                            (Parm)
 // class UMaterialInstanceDynamic*         DynamicMaterialInstance                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_Ranged_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod, class UMaterialInstanceDynamic* DynamicMaterialInstance)
@@ -584,5 +583,5 @@ void AB_Ranged_Generic_C::DeactivateMuzzleFX()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "HordeWaveAlertWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.ExecuteUbergraph_HordeWaveAlertWidget
 // (HasDefaults)
@@ -124,7 +123,7 @@ void UHordeWaveAlertWidget_C::Construct()
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveModifiersAdded
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>Modifiers                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortGameplayModifierItemDefinition*>&Modifiers                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UHordeWaveAlertWidget_C::OnWaveModifiersAdded(const TArray<class UFortGameplayModifierItemDefinition*>& Modifiers)
 {
@@ -144,7 +143,7 @@ void UHordeWaveAlertWidget_C::OnWaveModifiersAdded(const TArray<class UFortGamep
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnHordeTierInitialized_Event_0
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Items                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<struct FFortItemInstanceQuantityPair>&Items                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UHordeWaveAlertWidget_C::OnHordeTierInitialized_Event_0(const TArray<struct FFortItemInstanceQuantityPair>& Items)
 {
@@ -164,8 +163,8 @@ void UHordeWaveAlertWidget_C::OnHordeTierInitialized_Event_0(const TArray<struct
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveCompleted
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Wave                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const int32                             Wave                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UHordeWaveAlertWidget_C::OnWaveCompleted(const int32 Wave, const TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -186,9 +185,9 @@ void UHordeWaveAlertWidget_C::OnWaveCompleted(const int32 Wave, const TArray<str
 // Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveStarted
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             LevelText                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      LevelText                                              (ConstParm, Parm, OutParm, ReferenceParm)
 // int32                                   Level                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             WaveText_0                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      WaveText_0                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // int32                                   WaveNum                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHordeWaveAlertWidget_C::OnWaveStarted(const class FText& LevelText, int32 Level, const class FText& WaveText_0, int32 WaveNum)
@@ -208,5 +207,5 @@ void UHordeWaveAlertWidget_C::OnWaveStarted(const class FText& LevelText, int32 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "MiniPartyMember_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MiniPartyMember.MiniPartyMember_C.ExecuteUbergraph_MiniPartyMember
 // (HasDefaults)
@@ -120,7 +119,7 @@ void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11
 // Function MiniPartyMember.MiniPartyMember_C.OnPlayerInfoChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewInfo                                                (Parm)
+// const struct FFortTeamMemberInfo&       NewInfo                                                (Parm)
 
 void UMiniPartyMember_C::OnPlayerInfoChanged(const struct FFortTeamMemberInfo& NewInfo)
 {
@@ -196,7 +195,7 @@ void UMiniPartyMember_C::ShowOpen()
 // Function MiniPartyMember.MiniPartyMember_C.UpdateMemberInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewMemberInfo                                          (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             NewMemberInfo                                          (Parm, OutParm, ReferenceParm)
 
 void UMiniPartyMember_C::UpdateMemberInfo(struct FFortTeamMemberInfo& NewMemberInfo)
 {
@@ -268,5 +267,5 @@ void UMiniPartyMember_C::HandleMouseHoverVisualState(bool Hover)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FrontEndRewards_Queue_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.ExecuteUbergraph_FrontEndRewards_Queue
 // ()
@@ -62,7 +61,7 @@ void UFrontEndRewards_Queue_C::PreConstruct(bool IsDesignTime)
 // Parameters:
 // class UFortRewardNotificationData*      RewardItem                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsDesignTime                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class URewardsIcon_C*                   OutIcon                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class URewardsIcon_C**                  OutIcon                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFrontEndRewards_Queue_C::QueueReward(class UFortRewardNotificationData* RewardItem, bool IsDesignTime, class URewardsIcon_C** OutIcon)
 {
@@ -86,7 +85,7 @@ void UFrontEndRewards_Queue_C::QueueReward(class UFortRewardNotificationData* Re
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.DequeueReward
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortRewardNotificationData*      OutReward                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortRewardNotificationData**     OutReward                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFrontEndRewards_Queue_C::DequeueReward(class UFortRewardNotificationData** OutReward)
 {
@@ -121,7 +120,7 @@ void UFrontEndRewards_Queue_C::ClearQueue()
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.CloneIconList
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class URewardsIcon_C*>           IconListClone                                          (Parm, OutParm, ZeroConstructor)
+// TArray<class URewardsIcon_C*>*          IconListClone                                          (Parm, OutParm, ZeroConstructor)
 
 void UFrontEndRewards_Queue_C::CloneIconList(TArray<class URewardsIcon_C*>* IconListClone)
 {
@@ -156,7 +155,7 @@ void UFrontEndRewards_Queue_C::RandomizeDesignView()
 // Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.PopIcon
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class URewardsIcon_C*                   OutIcon                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class URewardsIcon_C**                  OutIcon                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFrontEndRewards_Queue_C::PopIcon(class URewardsIcon_C** OutIcon)
 {
@@ -269,5 +268,5 @@ void UFrontEndRewards_Queue_C::TickIconInit()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

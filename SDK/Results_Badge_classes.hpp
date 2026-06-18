@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_Badge.Results_Badge_C
 // 0x0078 (0x02B0 - 0x0238)
@@ -56,30 +55,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_Badge_C">();
+		BP_STATIC_CLASS_IMPL("Results_Badge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_Badge_C")
 	}
 	static class UResults_Badge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_Badge_C>();
 	}
 };
-static_assert(alignof(UResults_Badge_C) == 0x000008, "Wrong alignment on UResults_Badge_C");
-static_assert(sizeof(UResults_Badge_C) == 0x0002B0, "Wrong size on UResults_Badge_C");
-static_assert(offsetof(UResults_Badge_C, UberGraphFrame) == 0x000238, "Member 'UResults_Badge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, Anim_Reset) == 0x000240, "Member 'UResults_Badge_C::Anim_Reset' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, Anim_Convert) == 0x000248, "Member 'UResults_Badge_C::Anim_Convert' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, Anim_Intro) == 0x000250, "Member 'UResults_Badge_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, FortItemIcon_0) == 0x000258, "Member 'UResults_Badge_C::FortItemIcon_0' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, ItemCardBox) == 0x000260, "Member 'UResults_Badge_C::ItemCardBox' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, TextBadgeName) == 0x000268, "Member 'UResults_Badge_C::TextBadgeName' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, TextDebugID) == 0x000270, "Member 'UResults_Badge_C::TextDebugID' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, BadgeItem) == 0x000278, "Member 'UResults_Badge_C::BadgeItem' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, ConvertFinished) == 0x000280, "Member 'UResults_Badge_C::ConvertFinished' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, DebugIDText) == 0x000290, "Member 'UResults_Badge_C::DebugIDText' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, PlayRate) == 0x0002A0, "Member 'UResults_Badge_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, bSkippingToEnd) == 0x0002A4, "Member 'UResults_Badge_C::bSkippingToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, bSkippedToEnd) == 0x0002A5, "Member 'UResults_Badge_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_Badge_C, BadgeWhooshToChest) == 0x0002A8, "Member 'UResults_Badge_C::BadgeWhooshToChest' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

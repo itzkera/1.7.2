@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerTrapReloadTimeModCalculation.PlayerTrapReloadTimeModCalculation_C
 // 0x0000 (0x0068 - 0x0068)
@@ -23,15 +22,16 @@ class UPlayerTrapReloadTimeModCalculation_C final : public UPlayerTrapBonusModMa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapReloadTimeModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapReloadTimeModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapReloadTimeModCalculation_C")
 	}
 	static class UPlayerTrapReloadTimeModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapReloadTimeModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapReloadTimeModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapReloadTimeModCalculation_C");
-static_assert(sizeof(UPlayerTrapReloadTimeModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapReloadTimeModCalculation_C");
 
-}
-
+SDK_NAMESPACE_END

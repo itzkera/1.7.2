@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class AvfMediaFactory.AvfMediaSettings
 // 0x0008 (0x0030 - 0x0028)
@@ -27,16 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AvfMediaSettings">();
+		STATIC_CLASS_IMPL("AvfMediaSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AvfMediaSettings")
 	}
 	static class UAvfMediaSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAvfMediaSettings>();
 	}
 };
-static_assert(alignof(UAvfMediaSettings) == 0x000008, "Wrong alignment on UAvfMediaSettings");
-static_assert(sizeof(UAvfMediaSettings) == 0x000030, "Wrong size on UAvfMediaSettings");
-static_assert(offsetof(UAvfMediaSettings, NativeAudioOut) == 0x000028, "Member 'UAvfMediaSettings::NativeAudioOut' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

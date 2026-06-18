@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MtxOffer_2.MtxOffer_2_C.ExecuteUbergraph_MtxOffer_2
 // 0x0250 (0x0250 - 0x0000)
@@ -61,43 +61,6 @@ public:
 	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2) == 0x000008, "Wrong alignment on MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2");
-static_assert(sizeof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2) == 0x000250, "Wrong size on MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, EntryPoint) == 0x000000, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_ComponentBoundEvent_Button2) == 0x000008, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_ComponentBoundEvent_Button2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_TextToString_ReturnValue) == 0x000010, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_LeftChop_ReturnValue) == 0x000038, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_LeftChop_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_MakeStruct_FormatArgumentData) == 0x000048, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_StringToText_ReturnValue) == 0x000088, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_MakeArray_Array) == 0x0000A0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Right_ReturnValue) == 0x0000B0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Right_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Format_ReturnValue) == 0x0000C0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_StringToText_ReturnValue2) == 0x0000D8, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_StringToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000F0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_IntToText_ReturnValue2) == 0x0000F8, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000110, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000111, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000112, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_EqualEqual_IntInt_ReturnValue3) == 0x000113, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_EqualEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_EqualEqual_IntInt_ReturnValue4) == 0x000114, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_EqualEqual_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Conv_IntToText_ReturnValue3) == 0x000118, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Conv_IntToText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_MakeStruct_FormatArgumentData2) == 0x000130, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_MakeStruct_FormatArgumentData3) == 0x000170, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_MakeArray_Array2) == 0x0001B0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_MakeArray_Array3) == 0x0001C0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Format_ReturnValue2) == 0x0001D0, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_Format_ReturnValue3) == 0x0001E8, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_Format_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000200, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x000208, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue3) == 0x000210, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue4) == 0x000218, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue5) == 0x000220, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue6) == 0x000228, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue7) == 0x000230, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, CallFunc_GetDynamicMaterial_ReturnValue8) == 0x000238, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::CallFunc_GetDynamicMaterial_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_ComponentBoundEvent_Is_Hovered) == 0x000240, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_ComponentBoundEvent_Is_Hovered' has a wrong offset!");
-static_assert(offsetof(MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2, K2Node_ComponentBoundEvent_Button) == 0x000248, "Member 'MtxOffer_2_C_ExecuteUbergraph_MtxOffer_2::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function MtxOffer_2.MtxOffer_2_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -106,9 +69,6 @@ struct MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MtxOffer_2_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function MtxOffer_2.MtxOffer_2_C.BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On Mouse Hovered Changed__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -117,9 +77,6 @@ struct MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mous
 public:
 	bool                                          Is_Hovered;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000001, "Wrong alignment on MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature");
-static_assert(sizeof(MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature) == 0x000001, "Wrong size on MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature");
-static_assert(offsetof(MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature, Is_Hovered) == 0x000000, "Member 'MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_3_On_Mouse_Hovered_Changed__DelegateSignature::Is_Hovered' has a wrong offset!");
 
 // Function MtxOffer_2.MtxOffer_2_C.BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -128,9 +85,6 @@ struct MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortB
 public:
 	class UFortBaseButton*                        Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature");
-static_assert(sizeof(MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature) == 0x000008, "Wrong size on MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature");
-static_assert(offsetof(MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'MtxOffer_2_C_BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortBaseButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

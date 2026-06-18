@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Cinematic.Cinematic_C
 // 0x0060 (0x0460 - 0x0400)
@@ -61,27 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cinematic_C">();
+		BP_STATIC_CLASS_IMPL("Cinematic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cinematic_C")
 	}
 	static class UCinematic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCinematic_C>();
 	}
 };
-static_assert(alignof(UCinematic_C) == 0x000008, "Wrong alignment on UCinematic_C");
-static_assert(sizeof(UCinematic_C) == 0x000460, "Wrong size on UCinematic_C");
-static_assert(offsetof(UCinematic_C, UberGraphFrame) == 0x000400, "Member 'UCinematic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, LocalizedAudioOnlyMovieSlot) == 0x000408, "Member 'UCinematic_C::LocalizedAudioOnlyMovieSlot' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, MainContentStack) == 0x000410, "Member 'UCinematic_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, MovieSlot) == 0x000418, "Member 'UCinematic_C::MovieSlot' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, OverlayMovieOverlay) == 0x000420, "Member 'UCinematic_C::OverlayMovieOverlay' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, Subtitles) == 0x000428, "Member 'UCinematic_C::Subtitles' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, TeamMicStack) == 0x000430, "Member 'UCinematic_C::TeamMicStack' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, Widget_BuildWatermark) == 0x000438, "Member 'UCinematic_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, MovieWidget) == 0x000440, "Member 'UCinematic_C::MovieWidget' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, SubtitlesPlayer) == 0x000448, "Member 'UCinematic_C::SubtitlesPlayer' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, CinematicMediaSoundWave) == 0x000450, "Member 'UCinematic_C::CinematicMediaSoundWave' has a wrong offset!");
-static_assert(offsetof(UCinematic_C, bFinished) == 0x000458, "Member 'UCinematic_C::bFinished' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AnimNotifyState_DisableSteering_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotifyState_DisableSteering.AnimNotifyState_DisableSteering_C.Received_NotifyBegin
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -68,5 +67,5 @@ bool UAnimNotifyState_DisableSteering_C::Received_NotifyEnd(class USkeletalMeshC
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

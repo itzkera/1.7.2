@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TabVideoOptions.TabVideoOptions_C.ExecuteUbergraph_TabVideoOptions
 // 0x0190 (0x0190 - 0x0000)
@@ -79,54 +79,6 @@ public:
 	class FString                                 CallFunc_MakeLiteralString_ReturnValue;            // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0178(0x0018)()
 };
-static_assert(alignof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions) == 0x000008, "Wrong alignment on TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions");
-static_assert(sizeof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions) == 0x000190, "Wrong size on TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, EntryPoint) == 0x000000, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, Temp_bool_Variable) == 0x000028, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, Temp_byte_Variable) == 0x000029, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, Temp_byte_Variable2) == 0x00002A, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate4) == 0x000040, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate5) == 0x000050, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate6) == 0x000060, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id8) == 0x000070, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id8' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id7) == 0x000074, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id7' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id6) == 0x000078, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id6' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id5) == 0x00007C, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id5' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id4) == 0x000080, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id3) == 0x000084, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id2) == 0x000088, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Tab_Id) == 0x00008C, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Tab_Id' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000090, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index7) == 0x000094, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index7' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_IsWindowedFullscreen_ReturnValue) == 0x000098, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_IsWindowedFullscreen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_Not_PreBool_ReturnValue) == 0x000099, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index6) == 0x00009C, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index6' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_Select_Default) == 0x0000A0, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index5) == 0x0000A4, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index5' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate7) == 0x0000A8, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_GetCurrentDisplayResolution_ReturnValue) == 0x0000B8, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_GetCurrentDisplayResolution_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate8) == 0x0000C0, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate9) == 0x0000D0, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate9' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate10) == 0x0000E0, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate10' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index4) == 0x0000F0, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_Conv_IntToBool_ReturnValue) == 0x0000F4, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index3) == 0x0000F8, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_Conv_IntToBool_ReturnValue2) == 0x0000FC, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_Conv_IntToBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index2) == 0x000100, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_Conv_IntToBool_ReturnValue3) == 0x000104, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_Conv_IntToBool_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CustomEvent_Selected_Index) == 0x000108, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CustomEvent_Selected_Index' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_Conv_IntToBool_ReturnValue4) == 0x00010C, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_Conv_IntToBool_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate11) == 0x000110, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate11' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate12) == 0x000120, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate13) == 0x000130, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate13' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate14) == 0x000140, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate14' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_CreateDelegate_OutputDelegate15) == 0x000150, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_CreateDelegate_OutputDelegate15' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, K2Node_Event_IsDesignTime) == 0x000160, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_MakeLiteralString_ReturnValue) == 0x000168, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_MakeLiteralString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions, CallFunc_Conv_StringToText_ReturnValue) == 0x000178, "Member 'TabVideoOptions_C_ExecuteUbergraph_TabVideoOptions::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -135,9 +87,6 @@ struct TabVideoOptions_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabVideoOptions_C_PreConstruct) == 0x000001, "Wrong alignment on TabVideoOptions_C_PreConstruct");
-static_assert(sizeof(TabVideoOptions_C_PreConstruct) == 0x000001, "Wrong size on TabVideoOptions_C_PreConstruct");
-static_assert(offsetof(TabVideoOptions_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'TabVideoOptions_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.CustomEvent_1
 // 0x0004 (0x0004 - 0x0000)
@@ -146,9 +95,6 @@ struct TabVideoOptions_C_CustomEvent_1 final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_CustomEvent_1) == 0x000004, "Wrong alignment on TabVideoOptions_C_CustomEvent_1");
-static_assert(sizeof(TabVideoOptions_C_CustomEvent_1) == 0x000004, "Wrong size on TabVideoOptions_C_CustomEvent_1");
-static_assert(offsetof(TabVideoOptions_C_CustomEvent_1, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_CustomEvent_1::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.CustomEvent
 // 0x0004 (0x0004 - 0x0000)
@@ -157,9 +103,6 @@ struct TabVideoOptions_C_CustomEvent final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_CustomEvent) == 0x000004, "Wrong alignment on TabVideoOptions_C_CustomEvent");
-static_assert(sizeof(TabVideoOptions_C_CustomEvent) == 0x000004, "Wrong size on TabVideoOptions_C_CustomEvent");
-static_assert(offsetof(TabVideoOptions_C_CustomEvent, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_CustomEvent::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Motion Blur Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -168,9 +111,6 @@ struct TabVideoOptions_C_Motion_Blur_Changed final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Motion_Blur_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Motion_Blur_Changed");
-static_assert(sizeof(TabVideoOptions_C_Motion_Blur_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Motion_Blur_Changed");
-static_assert(offsetof(TabVideoOptions_C_Motion_Blur_Changed, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_Motion_Blur_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.VSync Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -179,9 +119,6 @@ struct TabVideoOptions_C_VSync_Changed final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_VSync_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_VSync_Changed");
-static_assert(sizeof(TabVideoOptions_C_VSync_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_VSync_Changed");
-static_assert(offsetof(TabVideoOptions_C_VSync_Changed, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_VSync_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.CustomEvent_23
 // 0x0004 (0x0004 - 0x0000)
@@ -190,9 +127,6 @@ struct TabVideoOptions_C_CustomEvent_23 final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_CustomEvent_23) == 0x000004, "Wrong alignment on TabVideoOptions_C_CustomEvent_23");
-static_assert(sizeof(TabVideoOptions_C_CustomEvent_23) == 0x000004, "Wrong size on TabVideoOptions_C_CustomEvent_23");
-static_assert(offsetof(TabVideoOptions_C_CustomEvent_23, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_CustomEvent_23::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.CustomEvent_22
 // 0x0004 (0x0004 - 0x0000)
@@ -201,9 +135,6 @@ struct TabVideoOptions_C_CustomEvent_22 final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_CustomEvent_22) == 0x000004, "Wrong alignment on TabVideoOptions_C_CustomEvent_22");
-static_assert(sizeof(TabVideoOptions_C_CustomEvent_22) == 0x000004, "Wrong size on TabVideoOptions_C_CustomEvent_22");
-static_assert(offsetof(TabVideoOptions_C_CustomEvent_22, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_CustomEvent_22::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Window Mode  Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -212,9 +143,6 @@ struct TabVideoOptions_C_Window_Mode__Changed final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Window_Mode__Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Window_Mode__Changed");
-static_assert(sizeof(TabVideoOptions_C_Window_Mode__Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Window_Mode__Changed");
-static_assert(offsetof(TabVideoOptions_C_Window_Mode__Changed, Selected_Index) == 0x000000, "Member 'TabVideoOptions_C_Window_Mode__Changed::Selected_Index' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Quality Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -223,9 +151,6 @@ struct TabVideoOptions_C_Quality_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Quality_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Quality_Changed");
-static_assert(sizeof(TabVideoOptions_C_Quality_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Quality_Changed");
-static_assert(offsetof(TabVideoOptions_C_Quality_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Quality_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Effects Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -234,9 +159,6 @@ struct TabVideoOptions_C_Effects_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Effects_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Effects_Changed");
-static_assert(sizeof(TabVideoOptions_C_Effects_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Effects_Changed");
-static_assert(offsetof(TabVideoOptions_C_Effects_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Effects_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Post-Processing Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -245,9 +167,6 @@ struct TabVideoOptions_C_Post_Processing_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Post_Processing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Post_Processing_Changed");
-static_assert(sizeof(TabVideoOptions_C_Post_Processing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Post_Processing_Changed");
-static_assert(offsetof(TabVideoOptions_C_Post_Processing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Post_Processing_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Textures Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -256,9 +175,6 @@ struct TabVideoOptions_C_Textures_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Textures_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Textures_Changed");
-static_assert(sizeof(TabVideoOptions_C_Textures_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Textures_Changed");
-static_assert(offsetof(TabVideoOptions_C_Textures_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Textures_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Anti-Aliasing Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -267,9 +183,6 @@ struct TabVideoOptions_C_Anti_Aliasing_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Anti_Aliasing_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Anti_Aliasing_Changed");
-static_assert(sizeof(TabVideoOptions_C_Anti_Aliasing_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Anti_Aliasing_Changed");
-static_assert(offsetof(TabVideoOptions_C_Anti_Aliasing_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Anti_Aliasing_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Shadows Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -278,9 +191,6 @@ struct TabVideoOptions_C_Shadows_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Shadows_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Shadows_Changed");
-static_assert(sizeof(TabVideoOptions_C_Shadows_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Shadows_Changed");
-static_assert(offsetof(TabVideoOptions_C_Shadows_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Shadows_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Discrete Resolution Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -289,9 +199,6 @@ struct TabVideoOptions_C_Discrete_Resolution_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Discrete_Resolution_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_Discrete_Resolution_Changed");
-static_assert(sizeof(TabVideoOptions_C_Discrete_Resolution_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_Discrete_Resolution_Changed");
-static_assert(offsetof(TabVideoOptions_C_Discrete_Resolution_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_Discrete_Resolution_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.View Distance Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -300,9 +207,6 @@ struct TabVideoOptions_C_View_Distance_Changed final
 public:
 	int32                                         Tab_Id;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_View_Distance_Changed) == 0x000004, "Wrong alignment on TabVideoOptions_C_View_Distance_Changed");
-static_assert(sizeof(TabVideoOptions_C_View_Distance_Changed) == 0x000004, "Wrong size on TabVideoOptions_C_View_Distance_Changed");
-static_assert(offsetof(TabVideoOptions_C_View_Distance_Changed, Tab_Id) == 0x000000, "Member 'TabVideoOptions_C_View_Distance_Changed::Tab_Id' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Initialize Data
 // 0x0350 (0x0350 - 0x0000)
@@ -353,51 +257,6 @@ public:
 	TArray<class FText>                           K2Node_MakeArray_Array20;                          // 0x0328(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue20;            // 0x0338(0x0018)()
 };
-static_assert(alignof(TabVideoOptions_C_Initialize_Data) == 0x000008, "Wrong alignment on TabVideoOptions_C_Initialize_Data");
-static_assert(sizeof(TabVideoOptions_C_Initialize_Data) == 0x000350, "Wrong size on TabVideoOptions_C_Initialize_Data");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, NewLocalVar_0) == 0x000000, "Member 'TabVideoOptions_C_Initialize_Data::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array) == 0x000010, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array2) == 0x000020, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array3) == 0x000030, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array4) == 0x000040, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue) == 0x000050, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue2) == 0x000068, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue3) == 0x000080, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue4) == 0x000098, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue5) == 0x0000B0, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue6) == 0x0000C8, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue7) == 0x0000E0, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue8) == 0x0000F8, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue9) == 0x000110, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue10) == 0x000128, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_GetPossibleFPS_ReturnValue) == 0x000140, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_GetPossibleFPS_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_GetPossibleWindowModes_ReturnValue) == 0x000150, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_GetPossibleWindowModes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue11) == 0x000160, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue12) == 0x000178, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array5) == 0x000190, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array5' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array6) == 0x0001A0, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array6' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array7) == 0x0001B0, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array7' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue13) == 0x0001C0, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array8) == 0x0001D8, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array8' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array9) == 0x0001E8, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array9' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array10) == 0x0001F8, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array10' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array11) == 0x000208, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array11' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array12) == 0x000218, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array12' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array13) == 0x000228, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array13' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array14) == 0x000238, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array14' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue14) == 0x000248, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array15) == 0x000260, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array15' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue15) == 0x000270, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue15' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array16) == 0x000288, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array16' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue16) == 0x000298, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue16' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array17) == 0x0002B0, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array17' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue17) == 0x0002C0, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue17' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array18) == 0x0002D8, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array18' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue18) == 0x0002E8, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue18' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array19) == 0x000300, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array19' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue19) == 0x000310, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue19' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, K2Node_MakeArray_Array20) == 0x000328, "Member 'TabVideoOptions_C_Initialize_Data::K2Node_MakeArray_Array20' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue20) == 0x000338, "Member 'TabVideoOptions_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue20' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Update Data
 // 0x004C (0x004C - 0x0000)
@@ -434,33 +293,6 @@ public:
 	int32                                         CallFunc_GetViewDistanceQuality_ReturnValue;       // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetDiscreteResolutionQuality_ReturnValue; // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabVideoOptions_C_Update_Data) == 0x000004, "Wrong alignment on TabVideoOptions_C_Update_Data");
-static_assert(sizeof(TabVideoOptions_C_Update_Data) == 0x00004C, "Wrong size on TabVideoOptions_C_Update_Data");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, Reset_Quality_Selector) == 0x000000, "Member 'TabVideoOptions_C_Update_Data::Reset_Quality_Selector' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetCurrentFPS_ReturnValue) == 0x000004, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetCurrentFPS_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_IsWindowedFullscreen_ReturnValue) == 0x000008, "Member 'TabVideoOptions_C_Update_Data::CallFunc_IsWindowedFullscreen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_Not_PreBool_ReturnValue) == 0x000009, "Member 'TabVideoOptions_C_Update_Data::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetCurrentDisplayResolution_ReturnValue) == 0x00000C, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetCurrentDisplayResolution_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetCurrentWindowMode_ReturnValue) == 0x000010, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetCurrentWindowMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, Temp_byte_Variable) == 0x000014, "Member 'TabVideoOptions_C_Update_Data::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, Temp_byte_Variable2) == 0x000015, "Member 'TabVideoOptions_C_Update_Data::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, Temp_bool_Variable) == 0x000016, "Member 'TabVideoOptions_C_Update_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetShowFPS_ReturnValue) == 0x000017, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetShowFPS_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_Conv_BoolToInt_ReturnValue) == 0x000018, "Member 'TabVideoOptions_C_Update_Data::CallFunc_Conv_BoolToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, K2Node_Select_Default) == 0x00001C, "Member 'TabVideoOptions_C_Update_Data::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetShowGrass_ReturnValue) == 0x00001D, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetShowGrass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_Conv_BoolToInt_ReturnValue2) == 0x000020, "Member 'TabVideoOptions_C_Update_Data::CallFunc_Conv_BoolToInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetMotionBlur_ReturnValue) == 0x000024, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetMotionBlur_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetUseVsync_ReturnValue) == 0x000025, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetUseVsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_Conv_BoolToInt_ReturnValue3) == 0x000028, "Member 'TabVideoOptions_C_Update_Data::CallFunc_Conv_BoolToInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_Conv_BoolToInt_ReturnValue4) == 0x00002C, "Member 'TabVideoOptions_C_Update_Data::CallFunc_Conv_BoolToInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetPostProcessQuality_ReturnValue) == 0x000030, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetPostProcessQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetEffectsQuality_ReturnValue) == 0x000034, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetEffectsQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetTextureQuality_ReturnValue) == 0x000038, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetTextureQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetAntiAliasingQuality_ReturnValue) == 0x00003C, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetAntiAliasingQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetShadowQuality_ReturnValue) == 0x000040, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetShadowQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetViewDistanceQuality_ReturnValue) == 0x000044, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetViewDistanceQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Update_Data, CallFunc_GetDiscreteResolutionQuality_ReturnValue) == 0x000048, "Member 'TabVideoOptions_C_Update_Data::CallFunc_GetDiscreteResolutionQuality_ReturnValue' has a wrong offset!");
 
 // Function TabVideoOptions.TabVideoOptions_C.Initialize Display Resolutions
 // 0x0040 (0x0040 - 0x0000)
@@ -471,11 +303,6 @@ public:
 	TArray<class FText>                           CallFunc_GetPossibleDisplayResolutions_ReturnValue; // 0x0018(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue2;             // 0x0028(0x0018)()
 };
-static_assert(alignof(TabVideoOptions_C_Initialize_Display_Resolutions) == 0x000008, "Wrong alignment on TabVideoOptions_C_Initialize_Display_Resolutions");
-static_assert(sizeof(TabVideoOptions_C_Initialize_Display_Resolutions) == 0x000040, "Wrong size on TabVideoOptions_C_Initialize_Display_Resolutions");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Display_Resolutions, CallFunc_MakeLiteralText_ReturnValue) == 0x000000, "Member 'TabVideoOptions_C_Initialize_Display_Resolutions::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Display_Resolutions, CallFunc_GetPossibleDisplayResolutions_ReturnValue) == 0x000018, "Member 'TabVideoOptions_C_Initialize_Display_Resolutions::CallFunc_GetPossibleDisplayResolutions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabVideoOptions_C_Initialize_Display_Resolutions, CallFunc_MakeLiteralText_ReturnValue2) == 0x000028, "Member 'TabVideoOptions_C_Initialize_Display_Resolutions::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

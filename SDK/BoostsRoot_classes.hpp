@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BoostsRoot.BoostsRoot_C
 // 0x0048 (0x0428 - 0x03E0)
@@ -51,25 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BoostsRoot_C">();
+		BP_STATIC_CLASS_IMPL("BoostsRoot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BoostsRoot_C")
 	}
 	static class UBoostsRoot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBoostsRoot_C>();
 	}
 };
-static_assert(alignof(UBoostsRoot_C) == 0x000008, "Wrong alignment on UBoostsRoot_C");
-static_assert(sizeof(UBoostsRoot_C) == 0x000428, "Wrong size on UBoostsRoot_C");
-static_assert(offsetof(UBoostsRoot_C, UberGraphFrame) == 0x0003E0, "Member 'UBoostsRoot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, BoostsTabs) == 0x0003E8, "Member 'UBoostsRoot_C::BoostsTabs' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, CurrentTabSwitcher) == 0x0003F0, "Member 'UBoostsRoot_C::CurrentTabSwitcher' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Title) == 0x0003F8, "Member 'UBoostsRoot_C::Title' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, SelectedOption) == 0x000400, "Member 'UBoostsRoot_C::SelectedOption' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Current_Tab) == 0x000408, "Member 'UBoostsRoot_C::Current_Tab' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Accept_Input) == 0x000410, "Member 'UBoostsRoot_C::Accept_Input' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Video_Tab_Selected) == 0x000411, "Member 'UBoostsRoot_C::Video_Tab_Selected' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, Apply_Visible) == 0x000412, "Member 'UBoostsRoot_C::Apply_Visible' has a wrong offset!");
-static_assert(offsetof(UBoostsRoot_C, AllTabWidgets) == 0x000418, "Member 'UBoostsRoot_C::AllTabWidgets' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

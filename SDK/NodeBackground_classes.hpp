@@ -12,12 +12,11 @@
 
 #include "SkillTreeGroupColors_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "SkillTreeGroups_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass NodeBackground.NodeBackground_C
 // 0x0078 (0x0918 - 0x08A0)
@@ -42,21 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NodeBackground_C">();
+		BP_STATIC_CLASS_IMPL("NodeBackground_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NodeBackground_C")
 	}
 	static class UNodeBackground_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNodeBackground_C>();
 	}
 };
-static_assert(alignof(UNodeBackground_C) == 0x000008, "Wrong alignment on UNodeBackground_C");
-static_assert(sizeof(UNodeBackground_C) == 0x000918, "Wrong size on UNodeBackground_C");
-static_assert(offsetof(UNodeBackground_C, UberGraphFrame) == 0x0008A0, "Member 'UNodeBackground_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, Group) == 0x0008A8, "Member 'UNodeBackground_C::Group' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, GroupColors) == 0x0008AC, "Member 'UNodeBackground_C::GroupColors' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, Horizontal) == 0x000900, "Member 'UNodeBackground_C::Horizontal' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, VerticalStyle) == 0x000908, "Member 'UNodeBackground_C::VerticalStyle' has a wrong offset!");
-static_assert(offsetof(UNodeBackground_C, HorizontalStyle) == 0x000910, "Member 'UNodeBackground_C::HorizontalStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

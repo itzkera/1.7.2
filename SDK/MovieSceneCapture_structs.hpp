@@ -13,8 +13,7 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum MovieSceneCapture.EHDRCaptureGamut
 // NumValues: 0x0006
@@ -36,10 +35,6 @@ public:
 	uint32                                        ResX;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        ResY;                                              // 0x0004(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCaptureResolution) == 0x000004, "Wrong alignment on FCaptureResolution");
-static_assert(sizeof(FCaptureResolution) == 0x000008, "Wrong size on FCaptureResolution");
-static_assert(offsetof(FCaptureResolution, ResX) == 0x000000, "Member 'FCaptureResolution::ResX' has a wrong offset!");
-static_assert(offsetof(FCaptureResolution, ResY) == 0x000004, "Member 'FCaptureResolution::ResY' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.MovieSceneCaptureSettings
 // 0x0050 (0x0050 - 0x0000)
@@ -68,25 +63,6 @@ public:
 	bool                                          bShowHUD;                                          // 0x004E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FMovieSceneCaptureSettings) == 0x000008, "Wrong alignment on FMovieSceneCaptureSettings");
-static_assert(sizeof(FMovieSceneCaptureSettings) == 0x000050, "Wrong size on FMovieSceneCaptureSettings");
-static_assert(offsetof(FMovieSceneCaptureSettings, OutputDirectory) == 0x000000, "Member 'FMovieSceneCaptureSettings::OutputDirectory' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bCreateTemporaryCopiesOfLevels) == 0x000010, "Member 'FMovieSceneCaptureSettings::bCreateTemporaryCopiesOfLevels' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, GameModeOverride) == 0x000018, "Member 'FMovieSceneCaptureSettings::GameModeOverride' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, OutputFormat) == 0x000020, "Member 'FMovieSceneCaptureSettings::OutputFormat' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bOverwriteExisting) == 0x000030, "Member 'FMovieSceneCaptureSettings::bOverwriteExisting' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bUseRelativeFrameNumbers) == 0x000031, "Member 'FMovieSceneCaptureSettings::bUseRelativeFrameNumbers' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, HandleFrames) == 0x000034, "Member 'FMovieSceneCaptureSettings::HandleFrames' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, ZeroPadFrameNumbers) == 0x000038, "Member 'FMovieSceneCaptureSettings::ZeroPadFrameNumbers' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, FrameRate) == 0x00003C, "Member 'FMovieSceneCaptureSettings::FrameRate' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, Resolution) == 0x000040, "Member 'FMovieSceneCaptureSettings::Resolution' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bEnableTextureStreaming) == 0x000048, "Member 'FMovieSceneCaptureSettings::bEnableTextureStreaming' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bCinematicEngineScalability) == 0x000049, "Member 'FMovieSceneCaptureSettings::bCinematicEngineScalability' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bCinematicMode) == 0x00004A, "Member 'FMovieSceneCaptureSettings::bCinematicMode' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bAllowMovement) == 0x00004B, "Member 'FMovieSceneCaptureSettings::bAllowMovement' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bAllowTurning) == 0x00004C, "Member 'FMovieSceneCaptureSettings::bAllowTurning' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bShowPlayer) == 0x00004D, "Member 'FMovieSceneCaptureSettings::bShowPlayer' has a wrong offset!");
-static_assert(offsetof(FMovieSceneCaptureSettings, bShowHUD) == 0x00004E, "Member 'FMovieSceneCaptureSettings::bShowHUD' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.CompositionGraphCapturePasses
 // 0x0010 (0x0010 - 0x0000)
@@ -95,9 +71,6 @@ struct FCompositionGraphCapturePasses final
 public:
 	TArray<class FString>                         Value;                                             // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCompositionGraphCapturePasses) == 0x000008, "Wrong alignment on FCompositionGraphCapturePasses");
-static_assert(sizeof(FCompositionGraphCapturePasses) == 0x000010, "Wrong size on FCompositionGraphCapturePasses");
-static_assert(offsetof(FCompositionGraphCapturePasses, Value) == 0x000000, "Member 'FCompositionGraphCapturePasses::Value' has a wrong offset!");
 
 // ScriptStruct MovieSceneCapture.CaptureProtocolID
 // 0x0008 (0x0008 - 0x0000)
@@ -106,9 +79,5 @@ struct alignas(0x08) FCaptureProtocolID final
 public:
 	class FName                                   Identifier;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCaptureProtocolID) == 0x000008, "Wrong alignment on FCaptureProtocolID");
-static_assert(sizeof(FCaptureProtocolID) == 0x000008, "Wrong size on FCaptureProtocolID");
-static_assert(offsetof(FCaptureProtocolID, Identifier) == 0x000000, "Member 'FCaptureProtocolID::Identifier' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

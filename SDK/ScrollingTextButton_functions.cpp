@@ -14,8 +14,7 @@
 #include "ScrollingTextButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ScrollingTextButton.ScrollingTextButton_C.ExecuteUbergraph_ScrollingTextButton
 // (HasDefaults)
@@ -88,7 +87,7 @@ void UScrollingTextButton_C::OnActionProgress(float HeldPercent)
 // Function ScrollingTextButton.ScrollingTextButton_C.OnTriggeredInputActionChanged
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              NewTriggeredAction                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FDataTableRowHandle&       NewTriggeredAction                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UScrollingTextButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
@@ -128,7 +127,7 @@ void UScrollingTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBo
 // Function ScrollingTextButton.ScrollingTextButton_C.SetTabLabelInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortTabButtonLabelInfo          TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTabButtonLabelInfo&   TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UScrollingTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
@@ -182,7 +181,7 @@ void UScrollingTextButton_C::OnCurrentTextStyleChanged()
 // Function ScrollingTextButton.ScrollingTextButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ButtonText_0                                           (Parm)
+// const class FText&                      ButtonText_0                                           (Parm)
 
 void UScrollingTextButton_C::Set_Text(const class FText& ButtonText_0)
 {
@@ -202,7 +201,7 @@ void UScrollingTextButton_C::Set_Text(const class FText& ButtonText_0)
 // Function ScrollingTextButton.ScrollingTextButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush_0                                            (Parm)
+// const struct FSlateBrush&               IconBrush_0                                            (Parm)
 
 void UScrollingTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
@@ -388,5 +387,5 @@ void UScrollingTextButton_C::SetInitialMouseKeyboardStyle()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

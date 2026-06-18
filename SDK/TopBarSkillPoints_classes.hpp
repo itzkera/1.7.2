@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TopBarSkillPoints.TopBarSkillPoints_C
 // 0x0098 (0x02D0 - 0x0238)
@@ -73,35 +72,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TopBarSkillPoints_C">();
+		BP_STATIC_CLASS_IMPL("TopBarSkillPoints_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TopBarSkillPoints_C")
 	}
 	static class UTopBarSkillPoints_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTopBarSkillPoints_C>();
 	}
 };
-static_assert(alignof(UTopBarSkillPoints_C) == 0x000008, "Wrong alignment on UTopBarSkillPoints_C");
-static_assert(sizeof(UTopBarSkillPoints_C) == 0x0002D0, "Wrong size on UTopBarSkillPoints_C");
-static_assert(offsetof(UTopBarSkillPoints_C, UberGraphFrame) == 0x000238, "Member 'UTopBarSkillPoints_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, ButtonXPBar) == 0x000240, "Member 'UTopBarSkillPoints_C::ButtonXPBar' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, FounderBadge) == 0x000248, "Member 'UTopBarSkillPoints_C::FounderBadge' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, HorizontalBox_3) == 0x000250, "Member 'UTopBarSkillPoints_C::HorizontalBox_3' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, HorizontalBox_201) == 0x000258, "Member 'UTopBarSkillPoints_C::HorizontalBox_201' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, LineBreak) == 0x000260, "Member 'UTopBarSkillPoints_C::LineBreak' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, MonthlyVIPBadge) == 0x000268, "Member 'UTopBarSkillPoints_C::MonthlyVIPBadge' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, PersonalBoost) == 0x000270, "Member 'UTopBarSkillPoints_C::PersonalBoost' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, RestBoost) == 0x000278, "Member 'UTopBarSkillPoints_C::RestBoost' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, TeammateBoost) == 0x000280, "Member 'UTopBarSkillPoints_C::TeammateBoost' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, XpBar) == 0x000288, "Member 'UTopBarSkillPoints_C::XpBar' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, Party_Member_Boosted) == 0x000290, "Member 'UTopBarSkillPoints_C::Party_Member_Boosted' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, MXPBoostDoubleRest) == 0x000298, "Member 'UTopBarSkillPoints_C::MXPBoostDoubleRest' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, MXPBoostDouble) == 0x0002A0, "Member 'UTopBarSkillPoints_C::MXPBoostDouble' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, MXPBoostSingle) == 0x0002A8, "Member 'UTopBarSkillPoints_C::MXPBoostSingle' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, MXPBoostRest) == 0x0002B0, "Member 'UTopBarSkillPoints_C::MXPBoostRest' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, MXPBoostSingleRest) == 0x0002B8, "Member 'UTopBarSkillPoints_C::MXPBoostSingleRest' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, RestType) == 0x0002C0, "Member 'UTopBarSkillPoints_C::RestType' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, Xp_For_Level) == 0x0002C8, "Member 'UTopBarSkillPoints_C::Xp_For_Level' has a wrong offset!");
-static_assert(offsetof(UTopBarSkillPoints_C, XPRequiredToLevel) == 0x0002CC, "Member 'UTopBarSkillPoints_C::XPRequiredToLevel' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

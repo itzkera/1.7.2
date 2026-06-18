@@ -14,8 +14,7 @@
 #include "BasicRatingWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BasicRatingWidget.BasicRatingWidget_C.ExecuteUbergraph_BasicRatingWidget
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UBasicRatingWidget_C::PreConstruct(bool IsDesignTime)
 // Function BasicRatingWidget.BasicRatingWidget_C.GetBorderVisibility
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// ESlateVisibility                        Visibility_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESlateVisibility*                       Visibility_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBasicRatingWidget_C::GetBorderVisibility(ESlateVisibility* Visibility_0)
 {
@@ -101,8 +100,8 @@ void UBasicRatingWidget_C::Update_Power_Rating_Value(int32 Rating)
 // Function BasicRatingWidget.BasicRatingWidget_C.Update Border Color
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Color1                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color2                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color1                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color2                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBasicRatingWidget_C::Update_Border_Color(const struct FLinearColor& Color1, const struct FLinearColor& Color2)
 {
@@ -123,7 +122,7 @@ void UBasicRatingWidget_C::Update_Border_Color(const struct FLinearColor& Color1
 // Function BasicRatingWidget.BasicRatingWidget_C.Get Current Rating
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   CurrentNumericValue                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  CurrentNumericValue                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBasicRatingWidget_C::Get_Current_Rating(float* CurrentNumericValue)
 {
@@ -160,5 +159,5 @@ void UBasicRatingWidget_C::Update_Power_Rating_Style(class UClass* InStyle)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

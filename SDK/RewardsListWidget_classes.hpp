@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardsListWidget.RewardsListWidget_C
 // 0x0038 (0x0278 - 0x0240)
@@ -41,22 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardsListWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardsListWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardsListWidget_C")
 	}
 	static class URewardsListWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardsListWidget_C>();
 	}
 };
-static_assert(alignof(URewardsListWidget_C) == 0x000008, "Wrong alignment on URewardsListWidget_C");
-static_assert(sizeof(URewardsListWidget_C) == 0x000278, "Wrong size on URewardsListWidget_C");
-static_assert(offsetof(URewardsListWidget_C, RewardsVerticalBox) == 0x000240, "Member 'URewardsListWidget_C::RewardsVerticalBox' has a wrong offset!");
-static_assert(offsetof(URewardsListWidget_C, RewardsArray) == 0x000248, "Member 'URewardsListWidget_C::RewardsArray' has a wrong offset!");
-static_assert(offsetof(URewardsListWidget_C, Index_0) == 0x000258, "Member 'URewardsListWidget_C::Index_0' has a wrong offset!");
-static_assert(offsetof(URewardsListWidget_C, RewardCount) == 0x00025C, "Member 'URewardsListWidget_C::RewardCount' has a wrong offset!");
-static_assert(offsetof(URewardsListWidget_C, DoNotAnimate) == 0x000260, "Member 'URewardsListWidget_C::DoNotAnimate' has a wrong offset!");
-static_assert(offsetof(URewardsListWidget_C, bPlaySound) == 0x000261, "Member 'URewardsListWidget_C::bPlaySound' has a wrong offset!");
-static_assert(offsetof(URewardsListWidget_C, SelectableRewardsArray) == 0x000268, "Member 'URewardsListWidget_C::SelectableRewardsArray' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

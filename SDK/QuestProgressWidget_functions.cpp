@@ -14,8 +14,7 @@
 #include "QuestProgressWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestProgressWidget.QuestProgressWidget_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -38,5 +37,5 @@ void UQuestProgressWidget_C::Update(int32 Required, int32 Achieved)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

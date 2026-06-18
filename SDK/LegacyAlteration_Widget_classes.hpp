@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyAlteration_Widget.LegacyAlteration_Widget_C
 // 0x0070 (0x02C8 - 0x0258)
@@ -48,29 +47,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyAlteration_Widget_C">();
+		BP_STATIC_CLASS_IMPL("LegacyAlteration_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyAlteration_Widget_C")
 	}
 	static class ULegacyAlteration_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyAlteration_Widget_C>();
 	}
 };
-static_assert(alignof(ULegacyAlteration_Widget_C) == 0x000008, "Wrong alignment on ULegacyAlteration_Widget_C");
-static_assert(sizeof(ULegacyAlteration_Widget_C) == 0x0002C8, "Wrong size on ULegacyAlteration_Widget_C");
-static_assert(offsetof(ULegacyAlteration_Widget_C, UberGraphFrame) == 0x000258, "Member 'ULegacyAlteration_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, BorderBadge) == 0x000260, "Member 'ULegacyAlteration_Widget_C::BorderBadge' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, BorderBadge_Alt) == 0x000268, "Member 'ULegacyAlteration_Widget_C::BorderBadge_Alt' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, BorderFrame) == 0x000270, "Member 'ULegacyAlteration_Widget_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, HorizontalBoxCompactContent) == 0x000278, "Member 'ULegacyAlteration_Widget_C::HorizontalBoxCompactContent' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, ImageAlteration) == 0x000280, "Member 'ULegacyAlteration_Widget_C::ImageAlteration' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, ImageAlteration_Alt) == 0x000288, "Member 'ULegacyAlteration_Widget_C::ImageAlteration_Alt' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, LevelText) == 0x000290, "Member 'ULegacyAlteration_Widget_C::LevelText' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, LevelText_Alt) == 0x000298, "Member 'ULegacyAlteration_Widget_C::LevelText_Alt' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, ScaleBoxFullContent) == 0x0002A0, "Member 'ULegacyAlteration_Widget_C::ScaleBoxFullContent' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, Text_AlterationInfo) == 0x0002A8, "Member 'ULegacyAlteration_Widget_C::Text_AlterationInfo' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, Text_AlterationName) == 0x0002B0, "Member 'ULegacyAlteration_Widget_C::Text_AlterationName' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, WidgetSwitcherContent) == 0x0002B8, "Member 'ULegacyAlteration_Widget_C::WidgetSwitcherContent' has a wrong offset!");
-static_assert(offsetof(ULegacyAlteration_Widget_C, bTextOnly) == 0x0002C0, "Member 'ULegacyAlteration_Widget_C::bTextOnly' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class MediaAssets.MediaOverlays
 // 0x0088 (0x00B0 - 0x0028)
@@ -35,15 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaOverlays">();
+		STATIC_CLASS_IMPL("MediaOverlays")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaOverlays")
 	}
 	static class UMediaOverlays* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaOverlays>();
 	}
 };
-static_assert(alignof(UMediaOverlays) == 0x000008, "Wrong alignment on UMediaOverlays");
-static_assert(sizeof(UMediaOverlays) == 0x0000B0, "Wrong size on UMediaOverlays");
 
 // Class MediaAssets.MediaPlayer
 // 0x0138 (0x0160 - 0x0028)
@@ -119,27 +120,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlayer">();
+		STATIC_CLASS_IMPL("MediaPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaPlayer")
 	}
 	static class UMediaPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaPlayer>();
 	}
 };
-static_assert(alignof(UMediaPlayer) == 0x000008, "Wrong alignment on UMediaPlayer");
-static_assert(sizeof(UMediaPlayer) == 0x000160, "Wrong size on UMediaPlayer");
-static_assert(offsetof(UMediaPlayer, OnEndReached) == 0x000040, "Member 'UMediaPlayer::OnEndReached' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, OnMediaClosed) == 0x000050, "Member 'UMediaPlayer::OnMediaClosed' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, OnMediaOpened) == 0x000060, "Member 'UMediaPlayer::OnMediaOpened' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, OnMediaOpenFailed) == 0x000070, "Member 'UMediaPlayer::OnMediaOpenFailed' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, OnPlaybackResumed) == 0x000080, "Member 'UMediaPlayer::OnPlaybackResumed' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, OnPlaybackSuspended) == 0x000090, "Member 'UMediaPlayer::OnPlaybackSuspended' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, PlayOnOpen) == 0x0000A0, "Member 'UMediaPlayer::PlayOnOpen' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, Overlays) == 0x0000A8, "Member 'UMediaPlayer::Overlays' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, Playlist) == 0x0000B0, "Member 'UMediaPlayer::Playlist' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, PlaylistIndex) == 0x0000B8, "Member 'UMediaPlayer::PlaylistIndex' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, SoundWave) == 0x0000C0, "Member 'UMediaPlayer::SoundWave' has a wrong offset!");
-static_assert(offsetof(UMediaPlayer, VideoTexture) == 0x0000C8, "Member 'UMediaPlayer::VideoTexture' has a wrong offset!");
 
 // Class MediaAssets.MediaPlaylist
 // 0x0010 (0x0038 - 0x0028)
@@ -162,16 +153,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaPlaylist">();
+		STATIC_CLASS_IMPL("MediaPlaylist")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaPlaylist")
 	}
 	static class UMediaPlaylist* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaPlaylist>();
 	}
 };
-static_assert(alignof(UMediaPlaylist) == 0x000008, "Wrong alignment on UMediaPlaylist");
-static_assert(sizeof(UMediaPlaylist) == 0x000038, "Wrong size on UMediaPlaylist");
-static_assert(offsetof(UMediaPlaylist, Items) == 0x000028, "Member 'UMediaPlaylist::Items' has a wrong offset!");
 
 // Class MediaAssets.MediaSoundWave
 // 0x00D8 (0x0340 - 0x0268)
@@ -187,17 +179,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaSoundWave">();
+		STATIC_CLASS_IMPL("MediaSoundWave")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaSoundWave")
 	}
 	static class UMediaSoundWave* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaSoundWave>();
 	}
 };
-static_assert(alignof(UMediaSoundWave) == 0x000008, "Wrong alignment on UMediaSoundWave");
-static_assert(sizeof(UMediaSoundWave) == 0x000340, "Wrong size on UMediaSoundWave");
-static_assert(offsetof(UMediaSoundWave, AudioTrackIndex) == 0x000270, "Member 'UMediaSoundWave::AudioTrackIndex' has a wrong offset!");
-static_assert(offsetof(UMediaSoundWave, MediaPlayer) == 0x000278, "Member 'UMediaSoundWave::MediaPlayer' has a wrong offset!");
 
 // Class MediaAssets.MediaSource
 // 0x0008 (0x0030 - 0x0028)
@@ -209,15 +201,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaSource">();
+		STATIC_CLASS_IMPL("MediaSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaSource")
 	}
 	static class UMediaSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaSource>();
 	}
 };
-static_assert(alignof(UMediaSource) == 0x000008, "Wrong alignment on UMediaSource");
-static_assert(sizeof(UMediaSource) == 0x000030, "Wrong size on UMediaSource");
 
 // Class MediaAssets.BaseMediaSource
 // 0x0008 (0x0038 - 0x0030)
@@ -229,16 +223,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BaseMediaSource">();
+		STATIC_CLASS_IMPL("BaseMediaSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BaseMediaSource")
 	}
 	static class UBaseMediaSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBaseMediaSource>();
 	}
 };
-static_assert(alignof(UBaseMediaSource) == 0x000008, "Wrong alignment on UBaseMediaSource");
-static_assert(sizeof(UBaseMediaSource) == 0x000038, "Wrong size on UBaseMediaSource");
-static_assert(offsetof(UBaseMediaSource, PlayerName) == 0x000030, "Member 'UBaseMediaSource::PlayerName' has a wrong offset!");
 
 // Class MediaAssets.FileMediaSource
 // 0x0018 (0x0050 - 0x0038)
@@ -255,17 +250,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FileMediaSource">();
+		STATIC_CLASS_IMPL("FileMediaSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FileMediaSource")
 	}
 	static class UFileMediaSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFileMediaSource>();
 	}
 };
-static_assert(alignof(UFileMediaSource) == 0x000008, "Wrong alignment on UFileMediaSource");
-static_assert(sizeof(UFileMediaSource) == 0x000050, "Wrong size on UFileMediaSource");
-static_assert(offsetof(UFileMediaSource, FilePath) == 0x000038, "Member 'UFileMediaSource::FilePath' has a wrong offset!");
-static_assert(offsetof(UFileMediaSource, PrecacheFile) == 0x000048, "Member 'UFileMediaSource::PrecacheFile' has a wrong offset!");
 
 // Class MediaAssets.StreamMediaSource
 // 0x0010 (0x0048 - 0x0038)
@@ -277,16 +272,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"StreamMediaSource">();
+		STATIC_CLASS_IMPL("StreamMediaSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StreamMediaSource")
 	}
 	static class UStreamMediaSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStreamMediaSource>();
 	}
 };
-static_assert(alignof(UStreamMediaSource) == 0x000008, "Wrong alignment on UStreamMediaSource");
-static_assert(sizeof(UStreamMediaSource) == 0x000048, "Wrong size on UStreamMediaSource");
-static_assert(offsetof(UStreamMediaSource, StreamUrl) == 0x000038, "Member 'UStreamMediaSource::StreamUrl' has a wrong offset!");
 
 // Class MediaAssets.PlatformMediaSource
 // 0x0008 (0x0038 - 0x0030)
@@ -298,16 +294,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PlatformMediaSource">();
+		STATIC_CLASS_IMPL("PlatformMediaSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformMediaSource")
 	}
 	static class UPlatformMediaSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlatformMediaSource>();
 	}
 };
-static_assert(alignof(UPlatformMediaSource) == 0x000008, "Wrong alignment on UPlatformMediaSource");
-static_assert(sizeof(UPlatformMediaSource) == 0x000038, "Wrong size on UPlatformMediaSource");
-static_assert(offsetof(UPlatformMediaSource, MediaSource) == 0x000030, "Member 'UPlatformMediaSource::MediaSource' has a wrong offset!");
 
 // Class MediaAssets.MediaTexture
 // 0x00E8 (0x01B0 - 0x00C8)
@@ -332,20 +329,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MediaTexture">();
+		STATIC_CLASS_IMPL("MediaTexture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MediaTexture")
 	}
 	static class UMediaTexture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMediaTexture>();
 	}
 };
-static_assert(alignof(UMediaTexture) == 0x000008, "Wrong alignment on UMediaTexture");
-static_assert(sizeof(UMediaTexture) == 0x0001B0, "Wrong size on UMediaTexture");
-static_assert(offsetof(UMediaTexture, AddressX) == 0x0000D0, "Member 'UMediaTexture::AddressX' has a wrong offset!");
-static_assert(offsetof(UMediaTexture, AddressY) == 0x0000D1, "Member 'UMediaTexture::AddressY' has a wrong offset!");
-static_assert(offsetof(UMediaTexture, ClearColor) == 0x0000D4, "Member 'UMediaTexture::ClearColor' has a wrong offset!");
-static_assert(offsetof(UMediaTexture, MediaPlayer) == 0x0000E8, "Member 'UMediaTexture::MediaPlayer' has a wrong offset!");
-static_assert(offsetof(UMediaTexture, VideoTrackIndex) == 0x0000F0, "Member 'UMediaTexture::VideoTrackIndex' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

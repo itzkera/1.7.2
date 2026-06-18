@@ -18,8 +18,7 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Rewards_ItemCard.Rewards_ItemCard_C
 // 0x0140 (0x0378 - 0x0238)
@@ -108,55 +107,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Rewards_ItemCard_C">();
+		BP_STATIC_CLASS_IMPL("Rewards_ItemCard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Rewards_ItemCard_C")
 	}
 	static class URewards_ItemCard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewards_ItemCard_C>();
 	}
 };
-static_assert(alignof(URewards_ItemCard_C) == 0x000008, "Wrong alignment on URewards_ItemCard_C");
-static_assert(sizeof(URewards_ItemCard_C) == 0x000378, "Wrong size on URewards_ItemCard_C");
-static_assert(offsetof(URewards_ItemCard_C, UberGraphFrame) == 0x000238, "Member 'URewards_ItemCard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, AnimPopInPrimary) == 0x000240, "Member 'URewards_ItemCard_C::AnimPopInPrimary' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, AnimPopIn) == 0x000248, "Member 'URewards_ItemCard_C::AnimPopIn' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ButtonInspect) == 0x000250, "Member 'URewards_ItemCard_C::ButtonInspect' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, CommonBorder_0) == 0x000258, "Member 'URewards_ItemCard_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ItemCardL) == 0x000260, "Member 'URewards_ItemCard_C::ItemCardL' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ItemCardM) == 0x000268, "Member 'URewards_ItemCard_C::ItemCardM' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, OutpostStorageMessage) == 0x000270, "Member 'URewards_ItemCard_C::OutpostStorageMessage' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ScaleBoxLargeCard) == 0x000278, "Member 'URewards_ItemCard_C::ScaleBoxLargeCard' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SizeBoxDropShadow) == 0x000280, "Member 'URewards_ItemCard_C::SizeBoxDropShadow' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartTime) == 0x000288, "Member 'URewards_ItemCard_C::SlideStartTime' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, OnSlideAnimationFinished) == 0x000290, "Member 'URewards_ItemCard_C::OnSlideAnimationFinished' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartAlignment) == 0x0002A0, "Member 'URewards_ItemCard_C::SlideStartAlignment' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideTargetAlignment) == 0x0002A8, "Member 'URewards_ItemCard_C::SlideTargetAlignment' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideAnimationHandle) == 0x0002B0, "Member 'URewards_ItemCard_C::SlideAnimationHandle' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideAnimationDuration) == 0x0002B8, "Member 'URewards_ItemCard_C::SlideAnimationDuration' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartScale) == 0x0002BC, "Member 'URewards_ItemCard_C::SlideStartScale' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideTargetScale) == 0x0002C0, "Member 'URewards_ItemCard_C::SlideTargetScale' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartAnchors) == 0x0002C4, "Member 'URewards_ItemCard_C::SlideStartAnchors' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideTargetAnchors) == 0x0002D4, "Member 'URewards_ItemCard_C::SlideTargetAnchors' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartOffset) == 0x0002E4, "Member 'URewards_ItemCard_C::SlideStartOffset' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideTargetOffset) == 0x0002E8, "Member 'URewards_ItemCard_C::SlideTargetOffset' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartAngle) == 0x0002EC, "Member 'URewards_ItemCard_C::SlideStartAngle' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideTargetAngle) == 0x0002F0, "Member 'URewards_ItemCard_C::SlideTargetAngle' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, OnInspectClicked) == 0x0002F8, "Member 'URewards_ItemCard_C::OnInspectClicked' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, OnResizeAnimationFinished) == 0x000308, "Member 'URewards_ItemCard_C::OnResizeAnimationFinished' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideStartTranslation) == 0x000318, "Member 'URewards_ItemCard_C::SlideStartTranslation' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, SlideTargetTranslation) == 0x000320, "Member 'URewards_ItemCard_C::SlideTargetTranslation' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, OnPopInAnimationFinished) == 0x000328, "Member 'URewards_ItemCard_C::OnPopInAnimationFinished' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ItemToRepresent) == 0x000338, "Member 'URewards_ItemCard_C::ItemToRepresent' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, CurrentCard) == 0x000340, "Member 'URewards_ItemCard_C::CurrentCard' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, IsResizing) == 0x000348, "Member 'URewards_ItemCard_C::IsResizing' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ResizeDuration) == 0x00034C, "Member 'URewards_ItemCard_C::ResizeDuration' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ResizeStartTime) == 0x000350, "Member 'URewards_ItemCard_C::ResizeStartTime' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ResizeHandle) == 0x000358, "Member 'URewards_ItemCard_C::ResizeHandle' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ResizeTargetScale) == 0x000360, "Member 'URewards_ItemCard_C::ResizeTargetScale' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, ResizeStartScale) == 0x000364, "Member 'URewards_ItemCard_C::ResizeStartScale' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, DropShadowTargetDepth) == 0x000368, "Member 'URewards_ItemCard_C::DropShadowTargetDepth' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, DropShadowStartDepth) == 0x00036C, "Member 'URewards_ItemCard_C::DropShadowStartDepth' has a wrong offset!");
-static_assert(offsetof(URewards_ItemCard_C, DropShadowPadding) == 0x000370, "Member 'URewards_ItemCard_C::DropShadowPadding' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

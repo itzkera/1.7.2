@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -29,12 +29,6 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x00F8(0x00B8)()
 };
-static_assert(alignof(ItemManagementFocusSwitcher_C_OnFocusReceived) == 0x000008, "Wrong alignment on ItemManagementFocusSwitcher_C_OnFocusReceived");
-static_assert(sizeof(ItemManagementFocusSwitcher_C_OnFocusReceived) == 0x0001B0, "Wrong size on ItemManagementFocusSwitcher_C_OnFocusReceived");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, InFocusEvent) == 0x000034, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_OnFocusReceived, CallFunc_Handled_ReturnValue) == 0x0000F8, "Member 'ItemManagementFocusSwitcher_C_OnFocusReceived::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.DeferFocusSwitch
 // 0x0020 (0x0020 - 0x0000)
@@ -47,12 +41,6 @@ public:
 	class UObject*                                CallFunc_GetSelectedItem_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementFocusSwitcher_C_DeferFocusSwitch) == 0x000008, "Wrong alignment on ItemManagementFocusSwitcher_C_DeferFocusSwitch");
-static_assert(sizeof(ItemManagementFocusSwitcher_C_DeferFocusSwitch) == 0x000020, "Wrong size on ItemManagementFocusSwitcher_C_DeferFocusSwitch");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_K2_SetTimer_ReturnValue) == 0x000000, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_GetSelectedItem_ReturnValue) == 0x000010, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_DeferFocusSwitch, CallFunc_IsValid_ReturnValue2) == 0x000018, "Member 'ItemManagementFocusSwitcher_C_DeferFocusSwitch::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.ExecuteFocusSwitch
 // 0x0050 (0x0050 - 0x0000)
@@ -78,22 +66,6 @@ public:
 	bool                                          CallFunc_SetSelectedIndex_ReturnValue;             // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetSelectedIndex_ReturnValue2;            // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch) == 0x000008, "Wrong alignment on ItemManagementFocusSwitcher_C_ExecuteFocusSwitch");
-static_assert(sizeof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch) == 0x000050, "Wrong size on ItemManagementFocusSwitcher_C_ExecuteFocusSwitch");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetNumItems_ReturnValue) == 0x000008, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetNumItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetSelectedItem_ReturnValue) == 0x000010, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetNumItems_ReturnValue2) == 0x000018, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetNumItems_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetSelectedItem_ReturnValue2) == 0x000020, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetSelectedItem_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_Greater_IntInt_ReturnValue2) == 0x000028, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetNumItems_ReturnValue3) == 0x00002C, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetNumItems_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_Greater_IntInt_ReturnValue3) == 0x000030, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetItemAt_ReturnValue) == 0x000038, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetItemAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_GetItemAt_ReturnValue2) == 0x000040, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_GetItemAt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000048, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_SetSelectedIndex_ReturnValue) == 0x000049, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_SetSelectedIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementFocusSwitcher_C_ExecuteFocusSwitch, CallFunc_SetSelectedIndex_ReturnValue2) == 0x00004A, "Member 'ItemManagementFocusSwitcher_C_ExecuteFocusSwitch::CallFunc_SetSelectedIndex_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

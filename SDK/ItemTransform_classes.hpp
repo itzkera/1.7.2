@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransform.ItemTransform_C
 // 0x00B0 (0x0490 - 0x03E0)
@@ -81,31 +80,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransform_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransform_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransform_C")
 	}
 	static class UItemTransform_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransform_C>();
 	}
 };
-static_assert(alignof(UItemTransform_C) == 0x000008, "Wrong alignment on UItemTransform_C");
-static_assert(sizeof(UItemTransform_C) == 0x000490, "Wrong size on UItemTransform_C");
-static_assert(offsetof(UItemTransform_C, UberGraphFrame) == 0x0003E0, "Member 'UItemTransform_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, KeyScreen) == 0x0003E8, "Member 'UItemTransform_C::KeyScreen' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SafeZone_1) == 0x0003F0, "Member 'UItemTransform_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SlotScreen) == 0x0003F8, "Member 'UItemTransform_C::SlotScreen' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, TransformScreenSwitcher) == 0x000400, "Member 'UItemTransform_C::TransformScreenSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SelectedKey) == 0x000408, "Member 'UItemTransform_C::SelectedKey' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SelectedSacrificeItems) == 0x000410, "Member 'UItemTransform_C::SelectedSacrificeItems' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SacrificePoints) == 0x000420, "Member 'UItemTransform_C::SacrificePoints' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, CurrentTier) == 0x000424, "Member 'UItemTransform_C::CurrentTier' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, BackInputAction) == 0x000428, "Member 'UItemTransform_C::BackInputAction' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SelectKeyInputAction) == 0x000438, "Member 'UItemTransform_C::SelectKeyInputAction' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, TransformInputAction) == 0x000448, "Member 'UItemTransform_C::TransformInputAction' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, SelectItemInputAction) == 0x000458, "Member 'UItemTransform_C::SelectItemInputAction' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, InspectItemInputAction) == 0x000468, "Member 'UItemTransform_C::InspectItemInputAction' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, IsItemPickerOpen) == 0x000478, "Member 'UItemTransform_C::IsItemPickerOpen' has a wrong offset!");
-static_assert(offsetof(UItemTransform_C, ClosePickerInputAction) == 0x000480, "Member 'UItemTransform_C::ClosePickerInputAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

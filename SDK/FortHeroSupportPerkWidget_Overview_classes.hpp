@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FortHeroSupportPerkWidget-Overview.FortHeroSupportPerkWidget-Overview_C
 // 0x0018 (0x05D0 - 0x05B8)
@@ -35,18 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortHeroSupportPerkWidget-Overview_C">();
+		BP_STATIC_CLASS_IMPL("FortHeroSupportPerkWidget-Overview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortHeroSupportPerkWidget-Overview_C")
 	}
 	static class UFortHeroSupportPerkWidget_Overview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortHeroSupportPerkWidget_Overview_C>();
 	}
 };
-static_assert(alignof(UFortHeroSupportPerkWidget_Overview_C) == 0x000008, "Wrong alignment on UFortHeroSupportPerkWidget_Overview_C");
-static_assert(sizeof(UFortHeroSupportPerkWidget_Overview_C) == 0x0005D0, "Wrong size on UFortHeroSupportPerkWidget_Overview_C");
-static_assert(offsetof(UFortHeroSupportPerkWidget_Overview_C, UberGraphFrame) == 0x0005B8, "Member 'UFortHeroSupportPerkWidget_Overview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_Overview_C, TypeText) == 0x0005C0, "Member 'UFortHeroSupportPerkWidget_Overview_C::TypeText' has a wrong offset!");
-static_assert(offsetof(UFortHeroSupportPerkWidget_Overview_C, IconSize) == 0x0005C8, "Member 'UFortHeroSupportPerkWidget_Overview_C::IconSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "MenuScreen_Commando_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MenuScreen_Commando.MenuScreen_Commando_C.ExecuteUbergraph_MenuScreen_Commando
 // ()
@@ -92,5 +91,5 @@ void UMenuScreen_Commando_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScr
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

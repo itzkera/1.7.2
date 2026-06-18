@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaAerialFeedback.AthenaAerialFeedback_C
 // 0x0020 (0x0280 - 0x0260)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaAerialFeedback_C">();
+		BP_STATIC_CLASS_IMPL("AthenaAerialFeedback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaAerialFeedback_C")
 	}
 	static class UAthenaAerialFeedback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaAerialFeedback_C>();
 	}
 };
-static_assert(alignof(UAthenaAerialFeedback_C) == 0x000008, "Wrong alignment on UAthenaAerialFeedback_C");
-static_assert(sizeof(UAthenaAerialFeedback_C) == 0x000280, "Wrong size on UAthenaAerialFeedback_C");
-static_assert(offsetof(UAthenaAerialFeedback_C, UberGraphFrame) == 0x000260, "Member 'UAthenaAerialFeedback_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaAerialFeedback_C, Feedback) == 0x000268, "Member 'UAthenaAerialFeedback_C::Feedback' has a wrong offset!");
-static_assert(offsetof(UAthenaAerialFeedback_C, FeedbackText) == 0x000270, "Member 'UAthenaAerialFeedback_C::FeedbackText' has a wrong offset!");
-static_assert(offsetof(UAthenaAerialFeedback_C, KeybindWidget_0) == 0x000278, "Member 'UAthenaAerialFeedback_C::KeybindWidget_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

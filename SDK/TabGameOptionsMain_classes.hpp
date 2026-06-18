@@ -11,12 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "TabGameOptions_classes.hpp"
 #include "UMG_structs.hpp"
+#include "TabGameOptions_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabGameOptionsMain.TabGameOptionsMain_C
 // 0x00A0 (0x0348 - 0x02A8)
@@ -75,35 +74,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGameOptionsMain_C">();
+		BP_STATIC_CLASS_IMPL("TabGameOptionsMain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGameOptionsMain_C")
 	}
 	static class UTabGameOptionsMain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGameOptionsMain_C>();
 	}
 };
-static_assert(alignof(UTabGameOptionsMain_C) == 0x000008, "Wrong alignment on UTabGameOptionsMain_C");
-static_assert(sizeof(UTabGameOptionsMain_C) == 0x000348, "Wrong size on UTabGameOptionsMain_C");
-static_assert(offsetof(UTabGameOptionsMain_C, UberGraphFrame_TabGameOptionsMain_C) == 0x0002A8, "Member 'UTabGameOptionsMain_C::UberGraphFrame_TabGameOptionsMain_C' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, AutoEquipBetterItems) == 0x0002B0, "Member 'UTabGameOptionsMain_C::AutoEquipBetterItems' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ControllerLookSensitivityX) == 0x0002B8, "Member 'UTabGameOptionsMain_C::ControllerLookSensitivityX' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ControllerLookSensitivityY) == 0x0002C0, "Member 'UTabGameOptionsMain_C::ControllerLookSensitivityY' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, EquipFirstBuildingPieceWhenSwappingQuickbars) == 0x0002C8, "Member 'UTabGameOptionsMain_C::EquipFirstBuildingPieceWhenSwappingQuickbars' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, First_PersonCamera) == 0x0002D0, "Member 'UTabGameOptionsMain_C::First_PersonCamera' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ForceFeedback) == 0x0002D8, "Member 'UTabGameOptionsMain_C::ForceFeedback' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, InvertMouse) == 0x0002E0, "Member 'UTabGameOptionsMain_C::InvertMouse' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, Language) == 0x0002E8, "Member 'UTabGameOptionsMain_C::Language' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, MouseSensitivity) == 0x0002F0, "Member 'UTabGameOptionsMain_C::MouseSensitivity' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, Region) == 0x0002F8, "Member 'UTabGameOptionsMain_C::Region' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, SafeZone) == 0x000300, "Member 'UTabGameOptionsMain_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ScopedMultiplier) == 0x000308, "Member 'UTabGameOptionsMain_C::ScopedMultiplier' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ShowBackpack) == 0x000310, "Member 'UTabGameOptionsMain_C::ShowBackpack' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ShowHeadAccessories) == 0x000318, "Member 'UTabGameOptionsMain_C::ShowHeadAccessories' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, SprintCancelsReload) == 0x000320, "Member 'UTabGameOptionsMain_C::SprintCancelsReload' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, TapInteract) == 0x000328, "Member 'UTabGameOptionsMain_C::TapInteract' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, TargetingMultiplier) == 0x000330, "Member 'UTabGameOptionsMain_C::TargetingMultiplier' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, ToggleSprint) == 0x000338, "Member 'UTabGameOptionsMain_C::ToggleSprint' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, Tooltip_Display) == 0x000340, "Member 'UTabGameOptionsMain_C::Tooltip_Display' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

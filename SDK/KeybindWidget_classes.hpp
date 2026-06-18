@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass KeybindWidget.KeybindWidget_C
 // 0x0630 (0x08C0 - 0x0290)
@@ -55,29 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KeybindWidget_C">();
+		BP_STATIC_CLASS_IMPL("KeybindWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KeybindWidget_C")
 	}
 	static class UKeybindWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKeybindWidget_C>();
 	}
 };
-static_assert(alignof(UKeybindWidget_C) == 0x000008, "Wrong alignment on UKeybindWidget_C");
-static_assert(sizeof(UKeybindWidget_C) == 0x0008C0, "Wrong size on UKeybindWidget_C");
-static_assert(offsetof(UKeybindWidget_C, UberGraphFrame) == 0x000290, "Member 'UKeybindWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, _Image__Keybind) == 0x000298, "Member 'UKeybindWidget_C::_Image__Keybind' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, _Image__Shadow) == 0x0002A0, "Member 'UKeybindWidget_C::_Image__Shadow' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, BorderFrame) == 0x0002A8, "Member 'UKeybindWidget_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, HoldOverlay) == 0x0002B0, "Member 'UKeybindWidget_C::HoldOverlay' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, KeyTextOverlay) == 0x0002B8, "Member 'UKeybindWidget_C::KeyTextOverlay' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, SizeBox_0) == 0x0002C0, "Member 'UKeybindWidget_C::SizeBox_0' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, SizeBoxBackplate) == 0x0002C8, "Member 'UKeybindWidget_C::SizeBoxBackplate' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, Switcher) == 0x0002D0, "Member 'UKeybindWidget_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, TextKeybind) == 0x0002D8, "Member 'UKeybindWidget_C::TextKeybind' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, TextSizeMinBox) == 0x0002E0, "Member 'UKeybindWidget_C::TextSizeMinBox' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, Brush_Size) == 0x0002E8, "Member 'UKeybindWidget_C::Brush_Size' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, Frame_MultiBrush) == 0x0002F0, "Member 'UKeybindWidget_C::Frame_MultiBrush' has a wrong offset!");
-static_assert(offsetof(UKeybindWidget_C, MultiFont) == 0x000650, "Member 'UKeybindWidget_C::MultiFont' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "PinnedSchematicItemsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C.ExecuteUbergraph_PinnedSchematicItemsWidget
 // ()
@@ -64,5 +63,5 @@ void UPinnedSchematicItemsWidget_C::Refresh()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

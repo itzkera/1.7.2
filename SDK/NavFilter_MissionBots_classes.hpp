@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass NavFilter_MissionBots.NavFilter_MissionBots_C
 // 0x0000 (0x0048 - 0x0048)
@@ -23,15 +22,16 @@ class UNavFilter_MissionBots_C final : public UNavigationQueryFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NavFilter_MissionBots_C">();
+		BP_STATIC_CLASS_IMPL("NavFilter_MissionBots_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavFilter_MissionBots_C")
 	}
 	static class UNavFilter_MissionBots_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavFilter_MissionBots_C>();
 	}
 };
-static_assert(alignof(UNavFilter_MissionBots_C) == 0x000008, "Wrong alignment on UNavFilter_MissionBots_C");
-static_assert(sizeof(UNavFilter_MissionBots_C) == 0x000048, "Wrong size on UNavFilter_MissionBots_C");
 
-}
-
+SDK_NAMESPACE_END

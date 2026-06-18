@@ -14,8 +14,7 @@
 #include "TooltipIngredientList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TooltipIngredientList.TooltipIngredientList_C.ExecuteUbergraph_TooltipIngredientList
 // ()
@@ -64,5 +63,5 @@ void UTooltipIngredientList_C::Refresh()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

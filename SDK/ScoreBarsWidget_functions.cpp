@@ -14,8 +14,7 @@
 #include "ScoreBarsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ScoreBarsWidget.ScoreBarsWidget_C.ExecuteUbergraph_ScoreBarsWidget
 // ()
@@ -96,7 +95,7 @@ void UScoreBarsWidget_C::InitializeScoreBars()
 // Function ScoreBarsWidget.ScoreBarsWidget_C.HasValidBadgeInfos
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bHasValidBadgeInfos                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bHasValidBadgeInfos                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UScoreBarsWidget_C::HasValidBadgeInfos(bool* bHasValidBadgeInfos)
 {
@@ -180,7 +179,7 @@ void UScoreBarsWidget_C::InitializeIcons()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Delta                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Name_0                                                 (Parm, OutParm, ReferenceParm)
+// class FText&                            Name_0                                                 (Parm, OutParm, ReferenceParm)
 // EFortReplicatedStat                     StatType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EStatCategory                           StatCategory                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -319,5 +318,5 @@ void UScoreBarsWidget_C::UnregisterForScoreStreamEvents()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

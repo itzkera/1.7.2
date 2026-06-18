@@ -14,8 +14,7 @@
 #include "BP_SplineVolumeTrail_v1b_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ExecuteUbergraph_BP_SplineVolumeTrail_v1b
 // (HasDefaults)
@@ -430,7 +429,7 @@ void ABP_SplineVolumeTrail_v1b_C::TickIntervalLODCheck()
 // Parameters:
 // class UCurveLinearColor*                Curve_Linear_Color                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Index_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     LinearColorOut                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    LinearColorOut                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABP_SplineVolumeTrail_v1b_C::GetLinearColorFromCurveAtTime(class UCurveLinearColor* Curve_Linear_Color, int32 Index_0, struct FLinearColor* LinearColorOut)
 {
@@ -506,7 +505,7 @@ void ABP_SplineVolumeTrail_v1b_C::ReturnSplineMeshToPool(class USplineMeshCompon
 // Parameters:
 // class UCurveLinearColor*                Curve_Linear_Color                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Pixel__X_                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     LinearColorOut                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    LinearColorOut                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABP_SplineVolumeTrail_v1b_C::BakeLinearColor(class UCurveLinearColor* Curve_Linear_Color, int32 Pixel__X_, struct FLinearColor* LinearColorOut)
 {
@@ -565,7 +564,7 @@ void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndAllSplineMeshes(bool Update_All_
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class FName                             Socket_Name                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationWS                                             (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         LocationWS                                             (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABP_SplineVolumeTrail_v1b_C::GetSocketLocationWS(class FName Socket_Name, struct FVector* LocationWS)
 {
@@ -598,5 +597,5 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateCheapSplinesWPOVectors()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

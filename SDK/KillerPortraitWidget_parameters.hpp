@@ -13,8 +13,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function KillerPortraitWidget.KillerPortraitWidget_C.Init
 // 0x00B0 (0x00B0 - 0x0000)
@@ -24,10 +24,6 @@ public:
 	struct FFortKillerVisualInfo                  KillerVisualInfo;                                  // 0x0000(0x00A8)(Parm, OutParm, ReferenceParm)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(KillerPortraitWidget_C_Init) == 0x000008, "Wrong alignment on KillerPortraitWidget_C_Init");
-static_assert(sizeof(KillerPortraitWidget_C_Init) == 0x0000B0, "Wrong size on KillerPortraitWidget_C_Init");
-static_assert(offsetof(KillerPortraitWidget_C_Init, KillerVisualInfo) == 0x000000, "Member 'KillerPortraitWidget_C_Init::KillerVisualInfo' has a wrong offset!");
-static_assert(offsetof(KillerPortraitWidget_C_Init, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'KillerPortraitWidget_C_Init::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

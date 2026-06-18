@@ -14,8 +14,7 @@
 #include "TutorialWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TutorialWindow.TutorialWindow_C.ExecuteUbergraph_TutorialWindow
 // ()
@@ -60,7 +59,7 @@ void UTutorialWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_Comm
 // Function TutorialWindow.TutorialWindow_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description_0                                          (Parm)
+// const class FText&                      Description_0                                          (Parm)
 
 void UTutorialWindow_C::SetDescription(const class FText& Description_0)
 {
@@ -76,5 +75,5 @@ void UTutorialWindow_C::SetDescription(const class FText& Description_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DONOTUSE.DONOTUSE_C.ExecuteUbergraph_DONOTUSE
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct DONOTUSE_C_ExecuteUbergraph_DONOTUSE final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DONOTUSE_C_ExecuteUbergraph_DONOTUSE) == 0x000004, "Wrong alignment on DONOTUSE_C_ExecuteUbergraph_DONOTUSE");
-static_assert(sizeof(DONOTUSE_C_ExecuteUbergraph_DONOTUSE) == 0x000004, "Wrong size on DONOTUSE_C_ExecuteUbergraph_DONOTUSE");
-static_assert(offsetof(DONOTUSE_C_ExecuteUbergraph_DONOTUSE, EntryPoint) == 0x000000, "Member 'DONOTUSE_C_ExecuteUbergraph_DONOTUSE::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

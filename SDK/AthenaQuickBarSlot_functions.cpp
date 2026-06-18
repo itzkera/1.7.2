@@ -14,13 +14,12 @@
 #include "AthenaQuickBarSlot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.GetKeyBindingAction_Gamepad
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class FName                             KeyBindingAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            KeyBindingAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaQuickBarSlot_C::GetKeyBindingAction_Gamepad(class FName* KeyBindingAction) const
 {
@@ -37,5 +36,5 @@ void UAthenaQuickBarSlot_C::GetKeyBindingAction_Gamepad(class FName* KeyBindingA
 		*KeyBindingAction = Parms.KeyBindingAction;
 }
 
-}
 
+SDK_NAMESPACE_END

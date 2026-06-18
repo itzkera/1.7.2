@@ -15,8 +15,7 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardsIcon.RewardsIcon_C
 // 0x0090 (0x02C8 - 0x0238)
@@ -72,30 +71,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardsIcon_C">();
+		BP_STATIC_CLASS_IMPL("RewardsIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardsIcon_C")
 	}
 	static class URewardsIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardsIcon_C>();
 	}
 };
-static_assert(alignof(URewardsIcon_C) == 0x000008, "Wrong alignment on URewardsIcon_C");
-static_assert(sizeof(URewardsIcon_C) == 0x0002C8, "Wrong size on URewardsIcon_C");
-static_assert(offsetof(URewardsIcon_C, UberGraphFrame) == 0x000238, "Member 'URewardsIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, MaterializeAnimation) == 0x000240, "Member 'URewardsIcon_C::MaterializeAnimation' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, DisperseAnimation) == 0x000248, "Member 'URewardsIcon_C::DisperseAnimation' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, ImageIcon) == 0x000250, "Member 'URewardsIcon_C::ImageIcon' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, ScaleBoxIconScale) == 0x000258, "Member 'URewardsIcon_C::ScaleBoxIconScale' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, OnSlideAnimationFinished) == 0x000260, "Member 'URewardsIcon_C::OnSlideAnimationFinished' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, OnDisperseAnimationFinished) == 0x000270, "Member 'URewardsIcon_C::OnDisperseAnimationFinished' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, OnMaterializeAnimationFinished) == 0x000280, "Member 'URewardsIcon_C::OnMaterializeAnimationFinished' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, Reward) == 0x000290, "Member 'URewardsIcon_C::Reward' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, SlideAnimStartTime) == 0x000298, "Member 'URewardsIcon_C::SlideAnimStartTime' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, SlideAnimStartTranslation) == 0x00029C, "Member 'URewardsIcon_C::SlideAnimStartTranslation' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, SlideAnimTargetTranslation) == 0x0002A0, "Member 'URewardsIcon_C::SlideAnimTargetTranslation' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, SlideAnimHandle) == 0x0002A8, "Member 'URewardsIcon_C::SlideAnimHandle' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, IconMaterial) == 0x0002B0, "Member 'URewardsIcon_C::IconMaterial' has a wrong offset!");
-static_assert(offsetof(URewardsIcon_C, OnImageClicked) == 0x0002B8, "Member 'URewardsIcon_C::OnImageClicked' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

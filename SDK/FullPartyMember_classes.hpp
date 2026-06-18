@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FullPartyMember.FullPartyMember_C
 // 0x0298 (0x04F8 - 0x0260)
@@ -88,47 +87,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FullPartyMember_C">();
+		BP_STATIC_CLASS_IMPL("FullPartyMember_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FullPartyMember_C")
 	}
 	static class UFullPartyMember_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFullPartyMember_C>();
 	}
 };
-static_assert(alignof(UFullPartyMember_C) == 0x000008, "Wrong alignment on UFullPartyMember_C");
-static_assert(sizeof(UFullPartyMember_C) == 0x0004F8, "Wrong size on UFullPartyMember_C");
-static_assert(offsetof(UFullPartyMember_C, UberGraphFrame) == 0x000260, "Member 'UFullPartyMember_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, CONNECTED) == 0x000268, "Member 'UFullPartyMember_C::CONNECTED' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Connecting) == 0x000270, "Member 'UFullPartyMember_C::Connecting' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, FortitudeDisplay) == 0x000278, "Member 'UFullPartyMember_C::FortitudeDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Image_2) == 0x000280, "Member 'UFullPartyMember_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Image_112) == 0x000288, "Member 'UFullPartyMember_C::Image_112' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Image_233) == 0x000290, "Member 'UFullPartyMember_C::Image_233' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, ImageEmpty) == 0x000298, "Member 'UFullPartyMember_C::ImageEmpty' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, LeaderImageOverlay) == 0x0002A0, "Member 'UFullPartyMember_C::LeaderImageOverlay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, MemberStateSwitcher) == 0x0002A8, "Member 'UFullPartyMember_C::MemberStateSwitcher' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, NormalBangWrapper_0) == 0x0002B0, "Member 'UFullPartyMember_C::NormalBangWrapper_0' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, OffenseDisplay) == 0x0002B8, "Member 'UFullPartyMember_C::OffenseDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Open) == 0x0002C0, "Member 'UFullPartyMember_C::Open' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, PlayerBanner_118) == 0x0002C8, "Member 'UFullPartyMember_C::PlayerBanner_118' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, PlayerHBRating) == 0x0002D0, "Member 'UFullPartyMember_C::PlayerHBRating' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, PlayerName) == 0x0002D8, "Member 'UFullPartyMember_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, PlayerNameNonParty) == 0x0002E0, "Member 'UFullPartyMember_C::PlayerNameNonParty' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, PlayerSoloHBRating) == 0x0002E8, "Member 'UFullPartyMember_C::PlayerSoloHBRating' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, PowerGlow) == 0x0002F0, "Member 'UFullPartyMember_C::PowerGlow' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, ResistanceDisplay) == 0x0002F8, "Member 'UFullPartyMember_C::ResistanceDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, SecondaryFortitudeDisplay) == 0x000300, "Member 'UFullPartyMember_C::SecondaryFortitudeDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, SecondaryOffenseDisplay) == 0x000308, "Member 'UFullPartyMember_C::SecondaryOffenseDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, SecondaryResistanceDisplay) == 0x000310, "Member 'UFullPartyMember_C::SecondaryResistanceDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, SecondaryTechDisplay) == 0x000318, "Member 'UFullPartyMember_C::SecondaryTechDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, TechDisplay) == 0x000320, "Member 'UFullPartyMember_C::TechDisplay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, MemberInfo) == 0x000328, "Member 'UFullPartyMember_C::MemberInfo' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Dimensions) == 0x0004B8, "Member 'UFullPartyMember_C::Dimensions' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, DeclineAction) == 0x0004C0, "Member 'UFullPartyMember_C::DeclineAction' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, LocalPlayerActionsTitle) == 0x0004C8, "Member 'UFullPartyMember_C::LocalPlayerActionsTitle' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, bLocalPlayerAlone) == 0x0004E0, "Member 'UFullPartyMember_C::bLocalPlayerAlone' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, NewLocalPlayerWidget) == 0x0004E8, "Member 'UFullPartyMember_C::NewLocalPlayerWidget' has a wrong offset!");
-static_assert(offsetof(UFullPartyMember_C, Modified_Power) == 0x0004F0, "Member 'UFullPartyMember_C::Modified_Power' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

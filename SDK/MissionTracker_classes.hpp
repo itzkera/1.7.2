@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionTracker.MissionTracker_C
 // 0x0010 (0x02A0 - 0x0290)
@@ -38,17 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionTracker_C">();
+		BP_STATIC_CLASS_IMPL("MissionTracker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionTracker_C")
 	}
 	static class UMissionTracker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionTracker_C>();
 	}
 };
-static_assert(alignof(UMissionTracker_C) == 0x000008, "Wrong alignment on UMissionTracker_C");
-static_assert(sizeof(UMissionTracker_C) == 0x0002A0, "Wrong size on UMissionTracker_C");
-static_assert(offsetof(UMissionTracker_C, UberGraphFrame) == 0x000290, "Member 'UMissionTracker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionTracker_C, AdditionalEntriesSizeBox) == 0x000298, "Member 'UMissionTracker_C::AdditionalEntriesSizeBox' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BannerLibrary.BannerLibrary_C
 // 0x0000 (0x0028 - 0x0028)
@@ -32,15 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BannerLibrary_C">();
+		BP_STATIC_CLASS_IMPL("BannerLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BannerLibrary_C")
 	}
 	static class UBannerLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBannerLibrary_C>();
 	}
 };
-static_assert(alignof(UBannerLibrary_C) == 0x000008, "Wrong alignment on UBannerLibrary_C");
-static_assert(sizeof(UBannerLibrary_C) == 0x000028, "Wrong size on UBannerLibrary_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ShowFriendCodesSelection.ShowFriendCodesSelection_C
 // 0x0040 (0x0420 - 0x03E0)
@@ -41,23 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowFriendCodesSelection_C">();
+		BP_STATIC_CLASS_IMPL("ShowFriendCodesSelection_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowFriendCodesSelection_C")
 	}
 	static class UShowFriendCodesSelection_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowFriendCodesSelection_C>();
 	}
 };
-static_assert(alignof(UShowFriendCodesSelection_C) == 0x000008, "Wrong alignment on UShowFriendCodesSelection_C");
-static_assert(sizeof(UShowFriendCodesSelection_C) == 0x000420, "Wrong size on UShowFriendCodesSelection_C");
-static_assert(offsetof(UShowFriendCodesSelection_C, UberGraphFrame) == 0x0003E0, "Member 'UShowFriendCodesSelection_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, ButtonBox) == 0x0003E8, "Member 'UShowFriendCodesSelection_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, CodesListScrollBox) == 0x0003F0, "Member 'UShowFriendCodesSelection_C::CodesListScrollBox' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, FriendCodePC) == 0x0003F8, "Member 'UShowFriendCodesSelection_C::FriendCodePC' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, FriendCodePC_0) == 0x000400, "Member 'UShowFriendCodesSelection_C::FriendCodePC_0' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, IconTextButton) == 0x000408, "Member 'UShowFriendCodesSelection_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, Lightbox_NUI) == 0x000410, "Member 'UShowFriendCodesSelection_C::Lightbox_NUI' has a wrong offset!");
-static_assert(offsetof(UShowFriendCodesSelection_C, Title) == 0x000418, "Member 'UShowFriendCodesSelection_C::Title' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

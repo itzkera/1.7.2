@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-KeyBase-Center-M.Border-KeyBase-Center-M_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_KeyBase_Center_M_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-KeyBase-Center-M_C">();
+		BP_STATIC_CLASS_IMPL("Border-KeyBase-Center-M_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-KeyBase-Center-M_C")
 	}
 	static class UBorder_KeyBase_Center_M_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_KeyBase_Center_M_C>();
 	}
 };
-static_assert(alignof(UBorder_KeyBase_Center_M_C) == 0x000008, "Wrong alignment on UBorder_KeyBase_Center_M_C");
-static_assert(sizeof(UBorder_KeyBase_Center_M_C) == 0x0000B8, "Wrong size on UBorder_KeyBase_Center_M_C");
 
-}
-
+SDK_NAMESPACE_END

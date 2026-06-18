@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FounderBadgeTooltip.FounderBadgeTooltip_C
 // 0x0008 (0x0240 - 0x0238)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FounderBadgeTooltip_C">();
+		BP_STATIC_CLASS_IMPL("FounderBadgeTooltip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FounderBadgeTooltip_C")
 	}
 	static class UFounderBadgeTooltip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFounderBadgeTooltip_C>();
 	}
 };
-static_assert(alignof(UFounderBadgeTooltip_C) == 0x000008, "Wrong alignment on UFounderBadgeTooltip_C");
-static_assert(sizeof(UFounderBadgeTooltip_C) == 0x000240, "Wrong size on UFounderBadgeTooltip_C");
-static_assert(offsetof(UFounderBadgeTooltip_C, HBoxBoost) == 0x000238, "Member 'UFounderBadgeTooltip_C::HBoxBoost' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

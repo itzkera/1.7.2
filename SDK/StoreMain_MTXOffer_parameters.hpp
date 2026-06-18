@@ -16,8 +16,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ExecuteUbergraph_StoreMain_MTXOffer
 // 0x0028 (0x0028 - 0x0000)
@@ -33,15 +33,6 @@ public:
 	EFortMtxStoreOfferType                        CallFunc_GetStoreOfferType_ReturnValue2;           // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue2;         // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer");
-static_assert(sizeof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer) == 0x000028, "Wrong size on StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, EntryPoint) == 0x000000, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, K2Node_CustomEvent_Button) == 0x000008, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, CallFunc_GetStoreOfferType_ReturnValue) == 0x000020, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::CallFunc_GetStoreOfferType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, CallFunc_GetStoreOfferType_ReturnValue2) == 0x000022, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::CallFunc_GetStoreOfferType_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000023, "Member 'StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.OnClick
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +41,6 @@ struct StoreMain_MTXOffer_C_OnClick final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_MTXOffer_C_OnClick) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_OnClick");
-static_assert(sizeof(StoreMain_MTXOffer_C_OnClick) == 0x000008, "Wrong size on StoreMain_MTXOffer_C_OnClick");
-static_assert(offsetof(StoreMain_MTXOffer_C_OnClick, Button) == 0x000000, "Member 'StoreMain_MTXOffer_C_OnClick::Button' has a wrong offset!");
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.InitOffer
 // 0x0208 (0x0208 - 0x0000)
@@ -96,38 +84,6 @@ public:
 	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select2_Default;                            // 0x01F0(0x0018)()
 };
-static_assert(alignof(StoreMain_MTXOffer_C_InitOffer) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_InitOffer");
-static_assert(sizeof(StoreMain_MTXOffer_C_InitOffer) == 0x000208, "Wrong size on StoreMain_MTXOffer_C_InitOffer");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, SalePrice) == 0x000000, "Member 'StoreMain_MTXOffer_C_InitOffer::SalePrice' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, bIsOnSale) == 0x000018, "Member 'StoreMain_MTXOffer_C_InitOffer::bIsOnSale' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, LocalSalePrice) == 0x000020, "Member 'StoreMain_MTXOffer_C_InitOffer::LocalSalePrice' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, BonusMTX) == 0x000038, "Member 'StoreMain_MTXOffer_C_InitOffer::BonusMTX' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, BaseMtx) == 0x000050, "Member 'StoreMain_MTXOffer_C_InitOffer::BaseMtx' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, OfferMaterial) == 0x000068, "Member 'StoreMain_MTXOffer_C_InitOffer::OfferMaterial' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, Temp_byte_Variable) == 0x000070, "Member 'StoreMain_MTXOffer_C_InitOffer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, Temp_byte_Variable2) == 0x000071, "Member 'StoreMain_MTXOffer_C_InitOffer::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, Temp_bool_Variable) == 0x000072, "Member 'StoreMain_MTXOffer_C_InitOffer::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetBonusQuantity_ReturnValue) == 0x000074, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetBonusQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_Greater_IntInt_ReturnValue) == 0x000078, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetStoreOfferType_ReturnValue) == 0x000079, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetStoreOfferType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00007A, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, K2Node_Select_Default) == 0x00007B, "Member 'StoreMain_MTXOffer_C_InitOffer::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_BooleanAND_ReturnValue) == 0x00007C, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, Temp_bool_Variable2) == 0x00007D, "Member 'StoreMain_MTXOffer_C_InitOffer::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetGradient_ReturnValue) == 0x000080, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetGradient_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000A0, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetBackground_ReturnValue) == 0x0000A8, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetBackground_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetTileImage_ReturnValue) == 0x0000B8, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetTileImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetName_ReturnValue) == 0x000148, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetBonusQuantity_ReturnValue2) == 0x000160, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetBonusQuantity_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_Conv_IntToText_ReturnValue) == 0x000168, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetBaseQuantity_ReturnValue) == 0x000180, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetBaseQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetNormalPrice_ReturnValue) == 0x000188, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetNormalPrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_Conv_IntToText_ReturnValue2) == 0x0001A0, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetNormalPrice_ReturnValue2) == 0x0001B8, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetNormalPrice_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetSalePrice_SalePrice) == 0x0001D0, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetSalePrice_SalePrice' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, CallFunc_GetSalePrice_ReturnValue) == 0x0001E8, "Member 'StoreMain_MTXOffer_C_InitOffer::CallFunc_GetSalePrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_InitOffer, K2Node_Select2_Default) == 0x0001F0, "Member 'StoreMain_MTXOffer_C_InitOffer::K2Node_Select2_Default' has a wrong offset!");
 
 // Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ShowDetails
 // 0x0018 (0x0018 - 0x0000)
@@ -138,11 +94,6 @@ public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStoreMain_OfferDetails_C*              CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_MTXOffer_C_ShowDetails) == 0x000008, "Wrong alignment on StoreMain_MTXOffer_C_ShowDetails");
-static_assert(sizeof(StoreMain_MTXOffer_C_ShowDetails) == 0x000018, "Wrong size on StoreMain_MTXOffer_C_ShowDetails");
-static_assert(offsetof(StoreMain_MTXOffer_C_ShowDetails, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'StoreMain_MTXOffer_C_ShowDetails::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ShowDetails, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'StoreMain_MTXOffer_C_ShowDetails::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_MTXOffer_C_ShowDetails, CallFunc_Create_ReturnValue) == 0x000010, "Member 'StoreMain_MTXOffer_C_ShowDetails::CallFunc_Create_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

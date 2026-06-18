@@ -10,15 +10,14 @@
 
 #include "Basic.hpp"
 
+#include "EFortUITheme_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "EFortUITheme_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CraftingIngredient.CraftingIngredient_C
 // 0x0040 (0x02A0 - 0x0260)
@@ -43,22 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CraftingIngredient_C">();
+		BP_STATIC_CLASS_IMPL("CraftingIngredient_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CraftingIngredient_C")
 	}
 	static class UCraftingIngredient_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCraftingIngredient_C>();
 	}
 };
-static_assert(alignof(UCraftingIngredient_C) == 0x000008, "Wrong alignment on UCraftingIngredient_C");
-static_assert(sizeof(UCraftingIngredient_C) == 0x0002A0, "Wrong size on UCraftingIngredient_C");
-static_assert(offsetof(UCraftingIngredient_C, UberGraphFrame) == 0x000260, "Member 'UCraftingIngredient_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, IconImage) == 0x000268, "Member 'UCraftingIngredient_C::IconImage' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, InventoryText) == 0x000270, "Member 'UCraftingIngredient_C::InventoryText' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, SizeBox_Divider) == 0x000278, "Member 'UCraftingIngredient_C::SizeBox_Divider' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, TotalText) == 0x000280, "Member 'UCraftingIngredient_C::TotalText' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, VerticalBox_831) == 0x000288, "Member 'UCraftingIngredient_C::VerticalBox_831' has a wrong offset!");
-static_assert(offsetof(UCraftingIngredient_C, ingredient) == 0x000290, "Member 'UCraftingIngredient_C::ingredient' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

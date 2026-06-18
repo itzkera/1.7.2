@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StickyNotification.StickyNotification_C
 // 0x0230 (0x0460 - 0x0230)
@@ -73,40 +72,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StickyNotification_C">();
+		BP_STATIC_CLASS_IMPL("StickyNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StickyNotification_C")
 	}
 	static class UStickyNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStickyNotification_C>();
 	}
 };
-static_assert(alignof(UStickyNotification_C) == 0x000010, "Wrong alignment on UStickyNotification_C");
-static_assert(sizeof(UStickyNotification_C) == 0x000460, "Wrong size on UStickyNotification_C");
-static_assert(offsetof(UStickyNotification_C, UberGraphFrame) == 0x000230, "Member 'UStickyNotification_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Open) == 0x000238, "Member 'UStickyNotification_C::Open' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, MouseOverButton) == 0x000240, "Member 'UStickyNotification_C::MouseOverButton' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, HideContents) == 0x000248, "Member 'UStickyNotification_C::HideContents' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Outro) == 0x000250, "Member 'UStickyNotification_C::Outro' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Intro) == 0x000258, "Member 'UStickyNotification_C::Intro' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, ShowContents) == 0x000260, "Member 'UStickyNotification_C::ShowContents' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, BasicStrokeBox) == 0x000268, "Member 'UStickyNotification_C::BasicStrokeBox' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Border_Bkgd) == 0x000270, "Member 'UStickyNotification_C::Border_Bkgd' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Border_Contents) == 0x000278, "Member 'UStickyNotification_C::Border_Contents' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Border_MainBody) == 0x000280, "Member 'UStickyNotification_C::Border_MainBody' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, ButtonIconText_Close) == 0x000288, "Member 'UStickyNotification_C::ButtonIconText_Close' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, ButtonIconText_Go) == 0x000290, "Member 'UStickyNotification_C::ButtonIconText_Go' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Image_Icon) == 0x000298, "Member 'UStickyNotification_C::Image_Icon' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Image_RayGlow) == 0x0002A0, "Member 'UStickyNotification_C::Image_RayGlow' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, SizeBox_Button) == 0x0002A8, "Member 'UStickyNotification_C::SizeBox_Button' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, TextBlock_Message) == 0x0002B0, "Member 'UStickyNotification_C::TextBlock_Message' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, bShown) == 0x0002B8, "Member 'UStickyNotification_C::bShown' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, DialogDescriptionRef) == 0x0002C0, "Member 'UStickyNotification_C::DialogDescriptionRef' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, HasBeenMinimized) == 0x000430, "Member 'UStickyNotification_C::HasBeenMinimized' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Dissmissing) == 0x000431, "Member 'UStickyNotification_C::Dissmissing' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Notification_Appear_Sound) == 0x000438, "Member 'UStickyNotification_C::Notification_Appear_Sound' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Notification_Disappear_Sound) == 0x000440, "Member 'UStickyNotification_C::Notification_Disappear_Sound' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Notification_Hover_Sound) == 0x000448, "Member 'UStickyNotification_C::Notification_Hover_Sound' has a wrong offset!");
-static_assert(offsetof(UStickyNotification_C, Notification_Clicked_Sound) == 0x000450, "Member 'UStickyNotification_C::Notification_Clicked_Sound' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

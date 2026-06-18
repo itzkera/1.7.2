@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ProgressModalWidget.ProgressModalWidget_C
 // 0x00E8 (0x04F0 - 0x0408)
@@ -52,25 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ProgressModalWidget_C">();
+		BP_STATIC_CLASS_IMPL("ProgressModalWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProgressModalWidget_C")
 	}
 	static class UProgressModalWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProgressModalWidget_C>();
 	}
 };
-static_assert(alignof(UProgressModalWidget_C) == 0x000008, "Wrong alignment on UProgressModalWidget_C");
-static_assert(sizeof(UProgressModalWidget_C) == 0x0004F0, "Wrong size on UProgressModalWidget_C");
-static_assert(offsetof(UProgressModalWidget_C, UberGraphFrame) == 0x000410, "Member 'UProgressModalWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Lightbox) == 0x000418, "Member 'UProgressModalWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, ProgressWidget) == 0x000420, "Member 'UProgressModalWidget_C::ProgressWidget' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Title) == 0x000428, "Member 'UProgressModalWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Description) == 0x000440, "Member 'UProgressModalWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Icon) == 0x000458, "Member 'UProgressModalWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bIntroOutrEnabled) == 0x0004E8, "Member 'UProgressModalWidget_C::bIntroOutrEnabled' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bAutoInitialize) == 0x0004E9, "Member 'UProgressModalWidget_C::bAutoInitialize' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bFocusSelf) == 0x0004EA, "Member 'UProgressModalWidget_C::bFocusSelf' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, bConsumeAnalogInput) == 0x0004EB, "Member 'UProgressModalWidget_C::bConsumeAnalogInput' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

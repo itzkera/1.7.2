@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-LeaderboardItem-LocalUser.ButtonStyle-LeaderboardItem-LocalUser_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_LeaderboardItem_LocalUser_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-LeaderboardItem-LocalUser_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-LeaderboardItem-LocalUser_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-LeaderboardItem-LocalUser_C")
 	}
 	static class UButtonStyle_LeaderboardItem_LocalUser_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_LeaderboardItem_LocalUser_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_LeaderboardItem_LocalUser_C) == 0x000008, "Wrong alignment on UButtonStyle_LeaderboardItem_LocalUser_C");
-static_assert(sizeof(UButtonStyle_LeaderboardItem_LocalUser_C) == 0x000530, "Wrong size on UButtonStyle_LeaderboardItem_LocalUser_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "XpBoostRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBoostRow.XpBoostRow_C.ExecuteUbergraph_XpBoostRow
 // (HasDefaults)
@@ -133,7 +132,7 @@ void UXpBoostRow_C::OnMCPRequestComplete_13866D8D449A2AA167E306B6A172BD62()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Row_Has_Party_Member                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortTeamMemberInfo              Party_Members_Info                                     (Parm)
+// const struct FFortTeamMemberInfo&       Party_Members_Info                                     (Parm)
 
 void UXpBoostRow_C::Update_Party_Member(bool Row_Has_Party_Member, const struct FFortTeamMemberInfo& Party_Members_Info)
 {
@@ -183,7 +182,7 @@ void UXpBoostRow_C::Update_Boost_Material()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortAccountItemDefinition*       AccountItemDef                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UXpBoostRow_C::HasBoost(class UFortAccountItemDefinition* AccountItemDef, bool* Result)
 {
@@ -202,5 +201,5 @@ void UXpBoostRow_C::HasBoost(class UFortAccountItemDefinition* AccountItemDef, b
 		*Result = Parms.Result;
 }
 
-}
 
+SDK_NAMESPACE_END

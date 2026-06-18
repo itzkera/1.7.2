@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HomeScreenQuestRewardItem.HomeScreenQuestRewardItem_C.ExecuteUbergraph_HomeScreenQuestRewardItem
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem) == 0x000004, "Wrong alignment on HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem");
-static_assert(sizeof(HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem) == 0x000004, "Wrong size on HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem");
-static_assert(offsetof(HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem, EntryPoint) == 0x000000, "Member 'HomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

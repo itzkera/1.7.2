@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBoostCounts.XpBoostCounts_C
 // 0x0038 (0x0270 - 0x0238)
@@ -40,22 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBoostCounts_C">();
+		BP_STATIC_CLASS_IMPL("XpBoostCounts_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBoostCounts_C")
 	}
 	static class UXpBoostCounts_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBoostCounts_C>();
 	}
 };
-static_assert(alignof(UXpBoostCounts_C) == 0x000008, "Wrong alignment on UXpBoostCounts_C");
-static_assert(sizeof(UXpBoostCounts_C) == 0x000270, "Wrong size on UXpBoostCounts_C");
-static_assert(offsetof(UXpBoostCounts_C, UberGraphFrame) == 0x000238, "Member 'UXpBoostCounts_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBoostCounts_C, GiftableBoostImage) == 0x000240, "Member 'UXpBoostCounts_C::GiftableBoostImage' has a wrong offset!");
-static_assert(offsetof(UXpBoostCounts_C, GiftableBoostsAvailable) == 0x000248, "Member 'UXpBoostCounts_C::GiftableBoostsAvailable' has a wrong offset!");
-static_assert(offsetof(UXpBoostCounts_C, GiftableText) == 0x000250, "Member 'UXpBoostCounts_C::GiftableText' has a wrong offset!");
-static_assert(offsetof(UXpBoostCounts_C, PersonalBoostImage) == 0x000258, "Member 'UXpBoostCounts_C::PersonalBoostImage' has a wrong offset!");
-static_assert(offsetof(UXpBoostCounts_C, PersonalBoostsAvailable) == 0x000260, "Member 'UXpBoostCounts_C::PersonalBoostsAvailable' has a wrong offset!");
-static_assert(offsetof(UXpBoostCounts_C, PersonalText) == 0x000268, "Member 'UXpBoostCounts_C::PersonalText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

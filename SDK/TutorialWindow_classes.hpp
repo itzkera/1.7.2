@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TutorialWindow.TutorialWindow_C
 // 0x0040 (0x0448 - 0x0408)
@@ -38,21 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TutorialWindow_C">();
+		BP_STATIC_CLASS_IMPL("TutorialWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TutorialWindow_C")
 	}
 	static class UTutorialWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTutorialWindow_C>();
 	}
 };
-static_assert(alignof(UTutorialWindow_C) == 0x000008, "Wrong alignment on UTutorialWindow_C");
-static_assert(sizeof(UTutorialWindow_C) == 0x000448, "Wrong size on UTutorialWindow_C");
-static_assert(offsetof(UTutorialWindow_C, UberGraphFrame) == 0x000410, "Member 'UTutorialWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialWindow_C, ButtonBox) == 0x000418, "Member 'UTutorialWindow_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UTutorialWindow_C, Description) == 0x000420, "Member 'UTutorialWindow_C::Description' has a wrong offset!");
-static_assert(offsetof(UTutorialWindow_C, IconTextButton) == 0x000428, "Member 'UTutorialWindow_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UTutorialWindow_C, Title) == 0x000430, "Member 'UTutorialWindow_C::Title' has a wrong offset!");
-static_assert(offsetof(UTutorialWindow_C, OnRequestRetry) == 0x000438, "Member 'UTutorialWindow_C::OnRequestRetry' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

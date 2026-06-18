@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionListView_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.ExecuteUbergraph_BP_FortExpeditionListView
 // ()
@@ -110,5 +109,5 @@ void UBP_FortExpeditionListView_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

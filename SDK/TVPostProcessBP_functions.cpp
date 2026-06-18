@@ -14,8 +14,7 @@
 #include "TVPostProcessBP_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TVPostProcessBP.TVPostProcessBP_C.ExecuteUbergraph_TVPostProcessBP
 // (HasDefaults)
@@ -130,7 +129,7 @@ void ATVPostProcessBP_C::Camera_InitializePost()
 // Function TVPostProcessBP.TVPostProcessBP_C.SequenceFinished
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           SequenceName                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    SequenceName                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ATVPostProcessBP_C::SequenceFinished(const class FString& SequenceName)
 {
@@ -650,5 +649,5 @@ void ATVPostProcessBP_C::RandomizeTheColor(float Use_Bluescreen, float Probablil
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

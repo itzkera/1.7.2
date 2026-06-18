@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PrivacyWidget.PrivacyWidget_C
 // 0x0120 (0x0580 - 0x0460)
@@ -69,41 +68,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PrivacyWidget_C">();
+		BP_STATIC_CLASS_IMPL("PrivacyWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PrivacyWidget_C")
 	}
 	static class UPrivacyWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPrivacyWidget_C>();
 	}
 };
-static_assert(alignof(UPrivacyWidget_C) == 0x000008, "Wrong alignment on UPrivacyWidget_C");
-static_assert(sizeof(UPrivacyWidget_C) == 0x000580, "Wrong size on UPrivacyWidget_C");
-static_assert(offsetof(UPrivacyWidget_C, UberGraphFrame) == 0x000460, "Member 'UPrivacyWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, AllowFriendsOfFriendsText) == 0x000468, "Member 'UPrivacyWidget_C::AllowFriendsOfFriendsText' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Apply) == 0x000470, "Member 'UPrivacyWidget_C::Apply' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Border_ReadOnlyMode) == 0x000478, "Member 'UPrivacyWidget_C::Border_ReadOnlyMode' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, CancelButton) == 0x000480, "Member 'UPrivacyWidget_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, EntryProgressSwitcher) == 0x000488, "Member 'UPrivacyWidget_C::EntryProgressSwitcher' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, EntryVbox) == 0x000490, "Member 'UPrivacyWidget_C::EntryVbox' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, FriendsButton) == 0x000498, "Member 'UPrivacyWidget_C::FriendsButton' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, HintText) == 0x0004A0, "Member 'UPrivacyWidget_C::HintText' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Image_0) == 0x0004A8, "Member 'UPrivacyWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Image_1) == 0x0004B0, "Member 'UPrivacyWidget_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Image_2) == 0x0004B8, "Member 'UPrivacyWidget_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, InteractableVBox) == 0x0004C0, "Member 'UPrivacyWidget_C::InteractableVBox' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Lightbox) == 0x0004C8, "Member 'UPrivacyWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, PrivateButton) == 0x0004D0, "Member 'UPrivacyWidget_C::PrivateButton' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, ProgressSizeBox) == 0x0004D8, "Member 'UPrivacyWidget_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, ProgressVBox) == 0x0004E0, "Member 'UPrivacyWidget_C::ProgressVBox' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, PublicButton) == 0x0004E8, "Member 'UPrivacyWidget_C::PublicButton' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, RootBorder) == 0x0004F0, "Member 'UPrivacyWidget_C::RootBorder' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, RootOverlay) == 0x0004F8, "Member 'UPrivacyWidget_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, Title) == 0x000500, "Member 'UPrivacyWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, PublicHint) == 0x000508, "Member 'UPrivacyWidget_C::PublicHint' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, FriendsOnlyHint) == 0x000520, "Member 'UPrivacyWidget_C::FriendsOnlyHint' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, PrivateHint) == 0x000538, "Member 'UPrivacyWidget_C::PrivateHint' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, FriendsOfFriendsHint) == 0x000550, "Member 'UPrivacyWidget_C::FriendsOfFriendsHint' has a wrong offset!");
-static_assert(offsetof(UPrivacyWidget_C, FriendsOfFriendsPrivateHint) == 0x000568, "Member 'UPrivacyWidget_C::FriendsOfFriendsPrivateHint' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

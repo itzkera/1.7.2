@@ -14,8 +14,7 @@
 #include "QuestTrackerMainQuestList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestTrackerMainQuestList.QuestTrackerMainQuestList_C.GetQuestsToDisplay
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -36,5 +35,5 @@ TArray<class UFortQuestItem*> UQuestTrackerMainQuestList_C::GetQuestsToDisplay()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

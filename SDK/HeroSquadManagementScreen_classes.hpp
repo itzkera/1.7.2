@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HeroSquadManagementScreen.HeroSquadManagementScreen_C
 // 0x0030 (0x0510 - 0x04E0)
@@ -49,20 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroSquadManagementScreen_C">();
+		BP_STATIC_CLASS_IMPL("HeroSquadManagementScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroSquadManagementScreen_C")
 	}
 	static class UHeroSquadManagementScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroSquadManagementScreen_C>();
 	}
 };
-static_assert(alignof(UHeroSquadManagementScreen_C) == 0x000008, "Wrong alignment on UHeroSquadManagementScreen_C");
-static_assert(sizeof(UHeroSquadManagementScreen_C) == 0x000510, "Wrong size on UHeroSquadManagementScreen_C");
-static_assert(offsetof(UHeroSquadManagementScreen_C, UberGraphFrame) == 0x0004E0, "Member 'UHeroSquadManagementScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, BorderSlotInfo) == 0x0004E8, "Member 'UHeroSquadManagementScreen_C::BorderSlotInfo' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotBody) == 0x0004F0, "Member 'UHeroSquadManagementScreen_C::TextSlotBody' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, TextSlotHeader) == 0x0004F8, "Member 'UHeroSquadManagementScreen_C::TextSlotHeader' has a wrong offset!");
-static_assert(offsetof(UHeroSquadManagementScreen_C, InputBackAction) == 0x000500, "Member 'UHeroSquadManagementScreen_C::InputBackAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

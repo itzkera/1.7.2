@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PotentialResourceWidget.PotentialResourceWidget_C
 // 0x0048 (0x0280 - 0x0238)
@@ -45,24 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PotentialResourceWidget_C">();
+		BP_STATIC_CLASS_IMPL("PotentialResourceWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PotentialResourceWidget_C")
 	}
 	static class UPotentialResourceWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPotentialResourceWidget_C>();
 	}
 };
-static_assert(alignof(UPotentialResourceWidget_C) == 0x000008, "Wrong alignment on UPotentialResourceWidget_C");
-static_assert(sizeof(UPotentialResourceWidget_C) == 0x000280, "Wrong size on UPotentialResourceWidget_C");
-static_assert(offsetof(UPotentialResourceWidget_C, UberGraphFrame) == 0x000238, "Member 'UPotentialResourceWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, TranslateAndFadeUp) == 0x000240, "Member 'UPotentialResourceWidget_C::TranslateAndFadeUp' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, TextResourceCount) == 0x000248, "Member 'UPotentialResourceWidget_C::TextResourceCount' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, TextResourceCountShadow) == 0x000250, "Member 'UPotentialResourceWidget_C::TextResourceCountShadow' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, PotentialResource) == 0x000258, "Member 'UPotentialResourceWidget_C::PotentialResource' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, FinishedShowing) == 0x000260, "Member 'UPotentialResourceWidget_C::FinishedShowing' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, WeakpointDamage) == 0x000270, "Member 'UPotentialResourceWidget_C::WeakpointDamage' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, WeakpointFontSize) == 0x000274, "Member 'UPotentialResourceWidget_C::WeakpointFontSize' has a wrong offset!");
-static_assert(offsetof(UPotentialResourceWidget_C, NormalFontSize) == 0x000278, "Member 'UPotentialResourceWidget_C::NormalFontSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

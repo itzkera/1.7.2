@@ -14,8 +14,7 @@
 #include "B_SupplyDropPlacement_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.ExecuteUbergraph_B_SupplyDropPlacement
 // (HasDefaults)
@@ -124,7 +123,7 @@ void AB_SupplyDropPlacement_C::PlayDrop()
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.BlueprintOnInteract
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_SupplyDropPlacement_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn)
 {
@@ -162,10 +161,10 @@ void AB_SupplyDropPlacement_C::SelfDestruction()
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AController*                      InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          HitLocation                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitLocation                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*              FHitComponent                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             BoneName                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_SupplyDropPlacement_C::OverlappingDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
@@ -197,7 +196,7 @@ void AB_SupplyDropPlacement_C::OverlappingDied(class AActor* DamagedActor, float
 // class UPrimitiveComponent*              OtherComp                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   OtherBodyIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bFromSweep                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult                       SweepResult                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                SweepResult                                            (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void AB_SupplyDropPlacement_C::BndEvt__ActiveFloorCollision_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
@@ -374,7 +373,7 @@ void AB_SupplyDropPlacement_C::Landed()
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.InitDrop
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSupplyDropUnlocks               InUnlocks                                              (Parm, HasGetValueTypeHash)
+// const struct FSupplyDropUnlocks&        InUnlocks                                              (Parm, HasGetValueTypeHash)
 
 void AB_SupplyDropPlacement_C::InitDrop(const struct FSupplyDropUnlocks& InUnlocks)
 {
@@ -394,7 +393,7 @@ void AB_SupplyDropPlacement_C::InitDrop(const struct FSupplyDropUnlocks& InUnloc
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.LootSpawnPosition
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FVector                          OutPos                                                 (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         OutPos                                                 (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_SupplyDropPlacement_C::LootSpawnPosition(struct FVector* OutPos)
 {
@@ -537,7 +536,7 @@ void AB_SupplyDropPlacement_C::OnRep_bLooted()
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.BlueprintCanInteract
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool AB_SupplyDropPlacement_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn) const
@@ -560,11 +559,11 @@ bool AB_SupplyDropPlacement_C::BlueprintCanInteract(const class AFortPawn* Inter
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.IsAcceptablePositionForPlacement
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FVector                          InLocation                                             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                         InRotation                                             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
+// const struct FVector&                   InLocation                                             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  InRotation                                             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 // class AFortDecoTool*                    DecoTool                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsCDO                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             OutFailureReason                                       (Parm, OutParm)
+// class FText*                            OutFailureReason                                       (Parm, OutParm)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool AB_SupplyDropPlacement_C::IsAcceptablePositionForPlacement(const struct FVector& InLocation, const struct FRotator& InRotation, class AFortDecoTool* DecoTool, bool bIsCDO, class FText* OutFailureReason) const
@@ -593,7 +592,7 @@ bool AB_SupplyDropPlacement_C::IsAcceptablePositionForPlacement(const struct FVe
 // Function B_SupplyDropPlacement.B_SupplyDropPlacement_C.BlueprintGetInteractionString
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 class FText AB_SupplyDropPlacement_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn) const
@@ -612,5 +611,5 @@ class FText AB_SupplyDropPlacement_C::BlueprintGetInteractionString(const class 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

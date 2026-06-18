@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.ExecuteUbergraph_StoreWeaponMaster_BP
 // 0x0038 (0x0038 - 0x0000)
@@ -31,17 +31,6 @@ public:
 	uint8                                         Pad_33[0x1];                                       // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP) == 0x000008, "Wrong alignment on StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP");
-static_assert(sizeof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP) == 0x000038, "Wrong size on StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, EntryPoint) == 0x000000, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, K2Node_CustomEvent_Loaded) == 0x000018, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, Temp_object_Variable) == 0x000020, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, K2Node_DynamicCast_AsSkeletal_Mesh) == 0x000028, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::K2Node_DynamicCast_AsSkeletal_Mesh' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, Temp_bool_Has_Been_Initd_Variable) == 0x000031, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, Temp_bool_IsClosed_Variable) == 0x000032, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP, K2Node_Event_DeltaSeconds) == 0x000034, "Member 'StoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP::K2Node_Event_DeltaSeconds' has a wrong offset!");
 
 // Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -50,9 +39,6 @@ struct StoreWeaponMaster_BP_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreWeaponMaster_BP_C_ReceiveTick) == 0x000004, "Wrong alignment on StoreWeaponMaster_BP_C_ReceiveTick");
-static_assert(sizeof(StoreWeaponMaster_BP_C_ReceiveTick) == 0x000004, "Wrong size on StoreWeaponMaster_BP_C_ReceiveTick");
-static_assert(offsetof(StoreWeaponMaster_BP_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'StoreWeaponMaster_BP_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.OnLoaded_F90E39F1410BE83EB4E318A6426EF786
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +47,6 @@ struct StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786) == 0x000008, "Wrong alignment on StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786");
-static_assert(sizeof(StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786) == 0x000008, "Wrong size on StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786");
-static_assert(offsetof(StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786, Loaded) == 0x000000, "Member 'StoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786::Loaded' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

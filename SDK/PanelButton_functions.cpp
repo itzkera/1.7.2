@@ -14,8 +14,7 @@
 #include "PanelButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PanelButton.PanelButton_C.ExecuteUbergraph_PanelButton
 // (HasDefaults)
@@ -116,7 +115,7 @@ void UPanelButton_C::OnActionProgress(float HeldPercent)
 // Function PanelButton.PanelButton_C.OnTriggeredInputActionChanged
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              NewTriggeredAction                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FDataTableRowHandle&       NewTriggeredAction                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UPanelButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
@@ -220,5 +219,5 @@ void UPanelButton_C::UpdateStyle(bool bUsingGamepad)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

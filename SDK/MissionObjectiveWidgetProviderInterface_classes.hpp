@@ -13,12 +13,11 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IMissionObjectiveWidgetProviderInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMissionObjectiveWidgetProviderInterface_C final
 {
 public:
 	void GetObjectiveContentWidgetClass(class UClass** Objective_WIdget_Class);
@@ -27,15 +26,25 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionObjectiveWidgetProviderInterface_C">();
+		BP_STATIC_CLASS_IMPL("MissionObjectiveWidgetProviderInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionObjectiveWidgetProviderInterface_C")
 	}
 	static class IMissionObjectiveWidgetProviderInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IMissionObjectiveWidgetProviderInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IMissionObjectiveWidgetProviderInterface_C) == 0x000008, "Wrong alignment on IMissionObjectiveWidgetProviderInterface_C");
-static_assert(sizeof(IMissionObjectiveWidgetProviderInterface_C) == 0x000028, "Wrong size on IMissionObjectiveWidgetProviderInterface_C");
 
-}
-
+SDK_NAMESPACE_END

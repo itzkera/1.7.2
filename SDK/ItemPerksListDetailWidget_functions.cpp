@@ -14,8 +14,7 @@
 #include "ItemPerksListDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemPerksListDetailWidget.ItemPerksListDetailWidget_C.ExecuteUbergraph_ItemPerksListDetailWidget
 // ()
@@ -72,5 +71,5 @@ void UItemPerksListDetailWidget_C::SetState(EFortPerksWidgetState InState, class
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

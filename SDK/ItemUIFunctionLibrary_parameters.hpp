@@ -13,12 +13,12 @@
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "TooltipStat_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "TooltipStat_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Add Alteration Widgets
 // 0x0270 (0x0270 - 0x0000)
@@ -87,60 +87,6 @@ public:
 	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue4;       // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Add_Alteration_Widgets");
-static_assert(sizeof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets) == 0x000270, "Wrong size on ItemUIFunctionLibrary_C_Add_Alteration_Widgets");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Host_Widget) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Host_Widget' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Item) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Item' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, PreviewLevel) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::PreviewLevel' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, ShowInVaultDetails) == 0x000014, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::ShowInVaultDetails' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, __WorldContext) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, FormatForVaultDetails) == 0x000020, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::FormatForVaultDetails' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, ShowPreview) == 0x000021, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::ShowPreview' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Color) == 0x000024, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Color' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, AlterationsArrayIndex) == 0x000034, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::AlterationsArrayIndex' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, LevelToPreview) == 0x000038, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::LevelToPreview' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, bIsAlterationSlotActive) == 0x00003C, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::bIsAlterationSlotActive' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, ItemRef) == 0x000040, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::ItemRef' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, VerticalBoxRef) == 0x000048, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::VerticalBoxRef' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, ItemLevel) == 0x000050, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::ItemLevel' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, LevelString) == 0x000058, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::LevelString' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Create_ReturnValue) == 0x000068, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Create_ReturnValue2) == 0x000070, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000078, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Create_ReturnValue3) == 0x000080, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Create_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Create_ReturnValue4) == 0x000088, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Create_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_AddChildToVerticalBox_ReturnValue2) == 0x000090, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_AddChildToVerticalBox_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_Margin) == 0x000098, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_AddChildToVerticalBox_ReturnValue3) == 0x0000A8, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_AddChildToVerticalBox_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_LinearColor) == 0x0000B0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_LinearColor2) == 0x0000C0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_LinearColor2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_SelectFloat_ReturnValue) == 0x0000D4, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_Margin2) == 0x0000D8, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_Margin2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_GetAlterationSlotActivationRequirement_ReturnValue) == 0x0000E8, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_GetAlterationSlotActivationRequirement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_LinearColor3) == 0x000100, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_LinearColor3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Conv_TextToString_ReturnValue) == 0x000110, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_ParseLevelRequiredFromString_outInt) == 0x000120, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_ParseLevelRequiredFromString_outInt' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Temp_int_Array_Index_Variable) == 0x000124, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000128, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, Temp_int_Loop_Counter_Variable) == 0x00012C, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Add_IntInt_ReturnValue) == 0x000130, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_GetLevel_ReturnValue) == 0x000134, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_GetAlterationSlotActivationRequirement_ReturnValue2) == 0x000138, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_GetAlterationSlotActivationRequirement_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_GetAlterations_ReturnValue) == 0x000150, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_GetAlterations_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Conv_TextToString_ReturnValue2) == 0x000160, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Conv_TextToString_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Array_Get_Item) == 0x000170, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Array_Length_ReturnValue) == 0x000178, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_GetDisplayName_ReturnValue) == 0x000180, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Less_IntInt_ReturnValue) == 0x000198, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Conv_TextToString_ReturnValue3) == 0x0001A0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Conv_TextToString_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Concat_StrStr_ReturnValue) == 0x0001B0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_GetSingleLineDescription_ReturnValue) == 0x0001C0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_GetSingleLineDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_Conv_StringToText_ReturnValue) == 0x0001D8, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_TooltipStat) == 0x0001F0, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_TooltipStat' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, K2Node_MakeStruct_TooltipStat2) == 0x000228, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::K2Node_MakeStruct_TooltipStat2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_IsAlterationSlotActive_ReturnValue) == 0x000260, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_IsAlterationSlotActive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Add_Alteration_Widgets, CallFunc_AddChildToVerticalBox_ReturnValue4) == 0x000268, "Member 'ItemUIFunctionLibrary_C_Add_Alteration_Widgets::CallFunc_AddChildToVerticalBox_ReturnValue4' has a wrong offset!");
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.ParseLevelRequiredFromString
 // 0x0050 (0x0050 - 0x0000)
@@ -160,19 +106,6 @@ public:
 	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Conv_StringToInt_ReturnValue;             // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_ParseLevelRequiredFromString");
-static_assert(sizeof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString) == 0x000050, "Wrong size on ItemUIFunctionLibrary_C_ParseLevelRequiredFromString");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, inString) == 0x000000, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::inString' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, __WorldContext) == 0x000010, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, outInt) == 0x000018, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::outInt' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_FindSubstring_ReturnValue) == 0x00001C, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_FindSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_FindSubstring_ReturnValue2) == 0x000020, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_FindSubstring_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_Subtract_IntInt_ReturnValue2) == 0x00002C, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_Add_IntInt_ReturnValue2) == 0x000030, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_GetSubstring_ReturnValue) == 0x000038, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_GetSubstring_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_ParseLevelRequiredFromString, CallFunc_Conv_StringToInt_ReturnValue) == 0x000048, "Member 'ItemUIFunctionLibrary_C_ParseLevelRequiredFromString::CallFunc_Conv_StringToInt_ReturnValue' has a wrong offset!");
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Convert Tier To Integer
 // 0x0048 (0x0048 - 0x0000)
@@ -198,24 +131,6 @@ public:
 	int32                                         Temp_int_Variable11;                               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Convert_Tier_To_Integer");
-static_assert(sizeof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer) == 0x000048, "Wrong size on ItemUIFunctionLibrary_C_Convert_Tier_To_Integer");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Tier) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Tier' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, __WorldContext) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Numeric_Tier) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Numeric_Tier' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_byte_Variable) == 0x000014, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable2) == 0x00001C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable3) == 0x000020, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable4) == 0x000024, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable5) == 0x000028, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable5' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable6) == 0x00002C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable6' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable7) == 0x000030, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable7' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable8) == 0x000034, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable8' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable9) == 0x000038, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable9' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable10) == 0x00003C, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable10' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, Temp_int_Variable11) == 0x000040, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::Temp_int_Variable11' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Convert_Tier_To_Integer, K2Node_Select_Default) == 0x000044, "Member 'ItemUIFunctionLibrary_C_Convert_Tier_To_Integer::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Truncate Integer Value
 // 0x01E8 (0x01E8 - 0x0000)
@@ -268,43 +183,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01C0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01D0(0x0018)()
 };
-static_assert(alignof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x000008, "Wrong alignment on ItemUIFunctionLibrary_C_Truncate_Integer_Value");
-static_assert(sizeof(ItemUIFunctionLibrary_C_Truncate_Integer_Value) == 0x0001E8, "Wrong size on ItemUIFunctionLibrary_C_Truncate_Integer_Value");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Value) == 0x000000, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Value' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Min_Fractional_Digits) == 0x000004, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Min_Fractional_Digits' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Max_Fractional_Digits) == 0x000008, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Max_Fractional_Digits' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, __WorldContext) == 0x000010, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Formatted_Value) == 0x000018, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Formatted_Value' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable) == 0x000030, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000034, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000038, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00003C, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_GreaterEqual_IntInt_ReturnValue2) == 0x000040, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_GreaterEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000044, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000048, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_GreaterEqual_IntInt_ReturnValue3) == 0x00004C, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_GreaterEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000050, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable) == 0x000058, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000070, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable2) == 0x000074, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable3) == 0x000075, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable4) == 0x000076, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable2) == 0x000078, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable5) == 0x000090, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable3) == 0x000098, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select_Default) == 0x0000B0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_text_Variable4) == 0x0000B8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select2_Default) == 0x0000D0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select3_Default) == 0x0000D4, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, Temp_bool_Variable6) == 0x0000D8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Conv_FloatToText_ReturnValue) == 0x0000E0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Conv_FloatToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_MakeStruct_FormatArgumentData) == 0x0000F8, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select4_Default) == 0x000138, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select5_Default) == 0x000150, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_Select6_Default) == 0x000168, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_MakeStruct_FormatArgumentData2) == 0x000180, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, K2Node_MakeArray_Array) == 0x0001C0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemUIFunctionLibrary_C_Truncate_Integer_Value, CallFunc_Format_ReturnValue) == 0x0001D0, "Member 'ItemUIFunctionLibrary_C_Truncate_Integer_Value::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

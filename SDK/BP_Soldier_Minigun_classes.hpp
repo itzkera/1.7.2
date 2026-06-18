@@ -15,8 +15,7 @@
 #include "AnimGraphRuntime_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass BP_Soldier_Minigun.BP_Soldier_Minigun_C
 // 0x02C8 (0x0620 - 0x0358)
@@ -42,25 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Soldier_Minigun_C">();
+		BP_STATIC_CLASS_IMPL("BP_Soldier_Minigun_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Soldier_Minigun_C")
 	}
 	static class UBP_Soldier_Minigun_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Soldier_Minigun_C>();
 	}
 };
-static_assert(alignof(UBP_Soldier_Minigun_C) == 0x000008, "Wrong alignment on UBP_Soldier_Minigun_C");
-static_assert(sizeof(UBP_Soldier_Minigun_C) == 0x000620, "Wrong size on UBP_Soldier_Minigun_C");
-static_assert(offsetof(UBP_Soldier_Minigun_C, UberGraphFrame) == 0x000358, "Member 'UBP_Soldier_Minigun_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_Root_5BEDD1AF46E640F37CCC9FAA8DF7F6DC) == 0x000360, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_Root_5BEDD1AF46E640F37CCC9FAA8DF7F6DC' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_Slot_15839C374918416DF8289BAE7466DE11) == 0x0003A8, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_Slot_15839C374918416DF8289BAE7466DE11' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_ModifyBone_CDE861E049ED25F9468E1596307CE0F7) == 0x000408, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_ModifyBone_CDE861E049ED25F9468E1596307CE0F7' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_LocalToComponentSpace_2E6915294401BD03648F4689C8817592) == 0x0004B8, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_LocalToComponentSpace_2E6915294401BD03648F4689C8817592' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_ComponentToLocalSpace_580B6AC241C93B1B43A2A4ACEF5528AD) == 0x000500, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_ComponentToLocalSpace_580B6AC241C93B1B43A2A4ACEF5528AD' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_SequenceEvaluator_43BD42EB42C5FE9A4147628D6467C8A7) == 0x000548, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_SequenceEvaluator_43BD42EB42C5FE9A4147628D6467C8A7' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, AnimGraphNode_RotateRootBone_23F81C024704537420FC1492A49C0F7B) == 0x0005B8, "Member 'UBP_Soldier_Minigun_C::AnimGraphNode_RotateRootBone_23F81C024704537420FC1492A49C0F7B' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, MinigunRotation) == 0x000618, "Member 'UBP_Soldier_Minigun_C::MinigunRotation' has a wrong offset!");
-static_assert(offsetof(UBP_Soldier_Minigun_C, MaxMinigunRotSpeed) == 0x00061C, "Member 'UBP_Soldier_Minigun_C::MaxMinigunRotSpeed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BP_LiveStreamerDescription_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Set Quest
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -60,7 +59,7 @@ void UBP_LiveStreamerDescription_C::Update_Visibility(class UFortQuestItemDefini
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Is Viewer Quest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ViewerQuest                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ViewerQuest                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_LiveStreamerDescription_C::Is_Viewer_Quest(bool* ViewerQuest)
 {
@@ -109,7 +108,7 @@ void UBP_LiveStreamerDescription_C::Update_Viewer_Note_Visibility()
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.SetViewerQuestText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             NewText                                                (Parm)
+// const class FText&                      NewText                                                (Parm)
 
 void UBP_LiveStreamerDescription_C::SetViewerQuestText(const class FText& NewText)
 {
@@ -129,7 +128,7 @@ void UBP_LiveStreamerDescription_C::SetViewerQuestText(const class FText& NewTex
 // Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.GetBroadcasterName
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             BroadcasterName                                        (Parm, OutParm)
+// class FText*                            BroadcasterName                                        (Parm, OutParm)
 
 void UBP_LiveStreamerDescription_C::GetBroadcasterName(class FText* BroadcasterName)
 {
@@ -146,5 +145,5 @@ void UBP_LiveStreamerDescription_C::GetBroadcasterName(class FText* BroadcasterN
 		*BroadcasterName = std::move(Parms.BroadcasterName);
 }
 
-}
 
+SDK_NAMESPACE_END

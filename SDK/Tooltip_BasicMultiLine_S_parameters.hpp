@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "TooltipStat_structs.hpp"
+#include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.ExecuteUbergraph_Tooltip-BasicMultiLine-S
 // 0x0024 (0x0024 - 0x0000)
@@ -53,36 +53,6 @@ public:
 	ESlateVisibility                              K2Node_Select4_Default;                            // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S) == 0x000004, "Wrong alignment on Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S");
-static_assert(sizeof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S) == 0x000024, "Wrong size on Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, EntryPoint) == 0x000000, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_bool_Variable) == 0x000004, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable) == 0x000005, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable2) == 0x000006, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_bool_Variable2) == 0x000007, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable3) == 0x000008, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable4) == 0x000009, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_bool_Variable3) == 0x00000A, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable5) == 0x00000B, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable6) == 0x00000C, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_bool_Variable4) == 0x00000D, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable7) == 0x00000E, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable8) == 0x00000F, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_bool_Variable5) == 0x000010, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable9) == 0x000011, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, Temp_byte_Variable10) == 0x000012, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_TextIsEmpty_ReturnValue) == 0x000018, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_Greater_IntInt_ReturnValue) == 0x000019, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_Not_PreBool_ReturnValue) == 0x00001A, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, K2Node_Select_Default) == 0x00001B, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, K2Node_Select2_Default) == 0x00001C, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_IsValid_ReturnValue) == 0x00001D, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_BooleanOR_ReturnValue) == 0x00001E, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, K2Node_Select3_Default) == 0x00001F, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, CallFunc_BooleanOR_ReturnValue2) == 0x000020, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, K2Node_Select4_Default) == 0x000021, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S, K2Node_Select5_Default) == 0x000022, "Member 'Tooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S::K2Node_Select5_Default' has a wrong offset!");
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Body Text
 // 0x0098 (0x0098 - 0x0000)
@@ -104,19 +74,6 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Tooltip_BasicMultiLine_S_C_Get_Body_Text) == 0x000008, "Wrong alignment on Tooltip_BasicMultiLine_S_C_Get_Body_Text");
-static_assert(sizeof(Tooltip_BasicMultiLine_S_C_Get_Body_Text) == 0x000098, "Wrong size on Tooltip_BasicMultiLine_S_C_Get_Body_Text");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, K2Node_MakeStruct_Margin) == 0x00000C, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_Create_ReturnValue) == 0x000028, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_Array_Get_Item) == 0x000030, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, K2Node_MakeStruct_TooltipStat) == 0x000050, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::K2Node_MakeStruct_TooltipStat' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Body_Text, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000090, "Member 'Tooltip_BasicMultiLine_S_C_Get_Body_Text::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Header Text
 // 0x0018 (0x0018 - 0x0000)
@@ -125,9 +82,6 @@ struct Tooltip_BasicMultiLine_S_C_Get_Header_Text final
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(Tooltip_BasicMultiLine_S_C_Get_Header_Text) == 0x000008, "Wrong alignment on Tooltip_BasicMultiLine_S_C_Get_Header_Text");
-static_assert(sizeof(Tooltip_BasicMultiLine_S_C_Get_Header_Text) == 0x000018, "Wrong size on Tooltip_BasicMultiLine_S_C_Get_Header_Text");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Header_Text, ReturnValue) == 0x000000, "Member 'Tooltip_BasicMultiLine_S_C_Get_Header_Text::ReturnValue' has a wrong offset!");
 
 // Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Icon Brush
 // 0x0120 (0x0120 - 0x0000)
@@ -137,10 +91,6 @@ public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm)
 	struct FSlateBrush                            CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x0090(0x0090)()
 };
-static_assert(alignof(Tooltip_BasicMultiLine_S_C_Get_Icon_Brush) == 0x000008, "Wrong alignment on Tooltip_BasicMultiLine_S_C_Get_Icon_Brush");
-static_assert(sizeof(Tooltip_BasicMultiLine_S_C_Get_Icon_Brush) == 0x000120, "Wrong size on Tooltip_BasicMultiLine_S_C_Get_Icon_Brush");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Icon_Brush, ReturnValue) == 0x000000, "Member 'Tooltip_BasicMultiLine_S_C_Get_Icon_Brush::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Tooltip_BasicMultiLine_S_C_Get_Icon_Brush, CallFunc_MakeBrushFromAsset_ReturnValue) == 0x000090, "Member 'Tooltip_BasicMultiLine_S_C_Get_Icon_Brush::CallFunc_MakeBrushFromAsset_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MtxOffer_2.MtxOffer_2_C
 // 0x0200 (0x0438 - 0x0238)
@@ -57,37 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MtxOffer_2_C">();
+		BP_STATIC_CLASS_IMPL("MtxOffer_2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MtxOffer_2_C")
 	}
 	static class UMtxOffer_2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMtxOffer_2_C>();
 	}
 };
-static_assert(alignof(UMtxOffer_2_C) == 0x000008, "Wrong alignment on UMtxOffer_2_C");
-static_assert(sizeof(UMtxOffer_2_C) == 0x000438, "Wrong size on UMtxOffer_2_C");
-static_assert(offsetof(UMtxOffer_2_C, UberGraphFrame) == 0x000238, "Member 'UMtxOffer_2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Embiggen) == 0x000240, "Member 'UMtxOffer_2_C::Embiggen' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Bonus_SizeBox) == 0x000248, "Member 'UMtxOffer_2_C::Bonus_SizeBox' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, ButtonBuy) == 0x000250, "Member 'UMtxOffer_2_C::ButtonBuy' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, CommonText_Bonus_T) == 0x000258, "Member 'UMtxOffer_2_C::CommonText_Bonus_T' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, CommonText_BonusText) == 0x000260, "Member 'UMtxOffer_2_C::CommonText_BonusText' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, CommonText_Description) == 0x000268, "Member 'UMtxOffer_2_C::CommonText_Description' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, CommonText_PriceCents) == 0x000270, "Member 'UMtxOffer_2_C::CommonText_PriceCents' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, CommonText_PriceDollars) == 0x000278, "Member 'UMtxOffer_2_C::CommonText_PriceDollars' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Image_1) == 0x000280, "Member 'UMtxOffer_2_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Image_9) == 0x000288, "Member 'UMtxOffer_2_C::Image_9' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Image_417) == 0x000290, "Member 'UMtxOffer_2_C::Image_417' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Image_glow) == 0x000298, "Member 'UMtxOffer_2_C::Image_glow' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, MovingBack) == 0x0002A0, "Member 'UMtxOffer_2_C::MovingBack' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, MTX_Currency_Image) == 0x0002A8, "Member 'UMtxOffer_2_C::MTX_Currency_Image' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, BuyItem) == 0x0002B0, "Member 'UMtxOffer_2_C::BuyItem' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Package) == 0x0002C0, "Member 'UMtxOffer_2_C::Package' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, BaseOfferAmount) == 0x000360, "Member 'UMtxOffer_2_C::BaseOfferAmount' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, MtxOfferMouseEnter_EventDispatcher) == 0x000368, "Member 'UMtxOffer_2_C::MtxOfferMouseEnter_EventDispatcher' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, MtxOfferMouseLeave_EventDispatcher) == 0x000378, "Member 'UMtxOffer_2_C::MtxOfferMouseLeave_EventDispatcher' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, CoinCollection) == 0x000388, "Member 'UMtxOffer_2_C::CoinCollection' has a wrong offset!");
-static_assert(offsetof(UMtxOffer_2_C, Package_0) == 0x000398, "Member 'UMtxOffer_2_C::Package_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

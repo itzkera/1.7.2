@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Athena_PlayerCameraModeBase.Athena_PlayerCameraModeBase_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class UAthena_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeBase_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeBase_C")
 	}
 	static class UAthena_PlayerCameraModeBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeBase_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeBase_C) == 0x000008, "Wrong alignment on UAthena_PlayerCameraModeBase_C");
-static_assert(sizeof(UAthena_PlayerCameraModeBase_C) == 0x000110, "Wrong size on UAthena_PlayerCameraModeBase_C");
 
-}
-
+SDK_NAMESPACE_END

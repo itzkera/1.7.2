@@ -18,8 +18,7 @@
 #include "SkillTreeGroups_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DefaultSkillNode.DefaultSkillNode_C
 // 0x0150 (0x0A18 - 0x08C8)
@@ -60,26 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultSkillNode_C">();
+		BP_STATIC_CLASS_IMPL("DefaultSkillNode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultSkillNode_C")
 	}
 	static class UDefaultSkillNode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefaultSkillNode_C>();
 	}
 };
-static_assert(alignof(UDefaultSkillNode_C) == 0x000008, "Wrong alignment on UDefaultSkillNode_C");
-static_assert(sizeof(UDefaultSkillNode_C) == 0x000A18, "Wrong size on UDefaultSkillNode_C");
-static_assert(offsetof(UDefaultSkillNode_C, UberGraphFrame) == 0x0008C8, "Member 'UDefaultSkillNode_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, InternalSpacer) == 0x0008D0, "Member 'UDefaultSkillNode_C::InternalSpacer' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, SelectionPulseEffect) == 0x0008D8, "Member 'UDefaultSkillNode_C::SelectionPulseEffect' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, SelectionGlowPercentage) == 0x0008E0, "Member 'UDefaultSkillNode_C::SelectionGlowPercentage' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, HoverGlowPercentage) == 0x0008E4, "Member 'UDefaultSkillNode_C::HoverGlowPercentage' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, HoverGlowTimerHandle) == 0x0008E8, "Member 'UDefaultSkillNode_C::HoverGlowTimerHandle' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, SelectionGlowTimerHandle) == 0x0008F0, "Member 'UDefaultSkillNode_C::SelectionGlowTimerHandle' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, PageColors) == 0x0008F8, "Member 'UDefaultSkillNode_C::PageColors' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, Pages) == 0x0009B8, "Member 'UDefaultSkillNode_C::Pages' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, GroupColors) == 0x0009BC, "Member 'UDefaultSkillNode_C::GroupColors' has a wrong offset!");
-static_assert(offsetof(UDefaultSkillNode_C, Groups) == 0x000A10, "Member 'UDefaultSkillNode_C::Groups' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

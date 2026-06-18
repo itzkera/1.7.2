@@ -14,13 +14,12 @@
 #include "ConsoleProfileWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ConsoleProfileWidget.ConsoleProfileWidget_C.SetDisplayName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             DisplayName_0                                          (Parm)
+// const class FText&                      DisplayName_0                                          (Parm)
 
 void UConsoleProfileWidget_C::SetDisplayName(const class FText& DisplayName_0)
 {
@@ -36,5 +35,5 @@ void UConsoleProfileWidget_C::SetDisplayName(const class FText& DisplayName_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WebPurchase_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WebPurchase.WebPurchase_C.ExecuteUbergraph_WebPurchase
 // ()
@@ -55,7 +54,7 @@ void UWebPurchase_C::OnActivated()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                          WebWidget                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           AttemptedMTXOfferId                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    AttemptedMTXOfferId                                    (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UWebPurchase_C::Display(class UWidget* WebWidget, const class FString& AttemptedMTXOfferId)
 {
@@ -104,7 +103,7 @@ void UWebPurchase_C::BindDelegates()
 // Function WebPurchase.WebPurchase_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UWebPurchase_C::HandleBack(bool* bPassThrough)
 {
@@ -121,5 +120,5 @@ void UWebPurchase_C::HandleBack(bool* bPassThrough)
 		*bPassThrough = Parms.bPassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

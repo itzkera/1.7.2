@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementInventoryPanel.ItemManagementInventoryPanel_C
 // 0x0100 (0x0400 - 0x0300)
@@ -27,7 +26,7 @@ class UItemManagementInventoryPanel_C final : public UFortItemManagementInventor
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(Transient, DuplicateTransient)
 	class UWidgetAnimation*                       FadeMessage;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemManagementInventoryLimitStatusIndicator_C* AccountLimit;                                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemManagementInventoryLimitStatusIndicator_C* AccountLimit;                              // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           BackpackHeader;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          BorderMessage;                                     // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          CommonBorderEquipSlots;                            // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -44,7 +43,7 @@ public:
 	class UImage*                                 Image_0;                                           // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_1;                                           // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_2;                                           // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemManagementInventoryLimitStatusIndicator_C* InventoryLimitStatusBackpack;                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemManagementInventoryLimitStatusIndicator_C* InventoryLimitStatusBackpack;              // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        InventoryLimitSwitcher;                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemCraftingIngredientList_C*          ItemCraftingIngredientList;                        // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       PageTitle;                                         // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -53,7 +52,7 @@ public:
 	class UCommonBorder*                          Recycling;                                         // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      SortTypeButton;                                    // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      SortTypeButtonWorldItems;                          // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemManagementInventoryLimitStatusIndicator_C* StorageLimit;                                      // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemManagementInventoryLimitStatusIndicator_C* StorageLimit;                              // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         UpgradeResourcesBox;                               // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          bUseRetire;                                        // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bHideCount;                                        // 0x03F1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -96,50 +95,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementInventoryPanel_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementInventoryPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementInventoryPanel_C")
 	}
 	static class UItemManagementInventoryPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementInventoryPanel_C>();
 	}
 };
-static_assert(alignof(UItemManagementInventoryPanel_C) == 0x000008, "Wrong alignment on UItemManagementInventoryPanel_C");
-static_assert(sizeof(UItemManagementInventoryPanel_C) == 0x000400, "Wrong size on UItemManagementInventoryPanel_C");
-static_assert(offsetof(UItemManagementInventoryPanel_C, UberGraphFrame) == 0x000300, "Member 'UItemManagementInventoryPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, FadeMessage) == 0x000308, "Member 'UItemManagementInventoryPanel_C::FadeMessage' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, AccountLimit) == 0x000310, "Member 'UItemManagementInventoryPanel_C::AccountLimit' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, BackpackHeader) == 0x000318, "Member 'UItemManagementInventoryPanel_C::BackpackHeader' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, BorderMessage) == 0x000320, "Member 'UItemManagementInventoryPanel_C::BorderMessage' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, CommonBorderEquipSlots) == 0x000328, "Member 'UItemManagementInventoryPanel_C::CommonBorderEquipSlots' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, CurrentFilterLabel) == 0x000330, "Member 'UItemManagementInventoryPanel_C::CurrentFilterLabel' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, CurrentFilterLabelWorldItems) == 0x000338, "Member 'UItemManagementInventoryPanel_C::CurrentFilterLabelWorldItems' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, EquipSlot1) == 0x000340, "Member 'UItemManagementInventoryPanel_C::EquipSlot1' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, EquipSlot2) == 0x000348, "Member 'UItemManagementInventoryPanel_C::EquipSlot2' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, EquipSlot3) == 0x000350, "Member 'UItemManagementInventoryPanel_C::EquipSlot3' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, EquipSlots) == 0x000358, "Member 'UItemManagementInventoryPanel_C::EquipSlots' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, FilterBarSwitcher) == 0x000360, "Member 'UItemManagementInventoryPanel_C::FilterBarSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, Filters) == 0x000368, "Member 'UItemManagementInventoryPanel_C::Filters' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, FilterSortSwitcher) == 0x000370, "Member 'UItemManagementInventoryPanel_C::FilterSortSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, FocusSwitcher) == 0x000378, "Member 'UItemManagementInventoryPanel_C::FocusSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, Image_0) == 0x000380, "Member 'UItemManagementInventoryPanel_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, Image_1) == 0x000388, "Member 'UItemManagementInventoryPanel_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, Image_2) == 0x000390, "Member 'UItemManagementInventoryPanel_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, InventoryLimitStatusBackpack) == 0x000398, "Member 'UItemManagementInventoryPanel_C::InventoryLimitStatusBackpack' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, InventoryLimitSwitcher) == 0x0003A0, "Member 'UItemManagementInventoryPanel_C::InventoryLimitSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, ItemCraftingIngredientList) == 0x0003A8, "Member 'UItemManagementInventoryPanel_C::ItemCraftingIngredientList' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, PageTitle) == 0x0003B0, "Member 'UItemManagementInventoryPanel_C::PageTitle' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, RecycleItemCountText) == 0x0003B8, "Member 'UItemManagementInventoryPanel_C::RecycleItemCountText' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, RecycleTitle) == 0x0003C0, "Member 'UItemManagementInventoryPanel_C::RecycleTitle' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, Recycling) == 0x0003C8, "Member 'UItemManagementInventoryPanel_C::Recycling' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, SortTypeButton) == 0x0003D0, "Member 'UItemManagementInventoryPanel_C::SortTypeButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, SortTypeButtonWorldItems) == 0x0003D8, "Member 'UItemManagementInventoryPanel_C::SortTypeButtonWorldItems' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, StorageLimit) == 0x0003E0, "Member 'UItemManagementInventoryPanel_C::StorageLimit' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, UpgradeResourcesBox) == 0x0003E8, "Member 'UItemManagementInventoryPanel_C::UpgradeResourcesBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, bUseRetire) == 0x0003F0, "Member 'UItemManagementInventoryPanel_C::bUseRetire' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, bHideCount) == 0x0003F1, "Member 'UItemManagementInventoryPanel_C::bHideCount' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, bHideResources) == 0x0003F2, "Member 'UItemManagementInventoryPanel_C::bHideResources' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, bHideTitle) == 0x0003F3, "Member 'UItemManagementInventoryPanel_C::bHideTitle' has a wrong offset!");
-static_assert(offsetof(UItemManagementInventoryPanel_C, MulchQuantitySelector) == 0x0003F8, "Member 'UItemManagementInventoryPanel_C::MulchQuantitySelector' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

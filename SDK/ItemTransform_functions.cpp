@@ -14,8 +14,7 @@
 #include "ItemTransform_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransform.ItemTransform_C.ExecuteUbergraph_ItemTransform
 // ()
@@ -200,7 +199,7 @@ void UItemTransform_C::SetupActionHandlers()
 // Function ItemTransform.ItemTransform_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransform_C::HandleBack(bool* PassThrough)
 {
@@ -221,7 +220,7 @@ void UItemTransform_C::HandleBack(bool* PassThrough)
 // Function ItemTransform.ItemTransform_C.HandleSelect
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransform_C::HandleSelect(bool* PassThrough)
 {
@@ -284,8 +283,8 @@ void UItemTransform_C::HandleTransformConfirm()
 // Function ItemTransform.ItemTransform_C.OpenResult
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>RewardItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FFortItemInstanceQuantityPair>SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&RewardItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemTransform_C::OpenResult(TArray<struct FFortItemInstanceQuantityPair>& RewardItems, TArray<struct FFortItemInstanceQuantityPair>& SacrificeItems)
 {
@@ -323,8 +322,8 @@ void UItemTransform_C::HandleTransformContinue()
 // Function ItemTransform.ItemTransform_C.HandleTransformSucceeded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>RewardedItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FFortItemInstanceQuantityPair>SacrificedItems                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&RewardedItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&SacrificedItems                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemTransform_C::HandleTransformSucceeded(TArray<struct FFortItemInstanceQuantityPair>& RewardedItems, TArray<struct FFortItemInstanceQuantityPair>& SacrificedItems)
 {
@@ -348,7 +347,7 @@ void UItemTransform_C::HandleTransformSucceeded(TArray<struct FFortItemInstanceQ
 // Function ItemTransform.ItemTransform_C.HandleTransformFailed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ErrorMessage                                           (Parm, OutParm, ReferenceParm)
+// class FText&                            ErrorMessage                                           (Parm, OutParm, ReferenceParm)
 
 void UItemTransform_C::HandleTransformFailed(class FText& ErrorMessage)
 {
@@ -384,7 +383,7 @@ void UItemTransform_C::ResetItemTransform()
 // Function ItemTransform.ItemTransform_C.HandleTransformAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransform_C::HandleTransformAction(bool* PassThrough)
 {
@@ -405,7 +404,7 @@ void UItemTransform_C::HandleTransformAction(bool* PassThrough)
 // Function ItemTransform.ItemTransform_C.HandleSelectKeyAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransform_C::HandleSelectKeyAction(bool* PassThrough)
 {
@@ -600,7 +599,7 @@ void UItemTransform_C::OnItemPickerOpened()
 // Function ItemTransform.ItemTransform_C.HandleClosePicker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransform_C::HandleClosePicker(bool* PassThrough)
 {
@@ -617,5 +616,5 @@ void UItemTransform_C::HandleClosePicker(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

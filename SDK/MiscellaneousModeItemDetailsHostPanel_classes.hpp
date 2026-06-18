@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MiscellaneousModeItemDetailsHostPanel.MiscellaneousModeItemDetailsHostPanel_C
 // 0x0038 (0x02E0 - 0x02A8)
@@ -38,22 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MiscellaneousModeItemDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("MiscellaneousModeItemDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MiscellaneousModeItemDetailsHostPanel_C")
 	}
 	static class UMiscellaneousModeItemDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMiscellaneousModeItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UMiscellaneousModeItemDetailsHostPanel_C");
-static_assert(sizeof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x0002E0, "Wrong size on UMiscellaneousModeItemDetailsHostPanel_C");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, UberGraphFrame) == 0x0002A8, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, HeaderWidget) == 0x0002B0, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, HeroSquadBonusesDetailWidget) == 0x0002B8, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::HeroSquadBonusesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, ItemCraftingIngredientsDetailWidget) == 0x0002C0, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::ItemCraftingIngredientsDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, MarkedForMulchingBackgroundImage) == 0x0002C8, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::MarkedForMulchingBackgroundImage' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, MarkedForMulchingIndicatorImage) == 0x0002D0, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::MarkedForMulchingIndicatorImage' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, SurvivorTraitsDetailWidget) == 0x0002D8, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::SurvivorTraitsDetailWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TVPostProcessBP.TVPostProcessBP_C
 // 0x0180 (0x0508 - 0x0388)
@@ -164,95 +163,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TVPostProcessBP_C">();
+		BP_STATIC_CLASS_IMPL("TVPostProcessBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TVPostProcessBP_C")
 	}
 	static class ATVPostProcessBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATVPostProcessBP_C>();
 	}
 };
-static_assert(alignof(ATVPostProcessBP_C) == 0x000008, "Wrong alignment on ATVPostProcessBP_C");
-static_assert(sizeof(ATVPostProcessBP_C) == 0x000508, "Wrong size on ATVPostProcessBP_C");
-static_assert(offsetof(ATVPostProcessBP_C, UberGraphFrame) == 0x000388, "Member 'ATVPostProcessBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPP_StoreFF) == 0x000390, "Member 'ATVPostProcessBP_C::FullScreenTVPP_StoreFF' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Billboard) == 0x000398, "Member 'ATVPostProcessBP_C::Billboard' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPP_OnlyMaterialModified) == 0x0003A0, "Member 'ATVPostProcessBP_C::FullScreenTVPP_OnlyMaterialModified' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FullScreenTVPP) == 0x0003A8, "Member 'ATVPostProcessBP_C::FullScreenTVPP' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd02_A319E55147356F64E8D7AE9C824CC6C2) == 0x0003B0, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd02_A319E55147356F64E8D7AE9C824CC6C2' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd_A319E55147356F64E8D7AE9C824CC6C2) == 0x0003B4, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade_DistortTheSceneTexture_FrontEnd_A319E55147356F64E8D7AE9C824CC6C2' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade_PostProcessVisibility_A319E55147356F64E8D7AE9C824CC6C2) == 0x0003B8, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade_PostProcessVisibility_A319E55147356F64E8D7AE9C824CC6C2' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade__Direction_A319E55147356F64E8D7AE9C824CC6C2) == 0x0003BC, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade__Direction_A319E55147356F64E8D7AE9C824CC6C2' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitchFade) == 0x0003C0, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitchFade' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Jitter_Timeline_use_solid_color_3FCD803A4A5E86474EA128B9EDBED56E) == 0x0003C8, "Member 'ATVPostProcessBP_C::Jitter_Timeline_use_solid_color_3FCD803A4A5E86474EA128B9EDBED56E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Jitter_Timeline_LerpImageAndScreen_3FCD803A4A5E86474EA128B9EDBED56E) == 0x0003CC, "Member 'ATVPostProcessBP_C::Jitter_Timeline_LerpImageAndScreen_3FCD803A4A5E86474EA128B9EDBED56E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Jitter_Timeline_Noise_Distortion_Amount_3FCD803A4A5E86474EA128B9EDBED56E) == 0x0003D0, "Member 'ATVPostProcessBP_C::Jitter_Timeline_Noise_Distortion_Amount_3FCD803A4A5E86474EA128B9EDBED56E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Jitter_Timeline_Screen_Modulation_3FCD803A4A5E86474EA128B9EDBED56E) == 0x0003D4, "Member 'ATVPostProcessBP_C::Jitter_Timeline_Screen_Modulation_3FCD803A4A5E86474EA128B9EDBED56E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Jitter_Timeline__Direction_3FCD803A4A5E86474EA128B9EDBED56E) == 0x0003D8, "Member 'ATVPostProcessBP_C::Jitter_Timeline__Direction_3FCD803A4A5E86474EA128B9EDBED56E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Jitter_Timeline) == 0x0003E0, "Member 'ATVPostProcessBP_C::Jitter_Timeline' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_SolidBackgroundModulation_8B52FB0849C47C5870E31DBE0A87A563) == 0x0003E8, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_SolidBackgroundModulation_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_Additive_screen_modulation_8B52FB0849C47C5870E31DBE0A87A563) == 0x0003EC, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_Additive_screen_modulation_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_ReplacementAlpha_8B52FB0849C47C5870E31DBE0A87A563) == 0x0003F0, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_ReplacementAlpha_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_Vpos_8B52FB0849C47C5870E31DBE0A87A563) == 0x0003F4, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_Vpos_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_Hpos_8B52FB0849C47C5870E31DBE0A87A563) == 0x0003F8, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_Hpos_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_Noise_Distortion_Amount_8B52FB0849C47C5870E31DBE0A87A563) == 0x0003FC, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_Noise_Distortion_Amount_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_Screen_Bend_Amount_8B52FB0849C47C5870E31DBE0A87A563) == 0x000400, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_Screen_Bend_Amount_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline_Screen_Modulation_8B52FB0849C47C5870E31DBE0A87A563) == 0x000404, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline_Screen_Modulation_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline__Direction_8B52FB0849C47C5870E31DBE0A87A563) == 0x000408, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline__Direction_8B52FB0849C47C5870E31DBE0A87A563' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_StartTheMonitor_Text_Timeline) == 0x000410, "Member 'ATVPostProcessBP_C::Camera_StartTheMonitor_Text_Timeline' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FadeOut_blendweight_D40D454F4B32910AAC407D9AB580EA07) == 0x000418, "Member 'ATVPostProcessBP_C::FadeOut_blendweight_D40D454F4B32910AAC407D9AB580EA07' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FadeOut_Fading_D40D454F4B32910AAC407D9AB580EA07) == 0x00041C, "Member 'ATVPostProcessBP_C::FadeOut_Fading_D40D454F4B32910AAC407D9AB580EA07' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FadeOut_Effect_translucency_D40D454F4B32910AAC407D9AB580EA07) == 0x000420, "Member 'ATVPostProcessBP_C::FadeOut_Effect_translucency_D40D454F4B32910AAC407D9AB580EA07' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FadeOut_Kill_effect_amount_D40D454F4B32910AAC407D9AB580EA07) == 0x000424, "Member 'ATVPostProcessBP_C::FadeOut_Kill_effect_amount_D40D454F4B32910AAC407D9AB580EA07' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FadeOut__Direction_D40D454F4B32910AAC407D9AB580EA07) == 0x000428, "Member 'ATVPostProcessBP_C::FadeOut__Direction_D40D454F4B32910AAC407D9AB580EA07' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FadeOut) == 0x000430, "Member 'ATVPostProcessBP_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_between_cameras_use_solid_color_E4FB35CD487A51ED1632BFAD49D21E03) == 0x000438, "Member 'ATVPostProcessBP_C::Switch_between_cameras_use_solid_color_E4FB35CD487A51ED1632BFAD49D21E03' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_between_cameras_LerpImageAndScreen_E4FB35CD487A51ED1632BFAD49D21E03) == 0x00043C, "Member 'ATVPostProcessBP_C::Switch_between_cameras_LerpImageAndScreen_E4FB35CD487A51ED1632BFAD49D21E03' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_between_cameras_Noise_Distortion_Amount_E4FB35CD487A51ED1632BFAD49D21E03) == 0x000440, "Member 'ATVPostProcessBP_C::Switch_between_cameras_Noise_Distortion_Amount_E4FB35CD487A51ED1632BFAD49D21E03' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_between_cameras_Screen_Modulation_E4FB35CD487A51ED1632BFAD49D21E03) == 0x000444, "Member 'ATVPostProcessBP_C::Switch_between_cameras_Screen_Modulation_E4FB35CD487A51ED1632BFAD49D21E03' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_between_cameras__Direction_E4FB35CD487A51ED1632BFAD49D21E03) == 0x000448, "Member 'ATVPostProcessBP_C::Switch_between_cameras__Direction_E4FB35CD487A51ED1632BFAD49D21E03' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_between_cameras) == 0x000450, "Member 'ATVPostProcessBP_C::Switch_between_cameras' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_static_use_solid_color_010BC5074AA9D38B1E815EB7DA97273B) == 0x000458, "Member 'ATVPostProcessBP_C::Switch_to_static_use_solid_color_010BC5074AA9D38B1E815EB7DA97273B' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_static_ShowScreenStatic_010BC5074AA9D38B1E815EB7DA97273B) == 0x00045C, "Member 'ATVPostProcessBP_C::Switch_to_static_ShowScreenStatic_010BC5074AA9D38B1E815EB7DA97273B' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_static_Noise_Distortion_Amount_010BC5074AA9D38B1E815EB7DA97273B) == 0x000460, "Member 'ATVPostProcessBP_C::Switch_to_static_Noise_Distortion_Amount_010BC5074AA9D38B1E815EB7DA97273B' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_static_Screen_Modulation_010BC5074AA9D38B1E815EB7DA97273B) == 0x000464, "Member 'ATVPostProcessBP_C::Switch_to_static_Screen_Modulation_010BC5074AA9D38B1E815EB7DA97273B' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_static__Direction_010BC5074AA9D38B1E815EB7DA97273B) == 0x000468, "Member 'ATVPostProcessBP_C::Switch_to_static__Direction_010BC5074AA9D38B1E815EB7DA97273B' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_static) == 0x000470, "Member 'ATVPostProcessBP_C::Switch_to_static' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_live_use_solid_color_DFB267304061CE3644C3E1B38972E94E) == 0x000478, "Member 'ATVPostProcessBP_C::Switch_to_live_use_solid_color_DFB267304061CE3644C3E1B38972E94E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_live_LerpImageAndScreen_DFB267304061CE3644C3E1B38972E94E) == 0x00047C, "Member 'ATVPostProcessBP_C::Switch_to_live_LerpImageAndScreen_DFB267304061CE3644C3E1B38972E94E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_live_Noise_Distortion_Amount_DFB267304061CE3644C3E1B38972E94E) == 0x000480, "Member 'ATVPostProcessBP_C::Switch_to_live_Noise_Distortion_Amount_DFB267304061CE3644C3E1B38972E94E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_live_Screen_Modulation_DFB267304061CE3644C3E1B38972E94E) == 0x000484, "Member 'ATVPostProcessBP_C::Switch_to_live_Screen_Modulation_DFB267304061CE3644C3E1B38972E94E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_live__Direction_DFB267304061CE3644C3E1B38972E94E) == 0x000488, "Member 'ATVPostProcessBP_C::Switch_to_live__Direction_DFB267304061CE3644C3E1B38972E94E' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Switch_to_live) == 0x000490, "Member 'ATVPostProcessBP_C::Switch_to_live' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Show_the_troll_HideTroll_060EDD8E4EDBC900E7D2F29D7A26DBF0) == 0x000498, "Member 'ATVPostProcessBP_C::Show_the_troll_HideTroll_060EDD8E4EDBC900E7D2F29D7A26DBF0' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Show_the_troll_use_solid_color_060EDD8E4EDBC900E7D2F29D7A26DBF0) == 0x00049C, "Member 'ATVPostProcessBP_C::Show_the_troll_use_solid_color_060EDD8E4EDBC900E7D2F29D7A26DBF0' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Show_the_troll_Noise_Distortion_Amount_060EDD8E4EDBC900E7D2F29D7A26DBF0) == 0x0004A0, "Member 'ATVPostProcessBP_C::Show_the_troll_Noise_Distortion_Amount_060EDD8E4EDBC900E7D2F29D7A26DBF0' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Show_the_troll__Direction_060EDD8E4EDBC900E7D2F29D7A26DBF0) == 0x0004A4, "Member 'ATVPostProcessBP_C::Show_the_troll__Direction_060EDD8E4EDBC900E7D2F29D7A26DBF0' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Show_the_troll) == 0x0004A8, "Member 'ATVPostProcessBP_C::Show_the_troll' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Replacement_randomization_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004B0, "Member 'ATVPostProcessBP_C::StartScreen_Replacement_randomization_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_ReplacementAlpha_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004B4, "Member 'ATVPostProcessBP_C::StartScreen_ReplacementAlpha_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Vpos_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004B8, "Member 'ATVPostProcessBP_C::StartScreen_Vpos_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Hpos_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004BC, "Member 'ATVPostProcessBP_C::StartScreen_Hpos_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Noise_Distortion_Amount_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004C0, "Member 'ATVPostProcessBP_C::StartScreen_Noise_Distortion_Amount_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Screen_Bend_Amount_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004C4, "Member 'ATVPostProcessBP_C::StartScreen_Screen_Bend_Amount_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen_Screen_Modulation_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004C8, "Member 'ATVPostProcessBP_C::StartScreen_Screen_Modulation_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen__Direction_676222D64F5268BA3215E5B98CEFBE8A) == 0x0004CC, "Member 'ATVPostProcessBP_C::StartScreen__Direction_676222D64F5268BA3215E5B98CEFBE8A' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, StartScreen) == 0x0004D0, "Member 'ATVPostProcessBP_C::StartScreen' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, GrabNewColorBool) == 0x0004D8, "Member 'ATVPostProcessBP_C::GrabNewColorBool' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, increase_distortion_) == 0x0004D9, "Member 'ATVPostProcessBP_C::increase_distortion_' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, AdditionalDistortionAmount) == 0x0004DC, "Member 'ATVPostProcessBP_C::AdditionalDistortionAmount' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Show_troll) == 0x0004E0, "Member 'ATVPostProcessBP_C::Show_troll' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Troll_counter) == 0x0004E4, "Member 'ATVPostProcessBP_C::Troll_counter' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, NewVar) == 0x0004E8, "Member 'ATVPostProcessBP_C::NewVar' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Camera_hasnt_switched_to_live_yet) == 0x0004E9, "Member 'ATVPostProcessBP_C::Camera_hasnt_switched_to_live_yet' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FluctuatingDisplaySceneValue) == 0x0004EC, "Member 'ATVPostProcessBP_C::FluctuatingDisplaySceneValue' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Ideal_Display_scene_min_value) == 0x0004F0, "Member 'ATVPostProcessBP_C::Ideal_Display_scene_min_value' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Ideal_display_scene_max_value) == 0x0004F4, "Member 'ATVPostProcessBP_C::Ideal_display_scene_max_value' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, SkipDos) == 0x0004F8, "Member 'ATVPostProcessBP_C::SkipDos' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, DisableOnStartup) == 0x0004F9, "Member 'ATVPostProcessBP_C::DisableOnStartup' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FrontEndCameraSwitch_InProgress) == 0x0004FA, "Member 'ATVPostProcessBP_C::FrontEndCameraSwitch_InProgress' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, PreviousSceneModulation) == 0x0004FC, "Member 'ATVPostProcessBP_C::PreviousSceneModulation' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, FFInProgress) == 0x000500, "Member 'ATVPostProcessBP_C::FFInProgress' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, RestartFrontEndCameraSwitch_) == 0x000501, "Member 'ATVPostProcessBP_C::RestartFrontEndCameraSwitch_' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PlayerChoiceWidget.PlayerChoiceWidget_C
 // 0x00B0 (0x02F0 - 0x0240)
@@ -53,29 +52,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerChoiceWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerChoiceWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerChoiceWidget_C")
 	}
 	static class UPlayerChoiceWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerChoiceWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerChoiceWidget_C) == 0x000008, "Wrong alignment on UPlayerChoiceWidget_C");
-static_assert(sizeof(UPlayerChoiceWidget_C) == 0x0002F0, "Wrong size on UPlayerChoiceWidget_C");
-static_assert(offsetof(UPlayerChoiceWidget_C, UberGraphFrame) == 0x000240, "Member 'UPlayerChoiceWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, BasicStrokeBox_26) == 0x000248, "Member 'UPlayerChoiceWidget_C::BasicStrokeBox_26' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, ChoicePanel) == 0x000250, "Member 'UPlayerChoiceWidget_C::ChoicePanel' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, DecriptionText) == 0x000258, "Member 'UPlayerChoiceWidget_C::DecriptionText' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, Image_21) == 0x000260, "Member 'UPlayerChoiceWidget_C::Image_21' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, ScrollButtonPanel) == 0x000268, "Member 'UPlayerChoiceWidget_C::ScrollButtonPanel' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, Choice1Text) == 0x000270, "Member 'UPlayerChoiceWidget_C::Choice1Text' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, Choice2Text) == 0x000288, "Member 'UPlayerChoiceWidget_C::Choice2Text' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, SurvivorStoryChoiceSelected) == 0x0002A0, "Member 'UPlayerChoiceWidget_C::SurvivorStoryChoiceSelected' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, SelectedChoice) == 0x0002B0, "Member 'UPlayerChoiceWidget_C::SelectedChoice' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, Choice3Text) == 0x0002B8, "Member 'UPlayerChoiceWidget_C::Choice3Text' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, Description) == 0x0002D0, "Member 'UPlayerChoiceWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, MenuID) == 0x0002E8, "Member 'UPlayerChoiceWidget_C::MenuID' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceWidget_C, CompletedSuccessfully) == 0x0002EC, "Member 'UPlayerChoiceWidget_C::CompletedSuccessfully' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

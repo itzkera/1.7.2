@@ -18,8 +18,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ConfirmationWindow.ConfirmationWindow_C
 // 0x0298 (0x06A0 - 0x0408)
@@ -102,44 +101,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ConfirmationWindow_C">();
+		BP_STATIC_CLASS_IMPL("ConfirmationWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConfirmationWindow_C")
 	}
 	static class UConfirmationWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfirmationWindow_C>();
 	}
 };
-static_assert(alignof(UConfirmationWindow_C) == 0x000010, "Wrong alignment on UConfirmationWindow_C");
-static_assert(sizeof(UConfirmationWindow_C) == 0x0006A0, "Wrong size on UConfirmationWindow_C");
-static_assert(offsetof(UConfirmationWindow_C, UberGraphFrame) == 0x000410, "Member 'UConfirmationWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ButtonBox) == 0x000418, "Member 'UConfirmationWindow_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ContentSwitcher) == 0x000420, "Member 'UConfirmationWindow_C::ContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, Description) == 0x000428, "Member 'UConfirmationWindow_C::Description' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, DescriptionScroll) == 0x000430, "Member 'UConfirmationWindow_C::DescriptionScroll' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, HoverDescription) == 0x000438, "Member 'UConfirmationWindow_C::HoverDescription' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, LeftOptionalWidget) == 0x000440, "Member 'UConfirmationWindow_C::LeftOptionalWidget' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, Lightbox_NUI) == 0x000448, "Member 'UConfirmationWindow_C::Lightbox_NUI' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, MainContentHorizontalBox) == 0x000450, "Member 'UConfirmationWindow_C::MainContentHorizontalBox' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, MainIcon) == 0x000458, "Member 'UConfirmationWindow_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, OptionalWidget) == 0x000460, "Member 'UConfirmationWindow_C::OptionalWidget' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, RootOverlay) == 0x000468, "Member 'UConfirmationWindow_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, SelectableConfirmButtons) == 0x000470, "Member 'UConfirmationWindow_C::SelectableConfirmButtons' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, Title) == 0x000478, "Member 'UConfirmationWindow_C::Title' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, WaitThrobber) == 0x000480, "Member 'UConfirmationWindow_C::WaitThrobber' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ConfirmationDescription) == 0x000490, "Member 'UConfirmationWindow_C::ConfirmationDescription' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ConfirmButtons) == 0x000610, "Member 'UConfirmationWindow_C::ConfirmButtons' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, DeclineButton) == 0x000620, "Member 'UConfirmationWindow_C::DeclineButton' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ResultNames) == 0x000628, "Member 'UConfirmationWindow_C::ResultNames' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, bShowingConfirmation) == 0x000638, "Member 'UConfirmationWindow_C::bShowingConfirmation' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ButtonBoxPadding) == 0x00063C, "Member 'UConfirmationWindow_C::ButtonBoxPadding' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ButtonBoxPadding_VerticalBox) == 0x00064C, "Member 'UConfirmationWindow_C::ButtonBoxPadding_VerticalBox' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, HoverTexts) == 0x000660, "Member 'UConfirmationWindow_C::HoverTexts' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ButtonIconColor) == 0x000670, "Member 'UConfirmationWindow_C::ButtonIconColor' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, WaitThrobberColorParamName) == 0x000680, "Member 'UConfirmationWindow_C::WaitThrobberColorParamName' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, WaitThrobberColor) == 0x000688, "Member 'UConfirmationWindow_C::WaitThrobberColor' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, WaitingForLatentActionHandle) == 0x000698, "Member 'UConfirmationWindow_C::WaitingForLatentActionHandle' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, bShowLightBoxAnims) == 0x00069C, "Member 'UConfirmationWindow_C::bShowLightBoxAnims' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, bShouldTriggerCameraModeOnClose) == 0x00069D, "Member 'UConfirmationWindow_C::bShouldTriggerCameraModeOnClose' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

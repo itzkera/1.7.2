@@ -14,8 +14,7 @@
 #include "AthenaTeamMemberInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ExecuteUbergraph_AthenaTeamMemberInfo
 // (HasDefaults)
@@ -266,5 +265,5 @@ void UAthenaTeamMemberInfo_C::SetTalking(bool NewTalking)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

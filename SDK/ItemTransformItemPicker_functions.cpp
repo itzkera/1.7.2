@@ -14,8 +14,7 @@
 #include "ItemTransformItemPicker_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.ExecuteUbergraph_ItemTransformItemPicker
 // ()
@@ -128,9 +127,9 @@ void UItemTransformItemPicker_C::HandleItemSelected(class UFortItem* Item)
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.RemoveInvalidItems
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortAccountItem*>         UnrefinedItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortItem*>                CurrentSacrificeItems                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortAccountItem*>         RefinedItems                                           (Parm, OutParm, ZeroConstructor)
+// TArray<class UFortAccountItem*>&        UnrefinedItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               CurrentSacrificeItems                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortAccountItem*>*        RefinedItems                                           (Parm, OutParm, ZeroConstructor)
 
 void UItemTransformItemPicker_C::RemoveInvalidItems(TArray<class UFortAccountItem*>& UnrefinedItems, TArray<class UFortItem*>& CurrentSacrificeItems, TArray<class UFortAccountItem*>* RefinedItems)
 {
@@ -211,7 +210,7 @@ void UItemTransformItemPicker_C::SetFilter(class FName FilterName)
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.OpenPicker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                SacrificeItems_0                                       (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               SacrificeItems_0                                       (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   SelectedSlot                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformItemPicker_C::OpenPicker(TArray<class UFortItem*>& SacrificeItems_0, int32 SelectedSlot)
@@ -235,7 +234,7 @@ void UItemTransformItemPicker_C::OpenPicker(TArray<class UFortItem*>& SacrificeI
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.CommitSelectedItem
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThru                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThru                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransformItemPicker_C::CommitSelectedItem(bool* PassThru)
 {
@@ -256,7 +255,7 @@ void UItemTransformItemPicker_C::CommitSelectedItem(bool* PassThru)
 // Function ItemTransformItemPicker.ItemTransformItemPicker_C.OpenInspectionScreen
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThru                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThru                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTransformItemPicker_C::OpenInspectionScreen(bool* PassThru)
 {
@@ -278,7 +277,7 @@ void UItemTransformItemPicker_C::OpenInspectionScreen(bool* PassThru)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        InItem                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                        OutItem                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem**                       OutItem                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformItemPicker_C::Return_Item_to_Detail(class UFortItem* InItem, class UFortItem** OutItem)
 {
@@ -297,5 +296,5 @@ void UItemTransformItemPicker_C::Return_Item_to_Detail(class UFortItem* InItem, 
 		*OutItem = Parms.OutItem;
 }
 
-}
 
+SDK_NAMESPACE_END

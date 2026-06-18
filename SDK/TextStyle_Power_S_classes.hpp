@@ -13,8 +13,7 @@
 #include "TextStyle_PageTitle_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-Power-S.TextStyle-Power-S_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_Power_S_C : public UTextStyle_PageTitle_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Power-S_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Power-S_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Power-S_C")
 	}
 	static class UTextStyle_Power_S_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Power_S_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Power_S_C) == 0x000008, "Wrong alignment on UTextStyle_Power_S_C");
-static_assert(sizeof(UTextStyle_Power_S_C) == 0x0000D0, "Wrong size on UTextStyle_Power_S_C");
 
-}
-
+SDK_NAMESPACE_END

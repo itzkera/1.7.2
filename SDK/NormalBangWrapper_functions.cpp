@@ -14,8 +14,7 @@
 #include "NormalBangWrapper_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function NormalBangWrapper.NormalBangWrapper_C.ExecuteUbergraph_NormalBangWrapper
 // (HasDefaults)
@@ -150,7 +149,7 @@ void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount)
 // Function NormalBangWrapper.NormalBangWrapper_C.Adjust Bang Image Translation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        Translation                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 Translation                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
@@ -166,5 +165,5 @@ void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D&
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

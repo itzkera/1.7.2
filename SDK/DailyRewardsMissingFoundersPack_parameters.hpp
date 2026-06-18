@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DailyRewardsMissingFoundersPack.DailyRewardsMissingFoundersPack_C.ExecuteUbergraph_DailyRewardsMissingFoundersPack
 // 0x0070 (0x0070 - 0x0000)
@@ -32,18 +32,6 @@ public:
 	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0058(0x0018)()
 };
-static_assert(alignof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack) == 0x000008, "Wrong alignment on DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack");
-static_assert(sizeof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack) == 0x000070, "Wrong size on DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, EntryPoint) == 0x000000, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, Temp_bool_Variable) == 0x000004, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000008, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, Temp_text_Variable) == 0x000010, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, Temp_text_Variable2) == 0x000028, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000048, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, CallFunc_Not_PreBool_ReturnValue) == 0x000051, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack, K2Node_Select_Default) == 0x000058, "Member 'DailyRewardsMissingFoundersPack_C_ExecuteUbergraph_DailyRewardsMissingFoundersPack::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum En_SplineForwardAxes_01.En_SplineForwardAxes_01
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class En_SplineForwardAxes_01 : uint8
 	En_SplineForwardAxes_MAX                 = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

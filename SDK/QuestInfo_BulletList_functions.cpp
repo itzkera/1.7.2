@@ -14,8 +14,7 @@
 #include "QuestInfo_BulletList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.ExecuteUbergraph_QuestInfo_BulletList
 // ()
@@ -74,7 +73,7 @@ void UQuestInfo_BulletList_C::PreConstruct(bool IsDesignTime)
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntry
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             EntryText                                              (Parm)
+// const class FText&                      EntryText                                              (Parm)
 
 void UQuestInfo_BulletList_C::AddEntry(const class FText& EntryText)
 {
@@ -108,8 +107,8 @@ void UQuestInfo_BulletList_C::InitDesignView()
 // Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntryWithBrush
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             EntryText                                              (Parm)
-// struct FSlateBrush                      EntryIconBrush                                         (Parm)
+// const class FText&                      EntryText                                              (Parm)
+// const struct FSlateBrush&               EntryIconBrush                                         (Parm)
 
 void UQuestInfo_BulletList_C::AddEntryWithBrush(const class FText& EntryText, const struct FSlateBrush& EntryIconBrush)
 {
@@ -126,5 +125,5 @@ void UQuestInfo_BulletList_C::AddEntryWithBrush(const class FText& EntryText, co
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

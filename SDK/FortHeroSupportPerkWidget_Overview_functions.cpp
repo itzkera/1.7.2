@@ -14,8 +14,7 @@
 #include "FortHeroSupportPerkWidget_Overview_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FortHeroSupportPerkWidget-Overview.FortHeroSupportPerkWidget-Overview_C.ExecuteUbergraph_FortHeroSupportPerkWidget-Overview
 // ()
@@ -64,5 +63,5 @@ void UFortHeroSupportPerkWidget_Overview_C::OnHeroUpdated()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

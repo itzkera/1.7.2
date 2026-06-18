@@ -14,18 +14,17 @@
 #include "TooltipLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TooltipLibrary.TooltipLibrary_C.Create Basic Tooltip
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Body_Text                                              (Parm)
-// class FText                             Header_Text                                            (Parm)
+// const class FText&                      Body_Text                                              (Parm)
+// const class FText&                      Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, const class FText& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output)
 {
@@ -53,11 +52,11 @@ void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Pla
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Header_Text                                            (Parm)
+// const class FText&                      Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                      Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* __WorldContext, class UUserWidget** Output)
 {
@@ -86,7 +85,7 @@ void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Pl
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Enabled                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Tooltip_Text                                           (Parm)
+// const class FText&                      Tooltip_Text                                           (Parm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool Enabled, const class FText& Tooltip_Text, class UObject* __WorldContext)
@@ -111,12 +110,12 @@ void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Header_Text                                            (Parm)
+// const class FText&                      Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Header_Icon                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   OverrideQuantity                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, int32 OverrideQuantity, class UObject* __WorldContext, class UWidget** Return_Value)
 {
@@ -145,12 +144,12 @@ void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Play
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Header_Text                                            (Parm)
+// const class FText&                      Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Header_Icon                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        ComparedItem                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Owning_Player, const class FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, class UFortItem* ComparedItem, class UObject* __WorldContext, class UWidget** Return_Value)
 {
@@ -179,11 +178,11 @@ void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Own
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FText>                     Body_Text                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             Header_Text                                            (Parm)
+// TArray<class FText>&                    Body_Text                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const class FText&                      Header_Text                                            (Parm)
 // class USlateBrushAsset*                 Icon_Brush                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Create_Basic_Multi_Line_Tooltip(class APlayerController* Owning_Player, TArray<class FText>& Body_Text, const class FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output)
 {
@@ -213,10 +212,10 @@ void UTooltipLibrary_C::Create_Basic_Multi_Line_Tooltip(class APlayerController*
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHeroCoreStat                    Data                                                   (Parm, HasGetValueTypeHash)
+// const struct FHeroCoreStat&             Data                                                   (Parm, HasGetValueTypeHash)
 // float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UUserWidget*                      Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget**                     Output                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::Create_Core_Stat_Tooltip(class APlayerController* Owning_Player, const struct FHeroCoreStat& Data, float Value, class UObject* __WorldContext, class UUserWidget** Output)
 {
@@ -243,13 +242,13 @@ void UTooltipLibrary_C::Create_Core_Stat_Tooltip(class APlayerController* Owning
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owner                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Header                                                 (Parm)
-// class FText                             CommanderXP                                            (Parm)
-// class FText                             BoostXP                                                (Parm)
-// class FText                             RestXP                                                 (Parm)
-// class FText                             Body                                                   (Parm)
+// const class FText&                      Header                                                 (Parm)
+// const class FText&                      CommanderXP                                            (Parm)
+// const class FText&                      BoostXP                                                (Parm)
+// const class FText&                      RestXP                                                 (Parm)
+// const class FText&                      Body                                                   (Parm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonUserWidget*                Out                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUserWidget**               Out                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, const class FText& Header, const class FText& CommanderXP, const class FText& BoostXP, const class FText& RestXP, const class FText& Body, class UObject* __WorldContext, class UCommonUserWidget** Out)
 {
@@ -274,5 +273,5 @@ void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, const cl
 		*Out = Parms.Out;
 }
 
-}
 
+SDK_NAMESPACE_END

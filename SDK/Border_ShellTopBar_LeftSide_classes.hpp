@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-ShellTopBar-LeftSide.Border-ShellTopBar-LeftSide_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_ShellTopBar_LeftSide_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-ShellTopBar-LeftSide_C">();
+		BP_STATIC_CLASS_IMPL("Border-ShellTopBar-LeftSide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-ShellTopBar-LeftSide_C")
 	}
 	static class UBorder_ShellTopBar_LeftSide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_ShellTopBar_LeftSide_C>();
 	}
 };
-static_assert(alignof(UBorder_ShellTopBar_LeftSide_C) == 0x000008, "Wrong alignment on UBorder_ShellTopBar_LeftSide_C");
-static_assert(sizeof(UBorder_ShellTopBar_LeftSide_C) == 0x0000B8, "Wrong size on UBorder_ShellTopBar_LeftSide_C");
 
-}
-
+SDK_NAMESPACE_END

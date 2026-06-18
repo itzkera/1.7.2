@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_RiftZapPlayer.GCN_RiftZapPlayer_C
 // 0x0000 (0x0070 - 0x0070)
@@ -26,15 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_RiftZapPlayer_C">();
+		BP_STATIC_CLASS_IMPL("GCN_RiftZapPlayer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_RiftZapPlayer_C")
 	}
 	static class UGCN_RiftZapPlayer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_RiftZapPlayer_C>();
 	}
 };
-static_assert(alignof(UGCN_RiftZapPlayer_C) == 0x000008, "Wrong alignment on UGCN_RiftZapPlayer_C");
-static_assert(sizeof(UGCN_RiftZapPlayer_C) == 0x000070, "Wrong size on UGCN_RiftZapPlayer_C");
 
-}
-
+SDK_NAMESPACE_END

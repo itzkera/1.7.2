@@ -16,8 +16,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_Pickups.B_Pickups_C
 // 0x01E8 (0x05B0 - 0x03C8)
@@ -103,70 +102,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Pickups_C">();
+		BP_STATIC_CLASS_IMPL("B_Pickups_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Pickups_C")
 	}
 	static class AB_Pickups_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Pickups_C>();
 	}
 };
-static_assert(alignof(AB_Pickups_C) == 0x000008, "Wrong alignment on AB_Pickups_C");
-static_assert(sizeof(AB_Pickups_C) == 0x0005B0, "Wrong size on AB_Pickups_C");
-static_assert(offsetof(AB_Pickups_C, UberGraphFrame) == 0x0003C8, "Member 'AB_Pickups_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, ParticleSystem) == 0x0003D0, "Member 'AB_Pickups_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Root) == 0x0003D8, "Member 'AB_Pickups_C::Root' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Pivot_Offset) == 0x0003E0, "Member 'AB_Pickups_C::Pivot_Offset' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Rotation_Bias) == 0x0003EC, "Member 'AB_Pickups_C::Rotation_Bias' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Static_Mesh_Pickup) == 0x0003F8, "Member 'AB_Pickups_C::Static_Mesh_Pickup' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Skeletal_Mesh_Pickup) == 0x000400, "Member 'AB_Pickups_C::Skeletal_Mesh_Pickup' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, IsSkeletalMesh) == 0x000408, "Member 'AB_Pickups_C::IsSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Is_a_Backpack) == 0x000409, "Member 'AB_Pickups_C::Is_a_Backpack' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, ListOfMaterialsExemptFromReparenting) == 0x000410, "Member 'AB_Pickups_C::ListOfMaterialsExemptFromReparenting' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, SkeletalOrStaticMeshAssetPrimitive) == 0x000420, "Member 'AB_Pickups_C::SkeletalOrStaticMeshAssetPrimitive' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, CurrentElementIndex) == 0x000428, "Member 'AB_Pickups_C::CurrentElementIndex' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, MIDArray) == 0x000430, "Member 'AB_Pickups_C::MIDArray' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, CurrentMaterial) == 0x000440, "Member 'AB_Pickups_C::CurrentMaterial' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, CurrentParentMaterial) == 0x000448, "Member 'AB_Pickups_C::CurrentParentMaterial' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, MaterialParentIsValid) == 0x000450, "Member 'AB_Pickups_C::MaterialParentIsValid' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, ListOfParentMaterialsExemptFromReparenting) == 0x000458, "Member 'AB_Pickups_C::ListOfParentMaterialsExemptFromReparenting' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, BackpackParticleSystem) == 0x000468, "Member 'AB_Pickups_C::BackpackParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Tick_Accumulation) == 0x000470, "Member 'AB_Pickups_C::Tick_Accumulation' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Speed_After_Being_picked_up) == 0x000474, "Member 'AB_Pickups_C::Speed_After_Being_picked_up' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, ShrinkParticleWhenPickedUpCurve) == 0x000478, "Member 'AB_Pickups_C::ShrinkParticleWhenPickedUpCurve' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Tossed) == 0x000480, "Member 'AB_Pickups_C::Tossed' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Activate_Rarity_Particle_Systems) == 0x000481, "Member 'AB_Pickups_C::Activate_Rarity_Particle_Systems' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Skeletal_Mesh_Pickup_Hologram) == 0x000488, "Member 'AB_Pickups_C::Skeletal_Mesh_Pickup_Hologram' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Hologram_MIDs) == 0x000490, "Member 'AB_Pickups_C::Hologram_MIDs' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, NormalMaps) == 0x0004A0, "Member 'AB_Pickups_C::NormalMaps' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Rarity_Color) == 0x0004B0, "Member 'AB_Pickups_C::Rarity_Color' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Rarity_Level) == 0x0004C0, "Member 'AB_Pickups_C::Rarity_Level' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Current_MID) == 0x0004C8, "Member 'AB_Pickups_C::Current_MID' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Sweep_Brightness) == 0x0004D0, "Member 'AB_Pickups_C::Sweep_Brightness' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Sweep_Speed) == 0x0004E0, "Member 'AB_Pickups_C::Sweep_Speed' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Component_Radius__Scaled_) == 0x0004F0, "Member 'AB_Pickups_C::Component_Radius__Scaled_' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Component_Radius_Multiplier) == 0x0004F4, "Member 'AB_Pickups_C::Component_Radius_Multiplier' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Empty_Normal) == 0x0004F8, "Member 'AB_Pickups_C::Empty_Normal' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Static_Mesh_Pickup_Hologram) == 0x000500, "Member 'AB_Pickups_C::Static_Mesh_Pickup_Hologram' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, SkeletalOrStaticMeshHologramAssetPrimitive) == 0x000508, "Member 'AB_Pickups_C::SkeletalOrStaticMeshHologramAssetPrimitive' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Sparkle_Spawn_Rate__Ground_) == 0x000510, "Member 'AB_Pickups_C::Sparkle_Spawn_Rate__Ground_' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Outline_Rarity_Colors) == 0x000520, "Member 'AB_Pickups_C::Outline_Rarity_Colors' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Sphere_Radius) == 0x000530, "Member 'AB_Pickups_C::Sphere_Radius' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Picked_Up_Delay_Before_Glow) == 0x000534, "Member 'AB_Pickups_C::Picked_Up_Delay_Before_Glow' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Picked_Up_Fade_In_Time) == 0x000538, "Member 'AB_Pickups_C::Picked_Up_Fade_In_Time' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Picked_Up_Hold_Time) == 0x00053C, "Member 'AB_Pickups_C::Picked_Up_Hold_Time' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Picked_Up_Fade_Out_Time) == 0x000540, "Member 'AB_Pickups_C::Picked_Up_Fade_Out_Time' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Picked_Up_Sweep_Speed) == 0x000544, "Member 'AB_Pickups_C::Picked_Up_Sweep_Speed' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, IsBluglo) == 0x000548, "Member 'AB_Pickups_C::IsBluglo' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, BlugloParticleSystem) == 0x000550, "Member 'AB_Pickups_C::BlugloParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Picked_Up_Trail_PS) == 0x000558, "Member 'AB_Pickups_C::Picked_Up_Trail_PS' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Sparkle_Spawn_Rate__Picked_Up_) == 0x000560, "Member 'AB_Pickups_C::Sparkle_Spawn_Rate__Picked_Up_' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Lifetime__Picked_Up_) == 0x000570, "Member 'AB_Pickups_C::Lifetime__Picked_Up_' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Hologram_Material) == 0x000580, "Member 'AB_Pickups_C::Hologram_Material' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, IsLootGiftForOthers) == 0x000588, "Member 'AB_Pickups_C::IsLootGiftForOthers' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, PickupForceFeedback) == 0x000590, "Member 'AB_Pickups_C::PickupForceFeedback' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Violentium_Particle) == 0x000598, "Member 'AB_Pickups_C::Violentium_Particle' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, ViolentiumParticleSystem) == 0x0005A0, "Member 'AB_Pickups_C::ViolentiumParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_C, Is_Violentium) == 0x0005A8, "Member 'AB_Pickups_C::Is_Violentium' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

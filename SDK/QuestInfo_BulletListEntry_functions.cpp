@@ -14,13 +14,12 @@
 #include "QuestInfo_BulletListEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.InitBullet
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             EntryText                                              (Parm)
+// const class FText&                      EntryText                                              (Parm)
 
 void UQuestInfo_BulletListEntry_C::InitBullet(const class FText& EntryText)
 {
@@ -40,8 +39,8 @@ void UQuestInfo_BulletListEntry_C::InitBullet(const class FText& EntryText)
 // Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.InitBrush
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             EntryText                                              (Parm)
-// struct FSlateBrush                      EntryIconBrush                                         (Parm)
+// const class FText&                      EntryText                                              (Parm)
+// const struct FSlateBrush&               EntryIconBrush                                         (Parm)
 
 void UQuestInfo_BulletListEntry_C::InitBrush(const class FText& EntryText, const struct FSlateBrush& EntryIconBrush)
 {
@@ -62,7 +61,7 @@ void UQuestInfo_BulletListEntry_C::InitBrush(const class FText& EntryText, const
 // Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.CalcBrushSize
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        InImageSize                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 InImageSize                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                        ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FVector2D UQuestInfo_BulletListEntry_C::CalcBrushSize(const struct FVector2D& InImageSize)
@@ -95,5 +94,5 @@ void UQuestInfo_BulletListEntry_C::ShowBorder()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

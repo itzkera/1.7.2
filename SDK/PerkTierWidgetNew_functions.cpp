@@ -14,8 +14,7 @@
 #include "PerkTierWidgetNew_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.ExecuteUbergraph_PerkTierWidgetNew
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UPerkTierWidgetNew_C::ExecuteUbergraph_PerkTierWidgetNew(int32 EntryPoint)
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.OnGeneratePerk
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortUIPerk                      Perk                                                   (Parm)
+// const struct FFortUIPerk&               Perk                                                   (Parm)
 // class UFortPerkWidget_NUI*              PerkWidget_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class UFortPerkWidget_NUI* PerkWidget_0)
@@ -79,7 +78,7 @@ void UPerkTierWidgetNew_C::Construct()
 // bool                                    bIncludeName_0                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                                    bIncludeDescription_0                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortBrushSize                          IconSize_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortUIPerkTier                  FortPerkTier_0                                         (Parm, NoDestructor)
+// const struct FFortUIPerkTier&           FortPerkTier_0                                         (Parm, NoDestructor)
 
 void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName_0, bool bIncludeDescription_0, EFortBrushSize IconSize_0, const struct FFortUIPerkTier& FortPerkTier_0)
 {
@@ -98,5 +97,5 @@ void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName_0, bool bInclude
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

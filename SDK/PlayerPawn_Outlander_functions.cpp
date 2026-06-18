@@ -14,8 +14,7 @@
 #include "PlayerPawn_Outlander_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.ExecuteUbergraph_PlayerPawn_Outlander
 // (HasDefaults)
@@ -231,7 +230,7 @@ void APlayerPawn_Outlander_C::SetTeleportEffects(bool On)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeImpact(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -253,7 +252,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMat
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeChargeUp(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -275,7 +274,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMat
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMaterialChargeThruster(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -297,7 +296,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMat
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMaterialCharge(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -319,7 +318,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMat
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Outlander_KnockKnock(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -355,12 +354,12 @@ void APlayerPawn_Outlander_C::EventOnDamagePlayFX()
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                        InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void APlayerPawn_Outlander_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -415,7 +414,7 @@ void APlayerPawn_Outlander_C::RefreshIcons()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Outlander_Phaseshift_AppliedFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -437,7 +436,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Outlander_Phaseshift_AppliedFX(EGamepl
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -459,7 +458,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Generic_HarvestBu
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -480,7 +479,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Generic_HarvestBu
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.WithinReachOfTreasure
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     VSpawnColor                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              VSpawnColor                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Activate                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerPawn_Outlander_C::WithinReachOfTreasure(const struct FLinearColor& VSpawnColor, bool Activate)
@@ -503,7 +502,7 @@ void APlayerPawn_Outlander_C::WithinReachOfTreasure(const struct FLinearColor& V
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Explorer_Fragment_Specialty_PickupFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -525,7 +524,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Explorer_Fragment_Specialty_PickupFX(E
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Explorer_Fragment_Defense_PickupFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -547,7 +546,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Explorer_Fragment_Defense_PickupFX(EGa
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Explorer_Fragment_Offense_PickupFX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -589,7 +588,7 @@ void APlayerPawn_Outlander_C::ReceivePossessed(class AController* NewController)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Outlander_InTheZone_FX(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -611,7 +610,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Outlander_InTheZone_FX(EGameplayCueEve
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Outlander_C::GameplayCue_Explorer_Fragment(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -754,5 +753,5 @@ void APlayerPawn_Outlander_C::StopTeleportSplinesIfValid()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

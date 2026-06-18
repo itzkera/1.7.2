@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_NameplateWidget.Results_NameplateWidget_C.ExecuteUbergraph_Results_NameplateWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -27,12 +27,6 @@ public:
 	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget) == 0x000004, "Wrong alignment on Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget");
-static_assert(sizeof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget) == 0x000010, "Wrong size on Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget");
-static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, EntryPoint) == 0x000000, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, CallFunc_GetEndTime_ReturnValue) == 0x000008, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00000C, "Member 'Results_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_NameplateWidget.Results_NameplateWidget_C.Initialize
 // 0x0080 (0x0080 - 0x0000)
@@ -48,15 +42,6 @@ public:
 	class FText                                   Temp_text_Variable4;                               // 0x0050(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0068(0x0018)()
 };
-static_assert(alignof(Results_NameplateWidget_C_Initialize) == 0x000008, "Wrong alignment on Results_NameplateWidget_C_Initialize");
-static_assert(sizeof(Results_NameplateWidget_C_Initialize) == 0x000080, "Wrong size on Results_NameplateWidget_C_Initialize");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Result) == 0x000000, "Member 'Results_NameplateWidget_C_Initialize::Result' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_byte_Variable) == 0x000001, "Member 'Results_NameplateWidget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable) == 0x000008, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable2) == 0x000020, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable3) == 0x000038, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, Temp_text_Variable4) == 0x000050, "Member 'Results_NameplateWidget_C_Initialize::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(Results_NameplateWidget_C_Initialize, K2Node_Select_Default) == 0x000068, "Member 'Results_NameplateWidget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
 
 // Function Results_NameplateWidget.Results_NameplateWidget_C.Outro
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +50,6 @@ struct Results_NameplateWidget_C_Outro final
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_NameplateWidget_C_Outro) == 0x000001, "Wrong alignment on Results_NameplateWidget_C_Outro");
-static_assert(sizeof(Results_NameplateWidget_C_Outro) == 0x000001, "Wrong size on Results_NameplateWidget_C_Outro");
-static_assert(offsetof(Results_NameplateWidget_C_Outro, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'Results_NameplateWidget_C_Outro::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

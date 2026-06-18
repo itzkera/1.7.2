@@ -14,8 +14,7 @@
 #include "MainMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
 // (HasDefaults)
@@ -1290,7 +1289,7 @@ void UMainMenu_C::InitializeMainMenu()
 // Function MainMenu.MainMenu_C.UpdateDescriptionText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             HelpText                                               (Parm)
+// const class FText&                      HelpText                                               (Parm)
 
 void UMainMenu_C::UpdateDescriptionText(const class FText& HelpText)
 {
@@ -1352,7 +1351,7 @@ void UMainMenu_C::PushDailyRewards()
 // Function MainMenu.MainMenu_C.IsOutpostOwner
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    OutpostOwner                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   OutpostOwner                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainMenu_C::IsOutpostOwner(bool* OutpostOwner)
 {
@@ -1396,7 +1395,7 @@ void UMainMenu_C::UpdatePrivacyButton(EPartyType Overide_Party_Type, bool Use_Ov
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Button_Text                                            (Parm)
+// const class FText&                      Button_Text                                            (Parm)
 
 void UMainMenu_C::SetPrivacyButtonData(class UTexture2D* Image, const class FText& Button_Text)
 {
@@ -1467,7 +1466,7 @@ void UMainMenu_C::HandlePrivacySelected(EPartyType PartyPrivacyType, bool Friend
 // Function MainMenu.MainMenu_C.HandleLocalPlayerStateChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              MemberState                                            (Parm, OutParm, ReferenceParm)
+// struct FFortTeamMemberInfo&             MemberState                                            (Parm, OutParm, ReferenceParm)
 
 void UMainMenu_C::HandleLocalPlayerStateChanged(struct FFortTeamMemberInfo& MemberState)
 {
@@ -1503,7 +1502,7 @@ void UMainMenu_C::HandlePartyLeft()
 // Function MainMenu.MainMenu_C.HandleRemotePlayerStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewMemberState                                         (Parm)
+// const struct FFortTeamMemberInfo&       NewMemberState                                         (Parm)
 
 void UMainMenu_C::HandleRemotePlayerStateChanged(const struct FFortTeamMemberInfo& NewMemberState)
 {
@@ -1716,7 +1715,7 @@ void UMainMenu_C::RefreshFriendCodesButton()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Success                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FFriendCode>              FriendCodes_0                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFriendCode>&             FriendCodes_0                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UMainMenu_C::OnQueryUnredeemedFriendCodes(bool Success, TArray<struct FFriendCode>& FriendCodes_0)
 {
@@ -1739,7 +1738,7 @@ void UMainMenu_C::OnQueryUnredeemedFriendCodes(bool Success, TArray<struct FFrie
 // Function MainMenu.MainMenu_C.GetTotalNumFriendCodes
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Num_Codes                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Num_Codes                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMainMenu_C::GetTotalNumFriendCodes(int32* Num_Codes)
 {
@@ -1761,7 +1760,7 @@ void UMainMenu_C::GetTotalNumFriendCodes(int32* Num_Codes)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Success                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFriendCode                      FriendCode                                             (Parm, OutParm, ReferenceParm)
+// struct FFriendCode&                     FriendCode                                             (Parm, OutParm, ReferenceParm)
 
 void UMainMenu_C::OnIssueFriendCodes(bool Success, struct FFriendCode& FriendCode)
 {
@@ -1842,5 +1841,5 @@ void UMainMenu_C::ConfigureSubGameWidgets()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

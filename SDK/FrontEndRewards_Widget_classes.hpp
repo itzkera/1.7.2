@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_Widget.FrontEndRewards_Widget_C
 // 0x0130 (0x06C0 - 0x0590)
@@ -50,7 +49,7 @@ public:
 	UMulticastDelegateProperty_                   OnComplete;                                        // 0x0648(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsReadyToShowRewardWidget;                         // 0x0658(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_659[0x7];                                      // 0x0659(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UFortRewardNotificationSubWidget*> SubWidgets;                                        // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UFortRewardNotificationSubWidget*> SubWidgets;                                      // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          ShowClaimedReward;                                 // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsSubWidgetPopulated;                              // 0x0671(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          IsError;                                           // 0x0672(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -141,52 +140,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_Widget_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_Widget_C")
 	}
 	static class UFrontEndRewards_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_Widget_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_Widget_C) == 0x000010, "Wrong alignment on UFrontEndRewards_Widget_C");
-static_assert(sizeof(UFrontEndRewards_Widget_C) == 0x0006C0, "Wrong size on UFrontEndRewards_Widget_C");
-static_assert(offsetof(UFrontEndRewards_Widget_C, UberGraphFrame) == 0x000590, "Member 'UFrontEndRewards_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, AnimShowBorder) == 0x000598, "Member 'UFrontEndRewards_Widget_C::AnimShowBorder' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, AnimFadeHeader) == 0x0005A0, "Member 'UFrontEndRewards_Widget_C::AnimFadeHeader' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, AnimShowHeader) == 0x0005A8, "Member 'UFrontEndRewards_Widget_C::AnimShowHeader' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ButtonPrimaryAction) == 0x0005B0, "Member 'UFrontEndRewards_Widget_C::ButtonPrimaryAction' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ChoiceRewards) == 0x0005B8, "Member 'UFrontEndRewards_Widget_C::ChoiceRewards' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ConversationWidget) == 0x0005C0, "Member 'UFrontEndRewards_Widget_C::ConversationWidget' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, CurrentRewardIcon) == 0x0005C8, "Member 'UFrontEndRewards_Widget_C::CurrentRewardIcon' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ExpeditionRewards) == 0x0005D0, "Member 'UFrontEndRewards_Widget_C::ExpeditionRewards' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, InputReflector) == 0x0005D8, "Member 'UFrontEndRewards_Widget_C::InputReflector' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ListRewards) == 0x0005E0, "Member 'UFrontEndRewards_Widget_C::ListRewards' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, NewQuest) == 0x0005E8, "Member 'UFrontEndRewards_Widget_C::NewQuest' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, RewardHeader) == 0x0005F0, "Member 'UFrontEndRewards_Widget_C::RewardHeader' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, RewardsQueue) == 0x0005F8, "Member 'UFrontEndRewards_Widget_C::RewardsQueue' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, RewardSwitcher) == 0x000600, "Member 'UFrontEndRewards_Widget_C::RewardSwitcher' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, RotatingStarburst) == 0x000608, "Member 'UFrontEndRewards_Widget_C::RotatingStarburst' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, SafeZone_4) == 0x000610, "Member 'UFrontEndRewards_Widget_C::SafeZone_4' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, SafeZone_5) == 0x000618, "Member 'UFrontEndRewards_Widget_C::SafeZone_5' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, SafeZone_6) == 0x000620, "Member 'UFrontEndRewards_Widget_C::SafeZone_6' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, SizeBoxBottom) == 0x000628, "Member 'UFrontEndRewards_Widget_C::SizeBoxBottom' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, SizeBoxTop) == 0x000630, "Member 'UFrontEndRewards_Widget_C::SizeBoxTop' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, CurrentSubWidget) == 0x000638, "Member 'UFrontEndRewards_Widget_C::CurrentSubWidget' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, IsIntroComplete) == 0x000640, "Member 'UFrontEndRewards_Widget_C::IsIntroComplete' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, OnComplete) == 0x000648, "Member 'UFrontEndRewards_Widget_C::OnComplete' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, IsReadyToShowRewardWidget) == 0x000658, "Member 'UFrontEndRewards_Widget_C::IsReadyToShowRewardWidget' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, SubWidgets) == 0x000660, "Member 'UFrontEndRewards_Widget_C::SubWidgets' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ShowClaimedReward) == 0x000670, "Member 'UFrontEndRewards_Widget_C::ShowClaimedReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, IsSubWidgetPopulated) == 0x000671, "Member 'UFrontEndRewards_Widget_C::IsSubWidgetPopulated' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, IsError) == 0x000672, "Member 'UFrontEndRewards_Widget_C::IsError' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, OnRewardsClaimed) == 0x000678, "Member 'UFrontEndRewards_Widget_C::OnRewardsClaimed' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ItemInspectScreen) == 0x000688, "Member 'UFrontEndRewards_Widget_C::ItemInspectScreen' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, OnRewardsClaimError) == 0x000690, "Member 'UFrontEndRewards_Widget_C::OnRewardsClaimError' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, ClaimErrorEnountered) == 0x0006A0, "Member 'UFrontEndRewards_Widget_C::ClaimErrorEnountered' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, bRunningFrontEndRewards) == 0x0006A1, "Member 'UFrontEndRewards_Widget_C::bRunningFrontEndRewards' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, TriggerUpdateOnComplete) == 0x0006A2, "Member 'UFrontEndRewards_Widget_C::TriggerUpdateOnComplete' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, LastClaimedReward) == 0x0006A8, "Member 'UFrontEndRewards_Widget_C::LastClaimedReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Widget_C, IsPendingSafePop) == 0x0006B0, "Member 'UFrontEndRewards_Widget_C::IsPendingSafePop' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

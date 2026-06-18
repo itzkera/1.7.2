@@ -16,8 +16,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TooltipDurabilityMeter.TooltipDurabilityMeter_C
 // 0x0098 (0x02C8 - 0x0230)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TooltipDurabilityMeter_C">();
+		BP_STATIC_CLASS_IMPL("TooltipDurabilityMeter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipDurabilityMeter_C")
 	}
 	static class UTooltipDurabilityMeter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipDurabilityMeter_C>();
 	}
 };
-static_assert(alignof(UTooltipDurabilityMeter_C) == 0x000008, "Wrong alignment on UTooltipDurabilityMeter_C");
-static_assert(sizeof(UTooltipDurabilityMeter_C) == 0x0002C8, "Wrong size on UTooltipDurabilityMeter_C");
-static_assert(offsetof(UTooltipDurabilityMeter_C, UberGraphFrame) == 0x000230, "Member 'UTooltipDurabilityMeter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltipDurabilityMeter_C, _Vertical_Box__Durability) == 0x000238, "Member 'UTooltipDurabilityMeter_C::_Vertical_Box__Durability' has a wrong offset!");
-static_assert(offsetof(UTooltipDurabilityMeter_C, ItemDurabilityMeter) == 0x000240, "Member 'UTooltipDurabilityMeter_C::ItemDurabilityMeter' has a wrong offset!");
-static_assert(offsetof(UTooltipDurabilityMeter_C, Tooltip_DisplayAttribute) == 0x000248, "Member 'UTooltipDurabilityMeter_C::Tooltip_DisplayAttribute' has a wrong offset!");
-static_assert(offsetof(UTooltipDurabilityMeter_C, DisplayData) == 0x000250, "Member 'UTooltipDurabilityMeter_C::DisplayData' has a wrong offset!");
-static_assert(offsetof(UTooltipDurabilityMeter_C, Normalized) == 0x0002C0, "Member 'UTooltipDurabilityMeter_C::Normalized' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

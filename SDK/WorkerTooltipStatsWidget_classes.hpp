@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C
 // 0x0028 (0x0258 - 0x0230)
@@ -38,20 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WorkerTooltipStatsWidget_C">();
+		BP_STATIC_CLASS_IMPL("WorkerTooltipStatsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorkerTooltipStatsWidget_C")
 	}
 	static class UWorkerTooltipStatsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWorkerTooltipStatsWidget_C>();
 	}
 };
-static_assert(alignof(UWorkerTooltipStatsWidget_C) == 0x000008, "Wrong alignment on UWorkerTooltipStatsWidget_C");
-static_assert(sizeof(UWorkerTooltipStatsWidget_C) == 0x000258, "Wrong size on UWorkerTooltipStatsWidget_C");
-static_assert(offsetof(UWorkerTooltipStatsWidget_C, UberGraphFrame) == 0x000230, "Member 'UWorkerTooltipStatsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWorkerTooltipStatsWidget_C, BuildingSynergyTextBlock) == 0x000238, "Member 'UWorkerTooltipStatsWidget_C::BuildingSynergyTextBlock' has a wrong offset!");
-static_assert(offsetof(UWorkerTooltipStatsWidget_C, PersonalityTextBlock) == 0x000240, "Member 'UWorkerTooltipStatsWidget_C::PersonalityTextBlock' has a wrong offset!");
-static_assert(offsetof(UWorkerTooltipStatsWidget_C, SetBonusTextBlock) == 0x000248, "Member 'UWorkerTooltipStatsWidget_C::SetBonusTextBlock' has a wrong offset!");
-static_assert(offsetof(UWorkerTooltipStatsWidget_C, Worker_Item) == 0x000250, "Member 'UWorkerTooltipStatsWidget_C::Worker_Item' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

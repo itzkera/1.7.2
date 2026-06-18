@@ -14,13 +14,12 @@
 #include "TeamMemberBluGloIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.SetPlayer
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 PlayerNetId                                            (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          PlayerNetId                                            (Parm, HasGetValueTypeHash)
 
 void UTeamMemberBluGloIndicator_C::SetPlayer(const struct FUniqueNetIdRepl& PlayerNetId)
 {
@@ -50,5 +49,5 @@ void UTeamMemberBluGloIndicator_C::OnPlayerAccumulatedItemsUpdated()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

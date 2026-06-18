@@ -15,8 +15,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.ExecuteUbergraph_ItemManagementMulchDetailsPanel
 // 0x0188 (0x0188 - 0x0000)
@@ -50,7 +50,7 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue2;              // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UItemManagementMulchConfirmationDialogContent_C* CallFunc_Create_ReturnValue;                       // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UItemManagementMulchConfirmationDialogContent_C* CallFunc_Create_ReturnValue;              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UFortItem*>                      CallFunc_GetItemsToMulch_ReturnValue3;             // 0x00A0(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_AreAnyItemsAnimate_ReturnValue;           // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortDialogResult                             Temp_byte_Variable;                                // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -62,7 +62,7 @@ public:
 	uint8                                         Pad_C3[0x5];                                       // 0x00C3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select_Default;                             // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
 	class FText                                   CallFunc_GetWarningText_WarningText;               // 0x00E8(0x0018)()
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -80,51 +80,6 @@ public:
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue; // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel) == 0x000008, "Wrong alignment on ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel");
-static_assert(sizeof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel) == 0x000188, "Wrong size on ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, EntryPoint) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_bool_True_if_break_was_hit_Variable) == 0x000004, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_int_Array_Index_Variable) == 0x000008, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetItemsToMulch_ReturnValue) == 0x000010, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetItemsToMulch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Greater_IntInt_ReturnValue) == 0x000024, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetItemsToMulch_ReturnValue2) == 0x000030, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetItemsToMulch_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Array_Length_ReturnValue2) == 0x000040, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Array_Get_Item) == 0x000048, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_DynamicCast_AsFort_Hero) == 0x000058, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_EnumerateRecyclingWarningsForItems_OutWarnings) == 0x000068, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_EnumerateRecyclingWarningsForItems_OutWarnings' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_DynamicCast_AsFort_Character) == 0x000078, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_DynamicCast_AsFort_Character' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_DynamicCast_bSuccess2) == 0x000080, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Array_Length_ReturnValue3) == 0x000084, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetOwningPlayer_ReturnValue) == 0x000088, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Greater_IntInt_ReturnValue2) == 0x000090, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Create_ReturnValue) == 0x000098, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetItemsToMulch_ReturnValue3) == 0x0000A0, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetItemsToMulch_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_AreAnyItemsAnimate_ReturnValue) == 0x0000B0, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_AreAnyItemsAnimate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_byte_Variable) == 0x0000B1, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_name_Variable) == 0x0000B8, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_bool_Variable) == 0x0000C1, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_CustomEvent_Result) == 0x0000C2, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_CustomEvent_ResultName) == 0x0000C8, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_Select_Default) == 0x0000D0, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_CreateDelegate_OutputDelegate) == 0x0000D8, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetWarningText_WarningText) == 0x0000E8, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetWarningText_WarningText' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_int_Loop_Counter_Variable) == 0x000100, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_text_Variable) == 0x000108, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Less_IntInt_ReturnValue) == 0x000120, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_Add_IntInt_ReturnValue) == 0x000124, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_BooleanAND_ReturnValue) == 0x000128, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_text_Variable2) == 0x000130, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, Temp_bool_Variable2) == 0x000148, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_GetItemCountsToMulch_ReturnValue) == 0x000150, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_GetItemCountsToMulch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, K2Node_Select2_Default) == 0x000160, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue) == 0x000178, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel, CallFunc_IsValid_ReturnValue) == 0x000180, "Member 'ItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -133,9 +88,6 @@ struct ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoun
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.DialogResult_58BF1F8B4DC97D1C2902828F65095294
 // 0x0010 (0x0010 - 0x0000)
@@ -146,10 +98,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294) == 0x000008, "Wrong alignment on ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294");
-static_assert(sizeof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294) == 0x000010, "Wrong size on ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294, Result) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294::Result' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294, ResultName) == 0x000008, "Member 'ItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294::ResultName' has a wrong offset!");
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.GetWarningText
 // 0x0120 (0x0120 - 0x0000)
@@ -175,23 +123,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_GetWarningText) == 0x000008, "Wrong alignment on ItemManagementMulchDetailsPanel_C_GetWarningText");
-static_assert(sizeof(ItemManagementMulchDetailsPanel_C_GetWarningText) == 0x000120, "Wrong size on ItemManagementMulchDetailsPanel_C_GetWarningText");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, Warnings) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::Warnings' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, HasAnimateItems) == 0x000010, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::HasAnimateItems' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, WarningText) == 0x000018, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::WarningText' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, TextGroup) == 0x000030, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::TextGroup' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, Temp_int_Array_Index_Variable) == 0x00004C, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, CallFunc_Array_Get_Item) == 0x000054, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, CallFunc_Less_IntInt_ReturnValue) == 0x000055, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, CallFunc_GetRecyclingWarningText_ReturnValue) == 0x000060, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::CallFunc_GetRecyclingWarningText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, K2Node_MakeStruct_FormatArgumentData) == 0x000078, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, K2Node_MakeStruct_FormatArgumentData2) == 0x0000B8, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, K2Node_MakeArray_Array) == 0x0000F8, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_GetWarningText, CallFunc_Format_ReturnValue) == 0x000108, "Member 'ItemManagementMulchDetailsPanel_C_GetWarningText::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.UpdateDoneButtonText
 // 0x0001 (0x0001 - 0x0000)
@@ -200,9 +131,6 @@ struct ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText final
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText) == 0x000001, "Wrong alignment on ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText");
-static_assert(sizeof(ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText) == 0x000001, "Wrong size on ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText");
-static_assert(offsetof(ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText, K2Node_SwitchEnum_CmpSuccess) == 0x000000, "Member 'ItemManagementMulchDetailsPanel_C_UpdateDoneButtonText::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

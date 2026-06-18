@@ -14,8 +14,7 @@
 #include "ProgressModalWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ProgressModalWidget.ProgressModalWidget_C.ExecuteUbergraph_ProgressModalWidget
 // ()
@@ -138,7 +137,7 @@ void UProgressModalWidget_C::Initialize()
 // Function ProgressModalWidget.ProgressModalWidget_C.SetTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title_0                                                (Parm)
+// const class FText&                      Title_0                                                (Parm)
 
 void UProgressModalWidget_C::SetTitle(const class FText& Title_0)
 {
@@ -158,7 +157,7 @@ void UProgressModalWidget_C::SetTitle(const class FText& Title_0)
 // Function ProgressModalWidget.ProgressModalWidget_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description_0                                          (Parm)
+// const class FText&                      Description_0                                          (Parm)
 
 void UProgressModalWidget_C::SetDescription(const class FText& Description_0)
 {
@@ -178,7 +177,7 @@ void UProgressModalWidget_C::SetDescription(const class FText& Description_0)
 // Function ProgressModalWidget.ProgressModalWidget_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      Icon_0                                                 (Parm)
+// const struct FSlateBrush&               Icon_0                                                 (Parm)
 
 void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Icon_0)
 {
@@ -198,8 +197,8 @@ void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Icon_0)
 // Function ProgressModalWidget.ProgressModalWidget_C.OnAnalogValueChanged
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FAnalogInputEvent                InAnalogInputEvent                                     (Parm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FAnalogInputEvent&         InAnalogInputEvent                                     (Parm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent)
@@ -219,5 +218,5 @@ struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGe
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

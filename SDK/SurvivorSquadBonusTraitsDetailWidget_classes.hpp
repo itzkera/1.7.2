@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C
 // 0x0068 (0x0328 - 0x02C0)
@@ -46,28 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SurvivorSquadBonusTraitsDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("SurvivorSquadBonusTraitsDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SurvivorSquadBonusTraitsDetailWidget_C")
 	}
 	static class USurvivorSquadBonusTraitsDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USurvivorSquadBonusTraitsDetailWidget_C>();
 	}
 };
-static_assert(alignof(USurvivorSquadBonusTraitsDetailWidget_C) == 0x000008, "Wrong alignment on USurvivorSquadBonusTraitsDetailWidget_C");
-static_assert(sizeof(USurvivorSquadBonusTraitsDetailWidget_C) == 0x000328, "Wrong size on USurvivorSquadBonusTraitsDetailWidget_C");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, UberGraphFrame) == 0x0002C0, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, LeaderMatchesSquadTypeImageIndicator) == 0x0002C8, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::LeaderMatchesSquadTypeImageIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, MatchesLeaderPersonalityImageIndicator) == 0x0002D0, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::MatchesLeaderPersonalityImageIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, PersonalityTraitValueWidgetSwitcher) == 0x0002D8, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::PersonalityTraitValueWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, SecondaryCategoryIndicator) == 0x0002E0, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::SecondaryCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, SetBonusMatchCountText) == 0x0002E8, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::SetBonusMatchCountText' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, SetBonusMatchesBox) == 0x0002F0, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::SetBonusMatchesBox' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, SetBonusSizeText) == 0x0002F8, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::SetBonusSizeText' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, SubordinatePersonalityMatchCountNumericText) == 0x000300, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::SubordinatePersonalityMatchCountNumericText' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, SubordinatePersonalityMatchesBox) == 0x000308, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::SubordinatePersonalityMatchesBox' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, TertiaryCategoryIndicator) == 0x000310, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::TertiaryCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, TertiaryTraitValueWidgetSwitcher) == 0x000318, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::TertiaryTraitValueWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(USurvivorSquadBonusTraitsDetailWidget_C, TextTertiararyHeader) == 0x000320, "Member 'USurvivorSquadBonusTraitsDetailWidget_C::TextTertiararyHeader' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

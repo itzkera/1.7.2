@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemDragIcon.ItemDragIcon_C.ExecuteUbergraph_ItemDragIcon
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon) == 0x000004, "Wrong alignment on ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon");
-static_assert(sizeof(ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon) == 0x000004, "Wrong size on ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon");
-static_assert(offsetof(ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon, EntryPoint) == 0x000000, "Member 'ItemDragIcon_C_ExecuteUbergraph_ItemDragIcon::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

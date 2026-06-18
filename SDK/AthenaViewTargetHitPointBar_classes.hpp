@@ -12,14 +12,13 @@
 
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "ProgressBarType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CommonUI_classes.hpp"
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C
 // 0x0340 (0x0578 - 0x0238)
@@ -74,42 +73,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaViewTargetHitPointBar_C">();
+		BP_STATIC_CLASS_IMPL("AthenaViewTargetHitPointBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaViewTargetHitPointBar_C")
 	}
 	static class UAthenaViewTargetHitPointBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaViewTargetHitPointBar_C>();
 	}
 };
-static_assert(alignof(UAthenaViewTargetHitPointBar_C) == 0x000008, "Wrong alignment on UAthenaViewTargetHitPointBar_C");
-static_assert(sizeof(UAthenaViewTargetHitPointBar_C) == 0x000578, "Wrong size on UAthenaViewTargetHitPointBar_C");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, UberGraphFrame) == 0x000238, "Member 'UAthenaViewTargetHitPointBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Horizontal_Box__Stat_Text) == 0x000240, "Member 'UAthenaViewTargetHitPointBar_C::_Horizontal_Box__Stat_Text' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Image__Baseplate) == 0x000248, "Member 'UAthenaViewTargetHitPointBar_C::_Image__Baseplate' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Image__Bevel) == 0x000250, "Member 'UAthenaViewTargetHitPointBar_C::_Image__Bevel' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Image__Stat_Icon) == 0x000258, "Member 'UAthenaViewTargetHitPointBar_C::_Image__Stat_Icon' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Image__Stat_Icon_Shadow) == 0x000260, "Member 'UAthenaViewTargetHitPointBar_C::_Image__Stat_Icon_Shadow' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Overlay__Bar_Artwork) == 0x000268, "Member 'UAthenaViewTargetHitPointBar_C::_Overlay__Bar_Artwork' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _ProgressBar__Delta) == 0x000270, "Member 'UAthenaViewTargetHitPointBar_C::_ProgressBar__Delta' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _ProgressBar__Fill) == 0x000278, "Member 'UAthenaViewTargetHitPointBar_C::_ProgressBar__Fill' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, _Size_Box__Bar) == 0x000280, "Member 'UAthenaViewTargetHitPointBar_C::_Size_Box__Bar' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, SizeBoxHighlight) == 0x000288, "Member 'UAthenaViewTargetHitPointBar_C::SizeBoxHighlight' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, TextCurrentStat) == 0x000290, "Member 'UAthenaViewTargetHitPointBar_C::TextCurrentStat' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, TextMaxStat) == 0x000298, "Member 'UAthenaViewTargetHitPointBar_C::TextMaxStat' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Type) == 0x0002A0, "Member 'UAthenaViewTargetHitPointBar_C::Type' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Current_Value) == 0x0002A4, "Member 'UAthenaViewTargetHitPointBar_C::Current_Value' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Max_Value) == 0x0002A8, "Member 'UAthenaViewTargetHitPointBar_C::Max_Value' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Fill_Texture) == 0x0002B0, "Member 'UAthenaViewTargetHitPointBar_C::Fill_Texture' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Gloss_Texture) == 0x0002B8, "Member 'UAthenaViewTargetHitPointBar_C::Gloss_Texture' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Critical_Color_A) == 0x0002C0, "Member 'UAthenaViewTargetHitPointBar_C::Critical_Color_A' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Critical_Color_B) == 0x0002D0, "Member 'UAthenaViewTargetHitPointBar_C::Critical_Color_B' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Critical_Color_C) == 0x0002E0, "Member 'UAthenaViewTargetHitPointBar_C::Critical_Color_C' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Last_Value) == 0x0002F0, "Member 'UAthenaViewTargetHitPointBar_C::Last_Value' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, FadeUpdateRate) == 0x0002F4, "Member 'UAthenaViewTargetHitPointBar_C::FadeUpdateRate' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, MultiFont) == 0x0002F8, "Member 'UAthenaViewTargetHitPointBar_C::MultiFont' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Baseplate_Texture) == 0x000568, "Member 'UAthenaViewTargetHitPointBar_C::Baseplate_Texture' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, Volatile) == 0x000570, "Member 'UAthenaViewTargetHitPointBar_C::Volatile' has a wrong offset!");
-static_assert(offsetof(UAthenaViewTargetHitPointBar_C, DBNOStateCache) == 0x000571, "Member 'UAthenaViewTargetHitPointBar_C::DBNOStateCache' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "EquippedItemWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function EquippedItemWidget.EquippedItemWidget_C.ExecuteUbergraph_EquippedItemWidget
 // ()
@@ -239,7 +238,7 @@ void UEquippedItemWidget_C::UpdateResourceCount()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // int32                                   CurrentAmmoCount                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             CurrentAmmoText                                        (Parm, OutParm)
+// class FText*                            CurrentAmmoText                                        (Parm, OutParm)
 
 void UEquippedItemWidget_C::GetCurrentAmmoText(int32 CurrentAmmoCount, class FText* CurrentAmmoText) const
 {
@@ -258,5 +257,5 @@ void UEquippedItemWidget_C::GetCurrentAmmoText(int32 CurrentAmmoCount, class FTe
 		*CurrentAmmoText = std::move(Parms.CurrentAmmoText);
 }
 
-}
 
+SDK_NAMESPACE_END

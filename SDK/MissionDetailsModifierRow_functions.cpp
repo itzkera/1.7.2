@@ -14,8 +14,7 @@
 #include "MissionDetailsModifierRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.ExecuteUbergraph_MissionDetailsModifierRow
 // ()
@@ -54,8 +53,8 @@ void UMissionDetailsModifierRow_C::Construct()
 // Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.Init
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ModifierName                                           (Parm)
-// class FText                             ModifierDescription                                    (Parm)
+// const class FText&                      ModifierName                                           (Parm)
+// const class FText&                      ModifierDescription                                    (Parm)
 // class UTexture2D*                       ModifierIcon                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                           TextStyle                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Show_Description                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -94,5 +93,5 @@ void UMissionDetailsModifierRow_C::PlayIntroAnimation()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

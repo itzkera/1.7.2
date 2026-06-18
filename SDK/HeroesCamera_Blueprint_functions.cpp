@@ -14,8 +14,7 @@
 #include "HeroesCamera_Blueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.ExecuteUbergraph_HeroesCamera_Blueprint
 // (HasDefaults)
@@ -88,7 +87,7 @@ void AHeroesCamera_Blueprint_C::OnDeactivated()
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_4(const struct FKey& Key)
 {
@@ -108,7 +107,7 @@ void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
@@ -128,7 +127,7 @@ void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
@@ -148,7 +147,7 @@ void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
@@ -206,5 +205,5 @@ void AHeroesCamera_Blueprint_C::HandleMousePress()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

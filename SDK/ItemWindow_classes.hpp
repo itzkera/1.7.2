@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemWindow.ItemWindow_C
 // 0x00C8 (0x04D0 - 0x0408)
@@ -64,37 +63,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemWindow_C">();
+		BP_STATIC_CLASS_IMPL("ItemWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemWindow_C")
 	}
 	static class UItemWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemWindow_C>();
 	}
 };
-static_assert(alignof(UItemWindow_C) == 0x000008, "Wrong alignment on UItemWindow_C");
-static_assert(sizeof(UItemWindow_C) == 0x0004D0, "Wrong size on UItemWindow_C");
-static_assert(offsetof(UItemWindow_C, UberGraphFrame) == 0x000410, "Member 'UItemWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, CloseButton) == 0x000418, "Member 'UItemWindow_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, EntryIcon) == 0x000420, "Member 'UItemWindow_C::EntryIcon' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, EntryText) == 0x000428, "Member 'UItemWindow_C::EntryText' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, FortItemCard_M_0) == 0x000430, "Member 'UItemWindow_C::FortItemCard_M_0' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, FortItemCard_XXSSchematicItemCard) == 0x000438, "Member 'UItemWindow_C::FortItemCard_XXSSchematicItemCard' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, ItemButtonBox) == 0x000440, "Member 'UItemWindow_C::ItemButtonBox' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, Lightbox) == 0x000448, "Member 'UItemWindow_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, SizeBox_1) == 0x000450, "Member 'UItemWindow_C::SizeBox_1' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, SizeBoxDetails) == 0x000458, "Member 'UItemWindow_C::SizeBoxDetails' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, Switcher) == 0x000460, "Member 'UItemWindow_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, SwitcherRewardType) == 0x000468, "Member 'UItemWindow_C::SwitcherRewardType' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, Title) == 0x000470, "Member 'UItemWindow_C::Title' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, Item_Buttons) == 0x000478, "Member 'UItemWindow_C::Item_Buttons' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, Common_Button_Group_Type) == 0x000480, "Member 'UItemWindow_C::Common_Button_Group_Type' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, Item_Definitions) == 0x000488, "Member 'UItemWindow_C::Item_Definitions' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, ItemEntryPadding) == 0x000498, "Member 'UItemWindow_C::ItemEntryPadding' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, CurrentItemDef) == 0x0004A8, "Member 'UItemWindow_C::CurrentItemDef' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, ItemDef) == 0x0004B0, "Member 'UItemWindow_C::ItemDef' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, InfoItemDef) == 0x0004B8, "Member 'UItemWindow_C::InfoItemDef' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, LastEntry) == 0x0004C0, "Member 'UItemWindow_C::LastEntry' has a wrong offset!");
-static_assert(offsetof(UItemWindow_C, LastIndex) == 0x0004C8, "Member 'UItemWindow_C::LastIndex' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

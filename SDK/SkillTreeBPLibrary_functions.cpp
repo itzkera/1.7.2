@@ -14,16 +14,15 @@
 #include "SkillTreeBPLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.UpdateSkillTreeNodeMaterial_StaticData
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          World_Context                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*         Material                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHomebaseNode                    NodeData                                               (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FFortSkillTreeNodeDisplayData    DisplayData                                            (Parm)
+// const struct FHomebaseNode&             NodeData                                               (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortSkillTreeNodeDisplayData&DisplayData                                            (Parm)
 // class UCommonButton*                    Button                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -50,9 +49,9 @@ void USkillTreeBPLibrary_C::UpdateSkillTreeNodeMaterial_StaticData(class UObject
 // Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.GetSkillTreeNodeCostTint
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FHomebaseNode                    HomebaseNode                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FHomebaseNode&             HomebaseNode                                           (ConstParm, Parm, OutParm, ReferenceParm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     NodeTintColour                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    NodeTintColour                                         (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USkillTreeBPLibrary_C::GetSkillTreeNodeCostTint(const struct FHomebaseNode& HomebaseNode, class UObject* __WorldContext, struct FLinearColor* NodeTintColour)
 {
@@ -78,7 +77,7 @@ void USkillTreeBPLibrary_C::GetSkillTreeNodeCostTint(const struct FHomebaseNode&
 // Parameters:
 // class UObject*                          World_Context                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*         Material                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHomebaseNodeState               NodeState                                              (Parm, NoDestructor)
+// const struct FHomebaseNodeState&        NodeState                                              (Parm, NoDestructor)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USkillTreeBPLibrary_C::UpdateSkillTreeNodeMaterial_DynamicData(class UObject* World_Context, class UMaterialInstanceDynamic* Material, const struct FHomebaseNodeState& NodeState, class UObject* __WorldContext)
@@ -106,7 +105,7 @@ void USkillTreeBPLibrary_C::UpdateSkillTreeNodeMaterial_DynamicData(class UObjec
 // EFortHomebaseNodeDisplayType            Display_Type                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          World_Context                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Size                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Size                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USkillTreeBPLibrary_C::GetSkillTreeNodeSizeByMagnitude(EFortHomebaseNodeMagnitude Node_Magnitude, EFortHomebaseNodeDisplayType Display_Type, class UObject* World_Context, class UObject* __WorldContext, float* Size)
 {
@@ -134,8 +133,8 @@ void USkillTreeBPLibrary_C::GetSkillTreeNodeSizeByMagnitude(EFortHomebaseNodeMag
 // Parameters:
 // EFortHomebaseNodeDisplayType            Display_Type                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsSquare                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    IsExitNode                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsSquare                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsExitNode                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USkillTreeBPLibrary_C::GetSkillTreeNodeShapeByDisplayType(EFortHomebaseNodeDisplayType Display_Type, class UObject* __WorldContext, bool* IsSquare, bool* IsExitNode)
 {
@@ -164,7 +163,7 @@ void USkillTreeBPLibrary_C::GetSkillTreeNodeShapeByDisplayType(EFortHomebaseNode
 // Parameters:
 // EFortHomebaseNodeMagnitude              Node_Magnitude                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EFortBrushSize                          Icon_Size                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortBrushSize*                         Icon_Size                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USkillTreeBPLibrary_C::GetSkillTreeNodeIconSizeByMagnitude(EFortHomebaseNodeMagnitude Node_Magnitude, class UObject* __WorldContext, EFortBrushSize* Icon_Size)
 {
@@ -184,5 +183,5 @@ void USkillTreeBPLibrary_C::GetSkillTreeNodeIconSizeByMagnitude(EFortHomebaseNod
 		*Icon_Size = Parms.Icon_Size;
 }
 
-}
 
+SDK_NAMESPACE_END

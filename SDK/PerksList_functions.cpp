@@ -14,8 +14,7 @@
 #include "PerksList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PerksList.PerksList_C.ExecuteUbergraph_PerksList
 // (HasDefaults)
@@ -82,7 +81,7 @@ void UPerksList_C::Construct()
 // Function PerksList.PerksList_C.OnGeneratePerk
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortUIPerk                      FortPerk                                               (Parm)
+// const struct FFortUIPerk&               FortPerk                                               (Parm)
 // class UFortPerkWidget_NUI*              PerkWidget                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPerksList_C::OnGeneratePerk(const struct FFortUIPerk& FortPerk, class UFortPerkWidget_NUI* PerkWidget)
@@ -104,7 +103,7 @@ void UPerksList_C::OnGeneratePerk(const struct FFortUIPerk& FortPerk, class UFor
 // Function PerksList.PerksList_C.OnGeneratePerkTier
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortUIPerkTier                  FortPerkTier                                           (Parm, NoDestructor)
+// const struct FFortUIPerkTier&           FortPerkTier                                           (Parm, NoDestructor)
 // class UFortPerkTierWidget_NUI*          PerkTierWidget                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPerksList_C::OnGeneratePerkTier(const struct FFortUIPerkTier& FortPerkTier, class UFortPerkTierWidget_NUI* PerkTierWidget)
@@ -136,5 +135,5 @@ void UPerksList_C::ResetVariables()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

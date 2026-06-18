@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.ExecuteUbergraph_Results_TeamTotalScore
 // 0x0038 (0x0038 - 0x0000)
@@ -39,24 +39,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue5;                   // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue2;         // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore) == 0x000008, "Wrong alignment on Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore");
-static_assert(sizeof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore) == 0x000038, "Wrong size on Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, EntryPoint) == 0x000000, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_BooleanOR_ReturnValue3) == 0x000006, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, K2Node_Event_IsDesignTime) == 0x00000C, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000010, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000014, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000018, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_BooleanOR_ReturnValue4) == 0x00001C, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_CreateSound2D_ReturnValue) == 0x000020, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_CreateSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, K2Node_ComponentBoundEvent_NumericTextBlock) == 0x000028, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::K2Node_ComponentBoundEvent_NumericTextBlock' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, K2Node_ComponentBoundEvent_HadCompleted) == 0x000030, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::K2Node_ComponentBoundEvent_HadCompleted' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000031, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_BooleanOR_ReturnValue5) == 0x000032, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_BooleanOR_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore, CallFunc_NotEqual_FloatFloat_ReturnValue2) == 0x000033, "Member 'Results_TeamTotalScore_C_ExecuteUbergraph_Results_TeamTotalScore::CallFunc_NotEqual_FloatFloat_ReturnValue2' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -66,10 +48,6 @@ public:
 	class UCommonNumericTextBlock*                NumericTextBlock;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HadCompleted;                                      // 0x0008(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature) == 0x000008, "Wrong alignment on Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature");
-static_assert(sizeof(Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature) == 0x000010, "Wrong size on Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature");
-static_assert(offsetof(Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature, NumericTextBlock) == 0x000000, "Member 'Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature::NumericTextBlock' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature, HadCompleted) == 0x000008, "Member 'Results_TeamTotalScore_C_BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature::HadCompleted' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +56,6 @@ struct Results_TeamTotalScore_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamTotalScore_C_PreConstruct) == 0x000001, "Wrong alignment on Results_TeamTotalScore_C_PreConstruct");
-static_assert(sizeof(Results_TeamTotalScore_C_PreConstruct) == 0x000001, "Wrong size on Results_TeamTotalScore_C_PreConstruct");
-static_assert(offsetof(Results_TeamTotalScore_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_TeamTotalScore_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.Initialize
 // 0x0028 (0x0028 - 0x0000)
@@ -96,16 +71,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue2;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue3;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamTotalScore_C_Initialize) == 0x000008, "Wrong alignment on Results_TeamTotalScore_C_Initialize");
-static_assert(sizeof(Results_TeamTotalScore_C_Initialize) == 0x000028, "Wrong size on Results_TeamTotalScore_C_Initialize");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, Score_Report) == 0x000000, "Member 'Results_TeamTotalScore_C_Initialize::Score_Report' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_GetTeamScore_ReturnValue) == 0x000008, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_GetTeamScore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_GetTeamScore_ReturnValue2) == 0x00000C, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_GetTeamScore_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_GetTeamScore_ReturnValue3) == 0x000010, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_GetTeamScore_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_GetTeamScore_ReturnValue4) == 0x000018, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_GetTeamScore_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_Add_IntInt_ReturnValue2) == 0x00001C, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_Initialize, CallFunc_Add_IntInt_ReturnValue3) == 0x000020, "Member 'Results_TeamTotalScore_C_Initialize::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.SkipToCountScoreFinalState
 // 0x0004 (0x0004 - 0x0000)
@@ -114,9 +79,6 @@ struct Results_TeamTotalScore_C_SkipToCountScoreFinalState final
 public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamTotalScore_C_SkipToCountScoreFinalState) == 0x000004, "Wrong alignment on Results_TeamTotalScore_C_SkipToCountScoreFinalState");
-static_assert(sizeof(Results_TeamTotalScore_C_SkipToCountScoreFinalState) == 0x000004, "Wrong size on Results_TeamTotalScore_C_SkipToCountScoreFinalState");
-static_assert(offsetof(Results_TeamTotalScore_C_SkipToCountScoreFinalState, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000000, "Member 'Results_TeamTotalScore_C_SkipToCountScoreFinalState::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.SetSkippingToCountScoreEnd
 // 0x0008 (0x0008 - 0x0000)
@@ -127,10 +89,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamTotalScore_C_SetSkippingToCountScoreEnd) == 0x000004, "Wrong alignment on Results_TeamTotalScore_C_SetSkippingToCountScoreEnd");
-static_assert(sizeof(Results_TeamTotalScore_C_SetSkippingToCountScoreEnd) == 0x000008, "Wrong size on Results_TeamTotalScore_C_SetSkippingToCountScoreEnd");
-static_assert(offsetof(Results_TeamTotalScore_C_SetSkippingToCountScoreEnd, CallFunc_IsInterpolatingNumericValue_ReturnValue) == 0x000000, "Member 'Results_TeamTotalScore_C_SetSkippingToCountScoreEnd::CallFunc_IsInterpolatingNumericValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_SetSkippingToCountScoreEnd, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'Results_TeamTotalScore_C_SetSkippingToCountScoreEnd::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.SetSkippingToConvertScoreEnd
 // 0x0001 (0x0001 - 0x0000)
@@ -139,9 +97,6 @@ struct Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd final
 public:
 	bool                                          CallFunc_IsInterpolatingNumericValue_ReturnValue;  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd) == 0x000001, "Wrong alignment on Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd");
-static_assert(sizeof(Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd) == 0x000001, "Wrong size on Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd");
-static_assert(offsetof(Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd, CallFunc_IsInterpolatingNumericValue_ReturnValue) == 0x000000, "Member 'Results_TeamTotalScore_C_SetSkippingToConvertScoreEnd::CallFunc_IsInterpolatingNumericValue_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.InitializeCountScorePlayRate
 // 0x0008 (0x0008 - 0x0000)
@@ -151,10 +106,6 @@ public:
 	float                                         PlayRate;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamTotalScore_C_InitializeCountScorePlayRate) == 0x000004, "Wrong alignment on Results_TeamTotalScore_C_InitializeCountScorePlayRate");
-static_assert(sizeof(Results_TeamTotalScore_C_InitializeCountScorePlayRate) == 0x000008, "Wrong size on Results_TeamTotalScore_C_InitializeCountScorePlayRate");
-static_assert(offsetof(Results_TeamTotalScore_C_InitializeCountScorePlayRate, PlayRate) == 0x000000, "Member 'Results_TeamTotalScore_C_InitializeCountScorePlayRate::PlayRate' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_InitializeCountScorePlayRate, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000004, "Member 'Results_TeamTotalScore_C_InitializeCountScorePlayRate::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.InitializeConvertScorePlayRate
 // 0x0008 (0x0008 - 0x0000)
@@ -164,10 +115,6 @@ public:
 	float                                         PlayRate;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamTotalScore_C_InitializeConvertScorePlayRate) == 0x000004, "Wrong alignment on Results_TeamTotalScore_C_InitializeConvertScorePlayRate");
-static_assert(sizeof(Results_TeamTotalScore_C_InitializeConvertScorePlayRate) == 0x000008, "Wrong size on Results_TeamTotalScore_C_InitializeConvertScorePlayRate");
-static_assert(offsetof(Results_TeamTotalScore_C_InitializeConvertScorePlayRate, PlayRate) == 0x000000, "Member 'Results_TeamTotalScore_C_InitializeConvertScorePlayRate::PlayRate' has a wrong offset!");
-static_assert(offsetof(Results_TeamTotalScore_C_InitializeConvertScorePlayRate, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000004, "Member 'Results_TeamTotalScore_C_InitializeConvertScorePlayRate::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "QuestTreeEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestTreeEntry.QuestTreeEntry_C.ExecuteUbergraph_QuestTreeEntry
 // (HasDefaults)
@@ -260,7 +259,7 @@ void UQuestTreeEntry_C::Update_Quest_Category_Bang_State()
 // Function QuestTreeEntry.QuestTreeEntry_C.Quest Category Have Unseen Quests
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    HasUnseen                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HasUnseen                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestTreeEntry_C::Quest_Category_Have_Unseen_Quests(bool* HasUnseen)
 {
@@ -281,7 +280,7 @@ void UQuestTreeEntry_C::Quest_Category_Have_Unseen_Quests(bool* HasUnseen)
 // Function QuestTreeEntry.QuestTreeEntry_C.Get Quest Item Def
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortQuestItemDefinition*         AsFort_Quest_Item_Definition                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortQuestItemDefinition**        AsFort_Quest_Item_Definition                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestTreeEntry_C::Get_Quest_Item_Def(class UFortQuestItemDefinition** AsFort_Quest_Item_Definition)
 {
@@ -330,7 +329,7 @@ void UQuestTreeEntry_C::Set_Quest_Category_Display_Name()
 // Function QuestTreeEntry.QuestTreeEntry_C.Is Streaming Quest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bStreamingQuest                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bStreamingQuest                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestTreeEntry_C::Is_Streaming_Quest(bool* bStreamingQuest)
 {
@@ -351,7 +350,7 @@ void UQuestTreeEntry_C::Is_Streaming_Quest(bool* bStreamingQuest)
 // Function QuestTreeEntry.QuestTreeEntry_C.Get Streaming Attached Quest Name
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             ModifiedName                                           (Parm, OutParm)
+// class FText*                            ModifiedName                                           (Parm, OutParm)
 
 void UQuestTreeEntry_C::Get_Streaming_Attached_Quest_Name(class FText* ModifiedName)
 {
@@ -368,5 +367,5 @@ void UQuestTreeEntry_C::Get_Streaming_Attached_Quest_Name(class FText* ModifiedN
 		*ModifiedName = std::move(Parms.ModifiedName);
 }
 
-}
 
+SDK_NAMESPACE_END

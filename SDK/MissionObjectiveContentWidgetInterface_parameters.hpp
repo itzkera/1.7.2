@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MissionObjectiveContentWidgetInterface.MissionObjectiveContentWidgetInterface_C.Setup
 // 0x0010 (0x0010 - 0x0000)
@@ -22,10 +22,6 @@ public:
 	class AFortObjectiveBase*                     Objective;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInConfigureAsHUD;                                 // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionObjectiveContentWidgetInterface_C_Setup) == 0x000008, "Wrong alignment on MissionObjectiveContentWidgetInterface_C_Setup");
-static_assert(sizeof(MissionObjectiveContentWidgetInterface_C_Setup) == 0x000010, "Wrong size on MissionObjectiveContentWidgetInterface_C_Setup");
-static_assert(offsetof(MissionObjectiveContentWidgetInterface_C_Setup, Objective) == 0x000000, "Member 'MissionObjectiveContentWidgetInterface_C_Setup::Objective' has a wrong offset!");
-static_assert(offsetof(MissionObjectiveContentWidgetInterface_C_Setup, bInConfigureAsHUD) == 0x000008, "Member 'MissionObjectiveContentWidgetInterface_C_Setup::bInConfigureAsHUD' has a wrong offset!");
 
 // Function MissionObjectiveContentWidgetInterface.MissionObjectiveContentWidgetInterface_C.GetHeightEstimate
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +30,6 @@ struct MissionObjectiveContentWidgetInterface_C_GetHeightEstimate final
 public:
 	float                                         Height;                                            // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionObjectiveContentWidgetInterface_C_GetHeightEstimate) == 0x000004, "Wrong alignment on MissionObjectiveContentWidgetInterface_C_GetHeightEstimate");
-static_assert(sizeof(MissionObjectiveContentWidgetInterface_C_GetHeightEstimate) == 0x000004, "Wrong size on MissionObjectiveContentWidgetInterface_C_GetHeightEstimate");
-static_assert(offsetof(MissionObjectiveContentWidgetInterface_C_GetHeightEstimate, Height) == 0x000000, "Member 'MissionObjectiveContentWidgetInterface_C_GetHeightEstimate::Height' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

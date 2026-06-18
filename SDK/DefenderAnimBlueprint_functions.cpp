@@ -14,8 +14,7 @@
 #include "DefenderAnimBlueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function DefenderAnimBlueprint.DefenderAnimBlueprint_C.ExecuteUbergraph_DefenderAnimBlueprint
 // ()
@@ -2346,5 +2345,5 @@ void UDefenderAnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Defen
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

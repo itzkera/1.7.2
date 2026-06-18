@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HeadMountedDisplay.MotionControllerComponent.IsTracked
 // 0x0001 (0x0001 - 0x0000)
@@ -21,9 +21,6 @@ struct MotionControllerComponent_IsTracked final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MotionControllerComponent_IsTracked) == 0x000001, "Wrong alignment on MotionControllerComponent_IsTracked");
-static_assert(sizeof(MotionControllerComponent_IsTracked) == 0x000001, "Wrong size on MotionControllerComponent_IsTracked");
-static_assert(offsetof(MotionControllerComponent_IsTracked, ReturnValue) == 0x000000, "Member 'MotionControllerComponent_IsTracked::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

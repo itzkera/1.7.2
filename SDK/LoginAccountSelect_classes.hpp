@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LoginAccountSelect.LoginAccountSelect_C
 // 0x0020 (0x0410 - 0x03F0)
@@ -37,19 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginAccountSelect_C">();
+		BP_STATIC_CLASS_IMPL("LoginAccountSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginAccountSelect_C")
 	}
 	static class ULoginAccountSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginAccountSelect_C>();
 	}
 };
-static_assert(alignof(ULoginAccountSelect_C) == 0x000008, "Wrong alignment on ULoginAccountSelect_C");
-static_assert(sizeof(ULoginAccountSelect_C) == 0x000410, "Wrong size on ULoginAccountSelect_C");
-static_assert(offsetof(ULoginAccountSelect_C, UberGraphFrame) == 0x0003F0, "Member 'ULoginAccountSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoginAccountSelect_C, EpicLoginButton) == 0x0003F8, "Member 'ULoginAccountSelect_C::EpicLoginButton' has a wrong offset!");
-static_assert(offsetof(ULoginAccountSelect_C, PlayStationLoginButton) == 0x000400, "Member 'ULoginAccountSelect_C::PlayStationLoginButton' has a wrong offset!");
-static_assert(offsetof(ULoginAccountSelect_C, XBoxLoginButton) == 0x000408, "Member 'ULoginAccountSelect_C::XBoxLoginButton' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

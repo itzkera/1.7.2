@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SimpleSquadSlotButton.SimpleSquadSlotButton_C
 // 0x0100 (0x09F8 - 0x08F8)
@@ -49,34 +48,23 @@ public:
 	class UWidget* GetSimpleSquadButtonTooltipWidget();
 	void Update_Bang_State();
 	void Mark_Squad_Slot_Seen_State();
-	void IsSlotEmpty(bool* isEmpty);
+	void IsSlotEmpty(bool* IsEmpty);
 	void Update_SubType_Icon_Image();
 	void Update_SubType_Icon_Glow(bool GlowIcon);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SimpleSquadSlotButton_C">();
+		BP_STATIC_CLASS_IMPL("SimpleSquadSlotButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleSquadSlotButton_C")
 	}
 	static class USimpleSquadSlotButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleSquadSlotButton_C>();
 	}
 };
-static_assert(alignof(USimpleSquadSlotButton_C) == 0x000008, "Wrong alignment on USimpleSquadSlotButton_C");
-static_assert(sizeof(USimpleSquadSlotButton_C) == 0x0009F8, "Wrong size on USimpleSquadSlotButton_C");
-static_assert(offsetof(USimpleSquadSlotButton_C, UberGraphFrame) == 0x0008F8, "Member 'USimpleSquadSlotButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, CommonBorder_0) == 0x000900, "Member 'USimpleSquadSlotButton_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, ImageSlotType) == 0x000908, "Member 'USimpleSquadSlotButton_C::ImageSlotType' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, ImageSlotTypeShadow) == 0x000910, "Member 'USimpleSquadSlotButton_C::ImageSlotTypeShadow' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, InputActionOverride) == 0x000918, "Member 'USimpleSquadSlotButton_C::InputActionOverride' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, NormalBangWrapper) == 0x000920, "Member 'USimpleSquadSlotButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, TooltipBody) == 0x000928, "Member 'USimpleSquadSlotButton_C::TooltipBody' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, TooltipHeader) == 0x000940, "Member 'USimpleSquadSlotButton_C::TooltipHeader' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, ShowSubTypeIcon) == 0x000958, "Member 'USimpleSquadSlotButton_C::ShowSubTypeIcon' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, SubTypeIcon) == 0x000960, "Member 'USimpleSquadSlotButton_C::SubTypeIcon' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, bSuppressTooltip) == 0x0009F0, "Member 'USimpleSquadSlotButton_C::bSuppressTooltip' has a wrong offset!");
-static_assert(offsetof(USimpleSquadSlotButton_C, SlottedItemCardSize) == 0x0009F1, "Member 'USimpleSquadSlotButton_C::SlottedItemCardSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

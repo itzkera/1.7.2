@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.ExecuteUbergraph_ItemDescriptionDetailWidget
 // 0x0098 (0x0098 - 0x0000)
@@ -47,26 +47,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget) == 0x000008, "Wrong alignment on ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget");
-static_assert(sizeof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget) == 0x000098, "Wrong size on ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, EntryPoint) == 0x000000, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_IsItemSimple_Result) == 0x000004, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_IsItemSimple_Result' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, Temp_bool_Variable) == 0x000005, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, Temp_byte_Variable) == 0x000010, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000018, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, Temp_byte_Variable2) == 0x000020, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, Temp_bool_Variable2) == 0x000021, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_GetCombinedDescription_OutDescription) == 0x000038, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_GetCombinedDescription_ReturnValue) == 0x000050, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_GetDescription_ReturnValue) == 0x000058, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000070, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, K2Node_Select_Default) == 0x000078, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_BooleanOR_ReturnValue) == 0x000090, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, CallFunc_TextIsEmpty_ReturnValue) == 0x000091, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget, K2Node_Select2_Default) == 0x000092, "Member 'ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.IsItemSimple
 // 0x0020 (0x0020 - 0x0000)
@@ -80,13 +60,6 @@ public:
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDescriptionDetailWidget_C_IsItemSimple) == 0x000008, "Wrong alignment on ItemDescriptionDetailWidget_C_IsItemSimple");
-static_assert(sizeof(ItemDescriptionDetailWidget_C_IsItemSimple) == 0x000020, "Wrong size on ItemDescriptionDetailWidget_C_IsItemSimple");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_IsItemSimple, Result) == 0x000000, "Member 'ItemDescriptionDetailWidget_C_IsItemSimple::Result' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_IsItemSimple, K2Node_MakeArray_Array) == 0x000008, "Member 'ItemDescriptionDetailWidget_C_IsItemSimple::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_IsItemSimple, CallFunc_GetType_ReturnValue) == 0x000018, "Member 'ItemDescriptionDetailWidget_C_IsItemSimple::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_IsItemSimple, CallFunc_Array_Contains_ReturnValue) == 0x000019, "Member 'ItemDescriptionDetailWidget_C_IsItemSimple::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDescriptionDetailWidget_C_IsItemSimple, CallFunc_Not_PreBool_ReturnValue) == 0x00001A, "Member 'ItemDescriptionDetailWidget_C_IsItemSimple::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

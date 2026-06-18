@@ -14,13 +14,12 @@
 #include "WaveModifiersWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WaveModifiersWidget.WaveModifiersWidget_C.OnModifiersAdded
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortGameplayModifierItemDefinition*>Modifiers                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortGameplayModifierItemDefinition*>&Modifiers                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                                    StartPresentationImmediately                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UWaveModifiersWidget_C::OnModifiersAdded(TArray<class UFortGameplayModifierItemDefinition*>& Modifiers, bool StartPresentationImmediately)
@@ -54,5 +53,5 @@ void UWaveModifiersWidget_C::PresentNextModifier()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

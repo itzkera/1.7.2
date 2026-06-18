@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WeakSpot.WeakSpot_C
 // 0x00E0 (0x0530 - 0x0450)
@@ -70,45 +69,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WeakSpot_C">();
+		BP_STATIC_CLASS_IMPL("WeakSpot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WeakSpot_C")
 	}
 	static class AWeakSpot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeakSpot_C>();
 	}
 };
-static_assert(alignof(AWeakSpot_C) == 0x000008, "Wrong alignment on AWeakSpot_C");
-static_assert(sizeof(AWeakSpot_C) == 0x000530, "Wrong size on AWeakSpot_C");
-static_assert(offsetof(AWeakSpot_C, UberGraphFrame) == 0x000450, "Member 'AWeakSpot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, AnimatedBackgroundRingsParticleEffect) == 0x000458, "Member 'AWeakSpot_C::AnimatedBackgroundRingsParticleEffect' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SphereHitLocator) == 0x000460, "Member 'AWeakSpot_C::SphereHitLocator' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, CollisionComponent) == 0x000468, "Member 'AWeakSpot_C::CollisionComponent' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, DamageEffect) == 0x000470, "Member 'AWeakSpot_C::DamageEffect' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ScaleDownParticleTL_ScaleDown_544AE05F40294D09C3C361AB7BCF6C4E) == 0x000478, "Member 'AWeakSpot_C::ScaleDownParticleTL_ScaleDown_544AE05F40294D09C3C361AB7BCF6C4E' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ScaleDownParticleTL__Direction_544AE05F40294D09C3C361AB7BCF6C4E) == 0x00047C, "Member 'AWeakSpot_C::ScaleDownParticleTL__Direction_544AE05F40294D09C3C361AB7BCF6C4E' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ScaleDownParticleTL) == 0x000480, "Member 'AWeakSpot_C::ScaleDownParticleTL' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, Impact_Sound) == 0x000488, "Member 'AWeakSpot_C::Impact_Sound' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SpawnSound) == 0x000490, "Member 'AWeakSpot_C::SpawnSound' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, Particle_Location) == 0x000498, "Member 'AWeakSpot_C::Particle_Location' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_01) == 0x0004A8, "Member 'AWeakSpot_C::SoundCrack_Level_01' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_02) == 0x0004B0, "Member 'AWeakSpot_C::SoundCrack_Level_02' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_03) == 0x0004B8, "Member 'AWeakSpot_C::SoundCrack_Level_03' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_04) == 0x0004C0, "Member 'AWeakSpot_C::SoundCrack_Level_04' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_05) == 0x0004C8, "Member 'AWeakSpot_C::SoundCrack_Level_05' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_06) == 0x0004D0, "Member 'AWeakSpot_C::SoundCrack_Level_06' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_07) == 0x0004D8, "Member 'AWeakSpot_C::SoundCrack_Level_07' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, Crack_sounds) == 0x0004E0, "Member 'AWeakSpot_C::Crack_sounds' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_08) == 0x0004F0, "Member 'AWeakSpot_C::SoundCrack_Level_08' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SoundCrack_Level_09) == 0x0004F8, "Member 'AWeakSpot_C::SoundCrack_Level_09' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsWidth) == 0x000500, "Member 'AWeakSpot_C::ConnectTheDotsWidth' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMesh) == 0x000508, "Member 'AWeakSpot_C::ConnectTheDotsMesh' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsDuration) == 0x000510, "Member 'AWeakSpot_C::ConnectTheDotsDuration' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsTimeoutFromPreviousHit) == 0x000514, "Member 'AWeakSpot_C::ConnectTheDotsTimeoutFromPreviousHit' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsDurationScale) == 0x000518, "Member 'AWeakSpot_C::ConnectTheDotsDurationScale' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMaxDuration) == 0x00051C, "Member 'AWeakSpot_C::ConnectTheDotsMaxDuration' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsTileScale) == 0x000520, "Member 'AWeakSpot_C::ConnectTheDotsTileScale' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMinLength) == 0x000524, "Member 'AWeakSpot_C::ConnectTheDotsMinLength' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMaxLength) == 0x000528, "Member 'AWeakSpot_C::ConnectTheDotsMaxLength' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

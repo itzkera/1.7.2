@@ -14,8 +14,7 @@
 #include "MissionModifierItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionModifierItem.MissionModifierItem_C.ExecuteUbergraph_MissionModifierItem
 // ()
@@ -84,5 +83,5 @@ class UWidget* UMissionModifierItem_C::GetToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "GA_Generic_AdrenalineRush_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.ExecuteUbergraph_GA_Generic_AdrenalineRush
 // (HasDefaults)
@@ -54,8 +53,8 @@ void UGA_Generic_AdrenalineRush_C::K2_ActivateAbility()
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.Targeted_96CD2D2546A5DCD7B7C14BBA26232864
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGA_Generic_AdrenalineRush_C::Targeted_96CD2D2546A5DCD7B7C14BBA26232864(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -76,8 +75,8 @@ void UGA_Generic_AdrenalineRush_C::Targeted_96CD2D2546A5DCD7B7C14BBA26232864(con
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.Cancelled_96CD2D2546A5DCD7B7C14BBA26232864
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTag                     ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTag&              ApplicationTag                                         (Parm, NoDestructor, HasGetValueTypeHash)
 
 void UGA_Generic_AdrenalineRush_C::Cancelled_96CD2D2546A5DCD7B7C14BBA26232864(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
@@ -98,7 +97,7 @@ void UGA_Generic_AdrenalineRush_C::Cancelled_96CD2D2546A5DCD7B7C14BBA26232864(co
 // Function GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C.ApplyGadgetEffects
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayAbilityTargetDataHandle TargetData                                             (Parm)
+// const struct FGameplayAbilityTargetDataHandle&TargetData                                             (Parm)
 
 void UGA_Generic_AdrenalineRush_C::ApplyGadgetEffects(const struct FGameplayAbilityTargetDataHandle& TargetData)
 {
@@ -148,5 +147,5 @@ void UGA_Generic_AdrenalineRush_C::Setup_Ability(class UAbilitySystemComponent* 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

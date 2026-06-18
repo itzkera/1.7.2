@@ -13,8 +13,7 @@
 #include "UsedPlacementActorsContext_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass UsedProximityDangerZoneContext.UsedProximityDangerZoneContext_C
 // 0x0000 (0x0078 - 0x0078)
@@ -23,15 +22,16 @@ class UUsedProximityDangerZoneContext_C final : public UUsedPlacementActorsConte
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UsedProximityDangerZoneContext_C">();
+		BP_STATIC_CLASS_IMPL("UsedProximityDangerZoneContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UsedProximityDangerZoneContext_C")
 	}
 	static class UUsedProximityDangerZoneContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUsedProximityDangerZoneContext_C>();
 	}
 };
-static_assert(alignof(UUsedProximityDangerZoneContext_C) == 0x000008, "Wrong alignment on UUsedProximityDangerZoneContext_C");
-static_assert(sizeof(UUsedProximityDangerZoneContext_C) == 0x000078, "Wrong size on UUsedProximityDangerZoneContext_C");
 
-}
-
+SDK_NAMESPACE_END

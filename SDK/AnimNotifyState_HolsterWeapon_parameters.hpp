@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.Received_NotifyBegin
 // 0x0030 (0x0030 - 0x0000)
@@ -28,15 +28,6 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin) == 0x000008, "Wrong alignment on AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin");
-static_assert(sizeof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin) == 0x000030, "Wrong size on AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, MeshComp) == 0x000000, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, Animation) == 0x000008, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::Animation' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, TotalDuration) == 0x000010, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::TotalDuration' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, ReturnValue) == 0x000014, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, K2Node_DynamicCast_AsFort_Pawn) == 0x000020, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyBegin::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.Received_NotifyEnd
 // 0x0030 (0x0030 - 0x0000)
@@ -51,14 +42,6 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd) == 0x000008, "Wrong alignment on AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd");
-static_assert(sizeof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd) == 0x000030, "Wrong size on AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd, MeshComp) == 0x000000, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd, Animation) == 0x000008, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd::Animation' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd, ReturnValue) == 0x000010, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd, K2Node_DynamicCast_AsFort_Pawn) == 0x000020, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AnimNotifyState_HolsterWeapon_C_Received_NotifyEnd::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

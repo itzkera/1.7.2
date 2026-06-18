@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemIconWidget.ItemIconWidget_C
 // 0x0020 (0x0250 - 0x0230)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemIconWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemIconWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemIconWidget_C")
 	}
 	static class UItemIconWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemIconWidget_C>();
 	}
 };
-static_assert(alignof(UItemIconWidget_C) == 0x000008, "Wrong alignment on UItemIconWidget_C");
-static_assert(sizeof(UItemIconWidget_C) == 0x000250, "Wrong size on UItemIconWidget_C");
-static_assert(offsetof(UItemIconWidget_C, UberGraphFrame) == 0x000230, "Member 'UItemIconWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemIconWidget_C, Image) == 0x000238, "Member 'UItemIconWidget_C::Image' has a wrong offset!");
-static_assert(offsetof(UItemIconWidget_C, Item) == 0x000240, "Member 'UItemIconWidget_C::Item' has a wrong offset!");
-static_assert(offsetof(UItemIconWidget_C, BrushSize) == 0x000248, "Member 'UItemIconWidget_C::BrushSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

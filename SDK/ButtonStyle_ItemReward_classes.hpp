@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-ItemReward.ButtonStyle-ItemReward_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_ItemReward_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-ItemReward_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-ItemReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-ItemReward_C")
 	}
 	static class UButtonStyle_ItemReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_ItemReward_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_ItemReward_C) == 0x000008, "Wrong alignment on UButtonStyle_ItemReward_C");
-static_assert(sizeof(UButtonStyle_ItemReward_C) == 0x000530, "Wrong size on UButtonStyle_ItemReward_C");
 
-}
-
+SDK_NAMESPACE_END

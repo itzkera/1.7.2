@@ -13,8 +13,8 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TabGameOptionsHud.TabGameOptionsHud_C.ExecuteUbergraph_TabGameOptionsHud
 // 0x0048 (0x0048 - 0x0000)
@@ -23,7 +23,7 @@ struct TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
 	class UUserWidget*                            K2Node_ComponentBoundEvent_Widget;                 // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UOptionsMenuHudRotator_C*               K2Node_DynamicCast_AsOptions_Menu_Hud_Rotator;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -34,17 +34,6 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                CallFunc_GetItemAt_ReturnValue;                    // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud) == 0x000008, "Wrong alignment on TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud");
-static_assert(sizeof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud) == 0x000048, "Wrong size on TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, EntryPoint) == 0x000000, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, K2Node_ComponentBoundEvent_Widget) == 0x000018, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, K2Node_DynamicCast_AsOptions_Menu_Hud_Rotator) == 0x000020, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::K2Node_DynamicCast_AsOptions_Menu_Hud_Rotator' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, K2Node_CustomEvent_Selected_Index) == 0x00002C, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::K2Node_CustomEvent_Selected_Index' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, K2Node_CustomEvent_Gameplay_Tag) == 0x000030, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::K2Node_CustomEvent_Gameplay_Tag' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, CallFunc_Conv_IntToBool_ReturnValue) == 0x000038, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud, CallFunc_GetItemAt_ReturnValue) == 0x000040, "Member 'TabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud::CallFunc_GetItemAt_ReturnValue' has a wrong offset!");
 
 // Function TabGameOptionsHud.TabGameOptionsHud_C.HUD Changed
 // 0x0010 (0x0010 - 0x0000)
@@ -55,10 +44,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTag                           Gameplay_Tag;                                      // 0x0008(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsHud_C_HUD_Changed) == 0x000008, "Wrong alignment on TabGameOptionsHud_C_HUD_Changed");
-static_assert(sizeof(TabGameOptionsHud_C_HUD_Changed) == 0x000010, "Wrong size on TabGameOptionsHud_C_HUD_Changed");
-static_assert(offsetof(TabGameOptionsHud_C_HUD_Changed, Selected_Index) == 0x000000, "Member 'TabGameOptionsHud_C_HUD_Changed::Selected_Index' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsHud_C_HUD_Changed, Gameplay_Tag) == 0x000008, "Member 'TabGameOptionsHud_C_HUD_Changed::Gameplay_Tag' has a wrong offset!");
 
 // Function TabGameOptionsHud.TabGameOptionsHud_C.BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +52,6 @@ struct TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong alignment on TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature");
-static_assert(sizeof(TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong size on TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature");
-static_assert(offsetof(TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature, Widget) == 0x000000, "Member 'TabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabGameOptionsHud.TabGameOptionsHud_C.Set Settings Tooltip
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +60,6 @@ struct TabGameOptionsHud_C_Set_Settings_Tooltip final
 public:
 	class UCommonTextBlock*                       Tooltip_To_Display;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsHud_C_Set_Settings_Tooltip) == 0x000008, "Wrong alignment on TabGameOptionsHud_C_Set_Settings_Tooltip");
-static_assert(sizeof(TabGameOptionsHud_C_Set_Settings_Tooltip) == 0x000008, "Wrong size on TabGameOptionsHud_C_Set_Settings_Tooltip");
-static_assert(offsetof(TabGameOptionsHud_C_Set_Settings_Tooltip, Tooltip_To_Display) == 0x000000, "Member 'TabGameOptionsHud_C_Set_Settings_Tooltip::Tooltip_To_Display' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DONOTUSE.DONOTUSE_C
 // 0x0020 (0x0250 - 0x0230)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DONOTUSE_C">();
+		BP_STATIC_CLASS_IMPL("DONOTUSE_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DONOTUSE_C")
 	}
 	static class UDONOTUSE_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDONOTUSE_C>();
 	}
 };
-static_assert(alignof(UDONOTUSE_C) == 0x000008, "Wrong alignment on UDONOTUSE_C");
-static_assert(sizeof(UDONOTUSE_C) == 0x000250, "Wrong size on UDONOTUSE_C");
-static_assert(offsetof(UDONOTUSE_C, UberGraphFrame) == 0x000230, "Member 'UDONOTUSE_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDONOTUSE_C, FortMultiSizeItemCard_0) == 0x000238, "Member 'UDONOTUSE_C::FortMultiSizeItemCard_0' has a wrong offset!");
-static_assert(offsetof(UDONOTUSE_C, Item) == 0x000240, "Member 'UDONOTUSE_C::Item' has a wrong offset!");
-static_assert(offsetof(UDONOTUSE_C, ItemCardSize) == 0x000248, "Member 'UDONOTUSE_C::ItemCardSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

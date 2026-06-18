@@ -13,8 +13,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget
 // 0x0010 (0x0010 - 0x0000)
@@ -25,10 +25,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_CreateSound2D_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget) == 0x000008, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
-static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget) == 0x000010, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget, EntryPoint) == 0x000000, "Member 'TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget, CallFunc_CreateSound2D_ReturnValue) == 0x000008, "Member 'TeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget::CallFunc_CreateSound2D_ReturnValue' has a wrong offset!");
 
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Update XP LERP
 // 0x0068 (0x0068 - 0x0000)
@@ -61,31 +57,6 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue2;                      // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue4;             // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP) == 0x000008, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP");
-static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP) == 0x000068, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, LERP_Factor) == 0x000000, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::LERP_Factor' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, XPEarned) == 0x000004, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::XPEarned' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CurrentPlayerXPCount) == 0x000008, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CurrentPlayerXPCount' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, IntermediateXPCount) == 0x00000C, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::IntermediateXPCount' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, ProgressToNextLevel) == 0x000010, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::ProgressToNextLevel' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, LevelDuringTween) == 0x000014, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::LevelDuringTween' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_GetLevelProgress_ReturnValue) == 0x000018, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_GetLevelProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_GetHeroLevelAtXP_ReturnValue) == 0x000028, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_GetHeroLevelAtXP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Add_IntInt_ReturnValue2) == 0x000030, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Add_IntInt_ReturnValue3) == 0x000034, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Add_IntInt_ReturnValue4) == 0x000038, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Add_IntInt_ReturnValue5) == 0x00003C, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Add_IntInt_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000040, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000048, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Lerp_ReturnValue) == 0x00004C, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_FTrunc_ReturnValue) == 0x000050, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000054, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Lerp_ReturnValue2) == 0x000058, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Lerp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_FTrunc_ReturnValue2) == 0x00005C, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_FTrunc_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x000060, "Member 'TeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
 
 // Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Initialize
 // 0x0050 (0x0050 - 0x0000)
@@ -98,12 +69,6 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIScoreReport*                     CallFunc_GetScoreReport_ReturnValue;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamScoreToPlayerXPRewardWidget_C_Initialize) == 0x000008, "Wrong alignment on TeamScoreToPlayerXPRewardWidget_C_Initialize");
-static_assert(sizeof(TeamScoreToPlayerXPRewardWidget_C_Initialize) == 0x000050, "Wrong size on TeamScoreToPlayerXPRewardWidget_C_Initialize");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, XPinfo_0) == 0x000000, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::XPinfo_0' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, Player_Name) == 0x000030, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::Player_Name' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TeamScoreToPlayerXPRewardWidget_C_Initialize, CallFunc_GetScoreReport_ReturnValue) == 0x000048, "Member 'TeamScoreToPlayerXPRewardWidget_C_Initialize::CallFunc_GetScoreReport_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ItemDetailsHeaderItemDisplayText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.ExecuteUbergraph_ItemDetailsHeaderItemDisplayText
 // (HasDefaults)
@@ -68,7 +67,7 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSe
 // Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.GetDisplayName
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             DisplayName                                            (Parm, OutParm)
+// class FText*                            DisplayName                                            (Parm, OutParm)
 
 void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(class FText* DisplayName)
 {
@@ -85,5 +84,5 @@ void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(class FText* DisplayNam
 		*DisplayName = std::move(Parms.DisplayName);
 }
 
-}
 
+SDK_NAMESPACE_END

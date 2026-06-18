@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_FortGlobalAbilityTargetingActor.B_FortGlobalAbilityTargetingActor_C
 // 0x0000 (0x0388 - 0x0388)
@@ -23,15 +22,16 @@ class AB_FortGlobalAbilityTargetingActor_C final : public AFortGlobalAbilityTarg
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_FortGlobalAbilityTargetingActor_C">();
+		BP_STATIC_CLASS_IMPL("B_FortGlobalAbilityTargetingActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_FortGlobalAbilityTargetingActor_C")
 	}
 	static class AB_FortGlobalAbilityTargetingActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_FortGlobalAbilityTargetingActor_C>();
 	}
 };
-static_assert(alignof(AB_FortGlobalAbilityTargetingActor_C) == 0x000008, "Wrong alignment on AB_FortGlobalAbilityTargetingActor_C");
-static_assert(sizeof(AB_FortGlobalAbilityTargetingActor_C) == 0x000388, "Wrong size on AB_FortGlobalAbilityTargetingActor_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "PowerRequirement_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PowerRequirement.PowerRequirement_C.ExecuteUbergraph_PowerRequirement
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UPowerRequirement_C::ExecuteUbergraph_PowerRequirement(int32 EntryPoint)
 // Function PowerRequirement.PowerRequirement_C.PlayerInfoChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 UniqueId                                               (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          UniqueId                                               (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
 void UPowerRequirement_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& UniqueId)
 {
@@ -166,5 +165,5 @@ class UWidget* UPowerRequirement_C::GenerateToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

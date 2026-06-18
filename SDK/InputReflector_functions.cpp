@@ -14,8 +14,7 @@
 #include "InputReflector_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function InputReflector.InputReflector_C.ExecuteUbergraph_InputReflector
 // (HasDefaults)
@@ -69,7 +68,7 @@ void UInputReflector_C::ClearButtons()
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // class UCommonButton*                    AddedButton                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCommonInputActionHandlerData    Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FCommonInputActionHandlerData&Data                                                   (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UInputReflector_C::OnButtonAdded(class UCommonButton* AddedButton, const struct FCommonInputActionHandlerData& Data)
 {
@@ -86,5 +85,5 @@ void UInputReflector_C::OnButtonAdded(class UCommonButton* AddedButton, const st
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

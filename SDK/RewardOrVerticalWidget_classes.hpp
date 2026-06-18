@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RewardOrVerticalWidget.RewardOrVerticalWidget_C
 // 0x0000 (0x08C0 - 0x08C0)
@@ -23,15 +22,16 @@ class URewardOrVerticalWidget_C final : public UFortRewardInfoButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardOrVerticalWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardOrVerticalWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardOrVerticalWidget_C")
 	}
 	static class URewardOrVerticalWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardOrVerticalWidget_C>();
 	}
 };
-static_assert(alignof(URewardOrVerticalWidget_C) == 0x000008, "Wrong alignment on URewardOrVerticalWidget_C");
-static_assert(sizeof(URewardOrVerticalWidget_C) == 0x0008C0, "Wrong size on URewardOrVerticalWidget_C");
 
-}
-
+SDK_NAMESPACE_END

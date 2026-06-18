@@ -14,8 +14,7 @@
 #include "MissionOverviewObjective_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionOverviewObjective.MissionOverviewObjective_C.ExecuteUbergraph_MissionOverviewObjective
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UMissionOverviewObjective_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

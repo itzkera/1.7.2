@@ -14,8 +14,7 @@
 #include "MainTabsScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MainTabsScreen.MainTabsScreen_C.ExecuteUbergraph_MainTabsScreen
 // ()
@@ -351,7 +350,7 @@ void UMainTabsScreen_C::Update_Armory_Tab_Button_Bang(class FName Tab)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortAccountItem*                 TransformKey                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortAccountItem*                 OutItem                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortAccountItem**                OutItem                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountItem* TransformKey, class UFortAccountItem** OutItem)
 {
@@ -374,7 +373,7 @@ void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountIte
 // Function MainTabsScreen.MainTabsScreen_C.Get FortPC
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AFortPlayerController*            FortPC                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerController**           FortPC                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC)
 {
@@ -395,7 +394,7 @@ void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC)
 // Function MainTabsScreen.MainTabsScreen_C.Are Any Transform Keys Unseen
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Unseen                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Unseen                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen)
 {
@@ -416,7 +415,7 @@ void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen)
 // Function MainTabsScreen.MainTabsScreen_C.Are Any Inventory Items Unseen
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Unseen                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Unseen                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen)
 {
@@ -477,7 +476,7 @@ void UMainTabsScreen_C::Update_Skills_Tab_Button_Bang(class FName Tab)
 // Function MainTabsScreen.MainTabsScreen_C.Are Any Nodes Available For Purchase
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             NodePageId                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName                       NodePageId                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UMainTabsScreen_C::Are_Any_Nodes_Available_For_Purchase(const class FName NodePageId)
@@ -500,7 +499,7 @@ bool UMainTabsScreen_C::Are_Any_Nodes_Available_For_Purchase(const class FName N
 // Function MainTabsScreen.MainTabsScreen_C.Determine Unclaimed Resources at Threshold
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result)
 {
@@ -615,7 +614,7 @@ bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked()
 // Function MainTabsScreen.MainTabsScreen_C.Get Valid Offers
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FCardPackOffer>           Offers                                                 (Parm, OutParm, ZeroConstructor)
+// TArray<struct FCardPackOffer>*          Offers                                                 (Parm, OutParm, ZeroConstructor)
 
 void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 {
@@ -636,9 +635,9 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 // Function MainTabsScreen.MainTabsScreen_C.CheckHighestPriorityOffer
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FCardPackOffer>           inOfferArray                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// struct FCardPackOffer                   outPriorityOffer                                       (Parm, OutParm)
-// bool                                    FoundOffer                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<struct FCardPackOffer>&          inOfferArray                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FCardPackOffer*                  outPriorityOffer                                       (Parm, OutParm)
+// bool*                                   FoundOffer                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer)
 {
@@ -666,8 +665,8 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 // Function MainTabsScreen.MainTabsScreen_C.GetCustomStoreOfferCost
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FCardPackOffer                   InCardPackOffer                                        (Parm)
-// EStoreOfferCosts                        OutCustomStoreOfferCost                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FCardPackOffer&            InCardPackOffer                                        (Parm)
+// EStoreOfferCosts*                       OutCustomStoreOfferCost                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, EStoreOfferCosts* OutCustomStoreOfferCost)
 {
@@ -691,8 +690,8 @@ void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InC
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EStoreOfferCosts                        InCustomStoreOfferCost                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCardPackOffer                   InCardPackOffer                                        (Parm)
-// bool                                    bPassedDisplayCriteria                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FCardPackOffer&            InCardPackOffer                                        (Parm)
+// bool*                                   bPassedDisplayCriteria                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria)
 {
@@ -716,7 +715,7 @@ void UMainTabsScreen_C::CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOffer
 // Function MainTabsScreen.MainTabsScreen_C.Determine If Any non-MTX offers are purchasable
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ShowBang                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ShowBang                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang)
 {
@@ -733,5 +732,5 @@ void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* Sh
 		*ShowBang = Parms.ShowBang;
 }
 
-}
 
+SDK_NAMESPACE_END

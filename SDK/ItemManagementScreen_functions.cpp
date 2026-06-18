@@ -14,8 +14,7 @@
 #include "ItemManagementScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementScreen.ItemManagementScreen_C.ExecuteUbergraph_ItemManagementScreen
 // (HasDefaults)
@@ -213,7 +212,7 @@ void UItemManagementScreen_C::HandleClose()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        ItemToInspect                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementScreen_C::HandleInspect(class UFortItem* ItemToInspect, bool* PassThrough)
 {
@@ -236,7 +235,7 @@ void UItemManagementScreen_C::HandleInspect(class UFortItem* ItemToInspect, bool
 // Function ItemManagementScreen.ItemManagementScreen_C.GetDescriptionText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             ItemDescription                                        (Parm, OutParm)
+// class FText*                            ItemDescription                                        (Parm, OutParm)
 
 void UItemManagementScreen_C::GetDescriptionText(class FText* ItemDescription)
 {
@@ -257,8 +256,8 @@ void UItemManagementScreen_C::GetDescriptionText(class FText* ItemDescription)
 // Function ItemManagementScreen.ItemManagementScreen_C.OnDrop
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    PointerEvent                                           (Parm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             PointerEvent                                           (Parm)
 // class UDragDropOperation*               Operation                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
@@ -299,7 +298,7 @@ void UItemManagementScreen_C::SizeInventoryPanel()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        ItemToEquip                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementScreen_C::HandleEquip(class UFortItem* ItemToEquip, bool* PassThrough)
 {
@@ -358,5 +357,5 @@ void UItemManagementScreen_C::ShowCraftError(EFortCraftFailCause FailCause)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

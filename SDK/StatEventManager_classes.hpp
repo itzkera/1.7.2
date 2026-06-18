@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass StatEventManager.StatEventManager_C
 // 0x0000 (0x0088 - 0x0088)
@@ -23,15 +22,16 @@ class UStatEventManager_C final : public UFortStatEventManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatEventManager_C">();
+		BP_STATIC_CLASS_IMPL("StatEventManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatEventManager_C")
 	}
 	static class UStatEventManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatEventManager_C>();
 	}
 };
-static_assert(alignof(UStatEventManager_C) == 0x000008, "Wrong alignment on UStatEventManager_C");
-static_assert(sizeof(UStatEventManager_C) == 0x000088, "Wrong size on UStatEventManager_C");
 
-}
-
+SDK_NAMESPACE_END

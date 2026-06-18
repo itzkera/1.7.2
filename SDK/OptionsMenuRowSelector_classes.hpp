@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OptionsMenuRowSelector.OptionsMenuRowSelector_C
 // 0x0058 (0x0288 - 0x0230)
@@ -47,24 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuRowSelector_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuRowSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuRowSelector_C")
 	}
 	static class UOptionsMenuRowSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuRowSelector_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuRowSelector_C) == 0x000008, "Wrong alignment on UOptionsMenuRowSelector_C");
-static_assert(sizeof(UOptionsMenuRowSelector_C) == 0x000288, "Wrong size on UOptionsMenuRowSelector_C");
-static_assert(offsetof(UOptionsMenuRowSelector_C, UberGraphFrame) == 0x000230, "Member 'UOptionsMenuRowSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, RowSelectorText) == 0x000238, "Member 'UOptionsMenuRowSelector_C::RowSelectorText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, SelectorButtonsBox) == 0x000240, "Member 'UOptionsMenuRowSelector_C::SelectorButtonsBox' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Selector_Button_Selected) == 0x000248, "Member 'UOptionsMenuRowSelector_C::Selector_Button_Selected' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Hover_Texts) == 0x000258, "Member 'UOptionsMenuRowSelector_C::Hover_Texts' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Selector_Buttons) == 0x000268, "Member 'UOptionsMenuRowSelector_C::Selector_Buttons' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Common_Button_Group_Type) == 0x000270, "Member 'UOptionsMenuRowSelector_C::Common_Button_Group_Type' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Tab_Tooltip_Text) == 0x000278, "Member 'UOptionsMenuRowSelector_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, ButtonStyle) == 0x000280, "Member 'UOptionsMenuRowSelector_C::ButtonStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

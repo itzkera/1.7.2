@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BuildingInfoIndicator.BuildingInfoIndicator_C
 // 0x01D0 (0x0468 - 0x0298)
@@ -97,64 +96,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuildingInfoIndicator_C">();
+		BP_STATIC_CLASS_IMPL("BuildingInfoIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildingInfoIndicator_C")
 	}
 	static class UBuildingInfoIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuildingInfoIndicator_C>();
 	}
 };
-static_assert(alignof(UBuildingInfoIndicator_C) == 0x000008, "Wrong alignment on UBuildingInfoIndicator_C");
-static_assert(sizeof(UBuildingInfoIndicator_C) == 0x000468, "Wrong size on UBuildingInfoIndicator_C");
-static_assert(offsetof(UBuildingInfoIndicator_C, UberGraphFrame) == 0x000298, "Member 'UBuildingInfoIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Horizontal_Box__Build_Edit) == 0x0002A0, "Member 'UBuildingInfoIndicator_C::_Horizontal_Box__Build_Edit' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Horizontal_Box__Edit) == 0x0002A8, "Member 'UBuildingInfoIndicator_C::_Horizontal_Box__Edit' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Horizontal_Box__Material) == 0x0002B0, "Member 'UBuildingInfoIndicator_C::_Horizontal_Box__Material' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Image__Resource_Type_Icon) == 0x0002B8, "Member 'UBuildingInfoIndicator_C::_Image__Resource_Type_Icon' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Keybind__Build_Edit) == 0x0002C0, "Member 'UBuildingInfoIndicator_C::_Keybind__Build_Edit' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Keybind__Confirm) == 0x0002C8, "Member 'UBuildingInfoIndicator_C::_Keybind__Confirm' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Keybind__Edit__standalone_) == 0x0002D0, "Member 'UBuildingInfoIndicator_C::_Keybind__Edit__standalone_' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Keybind__Material) == 0x0002D8, "Member 'UBuildingInfoIndicator_C::_Keybind__Material' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Size_Box__Confirm) == 0x0002E0, "Member 'UBuildingInfoIndicator_C::_Size_Box__Confirm' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Size_Box__Edit__standalone_) == 0x0002E8, "Member 'UBuildingInfoIndicator_C::_Size_Box__Edit__standalone_' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Vertical_Box__Build_Subset) == 0x0002F0, "Member 'UBuildingInfoIndicator_C::_Vertical_Box__Build_Subset' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, _Widget__Building_HP___Trap_Bars) == 0x0002F8, "Member 'UBuildingInfoIndicator_C::_Widget__Building_HP___Trap_Bars' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, CommonTextBlock_0) == 0x000300, "Member 'UBuildingInfoIndicator_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, HorizontalBox_4) == 0x000308, "Member 'UBuildingInfoIndicator_C::HorizontalBox_4' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, HorizontalBoxCycleTrap) == 0x000310, "Member 'UBuildingInfoIndicator_C::HorizontalBoxCycleTrap' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, HorizontalBoxPlaceTrap) == 0x000318, "Member 'UBuildingInfoIndicator_C::HorizontalBoxPlaceTrap' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, HorizontalBoxUpgradeRepair) == 0x000320, "Member 'UBuildingInfoIndicator_C::HorizontalBoxUpgradeRepair' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, ImageResourceTypeIconwithRotate) == 0x000328, "Member 'UBuildingInfoIndicator_C::ImageResourceTypeIconwithRotate' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindBuild) == 0x000330, "Member 'UBuildingInfoIndicator_C::KeybindBuild' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindCycleTrapLeft) == 0x000338, "Member 'UBuildingInfoIndicator_C::KeybindCycleTrapLeft' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindEdit) == 0x000340, "Member 'UBuildingInfoIndicator_C::KeybindEdit' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindPickTrapstandalone) == 0x000348, "Member 'UBuildingInfoIndicator_C::KeybindPickTrapstandalone' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindPlaceTrapLeft) == 0x000350, "Member 'UBuildingInfoIndicator_C::KeybindPlaceTrapLeft' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindPlaceTrapstandalone) == 0x000358, "Member 'UBuildingInfoIndicator_C::KeybindPlaceTrapstandalone' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindReset) == 0x000360, "Member 'UBuildingInfoIndicator_C::KeybindReset' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindRotate) == 0x000368, "Member 'UBuildingInfoIndicator_C::KeybindRotate' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindTrapLower) == 0x000370, "Member 'UBuildingInfoIndicator_C::KeybindTrapLower' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, KeybindUpgradeRepair) == 0x000378, "Member 'UBuildingInfoIndicator_C::KeybindUpgradeRepair' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, SizeBoxTrapstandalone) == 0x000380, "Member 'UBuildingInfoIndicator_C::SizeBoxTrapstandalone' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, SizeBoxTriOption) == 0x000388, "Member 'UBuildingInfoIndicator_C::SizeBoxTriOption' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, SwitcherInteractions) == 0x000390, "Member 'UBuildingInfoIndicator_C::SwitcherInteractions' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, SwitcherSideOption1) == 0x000398, "Member 'UBuildingInfoIndicator_C::SwitcherSideOption1' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, SwitcherSideOption2) == 0x0003A0, "Member 'UBuildingInfoIndicator_C::SwitcherSideOption2' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TextInteractionCost) == 0x0003A8, "Member 'UBuildingInfoIndicator_C::TextInteractionCost' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TextInteractionCostwithRotate) == 0x0003B0, "Member 'UBuildingInfoIndicator_C::TextInteractionCostwithRotate' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TextInteractionName) == 0x0003B8, "Member 'UBuildingInfoIndicator_C::TextInteractionName' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TextPickTrap) == 0x0003C0, "Member 'UBuildingInfoIndicator_C::TextPickTrap' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TextPickTrapBottom) == 0x0003C8, "Member 'UBuildingInfoIndicator_C::TextPickTrapBottom' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TextPickTrapLabel) == 0x0003D0, "Member 'UBuildingInfoIndicator_C::TextPickTrapLabel' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, TrapOptions) == 0x0003D8, "Member 'UBuildingInfoIndicator_C::TrapOptions' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, VerticalBoxBuildWithRotate) == 0x0003E0, "Member 'UBuildingInfoIndicator_C::VerticalBoxBuildWithRotate' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, VerticalBoxLowerOption) == 0x0003E8, "Member 'UBuildingInfoIndicator_C::VerticalBoxLowerOption' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, VerticalBoxPlaceTrapstandalone) == 0x0003F0, "Member 'UBuildingInfoIndicator_C::VerticalBoxPlaceTrapstandalone' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, BuildingInfo) == 0x0003F8, "Member 'UBuildingInfoIndicator_C::BuildingInfo' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, Current_Health) == 0x000448, "Member 'UBuildingInfoIndicator_C::Current_Health' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, HealthFadeTimerHandle) == 0x000450, "Member 'UBuildingInfoIndicator_C::HealthFadeTimerHandle' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, Current_Durability) == 0x000458, "Member 'UBuildingInfoIndicator_C::Current_Durability' has a wrong offset!");
-static_assert(offsetof(UBuildingInfoIndicator_C, UpgradeRepairAction) == 0x000460, "Member 'UBuildingInfoIndicator_C::UpgradeRepairAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

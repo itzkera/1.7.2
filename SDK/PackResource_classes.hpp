@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PackResource.PackResource_C
 // 0x0020 (0x0258 - 0x0238)
@@ -37,19 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PackResource_C">();
+		BP_STATIC_CLASS_IMPL("PackResource_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PackResource_C")
 	}
 	static class UPackResource_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPackResource_C>();
 	}
 };
-static_assert(alignof(UPackResource_C) == 0x000008, "Wrong alignment on UPackResource_C");
-static_assert(sizeof(UPackResource_C) == 0x000258, "Wrong size on UPackResource_C");
-static_assert(offsetof(UPackResource_C, UberGraphFrame) == 0x000238, "Member 'UPackResource_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPackResource_C, ImageResourceIcon) == 0x000240, "Member 'UPackResource_C::ImageResourceIcon' has a wrong offset!");
-static_assert(offsetof(UPackResource_C, NumericTextCount) == 0x000248, "Member 'UPackResource_C::NumericTextCount' has a wrong offset!");
-static_assert(offsetof(UPackResource_C, ResourceType) == 0x000250, "Member 'UPackResource_C::ResourceType' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

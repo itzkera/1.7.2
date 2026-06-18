@@ -14,8 +14,7 @@
 #include "Results_StatsSubtypeBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.ExecuteUbergraph_Results_StatsSubtypeBox
 // ()
@@ -84,5 +83,5 @@ void UResults_StatsSubtypeBox_C::InitializeScoreType()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Announce_Gen_Quest_Conversation_FrontEndRewards_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards
 // (HasDefaults)
@@ -40,7 +39,7 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::ExecuteUbergraph_Announ
 // Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnSentenceStarted
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        Sentence                                               (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortConversationSentence& Sentence                                               (ConstParm, Parm, OutParm, ReferenceParm)
 // int32                                   SentenceIndex                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnSentenceStarted(const struct FFortConversationSentence& Sentence, int32 SentenceIndex)
@@ -62,7 +61,7 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnSentenceStarted(const
 // Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnConversationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        FinishingSentence                                      (Parm)
+// const struct FFortConversationSentence& FinishingSentence                                      (Parm)
 // int32                                   FinishingSentenceSentenceIndex                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnConversationFinished(const struct FFortConversationSentence& FinishingSentence, int32 FinishingSentenceSentenceIndex)
@@ -122,5 +121,5 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::StopCurrentConversation
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

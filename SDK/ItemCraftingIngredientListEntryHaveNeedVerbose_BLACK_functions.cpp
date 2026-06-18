@@ -14,8 +14,7 @@
 #include "ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK
 // ()
@@ -68,7 +67,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.HandleDifferentItemOrQuantitySetBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset)
 {
@@ -164,7 +163,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.ShowHaveNeed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    HaveNeed                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HaveNeed                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool* HaveNeed)
 {
@@ -181,5 +180,5 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool*
 		*HaveNeed = Parms.HaveNeed;
 }
 
-}
 
+SDK_NAMESPACE_END

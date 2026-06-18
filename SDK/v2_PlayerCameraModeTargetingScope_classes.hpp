@@ -13,8 +13,7 @@
 #include "v2_PlayerCameraModeRanged_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass v2_PlayerCameraModeTargetingScope.v2_PlayerCameraModeTargetingScope_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class Uv2_PlayerCameraModeTargetingScope_C final : public Uv2_PlayerCameraModeRa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v2_PlayerCameraModeTargetingScope_C">();
+		BP_STATIC_CLASS_IMPL("v2_PlayerCameraModeTargetingScope_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v2_PlayerCameraModeTargetingScope_C")
 	}
 	static class Uv2_PlayerCameraModeTargetingScope_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv2_PlayerCameraModeTargetingScope_C>();
 	}
 };
-static_assert(alignof(Uv2_PlayerCameraModeTargetingScope_C) == 0x000008, "Wrong alignment on Uv2_PlayerCameraModeTargetingScope_C");
-static_assert(sizeof(Uv2_PlayerCameraModeTargetingScope_C) == 0x000110, "Wrong size on Uv2_PlayerCameraModeTargetingScope_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PerkDivider.PerkDivider_C
 // 0x0000 (0x0230 - 0x0230)
@@ -23,15 +22,16 @@ class UPerkDivider_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PerkDivider_C">();
+		BP_STATIC_CLASS_IMPL("PerkDivider_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PerkDivider_C")
 	}
 	static class UPerkDivider_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPerkDivider_C>();
 	}
 };
-static_assert(alignof(UPerkDivider_C) == 0x000008, "Wrong alignment on UPerkDivider_C");
-static_assert(sizeof(UPerkDivider_C) == 0x000230, "Wrong size on UPerkDivider_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemRatingIndicator.ItemRatingIndicator_C.ExecuteUbergraph_ItemRatingIndicator
 // 0x00A0 (0x00A0 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	struct FSlateBrush                            CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0x0008(0x0090)(ConstParm)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator) == 0x000008, "Wrong alignment on ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator");
-static_assert(sizeof(ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator) == 0x0000A0, "Wrong size on ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator");
-static_assert(offsetof(ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator, EntryPoint) == 0x000000, "Member 'ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator, CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue) == 0x000008, "Member 'ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator::CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000098, "Member 'ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

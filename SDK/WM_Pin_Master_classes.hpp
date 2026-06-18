@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WM_Pin_Master.WM_Pin_Master_C
 // 0x0118 (0x04B8 - 0x03A0)
@@ -74,42 +73,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WM_Pin_Master_C">();
+		BP_STATIC_CLASS_IMPL("WM_Pin_Master_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WM_Pin_Master_C")
 	}
 	static class AWM_Pin_Master_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWM_Pin_Master_C>();
 	}
 };
-static_assert(alignof(AWM_Pin_Master_C) == 0x000008, "Wrong alignment on AWM_Pin_Master_C");
-static_assert(sizeof(AWM_Pin_Master_C) == 0x0004B8, "Wrong size on AWM_Pin_Master_C");
-static_assert(offsetof(AWM_Pin_Master_C, UberGraphFrame) == 0x0003A0, "Member 'AWM_Pin_Master_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PinDiffGlow) == 0x0003A8, "Member 'AWM_Pin_Master_C::PinDiffGlow' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PinPing) == 0x0003B0, "Member 'AWM_Pin_Master_C::PinPing' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PointLight_B_Lock) == 0x0003B8, "Member 'AWM_Pin_Master_C::PointLight_B_Lock' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PointLight_A_Lock) == 0x0003C0, "Member 'AWM_Pin_Master_C::PointLight_A_Lock' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PinLocked) == 0x0003C8, "Member 'AWM_Pin_Master_C::PinLocked' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PointLight_B_Pin) == 0x0003D0, "Member 'AWM_Pin_Master_C::PointLight_B_Pin' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PointLight_A_Pin) == 0x0003D8, "Member 'AWM_Pin_Master_C::PointLight_A_Pin' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, P_PinPings) == 0x0003E0, "Member 'AWM_Pin_Master_C::P_PinPings' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, clickZone) == 0x0003E8, "Member 'AWM_Pin_Master_C::clickZone' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, Pin) == 0x0003F0, "Member 'AWM_Pin_Master_C::Pin' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, Base) == 0x0003F8, "Member 'AWM_Pin_Master_C::Base' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PinMesh) == 0x000400, "Member 'AWM_Pin_Master_C::PinMesh' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, DefaultColor) == 0x000408, "Member 'AWM_Pin_Master_C::DefaultColor' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, IdleHover1) == 0x000418, "Member 'AWM_Pin_Master_C::IdleHover1' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, IdleHover2) == 0x000428, "Member 'AWM_Pin_Master_C::IdleHover2' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, GlowColor) == 0x000438, "Member 'AWM_Pin_Master_C::GlowColor' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, DifficultyColor) == 0x000448, "Member 'AWM_Pin_Master_C::DifficultyColor' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, LockedPin) == 0x000458, "Member 'AWM_Pin_Master_C::LockedPin' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, LastVisibleText) == 0x000460, "Member 'AWM_Pin_Master_C::LastVisibleText' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, LastVisibleValue) == 0x000478, "Member 'AWM_Pin_Master_C::LastVisibleValue' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, PreviewedTheaterId) == 0x000480, "Member 'AWM_Pin_Master_C::PreviewedTheaterId' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, bHasMouseOver) == 0x000490, "Member 'AWM_Pin_Master_C::bHasMouseOver' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, MID_Ping) == 0x000498, "Member 'AWM_Pin_Master_C::MID_Ping' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, MID_DiffGlow) == 0x0004A0, "Member 'AWM_Pin_Master_C::MID_DiffGlow' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, MID_Pin) == 0x0004A8, "Member 'AWM_Pin_Master_C::MID_Pin' has a wrong offset!");
-static_assert(offsetof(AWM_Pin_Master_C, MID_Locked) == 0x0004B0, "Member 'AWM_Pin_Master_C::MID_Locked' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

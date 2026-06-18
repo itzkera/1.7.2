@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyBasicGradientFill.LegacyBasicGradientFill_C
 // 0x0040 (0x0280 - 0x0240)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyBasicGradientFill_C">();
+		BP_STATIC_CLASS_IMPL("LegacyBasicGradientFill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyBasicGradientFill_C")
 	}
 	static class ULegacyBasicGradientFill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyBasicGradientFill_C>();
 	}
 };
-static_assert(alignof(ULegacyBasicGradientFill_C) == 0x000008, "Wrong alignment on ULegacyBasicGradientFill_C");
-static_assert(sizeof(ULegacyBasicGradientFill_C) == 0x000280, "Wrong size on ULegacyBasicGradientFill_C");
-static_assert(offsetof(ULegacyBasicGradientFill_C, UberGraphFrame) == 0x000240, "Member 'ULegacyBasicGradientFill_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyBasicGradientFill_C, ImageFill) == 0x000248, "Member 'ULegacyBasicGradientFill_C::ImageFill' has a wrong offset!");
-static_assert(offsetof(ULegacyBasicGradientFill_C, Color_1) == 0x000250, "Member 'ULegacyBasicGradientFill_C::Color_1' has a wrong offset!");
-static_assert(offsetof(ULegacyBasicGradientFill_C, Color_2) == 0x000260, "Member 'ULegacyBasicGradientFill_C::Color_2' has a wrong offset!");
-static_assert(offsetof(ULegacyBasicGradientFill_C, Brush_Size) == 0x000270, "Member 'ULegacyBasicGradientFill_C::Brush_Size' has a wrong offset!");
-static_assert(offsetof(ULegacyBasicGradientFill_C, Rotation) == 0x000278, "Member 'ULegacyBasicGradientFill_C::Rotation' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

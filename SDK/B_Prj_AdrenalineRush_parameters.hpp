@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function B_Prj_AdrenalineRush.B_Prj_AdrenalineRush_C.ExecuteUbergraph_B_Prj_AdrenalineRush
 // 0x0050 (0x0050 - 0x0000)
@@ -42,24 +42,6 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue2;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue3;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush) == 0x000008, "Wrong alignment on B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush");
-static_assert(sizeof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush) == 0x000050, "Wrong size on B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, EntryPoint) == 0x000000, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_Radius) == 0x000004, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_Radius' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_Owner) == 0x000008, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_Owner' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_AOE_Heal) == 0x000010, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_AOE_Heal' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_Upgrade_InstaHeal) == 0x000011, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_Upgrade_InstaHeal' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_HOT) == 0x000012, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_HOT' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_HOT_Duration) == 0x000014, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_HOT_Duration' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, K2Node_CustomEvent_Resurrect) == 0x000018, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::K2Node_CustomEvent_Resurrect' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_IsLocallyControlled_ReturnValue) == 0x000019, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_K2_AttachTo_ReturnValue) == 0x000020, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_K2_AttachTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_FClamp_ReturnValue) == 0x000024, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_MakeVector_ReturnValue) == 0x000028, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000038, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_SpawnSoundAttached_ReturnValue2) == 0x000040, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_SpawnSoundAttached_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush, CallFunc_SpawnSoundAttached_ReturnValue3) == 0x000048, "Member 'B_Prj_AdrenalineRush_C_ExecuteUbergraph_B_Prj_AdrenalineRush::CallFunc_SpawnSoundAttached_ReturnValue3' has a wrong offset!");
 
 // Function B_Prj_AdrenalineRush.B_Prj_AdrenalineRush_C.PassInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -76,15 +58,6 @@ public:
 	float                                         HOT_Duration;                                      // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Resurrect;                                         // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_AdrenalineRush_C_PassInfo) == 0x000008, "Wrong alignment on B_Prj_AdrenalineRush_C_PassInfo");
-static_assert(sizeof(B_Prj_AdrenalineRush_C_PassInfo) == 0x000020, "Wrong size on B_Prj_AdrenalineRush_C_PassInfo");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, Radius) == 0x000000, "Member 'B_Prj_AdrenalineRush_C_PassInfo::Radius' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, Owner_0) == 0x000008, "Member 'B_Prj_AdrenalineRush_C_PassInfo::Owner_0' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, AOE_Heal) == 0x000010, "Member 'B_Prj_AdrenalineRush_C_PassInfo::AOE_Heal' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, Upgrade_InstaHeal) == 0x000011, "Member 'B_Prj_AdrenalineRush_C_PassInfo::Upgrade_InstaHeal' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, HOT) == 0x000012, "Member 'B_Prj_AdrenalineRush_C_PassInfo::HOT' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, HOT_Duration) == 0x000014, "Member 'B_Prj_AdrenalineRush_C_PassInfo::HOT_Duration' has a wrong offset!");
-static_assert(offsetof(B_Prj_AdrenalineRush_C_PassInfo, Resurrect) == 0x000018, "Member 'B_Prj_AdrenalineRush_C_PassInfo::Resurrect' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

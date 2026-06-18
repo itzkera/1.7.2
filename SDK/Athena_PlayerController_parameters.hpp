@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Athena_PlayerController.Athena_PlayerController_C.ExecuteUbergraph_Athena_PlayerController
 // 0x0070 (0x0070 - 0x0000)
@@ -39,22 +39,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController) == 0x000010, "Wrong alignment on Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController");
-static_assert(sizeof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController) == 0x000070, "Wrong size on Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, EntryPoint) == 0x000000, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_GetRevertPlayerListenerChangeFlag_ReturnValue) == 0x000004, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_GetRevertPlayerListenerChangeFlag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, Temp_struct_Variable) == 0x000010, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_AddComponent_ReturnValue) == 0x000040, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, K2Node_Event_DeltaSeconds) == 0x000048, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsLocalPlayerController_ReturnValue) == 0x00004C, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsLocalPlayerController_ReturnValue2) == 0x00004D, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsLocalPlayerController_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_GetViewTarget_ReturnValue) == 0x000050, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000060, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_BooleanAND_ReturnValue) == 0x000068, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_BooleanAND_ReturnValue2) == 0x000069, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x00006A, "Member 'Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function Athena_PlayerController.Athena_PlayerController_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -63,9 +47,6 @@ struct Athena_PlayerController_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Athena_PlayerController_C_ReceiveTick) == 0x000004, "Wrong alignment on Athena_PlayerController_C_ReceiveTick");
-static_assert(sizeof(Athena_PlayerController_C_ReceiveTick) == 0x000004, "Wrong size on Athena_PlayerController_C_ReceiveTick");
-static_assert(offsetof(Athena_PlayerController_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'Athena_PlayerController_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Cinematic-TeamMics.Cinematic-TeamMics_C
 // 0x01C0 (0x03F8 - 0x0238)
@@ -40,22 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Cinematic-TeamMics_C">();
+		BP_STATIC_CLASS_IMPL("Cinematic-TeamMics_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Cinematic-TeamMics_C")
 	}
 	static class UCinematic_TeamMics_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCinematic_TeamMics_C>();
 	}
 };
-static_assert(alignof(UCinematic_TeamMics_C) == 0x000008, "Wrong alignment on UCinematic_TeamMics_C");
-static_assert(sizeof(UCinematic_TeamMics_C) == 0x0003F8, "Wrong size on UCinematic_TeamMics_C");
-static_assert(offsetof(UCinematic_TeamMics_C, UberGraphFrame) == 0x000238, "Member 'UCinematic_TeamMics_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCinematic_TeamMics_C, MicIndicator) == 0x000240, "Member 'UCinematic_TeamMics_C::MicIndicator' has a wrong offset!");
-static_assert(offsetof(UCinematic_TeamMics_C, SwitcherConnectingStranger) == 0x000248, "Member 'UCinematic_TeamMics_C::SwitcherConnectingStranger' has a wrong offset!");
-static_assert(offsetof(UCinematic_TeamMics_C, TextBlock_6) == 0x000250, "Member 'UCinematic_TeamMics_C::TextBlock_6' has a wrong offset!");
-static_assert(offsetof(UCinematic_TeamMics_C, TextPlayerName) == 0x000258, "Member 'UCinematic_TeamMics_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(UCinematic_TeamMics_C, MemberInfo) == 0x000260, "Member 'UCinematic_TeamMics_C::MemberInfo' has a wrong offset!");
-static_assert(offsetof(UCinematic_TeamMics_C, ShowingHealth) == 0x0003F0, "Member 'UCinematic_TeamMics_C::ShowingHealth' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

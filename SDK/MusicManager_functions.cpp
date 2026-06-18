@@ -14,8 +14,7 @@
 #include "MusicManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MusicManager.MusicManager_C.ExecuteUbergraph_MusicManager
 // (HasDefaults)
@@ -158,5 +157,5 @@ void AMusicManager_C::ResetMusicBools()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ScoreMessageNumber_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ScoreMessageNumber.ScoreMessageNumber_C.ExecuteUbergraph_ScoreMessageNumber
 // ()
@@ -84,5 +83,5 @@ void UScoreMessageNumber_C::SetScore(int32 InScore)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

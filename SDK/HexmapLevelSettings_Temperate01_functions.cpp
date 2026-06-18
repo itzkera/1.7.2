@@ -14,8 +14,7 @@
 #include "HexmapLevelSettings_Temperate01_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.ExecuteUbergraph_HexmapLevelSettings_Temperate01
 // ()
@@ -70,5 +69,5 @@ void AHexmapLevelSettings_Temperate01_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

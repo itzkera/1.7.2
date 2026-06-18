@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BottomBarWidget.BottomBarWidget_C
 // 0x0020 (0x0258 - 0x0238)
@@ -29,18 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BottomBarWidget_C">();
+		BP_STATIC_CLASS_IMPL("BottomBarWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BottomBarWidget_C")
 	}
 	static class UBottomBarWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBottomBarWidget_C>();
 	}
 };
-static_assert(alignof(UBottomBarWidget_C) == 0x000008, "Wrong alignment on UBottomBarWidget_C");
-static_assert(sizeof(UBottomBarWidget_C) == 0x000258, "Wrong size on UBottomBarWidget_C");
-static_assert(offsetof(UBottomBarWidget_C, InputReflector) == 0x000238, "Member 'UBottomBarWidget_C::InputReflector' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, SafeZone_1) == 0x000240, "Member 'UBottomBarWidget_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, DefaultButtonMargin) == 0x000248, "Member 'UBottomBarWidget_C::DefaultButtonMargin' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

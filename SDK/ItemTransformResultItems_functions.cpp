@@ -14,8 +14,7 @@
 #include "ItemTransformResultItems_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformResultItems.ItemTransformResultItems_C.ExecuteUbergraph_ItemTransformResultItems
 // (HasDefaults)
@@ -61,7 +60,7 @@ void UItemTransformResultItems_C::PreConstruct(bool IsDesignTime)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Transform_Key                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortItem*>                SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   CurrentTier                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformResultItems_C::UpdateItems(class UFortItem* Transform_Key, TArray<class UFortItem*>& SacrificeItems, int32 CurrentTier)
@@ -86,10 +85,10 @@ void UItemTransformResultItems_C::UpdateItems(class UFortItem* Transform_Key, TA
 // Function ItemTransformResultItems.ItemTransformResultItems_C.CalculateRecycleXP
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// int32                                   TotalHeroXP                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TotalSchematicXP                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TotalWorkerXP                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UFortItem*>&               SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// int32*                                  TotalHeroXP                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  TotalSchematicXP                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  TotalWorkerXP                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformResultItems_C::CalculateRecycleXP(TArray<class UFortItem*>& SacrificeItems, int32* TotalHeroXP, int32* TotalSchematicXP, int32* TotalWorkerXP)
 {
@@ -138,5 +137,5 @@ void UItemTransformResultItems_C::UpdateMainReward(class UFortItem* Item, int32 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

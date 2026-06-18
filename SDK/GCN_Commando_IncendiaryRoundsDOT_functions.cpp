@@ -14,8 +14,7 @@
 #include "GCN_Commando_IncendiaryRoundsDOT_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C.ExecuteUbergraph_GCN_Commando_IncendiaryRoundsDOT
 // ()
@@ -64,5 +63,5 @@ void AGCN_Commando_IncendiaryRoundsDOT_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

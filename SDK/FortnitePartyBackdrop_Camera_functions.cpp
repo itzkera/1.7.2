@@ -14,8 +14,7 @@
 #include "FortnitePartyBackdrop_Camera_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.ExecuteUbergraph_FortnitePartyBackdrop_Camera
 // ()
@@ -78,5 +77,5 @@ void AFortnitePartyBackdrop_Camera_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TeamScoreRow.Results_TeamScoreRow_C
 // 0x00B0 (0x02E8 - 0x0238)
@@ -64,35 +63,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TeamScoreRow_C">();
+		BP_STATIC_CLASS_IMPL("Results_TeamScoreRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TeamScoreRow_C")
 	}
 	static class UResults_TeamScoreRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TeamScoreRow_C>();
 	}
 };
-static_assert(alignof(UResults_TeamScoreRow_C) == 0x000008, "Wrong alignment on UResults_TeamScoreRow_C");
-static_assert(sizeof(UResults_TeamScoreRow_C) == 0x0002E8, "Wrong size on UResults_TeamScoreRow_C");
-static_assert(offsetof(UResults_TeamScoreRow_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamScoreRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, Anim_SkipToFinalState) == 0x000240, "Member 'UResults_TeamScoreRow_C::Anim_SkipToFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, Anim_Absorb) == 0x000248, "Member 'UResults_TeamScoreRow_C::Anim_Absorb' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, Score1) == 0x000250, "Member 'UResults_TeamScoreRow_C::Score1' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, Score2) == 0x000258, "Member 'UResults_TeamScoreRow_C::Score2' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, Score3) == 0x000260, "Member 'UResults_TeamScoreRow_C::Score3' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, Score4) == 0x000268, "Member 'UResults_TeamScoreRow_C::Score4' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, TeamScore) == 0x000270, "Member 'UResults_TeamScoreRow_C::TeamScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, TextAfterScore1) == 0x000278, "Member 'UResults_TeamScoreRow_C::TextAfterScore1' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, TextAfterScore2) == 0x000280, "Member 'UResults_TeamScoreRow_C::TextAfterScore2' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, TextAfterScore3) == 0x000288, "Member 'UResults_TeamScoreRow_C::TextAfterScore3' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, TextAfterScore4) == 0x000290, "Member 'UResults_TeamScoreRow_C::TextAfterScore4' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, ScoreType) == 0x000298, "Member 'UResults_TeamScoreRow_C::ScoreType' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, ScoreBoxes) == 0x0002A0, "Member 'UResults_TeamScoreRow_C::ScoreBoxes' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, CountUpFinished) == 0x0002B0, "Member 'UResults_TeamScoreRow_C::CountUpFinished' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, PlayRate) == 0x0002C0, "Member 'UResults_TeamScoreRow_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, bSkippedToEnd) == 0x0002C4, "Member 'UResults_TeamScoreRow_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, bSkippingToEnd) == 0x0002C5, "Member 'UResults_TeamScoreRow_C::bSkippingToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, CountDownFinished) == 0x0002C8, "Member 'UResults_TeamScoreRow_C::CountDownFinished' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreRow_C, ResidualScoreTexts) == 0x0002D8, "Member 'UResults_TeamScoreRow_C::ResidualScoreTexts' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

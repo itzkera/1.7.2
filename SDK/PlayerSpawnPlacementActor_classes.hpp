@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerSpawnPlacementActor.PlayerSpawnPlacementActor_C
 // 0x0008 (0x0748 - 0x0740)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSpawnPlacementActor_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSpawnPlacementActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSpawnPlacementActor_C")
 	}
 	static class APlayerSpawnPlacementActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerSpawnPlacementActor_C>();
 	}
 };
-static_assert(alignof(APlayerSpawnPlacementActor_C) == 0x000008, "Wrong alignment on APlayerSpawnPlacementActor_C");
-static_assert(sizeof(APlayerSpawnPlacementActor_C) == 0x000748, "Wrong size on APlayerSpawnPlacementActor_C");
-static_assert(offsetof(APlayerSpawnPlacementActor_C, Arrow) == 0x000740, "Member 'APlayerSpawnPlacementActor_C::Arrow' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

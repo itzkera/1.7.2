@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass UIManager.UIManager_C
 // 0x00B8 (0x04B8 - 0x0400)
@@ -93,37 +92,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIManager_C">();
+		BP_STATIC_CLASS_IMPL("UIManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIManager_C")
 	}
 	static class UUIManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIManager_C>();
 	}
 };
-static_assert(alignof(UUIManager_C) == 0x000008, "Wrong alignment on UUIManager_C");
-static_assert(sizeof(UUIManager_C) == 0x0004B8, "Wrong size on UUIManager_C");
-static_assert(offsetof(UUIManager_C, UberGraphFrame) == 0x000400, "Member 'UUIManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Confirmation_Layer) == 0x000408, "Member 'UUIManager_C::Confirmation_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ControllerDisconnectedLayer) == 0x000410, "Member 'UUIManager_C::ControllerDisconnectedLayer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Error_Layer) == 0x000418, "Member 'UUIManager_C::Error_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, GlobalInvalidationBox) == 0x000420, "Member 'UUIManager_C::GlobalInvalidationBox' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Modal_Layer) == 0x000428, "Member 'UUIManager_C::Modal_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, QuestTalkingHeadWidget) == 0x000430, "Member 'UUIManager_C::QuestTalkingHeadWidget' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, State_Content_Layer) == 0x000438, "Member 'UUIManager_C::State_Content_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, TalkingHeadLayer) == 0x000440, "Member 'UUIManager_C::TalkingHeadLayer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ToastDisplayArea) == 0x000448, "Member 'UUIManager_C::ToastDisplayArea' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ToastDisplayLayer) == 0x000450, "Member 'UUIManager_C::ToastDisplayLayer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, Tutorial_Layer) == 0x000458, "Member 'UUIManager_C::Tutorial_Layer' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, TutorialOverlay) == 0x000460, "Member 'UUIManager_C::TutorialOverlay' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, CurrentModalWidget) == 0x000468, "Member 'UUIManager_C::CurrentModalWidget' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ModalQueue) == 0x000470, "Member 'UUIManager_C::ModalQueue' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ConfirmationQueue) == 0x000480, "Member 'UUIManager_C::ConfirmationQueue' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ConfirmationWindow) == 0x000490, "Member 'UUIManager_C::ConfirmationWindow' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ErrorWindow) == 0x000498, "Member 'UUIManager_C::ErrorWindow' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, WebPurchaseWindow) == 0x0004A0, "Member 'UUIManager_C::WebPurchaseWindow' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, ControllerDisconnectedModal) == 0x0004A8, "Member 'UUIManager_C::ControllerDisconnectedModal' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, bClosingConfirmation) == 0x0004B0, "Member 'UUIManager_C::bClosingConfirmation' has a wrong offset!");
-static_assert(offsetof(UUIManager_C, bClosingErrorDialog) == 0x0004B1, "Member 'UUIManager_C::bClosingErrorDialog' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

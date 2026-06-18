@@ -14,8 +14,7 @@
 #include "GAT_GenericTriggeredAbility_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAT_GenericTriggeredAbility.GAT_GenericTriggeredAbility_C.ExecuteUbergraph_GAT_GenericTriggeredAbility
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGAT_GenericTriggeredAbility_C::ExecuteUbergraph_GAT_GenericTriggeredAbilit
 // Function GAT_GenericTriggeredAbility.GAT_GenericTriggeredAbility_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData_0                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData_0                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGAT_GenericTriggeredAbility_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
@@ -56,5 +55,5 @@ void UGAT_GenericTriggeredAbility_C::K2_ActivateAbilityFromEvent(const struct FG
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

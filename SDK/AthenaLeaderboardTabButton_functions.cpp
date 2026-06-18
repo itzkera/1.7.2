@@ -14,8 +14,7 @@
 #include "AthenaLeaderboardTabButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ExecuteUbergraph_AthenaLeaderboardTabButton
 // (HasDefaults)
@@ -110,7 +109,7 @@ void UAthenaLeaderboardTabButton_C::OnSelected()
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.SetTabLabelInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortTabButtonLabelInfo          TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTabButtonLabelInfo&   TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaLeaderboardTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
@@ -164,7 +163,7 @@ void UAthenaLeaderboardTabButton_C::PreConstruct(bool IsDesignTime)
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ButtonText_0                                           (Parm)
+// const class FText&                      ButtonText_0                                           (Parm)
 
 void UAthenaLeaderboardTabButton_C::Set_Text(const class FText& ButtonText_0)
 {
@@ -184,7 +183,7 @@ void UAthenaLeaderboardTabButton_C::Set_Text(const class FText& ButtonText_0)
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush_0                                            (Parm)
+// const struct FSlateBrush&               IconBrush_0                                            (Parm)
 
 void UAthenaLeaderboardTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
@@ -214,5 +213,5 @@ void UAthenaLeaderboardTabButton_C::ShowText()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

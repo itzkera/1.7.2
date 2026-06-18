@@ -14,8 +14,7 @@
 #include "PickupMessageItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PickupMessageItem.PickupMessageItem_C.ExecuteUbergraph_PickupMessageItem
 // ()
@@ -118,5 +117,5 @@ void UPickupMessageItem_C::Setup(class UFortItem* Picked_Up_Item_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

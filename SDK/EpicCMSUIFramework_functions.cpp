@@ -14,8 +14,7 @@
 #include "EpicCMSUIFramework_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function EpicCMSUIFramework.EpicCMSTileBase.DynamicHandleIconLoadingStateChanged
 // (Final, Native, Private)
@@ -33,7 +32,12 @@ void UEpicCMSTileBase::DynamicHandleIconLoadingStateChanged(bool bIsLoading)
 
 	Parms.bIsLoading = bIsLoading;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -47,7 +51,12 @@ void UEpicCMSTileBase::Launch()
 	if (Func == nullptr)
 		Func = Class->GetFunction("EpicCMSTileBase", "Launch");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -67,7 +76,12 @@ void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 
 	Parms.TileWidget = TileWidget;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -101,7 +115,12 @@ void UEpicCMSTileCarousel::NextPage()
 	if (Func == nullptr)
 		Func = Class->GetFunction("EpicCMSTileCarousel", "NextPage");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -115,14 +134,19 @@ void UEpicCMSTileCarousel::PreviousPage()
 	if (Func == nullptr)
 		Func = Class->GetFunction("EpicCMSTileCarousel", "PreviousPage");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function EpicCMSUIFramework.EpicCMSTileCarousel.SetCurrentPageByIndex
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:
-// int32                                   PageIndex                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             PageIndex                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UEpicCMSTileCarousel::SetCurrentPageByIndex(const int32 PageIndex)
 {
@@ -135,7 +159,12 @@ void UEpicCMSTileCarousel::SetCurrentPageByIndex(const int32 PageIndex)
 
 	Parms.PageIndex = PageIndex;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -153,10 +182,15 @@ int32 UEpicCMSTileCarousel::GetCurrentPageIndex() const
 
 	Params::EpicCMSTileCarousel_GetCurrentPageIndex Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

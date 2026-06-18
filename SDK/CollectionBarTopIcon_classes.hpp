@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBarTopIcon.CollectionBarTopIcon_C
 // 0x00A0 (0x02D8 - 0x0238)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBarTopIcon_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBarTopIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBarTopIcon_C")
 	}
 	static class UCollectionBarTopIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBarTopIcon_C>();
 	}
 };
-static_assert(alignof(UCollectionBarTopIcon_C) == 0x000008, "Wrong alignment on UCollectionBarTopIcon_C");
-static_assert(sizeof(UCollectionBarTopIcon_C) == 0x0002D8, "Wrong size on UCollectionBarTopIcon_C");
-static_assert(offsetof(UCollectionBarTopIcon_C, UberGraphFrame) == 0x000238, "Member 'UCollectionBarTopIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBarTopIcon_C, Icon) == 0x000240, "Member 'UCollectionBarTopIcon_C::Icon' has a wrong offset!");
-static_assert(offsetof(UCollectionBarTopIcon_C, IconBrush) == 0x000248, "Member 'UCollectionBarTopIcon_C::IconBrush' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

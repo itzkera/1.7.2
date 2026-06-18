@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GCN_RiftZapPlayer.GCN_RiftZapPlayer_C.OnExecute
 // 0x0150 (0x0150 - 0x0000)
@@ -38,21 +38,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_RiftZapPlayer_C_OnExecute) == 0x000010, "Wrong alignment on GCN_RiftZapPlayer_C_OnExecute");
-static_assert(sizeof(GCN_RiftZapPlayer_C_OnExecute) == 0x000150, "Wrong size on GCN_RiftZapPlayer_C_OnExecute");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, MyTarget) == 0x000000, "Member 'GCN_RiftZapPlayer_C_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, Parameters) == 0x000008, "Member 'GCN_RiftZapPlayer_C_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, ReturnValue) == 0x0000C0, "Member 'GCN_RiftZapPlayer_C_OnExecute::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_MakeTransform_ReturnValue) == 0x0000D0, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000100, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_EffectContextGetEffectCauser_ReturnValue) == 0x000108, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_EffectContextGetEffectCauser_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_FinishSpawningActor_ReturnValue) == 0x000110, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000118, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_Add_VectorVector_ReturnValue) == 0x000124, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_OnExecute_ReturnValue) == 0x000130, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_OnExecute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, K2Node_DynamicCast_AsPlayer_Pawn_Generic) == 0x000138, "Member 'GCN_RiftZapPlayer_C_OnExecute::K2Node_DynamicCast_AsPlayer_Pawn_Generic' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, K2Node_DynamicCast_bSuccess) == 0x000140, "Member 'GCN_RiftZapPlayer_C_OnExecute::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_RiftZapPlayer_C_OnExecute, CallFunc_IsValid_ReturnValue) == 0x000141, "Member 'GCN_RiftZapPlayer_C_OnExecute::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

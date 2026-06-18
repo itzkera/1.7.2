@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RejoinWindow.RejoinWindow_C
 // 0x0070 (0x0460 - 0x03F0)
@@ -47,25 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RejoinWindow_C">();
+		BP_STATIC_CLASS_IMPL("RejoinWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RejoinWindow_C")
 	}
 	static class URejoinWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URejoinWindow_C>();
 	}
 };
-static_assert(alignof(URejoinWindow_C) == 0x000008, "Wrong alignment on URejoinWindow_C");
-static_assert(sizeof(URejoinWindow_C) == 0x000460, "Wrong size on URejoinWindow_C");
-static_assert(offsetof(URejoinWindow_C, UberGraphFrame) == 0x0003F0, "Member 'URejoinWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, AutorejoinText) == 0x0003F8, "Member 'URejoinWindow_C::AutorejoinText' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, ButtonBox) == 0x000400, "Member 'URejoinWindow_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, Description) == 0x000408, "Member 'URejoinWindow_C::Description' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, Title) == 0x000410, "Member 'URejoinWindow_C::Title' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, OnRequestAbandon) == 0x000418, "Member 'URejoinWindow_C::OnRequestAbandon' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, OnRequestRejoinRetry) == 0x000428, "Member 'URejoinWindow_C::OnRequestRejoinRetry' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, Buttons) == 0x000438, "Member 'URejoinWindow_C::Buttons' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, ButtonPadding) == 0x000448, "Member 'URejoinWindow_C::ButtonPadding' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, InitialScreen) == 0x000458, "Member 'URejoinWindow_C::InitialScreen' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

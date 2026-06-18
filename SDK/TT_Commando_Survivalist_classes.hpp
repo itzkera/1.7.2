@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TT_Commando_Survivalist.TT_Commando_Survivalist_C
 // 0x0000 (0x0118 - 0x0118)
@@ -29,15 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TT_Commando_Survivalist_C">();
+		BP_STATIC_CLASS_IMPL("TT_Commando_Survivalist_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TT_Commando_Survivalist_C")
 	}
 	static class UTT_Commando_Survivalist_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTT_Commando_Survivalist_C>();
 	}
 };
-static_assert(alignof(UTT_Commando_Survivalist_C) == 0x000008, "Wrong alignment on UTT_Commando_Survivalist_C");
-static_assert(sizeof(UTT_Commando_Survivalist_C) == 0x000118, "Wrong size on UTT_Commando_Survivalist_C");
 
-}
-
+SDK_NAMESPACE_END

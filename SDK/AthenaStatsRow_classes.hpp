@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaStatsRow.AthenaStatsRow_C
 // 0x0040 (0x0278 - 0x0238)
@@ -36,20 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStatsRow_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStatsRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStatsRow_C")
 	}
 	static class UAthenaStatsRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStatsRow_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsRow_C) == 0x000008, "Wrong alignment on UAthenaStatsRow_C");
-static_assert(sizeof(UAthenaStatsRow_C) == 0x000278, "Wrong size on UAthenaStatsRow_C");
-static_assert(offsetof(UAthenaStatsRow_C, UberGraphFrame) == 0x000238, "Member 'UAthenaStatsRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, Name_0) == 0x000240, "Member 'UAthenaStatsRow_C::Name_0' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, Value) == 0x000248, "Member 'UAthenaStatsRow_C::Value' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, StatName) == 0x000250, "Member 'UAthenaStatsRow_C::StatName' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRow_C, BaseGameplayTag) == 0x000268, "Member 'UAthenaStatsRow_C::BaseGameplayTag' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

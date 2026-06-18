@@ -14,8 +14,7 @@
 #include "StatsListWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StatsListWidget.StatsListWidget_C.ExecuteUbergraph_StatsListWidget
 // ()
@@ -134,5 +133,5 @@ void UStatsListWidget_C::AdjustClampCount(class UFortAttributeListItem_NUI* Widg
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

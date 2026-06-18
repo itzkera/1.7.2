@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PickupManager.PickupManager_C
 // 0x0078 (0x02D8 - 0x0260)
@@ -55,31 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PickupManager_C">();
+		BP_STATIC_CLASS_IMPL("PickupManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PickupManager_C")
 	}
 	static class UPickupManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPickupManager_C>();
 	}
 };
-static_assert(alignof(UPickupManager_C) == 0x000008, "Wrong alignment on UPickupManager_C");
-static_assert(sizeof(UPickupManager_C) == 0x0002D8, "Wrong size on UPickupManager_C");
-static_assert(offsetof(UPickupManager_C, UberGraphFrame) == 0x000260, "Member 'UPickupManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Pack_Resource__Metal) == 0x000268, "Member 'UPickupManager_C::_Pack_Resource__Metal' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Pack_Resource__Stone) == 0x000270, "Member 'UPickupManager_C::_Pack_Resource__Stone' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Pack_Resource__Wood) == 0x000278, "Member 'UPickupManager_C::_Pack_Resource__Wood' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, _Vertical_Box__Pickup_Message_Stream) == 0x000280, "Member 'UPickupManager_C::_Vertical_Box__Pickup_Message_Stream' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, BackpackImage) == 0x000288, "Member 'UPickupManager_C::BackpackImage' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, BluGloInventory) == 0x000290, "Member 'UPickupManager_C::BluGloInventory' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, CommonBorderSurvivorCount) == 0x000298, "Member 'UPickupManager_C::CommonBorderSurvivorCount' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, Image_Divider) == 0x0002A0, "Member 'UPickupManager_C::Image_Divider' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, KeybindInventory) == 0x0002A8, "Member 'UPickupManager_C::KeybindInventory' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, SurvivorRescuedCounter) == 0x0002B0, "Member 'UPickupManager_C::SurvivorRescuedCounter' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, TextInventoryCount) == 0x0002B8, "Member 'UPickupManager_C::TextInventoryCount' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, TextInventoryMax) == 0x0002C0, "Member 'UPickupManager_C::TextInventoryMax' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, MessageManager) == 0x0002C8, "Member 'UPickupManager_C::MessageManager' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, Max_Displayed_Items) == 0x0002D0, "Member 'UPickupManager_C::Max_Displayed_Items' has a wrong offset!");
-static_assert(offsetof(UPickupManager_C, LastUpdateTime) == 0x0002D4, "Member 'UPickupManager_C::LastUpdateTime' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCraftingIngredientListEntryHaveNeedVerbose.ItemCraftingIngredientListEntryHaveNeedVerbose_C
 // 0x0048 (0x02A8 - 0x0260)
@@ -44,24 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCraftingIngredientListEntryHaveNeedVerbose_C">();
+		BP_STATIC_CLASS_IMPL("ItemCraftingIngredientListEntryHaveNeedVerbose_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCraftingIngredientListEntryHaveNeedVerbose_C")
 	}
 	static class UItemCraftingIngredientListEntryHaveNeedVerbose_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCraftingIngredientListEntryHaveNeedVerbose_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientListEntryHaveNeedVerbose_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientListEntryHaveNeedVerbose_C");
-static_assert(sizeof(UItemCraftingIngredientListEntryHaveNeedVerbose_C) == 0x0002A8, "Wrong size on UItemCraftingIngredientListEntryHaveNeedVerbose_C");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, UberGraphFrame) == 0x000260, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, ItemCountHave) == 0x000268, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::ItemCountHave' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, ItemCountNeed) == 0x000270, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::ItemCountNeed' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, ItemIcon) == 0x000278, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, ItemName) == 0x000280, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::ItemName' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, TextDescription) == 0x000288, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, TextSlash) == 0x000290, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::TextSlash' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, bOverrideTextStyle) == 0x000298, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::bOverrideTextStyle' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeedVerbose_C, TextStyle) == 0x0002A0, "Member 'UItemCraftingIngredientListEntryHaveNeedVerbose_C::TextStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

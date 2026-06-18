@@ -14,8 +14,7 @@
 #include "OutpostScreenCanEditRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.ExecuteUbergraph_OutpostScreenCanEditRow
 // ()
@@ -92,5 +91,5 @@ void UOutpostScreenCanEditRow_C::CenterWidget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "PerkWidgetNew_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PerkWidgetNew.PerkWidgetNew_C.ExecuteUbergraph_PerkWidgetNew
 // (HasDefaults)
@@ -102,7 +101,7 @@ void UPerkWidgetNew_C::InitializeAbilityPerk()
 // Function PerkWidgetNew.PerkWidgetNew_C.GetTierAbilityBrush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FSlateBrush                      SlateBrush                                             (Parm, OutParm)
+// struct FSlateBrush*                     SlateBrush                                             (Parm, OutParm)
 
 void UPerkWidgetNew_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 {
@@ -123,7 +122,7 @@ void UPerkWidgetNew_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 // Function PerkWidgetNew.PerkWidgetNew_C.GetHighlightColor
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPerkWidgetNew_C::GetHighlightColor(struct FLinearColor* Color)
 {
@@ -144,7 +143,7 @@ void UPerkWidgetNew_C::GetHighlightColor(struct FLinearColor* Color)
 // Function PerkWidgetNew.PerkWidgetNew_C.ShouldFadePerk
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPerkWidgetNew_C::ShouldFadePerk(bool* Result)
 {
@@ -221,7 +220,7 @@ void UPerkWidgetNew_C::ShowTierImage()
 // Function PerkWidgetNew.PerkWidgetNew_C.GetPerkStat
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FTooltipStat                     TooltipStat                                            (Parm, OutParm, HasGetValueTypeHash)
+// struct FTooltipStat*                    TooltipStat                                            (Parm, OutParm, HasGetValueTypeHash)
 
 void UPerkWidgetNew_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 {
@@ -260,7 +259,7 @@ void UPerkWidgetNew_C::HighlightBadge()
 // bool                                    bIncludeDescription_0                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortBrushSize                          IconSize_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bUseLargeFormatName_0                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortUIPerk                      Perk_0                                                 (Parm)
+// const struct FFortUIPerk&               Perk_0                                                 (Parm)
 // bool                                    ShowMouseTooltips                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPerkWidgetNew_C::InitializeSettings(bool bIncludeName_0, bool bIncludeDescription_0, EFortBrushSize IconSize_0, bool bUseLargeFormatName_0, const struct FFortUIPerk& Perk_0, bool ShowMouseTooltips)
@@ -302,5 +301,5 @@ class UWidget* UPerkWidgetNew_C::Get_OverlayAbilityPerk_ToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

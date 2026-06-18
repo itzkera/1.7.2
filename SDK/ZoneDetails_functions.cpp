@@ -14,8 +14,7 @@
 #include "ZoneDetails_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ZoneDetails.ZoneDetails_C.ExecuteUbergraph_ZoneDetails
 // ()
@@ -64,5 +63,5 @@ void UZoneDetails_C::Update()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

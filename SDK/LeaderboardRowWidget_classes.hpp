@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LeaderboardRowWidget.LeaderboardRowWidget_C
 // 0x0038 (0x08E8 - 0x08B0)
@@ -39,22 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaderboardRowWidget_C">();
+		BP_STATIC_CLASS_IMPL("LeaderboardRowWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaderboardRowWidget_C")
 	}
 	static class ULeaderboardRowWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaderboardRowWidget_C>();
 	}
 };
-static_assert(alignof(ULeaderboardRowWidget_C) == 0x000008, "Wrong alignment on ULeaderboardRowWidget_C");
-static_assert(sizeof(ULeaderboardRowWidget_C) == 0x0008E8, "Wrong size on ULeaderboardRowWidget_C");
-static_assert(offsetof(ULeaderboardRowWidget_C, UberGraphFrame) == 0x0008B0, "Member 'ULeaderboardRowWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, Image_4) == 0x0008B8, "Member 'ULeaderboardRowWidget_C::Image_4' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, QuestIconOverlay) == 0x0008C0, "Member 'ULeaderboardRowWidget_C::QuestIconOverlay' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, QuestTreeIcon) == 0x0008C8, "Member 'ULeaderboardRowWidget_C::QuestTreeIcon' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, Rank) == 0x0008D0, "Member 'ULeaderboardRowWidget_C::Rank' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, StatValue) == 0x0008D8, "Member 'ULeaderboardRowWidget_C::StatValue' has a wrong offset!");
-static_assert(offsetof(ULeaderboardRowWidget_C, User) == 0x0008E0, "Member 'ULeaderboardRowWidget_C::User' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct Struct_SurvivorScriptedAbilities.Struct_SurvivorScriptedAbilities
 // 0x0048 (0x0048 - 0x0000)
@@ -32,17 +31,5 @@ public:
 	struct FGameplayTag                           NPC_Ability_NonAttack_RescueStart_28_F37EAFF4488E12ABFE11299818466044; // 0x0038(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           NPC_Ability_NonAttack_RescueFinish_29_7B19BD2348AA524234D34493C53321F3; // 0x0040(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FStruct_SurvivorScriptedAbilities) == 0x000008, "Wrong alignment on FStruct_SurvivorScriptedAbilities");
-static_assert(sizeof(FStruct_SurvivorScriptedAbilities) == 0x000048, "Wrong size on FStruct_SurvivorScriptedAbilities");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, SurvivorHelpReminderDuration_14_F54DDCC9447A56E42EEA23B2F26A82BF) == 0x000000, "Member 'FStruct_SurvivorScriptedAbilities::SurvivorHelpReminderDuration_14_F54DDCC9447A56E42EEA23B2F26A82BF' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_CowerIndefiniteTrue_6_F917B44A44D629C4351341967FEDCE08) == 0x000008, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_CowerIndefiniteTrue_6_F917B44A44D629C4351341967FEDCE08' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_CowerIndefiniteFalse_7_E6F8C1C646C79DEF76809E829DCA289D) == 0x000010, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_CowerIndefiniteFalse_7_E6F8C1C646C79DEF76809E829DCA289D' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_RescueTrue_9_6F9D8205427713C6B3C45D889DF83BE4) == 0x000018, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_RescueTrue_9_6F9D8205427713C6B3C45D889DF83BE4' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_RescueFalse_11_B549D5AB4CBCBCA2155C3FAA098A58D0) == 0x000020, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_RescueFalse_11_B549D5AB4CBCBCA2155C3FAA098A58D0' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_LockInPlaceTrue_18_1FA6565D4BC9F11CB51AC584EFDE6999) == 0x000028, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_LockInPlaceTrue_18_1FA6565D4BC9F11CB51AC584EFDE6999' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_LockInPlaceFalse_20_B578575C4157F18CAD94EEBB4BA45E71) == 0x000030, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_LockInPlaceFalse_20_B578575C4157F18CAD94EEBB4BA45E71' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_RescueStart_28_F37EAFF4488E12ABFE11299818466044) == 0x000038, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_RescueStart_28_F37EAFF4488E12ABFE11299818466044' has a wrong offset!");
-static_assert(offsetof(FStruct_SurvivorScriptedAbilities, NPC_Ability_NonAttack_RescueFinish_29_7B19BD2348AA524234D34493C53321F3) == 0x000040, "Member 'FStruct_SurvivorScriptedAbilities::NPC_Ability_NonAttack_RescueFinish_29_7B19BD2348AA524234D34493C53321F3' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

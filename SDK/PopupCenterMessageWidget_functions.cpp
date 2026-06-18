@@ -14,8 +14,7 @@
 #include "PopupCenterMessageWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PopupCenterMessageWidget.PopupCenterMessageWidget_C.ExecuteUbergraph_PopupCenterMessageWidget
 // (HasDefaults)
@@ -100,5 +99,5 @@ void UPopupCenterMessageWidget_C::OnModalDisplayed(ECenterPopupMessageStateEnum 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

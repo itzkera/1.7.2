@@ -14,8 +14,7 @@
 #include "ItemUIFunctionLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Add Alteration Widgets
 // (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -48,9 +47,9 @@ void UItemUIFunctionLibrary_C::Add_Alteration_Widgets(class UVerticalBox* Host_W
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.ParseLevelRequiredFromString
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    inString                                               (Parm, ZeroConstructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   outInt                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  outInt                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString& inString, class UObject* __WorldContext, int32* outInt)
 {
@@ -76,7 +75,7 @@ void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString&
 // Parameters:
 // EFortItemTier                           Tier                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Numeric_Tier                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Numeric_Tier                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* __WorldContext, int32* Numeric_Tier)
 {
@@ -104,7 +103,7 @@ void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class
 // int32                                   Min_Fractional_Digits                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Max_Fractional_Digits                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Formatted_Value                                        (Parm, OutParm)
+// class FText*                            Formatted_Value                                        (Parm, OutParm)
 
 void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* __WorldContext, class FText* Formatted_Value)
 {
@@ -126,5 +125,5 @@ void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fra
 		*Formatted_Value = std::move(Parms.Formatted_Value);
 }
 
-}
 
+SDK_NAMESPACE_END

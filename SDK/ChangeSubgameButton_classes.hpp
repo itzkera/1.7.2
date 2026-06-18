@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ChangeSubgameButton.ChangeSubgameButton_C
 // 0x0038 (0x0270 - 0x0238)
@@ -43,21 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChangeSubgameButton_C">();
+		BP_STATIC_CLASS_IMPL("ChangeSubgameButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChangeSubgameButton_C")
 	}
 	static class UChangeSubgameButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChangeSubgameButton_C>();
 	}
 };
-static_assert(alignof(UChangeSubgameButton_C) == 0x000008, "Wrong alignment on UChangeSubgameButton_C");
-static_assert(sizeof(UChangeSubgameButton_C) == 0x000270, "Wrong size on UChangeSubgameButton_C");
-static_assert(offsetof(UChangeSubgameButton_C, UberGraphFrame) == 0x000238, "Member 'UChangeSubgameButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, ChangeSubgame) == 0x000240, "Member 'UChangeSubgameButton_C::ChangeSubgame' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, SizeBoxContainer) == 0x000248, "Member 'UChangeSubgameButton_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, OnClicked) == 0x000250, "Member 'UChangeSubgameButton_C::OnClicked' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, ButtonStyle) == 0x000260, "Member 'UChangeSubgameButton_C::ButtonStyle' has a wrong offset!");
-static_assert(offsetof(UChangeSubgameButton_C, BrushSize) == 0x000268, "Member 'UChangeSubgameButton_C::BrushSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

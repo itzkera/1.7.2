@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_SimpleItemWidget.BP_SimpleItemWidget_C
 // 0x00B0 (0x02E8 - 0x0238)
@@ -37,20 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SimpleItemWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_SimpleItemWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SimpleItemWidget_C")
 	}
 	static class UBP_SimpleItemWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_SimpleItemWidget_C>();
 	}
 };
-static_assert(alignof(UBP_SimpleItemWidget_C) == 0x000008, "Wrong alignment on UBP_SimpleItemWidget_C");
-static_assert(sizeof(UBP_SimpleItemWidget_C) == 0x0002E8, "Wrong size on UBP_SimpleItemWidget_C");
-static_assert(offsetof(UBP_SimpleItemWidget_C, UberGraphFrame) == 0x000238, "Member 'UBP_SimpleItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_SimpleItemWidget_C, IconImage) == 0x000240, "Member 'UBP_SimpleItemWidget_C::IconImage' has a wrong offset!");
-static_assert(offsetof(UBP_SimpleItemWidget_C, QuantityText) == 0x000248, "Member 'UBP_SimpleItemWidget_C::QuantityText' has a wrong offset!");
-static_assert(offsetof(UBP_SimpleItemWidget_C, IconBrush) == 0x000250, "Member 'UBP_SimpleItemWidget_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UBP_SimpleItemWidget_C, Quantity) == 0x0002E0, "Member 'UBP_SimpleItemWidget_C::Quantity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PBWA_W1_HalfWallHalf.PBWA_W1_HalfWallHalf_C
 // 0x0000 (0x10B0 - 0x10B0)
@@ -23,15 +22,16 @@ class APBWA_W1_HalfWallHalf_C final : public ABuildingWall
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_W1_HalfWallHalf_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_W1_HalfWallHalf_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_W1_HalfWallHalf_C")
 	}
 	static class APBWA_W1_HalfWallHalf_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_W1_HalfWallHalf_C>();
 	}
 };
-static_assert(alignof(APBWA_W1_HalfWallHalf_C) == 0x000010, "Wrong alignment on APBWA_W1_HalfWallHalf_C");
-static_assert(sizeof(APBWA_W1_HalfWallHalf_C) == 0x0010B0, "Wrong size on APBWA_W1_HalfWallHalf_C");
 
-}
-
+SDK_NAMESPACE_END

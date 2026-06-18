@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct CollectionBounds.CollectionBounds
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +21,5 @@ public:
 	int32                                         StartCount_3_6BA036EA4F6D898676C2FD8E83726603;     // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         EndCount_5_5FA50D94491037463605EE943B1928A0;       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FCollectionBounds) == 0x000004, "Wrong alignment on FCollectionBounds");
-static_assert(sizeof(FCollectionBounds) == 0x000008, "Wrong size on FCollectionBounds");
-static_assert(offsetof(FCollectionBounds, StartCount_3_6BA036EA4F6D898676C2FD8E83726603) == 0x000000, "Member 'FCollectionBounds::StartCount_3_6BA036EA4F6D898676C2FD8E83726603' has a wrong offset!");
-static_assert(offsetof(FCollectionBounds, EndCount_5_5FA50D94491037463605EE943B1928A0) == 0x000004, "Member 'FCollectionBounds::EndCount_5_5FA50D94491037463605EE943B1928A0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

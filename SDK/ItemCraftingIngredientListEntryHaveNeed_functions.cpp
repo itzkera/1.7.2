@@ -14,8 +14,7 @@
 #include "ItemCraftingIngredientListEntryHaveNeed_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed
 // ()
@@ -40,7 +39,7 @@ void UItemCraftingIngredientListEntryHaveNeed_C::ExecuteUbergraph_ItemCraftingIn
 // Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.HandleDifferentItemOrQuantitySetBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemCraftingIngredientListEntryHaveNeed_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset)
 {
@@ -124,5 +123,5 @@ class UWidget* UItemCraftingIngredientListEntryHaveNeed_C::GetToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

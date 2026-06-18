@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires
 // 0x00D8 (0x00D8 - 0x0000)
@@ -39,7 +39,7 @@ public:
 	TArray<class FText>                           K2Node_CustomEvent_Names;                          // 0x0048(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TDelegate<void(float Seconds)>                K2Node_CreateDelegate_OutputDelegate2;             // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(TArray<class FText>& Names)>   K2Node_CreateDelegate_OutputDelegate4;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class FText>& Names)> K2Node_CreateDelegate_OutputDelegate4;         // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimespan                              CallFunc_Subtract_TimespanTimespan_ReturnValue;    // 0x0088(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTotalSeconds_ReturnValue;              // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -57,35 +57,6 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue2;         // 0x00C8(0x0008)(NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires) == 0x0000D8, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, EntryPoint) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Array_Length_ReturnValue) == 0x000008, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_MakeTimespan_ReturnValue) == 0x000010, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_MakeTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CustomEvent_Seconds) == 0x000018, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CustomEvent_Seconds' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_FromSeconds_ReturnValue) == 0x000020, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000040, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CustomEvent_Names) == 0x000048, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CustomEvent_Names' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate2) == 0x000058, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate3) == 0x000068, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate4) == 0x000078, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Subtract_TimespanTimespan_ReturnValue) == 0x000088, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Subtract_TimespanTimespan_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GetTotalSeconds_ReturnValue) == 0x000090, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000094, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_BooleanAND_ReturnValue) == 0x000095, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate5) == 0x000098, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Array_Length_ReturnValue2) == 0x0000A8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000AC, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x0000AD, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_GetBroadcasterGrantWindowSecondsRemaining_ReturnValue) == 0x0000B0, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_GetBroadcasterGrantWindowSecondsRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000B4, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, K2Node_CreateDelegate_OutputDelegate6) == 0x0000B8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_K2_SetTimerDelegate_ReturnValue2) == 0x0000C8, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_K2_SetTimerDelegate_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'BP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnLiveStreamingQuestWindowSelectedViewers_Event_0
 // 0x0010 (0x0010 - 0x0000)
@@ -94,9 +65,6 @@ struct BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedV
 public:
 	TArray<class FText>                           Names;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_0) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_0");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_0) == 0x000010, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_0");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_0, Names) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_0::Names' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnLiveStreamingQuestWindowStarts_Event_0
 // 0x0004 (0x0004 - 0x0000)
@@ -105,9 +73,6 @@ struct BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Ev
 public:
 	float                                         Seconds;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_0) == 0x000004, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_0");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_0) == 0x000004, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_0");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_0, Seconds) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_0::Seconds' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +81,6 @@ struct BP_FortLiveStreamGrantWindowExpires_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_PreConstruct) == 0x000001, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_PreConstruct");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_PreConstruct) == 0x000001, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_PreConstruct");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Set Stream Brush
 // 0x0090 (0x0090 - 0x0000)
@@ -127,9 +89,6 @@ struct BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush final
 public:
 	struct FSlateBrush                            InBrush;                                           // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush) == 0x000090, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush, InBrush) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush::InBrush' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Update Expiration Text
 // 0x0040 (0x0040 - 0x0000)
@@ -148,16 +107,6 @@ public:
 	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetTimespanAsText_ReturnValue;            // 0x0028(0x0018)()
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text) == 0x000040, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, Timespan) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::Timespan' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_GetTotalSeconds_ReturnValue) == 0x00000C, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_Less_FloatFloat_ReturnValue) == 0x000010, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_GetTotalSeconds_ReturnValue2) == 0x000014, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_GetTotalSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_FMax_ReturnValue) == 0x000018, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_FromSeconds_ReturnValue) == 0x000020, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text, CallFunc_GetTimespanAsText_ReturnValue) == 0x000028, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text::CallFunc_GetTimespanAsText_ReturnValue' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Update Name Text
 // 0x0020 (0x0020 - 0x0000)
@@ -168,10 +117,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x0008(0x0018)()
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text) == 0x000020, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text, CallFunc_Add_IntInt_ReturnValue) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text, CallFunc_Array_Get_Item) == 0x000008, "Member 'BP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.GetToolTipWidget_0
 // 0x0058 (0x0058 - 0x0000)
@@ -187,15 +132,6 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue2;             // 0x0038(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0) == 0x000008, "Wrong alignment on BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0");
-static_assert(sizeof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0) == 0x000058, "Wrong size on BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, ReturnValue) == 0x000000, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, CallFunc_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, CallFunc_MakeLiteralText_ReturnValue) == 0x000020, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, CallFunc_MakeLiteralText_ReturnValue2) == 0x000038, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0, CallFunc_Create_Basic_Tooltip_Output) == 0x000050, "Member 'BP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_0::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

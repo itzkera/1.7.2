@@ -13,8 +13,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct FortUITheme.FortUITheme
 // 0x0060 (0x0060 - 0x0000)
@@ -28,14 +27,5 @@ public:
 	struct FLinearColor                           Dark_14_B49822CC48FC28E72DFACCA1F36B2C18;          // 0x0040(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Ultra_17_D9B7B92B475B19E3C7733C85FA62631C;         // 0x0050(0x0010)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FFortUITheme) == 0x000004, "Wrong alignment on FFortUITheme");
-static_assert(sizeof(FFortUITheme) == 0x000060, "Wrong size on FFortUITheme");
-static_assert(offsetof(FFortUITheme, Light_2_BAF9E4AF40C0A5C1B86A439B79B3A1E4) == 0x000000, "Member 'FFortUITheme::Light_2_BAF9E4AF40C0A5C1B86A439B79B3A1E4' has a wrong offset!");
-static_assert(offsetof(FFortUITheme, Faded_5_2FCC8A1C4BA623597B91E882E0A95F26) == 0x000010, "Member 'FFortUITheme::Faded_5_2FCC8A1C4BA623597B91E882E0A95F26' has a wrong offset!");
-static_assert(offsetof(FFortUITheme, Active_8_10AE283B44A455DE7AF248B79132A69C) == 0x000020, "Member 'FFortUITheme::Active_8_10AE283B44A455DE7AF248B79132A69C' has a wrong offset!");
-static_assert(offsetof(FFortUITheme, Normal_11_F26C9BAB4EC26A2F2B63A6A5F67AE748) == 0x000030, "Member 'FFortUITheme::Normal_11_F26C9BAB4EC26A2F2B63A6A5F67AE748' has a wrong offset!");
-static_assert(offsetof(FFortUITheme, Dark_14_B49822CC48FC28E72DFACCA1F36B2C18) == 0x000040, "Member 'FFortUITheme::Dark_14_B49822CC48FC28E72DFACCA1F36B2C18' has a wrong offset!");
-static_assert(offsetof(FFortUITheme, Ultra_17_D9B7B92B475B19E3C7733C85FA62631C) == 0x000050, "Member 'FFortUITheme::Ultra_17_D9B7B92B475B19E3C7733C85FA62631C' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

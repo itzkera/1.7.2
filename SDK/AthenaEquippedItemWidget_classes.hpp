@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaEquippedItemWidget.AthenaEquippedItemWidget_C
 // 0x0050 (0x02B0 - 0x0260)
@@ -57,28 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaEquippedItemWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaEquippedItemWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaEquippedItemWidget_C")
 	}
 	static class UAthenaEquippedItemWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaEquippedItemWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaEquippedItemWidget_C) == 0x000008, "Wrong alignment on UAthenaEquippedItemWidget_C");
-static_assert(sizeof(UAthenaEquippedItemWidget_C) == 0x0002B0, "Wrong size on UAthenaEquippedItemWidget_C");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaEquippedItemWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, _Image__AmmoIcon) == 0x000268, "Member 'UAthenaEquippedItemWidget_C::_Image__AmmoIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, _Image__ResourceIcon) == 0x000270, "Member 'UAthenaEquippedItemWidget_C::_Image__ResourceIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, CommonBorderDivider) == 0x000278, "Member 'UAthenaEquippedItemWidget_C::CommonBorderDivider' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, SwitcherContent) == 0x000280, "Member 'UAthenaEquippedItemWidget_C::SwitcherContent' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, TextAmmoOutOverlay) == 0x000288, "Member 'UAthenaEquippedItemWidget_C::TextAmmoOutOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, TextMagazineAmmoCount) == 0x000290, "Member 'UAthenaEquippedItemWidget_C::TextMagazineAmmoCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, TextResourceCount) == 0x000298, "Member 'UAthenaEquippedItemWidget_C::TextResourceCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, TextTotalAmmoCount) == 0x0002A0, "Member 'UAthenaEquippedItemWidget_C::TextTotalAmmoCount' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, CurrentQuickbar) == 0x0002A8, "Member 'UAthenaEquippedItemWidget_C::CurrentQuickbar' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, CursorModeEnabled) == 0x0002AC, "Member 'UAthenaEquippedItemWidget_C::CursorModeEnabled' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, InfiniteAmmo) == 0x0002AD, "Member 'UAthenaEquippedItemWidget_C::InfiniteAmmo' has a wrong offset!");
-static_assert(offsetof(UAthenaEquippedItemWidget_C, InfiniteMagazine) == 0x0002AE, "Member 'UAthenaEquippedItemWidget_C::InfiniteMagazine' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

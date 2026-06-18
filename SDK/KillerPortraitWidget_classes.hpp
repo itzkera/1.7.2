@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass KillerPortraitWidget.KillerPortraitWidget_C
 // 0x0010 (0x0248 - 0x0238)
@@ -30,17 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KillerPortraitWidget_C">();
+		BP_STATIC_CLASS_IMPL("KillerPortraitWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KillerPortraitWidget_C")
 	}
 	static class UKillerPortraitWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKillerPortraitWidget_C>();
 	}
 };
-static_assert(alignof(UKillerPortraitWidget_C) == 0x000008, "Wrong alignment on UKillerPortraitWidget_C");
-static_assert(sizeof(UKillerPortraitWidget_C) == 0x000248, "Wrong size on UKillerPortraitWidget_C");
-static_assert(offsetof(UKillerPortraitWidget_C, KillerNameText) == 0x000238, "Member 'UKillerPortraitWidget_C::KillerNameText' has a wrong offset!");
-static_assert(offsetof(UKillerPortraitWidget_C, KillerPortrait) == 0x000240, "Member 'UKillerPortraitWidget_C::KillerPortrait' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

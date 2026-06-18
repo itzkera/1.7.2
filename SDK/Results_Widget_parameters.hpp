@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_Widget.Results_Widget_C.ExecuteUbergraph_Results_Widget
 // 0x0108 (0x0108 - 0x0000)
@@ -64,41 +64,6 @@ public:
 	bool                                          CallFunc_IsDataFinalized_ReturnValue;              // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000008, "Wrong alignment on Results_Widget_C_ExecuteUbergraph_Results_Widget");
-static_assert(sizeof(Results_Widget_C_ExecuteUbergraph_Results_Widget) == 0x000108, "Wrong size on Results_Widget_C_ExecuteUbergraph_Results_Widget");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, EntryPoint) == 0x000000, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetId2) == 0x000008, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetId2' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetName2) == 0x000020, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetName2' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetId) == 0x000030, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetId' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_ComponentBoundEvent_TargetName) == 0x000048, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_ComponentBoundEvent_TargetName' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue) == 0x000058, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetOwningPlayerPawn_ReturnValue) == 0x000060, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetOwningPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue2) == 0x000068, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_SpawnSound2D_ReturnValue) == 0x000070, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue3) == 0x000078, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue4) == 0x00007C, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetTotalMissionPointsEarned_ReturnValue) == 0x000080, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetTotalMissionPointsEarned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_Greater_IntInt_ReturnValue) == 0x000084, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue5) == 0x000088, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue6) == 0x00008C, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_B_Execution_Happened_Variable) == 0x000091, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_B_Execution_Happened_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_A_Execution_Happened_Variable) == 0x000092, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_A_Execution_Happened_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_Play_ReturnValue) == 0x000093, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_BooleanAND_ReturnValue) == 0x000094, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_UseVideos_bVideos) == 0x000095, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_UseVideos_bVideos' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_CreateDelegate_OutputDelegate) == 0x000098, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000A8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetRealTimeSeconds_ReturnValue7) == 0x0000B0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetRealTimeSeconds_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_EventSource) == 0x0000B8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_EventFocus) == 0x0000C0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_HandleClientEvent_ClientEvent) == 0x0000C8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetContext_ReturnValue) == 0x0000E8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_IsClosed_Variable) == 0x0000F0, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_GetInputManager_ReturnValue) == 0x0000F8, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, K2Node_SwitchEnum_CmpSuccess) == 0x000100, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, CallFunc_IsDataFinalized_ReturnValue) == 0x000101, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::CallFunc_IsDataFinalized_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_ExecuteUbergraph_Results_Widget, Temp_bool_Has_Been_Initd_Variable) == 0x000102, "Member 'Results_Widget_C_ExecuteUbergraph_Results_Widget::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.HandleClientEvent_PlayerLeftEvent
 // 0x0030 (0x0030 - 0x0000)
@@ -109,11 +74,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent) == 0x000008, "Wrong alignment on Results_Widget_C_HandleClientEvent_PlayerLeftEvent");
-static_assert(sizeof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent) == 0x000030, "Wrong size on Results_Widget_C_HandleClientEvent_PlayerLeftEvent");
-static_assert(offsetof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent, EventSource) == 0x000000, "Member 'Results_Widget_C_HandleClientEvent_PlayerLeftEvent::EventSource' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent, EventFocus) == 0x000008, "Member 'Results_Widget_C_HandleClientEvent_PlayerLeftEvent::EventFocus' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_HandleClientEvent_PlayerLeftEvent, ClientEvent) == 0x000010, "Member 'Results_Widget_C_HandleClientEvent_PlayerLeftEvent::ClientEvent' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature
 // 0x0028 (0x0028 - 0x0000)
@@ -123,10 +83,6 @@ public:
 	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
-static_assert(sizeof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature) == 0x000028, "Wrong size on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
-static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature::TargetId' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature
 // 0x0028 (0x0028 - 0x0000)
@@ -136,10 +92,6 @@ public:
 	struct FUniqueNetIdRepl                       TargetId;                                          // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 	class FString                                 TargetName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
-static_assert(sizeof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature) == 0x000028, "Wrong size on Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
-static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature, TargetId) == 0x000000, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature::TargetId' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature, TargetName) == 0x000018, "Member 'Results_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature::TargetName' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Initialize
 // 0x00C0 (0x00C0 - 0x0000)
@@ -162,21 +114,6 @@ public:
 	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UFortItem*>                      CallFunc_GetRewardsByType_OutRewards;              // 0x00B0(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(Results_Widget_C_Initialize) == 0x000008, "Wrong alignment on Results_Widget_C_Initialize");
-static_assert(sizeof(Results_Widget_C_Initialize) == 0x0000C0, "Wrong size on Results_Widget_C_Initialize");
-static_assert(offsetof(Results_Widget_C_Initialize, ScoreReport) == 0x000000, "Member 'Results_Widget_C_Initialize::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, RewardData) == 0x000008, "Member 'Results_Widget_C_Initialize::RewardData' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable) == 0x000018, "Member 'Results_Widget_C_Initialize::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable2) == 0x000030, "Member 'Results_Widget_C_Initialize::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable3) == 0x000048, "Member 'Results_Widget_C_Initialize::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_text_Variable4) == 0x000060, "Member 'Results_Widget_C_Initialize::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetTotalMissionPointsEarned_ReturnValue) == 0x000078, "Member 'Results_Widget_C_Initialize::CallFunc_GetTotalMissionPointsEarned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, Temp_byte_Variable) == 0x00007C, "Member 'Results_Widget_C_Initialize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000080, "Member 'Results_Widget_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetScoreReport_ReturnValue) == 0x000088, "Member 'Results_Widget_C_Initialize::CallFunc_GetScoreReport_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, K2Node_Select_Default) == 0x000090, "Member 'Results_Widget_C_Initialize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetZoneCompletionResult_ReturnValue) == 0x0000A8, "Member 'Results_Widget_C_Initialize::CallFunc_GetZoneCompletionResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize, CallFunc_GetRewardsByType_OutRewards) == 0x0000B0, "Member 'Results_Widget_C_Initialize::CallFunc_GetRewardsByType_OutRewards' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Initialize Video
 // 0x0418 (0x0418 - 0x0000)
@@ -200,19 +137,6 @@ public:
 	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMediaSource*                           K2Node_Select_Default;                             // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_Initialize_Video) == 0x000008, "Wrong alignment on Results_Widget_C_Initialize_Video");
-static_assert(sizeof(Results_Widget_C_Initialize_Video) == 0x000418, "Wrong size on Results_Widget_C_Initialize_Video");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'Results_Widget_C_Initialize_Video::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_UseVideos_bVideos) == 0x000008, "Member 'Results_Widget_C_Initialize_Video::CallFunc_UseVideos_bVideos' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000010, "Member 'Results_Widget_C_Initialize_Video::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x0003C8, "Member 'Results_Widget_C_Initialize_Video::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, K2Node_CreateDelegate_OutputDelegate) == 0x0003D0, "Member 'Results_Widget_C_Initialize_Video::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_IsValid_ReturnValue) == 0x0003E0, "Member 'Results_Widget_C_Initialize_Video::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_GetMediaPlayer_ReturnValue) == 0x0003E8, "Member 'Results_Widget_C_Initialize_Video::CallFunc_GetMediaPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0003F0, "Member 'Results_Widget_C_Initialize_Video::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, K2Node_CreateDelegate_OutputDelegate2) == 0x0003F8, "Member 'Results_Widget_C_Initialize_Video::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, Temp_bool_Variable) == 0x000408, "Member 'Results_Widget_C_Initialize_Video::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Initialize_Video, K2Node_Select_Default) == 0x000410, "Member 'Results_Widget_C_Initialize_Video::K2Node_Select_Default' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Toggle Chat
 // 0x0028 (0x0028 - 0x0000)
@@ -226,13 +150,6 @@ public:
 	class UHUD_C*                                 K2Node_DynamicCast_AsHUD;                          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_Toggle_Chat) == 0x000008, "Wrong alignment on Results_Widget_C_Toggle_Chat");
-static_assert(sizeof(Results_Widget_C_Toggle_Chat) == 0x000028, "Wrong size on Results_Widget_C_Toggle_Chat");
-static_assert(offsetof(Results_Widget_C_Toggle_Chat, Show) == 0x000000, "Member 'Results_Widget_C_Toggle_Chat::Show' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Chat, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'Results_Widget_C_Toggle_Chat::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Chat, CallFunc_GetCurrentUIStateWidget_ReturnValue) == 0x000010, "Member 'Results_Widget_C_Toggle_Chat::CallFunc_GetCurrentUIStateWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Chat, K2Node_DynamicCast_AsHUD) == 0x000018, "Member 'Results_Widget_C_Toggle_Chat::K2Node_DynamicCast_AsHUD' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Chat, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Results_Widget_C_Toggle_Chat::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.SpawnResultsMusic
 // 0x0018 (0x0018 - 0x0000)
@@ -244,11 +161,6 @@ public:
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_SpawnResultsMusic) == 0x000008, "Wrong alignment on Results_Widget_C_SpawnResultsMusic");
-static_assert(sizeof(Results_Widget_C_SpawnResultsMusic) == 0x000018, "Wrong size on Results_Widget_C_SpawnResultsMusic");
-static_assert(offsetof(Results_Widget_C_SpawnResultsMusic, Temp_byte_Variable) == 0x000000, "Member 'Results_Widget_C_SpawnResultsMusic::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_SpawnResultsMusic, K2Node_Select_Default) == 0x000008, "Member 'Results_Widget_C_SpawnResultsMusic::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_SpawnResultsMusic, CallFunc_SpawnSound2D_ReturnValue) == 0x000010, "Member 'Results_Widget_C_SpawnResultsMusic::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Toggle Top Level Tab Controls
 // 0x0028 (0x0028 - 0x0000)
@@ -262,13 +174,6 @@ public:
 	class UHUD_C*                                 K2Node_DynamicCast_AsHUD;                          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_Toggle_Top_Level_Tab_Controls) == 0x000008, "Wrong alignment on Results_Widget_C_Toggle_Top_Level_Tab_Controls");
-static_assert(sizeof(Results_Widget_C_Toggle_Top_Level_Tab_Controls) == 0x000028, "Wrong size on Results_Widget_C_Toggle_Top_Level_Tab_Controls");
-static_assert(offsetof(Results_Widget_C_Toggle_Top_Level_Tab_Controls, Show) == 0x000000, "Member 'Results_Widget_C_Toggle_Top_Level_Tab_Controls::Show' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Top_Level_Tab_Controls, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'Results_Widget_C_Toggle_Top_Level_Tab_Controls::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Top_Level_Tab_Controls, CallFunc_GetCurrentUIStateWidget_ReturnValue) == 0x000010, "Member 'Results_Widget_C_Toggle_Top_Level_Tab_Controls::CallFunc_GetCurrentUIStateWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Top_Level_Tab_Controls, K2Node_DynamicCast_AsHUD) == 0x000018, "Member 'Results_Widget_C_Toggle_Top_Level_Tab_Controls::K2Node_DynamicCast_AsHUD' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Toggle_Top_Level_Tab_Controls, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Results_Widget_C_Toggle_Top_Level_Tab_Controls::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.PlayMissionResultSound
 // 0x0018 (0x0018 - 0x0000)
@@ -280,11 +185,6 @@ public:
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_PlayMissionResultSound) == 0x000008, "Wrong alignment on Results_Widget_C_PlayMissionResultSound");
-static_assert(sizeof(Results_Widget_C_PlayMissionResultSound) == 0x000018, "Wrong size on Results_Widget_C_PlayMissionResultSound");
-static_assert(offsetof(Results_Widget_C_PlayMissionResultSound, Temp_byte_Variable) == 0x000000, "Member 'Results_Widget_C_PlayMissionResultSound::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_PlayMissionResultSound, K2Node_Select_Default) == 0x000008, "Member 'Results_Widget_C_PlayMissionResultSound::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_PlayMissionResultSound, CallFunc_SpawnSound2D_ReturnValue) == 0x000010, "Member 'Results_Widget_C_PlayMissionResultSound::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.LogAnalytics
 // 0x0020 (0x0020 - 0x0000)
@@ -297,12 +197,6 @@ public:
 	float                                         CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Widget_C_LogAnalytics) == 0x000008, "Wrong alignment on Results_Widget_C_LogAnalytics");
-static_assert(sizeof(Results_Widget_C_LogAnalytics) == 0x000020, "Wrong size on Results_Widget_C_LogAnalytics");
-static_assert(offsetof(Results_Widget_C_LogAnalytics, ScreenName) == 0x000000, "Member 'Results_Widget_C_LogAnalytics::ScreenName' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_LogAnalytics, bSkipped) == 0x000010, "Member 'Results_Widget_C_LogAnalytics::bSkipped' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_LogAnalytics, CallFunc_GetRealTimeSeconds_ReturnValue) == 0x000014, "Member 'Results_Widget_C_LogAnalytics::CallFunc_GetRealTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_LogAnalytics, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000018, "Member 'Results_Widget_C_LogAnalytics::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.OnInputSkip
 // 0x0001 (0x0001 - 0x0000)
@@ -311,9 +205,6 @@ struct Results_Widget_C_OnInputSkip final
 public:
 	bool                                          bCommited;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_OnInputSkip) == 0x000001, "Wrong alignment on Results_Widget_C_OnInputSkip");
-static_assert(sizeof(Results_Widget_C_OnInputSkip) == 0x000001, "Wrong size on Results_Widget_C_OnInputSkip");
-static_assert(offsetof(Results_Widget_C_OnInputSkip, bCommited) == 0x000000, "Member 'Results_Widget_C_OnInputSkip::bCommited' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.InitializeInput
 // 0x0010 (0x0010 - 0x0000)
@@ -322,9 +213,6 @@ struct alignas(0x08) Results_Widget_C_InitializeInput final
 public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_InitializeInput) == 0x000008, "Wrong alignment on Results_Widget_C_InitializeInput");
-static_assert(sizeof(Results_Widget_C_InitializeInput) == 0x000010, "Wrong size on Results_Widget_C_InitializeInput");
-static_assert(offsetof(Results_Widget_C_InitializeInput, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Results_Widget_C_InitializeInput::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.Focus
 // 0x000C (0x000C - 0x0000)
@@ -338,13 +226,6 @@ public:
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue3;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_Focus) == 0x000004, "Wrong alignment on Results_Widget_C_Focus");
-static_assert(sizeof(Results_Widget_C_Focus) == 0x00000C, "Wrong size on Results_Widget_C_Focus");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue) == 0x000000, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue2) == 0x000001, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'Results_Widget_C_Focus::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'Results_Widget_C_Focus::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_Focus, CallFunc_IsVisible_ReturnValue3) == 0x000009, "Member 'Results_Widget_C_Focus::CallFunc_IsVisible_ReturnValue3' has a wrong offset!");
 
 // Function Results_Widget.Results_Widget_C.UseVideos
 // 0x03D0 (0x03D0 - 0x0000)
@@ -359,14 +240,6 @@ public:
 	bool                                          CallFunc_GetCurrentBasicMissionInfo_ReturnValue;   // 0x03C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x03C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Widget_C_UseVideos) == 0x000008, "Wrong alignment on Results_Widget_C_UseVideos");
-static_assert(sizeof(Results_Widget_C_UseVideos) == 0x0003D0, "Wrong size on Results_Widget_C_UseVideos");
-static_assert(offsetof(Results_Widget_C_UseVideos, bVideos) == 0x000000, "Member 'Results_Widget_C_UseVideos::bVideos' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_ShouldShowMissionResultsMovies_ReturnValue) == 0x000001, "Member 'Results_Widget_C_UseVideos::CallFunc_ShouldShowMissionResultsMovies_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'Results_Widget_C_UseVideos::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000010, "Member 'Results_Widget_C_UseVideos::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x0003C8, "Member 'Results_Widget_C_UseVideos::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Widget_C_UseVideos, CallFunc_Not_PreBool_ReturnValue) == 0x0003C9, "Member 'Results_Widget_C_UseVideos::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

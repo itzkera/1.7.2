@@ -16,8 +16,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TeamScoreBox.Results_TeamScoreBox_C
 // 0x00D8 (0x0310 - 0x0238)
@@ -77,42 +76,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TeamScoreBox_C">();
+		BP_STATIC_CLASS_IMPL("Results_TeamScoreBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TeamScoreBox_C")
 	}
 	static class UResults_TeamScoreBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TeamScoreBox_C>();
 	}
 };
-static_assert(alignof(UResults_TeamScoreBox_C) == 0x000008, "Wrong alignment on UResults_TeamScoreBox_C");
-static_assert(sizeof(UResults_TeamScoreBox_C) == 0x000310, "Wrong size on UResults_TeamScoreBox_C");
-static_assert(offsetof(UResults_TeamScoreBox_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamScoreBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Anim_AbsorptionOutro) == 0x000240, "Member 'UResults_TeamScoreBox_C::Anim_AbsorptionOutro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Anim_AbsorptionIntro) == 0x000248, "Member 'UResults_TeamScoreBox_C::Anim_AbsorptionIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Anim_SkipToFinalState) == 0x000250, "Member 'UResults_TeamScoreBox_C::Anim_SkipToFinalState' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Anim_CountOutro) == 0x000258, "Member 'UResults_TeamScoreBox_C::Anim_CountOutro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Anim_CountIntro) == 0x000260, "Member 'UResults_TeamScoreBox_C::Anim_CountIntro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Anim_Intro) == 0x000268, "Member 'UResults_TeamScoreBox_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, ImageAbsorb) == 0x000270, "Member 'UResults_TeamScoreBox_C::ImageAbsorb' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, ImageCore) == 0x000278, "Member 'UResults_TeamScoreBox_C::ImageCore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, ImageFlashFX) == 0x000280, "Member 'UResults_TeamScoreBox_C::ImageFlashFX' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, ImageType) == 0x000288, "Member 'UResults_TeamScoreBox_C::ImageType' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, TextScore) == 0x000290, "Member 'UResults_TeamScoreBox_C::TextScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, TextType) == 0x000298, "Member 'UResults_TeamScoreBox_C::TextType' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, ScoreType) == 0x0002A0, "Member 'UResults_TeamScoreBox_C::ScoreType' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, Score) == 0x0002A4, "Member 'UResults_TeamScoreBox_C::Score' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, CountInterpolationTime) == 0x0002A8, "Member 'UResults_TeamScoreBox_C::CountInterpolationTime' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, CountUpFinished) == 0x0002B0, "Member 'UResults_TeamScoreBox_C::CountUpFinished' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, bCountingUp) == 0x0002C0, "Member 'UResults_TeamScoreBox_C::bCountingUp' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, CountDownFinished) == 0x0002C8, "Member 'UResults_TeamScoreBox_C::CountDownFinished' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, IntroFinished) == 0x0002D8, "Member 'UResults_TeamScoreBox_C::IntroFinished' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, PlayRate) == 0x0002E8, "Member 'UResults_TeamScoreBox_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, FlashTextTypeTime) == 0x0002EC, "Member 'UResults_TeamScoreBox_C::FlashTextTypeTime' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, TextTypeColor) == 0x0002F0, "Member 'UResults_TeamScoreBox_C::TextTypeColor' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, FlashTextTypeTimer) == 0x000300, "Member 'UResults_TeamScoreBox_C::FlashTextTypeTimer' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, FlashTextTypeTimeStart) == 0x000308, "Member 'UResults_TeamScoreBox_C::FlashTextTypeTimeStart' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, bSkippedToEnd) == 0x00030C, "Member 'UResults_TeamScoreBox_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_TeamScoreBox_C, bSkippingToEnd) == 0x00030D, "Member 'UResults_TeamScoreBox_C::bSkippingToEnd' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

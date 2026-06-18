@@ -18,8 +18,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HeroSquadBonus.HeroSquadBonus_C
 // 0x0120 (0x03F0 - 0x02D0)
@@ -55,30 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroSquadBonus_C">();
+		BP_STATIC_CLASS_IMPL("HeroSquadBonus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroSquadBonus_C")
 	}
 	static class UHeroSquadBonus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroSquadBonus_C>();
 	}
 };
-static_assert(alignof(UHeroSquadBonus_C) == 0x000008, "Wrong alignment on UHeroSquadBonus_C");
-static_assert(sizeof(UHeroSquadBonus_C) == 0x0003F0, "Wrong size on UHeroSquadBonus_C");
-static_assert(offsetof(UHeroSquadBonus_C, UberGraphFrame) == 0x0002D0, "Member 'UHeroSquadBonus_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, BonusPerkDescription) == 0x0002D8, "Member 'UHeroSquadBonus_C::BonusPerkDescription' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, BonusPerkIcon) == 0x0002E0, "Member 'UHeroSquadBonus_C::BonusPerkIcon' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, BonusPerkTitle) == 0x0002E8, "Member 'UHeroSquadBonus_C::BonusPerkTitle' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, BorderHighlightLeft) == 0x0002F0, "Member 'UHeroSquadBonus_C::BorderHighlightLeft' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, BorderHighlightRight) == 0x0002F8, "Member 'UHeroSquadBonus_C::BorderHighlightRight' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, CommonBorderBackground) == 0x000300, "Member 'UHeroSquadBonus_C::CommonBorderBackground' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, ImageLock) == 0x000308, "Member 'UHeroSquadBonus_C::ImageLock' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, ImageSquadBonusType) == 0x000310, "Member 'UHeroSquadBonus_C::ImageSquadBonusType' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, ImageSquadBonusTypeShadow) == 0x000318, "Member 'UHeroSquadBonus_C::ImageSquadBonusTypeShadow' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, EmptyBrush) == 0x000320, "Member 'UHeroSquadBonus_C::EmptyBrush' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, EmptyText) == 0x0003B0, "Member 'UHeroSquadBonus_C::EmptyText' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, BonusPerkTItleText) == 0x0003C8, "Member 'UHeroSquadBonus_C::BonusPerkTItleText' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, Skill_Icon_Size) == 0x0003E0, "Member 'UHeroSquadBonus_C::Skill_Icon_Size' has a wrong offset!");
-static_assert(offsetof(UHeroSquadBonus_C, SquadBonusType) == 0x0003E8, "Member 'UHeroSquadBonus_C::SquadBonusType' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

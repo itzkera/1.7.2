@@ -13,8 +13,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.ExecuteUbergraph_AthenaPlayerActionAlert
 // 0x0040 (0x0040 - 0x0000)
@@ -36,19 +36,6 @@ public:
 	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert) == 0x000008, "Wrong alignment on AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert");
-static_assert(sizeof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert) == 0x000040, "Wrong size on AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, EntryPoint) == 0x000000, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, Temp_int_Variable) == 0x000004, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, Temp_int_Variable2) == 0x000008, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, K2Node_Event_Alert) == 0x00000C, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::K2Node_Event_Alert' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, K2Node_Event_DetailText) == 0x000010, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::K2Node_Event_DetailText' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, K2Node_SwitchEnum_CmpSuccess) == 0x000028, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, Temp_int_Variable3) == 0x00002C, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, K2Node_Event_Animation) == 0x000030, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, Temp_byte_Variable) == 0x000038, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000039, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert, K2Node_Select_Default) == 0x00003C, "Member 'AthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -57,9 +44,6 @@ struct AthenaPlayerActionAlert_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaPlayerActionAlert_C_OnAnimationFinished) == 0x000008, "Wrong alignment on AthenaPlayerActionAlert_C_OnAnimationFinished");
-static_assert(sizeof(AthenaPlayerActionAlert_C_OnAnimationFinished) == 0x000008, "Wrong size on AthenaPlayerActionAlert_C_OnAnimationFinished");
-static_assert(offsetof(AthenaPlayerActionAlert_C_OnAnimationFinished, Animation) == 0x000000, "Member 'AthenaPlayerActionAlert_C_OnAnimationFinished::Animation' has a wrong offset!");
 
 // Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.AlertPlayer
 // 0x0020 (0x0020 - 0x0000)
@@ -70,10 +54,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DetailText;                                        // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaPlayerActionAlert_C_AlertPlayer) == 0x000008, "Wrong alignment on AthenaPlayerActionAlert_C_AlertPlayer");
-static_assert(sizeof(AthenaPlayerActionAlert_C_AlertPlayer) == 0x000020, "Wrong size on AthenaPlayerActionAlert_C_AlertPlayer");
-static_assert(offsetof(AthenaPlayerActionAlert_C_AlertPlayer, Alert) == 0x000000, "Member 'AthenaPlayerActionAlert_C_AlertPlayer::Alert' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerActionAlert_C_AlertPlayer, DetailText) == 0x000008, "Member 'AthenaPlayerActionAlert_C_AlertPlayer::DetailText' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,13 +14,12 @@
 #include "KillerPortraitWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function KillerPortraitWidget.KillerPortraitWidget_C.Init
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortKillerVisualInfo            KillerVisualInfo                                       (Parm, OutParm, ReferenceParm)
+// struct FFortKillerVisualInfo&           KillerVisualInfo                                       (Parm, OutParm, ReferenceParm)
 
 void UKillerPortraitWidget_C::Init(struct FFortKillerVisualInfo& KillerVisualInfo)
 {
@@ -38,5 +37,5 @@ void UKillerPortraitWidget_C::Init(struct FFortKillerVisualInfo& KillerVisualInf
 	KillerVisualInfo = std::move(Parms.KillerVisualInfo);
 }
 
-}
 
+SDK_NAMESPACE_END

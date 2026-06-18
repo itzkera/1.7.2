@@ -14,8 +14,7 @@
 #include "MissionObjectiveProgress_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionObjectiveProgress.MissionObjectiveProgress_C.ExecuteUbergraph_MissionObjectiveProgress
 // ()
@@ -76,7 +75,7 @@ void UMissionObjectiveProgress_C::Update(class AFortObjectiveBase* Objective, in
 // Function MissionObjectiveProgress.MissionObjectiveProgress_C.GetHeightEstimate
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMissionObjectiveProgress_C::GetHeightEstimate(float* Height)
 {
@@ -93,5 +92,5 @@ void UMissionObjectiveProgress_C::GetHeightEstimate(float* Height)
 		*Height = Parms.Height;
 }
 
-}
 
+SDK_NAMESPACE_END

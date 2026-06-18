@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ResourceAggregationWidget.ResourceAggregationWidget_C
 // 0x0060 (0x02C0 - 0x0260)
@@ -50,28 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ResourceAggregationWidget_C">();
+		BP_STATIC_CLASS_IMPL("ResourceAggregationWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResourceAggregationWidget_C")
 	}
 	static class UResourceAggregationWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResourceAggregationWidget_C>();
 	}
 };
-static_assert(alignof(UResourceAggregationWidget_C) == 0x000008, "Wrong alignment on UResourceAggregationWidget_C");
-static_assert(sizeof(UResourceAggregationWidget_C) == 0x0002C0, "Wrong size on UResourceAggregationWidget_C");
-static_assert(offsetof(UResourceAggregationWidget_C, UberGraphFrame) == 0x000260, "Member 'UResourceAggregationWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, ResourceIconPulseAnim) == 0x000268, "Member 'UResourceAggregationWidget_C::ResourceIconPulseAnim' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, AggregateOutroAnim) == 0x000270, "Member 'UResourceAggregationWidget_C::AggregateOutroAnim' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, HBoxTotalAggregation) == 0x000278, "Member 'UResourceAggregationWidget_C::HBoxTotalAggregation' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, ImageResourceIcon) == 0x000280, "Member 'UResourceAggregationWidget_C::ImageResourceIcon' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, PotentialResourceWidget) == 0x000288, "Member 'UResourceAggregationWidget_C::PotentialResourceWidget' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, TextAggregateResourceCollected) == 0x000290, "Member 'UResourceAggregationWidget_C::TextAggregateResourceCollected' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, TextAggregateResourceCollectedShadow) == 0x000298, "Member 'UResourceAggregationWidget_C::TextAggregateResourceCollectedShadow' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, ResourceHoldingObject) == 0x0002A0, "Member 'UResourceAggregationWidget_C::ResourceHoldingObject' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, AggregateResourceCollected) == 0x0002A8, "Member 'UResourceAggregationWidget_C::AggregateResourceCollected' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, bActivateAggregateAnim) == 0x0002AC, "Member 'UResourceAggregationWidget_C::bActivateAggregateAnim' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, HideWidgetTimer) == 0x0002B0, "Member 'UResourceAggregationWidget_C::HideWidgetTimer' has a wrong offset!");
-static_assert(offsetof(UResourceAggregationWidget_C, bIgnoreHide) == 0x0002B8, "Member 'UResourceAggregationWidget_C::bIgnoreHide' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

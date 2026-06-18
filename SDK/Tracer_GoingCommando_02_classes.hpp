@@ -13,8 +13,7 @@
 #include "TracerGeneric_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Tracer_GoingCommando_02.Tracer_GoingCommando_02_C
 // 0x0000 (0x0478 - 0x0478)
@@ -23,15 +22,16 @@ class ATracer_GoingCommando_02_C final : public ATracerGeneric_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tracer_GoingCommando_02_C">();
+		BP_STATIC_CLASS_IMPL("Tracer_GoingCommando_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tracer_GoingCommando_02_C")
 	}
 	static class ATracer_GoingCommando_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATracer_GoingCommando_02_C>();
 	}
 };
-static_assert(alignof(ATracer_GoingCommando_02_C) == 0x000008, "Wrong alignment on ATracer_GoingCommando_02_C");
-static_assert(sizeof(ATracer_GoingCommando_02_C) == 0x000478, "Wrong size on ATracer_GoingCommando_02_C");
 
-}
-
+SDK_NAMESPACE_END

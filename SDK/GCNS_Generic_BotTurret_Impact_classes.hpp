@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCNS_Generic_BotTurret_Impact.GCNS_Generic_BotTurret_Impact_C
 // 0x0000 (0x0070 - 0x0070)
@@ -23,15 +22,16 @@ class UGCNS_Generic_BotTurret_Impact_C final : public UFortGameplayCueNotify_Sim
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNS_Generic_BotTurret_Impact_C">();
+		BP_STATIC_CLASS_IMPL("GCNS_Generic_BotTurret_Impact_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNS_Generic_BotTurret_Impact_C")
 	}
 	static class UGCNS_Generic_BotTurret_Impact_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCNS_Generic_BotTurret_Impact_C>();
 	}
 };
-static_assert(alignof(UGCNS_Generic_BotTurret_Impact_C) == 0x000008, "Wrong alignment on UGCNS_Generic_BotTurret_Impact_C");
-static_assert(sizeof(UGCNS_Generic_BotTurret_Impact_C) == 0x000070, "Wrong size on UGCNS_Generic_BotTurret_Impact_C");
 
-}
-
+SDK_NAMESPACE_END

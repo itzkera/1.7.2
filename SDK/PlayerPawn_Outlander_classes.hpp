@@ -12,15 +12,14 @@
 
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "E_Outlander_FragmentTypes_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "GameplayAbilities_structs.hpp"
 #include "PlayerPawn_Generic_classes.hpp"
+#include "E_Outlander_FragmentTypes_structs.hpp"
+#include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerPawn_Outlander.PlayerPawn_Outlander_C
 // 0x0440 (0x2070 - 0x1C30)
@@ -172,106 +171,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerPawn_Outlander_C">();
+		BP_STATIC_CLASS_IMPL("PlayerPawn_Outlander_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawn_Outlander_C")
 	}
 	static class APlayerPawn_Outlander_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerPawn_Outlander_C>();
 	}
 };
-static_assert(alignof(APlayerPawn_Outlander_C) == 0x000010, "Wrong alignment on APlayerPawn_Outlander_C");
-static_assert(sizeof(APlayerPawn_Outlander_C) == 0x002070, "Wrong size on APlayerPawn_Outlander_C");
-static_assert(offsetof(APlayerPawn_Outlander_C, UberGraphFrame_PlayerPawn_Outlander_C) == 0x001C28, "Member 'APlayerPawn_Outlander_C::UberGraphFrame_PlayerPawn_Outlander_C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, AntiMaterialHitBox) == 0x001C30, "Member 'APlayerPawn_Outlander_C::AntiMaterialHitBox' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Outlander_Teleport_01) == 0x001C38, "Member 'APlayerPawn_Outlander_C::P_Outlander_Teleport_01' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, KeenEyesRadius) == 0x001C40, "Member 'APlayerPawn_Outlander_C::KeenEyesRadius' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Outlander_PhaseShift_Impact_01) == 0x001C48, "Member 'APlayerPawn_Outlander_C::P_Outlander_PhaseShift_Impact_01' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Effect_HeadSkeletalMesh) == 0x001C50, "Member 'APlayerPawn_Outlander_C::Effect_HeadSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Effect_BodySkeletalMesh) == 0x001C58, "Member 'APlayerPawn_Outlander_C::Effect_BodySkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Teleport_PP_TL_PP_AC5FCC484D689B95F59DF9B01327BE09) == 0x001C60, "Member 'APlayerPawn_Outlander_C::Teleport_PP_TL_PP_AC5FCC484D689B95F59DF9B01327BE09' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Teleport_PP_TL__Direction_AC5FCC484D689B95F59DF9B01327BE09) == 0x001C64, "Member 'APlayerPawn_Outlander_C::Teleport_PP_TL__Direction_AC5FCC484D689B95F59DF9B01327BE09' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Teleport_PP_TL) == 0x001C68, "Member 'APlayerPawn_Outlander_C::Teleport_PP_TL' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Phase_Shift_Activation_Timeline_Sweep_6D72A2BD427987D65B765788F442228C) == 0x001C70, "Member 'APlayerPawn_Outlander_C::Phase_Shift_Activation_Timeline_Sweep_6D72A2BD427987D65B765788F442228C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Phase_Shift_Activation_Timeline_Opacity_6D72A2BD427987D65B765788F442228C) == 0x001C74, "Member 'APlayerPawn_Outlander_C::Phase_Shift_Activation_Timeline_Opacity_6D72A2BD427987D65B765788F442228C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Phase_Shift_Activation_Timeline__Direction_6D72A2BD427987D65B765788F442228C) == 0x001C78, "Member 'APlayerPawn_Outlander_C::Phase_Shift_Activation_Timeline__Direction_6D72A2BD427987D65B765788F442228C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Phase_Shift_Activation_Timeline) == 0x001C80, "Member 'APlayerPawn_Outlander_C::Phase_Shift_Activation_Timeline' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, PhaseShiftHitSweep_Sweep_81A0178F416D1106B841D9A9B7E8C737) == 0x001C88, "Member 'APlayerPawn_Outlander_C::PhaseShiftHitSweep_Sweep_81A0178F416D1106B841D9A9B7E8C737' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, PhaseShiftHitSweep__Direction_81A0178F416D1106B841D9A9B7E8C737) == 0x001C8C, "Member 'APlayerPawn_Outlander_C::PhaseShiftHitSweep__Direction_81A0178F416D1106B841D9A9B7E8C737' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, PhaseShiftHitSweep) == 0x001C90, "Member 'APlayerPawn_Outlander_C::PhaseShiftHitSweep' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_FragmentActivation) == 0x001C98, "Member 'APlayerPawn_Outlander_C::P_FragmentActivation' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Core_Index_0) == 0x001CA0, "Member 'APlayerPawn_Outlander_C::Core_Index_0' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Core_Index_1) == 0x001CA8, "Member 'APlayerPawn_Outlander_C::Core_Index_1' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Core_Index_2) == 0x001CB0, "Member 'APlayerPawn_Outlander_C::Core_Index_2' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Diamond_Index3) == 0x001CB8, "Member 'APlayerPawn_Outlander_C::Diamond_Index3' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Diamond_Index4) == 0x001CC0, "Member 'APlayerPawn_Outlander_C::Diamond_Index4' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Diamond_Index5) == 0x001CC8, "Member 'APlayerPawn_Outlander_C::Diamond_Index5' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sparkles_Index8) == 0x001CD0, "Member 'APlayerPawn_Outlander_C::Sparkles_Index8' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Smoke_Index7) == 0x001CD8, "Member 'APlayerPawn_Outlander_C::Smoke_Index7' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Diamond_Index6) == 0x001CE0, "Member 'APlayerPawn_Outlander_C::Diamond_Index6' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sparkles_Index9) == 0x001CE8, "Member 'APlayerPawn_Outlander_C::Sparkles_Index9' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, OffensiveColor1) == 0x001CF0, "Member 'APlayerPawn_Outlander_C::OffensiveColor1' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, OffensiveColor2) == 0x001D00, "Member 'APlayerPawn_Outlander_C::OffensiveColor2' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, DefensiveColor1) == 0x001D10, "Member 'APlayerPawn_Outlander_C::DefensiveColor1' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, DefensiveColor2) == 0x001D20, "Member 'APlayerPawn_Outlander_C::DefensiveColor2' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, SpecialtyColor1) == 0x001D30, "Member 'APlayerPawn_Outlander_C::SpecialtyColor1' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, SpecialtyColor2) == 0x001D40, "Member 'APlayerPawn_Outlander_C::SpecialtyColor2' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TC_SpecialityBuff) == 0x001D50, "Member 'APlayerPawn_Outlander_C::TC_SpecialityBuff' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TC_DefensiveBuff) == 0x001D70, "Member 'APlayerPawn_Outlander_C::TC_DefensiveBuff' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TC_OffensiveBuff) == 0x001D90, "Member 'APlayerPawn_Outlander_C::TC_OffensiveBuff' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, FragType) == 0x001DB0, "Member 'APlayerPawn_Outlander_C::FragType' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_FragmentOffense) == 0x001DB8, "Member 'APlayerPawn_Outlander_C::P_FragmentOffense' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_FragmentDefense) == 0x001DC0, "Member 'APlayerPawn_Outlander_C::P_FragmentDefense' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_FragmentSpeciality) == 0x001DC8, "Member 'APlayerPawn_Outlander_C::P_FragmentSpeciality' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_InTheZone_Activate) == 0x001DD0, "Member 'APlayerPawn_Outlander_C::P_InTheZone_Activate' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, OnPlayerBuiltFloor) == 0x001DD8, "Member 'APlayerPawn_Outlander_C::OnPlayerBuiltFloor' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, EventData) == 0x001DE0, "Member 'APlayerPawn_Outlander_C::EventData' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, EventNeedRoadsActivate) == 0x001E88, "Member 'APlayerPawn_Outlander_C::EventNeedRoadsActivate' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, EventNeedRoadsDeactivate) == 0x001E90, "Member 'APlayerPawn_Outlander_C::EventNeedRoadsDeactivate' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TC_WhereWereGoingWeNeedRoads_0) == 0x001E98, "Member 'APlayerPawn_Outlander_C::TC_WhereWereGoingWeNeedRoads_0' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Fragment) == 0x001EB8, "Member 'APlayerPawn_Outlander_C::P_Fragment' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Specialty) == 0x001EC0, "Member 'APlayerPawn_Outlander_C::P_Specialty' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Defensive) == 0x001EC8, "Member 'APlayerPawn_Outlander_C::P_Defensive' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Offensive) == 0x001ED0, "Member 'APlayerPawn_Outlander_C::P_Offensive' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Feedback_ShardGet) == 0x001ED8, "Member 'APlayerPawn_Outlander_C::Feedback_ShardGet' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Feedback_OffensiveShard) == 0x001EF0, "Member 'APlayerPawn_Outlander_C::Feedback_OffensiveShard' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Feedback_DefensiveShard) == 0x001F08, "Member 'APlayerPawn_Outlander_C::Feedback_DefensiveShard' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Feedback_SpecialtyShard) == 0x001F20, "Member 'APlayerPawn_Outlander_C::Feedback_SpecialtyShard' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sound_Frg_Offensive_Start) == 0x001F38, "Member 'APlayerPawn_Outlander_C::Sound_Frg_Offensive_Start' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sound_Frg_Defensive_Start) == 0x001F40, "Member 'APlayerPawn_Outlander_C::Sound_Frg_Defensive_Start' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sound_Frg_Resource_Start) == 0x001F48, "Member 'APlayerPawn_Outlander_C::Sound_Frg_Resource_Start' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sound_Frg_Stop) == 0x001F50, "Member 'APlayerPawn_Outlander_C::Sound_Frg_Stop' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Sound_Frg_Collect) == 0x001F58, "Member 'APlayerPawn_Outlander_C::Sound_Frg_Collect' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_InTheZone_Running) == 0x001F60, "Member 'APlayerPawn_Outlander_C::P_InTheZone_Running' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_InTheZone_Hit) == 0x001F68, "Member 'APlayerPawn_Outlander_C::P_InTheZone_Hit' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Spawn_Color) == 0x001F70, "Member 'APlayerPawn_Outlander_C::Spawn_Color' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Head_Effect_Mesh_Materials) == 0x001F78, "Member 'APlayerPawn_Outlander_C::Head_Effect_Mesh_Materials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Body_Effect_Mesh_Materials) == 0x001F88, "Member 'APlayerPawn_Outlander_C::Body_Effect_Mesh_Materials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Phase_Shift_Material_) == 0x001F98, "Member 'APlayerPawn_Outlander_C::Phase_Shift_Material_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, PhaseShiftActivateParticles) == 0x001FA0, "Member 'APlayerPawn_Outlander_C::PhaseShiftActivateParticles' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, bPhaseShiftActive_) == 0x001FA8, "Member 'APlayerPawn_Outlander_C::bPhaseShiftActive_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, KnockKnockFX) == 0x001FB0, "Member 'APlayerPawn_Outlander_C::KnockKnockFX' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Handtrail) == 0x001FB8, "Member 'APlayerPawn_Outlander_C::P_Handtrail' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_AMCDustKickup) == 0x001FC0, "Member 'APlayerPawn_Outlander_C::P_AMCDustKickup' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_AMCShockwave) == 0x001FC8, "Member 'APlayerPawn_Outlander_C::P_AMCShockwave' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Handtrail_Active) == 0x001FD0, "Member 'APlayerPawn_Outlander_C::P_Handtrail_Active' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_ArmThruster) == 0x001FD8, "Member 'APlayerPawn_Outlander_C::P_ArmThruster' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_Arm_Thuster_Active) == 0x001FE0, "Member 'APlayerPawn_Outlander_C::P_Arm_Thuster_Active' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, ChargeUpSoundCue) == 0x001FE8, "Member 'APlayerPawn_Outlander_C::ChargeUpSoundCue' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, ChargeUpAudioComp) == 0x001FF0, "Member 'APlayerPawn_Outlander_C::ChargeUpAudioComp' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, ChargeUpCameraShake) == 0x001FF8, "Member 'APlayerPawn_Outlander_C::ChargeUpCameraShake' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, AMCImpactEnemySound) == 0x002000, "Member 'APlayerPawn_Outlander_C::AMCImpactEnemySound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, AMCImpactBuildingSound) == 0x002008, "Member 'APlayerPawn_Outlander_C::AMCImpactBuildingSound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, AMCImpactCameraShake) == 0x002010, "Member 'APlayerPawn_Outlander_C::AMCImpactCameraShake' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Teleport_Particles) == 0x002018, "Member 'APlayerPawn_Outlander_C::Teleport_Particles' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TeleportActivateParticles) == 0x002020, "Member 'APlayerPawn_Outlander_C::TeleportActivateParticles' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Teleport_Spline_BP) == 0x002028, "Member 'APlayerPawn_Outlander_C::Teleport_Spline_BP' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, Current_Index) == 0x002030, "Member 'APlayerPawn_Outlander_C::Current_Index' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TeleportDustEmitters) == 0x002038, "Member 'APlayerPawn_Outlander_C::TeleportDustEmitters' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, GuantletReference) == 0x002048, "Member 'APlayerPawn_Outlander_C::GuantletReference' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_SpawnedHandTrail) == 0x002050, "Member 'APlayerPawn_Outlander_C::P_SpawnedHandTrail' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, ChargeTrailIsVisible) == 0x002058, "Member 'APlayerPawn_Outlander_C::ChargeTrailIsVisible' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, P_HitBurst) == 0x002060, "Member 'APlayerPawn_Outlander_C::P_HitBurst' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Outlander_C, TeleportPP) == 0x002068, "Member 'APlayerPawn_Outlander_C::TeleportPP' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

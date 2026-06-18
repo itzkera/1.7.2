@@ -16,8 +16,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.ExecuteUbergraph_RewardInfoButtonWidget
 // 0x01F0 (0x01F0 - 0x0000)
@@ -57,34 +57,6 @@ public:
 	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetEmptyText_ReturnValue2;                // 0x01D8(0x0018)()
 };
-static_assert(alignof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget) == 0x000008, "Wrong alignment on RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget");
-static_assert(sizeof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget) == 0x0001F0, "Wrong size on RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, EntryPoint) == 0x000000, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, Temp_bool_Variable) == 0x000004, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetQuantity_ReturnValue) == 0x000008, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_Event_bInShowDescription) == 0x00000C, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_Event_bInShowDescription' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x00000D, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_MakeArray_Array) == 0x000068, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetItemInstance_ReturnValue) == 0x000078, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetItemInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_Format_ReturnValue) == 0x000080, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000098, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetDisplayName_ReturnValue) == 0x0000A0, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, Temp_byte_Variable) == 0x0000B8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetEmptyText_ReturnValue) == 0x0000C0, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetItemInstance_ReturnValue2) == 0x0000D8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetItemInstance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_EqualEqual_TextText_ReturnValue) == 0x0000E0, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetItemDefinitionBP_ReturnValue2) == 0x0000E8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetItemDefinitionBP_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetDisplayName_ReturnValue2) == 0x0000F0, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetDisplayName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_MakeStruct_FormatArgumentData2) == 0x000108, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetDisplayName_DisplayName) == 0x000148, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetDisplayName_DisplayName' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_MakeStruct_FormatArgumentData3) == 0x000160, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, Temp_byte_Variable2) == 0x0001A0, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_MakeArray_Array2) == 0x0001A8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_Format_ReturnValue2) == 0x0001B8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, K2Node_Select_Default) == 0x0001D0, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget, CallFunc_GetEmptyText_ReturnValue2) == 0x0001D8, "Member 'RewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget::CallFunc_GetEmptyText_ReturnValue2' has a wrong offset!");
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.SetShowDescriptionBP
 // 0x0001 (0x0001 - 0x0000)
@@ -93,9 +65,6 @@ struct RewardInfoButtonWidget_C_SetShowDescriptionBP final
 public:
 	bool                                          bInShowDescription;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RewardInfoButtonWidget_C_SetShowDescriptionBP) == 0x000001, "Wrong alignment on RewardInfoButtonWidget_C_SetShowDescriptionBP");
-static_assert(sizeof(RewardInfoButtonWidget_C_SetShowDescriptionBP) == 0x000001, "Wrong size on RewardInfoButtonWidget_C_SetShowDescriptionBP");
-static_assert(offsetof(RewardInfoButtonWidget_C_SetShowDescriptionBP, bInShowDescription) == 0x000000, "Member 'RewardInfoButtonWidget_C_SetShowDescriptionBP::bInShowDescription' has a wrong offset!");
 
 // Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.GetDisplayName
 // 0x0A40 (0x0A40 - 0x0000)
@@ -202,99 +171,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array3;                           // 0x0A18(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue3;                      // 0x0A28(0x0018)()
 };
-static_assert(alignof(RewardInfoButtonWidget_C_GetDisplayName) == 0x000008, "Wrong alignment on RewardInfoButtonWidget_C_GetDisplayName");
-static_assert(sizeof(RewardInfoButtonWidget_C_GetDisplayName) == 0x000A40, "Wrong size on RewardInfoButtonWidget_C_GetDisplayName");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, DisplayName) == 0x000000, "Member 'RewardInfoButtonWidget_C_GetDisplayName::DisplayName' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, OutName) == 0x000018, "Member 'RewardInfoButtonWidget_C_GetDisplayName::OutName' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_byte_Variable) == 0x000030, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable) == 0x000038, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable2) == 0x000050, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable3) == 0x000068, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable4) == 0x000080, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable5) == 0x000098, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable6) == 0x0000B0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable7) == 0x0000C8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable8) == 0x0000E0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable9) == 0x0000F8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable9' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable10) == 0x000110, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable10' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable11) == 0x000128, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable11' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable12) == 0x000140, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable13) == 0x000158, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable13' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable14) == 0x000170, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable14' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable15) == 0x000188, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable15' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable16) == 0x0001A0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable16' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable17) == 0x0001B8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable17' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable18) == 0x0001D0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable18' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable19) == 0x0001E8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable19' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable20) == 0x000200, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable20' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable21) == 0x000218, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable21' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable22) == 0x000230, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable22' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable23) == 0x000248, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable23' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable24) == 0x000260, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable24' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable25) == 0x000278, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable25' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable26) == 0x000290, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable26' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable27) == 0x0002A8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable27' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable28) == 0x0002C0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable28' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable29) == 0x0002D8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable29' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable30) == 0x0002F0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable30' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable31) == 0x000308, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable31' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable32) == 0x000320, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable32' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable33) == 0x000338, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable33' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable34) == 0x000350, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable34' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable35) == 0x000368, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable35' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable36) == 0x000380, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable36' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable37) == 0x000398, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable37' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable38) == 0x0003B0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable38' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable39) == 0x0003C8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable39' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable40) == 0x0003E0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable40' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable41) == 0x0003F8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable41' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable42) == 0x000410, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable42' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable43) == 0x000428, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable43' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable44) == 0x000440, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable44' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable45) == 0x000458, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable45' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable46) == 0x000470, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable46' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable47) == 0x000488, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable47' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable48) == 0x0004A0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable48' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable49) == 0x0004B8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable49' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable50) == 0x0004D0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable50' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable51) == 0x0004E8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable51' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable52) == 0x000500, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable52' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, Temp_text_Variable53) == 0x000518, "Member 'RewardInfoButtonWidget_C_GetDisplayName::Temp_text_Variable53' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_MakeLiteralText_ReturnValue) == 0x000530, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData) == 0x000548, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetItemInstance_ReturnValue) == 0x000588, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetItemInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_MakeLiteralText_ReturnValue2) == 0x000590, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetRarity_ReturnValue) == 0x0005A8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData2) == 0x0005B0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_BPGetRarityData_ReturnValue) == 0x0005F0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_BPGetRarityData_ReturnValue2) == 0x000670, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_BPGetRarityData_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData3) == 0x0006F0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData4) == 0x000730, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_BPGetRarityData_ReturnValue3) == 0x000770, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_BPGetRarityData_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeArray_Array) == 0x0007F0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_Format_ReturnValue) == 0x000800, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData5) == 0x000818, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetItemInstance_ReturnValue2) == 0x000858, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetItemInstance_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_DynamicCast_AsFort_Worker) == 0x000860, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_DynamicCast_AsFort_Worker' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_DynamicCast_bSuccess) == 0x000868, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetFilterCategory_ReturnValue) == 0x000869, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetFilterCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetItemInstance_ReturnValue3) == 0x000870, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetItemInstance_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000878, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetTertiaryCategory_ItemCategoryText) == 0x000880, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetTertiaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetTertiaryCategory_ItemCategoryBrush) == 0x000898, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetTertiaryCategory_ItemCategoryBrush' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetTertiaryCategory_ReturnValue) == 0x000928, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetTertiaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData6) == 0x000930, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData6' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetItemInstance_ReturnValue4) == 0x000970, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetItemInstance_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeArray_Array2) == 0x000978, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetType_ReturnValue) == 0x000988, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_Format_ReturnValue2) == 0x000990, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x0009A8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetItemInstance_ReturnValue5) == 0x0009B0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetItemInstance_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_GetType_ReturnValue2) == 0x0009B8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_GetType_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_Select_Default) == 0x0009C0, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeStruct_FormatArgumentData7) == 0x0009D8, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeStruct_FormatArgumentData7' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, K2Node_MakeArray_Array3) == 0x000A18, "Member 'RewardInfoButtonWidget_C_GetDisplayName::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(RewardInfoButtonWidget_C_GetDisplayName, CallFunc_Format_ReturnValue3) == 0x000A28, "Member 'RewardInfoButtonWidget_C_GetDisplayName::CallFunc_Format_ReturnValue3' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

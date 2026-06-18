@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C
 // 0x0040 (0x0300 - 0x02C0)
@@ -42,22 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ExpeditionSquadSlotsView_C">();
+		BP_STATIC_CLASS_IMPL("BP_ExpeditionSquadSlotsView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ExpeditionSquadSlotsView_C")
 	}
 	static class UBP_ExpeditionSquadSlotsView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ExpeditionSquadSlotsView_C>();
 	}
 };
-static_assert(alignof(UBP_ExpeditionSquadSlotsView_C) == 0x000008, "Wrong alignment on UBP_ExpeditionSquadSlotsView_C");
-static_assert(sizeof(UBP_ExpeditionSquadSlotsView_C) == 0x000300, "Wrong size on UBP_ExpeditionSquadSlotsView_C");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, UberGraphFrame) == 0x0002C0, "Member 'UBP_ExpeditionSquadSlotsView_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, SubordinatesSquadSlotGroup) == 0x0002C8, "Member 'UBP_ExpeditionSquadSlotsView_C::SubordinatesSquadSlotGroup' has a wrong offset!");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, OnSquadSlotSelected) == 0x0002D0, "Member 'UBP_ExpeditionSquadSlotsView_C::OnSquadSlotSelected' has a wrong offset!");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, bShowHeader) == 0x0002E0, "Member 'UBP_ExpeditionSquadSlotsView_C::bShowHeader' has a wrong offset!");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, bSelectableButtons) == 0x0002E1, "Member 'UBP_ExpeditionSquadSlotsView_C::bSelectableButtons' has a wrong offset!");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, OnSquadSlotOpened) == 0x0002E8, "Member 'UBP_ExpeditionSquadSlotsView_C::OnSquadSlotOpened' has a wrong offset!");
-static_assert(offsetof(UBP_ExpeditionSquadSlotsView_C, Slot_Size) == 0x0002F8, "Member 'UBP_ExpeditionSquadSlotsView_C::Slot_Size' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

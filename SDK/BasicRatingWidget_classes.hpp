@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BasicRatingWidget.BasicRatingWidget_C
 // 0x0050 (0x0288 - 0x0238)
@@ -50,26 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BasicRatingWidget_C">();
+		BP_STATIC_CLASS_IMPL("BasicRatingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BasicRatingWidget_C")
 	}
 	static class UBasicRatingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBasicRatingWidget_C>();
 	}
 };
-static_assert(alignof(UBasicRatingWidget_C) == 0x000008, "Wrong alignment on UBasicRatingWidget_C");
-static_assert(sizeof(UBasicRatingWidget_C) == 0x000288, "Wrong size on UBasicRatingWidget_C");
-static_assert(offsetof(UBasicRatingWidget_C, UberGraphFrame) == 0x000238, "Member 'UBasicRatingWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, Plus) == 0x000240, "Member 'UBasicRatingWidget_C::Plus' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, RatingBorder) == 0x000248, "Member 'UBasicRatingWidget_C::RatingBorder' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, RatingImage) == 0x000250, "Member 'UBasicRatingWidget_C::RatingImage' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, RatingValue) == 0x000258, "Member 'UBasicRatingWidget_C::RatingValue' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, TextStyle) == 0x000260, "Member 'UBasicRatingWidget_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, BorderStyle) == 0x000268, "Member 'UBasicRatingWidget_C::BorderStyle' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, BorderVisible) == 0x000270, "Member 'UBasicRatingWidget_C::BorderVisible' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, RatingImageColor) == 0x000274, "Member 'UBasicRatingWidget_C::RatingImageColor' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, ImageSize) == 0x000284, "Member 'UBasicRatingWidget_C::ImageSize' has a wrong offset!");
-static_assert(offsetof(UBasicRatingWidget_C, ShowPlus) == 0x000285, "Member 'UBasicRatingWidget_C::ShowPlus' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GCNL_GM_OnDmg_SpeedBuff.GCNL_GM_OnDmg_SpeedBuff_C.OnWhileActiveParticleSystemActivate
 // 0x0240 (0x0240 - 0x0000)
@@ -46,28 +46,6 @@ public:
 	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam2;               // 0x01B0(0x0080)(IsPlainOldData, NoDestructor)
 	TArray<struct FParticleSysParam>              K2Node_MakeArray_Array;                            // 0x0230(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate) == 0x000010, "Wrong alignment on GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate");
-static_assert(sizeof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate) == 0x000240, "Wrong size on GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, WhileActiveParticleSysComponent) == 0x000000, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::WhileActiveParticleSysComponent' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, Parameters) == 0x000008, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_MakeLiteralFloat_ReturnValue) == 0x0000C0, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_MakeLiteralFloat_ReturnValue2) == 0x0000C4, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_MakeLiteralFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000C8, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x0000CC, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_MakeVector_ReturnValue) == 0x0000D0, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_GetOwner_ReturnValue) == 0x0000E0, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_GetActorBounds_Origin) == 0x0000E8, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_GetActorBounds_Origin' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_GetActorBounds_BoxExtent) == 0x0000F4, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_GetActorBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_BreakVector_X) == 0x000100, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_BreakVector_Y) == 0x000104, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_BreakVector_Z) == 0x000108, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x00010C, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_MakeVector_ReturnValue2) == 0x000110, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00011C, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, K2Node_MakeStruct_ParticleSysParam) == 0x000120, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, CallFunc_FClamp_ReturnValue) == 0x0001A0, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, K2Node_MakeStruct_ParticleSysParam2) == 0x0001B0, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::K2Node_MakeStruct_ParticleSysParam2' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate, K2Node_MakeArray_Array) == 0x000230, "Member 'GCNL_GM_OnDmg_SpeedBuff_C_OnWhileActiveParticleSystemActivate::K2Node_MakeArray_Array' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

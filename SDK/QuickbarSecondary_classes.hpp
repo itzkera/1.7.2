@@ -10,13 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "QuickbarBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "QuickbarBase_classes.hpp"
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuickbarSecondary.QuickbarSecondary_C
 // 0x0088 (0x0310 - 0x0288)
@@ -54,32 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuickbarSecondary_C">();
+		BP_STATIC_CLASS_IMPL("QuickbarSecondary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickbarSecondary_C")
 	}
 	static class UQuickbarSecondary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickbarSecondary_C>();
 	}
 };
-static_assert(alignof(UQuickbarSecondary_C) == 0x000008, "Wrong alignment on UQuickbarSecondary_C");
-static_assert(sizeof(UQuickbarSecondary_C) == 0x000310, "Wrong size on UQuickbarSecondary_C");
-static_assert(offsetof(UQuickbarSecondary_C, UberGraphFrame_QuickbarSecondary_C) == 0x000288, "Member 'UQuickbarSecondary_C::UberGraphFrame_QuickbarSecondary_C' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, _Horizontal_Box__Camera_Mode_Content) == 0x000290, "Member 'UQuickbarSecondary_C::_Horizontal_Box__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, _Image__Separator) == 0x000298, "Member 'UQuickbarSecondary_C::_Image__Separator' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, _Image__Switch_Action) == 0x0002A0, "Member 'UQuickbarSecondary_C::_Image__Switch_Action' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, KeybindSwitchBinding) == 0x0002A8, "Member 'UQuickbarSecondary_C::KeybindSwitchBinding' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, Quickbar_Slot_F1) == 0x0002B0, "Member 'UQuickbarSecondary_C::Quickbar_Slot_F1' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, Quickbar_Slot_F2) == 0x0002B8, "Member 'UQuickbarSecondary_C::Quickbar_Slot_F2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, Quickbar_Slot_F3) == 0x0002C0, "Member 'UQuickbarSecondary_C::Quickbar_Slot_F3' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, Quickbar_Slot_F4) == 0x0002C8, "Member 'UQuickbarSecondary_C::Quickbar_Slot_F4' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, Quickbar_Slot_F5) == 0x0002D0, "Member 'UQuickbarSecondary_C::Quickbar_Slot_F5' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, SizeBox_Building) == 0x0002D8, "Member 'UQuickbarSecondary_C::SizeBox_Building' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, TutorialQBS1) == 0x0002E0, "Member 'UQuickbarSecondary_C::TutorialQBS1' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, TutorialQBS2) == 0x0002E8, "Member 'UQuickbarSecondary_C::TutorialQBS2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, TutorialQBS3) == 0x0002F0, "Member 'UQuickbarSecondary_C::TutorialQBS3' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, TutorialQBS4) == 0x0002F8, "Member 'UQuickbarSecondary_C::TutorialQBS4' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, TutorialQBS5) == 0x000300, "Member 'UQuickbarSecondary_C::TutorialQBS5' has a wrong offset!");
-static_assert(offsetof(UQuickbarSecondary_C, SecondaryFocusedSlot) == 0x000308, "Member 'UQuickbarSecondary_C::SecondaryFocusedSlot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

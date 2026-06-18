@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AnimNotify_PlayReloadFX.AnimNotify_PlayReloadFX_C
 // 0x0008 (0x0040 - 0x0038)
@@ -30,16 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_PlayReloadFX_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_PlayReloadFX_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayReloadFX_C")
 	}
 	static class UAnimNotify_PlayReloadFX_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_PlayReloadFX_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayReloadFX_C) == 0x000008, "Wrong alignment on UAnimNotify_PlayReloadFX_C");
-static_assert(sizeof(UAnimNotify_PlayReloadFX_C) == 0x000040, "Wrong size on UAnimNotify_PlayReloadFX_C");
-static_assert(offsetof(UAnimNotify_PlayReloadFX_C, ReloadStage) == 0x000038, "Member 'UAnimNotify_PlayReloadFX_C::ReloadStage' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

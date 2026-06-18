@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WeakSpot.WeakSpot_C.ExecuteUbergraph_WeakSpot
 // 0x0170 (0x0170 - 0x0000)
@@ -89,62 +89,6 @@ public:
 	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WeakSpot_C_ExecuteUbergraph_WeakSpot) == 0x000010, "Wrong alignment on WeakSpot_C_ExecuteUbergraph_WeakSpot");
-static_assert(sizeof(WeakSpot_C_ExecuteUbergraph_WeakSpot) == 0x000170, "Wrong size on WeakSpot_C_ExecuteUbergraph_WeakSpot");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, EntryPoint) == 0x000000, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_IsDedicatedServer_ReturnValue2) == 0x000018, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_IsDedicatedServer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Greater_IntInt_ReturnValue) == 0x000019, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00001C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, Temp_float_Variable) == 0x000020, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000024, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x000028, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000030, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GetVectorParameterValue_ReturnValue) == 0x000038, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GetVectorParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_MakeVector_ReturnValue) == 0x000048, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakColor_R) == 0x000054, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakColor_G) == 0x000058, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakColor_B) == 0x00005C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakColor_A) == 0x000060, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000064, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_LessEqual_FloatFloat_ReturnValue2) == 0x000068, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_LessEqual_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_MakeVector_ReturnValue2) == 0x00006C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000078, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000084, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000088, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_MakeTransform_ReturnValue) == 0x0000A0, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_VSize_ReturnValue) == 0x0000D0, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_AddComponent_ReturnValue) == 0x0000D8, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000E0, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_FFloor_ReturnValue) == 0x0000E4, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_FFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x0000E8, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000EC, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_FClamp_ReturnValue) == 0x0000F0, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x0000F4, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_LessEqual_FloatFloat_ReturnValue3) == 0x0000F5, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_LessEqual_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GreaterEqual_FloatFloat_ReturnValue2) == 0x0000F6, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GreaterEqual_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BooleanAND_ReturnValue) == 0x0000F7, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000F8, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BooleanAND_ReturnValue2) == 0x000104, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BooleanAND_ReturnValue3) == 0x000105, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, Temp_float_Variable2) == 0x000108, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::Temp_float_Variable2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_IsDedicatedServer_ReturnValue3) == 0x00010C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_IsDedicatedServer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GetTimelineLength_ReturnValue) == 0x000110, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GetTimelineLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_IsDedicatedServer_ReturnValue4) == 0x000114, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_IsDedicatedServer_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, Temp_bool_Variable) == 0x000115, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, K2Node_Select_Default) == 0x000118, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Array_LastIndex_ReturnValue) == 0x00011C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x000120, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Clamp_ReturnValue) == 0x00012C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Array_Get_Item) == 0x000130, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_GetGameTimeInSeconds_ReturnValue3) == 0x000138, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_GetGameTimeInSeconds_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakVector_X) == 0x00013C, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakVector_Y) == 0x000140, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_BreakVector_Z) == 0x000144, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_MakeColor_ReturnValue) == 0x000148, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000158, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_ExecuteUbergraph_WeakSpot, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000168, "Member 'WeakSpot_C_ExecuteUbergraph_WeakSpot::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 // Function WeakSpot.WeakSpot_C.UserConstructionScript
 // 0x00C0 (0x00C0 - 0x0000)
@@ -159,14 +103,6 @@ public:
 	struct FVector                                CallFunc_Conv_FloatToVector_ReturnValue;           // 0x002C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0038(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(WeakSpot_C_UserConstructionScript) == 0x000008, "Wrong alignment on WeakSpot_C_UserConstructionScript");
-static_assert(sizeof(WeakSpot_C_UserConstructionScript) == 0x0000C0, "Wrong size on WeakSpot_C_UserConstructionScript");
-static_assert(offsetof(WeakSpot_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'WeakSpot_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_UserConstructionScript, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'WeakSpot_C_UserConstructionScript::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_UserConstructionScript, K2Node_MakeArray_Array) == 0x000010, "Member 'WeakSpot_C_UserConstructionScript::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000020, "Member 'WeakSpot_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_UserConstructionScript, CallFunc_Conv_FloatToVector_ReturnValue) == 0x00002C, "Member 'WeakSpot_C_UserConstructionScript::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WeakSpot_C_UserConstructionScript, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000038, "Member 'WeakSpot_C_UserConstructionScript::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

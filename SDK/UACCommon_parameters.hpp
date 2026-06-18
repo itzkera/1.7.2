@@ -13,8 +13,8 @@
 #include "UACCommon_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function UACCommon.UACNetComponent.SendPacketToClient
 // 0x0018 (0x0018 - 0x0000)
@@ -25,10 +25,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Packet;                                            // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UACNetComponent_SendPacketToClient) == 0x000008, "Wrong alignment on UACNetComponent_SendPacketToClient");
-static_assert(sizeof(UACNetComponent_SendPacketToClient) == 0x000018, "Wrong size on UACNetComponent_SendPacketToClient");
-static_assert(offsetof(UACNetComponent_SendPacketToClient, Type) == 0x000000, "Member 'UACNetComponent_SendPacketToClient::Type' has a wrong offset!");
-static_assert(offsetof(UACNetComponent_SendPacketToClient, Packet) == 0x000008, "Member 'UACNetComponent_SendPacketToClient::Packet' has a wrong offset!");
 
 // Function UACCommon.UACNetComponent.SendPacketToServer
 // 0x0018 (0x0018 - 0x0000)
@@ -39,10 +35,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Packet;                                            // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(UACNetComponent_SendPacketToServer) == 0x000008, "Wrong alignment on UACNetComponent_SendPacketToServer");
-static_assert(sizeof(UACNetComponent_SendPacketToServer) == 0x000018, "Wrong size on UACNetComponent_SendPacketToServer");
-static_assert(offsetof(UACNetComponent_SendPacketToServer, Type) == 0x000000, "Member 'UACNetComponent_SendPacketToServer::Type' has a wrong offset!");
-static_assert(offsetof(UACNetComponent_SendPacketToServer, Packet) == 0x000008, "Member 'UACNetComponent_SendPacketToServer::Packet' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

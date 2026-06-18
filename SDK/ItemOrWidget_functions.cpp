@@ -14,8 +14,7 @@
 #include "ItemOrWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemOrWidget.ItemOrWidget_C.ExecuteUbergraph_ItemOrWidget
 // ()
@@ -50,5 +49,5 @@ void UItemOrWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "LegacyButtonStyle_Base_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass LegacyButtonStyle-Item.LegacyButtonStyle-Item_C
 // 0x0000 (0x1C08 - 0x1C08)
@@ -23,15 +22,16 @@ class ULegacyButtonStyle_Item_C final : public ULegacyButtonStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyButtonStyle-Item_C">();
+		BP_STATIC_CLASS_IMPL("LegacyButtonStyle-Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyButtonStyle-Item_C")
 	}
 	static class ULegacyButtonStyle_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyButtonStyle_Item_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyle_Item_C) == 0x000008, "Wrong alignment on ULegacyButtonStyle_Item_C");
-static_assert(sizeof(ULegacyButtonStyle_Item_C) == 0x001C08, "Wrong size on ULegacyButtonStyle_Item_C");
 
-}
-
+SDK_NAMESPACE_END

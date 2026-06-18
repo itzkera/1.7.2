@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformItemPicker.ItemTransformItemPicker_C
 // 0x0060 (0x0298 - 0x0238)
@@ -28,7 +27,7 @@ public:
 	class UItemHeaderWidget_C*                    ItemHeaderWidget;                                  // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemTransformSlotItemPicker_C*         ItemTransformSlotItemPicker;                       // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	UMulticastDelegateProperty_                   OnItemSelected;                                    // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<struct FFortItemTransformFilterTabLabelInfo> FilterTabs;                                        // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
+	TArray<struct FFortItemTransformFilterTabLabelInfo> FilterTabs;                                  // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn)
 	TArray<class UFortItem*>                      SacrificeItems;                                    // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class FName                                   CurrentTab;                                        // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CurrentlySelectedSlot;                             // 0x0290(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,24 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformItemPicker_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformItemPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformItemPicker_C")
 	}
 	static class UItemTransformItemPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformItemPicker_C>();
 	}
 };
-static_assert(alignof(UItemTransformItemPicker_C) == 0x000008, "Wrong alignment on UItemTransformItemPicker_C");
-static_assert(sizeof(UItemTransformItemPicker_C) == 0x000298, "Wrong size on UItemTransformItemPicker_C");
-static_assert(offsetof(UItemTransformItemPicker_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformItemPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, FilterTabList) == 0x000240, "Member 'UItemTransformItemPicker_C::FilterTabList' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, ItemHeaderWidget) == 0x000248, "Member 'UItemTransformItemPicker_C::ItemHeaderWidget' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, ItemTransformSlotItemPicker) == 0x000250, "Member 'UItemTransformItemPicker_C::ItemTransformSlotItemPicker' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, OnItemSelected) == 0x000258, "Member 'UItemTransformItemPicker_C::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, FilterTabs) == 0x000268, "Member 'UItemTransformItemPicker_C::FilterTabs' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, SacrificeItems) == 0x000278, "Member 'UItemTransformItemPicker_C::SacrificeItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, CurrentTab) == 0x000288, "Member 'UItemTransformItemPicker_C::CurrentTab' has a wrong offset!");
-static_assert(offsetof(UItemTransformItemPicker_C, CurrentlySelectedSlot) == 0x000290, "Member 'UItemTransformItemPicker_C::CurrentlySelectedSlot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

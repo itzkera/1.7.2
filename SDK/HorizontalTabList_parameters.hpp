@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HorizontalTabList.HorizontalTabList_C.ExecuteUbergraph_HorizontalTabList
 // 0x0098 (0x0098 - 0x0000)
@@ -67,44 +67,6 @@ public:
 	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_TabId;                          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList) == 0x000008, "Wrong alignment on HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList");
-static_assert(sizeof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList) == 0x000098, "Wrong size on HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, EntryPoint) == 0x000000, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable) == 0x000004, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_bool_Variable) == 0x000010, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable2) == 0x000011, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable3) == 0x000012, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_bool_Variable2) == 0x000020, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_IsUsingGamepad_ReturnValue) == 0x000021, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable4) == 0x000022, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable5) == 0x000023, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_bool_Variable3) == 0x000024, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable6) == 0x000025, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable7) == 0x000026, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable8) == 0x000027, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_bool_Variable4) == 0x000038, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Select_Default) == 0x000039, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_CreateDelegate_OutputDelegate2) == 0x000040, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_CustomEvent_bUsingGamepad) == 0x000050, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_CustomEvent_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable9) == 0x000051, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Select2_Default) == 0x000052, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_byte_Variable10) == 0x000053, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Event_IsDesignTime) == 0x000054, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_GetTabCount_ReturnValue) == 0x000058, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_GetTabCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00005C, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_GetTabCount_ReturnValue2) == 0x000060, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_GetTabCount_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000064, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Select3_Default) == 0x000065, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Event_TabNameID) == 0x000068, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Event_TabNameID' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Event_TabButton) == 0x000070, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Event_TabButton' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Select4_Default) == 0x000078, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000080, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, Temp_bool_Variable5) == 0x000088, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_Select5_Default) == 0x000089, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList, K2Node_CustomEvent_TabId) == 0x000090, "Member 'HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList::K2Node_CustomEvent_TabId' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.CustomEvent_0
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +75,6 @@ struct alignas(0x08) HorizontalTabList_C_CustomEvent_0 final
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HorizontalTabList_C_CustomEvent_0) == 0x000008, "Wrong alignment on HorizontalTabList_C_CustomEvent_0");
-static_assert(sizeof(HorizontalTabList_C_CustomEvent_0) == 0x000008, "Wrong size on HorizontalTabList_C_CustomEvent_0");
-static_assert(offsetof(HorizontalTabList_C_CustomEvent_0, TabId) == 0x000000, "Member 'HorizontalTabList_C_CustomEvent_0::TabId' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.HandleTabCreated
 // 0x0010 (0x0010 - 0x0000)
@@ -125,10 +84,6 @@ public:
 	class FName                                   TabNameID;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HorizontalTabList_C_HandleTabCreated) == 0x000008, "Wrong alignment on HorizontalTabList_C_HandleTabCreated");
-static_assert(sizeof(HorizontalTabList_C_HandleTabCreated) == 0x000010, "Wrong size on HorizontalTabList_C_HandleTabCreated");
-static_assert(offsetof(HorizontalTabList_C_HandleTabCreated, TabNameID) == 0x000000, "Member 'HorizontalTabList_C_HandleTabCreated::TabNameID' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_HandleTabCreated, TabButton) == 0x000008, "Member 'HorizontalTabList_C_HandleTabCreated::TabButton' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -137,9 +92,6 @@ struct HorizontalTabList_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HorizontalTabList_C_PreConstruct) == 0x000001, "Wrong alignment on HorizontalTabList_C_PreConstruct");
-static_assert(sizeof(HorizontalTabList_C_PreConstruct) == 0x000001, "Wrong size on HorizontalTabList_C_PreConstruct");
-static_assert(offsetof(HorizontalTabList_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HorizontalTabList_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.Handle OnInputMethodChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -148,9 +100,6 @@ struct HorizontalTabList_C_Handle_OnInputMethodChanged final
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HorizontalTabList_C_Handle_OnInputMethodChanged) == 0x000001, "Wrong alignment on HorizontalTabList_C_Handle_OnInputMethodChanged");
-static_assert(sizeof(HorizontalTabList_C_Handle_OnInputMethodChanged) == 0x000001, "Wrong size on HorizontalTabList_C_Handle_OnInputMethodChanged");
-static_assert(offsetof(HorizontalTabList_C_Handle_OnInputMethodChanged, bUsingGamepad) == 0x000000, "Member 'HorizontalTabList_C_Handle_OnInputMethodChanged::bUsingGamepad' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.ChangeInputBindings
 // 0x0020 (0x0020 - 0x0000)
@@ -160,10 +109,6 @@ public:
 	struct FDataTableRowHandle                    NextBinding;                                       // 0x0000(0x0010)(Parm, NoDestructor)
 	struct FDataTableRowHandle                    PreviousBinding;                                   // 0x0010(0x0010)(Parm, NoDestructor)
 };
-static_assert(alignof(HorizontalTabList_C_ChangeInputBindings) == 0x000008, "Wrong alignment on HorizontalTabList_C_ChangeInputBindings");
-static_assert(sizeof(HorizontalTabList_C_ChangeInputBindings) == 0x000020, "Wrong size on HorizontalTabList_C_ChangeInputBindings");
-static_assert(offsetof(HorizontalTabList_C_ChangeInputBindings, NextBinding) == 0x000000, "Member 'HorizontalTabList_C_ChangeInputBindings::NextBinding' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_ChangeInputBindings, PreviousBinding) == 0x000010, "Member 'HorizontalTabList_C_ChangeInputBindings::PreviousBinding' has a wrong offset!");
 
 // Function HorizontalTabList.HorizontalTabList_C.Get Tab From Id
 // 0x0018 (0x0018 - 0x0000)
@@ -174,11 +119,6 @@ public:
 	class UCommonButton*                          ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          CallFunc_GetTabButtonByID_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HorizontalTabList_C_Get_Tab_From_Id) == 0x000008, "Wrong alignment on HorizontalTabList_C_Get_Tab_From_Id");
-static_assert(sizeof(HorizontalTabList_C_Get_Tab_From_Id) == 0x000018, "Wrong size on HorizontalTabList_C_Get_Tab_From_Id");
-static_assert(offsetof(HorizontalTabList_C_Get_Tab_From_Id, TabNameID) == 0x000000, "Member 'HorizontalTabList_C_Get_Tab_From_Id::TabNameID' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_Get_Tab_From_Id, ReturnValue) == 0x000008, "Member 'HorizontalTabList_C_Get_Tab_From_Id::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HorizontalTabList_C_Get_Tab_From_Id, CallFunc_GetTabButtonByID_ReturnValue) == 0x000010, "Member 'HorizontalTabList_C_Get_Tab_From_Id::CallFunc_GetTabButtonByID_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

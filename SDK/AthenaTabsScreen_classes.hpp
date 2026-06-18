@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaTabsScreen.AthenaTabsScreen_C
 // 0x0028 (0x0468 - 0x0440)
@@ -42,20 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTabsScreen_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTabsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTabsScreen_C")
 	}
 	static class UAthenaTabsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTabsScreen_C>();
 	}
 };
-static_assert(alignof(UAthenaTabsScreen_C) == 0x000008, "Wrong alignment on UAthenaTabsScreen_C");
-static_assert(sizeof(UAthenaTabsScreen_C) == 0x000468, "Wrong size on UAthenaTabsScreen_C");
-static_assert(offsetof(UAthenaTabsScreen_C, UberGraphFrame) == 0x000440, "Member 'UAthenaTabsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000448, "Member 'UAthenaTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, LastActiveTabId) == 0x000450, "Member 'UAthenaTabsScreen_C::LastActiveTabId' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, UnclaimedResearchBangThreshold) == 0x000458, "Member 'UAthenaTabsScreen_C::UnclaimedResearchBangThreshold' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, UnclaimedResearchPointsHandle) == 0x000460, "Member 'UAthenaTabsScreen_C::UnclaimedResearchPointsHandle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

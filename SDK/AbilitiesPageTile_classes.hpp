@@ -17,8 +17,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AbilitiesPageTile.AbilitiesPageTile_C
 // 0x0128 (0x09C8 - 0x08A0)
@@ -58,33 +57,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AbilitiesPageTile_C">();
+		BP_STATIC_CLASS_IMPL("AbilitiesPageTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilitiesPageTile_C")
 	}
 	static class UAbilitiesPageTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilitiesPageTile_C>();
 	}
 };
-static_assert(alignof(UAbilitiesPageTile_C) == 0x000008, "Wrong alignment on UAbilitiesPageTile_C");
-static_assert(sizeof(UAbilitiesPageTile_C) == 0x0009C8, "Wrong size on UAbilitiesPageTile_C");
-static_assert(offsetof(UAbilitiesPageTile_C, UberGraphFrame) == 0x0008A0, "Member 'UAbilitiesPageTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityImage) == 0x0008A8, "Member 'UAbilitiesPageTile_C::AbilityImage' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityName) == 0x0008B0, "Member 'UAbilitiesPageTile_C::AbilityName' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, KeybindAbilityKeybind) == 0x0008B8, "Member 'UAbilitiesPageTile_C::KeybindAbilityKeybind' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, KeybindGamepadAbility1) == 0x0008C0, "Member 'UAbilitiesPageTile_C::KeybindGamepadAbility1' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, KeybindGamepadAbility2) == 0x0008C8, "Member 'UAbilitiesPageTile_C::KeybindGamepadAbility2' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, SizeBoxAbilityKeybind) == 0x0008D0, "Member 'UAbilitiesPageTile_C::SizeBoxAbilityKeybind' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, SwitcherAbilityBindingSwitcher) == 0x0008D8, "Member 'UAbilitiesPageTile_C::SwitcherAbilityBindingSwitcher' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, QuickBarSlot) == 0x0008E0, "Member 'UAbilitiesPageTile_C::QuickBarSlot' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityKit) == 0x0008E8, "Member 'UAbilitiesPageTile_C::AbilityKit' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, GadgetItemDef) == 0x0008F0, "Member 'UAbilitiesPageTile_C::GadgetItemDef' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityItem) == 0x0008F8, "Member 'UAbilitiesPageTile_C::AbilityItem' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityLocked) == 0x000900, "Member 'UAbilitiesPageTile_C::AbilityLocked' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityUIPerk) == 0x000908, "Member 'UAbilitiesPageTile_C::AbilityUIPerk' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, LockedColor) == 0x000990, "Member 'UAbilitiesPageTile_C::LockedColor' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, UnlockedColor) == 0x0009A0, "Member 'UAbilitiesPageTile_C::UnlockedColor' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, AbilityIconBrushSize) == 0x0009B0, "Member 'UAbilitiesPageTile_C::AbilityIconBrushSize' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPageTile_C, LockedAbilityIconColor) == 0x0009B4, "Member 'UAbilitiesPageTile_C::LockedAbilityIconColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

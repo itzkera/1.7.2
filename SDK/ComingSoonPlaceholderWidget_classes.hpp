@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ComingSoonPlaceholderWidget.ComingSoonPlaceholderWidget_C
 // 0x0018 (0x0248 - 0x0230)
@@ -28,18 +27,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComingSoonPlaceholderWidget_C">();
+		BP_STATIC_CLASS_IMPL("ComingSoonPlaceholderWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComingSoonPlaceholderWidget_C")
 	}
 	static class UComingSoonPlaceholderWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComingSoonPlaceholderWidget_C>();
 	}
 };
-static_assert(alignof(UComingSoonPlaceholderWidget_C) == 0x000008, "Wrong alignment on UComingSoonPlaceholderWidget_C");
-static_assert(sizeof(UComingSoonPlaceholderWidget_C) == 0x000248, "Wrong size on UComingSoonPlaceholderWidget_C");
-static_assert(offsetof(UComingSoonPlaceholderWidget_C, Image_0) == 0x000230, "Member 'UComingSoonPlaceholderWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UComingSoonPlaceholderWidget_C, Image_3) == 0x000238, "Member 'UComingSoonPlaceholderWidget_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UComingSoonPlaceholderWidget_C, UnderConstruction) == 0x000240, "Member 'UComingSoonPlaceholderWidget_C::UnderConstruction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Results_TeamTotalScore_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeamTotalScore.Results_TeamTotalScore_C.ExecuteUbergraph_Results_TeamTotalScore
 // ()
@@ -41,7 +40,7 @@ void UResults_TeamTotalScore_C::ExecuteUbergraph_Results_TeamTotalScore(int32 En
 // (BlueprintEvent)
 // Parameters:
 // class UCommonNumericTextBlock*          NumericTextBlock                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    HadCompleted                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              HadCompleted                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeamTotalScore_C::BndEvt__TextTotalScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted)
 {
@@ -292,5 +291,5 @@ void UResults_TeamTotalScore_C::InitializeConvertScorePlayRate(float PlayRate)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

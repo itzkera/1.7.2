@@ -14,8 +14,7 @@
 #include "ItemAttributesDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.ExecuteUbergraph_ItemAttributesDetailWidget
 // ()
@@ -168,5 +167,5 @@ void UItemAttributesDetailWidget_C::UpdateItemsForWidgets()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Results_TeamScore_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeamScore.Results_TeamScore_C.ExecuteUbergraph_Results_TeamScore
 // ()
@@ -260,5 +259,5 @@ void UResults_TeamScore_C::Focus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

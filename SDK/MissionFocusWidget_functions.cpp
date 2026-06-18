@@ -14,8 +14,7 @@
 #include "MissionFocusWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionFocusWidget.MissionFocusWidget_C.ExecuteUbergraph_MissionFocusWidget
 // ()
@@ -118,5 +117,5 @@ void UMissionFocusWidget_C::UpdateVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

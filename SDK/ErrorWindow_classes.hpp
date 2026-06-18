@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ErrorWindow.ErrorWindow_C
 // 0x0070 (0x0490 - 0x0420)
@@ -55,27 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ErrorWindow_C">();
+		BP_STATIC_CLASS_IMPL("ErrorWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ErrorWindow_C")
 	}
 	static class UErrorWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UErrorWindow_C>();
 	}
 };
-static_assert(alignof(UErrorWindow_C) == 0x000008, "Wrong alignment on UErrorWindow_C");
-static_assert(sizeof(UErrorWindow_C) == 0x000490, "Wrong size on UErrorWindow_C");
-static_assert(offsetof(UErrorWindow_C, UberGraphFrame) == 0x000420, "Member 'UErrorWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, CloseButton) == 0x000428, "Member 'UErrorWindow_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Image_0) == 0x000430, "Member 'UErrorWindow_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Image_ErrorRed) == 0x000438, "Member 'UErrorWindow_C::Image_ErrorRed' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Lightbox) == 0x000440, "Member 'UErrorWindow_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, LogoutButton) == 0x000448, "Member 'UErrorWindow_C::LogoutButton' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, MessageList) == 0x000450, "Member 'UErrorWindow_C::MessageList' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Title) == 0x000458, "Member 'UErrorWindow_C::Title' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, ShownErrorEntries) == 0x000460, "Member 'UErrorWindow_C::ShownErrorEntries' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, bShouldLogout) == 0x000470, "Member 'UErrorWindow_C::bShouldLogout' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, ShownErrorInfos) == 0x000478, "Member 'UErrorWindow_C::ShownErrorInfos' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, bIntroOutroEnabled) == 0x000488, "Member 'UErrorWindow_C::bIntroOutroEnabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

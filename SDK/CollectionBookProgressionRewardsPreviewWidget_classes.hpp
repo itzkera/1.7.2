@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookProgressionRewardsPreviewWidget.CollectionBookProgressionRewardsPreviewWidget_C
 // 0x0008 (0x0250 - 0x0248)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookProgressionRewardsPreviewWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookProgressionRewardsPreviewWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookProgressionRewardsPreviewWidget_C")
 	}
 	static class UCollectionBookProgressionRewardsPreviewWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookProgressionRewardsPreviewWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookProgressionRewardsPreviewWidget_C) == 0x000008, "Wrong alignment on UCollectionBookProgressionRewardsPreviewWidget_C");
-static_assert(sizeof(UCollectionBookProgressionRewardsPreviewWidget_C) == 0x000250, "Wrong size on UCollectionBookProgressionRewardsPreviewWidget_C");
-static_assert(offsetof(UCollectionBookProgressionRewardsPreviewWidget_C, Image_0) == 0x000248, "Member 'UCollectionBookProgressionRewardsPreviewWidget_C::Image_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FriendNotification_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FriendNotification.FriendNotification_C.ExecuteUbergraph_FriendNotification
 // ()
@@ -78,5 +77,5 @@ void UFriendNotification_C::ShowFriendInvites()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "RejoinWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RejoinWindow.RejoinWindow_C.ExecuteUbergraph_RejoinWindow
 // ()
@@ -68,7 +67,7 @@ void URejoinWindow_C::Construct()
 // Function RejoinWindow.RejoinWindow_C.ShowRetryScreen
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Failure                                                (Parm)
+// const class FText&                      Failure                                                (Parm)
 // float                                   TimeoutSeconds                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    AllowRetry                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -156,5 +155,5 @@ void URejoinWindow_C::OnButtonClicked(class UCommonButton* Button)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

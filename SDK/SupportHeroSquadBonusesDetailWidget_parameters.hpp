@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -28,11 +28,6 @@ public:
 	class UFortHero*                              K2Node_DynamicCast_AsFort_Hero;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget) == 0x000008, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget");
-static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget) == 0x000018, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget, EntryPoint) == 0x000000, "Member 'SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget, K2Node_DynamicCast_AsFort_Hero) == 0x000008, "Member 'SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'SupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.UpdateVisibility
 // 0x00D8 (0x00D8 - 0x0000)
@@ -66,31 +61,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x00D5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility) == 0x000008, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility");
-static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility) == 0x0000D8, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000000, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x000008, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2) == 0x000010, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2) == 0x000018, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00001C, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x00001D, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId3) == 0x000020, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId3' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex3) == 0x000028, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex3' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_BooleanOR_ReturnValue) == 0x00002C, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, Temp_byte_Variable) == 0x00002D, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, Temp_byte_Variable2) == 0x00002E, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, Temp_bool_Variable) == 0x00002F, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad) == 0x000038, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_TryGetHomebaseSquadData_OutHomebaseSquad' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_TryGetHomebaseSquadData_ReturnValue) == 0x0000C0, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_TryGetHomebaseSquadData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, K2Node_DynamicCast_AsFort_Hero) == 0x0000C8, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_IsValid_ReturnValue) == 0x0000D1, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000D2, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_BooleanAND_ReturnValue) == 0x0000D3, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_BooleanOR_ReturnValue2) == 0x0000D4, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, CallFunc_BooleanAND_ReturnValue2) == 0x0000D5, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility, K2Node_Select_Default) == 0x0000D6, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdateVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.UpdatePerkWidgets
 // 0x0018 (0x0018 - 0x0000)
@@ -106,15 +76,6 @@ public:
 	EFortSupportBonusType                         Temp_byte_Variable2;                               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortSupportBonusType                         K2Node_Select_Default;                             // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets) == 0x000008, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets");
-static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets) == 0x000018, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, Temp_bool_Variable) == 0x000000, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId) == 0x000008, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadId' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex) == 0x000010, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::CallFunc_GetIdOfSquadSlotToManageBP_OutSquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, Temp_byte_Variable) == 0x000014, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000015, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, Temp_byte_Variable2) == 0x000016, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets, K2Node_Select_Default) == 0x000017, "Member 'SupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets::K2Node_Select_Default' has a wrong offset!");
 
 // Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.SetState
 // 0x0001 (0x0001 - 0x0000)
@@ -123,9 +84,6 @@ struct SupportHeroSquadBonusesDetailWidget_C_SetState final
 public:
 	EFortSupportPerkWidgetState                   InState;                                           // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SupportHeroSquadBonusesDetailWidget_C_SetState) == 0x000001, "Wrong alignment on SupportHeroSquadBonusesDetailWidget_C_SetState");
-static_assert(sizeof(SupportHeroSquadBonusesDetailWidget_C_SetState) == 0x000001, "Wrong size on SupportHeroSquadBonusesDetailWidget_C_SetState");
-static_assert(offsetof(SupportHeroSquadBonusesDetailWidget_C_SetState, InState) == 0x000000, "Member 'SupportHeroSquadBonusesDetailWidget_C_SetState::InState' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

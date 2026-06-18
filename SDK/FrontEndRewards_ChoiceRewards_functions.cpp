@@ -14,8 +14,7 @@
 #include "FrontEndRewards_ChoiceRewards_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ExecuteUbergraph_FrontEndRewards_ChoiceRewards
 // ()
@@ -426,7 +425,7 @@ void UFrontEndRewards_ChoiceRewards_C::HideConfirmation()
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.PopulateFromCardList
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>&     Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_ChoiceRewards_C::PopulateFromCardList(TArray<class URewards_ItemCard_C*>& Cards)
 {
@@ -476,7 +475,7 @@ void UFrontEndRewards_ChoiceRewards_C::HandleTransitionInComplete()
 // Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.HandleInspectAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_ChoiceRewards_C::HandleInspectAction(bool* Committed)
 {
@@ -527,5 +526,5 @@ void UFrontEndRewards_ChoiceRewards_C::HandleResizeFinished(class URewards_ItemC
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

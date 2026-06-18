@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AIGoalManager.AIGoalManager_C
 // 0x0008 (0x04A8 - 0x04A0)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AIGoalManager_C">();
+		BP_STATIC_CLASS_IMPL("AIGoalManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AIGoalManager_C")
 	}
 	static class AAIGoalManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAIGoalManager_C>();
 	}
 };
-static_assert(alignof(AAIGoalManager_C) == 0x000008, "Wrong alignment on AAIGoalManager_C");
-static_assert(sizeof(AAIGoalManager_C) == 0x0004A8, "Wrong size on AAIGoalManager_C");
-static_assert(offsetof(AAIGoalManager_C, DefaultSceneRoot) == 0x0004A0, "Member 'AAIGoalManager_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

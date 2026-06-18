@@ -15,8 +15,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BluGlow_MorphAnimation.BluGlow_MorphAnimation_C
 // 0x0070 (0x03F8 - 0x0388)
@@ -54,33 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BluGlow_MorphAnimation_C">();
+		BP_STATIC_CLASS_IMPL("BluGlow_MorphAnimation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BluGlow_MorphAnimation_C")
 	}
 	static class ABluGlow_MorphAnimation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABluGlow_MorphAnimation_C>();
 	}
 };
-static_assert(alignof(ABluGlow_MorphAnimation_C) == 0x000008, "Wrong alignment on ABluGlow_MorphAnimation_C");
-static_assert(sizeof(ABluGlow_MorphAnimation_C) == 0x0003F8, "Wrong size on ABluGlow_MorphAnimation_C");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, UberGraphFrame) == 0x000388, "Member 'ABluGlow_MorphAnimation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, PointLight) == 0x000390, "Member 'ABluGlow_MorphAnimation_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, NewParticleSystem) == 0x000398, "Member 'ABluGlow_MorphAnimation_C::NewParticleSystem' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, BluGlowModel) == 0x0003A0, "Member 'ABluGlow_MorphAnimation_C::BluGlowModel' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, DefaultSceneRoot) == 0x0003A8, "Member 'ABluGlow_MorphAnimation_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Timeline_0_Additional_Texture_Rotation_Rate_4CFA454F41B86B7BE42429BB2A905B1E) == 0x0003B0, "Member 'ABluGlow_MorphAnimation_C::Timeline_0_Additional_Texture_Rotation_Rate_4CFA454F41B86B7BE42429BB2A905B1E' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Timeline_0_Scale_4CFA454F41B86B7BE42429BB2A905B1E) == 0x0003B4, "Member 'ABluGlow_MorphAnimation_C::Timeline_0_Scale_4CFA454F41B86B7BE42429BB2A905B1E' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Timeline_0_Morph_4CFA454F41B86B7BE42429BB2A905B1E) == 0x0003B8, "Member 'ABluGlow_MorphAnimation_C::Timeline_0_Morph_4CFA454F41B86B7BE42429BB2A905B1E' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Timeline_0_Glow_4CFA454F41B86B7BE42429BB2A905B1E) == 0x0003BC, "Member 'ABluGlow_MorphAnimation_C::Timeline_0_Glow_4CFA454F41B86B7BE42429BB2A905B1E' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Timeline_0__Direction_4CFA454F41B86B7BE42429BB2A905B1E) == 0x0003C0, "Member 'ABluGlow_MorphAnimation_C::Timeline_0__Direction_4CFA454F41B86B7BE42429BB2A905B1E' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Timeline_0) == 0x0003C8, "Member 'ABluGlow_MorphAnimation_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Mid) == 0x0003D0, "Member 'ABluGlow_MorphAnimation_C::Mid' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, IntCounter) == 0x0003D8, "Member 'ABluGlow_MorphAnimation_C::IntCounter' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Initial_Sphere_Scale) == 0x0003DC, "Member 'ABluGlow_MorphAnimation_C::Initial_Sphere_Scale' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Additional_Texture_Rotation_Rate) == 0x0003E0, "Member 'ABluGlow_MorphAnimation_C::Additional_Texture_Rotation_Rate' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Rotation) == 0x0003E4, "Member 'ABluGlow_MorphAnimation_C::Rotation' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, Number_of_Morph_Targets) == 0x0003F0, "Member 'ABluGlow_MorphAnimation_C::Number_of_Morph_Targets' has a wrong offset!");
-static_assert(offsetof(ABluGlow_MorphAnimation_C, NumberOfMorphTargets) == 0x0003F4, "Member 'ABluGlow_MorphAnimation_C::NumberOfMorphTargets' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

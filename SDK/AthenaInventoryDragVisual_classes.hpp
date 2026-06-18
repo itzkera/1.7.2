@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaInventoryDragVisual.AthenaInventoryDragVisual_C
 // 0x0020 (0x0260 - 0x0240)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaInventoryDragVisual_C">();
+		BP_STATIC_CLASS_IMPL("AthenaInventoryDragVisual_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaInventoryDragVisual_C")
 	}
 	static class UAthenaInventoryDragVisual_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaInventoryDragVisual_C>();
 	}
 };
-static_assert(alignof(UAthenaInventoryDragVisual_C) == 0x000008, "Wrong alignment on UAthenaInventoryDragVisual_C");
-static_assert(sizeof(UAthenaInventoryDragVisual_C) == 0x000260, "Wrong size on UAthenaInventoryDragVisual_C");
-static_assert(offsetof(UAthenaInventoryDragVisual_C, UberGraphFrame) == 0x000240, "Member 'UAthenaInventoryDragVisual_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryDragVisual_C, ItemWidget) == 0x000248, "Member 'UAthenaInventoryDragVisual_C::ItemWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryDragVisual_C, Item) == 0x000250, "Member 'UAthenaInventoryDragVisual_C::Item' has a wrong offset!");
-static_assert(offsetof(UAthenaInventoryDragVisual_C, ItemCardSize) == 0x000258, "Member 'UAthenaInventoryDragVisual_C::ItemCardSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

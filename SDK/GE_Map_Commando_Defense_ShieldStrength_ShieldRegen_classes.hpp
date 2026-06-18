@@ -13,8 +13,7 @@
 #include "GE_Map_Resistance_To_Shield_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Map_Commando_Defense_ShieldStrength_ShieldRegen.GE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C final : public UGE_M
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C">();
+		BP_STATIC_CLASS_IMPL("GE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C")
 	}
 	static class UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C>();
 	}
 };
-static_assert(alignof(UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C) == 0x000010, "Wrong alignment on UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C");
-static_assert(sizeof(UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C) == 0x000660, "Wrong size on UGE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LoginScreen.LoginScreen_C
 // 0x00F0 (0x0520 - 0x0430)
@@ -110,41 +109,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginScreen_C">();
+		BP_STATIC_CLASS_IMPL("LoginScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginScreen_C")
 	}
 	static class ULoginScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginScreen_C>();
 	}
 };
-static_assert(alignof(ULoginScreen_C) == 0x000008, "Wrong alignment on ULoginScreen_C");
-static_assert(sizeof(ULoginScreen_C) == 0x000520, "Wrong size on ULoginScreen_C");
-static_assert(offsetof(ULoginScreen_C, UberGraphFrame) == 0x000430, "Member 'ULoginScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BackBorder) == 0x000438, "Member 'ULoginScreen_C::BackBorder' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BackButton) == 0x000440, "Member 'ULoginScreen_C::BackButton' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, ConsoleProfileWidget) == 0x000448, "Member 'ULoginScreen_C::ConsoleProfileWidget' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, LoginBackground) == 0x000450, "Member 'ULoginScreen_C::LoginBackground' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, LoginFlowStack) == 0x000458, "Member 'ULoginScreen_C::LoginFlowStack' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, SafeZone_0) == 0x000460, "Member 'ULoginScreen_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, SafeZone_1) == 0x000468, "Member 'ULoginScreen_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Widget_BuildWatermark) == 0x000470, "Member 'ULoginScreen_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Sound_Login_Clicked) == 0x000478, "Member 'ULoginScreen_C::Sound_Login_Clicked' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Sound_Login_Failed) == 0x000480, "Member 'ULoginScreen_C::Sound_Login_Failed' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Sound_Login_Music) == 0x000488, "Member 'ULoginScreen_C::Sound_Login_Music' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Sound_Login_Quit) == 0x000490, "Member 'ULoginScreen_C::Sound_Login_Quit' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, FrontEnd_Music_Controller) == 0x000498, "Member 'ULoginScreen_C::FrontEnd_Music_Controller' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, StatusWindow) == 0x0004A0, "Member 'ULoginScreen_C::StatusWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, SignInWindow) == 0x0004A8, "Member 'ULoginScreen_C::SignInWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, AccountLinkWindow) == 0x0004B0, "Member 'ULoginScreen_C::AccountLinkWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, bLoginMenuVisible) == 0x0004B8, "Member 'ULoginScreen_C::bLoginMenuVisible' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, LoginResultWindow) == 0x0004C0, "Member 'ULoginScreen_C::LoginResultWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, EulaWindow) == 0x0004C8, "Member 'ULoginScreen_C::EulaWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BenchmarkDialogTitle) == 0x0004D0, "Member 'ULoginScreen_C::BenchmarkDialogTitle' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, BenchmarkDialogMessage) == 0x0004E8, "Member 'ULoginScreen_C::BenchmarkDialogMessage' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, LoginMenuWidget) == 0x000500, "Member 'ULoginScreen_C::LoginMenuWidget' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, SplashScreenWindow) == 0x000508, "Member 'ULoginScreen_C::SplashScreenWindow' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, test) == 0x000510, "Member 'ULoginScreen_C::test' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, AccountSelectWindow) == 0x000518, "Member 'ULoginScreen_C::AccountSelectWindow' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

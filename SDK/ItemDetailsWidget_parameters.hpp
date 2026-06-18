@@ -14,8 +14,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemDetailsWidget.ItemDetailsWidget_C.ExecuteUbergraph_ItemDetailsWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -29,13 +29,6 @@ public:
 	class FText                                   CallFunc_GetDescription_ReturnValue;               // 0x0008(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget) == 0x000008, "Wrong alignment on ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget");
-static_assert(sizeof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget) == 0x000028, "Wrong size on ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget");
-static_assert(offsetof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget, EntryPoint) == 0x000000, "Member 'ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget, CallFunc_ItemHasStats_Stats) == 0x000004, "Member 'ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget::CallFunc_ItemHasStats_Stats' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget, CallFunc_GetDescription_ReturnValue) == 0x000008, "Member 'ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'ItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemDetailsWidget.ItemDetailsWidget_C.PopulateAttributeList
 // 0x0028 (0x0028 - 0x0000)
@@ -47,12 +40,6 @@ public:
 	class UFortTooltipContext*                    CallFunc_SpawnTooltipContextWithSource_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetComparisonStats_ReturnValue;           // 0x0018(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemDetailsWidget_C_PopulateAttributeList) == 0x000008, "Wrong alignment on ItemDetailsWidget_C_PopulateAttributeList");
-static_assert(sizeof(ItemDetailsWidget_C_PopulateAttributeList) == 0x000028, "Wrong size on ItemDetailsWidget_C_PopulateAttributeList");
-static_assert(offsetof(ItemDetailsWidget_C_PopulateAttributeList, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'ItemDetailsWidget_C_PopulateAttributeList::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_PopulateAttributeList, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemDetailsWidget_C_PopulateAttributeList::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_PopulateAttributeList, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000010, "Member 'ItemDetailsWidget_C_PopulateAttributeList::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_PopulateAttributeList, CallFunc_GetComparisonStats_ReturnValue) == 0x000018, "Member 'ItemDetailsWidget_C_PopulateAttributeList::CallFunc_GetComparisonStats_ReturnValue' has a wrong offset!");
 
 // Function ItemDetailsWidget.ItemDetailsWidget_C.ShowUpgradeComparison
 // 0x0028 (0x0028 - 0x0000)
@@ -64,12 +51,6 @@ public:
 	class UFortTooltipUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetUpgradeStats_ReturnValue;              // 0x0018(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemDetailsWidget_C_ShowUpgradeComparison) == 0x000008, "Wrong alignment on ItemDetailsWidget_C_ShowUpgradeComparison");
-static_assert(sizeof(ItemDetailsWidget_C_ShowUpgradeComparison) == 0x000028, "Wrong size on ItemDetailsWidget_C_ShowUpgradeComparison");
-static_assert(offsetof(ItemDetailsWidget_C_ShowUpgradeComparison, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'ItemDetailsWidget_C_ShowUpgradeComparison::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ShowUpgradeComparison, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000008, "Member 'ItemDetailsWidget_C_ShowUpgradeComparison::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ShowUpgradeComparison, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemDetailsWidget_C_ShowUpgradeComparison::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ShowUpgradeComparison, CallFunc_GetUpgradeStats_ReturnValue) == 0x000018, "Member 'ItemDetailsWidget_C_ShowUpgradeComparison::CallFunc_GetUpgradeStats_ReturnValue' has a wrong offset!");
 
 // Function ItemDetailsWidget.ItemDetailsWidget_C.ItemHasStats
 // 0x0038 (0x0038 - 0x0000)
@@ -92,21 +73,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsWidget_C_ItemHasStats) == 0x000008, "Wrong alignment on ItemDetailsWidget_C_ItemHasStats");
-static_assert(sizeof(ItemDetailsWidget_C_ItemHasStats) == 0x000038, "Wrong size on ItemDetailsWidget_C_ItemHasStats");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, Item) == 0x000000, "Member 'ItemDetailsWidget_C_ItemHasStats::Item' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, Stats) == 0x000008, "Member 'ItemDetailsWidget_C_ItemHasStats::Stats' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_GetType_ReturnValue) == 0x000018, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_GetPersistentName_ReturnValue) == 0x000020, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_GetPersistentName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000030, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x000031, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_EqualEqual_StriStri_ReturnValue2) == 0x000032, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_EqualEqual_StriStri_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000033, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_BooleanOR_ReturnValue) == 0x000034, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_BooleanOR_ReturnValue2) == 0x000035, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_IsValid_ReturnValue) == 0x000036, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsWidget_C_ItemHasStats, CallFunc_Not_PreBool_ReturnValue) == 0x000037, "Member 'ItemDetailsWidget_C_ItemHasStats::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

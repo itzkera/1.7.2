@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_BadgeLootBar.Results_BadgeLootBar_C
 // 0x00B8 (0x02F0 - 0x0238)
@@ -71,41 +70,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_BadgeLootBar_C">();
+		BP_STATIC_CLASS_IMPL("Results_BadgeLootBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_BadgeLootBar_C")
 	}
 	static class UResults_BadgeLootBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_BadgeLootBar_C>();
 	}
 };
-static_assert(alignof(UResults_BadgeLootBar_C) == 0x000008, "Wrong alignment on UResults_BadgeLootBar_C");
-static_assert(sizeof(UResults_BadgeLootBar_C) == 0x0002F0, "Wrong size on UResults_BadgeLootBar_C");
-static_assert(offsetof(UResults_BadgeLootBar_C, UberGraphFrame) == 0x000238, "Member 'UResults_BadgeLootBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, Anim_PostLevelUpIntro) == 0x000240, "Member 'UResults_BadgeLootBar_C::Anim_PostLevelUpIntro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, Anim_LevelUp) == 0x000248, "Member 'UResults_BadgeLootBar_C::Anim_LevelUp' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, Anim_ConvertBadge) == 0x000250, "Member 'UResults_BadgeLootBar_C::Anim_ConvertBadge' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, Anim_Intro) == 0x000258, "Member 'UResults_BadgeLootBar_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, ProgressBarNew) == 0x000260, "Member 'UResults_BadgeLootBar_C::ProgressBarNew' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, TextLootLevel) == 0x000268, "Member 'UResults_BadgeLootBar_C::TextLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, IntroComplete) == 0x000270, "Member 'UResults_BadgeLootBar_C::IntroComplete' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, InitialPoints) == 0x000280, "Member 'UResults_BadgeLootBar_C::InitialPoints' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, CurrentPoints) == 0x000284, "Member 'UResults_BadgeLootBar_C::CurrentPoints' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, AddBadgePointsTimer) == 0x000288, "Member 'UResults_BadgeLootBar_C::AddBadgePointsTimer' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, TargetPoints) == 0x000290, "Member 'UResults_BadgeLootBar_C::TargetPoints' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, CurrentLootLevel) == 0x000294, "Member 'UResults_BadgeLootBar_C::CurrentLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, FinishedAddingBadgePoints) == 0x000298, "Member 'UResults_BadgeLootBar_C::FinishedAddingBadgePoints' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, AddBadgePointsTime) == 0x0002A8, "Member 'UResults_BadgeLootBar_C::AddBadgePointsTime' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, AddBadgePointsTimeStart) == 0x0002AC, "Member 'UResults_BadgeLootBar_C::AddBadgePointsTimeStart' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, LeveledUp) == 0x0002B0, "Member 'UResults_BadgeLootBar_C::LeveledUp' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, DelayBetweenLevelUpAndPostLevelUp) == 0x0002C0, "Member 'UResults_BadgeLootBar_C::DelayBetweenLevelUpAndPostLevelUp' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, PlayRate) == 0x0002C4, "Member 'UResults_BadgeLootBar_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, bSkippedToEnd) == 0x0002C8, "Member 'UResults_BadgeLootBar_C::bSkippedToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, bSkippingToEnd) == 0x0002C9, "Member 'UResults_BadgeLootBar_C::bSkippingToEnd' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, PointsPerLootLevel) == 0x0002CC, "Member 'UResults_BadgeLootBar_C::PointsPerLootLevel' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, LevelLootBar) == 0x0002D0, "Member 'UResults_BadgeLootBar_C::LevelLootBar' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, YellowFillUp_Sound) == 0x0002D8, "Member 'UResults_BadgeLootBar_C::YellowFillUp_Sound' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, YellowBarFillSound_AC) == 0x0002E0, "Member 'UResults_BadgeLootBar_C::YellowBarFillSound_AC' has a wrong offset!");
-static_assert(offsetof(UResults_BadgeLootBar_C, MAT_XPBar) == 0x0002E8, "Member 'UResults_BadgeLootBar_C::MAT_XPBar' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

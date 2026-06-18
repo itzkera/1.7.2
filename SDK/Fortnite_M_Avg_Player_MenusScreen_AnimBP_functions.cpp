@@ -14,8 +14,7 @@
 #include "Fortnite_M_Avg_Player_MenusScreen_AnimBP_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Fortnite_M_Avg_Player_MenusScreen_AnimBP.Fortnite_M_Avg_Player_MenusScreen_AnimBP_C.ExecuteUbergraph_Fortnite_M_Avg_Player_MenusScreen_AnimBP
 // ()
@@ -182,5 +181,5 @@ void UFortnite_M_Avg_Player_MenusScreen_AnimBP_C::EvaluateGraphExposedInputs_Exe
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

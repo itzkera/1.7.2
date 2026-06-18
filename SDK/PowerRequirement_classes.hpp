@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PowerRequirement.PowerRequirement_C
 // 0x0028 (0x0258 - 0x0230)
@@ -42,21 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerRequirement_C">();
+		BP_STATIC_CLASS_IMPL("PowerRequirement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerRequirement_C")
 	}
 	static class UPowerRequirement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPowerRequirement_C>();
 	}
 };
-static_assert(alignof(UPowerRequirement_C) == 0x000008, "Wrong alignment on UPowerRequirement_C");
-static_assert(sizeof(UPowerRequirement_C) == 0x000258, "Wrong size on UPowerRequirement_C");
-static_assert(offsetof(UPowerRequirement_C, UberGraphFrame) == 0x000230, "Member 'UPowerRequirement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPowerRequirement_C, PowerRequirementHB) == 0x000238, "Member 'UPowerRequirement_C::PowerRequirementHB' has a wrong offset!");
-static_assert(offsetof(UPowerRequirement_C, RatingWidget) == 0x000240, "Member 'UPowerRequirement_C::RatingWidget' has a wrong offset!");
-static_assert(offsetof(UPowerRequirement_C, TextBlock) == 0x000248, "Member 'UPowerRequirement_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(UPowerRequirement_C, RecommendedPower) == 0x000250, "Member 'UPowerRequirement_C::RecommendedPower' has a wrong offset!");
-static_assert(offsetof(UPowerRequirement_C, RequiredPower) == 0x000254, "Member 'UPowerRequirement_C::RequiredPower' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

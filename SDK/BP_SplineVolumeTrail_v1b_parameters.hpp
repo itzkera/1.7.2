@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ExecuteUbergraph_BP_SplineVolumeTrail_v1b
 // 0x0268 (0x0268 - 0x0000)
@@ -114,88 +114,6 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue2;            // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b) == 0x000268, "Wrong size on BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, EntryPoint) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_IsValid_ReturnValue) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_GetGameTimeInSeconds_ReturnValue3) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_GetGameTimeInSeconds_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_GetGameTimeInSeconds_ReturnValue4) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_GetGameTimeInSeconds_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Multiply_RotatorFloat_ReturnValue) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Multiply_RotatorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_GetSocketLocationWS_LocationWS) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0000D8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_CreateDelegate_OutputDelegate2) == 0x0000E0, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000F0, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_IsValid_ReturnValue2) == 0x0000F8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_DoesSocketExist_ReturnValue) == 0x0000F9, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_K2_SetTimerDelegate_ReturnValue2) == 0x000100, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_K2_SetTimerDelegate_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, Temp_int_Variable) == 0x000108, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00010C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Add_IntInt_ReturnValue) == 0x000110, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_GetGameTimeInSeconds_ReturnValue5) == 0x000114, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_GetGameTimeInSeconds_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000118, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x00011C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000120, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_CreateDelegate_OutputDelegate3) == 0x000128, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_K2_SetTimerDelegate_ReturnValue3) == 0x000138, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_K2_SetTimerDelegate_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Array_Length_ReturnValue) == 0x000140, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Greater_IntInt_ReturnValue) == 0x000144, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, Temp_int_Variable2) == 0x000148, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x00014C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Percent_IntInt_ReturnValue) == 0x000150, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000154, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Greater_IntInt_ReturnValue2) == 0x000158, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00015C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_FTrunc_ReturnValue) == 0x000160, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Add_IntInt_ReturnValue2) == 0x000164, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Array_Get_Item) == 0x000168, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BakeLinearColor_LinearColorOut) == 0x000170, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BakeLinearColor_LinearColorOut' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Subtract_FloatFloat_ReturnValue4) == 0x000180, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Subtract_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_MakeStruct_LinearColor) == 0x000184, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_MakeStruct_LinearColor2) == 0x000194, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_MakeStruct_LinearColor2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Array_Length_ReturnValue2) == 0x0001A4, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Multiply_IntInt_ReturnValue) == 0x0001A8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x0001AC, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_IsDedicatedServer_ReturnValue) == 0x0001B0, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Array_Length_ReturnValue3) == 0x0001B4, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Multiply_IntInt_ReturnValue2) == 0x0001B8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Multiply_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0001BC, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_IsValid_ReturnValue3) == 0x0001BD, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Array_Length_ReturnValue4) == 0x0001C0, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Array_Length_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BreakVector2D_X) == 0x0001C4, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BreakVector2D_Y) == 0x0001C8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Multiply_IntInt_ReturnValue3) == 0x0001CC, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Multiply_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_MakeVector2D_ReturnValue) == 0x0001D0, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0001D8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, Temp_bool_Variable) == 0x0001DC, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_MakeVector2D_ReturnValue2) == 0x0001E0, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_MakeVector2D_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, K2Node_Select_Default) == 0x0001E8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_IsValid_ReturnValue4) == 0x0001F8, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Conv_IntToFloat_ReturnValue5) == 0x0001FC, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Conv_IntToFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000200, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Conv_IntToFloat_ReturnValue6) == 0x000204, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Conv_IntToFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_MakeVector2D_ReturnValue3) == 0x000208, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_MakeVector2D_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BreakVector2D_X2) == 0x000210, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BreakVector2D_X2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BreakVector2D_Y2) == 0x000214, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BreakVector2D_Y2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_EqualEqual_Vector2DVector2D_ReturnValue) == 0x000218, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_EqualEqual_Vector2DVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_FTrunc_ReturnValue2) == 0x00021C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_FTrunc_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Multiply_IntInt_ReturnValue4) == 0x000220, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Multiply_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_FTrunc_ReturnValue3) == 0x000224, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_FTrunc_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_CreateRenderTarget2D_ReturnValue) == 0x000228, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_CreateRenderTarget2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BreakVector2D_X3) == 0x000230, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BreakVector2D_X3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BreakVector2D_Y3) == 0x000234, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BreakVector2D_Y3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BeginDrawCanvasToRenderTarget_Canvas) == 0x000238, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BeginDrawCanvasToRenderTarget_Canvas' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BeginDrawCanvasToRenderTarget_Size) == 0x000240, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BeginDrawCanvasToRenderTarget_Size' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_BeginDrawCanvasToRenderTarget_Context) == 0x000248, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_BeginDrawCanvasToRenderTarget_Context' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_FTrunc_ReturnValue4) == 0x000258, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_FTrunc_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_Subtract_IntInt_ReturnValue) == 0x00025C, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000260, "Member 'BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -204,9 +122,6 @@ struct BP_SplineVolumeTrail_v1b_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ReceiveTick");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ReceiveTick) == 0x000004, "Wrong size on BP_SplineVolumeTrail_v1b_C_ReceiveTick");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UserConstructionScript
 // 0x0150 (0x0150 - 0x0000)
@@ -245,33 +160,6 @@ public:
 	struct FHitResult                             CallFunc_K2_AddLocalOffset_SweepHitResult;         // 0x00B8(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0140(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript) == 0x000010, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UserConstructionScript");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript) == 0x000150, "Wrong size on BP_SplineVolumeTrail_v1b_C_UserConstructionScript");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_byte_Variable) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000039, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_byte_Variable2) == 0x00003A, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_bool_Variable) == 0x00003B, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, Temp_struct_Variable2) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue2) == 0x000070, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue) == 0x00007C, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000080, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_IsValid_ReturnValue2) == 0x000088, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue2) == 0x00008C, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, K2Node_Select_Default) == 0x000090, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000094, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue2) == 0x000098, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00009C, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_BooleanAND_ReturnValue) == 0x00009D, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000A0, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue3) == 0x0000A4, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x0000A8, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_Array_Add_ReturnValue4) == 0x0000AC, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000B0, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_K2_AddLocalOffset_SweepHitResult) == 0x0000B8, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_K2_AddLocalOffset_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UserConstructionScript, CallFunc_GetSocketLocationWS_LocationWS) == 0x000140, "Member 'BP_SplineVolumeTrail_v1b_C_UserConstructionScript::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplineMesh
 // 0x0140 (0x0140 - 0x0000)
@@ -336,53 +224,6 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue2;                   // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue3;                   // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh) == 0x000010, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh) == 0x000140, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplineMesh");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, Temp_bool_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_LastIndex_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Subtract_IntInt_ReturnValue3) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Subtract_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_GetLocationAtSplinePoint_ReturnValue2) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_GetLocationAtSplinePoint_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Conv_VectorToLinearColor_ReturnValue2) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Conv_VectorToLinearColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Conv_VectorToLinearColor_ReturnValue3) == 0x000058, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Conv_VectorToLinearColor_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, Temp_int_Variable) == 0x00006C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, K2Node_Select_Default) == 0x000070, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Get_Item) == 0x000078, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000080, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_IsValid_ReturnValue2) == 0x000081, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, Temp_struct_Variable) == 0x000090, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_LastIndex_ReturnValue2) == 0x0000C0, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_AddComponent_ReturnValue) == 0x0000C8, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Subtract_IntInt_ReturnValue4) == 0x0000D0, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Subtract_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Get_Item2) == 0x0000D4, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Get_Item3) == 0x0000D8, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_GetMaterial_ReturnValue) == 0x0000E0, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Add_ReturnValue) == 0x0000E8, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Get_Item4) == 0x0000F0, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Get_Item4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_IsValid_ReturnValue3) == 0x0000F8, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Length_ReturnValue) == 0x0000FC, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Less_IntInt_ReturnValue) == 0x000100, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_IsValid_ReturnValue4) == 0x000101, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_SetStaticMesh_ReturnValue) == 0x000102, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000104, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000108, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, Temp_bool_Variable2) == 0x00010C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_GetNumberOfSplinePoints_ReturnValue2) == 0x000110, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_GetNumberOfSplinePoints_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Length_ReturnValue2) == 0x000114, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Subtract_IntInt_ReturnValue5) == 0x000118, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Subtract_IntInt_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Less_IntInt_ReturnValue2) == 0x00011C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_IsValid_ReturnValue5) == 0x00011D, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, K2Node_Select2_Default) == 0x000120, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000128, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Add_ReturnValue2) == 0x000130, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineMesh, CallFunc_Array_Add_ReturnValue3) == 0x000134, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineMesh::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetStartAndEndSplineMesh
 // 0x0038 (0x0038 - 0x0000)
@@ -397,14 +238,6 @@ public:
 	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Location2; // 0x0020(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2; // 0x002C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh) == 0x000038, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, Update_Spline_Mesh) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::Update_Spline_Mesh' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_GetLocationAndTangentAtSplinePoint_Location) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_GetLocationAndTangentAtSplinePoint_Location' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_GetLocationAndTangentAtSplinePoint_Location2) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_GetLocationAndTangentAtSplinePoint_Location2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh, CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh::CallFunc_GetLocationAndTangentAtSplinePoint_Tangent2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplinePoint
 // 0x0020 (0x0020 - 0x0000)
@@ -420,14 +253,6 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplinePoint");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint) == 0x000020, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplinePoint");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_BooleanAND_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplinePoint, CallFunc_GetSocketLocationWS_LocationWS) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplinePoint::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateSplinePointPosition
 // 0x0014 (0x0014 - 0x0000)
@@ -438,11 +263,6 @@ public:
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0008(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition) == 0x000014, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition, CallFunc_GetSocketLocationWS_LocationWS) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineTimestampManagement
 // 0x0078 (0x0078 - 0x0000)
@@ -484,37 +304,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0075(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement) == 0x000078, "Wrong size on BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Temp_int_Array_Index_Variable2) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Get_Item) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Length_ReturnValue2) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Add_ReturnValue) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, Temp_int_Loop_Counter_Variable2) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Add_IntInt_ReturnValue2) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_FClamp_ReturnValue) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Lerp_ReturnValue) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x00004C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Greater_IntInt_ReturnValue2) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Get_Item2) == 0x000058, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Get_Item3) == 0x000064, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000068, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Array_Length_ReturnValue3) == 0x00006C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x000070, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_Less_IntInt_ReturnValue2) == 0x000074, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000075, "Member 'BP_SplineVolumeTrail_v1b_C_SplineTimestampManagement::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ScaleSplineMesh
 // 0x0068 (0x0068 - 0x0000)
@@ -539,24 +328,6 @@ public:
 	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0058(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue2;      // 0x0060(0x0008)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh) == 0x000068, "Wrong size on BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_R) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_G) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_B) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_A) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_R2) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_R2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_G2) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_G2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_B2) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_B2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_BreakColor_A2) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_BreakColor_A2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_MakeVector2D_ReturnValue) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_MakeVector2D_ReturnValue2) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_MakeVector2D_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_Multiply_Vector2DFloat_ReturnValue) == 0x000058, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_Multiply_Vector2DFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh, CallFunc_Multiply_Vector2DFloat_ReturnValue2) == 0x000060, "Member 'BP_SplineVolumeTrail_v1b_C_ScaleSplineMesh::CallFunc_Multiply_Vector2DFloat_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateMID
 // 0x0030 (0x0030 - 0x0000)
@@ -570,13 +341,6 @@ public:
 	struct FLinearColor                           CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2; // 0x0018(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateMID) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateMID");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateMID) == 0x000030, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateMID");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_GetLinearColorFromCurveAtTime_LinearColorOut2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateMID, CallFunc_Array_Get_Item) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateMID::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateParticleSystemPosition
 // 0x0098 (0x0098 - 0x0000)
@@ -588,11 +352,6 @@ public:
 	struct FVector                                CallFunc_GetSocketLocationWS_LocationWS;           // 0x0004(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0010(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition) == 0x000098, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition, CallFunc_GetSocketLocationWS_LocationWS) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.RollSplineMesh
 // 0x0054 (0x0054 - 0x0000)
@@ -626,30 +385,6 @@ public:
 	float                                         CallFunc_GetFloatValue_ReturnValue2;               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue2;         // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_RollSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh) == 0x000054, "Wrong size on BP_SplineVolumeTrail_v1b_C_RollSplineMesh");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, Temp_bool_Variable) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, Temp_bool_Variable2) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_IsValid_ReturnValue) == 0x00000D, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Array_Get_Item) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, K2Node_Select_Default) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Array_IsValidIndex_ReturnValue2) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Array_IsValidIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_FClamp_ReturnValue) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_GetFloatValue_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_GetFloatValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Array_Get_Item2) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, K2Node_Select2_Default) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_FClamp_ReturnValue2) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_FClamp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_GetFloatValue_ReturnValue2) == 0x00004C, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_GetFloatValue_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RollSplineMesh, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_RollSplineMesh::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetForwardAxisOnSplineMesh
 // 0x0010 (0x0010 - 0x0000)
@@ -659,10 +394,6 @@ public:
 	class USplineMeshComponent*                   SplineMesh;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh) == 0x000010, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh, SplineMesh) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh::SplineMesh' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh, K2Node_SwitchEnum_CmpSuccess) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetNewSplinePointsBool
 // 0x0001 (0x0001 - 0x0000)
@@ -671,9 +402,6 @@ struct BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool final
 public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool) == 0x000001, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool) == 0x000001, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplineDistanceCheck
 // 0x0048 (0x0048 - 0x0000)
@@ -697,22 +425,6 @@ public:
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck) == 0x000048, "Wrong size on BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, Temp_bool_Variable) == 0x000001, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, K2Node_Select_Default) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_GetLocationAtSplinePoint_ReturnValue2) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_GetLocationAtSplinePoint_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_VSize_ReturnValue) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck, CallFunc_BooleanAND_ReturnValue) == 0x000045, "Member 'BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetWasRecentlyRendered
 // 0x0004 (0x0004 - 0x0000)
@@ -724,12 +436,6 @@ public:
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered) == 0x000001, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered) == 0x000004, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered, CallFunc_WasRecentlyRendered_ReturnValue) == 0x000001, "Member 'BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered::CallFunc_WasRecentlyRendered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000002, "Member 'BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'BP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.TickIntervalLODCheck
 // 0x0088 (0x0088 - 0x0000)
@@ -774,39 +480,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue3;                  // 0x0085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0086(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck) == 0x000088, "Wrong size on BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, Temp_bool_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_GetSocketLocationWS_LocationWS) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_GetSocketLocationWS_LocationWS' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, Temp_int_Variable) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_VSize_ReturnValue) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, Temp_bool_Variable2) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Array_LastIndex_ReturnValue) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00004C, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Array_Get_Item) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000054, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000058, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Add_IntInt_ReturnValue2) == 0x00005C, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_BooleanAND_ReturnValue) == 0x000060, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Array_Get_Item2) == 0x000064, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Array_Get_Item3) == 0x000068, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x00006C, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Array_LastIndex_ReturnValue2) == 0x000070, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000074, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000075, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000076, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_BooleanAND_ReturnValue2) == 0x000077, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, K2Node_Select_Default) == 0x000078, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Array_Get_Item4) == 0x00007C, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Array_Get_Item4' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000080, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000084, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_BooleanAND_ReturnValue3) == 0x000085, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck, CallFunc_BooleanOR_ReturnValue) == 0x000086, "Member 'BP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GetLinearColorFromCurveAtTime
 // 0x0058 (0x0058 - 0x0000)
@@ -830,23 +503,6 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetLinearColorValue_ReturnValue;          // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime) == 0x000058, "Wrong size on BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, Curve_Linear_Color) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::Curve_Linear_Color' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, Index_0) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::Index_0' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, LinearColorOut) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::LinearColorOut' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, Temp_bool_Variable) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Subtract_IntInt_ReturnValue) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Array_Get_Item) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, K2Node_Select_Default) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime, CallFunc_GetLinearColorValue_ReturnValue) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.RedistributePointsAlongSpline
 // 0x0048 (0x0048 - 0x0000)
@@ -867,20 +523,6 @@ public:
 	struct FVector                                CallFunc_GetLocationAtTime_ReturnValue;            // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline) == 0x000004, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline) == 0x000048, "Wrong size on BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, Temp_int_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_Subtract_IntInt_ReturnValue) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_GetLocationAtTime_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_GetLocationAtTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline, CallFunc_VLerp_ReturnValue) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline::CallFunc_VLerp_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineUpdateOnTick
 // 0x0080 (0x0080 - 0x0000)
@@ -919,33 +561,6 @@ public:
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USplineMeshComponent*                   CallFunc_Array_Get_Item3;                          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick) == 0x000080, "Wrong size on BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_LastIndex_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_Get_Item) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, Temp_int_Loop_Counter_Variable) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, Temp_bool_Variable) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_LastIndex_ReturnValue2) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_LastIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Subtract_IntInt_ReturnValue2) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_AddSplineDistanceCheck_ReturnValue) == 0x00004C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_AddSplineDistanceCheck_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00004D, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_IsDedicatedServer_ReturnValue) == 0x00004E, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, Temp_int_Variable) == 0x000050, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, K2Node_Select_Default) == 0x000054, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_Get_Item2) == 0x000058, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, Temp_int_Variable2) == 0x000068, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00006C, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Add_IntInt_ReturnValue2) == 0x000070, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick, CallFunc_Array_Get_Item3) == 0x000078, "Member 'BP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick::CallFunc_Array_Get_Item3' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReturnSplineMeshToPool
 // 0x0010 (0x0010 - 0x0000)
@@ -956,11 +571,6 @@ public:
 	int32                                         IndexToRemove;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool) == 0x000010, "Wrong size on BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool, SplineMesh) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool::SplineMesh' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool, IndexToRemove) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool::IndexToRemove' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.BakeLinearColor
 // 0x0058 (0x0058 - 0x0000)
@@ -980,20 +590,6 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0048(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_BakeLinearColor");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor) == 0x000058, "Wrong size on BP_SplineVolumeTrail_v1b_C_BakeLinearColor");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, Curve_Linear_Color) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::Curve_Linear_Color' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, Pixel__X_) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::Pixel__X_' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, LinearColorOut) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::LinearColorOut' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_BreakVector2D_X) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_BreakVector2D_Y) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_Add_FloatFloat_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_GetLinearColorValue_ReturnValue) == 0x000034, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_GetLinearColorValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000044, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_BakeLinearColor, K2Node_MakeStruct_LinearColor) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_BakeLinearColor::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.DestroyAllSplineMeshes
 // 0x0040 (0x0040 - 0x0000)
@@ -1017,22 +613,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue2;                 // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes) == 0x000040, "Wrong size on BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, Temp_int_Loop_Counter_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, Temp_int_Array_Index_Variable) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, Temp_int_Loop_Counter_Variable2) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Add_IntInt_ReturnValue2) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, Temp_int_Array_Index_Variable2) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Array_Get_Item) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Less_IntInt_ReturnValue) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Array_Length_ReturnValue2) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Array_Get_Item2) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_Less_IntInt_ReturnValue2) == 0x000038, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes, CallFunc_IsValid_ReturnValue2) == 0x000039, "Member 'BP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetStartAndEndAllSplineMeshes
 // 0x0028 (0x0028 - 0x0000)
@@ -1050,15 +630,6 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes) == 0x000028, "Wrong size on BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, Update_All_Spline_Meshes) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::Update_All_Spline_Meshes' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, CallFunc_Array_Get_Item) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GetSocketLocationWS
 // 0x0020 (0x0020 - 0x0000)
@@ -1069,11 +640,6 @@ public:
 	struct FVector                                LocationWS;                                        // 0x0008(0x000C)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS) == 0x000020, "Wrong size on BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS, Socket_Name) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS::Socket_Name' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS, LocationWS) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS::LocationWS' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS, CallFunc_GetSocketLocation_ReturnValue) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
 
 // Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateCheapSplinesWPOVectors
 // 0x0080 (0x0080 - 0x0000)
@@ -1101,27 +667,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors) == 0x000008, "Wrong alignment on BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors");
-static_assert(sizeof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors) == 0x000080, "Wrong size on BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Add_IntInt_ReturnValue2) == 0x000010, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000014, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Add_IntInt_ReturnValue3) == 0x000018, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_GetNumberOfSplinePoints_ReturnValue) == 0x00001C, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_GetNumberOfSplinePoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Subtract_IntInt_ReturnValue) == 0x000020, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000024, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000028, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x00002C, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x000030, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_GetLocationAtSplinePoint_ReturnValue2) == 0x00003C, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_GetLocationAtSplinePoint_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000048, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Conv_VectorToLinearColor_ReturnValue2) == 0x000058, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Conv_VectorToLinearColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Array_Get_Item) == 0x000070, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'BP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

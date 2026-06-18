@@ -14,8 +14,7 @@
 #include "NodeBackground_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function NodeBackground.NodeBackground_C.ExecuteUbergraph_NodeBackground
 // ()
@@ -84,5 +83,5 @@ void UNodeBackground_C::SetBackgroundColor()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

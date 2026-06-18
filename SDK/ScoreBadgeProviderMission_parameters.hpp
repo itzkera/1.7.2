@@ -14,8 +14,8 @@
 #include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ScoreBadgeProviderMission.ScoreBadgeProviderMission_C.GetScoreBadgeInfos
 // 0x0018 (0x0018 - 0x0000)
@@ -24,12 +24,8 @@ struct ScoreBadgeProviderMission_C_GetScoreBadgeInfos final
 public:
 	EStatCategory                                 ScoreCategory;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FCollectionMissionBadgeDisplayInfo> BadgeInfos;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
+	TArray<struct FCollectionMissionBadgeDisplayInfo> BadgeInfos;                                    // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor)
 };
-static_assert(alignof(ScoreBadgeProviderMission_C_GetScoreBadgeInfos) == 0x000008, "Wrong alignment on ScoreBadgeProviderMission_C_GetScoreBadgeInfos");
-static_assert(sizeof(ScoreBadgeProviderMission_C_GetScoreBadgeInfos) == 0x000018, "Wrong size on ScoreBadgeProviderMission_C_GetScoreBadgeInfos");
-static_assert(offsetof(ScoreBadgeProviderMission_C_GetScoreBadgeInfos, ScoreCategory) == 0x000000, "Member 'ScoreBadgeProviderMission_C_GetScoreBadgeInfos::ScoreCategory' has a wrong offset!");
-static_assert(offsetof(ScoreBadgeProviderMission_C_GetScoreBadgeInfos, BadgeInfos) == 0x000008, "Member 'ScoreBadgeProviderMission_C_GetScoreBadgeInfos::BadgeInfos' has a wrong offset!");
 
 // Function ScoreBadgeProviderMission.ScoreBadgeProviderMission_C.GetTotalScore
 // 0x0008 (0x0008 - 0x0000)
@@ -40,10 +36,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Score;                                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScoreBadgeProviderMission_C_GetTotalScore) == 0x000004, "Wrong alignment on ScoreBadgeProviderMission_C_GetTotalScore");
-static_assert(sizeof(ScoreBadgeProviderMission_C_GetTotalScore) == 0x000008, "Wrong size on ScoreBadgeProviderMission_C_GetTotalScore");
-static_assert(offsetof(ScoreBadgeProviderMission_C_GetTotalScore, ScoreCategory) == 0x000000, "Member 'ScoreBadgeProviderMission_C_GetTotalScore::ScoreCategory' has a wrong offset!");
-static_assert(offsetof(ScoreBadgeProviderMission_C_GetTotalScore, Score) == 0x000004, "Member 'ScoreBadgeProviderMission_C_GetTotalScore::Score' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

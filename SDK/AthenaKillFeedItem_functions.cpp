@@ -14,13 +14,12 @@
 #include "AthenaKillFeedItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaKillFeedItem.AthenaKillFeedItem_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 
 void UAthenaKillFeedItem_C::SetText(const class FText& Text)
 {
@@ -36,5 +35,5 @@ void UAthenaKillFeedItem_C::SetText(const class FText& Text)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

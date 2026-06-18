@@ -14,8 +14,7 @@
 #include "PBWA_W1_QuarterWallS_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C.ExecuteUbergraph_PBWA_W1_QuarterWallS
 // (HasDefaults)
@@ -41,7 +40,7 @@ void APBWA_W1_QuarterWallS_C::ExecuteUbergraph_PBWA_W1_QuarterWallS(int32 EntryP
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APBWA_W1_QuarterWallS_C::GameplayCue_Abilities_Activation_Generic_BannerWallBuff2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -63,7 +62,7 @@ void APBWA_W1_QuarterWallS_C::GameplayCue_Abilities_Activation_Generic_BannerWal
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APBWA_W1_QuarterWallS_C::GameplayCue_Abilities_Activation_Generic_BannerWallBuff1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -94,5 +93,5 @@ void APBWA_W1_QuarterWallS_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

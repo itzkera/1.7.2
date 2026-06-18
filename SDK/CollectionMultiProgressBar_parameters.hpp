@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CollectionMissionBadgeDisplayInfo_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.ExecuteUbergraph_CollectionMultiProgressBar
 // 0x0004 (0x0004 - 0x0000)
@@ -25,16 +25,13 @@ struct CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar) == 0x000004, "Wrong alignment on CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar");
-static_assert(sizeof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar) == 0x000004, "Wrong size on CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar");
-static_assert(offsetof(CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar, EntryPoint) == 0x000000, "Member 'CollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar::EntryPoint' has a wrong offset!");
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Setup
 // 0x0140 (0x0140 - 0x0000)
 struct CollectionMultiProgressBar_C_Setup final
 {
 public:
-	TArray<struct FCollectionMissionBadgeDisplayInfo> InBarInfos;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FCollectionMissionBadgeDisplayInfo> InBarInfos;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	int32                                         AchievedCount;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,35 +65,6 @@ public:
 	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue2;     // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionMultiProgressBar_C_Setup) == 0x000008, "Wrong alignment on CollectionMultiProgressBar_C_Setup");
-static_assert(sizeof(CollectionMultiProgressBar_C_Setup) == 0x000140, "Wrong size on CollectionMultiProgressBar_C_Setup");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, InBarInfos) == 0x000000, "Member 'CollectionMultiProgressBar_C_Setup::InBarInfos' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, AchievedCount) == 0x000010, "Member 'CollectionMultiProgressBar_C_Setup::AchievedCount' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, Temp_int_Array_Index_Variable) == 0x000018, "Member 'CollectionMultiProgressBar_C_Setup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, K2Node_MakeStruct_SlateChildSize) == 0x00001C, "Member 'CollectionMultiProgressBar_C_Setup::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Array_Get_Item) == 0x000028, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Create_ReturnValue) == 0x000050, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000058, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000060, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, Temp_int_Loop_Counter_Variable) == 0x000064, "Member 'CollectionMultiProgressBar_C_Setup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_IsValid_ReturnValue2) == 0x000068, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Less_IntInt_ReturnValue) == 0x000069, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, Temp_bool_Variable) == 0x000070, "Member 'CollectionMultiProgressBar_C_Setup::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_FClamp_ReturnValue) == 0x000074, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_BreakVector2D_X) == 0x000078, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_BreakVector2D_Y) == 0x00007C, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000080, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, K2Node_Select_Default) == 0x000084, "Member 'CollectionMultiProgressBar_C_Setup::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x000088, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, K2Node_MakeStruct_SlateChildSize2) == 0x000118, "Member 'CollectionMultiProgressBar_C_Setup::K2Node_MakeStruct_SlateChildSize2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000120, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_Create_ReturnValue2) == 0x000128, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_IsAchievedCountInRange_bIsInRange) == 0x000130, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_IsAchievedCountInRange_bIsInRange' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Setup, CallFunc_AddChildToHorizontalBox_ReturnValue2) == 0x000138, "Member 'CollectionMultiProgressBar_C_Setup::CallFunc_AddChildToHorizontalBox_ReturnValue2' has a wrong offset!");
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Update
 // 0x0030 (0x0030 - 0x0000)
@@ -116,17 +84,6 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CollectionMultiProgressBar_C_Update) == 0x000008, "Wrong alignment on CollectionMultiProgressBar_C_Update");
-static_assert(sizeof(CollectionMultiProgressBar_C_Update) == 0x000030, "Wrong size on CollectionMultiProgressBar_C_Update");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, AchievedCount) == 0x000000, "Member 'CollectionMultiProgressBar_C_Update::AchievedCount' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, Temp_int_Variable) == 0x000004, "Member 'CollectionMultiProgressBar_C_Update::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'CollectionMultiProgressBar_C_Update::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, CallFunc_GetChildrenCount_ReturnValue) == 0x000010, "Member 'CollectionMultiProgressBar_C_Update::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, K2Node_DynamicCast_AsCollection_Bar) == 0x000018, "Member 'CollectionMultiProgressBar_C_Update::K2Node_DynamicCast_AsCollection_Bar' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'CollectionMultiProgressBar_C_Update::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'CollectionMultiProgressBar_C_Update::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000028, "Member 'CollectionMultiProgressBar_C_Update::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_Update, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'CollectionMultiProgressBar_C_Update::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.UpdateVisibleBar
 // 0x0078 (0x0078 - 0x0000)
@@ -167,33 +124,6 @@ public:
 	bool                                          CallFunc_IsAchievedCountInRange_bIsInRange2;       // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CollectionMultiProgressBar_C_UpdateVisibleBar) == 0x000008, "Wrong alignment on CollectionMultiProgressBar_C_UpdateVisibleBar");
-static_assert(sizeof(CollectionMultiProgressBar_C_UpdateVisibleBar) == 0x000078, "Wrong size on CollectionMultiProgressBar_C_UpdateVisibleBar");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, Temp_bool_Variable) == 0x000000, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildIndex_ReturnValue) == 0x000004, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_IsAchievedCountInRange_bIsInRange) == 0x000008, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_IsAchievedCountInRange_bIsInRange' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue) == 0x000010, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, Temp_int_Variable) == 0x00001C, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildrenCount_ReturnValue) == 0x000020, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00002C, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue2) == 0x000030, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildrenCount_ReturnValue2) == 0x000038, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildrenCount_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, K2Node_DynamicCast_AsCollection_Bar) == 0x000040, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::K2Node_DynamicCast_AsCollection_Bar' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_Subtract_IntInt_ReturnValue2) == 0x00004C, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_Subtract_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildIndex_ReturnValue2) == 0x000050, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000054, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue3) == 0x000058, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_BooleanAND_ReturnValue) == 0x000060, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_IsValid_ReturnValue2) == 0x000061, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_GetChildAt_ReturnValue4) == 0x000068, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_GetChildAt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000070, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_IsAchievedCountInRange_bIsInRange2) == 0x000071, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_IsAchievedCountInRange_bIsInRange2' has a wrong offset!");
-static_assert(offsetof(CollectionMultiProgressBar_C_UpdateVisibleBar, CallFunc_BooleanOR_ReturnValue) == 0x000072, "Member 'CollectionMultiProgressBar_C_UpdateVisibleBar::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

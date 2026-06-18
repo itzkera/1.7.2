@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookOverviewWidget.CollectionBookOverviewWidget_C
 // 0x0000 (0x0278 - 0x0278)
@@ -23,15 +22,16 @@ class UCollectionBookOverviewWidget_C final : public UFortCollectionBookOverview
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookOverviewWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookOverviewWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookOverviewWidget_C")
 	}
 	static class UCollectionBookOverviewWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookOverviewWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookOverviewWidget_C) == 0x000008, "Wrong alignment on UCollectionBookOverviewWidget_C");
-static_assert(sizeof(UCollectionBookOverviewWidget_C) == 0x000278, "Wrong size on UCollectionBookOverviewWidget_C");
 
-}
-
+SDK_NAMESPACE_END

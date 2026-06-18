@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionTooltip.MissionTooltip_C
 // 0x0080 (0x02B0 - 0x0230)
@@ -52,30 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionTooltip_C">();
+		BP_STATIC_CLASS_IMPL("MissionTooltip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionTooltip_C")
 	}
 	static class UMissionTooltip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionTooltip_C>();
 	}
 };
-static_assert(alignof(UMissionTooltip_C) == 0x000008, "Wrong alignment on UMissionTooltip_C");
-static_assert(sizeof(UMissionTooltip_C) == 0x0002B0, "Wrong size on UMissionTooltip_C");
-static_assert(offsetof(UMissionTooltip_C, UberGraphFrame) == 0x000230, "Member 'UMissionTooltip_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Biome_Info) == 0x000238, "Member 'UMissionTooltip_C::Biome_Info' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Biome_Name) == 0x000240, "Member 'UMissionTooltip_C::Biome_Name' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Border_PowerWidget) == 0x000248, "Member 'UMissionTooltip_C::Border_PowerWidget' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Difficulty_Info) == 0x000250, "Member 'UMissionTooltip_C::Difficulty_Info' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Difficulty_Name) == 0x000258, "Member 'UMissionTooltip_C::Difficulty_Name' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, LevelConningWarning) == 0x000260, "Member 'UMissionTooltip_C::LevelConningWarning' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Mission_Name) == 0x000268, "Member 'UMissionTooltip_C::Mission_Name' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, Mission_Type_Icon) == 0x000270, "Member 'UMissionTooltip_C::Mission_Type_Icon' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, ModifiersContentHorizontalBox) == 0x000278, "Member 'UMissionTooltip_C::ModifiersContentHorizontalBox' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, ModifierVerticalBox) == 0x000280, "Member 'UMissionTooltip_C::ModifierVerticalBox' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, PowerRequirement) == 0x000288, "Member 'UMissionTooltip_C::PowerRequirement' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, RewardsContent) == 0x000290, "Member 'UMissionTooltip_C::RewardsContent' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, VerticalBox) == 0x000298, "Member 'UMissionTooltip_C::VerticalBox' has a wrong offset!");
-static_assert(offsetof(UMissionTooltip_C, MissionRewards) == 0x0002A0, "Member 'UMissionTooltip_C::MissionRewards' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

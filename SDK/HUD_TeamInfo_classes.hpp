@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HUD_TeamInfo.HUD_TeamInfo_C
 // 0x0050 (0x02B0 - 0x0260)
@@ -46,24 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HUD_TeamInfo_C">();
+		BP_STATIC_CLASS_IMPL("HUD_TeamInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUD_TeamInfo_C")
 	}
 	static class UHUD_TeamInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUD_TeamInfo_C>();
 	}
 };
-static_assert(alignof(UHUD_TeamInfo_C) == 0x000008, "Wrong alignment on UHUD_TeamInfo_C");
-static_assert(sizeof(UHUD_TeamInfo_C) == 0x0002B0, "Wrong size on UHUD_TeamInfo_C");
-static_assert(offsetof(UHUD_TeamInfo_C, UberGraphFrame) == 0x000260, "Member 'UHUD_TeamInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, _Vertical_Box__Team_Members) == 0x000268, "Member 'UHUD_TeamInfo_C::_Vertical_Box__Team_Members' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, BorderFrame) == 0x000270, "Member 'UHUD_TeamInfo_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, InvalidationBox_0) == 0x000278, "Member 'UHUD_TeamInfo_C::InvalidationBox_0' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, InvalidationBox_1) == 0x000280, "Member 'UHUD_TeamInfo_C::InvalidationBox_1' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, InvalidationBox_2) == 0x000288, "Member 'UHUD_TeamInfo_C::InvalidationBox_2' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, InvalidationBox_3) == 0x000290, "Member 'UHUD_TeamInfo_C::InvalidationBox_3' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, TeamMembers) == 0x000298, "Member 'UHUD_TeamInfo_C::TeamMembers' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamInfo_C, NewVar_0) == 0x0002A8, "Member 'UHUD_TeamInfo_C::NewVar_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

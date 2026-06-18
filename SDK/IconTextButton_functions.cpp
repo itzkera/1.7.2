@@ -14,8 +14,7 @@
 #include "IconTextButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function IconTextButton.IconTextButton_C.ExecuteUbergraph_IconTextButton
 // (HasDefaults)
@@ -102,7 +101,7 @@ void UIconTextButton_C::OnActionProgress(float HeldPercent)
 // Function IconTextButton.IconTextButton_C.OnTriggeredInputActionChanged
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              NewTriggeredAction                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FDataTableRowHandle&       NewTriggeredAction                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UIconTextButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
@@ -142,7 +141,7 @@ void UIconTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEv
 // Function IconTextButton.IconTextButton_C.SetTabLabelInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortTabButtonLabelInfo          TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTabButtonLabelInfo&   TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UIconTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
@@ -196,7 +195,7 @@ void UIconTextButton_C::OnCurrentTextStyleChanged()
 // Function IconTextButton.IconTextButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ButtonText_0                                           (Parm)
+// const class FText&                      ButtonText_0                                           (Parm)
 
 void UIconTextButton_C::Set_Text(const class FText& ButtonText_0)
 {
@@ -216,7 +215,7 @@ void UIconTextButton_C::Set_Text(const class FText& ButtonText_0)
 // Function IconTextButton.IconTextButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush_0                                            (Parm)
+// const struct FSlateBrush&               IconBrush_0                                            (Parm)
 
 void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
@@ -406,7 +405,7 @@ void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 // Function IconTextButton.IconTextButton_C.SetTextInternal
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             InButtonText                                           (Parm)
+// const class FText&                      InButtonText                                           (Parm)
 
 void UIconTextButton_C::SetTextInternal(const class FText& InButtonText)
 {
@@ -422,5 +421,5 @@ void UIconTextButton_C::SetTextInternal(const class FText& InButtonText)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

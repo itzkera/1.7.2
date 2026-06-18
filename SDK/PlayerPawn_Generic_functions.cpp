@@ -14,8 +14,7 @@
 #include "PlayerPawn_Generic_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.ExecuteUbergraph_PlayerPawn_Generic
 // (HasDefaults)
@@ -115,7 +114,7 @@ void APlayerPawn_Generic_C::MultiEndAnimTrails()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_Reapplied(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -137,7 +136,7 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Reapplied(EGameplayCueEvent Event
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -159,7 +158,7 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(EGameplayCueEvent Ev
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -181,7 +180,7 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(EGameplayCueEvent Event
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -203,7 +202,7 @@ void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(EGameplayCueEvent EventT
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_DirectHeal(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -225,7 +224,7 @@ void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_DirectHeal(EGamep
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_PeriodicHeal(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -274,8 +273,8 @@ void APlayerPawn_Generic_C::OnLand_CE()
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.SpawnDBNOParticles
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          ParticleLocation                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          HitNormal                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   ParticleLocation                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitNormal                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerPawn_Generic_C::SpawnDBNOParticles(const struct FVector& ParticleLocation, const struct FVector& HitNormal)
 {
@@ -359,12 +358,12 @@ void APlayerPawn_Generic_C::Entered_WaterVolume()
 // (BlueprintAuthorityOnly, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                      InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void APlayerPawn_Generic_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -544,7 +543,7 @@ void APlayerPawn_Generic_C::OnClearSentence()
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnDisplaySentence
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             SpeechText                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      SpeechText                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void APlayerPawn_Generic_C::OnDisplaySentence(const class FText& SpeechText)
 {
@@ -605,7 +604,7 @@ void APlayerPawn_Generic_C::OnBaseChanged(class AActor* NewBase)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_DBNOResurrect(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -647,7 +646,7 @@ void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonC
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_GravitySphere(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -689,7 +688,7 @@ void APlayerPawn_Generic_C::SetFirstPersonCamera(bool bNewUseFirstPersonCamera)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -711,7 +710,7 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EGameplayCueEvent                       EventType                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (Parm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (Parm, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
@@ -817,12 +816,12 @@ void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                        InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void APlayerPawn_Generic_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -848,7 +847,7 @@ void APlayerPawn_Generic_C::OnDeathPlayEffects(float Damage, const struct FGamep
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnLanded
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FHitResult                       Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FHitResult&                Hit                                                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
 void APlayerPawn_Generic_C::OnLanded(const struct FHitResult& Hit)
 {
@@ -869,12 +868,12 @@ void APlayerPawn_Generic_C::OnLanded(const struct FHitResult& Hit)
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                        InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void APlayerPawn_Generic_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -1111,9 +1110,9 @@ void APlayerPawn_Generic_C::UserConstructionScript()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortCustomPartType                     BodyType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMeshComponent*           DuplicatedSkeletalMeshComponent                        (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*&          DuplicatedSkeletalMeshComponent                        (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*               Material_to_Apply                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInstanceDynamic*> Empty_MID_Array                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UMaterialInstanceDynamic*>&Empty_MID_Array                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   TranslucentSortPriority                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(EFortCustomPartType BodyType, class USkeletalMeshComponent*& DuplicatedSkeletalMeshComponent, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority)
@@ -1185,7 +1184,7 @@ void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highl
 // bool                                    Set_Highlight_Cracks                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                                   Push                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Set_Push                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UMaterialInstanceDynamic*> NewParam1                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UMaterialInstanceDynamic*>&NewParam1                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push, TArray<class UMaterialInstanceDynamic*>& NewParam1)
 {
@@ -1249,9 +1248,9 @@ void APlayerPawn_Generic_C::ToggleShieldVisibility()
 // Parameters:
 // EFortCustomPartType                     BodyType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*               Material_to_Apply                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInstanceDynamic*> Empty_MID_Array                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UMaterialInstanceDynamic*>&Empty_MID_Array                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   TranslucentSortPriority                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPoseableMeshComponent*           PoseableMesh                                           (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPoseableMeshComponent*&          PoseableMesh                                           (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(EFortCustomPartType BodyType, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority, class UPoseableMeshComponent*& PoseableMesh)
 {
@@ -1278,13 +1277,13 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(E
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.Setup FX Mesh Duplicates
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInterface*               Material_to_Apply                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInstanceDynamic*> Charm_MID_Array                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class USkeletalMeshComponent*           Charm_Mesh                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInstanceDynamic*> Head_MID_Array                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class USkeletalMeshComponent*           Head_Mesh                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UMaterialInstanceDynamic*> Body_MID_Array                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class USkeletalMeshComponent*           Body_Mesh                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInterface*&              Material_to_Apply                                      (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInstanceDynamic*>&Charm_MID_Array                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class USkeletalMeshComponent*&          Charm_Mesh                                             (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInstanceDynamic*>&Head_MID_Array                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class USkeletalMeshComponent*&          Head_Mesh                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UMaterialInstanceDynamic*>&Body_MID_Array                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class USkeletalMeshComponent*&          Body_Mesh                                              (Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Translucent_Sort_Order                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    Transfer_Material_Parameters                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -1370,7 +1369,7 @@ void APlayerPawn_Generic_C::DisableWaterLevelTick()
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.Are the wind and water RTT passes enabled
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewParam)
 {
@@ -1391,7 +1390,7 @@ void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewP
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.Melee_Effect_Color
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Melee_Color_Set                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Melee_Color_Set                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
@@ -1408,5 +1407,5 @@ void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 		*Melee_Color_Set = std::move(Parms.Melee_Color_Set);
 }
 
-}
 
+SDK_NAMESPACE_END

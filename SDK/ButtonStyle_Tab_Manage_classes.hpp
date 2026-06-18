@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-Tab-Manage.ButtonStyle-Tab-Manage_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_Tab_Manage_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Tab-Manage_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Tab-Manage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Tab-Manage_C")
 	}
 	static class UButtonStyle_Tab_Manage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Tab_Manage_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Tab_Manage_C) == 0x000008, "Wrong alignment on UButtonStyle_Tab_Manage_C");
-static_assert(sizeof(UButtonStyle_Tab_Manage_C) == 0x000530, "Wrong size on UButtonStyle_Tab_Manage_C");
 
-}
-
+SDK_NAMESPACE_END

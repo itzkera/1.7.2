@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ScoreDetailsRow.ScoreDetailsRow_C
 // 0x0050 (0x0288 - 0x0238)
@@ -38,25 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ScoreDetailsRow_C">();
+		BP_STATIC_CLASS_IMPL("ScoreDetailsRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScoreDetailsRow_C")
 	}
 	static class UScoreDetailsRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreDetailsRow_C>();
 	}
 };
-static_assert(alignof(UScoreDetailsRow_C) == 0x000008, "Wrong alignment on UScoreDetailsRow_C");
-static_assert(sizeof(UScoreDetailsRow_C) == 0x000288, "Wrong size on UScoreDetailsRow_C");
-static_assert(offsetof(UScoreDetailsRow_C, BuildingScoreText) == 0x000238, "Member 'UScoreDetailsRow_C::BuildingScoreText' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, CombatScoreText) == 0x000240, "Member 'UScoreDetailsRow_C::CombatScoreText' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, PlayerNameText) == 0x000248, "Member 'UScoreDetailsRow_C::PlayerNameText' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, TotalScoreText) == 0x000250, "Member 'UScoreDetailsRow_C::TotalScoreText' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, UtilityScoreText) == 0x000258, "Member 'UScoreDetailsRow_C::UtilityScoreText' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, PlayerName) == 0x000260, "Member 'UScoreDetailsRow_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, TotalScore) == 0x000278, "Member 'UScoreDetailsRow_C::TotalScore' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, Combat) == 0x00027C, "Member 'UScoreDetailsRow_C::Combat' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, Building) == 0x000280, "Member 'UScoreDetailsRow_C::Building' has a wrong offset!");
-static_assert(offsetof(UScoreDetailsRow_C, Utility) == 0x000284, "Member 'UScoreDetailsRow_C::Utility' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

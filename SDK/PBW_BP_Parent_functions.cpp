@@ -14,8 +14,7 @@
 #include "PBW_BP_Parent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PBW_BP_Parent.PBW_BP_Parent_C.ExecuteUbergraph_PBW_BP_Parent
 // ()
@@ -78,5 +77,5 @@ void APBW_BP_Parent_C::OnRep_Random_Chance()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

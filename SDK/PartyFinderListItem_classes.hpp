@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PartyFinderListItem.PartyFinderListItem_C
 // 0x0060 (0x0918 - 0x08B8)
@@ -51,26 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyFinderListItem_C">();
+		BP_STATIC_CLASS_IMPL("PartyFinderListItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyFinderListItem_C")
 	}
 	static class UPartyFinderListItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPartyFinderListItem_C>();
 	}
 };
-static_assert(alignof(UPartyFinderListItem_C) == 0x000008, "Wrong alignment on UPartyFinderListItem_C");
-static_assert(sizeof(UPartyFinderListItem_C) == 0x000918, "Wrong size on UPartyFinderListItem_C");
-static_assert(offsetof(UPartyFinderListItem_C, UberGraphFrame) == 0x0008B8, "Member 'UPartyFinderListItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, Arrow) == 0x0008C0, "Member 'UPartyFinderListItem_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, Header) == 0x0008C8, "Member 'UPartyFinderListItem_C::Header' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, HeaderText) == 0x0008D0, "Member 'UPartyFinderListItem_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, Location) == 0x0008D8, "Member 'UPartyFinderListItem_C::Location' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, PlayerBanner) == 0x0008E0, "Member 'UPartyFinderListItem_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, PlayerHeaderSwitcher) == 0x0008E8, "Member 'UPartyFinderListItem_C::PlayerHeaderSwitcher' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, PlayerName) == 0x0008F0, "Member 'UPartyFinderListItem_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, PlayerStatus) == 0x0008F8, "Member 'UPartyFinderListItem_C::PlayerStatus' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, TextState) == 0x000900, "Member 'UPartyFinderListItem_C::TextState' has a wrong offset!");
-static_assert(offsetof(UPartyFinderListItem_C, InviteJoinChanged) == 0x000908, "Member 'UPartyFinderListItem_C::InviteJoinChanged' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

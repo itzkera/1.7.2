@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_NoDurability.Announce_NoDurability_C
 // 0x0010 (0x04F8 - 0x04E8)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_NoDurability_C">();
+		BP_STATIC_CLASS_IMPL("Announce_NoDurability_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_NoDurability_C")
 	}
 	static class AAnnounce_NoDurability_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_NoDurability_C>();
 	}
 };
-static_assert(alignof(AAnnounce_NoDurability_C) == 0x000008, "Wrong alignment on AAnnounce_NoDurability_C");
-static_assert(sizeof(AAnnounce_NoDurability_C) == 0x0004F8, "Wrong size on AAnnounce_NoDurability_C");
-static_assert(offsetof(AAnnounce_NoDurability_C, UberGraphFrame) == 0x0004E8, "Member 'AAnnounce_NoDurability_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_NoDurability_C, DefaultSceneRoot) == 0x0004F0, "Member 'AAnnounce_NoDurability_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

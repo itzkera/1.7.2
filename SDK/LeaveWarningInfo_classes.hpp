@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LeaveWarningInfo.LeaveWarningInfo_C
 // 0x0000 (0x0240 - 0x0240)
@@ -23,15 +22,16 @@ class ULeaveWarningInfo_C final : public UFortUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaveWarningInfo_C">();
+		BP_STATIC_CLASS_IMPL("LeaveWarningInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaveWarningInfo_C")
 	}
 	static class ULeaveWarningInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaveWarningInfo_C>();
 	}
 };
-static_assert(alignof(ULeaveWarningInfo_C) == 0x000008, "Wrong alignment on ULeaveWarningInfo_C");
-static_assert(sizeof(ULeaveWarningInfo_C) == 0x000240, "Wrong size on ULeaveWarningInfo_C");
 
-}
-
+SDK_NAMESPACE_END

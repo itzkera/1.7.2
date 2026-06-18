@@ -14,8 +14,7 @@
 #include "LobbyGadgetButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LobbyGadgetButton.LobbyGadgetButton_C.ExecuteUbergraph_LobbyGadgetButton
 // ()
@@ -120,7 +119,7 @@ void ULobbyGadgetButton_C::Refresh(class UFortWorldItem* WorldItem)
 // Function LobbyGadgetButton.LobbyGadgetButton_C.GetGadgetItem
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortWorldItem*                   GadgetItem_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortWorldItem**                  GadgetItem_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULobbyGadgetButton_C::GetGadgetItem(class UFortWorldItem** GadgetItem_0)
 {
@@ -161,7 +160,7 @@ void ULobbyGadgetButton_C::SetLocked(bool bLocked_0)
 // Function LobbyGadgetButton.LobbyGadgetButton_C.GetLocked
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bLocked_0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bLocked_0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULobbyGadgetButton_C::GetLocked(bool* bLocked_0)
 {
@@ -178,5 +177,5 @@ void ULobbyGadgetButton_C::GetLocked(bool* bLocked_0)
 		*bLocked_0 = Parms.bLocked_0;
 }
 
-}
 
+SDK_NAMESPACE_END

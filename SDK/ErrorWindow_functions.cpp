@@ -14,8 +14,7 @@
 #include "ErrorWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ErrorWindow.ErrorWindow_C.ExecuteUbergraph_ErrorWindow
 // ()
@@ -164,7 +163,7 @@ void UErrorWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_Common
 // Function ErrorWindow.ErrorWindow_C.AddError
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortErrorInfo                   ErrorInfo                                              (Parm, OutParm, ReferenceParm)
+// struct FFortErrorInfo&                  ErrorInfo                                              (Parm, OutParm, ReferenceParm)
 // bool                                    First_Error                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UErrorWindow_C::AddError(struct FFortErrorInfo& ErrorInfo, bool First_Error)
@@ -202,7 +201,7 @@ void UErrorWindow_C::Initialize()
 // Function ErrorWindow.ErrorWindow_C.GetShouldLogout
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UErrorWindow_C::GetShouldLogout(bool* Return_Value)
 {
@@ -233,5 +232,5 @@ void UErrorWindow_C::CloseErrorWindow()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

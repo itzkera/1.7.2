@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookProgressWidget.CollectionBookProgressWidget_C
 // 0x0018 (0x02A8 - 0x0290)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookProgressWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookProgressWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookProgressWidget_C")
 	}
 	static class UCollectionBookProgressWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookProgressWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookProgressWidget_C) == 0x000008, "Wrong alignment on UCollectionBookProgressWidget_C");
-static_assert(sizeof(UCollectionBookProgressWidget_C) == 0x0002A8, "Wrong size on UCollectionBookProgressWidget_C");
-static_assert(offsetof(UCollectionBookProgressWidget_C, UberGraphFrame) == 0x000290, "Member 'UCollectionBookProgressWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookProgressWidget_C, BP_FortMaterialProgressBar) == 0x000298, "Member 'UCollectionBookProgressWidget_C::BP_FortMaterialProgressBar' has a wrong offset!");
-static_assert(offsetof(UCollectionBookProgressWidget_C, Image_0) == 0x0002A0, "Member 'UCollectionBookProgressWidget_C::Image_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CollectionBookItemPicker_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookItemPicker.CollectionBookItemPicker_C.ExecuteUbergraph_CollectionBookItemPicker
 // (HasDefaults)
@@ -77,7 +76,7 @@ void UCollectionBookItemPicker_C::Construct()
 // EFortDialogResult                       Result                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                             ResultName                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bWaitingForLatentActionCompletion                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortDialogExternalLatentActionHandleWaitingDialogHandle                                    (Parm, NoDestructor)
+// const struct FFortDialogExternalLatentActionHandle&WaitingDialogHandle                                    (Parm, NoDestructor)
 
 void UCollectionBookItemPicker_C::DialogResult_C897FB8741239C9DAE2430AD3D91A030(EFortDialogResult Result, class FName ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
@@ -122,7 +121,7 @@ void UCollectionBookItemPicker_C::HandleItemSelected(class UObject* ItemSelected
 // Function CollectionBookItemPicker.CollectionBookItemPicker_C.HandleCommitAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCollectionBookItemPicker_C::HandleCommitAction(bool* PassThrough)
 {
@@ -144,7 +143,7 @@ void UCollectionBookItemPicker_C::HandleCommitAction(bool* PassThrough)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Type                                                   (Parm, OutParm)
+// class FText*                            Type                                                   (Parm, OutParm)
 
 void UCollectionBookItemPicker_C::Get_Type_Text(class UFortItem* Item, class FText* Type)
 {
@@ -163,5 +162,5 @@ void UCollectionBookItemPicker_C::Get_Type_Text(class UFortItem* Item, class FTe
 		*Type = std::move(Parms.Type);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "KeybindWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function KeybindWidget.KeybindWidget_C.ExecuteUbergraph_KeybindWidget
 // (HasDefaults)
@@ -102,7 +101,7 @@ void UKeybindWidget_C::Construct()
 // Function KeybindWidget.KeybindWidget_C.Get Brush Size
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EFortBrushSize                          Brush_Size_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EFortBrushSize*                         Brush_Size_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UKeybindWidget_C::Get_Brush_Size(EFortBrushSize* Brush_Size_0)
 {
@@ -143,7 +142,7 @@ void UKeybindWidget_C::Set_Brush_Size(EFortBrushSize Brush_Size_0)
 // Function KeybindWidget.KeybindWidget_C.Get Bound Action
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             Action                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            Action                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UKeybindWidget_C::Get_Bound_Action(class FName* Action)
 {
@@ -194,5 +193,5 @@ void UKeybindWidget_C::ShowHoldBackPlate()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

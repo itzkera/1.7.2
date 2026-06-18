@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass NewsEntry.NewsEntry_C
 // 0x0058 (0x0290 - 0x0238)
@@ -38,21 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NewsEntry_C">();
+		BP_STATIC_CLASS_IMPL("NewsEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NewsEntry_C")
 	}
 	static class UNewsEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNewsEntry_C>();
 	}
 };
-static_assert(alignof(UNewsEntry_C) == 0x000008, "Wrong alignment on UNewsEntry_C");
-static_assert(sizeof(UNewsEntry_C) == 0x000290, "Wrong size on UNewsEntry_C");
-static_assert(offsetof(UNewsEntry_C, UberGraphFrame) == 0x000238, "Member 'UNewsEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UNewsEntry_C, ButtonEntry) == 0x000240, "Member 'UNewsEntry_C::ButtonEntry' has a wrong offset!");
-static_assert(offsetof(UNewsEntry_C, TextEntry) == 0x000248, "Member 'UNewsEntry_C::TextEntry' has a wrong offset!");
-static_assert(offsetof(UNewsEntry_C, EntryText) == 0x000250, "Member 'UNewsEntry_C::EntryText' has a wrong offset!");
-static_assert(offsetof(UNewsEntry_C, HandleEntrySelected) == 0x000268, "Member 'UNewsEntry_C::HandleEntrySelected' has a wrong offset!");
-static_assert(offsetof(UNewsEntry_C, BodyText) == 0x000278, "Member 'UNewsEntry_C::BodyText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Results_BadgeLoot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_BadgeLoot.Results_BadgeLoot_C.ExecuteUbergraph_Results_BadgeLoot
 // (HasDefaults)
@@ -90,7 +89,7 @@ void UResults_BadgeLoot_C::Skip()
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UResults_BadgeLoot_C::HandleClientEvent_ChestOutroDone(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -114,7 +113,7 @@ void UResults_BadgeLoot_C::HandleClientEvent_ChestOutroDone(class UObject* Event
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UResults_BadgeLoot_C::HandleClientEvent_ChestResultFocusDone(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -138,7 +137,7 @@ void UResults_BadgeLoot_C::HandleClientEvent_ChestResultFocusDone(class UObject*
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UResults_BadgeLoot_C::HandleClientEvent_ChestProgressionDone(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -162,7 +161,7 @@ void UResults_BadgeLoot_C::HandleClientEvent_ChestProgressionDone(class UObject*
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UResults_BadgeLoot_C::HandleClientEvent_ChestIntroDone(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -352,7 +351,7 @@ void UResults_BadgeLoot_C::Intro_Sequence()
 // Function Results_BadgeLoot.Results_BadgeLoot_C.Initialize
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                RewardItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               RewardItems                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UResults_BadgeLoot_C::Initialize(TArray<class UFortItem*>& RewardItems)
 {
@@ -394,7 +393,7 @@ void UResults_BadgeLoot_C::PopulateNextBadge(class UResults_Badge_C* Badge)
 // Function Results_BadgeLoot.Results_BadgeLoot_C.HasMoreBadgesToShow
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bMoreBadgesToShow                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bMoreBadgesToShow                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_BadgeLoot_C::HasMoreBadgesToShow(bool* bMoreBadgesToShow)
 {
@@ -492,7 +491,7 @@ void UResults_BadgeLoot_C::SkipToFinalState()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Badge                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ShownBadgeBeShown                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ShownBadgeBeShown                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_BadgeLoot_C::ShouldBadgeBeShown(class UFortItem* Badge, bool* ShownBadgeBeShown)
 {
@@ -525,5 +524,5 @@ void UResults_BadgeLoot_C::Focus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

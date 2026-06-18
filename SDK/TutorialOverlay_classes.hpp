@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TutorialOverlay.TutorialOverlay_C
 // 0x0018 (0x03F8 - 0x03E0)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TutorialOverlay_C">();
+		BP_STATIC_CLASS_IMPL("TutorialOverlay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TutorialOverlay_C")
 	}
 	static class UTutorialOverlay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTutorialOverlay_C>();
 	}
 };
-static_assert(alignof(UTutorialOverlay_C) == 0x000008, "Wrong alignment on UTutorialOverlay_C");
-static_assert(sizeof(UTutorialOverlay_C) == 0x0003F8, "Wrong size on UTutorialOverlay_C");
-static_assert(offsetof(UTutorialOverlay_C, UberGraphFrame) == 0x0003E0, "Member 'UTutorialOverlay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialOverlay_C, Announcement_Tutorial) == 0x0003E8, "Member 'UTutorialOverlay_C::Announcement_Tutorial' has a wrong offset!");
-static_assert(offsetof(UTutorialOverlay_C, SafeZone_0) == 0x0003F0, "Member 'UTutorialOverlay_C::SafeZone_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

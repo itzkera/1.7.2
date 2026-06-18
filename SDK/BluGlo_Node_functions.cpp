@@ -14,8 +14,7 @@
 #include "BluGlo_Node_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BluGlo_Node.BluGlo_Node_C.ExecuteUbergraph_BluGlo_Node
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ABluGlo_Node_C::ExecuteUbergraph_BluGlo_Node(int32 EntryPoint)
 // Function BluGlo_Node.BluGlo_Node_C.ShowSpawnTrail
 // (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          StartLocation_0                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   StartLocation_0                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   AnimDelay                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGlo_Node_C::ShowSpawnTrail(const struct FVector& StartLocation_0, float AnimDelay)
@@ -62,18 +61,18 @@ void ABluGlo_Node_C::ShowSpawnTrail(const struct FVector& StartLocation_0, float
 // Function BluGlo_Node.BluGlo_Node_C.HandleMissionEvent_LocateBluGlo
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGuid                            MissionGuid                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            ObjectiveHandle                                        (Parm)
+// const struct FGuid&                     MissionGuid                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTagContainer&     ObjectiveHandle                                        (Parm)
 // class UFortMissionEventParams*          Params_0                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    DO_NOT_USE_THIS_OR_VARIABLES_BELOW                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UDataAsset*                       EventContent                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDataAsset*                 EventContent                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           EventInstigator                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   GenericInt                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   GenericFloat                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             GenericText                                            (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTagContainer            GameplayTags                                           (Parm)
-// struct FFortMissionEvent                MissionEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      GenericText                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTagContainer&     GameplayTags                                           (Parm)
+// const struct FFortMissionEvent&         MissionEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ABluGlo_Node_C::HandleMissionEvent_LocateBluGlo(const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params_0, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, const class UDataAsset* EventContent, class AActor* EventInstigator, int32 GenericInt, float GenericFloat, const class FText& GenericText, const struct FGameplayTagContainer& GameplayTags, const struct FFortMissionEvent& MissionEvent)
 {
@@ -104,7 +103,7 @@ void ABluGlo_Node_C::HandleMissionEvent_LocateBluGlo(const struct FGuid& Mission
 // Function BluGlo_Node.BluGlo_Node_C.BlueprintOnInteract
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGlo_Node_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn)
 {
@@ -222,7 +221,7 @@ void ABluGlo_Node_C::OnRep_CanInteract()
 // Function BluGlo_Node.BluGlo_Node_C.BlueprintCanInteract
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool ABluGlo_Node_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn) const
@@ -245,7 +244,7 @@ bool ABluGlo_Node_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn
 // Function BluGlo_Node.BluGlo_Node_C.BlueprintGetInteractionString
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class AFortPawn*                        InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AFortPawn*                  InteractingPawn                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 class FText ABluGlo_Node_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn) const
@@ -264,5 +263,5 @@ class FText ABluGlo_Node_C::BlueprintGetInteractionString(const class AFortPawn*
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

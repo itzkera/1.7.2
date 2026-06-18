@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionAlertIndicator.MissionAlertIndicator_C
 // 0x0028 (0x0260 - 0x0238)
@@ -37,20 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionAlertIndicator_C">();
+		BP_STATIC_CLASS_IMPL("MissionAlertIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionAlertIndicator_C")
 	}
 	static class UMissionAlertIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionAlertIndicator_C>();
 	}
 };
-static_assert(alignof(UMissionAlertIndicator_C) == 0x000008, "Wrong alignment on UMissionAlertIndicator_C");
-static_assert(sizeof(UMissionAlertIndicator_C) == 0x000260, "Wrong size on UMissionAlertIndicator_C");
-static_assert(offsetof(UMissionAlertIndicator_C, UberGraphFrame) == 0x000238, "Member 'UMissionAlertIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionAlertIndicator_C, MissionAlert) == 0x000240, "Member 'UMissionAlertIndicator_C::MissionAlert' has a wrong offset!");
-static_assert(offsetof(UMissionAlertIndicator_C, StormZone) == 0x000248, "Member 'UMissionAlertIndicator_C::StormZone' has a wrong offset!");
-static_assert(offsetof(UMissionAlertIndicator_C, Switcher) == 0x000250, "Member 'UMissionAlertIndicator_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UMissionAlertIndicator_C, CycleTimer) == 0x000258, "Member 'UMissionAlertIndicator_C::CycleTimer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

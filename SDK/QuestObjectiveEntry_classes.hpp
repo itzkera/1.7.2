@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestObjectiveEntry.QuestObjectiveEntry_C
 // 0x0040 (0x0278 - 0x0238)
@@ -42,23 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestObjectiveEntry_C">();
+		BP_STATIC_CLASS_IMPL("QuestObjectiveEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestObjectiveEntry_C")
 	}
 	static class UQuestObjectiveEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestObjectiveEntry_C>();
 	}
 };
-static_assert(alignof(UQuestObjectiveEntry_C) == 0x000008, "Wrong alignment on UQuestObjectiveEntry_C");
-static_assert(sizeof(UQuestObjectiveEntry_C) == 0x000278, "Wrong size on UQuestObjectiveEntry_C");
-static_assert(offsetof(UQuestObjectiveEntry_C, UberGraphFrame) == 0x000238, "Member 'UQuestObjectiveEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, Appear) == 0x000240, "Member 'UQuestObjectiveEntry_C::Appear' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, BulletOverlay) == 0x000248, "Member 'UQuestObjectiveEntry_C::BulletOverlay' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, Checkmark) == 0x000250, "Member 'UQuestObjectiveEntry_C::Checkmark' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, QuestHudIcon) == 0x000258, "Member 'UQuestObjectiveEntry_C::QuestHudIcon' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, QuestProgressWidget) == 0x000260, "Member 'UQuestObjectiveEntry_C::QuestProgressWidget' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, TaskName) == 0x000268, "Member 'UQuestObjectiveEntry_C::TaskName' has a wrong offset!");
-static_assert(offsetof(UQuestObjectiveEntry_C, TrackedObjective) == 0x000270, "Member 'UQuestObjectiveEntry_C::TrackedObjective' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C
 // 0x0030 (0x0290 - 0x0260)
@@ -40,21 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCraftingIngredientListEntryHaveNeed_C">();
+		BP_STATIC_CLASS_IMPL("ItemCraftingIngredientListEntryHaveNeed_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCraftingIngredientListEntryHaveNeed_C")
 	}
 	static class UItemCraftingIngredientListEntryHaveNeed_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCraftingIngredientListEntryHaveNeed_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientListEntryHaveNeed_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientListEntryHaveNeed_C");
-static_assert(sizeof(UItemCraftingIngredientListEntryHaveNeed_C) == 0x000290, "Wrong size on UItemCraftingIngredientListEntryHaveNeed_C");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, UberGraphFrame) == 0x000260, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, HorizontalBox_0) == 0x000268, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::HorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, ItemCountHave) == 0x000270, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::ItemCountHave' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, ItemCountNeed) == 0x000278, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::ItemCountNeed' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, ItemIcon) == 0x000280, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientListEntryHaveNeed_C, TextSlash) == 0x000288, "Member 'UItemCraftingIngredientListEntryHaveNeed_C::TextSlash' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BasicInteractionWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BasicInteractionWidget.BasicInteractionWidget_C.ExecuteUbergraph_BasicInteractionWidget
 // ()
@@ -68,7 +67,7 @@ void UBasicInteractionWidget_C::InitBasicInteraction()
 // Function BasicInteractionWidget.BasicInteractionWidget_C.UpdateDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description_0                                          (Parm)
+// const class FText&                      Description_0                                          (Parm)
 
 void UBasicInteractionWidget_C::UpdateDescription(const class FText& Description_0)
 {
@@ -84,5 +83,5 @@ void UBasicInteractionWidget_C::UpdateDescription(const class FText& Description
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BluGloInventory.BluGloInventory_C
 // 0x0020 (0x0258 - 0x0238)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BluGloInventory_C">();
+		BP_STATIC_CLASS_IMPL("BluGloInventory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BluGloInventory_C")
 	}
 	static class UBluGloInventory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBluGloInventory_C>();
 	}
 };
-static_assert(alignof(UBluGloInventory_C) == 0x000008, "Wrong alignment on UBluGloInventory_C");
-static_assert(sizeof(UBluGloInventory_C) == 0x000258, "Wrong size on UBluGloInventory_C");
-static_assert(offsetof(UBluGloInventory_C, UberGraphFrame) == 0x000238, "Member 'UBluGloInventory_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBluGloInventory_C, BluGloInventoryTotal) == 0x000240, "Member 'UBluGloInventory_C::BluGloInventoryTotal' has a wrong offset!");
-static_assert(offsetof(UBluGloInventory_C, TutorialBluGloItemDefinition) == 0x000248, "Member 'UBluGloInventory_C::TutorialBluGloItemDefinition' has a wrong offset!");
-static_assert(offsetof(UBluGloInventory_C, CurrentBluGloTotal) == 0x000250, "Member 'UBluGloInventory_C::CurrentBluGloTotal' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

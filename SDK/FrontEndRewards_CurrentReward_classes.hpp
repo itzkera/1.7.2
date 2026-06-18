@@ -17,8 +17,7 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C
 // 0x00B8 (0x02E8 - 0x0230)
@@ -71,35 +70,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_CurrentReward_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_CurrentReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_CurrentReward_C")
 	}
 	static class UFrontEndRewards_CurrentReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_CurrentReward_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_CurrentReward_C) == 0x000008, "Wrong alignment on UFrontEndRewards_CurrentReward_C");
-static_assert(sizeof(UFrontEndRewards_CurrentReward_C) == 0x0002E8, "Wrong size on UFrontEndRewards_CurrentReward_C");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, UberGraphFrame) == 0x000230, "Member 'UFrontEndRewards_CurrentReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimIdleBounce) == 0x000238, "Member 'UFrontEndRewards_CurrentReward_C::AnimIdleBounce' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimOpenReward) == 0x000240, "Member 'UFrontEndRewards_CurrentReward_C::AnimOpenReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimDropReward) == 0x000248, "Member 'UFrontEndRewards_CurrentReward_C::AnimDropReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, AnimPopReward) == 0x000250, "Member 'UFrontEndRewards_CurrentReward_C::AnimPopReward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, RewardCanvasPanel) == 0x000258, "Member 'UFrontEndRewards_CurrentReward_C::RewardCanvasPanel' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, RewardsIcon) == 0x000260, "Member 'UFrontEndRewards_CurrentReward_C::RewardsIcon' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, ScaleBoxIcon) == 0x000268, "Member 'UFrontEndRewards_CurrentReward_C::ScaleBoxIcon' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnDropAnimationFinished) == 0x000270, "Member 'UFrontEndRewards_CurrentReward_C::OnDropAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnPopAnimationFinished) == 0x000280, "Member 'UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationStarted) == 0x000290, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, OnOpenAnimationFinished) == 0x0002A0, "Member 'UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, countTimeStart) == 0x0002B0, "Member 'UFrontEndRewards_CurrentReward_C::countTimeStart' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, countTime) == 0x0002B4, "Member 'UFrontEndRewards_CurrentReward_C::countTime' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, CountTimer) == 0x0002B8, "Member 'UFrontEndRewards_CurrentReward_C::CountTimer' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FadeDuration) == 0x0002C0, "Member 'UFrontEndRewards_CurrentReward_C::FadeDuration' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, IsFadingOut) == 0x0002C4, "Member 'UFrontEndRewards_CurrentReward_C::IsFadingOut' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalScale) == 0x0002C8, "Member 'UFrontEndRewards_CurrentReward_C::FinalScale' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalAlignment) == 0x0002CC, "Member 'UFrontEndRewards_CurrentReward_C::FinalAlignment' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_CurrentReward_C, FinalAnchors) == 0x0002D4, "Member 'UFrontEndRewards_CurrentReward_C::FinalAnchors' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

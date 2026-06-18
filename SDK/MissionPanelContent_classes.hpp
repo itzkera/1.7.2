@@ -11,12 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CommonUI_classes.hpp"
 #include "RewardListEntryType_structs.hpp"
+#include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionPanelContent.MissionPanelContent_C
 // 0x0028 (0x0260 - 0x0238)
@@ -40,20 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionPanelContent_C">();
+		BP_STATIC_CLASS_IMPL("MissionPanelContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionPanelContent_C")
 	}
 	static class UMissionPanelContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionPanelContent_C>();
 	}
 };
-static_assert(alignof(UMissionPanelContent_C) == 0x000008, "Wrong alignment on UMissionPanelContent_C");
-static_assert(sizeof(UMissionPanelContent_C) == 0x000260, "Wrong size on UMissionPanelContent_C");
-static_assert(offsetof(UMissionPanelContent_C, UberGraphFrame) == 0x000238, "Member 'UMissionPanelContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, MissionIcon) == 0x000240, "Member 'UMissionPanelContent_C::MissionIcon' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, MissionName) == 0x000248, "Member 'UMissionPanelContent_C::MissionName' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, MissionRewards) == 0x000250, "Member 'UMissionPanelContent_C::MissionRewards' has a wrong offset!");
-static_assert(offsetof(UMissionPanelContent_C, OverviewObjectives) == 0x000258, "Member 'UMissionPanelContent_C::OverviewObjectives' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

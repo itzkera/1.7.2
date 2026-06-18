@@ -14,8 +14,7 @@
 #include "ItemInspectScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemInspectScreen.ItemInspectScreen_C.ExecuteUbergraph_ItemInspectScreen
 // ()
@@ -338,7 +337,7 @@ void UItemInspectScreen_C::SetItemToRepresent(class UFortItem* Item)
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectScreen_C::HandleBack(bool* PassThrough)
 {
@@ -359,7 +358,7 @@ void UItemInspectScreen_C::HandleBack(bool* PassThrough)
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleFavorite
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectScreen_C::HandleFavorite(bool* PassThrough)
 {
@@ -380,7 +379,7 @@ void UItemInspectScreen_C::HandleFavorite(bool* PassThrough)
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleView
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectScreen_C::HandleView(bool* PassThrough)
 {
@@ -401,7 +400,7 @@ void UItemInspectScreen_C::HandleView(bool* PassThrough)
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolution
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectScreen_C::HandleEvolution(bool* PassThrough)
 {
@@ -422,7 +421,7 @@ void UItemInspectScreen_C::HandleEvolution(bool* PassThrough)
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleUpgrade
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectScreen_C::HandleUpgrade(bool* PassThrough)
 {
@@ -525,7 +524,7 @@ void UItemInspectScreen_C::HandleEvolutionChoiceSelected(class UFortItem* Item, 
 // Function ItemInspectScreen.ItemInspectScreen_C.GetFirstEvolutionOption
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        EvolutionItem                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem**                       EvolutionItem                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemInspectScreen_C::GetFirstEvolutionOption(class UFortItem** EvolutionItem)
 {
@@ -638,7 +637,7 @@ void UItemInspectScreen_C::RefreshOnUpgrade()
 // Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionComplete
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>ResultingItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&ResultingItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemInspectScreen_C::HandleEvolutionComplete(TArray<struct FFortItemInstanceQuantityPair>& ResultingItems)
 {
@@ -688,7 +687,7 @@ void UItemInspectScreen_C::RefreshCallout()
 // Function ItemInspectScreen.ItemInspectScreen_C.Handle3DView
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInspectScreen_C::Handle3DView(bool* PassThrough)
 {
@@ -745,5 +744,5 @@ void UItemInspectScreen_C::SetTabButtonStyle(class UObject* Object)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

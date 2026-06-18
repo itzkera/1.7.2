@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass HuskStrength09.HuskStrength09_C
 // 0x0000 (0x0060 - 0x0060)
@@ -23,15 +22,16 @@ class UHuskStrength09_C final : public UFortNavAreaAutomatic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HuskStrength09_C">();
+		BP_STATIC_CLASS_IMPL("HuskStrength09_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HuskStrength09_C")
 	}
 	static class UHuskStrength09_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHuskStrength09_C>();
 	}
 };
-static_assert(alignof(UHuskStrength09_C) == 0x000008, "Wrong alignment on UHuskStrength09_C");
-static_assert(sizeof(UHuskStrength09_C) == 0x000060, "Wrong size on UHuskStrength09_C");
 
-}
-
+SDK_NAMESPACE_END

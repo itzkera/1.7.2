@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MicIndicator.MicIndicator_C
 // 0x0030 (0x0290 - 0x0260)
@@ -38,22 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MicIndicator_C">();
+		BP_STATIC_CLASS_IMPL("MicIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MicIndicator_C")
 	}
 	static class UMicIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMicIndicator_C>();
 	}
 };
-static_assert(alignof(UMicIndicator_C) == 0x000008, "Wrong alignment on UMicIndicator_C");
-static_assert(sizeof(UMicIndicator_C) == 0x000290, "Wrong size on UMicIndicator_C");
-static_assert(offsetof(UMicIndicator_C, UberGraphFrame) == 0x000260, "Member 'UMicIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMicIndicator_C, Zero1_NotSpeaking) == 0x000268, "Member 'UMicIndicator_C::Zero1_NotSpeaking' has a wrong offset!");
-static_assert(offsetof(UMicIndicator_C, Zero2_Speaking) == 0x000270, "Member 'UMicIndicator_C::Zero2_Speaking' has a wrong offset!");
-static_assert(offsetof(UMicIndicator_C, Zero3_Muted) == 0x000278, "Member 'UMicIndicator_C::Zero3_Muted' has a wrong offset!");
-static_assert(offsetof(UMicIndicator_C, MicStateSwitcher) == 0x000280, "Member 'UMicIndicator_C::MicStateSwitcher' has a wrong offset!");
-static_assert(offsetof(UMicIndicator_C, bIsMuted) == 0x000288, "Member 'UMicIndicator_C::bIsMuted' has a wrong offset!");
-static_assert(offsetof(UMicIndicator_C, bIsTalking) == 0x000289, "Member 'UMicIndicator_C::bIsTalking' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

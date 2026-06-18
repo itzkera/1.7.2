@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class GameLiveStreaming.GameLiveStreamingFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -31,15 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GameLiveStreamingFunctionLibrary">();
+		STATIC_CLASS_IMPL("GameLiveStreamingFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameLiveStreamingFunctionLibrary")
 	}
 	static class UGameLiveStreamingFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameLiveStreamingFunctionLibrary>();
 	}
 };
-static_assert(alignof(UGameLiveStreamingFunctionLibrary) == 0x000008, "Wrong alignment on UGameLiveStreamingFunctionLibrary");
-static_assert(sizeof(UGameLiveStreamingFunctionLibrary) == 0x000028, "Wrong size on UGameLiveStreamingFunctionLibrary");
 
 // Class GameLiveStreaming.QueryLiveStreamsCallbackProxy
 // 0x0020 (0x0048 - 0x0028)
@@ -55,16 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"QueryLiveStreamsCallbackProxy">();
+		STATIC_CLASS_IMPL("QueryLiveStreamsCallbackProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QueryLiveStreamsCallbackProxy")
 	}
 	static class UQueryLiveStreamsCallbackProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQueryLiveStreamsCallbackProxy>();
 	}
 };
-static_assert(alignof(UQueryLiveStreamsCallbackProxy) == 0x000008, "Wrong alignment on UQueryLiveStreamsCallbackProxy");
-static_assert(sizeof(UQueryLiveStreamsCallbackProxy) == 0x000048, "Wrong size on UQueryLiveStreamsCallbackProxy");
-static_assert(offsetof(UQueryLiveStreamsCallbackProxy, OnQueriedLiveStreams) == 0x000028, "Member 'UQueryLiveStreamsCallbackProxy::OnQueriedLiveStreams' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

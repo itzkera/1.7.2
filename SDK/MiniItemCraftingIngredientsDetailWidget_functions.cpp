@@ -14,8 +14,7 @@
 #include "MiniItemCraftingIngredientsDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget
 // ()
@@ -69,7 +68,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetail
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemQuantityPair>    Pairs                                                  (Parm, OutParm, ZeroConstructor)
+// TArray<struct FFortItemQuantityPair>*   Pairs                                                  (Parm, OutParm, ZeroConstructor)
 
 void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(class UFortItem* Item, TArray<struct FFortItemQuantityPair>* Pairs)
 {
@@ -88,5 +87,5 @@ void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(clas
 		*Pairs = std::move(Parms.Pairs);
 }
 
-}
 
+SDK_NAMESPACE_END

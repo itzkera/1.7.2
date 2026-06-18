@@ -14,8 +14,7 @@
 #include "GAB_GenericStunned_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAB_GenericStunned.GAB_GenericStunned_C.ExecuteUbergraph_GAB_GenericStunned
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGAB_GenericStunned_C::ExecuteUbergraph_GAB_GenericStunned(int32 EntryPoint
 // Function GAB_GenericStunned.GAB_GenericStunned_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGAB_GenericStunned_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -70,5 +69,5 @@ void UGAB_GenericStunned_C::K2_OnEndAbility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

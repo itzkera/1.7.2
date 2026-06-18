@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass StructuralBuildingsAroundPrimaryAssignments.StructuralBuildingsAroundPrimaryAssignments_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UStructuralBuildingsAroundPrimaryAssignments_C final : public UFortAIGoalP
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StructuralBuildingsAroundPrimaryAssignments_C">();
+		BP_STATIC_CLASS_IMPL("StructuralBuildingsAroundPrimaryAssignments_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StructuralBuildingsAroundPrimaryAssignments_C")
 	}
 	static class UStructuralBuildingsAroundPrimaryAssignments_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStructuralBuildingsAroundPrimaryAssignments_C>();
 	}
 };
-static_assert(alignof(UStructuralBuildingsAroundPrimaryAssignments_C) == 0x000008, "Wrong alignment on UStructuralBuildingsAroundPrimaryAssignments_C");
-static_assert(sizeof(UStructuralBuildingsAroundPrimaryAssignments_C) == 0x0000D0, "Wrong size on UStructuralBuildingsAroundPrimaryAssignments_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class TcpMessaging.TcpMessagingSettings
 // 0x0030 (0x0058 - 0x0028)
@@ -31,19 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TcpMessagingSettings">();
+		STATIC_CLASS_IMPL("TcpMessagingSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TcpMessagingSettings")
 	}
 	static class UTcpMessagingSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTcpMessagingSettings>();
 	}
 };
-static_assert(alignof(UTcpMessagingSettings) == 0x000008, "Wrong alignment on UTcpMessagingSettings");
-static_assert(sizeof(UTcpMessagingSettings) == 0x000058, "Wrong size on UTcpMessagingSettings");
-static_assert(offsetof(UTcpMessagingSettings, EnableTransport) == 0x000028, "Member 'UTcpMessagingSettings::EnableTransport' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ListenEndpoint) == 0x000030, "Member 'UTcpMessagingSettings::ListenEndpoint' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ConnectToEndpoints) == 0x000040, "Member 'UTcpMessagingSettings::ConnectToEndpoints' has a wrong offset!");
-static_assert(offsetof(UTcpMessagingSettings, ConnectionRetryDelay) == 0x000050, "Member 'UTcpMessagingSettings::ConnectionRetryDelay' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

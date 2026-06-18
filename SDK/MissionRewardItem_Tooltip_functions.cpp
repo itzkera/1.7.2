@@ -14,8 +14,7 @@
 #include "MissionRewardItem_Tooltip_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C.Get Reward Name
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
@@ -96,5 +95,5 @@ struct FSlateColor UMissionRewardItem_Tooltip_C::Get_Rarity_Color__SlateColor_()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

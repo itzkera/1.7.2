@@ -14,8 +14,7 @@
 #include "LobbyPlayerAddPlayer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LobbyPlayerAddPlayer.LobbyPlayerAddPlayer_C.ExecuteUbergraph_LobbyPlayerAddPlayer
 // ()
@@ -96,5 +95,5 @@ void ULobbyPlayerAddPlayer_C::BndEvt__ButtonEmptySpot_K2Node_ComponentBoundEvent
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

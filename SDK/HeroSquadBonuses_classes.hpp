@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HeroSquadBonuses.HeroSquadBonuses_C
 // 0x0000 (0x0278 - 0x0278)
@@ -26,15 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroSquadBonuses_C">();
+		BP_STATIC_CLASS_IMPL("HeroSquadBonuses_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroSquadBonuses_C")
 	}
 	static class UHeroSquadBonuses_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroSquadBonuses_C>();
 	}
 };
-static_assert(alignof(UHeroSquadBonuses_C) == 0x000008, "Wrong alignment on UHeroSquadBonuses_C");
-static_assert(sizeof(UHeroSquadBonuses_C) == 0x000278, "Wrong size on UHeroSquadBonuses_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "EnemyPawn_Parent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ExecuteUbergraph_EnemyPawn_Parent
 // (HasDefaults)
@@ -83,12 +82,12 @@ void AEnemyPawn_Parent_C::AdditiveHitReactDelay()
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                        InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void AEnemyPawn_Parent_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -170,7 +169,7 @@ void AEnemyPawn_Parent_C::DebugEnemySpawnIn()
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DespawnEnemy
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          RiftLocationWS                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   RiftLocationWS                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AEnemyPawn_Parent_C::DespawnEnemy(const struct FVector& RiftLocationWS)
 {
@@ -233,12 +232,12 @@ void AEnemyPawn_Parent_C::BeginDeathFX()
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // float                                   Damage                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FVector                          Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHitResult                       HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FGameplayTagContainer&     DamageTags                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   Momentum                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo                                                (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                        InstigatedBy                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           DamageCauser                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandle     EffectContext                                          (Parm)
+// const struct FGameplayEffectContextHandle&EffectContext                                          (Parm)
 
 void AEnemyPawn_Parent_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
@@ -390,7 +389,7 @@ void AEnemyPawn_Parent_C::UserConstructionScript()
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.EnemyDeathVisuals
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    HQ                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HQ                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AEnemyPawn_Parent_C::EnemyDeathVisuals(bool* HQ)
 {
@@ -439,8 +438,8 @@ void AEnemyPawn_Parent_C::StopDeathFX()
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PickColorFromAnArrayOfColors
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<struct FLinearColor>             ArrayOfColors                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FLinearColor>&            ArrayOfColors                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AEnemyPawn_Parent_C::PickColorFromAnArrayOfColors(TArray<struct FLinearColor>& ArrayOfColors, struct FLinearColor* Color)
 {
@@ -466,7 +465,7 @@ void AEnemyPawn_Parent_C::PickColorFromAnArrayOfColors(TArray<struct FLinearColo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             Parameter_Name                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Linear_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Linear_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AEnemyPawn_Parent_C::SetVectorParameterOnAllMIDs(class FName Parameter_Name, const struct FLinearColor& Linear_Color)
 {
@@ -531,7 +530,7 @@ void AEnemyPawn_Parent_C::SetActiveElementalAmbientParticles(bool Active, bool R
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PlayAdditiveHitReacts
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Hit_Direction                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Hit_Direction                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAnimMontage*                     Anim_Montage                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AEnemyPawn_Parent_C::PlayAdditiveHitReacts(const struct FVector& Hit_Direction, class UAnimMontage* Anim_Montage)
@@ -623,8 +622,8 @@ void AEnemyPawn_Parent_C::OverridePhysicalMaterialOnCharacterMesh(class UPhysica
 // Parameters:
 // class UParticleSystem*                  Particle_System                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             Attach_Point_Name                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                         Rotation                                               (Parm, IsPlainOldData, NoDestructor)
+// const struct FVector&                   Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  Rotation                                               (Parm, IsPlainOldData, NoDestructor)
 
 void AEnemyPawn_Parent_C::SpawnParticleSystemAttachedToCharacterMesh(class UParticleSystem* Particle_System, class FName Attach_Point_Name, const struct FVector& Location, const struct FRotator& Rotation)
 {
@@ -647,8 +646,8 @@ void AEnemyPawn_Parent_C::SpawnParticleSystemAttachedToCharacterMesh(class UPart
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetCharacterFresnelGlowColors
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Inner_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Outer_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Inner_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Outer_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AEnemyPawn_Parent_C::SetCharacterFresnelGlowColors(const struct FLinearColor& Inner_Color, const struct FLinearColor& Outer_Color)
 {
@@ -669,8 +668,8 @@ void AEnemyPawn_Parent_C::SetCharacterFresnelGlowColors(const struct FLinearColo
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetCharacterEyeColors
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Eye_Color_Inner                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Eye_Color_Outer                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Eye_Color_Inner                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Eye_Color_Outer                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AEnemyPawn_Parent_C::SetCharacterEyeColors(const struct FLinearColor& Eye_Color_Inner, const struct FLinearColor& Eye_Color_Outer)
 {
@@ -701,5 +700,5 @@ void AEnemyPawn_Parent_C::CharacterSpawnInSafetyCheck()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

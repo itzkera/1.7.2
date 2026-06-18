@@ -14,13 +14,12 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class Party.PartyGameState
 // 0x05B0 (0x05D8 - 0x0028)
 #pragma pack(push, 0x1)
-class alignas(0x08) UPartyGameState : public UObject
+class SDK_ALIGN(0x08) UPartyGameState : public UObject
 {
 public:
 	class UScriptStruct*                          PartyStateRefDef;                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -40,7 +39,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PartyGameState">();
+		STATIC_CLASS_IMPL("PartyGameState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyGameState")
 	}
 	static class UPartyGameState* GetDefaultObj()
 	{
@@ -48,15 +51,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UPartyGameState) == 0x000008, "Wrong alignment on UPartyGameState");
-static_assert(sizeof(UPartyGameState) == 0x0005D8, "Wrong size on UPartyGameState");
-static_assert(offsetof(UPartyGameState, PartyStateRefDef) == 0x000028, "Member 'UPartyGameState::PartyStateRefDef' has a wrong offset!");
-static_assert(offsetof(UPartyGameState, OwningUserId) == 0x000038, "Member 'UPartyGameState::OwningUserId' has a wrong offset!");
-static_assert(offsetof(UPartyGameState, bDebugAcceptingMembers) == 0x000168, "Member 'UPartyGameState::bDebugAcceptingMembers' has a wrong offset!");
-static_assert(offsetof(UPartyGameState, bStayWithPartyOnDisconnect) == 0x000181, "Member 'UPartyGameState::bStayWithPartyOnDisconnect' has a wrong offset!");
-static_assert(offsetof(UPartyGameState, PartyMemberStateClass) == 0x000188, "Member 'UPartyGameState::PartyMemberStateClass' has a wrong offset!");
-static_assert(offsetof(UPartyGameState, ReservationBeaconClientClass) == 0x000298, "Member 'UPartyGameState::ReservationBeaconClientClass' has a wrong offset!");
-static_assert(offsetof(UPartyGameState, ReservationBeaconClient) == 0x0002A0, "Member 'UPartyGameState::ReservationBeaconClient' has a wrong offset!");
 
 // Class Party.Chatroom
 // 0x0030 (0x0058 - 0x0028)
@@ -71,18 +65,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Chatroom">();
+		STATIC_CLASS_IMPL("Chatroom")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Chatroom")
 	}
 	static class UChatroom* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatroom>();
 	}
 };
-static_assert(alignof(UChatroom) == 0x000008, "Wrong alignment on UChatroom");
-static_assert(sizeof(UChatroom) == 0x000058, "Wrong size on UChatroom");
-static_assert(offsetof(UChatroom, CurrentChatRoomId) == 0x000028, "Member 'UChatroom::CurrentChatRoomId' has a wrong offset!");
-static_assert(offsetof(UChatroom, MaxChatRoomRetries) == 0x000038, "Member 'UChatroom::MaxChatRoomRetries' has a wrong offset!");
-static_assert(offsetof(UChatroom, NumChatRoomRetries) == 0x00003C, "Member 'UChatroom::NumChatRoomRetries' has a wrong offset!");
 
 // Class Party.PartyMemberState
 // 0x0050 (0x0078 - 0x0028)
@@ -103,24 +96,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PartyMemberState">();
+		STATIC_CLASS_IMPL("PartyMemberState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyMemberState")
 	}
 	static class UPartyMemberState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPartyMemberState>();
 	}
 };
-static_assert(alignof(UPartyMemberState) == 0x000008, "Wrong alignment on UPartyMemberState");
-static_assert(sizeof(UPartyMemberState) == 0x000078, "Wrong size on UPartyMemberState");
-static_assert(offsetof(UPartyMemberState, UniqueId) == 0x000028, "Member 'UPartyMemberState::UniqueId' has a wrong offset!");
-static_assert(offsetof(UPartyMemberState, DisplayName) == 0x000040, "Member 'UPartyMemberState::DisplayName' has a wrong offset!");
-static_assert(offsetof(UPartyMemberState, MemberStateRefDef) == 0x000058, "Member 'UPartyMemberState::MemberStateRefDef' has a wrong offset!");
-static_assert(offsetof(UPartyMemberState, bHasAnnouncedJoin) == 0x000070, "Member 'UPartyMemberState::bHasAnnouncedJoin' has a wrong offset!");
 
 // Class Party.Party
 // 0x0460 (0x0488 - 0x0028)
 #pragma pack(push, 0x1)
-class alignas(0x08) UParty : public UObject
+class SDK_ALIGN(0x08) UParty : public UObject
 {
 public:
 	uint8                                         Pad_28[0x70];                                      // 0x0028(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
@@ -131,7 +122,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Party">();
+		STATIC_CLASS_IMPL("Party")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Party")
 	}
 	static class UParty* GetDefaultObj()
 	{
@@ -139,10 +134,5 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UParty) == 0x000008, "Wrong alignment on UParty");
-static_assert(sizeof(UParty) == 0x000488, "Wrong size on UParty");
-static_assert(offsetof(UParty, DefaultMaxPartySize) == 0x000098, "Member 'UParty::DefaultMaxPartySize' has a wrong offset!");
-static_assert(offsetof(UParty, bLeavingPersistentParty) == 0x00009C, "Member 'UParty::bLeavingPersistentParty' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectScreen.ItemInspectScreen_C
 // 0x00C8 (0x04A8 - 0x03E0)
@@ -40,11 +39,11 @@ public:
 	class UItemInspectUpgradeCallout_C*           ItemInspectUpgradeCallout;                         // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemInspectUpgradeConfirmation_C*      ItemInspectUpgradeConfirmation;                    // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UItemPerksListDetailWidget_C*           ItemPerksListDetailWidget;                         // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemInspectionMainItemDetailsHostPanel_C* MainDetailsPanel;                                  // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemInspectionMainItemDetailsHostPanel_C* MainDetailsPanel;                               // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           PerksAndAlterationsBox;                            // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USupportHeroSquadBonusesDetailWidget_C* SupportHeroSquadBonusesDetailWidget;               // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USurvivorTraitsDetailWidget_C*          SurvivorTraitsDetailWidget;                        // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UItemInspectionItemExtraDetailsHostPanel_C* TabbedExtraDetailsPanel;                           // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UItemInspectionItemExtraDetailsHostPanel_C* TabbedExtraDetailsPanel;                       // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Text_PreviewLabel;                                 // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                              InspectedItem;                                     // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortItemInspectionMode                       CurrentInspectMode;                                // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -99,43 +98,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectScreen_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectScreen_C")
 	}
 	static class UItemInspectScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectScreen_C>();
 	}
 };
-static_assert(alignof(UItemInspectScreen_C) == 0x000008, "Wrong alignment on UItemInspectScreen_C");
-static_assert(sizeof(UItemInspectScreen_C) == 0x0004A8, "Wrong size on UItemInspectScreen_C");
-static_assert(offsetof(UItemInspectScreen_C, UberGraphFrame) == 0x0003E0, "Member 'UItemInspectScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, CycleItem) == 0x0003E8, "Member 'UItemInspectScreen_C::CycleItem' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ExtraDetailsPanelTabList) == 0x0003F0, "Member 'UItemInspectScreen_C::ExtraDetailsPanelTabList' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ExtraDetailsTabContentSwitcher) == 0x0003F8, "Member 'UItemInspectScreen_C::ExtraDetailsTabContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, IconTextButton) == 0x000400, "Member 'UItemInspectScreen_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, IconTextButton_0) == 0x000408, "Member 'UItemInspectScreen_C::IconTextButton_0' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, Image_0) == 0x000410, "Member 'UItemInspectScreen_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemActionSwitcher) == 0x000418, "Member 'UItemInspectScreen_C::ItemActionSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemAlterationsListDetailWidget) == 0x000420, "Member 'UItemInspectScreen_C::ItemAlterationsListDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemCraftingIngredientsDetailWidget) == 0x000428, "Member 'UItemInspectScreen_C::ItemCraftingIngredientsDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemDescriptionDetailWidget) == 0x000430, "Member 'UItemInspectScreen_C::ItemDescriptionDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemInspectEvolutionConfirmation) == 0x000438, "Member 'UItemInspectScreen_C::ItemInspectEvolutionConfirmation' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemInspectUpgradeCallout) == 0x000440, "Member 'UItemInspectScreen_C::ItemInspectUpgradeCallout' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemInspectUpgradeConfirmation) == 0x000448, "Member 'UItemInspectScreen_C::ItemInspectUpgradeConfirmation' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, ItemPerksListDetailWidget) == 0x000450, "Member 'UItemInspectScreen_C::ItemPerksListDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, MainDetailsPanel) == 0x000458, "Member 'UItemInspectScreen_C::MainDetailsPanel' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, PerksAndAlterationsBox) == 0x000460, "Member 'UItemInspectScreen_C::PerksAndAlterationsBox' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, SupportHeroSquadBonusesDetailWidget) == 0x000468, "Member 'UItemInspectScreen_C::SupportHeroSquadBonusesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, SurvivorTraitsDetailWidget) == 0x000470, "Member 'UItemInspectScreen_C::SurvivorTraitsDetailWidget' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, TabbedExtraDetailsPanel) == 0x000478, "Member 'UItemInspectScreen_C::TabbedExtraDetailsPanel' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, Text_PreviewLabel) == 0x000480, "Member 'UItemInspectScreen_C::Text_PreviewLabel' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, InspectedItem) == 0x000488, "Member 'UItemInspectScreen_C::InspectedItem' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, CurrentInspectMode) == 0x000490, "Member 'UItemInspectScreen_C::CurrentInspectMode' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, SelectedEvolutionIndex) == 0x000494, "Member 'UItemInspectScreen_C::SelectedEvolutionIndex' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, SelectedEvolutionItem) == 0x000498, "Member 'UItemInspectScreen_C::SelectedEvolutionItem' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, UpgradeAllowed) == 0x0004A0, "Member 'UItemInspectScreen_C::UpgradeAllowed' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, EvolveAllowed) == 0x0004A1, "Member 'UItemInspectScreen_C::EvolveAllowed' has a wrong offset!");
-static_assert(offsetof(UItemInspectScreen_C, FavoriteAllowed) == 0x0004A2, "Member 'UItemInspectScreen_C::FavoriteAllowed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

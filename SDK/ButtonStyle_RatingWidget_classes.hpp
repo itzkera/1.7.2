@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-RatingWidget.ButtonStyle-RatingWidget_C
 // 0x0000 (0x1C08 - 0x1C08)
@@ -23,15 +22,16 @@ class UButtonStyle_RatingWidget_C final : public UFortButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-RatingWidget_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-RatingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-RatingWidget_C")
 	}
 	static class UButtonStyle_RatingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_RatingWidget_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_RatingWidget_C) == 0x000008, "Wrong alignment on UButtonStyle_RatingWidget_C");
-static_assert(sizeof(UButtonStyle_RatingWidget_C) == 0x001C08, "Wrong size on UButtonStyle_RatingWidget_C");
 
-}
-
+SDK_NAMESPACE_END

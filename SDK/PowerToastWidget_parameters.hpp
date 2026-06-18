@@ -16,8 +16,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PowerToastWidget.PowerToastWidget_C.ExecuteUbergraph_PowerToastWidget
 // 0x05B0 (0x05B0 - 0x0000)
@@ -40,7 +40,7 @@ public:
 	bool                                          CallFunc_GetTeamHomebaseRating_ReturnValue;        // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1D1[0x3];                                      // 0x01D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x01D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FUniqueNetIdRepl& NewTeamMemberId)> K2Node_CreateDelegate_OutputDelegate;              // 0x01D8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FUniqueNetIdRepl& NewTeamMemberId)> K2Node_CreateDelegate_OutputDelegate; // 0x01D8(0x0010)(ZeroConstructor, NoDestructor)
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01E8(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0228(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -76,50 +76,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x05AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x05AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x000008, "Wrong alignment on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
-static_assert(sizeof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget) == 0x0005B0, "Wrong size on PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, EntryPoint) == 0x000000, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetLocalPlayerHomebaseRating_Rating) == 0x000018, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetLocalPlayerHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetLocalPlayerHomebaseRating_ProgressFraction) == 0x00001C, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetLocalPlayerHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetLocalPlayerHomebaseRating_ReturnValue) == 0x000020, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetLocalPlayerHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000028, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue3) == 0x0001B8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x0001C0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetTeamHomebaseRating_Rating) == 0x0001C8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetTeamHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetTeamHomebaseRating_ProgressFraction) == 0x0001CC, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetTeamHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetTeamHomebaseRating_ReturnValue) == 0x0001D0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetTeamHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_Subtract_IntInt_ReturnValue) == 0x0001D4, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate) == 0x0001D8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_MakeStruct_FormatArgumentData) == 0x0001E8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_MakeArray_Array) == 0x000228, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000238, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_Format_ReturnValue) == 0x000240, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetContext_ReturnValue4) == 0x000258, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetSubGame_ReturnValue) == 0x000260, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000261, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000268, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x000278, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CreateDelegate_OutputDelegate4) == 0x000288, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000298, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Event_MyGeometry) == 0x0002A0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Event_MouseEvent2) == 0x0002D8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Event_MouseEvent2' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Event_MouseEvent) == 0x000350, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_ComponentBoundEvent_Button) == 0x0003C8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Event_NewInfo) == 0x0003D0, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Event_NewInfo' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, Temp_byte_Variable) == 0x000560, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetHomebaseRating_Rating) == 0x000564, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetHomebaseRating_ProgressFraction) == 0x000568, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_GetHomebaseRating_ReturnValue) == 0x00056C, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_GetHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000570, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, Temp_byte_Variable2) == 0x000588, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_CustomEvent_NewTeamMemberId) == 0x000590, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_CustomEvent_NewTeamMemberId' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, Temp_bool_Variable) == 0x0005A8, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue) == 0x0005A9, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, K2Node_Select_Default) == 0x0005AA, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_BooleanAND_ReturnValue) == 0x0005AB, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget, CallFunc_BooleanAND_ReturnValue2) == 0x0005AC, "Member 'PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnTeamMemberFinishedSynchronizing_Event_0
 // 0x0018 (0x0018 - 0x0000)
@@ -128,9 +84,6 @@ struct PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0 final
 public:
 	struct FUniqueNetIdRepl                       NewTeamMemberId;                                   // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0");
-static_assert(sizeof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0) == 0x000018, "Wrong size on PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0");
-static_assert(offsetof(PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0, NewTeamMemberId) == 0x000000, "Member 'PowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_0::NewTeamMemberId' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnPlayerInfoChanged
 // 0x0190 (0x0190 - 0x0000)
@@ -139,9 +92,6 @@ struct PowerToastWidget_C_OnPlayerInfoChanged final
 public:
 	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(PowerToastWidget_C_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnPlayerInfoChanged");
-static_assert(sizeof(PowerToastWidget_C_OnPlayerInfoChanged) == 0x000190, "Wrong size on PowerToastWidget_C_OnPlayerInfoChanged");
-static_assert(offsetof(PowerToastWidget_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'PowerToastWidget_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +100,6 @@ struct PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'PowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseLeave
 // 0x0078 (0x0078 - 0x0000)
@@ -161,9 +108,6 @@ struct PowerToastWidget_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PowerToastWidget_C_OnMouseLeave) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnMouseLeave");
-static_assert(sizeof(PowerToastWidget_C_OnMouseLeave) == 0x000078, "Wrong size on PowerToastWidget_C_OnMouseLeave");
-static_assert(offsetof(PowerToastWidget_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'PowerToastWidget_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseEnter
 // 0x00B0 (0x00B0 - 0x0000)
@@ -174,10 +118,6 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(PowerToastWidget_C_OnMouseEnter) == 0x000008, "Wrong alignment on PowerToastWidget_C_OnMouseEnter");
-static_assert(sizeof(PowerToastWidget_C_OnMouseEnter) == 0x0000B0, "Wrong size on PowerToastWidget_C_OnMouseEnter");
-static_assert(offsetof(PowerToastWidget_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'PowerToastWidget_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'PowerToastWidget_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.SetToast
 // 0x0020 (0x0020 - 0x0000)
@@ -187,10 +127,6 @@ public:
 	class UFortUINotification*                    Toast;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0008(0x0018)()
 };
-static_assert(alignof(PowerToastWidget_C_SetToast) == 0x000008, "Wrong alignment on PowerToastWidget_C_SetToast");
-static_assert(sizeof(PowerToastWidget_C_SetToast) == 0x000020, "Wrong size on PowerToastWidget_C_SetToast");
-static_assert(offsetof(PowerToastWidget_C_SetToast, Toast) == 0x000000, "Member 'PowerToastWidget_C_SetToast::Toast' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_SetToast, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'PowerToastWidget_C_SetToast::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.ShowText
 // 0x0048 (0x0048 - 0x0000)
@@ -203,13 +139,6 @@ public:
 	class FText                                   LocalText;                                         // 0x0028(0x0018)(Edit)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerToastWidget_C_ShowText) == 0x000008, "Wrong alignment on PowerToastWidget_C_ShowText");
-static_assert(sizeof(PowerToastWidget_C_ShowText) == 0x000048, "Wrong size on PowerToastWidget_C_ShowText");
-static_assert(offsetof(PowerToastWidget_C_ShowText, Text) == 0x000000, "Member 'PowerToastWidget_C_ShowText::Text' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ShowText, TextBlock) == 0x000018, "Member 'PowerToastWidget_C_ShowText::TextBlock' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ShowText, LocalTextBlock) == 0x000020, "Member 'PowerToastWidget_C_ShowText::LocalTextBlock' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ShowText, LocalText) == 0x000028, "Member 'PowerToastWidget_C_ShowText::LocalText' has a wrong offset!");
-static_assert(offsetof(PowerToastWidget_C_ShowText, CallFunc_TextIsEmpty_ReturnValue) == 0x000040, "Member 'PowerToastWidget_C_ShowText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
 
 // Function PowerToastWidget.PowerToastWidget_C.StartIntro
 // 0x0001 (0x0001 - 0x0000)
@@ -218,9 +147,6 @@ struct PowerToastWidget_C_StartIntro final
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerToastWidget_C_StartIntro) == 0x000001, "Wrong alignment on PowerToastWidget_C_StartIntro");
-static_assert(sizeof(PowerToastWidget_C_StartIntro) == 0x000001, "Wrong size on PowerToastWidget_C_StartIntro");
-static_assert(offsetof(PowerToastWidget_C_StartIntro, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'PowerToastWidget_C_StartIntro::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

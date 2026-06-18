@@ -14,8 +14,7 @@
 #include "SurvivorSquadBonusTraitsDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C.ExecuteUbergraph_SurvivorSquadBonusTraitsDetailWidget
 // (HasDefaults)
@@ -78,5 +77,5 @@ void USurvivorSquadBonusTraitsDetailWidget_C::HandlePostDifferentItemToDetailSet
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

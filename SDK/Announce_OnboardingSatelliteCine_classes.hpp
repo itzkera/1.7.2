@@ -15,8 +15,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C
 // 0x0028 (0x0420 - 0x03F8)
@@ -45,21 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_OnboardingSatelliteCine_C">();
+		BP_STATIC_CLASS_IMPL("Announce_OnboardingSatelliteCine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_OnboardingSatelliteCine_C")
 	}
 	static class AAnnounce_OnboardingSatelliteCine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_OnboardingSatelliteCine_C>();
 	}
 };
-static_assert(alignof(AAnnounce_OnboardingSatelliteCine_C) == 0x000008, "Wrong alignment on AAnnounce_OnboardingSatelliteCine_C");
-static_assert(sizeof(AAnnounce_OnboardingSatelliteCine_C) == 0x000420, "Wrong size on AAnnounce_OnboardingSatelliteCine_C");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, UberGraphFrame) == 0x0003F8, "Member 'AAnnounce_OnboardingSatelliteCine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, DefaultSceneRoot) == 0x000400, "Member 'AAnnounce_OnboardingSatelliteCine_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, SatelliteMediaSource) == 0x000408, "Member 'AAnnounce_OnboardingSatelliteCine_C::SatelliteMediaSource' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, AllowSkipping) == 0x000410, "Member 'AAnnounce_OnboardingSatelliteCine_C::AllowSkipping' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, StartingState) == 0x000411, "Member 'AAnnounce_OnboardingSatelliteCine_C::StartingState' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, SatelliteSubtitlesPlayer) == 0x000418, "Member 'AAnnounce_OnboardingSatelliteCine_C::SatelliteSubtitlesPlayer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

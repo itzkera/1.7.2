@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct DynamicQuestUpdateInfo.DynamicQuestUpdateInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -26,14 +25,5 @@ public:
 	float                                         TweenTimeRemaining_21_BE81ABC64DF8EDBD1C0476ADDB3D4541; // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bHasUpdateStarted_20_619FFE6348FDB23D6A4253BFCFB0DF57; // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FDynamicQuestUpdateInfo) == 0x000008, "Wrong alignment on FDynamicQuestUpdateInfo");
-static_assert(sizeof(FDynamicQuestUpdateInfo) == 0x000020, "Wrong size on FDynamicQuestUpdateInfo");
-static_assert(offsetof(FDynamicQuestUpdateInfo, LastNotifiedCount_2_0F77AC33401CB8426EAEFE9B7A6BA3CF) == 0x000000, "Member 'FDynamicQuestUpdateInfo::LastNotifiedCount_2_0F77AC33401CB8426EAEFE9B7A6BA3CF' has a wrong offset!");
-static_assert(offsetof(FDynamicQuestUpdateInfo, AchievedCount_4_D769733A4EAE28644D6AFDB4BC3EB027) == 0x000004, "Member 'FDynamicQuestUpdateInfo::AchievedCount_4_D769733A4EAE28644D6AFDB4BC3EB027' has a wrong offset!");
-static_assert(offsetof(FDynamicQuestUpdateInfo, QuestItem_11_3D49559C46BFAA72DF4BEBBC53D09EC3) == 0x000008, "Member 'FDynamicQuestUpdateInfo::QuestItem_11_3D49559C46BFAA72DF4BEBBC53D09EC3' has a wrong offset!");
-static_assert(offsetof(FDynamicQuestUpdateInfo, QuestObjective_13_DD90737247F2659E162C58B4258EAEAF) == 0x000010, "Member 'FDynamicQuestUpdateInfo::QuestObjective_13_DD90737247F2659E162C58B4258EAEAF' has a wrong offset!");
-static_assert(offsetof(FDynamicQuestUpdateInfo, TweenTimeRemaining_21_BE81ABC64DF8EDBD1C0476ADDB3D4541) == 0x000018, "Member 'FDynamicQuestUpdateInfo::TweenTimeRemaining_21_BE81ABC64DF8EDBD1C0476ADDB3D4541' has a wrong offset!");
-static_assert(offsetof(FDynamicQuestUpdateInfo, bHasUpdateStarted_20_619FFE6348FDB23D6A4253BFCFB0DF57) == 0x00001C, "Member 'FDynamicQuestUpdateInfo::bHasUpdateStarted_20_619FFE6348FDB23D6A4253BFCFB0DF57' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

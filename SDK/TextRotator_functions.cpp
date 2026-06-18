@@ -14,8 +14,7 @@
 #include "TextRotator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TextRotator.TextRotator_C.ExecuteUbergraph_TextRotator
 // ()
@@ -90,5 +89,5 @@ void UTextRotator_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

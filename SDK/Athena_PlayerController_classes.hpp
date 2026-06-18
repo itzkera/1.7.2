@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Athena_PlayerController.Athena_PlayerController_C
 // 0x0010 (0x32A0 - 0x3290)
@@ -35,17 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerController_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerController_C")
 	}
 	static class AAthena_PlayerController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_PlayerController_C>();
 	}
 };
-static_assert(alignof(AAthena_PlayerController_C) == 0x000008, "Wrong alignment on AAthena_PlayerController_C");
-static_assert(sizeof(AAthena_PlayerController_C) == 0x0032A0, "Wrong size on AAthena_PlayerController_C");
-static_assert(offsetof(AAthena_PlayerController_C, UberGraphFrame) == 0x003290, "Member 'AAthena_PlayerController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, ListenerOverride) == 0x003298, "Member 'AAthena_PlayerController_C::ListenerOverride' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

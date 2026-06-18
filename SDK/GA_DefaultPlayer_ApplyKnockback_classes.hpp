@@ -13,8 +13,7 @@
 #include "GAB_GenericApplyKnockback_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_DefaultPlayer_ApplyKnockback.GA_DefaultPlayer_ApplyKnockback_C
 // 0x0000 (0x0B20 - 0x0B20)
@@ -23,15 +22,16 @@ class UGA_DefaultPlayer_ApplyKnockback_C final : public UGAB_GenericApplyKnockba
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DefaultPlayer_ApplyKnockback_C">();
+		BP_STATIC_CLASS_IMPL("GA_DefaultPlayer_ApplyKnockback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DefaultPlayer_ApplyKnockback_C")
 	}
 	static class UGA_DefaultPlayer_ApplyKnockback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DefaultPlayer_ApplyKnockback_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_ApplyKnockback_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_ApplyKnockback_C");
-static_assert(sizeof(UGA_DefaultPlayer_ApplyKnockback_C) == 0x000B20, "Wrong size on UGA_DefaultPlayer_ApplyKnockback_C");
 
-}
-
+SDK_NAMESPACE_END

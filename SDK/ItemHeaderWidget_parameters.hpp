@@ -16,8 +16,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.ExecuteUbergraph_ItemHeaderWidget
 // 0x0180 (0x0180 - 0x0000)
@@ -74,48 +74,6 @@ public:
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x017C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget) == 0x000008, "Wrong alignment on ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget");
-static_assert(sizeof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget) == 0x000180, "Wrong size on ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, EntryPoint) == 0x000000, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_AsFort_Schematic_Item_Definition) == 0x000028, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_AsFort_Schematic_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000038, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_bSuccess2) == 0x000040, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetResultWorldItemDefinition_ReturnValue) == 0x000048, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetResultWorldItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_AsFort_Hero) == 0x000058, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_bSuccess3) == 0x000060, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_IsValid_ReturnValue2) == 0x000061, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_byte_Variable) == 0x000062, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_Event_IsDesignTime) == 0x000063, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_byte_Variable2) == 0x000064, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_bool_Variable) == 0x000065, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_byte_Variable3) == 0x000066, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_AsFort_Weapon_Item_Definition) == 0x000068, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_AsFort_Weapon_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_DynamicCast_bSuccess4) == 0x000070, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000071, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetDisplayTierAsText_ReturnValue) == 0x000078, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetDisplayTierAsText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_TextToUpper_ReturnValue) == 0x000090, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_bool_Variable2) == 0x0000A8, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetRarity_ReturnValue) == 0x0000A9, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_BPGetRarityData_ReturnValue) == 0x0000B0, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_MakeStruct_LinearColor) == 0x000130, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_MakeStruct_SlateColor) == 0x000140, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_byte_Variable4) == 0x000168, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_bool_Variable3) == 0x000169, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_bool_Variable4) == 0x00016A, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetRating_ReturnValue) == 0x00016C, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000170, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_Select_Default) == 0x000171, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetType_ReturnValue) == 0x000172, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000173, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_Select2_Default) == 0x000174, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_byte_Variable5) == 0x000175, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, Temp_byte_Variable6) == 0x000176, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, CallFunc_GetNumInStack_ReturnValue) == 0x000178, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget, K2Node_Select3_Default) == 0x00017C, "Member 'ItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -124,9 +82,6 @@ struct ItemHeaderWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemHeaderWidget_C_PreConstruct) == 0x000001, "Wrong alignment on ItemHeaderWidget_C_PreConstruct");
-static_assert(sizeof(ItemHeaderWidget_C_PreConstruct) == 0x000001, "Wrong size on ItemHeaderWidget_C_PreConstruct");
-static_assert(offsetof(ItemHeaderWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ItemHeaderWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.UpdatePowerRatingComparison
 // 0x0008 (0x0008 - 0x0000)
@@ -137,10 +92,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetRating_ReturnValue;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemHeaderWidget_C_UpdatePowerRatingComparison) == 0x000004, "Wrong alignment on ItemHeaderWidget_C_UpdatePowerRatingComparison");
-static_assert(sizeof(ItemHeaderWidget_C_UpdatePowerRatingComparison) == 0x000008, "Wrong size on ItemHeaderWidget_C_UpdatePowerRatingComparison");
-static_assert(offsetof(ItemHeaderWidget_C_UpdatePowerRatingComparison, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ItemHeaderWidget_C_UpdatePowerRatingComparison::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdatePowerRatingComparison, CallFunc_GetRating_ReturnValue) == 0x000004, "Member 'ItemHeaderWidget_C_UpdatePowerRatingComparison::CallFunc_GetRating_ReturnValue' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.UpdateHeaderColor
 // 0x0090 (0x0090 - 0x0000)
@@ -152,11 +103,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0010(0x0080)()
 };
-static_assert(alignof(ItemHeaderWidget_C_UpdateHeaderColor) == 0x000008, "Wrong alignment on ItemHeaderWidget_C_UpdateHeaderColor");
-static_assert(sizeof(ItemHeaderWidget_C_UpdateHeaderColor) == 0x000090, "Wrong size on ItemHeaderWidget_C_UpdateHeaderColor");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateHeaderColor, CallFunc_GetRarity_ReturnValue) == 0x000000, "Member 'ItemHeaderWidget_C_UpdateHeaderColor::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateHeaderColor, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'ItemHeaderWidget_C_UpdateHeaderColor::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateHeaderColor, CallFunc_BPGetRarityData_ReturnValue) == 0x000010, "Member 'ItemHeaderWidget_C_UpdateHeaderColor::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.UpdateCategoryIndicators
 // 0x0038 (0x0038 - 0x0000)
@@ -181,23 +127,6 @@ public:
 	class UFortWorkerType*                        K2Node_DynamicCast_AsFort_Worker_Type;             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemHeaderWidget_C_UpdateCategoryIndicators) == 0x000008, "Wrong alignment on ItemHeaderWidget_C_UpdateCategoryIndicators");
-static_assert(sizeof(ItemHeaderWidget_C_UpdateCategoryIndicators) == 0x000038, "Wrong size on ItemHeaderWidget_C_UpdateCategoryIndicators");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, Temp_byte_Variable) == 0x000000, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, Temp_byte_Variable2) == 0x000001, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, Temp_bool_Variable) == 0x000003, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, K2Node_Select_Default) == 0x000004, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, Temp_byte_Variable3) == 0x000005, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, Temp_byte_Variable4) == 0x000006, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, Temp_bool_Variable2) == 0x000007, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, CallFunc_IsValid_ReturnValue2) == 0x000008, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, K2Node_Select2_Default) == 0x000009, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, K2Node_DynamicCast_AsFort_Hero) == 0x000018, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, K2Node_DynamicCast_AsFort_Worker_Type) == 0x000028, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::K2Node_DynamicCast_AsFort_Worker_Type' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_UpdateCategoryIndicators, K2Node_DynamicCast_bSuccess2) == 0x000030, "Member 'ItemHeaderWidget_C_UpdateCategoryIndicators::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.Show Tier and Level
 // 0x0005 (0x0005 - 0x0000)
@@ -210,13 +139,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemHeaderWidget_C_Show_Tier_and_Level) == 0x000001, "Wrong alignment on ItemHeaderWidget_C_Show_Tier_and_Level");
-static_assert(sizeof(ItemHeaderWidget_C_Show_Tier_and_Level) == 0x000005, "Wrong size on ItemHeaderWidget_C_Show_Tier_and_Level");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Tier_and_Level, Show) == 0x000000, "Member 'ItemHeaderWidget_C_Show_Tier_and_Level::Show' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Tier_and_Level, Temp_bool_Variable) == 0x000001, "Member 'ItemHeaderWidget_C_Show_Tier_and_Level::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Tier_and_Level, Temp_byte_Variable) == 0x000002, "Member 'ItemHeaderWidget_C_Show_Tier_and_Level::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Tier_and_Level, Temp_byte_Variable2) == 0x000003, "Member 'ItemHeaderWidget_C_Show_Tier_and_Level::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Tier_and_Level, K2Node_Select_Default) == 0x000004, "Member 'ItemHeaderWidget_C_Show_Tier_and_Level::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.Show Power Block
 // 0x0005 (0x0005 - 0x0000)
@@ -229,13 +151,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemHeaderWidget_C_Show_Power_Block) == 0x000001, "Wrong alignment on ItemHeaderWidget_C_Show_Power_Block");
-static_assert(sizeof(ItemHeaderWidget_C_Show_Power_Block) == 0x000005, "Wrong size on ItemHeaderWidget_C_Show_Power_Block");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Power_Block, Show) == 0x000000, "Member 'ItemHeaderWidget_C_Show_Power_Block::Show' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Power_Block, Temp_bool_Variable) == 0x000001, "Member 'ItemHeaderWidget_C_Show_Power_Block::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Power_Block, Temp_byte_Variable) == 0x000002, "Member 'ItemHeaderWidget_C_Show_Power_Block::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Power_Block, Temp_byte_Variable2) == 0x000003, "Member 'ItemHeaderWidget_C_Show_Power_Block::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemHeaderWidget_C_Show_Power_Block, K2Node_Select_Default) == 0x000004, "Member 'ItemHeaderWidget_C_Show_Power_Block::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "StoreMain_Root_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreMain_Root.StoreMain_Root_C.ExecuteUbergraph_StoreMain_Root
 // (HasDefaults)
@@ -192,7 +191,7 @@ void UStoreMain_Root_C::SetFocus()
 // Function StoreMain_Root.StoreMain_Root_C.IsOffersScrollBoxActive
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UStoreMain_Root_C::IsOffersScrollBoxActive(bool* Return_Value)
 {
@@ -241,7 +240,7 @@ void UStoreMain_Root_C::AboutToEnterChat()
 // Function StoreMain_Root.StoreMain_Root_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 {
@@ -258,5 +257,5 @@ void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

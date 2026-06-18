@@ -14,8 +14,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformRequiredItems.ItemTransformRequiredItems_C
 // 0x0040 (0x0278 - 0x0238)
@@ -37,23 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformRequiredItems_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformRequiredItems_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformRequiredItems_C")
 	}
 	static class UItemTransformRequiredItems_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformRequiredItems_C>();
 	}
 };
-static_assert(alignof(UItemTransformRequiredItems_C) == 0x000008, "Wrong alignment on UItemTransformRequiredItems_C");
-static_assert(sizeof(UItemTransformRequiredItems_C) == 0x000278, "Wrong size on UItemTransformRequiredItems_C");
-static_assert(offsetof(UItemTransformRequiredItems_C, CheckMarkIcon) == 0x000238, "Member 'UItemTransformRequiredItems_C::CheckMarkIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, CheckMarkSwitcher) == 0x000240, "Member 'UItemTransformRequiredItems_C::CheckMarkSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, FailMarkIcon) == 0x000248, "Member 'UItemTransformRequiredItems_C::FailMarkIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, ItemCountSwitcher) == 0x000250, "Member 'UItemTransformRequiredItems_C::ItemCountSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, RequiredResourceCost) == 0x000258, "Member 'UItemTransformRequiredItems_C::RequiredResourceCost' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, RequiredResourceIcon) == 0x000260, "Member 'UItemTransformRequiredItems_C::RequiredResourceIcon' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, RequiredResourceItemCount) == 0x000268, "Member 'UItemTransformRequiredItems_C::RequiredResourceItemCount' has a wrong offset!");
-static_assert(offsetof(UItemTransformRequiredItems_C, RequiredResourceNameText) == 0x000270, "Member 'UItemTransformRequiredItems_C::RequiredResourceNameText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.ExecuteUbergraph_ScoreBarsScoreMessageItem
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +22,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_OldStackSize;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem) == 0x000004, "Wrong alignment on ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem");
-static_assert(sizeof(ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem) == 0x000008, "Wrong size on ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem, EntryPoint) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem, K2Node_Event_OldStackSize) == 0x000004, "Member 'ScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem::K2Node_Event_OldStackSize' has a wrong offset!");
 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.OnStackSizeChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +30,6 @@ struct ScoreBarsScoreMessageItem_C_OnStackSizeChanged final
 public:
 	int32                                         OldStackSize;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScoreBarsScoreMessageItem_C_OnStackSizeChanged) == 0x000004, "Wrong alignment on ScoreBarsScoreMessageItem_C_OnStackSizeChanged");
-static_assert(sizeof(ScoreBarsScoreMessageItem_C_OnStackSizeChanged) == 0x000004, "Wrong size on ScoreBarsScoreMessageItem_C_OnStackSizeChanged");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_OnStackSizeChanged, OldStackSize) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_OnStackSizeChanged::OldStackSize' has a wrong offset!");
 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.UpdateValues
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +38,6 @@ struct ScoreBarsScoreMessageItem_C_UpdateValues final
 public:
 	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScoreBarsScoreMessageItem_C_UpdateValues) == 0x000004, "Wrong alignment on ScoreBarsScoreMessageItem_C_UpdateValues");
-static_assert(sizeof(ScoreBarsScoreMessageItem_C_UpdateValues) == 0x000004, "Wrong size on ScoreBarsScoreMessageItem_C_UpdateValues");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_UpdateValues, CallFunc_Multiply_IntInt_ReturnValue) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_UpdateValues::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.Setup
 // 0x0038 (0x0038 - 0x0000)
@@ -60,12 +50,6 @@ public:
 	class UScoreMessageNumber_C*                  In_Score_Widget;                                   // 0x0020(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ScoreBarsScoreMessageItem_C_Setup) == 0x000008, "Wrong alignment on ScoreBarsScoreMessageItem_C_Setup");
-static_assert(sizeof(ScoreBarsScoreMessageItem_C_Setup) == 0x000038, "Wrong size on ScoreBarsScoreMessageItem_C_Setup");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, Base_Delta_0) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_Setup::Base_Delta_0' has a wrong offset!");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, Name_Text) == 0x000008, "Member 'ScoreBarsScoreMessageItem_C_Setup::Name_Text' has a wrong offset!");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, In_Score_Widget) == 0x000020, "Member 'ScoreBarsScoreMessageItem_C_Setup::In_Score_Widget' has a wrong offset!");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_Setup, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'ScoreBarsScoreMessageItem_C_Setup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.GetScoreValueWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -74,9 +58,6 @@ struct ScoreBarsScoreMessageItem_C_GetScoreValueWidget final
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ScoreBarsScoreMessageItem_C_GetScoreValueWidget) == 0x000008, "Wrong alignment on ScoreBarsScoreMessageItem_C_GetScoreValueWidget");
-static_assert(sizeof(ScoreBarsScoreMessageItem_C_GetScoreValueWidget) == 0x000008, "Wrong size on ScoreBarsScoreMessageItem_C_GetScoreValueWidget");
-static_assert(offsetof(ScoreBarsScoreMessageItem_C_GetScoreValueWidget, Widget) == 0x000000, "Member 'ScoreBarsScoreMessageItem_C_GetScoreValueWidget::Widget' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

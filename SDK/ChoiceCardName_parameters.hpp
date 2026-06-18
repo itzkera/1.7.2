@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ChoiceCardName.ChoiceCardName_C.UpdateText
 // 0x00B0 (0x00B0 - 0x0000)
@@ -29,14 +29,6 @@ public:
 	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0028(0x0080)()
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue2;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChoiceCardName_C_UpdateText) == 0x000008, "Wrong alignment on ChoiceCardName_C_UpdateText");
-static_assert(sizeof(ChoiceCardName_C_UpdateText) == 0x0000B0, "Wrong size on ChoiceCardName_C_UpdateText");
-static_assert(offsetof(ChoiceCardName_C_UpdateText, DisplayText_0) == 0x000000, "Member 'ChoiceCardName_C_UpdateText::DisplayText_0' has a wrong offset!");
-static_assert(offsetof(ChoiceCardName_C_UpdateText, Rarity) == 0x000018, "Member 'ChoiceCardName_C_UpdateText::Rarity' has a wrong offset!");
-static_assert(offsetof(ChoiceCardName_C_UpdateText, K2Node_SwitchEnum_CmpSuccess) == 0x000019, "Member 'ChoiceCardName_C_UpdateText::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ChoiceCardName_C_UpdateText, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'ChoiceCardName_C_UpdateText::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChoiceCardName_C_UpdateText, CallFunc_BPGetRarityData_ReturnValue) == 0x000028, "Member 'ChoiceCardName_C_UpdateText::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChoiceCardName_C_UpdateText, CallFunc_GetDynamicMaterial_ReturnValue2) == 0x0000A8, "Member 'ChoiceCardName_C_UpdateText::CallFunc_GetDynamicMaterial_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

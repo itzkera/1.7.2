@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass EulaTab.EulaTab_C
 // 0x0018 (0x0250 - 0x0238)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EulaTab_C">();
+		BP_STATIC_CLASS_IMPL("EulaTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EulaTab_C")
 	}
 	static class UEulaTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEulaTab_C>();
 	}
 };
-static_assert(alignof(UEulaTab_C) == 0x000008, "Wrong alignment on UEulaTab_C");
-static_assert(sizeof(UEulaTab_C) == 0x000250, "Wrong size on UEulaTab_C");
-static_assert(offsetof(UEulaTab_C, UberGraphFrame) == 0x000238, "Member 'UEulaTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEulaTab_C, FortRichTextBlock_0) == 0x000240, "Member 'UEulaTab_C::FortRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UEulaTab_C, ScrollBox_4) == 0x000248, "Member 'UEulaTab_C::ScrollBox_4' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

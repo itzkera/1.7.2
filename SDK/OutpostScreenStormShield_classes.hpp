@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OutpostScreenStormShield.OutpostScreenStormShield_C
 // 0x0040 (0x0420 - 0x03E0)
@@ -44,22 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OutpostScreenStormShield_C">();
+		BP_STATIC_CLASS_IMPL("OutpostScreenStormShield_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OutpostScreenStormShield_C")
 	}
 	static class UOutpostScreenStormShield_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOutpostScreenStormShield_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenStormShield_C) == 0x000008, "Wrong alignment on UOutpostScreenStormShield_C");
-static_assert(sizeof(UOutpostScreenStormShield_C) == 0x000420, "Wrong size on UOutpostScreenStormShield_C");
-static_assert(offsetof(UOutpostScreenStormShield_C, UberGraphFrame) == 0x0003E0, "Member 'UOutpostScreenStormShield_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, ContentOrPermissionsTab) == 0x0003E8, "Member 'UOutpostScreenStormShield_C::ContentOrPermissionsTab' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, ShieldToContentSwitcher) == 0x0003F0, "Member 'UOutpostScreenStormShield_C::ShieldToContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, OutpostCoreBuilding) == 0x0003F8, "Member 'UOutpostScreenStormShield_C::OutpostCoreBuilding' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, CloseOutpostScreen) == 0x000400, "Member 'UOutpostScreenStormShield_C::CloseOutpostScreen' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, StormShieldWidgetReference) == 0x000410, "Member 'UOutpostScreenStormShield_C::StormShieldWidgetReference' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenStormShield_C, PermissionsWidgetReference) == 0x000418, "Member 'UOutpostScreenStormShield_C::PermissionsWidgetReference' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

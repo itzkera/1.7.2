@@ -16,8 +16,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BluGloManager.BluGloManager_C.ExecuteUbergraph_BluGloManager
 // 0x03A0 (0x03A0 - 0x0000)
@@ -97,72 +97,9 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter;      // 0x0380(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UParticleSystemComponent* PSystem)> K2Node_CreateDelegate_OutputDelegate;              // 0x0388(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UParticleSystemComponent* PSystem)> K2Node_CreateDelegate_OutputDelegate;   // 0x0388(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortMission*                           K2Node_CustomEvent_Mission;                        // 0x0398(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_ExecuteUbergraph_BluGloManager) == 0x000010, "Wrong alignment on BluGloManager_C_ExecuteUbergraph_BluGloManager");
-static_assert(sizeof(BluGloManager_C_ExecuteUbergraph_BluGloManager) == 0x0003A0, "Wrong size on BluGloManager_C_ExecuteUbergraph_BluGloManager");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, EntryPoint) == 0x000000, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_MissionGuid) == 0x000004, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_MissionGuid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_ObjectiveHandle) == 0x000018, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_ObjectiveHandle' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_Params) == 0x000038, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_Params' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW) == 0x000040, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_EventFocus) == 0x000048, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_EventContent) == 0x000050, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_EventContent' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_EventInstigator) == 0x000058, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_EventInstigator' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GenericInt) == 0x000060, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GenericInt' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GenericFloat) == 0x000064, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GenericFloat' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GenericText) == 0x000068, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GenericText' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GameplayTags) == 0x000080, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GameplayTags' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_MissionEvent) == 0x0000A0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_MissionEvent' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_MissionGuid2) == 0x000138, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_MissionGuid2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_ObjectiveHandle2) == 0x000148, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_ObjectiveHandle2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_Params2) == 0x000168, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_Params2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW2) == 0x000170, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_EventFocus2) == 0x000178, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_EventFocus2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_EventContent2) == 0x000180, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_EventContent2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_EventInstigator2) == 0x000188, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_EventInstigator2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GenericInt2) == 0x000190, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GenericInt2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GenericFloat2) == 0x000194, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GenericFloat2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GenericText2) == 0x000198, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GenericText2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_GameplayTags2) == 0x0001B0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_GameplayTags2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_HandleMissionEvent_MissionEvent2) == 0x0001D0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_HandleMissionEvent_MissionEvent2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_On_off) == 0x000268, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_On_off' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, Temp_int_Array_Index_Variable) == 0x00026C, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000270, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Length_ReturnValue) == 0x00027C, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, Temp_int_Loop_Counter_Variable) == 0x000280, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Add_IntInt_ReturnValue) == 0x000284, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, Temp_int_Loop_Counter_Variable2) == 0x000288, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_GetAllActorsOfClass_OutActors) == 0x000290, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Less_IntInt_ReturnValue) == 0x0002A0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Get_Item) == 0x0002A8, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Length_ReturnValue2) == 0x0002B0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Add_ReturnValue) == 0x0002B4, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Less_IntInt_ReturnValue2) == 0x0002B8, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Add_IntInt_ReturnValue2) == 0x0002BC, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, Temp_int_Array_Index_Variable2) == 0x0002C0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_ActorToSpawnFrom) == 0x0002C8, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_ActorToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid) == 0x0002D0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_QueryStatus) == 0x0002DC, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_QueryStatus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_QueryInstance) == 0x0002E0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_QueryInstance' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_NumBluGloToSpawn) == 0x0002E8, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0002EC, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Get_Item2) == 0x0002F0, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Array_Add_ReturnValue2) == 0x0002F8, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_K2_GetActorLocation_ReturnValue2) == 0x0002FC, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_K2_GetActorLocation_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_PSystem) == 0x000308, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_PSystem' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Conv_VectorToTransform_ReturnValue) == 0x000310, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Conv_VectorToTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000340, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000350, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, Temp_bool_True_if_break_was_hit_Variable) == 0x000358, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_FinishSpawningActor_ReturnValue) == 0x000360, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_Not_PreBool_ReturnValue) == 0x000368, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_SpawnCenter) == 0x00036C, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_SpawnCenter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_BooleanAND_ReturnValue) == 0x000378, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter) == 0x000380, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::CallFunc_StartSpawnFXAndAudio_SpawnFXEmitter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CreateDelegate_OutputDelegate) == 0x000388, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ExecuteUbergraph_BluGloManager, K2Node_CustomEvent_Mission) == 0x000398, "Member 'BluGloManager_C_ExecuteUbergraph_BluGloManager::K2Node_CustomEvent_Mission' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseEQS
 // 0x0130 (0x0130 - 0x0000)
@@ -183,20 +120,6 @@ public:
 	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x0020)(Parm)
 	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS) == 0x000008, "Wrong alignment on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS");
-static_assert(sizeof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS) == 0x000130, "Wrong size on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, MissionGuid) == 0x000000, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::MissionGuid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, ObjectiveHandle) == 0x000010, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::ObjectiveHandle' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, Params_0) == 0x000030, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::Params_0' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, DO_NOT_USE_THIS_OR_VARIABLES_BELOW) == 0x000038, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::DO_NOT_USE_THIS_OR_VARIABLES_BELOW' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, EventFocus) == 0x000040, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::EventFocus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, EventContent) == 0x000048, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::EventContent' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, EventInstigator) == 0x000050, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::EventInstigator' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, GenericInt) == 0x000058, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::GenericInt' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, GenericFloat) == 0x00005C, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::GenericFloat' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, GenericText) == 0x000060, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::GenericText' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, GameplayTags) == 0x000078, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::GameplayTags' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS, MissionEvent) == 0x000098, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS::MissionEvent' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.AddMoreBluGloInWorld
 // 0x0008 (0x0008 - 0x0000)
@@ -205,9 +128,6 @@ struct BluGloManager_C_AddMoreBluGloInWorld final
 public:
 	class AFortMission*                           Mission;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_AddMoreBluGloInWorld) == 0x000008, "Wrong alignment on BluGloManager_C_AddMoreBluGloInWorld");
-static_assert(sizeof(BluGloManager_C_AddMoreBluGloInWorld) == 0x000008, "Wrong size on BluGloManager_C_AddMoreBluGloInWorld");
-static_assert(offsetof(BluGloManager_C_AddMoreBluGloInWorld, Mission) == 0x000000, "Member 'BluGloManager_C_AddMoreBluGloInWorld::Mission' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnBluGloGroupEvent
 // 0x000C (0x000C - 0x0000)
@@ -216,9 +136,6 @@ struct BluGloManager_C_SpawnBluGloGroupEvent final
 public:
 	struct FVector                                SpawnCenter;                                       // 0x0000(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnBluGloGroupEvent) == 0x000004, "Wrong alignment on BluGloManager_C_SpawnBluGloGroupEvent");
-static_assert(sizeof(BluGloManager_C_SpawnBluGloGroupEvent) == 0x00000C, "Wrong size on BluGloManager_C_SpawnBluGloGroupEvent");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroupEvent, SpawnCenter) == 0x000000, "Member 'BluGloManager_C_SpawnBluGloGroupEvent::SpawnCenter' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnFXComplete
 // 0x0008 (0x0008 - 0x0000)
@@ -227,9 +144,6 @@ struct BluGloManager_C_SpawnFXComplete final
 public:
 	class UParticleSystemComponent*               PSystem;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnFXComplete) == 0x000008, "Wrong alignment on BluGloManager_C_SpawnFXComplete");
-static_assert(sizeof(BluGloManager_C_SpawnFXComplete) == 0x000008, "Wrong size on BluGloManager_C_SpawnFXComplete");
-static_assert(offsetof(BluGloManager_C_SpawnFXComplete, PSystem) == 0x000000, "Member 'BluGloManager_C_SpawnFXComplete::PSystem' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.OnBluGloQueryFinished
 // 0x0028 (0x0028 - 0x0000)
@@ -243,13 +157,6 @@ public:
 	class UEnvQueryInstanceBlueprintWrapper*      QueryInstance;                                     // 0x0018(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumBluGloToSpawn;                                  // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_OnBluGloQueryFinished) == 0x000008, "Wrong alignment on BluGloManager_C_OnBluGloQueryFinished");
-static_assert(sizeof(BluGloManager_C_OnBluGloQueryFinished) == 0x000028, "Wrong size on BluGloManager_C_OnBluGloQueryFinished");
-static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, ActorToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_OnBluGloQueryFinished::ActorToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, LocationToSpawnFromIfActorInvalid) == 0x000008, "Member 'BluGloManager_C_OnBluGloQueryFinished::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, QueryStatus) == 0x000014, "Member 'BluGloManager_C_OnBluGloQueryFinished::QueryStatus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, QueryInstance) == 0x000018, "Member 'BluGloManager_C_OnBluGloQueryFinished::QueryInstance' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_OnBluGloQueryFinished, NumBluGloToSpawn) == 0x000020, "Member 'BluGloManager_C_OnBluGloQueryFinished::NumBluGloToSpawn' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.StopSpawnFX
 // 0x0001 (0x0001 - 0x0000)
@@ -258,9 +165,6 @@ struct BluGloManager_C_StopSpawnFX final
 public:
 	bool                                          off;                                               // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_StopSpawnFX) == 0x000001, "Wrong alignment on BluGloManager_C_StopSpawnFX");
-static_assert(sizeof(BluGloManager_C_StopSpawnFX) == 0x000001, "Wrong size on BluGloManager_C_StopSpawnFX");
-static_assert(offsetof(BluGloManager_C_StopSpawnFX, off) == 0x000000, "Member 'BluGloManager_C_StopSpawnFX::off' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseActor
 // 0x0130 (0x0130 - 0x0000)
@@ -281,20 +185,6 @@ public:
 	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0078(0x0020)(Parm)
 	struct FFortMissionEvent                      MissionEvent;                                      // 0x0098(0x0098)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor) == 0x000008, "Wrong alignment on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor");
-static_assert(sizeof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor) == 0x000130, "Wrong size on BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, MissionGuid) == 0x000000, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::MissionGuid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, ObjectiveHandle) == 0x000010, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::ObjectiveHandle' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, Params_0) == 0x000030, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::Params_0' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, DO_NOT_USE_THIS_OR_VARIABLES_BELOW) == 0x000038, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::DO_NOT_USE_THIS_OR_VARIABLES_BELOW' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, EventFocus) == 0x000040, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::EventFocus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, EventContent) == 0x000048, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::EventContent' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, EventInstigator) == 0x000050, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::EventInstigator' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, GenericInt) == 0x000058, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::GenericInt' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, GenericFloat) == 0x00005C, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::GenericFloat' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, GenericText) == 0x000060, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::GenericText' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, GameplayTags) == 0x000078, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::GameplayTags' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor, MissionEvent) == 0x000098, "Member 'BluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor::MissionEvent' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.RequestedBluGo
 // 0x0028 (0x0028 - 0x0000)
@@ -309,13 +199,6 @@ public:
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetCurrentBluGloRewards_ReturnValue;      // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_RequestedBluGo) == 0x000008, "Wrong alignment on BluGloManager_C_RequestedBluGo");
-static_assert(sizeof(BluGloManager_C_RequestedBluGo) == 0x000028, "Wrong size on BluGloManager_C_RequestedBluGo");
-static_assert(offsetof(BluGloManager_C_RequestedBluGo, Mission) == 0x000000, "Member 'BluGloManager_C_RequestedBluGo::Mission' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RequestedBluGo, EQS_Start_Location) == 0x000008, "Member 'BluGloManager_C_RequestedBluGo::EQS_Start_Location' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RequestedBluGo, Actor) == 0x000018, "Member 'BluGloManager_C_RequestedBluGo::Actor' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RequestedBluGo, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BluGloManager_C_RequestedBluGo::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RequestedBluGo, CallFunc_GetCurrentBluGloRewards_ReturnValue) == 0x000024, "Member 'BluGloManager_C_RequestedBluGo::CallFunc_GetCurrentBluGloRewards_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.RemoveOccupiedNodes
 // 0x0020 (0x0020 - 0x0000)
@@ -331,15 +214,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_RemoveOccupiedNodes) == 0x000008, "Wrong alignment on BluGloManager_C_RemoveOccupiedNodes");
-static_assert(sizeof(BluGloManager_C_RemoveOccupiedNodes) == 0x000020, "Wrong size on BluGloManager_C_RemoveOccupiedNodes");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BluGloManager_C_RemoveOccupiedNodes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BluGloManager_C_RemoveOccupiedNodes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Array_Get_Item) == 0x000010, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_RemoveOccupiedNodes, CallFunc_Array_RemoveItem_ReturnValue) == 0x00001D, "Member 'BluGloManager_C_RemoveOccupiedNodes::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnBluGlo
 // 0x0060 (0x0060 - 0x0000)
@@ -353,13 +227,6 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABluGlo_Node_C*                         CallFunc_FinishSpawningActor_ReturnValue;          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnBluGlo) == 0x000010, "Wrong alignment on BluGloManager_C_SpawnBluGlo");
-static_assert(sizeof(BluGloManager_C_SpawnBluGlo) == 0x000060, "Wrong size on BluGloManager_C_SpawnBluGlo");
-static_assert(offsetof(BluGloManager_C_SpawnBluGlo, SpawnLocation) == 0x000000, "Member 'BluGloManager_C_SpawnBluGlo::SpawnLocation' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGlo, SpawnFromLocation) == 0x00000C, "Member 'BluGloManager_C_SpawnBluGlo::SpawnFromLocation' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGlo, CallFunc_Conv_VectorToTransform_ReturnValue) == 0x000020, "Member 'BluGloManager_C_SpawnBluGlo::CallFunc_Conv_VectorToTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGlo, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000050, "Member 'BluGloManager_C_SpawnBluGlo::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGlo, CallFunc_FinishSpawningActor_ReturnValue) == 0x000058, "Member 'BluGloManager_C_SpawnBluGlo::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.IssueBluGloRequest
 // 0x0048 (0x0048 - 0x0000)
@@ -372,19 +239,10 @@ public:
 	struct FVector                                LocationToSpawnFromIfActorInvalid;                 // 0x0010(0x000C)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UEnvQueryInstanceBlueprintWrapper*      CallFunc_RunEQSQuery_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn)> K2Node_CreateDelegate_OutputDelegate;              // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn)> K2Node_CreateDelegate_OutputDelegate; // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UBluGloRequestHandler_C*                K2Node_DynamicCast_AsBlu_Glo_Request_Handler;      // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_IssueBluGloRequest) == 0x000008, "Wrong alignment on BluGloManager_C_IssueBluGloRequest");
-static_assert(sizeof(BluGloManager_C_IssueBluGloRequest) == 0x000048, "Wrong size on BluGloManager_C_IssueBluGloRequest");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, NumBluGloToSpawn) == 0x000000, "Member 'BluGloManager_C_IssueBluGloRequest::NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, ActorToSpawnFrom) == 0x000008, "Member 'BluGloManager_C_IssueBluGloRequest::ActorToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, LocationToSpawnFromIfActorInvalid) == 0x000010, "Member 'BluGloManager_C_IssueBluGloRequest::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, CallFunc_RunEQSQuery_ReturnValue) == 0x000020, "Member 'BluGloManager_C_IssueBluGloRequest::CallFunc_RunEQSQuery_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'BluGloManager_C_IssueBluGloRequest::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, K2Node_DynamicCast_AsBlu_Glo_Request_Handler) == 0x000038, "Member 'BluGloManager_C_IssueBluGloRequest::K2Node_DynamicCast_AsBlu_Glo_Request_Handler' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequest, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BluGloManager_C_IssueBluGloRequest::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocations
 // 0x0070 (0x0070 - 0x0000)
@@ -406,20 +264,6 @@ public:
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_BuildSpawnLocations) == 0x000008, "Wrong alignment on BluGloManager_C_BuildSpawnLocations");
-static_assert(sizeof(BluGloManager_C_BuildSpawnLocations) == 0x000070, "Wrong size on BluGloManager_C_BuildSpawnLocations");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, QueryStatus) == 0x000000, "Member 'BluGloManager_C_BuildSpawnLocations::QueryStatus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, QueryInstance) == 0x000008, "Member 'BluGloManager_C_BuildSpawnLocations::QueryInstance' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, NumBluGloToSpawn) == 0x000010, "Member 'BluGloManager_C_BuildSpawnLocations::NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, SpawnCenter) == 0x000014, "Member 'BluGloManager_C_BuildSpawnLocations::SpawnCenter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, LocationsForSpawningBluGlo) == 0x000020, "Member 'BluGloManager_C_BuildSpawnLocations::LocationsForSpawningBluGlo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000030, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_BuildSpawnLocationsRandomly_LocationsForSpawningBluGlo) == 0x000038, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_BuildSpawnLocationsRandomly_LocationsForSpawningBluGlo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_GetResultsAsLocations_ReturnValue) == 0x000048, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_GetResultsAsLocations_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_BuildSpawnLocationsFromQueryLocations_LocationsForSpawningBluGlo) == 0x000058, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_BuildSpawnLocationsFromQueryLocations_LocationsForSpawningBluGlo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00006C, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocations, CallFunc_BooleanAND_ReturnValue) == 0x00006D, "Member 'BluGloManager_C_BuildSpawnLocations::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocationsFromQueryLocations
 // 0x0068 (0x0068 - 0x0000)
@@ -441,21 +285,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations) == 0x000008, "Wrong alignment on BluGloManager_C_BuildSpawnLocationsFromQueryLocations");
-static_assert(sizeof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations) == 0x000068, "Wrong size on BluGloManager_C_BuildSpawnLocationsFromQueryLocations");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, NumBluGloToSpawn) == 0x000000, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, QueryResultLocations) == 0x000008, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::QueryResultLocations' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, LocationsForSpawningBluGlo) == 0x000018, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::LocationsForSpawningBluGlo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, LocationsToSpawnTo) == 0x000028, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::LocationsToSpawnTo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, LastIndex) == 0x000038, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::LastIndex' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_Array_Length_ReturnValue) == 0x00003C, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_Min_ReturnValue) == 0x000040, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_Min_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_Subtract_IntInt_ReturnValue) == 0x000044, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, Temp_int_Variable) == 0x000048, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_Array_Get_Item) == 0x00004C, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_Array_Add_ReturnValue) == 0x000058, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsFromQueryLocations, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000060, "Member 'BluGloManager_C_BuildSpawnLocationsFromQueryLocations::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocationsRandomly
 // 0x0060 (0x0060 - 0x0000)
@@ -476,20 +305,6 @@ public:
 	struct FVector                                CallFunc_GetRandomPointInNavigableRadius_ReturnValue; // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_BuildSpawnLocationsRandomly) == 0x000008, "Wrong alignment on BluGloManager_C_BuildSpawnLocationsRandomly");
-static_assert(sizeof(BluGloManager_C_BuildSpawnLocationsRandomly) == 0x000060, "Wrong size on BluGloManager_C_BuildSpawnLocationsRandomly");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, LocationToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::LocationToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, NumBluGloToSpawn) == 0x00000C, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, LocationsForSpawningBluGlo) == 0x000010, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::LocationsForSpawningBluGlo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, LastIndex) == 0x000020, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::LastIndex' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, SpawnCenter) == 0x000024, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::SpawnCenter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, LocationsToSpawnTo) == 0x000030, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::LocationsToSpawnTo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_Subtract_IntInt_ReturnValue) == 0x000040, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, Temp_int_Variable) == 0x000044, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00004C, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_GetRandomPointInNavigableRadius_ReturnValue) == 0x000050, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::CallFunc_GetRandomPointInNavigableRadius_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_BuildSpawnLocationsRandomly, CallFunc_Array_Add_ReturnValue) == 0x00005C, "Member 'BluGloManager_C_BuildSpawnLocationsRandomly::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.ChooseSpawnCenter
 // 0x0030 (0x0030 - 0x0000)
@@ -503,13 +318,6 @@ public:
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0024(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_ChooseSpawnCenter) == 0x000008, "Wrong alignment on BluGloManager_C_ChooseSpawnCenter");
-static_assert(sizeof(BluGloManager_C_ChooseSpawnCenter) == 0x000030, "Wrong size on BluGloManager_C_ChooseSpawnCenter");
-static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, ActorToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_ChooseSpawnCenter::ActorToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, LocationToSpawnFrom) == 0x000008, "Member 'BluGloManager_C_ChooseSpawnCenter::LocationToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, SpawnCenter) == 0x000014, "Member 'BluGloManager_C_ChooseSpawnCenter::SpawnCenter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'BluGloManager_C_ChooseSpawnCenter::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_ChooseSpawnCenter, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000024, "Member 'BluGloManager_C_ChooseSpawnCenter::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.SpawnBluGloGroup
 // 0x0068 (0x0068 - 0x0000)
@@ -533,21 +341,6 @@ public:
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_SpawnBluGloGroup) == 0x000008, "Wrong alignment on BluGloManager_C_SpawnBluGloGroup");
-static_assert(sizeof(BluGloManager_C_SpawnBluGloGroup) == 0x000068, "Wrong size on BluGloManager_C_SpawnBluGloGroup");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, ActorToSpawnFrom) == 0x000000, "Member 'BluGloManager_C_SpawnBluGloGroup::ActorToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, LocationToSpawnFromIfActorInvalid) == 0x000008, "Member 'BluGloManager_C_SpawnBluGloGroup::LocationToSpawnFromIfActorInvalid' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, QueryStatus) == 0x000014, "Member 'BluGloManager_C_SpawnBluGloGroup::QueryStatus' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, QueryInstance) == 0x000018, "Member 'BluGloManager_C_SpawnBluGloGroup::QueryInstance' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, NumBluGloToSpawn) == 0x000020, "Member 'BluGloManager_C_SpawnBluGloGroup::NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_ChooseSpawnCenter_SpawnCenter) == 0x000024, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_ChooseSpawnCenter_SpawnCenter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, Temp_int_Array_Index_Variable) == 0x000030, "Member 'BluGloManager_C_SpawnBluGloGroup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_BuildSpawnLocations_LocationsForSpawningBluGlo) == 0x000038, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_BuildSpawnLocations_LocationsForSpawningBluGlo' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_Array_Get_Item) == 0x000048, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'BluGloManager_C_SpawnBluGloGroup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_Less_IntInt_ReturnValue) == 0x00005C, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_SpawnBluGloGroup, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'BluGloManager_C_SpawnBluGloGroup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.StartSpawnFXAndAudio
 // 0x0020 (0x0020 - 0x0000)
@@ -559,11 +352,6 @@ public:
 	class UParticleSystemComponent*               SpawnFXEmitter;                                    // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_StartSpawnFXAndAudio) == 0x000008, "Wrong alignment on BluGloManager_C_StartSpawnFXAndAudio");
-static_assert(sizeof(BluGloManager_C_StartSpawnFXAndAudio) == 0x000020, "Wrong size on BluGloManager_C_StartSpawnFXAndAudio");
-static_assert(offsetof(BluGloManager_C_StartSpawnFXAndAudio, SpawnCenter) == 0x000000, "Member 'BluGloManager_C_StartSpawnFXAndAudio::SpawnCenter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_StartSpawnFXAndAudio, SpawnFXEmitter) == 0x000010, "Member 'BluGloManager_C_StartSpawnFXAndAudio::SpawnFXEmitter' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_StartSpawnFXAndAudio, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000018, "Member 'BluGloManager_C_StartSpawnFXAndAudio::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 
 // Function BluGloManager.BluGloManager_C.IssueBluGloRequestForMission
 // 0x0020 (0x0020 - 0x0000)
@@ -575,12 +363,6 @@ public:
 	int32                                         CallFunc_GetCurrentBluGloRewards_ReturnValue;      // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0014(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGloManager_C_IssueBluGloRequestForMission) == 0x000008, "Wrong alignment on BluGloManager_C_IssueBluGloRequestForMission");
-static_assert(sizeof(BluGloManager_C_IssueBluGloRequestForMission) == 0x000020, "Wrong size on BluGloManager_C_IssueBluGloRequestForMission");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, Mission) == 0x000000, "Member 'BluGloManager_C_IssueBluGloRequestForMission::Mission' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, ActorToSpawnBluGloFrom) == 0x000008, "Member 'BluGloManager_C_IssueBluGloRequestForMission::ActorToSpawnBluGloFrom' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, CallFunc_GetCurrentBluGloRewards_ReturnValue) == 0x000010, "Member 'BluGloManager_C_IssueBluGloRequestForMission::CallFunc_GetCurrentBluGloRewards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGloManager_C_IssueBluGloRequestForMission, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000014, "Member 'BluGloManager_C_IssueBluGloRequestForMission::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

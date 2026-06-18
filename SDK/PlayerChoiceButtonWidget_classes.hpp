@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C
 // 0x0020 (0x0888 - 0x0868)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerChoiceButtonWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerChoiceButtonWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerChoiceButtonWidget_C")
 	}
 	static class UPlayerChoiceButtonWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerChoiceButtonWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerChoiceButtonWidget_C) == 0x000008, "Wrong alignment on UPlayerChoiceButtonWidget_C");
-static_assert(sizeof(UPlayerChoiceButtonWidget_C) == 0x000888, "Wrong size on UPlayerChoiceButtonWidget_C");
-static_assert(offsetof(UPlayerChoiceButtonWidget_C, UberGraphFrame) == 0x000868, "Member 'UPlayerChoiceButtonWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceButtonWidget_C, Button) == 0x000870, "Member 'UPlayerChoiceButtonWidget_C::Button' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceButtonWidget_C, ChoiceID) == 0x000878, "Member 'UPlayerChoiceButtonWidget_C::ChoiceID' has a wrong offset!");
-static_assert(offsetof(UPlayerChoiceButtonWidget_C, Owner) == 0x000880, "Member 'UPlayerChoiceButtonWidget_C::Owner' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

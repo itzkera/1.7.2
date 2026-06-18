@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TooltipHeroBonuses.TooltipHeroBonuses_C
 // 0x0050 (0x0280 - 0x0230)
@@ -42,25 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TooltipHeroBonuses_C">();
+		BP_STATIC_CLASS_IMPL("TooltipHeroBonuses_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipHeroBonuses_C")
 	}
 	static class UTooltipHeroBonuses_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipHeroBonuses_C>();
 	}
 };
-static_assert(alignof(UTooltipHeroBonuses_C) == 0x000008, "Wrong alignment on UTooltipHeroBonuses_C");
-static_assert(sizeof(UTooltipHeroBonuses_C) == 0x000280, "Wrong size on UTooltipHeroBonuses_C");
-static_assert(offsetof(UTooltipHeroBonuses_C, UberGraphFrame) == 0x000230, "Member 'UTooltipHeroBonuses_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, HorizontalBoxBonusContainer) == 0x000238, "Member 'UTooltipHeroBonuses_C::HorizontalBoxBonusContainer' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, TextHeroBonuses) == 0x000240, "Member 'UTooltipHeroBonuses_C::TextHeroBonuses' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, VerticalBoxBonusContainer) == 0x000248, "Member 'UTooltipHeroBonuses_C::VerticalBoxBonusContainer' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, WidgetSwitcher_HeroSquadBonusesOrientation) == 0x000250, "Member 'UTooltipHeroBonuses_C::WidgetSwitcher_HeroSquadBonusesOrientation' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, Hero) == 0x000258, "Member 'UTooltipHeroBonuses_C::Hero' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, Comparison) == 0x000260, "Member 'UTooltipHeroBonuses_C::Comparison' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, PanelMode) == 0x000261, "Member 'UTooltipHeroBonuses_C::PanelMode' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, PerkSet) == 0x000268, "Member 'UTooltipHeroBonuses_C::PerkSet' has a wrong offset!");
-static_assert(offsetof(UTooltipHeroBonuses_C, UseVerticalDisplayFormat) == 0x000278, "Member 'UTooltipHeroBonuses_C::UseVerticalDisplayFormat' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

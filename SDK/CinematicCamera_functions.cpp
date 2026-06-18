@@ -14,8 +14,7 @@
 #include "CinematicCamera_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CinematicCamera.CineCameraActor.GetCineCameraComponent
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -31,7 +30,12 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent() const
 
 	Params::CineCameraActor_GetCineCameraComponent Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -51,7 +55,12 @@ float UCineCameraComponent::GetHorizontalFieldOfView() const
 
 	Params::CineCameraComponent_GetHorizontalFieldOfView Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -71,10 +80,15 @@ float UCineCameraComponent::GetVerticalFieldOfView() const
 
 	Params::CineCameraComponent_GetVerticalFieldOfView Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ThreatPostProcessManagerAndParticleBlueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint
 // (HasDefaults)
@@ -96,7 +95,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 // Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.OnThreatCloudsChanged
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// TArray<struct FThreatLocationInfo>      ThreatLocationInfo                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<struct FThreatLocationInfo>&ThreatLocationInfo                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(const TArray<struct FThreatLocationInfo>& ThreatLocationInfo)
 {
@@ -178,9 +177,9 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::UserConstructionScript()
 // Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.CalculatePlayerPositionNearBox
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          BoxMin                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          BoxMax                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   VolumePlayerCoveragePercentage                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   BoxMin                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   BoxMax                                                 (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  VolumePlayerCoveragePercentage                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNearBox(const struct FVector& BoxMin, const struct FVector& BoxMax, float* VolumePlayerCoveragePercentage)
 {
@@ -200,5 +199,5 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNea
 		*VolumePlayerCoveragePercentage = Parms.VolumePlayerCoveragePercentage;
 }
 
-}
 
+SDK_NAMESPACE_END

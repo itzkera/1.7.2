@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass View3DModel.View3DModel_C
 // 0x0008 (0x03E8 - 0x03E0)
@@ -33,16 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"View3DModel_C">();
+		BP_STATIC_CLASS_IMPL("View3DModel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"View3DModel_C")
 	}
 	static class UView3DModel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UView3DModel_C>();
 	}
 };
-static_assert(alignof(UView3DModel_C) == 0x000008, "Wrong alignment on UView3DModel_C");
-static_assert(sizeof(UView3DModel_C) == 0x0003E8, "Wrong size on UView3DModel_C");
-static_assert(offsetof(UView3DModel_C, UberGraphFrame) == 0x0003E0, "Member 'UView3DModel_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

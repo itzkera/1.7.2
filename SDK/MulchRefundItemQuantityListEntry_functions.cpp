@@ -14,8 +14,7 @@
 #include "MulchRefundItemQuantityListEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.ExecuteUbergraph_MulchRefundItemQuantityListEntry
 // ()
@@ -54,7 +53,7 @@ void UMulchRefundItemQuantityListEntry_C::Construct()
 // Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.HandleDifferentItemOrQuantitySetBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMulchRefundItemQuantityListEntry_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset)
 {
@@ -74,7 +73,7 @@ void UMulchRefundItemQuantityListEntry_C::HandleDifferentItemOrQuantitySetBP(con
 // Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.UpdateItemAndQuantity
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    DirectlySetQuantity                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              DirectlySetQuantity                                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMulchRefundItemQuantityListEntry_C::UpdateItemAndQuantity(const bool DirectlySetQuantity)
 {
@@ -90,5 +89,5 @@ void UMulchRefundItemQuantityListEntry_C::UpdateItemAndQuantity(const bool Direc
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

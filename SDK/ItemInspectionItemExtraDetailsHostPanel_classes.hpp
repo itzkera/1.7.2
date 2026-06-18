@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectionItemExtraDetailsHostPanel.ItemInspectionItemExtraDetailsHostPanel_C
 // 0x0000 (0x0290 - 0x0290)
@@ -23,15 +22,16 @@ class UItemInspectionItemExtraDetailsHostPanel_C final : public UFortItemDetails
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectionItemExtraDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectionItemExtraDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectionItemExtraDetailsHostPanel_C")
 	}
 	static class UItemInspectionItemExtraDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectionItemExtraDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000008, "Wrong alignment on UItemInspectionItemExtraDetailsHostPanel_C");
-static_assert(sizeof(UItemInspectionItemExtraDetailsHostPanel_C) == 0x000290, "Wrong size on UItemInspectionItemExtraDetailsHostPanel_C");
 
-}
-
+SDK_NAMESPACE_END

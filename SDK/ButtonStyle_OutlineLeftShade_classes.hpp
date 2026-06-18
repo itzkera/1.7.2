@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-OutlineLeftShade.ButtonStyle-OutlineLeftShade_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_OutlineLeftShade_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-OutlineLeftShade_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-OutlineLeftShade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-OutlineLeftShade_C")
 	}
 	static class UButtonStyle_OutlineLeftShade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_OutlineLeftShade_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_OutlineLeftShade_C) == 0x000008, "Wrong alignment on UButtonStyle_OutlineLeftShade_C");
-static_assert(sizeof(UButtonStyle_OutlineLeftShade_C) == 0x000530, "Wrong size on UButtonStyle_OutlineLeftShade_C");
 
-}
-
+SDK_NAMESPACE_END

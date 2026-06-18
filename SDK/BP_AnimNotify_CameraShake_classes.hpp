@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C
 // 0x0010 (0x0048 - 0x0038)
@@ -32,18 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_AnimNotify_CameraShake_C">();
+		BP_STATIC_CLASS_IMPL("BP_AnimNotify_CameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_AnimNotify_CameraShake_C")
 	}
 	static class UBP_AnimNotify_CameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_AnimNotify_CameraShake_C>();
 	}
 };
-static_assert(alignof(UBP_AnimNotify_CameraShake_C) == 0x000008, "Wrong alignment on UBP_AnimNotify_CameraShake_C");
-static_assert(sizeof(UBP_AnimNotify_CameraShake_C) == 0x000048, "Wrong size on UBP_AnimNotify_CameraShake_C");
-static_assert(offsetof(UBP_AnimNotify_CameraShake_C, Shake_BP) == 0x000038, "Member 'UBP_AnimNotify_CameraShake_C::Shake_BP' has a wrong offset!");
-static_assert(offsetof(UBP_AnimNotify_CameraShake_C, Shake_Scale) == 0x000040, "Member 'UBP_AnimNotify_CameraShake_C::Shake_Scale' has a wrong offset!");
-static_assert(offsetof(UBP_AnimNotify_CameraShake_C, Shake_Space) == 0x000044, "Member 'UBP_AnimNotify_CameraShake_C::Shake_Space' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

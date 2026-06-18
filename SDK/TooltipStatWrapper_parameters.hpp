@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TooltipStatWrapper.TooltipStatWrapper_C.ExecuteUbergraph_TooltipStatWrapper
 // 0x0008 (0x0008 - 0x0000)
@@ -27,13 +27,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper) == 0x000004, "Wrong alignment on TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper");
-static_assert(sizeof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper) == 0x000008, "Wrong size on TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper");
-static_assert(offsetof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper, EntryPoint) == 0x000000, "Member 'TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper, Temp_bool_Variable) == 0x000004, "Member 'TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper, Temp_byte_Variable) == 0x000005, "Member 'TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper, Temp_byte_Variable2) == 0x000006, "Member 'TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper, K2Node_Select_Default) == 0x000007, "Member 'TooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper::K2Node_Select_Default' has a wrong offset!");
 
 // Function TooltipStatWrapper.TooltipStatWrapper_C.ShowUpgradeArrow
 // 0x0001 (0x0001 - 0x0000)
@@ -42,9 +35,6 @@ struct TooltipStatWrapper_C_ShowUpgradeArrow final
 public:
 	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TooltipStatWrapper_C_ShowUpgradeArrow) == 0x000001, "Wrong alignment on TooltipStatWrapper_C_ShowUpgradeArrow");
-static_assert(sizeof(TooltipStatWrapper_C_ShowUpgradeArrow) == 0x000001, "Wrong size on TooltipStatWrapper_C_ShowUpgradeArrow");
-static_assert(offsetof(TooltipStatWrapper_C_ShowUpgradeArrow, InVisibility) == 0x000000, "Member 'TooltipStatWrapper_C_ShowUpgradeArrow::InVisibility' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

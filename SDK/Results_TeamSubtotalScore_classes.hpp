@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TeamSubtotalScore.Results_TeamSubtotalScore_C
 // 0x0020 (0x0258 - 0x0238)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TeamSubtotalScore_C">();
+		BP_STATIC_CLASS_IMPL("Results_TeamSubtotalScore_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TeamSubtotalScore_C")
 	}
 	static class UResults_TeamSubtotalScore_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TeamSubtotalScore_C>();
 	}
 };
-static_assert(alignof(UResults_TeamSubtotalScore_C) == 0x000008, "Wrong alignment on UResults_TeamSubtotalScore_C");
-static_assert(sizeof(UResults_TeamSubtotalScore_C) == 0x000258, "Wrong size on UResults_TeamSubtotalScore_C");
-static_assert(offsetof(UResults_TeamSubtotalScore_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeamSubtotalScore_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TeamSubtotalScore_C, ImageBackground) == 0x000240, "Member 'UResults_TeamSubtotalScore_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UResults_TeamSubtotalScore_C, TextScore) == 0x000248, "Member 'UResults_TeamSubtotalScore_C::TextScore' has a wrong offset!");
-static_assert(offsetof(UResults_TeamSubtotalScore_C, ScoreType) == 0x000250, "Member 'UResults_TeamSubtotalScore_C::ScoreType' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

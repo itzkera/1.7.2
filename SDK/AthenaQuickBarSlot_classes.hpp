@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaQuickBarSlot.AthenaQuickBarSlot_C
 // 0x0000 (0x0378 - 0x0378)
@@ -27,15 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaQuickBarSlot_C">();
+		BP_STATIC_CLASS_IMPL("AthenaQuickBarSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaQuickBarSlot_C")
 	}
 	static class UAthenaQuickBarSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaQuickBarSlot_C>();
 	}
 };
-static_assert(alignof(UAthenaQuickBarSlot_C) == 0x000008, "Wrong alignment on UAthenaQuickBarSlot_C");
-static_assert(sizeof(UAthenaQuickBarSlot_C) == 0x000378, "Wrong size on UAthenaQuickBarSlot_C");
 
-}
-
+SDK_NAMESPACE_END

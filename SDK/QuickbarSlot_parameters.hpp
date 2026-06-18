@@ -12,12 +12,12 @@
 
 #include "UMG_structs.hpp"
 #include "FortniteUI_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "ItemDisplayStyle_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuickbarSlot.QuickbarSlot_C.ExecuteUbergraph_QuickbarSlot
 // 0x00C8 (0x00C8 - 0x0000)
@@ -52,31 +52,6 @@ public:
 	class UFortWorldItem*                         K2Node_DynamicCast_AsFort_World_Item;              // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot) == 0x000008, "Wrong alignment on QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot");
-static_assert(sizeof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot) == 0x0000C8, "Wrong size on QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, EntryPoint) == 0x000000, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_byte_Variable) == 0x000004, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable) == 0x000018, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable2) == 0x000020, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable3) == 0x000028, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable4) == 0x000030, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable5) == 0x000038, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable5' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable6) == 0x000040, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable6' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, Temp_object_Variable7) == 0x000048, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::Temp_object_Variable7' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate2) == 0x000058, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate3) == 0x000068, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Event_IsDesignTime) == 0x000078, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_CreateDelegate_OutputDelegate4) == 0x000080, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_SwitchEnum_CmpSuccess) == 0x000090, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_Select_Default) == 0x000098, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetContext_ReturnValue2) == 0x0000A0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_GetQuickBarSlottedItem_ReturnValue) == 0x0000A8, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_GetQuickBarSlottedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_IsSlotHidden_ReturnValue) == 0x0000B0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_IsSlotHidden_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, CallFunc_Not_PreBool_ReturnValue) == 0x0000B1, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_AsFort_World_Item) == 0x0000B8, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'QuickbarSlot_C_ExecuteUbergraph_QuickbarSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +60,6 @@ struct QuickbarSlot_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_PreConstruct) == 0x000001, "Wrong alignment on QuickbarSlot_C_PreConstruct");
-static_assert(sizeof(QuickbarSlot_C_PreConstruct) == 0x000001, "Wrong size on QuickbarSlot_C_PreConstruct");
-static_assert(offsetof(QuickbarSlot_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuickbarSlot_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.SetSelected
 // 0x0028 (0x0028 - 0x0000)
@@ -115,26 +87,6 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_SetSelected) == 0x000008, "Wrong alignment on QuickbarSlot_C_SetSelected");
-static_assert(sizeof(QuickbarSlot_C_SetSelected) == 0x000028, "Wrong size on QuickbarSlot_C_SetSelected");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Selected_0) == 0x000000, "Member 'QuickbarSlot_C_SetSelected::Selected_0' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable) == 0x000001, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable2) == 0x000002, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuickbarSlot_C_SetSelected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'QuickbarSlot_C_SetSelected::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_bool_Variable) == 0x000011, "Member 'QuickbarSlot_C_SetSelected::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable3) == 0x000012, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable4) == 0x000013, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_bool_Variable2) == 0x000014, "Member 'QuickbarSlot_C_SetSelected::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable5) == 0x000015, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select_Default) == 0x000016, "Member 'QuickbarSlot_C_SetSelected::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_byte_Variable6) == 0x000017, "Member 'QuickbarSlot_C_SetSelected::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, Temp_bool_Variable3) == 0x000018, "Member 'QuickbarSlot_C_SetSelected::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_BooleanAND_ReturnValue) == 0x000019, "Member 'QuickbarSlot_C_SetSelected::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select2_Default) == 0x00001A, "Member 'QuickbarSlot_C_SetSelected::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_BooleanAND_ReturnValue2) == 0x00001B, "Member 'QuickbarSlot_C_SetSelected::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, K2Node_Select3_Default) == 0x00001C, "Member 'QuickbarSlot_C_SetSelected::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_SetSelected, CallFunc_GetEndTime_ReturnValue) == 0x000020, "Member 'QuickbarSlot_C_SetSelected::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.Minimize
 // 0x0001 (0x0001 - 0x0000)
@@ -143,9 +95,6 @@ struct QuickbarSlot_C_Minimize final
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_Minimize) == 0x000001, "Wrong alignment on QuickbarSlot_C_Minimize");
-static_assert(sizeof(QuickbarSlot_C_Minimize) == 0x000001, "Wrong size on QuickbarSlot_C_Minimize");
-static_assert(offsetof(QuickbarSlot_C_Minimize, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'QuickbarSlot_C_Minimize::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.Maximize
 // 0x0001 (0x0001 - 0x0000)
@@ -154,9 +103,6 @@ struct QuickbarSlot_C_Maximize final
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_Maximize) == 0x000001, "Wrong alignment on QuickbarSlot_C_Maximize");
-static_assert(sizeof(QuickbarSlot_C_Maximize) == 0x000001, "Wrong size on QuickbarSlot_C_Maximize");
-static_assert(offsetof(QuickbarSlot_C_Maximize, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'QuickbarSlot_C_Maximize::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.Resize
 // 0x0001 (0x0001 - 0x0000)
@@ -165,9 +111,6 @@ struct QuickbarSlot_C_Resize final
 public:
 	EFortBrushSize                                Brush_Size;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_Resize) == 0x000001, "Wrong alignment on QuickbarSlot_C_Resize");
-static_assert(sizeof(QuickbarSlot_C_Resize) == 0x000001, "Wrong size on QuickbarSlot_C_Resize");
-static_assert(offsetof(QuickbarSlot_C_Resize, Brush_Size) == 0x000000, "Member 'QuickbarSlot_C_Resize::Brush_Size' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.UpdateKeyBindingText
 // 0x0038 (0x0038 - 0x0000)
@@ -192,22 +135,6 @@ public:
 	class FName                                   CallFunc_GetKeyBindingAction_KeyBindingAction2;    // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_UpdateKeyBindingText) == 0x000008, "Wrong alignment on QuickbarSlot_C_UpdateKeyBindingText");
-static_assert(sizeof(QuickbarSlot_C_UpdateKeyBindingText) == 0x000038, "Wrong size on QuickbarSlot_C_UpdateKeyBindingText");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, Temp_byte_Variable) == 0x000000, "Member 'QuickbarSlot_C_UpdateKeyBindingText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, Temp_byte_Variable2) == 0x000001, "Member 'QuickbarSlot_C_UpdateKeyBindingText::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_IsUsingGamepad_ReturnValue) == 0x000010, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, Temp_bool_Variable) == 0x000011, "Member 'QuickbarSlot_C_UpdateKeyBindingText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_IsHoldKeybind_ReturnValue) == 0x000012, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_IsHoldKeybind_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_IsVisible_ReturnValue) == 0x000013, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_BooleanAND_ReturnValue) == 0x000014, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, K2Node_Select_Default) == 0x000015, "Member 'QuickbarSlot_C_UpdateKeyBindingText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000016, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_GetKeyBindingAction_KeyBindingAction) == 0x000018, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_GetKeyBindingAction_KeyBindingAction' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_BooleanAND_ReturnValue2) == 0x000020, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, CallFunc_GetKeyBindingAction_KeyBindingAction2) == 0x000028, "Member 'QuickbarSlot_C_UpdateKeyBindingText::CallFunc_GetKeyBindingAction_KeyBindingAction2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingText, K2Node_SwitchEnum_CmpSuccess) == 0x000030, "Member 'QuickbarSlot_C_UpdateKeyBindingText::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.UpdateKeyBindingVisibility
 // 0x0060 (0x0060 - 0x0000)
@@ -259,63 +186,15 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue5;                  // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_UpdateKeyBindingVisibility) == 0x000008, "Wrong alignment on QuickbarSlot_C_UpdateKeyBindingVisibility");
-static_assert(sizeof(QuickbarSlot_C_UpdateKeyBindingVisibility) == 0x000060, "Wrong size on QuickbarSlot_C_UpdateKeyBindingVisibility");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable) == 0x000000, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetQuickbarFocus_OutQuickBar) == 0x000010, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetQuickbarFocus_OutQuickBar' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetQuickbarFocus_OutSlot) == 0x000014, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetQuickbarFocus_OutSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetQuickbarFocus_OutSecondarySlot) == 0x000018, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetQuickbarFocus_OutSecondarySlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot) == 0x00001C, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_bool_Variable) == 0x000028, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_ShouldOnlyShowNextPrevBuildingSlotKeybinds_ReturnValue) == 0x000029, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_ShouldOnlyShowNextPrevBuildingSlotKeybinds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable2) == 0x00002A, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_Not_PreBool_ReturnValue) == 0x00002B, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable3) == 0x00002C, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_bool_Variable2) == 0x00002D, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable4) == 0x00002E, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable5) == 0x00002F, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetContext_ReturnValue3) == 0x000030, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_GetContext_ReturnValue4) == 0x000038, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_IsUsingGamepad_ReturnValue) == 0x000040, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_IsUsingGamepad_ReturnValue2) == 0x000041, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_IsUsingGamepad_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_IsValid_ReturnValue) == 0x000042, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_SwitchEnum_CmpSuccess) == 0x000043, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable6) == 0x000044, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000045, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000046, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_BooleanAND_ReturnValue) == 0x000047, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_BooleanAND_ReturnValue2) == 0x000048, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_bool_Variable3) == 0x000049, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00004A, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_Select_Default) == 0x00004B, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x00004C, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable7) == 0x00004D, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_BooleanAND_ReturnValue3) == 0x00004E, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_BooleanAND_ReturnValue4) == 0x00004F, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_byte_Variable8) == 0x000050, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_Select2_Default) == 0x000051, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_Select3_Default) == 0x000052, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, Temp_bool_Variable4) == 0x000053, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_Select4_Default) == 0x000054, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_IsHoldKeybind_ReturnValue) == 0x000055, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_IsHoldKeybind_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_IsVisible_ReturnValue) == 0x000056, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, CallFunc_BooleanAND_ReturnValue5) == 0x000057, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::CallFunc_BooleanAND_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateKeyBindingVisibility, K2Node_SwitchEnum2_CmpSuccess) == 0x000058, "Member 'QuickbarSlot_C_UpdateKeyBindingVisibility::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.InitializeCooldowns
 // 0x0020 (0x0020 - 0x0000)
 struct alignas(0x08) QuickbarSlot_C_InitializeCooldowns final
 {
 public:
-	TDelegate<void(EFortItemCooldownType CooldownType)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EFortItemCooldownType CooldownType)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortItemCooldownType CooldownType)> K2Node_CreateDelegate_OutputDelegate;        // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortItemCooldownType CooldownType)> K2Node_CreateDelegate_OutputDelegate2;       // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_InitializeCooldowns) == 0x000008, "Wrong alignment on QuickbarSlot_C_InitializeCooldowns");
-static_assert(sizeof(QuickbarSlot_C_InitializeCooldowns) == 0x000020, "Wrong size on QuickbarSlot_C_InitializeCooldowns");
-static_assert(offsetof(QuickbarSlot_C_InitializeCooldowns, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'QuickbarSlot_C_InitializeCooldowns::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_InitializeCooldowns, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'QuickbarSlot_C_InitializeCooldowns::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.OnCooldownStarted
 // 0x0002 (0x0002 - 0x0000)
@@ -325,10 +204,6 @@ public:
 	EFortItemCooldownType                         CooldownType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_OnCooldownStarted) == 0x000001, "Wrong alignment on QuickbarSlot_C_OnCooldownStarted");
-static_assert(sizeof(QuickbarSlot_C_OnCooldownStarted) == 0x000002, "Wrong size on QuickbarSlot_C_OnCooldownStarted");
-static_assert(offsetof(QuickbarSlot_C_OnCooldownStarted, CooldownType) == 0x000000, "Member 'QuickbarSlot_C_OnCooldownStarted::CooldownType' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_OnCooldownStarted, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'QuickbarSlot_C_OnCooldownStarted::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.OnCooldownStopped
 // 0x0002 (0x0002 - 0x0000)
@@ -338,10 +213,6 @@ public:
 	EFortItemCooldownType                         CooldownType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_OnCooldownStopped) == 0x000001, "Wrong alignment on QuickbarSlot_C_OnCooldownStopped");
-static_assert(sizeof(QuickbarSlot_C_OnCooldownStopped) == 0x000002, "Wrong size on QuickbarSlot_C_OnCooldownStopped");
-static_assert(offsetof(QuickbarSlot_C_OnCooldownStopped, CooldownType) == 0x000000, "Member 'QuickbarSlot_C_OnCooldownStopped::CooldownType' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_OnCooldownStopped, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'QuickbarSlot_C_OnCooldownStopped::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.UpdateItemCardsVisibility
 // 0x000A (0x000A - 0x0000)
@@ -359,18 +230,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_UpdateItemCardsVisibility) == 0x000001, "Wrong alignment on QuickbarSlot_C_UpdateItemCardsVisibility");
-static_assert(sizeof(QuickbarSlot_C_UpdateItemCardsVisibility) == 0x00000A, "Wrong size on QuickbarSlot_C_UpdateItemCardsVisibility");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_byte_Variable) == 0x000000, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_bool_Variable) == 0x000001, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_byte_Variable2) == 0x000002, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_byte_Variable3) == 0x000003, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_byte_Variable4) == 0x000005, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000006, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, Temp_bool_Variable2) == 0x000007, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, K2Node_Select_Default) == 0x000008, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_UpdateItemCardsVisibility, K2Node_Select2_Default) == 0x000009, "Member 'QuickbarSlot_C_UpdateItemCardsVisibility::K2Node_Select2_Default' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction
 // 0x0028 (0x0028 - 0x0000)
@@ -385,14 +244,6 @@ public:
 	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CallFunc_GetKeyBindingAction_Gamepad_KeyBindingAction; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_GetKeyBindingAction) == 0x000008, "Wrong alignment on QuickbarSlot_C_GetKeyBindingAction");
-static_assert(sizeof(QuickbarSlot_C_GetKeyBindingAction) == 0x000028, "Wrong size on QuickbarSlot_C_GetKeyBindingAction");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, KeyBindingAction) == 0x000000, "Member 'QuickbarSlot_C_GetKeyBindingAction::KeyBindingAction' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action) == 0x000010, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_IsUsingGamepad_ReturnValue) == 0x000019, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction, CallFunc_GetKeyBindingAction_Gamepad_KeyBindingAction) == 0x000020, "Member 'QuickbarSlot_C_GetKeyBindingAction::CallFunc_GetKeyBindingAction_Gamepad_KeyBindingAction' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction_Keyboard
 // 0x0070 (0x0070 - 0x0000)
@@ -411,17 +262,6 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue2;               // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarSlot_C_GetKeyBindingAction_Keyboard) == 0x000008, "Wrong alignment on QuickbarSlot_C_GetKeyBindingAction_Keyboard");
-static_assert(sizeof(QuickbarSlot_C_GetKeyBindingAction_Keyboard) == 0x000070, "Wrong size on QuickbarSlot_C_GetKeyBindingAction_Keyboard");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, Key_Binding_Action) == 0x000000, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::Key_Binding_Action' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, Temp_byte_Variable) == 0x000008, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, Temp_string_Variable) == 0x000010, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, CallFunc_Conv_IntToString_ReturnValue) == 0x000028, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, CallFunc_Concat_StrStr_ReturnValue) == 0x000038, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, K2Node_Select_Default) == 0x000048, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, CallFunc_Concat_StrStr_ReturnValue2) == 0x000058, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::CallFunc_Concat_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Keyboard, CallFunc_Conv_StringToName_ReturnValue) == 0x000068, "Member 'QuickbarSlot_C_GetKeyBindingAction_Keyboard::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
 
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction_Gamepad
 // 0x0088 (0x0088 - 0x0000)
@@ -470,41 +310,6 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchInteger3_CmpSuccess;                  // 0x0083(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarSlot_C_GetKeyBindingAction_Gamepad) == 0x000008, "Wrong alignment on QuickbarSlot_C_GetKeyBindingAction_Gamepad");
-static_assert(sizeof(QuickbarSlot_C_GetKeyBindingAction_Gamepad) == 0x000088, "Wrong size on QuickbarSlot_C_GetKeyBindingAction_Gamepad");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, KeyBindingAction) == 0x000000, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::KeyBindingAction' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, OnlyShowBuildingPieceNextPrevKeybinds) == 0x000008, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::OnlyShowBuildingPieceNextPrevKeybinds' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, FocusedSlotIndex) == 0x00000C, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::FocusedSlotIndex' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, IsPreviousSlot) == 0x000010, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::IsPreviousSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, IsFocusedSlot) == 0x000011, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::IsFocusedSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action) == 0x000018, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, K2Node_SwitchInteger_CmpSuccess) == 0x000020, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action2) == 0x000028, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000030, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action3) == 0x000038, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_BooleanAND_ReturnValue) == 0x000040, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_BooleanOR_ReturnValue) == 0x000041, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_Less_IntInt_ReturnValue) == 0x000042, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_BooleanOR_ReturnValue2) == 0x000043, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000044, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action4) == 0x000048, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetKeyBindingAction_Keyboard_Key_Binding_Action4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_BooleanAND_ReturnValue2) == 0x000050, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_BooleanOR_ReturnValue3) == 0x000051, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_BooleanOR_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetContext_ReturnValue) == 0x000058, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetQuickbarFocus_OutQuickBar) == 0x000060, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetQuickbarFocus_OutQuickBar' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetQuickbarFocus_OutSlot) == 0x000064, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetQuickbarFocus_OutSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetQuickbarFocus_OutSecondarySlot) == 0x000068, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetQuickbarFocus_OutSecondarySlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot) == 0x00006C, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_EqualEqual_IntInt_ReturnValue3) == 0x000070, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_EqualEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_EqualEqual_IntInt_ReturnValue4) == 0x000071, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_EqualEqual_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_EqualEqual_IntInt_ReturnValue5) == 0x000072, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_EqualEqual_IntInt_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_BooleanOR_ReturnValue4) == 0x000073, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_BooleanOR_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000074, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_GetContext_ReturnValue2) == 0x000078, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, CallFunc_ShouldOnlyShowNextPrevBuildingSlotKeybinds_ReturnValue) == 0x000080, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::CallFunc_ShouldOnlyShowNextPrevBuildingSlotKeybinds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, K2Node_SwitchInteger2_CmpSuccess) == 0x000081, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::K2Node_SwitchInteger2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, K2Node_SwitchEnum_CmpSuccess) == 0x000082, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(QuickbarSlot_C_GetKeyBindingAction_Gamepad, K2Node_SwitchInteger3_CmpSuccess) == 0x000083, "Member 'QuickbarSlot_C_GetKeyBindingAction_Gamepad::K2Node_SwitchInteger3_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

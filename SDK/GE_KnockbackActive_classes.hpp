@@ -13,8 +13,7 @@
 #include "GET_TagContainer_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_KnockbackActive.GE_KnockbackActive_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_KnockbackActive_C final : public UGET_TagContainer_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_KnockbackActive_C">();
+		BP_STATIC_CLASS_IMPL("GE_KnockbackActive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_KnockbackActive_C")
 	}
 	static class UGE_KnockbackActive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_KnockbackActive_C>();
 	}
 };
-static_assert(alignof(UGE_KnockbackActive_C) == 0x000010, "Wrong alignment on UGE_KnockbackActive_C");
-static_assert(sizeof(UGE_KnockbackActive_C) == 0x000660, "Wrong size on UGE_KnockbackActive_C");
 
-}
-
+SDK_NAMESPACE_END

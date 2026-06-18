@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function B_Post_SupplyDrop_Impact.B_Post_SupplyDrop_Impact_C.ExecuteUbergraph_B_Post_SupplyDrop_Impact
 // 0x0044 (0x0044 - 0x0000)
@@ -37,21 +37,6 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0038(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact) == 0x000004, "Wrong alignment on B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact");
-static_assert(sizeof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact) == 0x000044, "Wrong size on B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, EntryPoint) == 0x000000, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_BreakVector_X) == 0x000004, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_BreakVector_Y) == 0x000008, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_BreakVector_Z) == 0x00000C, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000010, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000014, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000018, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, K2Node_CustomEvent_PostFX_BoxScaleDyn) == 0x00001C, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::K2Node_CustomEvent_PostFX_BoxScaleDyn' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, K2Node_CustomEvent_PostFX_CamShakeLoc) == 0x000020, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::K2Node_CustomEvent_PostFX_CamShakeLoc' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, K2Node_CustomEvent_PostFX_UseCamShake) == 0x00002C, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::K2Node_CustomEvent_PostFX_UseCamShake' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, K2Node_CustomEvent_PostFX_DeactivateDelay) == 0x000030, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::K2Node_CustomEvent_PostFX_DeactivateDelay' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, K2Node_CustomEvent_PostFX_UseForceFeedback) == 0x000034, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::K2Node_CustomEvent_PostFX_UseForceFeedback' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact, CallFunc_MakeVector_ReturnValue) == 0x000038, "Member 'B_Post_SupplyDrop_Impact_C_ExecuteUbergraph_B_Post_SupplyDrop_Impact::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 // Function B_Post_SupplyDrop_Impact.B_Post_SupplyDrop_Impact_C.SpawnPostFX
 // 0x001C (0x001C - 0x0000)
@@ -65,13 +50,6 @@ public:
 	float                                         PostFX_DeactivateDelay;                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PostFX_UseForceFeedback;                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Post_SupplyDrop_Impact_C_SpawnPostFX) == 0x000004, "Wrong alignment on B_Post_SupplyDrop_Impact_C_SpawnPostFX");
-static_assert(sizeof(B_Post_SupplyDrop_Impact_C_SpawnPostFX) == 0x00001C, "Wrong size on B_Post_SupplyDrop_Impact_C_SpawnPostFX");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_SpawnPostFX, PostFX_BoxScaleDyn) == 0x000000, "Member 'B_Post_SupplyDrop_Impact_C_SpawnPostFX::PostFX_BoxScaleDyn' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_SpawnPostFX, PostFX_CamShakeLoc) == 0x000004, "Member 'B_Post_SupplyDrop_Impact_C_SpawnPostFX::PostFX_CamShakeLoc' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_SpawnPostFX, PostFX_UseCamShake) == 0x000010, "Member 'B_Post_SupplyDrop_Impact_C_SpawnPostFX::PostFX_UseCamShake' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_SpawnPostFX, PostFX_DeactivateDelay) == 0x000014, "Member 'B_Post_SupplyDrop_Impact_C_SpawnPostFX::PostFX_DeactivateDelay' has a wrong offset!");
-static_assert(offsetof(B_Post_SupplyDrop_Impact_C_SpawnPostFX, PostFX_UseForceFeedback) == 0x000018, "Member 'B_Post_SupplyDrop_Impact_C_SpawnPostFX::PostFX_UseForceFeedback' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

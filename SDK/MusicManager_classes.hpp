@@ -15,8 +15,7 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MusicManager.MusicManager_C
 // 0x00F8 (0x04C0 - 0x03C8)
@@ -84,57 +83,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MusicManager_C">();
+		BP_STATIC_CLASS_IMPL("MusicManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MusicManager_C")
 	}
 	static class AMusicManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMusicManager_C>();
 	}
 };
-static_assert(alignof(AMusicManager_C) == 0x000008, "Wrong alignment on AMusicManager_C");
-static_assert(sizeof(AMusicManager_C) == 0x0004C0, "Wrong size on AMusicManager_C");
-static_assert(offsetof(AMusicManager_C, UberGraphFrame) == 0x0003C8, "Member 'AMusicManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicFrontend) == 0x0003D0, "Member 'AMusicManager_C::MusicFrontend' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicLobby) == 0x0003D8, "Member 'AMusicManager_C::MusicLobby' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, StingerReturningToAmbientMusic) == 0x0003E0, "Member 'AMusicManager_C::StingerReturningToAmbientMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, StingerMorning) == 0x0003E8, "Member 'AMusicManager_C::StingerMorning' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicMorning) == 0x0003F0, "Member 'AMusicManager_C::MusicMorning' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicDay) == 0x0003F8, "Member 'AMusicManager_C::MusicDay' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, StingerEvening) == 0x000400, "Member 'AMusicManager_C::StingerEvening' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicEvening) == 0x000408, "Member 'AMusicManager_C::MusicEvening' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, StingerNight) == 0x000410, "Member 'AMusicManager_C::StingerNight' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicNight) == 0x000418, "Member 'AMusicManager_C::MusicNight' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, Debug) == 0x000420, "Member 'AMusicManager_C::Debug' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, GameMode_Current) == 0x000428, "Member 'AMusicManager_C::GameMode_Current' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, GameMode_Lobby) == 0x000430, "Member 'AMusicManager_C::GameMode_Lobby' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, GameMode_Frontend) == 0x000438, "Member 'AMusicManager_C::GameMode_Frontend' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, GameMode_InGame) == 0x000440, "Member 'AMusicManager_C::GameMode_InGame' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayStingerWhenReturningToAmbientMusic) == 0x000448, "Member 'AMusicManager_C::PlayStingerWhenReturningToAmbientMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayingAmbientMusic) == 0x000449, "Member 'AMusicManager_C::PlayingAmbientMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayingThreatMusic) == 0x00044A, "Member 'AMusicManager_C::PlayingThreatMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayingNearbyEnemiesMusic) == 0x00044B, "Member 'AMusicManager_C::PlayingNearbyEnemiesMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayingHuskLowMusic) == 0x00044C, "Member 'AMusicManager_C::PlayingHuskLowMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayingHuskHighMusic) == 0x00044D, "Member 'AMusicManager_C::PlayingHuskHighMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, PlayingLargeEnemyMusic) == 0x00044E, "Member 'AMusicManager_C::PlayingLargeEnemyMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, LastTimeMusicWasStartedOrContinued) == 0x000450, "Member 'AMusicManager_C::LastTimeMusicWasStartedOrContinued' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, CurrentMusicIntensityLevel) == 0x000454, "Member 'AMusicManager_C::CurrentMusicIntensityLevel' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, CurrentDayPhase) == 0x000458, "Member 'AMusicManager_C::CurrentDayPhase' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, LargeEnemyStinger) == 0x000460, "Member 'AMusicManager_C::LargeEnemyStinger' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, LargeEnemyMusic) == 0x000468, "Member 'AMusicManager_C::LargeEnemyMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, HuskHighStinger) == 0x000470, "Member 'AMusicManager_C::HuskHighStinger' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, HuskHighMusic) == 0x000478, "Member 'AMusicManager_C::HuskHighMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, HuskLowStinger) == 0x000480, "Member 'AMusicManager_C::HuskLowStinger' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, HuskLowMusic) == 0x000488, "Member 'AMusicManager_C::HuskLowMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, NearbyEnemiesStinger) == 0x000490, "Member 'AMusicManager_C::NearbyEnemiesStinger' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, NearbyEnemiesMusic) == 0x000498, "Member 'AMusicManager_C::NearbyEnemiesMusic' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicLogicUpdateTickTime) == 0x0004A0, "Member 'AMusicManager_C::MusicLogicUpdateTickTime' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MinDurationBeforeMusicCanIncreaseIntensity) == 0x0004A4, "Member 'AMusicManager_C::MinDurationBeforeMusicCanIncreaseIntensity' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, IntensityIncreaseFadeTime) == 0x0004A8, "Member 'AMusicManager_C::IntensityIncreaseFadeTime' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, IntensityIncreaseFadeStyle) == 0x0004AC, "Member 'AMusicManager_C::IntensityIncreaseFadeStyle' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MinDurationBeforeMusicCanDecreaseInIntensity) == 0x0004B0, "Member 'AMusicManager_C::MinDurationBeforeMusicCanDecreaseInIntensity' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, IntensityDecreaseFadeTime) == 0x0004B4, "Member 'AMusicManager_C::IntensityDecreaseFadeTime' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, IntensityDecreaseFadeStyle) == 0x0004B8, "Member 'AMusicManager_C::IntensityDecreaseFadeStyle' has a wrong offset!");
-static_assert(offsetof(AMusicManager_C, MusicShouldStop) == 0x0004B9, "Member 'AMusicManager_C::MusicShouldStop' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

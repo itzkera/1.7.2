@@ -14,8 +14,7 @@
 #include "LegacyBasicGradientFill_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.ExecuteUbergraph_LegacyBasicGradientFill
 // ()
@@ -60,8 +59,8 @@ void ULegacyBasicGradientFill_C::PreConstruct(bool IsDesignTime)
 // Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.Set Fill
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Color_1_0                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color_2_0                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color_1_0                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color_2_0                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Rotation__0___1_                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1_0, const struct FLinearColor& Color_2_0, float Rotation__0___1_)
@@ -84,7 +83,7 @@ void ULegacyBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1_0, 
 // Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.Set Brush Size
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        Brush_Size_0                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 Brush_Size_0                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Size_0)
 {
@@ -100,5 +99,5 @@ void ULegacyBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Si
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "UseableWeaponsObject_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function UseableWeaponsObject.UseableWeaponsObject_C.ExecuteUbergraph_UseableWeaponsObject
 // ()
@@ -36,5 +35,5 @@ void UUseableWeaponsObject_C::ExecuteUbergraph_UseableWeaponsObject(int32 EntryP
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

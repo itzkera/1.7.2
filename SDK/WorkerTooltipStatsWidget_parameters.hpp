@@ -17,8 +17,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.ExecuteUbergraph_WorkerTooltipStatsWidget
 // 0x01C8 (0x01C8 - 0x0000)
@@ -71,45 +71,6 @@ public:
 	bool                                          Temp_bool_Variable3;                               // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x01C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget) == 0x000008, "Wrong alignment on WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget");
-static_assert(sizeof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget) == 0x0001C8, "Wrong size on WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, EntryPoint) == 0x000000, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetWorkerPreviewStatus_OutIsPreviewing) == 0x000018, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetWorkerPreviewStatus_OutIsPreviewing' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetWorkerPreviewStatus_OutWorker) == 0x000020, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetWorkerPreviewStatus_OutWorker' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetWorkerPreviewStatus_OutMatchesPersonality) == 0x000028, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetWorkerPreviewStatus_OutMatchesPersonality' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetWorkerPreviewStatus_OutMatchesSquadType) == 0x000029, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetWorkerPreviewStatus_OutMatchesSquadType' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_GetWorkerPreviewStatus_OutSetBonusState) == 0x000030, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_GetWorkerPreviewStatus_OutSetBonusState' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000050, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000068, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_Conv_IntToText_ReturnValue2) == 0x0000A8, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x0000C0, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_MakeStruct_FormatArgumentData2) == 0x0000C8, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_bool_Variable) == 0x000108, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_MakeArray_Array) == 0x000110, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_byte_Variable) == 0x000120, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_Format_ReturnValue) == 0x000128, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_byte_Variable2) == 0x000140, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_Event_MyGeometry) == 0x000144, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_Event_InDeltaTime) == 0x000178, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_Calculate_Current_Pulsing_Highlight_Color_Current_Color) == 0x00017C, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_Calculate_Current_Pulsing_Highlight_Color_Current_Color' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_MakeStruct_SlateColor) == 0x000190, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_byte_Variable3) == 0x0001B8, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0001B9, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_byte_Variable4) == 0x0001BA, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_BooleanAND_ReturnValue) == 0x0001BB, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_BooleanAND_ReturnValue2) == 0x0001BC, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_BooleanAND_ReturnValue3) == 0x0001BD, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_Select_Default) == 0x0001BE, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, CallFunc_BooleanAND_ReturnValue4) == 0x0001BF, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_bool_Variable2) == 0x0001C0, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_byte_Variable5) == 0x0001C1, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_Select2_Default) == 0x0001C2, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_byte_Variable6) == 0x0001C3, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, Temp_bool_Variable3) == 0x0001C4, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget, K2Node_Select3_Default) == 0x0001C5, "Member 'WorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget::K2Node_Select3_Default' has a wrong offset!");
 
 // Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.Tick
 // 0x0038 (0x0038 - 0x0000)
@@ -119,10 +80,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WorkerTooltipStatsWidget_C_Tick) == 0x000004, "Wrong alignment on WorkerTooltipStatsWidget_C_Tick");
-static_assert(sizeof(WorkerTooltipStatsWidget_C_Tick) == 0x000038, "Wrong size on WorkerTooltipStatsWidget_C_Tick");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_Tick, MyGeometry) == 0x000000, "Member 'WorkerTooltipStatsWidget_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(WorkerTooltipStatsWidget_C_Tick, InDeltaTime) == 0x000034, "Member 'WorkerTooltipStatsWidget_C_Tick::InDeltaTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

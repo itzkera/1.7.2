@@ -14,8 +14,7 @@
 #include "QuickbarBase_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuickbarBase.QuickbarBase_C.ExecuteUbergraph_QuickbarBase
 // (HasDefaults)
@@ -82,7 +81,7 @@ void UQuickbarBase_C::OnLocalPlayerRevived()
 // Function QuickbarBase.QuickbarBase_C.OnLocalPlayerDied
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           DeathReport                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortPlayerDeathReport&    DeathReport                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UQuickbarBase_C::OnLocalPlayerDied(const struct FFortPlayerDeathReport& DeathReport)
 {
@@ -186,8 +185,8 @@ void UQuickbarBase_C::OnQuickbarSlotFocusChanged(EFortQuickBars QuickbarIndex, i
 // Function QuickbarBase.QuickbarBase_C.OnWorldItemListChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UQuickbarBase_C::OnWorldItemListChanged(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -223,8 +222,8 @@ void UQuickbarBase_C::Construct()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Slot_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Is_Valid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Array_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Is_Valid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32*                                  Array_Index                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuickbarBase_C::Is_Valid_Slot(int32 Slot_0, bool* Is_Valid, int32* Array_Index)
 {
@@ -302,5 +301,5 @@ void UQuickbarBase_C::RefreshQuickbar()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

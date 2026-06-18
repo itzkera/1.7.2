@@ -14,8 +14,7 @@
 #include "AthenaTeamMemberDBNOState_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.ExecuteUbergraph_AthenaTeamMemberDBNOState
 // ()
@@ -96,5 +95,5 @@ void UAthenaTeamMemberDBNOState_C::Set_Reviving(bool Is_Reviving)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

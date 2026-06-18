@@ -14,8 +14,7 @@
 #include "QuantitySelector_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuantitySelector.QuantitySelector_C.ExecuteUbergraph_QuantitySelector
 // ()
@@ -185,9 +184,9 @@ void UQuantitySelector_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_C
 // int32                                   StartingCount                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   MaximumCount                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                        Item_0                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             TitleText                                              (Parm)
-// class FText                             ButtonText                                             (Parm)
-// class FText                             AdditionalInfoText                                     (Parm)
+// const class FText&                      TitleText                                              (Parm)
+// const class FText&                      ButtonText                                             (Parm)
+// const class FText&                      AdditionalInfoText                                     (Parm)
 
 void UQuantitySelector_C::SetSplitData(int32 StartingCount, int32 MaximumCount, class UFortItem* Item_0, const class FText& TitleText, const class FText& ButtonText, const class FText& AdditionalInfoText)
 {
@@ -212,7 +211,7 @@ void UQuantitySelector_C::SetSplitData(int32 StartingCount, int32 MaximumCount, 
 // Function QuantitySelector.QuantitySelector_C.SetAdditionalText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             AdditionalInfoText                                     (Parm)
+// const class FText&                      AdditionalInfoText                                     (Parm)
 
 void UQuantitySelector_C::SetAdditionalText(const class FText& AdditionalInfoText)
 {
@@ -246,7 +245,7 @@ void UQuantitySelector_C::CloseSelector()
 // Function QuantitySelector.QuantitySelector_C.HandleMaxPressed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuantitySelector_C::HandleMaxPressed(bool* PassThrough)
 {
@@ -267,7 +266,7 @@ void UQuantitySelector_C::HandleMaxPressed(bool* PassThrough)
 // Function QuantitySelector.QuantitySelector_C.HandleTransferPressed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuantitySelector_C::HandleTransferPressed(bool* PassThrough)
 {
@@ -288,7 +287,7 @@ void UQuantitySelector_C::HandleTransferPressed(bool* PassThrough)
 // Function QuantitySelector.QuantitySelector_C.HandleCancelPressed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuantitySelector_C::HandleCancelPressed(bool* PassThrough)
 {
@@ -339,5 +338,5 @@ void UQuantitySelector_C::SetupForInputMode(bool IsUsingGamepad)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

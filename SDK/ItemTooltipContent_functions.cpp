@@ -14,8 +14,7 @@
 #include "ItemTooltipContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTooltipContent.ItemTooltipContent_C.ExecuteUbergraph_ItemTooltipContent
 // ()
@@ -54,7 +53,7 @@ void UItemTooltipContent_C::Construct()
 // Function ItemTooltipContent.ItemTooltipContent_C.Update
 // (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemTooltipContent_C::Update(bool* Success)
 {
@@ -331,7 +330,7 @@ void UItemTooltipContent_C::Build_Schematic_Ingredients()
 // Function ItemTooltipContent.ItemTooltipContent_C.Get Query Tag
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FGameplayTag                     Tag                                                    (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag*                    Tag                                                    (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 
 void UItemTooltipContent_C::Get_Query_Tag(struct FGameplayTag* Tag)
 {
@@ -352,7 +351,7 @@ void UItemTooltipContent_C::Get_Query_Tag(struct FGameplayTag* Tag)
 // Function ItemTooltipContent.ItemTooltipContent_C.Init Tooltip Context
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortTooltipContext*              Tooltip_Context                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortTooltipContext**             Tooltip_Context                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTooltipContent_C::Init_Tooltip_Context(class UFortTooltipContext** Tooltip_Context)
 {
@@ -436,11 +435,11 @@ void UItemTooltipContent_C::Build_Perks_List()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EFortStatValueDisplayType               Display_Type                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Label                                                  (Parm)
+// const class FText&                      Label                                                  (Parm)
 // int32                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Comparison_Value                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    HigherIsBetter                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortDisplayAttribute            Display_Attribute                                      (Parm, OutParm)
+// struct FFortDisplayAttribute*           Display_Attribute                                      (Parm, OutParm)
 
 void UItemTooltipContent_C::Create_Custom_Integer_Stat(EFortStatValueDisplayType Display_Type, const class FText& Label, int32 Value, int32 Comparison_Value, bool HigherIsBetter, struct FFortDisplayAttribute* Display_Attribute)
 {
@@ -519,5 +518,5 @@ void UItemTooltipContent_C::ClearExtendedInfo()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

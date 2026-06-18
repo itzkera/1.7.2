@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_LiveStreamerDescription.BP_LiveStreamerDescription_C
 // 0x0048 (0x0278 - 0x0230)
@@ -45,24 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_LiveStreamerDescription_C">();
+		BP_STATIC_CLASS_IMPL("BP_LiveStreamerDescription_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_LiveStreamerDescription_C")
 	}
 	static class UBP_LiveStreamerDescription_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_LiveStreamerDescription_C>();
 	}
 };
-static_assert(alignof(UBP_LiveStreamerDescription_C) == 0x000008, "Wrong alignment on UBP_LiveStreamerDescription_C");
-static_assert(sizeof(UBP_LiveStreamerDescription_C) == 0x000278, "Wrong size on UBP_LiveStreamerDescription_C");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, BroadcasterDescText) == 0x000230, "Member 'UBP_LiveStreamerDescription_C::BroadcasterDescText' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, BroadcasterViewerSwitcher) == 0x000238, "Member 'UBP_LiveStreamerDescription_C::BroadcasterViewerSwitcher' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, LiveStreamTitileText) == 0x000240, "Member 'UBP_LiveStreamerDescription_C::LiveStreamTitileText' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, StreamerNameText) == 0x000248, "Member 'UBP_LiveStreamerDescription_C::StreamerNameText' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, ViewerHorizBox) == 0x000250, "Member 'UBP_LiveStreamerDescription_C::ViewerHorizBox' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, ViewerQuestText) == 0x000258, "Member 'UBP_LiveStreamerDescription_C::ViewerQuestText' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, Quest) == 0x000260, "Member 'UBP_LiveStreamerDescription_C::Quest' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, QuestItemDefinition) == 0x000268, "Member 'UBP_LiveStreamerDescription_C::QuestItemDefinition' has a wrong offset!");
-static_assert(offsetof(UBP_LiveStreamerDescription_C, QuestType) == 0x000270, "Member 'UBP_LiveStreamerDescription_C::QuestType' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

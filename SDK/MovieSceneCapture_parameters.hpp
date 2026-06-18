@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureElapsedTime
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct MovieSceneCaptureEnvironment_GetCaptureElapsedTime final
 public:
 	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneCaptureEnvironment_GetCaptureElapsedTime) == 0x000004, "Wrong alignment on MovieSceneCaptureEnvironment_GetCaptureElapsedTime");
-static_assert(sizeof(MovieSceneCaptureEnvironment_GetCaptureElapsedTime) == 0x000004, "Wrong size on MovieSceneCaptureEnvironment_GetCaptureElapsedTime");
-static_assert(offsetof(MovieSceneCaptureEnvironment_GetCaptureElapsedTime, ReturnValue) == 0x000000, "Member 'MovieSceneCaptureEnvironment_GetCaptureElapsedTime::ReturnValue' has a wrong offset!");
 
 // Function MovieSceneCapture.MovieSceneCaptureEnvironment.GetCaptureFrameNumber
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +29,6 @@ struct MovieSceneCaptureEnvironment_GetCaptureFrameNumber final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(MovieSceneCaptureEnvironment_GetCaptureFrameNumber) == 0x000004, "Wrong alignment on MovieSceneCaptureEnvironment_GetCaptureFrameNumber");
-static_assert(sizeof(MovieSceneCaptureEnvironment_GetCaptureFrameNumber) == 0x000004, "Wrong size on MovieSceneCaptureEnvironment_GetCaptureFrameNumber");
-static_assert(offsetof(MovieSceneCaptureEnvironment_GetCaptureFrameNumber, ReturnValue) == 0x000000, "Member 'MovieSceneCaptureEnvironment_GetCaptureFrameNumber::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

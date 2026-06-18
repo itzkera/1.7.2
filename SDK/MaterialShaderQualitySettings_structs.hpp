@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum MaterialShaderQualitySettings.EMobileCSMQuality
 // NumValues: 0x0004
@@ -36,14 +35,5 @@ public:
 	bool                                          bForceLQReflections;                               // 0x0004(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EMobileCSMQuality                             MobileCSMQuality;                                  // 0x0005(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FMaterialQualityOverrides) == 0x000001, "Wrong alignment on FMaterialQualityOverrides");
-static_assert(sizeof(FMaterialQualityOverrides) == 0x000006, "Wrong size on FMaterialQualityOverrides");
-static_assert(offsetof(FMaterialQualityOverrides, bEnableOverride) == 0x000000, "Member 'FMaterialQualityOverrides::bEnableOverride' has a wrong offset!");
-static_assert(offsetof(FMaterialQualityOverrides, bForceFullyRough) == 0x000001, "Member 'FMaterialQualityOverrides::bForceFullyRough' has a wrong offset!");
-static_assert(offsetof(FMaterialQualityOverrides, bForceNonMetal) == 0x000002, "Member 'FMaterialQualityOverrides::bForceNonMetal' has a wrong offset!");
-static_assert(offsetof(FMaterialQualityOverrides, bForceDisableLMDirectionality) == 0x000003, "Member 'FMaterialQualityOverrides::bForceDisableLMDirectionality' has a wrong offset!");
-static_assert(offsetof(FMaterialQualityOverrides, bForceLQReflections) == 0x000004, "Member 'FMaterialQualityOverrides::bForceLQReflections' has a wrong offset!");
-static_assert(offsetof(FMaterialQualityOverrides, MobileCSMQuality) == 0x000005, "Member 'FMaterialQualityOverrides::MobileCSMQuality' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

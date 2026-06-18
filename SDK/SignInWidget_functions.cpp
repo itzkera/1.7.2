@@ -14,8 +14,7 @@
 #include "SignInWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SignInWidget.SignInWidget_C.ExecuteUbergraph_SignInWidget
 // (HasDefaults)
@@ -94,7 +93,7 @@ void USignInWidget_C::OnActivated()
 // Function SignInWidget.SignInWidget_C.BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEditableTextChangedEvent__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 
 void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEditableTextChangedEvent__DelegateSignature(const class FText& Text)
 {
@@ -114,7 +113,7 @@ void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEd
 // Function SignInWidget.SignInWidget_C.BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 
 void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature(const class FText& Text)
 {
@@ -134,7 +133,7 @@ void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEdita
 // Function SignInWidget.SignInWidget_C.BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 // ETextCommit                             CommitMethod                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
@@ -156,7 +155,7 @@ void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEdita
 // Function SignInWidget.SignInWidget_C.BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 // ETextCommit                             CommitMethod                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
@@ -198,5 +197,5 @@ void USignInWidget_C::HandleTextCommited(ETextCommit TextCommitType, class UComm
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

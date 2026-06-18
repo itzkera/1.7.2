@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionMasterWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.ExecuteUbergraph_BP_FortExpeditionMasterWidget
 // (HasDefaults)
@@ -110,7 +109,7 @@ void UBP_FortExpeditionMasterWidget_C::Construct()
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Handle Back
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::Handle_Back(bool* PassThrough)
 {
@@ -173,7 +172,7 @@ void UBP_FortExpeditionMasterWidget_C::Update_Master_Widget()
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Hide Input Action
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              InputActionRow                                         (Parm, NoDestructor)
+// const struct FDataTableRowHandle&       InputActionRow                                         (Parm, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::Hide_Input_Action(const struct FDataTableRowHandle& InputActionRow)
 {
@@ -193,7 +192,7 @@ void UBP_FortExpeditionMasterWidget_C::Hide_Input_Action(const struct FDataTable
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Show Input Action
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              InputActionRow                                         (Parm, NoDestructor)
+// const struct FDataTableRowHandle&       InputActionRow                                         (Parm, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::Show_Input_Action(const struct FDataTableRowHandle& InputActionRow)
 {
@@ -227,7 +226,7 @@ void UBP_FortExpeditionMasterWidget_C::Present_Reward_UI()
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleBuildExpeditionAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::HandleBuildExpeditionAction(bool* PassThrough)
 {
@@ -248,7 +247,7 @@ void UBP_FortExpeditionMasterWidget_C::HandleBuildExpeditionAction(bool* PassThr
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleAbandonExpeditionAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::HandleAbandonExpeditionAction(bool* PassThrough)
 {
@@ -269,7 +268,7 @@ void UBP_FortExpeditionMasterWidget_C::HandleAbandonExpeditionAction(bool* PassT
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleCollectExpeditionAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::HandleCollectExpeditionAction(bool* PassThrough)
 {
@@ -290,7 +289,7 @@ void UBP_FortExpeditionMasterWidget_C::HandleCollectExpeditionAction(bool* PassT
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Disable Input Action
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              InputActionRow                                         (Parm, NoDestructor)
+// const struct FDataTableRowHandle&       InputActionRow                                         (Parm, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::Disable_Input_Action(const struct FDataTableRowHandle& InputActionRow)
 {
@@ -310,7 +309,7 @@ void UBP_FortExpeditionMasterWidget_C::Disable_Input_Action(const struct FDataTa
 // Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleSortExpeditionListAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionMasterWidget_C::HandleSortExpeditionListAction(bool* PassThrough)
 {
@@ -327,5 +326,5 @@ void UBP_FortExpeditionMasterWidget_C::HandleSortExpeditionListAction(bool* Pass
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

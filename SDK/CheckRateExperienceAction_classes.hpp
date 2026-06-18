@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CheckRateExperienceAction.CheckRateExperienceAction_C
 // 0x0010 (0x03F8 - 0x03E8)
@@ -34,17 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CheckRateExperienceAction_C">();
+		BP_STATIC_CLASS_IMPL("CheckRateExperienceAction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheckRateExperienceAction_C")
 	}
 	static class ACheckRateExperienceAction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACheckRateExperienceAction_C>();
 	}
 };
-static_assert(alignof(ACheckRateExperienceAction_C) == 0x000008, "Wrong alignment on ACheckRateExperienceAction_C");
-static_assert(sizeof(ACheckRateExperienceAction_C) == 0x0003F8, "Wrong size on ACheckRateExperienceAction_C");
-static_assert(offsetof(ACheckRateExperienceAction_C, UberGraphFrame) == 0x0003E8, "Member 'ACheckRateExperienceAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACheckRateExperienceAction_C, DefaultSceneRoot) == 0x0003F0, "Member 'ACheckRateExperienceAction_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

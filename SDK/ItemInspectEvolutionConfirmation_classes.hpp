@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C
 // 0x00C8 (0x0308 - 0x0240)
@@ -67,36 +66,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectEvolutionConfirmation_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectEvolutionConfirmation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectEvolutionConfirmation_C")
 	}
 	static class UItemInspectEvolutionConfirmation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectEvolutionConfirmation_C>();
 	}
 };
-static_assert(alignof(UItemInspectEvolutionConfirmation_C) == 0x000008, "Wrong alignment on UItemInspectEvolutionConfirmation_C");
-static_assert(sizeof(UItemInspectEvolutionConfirmation_C) == 0x000308, "Wrong size on UItemInspectEvolutionConfirmation_C");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, UberGraphFrame) == 0x000240, "Member 'UItemInspectEvolutionConfirmation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionConfirmButton) == 0x000248, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionConfirmButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionInfo) == 0x000250, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionInfo' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionInfoSwitcher) == 0x000258, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionInfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionIngredientsList) == 0x000260, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionIngredientsList' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionNameText) == 0x000268, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionNameText' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionOptionsList) == 0x000270, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionOptionsList' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolveRestrictionText) == 0x000278, "Member 'UItemInspectEvolutionConfirmation_C::EvolveRestrictionText' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, Image_0) == 0x000280, "Member 'UItemInspectEvolutionConfirmation_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, NoEvolutionInfo) == 0x000288, "Member 'UItemInspectEvolutionConfirmation_C::NoEvolutionInfo' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, NoEvolutionIngredientsText) == 0x000290, "Member 'UItemInspectEvolutionConfirmation_C::NoEvolutionIngredientsText' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, PromptText) == 0x000298, "Member 'UItemInspectEvolutionConfirmation_C::PromptText' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, RestrictionBorder) == 0x0002A0, "Member 'UItemInspectEvolutionConfirmation_C::RestrictionBorder' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, OnEvolutionConfirm) == 0x0002A8, "Member 'UItemInspectEvolutionConfirmation_C::OnEvolutionConfirm' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, Item) == 0x0002B8, "Member 'UItemInspectEvolutionConfirmation_C::Item' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionRecipeIndex) == 0x0002C0, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionRecipeIndex' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, OnEvolutionOptionHovered) == 0x0002C8, "Member 'UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, OnEvolutionOptionUnhovered) == 0x0002D8, "Member 'UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, OnEvolutionOptionSelected) == 0x0002E8, "Member 'UItemInspectEvolutionConfirmation_C::OnEvolutionOptionSelected' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionSelected) == 0x0002F8, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionSelected' has a wrong offset!");
-static_assert(offsetof(UItemInspectEvolutionConfirmation_C, EvolutionItemSelected) == 0x000300, "Member 'UItemInspectEvolutionConfirmation_C::EvolutionItemSelected' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

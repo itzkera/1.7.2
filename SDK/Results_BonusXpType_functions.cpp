@@ -14,8 +14,7 @@
 #include "Results_BonusXpType_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_BonusXpType.Results_BonusXpType_C.ExecuteUbergraph_Results_BonusXpType
 // ()
@@ -75,7 +74,7 @@ void UResults_BonusXpType_C::Construct()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   InXPAmount                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             PlayerName                                             (Parm)
+// const class FText&                      PlayerName                                             (Parm)
 // class FName                             InType                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UResults_BonusXpType_C::setInformation(int32 InXPAmount, const class FText& PlayerName, class FName InType)
@@ -94,5 +93,5 @@ void UResults_BonusXpType_C::setInformation(int32 InXPAmount, const class FText&
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

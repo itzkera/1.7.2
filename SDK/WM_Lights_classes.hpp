@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WM_Lights.WM_Lights_C
 // 0x0030 (0x03B8 - 0x0388)
@@ -38,21 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WM_Lights_C">();
+		BP_STATIC_CLASS_IMPL("WM_Lights_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WM_Lights_C")
 	}
 	static class AWM_Lights_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWM_Lights_C>();
 	}
 };
-static_assert(alignof(AWM_Lights_C) == 0x000008, "Wrong alignment on AWM_Lights_C");
-static_assert(sizeof(AWM_Lights_C) == 0x0003B8, "Wrong size on AWM_Lights_C");
-static_assert(offsetof(AWM_Lights_C, UberGraphFrame) == 0x000388, "Member 'AWM_Lights_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWM_Lights_C, Arrow) == 0x000390, "Member 'AWM_Lights_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AWM_Lights_C, DirectionalLight) == 0x000398, "Member 'AWM_Lights_C::DirectionalLight' has a wrong offset!");
-static_assert(offsetof(AWM_Lights_C, SkyLight) == 0x0003A0, "Member 'AWM_Lights_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(AWM_Lights_C, PointLight1) == 0x0003A8, "Member 'AWM_Lights_C::PointLight1' has a wrong offset!");
-static_assert(offsetof(AWM_Lights_C, DefaultSceneRoot) == 0x0003B0, "Member 'AWM_Lights_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

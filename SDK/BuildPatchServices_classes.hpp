@@ -14,8 +14,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class BuildPatchServices.BuildPatchManifest
 // 0x00A8 (0x00D0 - 0x0028)
@@ -40,28 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BuildPatchManifest">();
+		STATIC_CLASS_IMPL("BuildPatchManifest")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildPatchManifest")
 	}
 	static class UBuildPatchManifest* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuildPatchManifest>();
 	}
 };
-static_assert(alignof(UBuildPatchManifest) == 0x000008, "Wrong alignment on UBuildPatchManifest");
-static_assert(sizeof(UBuildPatchManifest) == 0x0000D0, "Wrong size on UBuildPatchManifest");
-static_assert(offsetof(UBuildPatchManifest, ManifestFileVersion) == 0x000028, "Member 'UBuildPatchManifest::ManifestFileVersion' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, bIsFileData) == 0x000029, "Member 'UBuildPatchManifest::bIsFileData' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, AppID) == 0x00002C, "Member 'UBuildPatchManifest::AppID' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, AppName) == 0x000030, "Member 'UBuildPatchManifest::AppName' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, BuildVersion) == 0x000040, "Member 'UBuildPatchManifest::BuildVersion' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, LaunchExe) == 0x000050, "Member 'UBuildPatchManifest::LaunchExe' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, LaunchCommand) == 0x000060, "Member 'UBuildPatchManifest::LaunchCommand' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, PrereqName) == 0x000070, "Member 'UBuildPatchManifest::PrereqName' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, PrereqPath) == 0x000080, "Member 'UBuildPatchManifest::PrereqPath' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, PrereqArgs) == 0x000090, "Member 'UBuildPatchManifest::PrereqArgs' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, FileManifestList) == 0x0000A0, "Member 'UBuildPatchManifest::FileManifestList' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, ChunkList) == 0x0000B0, "Member 'UBuildPatchManifest::ChunkList' has a wrong offset!");
-static_assert(offsetof(UBuildPatchManifest, CustomFields) == 0x0000C0, "Member 'UBuildPatchManifest::CustomFields' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

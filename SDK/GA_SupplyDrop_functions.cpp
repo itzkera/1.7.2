@@ -14,8 +14,7 @@
 #include "GA_SupplyDrop_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_SupplyDrop.GA_SupplyDrop_C.ExecuteUbergraph_GA_SupplyDrop
 // (HasDefaults)
@@ -184,5 +183,5 @@ void UGA_SupplyDrop_C::SetTierFiveData(bool Condition)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

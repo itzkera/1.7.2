@@ -14,8 +14,7 @@
 #include "ImpactNumbers_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ImpactNumbers.ImpactNumbers_C.ExecuteUbergraph_ImpactNumbers
 // (HasDefaults)
@@ -40,7 +39,7 @@ void AImpactNumbers_C::ExecuteUbergraph_ImpactNumbers(int32 EntryPoint)
 // Function ImpactNumbers.ImpactNumbers_C.OnNewDamageNumber
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDamageNumberInfo            NewDamageNumberInfo                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FFortDamageNumberInfo&     NewDamageNumberInfo                                    (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
 void AImpactNumbers_C::OnNewDamageNumber(const struct FFortDamageNumberInfo& NewDamageNumberInfo)
 {
@@ -74,9 +73,9 @@ void AImpactNumbers_C::UserConstructionScript()
 // Function ImpactNumbers.ImpactNumbers_C.init a new number set
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDamageNumberInfo            NewDamageHitInfoStruct                                 (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// struct FTransform                       OutCameraTransform                                     (Parm, OutParm, IsPlainOldData, NoDestructor)
-// struct FVector                          OutNumberLocation                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFortDamageNumberInfo&           NewDamageHitInfoStruct                                 (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// struct FTransform*                      OutCameraTransform                                     (Parm, OutParm, IsPlainOldData, NoDestructor)
+// struct FVector*                         OutNumberLocation                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AImpactNumbers_C::init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation)
 {
@@ -104,9 +103,9 @@ void AImpactNumbers_C::init_a_new_number_set(struct FFortDamageNumberInfo& NewDa
 // Function ImpactNumbers.ImpactNumbers_C.Set Material Pararmeters
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDamageNumberInfo            NewDamageHitInfoStruct                                 (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// struct FTransform                       CameraTransform                                        (Parm, IsPlainOldData, NoDestructor)
-// struct FVector                          NumberLocation                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFortDamageNumberInfo&           NewDamageHitInfoStruct                                 (Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FTransform&                CameraTransform                                        (Parm, IsPlainOldData, NoDestructor)
+// const struct FVector&                   NumberLocation                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AImpactNumbers_C::Set_Material_Pararmeters(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, const struct FTransform& CameraTransform, const struct FVector& NumberLocation)
 {
@@ -126,5 +125,5 @@ void AImpactNumbers_C::Set_Material_Pararmeters(struct FFortDamageNumberInfo& Ne
 	NewDamageHitInfoStruct = std::move(Parms.NewDamageHitInfoStruct);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TeamID_Lime.TeamID_Lime_C
 // 0x0000 (0x0038 - 0x0038)
@@ -23,15 +22,16 @@ class UTeamID_Lime_C final : public UFortTeamIdentification
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamID_Lime_C">();
+		BP_STATIC_CLASS_IMPL("TeamID_Lime_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamID_Lime_C")
 	}
 	static class UTeamID_Lime_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamID_Lime_C>();
 	}
 };
-static_assert(alignof(UTeamID_Lime_C) == 0x000008, "Wrong alignment on UTeamID_Lime_C");
-static_assert(sizeof(UTeamID_Lime_C) == 0x000038, "Wrong size on UTeamID_Lime_C");
 
-}
-
+SDK_NAMESPACE_END

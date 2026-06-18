@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MiniCraftingIngredientList.MiniCraftingIngredientList_C
 // 0x0010 (0x02C0 - 0x02B0)
@@ -32,17 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MiniCraftingIngredientList_C">();
+		BP_STATIC_CLASS_IMPL("MiniCraftingIngredientList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MiniCraftingIngredientList_C")
 	}
 	static class UMiniCraftingIngredientList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMiniCraftingIngredientList_C>();
 	}
 };
-static_assert(alignof(UMiniCraftingIngredientList_C) == 0x000008, "Wrong alignment on UMiniCraftingIngredientList_C");
-static_assert(sizeof(UMiniCraftingIngredientList_C) == 0x0002C0, "Wrong size on UMiniCraftingIngredientList_C");
-static_assert(offsetof(UMiniCraftingIngredientList_C, UberGraphFrame) == 0x0002B0, "Member 'UMiniCraftingIngredientList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiniCraftingIngredientList_C, EntriesWrapBox) == 0x0002B8, "Member 'UMiniCraftingIngredientList_C::EntriesWrapBox' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

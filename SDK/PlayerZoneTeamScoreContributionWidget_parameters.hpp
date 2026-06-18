@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget
 // 0x0004 (0x0004 - 0x0000)
@@ -23,9 +23,6 @@ struct PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamSc
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget) == 0x000004, "Wrong alignment on PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget");
-static_assert(sizeof(PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget) == 0x000004, "Wrong size on PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget, EntryPoint) == 0x000000, "Member 'PlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget::EntryPoint' has a wrong offset!");
 
 // Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.Initialize
 // 0x00E0 (0x00E0 - 0x0000)
@@ -55,24 +52,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00B8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00C8(0x0018)()
 };
-static_assert(alignof(PlayerZoneTeamScoreContributionWidget_C_Initialize) == 0x000008, "Wrong alignment on PlayerZoneTeamScoreContributionWidget_C_Initialize");
-static_assert(sizeof(PlayerZoneTeamScoreContributionWidget_C_Initialize) == 0x0000E0, "Wrong size on PlayerZoneTeamScoreContributionWidget_C_Initialize");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, Temp_bool_True_if_break_was_hit_Variable) == 0x000000, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, Temp_int_Array_Index_Variable) == 0x000004, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_GetAllActorsOfClass_OutActors) == 0x000018, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Array_Get_Item) == 0x000030, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_BooleanAND_ReturnValue) == 0x000038, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Conv_StringToText_ReturnValue) == 0x000040, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_GetUniqueID_ReturnValue) == 0x000058, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_GetUniqueID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, K2Node_MakeStruct_FormatArgumentData) == 0x000070, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_AreUniqueIDsIdentical_ReturnValue) == 0x0000B0, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_AreUniqueIDsIdentical_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, K2Node_MakeArray_Array) == 0x0000B8, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Initialize, CallFunc_Format_ReturnValue) == 0x0000C8, "Member 'PlayerZoneTeamScoreContributionWidget_C_Initialize::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.Update Contribution LERP
 // 0x0090 (0x0090 - 0x0000)
@@ -88,16 +67,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
 };
-static_assert(alignof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP) == 0x000008, "Wrong alignment on PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP");
-static_assert(sizeof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP) == 0x000090, "Wrong size on PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, LERP_Factor) == 0x000000, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::LERP_Factor' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, CallFunc_Lerp_ReturnValue) == 0x000008, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, CallFunc_FTrunc_ReturnValue) == 0x00000C, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, K2Node_MakeStruct_FormatArgumentData) == 0x000028, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, K2Node_MakeArray_Array) == 0x000068, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP, CallFunc_Format_ReturnValue) == 0x000078, "Member 'PlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

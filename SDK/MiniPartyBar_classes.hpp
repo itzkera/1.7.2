@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MiniPartyBar.MiniPartyBar_C
 // 0x0058 (0x0290 - 0x0238)
@@ -48,27 +47,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MiniPartyBar_C">();
+		BP_STATIC_CLASS_IMPL("MiniPartyBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MiniPartyBar_C")
 	}
 	static class UMiniPartyBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMiniPartyBar_C>();
 	}
 };
-static_assert(alignof(UMiniPartyBar_C) == 0x000008, "Wrong alignment on UMiniPartyBar_C");
-static_assert(sizeof(UMiniPartyBar_C) == 0x000290, "Wrong size on UMiniPartyBar_C");
-static_assert(offsetof(UMiniPartyBar_C, UberGraphFrame) == 0x000238, "Member 'UMiniPartyBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, ButtonLocalPlayer) == 0x000240, "Member 'UMiniPartyBar_C::ButtonLocalPlayer' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, LineSeparator) == 0x000248, "Member 'UMiniPartyBar_C::LineSeparator' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, LocalPlayer) == 0x000250, "Member 'UMiniPartyBar_C::LocalPlayer' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, RemoteMember0) == 0x000258, "Member 'UMiniPartyBar_C::RemoteMember0' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, RemoteMember1) == 0x000260, "Member 'UMiniPartyBar_C::RemoteMember1' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, RemoteMember2) == 0x000268, "Member 'UMiniPartyBar_C::RemoteMember2' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, bLobbyTimerShow) == 0x000270, "Member 'UMiniPartyBar_C::bLobbyTimerShow' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, bLobbyStarted) == 0x000271, "Member 'UMiniPartyBar_C::bLobbyStarted' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, SoundCue_Countdown_10SecLeft) == 0x000278, "Member 'UMiniPartyBar_C::SoundCue_Countdown_10SecLeft' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, SoundCue_Countdown_10SecTick) == 0x000280, "Member 'UMiniPartyBar_C::SoundCue_Countdown_10SecTick' has a wrong offset!");
-static_assert(offsetof(UMiniPartyBar_C, NewLocalPlayerWidget) == 0x000288, "Member 'UMiniPartyBar_C::NewLocalPlayerWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "MissionAlertIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionAlertIndicator.MissionAlertIndicator_C.ExecuteUbergraph_MissionAlertIndicator
 // ()
@@ -84,5 +83,5 @@ void UMissionAlertIndicator_C::Update()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ItemCardPowerRatingTextStyle_XL.ItemCardPowerRatingTextStyle_XL_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UItemCardPowerRatingTextStyle_XL_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCardPowerRatingTextStyle_XL_C">();
+		BP_STATIC_CLASS_IMPL("ItemCardPowerRatingTextStyle_XL_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCardPowerRatingTextStyle_XL_C")
 	}
 	static class UItemCardPowerRatingTextStyle_XL_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCardPowerRatingTextStyle_XL_C>();
 	}
 };
-static_assert(alignof(UItemCardPowerRatingTextStyle_XL_C) == 0x000008, "Wrong alignment on UItemCardPowerRatingTextStyle_XL_C");
-static_assert(sizeof(UItemCardPowerRatingTextStyle_XL_C) == 0x0000D0, "Wrong size on UItemCardPowerRatingTextStyle_XL_C");
 
-}
-
+SDK_NAMESPACE_END

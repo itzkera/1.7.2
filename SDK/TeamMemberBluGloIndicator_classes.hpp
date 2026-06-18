@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C
 // 0x0018 (0x0250 - 0x0238)
@@ -32,18 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamMemberBluGloIndicator_C">();
+		BP_STATIC_CLASS_IMPL("TeamMemberBluGloIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamMemberBluGloIndicator_C")
 	}
 	static class UTeamMemberBluGloIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamMemberBluGloIndicator_C>();
 	}
 };
-static_assert(alignof(UTeamMemberBluGloIndicator_C) == 0x000008, "Wrong alignment on UTeamMemberBluGloIndicator_C");
-static_assert(sizeof(UTeamMemberBluGloIndicator_C) == 0x000250, "Wrong size on UTeamMemberBluGloIndicator_C");
-static_assert(offsetof(UTeamMemberBluGloIndicator_C, Image_0) == 0x000238, "Member 'UTeamMemberBluGloIndicator_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBluGloIndicator_C, NumericTextBluGloCount) == 0x000240, "Member 'UTeamMemberBluGloIndicator_C::NumericTextBluGloCount' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBluGloIndicator_C, CurrentPlayer) == 0x000248, "Member 'UTeamMemberBluGloIndicator_C::CurrentPlayer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

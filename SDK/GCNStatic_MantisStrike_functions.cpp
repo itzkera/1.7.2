@@ -14,14 +14,13 @@
 #include "GCNStatic_MantisStrike_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCNStatic_MantisStrike.GCNStatic_MantisStrike_C.OnExecute
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UGCNStatic_MantisStrike_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
@@ -41,5 +40,5 @@ bool UGCNStatic_MantisStrike_C::OnExecute(class AActor* MyTarget, const struct F
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

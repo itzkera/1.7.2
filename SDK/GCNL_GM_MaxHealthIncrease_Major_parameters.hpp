@@ -13,8 +13,8 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GCNL_GM_MaxHealthIncrease_Major.GCNL_GM_MaxHealthIncrease_Major_C.OnActive
 // 0x00D8 (0x00D8 - 0x0000)
@@ -28,13 +28,6 @@ public:
 	class AEnemyPawn_Parent_C*                    K2Node_DynamicCast_AsEnemy_Pawn_Parent;            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive) == 0x000008, "Wrong alignment on GCNL_GM_MaxHealthIncrease_Major_C_OnActive");
-static_assert(sizeof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive) == 0x0000D8, "Wrong size on GCNL_GM_MaxHealthIncrease_Major_C_OnActive");
-static_assert(offsetof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive, MyTarget) == 0x000000, "Member 'GCNL_GM_MaxHealthIncrease_Major_C_OnActive::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive, Parameters) == 0x000008, "Member 'GCNL_GM_MaxHealthIncrease_Major_C_OnActive::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive, ReturnValue) == 0x0000C0, "Member 'GCNL_GM_MaxHealthIncrease_Major_C_OnActive::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive, K2Node_DynamicCast_AsEnemy_Pawn_Parent) == 0x0000C8, "Member 'GCNL_GM_MaxHealthIncrease_Major_C_OnActive::K2Node_DynamicCast_AsEnemy_Pawn_Parent' has a wrong offset!");
-static_assert(offsetof(GCNL_GM_MaxHealthIncrease_Major_C_OnActive, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'GCNL_GM_MaxHealthIncrease_Major_C_OnActive::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

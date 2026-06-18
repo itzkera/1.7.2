@@ -14,8 +14,7 @@
 #include "PartyDisplayManagerBP_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ExecuteUbergraph_PartyDisplayManagerBP
 // (HasDefaults)
@@ -61,7 +60,7 @@ void APartyDisplayManagerBP_C::ReceiveTick(float DeltaSeconds)
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // class UFortItemDefinition*              ItemWhoseAssetsWereLoaded                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UObject*>                  LoadedAssets                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UObject*>&           LoadedAssets                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortItemDefinition* ItemWhoseAssetsWereLoaded, const TArray<class UObject*>& LoadedAssets)
 {
@@ -411,7 +410,7 @@ void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Text
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemDefinitionToShow
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortItemDefinition*              ItemDefinition                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemDefinition**             ItemDefinition                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition** ItemDefinition)
 {
@@ -428,5 +427,5 @@ void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition
 		*ItemDefinition = Parms.ItemDefinition;
 }
 
-}
 
+SDK_NAMESPACE_END

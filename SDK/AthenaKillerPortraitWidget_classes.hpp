@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C
 // 0x0060 (0x0298 - 0x0238)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaKillerPortraitWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaKillerPortraitWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaKillerPortraitWidget_C")
 	}
 	static class UAthenaKillerPortraitWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaKillerPortraitWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaKillerPortraitWidget_C) == 0x000008, "Wrong alignment on UAthenaKillerPortraitWidget_C");
-static_assert(sizeof(UAthenaKillerPortraitWidget_C) == 0x000298, "Wrong size on UAthenaKillerPortraitWidget_C");
-static_assert(offsetof(UAthenaKillerPortraitWidget_C, KillerNameText) == 0x000238, "Member 'UAthenaKillerPortraitWidget_C::KillerNameText' has a wrong offset!");
-static_assert(offsetof(UAthenaKillerPortraitWidget_C, WidgetSwitcher_0) == 0x000240, "Member 'UAthenaKillerPortraitWidget_C::WidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UAthenaKillerPortraitWidget_C, Death_Report) == 0x000248, "Member 'UAthenaKillerPortraitWidget_C::Death_Report' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

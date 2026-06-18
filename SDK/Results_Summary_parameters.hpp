@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_Summary.Results_Summary_C.ExecuteUbergraph_Results_Summary
 // 0x0018 (0x0018 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Summary_C_ExecuteUbergraph_Results_Summary) == 0x000008, "Wrong alignment on Results_Summary_C_ExecuteUbergraph_Results_Summary");
-static_assert(sizeof(Results_Summary_C_ExecuteUbergraph_Results_Summary) == 0x000018, "Wrong size on Results_Summary_C_ExecuteUbergraph_Results_Summary");
-static_assert(offsetof(Results_Summary_C_ExecuteUbergraph_Results_Summary, EntryPoint) == 0x000000, "Member 'Results_Summary_C_ExecuteUbergraph_Results_Summary::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_ExecuteUbergraph_Results_Summary, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'Results_Summary_C_ExecuteUbergraph_Results_Summary::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_ExecuteUbergraph_Results_Summary, K2Node_Event_IsDesignTime) == 0x000010, "Member 'Results_Summary_C_ExecuteUbergraph_Results_Summary::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +34,6 @@ struct Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Results_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +42,6 @@ struct Results_Summary_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Summary_C_PreConstruct) == 0x000001, "Wrong alignment on Results_Summary_C_PreConstruct");
-static_assert(sizeof(Results_Summary_C_PreConstruct) == 0x000001, "Wrong size on Results_Summary_C_PreConstruct");
-static_assert(offsetof(Results_Summary_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_Summary_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.InitializeLootChest
 // 0x0088 (0x0088 - 0x0000)
@@ -68,16 +57,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_Summary_C_InitializeLootChest) == 0x000008, "Wrong alignment on Results_Summary_C_InitializeLootChest");
-static_assert(sizeof(Results_Summary_C_InitializeLootChest) == 0x000088, "Wrong size on Results_Summary_C_InitializeLootChest");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, Level) == 0x000000, "Member 'Results_Summary_C_InitializeLootChest::Level' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, NewLocalVar_0) == 0x000004, "Member 'Results_Summary_C_InitializeLootChest::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, Texture) == 0x000008, "Member 'Results_Summary_C_InitializeLootChest::Texture' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'Results_Summary_C_InitializeLootChest::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, CallFunc_Array_Get_Item) == 0x000050, "Member 'Results_Summary_C_InitializeLootChest::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, K2Node_MakeArray_Array) == 0x000058, "Member 'Results_Summary_C_InitializeLootChest::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, CallFunc_Format_ReturnValue) == 0x000068, "Member 'Results_Summary_C_InitializeLootChest::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeLootChest, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000080, "Member 'Results_Summary_C_InitializeLootChest::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.Initialize
 // 0x0098 (0x0098 - 0x0000)
@@ -110,30 +89,6 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Summary_C_Initialize) == 0x000008, "Wrong alignment on Results_Summary_C_Initialize");
-static_assert(sizeof(Results_Summary_C_Initialize) == 0x000098, "Wrong size on Results_Summary_C_Initialize");
-static_assert(offsetof(Results_Summary_C_Initialize, InScoreReport) == 0x000000, "Member 'Results_Summary_C_Initialize::InScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, InRewardItems) == 0x000008, "Member 'Results_Summary_C_Initialize::InRewardItems' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, InTotalMissionPoints) == 0x000018, "Member 'Results_Summary_C_Initialize::InTotalMissionPoints' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, RewardItems) == 0x000020, "Member 'Results_Summary_C_Initialize::RewardItems' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, ScoreReport) == 0x000030, "Member 'Results_Summary_C_Initialize::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, Temp_int_Array_Index_Variable) == 0x000038, "Member 'Results_Summary_C_Initialize::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_GetTeamScore_ReturnValue) == 0x00003C, "Member 'Results_Summary_C_Initialize::CallFunc_GetTeamScore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_GetTeamScore_ReturnValue2) == 0x000040, "Member 'Results_Summary_C_Initialize::CallFunc_GetTeamScore_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_GetTeamScore_ReturnValue3) == 0x000044, "Member 'Results_Summary_C_Initialize::CallFunc_GetTeamScore_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_GetTeamScore_ReturnValue4) == 0x000048, "Member 'Results_Summary_C_Initialize::CallFunc_GetTeamScore_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, Temp_int_Loop_Counter_Variable) == 0x00004C, "Member 'Results_Summary_C_Initialize::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'Results_Summary_C_Initialize::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Add_IntInt_ReturnValue2) == 0x000054, "Member 'Results_Summary_C_Initialize::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Add_IntInt_ReturnValue3) == 0x000058, "Member 'Results_Summary_C_Initialize::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Add_IntInt_ReturnValue4) == 0x00005C, "Member 'Results_Summary_C_Initialize::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000060, "Member 'Results_Summary_C_Initialize::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_GetTotalScoreSortedScoreIndices_OutSortedScoreIndices) == 0x000068, "Member 'Results_Summary_C_Initialize::CallFunc_GetTotalScoreSortedScoreIndices_OutSortedScoreIndices' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Create_ReturnValue) == 0x000078, "Member 'Results_Summary_C_Initialize::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Array_Get_Item) == 0x000080, "Member 'Results_Summary_C_Initialize::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Array_Length_ReturnValue) == 0x000084, "Member 'Results_Summary_C_Initialize::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'Results_Summary_C_Initialize::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_Initialize, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000090, "Member 'Results_Summary_C_Initialize::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.DoDesignTimeRandomization
 // 0x0058 (0x0058 - 0x0000)
@@ -162,26 +117,6 @@ public:
 	class UUniformGridSlot*                       CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Summary_C_DoDesignTimeRandomization) == 0x000008, "Wrong alignment on Results_Summary_C_DoDesignTimeRandomization");
-static_assert(sizeof(Results_Summary_C_DoDesignTimeRandomization) == 0x000058, "Wrong size on Results_Summary_C_DoDesignTimeRandomization");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, Row) == 0x000000, "Member 'Results_Summary_C_DoDesignTimeRandomization::Row' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, Column) == 0x000004, "Member 'Results_Summary_C_DoDesignTimeRandomization::Column' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_RandomInteger_ReturnValue) == 0x000008, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_RandomIntegerInRange_ReturnValue) == 0x00000C, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, Temp_int_Variable) == 0x000014, "Member 'Results_Summary_C_DoDesignTimeRandomization::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000018, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Add_IntInt_ReturnValue2) == 0x000020, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Add_IntInt_ReturnValue3) == 0x000024, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000028, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, Temp_int_Variable2) == 0x00002C, "Member 'Results_Summary_C_DoDesignTimeRandomization::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000030, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Add_IntInt_ReturnValue4) == 0x000034, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Create_ReturnValue) == 0x000038, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_Create_ReturnValue2) == 0x000040, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_AddChildToUniformGrid_ReturnValue) == 0x000048, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_AddChildToUniformGrid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_DoDesignTimeRandomization, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000050, "Member 'Results_Summary_C_DoDesignTimeRandomization::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.InitializeRewards
 // 0x0070 (0x0070 - 0x0000)
@@ -214,28 +149,6 @@ public:
 	class UResults_SummaryBadge_C*                CallFunc_Create_ReturnValue;                       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUniformGridSlot*                       CallFunc_AddChildToUniformGrid_ReturnValue;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Summary_C_InitializeRewards) == 0x000008, "Wrong alignment on Results_Summary_C_InitializeRewards");
-static_assert(sizeof(Results_Summary_C_InitializeRewards) == 0x000070, "Wrong size on Results_Summary_C_InitializeRewards");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, Items) == 0x000000, "Member 'Results_Summary_C_InitializeRewards::Items' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, InTotalMissionPoints) == 0x000010, "Member 'Results_Summary_C_InitializeRewards::InTotalMissionPoints' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, Row) == 0x000014, "Member 'Results_Summary_C_InitializeRewards::Row' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, Column) == 0x000018, "Member 'Results_Summary_C_InitializeRewards::Column' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, TotalBadgePoints) == 0x00001C, "Member 'Results_Summary_C_InitializeRewards::TotalBadgePoints' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, Temp_int_Array_Index_Variable) == 0x000020, "Member 'Results_Summary_C_InitializeRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Add_IntInt_ReturnValue2) == 0x000028, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Array_Get_Item) == 0x000030, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Array_Length_ReturnValue2) == 0x00003C, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Greater_IntInt_ReturnValue) == 0x000040, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Divide_IntInt_ReturnValue) == 0x000044, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Add_IntInt_ReturnValue3) == 0x000048, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Greater_IntInt_ReturnValue2) == 0x00004C, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'Results_Summary_C_InitializeRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Less_IntInt_ReturnValue) == 0x000054, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Add_IntInt_ReturnValue4) == 0x000058, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Add_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_Create_ReturnValue) == 0x000060, "Member 'Results_Summary_C_InitializeRewards::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_Summary_C_InitializeRewards, CallFunc_AddChildToUniformGrid_ReturnValue) == 0x000068, "Member 'Results_Summary_C_InitializeRewards::CallFunc_AddChildToUniformGrid_ReturnValue' has a wrong offset!");
 
 // Function Results_Summary.Results_Summary_C.Focus
 // 0x0008 (0x0008 - 0x0000)
@@ -244,9 +157,6 @@ struct Results_Summary_C_Focus final
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_Summary_C_Focus) == 0x000008, "Wrong alignment on Results_Summary_C_Focus");
-static_assert(sizeof(Results_Summary_C_Focus) == 0x000008, "Wrong size on Results_Summary_C_Focus");
-static_assert(offsetof(Results_Summary_C_Focus, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'Results_Summary_C_Focus::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

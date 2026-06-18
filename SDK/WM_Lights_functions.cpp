@@ -14,8 +14,7 @@
 #include "WM_Lights_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WM_Lights.WM_Lights_C.ExecuteUbergraph_WM_Lights
 // ()
@@ -84,5 +83,5 @@ void AWM_Lights_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

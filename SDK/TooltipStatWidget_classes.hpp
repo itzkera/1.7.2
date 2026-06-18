@@ -12,12 +12,11 @@
 
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "TooltipStat_structs.hpp"
+#include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TooltipStatWidget.TooltipStatWidget_C
 // 0x00A0 (0x02D0 - 0x0230)
@@ -45,25 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TooltipStatWidget_C">();
+		BP_STATIC_CLASS_IMPL("TooltipStatWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipStatWidget_C")
 	}
 	static class UTooltipStatWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipStatWidget_C>();
 	}
 };
-static_assert(alignof(UTooltipStatWidget_C) == 0x000008, "Wrong alignment on UTooltipStatWidget_C");
-static_assert(sizeof(UTooltipStatWidget_C) == 0x0002D0, "Wrong size on UTooltipStatWidget_C");
-static_assert(offsetof(UTooltipStatWidget_C, UberGraphFrame) == 0x000230, "Member 'UTooltipStatWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, _Image__HR) == 0x000238, "Member 'UTooltipStatWidget_C::_Image__HR' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, _Text__Label) == 0x000240, "Member 'UTooltipStatWidget_C::_Text__Label' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, _Text__Single) == 0x000248, "Member 'UTooltipStatWidget_C::_Text__Single' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, _Text__Value) == 0x000250, "Member 'UTooltipStatWidget_C::_Text__Value' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, ButtonHover) == 0x000258, "Member 'UTooltipStatWidget_C::ButtonHover' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, Switcher) == 0x000260, "Member 'UTooltipStatWidget_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, TooltipData) == 0x000268, "Member 'UTooltipStatWidget_C::TooltipData' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, TextColor) == 0x0002A0, "Member 'UTooltipStatWidget_C::TextColor' has a wrong offset!");
-static_assert(offsetof(UTooltipStatWidget_C, HoverEnabled) == 0x0002C8, "Member 'UTooltipStatWidget_C::HoverEnabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

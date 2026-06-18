@@ -14,8 +14,7 @@
 #include "GAB_PlayerDBNO_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.ExecuteUbergraph_GAB_PlayerDBNO
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGAB_PlayerDBNO_C::ExecuteUbergraph_GAB_PlayerDBNO(int32 EntryPoint)
 // Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGAB_PlayerDBNO_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -116,7 +115,7 @@ void UGAB_PlayerDBNO_C::OnCancelled_4B0F8658452931EE3B297A9E70C9C496()
 // Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.InitializeDeathHitDirection
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventHitData                                           (Parm)
+// const struct FGameplayEventData&        EventHitData                                           (Parm)
 
 void UGAB_PlayerDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData)
 {
@@ -132,5 +131,5 @@ void UGAB_PlayerDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventD
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

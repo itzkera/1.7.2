@@ -13,8 +13,8 @@
 #include "McpProfileSys_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function McpProfileSys.McpProfile.DeleteAllProfiles
 // 0x0070 (0x0070 - 0x0000)
@@ -23,9 +23,6 @@ struct McpProfile_DeleteAllProfiles final
 public:
 	struct FClientUrlContext                      Context;                                           // 0x0000(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(McpProfile_DeleteAllProfiles) == 0x000010, "Wrong alignment on McpProfile_DeleteAllProfiles");
-static_assert(sizeof(McpProfile_DeleteAllProfiles) == 0x000070, "Wrong size on McpProfile_DeleteAllProfiles");
-static_assert(offsetof(McpProfile_DeleteAllProfiles, Context) == 0x000000, "Member 'McpProfile_DeleteAllProfiles::Context' has a wrong offset!");
 
 // Function McpProfileSys.McpProfile.DeleteProfile
 // 0x0070 (0x0070 - 0x0000)
@@ -34,9 +31,6 @@ struct McpProfile_DeleteProfile final
 public:
 	struct FClientUrlContext                      Context;                                           // 0x0000(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(McpProfile_DeleteProfile) == 0x000010, "Wrong alignment on McpProfile_DeleteProfile");
-static_assert(sizeof(McpProfile_DeleteProfile) == 0x000070, "Wrong size on McpProfile_DeleteProfile");
-static_assert(offsetof(McpProfile_DeleteProfile, Context) == 0x000000, "Member 'McpProfile_DeleteProfile::Context' has a wrong offset!");
 
 // Function McpProfileSys.McpProfile.LockProfileForWrite
 // 0x0090 (0x0090 - 0x0000)
@@ -48,11 +42,6 @@ public:
 	uint8                                         Pad_14[0xC];                                       // 0x0014(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDedicatedServerUrlContext             Context;                                           // 0x0020(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(McpProfile_LockProfileForWrite) == 0x000010, "Wrong alignment on McpProfile_LockProfileForWrite");
-static_assert(sizeof(McpProfile_LockProfileForWrite) == 0x000090, "Wrong size on McpProfile_LockProfileForWrite");
-static_assert(offsetof(McpProfile_LockProfileForWrite, Code) == 0x000000, "Member 'McpProfile_LockProfileForWrite::Code' has a wrong offset!");
-static_assert(offsetof(McpProfile_LockProfileForWrite, Timeout) == 0x000010, "Member 'McpProfile_LockProfileForWrite::Timeout' has a wrong offset!");
-static_assert(offsetof(McpProfile_LockProfileForWrite, Context) == 0x000020, "Member 'McpProfile_LockProfileForWrite::Context' has a wrong offset!");
 
 // Function McpProfileSys.McpProfile.QueryProfile
 // 0x0070 (0x0070 - 0x0000)
@@ -61,9 +50,6 @@ struct McpProfile_QueryProfile final
 public:
 	struct FBaseUrlContext                        Context;                                           // 0x0000(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(McpProfile_QueryProfile) == 0x000010, "Wrong alignment on McpProfile_QueryProfile");
-static_assert(sizeof(McpProfile_QueryProfile) == 0x000070, "Wrong size on McpProfile_QueryProfile");
-static_assert(offsetof(McpProfile_QueryProfile, Context) == 0x000000, "Member 'McpProfile_QueryProfile::Context' has a wrong offset!");
 
 // Function McpProfileSys.McpProfile.UnlockProfileForWrite
 // 0x0080 (0x0080 - 0x0000)
@@ -73,10 +59,6 @@ public:
 	class FString                                 Code;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDedicatedServerUrlContext             Context;                                           // 0x0010(0x0070)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(McpProfile_UnlockProfileForWrite) == 0x000010, "Wrong alignment on McpProfile_UnlockProfileForWrite");
-static_assert(sizeof(McpProfile_UnlockProfileForWrite) == 0x000080, "Wrong size on McpProfile_UnlockProfileForWrite");
-static_assert(offsetof(McpProfile_UnlockProfileForWrite, Code) == 0x000000, "Member 'McpProfile_UnlockProfileForWrite::Code' has a wrong offset!");
-static_assert(offsetof(McpProfile_UnlockProfileForWrite, Context) == 0x000010, "Member 'McpProfile_UnlockProfileForWrite::Context' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

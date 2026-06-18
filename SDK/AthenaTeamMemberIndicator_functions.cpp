@@ -14,8 +14,7 @@
 #include "AthenaTeamMemberIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.ExecuteUbergraph_AthenaTeamMemberIndicator
 // (HasDefaults)
@@ -68,7 +67,7 @@ void UAthenaTeamMemberIndicator_C::Destruct()
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaTeamMemberIndicator_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -104,7 +103,7 @@ void UAthenaTeamMemberIndicator_C::Construct()
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team DBNO Changed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            DBNOStates                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           DBNOStates                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamMemberIndicator_C::On_Team_DBNO_Changed(TArray<bool>& DBNOStates)
 {
@@ -126,7 +125,7 @@ void UAthenaTeamMemberIndicator_C::On_Team_DBNO_Changed(TArray<bool>& DBNOStates
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team Reviving Changed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            Team_Reviving                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           Team_Reviving                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamMemberIndicator_C::On_Team_Reviving_Changed(TArray<bool>& Team_Reviving)
 {
@@ -144,5 +143,5 @@ void UAthenaTeamMemberIndicator_C::On_Team_Reviving_Changed(TArray<bool>& Team_R
 	Team_Reviving = std::move(Parms.Team_Reviving);
 }
 
-}
 
+SDK_NAMESPACE_END

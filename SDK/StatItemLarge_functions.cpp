@@ -14,8 +14,7 @@
 #include "StatItemLarge_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StatItemLarge.StatItemLarge_C.ExecuteUbergraph_StatItemLarge
 // ()
@@ -136,7 +135,7 @@ void UStatItemLarge_C::Construct()
 // Function StatItemLarge.StatItemLarge_C.GetLocalPlayerId
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FUniqueNetIdRepl                 LocalPlayerNetId                                       (Parm, OutParm, HasGetValueTypeHash)
+// struct FUniqueNetIdRepl*                LocalPlayerNetId                                       (Parm, OutParm, HasGetValueTypeHash)
 
 void UStatItemLarge_C::GetLocalPlayerId(struct FUniqueNetIdRepl* LocalPlayerNetId)
 {
@@ -207,5 +206,5 @@ void UStatItemLarge_C::UpdateValue(float NewValue, float CurrentValue, EFortStat
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

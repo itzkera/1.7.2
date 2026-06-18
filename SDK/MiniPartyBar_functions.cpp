@@ -14,8 +14,7 @@
 #include "MiniPartyBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MiniPartyBar.MiniPartyBar_C.ExecuteUbergraph_MiniPartyBar
 // ()
@@ -112,5 +111,5 @@ class UWidget* UMiniPartyBar_C::Get_Banners_Tooltip_Widget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

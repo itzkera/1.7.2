@@ -14,8 +14,7 @@
 #include "QuickbarSecondary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuickbarSecondary.QuickbarSecondary_C.ExecuteUbergraph_QuickbarSecondary
 // ()
@@ -146,5 +145,5 @@ void UQuickbarSecondary_C::Show_Secondary_Quickbar_Rail(bool Show)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

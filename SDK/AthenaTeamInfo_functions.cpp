@@ -14,8 +14,7 @@
 #include "AthenaTeamInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaTeamInfo.AthenaTeamInfo_C.ExecuteUbergraph_AthenaTeamInfo
 // ()
@@ -124,8 +123,8 @@ void UAthenaTeamInfo_C::ClearContents()
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamHitInfoChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<float>                           HealthFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<float>                           ShieldFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<float>&                          HealthFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<float>&                          ShieldFractions                                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamInfo_C::HandleTeamHitInfoChanged(TArray<float>& HealthFractions, TArray<float>& ShieldFractions)
 {
@@ -163,7 +162,7 @@ void UAthenaTeamInfo_C::HandleTeamMemberAdded()
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamDBNOChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            TeamDBNO                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           TeamDBNO                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamInfo_C::HandleTeamDBNOChanged(TArray<bool>& TeamDBNO)
 {
@@ -185,7 +184,7 @@ void UAthenaTeamInfo_C::HandleTeamDBNOChanged(TArray<bool>& TeamDBNO)
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamDeadChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            TeamDead                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           TeamDead                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamInfo_C::HandleTeamDeadChanged(TArray<bool>& TeamDead)
 {
@@ -221,7 +220,7 @@ void UAthenaTeamInfo_C::HandleTeamMemberPlayerNamesChanged()
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamRevivingChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            TeamReviving                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           TeamReviving                                           (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamInfo_C::HandleTeamRevivingChanged(TArray<bool>& TeamReviving)
 {
@@ -257,7 +256,7 @@ void UAthenaTeamInfo_C::HandleTeamMemberRemoved()
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamTalkingChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            TeamTalking                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           TeamTalking                                            (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamInfo_C::HandleTeamTalkingChanged(TArray<bool>& TeamTalking)
 {
@@ -279,7 +278,7 @@ void UAthenaTeamInfo_C::HandleTeamTalkingChanged(TArray<bool>& TeamTalking)
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMutedChanged
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<bool>                            TeamMuted                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<bool>&                           TeamMuted                                              (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaTeamInfo_C::HandleTeamMutedChanged(TArray<bool>& TeamMuted)
 {
@@ -297,5 +296,5 @@ void UAthenaTeamInfo_C::HandleTeamMutedChanged(TArray<bool>& TeamMuted)
 	TeamMuted = std::move(Parms.TeamMuted);
 }
 
-}
 
+SDK_NAMESPACE_END

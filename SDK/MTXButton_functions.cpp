@@ -14,8 +14,7 @@
 #include "MTXButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MTXButton.MTXButton_C.ExecuteUbergraph_MTXButton
 // (HasDefaults)
@@ -94,7 +93,7 @@ void UMTXButton_C::BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButto
 // Function MTXButton.MTXButton_C.HandleLocalAccountInfoChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPrivateAccountInfo          NewInfo                                                (Parm, NoDestructor)
+// const struct FFortPrivateAccountInfo&   NewInfo                                                (Parm, NoDestructor)
 
 void UMTXButton_C::HandleLocalAccountInfoChanged(const struct FFortPrivateAccountInfo& NewInfo)
 {
@@ -128,7 +127,7 @@ void UMTXButton_C::Construct()
 // Function MTXButton.MTXButton_C.UpdateAmount
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPrivateAccountInfo          FortPrivateAccountInfo                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortPrivateAccountInfo&   FortPrivateAccountInfo                                 (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UMTXButton_C::UpdateAmount(const struct FFortPrivateAccountInfo& FortPrivateAccountInfo)
 {
@@ -178,5 +177,5 @@ void UMTXButton_C::UpdateState()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

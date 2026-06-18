@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TT_SupplyDrop.TT_SupplyDrop_C.GetTextForTokenFromAbilityInstanceInternal
 // 0x0430 (0x0430 - 0x0000)
@@ -92,67 +92,6 @@ public:
 	class FText                                   K2Node_Select6_Default;                            // 0x0400(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue7;              // 0x0418(0x0018)()
 };
-static_assert(alignof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal");
-static_assert(sizeof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000430, "Wrong size on TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, AbilityInstance) == 0x000000, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Tag) == 0x000008, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Tag' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Context) == 0x000010, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Context' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Token) == 0x000018, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Token' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, OutText) == 0x000020, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::OutText' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, ReturnValue) == 0x000038, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, SupplyDrop) == 0x000040, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::SupplyDrop' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable) == 0x000048, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000049, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_DynamicCast_AsGA_Supply_Drop) == 0x000050, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_DynamicCast_AsGA_Supply_Drop' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_IsValid_ReturnValue) == 0x000059, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable) == 0x000060, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable2) == 0x000078, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable2) == 0x000080, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable3) == 0x000098, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable3) == 0x0000A0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable4) == 0x0000B8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable5) == 0x0000D0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable4) == 0x0000E8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable6) == 0x0000F0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue) == 0x000108, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue2) == 0x000109, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue3) == 0x00010A, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable5) == 0x00010B, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_BooleanOR_ReturnValue) == 0x00010C, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_BooleanOR_ReturnValue2) == 0x00010D, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable7) == 0x000110, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select_Default) == 0x000128, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue4) == 0x000140, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue5) == 0x000141, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue) == 0x000148, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeStruct_FormatArgumentData) == 0x000160, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue2) == 0x0001A0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeArray_Array) == 0x0001B8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeStruct_FormatArgumentData2) == 0x0001C8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Format_ReturnValue) == 0x000208, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeArray_Array2) == 0x000220, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select2_Default) == 0x000230, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Format_ReturnValue2) == 0x000248, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select3_Default) == 0x000260, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue6) == 0x000278, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Greater_IntInt_ReturnValue7) == 0x000279, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Greater_IntInt_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue3) == 0x000280, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeStruct_FormatArgumentData3) == 0x000298, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue4) == 0x0002D8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeArray_Array3) == 0x0002F0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeStruct_FormatArgumentData4) == 0x000300, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Format_ReturnValue3) == 0x000340, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Format_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeArray_Array4) == 0x000358, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select4_Default) == 0x000368, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Format_ReturnValue4) == 0x000380, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Format_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select5_Default) == 0x000398, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_text_Variable8) == 0x0003B0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue5) == 0x0003C8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue6) == 0x0003E0, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, Temp_bool_Variable6) == 0x0003F8, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_Select6_Default) == 0x000400, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue7) == 0x000418, "Member 'TT_SupplyDrop_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue7' has a wrong offset!");
 
 // Function TT_SupplyDrop.TT_SupplyDrop_C.InitializeAbilityInstanceInternal
 // 0x0020 (0x0020 - 0x0000)
@@ -164,12 +103,6 @@ public:
 	class UGA_SupplyDrop_C*                       K2Node_DynamicCast_AsGA_Supply_Drop;               // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TT_SupplyDrop_C_InitializeAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_SupplyDrop_C_InitializeAbilityInstanceInternal");
-static_assert(sizeof(TT_SupplyDrop_C_InitializeAbilityInstanceInternal) == 0x000020, "Wrong size on TT_SupplyDrop_C_InitializeAbilityInstanceInternal");
-static_assert(offsetof(TT_SupplyDrop_C_InitializeAbilityInstanceInternal, AbilityInstance) == 0x000000, "Member 'TT_SupplyDrop_C_InitializeAbilityInstanceInternal::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_InitializeAbilityInstanceInternal, Context) == 0x000008, "Member 'TT_SupplyDrop_C_InitializeAbilityInstanceInternal::Context' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_InitializeAbilityInstanceInternal, K2Node_DynamicCast_AsGA_Supply_Drop) == 0x000010, "Member 'TT_SupplyDrop_C_InitializeAbilityInstanceInternal::K2Node_DynamicCast_AsGA_Supply_Drop' has a wrong offset!");
-static_assert(offsetof(TT_SupplyDrop_C_InitializeAbilityInstanceInternal, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'TT_SupplyDrop_C_InitializeAbilityInstanceInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

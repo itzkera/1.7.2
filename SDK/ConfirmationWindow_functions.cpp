@@ -14,8 +14,7 @@
 #include "ConfirmationWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ExecuteUbergraph_ConfirmationWindow
 // ()
@@ -158,7 +157,7 @@ void UConfirmationWindow_C::Construct()
 // Function ConfirmationWindow.ConfirmationWindow_C.SetDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDialogDescription_NUI       NewDescription                                         (Parm, ContainsInstancedReference)
+// const struct FFortDialogDescription_NUI&NewDescription                                         (Parm, ContainsInstancedReference)
 
 void UConfirmationWindow_C::SetDescription(const struct FFortDialogDescription_NUI& NewDescription)
 {
@@ -300,7 +299,7 @@ bool UConfirmationWindow_C::HasAnyConfirmAction()
 // Function ConfirmationWindow.ConfirmationWindow_C.AddSingleConfirmButton
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FConfirmationDialogAction        ConfirmDialogAction                                    (Parm)
+// const struct FConfirmationDialogAction& ConfirmDialogAction                                    (Parm)
 // bool                                    UseInputAction                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UConfirmationWindow_C::AddSingleConfirmButton(const struct FConfirmationDialogAction& ConfirmDialogAction, bool UseInputAction)
@@ -348,7 +347,7 @@ struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(class FName Row
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UIconTextButton_C*                ConfirmButton                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ResultName                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            ResultName                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UConfirmationWindow_C::GetResultName(class UIconTextButton_C* ConfirmButton, class FName* ResultName)
 {
@@ -461,7 +460,7 @@ void UConfirmationWindow_C::Set_Hover_Description(class UCommonButton* Button_to
 // Function ConfirmationWindow.ConfirmationWindow_C.GetLatentActionWaitHandle
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortDialogExternalLatentActionHandleLatentActionHandle                                     (Parm, OutParm, NoDestructor)
+// struct FFortDialogExternalLatentActionHandle*LatentActionHandle                                     (Parm, OutParm, NoDestructor)
 
 void UConfirmationWindow_C::GetLatentActionWaitHandle(struct FFortDialogExternalLatentActionHandle* LatentActionHandle)
 {
@@ -496,7 +495,7 @@ void UConfirmationWindow_C::StopWaitingForLatentAction()
 // Function ConfirmationWindow.ConfirmationWindow_C.OnWaitForExternalLatentAction
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDialogExternalLatentActionHandleLatentActionHandle                                     (Parm, NoDestructor)
+// const struct FFortDialogExternalLatentActionHandle&LatentActionHandle                                     (Parm, NoDestructor)
 
 void UConfirmationWindow_C::OnWaitForExternalLatentAction(const struct FFortDialogExternalLatentActionHandle& LatentActionHandle)
 {
@@ -624,5 +623,5 @@ void UConfirmationWindow_C::TriggerCameraMode()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Combined_Horde.Combined_Horde_C
 // 0x03D8 (0x0708 - 0x0330)
@@ -132,115 +131,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Combined_Horde_C">();
+		BP_STATIC_CLASS_IMPL("Combined_Horde_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Combined_Horde_C")
 	}
 	static class UCombined_Horde_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCombined_Horde_C>();
 	}
 };
-static_assert(alignof(UCombined_Horde_C) == 0x000008, "Wrong alignment on UCombined_Horde_C");
-static_assert(sizeof(UCombined_Horde_C) == 0x000708, "Wrong size on UCombined_Horde_C");
-static_assert(offsetof(UCombined_Horde_C, UberGraphFrame) == 0x000330, "Member 'UCombined_Horde_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, Background) == 0x000338, "Member 'UCombined_Horde_C::Background' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, BGlow) == 0x000340, "Member 'UCombined_Horde_C::BGlow' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, BTriangles) == 0x000348, "Member 'UCombined_Horde_C::BTriangles' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_0) == 0x000350, "Member 'UCombined_Horde_C::DefaultSkillNode_C_0' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_1) == 0x000358, "Member 'UCombined_Horde_C::DefaultSkillNode_C_1' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_2) == 0x000360, "Member 'UCombined_Horde_C::DefaultSkillNode_C_2' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_3) == 0x000368, "Member 'UCombined_Horde_C::DefaultSkillNode_C_3' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_4) == 0x000370, "Member 'UCombined_Horde_C::DefaultSkillNode_C_4' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_5) == 0x000378, "Member 'UCombined_Horde_C::DefaultSkillNode_C_5' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_6) == 0x000380, "Member 'UCombined_Horde_C::DefaultSkillNode_C_6' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_7) == 0x000388, "Member 'UCombined_Horde_C::DefaultSkillNode_C_7' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_8) == 0x000390, "Member 'UCombined_Horde_C::DefaultSkillNode_C_8' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_9) == 0x000398, "Member 'UCombined_Horde_C::DefaultSkillNode_C_9' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_10) == 0x0003A0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_10' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_11) == 0x0003A8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_11' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_12) == 0x0003B0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_12' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_13) == 0x0003B8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_13' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_14) == 0x0003C0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_14' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_15) == 0x0003C8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_15' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_16) == 0x0003D0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_16' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_17) == 0x0003D8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_17' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_18) == 0x0003E0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_18' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_19) == 0x0003E8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_19' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_20) == 0x0003F0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_20' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_21) == 0x0003F8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_21' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_22) == 0x000400, "Member 'UCombined_Horde_C::DefaultSkillNode_C_22' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_23) == 0x000408, "Member 'UCombined_Horde_C::DefaultSkillNode_C_23' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_24) == 0x000410, "Member 'UCombined_Horde_C::DefaultSkillNode_C_24' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_25) == 0x000418, "Member 'UCombined_Horde_C::DefaultSkillNode_C_25' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_26) == 0x000420, "Member 'UCombined_Horde_C::DefaultSkillNode_C_26' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_27) == 0x000428, "Member 'UCombined_Horde_C::DefaultSkillNode_C_27' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_28) == 0x000430, "Member 'UCombined_Horde_C::DefaultSkillNode_C_28' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_29) == 0x000438, "Member 'UCombined_Horde_C::DefaultSkillNode_C_29' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_30) == 0x000440, "Member 'UCombined_Horde_C::DefaultSkillNode_C_30' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_31) == 0x000448, "Member 'UCombined_Horde_C::DefaultSkillNode_C_31' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_32) == 0x000450, "Member 'UCombined_Horde_C::DefaultSkillNode_C_32' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_33) == 0x000458, "Member 'UCombined_Horde_C::DefaultSkillNode_C_33' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_34) == 0x000460, "Member 'UCombined_Horde_C::DefaultSkillNode_C_34' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_35) == 0x000468, "Member 'UCombined_Horde_C::DefaultSkillNode_C_35' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_36) == 0x000470, "Member 'UCombined_Horde_C::DefaultSkillNode_C_36' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_37) == 0x000478, "Member 'UCombined_Horde_C::DefaultSkillNode_C_37' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_38) == 0x000480, "Member 'UCombined_Horde_C::DefaultSkillNode_C_38' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_39) == 0x000488, "Member 'UCombined_Horde_C::DefaultSkillNode_C_39' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_40) == 0x000490, "Member 'UCombined_Horde_C::DefaultSkillNode_C_40' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_41) == 0x000498, "Member 'UCombined_Horde_C::DefaultSkillNode_C_41' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_42) == 0x0004A0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_42' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_43) == 0x0004A8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_43' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_44) == 0x0004B0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_44' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_45) == 0x0004B8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_45' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_46) == 0x0004C0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_46' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_47) == 0x0004C8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_47' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_48) == 0x0004D0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_48' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_49) == 0x0004D8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_49' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_50) == 0x0004E0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_50' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_51) == 0x0004E8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_51' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_52) == 0x0004F0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_52' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_53) == 0x0004F8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_53' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_54) == 0x000500, "Member 'UCombined_Horde_C::DefaultSkillNode_C_54' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_55) == 0x000508, "Member 'UCombined_Horde_C::DefaultSkillNode_C_55' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_56) == 0x000510, "Member 'UCombined_Horde_C::DefaultSkillNode_C_56' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_57) == 0x000518, "Member 'UCombined_Horde_C::DefaultSkillNode_C_57' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_58) == 0x000520, "Member 'UCombined_Horde_C::DefaultSkillNode_C_58' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_59) == 0x000528, "Member 'UCombined_Horde_C::DefaultSkillNode_C_59' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_60) == 0x000530, "Member 'UCombined_Horde_C::DefaultSkillNode_C_60' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_61) == 0x000538, "Member 'UCombined_Horde_C::DefaultSkillNode_C_61' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_62) == 0x000540, "Member 'UCombined_Horde_C::DefaultSkillNode_C_62' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_63) == 0x000548, "Member 'UCombined_Horde_C::DefaultSkillNode_C_63' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_64) == 0x000550, "Member 'UCombined_Horde_C::DefaultSkillNode_C_64' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_65) == 0x000558, "Member 'UCombined_Horde_C::DefaultSkillNode_C_65' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_66) == 0x000560, "Member 'UCombined_Horde_C::DefaultSkillNode_C_66' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_67) == 0x000568, "Member 'UCombined_Horde_C::DefaultSkillNode_C_67' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_68) == 0x000570, "Member 'UCombined_Horde_C::DefaultSkillNode_C_68' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_69) == 0x000578, "Member 'UCombined_Horde_C::DefaultSkillNode_C_69' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_70) == 0x000580, "Member 'UCombined_Horde_C::DefaultSkillNode_C_70' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_71) == 0x000588, "Member 'UCombined_Horde_C::DefaultSkillNode_C_71' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_72) == 0x000590, "Member 'UCombined_Horde_C::DefaultSkillNode_C_72' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_73) == 0x000598, "Member 'UCombined_Horde_C::DefaultSkillNode_C_73' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_74) == 0x0005A0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_74' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_75) == 0x0005A8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_75' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_76) == 0x0005B0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_76' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_77) == 0x0005B8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_77' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_78) == 0x0005C0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_78' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_79) == 0x0005C8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_79' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_80) == 0x0005D0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_80' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_81) == 0x0005D8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_81' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_82) == 0x0005E0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_82' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_83) == 0x0005E8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_83' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_84) == 0x0005F0, "Member 'UCombined_Horde_C::DefaultSkillNode_C_84' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_85) == 0x0005F8, "Member 'UCombined_Horde_C::DefaultSkillNode_C_85' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_86) == 0x000600, "Member 'UCombined_Horde_C::DefaultSkillNode_C_86' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_87) == 0x000608, "Member 'UCombined_Horde_C::DefaultSkillNode_C_87' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, DefaultSkillNode_C_88) == 0x000610, "Member 'UCombined_Horde_C::DefaultSkillNode_C_88' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, GGlow) == 0x000618, "Member 'UCombined_Horde_C::GGlow' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, GTriangles) == 0x000620, "Member 'UCombined_Horde_C::GTriangles' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, OGlow) == 0x000628, "Member 'UCombined_Horde_C::OGlow' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, OTriangles) == 0x000630, "Member 'UCombined_Horde_C::OTriangles' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, PGlow) == 0x000638, "Member 'UCombined_Horde_C::PGlow' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, PTriangles) == 0x000640, "Member 'UCombined_Horde_C::PTriangles' has a wrong offset!");
-static_assert(offsetof(UCombined_Horde_C, PageColors) == 0x000648, "Member 'UCombined_Horde_C::PageColors' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LeaveButton.LeaveButton_C.ExecuteUbergraph_LeaveButton
 // 0x05A0 (0x05A0 - 0x0000)
@@ -28,7 +28,7 @@ public:
 	EFortDialogResult                             Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result3;                        // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName3;                    // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,7 +44,7 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue3;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate2; // 0x0078(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result2;                        // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -62,7 +62,7 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable2;                               // 0x00E0(0x0018)()
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate3;             // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate3; // 0x00F8(0x0010)(ZeroConstructor, NoDestructor)
 	class FText                                   K2Node_Select_Default;                             // 0x0108(0x0018)()
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -79,14 +79,14 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result4;                        // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName4;                    // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate6;             // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortTeamMemberInfo& NewTeamMemberInfo)> K2Node_CreateDelegate_OutputDelegate6; // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(int32 PlayerIndex)>            K2Node_CreateDelegate_OutputDelegate7;             // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
 	struct FFortTeamMemberInfo                    K2Node_CustomEvent_NewTeamMemberInfo;              // 0x0198(0x0190)()
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_PlayerControllerOutpost_C*          K2Node_DynamicCast_AsBP_Player_Controller_Outpost; // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate8;             // 0x0340(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate8; // 0x0340(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsOutpostOwner_ReturnValue;               // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsConsideredInGame_InGame;                // 0x0351(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_352[0x6];                                      // 0x0352(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -151,113 +151,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0598(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x0599(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_ExecuteUbergraph_LeaveButton) == 0x000008, "Wrong alignment on LeaveButton_C_ExecuteUbergraph_LeaveButton");
-static_assert(sizeof(LeaveButton_C_ExecuteUbergraph_LeaveButton) == 0x0005A0, "Wrong size on LeaveButton_C_ExecuteUbergraph_LeaveButton");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, EntryPoint) == 0x000000, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable) == 0x000004, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_name_Variable) == 0x000008, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_byte_Variable) == 0x000010, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000011, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_Result3) == 0x000028, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_Result3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_ResultName3) == 0x000030, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_ResultName3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_name_Variable2) == 0x000038, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_name_Variable2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_byte_Variable2) == 0x000040, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000041, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000050, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue2) == 0x000058, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable2) == 0x000060, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue3) == 0x000068, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetSubGame_ReturnValue) == 0x000070, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate2) == 0x000078, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_SwitchEnum_CmpSuccess) == 0x000088, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_Result2) == 0x000089, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_Result2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_ResultName2) == 0x000090, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_ResultName2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_name_Variable3) == 0x000098, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_name_Variable3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_byte_Variable3) == 0x0000A0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x0000A1, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue4) == 0x0000A8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue5) == 0x0000B0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable3) == 0x0000B8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetNumPlayersInLocalParty_ReturnValue) == 0x0000BC, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetNumPlayersInLocalParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable) == 0x0000C0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_Greater_IntInt_ReturnValue) == 0x0000D8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable2) == 0x0000E0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate3) == 0x0000F8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select_Default) == 0x000108, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_Result) == 0x000120, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_ResultName) == 0x000128, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue) == 0x000130, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_name_Variable4) == 0x000138, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_name_Variable4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsValid_ReturnValue) == 0x000140, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_byte_Variable4) == 0x000141, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_EqualEqual_ByteByte_ReturnValue4) == 0x000142, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_EqualEqual_ByteByte_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_PlayerIndex) == 0x000144, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_PlayerIndex' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate4) == 0x000148, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate5) == 0x000158, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_Result4) == 0x000168, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_Result4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_ResultName4) == 0x000170, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_ResultName4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate6) == 0x000178, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate7) == 0x000188, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CustomEvent_NewTeamMemberInfo) == 0x000198, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CustomEvent_NewTeamMemberInfo' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x000328, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_DynamicCast_AsBP_Player_Controller_Outpost) == 0x000330, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_DynamicCast_AsBP_Player_Controller_Outpost' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_DynamicCast_bSuccess) == 0x000338, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_CreateDelegate_OutputDelegate8) == 0x000340, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsOutpostOwner_ReturnValue) == 0x000350, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsOutpostOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsConsideredInGame_InGame) == 0x000351, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsConsideredInGame_InGame' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue6) == 0x000358, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue7) == 0x000360, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable3) == 0x000368, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetNumPlayersInLocalParty_ReturnValue2) == 0x000380, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetNumPlayersInLocalParty_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_Greater_IntInt_ReturnValue2) == 0x000384, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable4) == 0x000388, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable5) == 0x0003A0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_HasUnsavedQuestProgress_HasUnsavedQuestProgress) == 0x0003B8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_HasUnsavedQuestProgress_HasUnsavedQuestProgress' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_HasUnsavedQuestProgress_HasUnsavedQuestProgress2) == 0x0003B9, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_HasUnsavedQuestProgress_HasUnsavedQuestProgress2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable4) == 0x0003BA, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue8) == 0x0003C0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select2_Default) == 0x0003C8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable6) == 0x0003E0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue9) == 0x0003F8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsInOutpostZone_ReturnValue) == 0x000400, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsInOutpostZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue10) == 0x000408, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetNumPlayersInLocalParty_ReturnValue3) == 0x000410, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetNumPlayersInLocalParty_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_ComponentBoundEvent_Button) == 0x000418, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_Greater_IntInt_ReturnValue3) == 0x000420, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetUINavigationManager_ReturnValue) == 0x000428, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetUINavigationManager_ReturnValue2) == 0x000430, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetUINavigationManager_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue11) == 0x000438, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable7) == 0x000440, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000458, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetOwningPlayer_ReturnValue3) == 0x000460, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_Create_ReturnValue) == 0x000468, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_Create_ReturnValue2) == 0x000470, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue2) == 0x000478, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Event_IsDesignTime) == 0x000480, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsValid_ReturnValue2) == 0x000481, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_MakeLiteralText_ReturnValue) == 0x000488, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable8) == 0x0004A0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable5) == 0x0004B8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable6) == 0x0004B9, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select3_Default) == 0x0004C0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select4_Default) == 0x0004D8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetUINavigationManager_ReturnValue3) == 0x0004F0, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetUINavigationManager_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_bool_Variable7) == 0x0004F8, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsConsideredInGame_InGame2) == 0x0004F9, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsConsideredInGame_InGame2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsInNeighborhood_bIsInNeighborhood) == 0x0004FA, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsInNeighborhood_bIsInNeighborhood' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_GetContext_ReturnValue12) == 0x000500, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable9) == 0x000508, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable9' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsInOutpostZone_ReturnValue2) == 0x000520, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsInOutpostZone_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, Temp_text_Variable10) == 0x000528, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::Temp_text_Variable10' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select5_Default) == 0x000540, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select6_Default) == 0x000558, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, K2Node_Select7_Default) == 0x000570, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::K2Node_Select7_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue3) == 0x000588, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue4) == 0x000590, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsValid_ReturnValue3) == 0x000598, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_ExecuteUbergraph_LeaveButton, CallFunc_IsValid_ReturnValue4) == 0x000599, "Member 'LeaveButton_C_ExecuteUbergraph_LeaveButton::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -266,9 +159,6 @@ struct LeaveButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_PreConstruct) == 0x000001, "Wrong alignment on LeaveButton_C_PreConstruct");
-static_assert(sizeof(LeaveButton_C_PreConstruct) == 0x000001, "Wrong size on LeaveButton_C_PreConstruct");
-static_assert(offsetof(LeaveButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LeaveButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -277,9 +167,6 @@ struct LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonCli
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'LeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.HandleTeamMemberAdded
 // 0x0190 (0x0190 - 0x0000)
@@ -288,9 +175,6 @@ struct LeaveButton_C_HandleTeamMemberAdded final
 public:
 	struct FFortTeamMemberInfo                    NewTeamMemberInfo;                                 // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(LeaveButton_C_HandleTeamMemberAdded) == 0x000008, "Wrong alignment on LeaveButton_C_HandleTeamMemberAdded");
-static_assert(sizeof(LeaveButton_C_HandleTeamMemberAdded) == 0x000190, "Wrong size on LeaveButton_C_HandleTeamMemberAdded");
-static_assert(offsetof(LeaveButton_C_HandleTeamMemberAdded, NewTeamMemberInfo) == 0x000000, "Member 'LeaveButton_C_HandleTeamMemberAdded::NewTeamMemberInfo' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.HandleTeamMemberRemoved
 // 0x0004 (0x0004 - 0x0000)
@@ -299,9 +183,6 @@ struct LeaveButton_C_HandleTeamMemberRemoved final
 public:
 	int32                                         PlayerIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_HandleTeamMemberRemoved) == 0x000004, "Wrong alignment on LeaveButton_C_HandleTeamMemberRemoved");
-static_assert(sizeof(LeaveButton_C_HandleTeamMemberRemoved) == 0x000004, "Wrong size on LeaveButton_C_HandleTeamMemberRemoved");
-static_assert(offsetof(LeaveButton_C_HandleTeamMemberRemoved, PlayerIndex) == 0x000000, "Member 'LeaveButton_C_HandleTeamMemberRemoved::PlayerIndex' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_A0D25F7F4E82D325BF226E811F1D79AF
 // 0x0010 (0x0010 - 0x0000)
@@ -312,10 +193,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF");
-static_assert(sizeof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF");
-static_assert(offsetof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF::Result' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B
 // 0x0010 (0x0010 - 0x0000)
@@ -326,10 +203,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B");
-static_assert(sizeof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B");
-static_assert(offsetof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B::Result' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_F5AF58094777CFEEC0BF28BEA620800C
 // 0x0010 (0x0010 - 0x0000)
@@ -340,10 +213,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C");
-static_assert(sizeof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C");
-static_assert(offsetof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C::Result' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.DialogResult_1E39F47546648367BB2F218F69311220
 // 0x0010 (0x0010 - 0x0000)
@@ -354,10 +223,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220) == 0x000008, "Wrong alignment on LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220");
-static_assert(sizeof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220) == 0x000010, "Wrong size on LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220");
-static_assert(offsetof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220, Result) == 0x000000, "Member 'LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220::Result' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220, ResultName) == 0x000008, "Member 'LeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220::ResultName' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.GetLeaveActionText
 // 0x0130 (0x0130 - 0x0000)
@@ -394,31 +259,6 @@ public:
 	class FText                                   K2Node_Select3_Default;                            // 0x0110(0x0018)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_GetLeaveActionText) == 0x000008, "Wrong alignment on LeaveButton_C_GetLeaveActionText");
-static_assert(sizeof(LeaveButton_C_GetLeaveActionText) == 0x000130, "Wrong size on LeaveButton_C_GetLeaveActionText");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Text) == 0x000000, "Member 'LeaveButton_C_GetLeaveActionText::Text' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_text_Variable) == 0x000018, "Member 'LeaveButton_C_GetLeaveActionText::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_text_Variable2) == 0x000030, "Member 'LeaveButton_C_GetLeaveActionText::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_bool_Variable) == 0x000050, "Member 'LeaveButton_C_GetLeaveActionText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_IsInOutpostZone_ReturnValue) == 0x000051, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_IsInOutpostZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_text_Variable3) == 0x000058, "Member 'LeaveButton_C_GetLeaveActionText::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_text_Variable4) == 0x000070, "Member 'LeaveButton_C_GetLeaveActionText::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_bool_Variable2) == 0x000088, "Member 'LeaveButton_C_GetLeaveActionText::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_text_Variable5) == 0x000090, "Member 'LeaveButton_C_GetLeaveActionText::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, K2Node_Select_Default) == 0x0000A8, "Member 'LeaveButton_C_GetLeaveActionText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_IsConsideredInGame_InGame) == 0x0000C0, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_IsConsideredInGame_InGame' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, Temp_bool_Variable3) == 0x0000C1, "Member 'LeaveButton_C_GetLeaveActionText::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000C8, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, K2Node_DynamicCast_AsBP_Player_Controller_Outpost) == 0x0000D0, "Member 'LeaveButton_C_GetLeaveActionText::K2Node_DynamicCast_AsBP_Player_Controller_Outpost' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'LeaveButton_C_GetLeaveActionText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, K2Node_Select2_Default) == 0x0000E0, "Member 'LeaveButton_C_GetLeaveActionText::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_IsOutpostOwner_ReturnValue) == 0x0000F8, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_IsOutpostOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_IsConsideredInGame_InGame2) == 0x0000F9, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_IsConsideredInGame_InGame2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_GetContext_ReturnValue2) == 0x000100, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, CallFunc_GetSubGame_ReturnValue) == 0x000108, "Member 'LeaveButton_C_GetLeaveActionText::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, K2Node_Select3_Default) == 0x000110, "Member 'LeaveButton_C_GetLeaveActionText::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_GetLeaveActionText, K2Node_SwitchEnum_CmpSuccess) == 0x000128, "Member 'LeaveButton_C_GetLeaveActionText::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.IsConsideredInGame
 // 0x0020 (0x0020 - 0x0000)
@@ -433,14 +273,6 @@ public:
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_IsConsideredInGame) == 0x000008, "Wrong alignment on LeaveButton_C_IsConsideredInGame");
-static_assert(sizeof(LeaveButton_C_IsConsideredInGame) == 0x000020, "Wrong size on LeaveButton_C_IsConsideredInGame");
-static_assert(offsetof(LeaveButton_C_IsConsideredInGame, InGame) == 0x000000, "Member 'LeaveButton_C_IsConsideredInGame::InGame' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsConsideredInGame, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'LeaveButton_C_IsConsideredInGame::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsConsideredInGame, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'LeaveButton_C_IsConsideredInGame::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsConsideredInGame, CallFunc_IsInLobby_ReturnValue) == 0x000018, "Member 'LeaveButton_C_IsConsideredInGame::CallFunc_IsInLobby_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsConsideredInGame, CallFunc_IsInZone_ReturnValue) == 0x000019, "Member 'LeaveButton_C_IsConsideredInGame::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsConsideredInGame, CallFunc_BooleanOR_ReturnValue) == 0x00001A, "Member 'LeaveButton_C_IsConsideredInGame::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.UpdateState
 // 0x0030 (0x0030 - 0x0000)
@@ -455,14 +287,6 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_UpdateState) == 0x000008, "Wrong alignment on LeaveButton_C_UpdateState");
-static_assert(sizeof(LeaveButton_C_UpdateState) == 0x000030, "Wrong size on LeaveButton_C_UpdateState");
-static_assert(offsetof(LeaveButton_C_UpdateState, CallFunc_GetLeaveActionText_Text) == 0x000000, "Member 'LeaveButton_C_UpdateState::CallFunc_GetLeaveActionText_Text' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_UpdateState, CallFunc_IsConsideredInGame_InGame) == 0x000018, "Member 'LeaveButton_C_UpdateState::CallFunc_IsConsideredInGame_InGame' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_UpdateState, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'LeaveButton_C_UpdateState::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_UpdateState, CallFunc_GetNumPlayersInLocalParty_ReturnValue) == 0x000028, "Member 'LeaveButton_C_UpdateState::CallFunc_GetNumPlayersInLocalParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_UpdateState, CallFunc_Greater_IntInt_ReturnValue) == 0x00002C, "Member 'LeaveButton_C_UpdateState::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_UpdateState, CallFunc_BooleanOR_ReturnValue) == 0x00002D, "Member 'LeaveButton_C_UpdateState::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.LeaveParty
 // 0x0008 (0x0008 - 0x0000)
@@ -471,9 +295,6 @@ struct LeaveButton_C_LeaveParty final
 public:
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_LeaveParty) == 0x000008, "Wrong alignment on LeaveButton_C_LeaveParty");
-static_assert(sizeof(LeaveButton_C_LeaveParty) == 0x000008, "Wrong size on LeaveButton_C_LeaveParty");
-static_assert(offsetof(LeaveButton_C_LeaveParty, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'LeaveButton_C_LeaveParty::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.HasUnsavedQuestProgress
 // 0x0030 (0x0030 - 0x0000)
@@ -489,14 +310,6 @@ public:
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasUnsavedPrimaryMissionProgress_ReturnValue; // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LeaveButton_C_HasUnsavedQuestProgress) == 0x000008, "Wrong alignment on LeaveButton_C_HasUnsavedQuestProgress");
-static_assert(sizeof(LeaveButton_C_HasUnsavedQuestProgress) == 0x000030, "Wrong size on LeaveButton_C_HasUnsavedQuestProgress");
-static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, HasUnsavedQuestProgress_0) == 0x000000, "Member 'LeaveButton_C_HasUnsavedQuestProgress::HasUnsavedQuestProgress_0' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'LeaveButton_C_HasUnsavedQuestProgress::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'LeaveButton_C_HasUnsavedQuestProgress::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'LeaveButton_C_HasUnsavedQuestProgress::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, CallFunc_GetQuestManager_ReturnValue) == 0x000020, "Member 'LeaveButton_C_HasUnsavedQuestProgress::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_HasUnsavedQuestProgress, CallFunc_HasUnsavedPrimaryMissionProgress_ReturnValue) == 0x000028, "Member 'LeaveButton_C_HasUnsavedQuestProgress::CallFunc_HasUnsavedPrimaryMissionProgress_ReturnValue' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.GetButton
 // 0x0008 (0x0008 - 0x0000)
@@ -505,9 +318,6 @@ struct LeaveButton_C_GetButton final
 public:
 	class UIconTextButton_C*                      Leave_0;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_GetButton) == 0x000008, "Wrong alignment on LeaveButton_C_GetButton");
-static_assert(sizeof(LeaveButton_C_GetButton) == 0x000008, "Wrong size on LeaveButton_C_GetButton");
-static_assert(offsetof(LeaveButton_C_GetButton, Leave_0) == 0x000000, "Member 'LeaveButton_C_GetButton::Leave_0' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.SetText
 // 0x0018 (0x0018 - 0x0000)
@@ -516,9 +326,6 @@ struct LeaveButton_C_SetText final
 public:
 	class FText                                   TextOverride;                                      // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(LeaveButton_C_SetText) == 0x000008, "Wrong alignment on LeaveButton_C_SetText");
-static_assert(sizeof(LeaveButton_C_SetText) == 0x000018, "Wrong size on LeaveButton_C_SetText");
-static_assert(offsetof(LeaveButton_C_SetText, TextOverride) == 0x000000, "Member 'LeaveButton_C_SetText::TextOverride' has a wrong offset!");
 
 // Function LeaveButton.LeaveButton_C.IsInNeighborhood
 // 0x0020 (0x0020 - 0x0000)
@@ -534,14 +341,6 @@ public:
 	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortDeployableBaseManager*             CallFunc_GetCurrent_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaveButton_C_IsInNeighborhood) == 0x000008, "Wrong alignment on LeaveButton_C_IsInNeighborhood");
-static_assert(sizeof(LeaveButton_C_IsInNeighborhood) == 0x000020, "Wrong size on LeaveButton_C_IsInNeighborhood");
-static_assert(offsetof(LeaveButton_C_IsInNeighborhood, bIsInNeighborhood) == 0x000000, "Member 'LeaveButton_C_IsInNeighborhood::bIsInNeighborhood' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsInNeighborhood, DeployableBaseManager) == 0x000008, "Member 'LeaveButton_C_IsInNeighborhood::DeployableBaseManager' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsInNeighborhood, CallFunc_GetDeployableBaseUseType_ReturnValue) == 0x000010, "Member 'LeaveButton_C_IsInNeighborhood::CallFunc_GetDeployableBaseUseType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsInNeighborhood, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'LeaveButton_C_IsInNeighborhood::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsInNeighborhood, CallFunc_IsValid_ReturnValue) == 0x000012, "Member 'LeaveButton_C_IsInNeighborhood::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaveButton_C_IsInNeighborhood, CallFunc_GetCurrent_ReturnValue) == 0x000018, "Member 'LeaveButton_C_IsInNeighborhood::CallFunc_GetCurrent_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

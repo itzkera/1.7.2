@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C
 // 0x0030 (0x0498 - 0x0468)
@@ -37,20 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_RiftStaminaDrain_C">();
+		BP_STATIC_CLASS_IMPL("GCN_RiftStaminaDrain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_RiftStaminaDrain_C")
 	}
 	static class AGCN_RiftStaminaDrain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_RiftStaminaDrain_C>();
 	}
 };
-static_assert(alignof(AGCN_RiftStaminaDrain_C) == 0x000008, "Wrong alignment on AGCN_RiftStaminaDrain_C");
-static_assert(sizeof(AGCN_RiftStaminaDrain_C) == 0x000498, "Wrong size on AGCN_RiftStaminaDrain_C");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, SM_DtB_StaminaDrainPlayer) == 0x000468, "Member 'AGCN_RiftStaminaDrain_C::SM_DtB_StaminaDrainPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainMeshMaterial) == 0x000470, "Member 'AGCN_RiftStaminaDrain_C::DrainMeshMaterial' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainBeamMaterial) == 0x000478, "Member 'AGCN_RiftStaminaDrain_C::DrainBeamMaterial' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, DrainLocationOffset) == 0x000480, "Member 'AGCN_RiftStaminaDrain_C::DrainLocationOffset' has a wrong offset!");
-static_assert(offsetof(AGCN_RiftStaminaDrain_C, TargetLocation) == 0x00048C, "Member 'AGCN_RiftStaminaDrain_C::TargetLocation' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

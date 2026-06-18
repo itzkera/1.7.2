@@ -13,8 +13,7 @@
 #include "Border_ItemInfo_Unlocked_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-ItemInfo-Blank.Border-ItemInfo-Blank_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_ItemInfo_Blank_C final : public UBorder_ItemInfo_Unlocked_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-ItemInfo-Blank_C">();
+		BP_STATIC_CLASS_IMPL("Border-ItemInfo-Blank_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-ItemInfo-Blank_C")
 	}
 	static class UBorder_ItemInfo_Blank_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_ItemInfo_Blank_C>();
 	}
 };
-static_assert(alignof(UBorder_ItemInfo_Blank_C) == 0x000008, "Wrong alignment on UBorder_ItemInfo_Blank_C");
-static_assert(sizeof(UBorder_ItemInfo_Blank_C) == 0x0000B8, "Wrong size on UBorder_ItemInfo_Blank_C");
 
-}
-
+SDK_NAMESPACE_END

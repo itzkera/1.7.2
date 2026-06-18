@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OutpostScreenCanEditRow.OutpostScreenCanEditRow_C
 // 0x0020 (0x0260 - 0x0240)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OutpostScreenCanEditRow_C">();
+		BP_STATIC_CLASS_IMPL("OutpostScreenCanEditRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OutpostScreenCanEditRow_C")
 	}
 	static class UOutpostScreenCanEditRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOutpostScreenCanEditRow_C>();
 	}
 };
-static_assert(alignof(UOutpostScreenCanEditRow_C) == 0x000008, "Wrong alignment on UOutpostScreenCanEditRow_C");
-static_assert(sizeof(UOutpostScreenCanEditRow_C) == 0x000260, "Wrong size on UOutpostScreenCanEditRow_C");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, UberGraphFrame) == 0x000240, "Member 'UOutpostScreenCanEditRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, CanEditButton) == 0x000248, "Member 'UOutpostScreenCanEditRow_C::CanEditButton' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, Player) == 0x000250, "Member 'UOutpostScreenCanEditRow_C::Player' has a wrong offset!");
-static_assert(offsetof(UOutpostScreenCanEditRow_C, OutpostOwner) == 0x000258, "Member 'UOutpostScreenCanEditRow_C::OutpostOwner' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

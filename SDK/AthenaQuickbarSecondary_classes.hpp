@@ -10,14 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "QuickbarBase_classes.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "QuickbarBase_classes.hpp"
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaQuickbarSecondary.AthenaQuickbarSecondary_C
 // 0x0088 (0x0310 - 0x0288)
@@ -61,32 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaQuickbarSecondary_C">();
+		BP_STATIC_CLASS_IMPL("AthenaQuickbarSecondary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaQuickbarSecondary_C")
 	}
 	static class UAthenaQuickbarSecondary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaQuickbarSecondary_C>();
 	}
 };
-static_assert(alignof(UAthenaQuickbarSecondary_C) == 0x000008, "Wrong alignment on UAthenaQuickbarSecondary_C");
-static_assert(sizeof(UAthenaQuickbarSecondary_C) == 0x000310, "Wrong size on UAthenaQuickbarSecondary_C");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, UberGraphFrame_AthenaQuickbarSecondary_C) == 0x000288, "Member 'UAthenaQuickbarSecondary_C::UberGraphFrame_AthenaQuickbarSecondary_C' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, _Horizontal_Box__Camera_Mode_Content) == 0x000290, "Member 'UAthenaQuickbarSecondary_C::_Horizontal_Box__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, _Image__Separator) == 0x000298, "Member 'UAthenaQuickbarSecondary_C::_Image__Separator' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, _Image__Switch_Action) == 0x0002A0, "Member 'UAthenaQuickbarSecondary_C::_Image__Switch_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, KeybindSwitchBinding) == 0x0002A8, "Member 'UAthenaQuickbarSecondary_C::KeybindSwitchBinding' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F1) == 0x0002B0, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F1' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F2) == 0x0002B8, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F2' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F3) == 0x0002C0, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F3' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F4) == 0x0002C8, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F4' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, Quickbar_Slot_F5) == 0x0002D0, "Member 'UAthenaQuickbarSecondary_C::Quickbar_Slot_F5' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, SizeBox_Building) == 0x0002D8, "Member 'UAthenaQuickbarSecondary_C::SizeBox_Building' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, TutorialQBS1) == 0x0002E0, "Member 'UAthenaQuickbarSecondary_C::TutorialQBS1' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, TutorialQBS2) == 0x0002E8, "Member 'UAthenaQuickbarSecondary_C::TutorialQBS2' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, TutorialQBS3) == 0x0002F0, "Member 'UAthenaQuickbarSecondary_C::TutorialQBS3' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, TutorialQBS4) == 0x0002F8, "Member 'UAthenaQuickbarSecondary_C::TutorialQBS4' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, TutorialQBS5) == 0x000300, "Member 'UAthenaQuickbarSecondary_C::TutorialQBS5' has a wrong offset!");
-static_assert(offsetof(UAthenaQuickbarSecondary_C, CurrentBuildingSlot) == 0x000308, "Member 'UAthenaQuickbarSecondary_C::CurrentBuildingSlot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

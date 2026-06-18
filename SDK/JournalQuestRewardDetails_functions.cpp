@@ -14,8 +14,7 @@
 #include "JournalQuestRewardDetails_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.ExecuteUbergraph_JournalQuestRewardDetails
 // ()
@@ -83,8 +82,8 @@ void UJournalQuestRewardDetails_C::Setup()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture2D*                       Image                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Title                                                  (Parm)
-// class FText                             Subtitle                                               (Parm)
+// const class FText&                      Title                                                  (Parm)
+// const class FText&                      Subtitle                                               (Parm)
 // EFortAnnouncementDisplayPreference      DisplayPreference                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UJournalQuestRewardDetails_C::HandleOnBeginSpokenDialog(class UTexture2D* Image, const class FText& Title, const class FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
@@ -160,5 +159,5 @@ void UJournalQuestRewardDetails_C::UpdatePanelInfo()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

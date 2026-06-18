@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LobbyPlayerAddPlayer.LobbyPlayerAddPlayer_C
 // 0x0028 (0x0260 - 0x0238)
@@ -37,20 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LobbyPlayerAddPlayer_C">();
+		BP_STATIC_CLASS_IMPL("LobbyPlayerAddPlayer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyPlayerAddPlayer_C")
 	}
 	static class ULobbyPlayerAddPlayer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULobbyPlayerAddPlayer_C>();
 	}
 };
-static_assert(alignof(ULobbyPlayerAddPlayer_C) == 0x000008, "Wrong alignment on ULobbyPlayerAddPlayer_C");
-static_assert(sizeof(ULobbyPlayerAddPlayer_C) == 0x000260, "Wrong size on ULobbyPlayerAddPlayer_C");
-static_assert(offsetof(ULobbyPlayerAddPlayer_C, UberGraphFrame) == 0x000238, "Member 'ULobbyPlayerAddPlayer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerAddPlayer_C, ButtonEmptySpot) == 0x000240, "Member 'ULobbyPlayerAddPlayer_C::ButtonEmptySpot' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerAddPlayer_C, OverlayEmptySlot) == 0x000248, "Member 'ULobbyPlayerAddPlayer_C::OverlayEmptySlot' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerAddPlayer_C, OverlayInputAction) == 0x000250, "Member 'ULobbyPlayerAddPlayer_C::OverlayInputAction' has a wrong offset!");
-static_assert(offsetof(ULobbyPlayerAddPlayer_C, PlayerID) == 0x000258, "Member 'ULobbyPlayerAddPlayer_C::PlayerID' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

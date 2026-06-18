@@ -14,8 +14,7 @@
 #include "HomeScreenQuestRewardItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HomeScreenQuestRewardItem.HomeScreenQuestRewardItem_C.ExecuteUbergraph_HomeScreenQuestRewardItem
 // ()
@@ -50,5 +49,5 @@ void UHomeScreenQuestRewardItem_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

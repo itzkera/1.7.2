@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Party.PartyMemberState.IsLocalPlayer
 // 0x0001 (0x0001 - 0x0000)
@@ -21,9 +21,6 @@ struct PartyMemberState_IsLocalPlayer final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PartyMemberState_IsLocalPlayer) == 0x000001, "Wrong alignment on PartyMemberState_IsLocalPlayer");
-static_assert(sizeof(PartyMemberState_IsLocalPlayer) == 0x000001, "Wrong size on PartyMemberState_IsLocalPlayer");
-static_assert(offsetof(PartyMemberState_IsLocalPlayer, ReturnValue) == 0x000000, "Member 'PartyMemberState_IsLocalPlayer::ReturnValue' has a wrong offset!");
 
 // Function Party.PartyMemberState.IsPartyLeader
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +29,6 @@ struct PartyMemberState_IsPartyLeader final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PartyMemberState_IsPartyLeader) == 0x000001, "Wrong alignment on PartyMemberState_IsPartyLeader");
-static_assert(sizeof(PartyMemberState_IsPartyLeader) == 0x000001, "Wrong size on PartyMemberState_IsPartyLeader");
-static_assert(offsetof(PartyMemberState_IsPartyLeader, ReturnValue) == 0x000000, "Member 'PartyMemberState_IsPartyLeader::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass StoreMain_MTXOffer.StoreMain_MTXOffer_C
 // 0x0090 (0x09D8 - 0x0948)
@@ -54,32 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreMain_MTXOffer_C">();
+		BP_STATIC_CLASS_IMPL("StoreMain_MTXOffer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreMain_MTXOffer_C")
 	}
 	static class UStoreMain_MTXOffer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreMain_MTXOffer_C>();
 	}
 };
-static_assert(alignof(UStoreMain_MTXOffer_C) == 0x000008, "Wrong alignment on UStoreMain_MTXOffer_C");
-static_assert(sizeof(UStoreMain_MTXOffer_C) == 0x0009D8, "Wrong size on UStoreMain_MTXOffer_C");
-static_assert(offsetof(UStoreMain_MTXOffer_C, UberGraphFrame) == 0x000948, "Member 'UStoreMain_MTXOffer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, Embiggen) == 0x000950, "Member 'UStoreMain_MTXOffer_C::Embiggen' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, HighlightGlow_Founders) == 0x000958, "Member 'UStoreMain_MTXOffer_C::HighlightGlow_Founders' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, HighlightGlow_VBuck) == 0x000960, "Member 'UStoreMain_MTXOffer_C::HighlightGlow_VBuck' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, GradientFade) == 0x000968, "Member 'UStoreMain_MTXOffer_C::GradientFade' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BaseColor) == 0x000970, "Member 'UStoreMain_MTXOffer_C::BaseColor' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BonusCurrencySB) == 0x000978, "Member 'UStoreMain_MTXOffer_C::BonusCurrencySB' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, CommonText_BaseQuantity) == 0x000980, "Member 'UStoreMain_MTXOffer_C::CommonText_BaseQuantity' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, CommonText_BonusQuantity) == 0x000988, "Member 'UStoreMain_MTXOffer_C::CommonText_BonusQuantity' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, KeyArt) == 0x000990, "Member 'UStoreMain_MTXOffer_C::KeyArt' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, OverlayGradient) == 0x000998, "Member 'UStoreMain_MTXOffer_C::OverlayGradient' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, OverlaySalePrice) == 0x0009A0, "Member 'UStoreMain_MTXOffer_C::OverlaySalePrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, SpotHighlight) == 0x0009A8, "Member 'UStoreMain_MTXOffer_C::SpotHighlight' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOfferDisplayPrice) == 0x0009B0, "Member 'UStoreMain_MTXOffer_C::TextOfferDisplayPrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOfferName) == 0x0009B8, "Member 'UStoreMain_MTXOffer_C::TextOfferName' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOriginalPrice) == 0x0009C0, "Member 'UStoreMain_MTXOffer_C::TextOriginalPrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, AboutToShowDetails) == 0x0009C8, "Member 'UStoreMain_MTXOffer_C::AboutToShowDetails' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

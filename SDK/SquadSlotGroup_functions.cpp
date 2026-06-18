@@ -14,8 +14,7 @@
 #include "SquadSlotGroup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SquadSlotGroup.SquadSlotGroup_C.ExecuteUbergraph_SquadSlotGroup
 // (HasDefaults)
@@ -40,7 +39,7 @@ void USquadSlotGroup_C::ExecuteUbergraph_SquadSlotGroup(int32 EntryPoint)
 // Function SquadSlotGroup.SquadSlotGroup_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void USquadSlotGroup_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -60,8 +59,8 @@ void USquadSlotGroup_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 // Function SquadSlotGroup.SquadSlotGroup_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void USquadSlotGroup_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -102,7 +101,7 @@ void USquadSlotGroup_C::PreConstruct(bool IsDesignTime)
 // Function SquadSlotGroup.SquadSlotGroup_C.AddSquadSlots
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UWidget*>                  SquadSlots                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UWidget*>&                 SquadSlots                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void USquadSlotGroup_C::AddSquadSlots(TArray<class UWidget*>& SquadSlots)
 {
@@ -208,5 +207,5 @@ void USquadSlotGroup_C::RemoveDarkeningFromAllSlotsInGroup()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ItemManagementInventoryPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.ExecuteUbergraph_ItemManagementInventoryPanel
 // (HasDefaults)
@@ -334,7 +333,7 @@ void UItemManagementInventoryPanel_C::ProcessSlotAction()
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.GetSelectedEquipSlot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Slot_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Slot_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemManagementInventoryPanel_C::GetSelectedEquipSlot(int32* Slot_0)
 {
@@ -453,8 +452,8 @@ void UItemManagementInventoryPanel_C::HandleMulchQuantityCallback(int32 Quantity
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.SelectTrapByTag
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTag                     Tag                                                    (Parm, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FGameplayTag&              Tag                                                    (Parm, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementInventoryPanel_C::SelectTrapByTag(const struct FGameplayTag& Tag, bool* Success)
 {
@@ -478,7 +477,7 @@ void UItemManagementInventoryPanel_C::SelectTrapByTag(const struct FGameplayTag&
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemManagementInventoryPanel_C::SelectTrapByItem(class UFortItem* Item, bool* Success)
 {
@@ -517,5 +516,5 @@ void UItemManagementInventoryPanel_C::PrepOpeningInventory(class FName ActionNam
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

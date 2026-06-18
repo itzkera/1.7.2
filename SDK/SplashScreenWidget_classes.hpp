@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SplashScreenWidget.SplashScreenWidget_C
 // 0x0050 (0x0450 - 0x0400)
@@ -46,25 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SplashScreenWidget_C">();
+		BP_STATIC_CLASS_IMPL("SplashScreenWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SplashScreenWidget_C")
 	}
 	static class USplashScreenWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USplashScreenWidget_C>();
 	}
 };
-static_assert(alignof(USplashScreenWidget_C) == 0x000008, "Wrong alignment on USplashScreenWidget_C");
-static_assert(sizeof(USplashScreenWidget_C) == 0x000450, "Wrong size on USplashScreenWidget_C");
-static_assert(offsetof(USplashScreenWidget_C, UberGraphFrame) == 0x000400, "Member 'USplashScreenWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, GamepadActionWidget) == 0x000408, "Member 'USplashScreenWidget_C::GamepadActionWidget' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, GamepadInputHbox) == 0x000410, "Member 'USplashScreenWidget_C::GamepadInputHbox' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, GamepadInputText) == 0x000418, "Member 'USplashScreenWidget_C::GamepadInputText' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, InputWidgetSwitcher) == 0x000420, "Member 'USplashScreenWidget_C::InputWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MobileInputHbox) == 0x000428, "Member 'USplashScreenWidget_C::MobileInputHbox' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MobileInputText) == 0x000430, "Member 'USplashScreenWidget_C::MobileInputText' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MouseInputHBox) == 0x000438, "Member 'USplashScreenWidget_C::MouseInputHBox' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, MouseInputText) == 0x000440, "Member 'USplashScreenWidget_C::MouseInputText' has a wrong offset!");
-static_assert(offsetof(USplashScreenWidget_C, TitleImage) == 0x000448, "Member 'USplashScreenWidget_C::TitleImage' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

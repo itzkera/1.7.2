@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-FSModal-TopL.Border-FSModal-TopL_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_FSModal_TopL_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-FSModal-TopL_C">();
+		BP_STATIC_CLASS_IMPL("Border-FSModal-TopL_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-FSModal-TopL_C")
 	}
 	static class UBorder_FSModal_TopL_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_FSModal_TopL_C>();
 	}
 };
-static_assert(alignof(UBorder_FSModal_TopL_C) == 0x000008, "Wrong alignment on UBorder_FSModal_TopL_C");
-static_assert(sizeof(UBorder_FSModal_TopL_C) == 0x0000B8, "Wrong size on UBorder_FSModal_TopL_C");
 
-}
-
+SDK_NAMESPACE_END

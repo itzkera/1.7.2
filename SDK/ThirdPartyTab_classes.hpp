@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ThirdPartyTab.ThirdPartyTab_C
 // 0x0010 (0x0248 - 0x0238)
@@ -30,17 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ThirdPartyTab_C">();
+		BP_STATIC_CLASS_IMPL("ThirdPartyTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ThirdPartyTab_C")
 	}
 	static class UThirdPartyTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UThirdPartyTab_C>();
 	}
 };
-static_assert(alignof(UThirdPartyTab_C) == 0x000008, "Wrong alignment on UThirdPartyTab_C");
-static_assert(sizeof(UThirdPartyTab_C) == 0x000248, "Wrong size on UThirdPartyTab_C");
-static_assert(offsetof(UThirdPartyTab_C, FortRichTextBlock_0) == 0x000238, "Member 'UThirdPartyTab_C::FortRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UThirdPartyTab_C, ScrollBox_2) == 0x000240, "Member 'UThirdPartyTab_C::ScrollBox_2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

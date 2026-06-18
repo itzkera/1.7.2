@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookSlotView.CollectionBookSlotView_C
 // 0x0008 (0x0378 - 0x0370)
@@ -31,16 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookSlotView_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookSlotView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookSlotView_C")
 	}
 	static class UCollectionBookSlotView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookSlotView_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSlotView_C) == 0x000008, "Wrong alignment on UCollectionBookSlotView_C");
-static_assert(sizeof(UCollectionBookSlotView_C) == 0x000378, "Wrong size on UCollectionBookSlotView_C");
-static_assert(offsetof(UCollectionBookSlotView_C, UberGraphFrame) == 0x000370, "Member 'UCollectionBookSlotView_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

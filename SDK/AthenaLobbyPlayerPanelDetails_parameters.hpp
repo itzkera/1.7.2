@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.ExecuteUbergraph_AthenaLobbyPlayerPanelDetails
 // 0x0080 (0x0080 - 0x0000)
@@ -36,18 +36,6 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0068(0x0018)()
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails) == 0x000080, "Wrong size on AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, EntryPoint) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, CallFunc_RandomInteger_ReturnValue) == 0x000004, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, Temp_int_Variable) == 0x000008, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, Temp_string_Variable) == 0x000010, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, Temp_string_Variable2) == 0x000020, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::Temp_string_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, Temp_string_Variable3) == 0x000030, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::Temp_string_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, Temp_string_Variable4) == 0x000040, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::Temp_string_Variable4' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, K2Node_Event_IsDesignTime) == 0x000050, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, K2Node_Select_Default) == 0x000058, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails, CallFunc_Conv_StringToText_ReturnValue) == 0x000068, "Member 'AthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +44,6 @@ struct AthenaLobbyPlayerPanelDetails_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_PreConstruct");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_PreConstruct) == 0x000001, "Wrong size on AthenaLobbyPlayerPanelDetails_C_PreConstruct");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.RefreshPendingInvite
 // 0x0005 (0x0005 - 0x0000)
@@ -71,13 +56,6 @@ public:
 	bool                                          CallFunc_IsInvitationPending_bIsInvitationPending; // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite) == 0x000001, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite) == 0x000005, "Wrong size on AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite, Temp_bool_Variable) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite, Temp_byte_Variable) == 0x000001, "Member 'AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite, Temp_byte_Variable2) == 0x000002, "Member 'AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite, CallFunc_IsInvitationPending_bIsInvitationPending) == 0x000003, "Member 'AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite::CallFunc_IsInvitationPending_bIsInvitationPending' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite, K2Node_Select_Default) == 0x000004, "Member 'AthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.IsInvitationPending
 // 0x0058 (0x0058 - 0x0000)
@@ -108,28 +86,6 @@ public:
 	uint8                                         Pad_3F[0x1];                                       // 0x003F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       K2Node_Select3_Default;                            // 0x0040(0x0018)(HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_IsInvitationPending");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending) == 0x000058, "Wrong size on AthenaLobbyPlayerPanelDetails_C_IsInvitationPending");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, bIsInvitationPending) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::bIsInvitationPending' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, PlayerUniqueId) == 0x000008, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::PlayerUniqueId' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable) == 0x000020, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, CallFunc_IsValidNetID_ReturnValue) == 0x000030, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::CallFunc_IsValidNetID_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, CallFunc_HasPendingPartyInvitation_ReturnValue) == 0x000031, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::CallFunc_HasPendingPartyInvitation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, CallFunc_GetFriendRequestStatusForPlayer_ReturnValue) == 0x000032, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::CallFunc_GetFriendRequestStatusForPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_byte_Variable) == 0x000033, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable2) == 0x000034, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable3) == 0x000035, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable4) == 0x000036, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable5) == 0x000037, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable6) == 0x000038, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable7) == 0x000039, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, K2Node_Select_Default) == 0x00003A, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, Temp_bool_Variable8) == 0x00003B, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, K2Node_Select2_Default) == 0x00003C, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, CallFunc_BooleanOR_ReturnValue) == 0x00003D, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, CallFunc_IsValidNetID_ReturnValue2) == 0x00003E, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::CallFunc_IsValidNetID_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_IsInvitationPending, K2Node_Select3_Default) == 0x000040, "Member 'AthenaLobbyPlayerPanelDetails_C_IsInvitationPending::K2Node_Select3_Default' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.OnPartyInvitesCountChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -138,9 +94,6 @@ struct AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged final
 public:
 	int32                                         InvitesCount;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged) == 0x000004, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged) == 0x000004, "Wrong size on AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged, InvitesCount) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged::InvitesCount' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.OnActiveFriendsCountUpdated
 // 0x0004 (0x0004 - 0x0000)
@@ -149,9 +102,6 @@ struct AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated final
 public:
 	int32                                         ActiveFriendsCount;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated) == 0x000004, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated) == 0x000004, "Wrong size on AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated, ActiveFriendsCount) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated::ActiveFriendsCount' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.InitializeContextEvents
 // 0x0030 (0x0030 - 0x0000)
@@ -163,12 +113,6 @@ public:
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPartyContext*                      CallFunc_GetContext_ReturnValue2;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents) == 0x000030, "Wrong size on AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'AthenaLobbyPlayerPanelDetails_C_InitializeContextEvents::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.SetTeamMemberInfo
 // 0x0190 (0x0190 - 0x0000)
@@ -177,9 +121,6 @@ struct AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo final
 public:
 	struct FFortTeamMemberInfo                    TeamMemberInfo_0;                                  // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo) == 0x000008, "Wrong alignment on AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo");
-static_assert(sizeof(AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo) == 0x000190, "Wrong size on AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo");
-static_assert(offsetof(AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo, TeamMemberInfo_0) == 0x000000, "Member 'AthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo::TeamMemberInfo_0' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

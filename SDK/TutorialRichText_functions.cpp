@@ -14,8 +14,7 @@
 #include "TutorialRichText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TutorialRichText.TutorialRichText_C.ExecuteUbergraph_TutorialRichText
 // ()
@@ -50,5 +49,5 @@ void UTutorialRichText_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

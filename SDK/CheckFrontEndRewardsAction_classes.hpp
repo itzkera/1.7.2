@@ -17,8 +17,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C
 // 0x0060 (0x0448 - 0x03E8)
@@ -54,20 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CheckFrontEndRewardsAction_C">();
+		BP_STATIC_CLASS_IMPL("CheckFrontEndRewardsAction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheckFrontEndRewardsAction_C")
 	}
 	static class ACheckFrontEndRewardsAction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACheckFrontEndRewardsAction_C>();
 	}
 };
-static_assert(alignof(ACheckFrontEndRewardsAction_C) == 0x000008, "Wrong alignment on ACheckFrontEndRewardsAction_C");
-static_assert(sizeof(ACheckFrontEndRewardsAction_C) == 0x000448, "Wrong size on ACheckFrontEndRewardsAction_C");
-static_assert(offsetof(ACheckFrontEndRewardsAction_C, UberGraphFrame) == 0x0003E8, "Member 'ACheckFrontEndRewardsAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndRewardsAction_C, DefaultSceneRoot) == 0x0003F0, "Member 'ACheckFrontEndRewardsAction_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndRewardsAction_C, RewardsDefinition) == 0x0003F8, "Member 'ACheckFrontEndRewardsAction_C::RewardsDefinition' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndRewardsAction_C, ShowRewardsWidget) == 0x000440, "Member 'ACheckFrontEndRewardsAction_C::ShowRewardsWidget' has a wrong offset!");
-static_assert(offsetof(ACheckFrontEndRewardsAction_C, NewVar_0) == 0x000441, "Member 'ACheckFrontEndRewardsAction_C::NewVar_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

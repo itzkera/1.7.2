@@ -17,13 +17,12 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class MovieSceneTracks.MovieScene3DConstraintSection
 // 0x0010 (0x00D8 - 0x00C8)
 #pragma pack(push, 0x1)
-class alignas(0x08) UMovieScene3DConstraintSection : public UMovieSceneSection
+class SDK_ALIGN(0x08) UMovieScene3DConstraintSection : public UMovieSceneSection
 {
 public:
 	struct FGuid                                  ConstraintId;                                      // 0x00C8(0x0010)(IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -31,7 +30,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DConstraintSection">();
+		STATIC_CLASS_IMPL("MovieScene3DConstraintSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DConstraintSection")
 	}
 	static class UMovieScene3DConstraintSection* GetDefaultObj()
 	{
@@ -39,9 +42,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UMovieScene3DConstraintSection) == 0x000008, "Wrong alignment on UMovieScene3DConstraintSection");
-static_assert(sizeof(UMovieScene3DConstraintSection) == 0x0000D8, "Wrong size on UMovieScene3DConstraintSection");
-static_assert(offsetof(UMovieScene3DConstraintSection, ConstraintId) == 0x0000C8, "Member 'UMovieScene3DConstraintSection::ConstraintId' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieScene3DAttachSection
 // 0x0018 (0x00F0 - 0x00D8)
@@ -61,17 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DAttachSection">();
+		STATIC_CLASS_IMPL("MovieScene3DAttachSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DAttachSection")
 	}
 	static class UMovieScene3DAttachSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DAttachSection>();
 	}
 };
-static_assert(alignof(UMovieScene3DAttachSection) == 0x000008, "Wrong alignment on UMovieScene3DAttachSection");
-static_assert(sizeof(UMovieScene3DAttachSection) == 0x0000F0, "Wrong size on UMovieScene3DAttachSection");
-static_assert(offsetof(UMovieScene3DAttachSection, AttachSocketName) == 0x0000D8, "Member 'UMovieScene3DAttachSection::AttachSocketName' has a wrong offset!");
-static_assert(offsetof(UMovieScene3DAttachSection, AttachComponentName) == 0x0000E0, "Member 'UMovieScene3DAttachSection::AttachComponentName' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieScene3DPathSection
 // 0x0078 (0x0150 - 0x00D8)
@@ -90,18 +90,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DPathSection">();
+		STATIC_CLASS_IMPL("MovieScene3DPathSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DPathSection")
 	}
 	static class UMovieScene3DPathSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DPathSection>();
 	}
 };
-static_assert(alignof(UMovieScene3DPathSection) == 0x000008, "Wrong alignment on UMovieScene3DPathSection");
-static_assert(sizeof(UMovieScene3DPathSection) == 0x000150, "Wrong size on UMovieScene3DPathSection");
-static_assert(offsetof(UMovieScene3DPathSection, TimingCurve) == 0x0000D8, "Member 'UMovieScene3DPathSection::TimingCurve' has a wrong offset!");
-static_assert(offsetof(UMovieScene3DPathSection, FrontAxisEnum) == 0x000148, "Member 'UMovieScene3DPathSection::FrontAxisEnum' has a wrong offset!");
-static_assert(offsetof(UMovieScene3DPathSection, UpAxisEnum) == 0x000149, "Member 'UMovieScene3DPathSection::UpAxisEnum' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieScene3DConstraintTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -114,16 +113,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DConstraintTrack">();
+		STATIC_CLASS_IMPL("MovieScene3DConstraintTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DConstraintTrack")
 	}
 	static class UMovieScene3DConstraintTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DConstraintTrack>();
 	}
 };
-static_assert(alignof(UMovieScene3DConstraintTrack) == 0x000008, "Wrong alignment on UMovieScene3DConstraintTrack");
-static_assert(sizeof(UMovieScene3DConstraintTrack) == 0x0000D0, "Wrong size on UMovieScene3DConstraintTrack");
-static_assert(offsetof(UMovieScene3DConstraintTrack, ConstraintSections) == 0x0000B8, "Member 'UMovieScene3DConstraintTrack::ConstraintSections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieScene3DAttachTrack
 // 0x0000 (0x00D0 - 0x00D0)
@@ -132,15 +132,17 @@ class UMovieScene3DAttachTrack final : public UMovieScene3DConstraintTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DAttachTrack">();
+		STATIC_CLASS_IMPL("MovieScene3DAttachTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DAttachTrack")
 	}
 	static class UMovieScene3DAttachTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DAttachTrack>();
 	}
 };
-static_assert(alignof(UMovieScene3DAttachTrack) == 0x000008, "Wrong alignment on UMovieScene3DAttachTrack");
-static_assert(sizeof(UMovieScene3DAttachTrack) == 0x0000D0, "Wrong size on UMovieScene3DAttachTrack");
 
 // Class MovieSceneTracks.MovieScene3DPathTrack
 // 0x0000 (0x00D0 - 0x00D0)
@@ -149,15 +151,17 @@ class UMovieScene3DPathTrack final : public UMovieScene3DConstraintTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DPathTrack">();
+		STATIC_CLASS_IMPL("MovieScene3DPathTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DPathTrack")
 	}
 	static class UMovieScene3DPathTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DPathTrack>();
 	}
 };
-static_assert(alignof(UMovieScene3DPathTrack) == 0x000008, "Wrong alignment on UMovieScene3DPathTrack");
-static_assert(sizeof(UMovieScene3DPathTrack) == 0x0000D0, "Wrong size on UMovieScene3DPathTrack");
 
 // Class MovieSceneTracks.MovieScene3DTransformSection
 // 0x03F8 (0x04C0 - 0x00C8)
@@ -172,18 +176,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DTransformSection">();
+		STATIC_CLASS_IMPL("MovieScene3DTransformSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DTransformSection")
 	}
 	static class UMovieScene3DTransformSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DTransformSection>();
 	}
 };
-static_assert(alignof(UMovieScene3DTransformSection) == 0x000008, "Wrong alignment on UMovieScene3DTransformSection");
-static_assert(sizeof(UMovieScene3DTransformSection) == 0x0004C0, "Wrong size on UMovieScene3DTransformSection");
-static_assert(offsetof(UMovieScene3DTransformSection, Translation) == 0x0000D0, "Member 'UMovieScene3DTransformSection::Translation' has a wrong offset!");
-static_assert(offsetof(UMovieScene3DTransformSection, Rotation) == 0x000220, "Member 'UMovieScene3DTransformSection::Rotation' has a wrong offset!");
-static_assert(offsetof(UMovieScene3DTransformSection, Scale) == 0x000370, "Member 'UMovieScene3DTransformSection::Scale' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneActorReferenceSection
 // 0x0098 (0x0160 - 0x00C8)
@@ -198,17 +201,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneActorReferenceSection">();
+		STATIC_CLASS_IMPL("MovieSceneActorReferenceSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneActorReferenceSection")
 	}
 	static class UMovieSceneActorReferenceSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneActorReferenceSection>();
 	}
 };
-static_assert(alignof(UMovieSceneActorReferenceSection) == 0x000008, "Wrong alignment on UMovieSceneActorReferenceSection");
-static_assert(sizeof(UMovieSceneActorReferenceSection) == 0x000160, "Wrong size on UMovieSceneActorReferenceSection");
-static_assert(offsetof(UMovieSceneActorReferenceSection, ActorGuidIndexCurve) == 0x0000D0, "Member 'UMovieSceneActorReferenceSection::ActorGuidIndexCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneActorReferenceSection, ActorGuidStrings) == 0x000150, "Member 'UMovieSceneActorReferenceSection::ActorGuidStrings' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneAudioSection
 // 0x0108 (0x01D0 - 0x00C8)
@@ -228,23 +231,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAudioSection">();
+		STATIC_CLASS_IMPL("MovieSceneAudioSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAudioSection")
 	}
 	static class UMovieSceneAudioSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAudioSection>();
 	}
 };
-static_assert(alignof(UMovieSceneAudioSection) == 0x000008, "Wrong alignment on UMovieSceneAudioSection");
-static_assert(sizeof(UMovieSceneAudioSection) == 0x0001D0, "Wrong size on UMovieSceneAudioSection");
-static_assert(offsetof(UMovieSceneAudioSection, Sound) == 0x0000C8, "Member 'UMovieSceneAudioSection::Sound' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, StartOffset) == 0x0000D0, "Member 'UMovieSceneAudioSection::StartOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, AudioStartTime) == 0x0000D4, "Member 'UMovieSceneAudioSection::AudioStartTime' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, AudioDilationFactor) == 0x0000D8, "Member 'UMovieSceneAudioSection::AudioDilationFactor' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, AudioVolume) == 0x0000DC, "Member 'UMovieSceneAudioSection::AudioVolume' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, SoundVolume) == 0x0000E0, "Member 'UMovieSceneAudioSection::SoundVolume' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, PitchMultiplier) == 0x000150, "Member 'UMovieSceneAudioSection::PitchMultiplier' has a wrong offset!");
-static_assert(offsetof(UMovieSceneAudioSection, bSuppressSubtitles) == 0x0001C0, "Member 'UMovieSceneAudioSection::bSuppressSubtitles' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneAudioTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -257,16 +254,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneAudioTrack">();
+		STATIC_CLASS_IMPL("MovieSceneAudioTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneAudioTrack")
 	}
 	static class UMovieSceneAudioTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneAudioTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneAudioTrack) == 0x000008, "Wrong alignment on UMovieSceneAudioTrack");
-static_assert(sizeof(UMovieSceneAudioTrack) == 0x0000D0, "Wrong size on UMovieSceneAudioTrack");
-static_assert(offsetof(UMovieSceneAudioTrack, AudioSections) == 0x0000B8, "Member 'UMovieSceneAudioTrack::AudioSections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneBoolSection
 // 0x0088 (0x0150 - 0x00C8)
@@ -282,17 +280,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneBoolSection">();
+		STATIC_CLASS_IMPL("MovieSceneBoolSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneBoolSection")
 	}
 	static class UMovieSceneBoolSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneBoolSection>();
 	}
 };
-static_assert(alignof(UMovieSceneBoolSection) == 0x000008, "Wrong alignment on UMovieSceneBoolSection");
-static_assert(sizeof(UMovieSceneBoolSection) == 0x000150, "Wrong size on UMovieSceneBoolSection");
-static_assert(offsetof(UMovieSceneBoolSection, DefaultValue) == 0x0000D0, "Member 'UMovieSceneBoolSection::DefaultValue' has a wrong offset!");
-static_assert(offsetof(UMovieSceneBoolSection, BoolCurve) == 0x0000D8, "Member 'UMovieSceneBoolSection::BoolCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSpawnSection
 // 0x0000 (0x0150 - 0x0150)
@@ -301,15 +299,17 @@ class UMovieSceneSpawnSection final : public UMovieSceneBoolSection
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSpawnSection">();
+		STATIC_CLASS_IMPL("MovieSceneSpawnSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSpawnSection")
 	}
 	static class UMovieSceneSpawnSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSpawnSection>();
 	}
 };
-static_assert(alignof(UMovieSceneSpawnSection) == 0x000008, "Wrong alignment on UMovieSceneSpawnSection");
-static_assert(sizeof(UMovieSceneSpawnSection) == 0x000150, "Wrong size on UMovieSceneSpawnSection");
 
 // Class MovieSceneTracks.MovieSceneByteSection
 // 0x0078 (0x0140 - 0x00C8)
@@ -322,16 +322,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneByteSection">();
+		STATIC_CLASS_IMPL("MovieSceneByteSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneByteSection")
 	}
 	static class UMovieSceneByteSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneByteSection>();
 	}
 };
-static_assert(alignof(UMovieSceneByteSection) == 0x000008, "Wrong alignment on UMovieSceneByteSection");
-static_assert(sizeof(UMovieSceneByteSection) == 0x000140, "Wrong size on UMovieSceneByteSection");
-static_assert(offsetof(UMovieSceneByteSection, ByteCurve) == 0x0000D0, "Member 'UMovieSceneByteSection::ByteCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCameraAnimSection
 // 0x0048 (0x0110 - 0x00C8)
@@ -350,22 +351,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCameraAnimSection">();
+		STATIC_CLASS_IMPL("MovieSceneCameraAnimSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCameraAnimSection")
 	}
 	static class UMovieSceneCameraAnimSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCameraAnimSection>();
 	}
 };
-static_assert(alignof(UMovieSceneCameraAnimSection) == 0x000008, "Wrong alignment on UMovieSceneCameraAnimSection");
-static_assert(sizeof(UMovieSceneCameraAnimSection) == 0x000110, "Wrong size on UMovieSceneCameraAnimSection");
-static_assert(offsetof(UMovieSceneCameraAnimSection, AnimData) == 0x0000C8, "Member 'UMovieSceneCameraAnimSection::AnimData' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraAnimSection, CameraAnim) == 0x0000E8, "Member 'UMovieSceneCameraAnimSection::CameraAnim' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraAnimSection, PlayRate) == 0x0000F0, "Member 'UMovieSceneCameraAnimSection::PlayRate' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraAnimSection, PlayScale) == 0x0000F4, "Member 'UMovieSceneCameraAnimSection::PlayScale' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraAnimSection, BlendInTime) == 0x0000F8, "Member 'UMovieSceneCameraAnimSection::BlendInTime' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraAnimSection, BlendOutTime) == 0x0000FC, "Member 'UMovieSceneCameraAnimSection::BlendOutTime' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraAnimSection, bLooping) == 0x000100, "Member 'UMovieSceneCameraAnimSection::bLooping' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCameraAnimTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -378,16 +374,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCameraAnimTrack">();
+		STATIC_CLASS_IMPL("MovieSceneCameraAnimTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCameraAnimTrack")
 	}
 	static class UMovieSceneCameraAnimTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCameraAnimTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneCameraAnimTrack) == 0x000008, "Wrong alignment on UMovieSceneCameraAnimTrack");
-static_assert(sizeof(UMovieSceneCameraAnimTrack) == 0x0000D0, "Wrong size on UMovieSceneCameraAnimTrack");
-static_assert(offsetof(UMovieSceneCameraAnimTrack, CameraAnimSections) == 0x0000B8, "Member 'UMovieSceneCameraAnimTrack::CameraAnimSections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCameraCutSection
 // 0x0018 (0x00E0 - 0x00C8)
@@ -400,16 +397,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCameraCutSection">();
+		STATIC_CLASS_IMPL("MovieSceneCameraCutSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCameraCutSection")
 	}
 	static class UMovieSceneCameraCutSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCameraCutSection>();
 	}
 };
-static_assert(alignof(UMovieSceneCameraCutSection) == 0x000008, "Wrong alignment on UMovieSceneCameraCutSection");
-static_assert(sizeof(UMovieSceneCameraCutSection) == 0x0000E0, "Wrong size on UMovieSceneCameraCutSection");
-static_assert(offsetof(UMovieSceneCameraCutSection, CameraGuid) == 0x0000C8, "Member 'UMovieSceneCameraCutSection::CameraGuid' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCameraCutTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -422,16 +420,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCameraCutTrack">();
+		STATIC_CLASS_IMPL("MovieSceneCameraCutTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCameraCutTrack")
 	}
 	static class UMovieSceneCameraCutTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCameraCutTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneCameraCutTrack) == 0x000008, "Wrong alignment on UMovieSceneCameraCutTrack");
-static_assert(sizeof(UMovieSceneCameraCutTrack) == 0x0000D0, "Wrong size on UMovieSceneCameraCutTrack");
-static_assert(offsetof(UMovieSceneCameraCutTrack, Sections) == 0x0000B8, "Member 'UMovieSceneCameraCutTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCameraShakeSection
 // 0x0048 (0x0110 - 0x00C8)
@@ -449,20 +448,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCameraShakeSection">();
+		STATIC_CLASS_IMPL("MovieSceneCameraShakeSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCameraShakeSection")
 	}
 	static class UMovieSceneCameraShakeSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCameraShakeSection>();
 	}
 };
-static_assert(alignof(UMovieSceneCameraShakeSection) == 0x000008, "Wrong alignment on UMovieSceneCameraShakeSection");
-static_assert(sizeof(UMovieSceneCameraShakeSection) == 0x000110, "Wrong size on UMovieSceneCameraShakeSection");
-static_assert(offsetof(UMovieSceneCameraShakeSection, ShakeData) == 0x0000C8, "Member 'UMovieSceneCameraShakeSection::ShakeData' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraShakeSection, ShakeClass) == 0x0000E8, "Member 'UMovieSceneCameraShakeSection::ShakeClass' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraShakeSection, PlayScale) == 0x0000F0, "Member 'UMovieSceneCameraShakeSection::PlayScale' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraShakeSection, PlaySpace) == 0x0000F4, "Member 'UMovieSceneCameraShakeSection::PlaySpace' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCameraShakeSection, UserDefinedPlaySpace) == 0x0000F8, "Member 'UMovieSceneCameraShakeSection::UserDefinedPlaySpace' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCameraShakeTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -475,16 +471,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCameraShakeTrack">();
+		STATIC_CLASS_IMPL("MovieSceneCameraShakeTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCameraShakeTrack")
 	}
 	static class UMovieSceneCameraShakeTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCameraShakeTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneCameraShakeTrack) == 0x000008, "Wrong alignment on UMovieSceneCameraShakeTrack");
-static_assert(sizeof(UMovieSceneCameraShakeTrack) == 0x0000D0, "Wrong size on UMovieSceneCameraShakeTrack");
-static_assert(offsetof(UMovieSceneCameraShakeTrack, CameraShakeSections) == 0x0000B8, "Member 'UMovieSceneCameraShakeTrack::CameraShakeSections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneColorSection
 // 0x01C8 (0x0290 - 0x00C8)
@@ -500,19 +497,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneColorSection">();
+		STATIC_CLASS_IMPL("MovieSceneColorSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneColorSection")
 	}
 	static class UMovieSceneColorSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneColorSection>();
 	}
 };
-static_assert(alignof(UMovieSceneColorSection) == 0x000008, "Wrong alignment on UMovieSceneColorSection");
-static_assert(sizeof(UMovieSceneColorSection) == 0x000290, "Wrong size on UMovieSceneColorSection");
-static_assert(offsetof(UMovieSceneColorSection, RedCurve) == 0x0000D0, "Member 'UMovieSceneColorSection::RedCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneColorSection, GreenCurve) == 0x000140, "Member 'UMovieSceneColorSection::GreenCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneColorSection, BlueCurve) == 0x0001B0, "Member 'UMovieSceneColorSection::BlueCurve' has a wrong offset!");
-static_assert(offsetof(UMovieSceneColorSection, AlphaCurve) == 0x000220, "Member 'UMovieSceneColorSection::AlphaCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneEnumSection
 // 0x0078 (0x0140 - 0x00C8)
@@ -525,16 +520,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneEnumSection">();
+		STATIC_CLASS_IMPL("MovieSceneEnumSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneEnumSection")
 	}
 	static class UMovieSceneEnumSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneEnumSection>();
 	}
 };
-static_assert(alignof(UMovieSceneEnumSection) == 0x000008, "Wrong alignment on UMovieSceneEnumSection");
-static_assert(sizeof(UMovieSceneEnumSection) == 0x000140, "Wrong size on UMovieSceneEnumSection");
-static_assert(offsetof(UMovieSceneEnumSection, EnumCurve) == 0x0000D0, "Member 'UMovieSceneEnumSection::EnumCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneEventSection
 // 0x0118 (0x01E0 - 0x00C8)
@@ -548,17 +544,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneEventSection">();
+		STATIC_CLASS_IMPL("MovieSceneEventSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneEventSection")
 	}
 	static class UMovieSceneEventSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneEventSection>();
 	}
 };
-static_assert(alignof(UMovieSceneEventSection) == 0x000008, "Wrong alignment on UMovieSceneEventSection");
-static_assert(sizeof(UMovieSceneEventSection) == 0x0001E0, "Wrong size on UMovieSceneEventSection");
-static_assert(offsetof(UMovieSceneEventSection, Events) == 0x0000C8, "Member 'UMovieSceneEventSection::Events' has a wrong offset!");
-static_assert(offsetof(UMovieSceneEventSection, EventData) == 0x000130, "Member 'UMovieSceneEventSection::EventData' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSpawnTrack
 // 0x0028 (0x00E0 - 0x00B8)
@@ -572,17 +568,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSpawnTrack">();
+		STATIC_CLASS_IMPL("MovieSceneSpawnTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSpawnTrack")
 	}
 	static class UMovieSceneSpawnTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSpawnTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneSpawnTrack) == 0x000008, "Wrong alignment on UMovieSceneSpawnTrack");
-static_assert(sizeof(UMovieSceneSpawnTrack) == 0x0000E0, "Wrong size on UMovieSceneSpawnTrack");
-static_assert(offsetof(UMovieSceneSpawnTrack, Sections) == 0x0000B8, "Member 'UMovieSceneSpawnTrack::Sections' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSpawnTrack, ObjectGuid) == 0x0000C8, "Member 'UMovieSceneSpawnTrack::ObjectGuid' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneEventTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -597,16 +593,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneEventTrack">();
+		STATIC_CLASS_IMPL("MovieSceneEventTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneEventTrack")
 	}
 	static class UMovieSceneEventTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneEventTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneEventTrack) == 0x000008, "Wrong alignment on UMovieSceneEventTrack");
-static_assert(sizeof(UMovieSceneEventTrack) == 0x0000D0, "Wrong size on UMovieSceneEventTrack");
-static_assert(offsetof(UMovieSceneEventTrack, Sections) == 0x0000C0, "Member 'UMovieSceneEventTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneFloatSection
 // 0x0078 (0x0140 - 0x00C8)
@@ -619,16 +616,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneFloatSection">();
+		STATIC_CLASS_IMPL("MovieSceneFloatSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneFloatSection")
 	}
 	static class UMovieSceneFloatSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneFloatSection>();
 	}
 };
-static_assert(alignof(UMovieSceneFloatSection) == 0x000008, "Wrong alignment on UMovieSceneFloatSection");
-static_assert(sizeof(UMovieSceneFloatSection) == 0x000140, "Wrong size on UMovieSceneFloatSection");
-static_assert(offsetof(UMovieSceneFloatSection, FloatCurve) == 0x0000D0, "Member 'UMovieSceneFloatSection::FloatCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneFadeSection
 // 0x0020 (0x0160 - 0x0140)
@@ -642,16 +640,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneFadeSection">();
+		STATIC_CLASS_IMPL("MovieSceneFadeSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneFadeSection")
 	}
 	static class UMovieSceneFadeSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneFadeSection>();
 	}
 };
-static_assert(alignof(UMovieSceneFadeSection) == 0x000008, "Wrong alignment on UMovieSceneFadeSection");
-static_assert(sizeof(UMovieSceneFadeSection) == 0x000160, "Wrong size on UMovieSceneFadeSection");
-static_assert(offsetof(UMovieSceneFadeSection, FadeColor) == 0x000140, "Member 'UMovieSceneFadeSection::FadeColor' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSlomoSection
 // 0x0000 (0x0140 - 0x0140)
@@ -660,15 +659,17 @@ class UMovieSceneSlomoSection final : public UMovieSceneFloatSection
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSlomoSection">();
+		STATIC_CLASS_IMPL("MovieSceneSlomoSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSlomoSection")
 	}
 	static class UMovieSceneSlomoSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSlomoSection>();
 	}
 };
-static_assert(alignof(UMovieSceneSlomoSection) == 0x000008, "Wrong alignment on UMovieSceneSlomoSection");
-static_assert(sizeof(UMovieSceneSlomoSection) == 0x000140, "Wrong size on UMovieSceneSlomoSection");
 
 // Class MovieSceneTracks.MovieSceneIntegerSection
 // 0x0078 (0x0140 - 0x00C8)
@@ -681,16 +682,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneIntegerSection">();
+		STATIC_CLASS_IMPL("MovieSceneIntegerSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneIntegerSection")
 	}
 	static class UMovieSceneIntegerSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneIntegerSection>();
 	}
 };
-static_assert(alignof(UMovieSceneIntegerSection) == 0x000008, "Wrong alignment on UMovieSceneIntegerSection");
-static_assert(sizeof(UMovieSceneIntegerSection) == 0x000140, "Wrong size on UMovieSceneIntegerSection");
-static_assert(offsetof(UMovieSceneIntegerSection, IntegerCurve) == 0x0000D0, "Member 'UMovieSceneIntegerSection::IntegerCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilitySection
 // 0x0018 (0x00E0 - 0x00C8)
@@ -704,17 +706,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLevelVisibilitySection">();
+		STATIC_CLASS_IMPL("MovieSceneLevelVisibilitySection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLevelVisibilitySection")
 	}
 	static class UMovieSceneLevelVisibilitySection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLevelVisibilitySection>();
 	}
 };
-static_assert(alignof(UMovieSceneLevelVisibilitySection) == 0x000008, "Wrong alignment on UMovieSceneLevelVisibilitySection");
-static_assert(sizeof(UMovieSceneLevelVisibilitySection) == 0x0000E0, "Wrong size on UMovieSceneLevelVisibilitySection");
-static_assert(offsetof(UMovieSceneLevelVisibilitySection, Visibility) == 0x0000C8, "Member 'UMovieSceneLevelVisibilitySection::Visibility' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLevelVisibilitySection, LevelNames) == 0x0000D0, "Member 'UMovieSceneLevelVisibilitySection::LevelNames' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieScenePropertyTrack
 // 0x0028 (0x00E0 - 0x00B8)
@@ -728,18 +730,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScenePropertyTrack">();
+		STATIC_CLASS_IMPL("MovieScenePropertyTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScenePropertyTrack")
 	}
 	static class UMovieScenePropertyTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScenePropertyTrack>();
 	}
 };
-static_assert(alignof(UMovieScenePropertyTrack) == 0x000008, "Wrong alignment on UMovieScenePropertyTrack");
-static_assert(sizeof(UMovieScenePropertyTrack) == 0x0000E0, "Wrong size on UMovieScenePropertyTrack");
-static_assert(offsetof(UMovieScenePropertyTrack, PropertyName) == 0x0000B8, "Member 'UMovieScenePropertyTrack::PropertyName' has a wrong offset!");
-static_assert(offsetof(UMovieScenePropertyTrack, PropertyPath) == 0x0000C0, "Member 'UMovieScenePropertyTrack::PropertyPath' has a wrong offset!");
-static_assert(offsetof(UMovieScenePropertyTrack, Sections) == 0x0000D0, "Member 'UMovieScenePropertyTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneLevelVisibilityTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -752,16 +753,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLevelVisibilityTrack">();
+		STATIC_CLASS_IMPL("MovieSceneLevelVisibilityTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLevelVisibilityTrack")
 	}
 	static class UMovieSceneLevelVisibilityTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLevelVisibilityTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneLevelVisibilityTrack) == 0x000008, "Wrong alignment on UMovieSceneLevelVisibilityTrack");
-static_assert(sizeof(UMovieSceneLevelVisibilityTrack) == 0x0000D0, "Wrong size on UMovieSceneLevelVisibilityTrack");
-static_assert(offsetof(UMovieSceneLevelVisibilityTrack, Sections) == 0x0000B8, "Member 'UMovieSceneLevelVisibilityTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneParameterSection
 // 0x0038 (0x0100 - 0x00C8)
@@ -776,23 +778,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneParameterSection">();
+		STATIC_CLASS_IMPL("MovieSceneParameterSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneParameterSection")
 	}
 	static class UMovieSceneParameterSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneParameterSection>();
 	}
 };
-static_assert(alignof(UMovieSceneParameterSection) == 0x000008, "Wrong alignment on UMovieSceneParameterSection");
-static_assert(sizeof(UMovieSceneParameterSection) == 0x000100, "Wrong size on UMovieSceneParameterSection");
-static_assert(offsetof(UMovieSceneParameterSection, ScalarParameterNamesAndCurves) == 0x0000C8, "Member 'UMovieSceneParameterSection::ScalarParameterNamesAndCurves' has a wrong offset!");
-static_assert(offsetof(UMovieSceneParameterSection, VectorParameterNamesAndCurves) == 0x0000D8, "Member 'UMovieSceneParameterSection::VectorParameterNamesAndCurves' has a wrong offset!");
-static_assert(offsetof(UMovieSceneParameterSection, ColorParameterNamesAndCurves) == 0x0000E8, "Member 'UMovieSceneParameterSection::ColorParameterNamesAndCurves' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneMaterialTrack
 // 0x0010 (0x00C8 - 0x00B8)
 #pragma pack(push, 0x1)
-class alignas(0x08) UMovieSceneMaterialTrack : public UMovieSceneNameableTrack
+class SDK_ALIGN(0x08) UMovieSceneMaterialTrack : public UMovieSceneNameableTrack
 {
 public:
 	TArray<class UMovieSceneSection*>             Sections;                                          // 0x00B8(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
@@ -800,7 +801,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneMaterialTrack">();
+		STATIC_CLASS_IMPL("MovieSceneMaterialTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneMaterialTrack")
 	}
 	static class UMovieSceneMaterialTrack* GetDefaultObj()
 	{
@@ -808,9 +813,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UMovieSceneMaterialTrack) == 0x000008, "Wrong alignment on UMovieSceneMaterialTrack");
-static_assert(sizeof(UMovieSceneMaterialTrack) == 0x0000C8, "Wrong size on UMovieSceneMaterialTrack");
-static_assert(offsetof(UMovieSceneMaterialTrack, Sections) == 0x0000B8, "Member 'UMovieSceneMaterialTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneComponentMaterialTrack
 // 0x0008 (0x00D0 - 0x00C8)
@@ -823,16 +825,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneComponentMaterialTrack">();
+		STATIC_CLASS_IMPL("MovieSceneComponentMaterialTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneComponentMaterialTrack")
 	}
 	static class UMovieSceneComponentMaterialTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneComponentMaterialTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneComponentMaterialTrack) == 0x000008, "Wrong alignment on UMovieSceneComponentMaterialTrack");
-static_assert(sizeof(UMovieSceneComponentMaterialTrack) == 0x0000D0, "Wrong size on UMovieSceneComponentMaterialTrack");
-static_assert(offsetof(UMovieSceneComponentMaterialTrack, MaterialIndex) == 0x0000C8, "Member 'UMovieSceneComponentMaterialTrack::MaterialIndex' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneParticleParameterTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -845,16 +848,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneParticleParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneParticleParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneParticleParameterTrack")
 	}
 	static class UMovieSceneParticleParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneParticleParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneParticleParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneParticleParameterTrack");
-static_assert(sizeof(UMovieSceneParticleParameterTrack) == 0x0000D0, "Wrong size on UMovieSceneParticleParameterTrack");
-static_assert(offsetof(UMovieSceneParticleParameterTrack, Sections) == 0x0000B8, "Member 'UMovieSceneParticleParameterTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneParticleSection
 // 0x0078 (0x0140 - 0x00C8)
@@ -867,16 +871,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneParticleSection">();
+		STATIC_CLASS_IMPL("MovieSceneParticleSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneParticleSection")
 	}
 	static class UMovieSceneParticleSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneParticleSection>();
 	}
 };
-static_assert(alignof(UMovieSceneParticleSection) == 0x000008, "Wrong alignment on UMovieSceneParticleSection");
-static_assert(sizeof(UMovieSceneParticleSection) == 0x000140, "Wrong size on UMovieSceneParticleSection");
-static_assert(offsetof(UMovieSceneParticleSection, ParticleKeys) == 0x0000C8, "Member 'UMovieSceneParticleSection::ParticleKeys' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneParticleTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -889,16 +894,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneParticleTrack">();
+		STATIC_CLASS_IMPL("MovieSceneParticleTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneParticleTrack")
 	}
 	static class UMovieSceneParticleTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneParticleTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneParticleTrack) == 0x000008, "Wrong alignment on UMovieSceneParticleTrack");
-static_assert(sizeof(UMovieSceneParticleTrack) == 0x0000D0, "Wrong size on UMovieSceneParticleTrack");
-static_assert(offsetof(UMovieSceneParticleTrack, ParticleSections) == 0x0000B8, "Member 'UMovieSceneParticleTrack::ParticleSections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieScene3DTransformTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -907,15 +913,17 @@ class UMovieScene3DTransformTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieScene3DTransformTrack">();
+		STATIC_CLASS_IMPL("MovieScene3DTransformTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieScene3DTransformTrack")
 	}
 	static class UMovieScene3DTransformTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieScene3DTransformTrack>();
 	}
 };
-static_assert(alignof(UMovieScene3DTransformTrack) == 0x000008, "Wrong alignment on UMovieScene3DTransformTrack");
-static_assert(sizeof(UMovieScene3DTransformTrack) == 0x0000E0, "Wrong size on UMovieScene3DTransformTrack");
 
 // Class MovieSceneTracks.MovieSceneActorReferenceTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -924,15 +932,17 @@ class UMovieSceneActorReferenceTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneActorReferenceTrack">();
+		STATIC_CLASS_IMPL("MovieSceneActorReferenceTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneActorReferenceTrack")
 	}
 	static class UMovieSceneActorReferenceTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneActorReferenceTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneActorReferenceTrack) == 0x000008, "Wrong alignment on UMovieSceneActorReferenceTrack");
-static_assert(sizeof(UMovieSceneActorReferenceTrack) == 0x0000E0, "Wrong size on UMovieSceneActorReferenceTrack");
 
 // Class MovieSceneTracks.MovieSceneBoolTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -941,15 +951,17 @@ class UMovieSceneBoolTrack : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneBoolTrack">();
+		STATIC_CLASS_IMPL("MovieSceneBoolTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneBoolTrack")
 	}
 	static class UMovieSceneBoolTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneBoolTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneBoolTrack) == 0x000008, "Wrong alignment on UMovieSceneBoolTrack");
-static_assert(sizeof(UMovieSceneBoolTrack) == 0x0000E0, "Wrong size on UMovieSceneBoolTrack");
 
 // Class MovieSceneTracks.MovieSceneVisibilityTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -958,15 +970,17 @@ class UMovieSceneVisibilityTrack final : public UMovieSceneBoolTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneVisibilityTrack">();
+		STATIC_CLASS_IMPL("MovieSceneVisibilityTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneVisibilityTrack")
 	}
 	static class UMovieSceneVisibilityTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneVisibilityTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneVisibilityTrack) == 0x000008, "Wrong alignment on UMovieSceneVisibilityTrack");
-static_assert(sizeof(UMovieSceneVisibilityTrack) == 0x0000E0, "Wrong size on UMovieSceneVisibilityTrack");
 
 // Class MovieSceneTracks.MovieSceneByteTrack
 // 0x0010 (0x00F0 - 0x00E0)
@@ -979,16 +993,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneByteTrack">();
+		STATIC_CLASS_IMPL("MovieSceneByteTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneByteTrack")
 	}
 	static class UMovieSceneByteTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneByteTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneByteTrack) == 0x000008, "Wrong alignment on UMovieSceneByteTrack");
-static_assert(sizeof(UMovieSceneByteTrack) == 0x0000F0, "Wrong size on UMovieSceneByteTrack");
-static_assert(offsetof(UMovieSceneByteTrack, Enum) == 0x0000E0, "Member 'UMovieSceneByteTrack::Enum' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneColorTrack
 // 0x0010 (0x00F0 - 0x00E0)
@@ -1001,16 +1016,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneColorTrack">();
+		STATIC_CLASS_IMPL("MovieSceneColorTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneColorTrack")
 	}
 	static class UMovieSceneColorTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneColorTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneColorTrack) == 0x000008, "Wrong alignment on UMovieSceneColorTrack");
-static_assert(sizeof(UMovieSceneColorTrack) == 0x0000F0, "Wrong size on UMovieSceneColorTrack");
-static_assert(offsetof(UMovieSceneColorTrack, bIsSlateColor) == 0x0000E0, "Member 'UMovieSceneColorTrack::bIsSlateColor' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneEnumTrack
 // 0x0010 (0x00F0 - 0x00E0)
@@ -1023,16 +1039,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneEnumTrack">();
+		STATIC_CLASS_IMPL("MovieSceneEnumTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneEnumTrack")
 	}
 	static class UMovieSceneEnumTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneEnumTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneEnumTrack) == 0x000008, "Wrong alignment on UMovieSceneEnumTrack");
-static_assert(sizeof(UMovieSceneEnumTrack) == 0x0000F0, "Wrong size on UMovieSceneEnumTrack");
-static_assert(offsetof(UMovieSceneEnumTrack, Enum) == 0x0000E0, "Member 'UMovieSceneEnumTrack::Enum' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneFloatTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -1041,15 +1058,17 @@ class UMovieSceneFloatTrack : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneFloatTrack">();
+		STATIC_CLASS_IMPL("MovieSceneFloatTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneFloatTrack")
 	}
 	static class UMovieSceneFloatTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneFloatTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneFloatTrack) == 0x000008, "Wrong alignment on UMovieSceneFloatTrack");
-static_assert(sizeof(UMovieSceneFloatTrack) == 0x0000E0, "Wrong size on UMovieSceneFloatTrack");
 
 // Class MovieSceneTracks.MovieSceneFadeTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -1058,15 +1077,17 @@ class UMovieSceneFadeTrack final : public UMovieSceneFloatTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneFadeTrack">();
+		STATIC_CLASS_IMPL("MovieSceneFadeTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneFadeTrack")
 	}
 	static class UMovieSceneFadeTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneFadeTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneFadeTrack) == 0x000008, "Wrong alignment on UMovieSceneFadeTrack");
-static_assert(sizeof(UMovieSceneFadeTrack) == 0x0000E0, "Wrong size on UMovieSceneFadeTrack");
 
 // Class MovieSceneTracks.MovieSceneSlomoTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -1075,15 +1096,17 @@ class UMovieSceneSlomoTrack final : public UMovieSceneFloatTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSlomoTrack">();
+		STATIC_CLASS_IMPL("MovieSceneSlomoTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSlomoTrack")
 	}
 	static class UMovieSceneSlomoTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSlomoTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneSlomoTrack) == 0x000008, "Wrong alignment on UMovieSceneSlomoTrack");
-static_assert(sizeof(UMovieSceneSlomoTrack) == 0x0000E0, "Wrong size on UMovieSceneSlomoTrack");
 
 // Class MovieSceneTracks.MovieSceneIntegerTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -1092,15 +1115,17 @@ class UMovieSceneIntegerTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneIntegerTrack">();
+		STATIC_CLASS_IMPL("MovieSceneIntegerTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneIntegerTrack")
 	}
 	static class UMovieSceneIntegerTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneIntegerTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneIntegerTrack) == 0x000008, "Wrong alignment on UMovieSceneIntegerTrack");
-static_assert(sizeof(UMovieSceneIntegerTrack) == 0x0000E0, "Wrong size on UMovieSceneIntegerTrack");
 
 // Class MovieSceneTracks.MovieSceneStringTrack
 // 0x0000 (0x00E0 - 0x00E0)
@@ -1109,15 +1134,17 @@ class UMovieSceneStringTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneStringTrack">();
+		STATIC_CLASS_IMPL("MovieSceneStringTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneStringTrack")
 	}
 	static class UMovieSceneStringTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneStringTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneStringTrack) == 0x000008, "Wrong alignment on UMovieSceneStringTrack");
-static_assert(sizeof(UMovieSceneStringTrack) == 0x0000E0, "Wrong size on UMovieSceneStringTrack");
 
 // Class MovieSceneTracks.MovieSceneVectorTrack
 // 0x0010 (0x00F0 - 0x00E0)
@@ -1130,16 +1157,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneVectorTrack">();
+		STATIC_CLASS_IMPL("MovieSceneVectorTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneVectorTrack")
 	}
 	static class UMovieSceneVectorTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneVectorTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneVectorTrack) == 0x000008, "Wrong alignment on UMovieSceneVectorTrack");
-static_assert(sizeof(UMovieSceneVectorTrack) == 0x0000F0, "Wrong size on UMovieSceneVectorTrack");
-static_assert(offsetof(UMovieSceneVectorTrack, NumChannelsUsed) == 0x0000E0, "Member 'UMovieSceneVectorTrack::NumChannelsUsed' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSkeletalAnimationSection
 // 0x00B8 (0x0180 - 0x00C8)
@@ -1159,22 +1187,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSkeletalAnimationSection">();
+		STATIC_CLASS_IMPL("MovieSceneSkeletalAnimationSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSkeletalAnimationSection")
 	}
 	static class UMovieSceneSkeletalAnimationSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSkeletalAnimationSection>();
 	}
 };
-static_assert(alignof(UMovieSceneSkeletalAnimationSection) == 0x000008, "Wrong alignment on UMovieSceneSkeletalAnimationSection");
-static_assert(sizeof(UMovieSceneSkeletalAnimationSection) == 0x000180, "Wrong size on UMovieSceneSkeletalAnimationSection");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, Params_0) == 0x0000C8, "Member 'UMovieSceneSkeletalAnimationSection::Params_0' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, AnimSequence) == 0x000158, "Member 'UMovieSceneSkeletalAnimationSection::AnimSequence' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, Animation) == 0x000160, "Member 'UMovieSceneSkeletalAnimationSection::Animation' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, StartOffset) == 0x000168, "Member 'UMovieSceneSkeletalAnimationSection::StartOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, EndOffset) == 0x00016C, "Member 'UMovieSceneSkeletalAnimationSection::EndOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, PlayRate) == 0x000170, "Member 'UMovieSceneSkeletalAnimationSection::PlayRate' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSkeletalAnimationSection, SlotName) == 0x000178, "Member 'UMovieSceneSkeletalAnimationSection::SlotName' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSkeletalAnimationTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -1187,16 +1210,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSkeletalAnimationTrack">();
+		STATIC_CLASS_IMPL("MovieSceneSkeletalAnimationTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSkeletalAnimationTrack")
 	}
 	static class UMovieSceneSkeletalAnimationTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSkeletalAnimationTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneSkeletalAnimationTrack) == 0x000008, "Wrong alignment on UMovieSceneSkeletalAnimationTrack");
-static_assert(sizeof(UMovieSceneSkeletalAnimationTrack) == 0x0000D0, "Wrong size on UMovieSceneSkeletalAnimationTrack");
-static_assert(offsetof(UMovieSceneSkeletalAnimationTrack, AnimationSections) == 0x0000B8, "Member 'UMovieSceneSkeletalAnimationTrack::AnimationSections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneStringSection
 // 0x0088 (0x0150 - 0x00C8)
@@ -1210,16 +1234,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneStringSection">();
+		STATIC_CLASS_IMPL("MovieSceneStringSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneStringSection")
 	}
 	static class UMovieSceneStringSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneStringSection>();
 	}
 };
-static_assert(alignof(UMovieSceneStringSection) == 0x000008, "Wrong alignment on UMovieSceneStringSection");
-static_assert(sizeof(UMovieSceneStringSection) == 0x000150, "Wrong size on UMovieSceneStringSection");
-static_assert(offsetof(UMovieSceneStringSection, StringCurve) == 0x0000D0, "Member 'UMovieSceneStringSection::StringCurve' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSubSection
 // 0x0068 (0x0130 - 0x00C8)
@@ -1240,23 +1265,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSubSection">();
+		STATIC_CLASS_IMPL("MovieSceneSubSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSubSection")
 	}
 	static class UMovieSceneSubSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSubSection>();
 	}
 };
-static_assert(alignof(UMovieSceneSubSection) == 0x000008, "Wrong alignment on UMovieSceneSubSection");
-static_assert(sizeof(UMovieSceneSubSection) == 0x000130, "Wrong size on UMovieSceneSubSection");
-static_assert(offsetof(UMovieSceneSubSection, Parameters) == 0x0000C8, "Member 'UMovieSceneSubSection::Parameters' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, StartOffset) == 0x0000D8, "Member 'UMovieSceneSubSection::StartOffset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, TimeScale) == 0x0000DC, "Member 'UMovieSceneSubSection::TimeScale' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, PrerollTime) == 0x0000E0, "Member 'UMovieSceneSubSection::PrerollTime' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, SubSequence) == 0x0000E8, "Member 'UMovieSceneSubSection::SubSequence' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, ActorToRecord) == 0x0000F0, "Member 'UMovieSceneSubSection::ActorToRecord' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, TargetSequenceName) == 0x000110, "Member 'UMovieSceneSubSection::TargetSequenceName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneSubSection, TargetPathToRecordTo) == 0x000120, "Member 'UMovieSceneSubSection::TargetPathToRecordTo' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCinematicShotSection
 // 0x0020 (0x0150 - 0x0130)
@@ -1269,16 +1288,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCinematicShotSection">();
+		STATIC_CLASS_IMPL("MovieSceneCinematicShotSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCinematicShotSection")
 	}
 	static class UMovieSceneCinematicShotSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCinematicShotSection>();
 	}
 };
-static_assert(alignof(UMovieSceneCinematicShotSection) == 0x000008, "Wrong alignment on UMovieSceneCinematicShotSection");
-static_assert(sizeof(UMovieSceneCinematicShotSection) == 0x000150, "Wrong size on UMovieSceneCinematicShotSection");
-static_assert(offsetof(UMovieSceneCinematicShotSection, DisplayName) == 0x000130, "Member 'UMovieSceneCinematicShotSection::DisplayName' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneSubTrack
 // 0x0018 (0x00D0 - 0x00B8)
@@ -1291,16 +1311,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneSubTrack">();
+		STATIC_CLASS_IMPL("MovieSceneSubTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneSubTrack")
 	}
 	static class UMovieSceneSubTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneSubTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneSubTrack) == 0x000008, "Wrong alignment on UMovieSceneSubTrack");
-static_assert(sizeof(UMovieSceneSubTrack) == 0x0000D0, "Wrong size on UMovieSceneSubTrack");
-static_assert(offsetof(UMovieSceneSubTrack, Sections) == 0x0000B8, "Member 'UMovieSceneSubTrack::Sections' has a wrong offset!");
 
 // Class MovieSceneTracks.MovieSceneCinematicShotTrack
 // 0x0000 (0x00D0 - 0x00D0)
@@ -1309,15 +1330,17 @@ class UMovieSceneCinematicShotTrack final : public UMovieSceneSubTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCinematicShotTrack">();
+		STATIC_CLASS_IMPL("MovieSceneCinematicShotTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCinematicShotTrack")
 	}
 	static class UMovieSceneCinematicShotTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCinematicShotTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneCinematicShotTrack) == 0x000008, "Wrong alignment on UMovieSceneCinematicShotTrack");
-static_assert(sizeof(UMovieSceneCinematicShotTrack) == 0x0000D0, "Wrong size on UMovieSceneCinematicShotTrack");
 
 // Class MovieSceneTracks.MovieSceneVectorSection
 // 0x01D8 (0x02A0 - 0x00C8)
@@ -1332,17 +1355,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneVectorSection">();
+		STATIC_CLASS_IMPL("MovieSceneVectorSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneVectorSection")
 	}
 	static class UMovieSceneVectorSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneVectorSection>();
 	}
 };
-static_assert(alignof(UMovieSceneVectorSection) == 0x000008, "Wrong alignment on UMovieSceneVectorSection");
-static_assert(sizeof(UMovieSceneVectorSection) == 0x0002A0, "Wrong size on UMovieSceneVectorSection");
-static_assert(offsetof(UMovieSceneVectorSection, Curves) == 0x0000D0, "Member 'UMovieSceneVectorSection::Curves' has a wrong offset!");
-static_assert(offsetof(UMovieSceneVectorSection, ChannelsUsed) == 0x000290, "Member 'UMovieSceneVectorSection::ChannelsUsed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

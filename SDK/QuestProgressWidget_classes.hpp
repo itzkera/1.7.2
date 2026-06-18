@@ -14,8 +14,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestProgressWidget.QuestProgressWidget_C
 // 0x0010 (0x0248 - 0x0238)
@@ -31,17 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestProgressWidget_C">();
+		BP_STATIC_CLASS_IMPL("QuestProgressWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestProgressWidget_C")
 	}
 	static class UQuestProgressWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestProgressWidget_C>();
 	}
 };
-static_assert(alignof(UQuestProgressWidget_C) == 0x000008, "Wrong alignment on UQuestProgressWidget_C");
-static_assert(sizeof(UQuestProgressWidget_C) == 0x000248, "Wrong size on UQuestProgressWidget_C");
-static_assert(offsetof(UQuestProgressWidget_C, _ProgressBar__Quest_Progress) == 0x000238, "Member 'UQuestProgressWidget_C::_ProgressBar__Quest_Progress' has a wrong offset!");
-static_assert(offsetof(UQuestProgressWidget_C, ProgressValue) == 0x000240, "Member 'UQuestProgressWidget_C::ProgressValue' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "QuickbarPrimary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuickbarPrimary.QuickbarPrimary_C.ExecuteUbergraph_QuickbarPrimary
 // ()
@@ -136,7 +135,7 @@ void UQuickbarPrimary_C::Show_Primary_Quickbar_Rail(bool Show)
 // Function QuickbarPrimary.QuickbarPrimary_C.HasOneNonHarvestWeapon
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    HasNonHarvestWeapon                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HasNonHarvestWeapon                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuickbarPrimary_C::HasOneNonHarvestWeapon(bool* HasNonHarvestWeapon)
 {
@@ -153,5 +152,5 @@ void UQuickbarPrimary_C::HasOneNonHarvestWeapon(bool* HasNonHarvestWeapon)
 		*HasNonHarvestWeapon = Parms.HasNonHarvestWeapon;
 }
 
-}
 
+SDK_NAMESPACE_END

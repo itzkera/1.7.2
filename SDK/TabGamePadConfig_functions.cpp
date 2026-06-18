@@ -14,8 +14,7 @@
 #include "TabGamePadConfig_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabGamePadConfig.TabGamePadConfig_C.ExecuteUbergraph_TabGamePadConfig
 // ()
@@ -194,5 +193,5 @@ void UTabGamePadConfig_C::HandleGamepadMappingInfoChange()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

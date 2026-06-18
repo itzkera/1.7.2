@@ -14,8 +14,7 @@
 #include "MissionTracker_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionTracker.MissionTracker_C.ExecuteUbergraph_MissionTracker
 // ()
@@ -126,5 +125,5 @@ void UMissionTracker_C::HandlePinnedQuestsChanged()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

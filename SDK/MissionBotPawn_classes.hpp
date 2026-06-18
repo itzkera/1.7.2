@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MissionBotPawn.MissionBotPawn_C
 // 0x0000 (0x1AF0 - 0x1AF0)
@@ -23,15 +22,16 @@ class AMissionBotPawn_C final : public AFortBotPawn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionBotPawn_C">();
+		BP_STATIC_CLASS_IMPL("MissionBotPawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionBotPawn_C")
 	}
 	static class AMissionBotPawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMissionBotPawn_C>();
 	}
 };
-static_assert(alignof(AMissionBotPawn_C) == 0x000010, "Wrong alignment on AMissionBotPawn_C");
-static_assert(sizeof(AMissionBotPawn_C) == 0x001AF0, "Wrong size on AMissionBotPawn_C");
 
-}
-
+SDK_NAMESPACE_END

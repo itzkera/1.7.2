@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CCTeamStatsGameplayEffect.CCTeamStatsGameplayEffect_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UCCTeamStatsGameplayEffect_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CCTeamStatsGameplayEffect_C">();
+		BP_STATIC_CLASS_IMPL("CCTeamStatsGameplayEffect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CCTeamStatsGameplayEffect_C")
 	}
 	static class UCCTeamStatsGameplayEffect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCCTeamStatsGameplayEffect_C>();
 	}
 };
-static_assert(alignof(UCCTeamStatsGameplayEffect_C) == 0x000010, "Wrong alignment on UCCTeamStatsGameplayEffect_C");
-static_assert(sizeof(UCCTeamStatsGameplayEffect_C) == 0x000660, "Wrong size on UCCTeamStatsGameplayEffect_C");
 
-}
-
+SDK_NAMESPACE_END

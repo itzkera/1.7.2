@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Announce_HeadshotStreak_5x.Announce_HeadshotStreak_5x_C.ExecuteUbergraph_Announce_HeadshotStreak_5x
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x) == 0x000004, "Wrong alignment on Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x");
-static_assert(sizeof(Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x) == 0x000004, "Wrong size on Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x");
-static_assert(offsetof(Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x, EntryPoint) == 0x000000, "Member 'Announce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

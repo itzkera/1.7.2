@@ -13,8 +13,7 @@
 #include "Threat_RainAttachedToPlayer_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Threat_RainAttachedToPlayer.Threat_RainAttachedToPlayer_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
@@ -29,5 +28,5 @@ void AThreat_RainAttachedToPlayer_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

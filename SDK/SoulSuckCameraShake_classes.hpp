@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SoulSuckCameraShake.SoulSuckCameraShake_C
 // 0x0000 (0x0160 - 0x0160)
@@ -23,15 +22,16 @@ class USoulSuckCameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SoulSuckCameraShake_C">();
+		BP_STATIC_CLASS_IMPL("SoulSuckCameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoulSuckCameraShake_C")
 	}
 	static class USoulSuckCameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoulSuckCameraShake_C>();
 	}
 };
-static_assert(alignof(USoulSuckCameraShake_C) == 0x000008, "Wrong alignment on USoulSuckCameraShake_C");
-static_assert(sizeof(USoulSuckCameraShake_C) == 0x000160, "Wrong size on USoulSuckCameraShake_C");
 
-}
-
+SDK_NAMESPACE_END

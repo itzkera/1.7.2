@@ -14,8 +14,7 @@
 #include "AthenaStatsRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaStatsRow.AthenaStatsRow_C.ExecuteUbergraph_AthenaStatsRow
 // ()
@@ -60,7 +59,7 @@ void UAthenaStatsRow_C::PreConstruct(bool IsDesignTime)
 // Function AthenaStatsRow.AthenaStatsRow_C.SetStatValueAsText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             StatValue                                              (Parm)
+// const class FText&                      StatValue                                              (Parm)
 
 void UAthenaStatsRow_C::SetStatValueAsText(const class FText& StatValue)
 {
@@ -76,5 +75,5 @@ void UAthenaStatsRow_C::SetStatValueAsText(const class FText& StatValue)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

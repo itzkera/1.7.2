@@ -14,8 +14,7 @@
 #include "MissionObjectiveProgressBarsManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.UpdateObjectiveProgressBars
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -140,7 +139,7 @@ void UMissionObjectiveProgressBarsManager_C::HandleUpdate(class AFortMissionStat
 // Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.GetHeightEstimate
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Height                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMissionObjectiveProgressBarsManager_C::GetHeightEstimate(float* Height)
 {
@@ -157,5 +156,5 @@ void UMissionObjectiveProgressBarsManager_C::GetHeightEstimate(float* Height)
 		*Height = Parms.Height;
 }
 
-}
 
+SDK_NAMESPACE_END

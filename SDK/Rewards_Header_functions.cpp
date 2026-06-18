@@ -14,8 +14,7 @@
 #include "Rewards_Header_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Rewards_Header.Rewards_Header_C.ExecuteUbergraph_Rewards_Header
 // ()
@@ -124,7 +123,7 @@ void URewards_Header_C::ResetSubHeader()
 // Parameters:
 // EFrontEndRewardType                     Selection                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // ECollectionBookRewardType               CollectionBookRewardType                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             RewardDetailText                                       (Parm)
+// const class FText&                      RewardDetailText                                       (Parm)
 
 void URewards_Header_C::PopulateFromRewardType(EFrontEndRewardType Selection, ECollectionBookRewardType CollectionBookRewardType, const class FText& RewardDetailText)
 {
@@ -170,5 +169,5 @@ void URewards_Header_C::SkipFadeInSubHeaderAnimation()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

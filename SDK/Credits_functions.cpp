@@ -14,8 +14,7 @@
 #include "Credits_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Credits.Credits_C.ExecuteUbergraph_Credits
 // ()
@@ -96,7 +95,7 @@ void UCredits_C::HandleFadeInFinished()
 // Function Credits.Credits_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCredits_C::HandleBack(bool* PassThrough)
 {
@@ -175,5 +174,5 @@ void UCredits_C::Reset()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

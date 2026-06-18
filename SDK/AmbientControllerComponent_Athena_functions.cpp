@@ -14,8 +14,7 @@
 #include "AmbientControllerComponent_Athena_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.ExecuteUbergraph_AmbientControllerComponent_Athena
 // (HasDefaults)
@@ -240,8 +239,8 @@ void UAmbientControllerComponent_Athena_C::Crossfade(class USoundBase* NewSound)
 // Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Trace
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Start                                                  (ConstParm, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Direction                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Start                                                  (ConstParm, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Direction                                              (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UAmbientControllerComponent_Athena_C::Trace(const struct FVector& Start, const struct FVector& Direction)
@@ -301,5 +300,5 @@ void UAmbientControllerComponent_Athena_C::SetTargetLPFFreq(float Target)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

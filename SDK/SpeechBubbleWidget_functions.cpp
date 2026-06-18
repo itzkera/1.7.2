@@ -14,8 +14,7 @@
 #include "SpeechBubbleWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SpeechBubbleWidget.SpeechBubbleWidget_C.ExecuteUbergraph_SpeechBubbleWidget
 // (HasDefaults)
@@ -56,5 +55,5 @@ void USpeechBubbleWidget_C::InitFromObject(class UObject* InitObject)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

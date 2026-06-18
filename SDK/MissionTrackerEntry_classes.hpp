@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionTrackerEntry.MissionTrackerEntry_C
 // 0x0018 (0x02F8 - 0x02E0)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionTrackerEntry_C">();
+		BP_STATIC_CLASS_IMPL("MissionTrackerEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionTrackerEntry_C")
 	}
 	static class UMissionTrackerEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionTrackerEntry_C>();
 	}
 };
-static_assert(alignof(UMissionTrackerEntry_C) == 0x000008, "Wrong alignment on UMissionTrackerEntry_C");
-static_assert(sizeof(UMissionTrackerEntry_C) == 0x0002F8, "Wrong size on UMissionTrackerEntry_C");
-static_assert(offsetof(UMissionTrackerEntry_C, UberGraphFrame) == 0x0002E0, "Member 'UMissionTrackerEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionTrackerEntry_C, WidgetVisibilityChanged) == 0x0002E8, "Member 'UMissionTrackerEntry_C::WidgetVisibilityChanged' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

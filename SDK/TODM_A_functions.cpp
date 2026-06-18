@@ -14,8 +14,7 @@
 #include "TODM_A_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TODM_A.TODM_A_C.ExecuteUbergraph_TODM_A
 // (HasDefaults)
@@ -224,5 +223,5 @@ void ATODM_A_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

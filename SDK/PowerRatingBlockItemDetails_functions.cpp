@@ -14,8 +14,7 @@
 #include "PowerRatingBlockItemDetails_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValue
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -108,5 +107,5 @@ void UPowerRatingBlockItemDetails_C::ClearComparison()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

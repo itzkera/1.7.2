@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FullPartyMemberConnected.FullPartyMemberConnected_C
 // 0x01D8 (0x0410 - 0x0238)
@@ -46,25 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FullPartyMemberConnected_C">();
+		BP_STATIC_CLASS_IMPL("FullPartyMemberConnected_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FullPartyMemberConnected_C")
 	}
 	static class UFullPartyMemberConnected_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFullPartyMemberConnected_C>();
 	}
 };
-static_assert(alignof(UFullPartyMemberConnected_C) == 0x000008, "Wrong alignment on UFullPartyMemberConnected_C");
-static_assert(sizeof(UFullPartyMemberConnected_C) == 0x000410, "Wrong size on UFullPartyMemberConnected_C");
-static_assert(offsetof(UFullPartyMemberConnected_C, UberGraphFrame) == 0x000238, "Member 'UFullPartyMemberConnected_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, CONNECTED) == 0x000240, "Member 'UFullPartyMemberConnected_C::CONNECTED' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, Image_112) == 0x000248, "Member 'UFullPartyMemberConnected_C::Image_112' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, LeaderImageOverlay) == 0x000250, "Member 'UFullPartyMemberConnected_C::LeaderImageOverlay' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, PlayerBanner_118) == 0x000258, "Member 'UFullPartyMemberConnected_C::PlayerBanner_118' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, PlayerHBRating) == 0x000260, "Member 'UFullPartyMemberConnected_C::PlayerHBRating' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, PlayerName) == 0x000268, "Member 'UFullPartyMemberConnected_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, PlayerNameNonParty) == 0x000270, "Member 'UFullPartyMemberConnected_C::PlayerNameNonParty' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, MemberInfo) == 0x000278, "Member 'UFullPartyMemberConnected_C::MemberInfo' has a wrong offset!");
-static_assert(offsetof(UFullPartyMemberConnected_C, Dimensions) == 0x000408, "Member 'UFullPartyMemberConnected_C::Dimensions' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

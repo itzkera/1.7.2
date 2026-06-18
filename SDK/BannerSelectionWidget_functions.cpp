@@ -14,8 +14,7 @@
 #include "BannerSelectionWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BannerSelectionWidget.BannerSelectionWidget_C.ExecuteUbergraph_BannerSelectionWidget
 // (HasDefaults)
@@ -152,7 +151,7 @@ void UBannerSelectionWidget_C::Construct()
 // Function BannerSelectionWidget.BannerSelectionWidget_C.HandlePreviousCategoryAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBannerSelectionWidget_C::HandlePreviousCategoryAction(bool* bPassThrough)
 {
@@ -173,7 +172,7 @@ void UBannerSelectionWidget_C::HandlePreviousCategoryAction(bool* bPassThrough)
 // Function BannerSelectionWidget.BannerSelectionWidget_C.HandleNextCategoryAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBannerSelectionWidget_C::HandleNextCategoryAction(bool* bPassThrough)
 {
@@ -190,5 +189,5 @@ void UBannerSelectionWidget_C::HandleNextCategoryAction(bool* bPassThrough)
 		*bPassThrough = Parms.bPassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

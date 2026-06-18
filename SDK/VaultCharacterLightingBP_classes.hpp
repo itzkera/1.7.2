@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass VaultCharacterLightingBP.VaultCharacterLightingBP_C
 // 0x0078 (0x0400 - 0x0388)
@@ -47,30 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultCharacterLightingBP_C">();
+		BP_STATIC_CLASS_IMPL("VaultCharacterLightingBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultCharacterLightingBP_C")
 	}
 	static class AVaultCharacterLightingBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultCharacterLightingBP_C>();
 	}
 };
-static_assert(alignof(AVaultCharacterLightingBP_C) == 0x000008, "Wrong alignment on AVaultCharacterLightingBP_C");
-static_assert(sizeof(AVaultCharacterLightingBP_C) == 0x000400, "Wrong size on AVaultCharacterLightingBP_C");
-static_assert(offsetof(AVaultCharacterLightingBP_C, UberGraphFrame) == 0x000388, "Member 'AVaultCharacterLightingBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SkyLightLowSettings) == 0x000390, "Member 'AVaultCharacterLightingBP_C::SkyLightLowSettings' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SkyLight) == 0x000398, "Member 'AVaultCharacterLightingBP_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent010) == 0x0003A0, "Member 'AVaultCharacterLightingBP_C::LightComponent010' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent09) == 0x0003A8, "Member 'AVaultCharacterLightingBP_C::LightComponent09' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent08) == 0x0003B0, "Member 'AVaultCharacterLightingBP_C::LightComponent08' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent07) == 0x0003B8, "Member 'AVaultCharacterLightingBP_C::LightComponent07' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent06) == 0x0003C0, "Member 'AVaultCharacterLightingBP_C::LightComponent06' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent05) == 0x0003C8, "Member 'AVaultCharacterLightingBP_C::LightComponent05' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent04) == 0x0003D0, "Member 'AVaultCharacterLightingBP_C::LightComponent04' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent03) == 0x0003D8, "Member 'AVaultCharacterLightingBP_C::LightComponent03' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent02) == 0x0003E0, "Member 'AVaultCharacterLightingBP_C::LightComponent02' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent01) == 0x0003E8, "Member 'AVaultCharacterLightingBP_C::LightComponent01' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, LightComponent0) == 0x0003F0, "Member 'AVaultCharacterLightingBP_C::LightComponent0' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SharedRoot) == 0x0003F8, "Member 'AVaultCharacterLightingBP_C::SharedRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

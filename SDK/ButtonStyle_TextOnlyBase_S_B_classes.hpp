@@ -13,8 +13,7 @@
 #include "ButtonStyle_TextOnlyBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-TextOnlyBase_S-B.ButtonStyle-TextOnlyBase_S-B_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_TextOnlyBase_S_B_C final : public UButtonStyle_TextOnlyBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-TextOnlyBase_S-B_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-TextOnlyBase_S-B_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-TextOnlyBase_S-B_C")
 	}
 	static class UButtonStyle_TextOnlyBase_S_B_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_TextOnlyBase_S_B_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_TextOnlyBase_S_B_C) == 0x000008, "Wrong alignment on UButtonStyle_TextOnlyBase_S_B_C");
-static_assert(sizeof(UButtonStyle_TextOnlyBase_S_B_C) == 0x000530, "Wrong size on UButtonStyle_TextOnlyBase_S_B_C");
 
-}
-
+SDK_NAMESPACE_END

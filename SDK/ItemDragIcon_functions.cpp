@@ -14,8 +14,7 @@
 #include "ItemDragIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDragIcon.ItemDragIcon_C.ExecuteUbergraph_ItemDragIcon
 // ()
@@ -50,5 +49,5 @@ void UItemDragIcon_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

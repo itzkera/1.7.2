@@ -14,16 +14,15 @@
 #include "BannerLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BannerLibrary.BannerLibrary_C.GenericUpdateMaterial
 // (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UMaterialInstanceDynamic*         Target                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture*                         BannerIcon                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     BG_PrimaryColor                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     BG_SecondaryColor                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              BG_PrimaryColor                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              BG_SecondaryColor                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture*                         ShapeIcon                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -51,8 +50,8 @@ void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Tar
 // (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UMaterialInstanceDynamic*         Material                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     PrimaryBGColor                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     SecondaryBGColor                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              PrimaryBGColor                                         (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              SecondaryBGColor                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynamic* Material, const struct FLinearColor& PrimaryBGColor, const struct FLinearColor& SecondaryBGColor, class UObject* __WorldContext)
@@ -127,7 +126,7 @@ void UBannerLibrary_C::UpdateBannerMeshMaterial_New(class UMaterialInstanceDynam
 // (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UImage*                           Banner_material                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortHomeBaseInfo                Image_info                                             (Parm)
+// const struct FFortHomeBaseInfo&         Image_info                                             (Parm)
 // bool                                    Is_Icon                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -152,12 +151,12 @@ void UBannerLibrary_C::UpdateMaterial_New(class UImage* Banner_material, const s
 // Function BannerLibrary.BannerLibrary_C.Get Icon Texture and Colors
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           BannerIconId                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString                           BannerColorId                                          (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    BannerIconId                                           (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    BannerColorId                                          (Parm, ZeroConstructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Icon                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     PrimaryColor                                           (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Secondary_Color                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D**                      Icon                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    PrimaryColor                                           (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Secondary_Color                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBannerLibrary_C::Get_Icon_Texture_and_Colors(const class FString& BannerIconId, const class FString& BannerColorId, class UObject* __WorldContext, class UTexture2D** Icon, struct FLinearColor* PrimaryColor, struct FLinearColor* Secondary_Color)
 {
@@ -190,7 +189,7 @@ void UBannerLibrary_C::Get_Icon_Texture_and_Colors(const class FString& BannerIc
 // Parameters:
 // class UMaterialInstanceDynamic*         Material_Instance_Dynamic                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    UseIconMask                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FUniqueNetIdRepl                 UniqueId                                               (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          UniqueId                                               (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBannerLibrary_C::UpdateBannerMeshMaterialForUniqueId_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, const struct FUniqueNetIdRepl& UniqueId, class UObject* __WorldContext)
@@ -210,5 +209,5 @@ void UBannerLibrary_C::UpdateBannerMeshMaterialForUniqueId_New(class UMaterialIn
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

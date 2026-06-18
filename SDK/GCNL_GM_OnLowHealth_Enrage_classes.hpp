@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C
 // 0x0018 (0x0480 - 0x0468)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_GM_OnLowHealth_Enrage_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_GM_OnLowHealth_Enrage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_GM_OnLowHealth_Enrage_C")
 	}
 	static class AGCNL_GM_OnLowHealth_Enrage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_GM_OnLowHealth_Enrage_C>();
 	}
 };
-static_assert(alignof(AGCNL_GM_OnLowHealth_Enrage_C) == 0x000008, "Wrong alignment on AGCNL_GM_OnLowHealth_Enrage_C");
-static_assert(sizeof(AGCNL_GM_OnLowHealth_Enrage_C) == 0x000480, "Wrong size on AGCNL_GM_OnLowHealth_Enrage_C");
-static_assert(offsetof(AGCNL_GM_OnLowHealth_Enrage_C, BodyMistFX) == 0x000468, "Member 'AGCNL_GM_OnLowHealth_Enrage_C::BodyMistFX' has a wrong offset!");
-static_assert(offsetof(AGCNL_GM_OnLowHealth_Enrage_C, Hand_Trail_L) == 0x000470, "Member 'AGCNL_GM_OnLowHealth_Enrage_C::Hand_Trail_L' has a wrong offset!");
-static_assert(offsetof(AGCNL_GM_OnLowHealth_Enrage_C, HandTrailR) == 0x000478, "Member 'AGCNL_GM_OnLowHealth_Enrage_C::HandTrailR' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

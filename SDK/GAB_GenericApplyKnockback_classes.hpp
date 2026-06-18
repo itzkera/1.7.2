@@ -17,8 +17,7 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C
 // 0x00E0 (0x0B20 - 0x0A40)
@@ -91,45 +90,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_GenericApplyKnockback_C">();
+		BP_STATIC_CLASS_IMPL("GAB_GenericApplyKnockback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_GenericApplyKnockback_C")
 	}
 	static class UGAB_GenericApplyKnockback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_GenericApplyKnockback_C>();
 	}
 };
-static_assert(alignof(UGAB_GenericApplyKnockback_C) == 0x000008, "Wrong alignment on UGAB_GenericApplyKnockback_C");
-static_assert(sizeof(UGAB_GenericApplyKnockback_C) == 0x000B20, "Wrong size on UGAB_GenericApplyKnockback_C");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_GenericApplyKnockback_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, GE_TransferKnockback) == 0x000A48, "Member 'UGAB_GenericApplyKnockback_C::GE_TransferKnockback' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, GE_KnockbackActive) == 0x000A50, "Member 'UGAB_GenericApplyKnockback_C::GE_KnockbackActive' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackPropagationThreshold) == 0x000A58, "Member 'UGAB_GenericApplyKnockback_C::KnockbackPropagationThreshold' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackUpMontage) == 0x000A60, "Member 'UGAB_GenericApplyKnockback_C::KnockbackUpMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackUpMontageSection) == 0x000A68, "Member 'UGAB_GenericApplyKnockback_C::KnockbackUpMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackDownMontage) == 0x000A70, "Member 'UGAB_GenericApplyKnockback_C::KnockbackDownMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackDownMontageSection) == 0x000A78, "Member 'UGAB_GenericApplyKnockback_C::KnockbackDownMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackLandMontage) == 0x000A80, "Member 'UGAB_GenericApplyKnockback_C::KnockbackLandMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackLandMontageSection) == 0x000A88, "Member 'UGAB_GenericApplyKnockback_C::KnockbackLandMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackLandToIdleMontage) == 0x000A90, "Member 'UGAB_GenericApplyKnockback_C::KnockbackLandToIdleMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackLandToIdleMontageSection) == 0x000A98, "Member 'UGAB_GenericApplyKnockback_C::KnockbackLandToIdleMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackLandToStunMontage) == 0x000AA0, "Member 'UGAB_GenericApplyKnockback_C::KnockbackLandToStunMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, KnockbackLandToStunMontageSection) == 0x000AA8, "Member 'UGAB_GenericApplyKnockback_C::KnockbackLandToStunMontageSection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, DebugDraw) == 0x000AB0, "Member 'UGAB_GenericApplyKnockback_C::DebugDraw' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, DebugNumbers) == 0x000AB1, "Member 'UGAB_GenericApplyKnockback_C::DebugNumbers' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, DebugForceKnockbackValues) == 0x000AB2, "Member 'UGAB_GenericApplyKnockback_C::DebugForceKnockbackValues' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, bOrientToImpulse) == 0x000AB3, "Member 'UGAB_GenericApplyKnockback_C::bOrientToImpulse' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, ActiveKnockback) == 0x000AB4, "Member 'UGAB_GenericApplyKnockback_C::ActiveKnockback' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, OrientDirection) == 0x000ABC, "Member 'UGAB_GenericApplyKnockback_C::OrientDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, HitDirection) == 0x000AC8, "Member 'UGAB_GenericApplyKnockback_C::HitDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, ImpulseDirectionVelocityOrRotation) == 0x000AD4, "Member 'UGAB_GenericApplyKnockback_C::ImpulseDirectionVelocityOrRotation' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, DebugLastLocation) == 0x000AE0, "Member 'UGAB_GenericApplyKnockback_C::DebugLastLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, TC_NPCStatusLockedInPlace) == 0x000AF0, "Member 'UGAB_GenericApplyKnockback_C::TC_NPCStatusLockedInPlace' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, LockedInPlaceKnockbackAngle) == 0x000AF8, "Member 'UGAB_GenericApplyKnockback_C::LockedInPlaceKnockbackAngle' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, LockedInPlaceKnockbackMagnitude) == 0x000AFC, "Member 'UGAB_GenericApplyKnockback_C::LockedInPlaceKnockbackMagnitude' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, GE_RestoreControlResistance) == 0x000B00, "Member 'UGAB_GenericApplyKnockback_C::GE_RestoreControlResistance' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, GE_ImpactImmunity) == 0x000B08, "Member 'UGAB_GenericApplyKnockback_C::GE_ImpactImmunity' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, ActiveImpactImmunity) == 0x000B10, "Member 'UGAB_GenericApplyKnockback_C::ActiveImpactImmunity' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyKnockback_C, bHasImpactImmunity) == 0x000B18, "Member 'UGAB_GenericApplyKnockback_C::bHasImpactImmunity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

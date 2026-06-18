@@ -16,8 +16,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Tooltip-Item.Tooltip-Item_C
 // 0x0098 (0x02C8 - 0x0230)
@@ -55,32 +54,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tooltip-Item_C">();
+		BP_STATIC_CLASS_IMPL("Tooltip-Item_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tooltip-Item_C")
 	}
 	static class UTooltip_Item_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltip_Item_C>();
 	}
 };
-static_assert(alignof(UTooltip_Item_C) == 0x000008, "Wrong alignment on UTooltip_Item_C");
-static_assert(sizeof(UTooltip_Item_C) == 0x0002C8, "Wrong size on UTooltip_Item_C");
-static_assert(offsetof(UTooltip_Item_C, UberGraphFrame) == 0x000230, "Member 'UTooltip_Item_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Anim__Intro) == 0x000238, "Member 'UTooltip_Item_C::_Anim__Intro' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Horizontal_Box__Body) == 0x000240, "Member 'UTooltip_Item_C::_Horizontal_Box__Body' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Horizontal_Box__Header) == 0x000248, "Member 'UTooltip_Item_C::_Horizontal_Box__Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Image__Div_Header) == 0x000250, "Member 'UTooltip_Item_C::_Image__Div_Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Image__Header) == 0x000258, "Member 'UTooltip_Item_C::_Image__Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Spacer__Header) == 0x000260, "Member 'UTooltip_Item_C::_Spacer__Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Spacer__Icon) == 0x000268, "Member 'UTooltip_Item_C::_Spacer__Icon' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, _Text__Header) == 0x000270, "Member 'UTooltip_Item_C::_Text__Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, BorderContent) == 0x000278, "Member 'UTooltip_Item_C::BorderContent' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, ItemTooltipContent) == 0x000280, "Member 'UTooltip_Item_C::ItemTooltipContent' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, HeaderText) == 0x000288, "Member 'UTooltip_Item_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, Icon_Brush) == 0x0002A0, "Member 'UTooltip_Item_C::Icon_Brush' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, Item) == 0x0002A8, "Member 'UTooltip_Item_C::Item' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, DisplayMode) == 0x0002B0, "Member 'UTooltip_Item_C::DisplayMode' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, Comparison_Item) == 0x0002B8, "Member 'UTooltip_Item_C::Comparison_Item' has a wrong offset!");
-static_assert(offsetof(UTooltip_Item_C, OverrideQuantity) == 0x0002C0, "Member 'UTooltip_Item_C::OverrideQuantity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

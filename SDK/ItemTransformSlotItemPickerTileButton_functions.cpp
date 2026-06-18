@@ -14,8 +14,7 @@
 #include "ItemTransformSlotItemPickerTileButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.ExecuteUbergraph_ItemTransformSlotItemPickerTileButton
 // (HasDefaults)
@@ -58,5 +57,5 @@ void UItemTransformSlotItemPickerTileButton_C::SetData(class UObject* InData, cl
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

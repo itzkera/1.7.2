@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C
 // 0x0020 (0x0258 - 0x0238)
@@ -34,19 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementFocusSwitcher_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementFocusSwitcher_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementFocusSwitcher_C")
 	}
 	static class UItemManagementFocusSwitcher_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementFocusSwitcher_C>();
 	}
 };
-static_assert(alignof(UItemManagementFocusSwitcher_C) == 0x000008, "Wrong alignment on UItemManagementFocusSwitcher_C");
-static_assert(sizeof(UItemManagementFocusSwitcher_C) == 0x000258, "Wrong size on UItemManagementFocusSwitcher_C");
-static_assert(offsetof(UItemManagementFocusSwitcher_C, IconTabButton) == 0x000238, "Member 'UItemManagementFocusSwitcher_C::IconTabButton' has a wrong offset!");
-static_assert(offsetof(UItemManagementFocusSwitcher_C, TileViewA) == 0x000240, "Member 'UItemManagementFocusSwitcher_C::TileViewA' has a wrong offset!");
-static_assert(offsetof(UItemManagementFocusSwitcher_C, TileViewB) == 0x000248, "Member 'UItemManagementFocusSwitcher_C::TileViewB' has a wrong offset!");
-static_assert(offsetof(UItemManagementFocusSwitcher_C, PreviousFocus) == 0x000250, "Member 'UItemManagementFocusSwitcher_C::PreviousFocus' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

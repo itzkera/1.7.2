@@ -14,8 +14,7 @@
 #include "AthenaGameOverScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaGameOverScreen.AthenaGameOverScreen_C.ExecuteUbergraph_AthenaGameOverScreen
 // (HasDefaults)
@@ -110,7 +109,7 @@ void UAthenaGameOverScreen_C::On_Player_Won()
 // Function AthenaGameOverScreen.AthenaGameOverScreen_C.On Player Died
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           DeathReport                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortPlayerDeathReport&    DeathReport                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UAthenaGameOverScreen_C::On_Player_Died(const struct FFortPlayerDeathReport& DeathReport)
 {
@@ -126,5 +125,5 @@ void UAthenaGameOverScreen_C::On_Player_Died(const struct FFortPlayerDeathReport
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

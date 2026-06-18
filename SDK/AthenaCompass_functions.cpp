@@ -14,8 +14,7 @@
 #include "AthenaCompass_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaCompass.AthenaCompass_C.ExecuteUbergraph_AthenaCompass
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UAthenaCompass_C::ExecuteUbergraph_AthenaCompass(int32 EntryPoint)
 // Function AthenaCompass.AthenaCompass_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaCompass_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -76,7 +75,7 @@ void UAthenaCompass_C::Construct()
 // Function AthenaCompass.AthenaCompass_C.UpdateCompassMaterial
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FRotator                         InRot                                                  (Parm, IsPlainOldData, NoDestructor)
+// const struct FRotator&                  InRot                                                  (Parm, IsPlainOldData, NoDestructor)
 
 void UAthenaCompass_C::UpdateCompassMaterial(const struct FRotator& InRot)
 {
@@ -97,9 +96,9 @@ void UAthenaCompass_C::UpdateCompassMaterial(const struct FRotator& InRot)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UImage*                           MarkerImage                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        MarkerWorldPosition                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                         CameraRotation                                         (Parm, IsPlainOldData, NoDestructor)
-// struct FVector                          PawnLocation                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 MarkerWorldPosition                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  CameraRotation                                         (Parm, IsPlainOldData, NoDestructor)
+// const struct FVector&                   PawnLocation                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaCompass_C::UpdateMarker(class UImage* MarkerImage, const struct FVector2D& MarkerWorldPosition, const struct FRotator& CameraRotation, const struct FVector& PawnLocation)
 {
@@ -118,5 +117,5 @@ void UAthenaCompass_C::UpdateMarker(class UImage* MarkerImage, const struct FVec
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

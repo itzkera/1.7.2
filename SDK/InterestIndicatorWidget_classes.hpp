@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass InterestIndicatorWidget.InterestIndicatorWidget_C
 // 0x0040 (0x02D8 - 0x0298)
@@ -44,23 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InterestIndicatorWidget_C">();
+		BP_STATIC_CLASS_IMPL("InterestIndicatorWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterestIndicatorWidget_C")
 	}
 	static class UInterestIndicatorWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInterestIndicatorWidget_C>();
 	}
 };
-static_assert(alignof(UInterestIndicatorWidget_C) == 0x000008, "Wrong alignment on UInterestIndicatorWidget_C");
-static_assert(sizeof(UInterestIndicatorWidget_C) == 0x0002D8, "Wrong size on UInterestIndicatorWidget_C");
-static_assert(offsetof(UInterestIndicatorWidget_C, UberGraphFrame) == 0x000298, "Member 'UInterestIndicatorWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_2) == 0x0002A0, "Member 'UInterestIndicatorWidget_C::NewAnimation_2' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, NewAnimation_1) == 0x0002A8, "Member 'UInterestIndicatorWidget_C::NewAnimation_1' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, backgroundpulse) == 0x0002B0, "Member 'UInterestIndicatorWidget_C::backgroundpulse' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, Center) == 0x0002B8, "Member 'UInterestIndicatorWidget_C::Center' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, DecriptionText) == 0x0002C0, "Member 'UInterestIndicatorWidget_C::DecriptionText' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, largespinring) == 0x0002C8, "Member 'UInterestIndicatorWidget_C::largespinring' has a wrong offset!");
-static_assert(offsetof(UInterestIndicatorWidget_C, smallspinring) == 0x0002D0, "Member 'UInterestIndicatorWidget_C::smallspinring' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

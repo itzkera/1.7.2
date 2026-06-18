@@ -14,8 +14,7 @@
 #include "OutpostScreenStormShield_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.ExecuteUbergraph_OutpostScreenStormShield
 // ()
@@ -130,7 +129,7 @@ void UOutpostScreenStormShield_C::AddInputHandlers()
 // Function OutpostScreenStormShield.OutpostScreenStormShield_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOutpostScreenStormShield_C::HandleBack(bool* PassThrough)
 {
@@ -175,5 +174,5 @@ void UOutpostScreenStormShield_C::CenterPermissionsWidget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

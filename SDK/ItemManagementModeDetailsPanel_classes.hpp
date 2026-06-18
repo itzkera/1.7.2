@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementModeDetailsPanel.ItemManagementModeDetailsPanel_C
 // 0x0008 (0x0270 - 0x0268)
@@ -32,16 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementModeDetailsPanel_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementModeDetailsPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementModeDetailsPanel_C")
 	}
 	static class UItemManagementModeDetailsPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementModeDetailsPanel_C>();
 	}
 };
-static_assert(alignof(UItemManagementModeDetailsPanel_C) == 0x000008, "Wrong alignment on UItemManagementModeDetailsPanel_C");
-static_assert(sizeof(UItemManagementModeDetailsPanel_C) == 0x000270, "Wrong size on UItemManagementModeDetailsPanel_C");
-static_assert(offsetof(UItemManagementModeDetailsPanel_C, UberGraphFrame) == 0x000268, "Member 'UItemManagementModeDetailsPanel_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

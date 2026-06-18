@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PanelButton.PanelButton_C
 // 0x0030 (0x08D0 - 0x08A0)
@@ -46,20 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PanelButton_C">();
+		BP_STATIC_CLASS_IMPL("PanelButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PanelButton_C")
 	}
 	static class UPanelButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPanelButton_C>();
 	}
 };
-static_assert(alignof(UPanelButton_C) == 0x000008, "Wrong alignment on UPanelButton_C");
-static_assert(sizeof(UPanelButton_C) == 0x0008D0, "Wrong size on UPanelButton_C");
-static_assert(offsetof(UPanelButton_C, UberGraphFrame) == 0x0008A0, "Member 'UPanelButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ContentSlot) == 0x0008A8, "Member 'UPanelButton_C::ContentSlot' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ControllerInputStyle) == 0x0008B0, "Member 'UPanelButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, MouseKeyboardStyle) == 0x0008B8, "Member 'UPanelButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ButtonClickAction) == 0x0008C0, "Member 'UPanelButton_C::ButtonClickAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

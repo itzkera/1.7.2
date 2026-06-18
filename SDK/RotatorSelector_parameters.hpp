@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
 // 0x0130 (0x0130 - 0x0000)
@@ -28,13 +28,6 @@ public:
 	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00B8(0x0078)(ConstParm)
 };
-static_assert(alignof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector) == 0x000008, "Wrong alignment on RotatorSelector_C_ExecuteUbergraph_RotatorSelector");
-static_assert(sizeof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector) == 0x000130, "Wrong size on RotatorSelector_C_ExecuteUbergraph_RotatorSelector");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, EntryPoint) == 0x000000, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_ComponentBoundEvent_Value) == 0x000004, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_MouseEvent2) == 0x000008, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_MouseEvent2' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_MyGeometry) == 0x000080, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_MouseEvent) == 0x0000B8, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_MouseEvent' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -43,9 +36,6 @@ struct RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRota
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature) == 0x000004, "Wrong alignment on RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
-static_assert(sizeof(RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature) == 0x000004, "Wrong size on RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
-static_assert(offsetof(RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.OnMouseEnter
 // 0x00B0 (0x00B0 - 0x0000)
@@ -56,10 +46,6 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RotatorSelector_C_OnMouseEnter) == 0x000008, "Wrong alignment on RotatorSelector_C_OnMouseEnter");
-static_assert(sizeof(RotatorSelector_C_OnMouseEnter) == 0x0000B0, "Wrong size on RotatorSelector_C_OnMouseEnter");
-static_assert(offsetof(RotatorSelector_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'RotatorSelector_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'RotatorSelector_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.OnMouseLeave
 // 0x0078 (0x0078 - 0x0000)
@@ -68,9 +54,6 @@ struct RotatorSelector_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RotatorSelector_C_OnMouseLeave) == 0x000008, "Wrong alignment on RotatorSelector_C_OnMouseLeave");
-static_assert(sizeof(RotatorSelector_C_OnMouseLeave) == 0x000078, "Wrong size on RotatorSelector_C_OnMouseLeave");
-static_assert(offsetof(RotatorSelector_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'RotatorSelector_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Update Row Selector
 // 0x0004 (0x0004 - 0x0000)
@@ -79,9 +62,6 @@ struct RotatorSelector_C_Update_Row_Selector final
 public:
 	int32                                         Currently_Selected;                                // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Update_Row_Selector) == 0x000004, "Wrong alignment on RotatorSelector_C_Update_Row_Selector");
-static_assert(sizeof(RotatorSelector_C_Update_Row_Selector) == 0x000004, "Wrong size on RotatorSelector_C_Update_Row_Selector");
-static_assert(offsetof(RotatorSelector_C_Update_Row_Selector, Currently_Selected) == 0x000000, "Member 'RotatorSelector_C_Update_Row_Selector::Currently_Selected' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Initialize
 // 0x0048 (0x0048 - 0x0000)
@@ -93,12 +73,6 @@ public:
 	class FText                                   Hover_Text;                                        // 0x0028(0x0018)(Parm)
 	class UCommonTextBlock*                       Tab_Tooltip;                                       // 0x0040(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Initialize) == 0x000008, "Wrong alignment on RotatorSelector_C_Initialize");
-static_assert(sizeof(RotatorSelector_C_Initialize) == 0x000048, "Wrong size on RotatorSelector_C_Initialize");
-static_assert(offsetof(RotatorSelector_C_Initialize, Display_Text) == 0x000000, "Member 'RotatorSelector_C_Initialize::Display_Text' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Initialize, Options) == 0x000018, "Member 'RotatorSelector_C_Initialize::Options' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Initialize, Hover_Text) == 0x000028, "Member 'RotatorSelector_C_Initialize::Hover_Text' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Initialize, Tab_Tooltip) == 0x000040, "Member 'RotatorSelector_C_Initialize::Tab_Tooltip' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Center on Widget
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +81,6 @@ struct RotatorSelector_C_Center_on_Widget final
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Center_on_Widget) == 0x000008, "Wrong alignment on RotatorSelector_C_Center_on_Widget");
-static_assert(sizeof(RotatorSelector_C_Center_on_Widget) == 0x000008, "Wrong size on RotatorSelector_C_Center_on_Widget");
-static_assert(offsetof(RotatorSelector_C_Center_on_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'RotatorSelector_C_Center_on_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Update Options
 // 0x0010 (0x0010 - 0x0000)
@@ -118,9 +89,6 @@ struct RotatorSelector_C_Update_Options final
 public:
 	TArray<class FText>                           NewParam;                                          // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(RotatorSelector_C_Update_Options) == 0x000008, "Wrong alignment on RotatorSelector_C_Update_Options");
-static_assert(sizeof(RotatorSelector_C_Update_Options) == 0x000010, "Wrong size on RotatorSelector_C_Update_Options");
-static_assert(offsetof(RotatorSelector_C_Update_Options, NewParam) == 0x000000, "Member 'RotatorSelector_C_Update_Options::NewParam' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FrontEndSettingsBP.FrontEndSettingsBP_C
 // 0x0008 (0x03A0 - 0x0398)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndSettingsBP_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndSettingsBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndSettingsBP_C")
 	}
 	static class AFrontEndSettingsBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontEndSettingsBP_C>();
 	}
 };
-static_assert(alignof(AFrontEndSettingsBP_C) == 0x000008, "Wrong alignment on AFrontEndSettingsBP_C");
-static_assert(sizeof(AFrontEndSettingsBP_C) == 0x0003A0, "Wrong size on AFrontEndSettingsBP_C");
-static_assert(offsetof(AFrontEndSettingsBP_C, DefaultSceneRoot) == 0x000398, "Member 'AFrontEndSettingsBP_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

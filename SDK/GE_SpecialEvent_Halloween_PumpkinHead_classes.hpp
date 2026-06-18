@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_SpecialEvent_Halloween_PumpkinHead.GE_SpecialEvent_Halloween_PumpkinHead_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_SpecialEvent_Halloween_PumpkinHead_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_SpecialEvent_Halloween_PumpkinHead_C">();
+		BP_STATIC_CLASS_IMPL("GE_SpecialEvent_Halloween_PumpkinHead_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_SpecialEvent_Halloween_PumpkinHead_C")
 	}
 	static class UGE_SpecialEvent_Halloween_PumpkinHead_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_SpecialEvent_Halloween_PumpkinHead_C>();
 	}
 };
-static_assert(alignof(UGE_SpecialEvent_Halloween_PumpkinHead_C) == 0x000010, "Wrong alignment on UGE_SpecialEvent_Halloween_PumpkinHead_C");
-static_assert(sizeof(UGE_SpecialEvent_Halloween_PumpkinHead_C) == 0x000660, "Wrong size on UGE_SpecialEvent_Halloween_PumpkinHead_C");
 
-}
-
+SDK_NAMESPACE_END

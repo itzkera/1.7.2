@@ -14,8 +14,7 @@
 #include "WM_Camera_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WM_Camera.WM_Camera_C.ExecuteUbergraph_WM_Camera
 // (HasDefaults)
@@ -218,5 +217,5 @@ void AWM_Camera_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "WorkerTooltipStatsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.ExecuteUbergraph_WorkerTooltipStatsWidget
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UWorkerTooltipStatsWidget_C::On_Worker_Preview_State_Changed()
 // Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWorkerTooltipStatsWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -86,5 +85,5 @@ void UWorkerTooltipStatsWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

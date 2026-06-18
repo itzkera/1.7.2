@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaMinimapContainer.AthenaMinimapContainer_C
 // 0x0000 (0x0260 - 0x0260)
@@ -23,15 +22,16 @@ class UAthenaMinimapContainer_C final : public UFortHUDElementWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMinimapContainer_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMinimapContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMinimapContainer_C")
 	}
 	static class UAthenaMinimapContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMinimapContainer_C>();
 	}
 };
-static_assert(alignof(UAthenaMinimapContainer_C) == 0x000008, "Wrong alignment on UAthenaMinimapContainer_C");
-static_assert(sizeof(UAthenaMinimapContainer_C) == 0x000260, "Wrong size on UAthenaMinimapContainer_C");
 
-}
-
+SDK_NAMESPACE_END

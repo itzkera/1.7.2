@@ -14,8 +14,7 @@
 #include "LobbyPlayerPadGadgets_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.ExecuteUbergraph_LobbyPlayerPadGadgets
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ULobbyPlayerPadGadgets_C::ExecuteUbergraph_LobbyPlayerPadGadgets(int32 Entr
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULobbyPlayerPadGadgets_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -60,8 +59,8 @@ void ULobbyPlayerPadGadgets_C::OnMouseLeave(const struct FPointerEvent& MouseEve
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULobbyPlayerPadGadgets_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -82,7 +81,7 @@ void ULobbyPlayerPadGadgets_C::OnMouseEnter(const struct FGeometry& MyGeometry, 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Refresh
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo                                         (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo                                         (Parm)
 
 void ULobbyPlayerPadGadgets_C::Refresh(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
@@ -102,8 +101,8 @@ void ULobbyPlayerPadGadgets_C::Refresh(const struct FFortTeamMemberInfo& TeamMem
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply ULobbyPlayerPadGadgets_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -157,5 +156,5 @@ void ULobbyPlayerPadGadgets_C::Initialize(int32 PlayerIndex_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

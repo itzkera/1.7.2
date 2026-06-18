@@ -14,8 +14,7 @@
 #include "QuestScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen
 // (HasDefaults)
@@ -144,7 +143,7 @@ void UQuestScreen_C::OnClientPartyStateChanged(EFortPartyState PartyState)
 // Function QuestScreen.QuestScreen_C.PlayerPartyStateChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTeamMemberInfo&       PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UQuestScreen_C::PlayerPartyStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
@@ -311,7 +310,7 @@ TArray<class UObject*> UQuestScreen_C::OnGetChildrenForCategory(class UObject* I
 // Function QuestScreen.QuestScreen_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::HandleBack(bool* PassThrough)
 {
@@ -332,7 +331,7 @@ void UQuestScreen_C::HandleBack(bool* PassThrough)
 // Function QuestScreen.QuestScreen_C.PlayQuest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::PlayQuest(bool* PassThrough)
 {
@@ -381,7 +380,7 @@ void UQuestScreen_C::SetupInputHandlers()
 // Function QuestScreen.QuestScreen_C.ReplayIntroAudio
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::ReplayIntroAudio(bool* PassThrough)
 {
@@ -402,7 +401,7 @@ void UQuestScreen_C::ReplayIntroAudio(bool* PassThrough)
 // Function QuestScreen.QuestScreen_C.AbandonQuest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::AbandonQuest(bool* PassThrough)
 {
@@ -437,7 +436,7 @@ void UQuestScreen_C::SelectInitialQuest()
 // Function QuestScreen.QuestScreen_C.ClaimReward
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::ClaimReward(bool* PassThrough)
 {
@@ -478,7 +477,7 @@ void UQuestScreen_C::UpdateInputHandlers(class UFortQuestItem* Active_Quest)
 // Function QuestScreen.QuestScreen_C.PinQuest
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::PinQuest(bool* PassThrough)
 {
@@ -553,7 +552,7 @@ void UQuestScreen_C::HandlePendingNavigationOp()
 // Function QuestScreen.QuestScreen_C.ReplayOutroAudio
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::ReplayOutroAudio(bool* PassThrough)
 {
@@ -574,7 +573,7 @@ void UQuestScreen_C::ReplayOutroAudio(bool* PassThrough)
 // Function QuestScreen.QuestScreen_C.StopConversation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::StopConversation(bool* PassThrough)
 {
@@ -651,7 +650,7 @@ void UQuestScreen_C::Update_Category_Buttons_Bang_State()
 // Function QuestScreen.QuestScreen_C.HandleInventory
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::HandleInventory(bool* PassThrough)
 {
@@ -693,7 +692,7 @@ void UQuestScreen_C::Toggle_Disable_Claim_Reward_Button(bool ToDisable)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortQuestItem*                   Quest                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ShouldShowPlay                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ShouldShowPlay                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestScreen_C::ShouldShowPlayQuest(class UFortQuestItem* Quest, bool* ShouldShowPlay)
 {
@@ -712,5 +711,5 @@ void UQuestScreen_C::ShouldShowPlayQuest(class UFortQuestItem* Quest, bool* Shou
 		*ShouldShowPlay = Parms.ShouldShowPlay;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Lobby_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Lobby.LobbyBeaconClient.ClientAckJoiningServer
 // (Net, NetReliable, Native, Event, Protected, NetClient)
@@ -27,7 +26,12 @@ void ALobbyBeaconClient::ClientAckJoiningServer()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconClient", "ClientAckJoiningServer");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -41,14 +45,19 @@ void ALobbyBeaconClient::ClientJoinGame()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconClient", "ClientJoinGame");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ClientLoginComplete
 // (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
-// struct FUniqueNetIdRepl                 InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bWasSuccessful                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ClientLoginComplete(const struct FUniqueNetIdRepl& InUniqueId, bool bWasSuccessful)
@@ -63,15 +72,20 @@ void ALobbyBeaconClient::ClientLoginComplete(const struct FUniqueNetIdRepl& InUn
 	Parms.InUniqueId = std::move(InUniqueId);
 	Parms.bWasSuccessful = bWasSuccessful;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ClientPlayerJoined
 // (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
-// class FText                             NewPlayerName                                          (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-// struct FUniqueNetIdRepl                 InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      NewPlayerName                                          (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ClientPlayerJoined(const class FText& NewPlayerName, const struct FUniqueNetIdRepl& InUniqueId)
 {
@@ -85,14 +99,19 @@ void ALobbyBeaconClient::ClientPlayerJoined(const class FText& NewPlayerName, co
 	Parms.NewPlayerName = std::move(NewPlayerName);
 	Parms.InUniqueId = std::move(InUniqueId);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ClientPlayerLeft
 // (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
-// struct FUniqueNetIdRepl                 InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ClientPlayerLeft(const struct FUniqueNetIdRepl& InUniqueId)
 {
@@ -105,14 +124,19 @@ void ALobbyBeaconClient::ClientPlayerLeft(const struct FUniqueNetIdRepl& InUniqu
 
 	Parms.InUniqueId = std::move(InUniqueId);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ClientSetInviteFlags
 // (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
-// struct FJoinabilitySettings             Settings                                               (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FJoinabilitySettings&      Settings                                               (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ClientSetInviteFlags(const struct FJoinabilitySettings& Settings)
 {
@@ -125,14 +149,19 @@ void ALobbyBeaconClient::ClientSetInviteFlags(const struct FJoinabilitySettings&
 
 	Parms.Settings = std::move(Settings);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ClientWasKicked
 // (Net, NetReliable, Native, Event, Protected, NetClient)
 // Parameters:
-// class FText                             KickReason                                             (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+// const class FText&                      KickReason                                             (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ClientWasKicked(const class FText& KickReason)
 {
@@ -145,14 +174,19 @@ void ALobbyBeaconClient::ClientWasKicked(const class FText& KickReason)
 
 	Parms.KickReason = std::move(KickReason);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ServerCheat
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
-// class FString                           Msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    Msg                                                    (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ServerCheat(const class FString& Msg)
 {
@@ -165,7 +199,12 @@ void ALobbyBeaconClient::ServerCheat(const class FString& Msg)
 
 	Parms.Msg = std::move(Msg);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -179,15 +218,20 @@ void ALobbyBeaconClient::ServerDisconnectFromLobby()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconClient", "ServerDisconnectFromLobby");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ServerKickPlayer
 // (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// struct FUniqueNetIdRepl                 PlayerToKick                                           (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FText                             Reason                                                 (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          PlayerToKick                                           (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FText&                      Reason                                                 (ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ServerKickPlayer(const struct FUniqueNetIdRepl& PlayerToKick, const class FText& Reason)
 {
@@ -201,16 +245,21 @@ void ALobbyBeaconClient::ServerKickPlayer(const struct FUniqueNetIdRepl& PlayerT
 	Parms.PlayerToKick = std::move(PlayerToKick);
 	Parms.Reason = std::move(Reason);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ServerLoginPlayer
 // (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// class FString                           InSessionId                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FUniqueNetIdRepl                 InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           UrlString                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    InSessionId                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    UrlString                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ServerLoginPlayer(const class FString& InSessionId, const struct FUniqueNetIdRepl& InUniqueId, const class FString& UrlString)
 {
@@ -225,7 +274,12 @@ void ALobbyBeaconClient::ServerLoginPlayer(const class FString& InSessionId, con
 	Parms.InUniqueId = std::move(InUniqueId);
 	Parms.UrlString = std::move(UrlString);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -239,15 +293,20 @@ void ALobbyBeaconClient::ServerNotifyJoiningServer()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconClient", "ServerNotifyJoiningServer");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function Lobby.LobbyBeaconClient.ServerSetPartyOwner
 // (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-// struct FUniqueNetIdRepl                 InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FUniqueNetIdRepl                 InPartyOwnerId                                         (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          InUniqueId                                             (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FUniqueNetIdRepl&          InPartyOwnerId                                         (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ServerSetPartyOwner(const struct FUniqueNetIdRepl& InUniqueId, const struct FUniqueNetIdRepl& InPartyOwnerId)
 {
@@ -261,7 +320,12 @@ void ALobbyBeaconClient::ServerSetPartyOwner(const struct FUniqueNetIdRepl& InUn
 	Parms.InUniqueId = std::move(InUniqueId);
 	Parms.InPartyOwnerId = std::move(InPartyOwnerId);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -275,7 +339,12 @@ void ALobbyBeaconPlayerState::OnRep_InLobby()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_InLobby");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -289,7 +358,12 @@ void ALobbyBeaconPlayerState::OnRep_PartyOwner()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_PartyOwner");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -303,7 +377,12 @@ void ALobbyBeaconState::OnRep_LobbyStarted()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconState", "OnRep_LobbyStarted");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -317,8 +396,13 @@ void ALobbyBeaconState::OnRep_WaitForPlayersTimeRemaining()
 	if (Func == nullptr)
 		Func = Class->GetFunction("LobbyBeaconState", "OnRep_WaitForPlayersTimeRemaining");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

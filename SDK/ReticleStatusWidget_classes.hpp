@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ReticleStatusWidget.ReticleStatusWidget_C
 // 0x0018 (0x0278 - 0x0260)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ReticleStatusWidget_C">();
+		BP_STATIC_CLASS_IMPL("ReticleStatusWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReticleStatusWidget_C")
 	}
 	static class UReticleStatusWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReticleStatusWidget_C>();
 	}
 };
-static_assert(alignof(UReticleStatusWidget_C) == 0x000008, "Wrong alignment on UReticleStatusWidget_C");
-static_assert(sizeof(UReticleStatusWidget_C) == 0x000278, "Wrong size on UReticleStatusWidget_C");
-static_assert(offsetof(UReticleStatusWidget_C, UberGraphFrame) == 0x000260, "Member 'UReticleStatusWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UReticleStatusWidget_C, ReticleStatusText) == 0x000268, "Member 'UReticleStatusWidget_C::ReticleStatusText' has a wrong offset!");
-static_assert(offsetof(UReticleStatusWidget_C, StatusDisplayDuration) == 0x000270, "Member 'UReticleStatusWidget_C::StatusDisplayDuration' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

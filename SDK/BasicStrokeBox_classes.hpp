@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BasicStrokeBox.BasicStrokeBox_C
 // 0x0040 (0x0280 - 0x0240)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BasicStrokeBox_C">();
+		BP_STATIC_CLASS_IMPL("BasicStrokeBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BasicStrokeBox_C")
 	}
 	static class UBasicStrokeBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBasicStrokeBox_C>();
 	}
 };
-static_assert(alignof(UBasicStrokeBox_C) == 0x000008, "Wrong alignment on UBasicStrokeBox_C");
-static_assert(sizeof(UBasicStrokeBox_C) == 0x000280, "Wrong size on UBasicStrokeBox_C");
-static_assert(offsetof(UBasicStrokeBox_C, UberGraphFrame) == 0x000240, "Member 'UBasicStrokeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBasicStrokeBox_C, BaseMaterial) == 0x000248, "Member 'UBasicStrokeBox_C::BaseMaterial' has a wrong offset!");
-static_assert(offsetof(UBasicStrokeBox_C, Content) == 0x000250, "Member 'UBasicStrokeBox_C::Content' has a wrong offset!");
-static_assert(offsetof(UBasicStrokeBox_C, Fill) == 0x000258, "Member 'UBasicStrokeBox_C::Fill' has a wrong offset!");
-static_assert(offsetof(UBasicStrokeBox_C, Stroke) == 0x000268, "Member 'UBasicStrokeBox_C::Stroke' has a wrong offset!");
-static_assert(offsetof(UBasicStrokeBox_C, Style) == 0x000278, "Member 'UBasicStrokeBox_C::Style' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

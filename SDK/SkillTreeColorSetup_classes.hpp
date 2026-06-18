@@ -14,8 +14,7 @@
 #include "SkillTreePages_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SkillTreeColorSetup.SkillTreeColorSetup_C
 // 0x0000 (0x0028 - 0x0028)
@@ -27,15 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillTreeColorSetup_C">();
+		BP_STATIC_CLASS_IMPL("SkillTreeColorSetup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillTreeColorSetup_C")
 	}
 	static class USkillTreeColorSetup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillTreeColorSetup_C>();
 	}
 };
-static_assert(alignof(USkillTreeColorSetup_C) == 0x000008, "Wrong alignment on USkillTreeColorSetup_C");
-static_assert(sizeof(USkillTreeColorSetup_C) == 0x000028, "Wrong size on USkillTreeColorSetup_C");
 
-}
-
+SDK_NAMESPACE_END

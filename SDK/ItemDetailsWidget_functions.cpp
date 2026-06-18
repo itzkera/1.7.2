@@ -14,8 +14,7 @@
 #include "ItemDetailsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDetailsWidget.ItemDetailsWidget_C.ExecuteUbergraph_ItemDetailsWidget
 // (HasDefaults)
@@ -97,7 +96,7 @@ void UItemDetailsWidget_C::ShowUpgradeComparison()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Stats                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Stats                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemDetailsWidget_C::ItemHasStats(class UFortItem* Item, bool* Stats)
 {
@@ -116,5 +115,5 @@ void UItemDetailsWidget_C::ItemHasStats(class UFortItem* Item, bool* Stats)
 		*Stats = Parms.Stats;
 }
 
-}
 
+SDK_NAMESPACE_END

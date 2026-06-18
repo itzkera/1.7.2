@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.ExecuteUbergraph_MiniCraftingIngredientList
 // 0x0018 (0x0018 - 0x0000)
@@ -24,11 +24,6 @@ public:
 	class UFortItemQuantityListEntryBase*         K2Node_Event_ListEntry;                            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWrapBoxSlot*                           CallFunc_AddChildWrapBox_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList) == 0x000008, "Wrong alignment on MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList");
-static_assert(sizeof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList) == 0x000018, "Wrong size on MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList");
-static_assert(offsetof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList, EntryPoint) == 0x000000, "Member 'MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList, K2Node_Event_ListEntry) == 0x000008, "Member 'MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList::K2Node_Event_ListEntry' has a wrong offset!");
-static_assert(offsetof(MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList, CallFunc_AddChildWrapBox_ReturnValue) == 0x000010, "Member 'MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList::CallFunc_AddChildWrapBox_ReturnValue' has a wrong offset!");
 
 // Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.AddListEntry
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +32,6 @@ struct MiniCraftingIngredientList_C_AddListEntry final
 public:
 	class UFortItemQuantityListEntryBase*         ListEntry;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MiniCraftingIngredientList_C_AddListEntry) == 0x000008, "Wrong alignment on MiniCraftingIngredientList_C_AddListEntry");
-static_assert(sizeof(MiniCraftingIngredientList_C_AddListEntry) == 0x000008, "Wrong size on MiniCraftingIngredientList_C_AddListEntry");
-static_assert(offsetof(MiniCraftingIngredientList_C_AddListEntry, ListEntry) == 0x000000, "Member 'MiniCraftingIngredientList_C_AddListEntry::ListEntry' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuickbarPrimary.QuickbarPrimary_C.ExecuteUbergraph_QuickbarPrimary
 // 0x0080 (0x0080 - 0x0000)
@@ -44,24 +44,6 @@ public:
 	int32                                         CallFunc_GetQuickbarFocus_OutSecondarySlot;        // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot;  // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary) == 0x000008, "Wrong alignment on QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary");
-static_assert(sizeof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary) == 0x000080, "Wrong size on QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, EntryPoint) == 0x000000, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, K2Node_MakeArray_Array) == 0x000018, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, K2Node_CustomEvent_bUsingGamepad) == 0x000030, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::K2Node_CustomEvent_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_IsUsingGamepad_ReturnValue) == 0x000040, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, K2Node_CreateDelegate_OutputDelegate2) == 0x000048, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetContext_ReturnValue3) == 0x000058, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_HasOneNonHarvestWeapon_HasNonHarvestWeapon) == 0x000060, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_HasOneNonHarvestWeapon_HasNonHarvestWeapon' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_BooleanAND_ReturnValue) == 0x000061, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetContext_ReturnValue4) == 0x000068, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetQuickbarFocus_OutQuickBar) == 0x000070, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetQuickbarFocus_OutQuickBar' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetQuickbarFocus_OutSlot) == 0x000074, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetQuickbarFocus_OutSlot' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetQuickbarFocus_OutSecondarySlot) == 0x000078, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetQuickbarFocus_OutSecondarySlot' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary, CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot) == 0x00007C, "Member 'QuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary::CallFunc_GetQuickbarFocus_OutPreviousFocusedSlot' has a wrong offset!");
 
 // Function QuickbarPrimary.QuickbarPrimary_C.HandleInputMethodChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +52,6 @@ struct QuickbarPrimary_C_HandleInputMethodChanged final
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarPrimary_C_HandleInputMethodChanged) == 0x000001, "Wrong alignment on QuickbarPrimary_C_HandleInputMethodChanged");
-static_assert(sizeof(QuickbarPrimary_C_HandleInputMethodChanged) == 0x000001, "Wrong size on QuickbarPrimary_C_HandleInputMethodChanged");
-static_assert(offsetof(QuickbarPrimary_C_HandleInputMethodChanged, bUsingGamepad) == 0x000000, "Member 'QuickbarPrimary_C_HandleInputMethodChanged::bUsingGamepad' has a wrong offset!");
 
 // Function QuickbarPrimary.QuickbarPrimary_C.Show Primary Quickbar Rail
 // 0x0005 (0x0005 - 0x0000)
@@ -85,13 +64,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail) == 0x000001, "Wrong alignment on QuickbarPrimary_C_Show_Primary_Quickbar_Rail");
-static_assert(sizeof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail) == 0x000005, "Wrong size on QuickbarPrimary_C_Show_Primary_Quickbar_Rail");
-static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Show) == 0x000000, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Show' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Temp_bool_Variable) == 0x000001, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Temp_byte_Variable) == 0x000002, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, Temp_byte_Variable2) == 0x000003, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_Show_Primary_Quickbar_Rail, K2Node_Select_Default) == 0x000004, "Member 'QuickbarPrimary_C_Show_Primary_Quickbar_Rail::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuickbarPrimary.QuickbarPrimary_C.HasOneNonHarvestWeapon
 // 0x0006 (0x0006 - 0x0000)
@@ -105,14 +77,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue2;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuickbarPrimary_C_HasOneNonHarvestWeapon) == 0x000001, "Wrong alignment on QuickbarPrimary_C_HasOneNonHarvestWeapon");
-static_assert(sizeof(QuickbarPrimary_C_HasOneNonHarvestWeapon) == 0x000006, "Wrong size on QuickbarPrimary_C_HasOneNonHarvestWeapon");
-static_assert(offsetof(QuickbarPrimary_C_HasOneNonHarvestWeapon, HasNonHarvestWeapon) == 0x000000, "Member 'QuickbarPrimary_C_HasOneNonHarvestWeapon::HasNonHarvestWeapon' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_HasOneNonHarvestWeapon, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'QuickbarPrimary_C_HasOneNonHarvestWeapon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_HasOneNonHarvestWeapon, CallFunc_IsValid_ReturnValue2) == 0x000002, "Member 'QuickbarPrimary_C_HasOneNonHarvestWeapon::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_HasOneNonHarvestWeapon, CallFunc_IsValid_ReturnValue3) == 0x000003, "Member 'QuickbarPrimary_C_HasOneNonHarvestWeapon::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_HasOneNonHarvestWeapon, CallFunc_BooleanOR_ReturnValue) == 0x000004, "Member 'QuickbarPrimary_C_HasOneNonHarvestWeapon::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuickbarPrimary_C_HasOneNonHarvestWeapon, CallFunc_BooleanOR_ReturnValue2) == 0x000005, "Member 'QuickbarPrimary_C_HasOneNonHarvestWeapon::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

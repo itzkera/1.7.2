@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // ScriptStruct LightPropagationVolumeRuntime.LightPropagationVolumeSettings
 // 0x0038 (0x0038 - 0x0000)
@@ -47,21 +46,5 @@ public:
 	float                                         LPVDiffuseOcclusionIntensity;                      // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         LPVSpecularOcclusionIntensity;                     // 0x0034(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLightPropagationVolumeSettings) == 0x000004, "Wrong alignment on FLightPropagationVolumeSettings");
-static_assert(sizeof(FLightPropagationVolumeSettings) == 0x000038, "Wrong size on FLightPropagationVolumeSettings");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVIntensity) == 0x000004, "Member 'FLightPropagationVolumeSettings::LPVIntensity' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVVplInjectionBias) == 0x000008, "Member 'FLightPropagationVolumeSettings::LPVVplInjectionBias' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVSize) == 0x00000C, "Member 'FLightPropagationVolumeSettings::LPVSize' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVSecondaryOcclusionIntensity) == 0x000010, "Member 'FLightPropagationVolumeSettings::LPVSecondaryOcclusionIntensity' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVSecondaryBounceIntensity) == 0x000014, "Member 'FLightPropagationVolumeSettings::LPVSecondaryBounceIntensity' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVGeometryVolumeBias) == 0x000018, "Member 'FLightPropagationVolumeSettings::LPVGeometryVolumeBias' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVEmissiveInjectionIntensity) == 0x00001C, "Member 'FLightPropagationVolumeSettings::LPVEmissiveInjectionIntensity' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVDirectionalOcclusionIntensity) == 0x000020, "Member 'FLightPropagationVolumeSettings::LPVDirectionalOcclusionIntensity' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVDirectionalOcclusionRadius) == 0x000024, "Member 'FLightPropagationVolumeSettings::LPVDirectionalOcclusionRadius' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVDiffuseOcclusionExponent) == 0x000028, "Member 'FLightPropagationVolumeSettings::LPVDiffuseOcclusionExponent' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVSpecularOcclusionExponent) == 0x00002C, "Member 'FLightPropagationVolumeSettings::LPVSpecularOcclusionExponent' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVDiffuseOcclusionIntensity) == 0x000030, "Member 'FLightPropagationVolumeSettings::LPVDiffuseOcclusionIntensity' has a wrong offset!");
-static_assert(offsetof(FLightPropagationVolumeSettings, LPVSpecularOcclusionIntensity) == 0x000034, "Member 'FLightPropagationVolumeSettings::LPVSpecularOcclusionIntensity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

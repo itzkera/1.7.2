@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CollectionHeader-Level.CollectionHeader-Level_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UCollectionHeader_Level_C : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionHeader-Level_C">();
+		BP_STATIC_CLASS_IMPL("CollectionHeader-Level_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionHeader-Level_C")
 	}
 	static class UCollectionHeader_Level_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionHeader_Level_C>();
 	}
 };
-static_assert(alignof(UCollectionHeader_Level_C) == 0x000008, "Wrong alignment on UCollectionHeader_Level_C");
-static_assert(sizeof(UCollectionHeader_Level_C) == 0x0000B8, "Wrong size on UCollectionHeader_Level_C");
 
-}
-
+SDK_NAMESPACE_END

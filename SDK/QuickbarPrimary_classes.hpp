@@ -10,14 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "QuickbarBase_classes.hpp"
 #include "Engine_structs.hpp"
-#include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "QuickbarBase_classes.hpp"
+#include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuickbarPrimary.QuickbarPrimary_C
 // 0x00A8 (0x0330 - 0x0288)
@@ -59,36 +58,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuickbarPrimary_C">();
+		BP_STATIC_CLASS_IMPL("QuickbarPrimary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickbarPrimary_C")
 	}
 	static class UQuickbarPrimary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickbarPrimary_C>();
 	}
 };
-static_assert(alignof(UQuickbarPrimary_C) == 0x000008, "Wrong alignment on UQuickbarPrimary_C");
-static_assert(sizeof(UQuickbarPrimary_C) == 0x000330, "Wrong size on UQuickbarPrimary_C");
-static_assert(offsetof(UQuickbarPrimary_C, UberGraphFrame_QuickbarPrimary_C) == 0x000288, "Member 'UQuickbarPrimary_C::UberGraphFrame_QuickbarPrimary_C' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, _Image__Separator) == 0x000290, "Member 'UQuickbarPrimary_C::_Image__Separator' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_1) == 0x000298, "Member 'UQuickbarPrimary_C::Quickbar_Slot_1' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_2) == 0x0002A0, "Member 'UQuickbarPrimary_C::Quickbar_Slot_2' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_3) == 0x0002A8, "Member 'UQuickbarPrimary_C::Quickbar_Slot_3' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_4) == 0x0002B0, "Member 'UQuickbarPrimary_C::Quickbar_Slot_4' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_5) == 0x0002B8, "Member 'UQuickbarPrimary_C::Quickbar_Slot_5' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_6) == 0x0002C0, "Member 'UQuickbarPrimary_C::Quickbar_Slot_6' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_7) == 0x0002C8, "Member 'UQuickbarPrimary_C::Quickbar_Slot_7' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_8) == 0x0002D0, "Member 'UQuickbarPrimary_C::Quickbar_Slot_8' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, Quickbar_Slot_9) == 0x0002D8, "Member 'UQuickbarPrimary_C::Quickbar_Slot_9' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, SizeBox_WeaponsRail) == 0x0002E0, "Member 'UQuickbarPrimary_C::SizeBox_WeaponsRail' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP1) == 0x0002E8, "Member 'UQuickbarPrimary_C::TutorialQBP1' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP2) == 0x0002F0, "Member 'UQuickbarPrimary_C::TutorialQBP2' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP3) == 0x0002F8, "Member 'UQuickbarPrimary_C::TutorialQBP3' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP4) == 0x000300, "Member 'UQuickbarPrimary_C::TutorialQBP4' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP5) == 0x000308, "Member 'UQuickbarPrimary_C::TutorialQBP5' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP6) == 0x000310, "Member 'UQuickbarPrimary_C::TutorialQBP6' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP7) == 0x000318, "Member 'UQuickbarPrimary_C::TutorialQBP7' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP8) == 0x000320, "Member 'UQuickbarPrimary_C::TutorialQBP8' has a wrong offset!");
-static_assert(offsetof(UQuickbarPrimary_C, TutorialQBP9) == 0x000328, "Member 'UQuickbarPrimary_C::TutorialQBP9' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

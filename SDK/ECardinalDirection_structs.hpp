@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ECardinalDirection.ECardinalDirection
 // NumValues: 0x0005
@@ -25,5 +24,4 @@ enum class ECardinalDirection : uint8
 	ECardinalDirection_MAX                   = 4,
 };
 
-}
-
+SDK_NAMESPACE_END

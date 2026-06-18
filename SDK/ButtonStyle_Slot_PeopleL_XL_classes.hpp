@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-Slot-PeopleL-XL.ButtonStyle-Slot-PeopleL-XL_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_Slot_PeopleL_XL_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Slot-PeopleL-XL_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Slot-PeopleL-XL_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Slot-PeopleL-XL_C")
 	}
 	static class UButtonStyle_Slot_PeopleL_XL_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Slot_PeopleL_XL_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Slot_PeopleL_XL_C) == 0x000008, "Wrong alignment on UButtonStyle_Slot_PeopleL_XL_C");
-static_assert(sizeof(UButtonStyle_Slot_PeopleL_XL_C) == 0x000530, "Wrong size on UButtonStyle_Slot_PeopleL_XL_C");
 
-}
-
+SDK_NAMESPACE_END

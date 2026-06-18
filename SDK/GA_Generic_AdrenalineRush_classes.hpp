@@ -10,17 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "E_AdrenalineRushDuration_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_AdrenalineRushAOE_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
-#include "E_AdrenalineRushDuration_structs.hpp"
 #include "GAT_GenericActiveAbility_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Generic_AdrenalineRush.GA_Generic_AdrenalineRush_C
 // 0x0290 (0x0DA0 - 0x0B10)
@@ -82,53 +81,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Generic_AdrenalineRush_C">();
+		BP_STATIC_CLASS_IMPL("GA_Generic_AdrenalineRush_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Generic_AdrenalineRush_C")
 	}
 	static class UGA_Generic_AdrenalineRush_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Generic_AdrenalineRush_C>();
 	}
 };
-static_assert(alignof(UGA_Generic_AdrenalineRush_C) == 0x000008, "Wrong alignment on UGA_Generic_AdrenalineRush_C");
-static_assert(sizeof(UGA_Generic_AdrenalineRush_C) == 0x000DA0, "Wrong size on UGA_Generic_AdrenalineRush_C");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, UberGraphFrame_GA_Generic_AdrenalineRush_C) == 0x000B10, "Member 'UGA_Generic_AdrenalineRush_C::UberGraphFrame_GA_Generic_AdrenalineRush_C' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, EventData_0) == 0x000B18, "Member 'UGA_Generic_AdrenalineRush_C::EventData_0' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Fort_Player_Pawn) == 0x000BC0, "Member 'UGA_Generic_AdrenalineRush_C::Fort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, EventActivate) == 0x000BC8, "Member 'UGA_Generic_AdrenalineRush_C::EventActivate' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Montage_Info) == 0x000BD0, "Member 'UGA_Generic_AdrenalineRush_C::Montage_Info' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, AdrenalineRushInsta) == 0x000C30, "Member 'UGA_Generic_AdrenalineRush_C::AdrenalineRushInsta' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, HitActors) == 0x000C38, "Member 'UGA_Generic_AdrenalineRush_C::HitActors' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, IsHOT) == 0x000C48, "Member 'UGA_Generic_AdrenalineRush_C::IsHOT' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, IsPurge) == 0x000C49, "Member 'UGA_Generic_AdrenalineRush_C::IsPurge' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, AOEValue) == 0x000C4A, "Member 'UGA_Generic_AdrenalineRush_C::AOEValue' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, DurationValue) == 0x000C4B, "Member 'UGA_Generic_AdrenalineRush_C::DurationValue' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TargetRule) == 0x000C50, "Member 'UGA_Generic_AdrenalineRush_C::TargetRule' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, HOTDuration) == 0x000C58, "Member 'UGA_Generic_AdrenalineRush_C::HOTDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Target_AOE1) == 0x000C60, "Member 'UGA_Generic_AdrenalineRush_C::Target_AOE1' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Target_AOE2) == 0x000C68, "Member 'UGA_Generic_AdrenalineRush_C::Target_AOE2' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Target_AOE3) == 0x000C70, "Member 'UGA_Generic_AdrenalineRush_C::Target_AOE3' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, HospitalSubBuilding3) == 0x000C78, "Member 'UGA_Generic_AdrenalineRush_C::HospitalSubBuilding3' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, BasicHOTDuration) == 0x000C98, "Member 'UGA_Generic_AdrenalineRush_C::BasicHOTDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Upgrade1HOTDuration) == 0x000C9C, "Member 'UGA_Generic_AdrenalineRush_C::Upgrade1HOTDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Upgrade2HOTDuration) == 0x000CA0, "Member 'UGA_Generic_AdrenalineRush_C::Upgrade2HOTDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, InstaHeal_Default) == 0x000CA4, "Member 'UGA_Generic_AdrenalineRush_C::InstaHeal_Default' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, InstaHeal_Upgrade) == 0x000CA8, "Member 'UGA_Generic_AdrenalineRush_C::InstaHeal_Upgrade' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, AdrenalineRushHOT) == 0x000CB0, "Member 'UGA_Generic_AdrenalineRush_C::AdrenalineRushHOT' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TC_GameplayNegative) == 0x000CB8, "Member 'UGA_Generic_AdrenalineRush_C::TC_GameplayNegative' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, AdrenalineRushProjectile) == 0x000CD8, "Member 'UGA_Generic_AdrenalineRush_C::AdrenalineRushProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, InstantHealMultiplier) == 0x000CE0, "Member 'UGA_Generic_AdrenalineRush_C::InstantHealMultiplier' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, HOTHealMultiplier) == 0x000CE4, "Member 'UGA_Generic_AdrenalineRush_C::HOTHealMultiplier' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TC_AOE_Heal) == 0x000CE8, "Member 'UGA_Generic_AdrenalineRush_C::TC_AOE_Heal' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TC_HealBoost) == 0x000D08, "Member 'UGA_Generic_AdrenalineRush_C::TC_HealBoost' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TC_HOT) == 0x000D28, "Member 'UGA_Generic_AdrenalineRush_C::TC_HOT' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TC_Resurrect) == 0x000D48, "Member 'UGA_Generic_AdrenalineRush_C::TC_Resurrect' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, AOE_Heal) == 0x000D68, "Member 'UGA_Generic_AdrenalineRush_C::AOE_Heal' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Insta_Heal_Upgraded) == 0x000D69, "Member 'UGA_Generic_AdrenalineRush_C::Insta_Heal_Upgraded' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, Resurrect_Upgrade) == 0x000D6A, "Member 'UGA_Generic_AdrenalineRush_C::Resurrect_Upgrade' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, TC_Cooldown) == 0x000D70, "Member 'UGA_Generic_AdrenalineRush_C::TC_Cooldown' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, BaseGadgetHealValue) == 0x000D90, "Member 'UGA_Generic_AdrenalineRush_C::BaseGadgetHealValue' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, FinalHealingValue) == 0x000D94, "Member 'UGA_Generic_AdrenalineRush_C::FinalHealingValue' has a wrong offset!");
-static_assert(offsetof(UGA_Generic_AdrenalineRush_C, HotPerSecondAmount) == 0x000D98, "Member 'UGA_Generic_AdrenalineRush_C::HotPerSecondAmount' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

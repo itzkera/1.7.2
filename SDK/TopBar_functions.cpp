@@ -14,8 +14,7 @@
 #include "TopBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TopBar.TopBar_C.ExecuteUbergraph_TopBar
 // (HasDefaults)
@@ -74,7 +73,7 @@ void UTopBar_C::On_Power_Increased()
 // Function TopBar.TopBar_C.ShowSocialConfirmation
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             MESSAGE                                                (Parm)
+// const class FText&                      MESSAGE                                                (Parm)
 
 void UTopBar_C::ShowSocialConfirmation(const class FText& MESSAGE)
 {
@@ -122,7 +121,7 @@ void UTopBar_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoun
 // Function TopBar.TopBar_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWidgetAnimation*                 Animation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UWidgetAnimation*           Animation                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTopBar_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
 {
@@ -344,7 +343,7 @@ void UTopBar_C::BindPanelControl()
 // Function TopBar.TopBar_C.HandleCloseAction
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UTopBar_C::HandleCloseAction(bool* PassThrough)
 {
@@ -461,7 +460,7 @@ void UTopBar_C::HandleFeatureSwitchOp(EFortUIFeature Feature)
 // Function TopBar.TopBar_C.HandleSwitchProfileAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UTopBar_C::HandleSwitchProfileAction(bool* PassThrough)
 {
@@ -692,5 +691,5 @@ void UTopBar_C::ConfigureVisibleItemsForSubGame()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

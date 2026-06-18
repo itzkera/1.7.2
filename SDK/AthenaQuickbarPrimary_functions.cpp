@@ -14,8 +14,7 @@
 #include "AthenaQuickbarPrimary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.ExecuteUbergraph_AthenaQuickbarPrimary
 // ()
@@ -192,7 +191,7 @@ void UAthenaQuickbarPrimary_C::Show_Primary_Quickbar_Rail(bool Show)
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HasOneNonHarvestWeapon
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    HasNonHarvestWeapon                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HasNonHarvestWeapon                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaQuickbarPrimary_C::HasOneNonHarvestWeapon(bool* HasNonHarvestWeapon)
 {
@@ -237,5 +236,5 @@ void UAthenaQuickbarPrimary_C::HandleShowHideWeaponRail()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

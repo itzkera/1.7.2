@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TabAudioOptions.TabAudioOptions_C.ExecuteUbergraph_TabAudioOptions
 // 0x0030 (0x0030 - 0x0000)
@@ -36,20 +36,6 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_Selected_Index2;        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue3;              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions) == 0x000004, "Wrong alignment on TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions");
-static_assert(sizeof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions) == 0x000030, "Wrong size on TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, EntryPoint) == 0x000000, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Selected_Index) == 0x000004, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Selected_Index' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, CallFunc_Conv_IntToBool_ReturnValue) == 0x000008, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Slider_Value4) == 0x00000C, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Slider_Value4' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Slider_Value3) == 0x000010, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Slider_Value3' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Slider_Value2) == 0x000014, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Slider_Value2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Slider_Value) == 0x000018, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Slider_Value' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Selected_Index4) == 0x00001C, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Selected_Index4' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, CallFunc_Conv_IntToBool_ReturnValue2) == 0x000020, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::CallFunc_Conv_IntToBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Selected_Index3) == 0x000024, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Selected_Index3' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, K2Node_ComponentBoundEvent_Selected_Index2) == 0x000028, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::K2Node_ComponentBoundEvent_Selected_Index2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions, CallFunc_Conv_IntToBool_ReturnValue3) == 0x00002C, "Member 'TabAudioOptions_C_ExecuteUbergraph_TabAudioOptions::CallFunc_Conv_IntToBool_ReturnValue3' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection Changed__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -58,9 +44,6 @@ struct TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection Changed__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -69,9 +52,6 @@ struct TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_S
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection Changed__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -80,9 +60,6 @@ struct TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection Changed__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -91,9 +68,6 @@ struct TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selecti
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature, Selected_Index) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature::Selected_Index' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -102,9 +76,6 @@ struct TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_Slider
 public:
 	float                                         Slider_Value;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -113,9 +84,6 @@ struct TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_Slid
 public:
 	float                                         Slider_Value;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -124,9 +92,6 @@ struct TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_Slider
 public:
 	float                                         Slider_Value;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -135,9 +100,6 @@ struct TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_Slid
 public:
 	float                                         Slider_Value;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature) == 0x000004, "Wrong alignment on TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature");
-static_assert(sizeof(TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature) == 0x000004, "Wrong size on TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature");
-static_assert(offsetof(TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature, Slider_Value) == 0x000000, "Member 'TabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature::Slider_Value' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.Update Data
 // 0x0100 (0x0100 - 0x0000)
@@ -174,33 +136,6 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue7;             // 0x00D0(0x0018)()
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue8;             // 0x00E8(0x0018)()
 };
-static_assert(alignof(TabAudioOptions_C_Update_Data) == 0x000008, "Wrong alignment on TabAudioOptions_C_Update_Data");
-static_assert(sizeof(TabAudioOptions_C_Update_Data) == 0x000100, "Wrong size on TabAudioOptions_C_Update_Data");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, Temp_int_Variable) == 0x000000, "Member 'TabAudioOptions_C_Update_Data::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, Temp_int_Variable2) == 0x000004, "Member 'TabAudioOptions_C_Update_Data::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, Temp_bool_Variable) == 0x000008, "Member 'TabAudioOptions_C_Update_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, Temp_int_Variable3) == 0x00000C, "Member 'TabAudioOptions_C_Update_Data::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, Temp_int_Variable4) == 0x000010, "Member 'TabAudioOptions_C_Update_Data::Temp_int_Variable4' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetVoiceChatPTTEnabled_ReturnValue) == 0x000014, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetVoiceChatPTTEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetVoiceChatEnabled_ReturnValue) == 0x000015, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetVoiceChatEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetQuality_ReturnValue) == 0x000018, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, K2Node_Select_Default) == 0x00001C, "Member 'TabAudioOptions_C_Update_Data::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue) == 0x000020, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue2) == 0x000038, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue3) == 0x000050, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue4) == 0x000068, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, Temp_bool_Variable2) == 0x000080, "Member 'TabAudioOptions_C_Update_Data::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetSubtitlesEnabled_ReturnValue) == 0x000081, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetSubtitlesEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, K2Node_Select2_Default) == 0x000084, "Member 'TabAudioOptions_C_Update_Data::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_Conv_BoolToInt_ReturnValue) == 0x000088, "Member 'TabAudioOptions_C_Update_Data::CallFunc_Conv_BoolToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetChatVolumeValue_ReturnValue) == 0x00008C, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetChatVolumeValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetDialogVolumeValue_ReturnValue) == 0x000090, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetDialogVolumeValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetSoundFXVolumeValue_ReturnValue) == 0x000094, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetSoundFXVolumeValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_GetMusicVolumeValue_ReturnValue) == 0x000098, "Member 'TabAudioOptions_C_Update_Data::CallFunc_GetMusicVolumeValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue5) == 0x0000A0, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue6) == 0x0000B8, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue7) == 0x0000D0, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_Update_Data, CallFunc_MakeLiteralText_ReturnValue8) == 0x0000E8, "Member 'TabAudioOptions_C_Update_Data::CallFunc_MakeLiteralText_ReturnValue8' has a wrong offset!");
 
 // Function TabAudioOptions.TabAudioOptions_C.InitializeData
 // 0x0110 (0x0110 - 0x0000)
@@ -231,29 +166,6 @@ public:
 	TArray<class FText>                           K2Node_MakeArray_Array4;                           // 0x00E8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue8;             // 0x00F8(0x0018)()
 };
-static_assert(alignof(TabAudioOptions_C_InitializeData) == 0x000008, "Wrong alignment on TabAudioOptions_C_InitializeData");
-static_assert(sizeof(TabAudioOptions_C_InitializeData) == 0x000110, "Wrong size on TabAudioOptions_C_InitializeData");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, Temp_byte_Variable) == 0x000000, "Member 'TabAudioOptions_C_InitializeData::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_IsPS4Platform_ReturnValue) == 0x000001, "Member 'TabAudioOptions_C_InitializeData::CallFunc_IsPS4Platform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_IsXboxPlatform_ReturnValue) == 0x000002, "Member 'TabAudioOptions_C_InitializeData::CallFunc_IsXboxPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_BooleanOR_ReturnValue) == 0x000003, "Member 'TabAudioOptions_C_InitializeData::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue) == 0x000008, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, K2Node_MakeArray_Array) == 0x000020, "Member 'TabAudioOptions_C_InitializeData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue2) == 0x000030, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue3) == 0x000048, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, K2Node_MakeArray_Array2) == 0x000060, "Member 'TabAudioOptions_C_InitializeData::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue4) == 0x000070, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, Temp_byte_Variable2) == 0x000088, "Member 'TabAudioOptions_C_InitializeData::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_ShowChatVolume_ReturnValue) == 0x000089, "Member 'TabAudioOptions_C_InitializeData::CallFunc_ShowChatVolume_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_ShowQuality_ReturnValue) == 0x00008A, "Member 'TabAudioOptions_C_InitializeData::CallFunc_ShowQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, Temp_bool_Variable) == 0x00008B, "Member 'TabAudioOptions_C_InitializeData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, K2Node_Select_Default) == 0x00008C, "Member 'TabAudioOptions_C_InitializeData::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue5) == 0x000090, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, K2Node_MakeArray_Array3) == 0x0000A8, "Member 'TabAudioOptions_C_InitializeData::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue6) == 0x0000B8, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue7) == 0x0000D0, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, K2Node_MakeArray_Array4) == 0x0000E8, "Member 'TabAudioOptions_C_InitializeData::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(TabAudioOptions_C_InitializeData, CallFunc_MakeLiteralText_ReturnValue8) == 0x0000F8, "Member 'TabAudioOptions_C_InitializeData::CallFunc_MakeLiteralText_ReturnValue8' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AnimNotify_PlayFeedbackLine_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotify_PlayFeedbackLine.AnimNotify_PlayFeedbackLine_C.Received_Notify
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -41,5 +40,5 @@ bool UAnimNotify_PlayFeedbackLine_C::Received_Notify(class USkeletalMeshComponen
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

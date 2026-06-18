@@ -14,8 +14,7 @@
 #include "RotatingStarburstWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RotatingStarburstWidget.RotatingStarburstWidget_C.ExecuteUbergraph_RotatingStarburstWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void URotatingStarburstWidget_C::ExecuteUbergraph_RotatingStarburstWidget(int32 
 // Function RotatingStarburstWidget.RotatingStarburstWidget_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URotatingStarburstWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -58,5 +57,5 @@ void URotatingStarburstWidget_C::Tick(const struct FGeometry& MyGeometry, float 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

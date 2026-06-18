@@ -14,8 +14,7 @@
 #include "Announce_BackpackFull_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_BackpackFull.Announce_BackpackFull_C.ExecuteUbergraph_Announce_BackpackFull
 // ()
@@ -64,5 +63,5 @@ void AAnnounce_BackpackFull_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

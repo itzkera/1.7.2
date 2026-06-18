@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PBWA_M1_StairT.PBWA_M1_StairT_C
 // 0x0000 (0x0FD0 - 0x0FD0)
@@ -23,15 +22,16 @@ class APBWA_M1_StairT_C final : public ABuildingStairs
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_M1_StairT_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_M1_StairT_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_M1_StairT_C")
 	}
 	static class APBWA_M1_StairT_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_M1_StairT_C>();
 	}
 };
-static_assert(alignof(APBWA_M1_StairT_C) == 0x000010, "Wrong alignment on APBWA_M1_StairT_C");
-static_assert(sizeof(APBWA_M1_StairT_C) == 0x000FD0, "Wrong size on APBWA_M1_StairT_C");
 
-}
-
+SDK_NAMESPACE_END

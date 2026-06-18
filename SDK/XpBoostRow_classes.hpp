@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBoostRow.XpBoostRow_C
 // 0x0060 (0x0290 - 0x0230)
@@ -52,26 +51,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBoostRow_C">();
+		BP_STATIC_CLASS_IMPL("XpBoostRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBoostRow_C")
 	}
 	static class UXpBoostRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBoostRow_C>();
 	}
 };
-static_assert(alignof(UXpBoostRow_C) == 0x000008, "Wrong alignment on UXpBoostRow_C");
-static_assert(sizeof(UXpBoostRow_C) == 0x000290, "Wrong size on UXpBoostRow_C");
-static_assert(offsetof(UXpBoostRow_C, UberGraphFrame) == 0x000230, "Member 'UXpBoostRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Boost) == 0x000238, "Member 'UXpBoostRow_C::Boost' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, BoostIcon) == 0x000240, "Member 'UXpBoostRow_C::BoostIcon' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, GiveXPButton) == 0x000248, "Member 'UXpBoostRow_C::GiveXPButton' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, PlayerBanner) == 0x000250, "Member 'UXpBoostRow_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, PlayerName) == 0x000258, "Member 'UXpBoostRow_C::PlayerName' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, IsBoosted) == 0x000260, "Member 'UXpBoostRow_C::IsBoosted' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, IsPlayer) == 0x000261, "Member 'UXpBoostRow_C::IsPlayer' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, HasPartyMember) == 0x000262, "Member 'UXpBoostRow_C::HasPartyMember' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Give_Boost_Clicked) == 0x000268, "Member 'UXpBoostRow_C::Give_Boost_Clicked' has a wrong offset!");
-static_assert(offsetof(UXpBoostRow_C, Player_Id) == 0x000278, "Member 'UXpBoostRow_C::Player_Id' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

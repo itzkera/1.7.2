@@ -14,8 +14,7 @@
 #include "BuildingInfoIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.ExecuteUbergraph_BuildingInfoIndicator
 // ()
@@ -54,7 +53,7 @@ void UBuildingInfoIndicator_C::Construct()
 // Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortFocusedBuildingInfo         NewBuildingInfo                                        (Parm, OutParm, ReferenceParm)
+// struct FFortFocusedBuildingInfo&        NewBuildingInfo                                        (Parm, OutParm, ReferenceParm)
 
 void UBuildingInfoIndicator_C::UpdateBuildingInfo(struct FFortFocusedBuildingInfo& NewBuildingInfo)
 {
@@ -312,5 +311,5 @@ void UBuildingInfoIndicator_C::RefreshBuildingInfo()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

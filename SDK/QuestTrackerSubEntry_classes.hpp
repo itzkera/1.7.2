@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestTrackerSubEntry.QuestTrackerSubEntry_C
 // 0x0170 (0x03E8 - 0x0278)
@@ -54,27 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestTrackerSubEntry_C">();
+		BP_STATIC_CLASS_IMPL("QuestTrackerSubEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestTrackerSubEntry_C")
 	}
 	static class UQuestTrackerSubEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestTrackerSubEntry_C>();
 	}
 };
-static_assert(alignof(UQuestTrackerSubEntry_C) == 0x000008, "Wrong alignment on UQuestTrackerSubEntry_C");
-static_assert(sizeof(UQuestTrackerSubEntry_C) == 0x0003E8, "Wrong size on UQuestTrackerSubEntry_C");
-static_assert(offsetof(UQuestTrackerSubEntry_C, UberGraphFrame) == 0x000278, "Member 'UQuestTrackerSubEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, CheckmarkAnimation) == 0x000280, "Member 'UQuestTrackerSubEntry_C::CheckmarkAnimation' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, CompletionRemove) == 0x000288, "Member 'UQuestTrackerSubEntry_C::CompletionRemove' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, CompletionFlash) == 0x000290, "Member 'UQuestTrackerSubEntry_C::CompletionFlash' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, Bullet) == 0x000298, "Member 'UQuestTrackerSubEntry_C::Bullet' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, BulletOverlay) == 0x0002A0, "Member 'UQuestTrackerSubEntry_C::BulletOverlay' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, Checkmark) == 0x0002A8, "Member 'UQuestTrackerSubEntry_C::Checkmark' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, FlashImage) == 0x0002B0, "Member 'UQuestTrackerSubEntry_C::FlashImage' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, ObjectiveDescriptionText) == 0x0002B8, "Member 'UQuestTrackerSubEntry_C::ObjectiveDescriptionText' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, Pin) == 0x0002C0, "Member 'UQuestTrackerSubEntry_C::Pin' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, NonHUDBullet) == 0x0002C8, "Member 'UQuestTrackerSubEntry_C::NonHUDBullet' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerSubEntry_C, NonHUDPin) == 0x000358, "Member 'UQuestTrackerSubEntry_C::NonHUDPin' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,12 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "TutorialHighlightData_structs.hpp"
 #include "FortniteGame_classes.hpp"
+#include "TutorialHighlightData_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_TutorialConversation.Announce_TutorialConversation_C
 // 0x0018 (0x05C8 - 0x05B0)
@@ -41,17 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_TutorialConversation_C">();
+		BP_STATIC_CLASS_IMPL("Announce_TutorialConversation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_TutorialConversation_C")
 	}
 	static class AAnnounce_TutorialConversation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_TutorialConversation_C>();
 	}
 };
-static_assert(alignof(AAnnounce_TutorialConversation_C) == 0x000008, "Wrong alignment on AAnnounce_TutorialConversation_C");
-static_assert(sizeof(AAnnounce_TutorialConversation_C) == 0x0005C8, "Wrong size on AAnnounce_TutorialConversation_C");
-static_assert(offsetof(AAnnounce_TutorialConversation_C, UberGraphFrame) == 0x0005B0, "Member 'AAnnounce_TutorialConversation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_TutorialConversation_C, SentencedIndexedTutorialData) == 0x0005B8, "Member 'AAnnounce_TutorialConversation_C::SentencedIndexedTutorialData' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

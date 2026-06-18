@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GET_TagContainer.GET_TagContainer_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGET_TagContainer_C : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_TagContainer_C">();
+		BP_STATIC_CLASS_IMPL("GET_TagContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_TagContainer_C")
 	}
 	static class UGET_TagContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_TagContainer_C>();
 	}
 };
-static_assert(alignof(UGET_TagContainer_C) == 0x000010, "Wrong alignment on UGET_TagContainer_C");
-static_assert(sizeof(UGET_TagContainer_C) == 0x000660, "Wrong size on UGET_TagContainer_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Frontend_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Frontend.FrontEnd_C.ExecuteUbergraph_FrontEnd
 // ()
@@ -78,5 +77,5 @@ void AFrontEnd_C::OnMatchStarted()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

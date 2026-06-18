@@ -14,8 +14,7 @@
 #include "PopupCenterMessageModalPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PopupCenterMessageModalPanel.PopupCenterMessageModalPanel_C.ExecuteUbergraph_PopupCenterMessageModalPanel
 // (HasDefaults)
@@ -102,7 +101,7 @@ void UPopupCenterMessageModalPanel_C::UpdateState(ECenterPopupMessageStateEnum N
 // Function PopupCenterMessageModalPanel.PopupCenterMessageModalPanel_C.UpdateMatchTimerText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    StopTimer                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   StopTimer                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPopupCenterMessageModalPanel_C::UpdateMatchTimerText(bool* StopTimer)
 {
@@ -133,5 +132,5 @@ void UPopupCenterMessageModalPanel_C::LeaveZone()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

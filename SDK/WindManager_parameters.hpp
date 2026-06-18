@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WindManager.WindManager_C.ExecuteUbergraph_WindManager
 // 0x0330 (0x0330 - 0x0000)
@@ -94,65 +94,6 @@ public:
 	class AActor*                                 CallFunc_Array_Get_Item2;                          // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue2;           // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WindManager_C_ExecuteUbergraph_WindManager) == 0x000010, "Wrong alignment on WindManager_C_ExecuteUbergraph_WindManager");
-static_assert(sizeof(WindManager_C_ExecuteUbergraph_WindManager) == 0x000330, "Wrong size on WindManager_C_ExecuteUbergraph_WindManager");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, EntryPoint) == 0x000000, "Member 'WindManager_C_ExecuteUbergraph_WindManager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue) == 0x000008, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00000C, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000010, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000014, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetScalarParameterValue_ReturnValue2) == 0x000018, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetScalarParameterValue_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Greater_FloatFloat_ReturnValue2) == 0x00001C, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Greater_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue2) == 0x000020, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BooleanAND_ReturnValue) == 0x000024, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_EqualEqual_IntInt_ReturnValue2) == 0x000025, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_EqualEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BooleanAND_ReturnValue2) == 0x000026, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetScalarParameterValue_ReturnValue3) == 0x000028, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetScalarParameterValue_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Greater_FloatFloat_ReturnValue3) == 0x00002C, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Greater_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue3) == 0x000030, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_EqualEqual_IntInt_ReturnValue3) == 0x000034, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_EqualEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BooleanAND_ReturnValue3) == 0x000035, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetScalarParameterValue_ReturnValue4) == 0x000038, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetScalarParameterValue_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Greater_FloatFloat_ReturnValue4) == 0x00003C, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Greater_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue4) == 0x000040, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_EqualEqual_IntInt_ReturnValue4) == 0x000044, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_EqualEqual_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'WindManager_C_ExecuteUbergraph_WindManager::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BooleanAND_ReturnValue4) == 0x00004C, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, Temp_int_Array_Index_Variable) == 0x000054, "Member 'WindManager_C_ExecuteUbergraph_WindManager::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Array_Get_Item) == 0x000058, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Array_Length_ReturnValue2) == 0x000060, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetAllActorsOfClass_OutActors) == 0x000068, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, K2Node_CustomEvent_EmitterTemplate) == 0x000078, "Member 'WindManager_C_ExecuteUbergraph_WindManager::K2Node_CustomEvent_EmitterTemplate' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, K2Node_CustomEvent_InTransform) == 0x000080, "Member 'WindManager_C_ExecuteUbergraph_WindManager::K2Node_CustomEvent_InTransform' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BreakTransform_Location) == 0x0000B0, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BreakTransform_Rotation) == 0x0000BC, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_BreakTransform_Scale) == 0x0000C8, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0000D8, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_CeilVector_ReturnValue) == 0x0000E0, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_CeilVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_CeilVector_ReturnValue2) == 0x0000EC, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_CeilVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Add_VectorVector_ReturnValue) == 0x0000F8, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Add_VectorVector_ReturnValue2) == 0x000104, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Add_VectorVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000110, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_K2_SetWorldLocation_SweepHitResult2) == 0x000198, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_K2_SetWorldLocation_SweepHitResult2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000220, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Conv_VectorToLinearColor_ReturnValue2) == 0x000230, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Conv_VectorToLinearColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_CeilVector_ReturnValue3) == 0x000240, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_CeilVector_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Add_VectorVector_ReturnValue3) == 0x00024C, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Add_VectorVector_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_K2_SetWorldLocation_SweepHitResult3) == 0x000258, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_K2_SetWorldLocation_SweepHitResult3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Conv_VectorToLinearColor_ReturnValue3) == 0x0002E0, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Conv_VectorToLinearColor_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, Temp_int_Loop_Counter_Variable2) == 0x0002F0, "Member 'WindManager_C_ExecuteUbergraph_WindManager::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Less_IntInt_ReturnValue2) == 0x0002F4, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Add_IntInt_ReturnValue2) == 0x0002F8, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_GetScalarParameterValue_ReturnValue5) == 0x0002FC, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_GetScalarParameterValue_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, K2Node_Event_DeltaSeconds) == 0x000300, "Member 'WindManager_C_ExecuteUbergraph_WindManager::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, K2Node_CustomEvent_Player_Pawn_Generic) == 0x000308, "Member 'WindManager_C_ExecuteUbergraph_WindManager::K2Node_CustomEvent_Player_Pawn_Generic' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_IsDedicatedServer_ReturnValue) == 0x000310, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, Temp_int_Array_Index_Variable2) == 0x000314, "Member 'WindManager_C_ExecuteUbergraph_WindManager::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_Array_Get_Item2) == 0x000318, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_ExecuteUbergraph_WindManager, CallFunc_IsDedicatedServer_ReturnValue2) == 0x000320, "Member 'WindManager_C_ExecuteUbergraph_WindManager::CallFunc_IsDedicatedServer_ReturnValue2' has a wrong offset!");
 
 // Function WindManager.WindManager_C.Register player for render to texture purposes
 // 0x0008 (0x0008 - 0x0000)
@@ -161,9 +102,6 @@ struct WindManager_C_Register_player_for_render_to_texture_purposes final
 public:
 	class APlayerPawn_Generic_C*                  Player_Pawn_Generic;                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WindManager_C_Register_player_for_render_to_texture_purposes) == 0x000008, "Wrong alignment on WindManager_C_Register_player_for_render_to_texture_purposes");
-static_assert(sizeof(WindManager_C_Register_player_for_render_to_texture_purposes) == 0x000008, "Wrong size on WindManager_C_Register_player_for_render_to_texture_purposes");
-static_assert(offsetof(WindManager_C_Register_player_for_render_to_texture_purposes, Player_Pawn_Generic) == 0x000000, "Member 'WindManager_C_Register_player_for_render_to_texture_purposes::Player_Pawn_Generic' has a wrong offset!");
 
 // Function WindManager.WindManager_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -172,9 +110,6 @@ struct WindManager_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WindManager_C_ReceiveTick) == 0x000004, "Wrong alignment on WindManager_C_ReceiveTick");
-static_assert(sizeof(WindManager_C_ReceiveTick) == 0x000004, "Wrong size on WindManager_C_ReceiveTick");
-static_assert(offsetof(WindManager_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'WindManager_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function WindManager.WindManager_C.Add Render To Texture Particle
 // 0x0040 (0x0040 - 0x0000)
@@ -185,10 +120,6 @@ public:
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InTransform;                                       // 0x0010(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WindManager_C_Add_Render_To_Texture_Particle) == 0x000010, "Wrong alignment on WindManager_C_Add_Render_To_Texture_Particle");
-static_assert(sizeof(WindManager_C_Add_Render_To_Texture_Particle) == 0x000040, "Wrong size on WindManager_C_Add_Render_To_Texture_Particle");
-static_assert(offsetof(WindManager_C_Add_Render_To_Texture_Particle, EmitterTemplate) == 0x000000, "Member 'WindManager_C_Add_Render_To_Texture_Particle::EmitterTemplate' has a wrong offset!");
-static_assert(offsetof(WindManager_C_Add_Render_To_Texture_Particle, InTransform) == 0x000010, "Member 'WindManager_C_Add_Render_To_Texture_Particle::InTransform' has a wrong offset!");
 
 // Function WindManager.WindManager_C.InitializeOrthoSettings
 // 0x000C (0x000C - 0x0000)
@@ -199,11 +130,6 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WindManager_C_InitializeOrthoSettings) == 0x000004, "Wrong alignment on WindManager_C_InitializeOrthoSettings");
-static_assert(sizeof(WindManager_C_InitializeOrthoSettings) == 0x00000C, "Wrong size on WindManager_C_InitializeOrthoSettings");
-static_assert(offsetof(WindManager_C_InitializeOrthoSettings, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000000, "Member 'WindManager_C_InitializeOrthoSettings::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_InitializeOrthoSettings, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000004, "Member 'WindManager_C_InitializeOrthoSettings::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_InitializeOrthoSettings, CallFunc_Add_FloatFloat_ReturnValue) == 0x000008, "Member 'WindManager_C_InitializeOrthoSettings::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function WindManager.WindManager_C.SetRenderOnlyAssets
 // 0x0018 (0x0018 - 0x0000)
@@ -217,14 +143,6 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WindManager_C_SetRenderOnlyAssets) == 0x000008, "Wrong alignment on WindManager_C_SetRenderOnlyAssets");
-static_assert(sizeof(WindManager_C_SetRenderOnlyAssets) == 0x000018, "Wrong size on WindManager_C_SetRenderOnlyAssets");
-static_assert(offsetof(WindManager_C_SetRenderOnlyAssets, InComponent) == 0x000000, "Member 'WindManager_C_SetRenderOnlyAssets::InComponent' has a wrong offset!");
-static_assert(offsetof(WindManager_C_SetRenderOnlyAssets, CallFunc_GetRenderingMaterialQualityLevel_ReturnValue) == 0x000008, "Member 'WindManager_C_SetRenderOnlyAssets::CallFunc_GetRenderingMaterialQualityLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_SetRenderOnlyAssets, CallFunc_GetScalarParameterValue_ReturnValue) == 0x00000C, "Member 'WindManager_C_SetRenderOnlyAssets::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_SetRenderOnlyAssets, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000010, "Member 'WindManager_C_SetRenderOnlyAssets::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_SetRenderOnlyAssets, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000011, "Member 'WindManager_C_SetRenderOnlyAssets::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_SetRenderOnlyAssets, CallFunc_BooleanAND_ReturnValue) == 0x000012, "Member 'WindManager_C_SetRenderOnlyAssets::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function WindManager.WindManager_C.ActivateTestContent
 // 0x0001 (0x0001 - 0x0000)
@@ -233,9 +151,6 @@ struct WindManager_C_ActivateTestContent final
 public:
 	bool                                          Condition;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WindManager_C_ActivateTestContent) == 0x000001, "Wrong alignment on WindManager_C_ActivateTestContent");
-static_assert(sizeof(WindManager_C_ActivateTestContent) == 0x000001, "Wrong size on WindManager_C_ActivateTestContent");
-static_assert(offsetof(WindManager_C_ActivateTestContent, Condition) == 0x000000, "Member 'WindManager_C_ActivateTestContent::Condition' has a wrong offset!");
 
 // Function WindManager.WindManager_C.CeilVector
 // 0x00C0 (0x00C0 - 0x0000)
@@ -269,32 +184,6 @@ public:
 	struct FVector                                CallFunc_MakeVector_ReturnValue3;                  // 0x00A8(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue2;       // 0x00B4(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WindManager_C_CeilVector) == 0x000008, "Wrong alignment on WindManager_C_CeilVector");
-static_assert(sizeof(WindManager_C_CeilVector) == 0x0000C0, "Wrong size on WindManager_C_CeilVector");
-static_assert(offsetof(WindManager_C_CeilVector, Scale) == 0x000000, "Member 'WindManager_C_CeilVector::Scale' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, Scene_Capture) == 0x000008, "Member 'WindManager_C_CeilVector::Scene_Capture' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, ReturnValue) == 0x000010, "Member 'WindManager_C_CeilVector::ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000020, "Member 'WindManager_C_CeilVector::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_GetCameraLocation_ReturnValue) == 0x000028, "Member 'WindManager_C_CeilVector::CallFunc_GetCameraLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Divide_VectorFloat_ReturnValue) == 0x000034, "Member 'WindManager_C_CeilVector::CallFunc_Divide_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000040, "Member 'WindManager_C_CeilVector::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_MakeVector_ReturnValue) == 0x000044, "Member 'WindManager_C_CeilVector::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000050, "Member 'WindManager_C_CeilVector::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_MakeVector_ReturnValue2) == 0x000054, "Member 'WindManager_C_CeilVector::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000060, "Member 'WindManager_C_CeilVector::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Divide_VectorVector_ReturnValue) == 0x00006C, "Member 'WindManager_C_CeilVector::CallFunc_Divide_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x000078, "Member 'WindManager_C_CeilVector::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_BreakVector_X) == 0x000084, "Member 'WindManager_C_CeilVector::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_BreakVector_Y) == 0x000088, "Member 'WindManager_C_CeilVector::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_BreakVector_Z) == 0x00008C, "Member 'WindManager_C_CeilVector::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_FCeil_ReturnValue) == 0x000090, "Member 'WindManager_C_CeilVector::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_FCeil_ReturnValue2) == 0x000094, "Member 'WindManager_C_CeilVector::CallFunc_FCeil_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Conv_IntToFloat_ReturnValue3) == 0x000098, "Member 'WindManager_C_CeilVector::CallFunc_Conv_IntToFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Conv_IntToFloat_ReturnValue4) == 0x00009C, "Member 'WindManager_C_CeilVector::CallFunc_Conv_IntToFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_FCeil_ReturnValue3) == 0x0000A0, "Member 'WindManager_C_CeilVector::CallFunc_FCeil_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Conv_IntToFloat_ReturnValue5) == 0x0000A4, "Member 'WindManager_C_CeilVector::CallFunc_Conv_IntToFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_MakeVector_ReturnValue3) == 0x0000A8, "Member 'WindManager_C_CeilVector::CallFunc_MakeVector_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WindManager_C_CeilVector, CallFunc_Multiply_VectorVector_ReturnValue2) == 0x0000B4, "Member 'WindManager_C_CeilVector::CallFunc_Multiply_VectorVector_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

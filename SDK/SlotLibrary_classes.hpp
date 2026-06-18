@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SlotLibrary.SlotLibrary_C
 // 0x0000 (0x0028 - 0x0028)
@@ -31,15 +30,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SlotLibrary_C">();
+		BP_STATIC_CLASS_IMPL("SlotLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlotLibrary_C")
 	}
 	static class USlotLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlotLibrary_C>();
 	}
 };
-static_assert(alignof(USlotLibrary_C) == 0x000008, "Wrong alignment on USlotLibrary_C");
-static_assert(sizeof(USlotLibrary_C) == 0x000028, "Wrong size on USlotLibrary_C");
 
-}
-
+SDK_NAMESPACE_END

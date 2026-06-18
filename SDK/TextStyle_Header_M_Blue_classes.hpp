@@ -13,8 +13,7 @@
 #include "TextStyle_HeaderParent_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-Header-M-Blue.TextStyle-Header-M-Blue_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_Header_M_Blue_C final : public UTextStyle_HeaderParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Header-M-Blue_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Header-M-Blue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Header-M-Blue_C")
 	}
 	static class UTextStyle_Header_M_Blue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Header_M_Blue_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Header_M_Blue_C) == 0x000008, "Wrong alignment on UTextStyle_Header_M_Blue_C");
-static_assert(sizeof(UTextStyle_Header_M_Blue_C) == 0x0000D0, "Wrong size on UTextStyle_Header_M_Blue_C");
 
-}
-
+SDK_NAMESPACE_END

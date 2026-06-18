@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_VictoryDrone.BP_VictoryDrone_C
 // 0x0048 (0x0430 - 0x03E8)
@@ -46,23 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_VictoryDrone_C">();
+		BP_STATIC_CLASS_IMPL("BP_VictoryDrone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_VictoryDrone_C")
 	}
 	static class ABP_VictoryDrone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_VictoryDrone_C>();
 	}
 };
-static_assert(alignof(ABP_VictoryDrone_C) == 0x000008, "Wrong alignment on ABP_VictoryDrone_C");
-static_assert(sizeof(ABP_VictoryDrone_C) == 0x000430, "Wrong size on ABP_VictoryDrone_C");
-static_assert(offsetof(ABP_VictoryDrone_C, UberGraphFrame) == 0x0003E8, "Member 'ABP_VictoryDrone_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, StaticMesh) == 0x0003F0, "Member 'ABP_VictoryDrone_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, PlayerTeleportEffect) == 0x0003F8, "Member 'ABP_VictoryDrone_C::PlayerTeleportEffect' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, SpawnEffect) == 0x000400, "Member 'ABP_VictoryDrone_C::SpawnEffect' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, SkeletalMesh) == 0x000408, "Member 'ABP_VictoryDrone_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, SpawnOutAnimEndedDispatcher) == 0x000410, "Member 'ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, AnimPlayRate) == 0x000420, "Member 'ABP_VictoryDrone_C::AnimPlayRate' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, StaticMeshMID) == 0x000428, "Member 'ABP_VictoryDrone_C::StaticMeshMID' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

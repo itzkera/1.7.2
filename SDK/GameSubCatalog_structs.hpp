@@ -15,8 +15,7 @@
 #include "JsonUtilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum GameSubCatalog.ECatalogRequirementType
 // NumValues: 0x0005
@@ -88,10 +87,6 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogKeyValue) == 0x000008, "Wrong alignment on FCatalogKeyValue");
-static_assert(sizeof(FCatalogKeyValue) == 0x000020, "Wrong size on FCatalogKeyValue");
-static_assert(offsetof(FCatalogKeyValue, Key) == 0x000000, "Member 'FCatalogKeyValue::Key' has a wrong offset!");
-static_assert(offsetof(FCatalogKeyValue, Value) == 0x000010, "Member 'FCatalogKeyValue::Value' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogOfferRequirement
 // 0x0018 (0x0018 - 0x0000)
@@ -103,11 +98,6 @@ public:
 	int32                                         MinQuantity;                                       // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RequiredId;                                        // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogOfferRequirement) == 0x000008, "Wrong alignment on FCatalogOfferRequirement");
-static_assert(sizeof(FCatalogOfferRequirement) == 0x000018, "Wrong size on FCatalogOfferRequirement");
-static_assert(offsetof(FCatalogOfferRequirement, RequirementType) == 0x000000, "Member 'FCatalogOfferRequirement::RequirementType' has a wrong offset!");
-static_assert(offsetof(FCatalogOfferRequirement, MinQuantity) == 0x000004, "Member 'FCatalogOfferRequirement::MinQuantity' has a wrong offset!");
-static_assert(offsetof(FCatalogOfferRequirement, RequiredId) == 0x000008, "Member 'FCatalogOfferRequirement::RequiredId' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogItemPrice
 // 0x0048 (0x0048 - 0x0000)
@@ -124,15 +114,6 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDateTime                              SaleExpiration;                                    // 0x0040(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogItemPrice) == 0x000008, "Wrong alignment on FCatalogItemPrice");
-static_assert(sizeof(FCatalogItemPrice) == 0x000048, "Wrong size on FCatalogItemPrice");
-static_assert(offsetof(FCatalogItemPrice, CurrencyType) == 0x000000, "Member 'FCatalogItemPrice::CurrencyType' has a wrong offset!");
-static_assert(offsetof(FCatalogItemPrice, CurrencySubType) == 0x000008, "Member 'FCatalogItemPrice::CurrencySubType' has a wrong offset!");
-static_assert(offsetof(FCatalogItemPrice, RegularPrice) == 0x000018, "Member 'FCatalogItemPrice::RegularPrice' has a wrong offset!");
-static_assert(offsetof(FCatalogItemPrice, FinalPrice) == 0x00001C, "Member 'FCatalogItemPrice::FinalPrice' has a wrong offset!");
-static_assert(offsetof(FCatalogItemPrice, PriceTextOverride) == 0x000020, "Member 'FCatalogItemPrice::PriceTextOverride' has a wrong offset!");
-static_assert(offsetof(FCatalogItemPrice, SaleType) == 0x000038, "Member 'FCatalogItemPrice::SaleType' has a wrong offset!");
-static_assert(offsetof(FCatalogItemPrice, SaleExpiration) == 0x000040, "Member 'FCatalogItemPrice::SaleExpiration' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogMetaAssetInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -142,10 +123,6 @@ public:
 	class FString                                 StructName;                                        // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FJsonObjectWrapper                     Payload;                                           // 0x0010(0x0020)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogMetaAssetInfo) == 0x000008, "Wrong alignment on FCatalogMetaAssetInfo");
-static_assert(sizeof(FCatalogMetaAssetInfo) == 0x000030, "Wrong size on FCatalogMetaAssetInfo");
-static_assert(offsetof(FCatalogMetaAssetInfo, StructName) == 0x000000, "Member 'FCatalogMetaAssetInfo::StructName' has a wrong offset!");
-static_assert(offsetof(FCatalogMetaAssetInfo, Payload) == 0x000010, "Member 'FCatalogMetaAssetInfo::Payload' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.ItemQuantity
 // 0x0038 (0x0038 - 0x0000)
@@ -157,11 +134,6 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FJsonObjectWrapper                     Attributes;                                        // 0x0018(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FItemQuantity) == 0x000008, "Wrong alignment on FItemQuantity");
-static_assert(sizeof(FItemQuantity) == 0x000038, "Wrong size on FItemQuantity");
-static_assert(offsetof(FItemQuantity, TemplateId) == 0x000000, "Member 'FItemQuantity::TemplateId' has a wrong offset!");
-static_assert(offsetof(FItemQuantity, Quantity) == 0x000010, "Member 'FItemQuantity::Quantity' has a wrong offset!");
-static_assert(offsetof(FItemQuantity, Attributes) == 0x000018, "Member 'FItemQuantity::Attributes' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogDynamicBundleItem
 // 0x0078 (0x0078 - 0x0000)
@@ -177,15 +149,6 @@ public:
 	class FText                                   Title;                                             // 0x0048(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	class FText                                   Description;                                       // 0x0060(0x0018)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogDynamicBundleItem) == 0x000008, "Wrong alignment on FCatalogDynamicBundleItem");
-static_assert(sizeof(FCatalogDynamicBundleItem) == 0x000078, "Wrong size on FCatalogDynamicBundleItem");
-static_assert(offsetof(FCatalogDynamicBundleItem, Item) == 0x000000, "Member 'FCatalogDynamicBundleItem::Item' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundleItem, bCanOwnMultiple) == 0x000038, "Member 'FCatalogDynamicBundleItem::bCanOwnMultiple' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundleItem, RegularPrice) == 0x00003C, "Member 'FCatalogDynamicBundleItem::RegularPrice' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundleItem, DiscountedPrice) == 0x000040, "Member 'FCatalogDynamicBundleItem::DiscountedPrice' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundleItem, AlreadyOwnedPriceReduction) == 0x000044, "Member 'FCatalogDynamicBundleItem::AlreadyOwnedPriceReduction' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundleItem, Title) == 0x000048, "Member 'FCatalogDynamicBundleItem::Title' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundleItem, Description) == 0x000060, "Member 'FCatalogDynamicBundleItem::Description' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogDynamicBundle
 // 0x0030 (0x0030 - 0x0000)
@@ -200,13 +163,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FCatalogDynamicBundleItem>      BundleItems;                                       // 0x0020(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogDynamicBundle) == 0x000008, "Wrong alignment on FCatalogDynamicBundle");
-static_assert(sizeof(FCatalogDynamicBundle) == 0x000030, "Wrong size on FCatalogDynamicBundle");
-static_assert(offsetof(FCatalogDynamicBundle, BasePrice) == 0x000000, "Member 'FCatalogDynamicBundle::BasePrice' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundle, CurrencyType) == 0x000004, "Member 'FCatalogDynamicBundle::CurrencyType' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundle, CurrencySubType) == 0x000008, "Member 'FCatalogDynamicBundle::CurrencySubType' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundle, DisplayType) == 0x000018, "Member 'FCatalogDynamicBundle::DisplayType' has a wrong offset!");
-static_assert(offsetof(FCatalogDynamicBundle, BundleItems) == 0x000020, "Member 'FCatalogDynamicBundle::BundleItems' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogOffer
 // 0x01D0 (0x01D0 - 0x0000)
@@ -235,28 +191,6 @@ public:
 	TArray<struct FCatalogOfferRequirement>       Requirements;                                      // 0x01B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         DenyItemTemplateIds;                               // 0x01C0(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FCatalogOffer) == 0x000008, "Wrong alignment on FCatalogOffer");
-static_assert(sizeof(FCatalogOffer) == 0x0001D0, "Wrong size on FCatalogOffer");
-static_assert(offsetof(FCatalogOffer, OfferId) == 0x000000, "Member 'FCatalogOffer::OfferId' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, MetaInfo) == 0x000010, "Member 'FCatalogOffer::MetaInfo' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, OfferType) == 0x000020, "Member 'FCatalogOffer::OfferType' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, Prices) == 0x000028, "Member 'FCatalogOffer::Prices' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, DynamicBundleInfo) == 0x000038, "Member 'FCatalogOffer::DynamicBundleInfo' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, DailyLimit) == 0x000068, "Member 'FCatalogOffer::DailyLimit' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, WeeklyLimit) == 0x00006C, "Member 'FCatalogOffer::WeeklyLimit' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, Categories) == 0x000070, "Member 'FCatalogOffer::Categories' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, CatalogGroup) == 0x000080, "Member 'FCatalogOffer::CatalogGroup' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, CatalogGroupPriority) == 0x000090, "Member 'FCatalogOffer::CatalogGroupPriority' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, SortPriority) == 0x000094, "Member 'FCatalogOffer::SortPriority' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, Title) == 0x000098, "Member 'FCatalogOffer::Title' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, ShortDescription) == 0x0000B0, "Member 'FCatalogOffer::ShortDescription' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, Description) == 0x0000C8, "Member 'FCatalogOffer::Description' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, AppStoreId) == 0x0000E0, "Member 'FCatalogOffer::AppStoreId' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, MetaAssetInfo) == 0x000160, "Member 'FCatalogOffer::MetaAssetInfo' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, DisplayAssetPath) == 0x000190, "Member 'FCatalogOffer::DisplayAssetPath' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, ItemGrants) == 0x0001A0, "Member 'FCatalogOffer::ItemGrants' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, Requirements) == 0x0001B0, "Member 'FCatalogOffer::Requirements' has a wrong offset!");
-static_assert(offsetof(FCatalogOffer, DenyItemTemplateIds) == 0x0001C0, "Member 'FCatalogOffer::DenyItemTemplateIds' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogPurchaseNotification
 // 0x0020 (0x0020 - 0x0000)
@@ -265,9 +199,6 @@ struct FCatalogPurchaseNotification final
 public:
 	struct FMcpLootResult                         LootResult;                                        // 0x0000(0x0020)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogPurchaseNotification) == 0x000008, "Wrong alignment on FCatalogPurchaseNotification");
-static_assert(sizeof(FCatalogPurchaseNotification) == 0x000020, "Wrong size on FCatalogPurchaseNotification");
-static_assert(offsetof(FCatalogPurchaseNotification, LootResult) == 0x000000, "Member 'FCatalogPurchaseNotification::LootResult' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.Storefront
 // 0x0020 (0x0020 - 0x0000)
@@ -277,10 +208,6 @@ public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FCatalogOffer>                  CatalogEntries;                                    // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FStorefront) == 0x000008, "Wrong alignment on FStorefront");
-static_assert(sizeof(FStorefront) == 0x000020, "Wrong size on FStorefront");
-static_assert(offsetof(FStorefront, Name) == 0x000000, "Member 'FStorefront::Name' has a wrong offset!");
-static_assert(offsetof(FStorefront, CatalogEntries) == 0x000010, "Member 'FStorefront::CatalogEntries' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogDownload
 // 0x0020 (0x0020 - 0x0000)
@@ -292,12 +219,6 @@ public:
 	struct FDateTime                              Expiration;                                        // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FStorefront>                    Storefronts;                                       // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogDownload) == 0x000008, "Wrong alignment on FCatalogDownload");
-static_assert(sizeof(FCatalogDownload) == 0x000020, "Wrong size on FCatalogDownload");
-static_assert(offsetof(FCatalogDownload, RefreshIntervalHrs) == 0x000000, "Member 'FCatalogDownload::RefreshIntervalHrs' has a wrong offset!");
-static_assert(offsetof(FCatalogDownload, DailyPurchaseHrs) == 0x000004, "Member 'FCatalogDownload::DailyPurchaseHrs' has a wrong offset!");
-static_assert(offsetof(FCatalogDownload, Expiration) == 0x000008, "Member 'FCatalogDownload::Expiration' has a wrong offset!");
-static_assert(offsetof(FCatalogDownload, Storefronts) == 0x000010, "Member 'FCatalogDownload::Storefronts' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogItemSalePrice
 // 0x0018 (0x0018 - 0x0000)
@@ -310,12 +231,6 @@ public:
 	struct FDateTime                              StartTime;                                         // 0x0008(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                              EndTime;                                           // 0x0010(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogItemSalePrice) == 0x000008, "Wrong alignment on FCatalogItemSalePrice");
-static_assert(sizeof(FCatalogItemSalePrice) == 0x000018, "Wrong size on FCatalogItemSalePrice");
-static_assert(offsetof(FCatalogItemSalePrice, SalePrice) == 0x000000, "Member 'FCatalogItemSalePrice::SalePrice' has a wrong offset!");
-static_assert(offsetof(FCatalogItemSalePrice, SaleType) == 0x000004, "Member 'FCatalogItemSalePrice::SaleType' has a wrong offset!");
-static_assert(offsetof(FCatalogItemSalePrice, StartTime) == 0x000008, "Member 'FCatalogItemSalePrice::StartTime' has a wrong offset!");
-static_assert(offsetof(FCatalogItemSalePrice, EndTime) == 0x000010, "Member 'FCatalogItemSalePrice::EndTime' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogPurchaseInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -330,13 +245,6 @@ public:
 	int32                                         ExpectedPrice;                                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCatalogPurchaseInfo) == 0x000008, "Wrong alignment on FCatalogPurchaseInfo");
-static_assert(sizeof(FCatalogPurchaseInfo) == 0x000030, "Wrong size on FCatalogPurchaseInfo");
-static_assert(offsetof(FCatalogPurchaseInfo, OfferId) == 0x000000, "Member 'FCatalogPurchaseInfo::OfferId' has a wrong offset!");
-static_assert(offsetof(FCatalogPurchaseInfo, PurchaseQuantity) == 0x000010, "Member 'FCatalogPurchaseInfo::PurchaseQuantity' has a wrong offset!");
-static_assert(offsetof(FCatalogPurchaseInfo, Currency) == 0x000014, "Member 'FCatalogPurchaseInfo::Currency' has a wrong offset!");
-static_assert(offsetof(FCatalogPurchaseInfo, CurrencySubType) == 0x000018, "Member 'FCatalogPurchaseInfo::CurrencySubType' has a wrong offset!");
-static_assert(offsetof(FCatalogPurchaseInfo, ExpectedPrice) == 0x000028, "Member 'FCatalogPurchaseInfo::ExpectedPrice' has a wrong offset!");
 
 // ScriptStruct GameSubCatalog.CatalogReceiptInfo
 // 0x0048 (0x0048 - 0x0000)
@@ -350,13 +258,5 @@ public:
 	class FString                                 ReceiptInfo;                                       // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PurchaseCorrelationId;                             // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCatalogReceiptInfo) == 0x000008, "Wrong alignment on FCatalogReceiptInfo");
-static_assert(sizeof(FCatalogReceiptInfo) == 0x000048, "Wrong size on FCatalogReceiptInfo");
-static_assert(offsetof(FCatalogReceiptInfo, AppStore) == 0x000000, "Member 'FCatalogReceiptInfo::AppStore' has a wrong offset!");
-static_assert(offsetof(FCatalogReceiptInfo, AppStoreId) == 0x000008, "Member 'FCatalogReceiptInfo::AppStoreId' has a wrong offset!");
-static_assert(offsetof(FCatalogReceiptInfo, ReceiptId) == 0x000018, "Member 'FCatalogReceiptInfo::ReceiptId' has a wrong offset!");
-static_assert(offsetof(FCatalogReceiptInfo, ReceiptInfo) == 0x000028, "Member 'FCatalogReceiptInfo::ReceiptInfo' has a wrong offset!");
-static_assert(offsetof(FCatalogReceiptInfo, PurchaseCorrelationId) == 0x000038, "Member 'FCatalogReceiptInfo::PurchaseCorrelationId' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Results_Summary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_Summary.Results_Summary_C.ExecuteUbergraph_Results_Summary
 // ()
@@ -101,7 +100,7 @@ void UResults_Summary_C::InitializeLootChest(int32 Level)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortUIScoreReport*               InScoreReport                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortItem*>                InRewardItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               InRewardItems                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   InTotalMissionPoints                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UResults_Summary_C::Initialize(class UFortUIScoreReport* InScoreReport, TArray<class UFortItem*>& InRewardItems, int32 InTotalMissionPoints)
@@ -140,7 +139,7 @@ void UResults_Summary_C::DoDesignTimeRandomization()
 // Function Results_Summary.Results_Summary_C.InitializeRewards
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   InTotalMissionPoints                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UResults_Summary_C::InitializeRewards(TArray<class UFortItem*>& Items, int32 InTotalMissionPoints)
@@ -174,5 +173,5 @@ void UResults_Summary_C::Focus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

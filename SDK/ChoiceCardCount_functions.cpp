@@ -14,8 +14,7 @@
 #include "ChoiceCardCount_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ChoiceCardCount.ChoiceCardCount_C.UpdateText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -36,5 +35,5 @@ void UChoiceCardCount_C::UpdateText(int32 InventoryCount)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

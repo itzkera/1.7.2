@@ -14,8 +14,7 @@
 #include "AthenaLobbyPlayerPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -34,7 +33,7 @@ void UAthenaLobbyPlayerPanel_C::Initialize()
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo_0                                       (Parm)
 
 void UAthenaLobbyPlayerPanel_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
@@ -96,7 +95,7 @@ void UAthenaLobbyPlayerPanel_C::InitializeContextEvents()
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnTeamMemberStateChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo_0                                       (Parm)
 
 void UAthenaLobbyPlayerPanel_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
@@ -126,5 +125,5 @@ void UAthenaLobbyPlayerPanel_C::Cancel()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

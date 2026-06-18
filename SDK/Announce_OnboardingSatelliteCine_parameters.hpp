@@ -15,8 +15,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.ExecuteUbergraph_Announce_OnboardingSatelliteCine
 // 0x00A8 (0x00A8 - 0x0000)
@@ -46,26 +46,6 @@ public:
 	class UFortAsyncAction_SetUIState*            CallFunc_SetUIState_ReturnValue2;                  // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine) == 0x000008, "Wrong alignment on Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine");
-static_assert(sizeof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine) == 0x0000A8, "Wrong size on Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, EntryPoint) == 0x000000, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc_SetUIState_ReturnValue) == 0x000008, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc_SetUIState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, Temp_bool_Has_Been_Initd_Variable) == 0x000021, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, Temp_bool_IsClosed_Variable) == 0x000022, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, Temp_bool_Has_Been_Initd_Variable2) == 0x000023, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::Temp_bool_Has_Been_Initd_Variable2' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, K2Node_HandleClientEvent_EventSource) == 0x000038, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, K2Node_HandleClientEvent_EventFocus) == 0x000040, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, K2Node_HandleClientEvent_ClientEvent) == 0x000048, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, K2Node_CreateDelegate_OutputDelegate3) == 0x000068, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000078, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, Temp_bool_IsClosed_Variable2) == 0x000080, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::Temp_bool_IsClosed_Variable2' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000088, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc__BPGetCurrentUIState_ReturnValue) == 0x000090, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc__BPGetCurrentUIState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc_SetUIState_ReturnValue2) == 0x000098, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc_SetUIState_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine, CallFunc_IsValid_ReturnValue2) == 0x0000A0, "Member 'Announce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
 
 // Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.HandleClientEvent_CinematicFinishedPlaying
 // 0x0030 (0x0030 - 0x0000)
@@ -76,11 +56,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying) == 0x000008, "Wrong alignment on Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying");
-static_assert(sizeof(Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying) == 0x000030, "Wrong size on Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying, EventSource) == 0x000000, "Member 'Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying::EventSource' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying, EventFocus) == 0x000008, "Member 'Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying::EventFocus' has a wrong offset!");
-static_assert(offsetof(Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying, ClientEvent) == 0x000010, "Member 'Announce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying::ClientEvent' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C
 // 0x0020 (0x0250 - 0x0230)
@@ -39,20 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTeamMemberDBNOState_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTeamMemberDBNOState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTeamMemberDBNOState_C")
 	}
 	static class UAthenaTeamMemberDBNOState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTeamMemberDBNOState_C>();
 	}
 };
-static_assert(alignof(UAthenaTeamMemberDBNOState_C) == 0x000008, "Wrong alignment on UAthenaTeamMemberDBNOState_C");
-static_assert(sizeof(UAthenaTeamMemberDBNOState_C) == 0x000250, "Wrong size on UAthenaTeamMemberDBNOState_C");
-static_assert(offsetof(UAthenaTeamMemberDBNOState_C, UberGraphFrame) == 0x000230, "Member 'UAthenaTeamMemberDBNOState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberDBNOState_C, DBNOIndicator) == 0x000238, "Member 'UAthenaTeamMemberDBNOState_C::DBNOIndicator' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberDBNOState_C, ImageTimer) == 0x000240, "Member 'UAthenaTeamMemberDBNOState_C::ImageTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberDBNOState_C, Visibility_When_Not_DBNO) == 0x000248, "Member 'UAthenaTeamMemberDBNOState_C::Visibility_When_Not_DBNO' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberDBNOState_C, ReviveTimeMax) == 0x00024C, "Member 'UAthenaTeamMemberDBNOState_C::ReviveTimeMax' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

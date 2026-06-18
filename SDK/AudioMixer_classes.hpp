@@ -15,8 +15,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class AudioMixer.SoundEffectLowPassFilterPreset
 // 0x0008 (0x0048 - 0x0040)
@@ -28,16 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundEffectLowPassFilterPreset">();
+		STATIC_CLASS_IMPL("SoundEffectLowPassFilterPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundEffectLowPassFilterPreset")
 	}
 	static class USoundEffectLowPassFilterPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundEffectLowPassFilterPreset>();
 	}
 };
-static_assert(alignof(USoundEffectLowPassFilterPreset) == 0x000008, "Wrong alignment on USoundEffectLowPassFilterPreset");
-static_assert(sizeof(USoundEffectLowPassFilterPreset) == 0x000048, "Wrong size on USoundEffectLowPassFilterPreset");
-static_assert(offsetof(USoundEffectLowPassFilterPreset, Settings) == 0x000040, "Member 'USoundEffectLowPassFilterPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectReverbPreset
 // 0x0008 (0x0048 - 0x0040)
@@ -49,16 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectReverbPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectReverbPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectReverbPreset")
 	}
 	static class USubmixEffectReverbPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectReverbPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectReverbPreset) == 0x000008, "Wrong alignment on USubmixEffectReverbPreset");
-static_assert(sizeof(USubmixEffectReverbPreset) == 0x000048, "Wrong size on USubmixEffectReverbPreset");
-static_assert(offsetof(USubmixEffectReverbPreset, Settings) == 0x000040, "Member 'USubmixEffectReverbPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectSubmixEQPreset
 // 0x0008 (0x0048 - 0x0040)
@@ -71,16 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectSubmixEQPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectSubmixEQPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectSubmixEQPreset")
 	}
 	static class USubmixEffectSubmixEQPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectSubmixEQPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectSubmixEQPreset) == 0x000008, "Wrong alignment on USubmixEffectSubmixEQPreset");
-static_assert(sizeof(USubmixEffectSubmixEQPreset) == 0x000048, "Wrong size on USubmixEffectSubmixEQPreset");
-static_assert(offsetof(USubmixEffectSubmixEQPreset, Settings) == 0x000040, "Member 'USubmixEffectSubmixEQPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SubmixEffectTestPreset
 // 0x0008 (0x0048 - 0x0040)
@@ -93,16 +95,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectTestPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectTestPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectTestPreset")
 	}
 	static class USubmixEffectTestPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectTestPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectTestPreset) == 0x000008, "Wrong alignment on USubmixEffectTestPreset");
-static_assert(sizeof(USubmixEffectTestPreset) == 0x000048, "Wrong size on USubmixEffectTestPreset");
-static_assert(offsetof(USubmixEffectTestPreset, Settings) == 0x000040, "Member 'USubmixEffectTestPreset::Settings' has a wrong offset!");
 
 // Class AudioMixer.SynthSound
 // 0x0020 (0x0310 - 0x02F0)
@@ -114,15 +117,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthSound">();
+		STATIC_CLASS_IMPL("SynthSound")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthSound")
 	}
 	static class USynthSound* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthSound>();
 	}
 };
-static_assert(alignof(USynthSound) == 0x000008, "Wrong alignment on USynthSound");
-static_assert(sizeof(USynthSound) == 0x000310, "Wrong size on USynthSound");
 
 // Class AudioMixer.SynthComponent
 // 0x0190 (0x0420 - 0x0290)
@@ -152,21 +157,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthComponent">();
+		STATIC_CLASS_IMPL("SynthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthComponent")
 	}
 	static class USynthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthComponent>();
 	}
 };
-static_assert(alignof(USynthComponent) == 0x000008, "Wrong alignment on USynthComponent");
-static_assert(sizeof(USynthComponent) == 0x000420, "Wrong size on USynthComponent");
-static_assert(offsetof(USynthComponent, AttenuationSettings) == 0x000298, "Member 'USynthComponent::AttenuationSettings' has a wrong offset!");
-static_assert(offsetof(USynthComponent, AttenuationOverrides) == 0x0002A0, "Member 'USynthComponent::AttenuationOverrides' has a wrong offset!");
-static_assert(offsetof(USynthComponent, ConcurrencySettings) == 0x0003C0, "Member 'USynthComponent::ConcurrencySettings' has a wrong offset!");
-static_assert(offsetof(USynthComponent, SoundClass) == 0x0003C8, "Member 'USynthComponent::SoundClass' has a wrong offset!");
-static_assert(offsetof(USynthComponent, Synth) == 0x0003D8, "Member 'USynthComponent::Synth' has a wrong offset!");
-static_assert(offsetof(USynthComponent, AudioComponent) == 0x0003E0, "Member 'USynthComponent::AudioComponent' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerCameraMode1P.PlayerCameraMode1P_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class UPlayerCameraMode1P_C : public UFortCameraMode_ThirdPerson
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerCameraMode1P_C">();
+		BP_STATIC_CLASS_IMPL("PlayerCameraMode1P_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerCameraMode1P_C")
 	}
 	static class UPlayerCameraMode1P_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerCameraMode1P_C>();
 	}
 };
-static_assert(alignof(UPlayerCameraMode1P_C) == 0x000008, "Wrong alignment on UPlayerCameraMode1P_C");
-static_assert(sizeof(UPlayerCameraMode1P_C) == 0x000110, "Wrong size on UPlayerCameraMode1P_C");
 
-}
-
+SDK_NAMESPACE_END

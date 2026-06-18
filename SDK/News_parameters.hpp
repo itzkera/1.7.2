@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function News.News_C.ExecuteUbergraph_News
 // 0x0028 (0x0028 - 0x0000)
@@ -26,13 +26,6 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(News_C_ExecuteUbergraph_News) == 0x000008, "Wrong alignment on News_C_ExecuteUbergraph_News");
-static_assert(sizeof(News_C_ExecuteUbergraph_News) == 0x000028, "Wrong size on News_C_ExecuteUbergraph_News");
-static_assert(offsetof(News_C_ExecuteUbergraph_News, EntryPoint) == 0x000000, "Member 'News_C_ExecuteUbergraph_News::EntryPoint' has a wrong offset!");
-static_assert(offsetof(News_C_ExecuteUbergraph_News, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'News_C_ExecuteUbergraph_News::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(News_C_ExecuteUbergraph_News, CallFunc_SpawnObject_ReturnValue) == 0x000010, "Member 'News_C_ExecuteUbergraph_News::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_ExecuteUbergraph_News, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000018, "Member 'News_C_ExecuteUbergraph_News::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_ExecuteUbergraph_News, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'News_C_ExecuteUbergraph_News::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function News.News_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -41,9 +34,6 @@ struct News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClic
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'News_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function News.News_C.AddEntry
 // 0x0040 (0x0040 - 0x0000)
@@ -56,20 +46,13 @@ public:
 	class UNewsEntry_C*                           CallFunc_Create_ReturnValue;                       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(News_C_AddEntry) == 0x000008, "Wrong alignment on News_C_AddEntry");
-static_assert(sizeof(News_C_AddEntry) == 0x000040, "Wrong size on News_C_AddEntry");
-static_assert(offsetof(News_C_AddEntry, inEntryText) == 0x000000, "Member 'News_C_AddEntry::inEntryText' has a wrong offset!");
-static_assert(offsetof(News_C_AddEntry, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'News_C_AddEntry::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(News_C_AddEntry, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'News_C_AddEntry::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_AddEntry, CallFunc_Create_ReturnValue) == 0x000030, "Member 'News_C_AddEntry::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_AddEntry, CallFunc_AddChild_ReturnValue) == 0x000038, "Member 'News_C_AddEntry::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function News.News_C.PopulateEntries
 // 0x00F0 (0x00F0 - 0x0000)
 struct News_C_PopulateEntries final
 {
 public:
-	bool                                          isEmpty;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsEmpty;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
@@ -87,23 +70,6 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select_Default;                             // 0x00D8(0x0018)()
 };
-static_assert(alignof(News_C_PopulateEntries) == 0x000008, "Wrong alignment on News_C_PopulateEntries");
-static_assert(sizeof(News_C_PopulateEntries) == 0x0000F0, "Wrong size on News_C_PopulateEntries");
-static_assert(offsetof(News_C_PopulateEntries, isEmpty) == 0x000000, "Member 'News_C_PopulateEntries::isEmpty' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_int_Variable) == 0x000004, "Member 'News_C_PopulateEntries::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable) == 0x000008, "Member 'News_C_PopulateEntries::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable2) == 0x000020, "Member 'News_C_PopulateEntries::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable3) == 0x000038, "Member 'News_C_PopulateEntries::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable4) == 0x000050, "Member 'News_C_PopulateEntries::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable5) == 0x000068, "Member 'News_C_PopulateEntries::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable6) == 0x000080, "Member 'News_C_PopulateEntries::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable7) == 0x000098, "Member 'News_C_PopulateEntries::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_text_Variable8) == 0x0000B0, "Member 'News_C_PopulateEntries::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, Temp_int_Variable2) == 0x0000C8, "Member 'News_C_PopulateEntries::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000CC, "Member 'News_C_PopulateEntries::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, CallFunc_Add_IntInt_ReturnValue) == 0x0000D0, "Member 'News_C_PopulateEntries::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, CallFunc_RandomIntegerInRange_ReturnValue) == 0x0000D4, "Member 'News_C_PopulateEntries::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_PopulateEntries, K2Node_Select_Default) == 0x0000D8, "Member 'News_C_PopulateEntries::K2Node_Select_Default' has a wrong offset!");
 
 // Function News.News_C.Init
 // 0x0040 (0x0040 - 0x0000)
@@ -119,14 +85,6 @@ public:
 	class UNewsEntry_C*                           K2Node_DynamicCast_AsNews_Entry;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(News_C_Init) == 0x000008, "Wrong alignment on News_C_Init");
-static_assert(sizeof(News_C_Init) == 0x000040, "Wrong size on News_C_Init");
-static_assert(offsetof(News_C_Init, CallFunc_PopulateEntries_isEmpty) == 0x000000, "Member 'News_C_Init::CallFunc_PopulateEntries_isEmpty' has a wrong offset!");
-static_assert(offsetof(News_C_Init, CallFunc_GetEmptyText_ReturnValue) == 0x000008, "Member 'News_C_Init::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_Init, CallFunc_GetChildAt_ReturnValue) == 0x000020, "Member 'News_C_Init::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_Init, CallFunc_HasAnyChildren_ReturnValue) == 0x000028, "Member 'News_C_Init::CallFunc_HasAnyChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(News_C_Init, K2Node_DynamicCast_AsNews_Entry) == 0x000030, "Member 'News_C_Init::K2Node_DynamicCast_AsNews_Entry' has a wrong offset!");
-static_assert(offsetof(News_C_Init, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'News_C_Init::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function News.News_C.UpdateInfoPanel
 // 0x0018 (0x0018 - 0x0000)
@@ -135,9 +93,6 @@ struct News_C_UpdateInfoPanel final
 public:
 	class FText                                   BodyText;                                          // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(News_C_UpdateInfoPanel) == 0x000008, "Wrong alignment on News_C_UpdateInfoPanel");
-static_assert(sizeof(News_C_UpdateInfoPanel) == 0x000018, "Wrong size on News_C_UpdateInfoPanel");
-static_assert(offsetof(News_C_UpdateInfoPanel, BodyText) == 0x000000, "Member 'News_C_UpdateInfoPanel::BodyText' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

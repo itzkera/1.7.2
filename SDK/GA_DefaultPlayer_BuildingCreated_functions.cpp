@@ -14,8 +14,7 @@
 #include "GA_DefaultPlayer_BuildingCreated_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_DefaultPlayer_BuildingCreated.GA_DefaultPlayer_BuildingCreated_C.ExecuteUbergraph_GA_DefaultPlayer_BuildingCreated
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGA_DefaultPlayer_BuildingCreated_C::ExecuteUbergraph_GA_DefaultPlayer_Buil
 // Function GA_DefaultPlayer_BuildingCreated.GA_DefaultPlayer_BuildingCreated_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGA_DefaultPlayer_BuildingCreated_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -56,5 +55,5 @@ void UGA_DefaultPlayer_BuildingCreated_C::K2_ActivateAbilityFromEvent(const stru
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

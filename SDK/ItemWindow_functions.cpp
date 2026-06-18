@@ -14,8 +14,7 @@
 #include "ItemWindow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemWindow.ItemWindow_C.ExecuteUbergraph_ItemWindow
 // ()
@@ -110,8 +109,8 @@ void UItemWindow_C::OnSelectedButtonChanged_Event_0(class UCommonButton* Associa
 // Function ItemWindow.ItemWindow_C.AddInfo
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItemDefinition*>      Info_Items                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             Title_0                                                (Parm)
+// TArray<class UFortItemDefinition*>&     Info_Items                                             (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const class FText&                      Title_0                                                (Parm)
 
 void UItemWindow_C::AddInfo(TArray<class UFortItemDefinition*>& Info_Items, const class FText& Title_0)
 {
@@ -171,7 +170,7 @@ void UItemWindow_C::HandleButton(class UWidget* Content, int32 Index_0)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EFortRarity                             InRarity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             ExternalRarity                                         (Parm, OutParm)
+// class FText*                            ExternalRarity                                         (Parm, OutParm)
 
 void UItemWindow_C::InternalToExternalRarity(EFortRarity InRarity, class FText* ExternalRarity)
 {
@@ -212,5 +211,5 @@ void UItemWindow_C::Set_Description_Text(class UFortItemDefinition* Item_Definit
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

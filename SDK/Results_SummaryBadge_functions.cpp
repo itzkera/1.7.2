@@ -14,8 +14,7 @@
 #include "Results_SummaryBadge_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_SummaryBadge.Results_SummaryBadge_C.ExecuteUbergraph_Results_SummaryBadge
 // (HasDefaults)
@@ -90,5 +89,5 @@ void UResults_SummaryBadge_C::Initialize(class UFortItem* BadgeItem)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

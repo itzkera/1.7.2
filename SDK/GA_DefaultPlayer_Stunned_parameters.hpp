@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.ExecuteUbergraph_GA_DefaultPlayer_Stunned
 // 0x0278 (0x0278 - 0x0000)
@@ -35,7 +35,7 @@ public:
 	bool                                          Temp_bool_Option_B___If_false__use_Option_A_Variable; // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate4; // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate5;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      K2Node_DynamicCast_AsPlayer_Controller;            // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -56,7 +56,7 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue3;          // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate7;             // 0x0100(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate8;             // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate8; // 0x0110(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue4;         // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue3;                     // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue4;          // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -64,7 +64,7 @@ public:
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData3;                    // 0x0128(0x0020)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag3;                // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Select_Default;                             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate9;             // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate9; // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue5;          // 0x016A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -100,100 +100,22 @@ public:
 	int32                                         CallFunc_RemoveActiveEffectsWithTags_ReturnValue2; // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAbilitySystemComponent*            CallFunc_GetActivatingAbilityComponent_ReturnValue; // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput;    // 0x0210(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput; // 0x0210(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCameraAnimInst*                        CallFunc_PlayCameraAnim_ReturnValue;               // 0x0228(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAbilitySystemComponent*            CallFunc_GetActivatingAbilityComponent_ReturnValue2; // 0x0230(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self2_CastInput;   // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self2_CastInput; // 0x0238(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue2;      // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_24A[0x6];                                      // 0x024A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAbilitySystemComponent*            CallFunc_GetActivatingAbilityComponent_ReturnValue3; // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self3_CastInput;   // 0x0258(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self3_CastInput; // 0x0258(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue3;      // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0269(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_26A[0x6];                                      // 0x026A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimer_ReturnValue2;                 // 0x0270(0x0008)(NoDestructor)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned) == 0x000278, "Wrong size on GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, EntryPoint) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_Variable) == 0x000004, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000005, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CustomEvent_TargetData) == 0x000028, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CustomEvent_ApplicationTag) == 0x000048, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate3) == 0x000050, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_Option_B___If_false__use_Option_A_Variable) == 0x000060, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_Option_B___If_false__use_Option_A_Variable' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000061, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate4) == 0x000068, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetController_ReturnValue) == 0x000078, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate5) == 0x000080, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_DynamicCast_AsPlayer_Controller) == 0x000090, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_DynamicCast_AsPlayer_Controller' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue2) == 0x000099, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x00009A, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x00009B, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue) == 0x00009C, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate6) == 0x0000A0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue2) == 0x0000B0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetAnimInstance_ReturnValue) == 0x0000B8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetCurrentMontage_ReturnValue) == 0x0000C0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetCurrentMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CustomEvent_TargetData2) == 0x0000C8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CustomEvent_TargetData2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CustomEvent_ApplicationTag2) == 0x0000E8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CustomEvent_ApplicationTag2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Montage_GetCurrentSection_ReturnValue) == 0x0000F0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Montage_GetCurrentSection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue3) == 0x0000F8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate7) == 0x000100, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate8) == 0x000110, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x000120, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue3) == 0x000121, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue4) == 0x000122, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CustomEvent_TargetData3) == 0x000128, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CustomEvent_TargetData3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CustomEvent_ApplicationTag3) == 0x000148, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CustomEvent_ApplicationTag3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_Select_Default) == 0x000150, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, K2Node_CreateDelegate_OutputDelegate9) == 0x000158, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::K2Node_CreateDelegate_OutputDelegate9' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_IsClosed_Variable) == 0x000168, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_Has_Been_Initd_Variable) == 0x000169, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue5) == 0x00016A, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_struct_Variable) == 0x000170, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_IsClosed_Variable2) == 0x000190, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_IsClosed_Variable2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_bool_Has_Been_Initd_Variable2) == 0x000191, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_bool_Has_Been_Initd_Variable2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, Temp_struct_Variable2) == 0x000198, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_K2_SetTimer_ReturnValue) == 0x0001A0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_PlayMontageWaitTarget_ReturnValue) == 0x0001A8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_PlayMontageWaitTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetActivatingPawn_ReturnValue) == 0x0001B0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue4) == 0x0001B8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x0001B9, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue5) == 0x0001BA, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetHealth_ReturnValue) == 0x0001BC, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Greater_FloatFloat_ReturnValue6) == 0x0001C0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Greater_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue) == 0x0001C8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_SetNextMontageSectionAndWait_ReturnValue) == 0x0001D0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_SetNextMontageSectionAndWait_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue6) == 0x0001D8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue7) == 0x0001D9, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_IsValid_ReturnValue8) == 0x0001DA, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_IsValid_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetMaxHealth_ReturnValue) == 0x0001DC, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetMaxHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetHealth_ReturnValue2) == 0x0001E0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetHealth_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001E4, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0001E8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_RemoveActiveEffectsWithTags_ReturnValue) == 0x0001F0, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_RemoveActiveEffectsWithTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetAbilitySystemComponent_ReturnValue2) == 0x0001F8, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetAbilitySystemComponent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_RemoveActiveEffectsWithTags_ReturnValue2) == 0x000200, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_RemoveActiveEffectsWithTags_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetActivatingAbilityComponent_ReturnValue) == 0x000208, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetActivatingAbilityComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000210, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000220, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_PlayCameraAnim_ReturnValue) == 0x000228, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_PlayCameraAnim_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetActivatingAbilityComponent_ReturnValue2) == 0x000230, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetActivatingAbilityComponent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_HasMatchingGameplayTag_self2_CastInput) == 0x000238, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_HasMatchingGameplayTag_self2_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_HasMatchingGameplayTag_ReturnValue2) == 0x000248, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_HasMatchingGameplayTag_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_Not_PreBool_ReturnValue) == 0x000249, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_GetActivatingAbilityComponent_ReturnValue3) == 0x000250, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_GetActivatingAbilityComponent_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_HasMatchingGameplayTag_self3_CastInput) == 0x000258, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_HasMatchingGameplayTag_self3_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_HasMatchingGameplayTag_ReturnValue3) == 0x000268, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_HasMatchingGameplayTag_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_BooleanOR_ReturnValue) == 0x000269, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned, CallFunc_K2_SetTimer_ReturnValue2) == 0x000270, "Member 'GA_DefaultPlayer_Stunned_C_ExecuteUbergraph_GA_DefaultPlayer_Stunned::CallFunc_K2_SetTimer_ReturnValue2' has a wrong offset!");
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.Triggered_3C8EA97E467ED88E163FF0B4F830736D
 // 0x0028 (0x0028 - 0x0000)
@@ -203,10 +125,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D) == 0x000028, "Wrong size on GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D, TargetData) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D, ApplicationTag) == 0x000020, "Member 'GA_DefaultPlayer_Stunned_C_Triggered_3C8EA97E467ED88E163FF0B4F830736D::ApplicationTag' has a wrong offset!");
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.Cancelled_3C8EA97E467ED88E163FF0B4F830736D
 // 0x0028 (0x0028 - 0x0000)
@@ -216,10 +134,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D) == 0x000028, "Wrong size on GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D, TargetData) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D, ApplicationTag) == 0x000020, "Member 'GA_DefaultPlayer_Stunned_C_Cancelled_3C8EA97E467ED88E163FF0B4F830736D::ApplicationTag' has a wrong offset!");
 
 // Function GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C.Completed_3C8EA97E467ED88E163FF0B4F830736D
 // 0x0028 (0x0028 - 0x0000)
@@ -229,10 +143,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0020(0x0008)(Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D) == 0x000008, "Wrong alignment on GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(sizeof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D) == 0x000028, "Wrong size on GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D, TargetData) == 0x000000, "Member 'GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D, ApplicationTag) == 0x000020, "Member 'GA_DefaultPlayer_Stunned_C_Completed_3C8EA97E467ED88E163FF0B4F830736D::ApplicationTag' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

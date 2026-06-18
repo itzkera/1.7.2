@@ -15,8 +15,7 @@
 #include "AIModule_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BluGloManager.BluGloManager_C
 // 0x0060 (0x0480 - 0x0420)
@@ -63,27 +62,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BluGloManager_C">();
+		BP_STATIC_CLASS_IMPL("BluGloManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BluGloManager_C")
 	}
 	static class ABluGloManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABluGloManager_C>();
 	}
 };
-static_assert(alignof(ABluGloManager_C) == 0x000008, "Wrong alignment on ABluGloManager_C");
-static_assert(sizeof(ABluGloManager_C) == 0x000480, "Wrong size on ABluGloManager_C");
-static_assert(offsetof(ABluGloManager_C, UberGraphFrame) == 0x000420, "Member 'ABluGloManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, DefaultSceneRoot) == 0x000428, "Member 'ABluGloManager_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, PossibleSpawnLocationsArray) == 0x000430, "Member 'ABluGloManager_C::PossibleSpawnLocationsArray' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, OccupiedNodes) == 0x000440, "Member 'ABluGloManager_C::OccupiedNodes' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, AmountOfBluGloToSpawn) == 0x000450, "Member 'ABluGloManager_C::AmountOfBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, QueryActor) == 0x000458, "Member 'ABluGloManager_C::QueryActor' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, OnestRequestArraySet) == 0x000460, "Member 'ABluGloManager_C::OnestRequestArraySet' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, BluGloNavigablePointRadius) == 0x000464, "Member 'ABluGloManager_C::BluGloNavigablePointRadius' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, Reward_Start_Sound) == 0x000468, "Member 'ABluGloManager_C::Reward_Start_Sound' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, Reward_Appear_Sound) == 0x000470, "Member 'ABluGloManager_C::Reward_Appear_Sound' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, LocationLength) == 0x000478, "Member 'ABluGloManager_C::LocationLength' has a wrong offset!");
-static_assert(offsetof(ABluGloManager_C, BluGloSpawnAnimationTime) == 0x00047C, "Member 'ABluGloManager_C::BluGloSpawnAnimationTime' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

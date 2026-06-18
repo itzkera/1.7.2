@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TeamScorePanelContent.TeamScorePanelContent_C
 // 0x0008 (0x0240 - 0x0238)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamScorePanelContent_C">();
+		BP_STATIC_CLASS_IMPL("TeamScorePanelContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamScorePanelContent_C")
 	}
 	static class UTeamScorePanelContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamScorePanelContent_C>();
 	}
 };
-static_assert(alignof(UTeamScorePanelContent_C) == 0x000008, "Wrong alignment on UTeamScorePanelContent_C");
-static_assert(sizeof(UTeamScorePanelContent_C) == 0x000240, "Wrong size on UTeamScorePanelContent_C");
-static_assert(offsetof(UTeamScorePanelContent_C, TeamScoreDetailsContent) == 0x000238, "Member 'UTeamScorePanelContent_C::TeamScoreDetailsContent' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

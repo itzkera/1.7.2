@@ -14,8 +14,7 @@
 #include "GamepadMappingInfo_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GamepadMappingInfo.GamepadMappingInfo_C.Update Displayed Mapping
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -106,5 +105,5 @@ void UGamepadMappingInfo_C::HandleConfigChanged(int32 Mode, int32 Config)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

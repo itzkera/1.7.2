@@ -14,8 +14,7 @@
 #include "PlayerChoiceButtonWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C.ExecuteUbergraph_PlayerChoiceButtonWidget
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UPlayerChoiceButtonWidget_C::BndEvt__Button_K2Node_ComponentBoundEvent_98_F
 // Function PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C.ConfigureChoice
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FChoiceDataEntry                 Choice                                                 (Parm)
+// const struct FChoiceDataEntry&          Choice                                                 (Parm)
 // int32                                   ChoiceID_0                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPlayerChoiceWidget_C*            Owner_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -80,5 +79,5 @@ void UPlayerChoiceButtonWidget_C::ConfigureChoice(const struct FChoiceDataEntry&
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

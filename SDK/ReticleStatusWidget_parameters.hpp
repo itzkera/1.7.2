@@ -13,8 +13,8 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ReticleStatusWidget.ReticleStatusWidget_C.ExecuteUbergraph_ReticleStatusWidget
 // 0x0058 (0x0058 - 0x0000)
@@ -25,16 +25,9 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  K2Node_CustomEvent_FailedReason;                   // 0x0008(0x0020)()
 	class FText                                   K2Node_CustomEvent_FailureText;                    // 0x0028(0x0018)()
-	TDelegate<void(const struct FGameplayTagContainer& FailedReason, class FText FailureText)> K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayTagContainer& FailedReason, class FText FailureText)> K2Node_CreateDelegate_OutputDelegate; // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget) == 0x000008, "Wrong alignment on ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget");
-static_assert(sizeof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget) == 0x000058, "Wrong size on ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget");
-static_assert(offsetof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget, EntryPoint) == 0x000000, "Member 'ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget, K2Node_CustomEvent_FailedReason) == 0x000008, "Member 'ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget::K2Node_CustomEvent_FailedReason' has a wrong offset!");
-static_assert(offsetof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget, K2Node_CustomEvent_FailureText) == 0x000028, "Member 'ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget::K2Node_CustomEvent_FailureText' has a wrong offset!");
-static_assert(offsetof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'ReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function ReticleStatusWidget.ReticleStatusWidget_C.OnUnableToPerformAction
 // 0x0038 (0x0038 - 0x0000)
@@ -44,10 +37,6 @@ public:
 	struct FGameplayTagContainer                  FailedReason;                                      // 0x0000(0x0020)(Parm)
 	class FText                                   FailureText;                                       // 0x0020(0x0018)(Parm)
 };
-static_assert(alignof(ReticleStatusWidget_C_OnUnableToPerformAction) == 0x000008, "Wrong alignment on ReticleStatusWidget_C_OnUnableToPerformAction");
-static_assert(sizeof(ReticleStatusWidget_C_OnUnableToPerformAction) == 0x000038, "Wrong size on ReticleStatusWidget_C_OnUnableToPerformAction");
-static_assert(offsetof(ReticleStatusWidget_C_OnUnableToPerformAction, FailedReason) == 0x000000, "Member 'ReticleStatusWidget_C_OnUnableToPerformAction::FailedReason' has a wrong offset!");
-static_assert(offsetof(ReticleStatusWidget_C_OnUnableToPerformAction, FailureText) == 0x000020, "Member 'ReticleStatusWidget_C_OnUnableToPerformAction::FailureText' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

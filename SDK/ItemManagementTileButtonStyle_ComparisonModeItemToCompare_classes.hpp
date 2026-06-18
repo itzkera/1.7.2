@@ -13,8 +13,7 @@
 #include "ItemManagementTileButtonStyle_Base_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ItemManagementTileButtonStyle-ComparisonModeItemToCompare.ItemManagementTileButtonStyle-ComparisonModeItemToCompare_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C final : publi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementTileButtonStyle-ComparisonModeItemToCompare_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementTileButtonStyle-ComparisonModeItemToCompare_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementTileButtonStyle-ComparisonModeItemToCompare_C")
 	}
 	static class UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C>();
 	}
 };
-static_assert(alignof(UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C) == 0x000008, "Wrong alignment on UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C");
-static_assert(sizeof(UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C) == 0x000530, "Wrong size on UItemManagementTileButtonStyle_ComparisonModeItemToCompare_C");
 
-}
-
+SDK_NAMESPACE_END

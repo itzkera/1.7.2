@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C
 // 0x0010 (0x04B0 - 0x04A0)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookPrimaryPanel_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookPrimaryPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookPrimaryPanel_C")
 	}
 	static class UCollectionBookPrimaryPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookPrimaryPanel_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPrimaryPanel_C) == 0x000008, "Wrong alignment on UCollectionBookPrimaryPanel_C");
-static_assert(sizeof(UCollectionBookPrimaryPanel_C) == 0x0004B0, "Wrong size on UCollectionBookPrimaryPanel_C");
-static_assert(offsetof(UCollectionBookPrimaryPanel_C, UberGraphFrame) == 0x0004A0, "Member 'UCollectionBookPrimaryPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPrimaryPanel_C, CanShowCollectionBookHelp) == 0x0004A8, "Member 'UCollectionBookPrimaryPanel_C::CanShowCollectionBookHelp' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

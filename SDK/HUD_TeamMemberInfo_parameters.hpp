@@ -15,8 +15,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.ExecuteUbergraph_HUD-TeamMemberInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -25,9 +25,6 @@ struct HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo) == 0x000004, "Wrong alignment on HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo");
-static_assert(sizeof(HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo) == 0x000004, "Wrong size on HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo");
-static_assert(offsetof(HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo, EntryPoint) == 0x000000, "Member 'HUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo::EntryPoint' has a wrong offset!");
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.Update
 // 0x0228 (0x0228 - 0x0000)
@@ -69,38 +66,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue2;                  // 0x0226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select5_Default;                            // 0x0227(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_TeamMemberInfo_C_Update) == 0x000008, "Wrong alignment on HUD_TeamMemberInfo_C_Update");
-static_assert(sizeof(HUD_TeamMemberInfo_C_Update) == 0x000228, "Wrong size on HUD_TeamMemberInfo_C_Update");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, UpdatedMemberInfo) == 0x000000, "Member 'HUD_TeamMemberInfo_C_Update::UpdatedMemberInfo' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, PlayerPlatformNetId) == 0x000190, "Member 'HUD_TeamMemberInfo_C_Update::PlayerPlatformNetId' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, PlayerNetId) == 0x0001A8, "Member 'HUD_TeamMemberInfo_C_Update::PlayerNetId' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_byte_Variable) == 0x0001C0, "Member 'HUD_TeamMemberInfo_C_Update::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_bool_Variable) == 0x0001C1, "Member 'HUD_TeamMemberInfo_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_byte_Variable2) == 0x0001C2, "Member 'HUD_TeamMemberInfo_C_Update::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_byte_Variable3) == 0x0001C3, "Member 'HUD_TeamMemberInfo_C_Update::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_bool_Variable2) == 0x0001C4, "Member 'HUD_TeamMemberInfo_C_Update::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_int_Variable) == 0x0001C8, "Member 'HUD_TeamMemberInfo_C_Update::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_int_Variable2) == 0x0001CC, "Member 'HUD_TeamMemberInfo_C_Update::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_byte_Variable4) == 0x0001D0, "Member 'HUD_TeamMemberInfo_C_Update::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_IsValid_UniqueNetIdRepl_ReturnValue) == 0x0001D1, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_IsValid_UniqueNetIdRepl_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_bool_Variable3) == 0x0001D2, "Member 'HUD_TeamMemberInfo_C_Update::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_bool_Variable4) == 0x0001D3, "Member 'HUD_TeamMemberInfo_C_Update::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_GetContext_ReturnValue) == 0x0001D8, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_class_Variable) == 0x0001E0, "Member 'HUD_TeamMemberInfo_C_Update::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_class_Variable2) == 0x0001E8, "Member 'HUD_TeamMemberInfo_C_Update::Temp_class_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_IsInLocalPlayersParty_ReturnValue) == 0x0001F0, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_IsInLocalPlayersParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, Temp_bool_Variable5) == 0x0001F1, "Member 'HUD_TeamMemberInfo_C_Update::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, K2Node_Select_Default) == 0x0001F8, "Member 'HUD_TeamMemberInfo_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, K2Node_Select2_Default) == 0x000210, "Member 'HUD_TeamMemberInfo_C_Update::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000218, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00021C, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_IsValid_ReturnValue) == 0x00021D, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, K2Node_Select3_Default) == 0x00021E, "Member 'HUD_TeamMemberInfo_C_Update::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, K2Node_Select4_Default) == 0x000220, "Member 'HUD_TeamMemberInfo_C_Update::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_Greater_IntInt_ReturnValue) == 0x000224, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue) == 0x000225, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, CallFunc_BooleanAND_ReturnValue2) == 0x000226, "Member 'HUD_TeamMemberInfo_C_Update::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_Update, K2Node_Select5_Default) == 0x000227, "Member 'HUD_TeamMemberInfo_C_Update::K2Node_Select5_Default' has a wrong offset!");
 
 // Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.SetHealth
 // 0x0010 (0x0010 - 0x0000)
@@ -112,11 +77,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_TeamMemberInfo_C_SetHealth) == 0x000008, "Wrong alignment on HUD_TeamMemberInfo_C_SetHealth");
-static_assert(sizeof(HUD_TeamMemberInfo_C_SetHealth) == 0x000010, "Wrong size on HUD_TeamMemberInfo_C_SetHealth");
-static_assert(offsetof(HUD_TeamMemberInfo_C_SetHealth, Value) == 0x000000, "Member 'HUD_TeamMemberInfo_C_SetHealth::Value' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_SetHealth, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'HUD_TeamMemberInfo_C_SetHealth::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_TeamMemberInfo_C_SetHealth, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'HUD_TeamMemberInfo_C_SetHealth::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function RotatingStarburstWidget.RotatingStarburstWidget_C.ExecuteUbergraph_RotatingStarburstWidget
 // 0x0044 (0x0044 - 0x0000)
@@ -27,13 +27,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget) == 0x000004, "Wrong alignment on RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget");
-static_assert(sizeof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget) == 0x000044, "Wrong size on RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget");
-static_assert(offsetof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget, EntryPoint) == 0x000000, "Member 'RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget, K2Node_Event_MyGeometry) == 0x000004, "Member 'RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget, K2Node_Event_InDeltaTime) == 0x000038, "Member 'RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00003C, "Member 'RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget, CallFunc_Add_FloatFloat_ReturnValue) == 0x000040, "Member 'RotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function RotatingStarburstWidget.RotatingStarburstWidget_C.Tick
 // 0x0038 (0x0038 - 0x0000)
@@ -43,10 +36,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatingStarburstWidget_C_Tick) == 0x000004, "Wrong alignment on RotatingStarburstWidget_C_Tick");
-static_assert(sizeof(RotatingStarburstWidget_C_Tick) == 0x000038, "Wrong size on RotatingStarburstWidget_C_Tick");
-static_assert(offsetof(RotatingStarburstWidget_C_Tick, MyGeometry) == 0x000000, "Member 'RotatingStarburstWidget_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatingStarburstWidget_C_Tick, InDeltaTime) == 0x000034, "Member 'RotatingStarburstWidget_C_Tick::InDeltaTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

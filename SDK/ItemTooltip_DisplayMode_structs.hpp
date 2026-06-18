@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum ItemTooltip_DisplayMode.ItemTooltip_DisplayMode
 // NumValues: 0x0004
@@ -24,5 +23,4 @@ enum class EItemTooltip_DisplayMode : uint8
 	ItemTooltip_MAX                          = 3,
 };
 
-}
-
+SDK_NAMESPACE_END

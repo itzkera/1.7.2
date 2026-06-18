@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BasicNotification.BasicNotification_C
 // 0x0000 (0x0090 - 0x0090)
@@ -23,15 +22,16 @@ class UBasicNotification_C final : public UFortUINotification
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BasicNotification_C">();
+		BP_STATIC_CLASS_IMPL("BasicNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BasicNotification_C")
 	}
 	static class UBasicNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBasicNotification_C>();
 	}
 };
-static_assert(alignof(UBasicNotification_C) == 0x000008, "Wrong alignment on UBasicNotification_C");
-static_assert(sizeof(UBasicNotification_C) == 0x000090, "Wrong size on UBasicNotification_C");
 
-}
-
+SDK_NAMESPACE_END

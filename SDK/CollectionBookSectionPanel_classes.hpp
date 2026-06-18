@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookSectionPanel.CollectionBookSectionPanel_C
 // 0x0080 (0x05B0 - 0x0530)
@@ -44,24 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookSectionPanel_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookSectionPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookSectionPanel_C")
 	}
 	static class UCollectionBookSectionPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookSectionPanel_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSectionPanel_C) == 0x000008, "Wrong alignment on UCollectionBookSectionPanel_C");
-static_assert(sizeof(UCollectionBookSectionPanel_C) == 0x0005B0, "Wrong size on UCollectionBookSectionPanel_C");
-static_assert(offsetof(UCollectionBookSectionPanel_C, UberGraphFrame) == 0x000530, "Member 'UCollectionBookSectionPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, Image_0) == 0x000538, "Member 'UCollectionBookSectionPanel_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, Image_2) == 0x000540, "Member 'UCollectionBookSectionPanel_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, MainModeItemDetailsHostPanel) == 0x000548, "Member 'UCollectionBookSectionPanel_C::MainModeItemDetailsHostPanel' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, SlotItemInputAction) == 0x000550, "Member 'UCollectionBookSectionPanel_C::SlotItemInputAction' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, InspectInputAction) == 0x000560, "Member 'UCollectionBookSectionPanel_C::InspectInputAction' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, ConfirmSlotItemTitle) == 0x000570, "Member 'UCollectionBookSectionPanel_C::ConfirmSlotItemTitle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, ConfirmSlotItemMessage) == 0x000588, "Member 'UCollectionBookSectionPanel_C::ConfirmSlotItemMessage' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionPanel_C, BackInputActionName) == 0x0005A0, "Member 'UCollectionBookSectionPanel_C::BackInputActionName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Announce_ZoneModifiers.Announce_ZoneModifiers_C
 // 0x0008 (0x0418 - 0x0410)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_ZoneModifiers_C">();
+		BP_STATIC_CLASS_IMPL("Announce_ZoneModifiers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_ZoneModifiers_C")
 	}
 	static class AAnnounce_ZoneModifiers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_ZoneModifiers_C>();
 	}
 };
-static_assert(alignof(AAnnounce_ZoneModifiers_C) == 0x000008, "Wrong alignment on AAnnounce_ZoneModifiers_C");
-static_assert(sizeof(AAnnounce_ZoneModifiers_C) == 0x000418, "Wrong size on AAnnounce_ZoneModifiers_C");
-static_assert(offsetof(AAnnounce_ZoneModifiers_C, DefaultSceneRoot) == 0x000410, "Member 'AAnnounce_ZoneModifiers_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

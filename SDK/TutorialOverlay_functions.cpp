@@ -14,8 +14,7 @@
 #include "TutorialOverlay_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TutorialOverlay.TutorialOverlay_C.ExecuteUbergraph_TutorialOverlay
 // ()
@@ -50,5 +49,5 @@ void UTutorialOverlay_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

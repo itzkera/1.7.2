@@ -15,8 +15,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_Post_Explosion_Generic.B_Post_Explosion_Generic_C
 // 0x0518 (0x08A0 - 0x0388)
@@ -46,29 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Post_Explosion_Generic_C">();
+		BP_STATIC_CLASS_IMPL("B_Post_Explosion_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Post_Explosion_Generic_C")
 	}
 	static class AB_Post_Explosion_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Post_Explosion_Generic_C>();
 	}
 };
-static_assert(alignof(AB_Post_Explosion_Generic_C) == 0x000010, "Wrong alignment on AB_Post_Explosion_Generic_C");
-static_assert(sizeof(AB_Post_Explosion_Generic_C) == 0x0008A0, "Wrong size on AB_Post_Explosion_Generic_C");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX) == 0x000388, "Member 'AB_Post_Explosion_Generic_C::PostFX' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_SphereComponent) == 0x000390, "Member 'AB_Post_Explosion_Generic_C::PostFX_SphereComponent' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_PreviewScale) == 0x000398, "Member 'AB_Post_Explosion_Generic_C::PostFX_PreviewScale' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_BlendRadius) == 0x0003A4, "Member 'AB_Post_Explosion_Generic_C::PostFX_BlendRadius' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_ShakeEpicenter) == 0x0003A8, "Member 'AB_Post_Explosion_Generic_C::PostFX_ShakeEpicenter' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_ShakeOuterradius) == 0x0003B4, "Member 'AB_Post_Explosion_Generic_C::PostFX_ShakeOuterradius' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_ShakeInnerRadius) == 0x0003B8, "Member 'AB_Post_Explosion_Generic_C::PostFX_ShakeInnerRadius' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, UseCameraShake) == 0x0003BC, "Member 'AB_Post_Explosion_Generic_C::UseCameraShake' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, CameraShakeClass) == 0x0003C0, "Member 'AB_Post_Explosion_Generic_C::CameraShakeClass' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, UseForceFeedback) == 0x0003C8, "Member 'AB_Post_Explosion_Generic_C::UseForceFeedback' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, DeactivateDelay) == 0x0003CC, "Member 'AB_Post_Explosion_Generic_C::DeactivateDelay' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, PostFX_Settings) == 0x0003D0, "Member 'AB_Post_Explosion_Generic_C::PostFX_Settings' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, ForceFeedbackNear) == 0x000890, "Member 'AB_Post_Explosion_Generic_C::ForceFeedbackNear' has a wrong offset!");
-static_assert(offsetof(AB_Post_Explosion_Generic_C, ForceFeedbackFar) == 0x000898, "Member 'AB_Post_Explosion_Generic_C::ForceFeedbackFar' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

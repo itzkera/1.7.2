@@ -14,17 +14,16 @@
 #include "StyleLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StyleLibrary.StyleLibrary_C.Get Theme Color
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // EFortUITheme                            Theme_Type                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EFortUIThemeColor                       Color_Type                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Theme_Color                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Theme_Color                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Theme_Color(const struct FFortUIStylesheet& Stylesheet, EFortUITheme Theme_Type, EFortUIThemeColor Color_Type, class UObject* __WorldContext, struct FLinearColor* Theme_Color)
 {
@@ -50,10 +49,10 @@ void UStyleLibrary_C::Get_Theme_Color(const struct FFortUIStylesheet& Stylesheet
 // Function StyleLibrary.StyleLibrary_C.Get Theme
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // EFortUITheme                            Theme_Type                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortUITheme                     Theme                                                  (Parm, OutParm, HasGetValueTypeHash)
+// struct FFortUITheme*                    Theme                                                  (Parm, OutParm, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Theme(const struct FFortUIStylesheet& Stylesheet, EFortUITheme Theme_Type, class UObject* __WorldContext, struct FFortUITheme* Theme)
 {
@@ -78,10 +77,10 @@ void UStyleLibrary_C::Get_Theme(const struct FFortUIStylesheet& Stylesheet, EFor
 // Function StyleLibrary.StyleLibrary_C.Get Standard Icon Size
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // EFortBrushSize                          Brush_Size                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Icon_Size                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Icon_Size                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Standard_Icon_Size(const struct FFortUIStylesheet& Stylesheet, EFortBrushSize Brush_Size, class UObject* __WorldContext, struct FVector2D* Icon_Size)
 {
@@ -106,10 +105,10 @@ void UStyleLibrary_C::Get_Standard_Icon_Size(const struct FFortUIStylesheet& Sty
 // Function StyleLibrary.StyleLibrary_C.Get Item Icon Size
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // EFortBrushSize                          Brush_Size                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Icon_Size                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Icon_Size                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Item_Icon_Size(const struct FFortUIStylesheet& Stylesheet, EFortBrushSize Brush_Size, class UObject* __WorldContext, struct FVector2D* Icon_Size)
 {
@@ -134,9 +133,9 @@ void UStyleLibrary_C::Get_Item_Icon_Size(const struct FFortUIStylesheet& Stylesh
 // Function StyleLibrary.StyleLibrary_C.Get Buff Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Buff_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
@@ -160,9 +159,9 @@ void UStyleLibrary_C::Get_Buff_Color(const struct FFortUIStylesheet& Stylesheet,
 // Function StyleLibrary.StyleLibrary_C.Get Debuff Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Debuff_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
@@ -186,10 +185,10 @@ void UStyleLibrary_C::Get_Debuff_Color(const struct FFortUIStylesheet& Styleshee
 // Function StyleLibrary.StyleLibrary_C.Get Item Size
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // EFortBrushSize                          Brush_Size                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Item_Size                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Item_Size                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Item_Size(const struct FFortUIStylesheet& Stylesheet, EFortBrushSize Brush_Size, class UObject* __WorldContext, struct FVector2D* Item_Size)
 {
@@ -214,9 +213,9 @@ void UStyleLibrary_C::Get_Item_Size(const struct FFortUIStylesheet& Stylesheet, 
 // Function StyleLibrary.StyleLibrary_C.Get Unique Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Unique_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
@@ -240,9 +239,9 @@ void UStyleLibrary_C::Get_Unique_Color(const struct FFortUIStylesheet& Styleshee
 // Function StyleLibrary.StyleLibrary_C.Get Fire Elemental Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Fire_Elemental_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
@@ -266,9 +265,9 @@ void UStyleLibrary_C::Get_Fire_Elemental_Color(const struct FFortUIStylesheet& S
 // Function StyleLibrary.StyleLibrary_C.Get Ice Elemental Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Ice_Elemental_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
@@ -292,9 +291,9 @@ void UStyleLibrary_C::Get_Ice_Elemental_Color(const struct FFortUIStylesheet& St
 // Function StyleLibrary.StyleLibrary_C.Get Bolt Elemental Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Bolt_Elemental_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
@@ -320,10 +319,10 @@ void UStyleLibrary_C::Get_Bolt_Elemental_Color(const struct FFortUIStylesheet& S
 // Parameters:
 // EFortStatValueDisplayType               Display_Type                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // EFortBuffState                          Buff_State                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Base                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     buff                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Base                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    buff                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* buff)
 {
@@ -353,9 +352,9 @@ void UStyleLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_T
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EFortBrushSize                          BrushSize                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                      BaseBrush                                              (Parm)
+// const struct FSlateBrush&               BaseBrush                                              (Parm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                      NewParam                                               (Parm, OutParm)
+// struct FSlateBrush*                     NewParam                                               (Parm, OutParm)
 
 void UStyleLibrary_C::ResizeBrush(EFortBrushSize BrushSize, const struct FSlateBrush& BaseBrush, class UObject* __WorldContext, struct FSlateBrush* NewParam)
 {
@@ -380,9 +379,9 @@ void UStyleLibrary_C::ResizeBrush(EFortBrushSize BrushSize, const struct FSlateB
 // Function StyleLibrary.StyleLibrary_C.Get HarvestWeakPoint Color
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortUIStylesheet                Stylesheet                                             (Parm, HasGetValueTypeHash)
+// const struct FFortUIStylesheet&         Stylesheet                                             (Parm, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     StyleSheetOut                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    StyleSheetOut                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_HarvestWeakPoint_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut)
 {
@@ -408,13 +407,13 @@ void UStyleLibrary_C::Get_HarvestWeakPoint_Color(const struct FFortUIStylesheet&
 // Parameters:
 // int32                                   Player_Skill_Level                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Content_Difficulty_Level                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameDifficultyInfo              Game_Difficulty_Info                                   (Parm)
+// const struct FGameDifficultyInfo&       Game_Difficulty_Info                                   (Parm)
 // int32                                   Content_Skill_Points                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Difficulty_Linear_Color                                (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             ToolTipText                                            (Parm, OutParm)
-// int32                                   DifficultyValue                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Difficulty_Linear_Color                                (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText*                            ToolTipText                                            (Parm, OutParm)
+// int32*                                  DifficultyValue                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStyleLibrary_C::Get_Conning_Color_From_Difficulty_Value(int32 Player_Skill_Level, float Content_Difficulty_Level, const struct FGameDifficultyInfo& Game_Difficulty_Info, int32 Content_Skill_Points, class UObject* __WorldContext, struct FLinearColor* Difficulty_Linear_Color, bool* Success, class FText* ToolTipText, int32* DifficultyValue)
 {
@@ -452,8 +451,8 @@ void UStyleLibrary_C::Get_Conning_Color_From_Difficulty_Value(int32 Player_Skill
 // Parameters:
 // int32                                   Difficulty_Value                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Difficulty_Linear_Color                                (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Invalid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor*                    Difficulty_Linear_Color                                (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Invalid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UStyleLibrary_C::Get_Conning_Color_For_Specific_Difficulty(int32 Difficulty_Value, class UObject* __WorldContext, struct FLinearColor* Difficulty_Linear_Color, bool* Invalid)
 {
@@ -476,5 +475,5 @@ void UStyleLibrary_C::Get_Conning_Color_For_Specific_Difficulty(int32 Difficulty
 		*Invalid = Parms.Invalid;
 }
 
-}
 
+SDK_NAMESPACE_END

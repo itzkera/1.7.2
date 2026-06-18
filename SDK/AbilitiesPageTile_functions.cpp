@@ -14,8 +14,7 @@
 #include "AbilitiesPageTile_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AbilitiesPageTile.AbilitiesPageTile_C.ExecuteUbergraph_AbilitiesPageTile
 // ()
@@ -108,7 +107,7 @@ void UAbilitiesPageTile_C::UpdateKeyBinding()
 // Function AbilitiesPageTile.AbilitiesPageTile_C.SetAbilityPerkInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortUIPerk                      AbilityPerk                                            (Parm)
+// const struct FFortUIPerk&               AbilityPerk                                            (Parm)
 
 void UAbilitiesPageTile_C::SetAbilityPerkInfo(const struct FFortUIPerk& AbilityPerk)
 {
@@ -124,5 +123,5 @@ void UAbilitiesPageTile_C::SetAbilityPerkInfo(const struct FFortUIPerk& AbilityP
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

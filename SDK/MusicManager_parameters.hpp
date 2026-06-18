@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MusicManager.MusicManager_C.ExecuteUbergraph_MusicManager
 // 0x02E0 (0x02E0 - 0x0000)
@@ -190,145 +190,6 @@ public:
 	uint8                                         Pad_2D2[0x6];                                      // 0x02D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select16_Default;                           // 0x02D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x000008, "Wrong alignment on MusicManager_C_ExecuteUbergraph_MusicManager");
-static_assert(sizeof(MusicManager_C_ExecuteUbergraph_MusicManager) == 0x0002E0, "Wrong size on MusicManager_C_ExecuteUbergraph_MusicManager");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, EntryPoint) == 0x000000, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000004, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000008, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue2) == 0x00000C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000010, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable) == 0x000011, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue) == 0x000014, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000018, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue) == 0x000019, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue) == 0x00001A, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue3) == 0x00001C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000020, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue2) == 0x000024, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue4) == 0x000028, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue3) == 0x00002C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue5) == 0x000030, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue3) == 0x000034, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue2) == 0x000038, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue2) == 0x00003C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue2) == 0x00003D, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue2) == 0x00003E, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select_Default) == 0x00003F, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue6) == 0x000040, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue4) == 0x000044, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable2) == 0x000048, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue4) == 0x000049, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select2_Default) == 0x00004C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue3) == 0x000050, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue7) == 0x000054, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue3) == 0x000058, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue3) == 0x000059, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue3) == 0x00005A, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue5) == 0x00005C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue5) == 0x000060, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue8) == 0x000064, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue9) == 0x000068, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue6) == 0x00006C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue6) == 0x000070, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue10) == 0x000074, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue7) == 0x000078, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue11) == 0x00007C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue7) == 0x000080, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetGameTimeInSeconds_ReturnValue12) == 0x000084, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetGameTimeInSeconds_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Subtract_FloatFloat_ReturnValue8) == 0x000088, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Subtract_FloatFloat_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue8) == 0x00008C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable) == 0x000090, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue) == 0x000098, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue2) == 0x0000A8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue3) == 0x0000B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue4) == 0x0000C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable3) == 0x0000D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue5) == 0x0000E0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue6) == 0x0000F0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue7) == 0x000100, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable2) == 0x000110, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue8) == 0x000118, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable4) == 0x000128, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue9) == 0x000130, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue10) == 0x000140, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue11) == 0x000150, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable3) == 0x000160, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue12) == 0x000168, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable5) == 0x000178, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue13) == 0x000180, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue14) == 0x000190, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue15) == 0x0001A0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue15' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable6) == 0x0001B0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Concat_StrStr_ReturnValue16) == 0x0001B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Concat_StrStr_ReturnValue16' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable4) == 0x0001C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_CurrentDayPhase) == 0x0001D0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_CurrentDayPhase' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_PreviousDayPhase) == 0x0001D1, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_PreviousDayPhase' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Event_bAtCreation) == 0x0001D2, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Event_bAtCreation' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Not_PreBool_ReturnValue) == 0x0001D3, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0001D4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue2) == 0x0001D5, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue3) == 0x0001D6, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue4) == 0x0001D7, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue5) == 0x0001D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_NameName_ReturnValue6) == 0x0001D9, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_NameName_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_NotEqual_IntInt_ReturnValue4) == 0x0001DA, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_NotEqual_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetTimeOfDaySpeed_ReturnValue) == 0x0001DC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetTimeOfDaySpeed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0001E0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_byte_Variable) == 0x0001E1, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select3_Default) == 0x0001E8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select4_Default) == 0x0001F0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue) == 0x0001F8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue2) == 0x0001FC, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue3) == 0x000200, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue4) == 0x000204, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_byte_Variable2) == 0x000208, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_K2_SetTimer_ReturnValue) == 0x000210, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select5_Default) == 0x000218, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable5) == 0x000220, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_MakeLiteralInt_ReturnValue4) == 0x000228, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_MakeLiteralInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_IsNearActiveEncounters_ReturnValue) == 0x00022C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_IsNearActiveEncounters_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_IntInt_ReturnValue4) == 0x00022D, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Not_PreBool_ReturnValue2) == 0x00022E, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select6_Default) == 0x000230, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_BooleanAND_ReturnValue4) == 0x000234, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_BooleanAND_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select7_Default) == 0x000238, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select7_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue5) == 0x000240, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select8_Default) == 0x000248, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select8_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue) == 0x000250, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue6) == 0x000254, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable7) == 0x000258, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue2) == 0x00025C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue) == 0x000260, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select9_Default) == 0x000268, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select9_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue9) == 0x000270, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable8) == 0x000271, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue7) == 0x000274, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select10_Default) == 0x000278, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select10_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue3) == 0x00027C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue2) == 0x000280, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue10) == 0x000281, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue8) == 0x000284, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_GetEventHeatPercent_ReturnValue9) == 0x000288, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_GetEventHeatPercent_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue4) == 0x00028C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Add_FloatFloat_ReturnValue5) == 0x000290, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Add_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue3) == 0x000294, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Less_FloatFloat_ReturnValue4) == 0x000295, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Less_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue11) == 0x000296, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, CallFunc_Greater_FloatFloat_ReturnValue12) == 0x000297, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::CallFunc_Greater_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable9) == 0x000298, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable9' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable10) == 0x000299, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable10' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select11_Default) == 0x00029C, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select11_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select12_Default) == 0x0002A0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable6) == 0x0002A8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable6' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable11) == 0x0002B0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable11' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable12) == 0x0002B1, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select13_Default) == 0x0002B8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select13_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select14_Default) == 0x0002C0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select14_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable13) == 0x0002C4, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable13' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_object_Variable7) == 0x0002C8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_object_Variable7' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select15_Default) == 0x0002D0, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select15_Default' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, Temp_bool_Variable14) == 0x0002D1, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::Temp_bool_Variable14' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_ExecuteUbergraph_MusicManager, K2Node_Select16_Default) == 0x0002D8, "Member 'MusicManager_C_ExecuteUbergraph_MusicManager::K2Node_Select16_Default' has a wrong offset!");
 
 // Function MusicManager.MusicManager_C.OnDayPhaseChanged
 // 0x0003 (0x0003 - 0x0000)
@@ -339,11 +200,6 @@ public:
 	EFortDayPhase                                 PreviousDayPhase;                                  // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bAtCreation;                                       // 0x0002(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MusicManager_C_OnDayPhaseChanged) == 0x000001, "Wrong alignment on MusicManager_C_OnDayPhaseChanged");
-static_assert(sizeof(MusicManager_C_OnDayPhaseChanged) == 0x000003, "Wrong size on MusicManager_C_OnDayPhaseChanged");
-static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, CurrentDayPhase_0) == 0x000000, "Member 'MusicManager_C_OnDayPhaseChanged::CurrentDayPhase_0' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, PreviousDayPhase) == 0x000001, "Member 'MusicManager_C_OnDayPhaseChanged::PreviousDayPhase' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_OnDayPhaseChanged, bAtCreation) == 0x000002, "Member 'MusicManager_C_OnDayPhaseChanged::bAtCreation' has a wrong offset!");
 
 // Function MusicManager.MusicManager_C.UserConstructionScript
 // 0x0020 (0x0020 - 0x0000)
@@ -356,12 +212,6 @@ public:
 	class AFortPlayerControllerFrontEnd*          K2Node_DynamicCast_AsFort_Player_Controller_Front_End2; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MusicManager_C_UserConstructionScript) == 0x000008, "Wrong alignment on MusicManager_C_UserConstructionScript");
-static_assert(sizeof(MusicManager_C_UserConstructionScript) == 0x000020, "Wrong size on MusicManager_C_UserConstructionScript");
-static_assert(offsetof(MusicManager_C_UserConstructionScript, K2Node_DynamicCast_AsFort_Player_Controller_Front_End) == 0x000000, "Member 'MusicManager_C_UserConstructionScript::K2Node_DynamicCast_AsFort_Player_Controller_Front_End' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_UserConstructionScript, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'MusicManager_C_UserConstructionScript::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_UserConstructionScript, K2Node_DynamicCast_AsFort_Player_Controller_Front_End2) == 0x000010, "Member 'MusicManager_C_UserConstructionScript::K2Node_DynamicCast_AsFort_Player_Controller_Front_End2' has a wrong offset!");
-static_assert(offsetof(MusicManager_C_UserConstructionScript, K2Node_DynamicCast_bSuccess2) == 0x000018, "Member 'MusicManager_C_UserConstructionScript::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

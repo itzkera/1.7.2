@@ -14,8 +14,7 @@
 #include "SubgameSelect_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SubgameSelect.SubgameSelect_C.ExecuteUbergraph_SubgameSelect
 // (HasDefaults)
@@ -41,7 +40,7 @@ void USubgameSelect_C::ExecuteUbergraph_SubgameSelect(int32 EntryPoint)
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 
 void USubgameSelect_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
@@ -110,7 +109,7 @@ void USubgameSelect_C::Initialize()
 // Function SubgameSelect.SubgameSelect_C.PopContentWidgetInternal
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* USubgameSelect_C::PopContentWidgetInternal(const struct FContentPushState& State)
@@ -151,5 +150,5 @@ void USubgameSelect_C::UpdateHeaderAndFooter(bool HideHeader, bool HideFooter)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

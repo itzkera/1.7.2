@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCNS_Cart_InstantHealFX.GCNS_Cart_InstantHealFX_C
 // 0x0000 (0x0070 - 0x0070)
@@ -23,15 +22,16 @@ class UGCNS_Cart_InstantHealFX_C final : public UFortGameplayCueNotify_Simple
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNS_Cart_InstantHealFX_C">();
+		BP_STATIC_CLASS_IMPL("GCNS_Cart_InstantHealFX_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNS_Cart_InstantHealFX_C")
 	}
 	static class UGCNS_Cart_InstantHealFX_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCNS_Cart_InstantHealFX_C>();
 	}
 };
-static_assert(alignof(UGCNS_Cart_InstantHealFX_C) == 0x000008, "Wrong alignment on UGCNS_Cart_InstantHealFX_C");
-static_assert(sizeof(UGCNS_Cart_InstantHealFX_C) == 0x000070, "Wrong size on UGCNS_Cart_InstantHealFX_C");
 
-}
-
+SDK_NAMESPACE_END

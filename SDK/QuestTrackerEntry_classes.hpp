@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestTrackerEntry.QuestTrackerEntry_C
 // 0x0010 (0x02A8 - 0x0298)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestTrackerEntry_C">();
+		BP_STATIC_CLASS_IMPL("QuestTrackerEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestTrackerEntry_C")
 	}
 	static class UQuestTrackerEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestTrackerEntry_C>();
 	}
 };
-static_assert(alignof(UQuestTrackerEntry_C) == 0x000008, "Wrong alignment on UQuestTrackerEntry_C");
-static_assert(sizeof(UQuestTrackerEntry_C) == 0x0002A8, "Wrong size on UQuestTrackerEntry_C");
-static_assert(offsetof(UQuestTrackerEntry_C, UberGraphFrame) == 0x000298, "Member 'UQuestTrackerEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestTrackerEntry_C, SeparatorLine) == 0x0002A0, "Member 'UQuestTrackerEntry_C::SeparatorLine' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

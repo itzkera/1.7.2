@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBarXpText.XpBarXpText_C
 // 0x0038 (0x0268 - 0x0230)
@@ -40,22 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBarXpText_C">();
+		BP_STATIC_CLASS_IMPL("XpBarXpText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBarXpText_C")
 	}
 	static class UXpBarXpText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBarXpText_C>();
 	}
 };
-static_assert(alignof(UXpBarXpText_C) == 0x000008, "Wrong alignment on UXpBarXpText_C");
-static_assert(sizeof(UXpBarXpText_C) == 0x000268, "Wrong size on UXpBarXpText_C");
-static_assert(offsetof(UXpBarXpText_C, UberGraphFrame) == 0x000230, "Member 'UXpBarXpText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, CurrentXP) == 0x000238, "Member 'UXpBarXpText_C::CurrentXP' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, FortItemIcon_51) == 0x000240, "Member 'UXpBarXpText_C::FortItemIcon_51' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, XpBar) == 0x000248, "Member 'UXpBarXpText_C::XpBar' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, XPneeded) == 0x000250, "Member 'UXpBarXpText_C::XPneeded' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, XpNeededEnd) == 0x000258, "Member 'UXpBarXpText_C::XpNeededEnd' has a wrong offset!");
-static_assert(offsetof(UXpBarXpText_C, Xp_Bar_Material) == 0x000260, "Member 'UXpBarXpText_C::Xp_Bar_Material' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

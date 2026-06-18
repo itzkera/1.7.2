@@ -14,8 +14,7 @@
 #include "FrontEndRewards_Conversation_VO_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.PopulateFromConversation
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -40,7 +39,7 @@ void UFrontEndRewards_Conversation_VO_C::PopulateFromConversation(class UFortCon
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleReplayAction
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Committed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_Conversation_VO_C::HandleReplayAction(bool* Committed)
 {
@@ -75,7 +74,7 @@ void UFrontEndRewards_Conversation_VO_C::StopConversation()
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleNewSentence
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        Sentence                                               (Parm)
+// const struct FFortConversationSentence& Sentence                                               (Parm)
 
 void UFrontEndRewards_Conversation_VO_C::HandleNewSentence(const struct FFortConversationSentence& Sentence)
 {
@@ -129,7 +128,7 @@ void UFrontEndRewards_Conversation_VO_C::PlayConversation(class UFortQuestItem* 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.CreateConversationActor
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C*NewAnnoucement                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C**NewAnnoucement                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFrontEndRewards_Conversation_VO_C::CreateConversationActor(class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C** NewAnnoucement)
 {
@@ -146,5 +145,5 @@ void UFrontEndRewards_Conversation_VO_C::CreateConversationActor(class AAnnounce
 		*NewAnnoucement = Parms.NewAnnoucement;
 }
 
-}
 
+SDK_NAMESPACE_END

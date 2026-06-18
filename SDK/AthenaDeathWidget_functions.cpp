@@ -14,8 +14,7 @@
 #include "AthenaDeathWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaDeathWidget.AthenaDeathWidget_C.ExecuteUbergraph_AthenaDeathWidget
 // (HasDefaults)
@@ -156,7 +155,7 @@ void UAthenaDeathWidget_C::BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_Com
 // Function AthenaDeathWidget.AthenaDeathWidget_C.OnPawnDied
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerDeathReport           DeathReport                                            (Parm, OutParm, ReferenceParm)
+// struct FFortPlayerDeathReport&          DeathReport                                            (Parm, OutParm, ReferenceParm)
 
 void UAthenaDeathWidget_C::OnPawnDied(struct FFortPlayerDeathReport& DeathReport)
 {
@@ -220,7 +219,7 @@ void UAthenaDeathWidget_C::HideExtraStuffForSpectating()
 // Function AthenaDeathWidget.AthenaDeathWidget_C.OnWinnerAnnounced
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           Winner                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    Winner                                                 (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UAthenaDeathWidget_C::OnWinnerAnnounced(const class FString& Winner)
 {
@@ -241,7 +240,7 @@ void UAthenaDeathWidget_C::OnWinnerAnnounced(const class FString& Winner)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortPlayerControllerAthena*      PlayerController                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    AnyAlive                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   AnyAlive                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaDeathWidget_C::AnyTeamMembersStillAlive(class AFortPlayerControllerAthena* PlayerController, bool* AnyAlive)
 {
@@ -296,5 +295,5 @@ void UAthenaDeathWidget_C::UpdateFollowNextTeammateVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

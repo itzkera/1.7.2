@@ -14,8 +14,8 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TabGamePadConfig.TabGamePadConfig_C.ExecuteUbergraph_TabGamePadConfig
 // 0x00B0 (0x00B0 - 0x0000)
@@ -51,30 +51,6 @@ public:
 	int32                                         K2Node_CustomEvent_Selected_Index;                 // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(int32 Selected_Index)>         K2Node_CreateDelegate_OutputDelegate3;             // 0x00A0(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig) == 0x000008, "Wrong alignment on TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig");
-static_assert(sizeof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig) == 0x0000B0, "Wrong size on TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, EntryPoint) == 0x000000, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000020, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, Temp_bool_Variable) == 0x000021, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, Temp_string_Variable) == 0x000028, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, Temp_string_Variable2) == 0x000038, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::Temp_string_Variable2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_GetContext_ReturnValue2) == 0x000048, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, Temp_bool_Variable2) == 0x000050, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_Select_Default) == 0x000058, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, Temp_byte_Variable) == 0x000068, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, Temp_byte_Variable2) == 0x000069, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_Select2_Default) == 0x00006A, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CustomEvent_Selected_Index3) == 0x00006C, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CustomEvent_Selected_Index3' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CustomEvent_Selected_Index2) == 0x000070, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CustomEvent_Selected_Index2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CreateDelegate_OutputDelegate2) == 0x000078, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_Array_Get_Item) == 0x000088, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_IsPS4Platform_ReturnValue) == 0x000098, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_IsPS4Platform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_IsXboxPlatform_ReturnValue) == 0x000099, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_IsXboxPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, CallFunc_BooleanOR_ReturnValue) == 0x00009A, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CustomEvent_Selected_Index) == 0x00009C, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CustomEvent_Selected_Index' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig, K2Node_CreateDelegate_OutputDelegate3) == 0x0000A0, "Member 'TabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.ControllerPlatformConfigChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -83,9 +59,6 @@ struct TabGamePadConfig_C_ControllerPlatformConfigChanged final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_ControllerPlatformConfigChanged) == 0x000004, "Wrong alignment on TabGamePadConfig_C_ControllerPlatformConfigChanged");
-static_assert(sizeof(TabGamePadConfig_C_ControllerPlatformConfigChanged) == 0x000004, "Wrong size on TabGamePadConfig_C_ControllerPlatformConfigChanged");
-static_assert(offsetof(TabGamePadConfig_C_ControllerPlatformConfigChanged, Selected_Index) == 0x000000, "Member 'TabGamePadConfig_C_ControllerPlatformConfigChanged::Selected_Index' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Gamepad Config Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -94,9 +67,6 @@ struct TabGamePadConfig_C_Gamepad_Config_Changed final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_Gamepad_Config_Changed) == 0x000004, "Wrong alignment on TabGamePadConfig_C_Gamepad_Config_Changed");
-static_assert(sizeof(TabGamePadConfig_C_Gamepad_Config_Changed) == 0x000004, "Wrong size on TabGamePadConfig_C_Gamepad_Config_Changed");
-static_assert(offsetof(TabGamePadConfig_C_Gamepad_Config_Changed, Selected_Index) == 0x000000, "Member 'TabGamePadConfig_C_Gamepad_Config_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Configuration Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -105,9 +75,6 @@ struct TabGamePadConfig_C_Configuration_Changed final
 public:
 	int32                                         Selected_Index;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_Configuration_Changed) == 0x000004, "Wrong alignment on TabGamePadConfig_C_Configuration_Changed");
-static_assert(sizeof(TabGamePadConfig_C_Configuration_Changed) == 0x000004, "Wrong size on TabGamePadConfig_C_Configuration_Changed");
-static_assert(offsetof(TabGamePadConfig_C_Configuration_Changed, Selected_Index) == 0x000000, "Member 'TabGamePadConfig_C_Configuration_Changed::Selected_Index' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Initialize Data
 // 0x00C8 (0x00C8 - 0x0000)
@@ -130,21 +97,6 @@ public:
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0098(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
 };
-static_assert(alignof(TabGamePadConfig_C_Initialize_Data) == 0x000008, "Wrong alignment on TabGamePadConfig_C_Initialize_Data");
-static_assert(sizeof(TabGamePadConfig_C_Initialize_Data) == 0x0000C8, "Wrong size on TabGamePadConfig_C_Initialize_Data");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, NewLocalVar_0) == 0x000000, "Member 'TabGamePadConfig_C_Initialize_Data::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, Temp_text_Variable) == 0x000010, "Member 'TabGamePadConfig_C_Initialize_Data::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, Temp_text_Variable2) == 0x000028, "Member 'TabGamePadConfig_C_Initialize_Data::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_GetPlatformName_ReturnValue) == 0x000048, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_GetSubGame_ReturnValue) == 0x000058, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000059, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_GetAllPlayerInputPresetNamesForSubGame_InputPresetNames) == 0x000060, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_GetAllPlayerInputPresetNamesForSubGame_InputPresetNames' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_GetAllPlayerInputPresetNamesForSubGame_InputPresetFriendlyNames) == 0x000070, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_GetAllPlayerInputPresetNamesForSubGame_InputPresetFriendlyNames' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, K2Node_MakeArray_Array) == 0x000080, "Member 'TabGamePadConfig_C_Initialize_Data::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, Temp_bool_Variable) == 0x000090, "Member 'TabGamePadConfig_C_Initialize_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, CallFunc_MakeLiteralText_ReturnValue) == 0x000098, "Member 'TabGamePadConfig_C_Initialize_Data::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Initialize_Data, K2Node_Select_Default) == 0x0000B0, "Member 'TabGamePadConfig_C_Initialize_Data::K2Node_Select_Default' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Update Data
 // 0x0048 (0x0048 - 0x0000)
@@ -164,17 +116,6 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_Update_Data) == 0x000008, "Wrong alignment on TabGamePadConfig_C_Update_Data");
-static_assert(sizeof(TabGamePadConfig_C_Update_Data) == 0x000048, "Wrong size on TabGamePadConfig_C_Update_Data");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, Temp_bool_Variable) == 0x000000, "Member 'TabGamePadConfig_C_Update_Data::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, Temp_int_Variable) == 0x000004, "Member 'TabGamePadConfig_C_Update_Data::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, Temp_int_Variable2) == 0x000008, "Member 'TabGamePadConfig_C_Update_Data::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'TabGamePadConfig_C_Update_Data::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, CallFunc_GetControllerPlatform_ReturnValue) == 0x000018, "Member 'TabGamePadConfig_C_Update_Data::CallFunc_GetControllerPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, CallFunc_GetCurrentInputPresetName_ReturnValue) == 0x000028, "Member 'TabGamePadConfig_C_Update_Data::CallFunc_GetCurrentInputPresetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000038, "Member 'TabGamePadConfig_C_Update_Data::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, K2Node_Select_Default) == 0x00003C, "Member 'TabGamePadConfig_C_Update_Data::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabGamePadConfig_C_Update_Data, CallFunc_Array_Find_ReturnValue) == 0x000040, "Member 'TabGamePadConfig_C_Update_Data::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.Handle Mode Toggled
 // 0x0001 (0x0001 - 0x0000)
@@ -183,9 +124,6 @@ struct TabGamePadConfig_C_Handle_Mode_Toggled final
 public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabGamePadConfig_C_Handle_Mode_Toggled) == 0x000001, "Wrong alignment on TabGamePadConfig_C_Handle_Mode_Toggled");
-static_assert(sizeof(TabGamePadConfig_C_Handle_Mode_Toggled) == 0x000001, "Wrong size on TabGamePadConfig_C_Handle_Mode_Toggled");
-static_assert(offsetof(TabGamePadConfig_C_Handle_Mode_Toggled, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'TabGamePadConfig_C_Handle_Mode_Toggled::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange
 // 0x0004 (0x0004 - 0x0000)
@@ -194,9 +132,6 @@ struct TabGamePadConfig_C_HandleGamepadMappingInfoChange final
 public:
 	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGamePadConfig_C_HandleGamepadMappingInfoChange) == 0x000004, "Wrong alignment on TabGamePadConfig_C_HandleGamepadMappingInfoChange");
-static_assert(sizeof(TabGamePadConfig_C_HandleGamepadMappingInfoChange) == 0x000004, "Wrong size on TabGamePadConfig_C_HandleGamepadMappingInfoChange");
-static_assert(offsetof(TabGamePadConfig_C_HandleGamepadMappingInfoChange, CallFunc_Conv_BoolToInt_ReturnValue) == 0x000000, "Member 'TabGamePadConfig_C_HandleGamepadMappingInfoChange::CallFunc_Conv_BoolToInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

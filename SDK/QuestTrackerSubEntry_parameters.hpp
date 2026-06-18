@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.ExecuteUbergraph_QuestTrackerSubEntry
 // 0x0040 (0x0040 - 0x0000)
@@ -29,13 +29,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry");
-static_assert(sizeof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry) == 0x000040, "Wrong size on QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry");
-static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, EntryPoint) == 0x000000, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry, K2Node_CreateDelegate_OutputDelegate3) == 0x000030, "Member 'QuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.UpdateObjectiveText
 // 0x01E8 (0x01E8 - 0x0000)
@@ -91,48 +84,6 @@ public:
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select3_Default;                            // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_UpdateObjectiveText) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_UpdateObjectiveText");
-static_assert(sizeof(QuestTrackerSubEntry_C_UpdateObjectiveText) == 0x0001E8, "Wrong size on QuestTrackerSubEntry_C_UpdateObjectiveText");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, ObjectiveProgressText) == 0x000000, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::ObjectiveProgressText' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable) == 0x000018, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable2) == 0x000019, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_bool_Variable) == 0x000030, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_bool_Variable2) == 0x000032, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable3) == 0x000033, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable4) == 0x000034, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_SpawnTooltipContext_ReturnValue) == 0x000038, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_SpawnTooltipContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetCombinedDescription_OutDescription) == 0x000040, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetCombinedDescription_ReturnValue) == 0x000058, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_MakeStruct_FormatArgumentData2) == 0x0000A0, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_MakeArray_Array) == 0x0000E0, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_bool_Variable3) == 0x0000F0, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetEmptyText_ReturnValue) == 0x000110, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable5) == 0x000128, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_SpawnTooltipContext_ReturnValue2) == 0x000130, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_SpawnTooltipContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetTooltipTextFromToken_OutText) == 0x000138, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetTooltipTextFromToken_OutText' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetTooltipTextFromToken_ReturnValue) == 0x000150, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetTooltipTextFromToken_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, Temp_byte_Variable6) == 0x000151, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_MakeStruct_FormatArgumentData3) == 0x000158, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_MakeArray_Array2) == 0x000198, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_TextIsEmpty_ReturnValue) == 0x0001A8, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_Format_ReturnValue2) == 0x0001B0, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_IsValid_ReturnValue2) == 0x0001C8, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_GetOwningQuest_ReturnValue) == 0x0001D0, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_GetOwningQuest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_IsValid_ReturnValue3) == 0x0001D8, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_IsQuestPinned_ReturnValue) == 0x0001D9, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_IsQuestPinned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_Not_PreBool_ReturnValue) == 0x0001DA, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_HasCompleted_ReturnValue) == 0x0001DB, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_HasCompleted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_Select_Default) == 0x0001DC, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_Not_PreBool_ReturnValue2) == 0x0001DD, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_BooleanAND_ReturnValue) == 0x0001DE, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, CallFunc_BooleanOR_ReturnValue) == 0x0001DF, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_Select2_Default) == 0x0001E0, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_UpdateObjectiveText, K2Node_Select3_Default) == 0x0001E1, "Member 'QuestTrackerSubEntry_C_UpdateObjectiveText::K2Node_Select3_Default' has a wrong offset!");
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.HideIfEmpty
 // 0x0028 (0x0028 - 0x0000)
@@ -147,14 +98,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_HideIfEmpty) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_HideIfEmpty");
-static_assert(sizeof(QuestTrackerSubEntry_C_HideIfEmpty) == 0x000028, "Wrong size on QuestTrackerSubEntry_C_HideIfEmpty");
-static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, Temp_bool_Variable) == 0x000000, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, Temp_byte_Variable) == 0x000001, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, Temp_byte_Variable2) == 0x000002, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, CallFunc_TextIsEmpty_ReturnValue) == 0x000020, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_HideIfEmpty, K2Node_Select_Default) == 0x000021, "Member 'QuestTrackerSubEntry_C_HideIfEmpty::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.GetHeightEstimate
 // 0x0030 (0x0030 - 0x0000)
@@ -170,14 +113,6 @@ public:
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestTrackerSubEntry_C_GetHeightEstimate) == 0x000008, "Wrong alignment on QuestTrackerSubEntry_C_GetHeightEstimate");
-static_assert(sizeof(QuestTrackerSubEntry_C_GetHeightEstimate) == 0x000030, "Wrong size on QuestTrackerSubEntry_C_GetHeightEstimate");
-static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, ReturnValue) == 0x000000, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_GetMissionHUDTextLineHeightEstimate_ReturnValue) == 0x000024, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_GetMissionHUDTextLineHeightEstimate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_FMax_ReturnValue) == 0x000028, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestTrackerSubEntry_C_GetHeightEstimate, CallFunc_Add_FloatFloat_ReturnValue) == 0x00002C, "Member 'QuestTrackerSubEntry_C_GetHeightEstimate::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TalkingHeadWidget.TalkingHeadWidget_C
 // 0x0028 (0x0288 - 0x0260)
@@ -42,20 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TalkingHeadWidget_C">();
+		BP_STATIC_CLASS_IMPL("TalkingHeadWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TalkingHeadWidget_C")
 	}
 	static class UTalkingHeadWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTalkingHeadWidget_C>();
 	}
 };
-static_assert(alignof(UTalkingHeadWidget_C) == 0x000008, "Wrong alignment on UTalkingHeadWidget_C");
-static_assert(sizeof(UTalkingHeadWidget_C) == 0x000288, "Wrong size on UTalkingHeadWidget_C");
-static_assert(offsetof(UTalkingHeadWidget_C, UberGraphFrame) == 0x000260, "Member 'UTalkingHeadWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, TalkingHeadIcon) == 0x000268, "Member 'UTalkingHeadWidget_C::TalkingHeadIcon' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, TextName) == 0x000270, "Member 'UTalkingHeadWidget_C::TextName' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, TextSubtitles) == 0x000278, "Member 'UTalkingHeadWidget_C::TextSubtitles' has a wrong offset!");
-static_assert(offsetof(UTalkingHeadWidget_C, VerticalBoxRoot) == 0x000280, "Member 'UTalkingHeadWidget_C::VerticalBoxRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

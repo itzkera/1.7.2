@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Enum Party.EPartyType
 // NumValues: 0x0004
@@ -51,12 +50,6 @@ public:
 	bool                                          bInvitesDisabled;                                  // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPartyState) == 0x000008, "Wrong alignment on FPartyState");
-static_assert(sizeof(FPartyState) == 0x000010, "Wrong size on FPartyState");
-static_assert(offsetof(FPartyState, PartyType) == 0x000008, "Member 'FPartyState::PartyType' has a wrong offset!");
-static_assert(offsetof(FPartyState, bLeaderFriendsOnly) == 0x000009, "Member 'FPartyState::bLeaderFriendsOnly' has a wrong offset!");
-static_assert(offsetof(FPartyState, bLeaderInvitesOnly) == 0x00000A, "Member 'FPartyState::bLeaderInvitesOnly' has a wrong offset!");
-static_assert(offsetof(FPartyState, bInvitesDisabled) == 0x00000B, "Member 'FPartyState::bInvitesDisabled' has a wrong offset!");
 
 // ScriptStruct Party.PartyMemberRepState
 // 0x0008 (0x0008 - 0x0000)
@@ -65,8 +58,5 @@ struct alignas(0x08) FPartyMemberRepState
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FPartyMemberRepState) == 0x000008, "Wrong alignment on FPartyMemberRepState");
-static_assert(sizeof(FPartyMemberRepState) == 0x000008, "Wrong size on FPartyMemberRepState");
 
-}
-
+SDK_NAMESPACE_END

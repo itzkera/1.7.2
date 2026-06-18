@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Credits.Credits_C
 // 0x0040 (0x0420 - 0x03E0)
@@ -47,23 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Credits_C">();
+		BP_STATIC_CLASS_IMPL("Credits_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Credits_C")
 	}
 	static class UCredits_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCredits_C>();
 	}
 };
-static_assert(alignof(UCredits_C) == 0x000008, "Wrong alignment on UCredits_C");
-static_assert(sizeof(UCredits_C) == 0x000420, "Wrong size on UCredits_C");
-static_assert(offsetof(UCredits_C, UberGraphFrame) == 0x0003E0, "Member 'UCredits_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCredits_C, FadeMask_Show) == 0x0003E8, "Member 'UCredits_C::FadeMask_Show' has a wrong offset!");
-static_assert(offsetof(UCredits_C, FortRichTextBlock_0) == 0x0003F0, "Member 'UCredits_C::FortRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UCredits_C, ImageMask) == 0x0003F8, "Member 'UCredits_C::ImageMask' has a wrong offset!");
-static_assert(offsetof(UCredits_C, SafeZone_2) == 0x000400, "Member 'UCredits_C::SafeZone_2' has a wrong offset!");
-static_assert(offsetof(UCredits_C, ScrollBoxCredits) == 0x000408, "Member 'UCredits_C::ScrollBoxCredits' has a wrong offset!");
-static_assert(offsetof(UCredits_C, EndPointOffset) == 0x000410, "Member 'UCredits_C::EndPointOffset' has a wrong offset!");
-static_assert(offsetof(UCredits_C, ScrollTimerHandle) == 0x000418, "Member 'UCredits_C::ScrollTimerHandle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

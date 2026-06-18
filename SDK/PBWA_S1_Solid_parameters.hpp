@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PBWA_S1_Solid.PBWA_S1_Solid_C.ExecuteUbergraph_PBWA_S1_Solid
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid) == 0x000004, "Wrong alignment on PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid");
-static_assert(sizeof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid) == 0x000004, "Wrong size on PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid");
-static_assert(offsetof(PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid, EntryPoint) == 0x000000, "Member 'PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid::EntryPoint' has a wrong offset!");
 
 // Function PBWA_S1_Solid.PBWA_S1_Solid_C.UserConstructionScript
 // 0x000C (0x000C - 0x0000)
@@ -35,11 +32,6 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PBWA_S1_Solid_C_UserConstructionScript) == 0x000004, "Wrong alignment on PBWA_S1_Solid_C_UserConstructionScript");
-static_assert(sizeof(PBWA_S1_Solid_C_UserConstructionScript) == 0x00000C, "Wrong size on PBWA_S1_Solid_C_UserConstructionScript");
-static_assert(offsetof(PBWA_S1_Solid_C_UserConstructionScript, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'PBWA_S1_Solid_C_UserConstructionScript::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PBWA_S1_Solid_C_UserConstructionScript, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000004, "Member 'PBWA_S1_Solid_C_UserConstructionScript::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PBWA_S1_Solid_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x000008, "Member 'PBWA_S1_Solid_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

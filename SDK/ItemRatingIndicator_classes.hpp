@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemRatingIndicator.ItemRatingIndicator_C
 // 0x0018 (0x05E8 - 0x05D0)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemRatingIndicator_C">();
+		BP_STATIC_CLASS_IMPL("ItemRatingIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemRatingIndicator_C")
 	}
 	static class UItemRatingIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemRatingIndicator_C>();
 	}
 };
-static_assert(alignof(UItemRatingIndicator_C) == 0x000008, "Wrong alignment on UItemRatingIndicator_C");
-static_assert(sizeof(UItemRatingIndicator_C) == 0x0005E8, "Wrong size on UItemRatingIndicator_C");
-static_assert(offsetof(UItemRatingIndicator_C, UberGraphFrame) == 0x0005D0, "Member 'UItemRatingIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemRatingIndicator_C, PowerRatingIconImage) == 0x0005D8, "Member 'UItemRatingIndicator_C::PowerRatingIconImage' has a wrong offset!");
-static_assert(offsetof(UItemRatingIndicator_C, PowerRatingText) == 0x0005E0, "Member 'UItemRatingIndicator_C::PowerRatingText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookPageListWidget.CollectionBookPageListWidget_C
 // 0x0098 (0x0968 - 0x08D0)
@@ -57,32 +56,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookPageListWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookPageListWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookPageListWidget_C")
 	}
 	static class UCollectionBookPageListWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookPageListWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookPageListWidget_C) == 0x000008, "Wrong alignment on UCollectionBookPageListWidget_C");
-static_assert(sizeof(UCollectionBookPageListWidget_C) == 0x000968, "Wrong size on UCollectionBookPageListWidget_C");
-static_assert(offsetof(UCollectionBookPageListWidget_C, UberGraphFrame) == 0x0008D0, "Member 'UCollectionBookPageListWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, AvailableSlotsBorder) == 0x0008D8, "Member 'UCollectionBookPageListWidget_C::AvailableSlotsBorder' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, CommonWidgetSwitcher_0) == 0x0008E0, "Member 'UCollectionBookPageListWidget_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, ExpansionStateSwitcher) == 0x0008E8, "Member 'UCollectionBookPageListWidget_C::ExpansionStateSwitcher' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, Image_0) == 0x0008F0, "Member 'UCollectionBookPageListWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, Image_1) == 0x0008F8, "Member 'UCollectionBookPageListWidget_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, Image_2) == 0x000900, "Member 'UCollectionBookPageListWidget_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, PageCategorySwitcher) == 0x000908, "Member 'UCollectionBookPageListWidget_C::PageCategorySwitcher' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, PageSpacer) == 0x000910, "Member 'UCollectionBookPageListWidget_C::PageSpacer' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, CategoryTextStyle) == 0x000918, "Member 'UCollectionBookPageListWidget_C::CategoryTextStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, PageTextStyle) == 0x000920, "Member 'UCollectionBookPageListWidget_C::PageTextStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, CategoryButtonStyle) == 0x000928, "Member 'UCollectionBookPageListWidget_C::CategoryButtonStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, PageButtonStyle) == 0x000930, "Member 'UCollectionBookPageListWidget_C::PageButtonStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, AvailableSlotBorderColor1ParamName) == 0x000938, "Member 'UCollectionBookPageListWidget_C::AvailableSlotBorderColor1ParamName' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, AvailableSlotBorderColor2ParamName) == 0x000940, "Member 'UCollectionBookPageListWidget_C::AvailableSlotBorderColor2ParamName' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, AvailableSlotBorderSelectedColor) == 0x000948, "Member 'UCollectionBookPageListWidget_C::AvailableSlotBorderSelectedColor' has a wrong offset!");
-static_assert(offsetof(UCollectionBookPageListWidget_C, AvailableSlotBorderDeselectedColor) == 0x000958, "Member 'UCollectionBookPageListWidget_C::AvailableSlotBorderDeselectedColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

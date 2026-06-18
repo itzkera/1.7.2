@@ -14,8 +14,7 @@
 #include "TeamScoreDetailsContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.ExecuteUbergraph_TeamScoreDetailsContent
 // ()
@@ -98,5 +97,5 @@ void UTeamScoreDetailsContent_C::TrimUnusedRows()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

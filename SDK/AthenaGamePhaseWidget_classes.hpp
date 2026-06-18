@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaGamePhaseWidget.AthenaGamePhaseWidget_C
 // 0x0020 (0x0280 - 0x0260)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaGamePhaseWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaGamePhaseWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaGamePhaseWidget_C")
 	}
 	static class UAthenaGamePhaseWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaGamePhaseWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaGamePhaseWidget_C) == 0x000008, "Wrong alignment on UAthenaGamePhaseWidget_C");
-static_assert(sizeof(UAthenaGamePhaseWidget_C) == 0x000280, "Wrong size on UAthenaGamePhaseWidget_C");
-static_assert(offsetof(UAthenaGamePhaseWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGamePhaseWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseWidget_C, Icon) == 0x000268, "Member 'UAthenaGamePhaseWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseWidget_C, TimeText) == 0x000270, "Member 'UAthenaGamePhaseWidget_C::TimeText' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseWidget_C, GameState) == 0x000278, "Member 'UAthenaGamePhaseWidget_C::GameState' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

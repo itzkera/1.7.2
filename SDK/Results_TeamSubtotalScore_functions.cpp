@@ -14,8 +14,7 @@
 #include "Results_TeamSubtotalScore_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.ExecuteUbergraph_Results_TeamSubtotalScore
 // ()
@@ -104,5 +103,5 @@ void UResults_TeamSubtotalScore_C::UpdateBackground()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

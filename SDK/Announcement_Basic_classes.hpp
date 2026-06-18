@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Announcement_Basic.Announcement_Basic_C
 // 0x0028 (0x0268 - 0x0240)
@@ -38,20 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announcement_Basic_C">();
+		BP_STATIC_CLASS_IMPL("Announcement_Basic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announcement_Basic_C")
 	}
 	static class UAnnouncement_Basic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnnouncement_Basic_C>();
 	}
 };
-static_assert(alignof(UAnnouncement_Basic_C) == 0x000008, "Wrong alignment on UAnnouncement_Basic_C");
-static_assert(sizeof(UAnnouncement_Basic_C) == 0x000268, "Wrong size on UAnnouncement_Basic_C");
-static_assert(offsetof(UAnnouncement_Basic_C, UberGraphFrame) == 0x000240, "Member 'UAnnouncement_Basic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, HorizontalBoxRoot) == 0x000248, "Member 'UAnnouncement_Basic_C::HorizontalBoxRoot' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, Icon) == 0x000250, "Member 'UAnnouncement_Basic_C::Icon' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, TextDetailText) == 0x000258, "Member 'UAnnouncement_Basic_C::TextDetailText' has a wrong offset!");
-static_assert(offsetof(UAnnouncement_Basic_C, TextTitleText) == 0x000260, "Member 'UAnnouncement_Basic_C::TextTitleText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

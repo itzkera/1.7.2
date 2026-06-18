@@ -14,8 +14,7 @@
 #include "StatusWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StatusWidget.StatusWidget_C.ExecuteUbergraph_StatusWidget
 // ()
@@ -68,7 +67,7 @@ void UStatusWidget_C::Construct()
 // Function StatusWidget.StatusWidget_C.SetTitleText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             TitleText_0                                            (Parm)
+// const class FText&                      TitleText_0                                            (Parm)
 
 void UStatusWidget_C::SetTitleText(const class FText& TitleText_0)
 {
@@ -88,7 +87,7 @@ void UStatusWidget_C::SetTitleText(const class FText& TitleText_0)
 // Function StatusWidget.StatusWidget_C.SetStatusText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Status                                                 (Parm)
+// const class FText&                      Status                                                 (Parm)
 
 void UStatusWidget_C::SetStatusText(const class FText& Status)
 {
@@ -124,5 +123,5 @@ class FText UStatusWidget_C::UpdateLoginStatusText()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

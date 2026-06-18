@@ -14,8 +14,7 @@
 #include "FortHeroSupportPerkWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.ExecuteUbergraph_FortHeroSupportPerkWidget
 // ()
@@ -184,5 +183,5 @@ void UFortHeroSupportPerkWidget_C::UpdateComparisonVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

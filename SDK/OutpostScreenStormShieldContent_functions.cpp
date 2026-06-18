@@ -14,8 +14,7 @@
 #include "OutpostScreenStormShieldContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.ExecuteUbergraph_OutpostScreenStormShieldContent
 // (HasDefaults)
@@ -206,7 +205,7 @@ void UOutpostScreenStormShieldContent_C::ResrouceProgress_Wood(int32 NewParam, i
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.isPlayerAlone
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    isAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   isAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOutpostScreenStormShieldContent_C::isPlayerAlone(bool* isAlone)
 {
@@ -331,7 +330,7 @@ void UOutpostScreenStormShieldContent_C::Update_ExpandShieldText()
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.SetExpandShieldText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             NewExpandText                                          (Parm)
+// const class FText&                      NewExpandText                                          (Parm)
 
 void UOutpostScreenStormShieldContent_C::SetExpandShieldText(const class FText& NewExpandText)
 {
@@ -419,7 +418,7 @@ void UOutpostScreenStormShieldContent_C::AddInputHandlers()
 // Function OutpostScreenStormShieldContent.OutpostScreenStormShieldContent_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOutpostScreenStormShieldContent_C::HandleBack(bool* PassThrough)
 {
@@ -470,5 +469,5 @@ void UOutpostScreenStormShieldContent_C::EnablePowerBarChunk(class UImage* inIma
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

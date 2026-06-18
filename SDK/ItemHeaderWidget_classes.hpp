@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemHeaderWidget.ItemHeaderWidget_C
 // 0x0138 (0x0398 - 0x0260)
@@ -83,57 +82,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemHeaderWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemHeaderWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemHeaderWidget_C")
 	}
 	static class UItemHeaderWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemHeaderWidget_C>();
 	}
 };
-static_assert(alignof(UItemHeaderWidget_C) == 0x000008, "Wrong alignment on UItemHeaderWidget_C");
-static_assert(sizeof(UItemHeaderWidget_C) == 0x000398, "Wrong size on UItemHeaderWidget_C");
-static_assert(offsetof(UItemHeaderWidget_C, UberGraphFrame) == 0x000260, "Member 'UItemHeaderWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, AdditionalContentSlot) == 0x000268, "Member 'UItemHeaderWidget_C::AdditionalContentSlot' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, BottomCategoryIndicators) == 0x000270, "Member 'UItemHeaderWidget_C::BottomCategoryIndicators' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, CommonBorderLowerSection) == 0x000278, "Member 'UItemHeaderWidget_C::CommonBorderLowerSection' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, EvolveIndicator) == 0x000280, "Member 'UItemHeaderWidget_C::EvolveIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, FavoriteIndicator) == 0x000288, "Member 'UItemHeaderWidget_C::FavoriteIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, HeroPerks) == 0x000290, "Member 'UItemHeaderWidget_C::HeroPerks' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, HorizontalBoxLevel) == 0x000298, "Member 'UItemHeaderWidget_C::HorizontalBoxLevel' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, HorizontalBoxTier) == 0x0002A0, "Member 'UItemHeaderWidget_C::HorizontalBoxTier' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, HorizontalBoxTierandLevel) == 0x0002A8, "Member 'UItemHeaderWidget_C::HorizontalBoxTierandLevel' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, HorizontalBoxTierName) == 0x0002B0, "Member 'UItemHeaderWidget_C::HorizontalBoxTierName' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, Image_0) == 0x0002B8, "Member 'UItemHeaderWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, IndicatorIconSlot) == 0x0002C0, "Member 'UItemHeaderWidget_C::IndicatorIconSlot' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, ItemDetailsStackCounter) == 0x0002C8, "Member 'UItemHeaderWidget_C::ItemDetailsStackCounter' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, ItemDisplayNameText) == 0x0002D0, "Member 'UItemHeaderWidget_C::ItemDisplayNameText' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, ItemTierIndicator) == 0x0002D8, "Member 'UItemHeaderWidget_C::ItemTierIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, LeadIndicators) == 0x0002E0, "Member 'UItemHeaderWidget_C::LeadIndicators' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, LevelIndicator) == 0x0002E8, "Member 'UItemHeaderWidget_C::LevelIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, OverflowIndicator) == 0x0002F0, "Member 'UItemHeaderWidget_C::OverflowIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, PerkDivider) == 0x0002F8, "Member 'UItemHeaderWidget_C::PerkDivider' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, PowerRatingBlock) == 0x000300, "Member 'UItemHeaderWidget_C::PowerRatingBlock' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, PrimaryItemCategoryIndicator) == 0x000308, "Member 'UItemHeaderWidget_C::PrimaryItemCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, SecondaryItemCategoryIndicatorBottomIcon) == 0x000310, "Member 'UItemHeaderWidget_C::SecondaryItemCategoryIndicatorBottomIcon' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, SecondaryItemCategoryIndicatorBottomText) == 0x000318, "Member 'UItemHeaderWidget_C::SecondaryItemCategoryIndicatorBottomText' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, SecondaryItemCategoryIndicatorTop) == 0x000320, "Member 'UItemHeaderWidget_C::SecondaryItemCategoryIndicatorTop' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, SelectedItemDetailsOverlay) == 0x000328, "Member 'UItemHeaderWidget_C::SelectedItemDetailsOverlay' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, SupportBonusText) == 0x000330, "Member 'UItemHeaderWidget_C::SupportBonusText' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, SupportPerk) == 0x000338, "Member 'UItemHeaderWidget_C::SupportPerk' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TacticalPerk) == 0x000340, "Member 'UItemHeaderWidget_C::TacticalPerk' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TertiaryItemCategoryIndicatorBottomIcon) == 0x000348, "Member 'UItemHeaderWidget_C::TertiaryItemCategoryIndicatorBottomIcon' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TertiaryItemCategoryIndicatorBottomText) == 0x000350, "Member 'UItemHeaderWidget_C::TertiaryItemCategoryIndicatorBottomText' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TertiaryItemCategoryIndicatorTop) == 0x000358, "Member 'UItemHeaderWidget_C::TertiaryItemCategoryIndicatorTop' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TierNameText) == 0x000360, "Member 'UItemHeaderWidget_C::TierNameText' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TitleBox) == 0x000368, "Member 'UItemHeaderWidget_C::TitleBox' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TopCategoryIndicators) == 0x000370, "Member 'UItemHeaderWidget_C::TopCategoryIndicators' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, UpgradeIndicator) == 0x000378, "Member 'UItemHeaderWidget_C::UpgradeIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, bShowHeroPerks) == 0x000380, "Member 'UItemHeaderWidget_C::bShowHeroPerks' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, bShowBottomCategoryIndicators) == 0x000381, "Member 'UItemHeaderWidget_C::bShowBottomCategoryIndicators' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, TargetItemDef) == 0x000388, "Member 'UItemHeaderWidget_C::TargetItemDef' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, ShowFavoriteIndicator) == 0x000390, "Member 'UItemHeaderWidget_C::ShowFavoriteIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, ShowOverflowIndicator) == 0x000391, "Member 'UItemHeaderWidget_C::ShowOverflowIndicator' has a wrong offset!");
-static_assert(offsetof(UItemHeaderWidget_C, isInGame) == 0x000392, "Member 'UItemHeaderWidget_C::isInGame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

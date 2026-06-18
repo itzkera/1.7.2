@@ -14,8 +14,7 @@
 #include "BadgesEarnedPanelContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.ExecuteUbergraph_BadgesEarnedPanelContent
 // ()
@@ -125,11 +124,11 @@ void UBadgesEarnedPanelContent_C::HandleMissionsUpdated()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortPlayerController*            InFortPC                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FEarnedBadgeEntry                EarnedBadgeEntry                                       (ConstParm, Parm, OutParm, ReferenceParm)
-// bool                                    Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class AFortPlayerController*            FortPC                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortBadgeItemDefinition*         Badge                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FEarnedBadgeEntry&         EarnedBadgeEntry                                       (ConstParm, Parm, OutParm, ReferenceParm)
+// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class AFortPlayerController**           FortPC                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortBadgeItemDefinition**        Badge                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBadgesEarnedPanelContent_C::Get_Badge_And_Count_For_Player(class AFortPlayerController* InFortPC, const struct FEarnedBadgeEntry& EarnedBadgeEntry, bool* Found, class AFortPlayerController** FortPC, class UFortBadgeItemDefinition** Badge, int32* Count)
 {
@@ -158,5 +157,5 @@ void UBadgesEarnedPanelContent_C::Get_Badge_And_Count_For_Player(class AFortPlay
 		*Count = Parms.Count;
 }
 
-}
 
+SDK_NAMESPACE_END

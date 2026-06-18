@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.PopulateFromConversation
 // 0x0020 (0x0020 - 0x0000)
@@ -27,11 +27,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation) == 0x000008, "Wrong alignment on FrontEndRewards_Conversation_VO_C_PopulateFromConversation");
-static_assert(sizeof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation) == 0x000020, "Wrong size on FrontEndRewards_Conversation_VO_C_PopulateFromConversation");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, Conversation_0) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::Conversation_0' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, CallFunc_IsValidConversation_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::CallFunc_IsValidConversation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PopulateFromConversation, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'FrontEndRewards_Conversation_VO_C_PopulateFromConversation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleReplayAction
 // 0x0002 (0x0002 - 0x0000)
@@ -41,10 +36,6 @@ public:
 	bool                                          Committed;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Conversation_VO_C_HandleReplayAction) == 0x000001, "Wrong alignment on FrontEndRewards_Conversation_VO_C_HandleReplayAction");
-static_assert(sizeof(FrontEndRewards_Conversation_VO_C_HandleReplayAction) == 0x000002, "Wrong size on FrontEndRewards_Conversation_VO_C_HandleReplayAction");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleReplayAction, Committed) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_HandleReplayAction::Committed' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleReplayAction, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'FrontEndRewards_Conversation_VO_C_HandleReplayAction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleNewSentence
 // 0x00D0 (0x00D0 - 0x0000)
@@ -55,11 +46,6 @@ public:
 	class FText                                   CallFunc_GetDataFromSentence_Text;                 // 0x00B0(0x0018)()
 	class UTexture2D*                             CallFunc_GetDataFromSentence_TalkingHeadTexture;   // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Conversation_VO_C_HandleNewSentence) == 0x000008, "Wrong alignment on FrontEndRewards_Conversation_VO_C_HandleNewSentence");
-static_assert(sizeof(FrontEndRewards_Conversation_VO_C_HandleNewSentence) == 0x0000D0, "Wrong size on FrontEndRewards_Conversation_VO_C_HandleNewSentence");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleNewSentence, Sentence) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_HandleNewSentence::Sentence' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleNewSentence, CallFunc_GetDataFromSentence_Text) == 0x0000B0, "Member 'FrontEndRewards_Conversation_VO_C_HandleNewSentence::CallFunc_GetDataFromSentence_Text' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleNewSentence, CallFunc_GetDataFromSentence_TalkingHeadTexture) == 0x0000C8, "Member 'FrontEndRewards_Conversation_VO_C_HandleNewSentence::CallFunc_GetDataFromSentence_TalkingHeadTexture' has a wrong offset!");
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleConversationFinished
 // 0x0028 (0x0028 - 0x0000)
@@ -74,14 +60,6 @@ public:
 	EFortQuestRewardType                          CallFunc_GetRewardType_ReturnValue;                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished) == 0x000008, "Wrong alignment on FrontEndRewards_Conversation_VO_C_HandleConversationFinished");
-static_assert(sizeof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished) == 0x000028, "Wrong size on FrontEndRewards_Conversation_VO_C_HandleConversationFinished");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_HandleConversationFinished::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'FrontEndRewards_Conversation_VO_C_HandleConversationFinished::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000018, "Member 'FrontEndRewards_Conversation_VO_C_HandleConversationFinished::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished, CallFunc_IsValid_ReturnValue2) == 0x000020, "Member 'FrontEndRewards_Conversation_VO_C_HandleConversationFinished::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished, CallFunc_GetRewardType_ReturnValue) == 0x000021, "Member 'FrontEndRewards_Conversation_VO_C_HandleConversationFinished::CallFunc_GetRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_HandleConversationFinished, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000022, "Member 'FrontEndRewards_Conversation_VO_C_HandleConversationFinished::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.PlayConversation
 // 0x0038 (0x0038 - 0x0000)
@@ -97,40 +75,22 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValidConversation_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* CallFunc_CreateConversationActor_NewAnnoucement;   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* CallFunc_CreateConversationActor_NewAnnoucement; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Conversation_VO_C_PlayConversation) == 0x000008, "Wrong alignment on FrontEndRewards_Conversation_VO_C_PlayConversation");
-static_assert(sizeof(FrontEndRewards_Conversation_VO_C_PlayConversation) == 0x000038, "Wrong size on FrontEndRewards_Conversation_VO_C_PlayConversation");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, QuestItem) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::QuestItem' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, CallFunc_GetQuestDefinitionBP_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::CallFunc_GetQuestDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, CallFunc_GetRewardType_ReturnValue) == 0x000011, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::CallFunc_GetRewardType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000012, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, CallFunc_IsValidConversation_ReturnValue) == 0x000028, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::CallFunc_IsValidConversation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_PlayConversation, CallFunc_CreateConversationActor_NewAnnoucement) == 0x000030, "Member 'FrontEndRewards_Conversation_VO_C_PlayConversation::CallFunc_CreateConversationActor_NewAnnoucement' has a wrong offset!");
 
 // Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.CreateConversationActor
 // 0x0070 (0x0070 - 0x0000)
 struct FrontEndRewards_Conversation_VO_C_CreateConversationActor final
 {
 public:
-	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* NewAnnoucement;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* NewAnnoucement;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AFortPlayerController*>          CallFunc_GetLocalFortPlayerControllers_ReturnValue; // 0x0008(0x0010)(ZeroConstructor, ReferenceParm)
 	struct FFortClientAnnouncementData_Conversation K2Node_MakeStruct_FortClientAnnouncementData_Conversation; // 0x0018(0x0010)(NoDestructor)
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0030(0x0030)(IsPlainOldData, NoDestructor)
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* CallFunc_FinishSpawningActor_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C* CallFunc_FinishSpawningActor_ReturnValue; // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontEndRewards_Conversation_VO_C_CreateConversationActor) == 0x000010, "Wrong alignment on FrontEndRewards_Conversation_VO_C_CreateConversationActor");
-static_assert(sizeof(FrontEndRewards_Conversation_VO_C_CreateConversationActor) == 0x000070, "Wrong size on FrontEndRewards_Conversation_VO_C_CreateConversationActor");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_CreateConversationActor, NewAnnoucement) == 0x000000, "Member 'FrontEndRewards_Conversation_VO_C_CreateConversationActor::NewAnnoucement' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_CreateConversationActor, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000008, "Member 'FrontEndRewards_Conversation_VO_C_CreateConversationActor::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_CreateConversationActor, K2Node_MakeStruct_FortClientAnnouncementData_Conversation) == 0x000018, "Member 'FrontEndRewards_Conversation_VO_C_CreateConversationActor::K2Node_MakeStruct_FortClientAnnouncementData_Conversation' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_CreateConversationActor, CallFunc_MakeTransform_ReturnValue) == 0x000030, "Member 'FrontEndRewards_Conversation_VO_C_CreateConversationActor::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_CreateConversationActor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000060, "Member 'FrontEndRewards_Conversation_VO_C_CreateConversationActor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontEndRewards_Conversation_VO_C_CreateConversationActor, CallFunc_FinishSpawningActor_ReturnValue) == 0x000068, "Member 'FrontEndRewards_Conversation_VO_C_CreateConversationActor::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

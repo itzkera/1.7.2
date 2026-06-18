@@ -14,8 +14,7 @@
 #include "LeaderboardListView_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LeaderboardListView.LeaderboardListView_C.FocusListView
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -30,5 +29,5 @@ void ULeaderboardListView_C::FocusListView()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

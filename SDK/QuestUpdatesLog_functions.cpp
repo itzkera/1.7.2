@@ -14,8 +14,7 @@
 #include "QuestUpdatesLog_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestUpdatesLog.QuestUpdatesLog_C.ExecuteUbergraph_QuestUpdatesLog
 // ()
@@ -106,8 +105,8 @@ void UQuestUpdatesLog_C::TryDisplayDynamicQuestStatusUpdate()
 // Function QuestUpdatesLog.QuestUpdatesLog_C.GetAvailableQuestUpdateWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          UpdateInfo                                             (Parm, HasGetValueTypeHash)
-// class UQuestUpdateEntry_C*              AvailableWIdget                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FDynamicQuestUpdateInfo&   UpdateInfo                                             (Parm, HasGetValueTypeHash)
+// class UQuestUpdateEntry_C**             AvailableWIdget                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestUpdatesLog_C::GetAvailableQuestUpdateWidget(const struct FDynamicQuestUpdateInfo& UpdateInfo, class UQuestUpdateEntry_C** AvailableWIdget)
 {
@@ -150,7 +149,7 @@ void UQuestUpdatesLog_C::HandleQuestUpdateWidgetFinished(class UQuestUpdateEntry
 // Function QuestUpdatesLog.QuestUpdatesLog_C.CreateAnnouncementUpdate
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDynamicQuestUpdateInfo          UpdateInfo                                             (Parm, HasGetValueTypeHash)
+// const struct FDynamicQuestUpdateInfo&   UpdateInfo                                             (Parm, HasGetValueTypeHash)
 
 void UQuestUpdatesLog_C::CreateAnnouncementUpdate(const struct FDynamicQuestUpdateInfo& UpdateInfo)
 {
@@ -170,7 +169,7 @@ void UQuestUpdatesLog_C::CreateAnnouncementUpdate(const struct FDynamicQuestUpda
 // Function QuestUpdatesLog.QuestUpdatesLog_C.GetTotalDisplayedObjectives
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   NumObjectives                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  NumObjectives                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuestUpdatesLog_C::GetTotalDisplayedObjectives(int32* NumObjectives)
 {
@@ -191,7 +190,7 @@ void UQuestUpdatesLog_C::GetTotalDisplayedObjectives(int32* NumObjectives)
 // Function QuestUpdatesLog.QuestUpdatesLog_C.CanDisplayAnotherObjective
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UQuestUpdatesLog_C::CanDisplayAnotherObjective(bool* Result)
 {
@@ -208,5 +207,5 @@ void UQuestUpdatesLog_C::CanDisplayAnotherObjective(bool* Result)
 		*Result = Parms.Result;
 }
 
-}
 
+SDK_NAMESPACE_END

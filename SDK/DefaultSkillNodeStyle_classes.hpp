@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass DefaultSkillNodeStyle.DefaultSkillNodeStyle_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UDefaultSkillNodeStyle_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultSkillNodeStyle_C">();
+		BP_STATIC_CLASS_IMPL("DefaultSkillNodeStyle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultSkillNodeStyle_C")
 	}
 	static class UDefaultSkillNodeStyle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefaultSkillNodeStyle_C>();
 	}
 };
-static_assert(alignof(UDefaultSkillNodeStyle_C) == 0x000008, "Wrong alignment on UDefaultSkillNodeStyle_C");
-static_assert(sizeof(UDefaultSkillNodeStyle_C) == 0x000530, "Wrong size on UDefaultSkillNodeStyle_C");
 
-}
-
+SDK_NAMESPACE_END

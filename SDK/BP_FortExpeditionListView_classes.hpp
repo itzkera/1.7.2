@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionListView.BP_FortExpeditionListView_C
 // 0x0028 (0x0298 - 0x0270)
@@ -36,18 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionListView_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionListView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionListView_C")
 	}
 	static class UBP_FortExpeditionListView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionListView_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionListView_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionListView_C");
-static_assert(sizeof(UBP_FortExpeditionListView_C) == 0x000298, "Wrong size on UBP_FortExpeditionListView_C");
-static_assert(offsetof(UBP_FortExpeditionListView_C, UberGraphFrame) == 0x000270, "Member 'UBP_FortExpeditionListView_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListView_C, OnItemClicked) == 0x000278, "Member 'UBP_FortExpeditionListView_C::OnItemClicked' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListView_C, OnItemHovered) == 0x000288, "Member 'UBP_FortExpeditionListView_C::OnItemHovered' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

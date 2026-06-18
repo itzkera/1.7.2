@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ZoneDetails.ZoneDetails_C
 // 0x0028 (0x0260 - 0x0238)
@@ -36,20 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ZoneDetails_C">();
+		BP_STATIC_CLASS_IMPL("ZoneDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ZoneDetails_C")
 	}
 	static class UZoneDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UZoneDetails_C>();
 	}
 };
-static_assert(alignof(UZoneDetails_C) == 0x000008, "Wrong alignment on UZoneDetails_C");
-static_assert(sizeof(UZoneDetails_C) == 0x000260, "Wrong size on UZoneDetails_C");
-static_assert(offsetof(UZoneDetails_C, UberGraphFrame) == 0x000238, "Member 'UZoneDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UZoneDetails_C, DayWidget) == 0x000240, "Member 'UZoneDetails_C::DayWidget' has a wrong offset!");
-static_assert(offsetof(UZoneDetails_C, MissionIcon) == 0x000248, "Member 'UZoneDetails_C::MissionIcon' has a wrong offset!");
-static_assert(offsetof(UZoneDetails_C, MissionName) == 0x000250, "Member 'UZoneDetails_C::MissionName' has a wrong offset!");
-static_assert(offsetof(UZoneDetails_C, TheaterInfoText) == 0x000258, "Member 'UZoneDetails_C::TheaterInfoText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

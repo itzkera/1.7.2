@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function FrontendCamera_Inspect.FrontendCamera_Inspect_C.ExecuteUbergraph_FrontendCamera_Inspect
 // 0x0058 (0x0058 - 0x0000)
@@ -29,16 +29,6 @@ public:
 	TArray<class AVaultCharacterLightingBP_C*>    CallFunc_GetAllActorsOfClass_OutActors3;           // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
 	class AVaultCharacterLightingBP_C*            CallFunc_Array_Get_Item3;                          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect) == 0x000008, "Wrong alignment on FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect");
-static_assert(sizeof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect) == 0x000058, "Wrong size on FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, EntryPoint) == 0x000000, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_GetAllActorsOfClass_OutActors) == 0x000008, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000018, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_Array_Get_Item) == 0x000020, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_GetAllActorsOfClass_OutActors2) == 0x000028, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_GetAllActorsOfClass_OutActors2' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_Array_Get_Item2) == 0x000038, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_GetAllActorsOfClass_OutActors3) == 0x000040, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_GetAllActorsOfClass_OutActors3' has a wrong offset!");
-static_assert(offsetof(FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect, CallFunc_Array_Get_Item3) == 0x000050, "Member 'FrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect::CallFunc_Array_Get_Item3' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

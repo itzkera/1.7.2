@@ -13,8 +13,7 @@
 #include "Border_ShellTopBar_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-SquadBonus.Border-SquadBonus_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_SquadBonus_C final : public UBorder_ShellTopBar_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-SquadBonus_C">();
+		BP_STATIC_CLASS_IMPL("Border-SquadBonus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-SquadBonus_C")
 	}
 	static class UBorder_SquadBonus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_SquadBonus_C>();
 	}
 };
-static_assert(alignof(UBorder_SquadBonus_C) == 0x000008, "Wrong alignment on UBorder_SquadBonus_C");
-static_assert(sizeof(UBorder_SquadBonus_C) == 0x0000B8, "Wrong size on UBorder_SquadBonus_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass EarnedBadgeTile.EarnedBadgeTile_C
 // 0x0058 (0x0290 - 0x0238)
@@ -45,26 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EarnedBadgeTile_C">();
+		BP_STATIC_CLASS_IMPL("EarnedBadgeTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EarnedBadgeTile_C")
 	}
 	static class UEarnedBadgeTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEarnedBadgeTile_C>();
 	}
 };
-static_assert(alignof(UEarnedBadgeTile_C) == 0x000008, "Wrong alignment on UEarnedBadgeTile_C");
-static_assert(sizeof(UEarnedBadgeTile_C) == 0x000290, "Wrong size on UEarnedBadgeTile_C");
-static_assert(offsetof(UEarnedBadgeTile_C, UberGraphFrame) == 0x000238, "Member 'UEarnedBadgeTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, BadgeCount) == 0x000240, "Member 'UEarnedBadgeTile_C::BadgeCount' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, BadgeDescription) == 0x000248, "Member 'UEarnedBadgeTile_C::BadgeDescription' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, BadgeIcon) == 0x000250, "Member 'UEarnedBadgeTile_C::BadgeIcon' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, BadgeTitle) == 0x000258, "Member 'UEarnedBadgeTile_C::BadgeTitle' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, CompleteCheck) == 0x000260, "Member 'UEarnedBadgeTile_C::CompleteCheck' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, ListItemBorder) == 0x000268, "Member 'UEarnedBadgeTile_C::ListItemBorder' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, BadgeItemDefinition) == 0x000270, "Member 'UEarnedBadgeTile_C::BadgeItemDefinition' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, Count) == 0x000278, "Member 'UEarnedBadgeTile_C::Count' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, bEarnedBadge) == 0x00027C, "Member 'UEarnedBadgeTile_C::bEarnedBadge' has a wrong offset!");
-static_assert(offsetof(UEarnedBadgeTile_C, DarkenBadge) == 0x000280, "Member 'UEarnedBadgeTile_C::DarkenBadge' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

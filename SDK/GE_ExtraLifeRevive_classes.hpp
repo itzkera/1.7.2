@@ -13,8 +13,7 @@
 #include "GE_Generic_Revive_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_ExtraLifeRevive.GE_ExtraLifeRevive_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_ExtraLifeRevive_C final : public UGE_Generic_Revive_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_ExtraLifeRevive_C">();
+		BP_STATIC_CLASS_IMPL("GE_ExtraLifeRevive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_ExtraLifeRevive_C")
 	}
 	static class UGE_ExtraLifeRevive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_ExtraLifeRevive_C>();
 	}
 };
-static_assert(alignof(UGE_ExtraLifeRevive_C) == 0x000010, "Wrong alignment on UGE_ExtraLifeRevive_C");
-static_assert(sizeof(UGE_ExtraLifeRevive_C) == 0x000660, "Wrong size on UGE_ExtraLifeRevive_C");
 
-}
-
+SDK_NAMESPACE_END

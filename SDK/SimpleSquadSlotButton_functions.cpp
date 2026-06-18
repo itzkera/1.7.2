@@ -14,8 +14,7 @@
 #include "SimpleSquadSlotButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.ExecuteUbergraph_SimpleSquadSlotButton
 // ()
@@ -164,9 +163,9 @@ void USimpleSquadSlotButton_C::Mark_Squad_Slot_Seen_State()
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.IsSlotEmpty
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isEmpty                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsEmpty                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USimpleSquadSlotButton_C::IsSlotEmpty(bool* isEmpty)
+void USimpleSquadSlotButton_C::IsSlotEmpty(bool* IsEmpty)
 {
 	static class UFunction* Func = nullptr;
 
@@ -177,8 +176,8 @@ void USimpleSquadSlotButton_C::IsSlotEmpty(bool* isEmpty)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (isEmpty != nullptr)
-		*isEmpty = Parms.isEmpty;
+	if (IsEmpty != nullptr)
+		*IsEmpty = Parms.IsEmpty;
 }
 
 
@@ -215,5 +214,5 @@ void USimpleSquadSlotButton_C::Update_SubType_Icon_Glow(bool GlowIcon)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

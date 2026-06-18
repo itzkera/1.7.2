@@ -14,8 +14,7 @@
 #include "RewardsListEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RewardsListEntry.RewardsListEntry_C.ExecuteUbergraph_RewardsListEntry
 // (HasDefaults)
@@ -106,5 +105,5 @@ void URewardsListEntry_C::ConfigForSchematic()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

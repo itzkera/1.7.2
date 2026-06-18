@@ -17,8 +17,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.ExecuteUbergraph_HBOnboardingFlow
 // 0x0460 (0x0460 - 0x0000)
@@ -86,7 +86,7 @@ public:
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortClientAnnouncement*                CallFunc_FinishSpawningActor_ReturnValue;          // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAsyncAction_WaitForClientAnnouncement* CallFunc_WaitForClientAnnouncement_ReturnValue;    // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_WaitForClientAnnouncement* CallFunc_WaitForClientAnnouncement_ReturnValue; // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue7;                     // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x01E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1E2[0x6];                                      // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -103,7 +103,7 @@ public:
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortClientAnnouncement*                CallFunc_FinishSpawningActor_ReturnValue2;         // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAsyncAction_WaitForClientAnnouncement* CallFunc_WaitForClientAnnouncement_ReturnValue2;   // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_WaitForClientAnnouncement* CallFunc_WaitForClientAnnouncement_ReturnValue2; // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate10;            // 0x0290(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue9;                     // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A1[0x7];                                      // 0x02A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -136,7 +136,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate15;            // 0x0360(0x0010)(ZeroConstructor, NoDestructor)
 	ERejoinStatus                                 K2Node_CustomEvent_RejoinStatus;                   // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortAsyncAction_EnsureClientQuestLogin* CallFunc_SendEnsureClientQuestLogin_ReturnValue;   // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAsyncAction_EnsureClientQuestLogin* CallFunc_SendEnsureClientQuestLogin_ReturnValue;  // 0x0378(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue13;                    // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_381[0x7];                                      // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate16;            // 0x0388(0x0010)(ZeroConstructor, NoDestructor)
@@ -162,119 +162,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue6;                 // 0x0459(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x045A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow) == 0x000010, "Wrong alignment on HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow");
-static_assert(sizeof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow) == 0x000460, "Wrong size on HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, EntryPoint) == 0x000000, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue) == 0x000018, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate2) == 0x000020, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue2) == 0x000038, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue2) == 0x000050, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue3) == 0x000058, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue) == 0x000060, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_NeedToCheckRejoinStatus_ReturnValue) == 0x000068, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_NeedToCheckRejoinStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue3) == 0x000069, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue2) == 0x000070, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue3) == 0x000078, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue4) == 0x000080, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsJoinableGameAvailable_ReturnValue) == 0x000088, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsJoinableGameAvailable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue5) == 0x000090, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate4) == 0x000098, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate5) == 0x0000A8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate6) == 0x0000B8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue4) == 0x0000C8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue6) == 0x0000D0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue4) == 0x0000D8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue7) == 0x0000E0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_AutoSelectSubGame_ReturnValue) == 0x0000E8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_AutoSelectSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetSubGame_ReturnValue) == 0x0000E9, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_SwitchEnum_CmpSuccess) == 0x0000EA, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate7) == 0x0000F0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue5) == 0x000100, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate8) == 0x000108, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue5) == 0x000118, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue6) == 0x000120, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue8) == 0x000128, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue6) == 0x000130, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue9) == 0x000138, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue10) == 0x000140, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue11) == 0x000148, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue12) == 0x000150, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetSubGame_ReturnValue2) == 0x000158, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetSubGame_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000159, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_ClassIsChildOf_ReturnValue) == 0x00015A, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_ClassIsChildOf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_Not_PreBool_ReturnValue) == 0x00015B, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue13) == 0x000160, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate9) == 0x000168, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate9' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_MakeArray_Array) == 0x000178, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_MakeTransform_ReturnValue) == 0x000190, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, Temp_bool_IsClosed_Variable) == 0x0001C0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001C8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001D0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_WaitForClientAnnouncement_ReturnValue) == 0x0001D8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_WaitForClientAnnouncement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue7) == 0x0001E0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, Temp_bool_Has_Been_Initd_Variable) == 0x0001E1, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetContext_ReturnValue14) == 0x0001E8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetContext_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetHomeBaseInfo_Result) == 0x0001F0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetHomeBaseInfo_Result' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SetUIState_ReturnValue7) == 0x000230, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SetUIState_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_Not_PreBool_ReturnValue2) == 0x000238, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_TextIsEmpty_ReturnValue) == 0x000239, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue8) == 0x00023A, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_BooleanOR_ReturnValue) == 0x00023B, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_MakeTransform_ReturnValue2) == 0x000240, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_MakeTransform_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue2) == 0x000270, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValidClass_ReturnValue) == 0x000278, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_FinishSpawningActor_ReturnValue2) == 0x000280, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_FinishSpawningActor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_WaitForClientAnnouncement_ReturnValue2) == 0x000288, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_WaitForClientAnnouncement_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate10) == 0x000290, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate10' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue9) == 0x0002A0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_MakeArray_Array2) == 0x0002A8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SendClientStatEvent_ReturnValue) == 0x0002B8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SendClientStatEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate11) == 0x0002C0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate11' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue10) == 0x0002D0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_EventSource3) == 0x0002D8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_EventSource3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_EventFocus3) == 0x0002E0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_EventFocus3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_ClientEvent3) == 0x0002E8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_ClientEvent3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate12) == 0x000308, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SendClientStatEvent_ReturnValue2) == 0x000318, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SendClientStatEvent_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue11) == 0x000320, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate13) == 0x000328, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate13' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000338, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc__BPGetCurrentUIState_ReturnValue) == 0x000340, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc__BPGetCurrentUIState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000341, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate14) == 0x000348, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate14' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_HasCompletedOnboardingObjective_ReturnValue) == 0x000358, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_HasCompletedOnboardingObjective_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_Not_PreBool_ReturnValue3) == 0x000359, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_Not_PreBool_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue12) == 0x00035A, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_HasCompletedOnboardingObjective_ReturnValue2) == 0x00035B, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_HasCompletedOnboardingObjective_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_Not_PreBool_ReturnValue4) == 0x00035C, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_Not_PreBool_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_HasCompletedOnboardingObjective_ReturnValue3) == 0x00035D, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_HasCompletedOnboardingObjective_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_Not_PreBool_ReturnValue5) == 0x00035E, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_Not_PreBool_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate15) == 0x000360, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate15' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CustomEvent_RejoinStatus) == 0x000370, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CustomEvent_RejoinStatus' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_SendEnsureClientQuestLogin_ReturnValue) == 0x000378, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_SendEnsureClientQuestLogin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_IsValid_ReturnValue13) == 0x000380, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_IsValid_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate16) == 0x000388, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate16' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_HasCompletedQuest_ReturnValue) == 0x000398, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_HasCompletedQuest_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate17) == 0x0003A0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate17' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate18) == 0x0003B0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate18' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x0003C0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc__BPGetCurrentUIState_ReturnValue2) == 0x0003C8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc__BPGetCurrentUIState_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x0003C9, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_EventSource2) == 0x0003D0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_EventSource2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_EventFocus2) == 0x0003D8, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_EventFocus2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_ClientEvent2) == 0x0003E0, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_ClientEvent2' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate19) == 0x000400, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate19' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_UpdateVariableCache_Success) == 0x000410, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_UpdateVariableCache_Success' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_EventSource) == 0x000418, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_EventFocus) == 0x000420, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_HandleClientEvent_ClientEvent) == 0x000428, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, K2Node_CreateDelegate_OutputDelegate20) == 0x000448, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::K2Node_CreateDelegate_OutputDelegate20' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_HasCompletedOnboardingObjective_ReturnValue4) == 0x000458, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_HasCompletedOnboardingObjective_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_Not_PreBool_ReturnValue6) == 0x000459, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_Not_PreBool_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow, CallFunc_BooleanAND_ReturnValue) == 0x00045A, "Member 'HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.HandleClientEvent_OnRejoinGameAbandoned
 // 0x0030 (0x0030 - 0x0000)
@@ -285,11 +172,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned) == 0x000008, "Wrong alignment on HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned");
-static_assert(sizeof(HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned) == 0x000030, "Wrong size on HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned, EventSource) == 0x000000, "Member 'HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned::EventSource' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned, EventFocus) == 0x000008, "Member 'HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned::EventFocus' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned, ClientEvent) == 0x000010, "Member 'HBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned::ClientEvent' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.HandleClientEvent_SubGameSelected
 // 0x0030 (0x0030 - 0x0000)
@@ -300,11 +182,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_HandleClientEvent_SubGameSelected) == 0x000008, "Wrong alignment on HBOnboardingFlow_C_HandleClientEvent_SubGameSelected");
-static_assert(sizeof(HBOnboardingFlow_C_HandleClientEvent_SubGameSelected) == 0x000030, "Wrong size on HBOnboardingFlow_C_HandleClientEvent_SubGameSelected");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_SubGameSelected, EventSource) == 0x000000, "Member 'HBOnboardingFlow_C_HandleClientEvent_SubGameSelected::EventSource' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_SubGameSelected, EventFocus) == 0x000008, "Member 'HBOnboardingFlow_C_HandleClientEvent_SubGameSelected::EventFocus' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_SubGameSelected, ClientEvent) == 0x000010, "Member 'HBOnboardingFlow_C_HandleClientEvent_SubGameSelected::ClientEvent' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.RejoinCheckCompleted
 // 0x0001 (0x0001 - 0x0000)
@@ -313,9 +190,6 @@ struct HBOnboardingFlow_C_RejoinCheckCompleted final
 public:
 	ERejoinStatus                                 RejoinStatus;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_RejoinCheckCompleted) == 0x000001, "Wrong alignment on HBOnboardingFlow_C_RejoinCheckCompleted");
-static_assert(sizeof(HBOnboardingFlow_C_RejoinCheckCompleted) == 0x000001, "Wrong size on HBOnboardingFlow_C_RejoinCheckCompleted");
-static_assert(offsetof(HBOnboardingFlow_C_RejoinCheckCompleted, RejoinStatus) == 0x000000, "Member 'HBOnboardingFlow_C_RejoinCheckCompleted::RejoinStatus' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.HandleClientEvent_HomebasePersonalized
 // 0x0030 (0x0030 - 0x0000)
@@ -326,11 +200,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized) == 0x000008, "Wrong alignment on HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized");
-static_assert(sizeof(HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized) == 0x000030, "Wrong size on HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized, EventSource) == 0x000000, "Member 'HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized::EventSource' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized, EventFocus) == 0x000008, "Member 'HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized::EventFocus' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized, ClientEvent) == 0x000010, "Member 'HBOnboardingFlow_C_HandleClientEvent_HomebasePersonalized::ClientEvent' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.UpdateVariableCache
 // 0x0028 (0x0028 - 0x0000)
@@ -344,13 +213,6 @@ public:
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_UpdateVariableCache) == 0x000008, "Wrong alignment on HBOnboardingFlow_C_UpdateVariableCache");
-static_assert(sizeof(HBOnboardingFlow_C_UpdateVariableCache) == 0x000028, "Wrong size on HBOnboardingFlow_C_UpdateVariableCache");
-static_assert(offsetof(HBOnboardingFlow_C_UpdateVariableCache, Success) == 0x000000, "Member 'HBOnboardingFlow_C_UpdateVariableCache::Success' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_UpdateVariableCache, CallFunc_GetQuestWithDefinition_ReturnValue) == 0x000008, "Member 'HBOnboardingFlow_C_UpdateVariableCache::CallFunc_GetQuestWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_UpdateVariableCache, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'HBOnboardingFlow_C_UpdateVariableCache::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_UpdateVariableCache, CallFunc_GetQuestManager_ReturnValue) == 0x000018, "Member 'HBOnboardingFlow_C_UpdateVariableCache::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_UpdateVariableCache, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'HBOnboardingFlow_C_UpdateVariableCache::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.ShowBannerSelect
 // 0x0020 (0x0020 - 0x0000)
@@ -362,12 +224,6 @@ public:
 	class UBannerSelectionWidget_C*               K2Node_DynamicCast_AsBanner_Selection_Widget;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_ShowBannerSelect) == 0x000008, "Wrong alignment on HBOnboardingFlow_C_ShowBannerSelect");
-static_assert(sizeof(HBOnboardingFlow_C_ShowBannerSelect) == 0x000020, "Wrong size on HBOnboardingFlow_C_ShowBannerSelect");
-static_assert(offsetof(HBOnboardingFlow_C_ShowBannerSelect, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000000, "Member 'HBOnboardingFlow_C_ShowBannerSelect::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ShowBannerSelect, CallFunc_GetCachedWidget_ReturnValue) == 0x000008, "Member 'HBOnboardingFlow_C_ShowBannerSelect::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ShowBannerSelect, K2Node_DynamicCast_AsBanner_Selection_Widget) == 0x000010, "Member 'HBOnboardingFlow_C_ShowBannerSelect::K2Node_DynamicCast_AsBanner_Selection_Widget' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_ShowBannerSelect, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'HBOnboardingFlow_C_ShowBannerSelect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.Handle Client Quest Login Failed
 // 0x0028 (0x0028 - 0x0000)
@@ -382,13 +238,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor)
 };
-static_assert(alignof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed) == 0x000008, "Wrong alignment on HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed");
-static_assert(sizeof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed) == 0x000028, "Wrong size on HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed");
-static_assert(offsetof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed, NewLocalVar_0) == 0x000000, "Member 'HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed, CallFunc_Greater_IntInt_ReturnValue) == 0x000004, "Member 'HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'HBOnboardingFlow_C_Handle_Client_Quest_Login_Failed::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

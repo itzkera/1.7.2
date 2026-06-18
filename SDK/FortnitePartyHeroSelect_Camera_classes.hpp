@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C
 // 0x0020 (0x08E0 - 0x08C0)
@@ -44,19 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortnitePartyHeroSelect_Camera_C">();
+		BP_STATIC_CLASS_IMPL("FortnitePartyHeroSelect_Camera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortnitePartyHeroSelect_Camera_C")
 	}
 	static class AFortnitePartyHeroSelect_Camera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFortnitePartyHeroSelect_Camera_C>();
 	}
 };
-static_assert(alignof(AFortnitePartyHeroSelect_Camera_C) == 0x000010, "Wrong alignment on AFortnitePartyHeroSelect_Camera_C");
-static_assert(sizeof(AFortnitePartyHeroSelect_Camera_C) == 0x0008E0, "Wrong size on AFortnitePartyHeroSelect_Camera_C");
-static_assert(offsetof(AFortnitePartyHeroSelect_Camera_C, UberGraphFrame) == 0x0008C0, "Member 'AFortnitePartyHeroSelect_Camera_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFortnitePartyHeroSelect_Camera_C, CameraActor_0) == 0x0008C8, "Member 'AFortnitePartyHeroSelect_Camera_C::CameraActor_0' has a wrong offset!");
-static_assert(offsetof(AFortnitePartyHeroSelect_Camera_C, MouseDown) == 0x0008D0, "Member 'AFortnitePartyHeroSelect_Camera_C::MouseDown' has a wrong offset!");
-static_assert(offsetof(AFortnitePartyHeroSelect_Camera_C, CachedPawn) == 0x0008D8, "Member 'AFortnitePartyHeroSelect_Camera_C::CachedPawn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

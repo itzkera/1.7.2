@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GAT_ActiveAbility.GAT_ActiveAbility_C.ExecuteUbergraph_GAT_ActiveAbility
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility) == 0x000004, "Wrong alignment on GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility");
-static_assert(sizeof(GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility) == 0x000004, "Wrong size on GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility");
-static_assert(offsetof(GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility, EntryPoint) == 0x000000, "Member 'GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

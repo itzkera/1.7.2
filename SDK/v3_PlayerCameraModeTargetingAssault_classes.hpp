@@ -13,8 +13,7 @@
 #include "v3_PlayerCameraModeRanged_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass v3_PlayerCameraModeTargetingAssault.v3_PlayerCameraModeTargetingAssault_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class Uv3_PlayerCameraModeTargetingAssault_C final : public Uv3_PlayerCameraMode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v3_PlayerCameraModeTargetingAssault_C">();
+		BP_STATIC_CLASS_IMPL("v3_PlayerCameraModeTargetingAssault_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v3_PlayerCameraModeTargetingAssault_C")
 	}
 	static class Uv3_PlayerCameraModeTargetingAssault_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv3_PlayerCameraModeTargetingAssault_C>();
 	}
 };
-static_assert(alignof(Uv3_PlayerCameraModeTargetingAssault_C) == 0x000008, "Wrong alignment on Uv3_PlayerCameraModeTargetingAssault_C");
-static_assert(sizeof(Uv3_PlayerCameraModeTargetingAssault_C) == 0x000110, "Wrong size on Uv3_PlayerCameraModeTargetingAssault_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -10,14 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "En_SplineForwardAxes_01_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "En_SplineForwardAxes_01_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C
 // 0x0230 (0x05B8 - 0x0388)
@@ -153,85 +152,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SplineVolumeTrail_v1b_C">();
+		BP_STATIC_CLASS_IMPL("BP_SplineVolumeTrail_v1b_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SplineVolumeTrail_v1b_C")
 	}
 	static class ABP_SplineVolumeTrail_v1b_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SplineVolumeTrail_v1b_C>();
 	}
 };
-static_assert(alignof(ABP_SplineVolumeTrail_v1b_C) == 0x000008, "Wrong alignment on ABP_SplineVolumeTrail_v1b_C");
-static_assert(sizeof(ABP_SplineVolumeTrail_v1b_C) == 0x0005B8, "Wrong size on ABP_SplineVolumeTrail_v1b_C");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, UberGraphFrame) == 0x000388, "Member 'ABP_SplineVolumeTrail_v1b_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugArrow) == 0x000390, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugArrow' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DefaultSceneRoot) == 0x000398, "Member 'ABP_SplineVolumeTrail_v1b_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugRotateTimeline__Direction_A8B473E74A53FB0F346216B4D4D23AC9) == 0x0003A0, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__Direction_A8B473E74A53FB0F346216B4D4D23AC9' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugRotateTimeline) == 0x0003A8, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Spline) == 0x0003B0, "Member 'ABP_SplineVolumeTrail_v1b_C::Spline' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Skeletal_Mesh) == 0x0003B8, "Member 'ABP_SplineVolumeTrail_v1b_C::Skeletal_Mesh' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Socket_Attach_Point) == 0x0003C0, "Member 'ABP_SplineVolumeTrail_v1b_C::Socket_Attach_Point' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineMeshTemplate) == 0x0003C8, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineMeshTemplate' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineMeshMaterialOverride) == 0x0003D0, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineMeshMaterialOverride' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Particles) == 0x0003D8, "Member 'ABP_SplineVolumeTrail_v1b_C::Particles' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LifeTime) == 0x0003E0, "Member 'ABP_SplineVolumeTrail_v1b_C::LifeTime' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Lifetime_Buffer) == 0x0003E4, "Member 'ABP_SplineVolumeTrail_v1b_C::Lifetime_Buffer' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineSystemDuration) == 0x0003E8, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineSystemDuration' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LifetimeAfterCompletion) == 0x0003EC, "Member 'ABP_SplineVolumeTrail_v1b_C::LifetimeAfterCompletion' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, KeepTickEnabledWhenCompleting) == 0x0003F0, "Member 'ABP_SplineVolumeTrail_v1b_C::KeepTickEnabledWhenCompleting' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, NumberOfSplineMeshesToUpdate) == 0x0003F4, "Member 'ABP_SplineVolumeTrail_v1b_C::NumberOfSplineMeshesToUpdate' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Initial_Size) == 0x0003F8, "Member 'ABP_SplineVolumeTrail_v1b_C::Initial_Size' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineMeshes) == 0x000400, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineMeshes' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineDistanceThreshold) == 0x000410, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineDistanceThreshold' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineDistanceThresholdEmpty) == 0x000414, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineDistanceThresholdEmpty' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineMeshesHidden) == 0x000418, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineMeshesHidden' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineTimestamps) == 0x000428, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineTimestamps' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, ArrayIndex) == 0x000438, "Member 'ABP_SplineVolumeTrail_v1b_C::ArrayIndex' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineSystemActive) == 0x00043C, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineSystemActive' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, CompletionTimestamp) == 0x000440, "Member 'ABP_SplineVolumeTrail_v1b_C::CompletionTimestamp' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LifetimeAdjusted) == 0x000444, "Member 'ABP_SplineVolumeTrail_v1b_C::LifetimeAdjusted' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SizeOverLife) == 0x000448, "Member 'ABP_SplineVolumeTrail_v1b_C::SizeOverLife' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Mids_0) == 0x000450, "Member 'ABP_SplineVolumeTrail_v1b_C::Mids_0' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, ColorAndAlphaOverLife) == 0x000460, "Member 'ABP_SplineVolumeTrail_v1b_C::ColorAndAlphaOverLife' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, ParticlesComponent) == 0x000468, "Member 'ABP_SplineVolumeTrail_v1b_C::ParticlesComponent' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineID) == 0x000470, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineID' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Current_Spline_Mesh) == 0x000478, "Member 'ABP_SplineVolumeTrail_v1b_C::Current_Spline_Mesh' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Initial_Rotation__Roll_) == 0x000480, "Member 'ABP_SplineVolumeTrail_v1b_C::Initial_Rotation__Roll_' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, RotationOverLife) == 0x000488, "Member 'ABP_SplineVolumeTrail_v1b_C::RotationOverLife' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugMode) == 0x000490, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugMode' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugPositionOffset) == 0x000494, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugPositionOffset' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugRotationRate) == 0x0004A0, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugRotationRate' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugTickDelta) == 0x0004AC, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugTickDelta' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, DebugPreviousTickTimestamp) == 0x0004B0, "Member 'ABP_SplineVolumeTrail_v1b_C::DebugPreviousTickTimestamp' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Spline_System_Duration_Event_Handle) == 0x0004B8, "Member 'ABP_SplineVolumeTrail_v1b_C::Spline_System_Duration_Event_Handle' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Use_Tick_Interval_LODs) == 0x0004C0, "Member 'ABP_SplineVolumeTrail_v1b_C::Use_Tick_Interval_LODs' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Tick_Interval_Event_Handle) == 0x0004C8, "Member 'ABP_SplineVolumeTrail_v1b_C::Tick_Interval_Event_Handle' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Tick_Interval_LOD_Check_Rate) == 0x0004D0, "Member 'ABP_SplineVolumeTrail_v1b_C::Tick_Interval_LOD_Check_Rate' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Tick_Interval_LOD_Distances) == 0x0004D8, "Member 'ABP_SplineVolumeTrail_v1b_C::Tick_Interval_LOD_Distances' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Tick_Actor_Intervals) == 0x0004E8, "Member 'ABP_SplineVolumeTrail_v1b_C::Tick_Actor_Intervals' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LOD_Array_Index) == 0x0004F8, "Member 'ABP_SplineVolumeTrail_v1b_C::LOD_Array_Index' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Use_Recently_Rendered_LOD) == 0x0004FC, "Member 'ABP_SplineVolumeTrail_v1b_C::Use_Recently_Rendered_LOD' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Recently_Rendered_Check_Rate) == 0x000500, "Member 'ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Check_Rate' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Recently_Rendered_Event_Handle) == 0x000508, "Member 'ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Event_Handle' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, RecentlyRendered) == 0x000510, "Member 'ABP_SplineVolumeTrail_v1b_C::RecentlyRendered' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, Recently_Rendered_Tolerance) == 0x000514, "Member 'ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Tolerance' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineDefaultUpVector) == 0x000518, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineDefaultUpVector' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineDefaultUpVectorInWorldSpace) == 0x000524, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineDefaultUpVectorInWorldSpace' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, SplineMeshForwardAxis) == 0x000525, "Member 'ABP_SplineVolumeTrail_v1b_C::SplineMeshForwardAxis' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, CeaseAndDetachSplineUponCompletion) == 0x000526, "Member 'ABP_SplineVolumeTrail_v1b_C::CeaseAndDetachSplineUponCompletion' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, CanNewSplinePointsBeCreated) == 0x000527, "Member 'ABP_SplineVolumeTrail_v1b_C::CanNewSplinePointsBeCreated' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LinearColorOverLengthOfSpline) == 0x000528, "Member 'ABP_SplineVolumeTrail_v1b_C::LinearColorOverLengthOfSpline' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, IndiciesToDelete) == 0x000530, "Member 'ABP_SplineVolumeTrail_v1b_C::IndiciesToDelete' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, RedistributePointsAlongSplineWhenCreated) == 0x000540, "Member 'ABP_SplineVolumeTrail_v1b_C::RedistributePointsAlongSplineWhenCreated' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, CurveBakeMID) == 0x000548, "Member 'ABP_SplineVolumeTrail_v1b_C::CurveBakeMID' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, RenderTarget) == 0x000550, "Member 'ABP_SplineVolumeTrail_v1b_C::RenderTarget' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, RenderTextureResolution) == 0x000558, "Member 'ABP_SplineVolumeTrail_v1b_C::RenderTextureResolution' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LinearColorCurvesToBake) == 0x000560, "Member 'ABP_SplineVolumeTrail_v1b_C::LinearColorCurvesToBake' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, WriteBakedCurveDataToDisk) == 0x000570, "Member 'ABP_SplineVolumeTrail_v1b_C::WriteBakedCurveDataToDisk' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, File_Path) == 0x000578, "Member 'ABP_SplineVolumeTrail_v1b_C::File_Path' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, File_Name) == 0x000588, "Member 'ABP_SplineVolumeTrail_v1b_C::File_Name' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LinearColorArray) == 0x000598, "Member 'ABP_SplineVolumeTrail_v1b_C::LinearColorArray' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, UseCheapSplines) == 0x0005A8, "Member 'ABP_SplineVolumeTrail_v1b_C::UseCheapSplines' has a wrong offset!");
-static_assert(offsetof(ABP_SplineVolumeTrail_v1b_C, LinearColorTexture) == 0x0005B0, "Member 'ABP_SplineVolumeTrail_v1b_C::LinearColorTexture' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

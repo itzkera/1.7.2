@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaKillFeedItem.AthenaKillFeedItem_C
 // 0x0010 (0x0270 - 0x0260)
@@ -30,17 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaKillFeedItem_C">();
+		BP_STATIC_CLASS_IMPL("AthenaKillFeedItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaKillFeedItem_C")
 	}
 	static class UAthenaKillFeedItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaKillFeedItem_C>();
 	}
 };
-static_assert(alignof(UAthenaKillFeedItem_C) == 0x000008, "Wrong alignment on UAthenaKillFeedItem_C");
-static_assert(sizeof(UAthenaKillFeedItem_C) == 0x000270, "Wrong size on UAthenaKillFeedItem_C");
-static_assert(offsetof(UAthenaKillFeedItem_C, KIllText) == 0x000260, "Member 'UAthenaKillFeedItem_C::KIllText' has a wrong offset!");
-static_assert(offsetof(UAthenaKillFeedItem_C, GameState) == 0x000268, "Member 'UAthenaKillFeedItem_C::GameState' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

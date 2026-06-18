@@ -14,15 +14,14 @@
 #include "NearestPlayerContext_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function NearestPlayerContext.NearestPlayerContext_C.ProvideSingleLocation
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UObject*                          QuerierObject                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           QuerierActor                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          ResultingLocation                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         ResultingLocation                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UNearestPlayerContext_C::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation)
 {
@@ -42,5 +41,5 @@ void UNearestPlayerContext_C::ProvideSingleLocation(class UObject* QuerierObject
 		*ResultingLocation = std::move(Parms.ResultingLocation);
 }
 
-}
 
+SDK_NAMESPACE_END

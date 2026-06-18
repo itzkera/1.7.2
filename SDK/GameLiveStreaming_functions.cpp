@@ -14,8 +14,7 @@
 #include "GameLiveStreaming_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.IsBroadcastingGame
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
@@ -31,7 +30,12 @@ bool UGameLiveStreamingFunctionLibrary::IsBroadcastingGame()
 
 	Params::GameLiveStreamingFunctionLibrary_IsBroadcastingGame Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -51,7 +55,12 @@ bool UGameLiveStreamingFunctionLibrary::IsWebCamEnabled()
 
 	Params::GameLiveStreamingFunctionLibrary_IsWebCamEnabled Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -60,8 +69,8 @@ bool UGameLiveStreamingFunctionLibrary::IsWebCamEnabled()
 // Function GameLiveStreaming.GameLiveStreamingFunctionLibrary.StartBroadcastingGame
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           LoginUserName                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString                           LoginPassword                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    LoginUserName                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    LoginPassword                                          (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   FrameRate                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ScreenScaling                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bStartWebCam                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -95,7 +104,12 @@ void UGameLiveStreamingFunctionLibrary::StartBroadcastingGame(const class FStrin
 	Parms.bCaptureAudioFromMicrophone = bCaptureAudioFromMicrophone;
 	Parms.CoverUpImage = CoverUpImage;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -121,7 +135,12 @@ void UGameLiveStreamingFunctionLibrary::StartWebCam(int32 DesiredWebCamWidth, in
 	Parms.bMirrorWebCamImage = bMirrorWebCamImage;
 	Parms.bDrawSimpleWebCamVideo = bDrawSimpleWebCamVideo;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -135,7 +154,12 @@ void UGameLiveStreamingFunctionLibrary::StopBroadcastingGame()
 	if (Func == nullptr)
 		Func = StaticClass()->GetFunction("GameLiveStreamingFunctionLibrary", "StopBroadcastingGame");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -149,14 +173,19 @@ void UGameLiveStreamingFunctionLibrary::StopWebCam()
 	if (Func == nullptr)
 		Func = StaticClass()->GetFunction("GameLiveStreamingFunctionLibrary", "StopWebCam");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function GameLiveStreaming.QueryLiveStreamsCallbackProxy.QueryLiveStreams
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class FString                           GameName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    GameName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UQueryLiveStreamsCallbackProxy*   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UQueryLiveStreamsCallbackProxy* UQueryLiveStreamsCallbackProxy::QueryLiveStreams(const class FString& GameName)
@@ -170,10 +199,15 @@ class UQueryLiveStreamsCallbackProxy* UQueryLiveStreamsCallbackProxy::QueryLiveS
 
 	Parms.GameName = std::move(GameName);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AnimNotifyState_HolsterWeapon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.Received_NotifyBegin
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
@@ -68,5 +67,5 @@ bool UAnimNotifyState_HolsterWeapon_C::Received_NotifyEnd(class USkeletalMeshCom
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

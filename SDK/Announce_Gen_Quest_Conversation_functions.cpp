@@ -14,8 +14,7 @@
 #include "Announce_Gen_Quest_Conversation_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation
 // (HasDefaults)
@@ -40,7 +39,7 @@ void AAnnounce_Gen_Quest_Conversation_C::ExecuteUbergraph_Announce_Gen_Quest_Con
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.OnConversationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortConversationSentence        FinishingSentence                                      (Parm)
+// const struct FFortConversationSentence& FinishingSentence                                      (Parm)
 // int32                                   FinishingSentenceSentenceIndex                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AAnnounce_Gen_Quest_Conversation_C::OnConversationFinished(const struct FFortConversationSentence& FinishingSentence, int32 FinishingSentenceSentenceIndex)
@@ -72,5 +71,5 @@ void AAnnounce_Gen_Quest_Conversation_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

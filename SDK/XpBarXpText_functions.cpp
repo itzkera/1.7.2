@@ -14,8 +14,7 @@
 #include "XpBarXpText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBarXpText.XpBarXpText_C.ExecuteUbergraph_XpBarXpText
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UXpBarXpText_C::ExecuteUbergraph_XpBarXpText(int32 EntryPoint)
 // Function XpBarXpText.XpBarXpText_C.HandleAccountUpdate
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           NewInfo                                                (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    NewInfo                                                (Parm, NoDestructor)
 
 void UXpBarXpText_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
@@ -74,7 +73,7 @@ void UXpBarXpText_C::Construct()
 // Function XpBarXpText.XpBarXpText_C.Update Xp Text
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           Account_Info                                           (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    Account_Info                                           (Parm, NoDestructor)
 
 void UXpBarXpText_C::Update_Xp_Text(const struct FFortPublicAccountInfo& Account_Info)
 {
@@ -94,7 +93,7 @@ void UXpBarXpText_C::Update_Xp_Text(const struct FFortPublicAccountInfo& Account
 // Function XpBarXpText.XpBarXpText_C.Get Skill Points For Next Level
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Next_Level_Skill_Points                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Next_Level_Skill_Points                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UXpBarXpText_C::Get_Skill_Points_For_Next_Level(int32* Next_Level_Skill_Points)
 {
@@ -111,5 +110,5 @@ void UXpBarXpText_C::Get_Skill_Points_For_Next_Level(int32* Next_Level_Skill_Poi
 		*Next_Level_Skill_Points = Parms.Next_Level_Skill_Points;
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AbilitiesPage.AbilitiesPage_C.ExecuteUbergraph_AbilitiesPage
 // 0x00E0 (0x00E0 - 0x0000)
@@ -29,7 +29,7 @@ public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0018(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButtonGroup*                     CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UCommonButton* AssociatedButton, int32 ButtonIndex)> K2Node_CreateDelegate_OutputDelegate3; // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class UCommonButton*                          CallFunc_GetButtonAtIndex_ReturnValue;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -50,29 +50,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x00C0(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle3;             // 0x00D0(0x0010)(NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage) == 0x000008, "Wrong alignment on AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage");
-static_assert(sizeof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage) == 0x0000E0, "Wrong size on AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, EntryPoint) == 0x000000, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_MakeStruct_DataTableRowHandle) == 0x000018, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_SpawnObject_ReturnValue) == 0x000038, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CreateDelegate_OutputDelegate3) == 0x000040, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_GetButtonAtIndex_ReturnValue) == 0x000050, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_GetButtonAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_GetUINavigationManager_ReturnValue) == 0x000058, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000070, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_GetContext_ReturnValue) == 0x000078, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CustomEvent_QuickbarIndex) == 0x000080, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CustomEvent_QuickbarIndex' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000081, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CreateDelegate_OutputDelegate4) == 0x000088, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_GetButtonAtIndex_ReturnValue2) == 0x000098, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_GetButtonAtIndex_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_HasAnyUserFocus_ReturnValue) == 0x0000A0, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_HasAnyUserFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_MakeStruct_DataTableRowHandle2) == 0x0000A8, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_MakeStruct_DataTableRowHandle2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, CallFunc_BooleanAND_ReturnValue) == 0x0000B8, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_CreateDelegate_OutputDelegate5) == 0x0000C0, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage, K2Node_MakeStruct_DataTableRowHandle3) == 0x0000D0, "Member 'AbilitiesPage_C_ExecuteUbergraph_AbilitiesPage::K2Node_MakeStruct_DataTableRowHandle3' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.OnQuickbarContentsChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +58,6 @@ struct AbilitiesPage_C_OnQuickbarContentsChanged final
 public:
 	EFortQuickBars                                QuickbarIndex;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_OnQuickbarContentsChanged) == 0x000001, "Wrong alignment on AbilitiesPage_C_OnQuickbarContentsChanged");
-static_assert(sizeof(AbilitiesPage_C_OnQuickbarContentsChanged) == 0x000001, "Wrong size on AbilitiesPage_C_OnQuickbarContentsChanged");
-static_assert(offsetof(AbilitiesPage_C_OnQuickbarContentsChanged, QuickbarIndex) == 0x000000, "Member 'AbilitiesPage_C_OnQuickbarContentsChanged::QuickbarIndex' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.HandleBack
 // 0x0010 (0x0010 - 0x0000)
@@ -94,10 +68,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AbilitiesPage_C_HandleBack) == 0x000008, "Wrong alignment on AbilitiesPage_C_HandleBack");
-static_assert(sizeof(AbilitiesPage_C_HandleBack) == 0x000010, "Wrong size on AbilitiesPage_C_HandleBack");
-static_assert(offsetof(AbilitiesPage_C_HandleBack, PassThrough) == 0x000000, "Member 'AbilitiesPage_C_HandleBack::PassThrough' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.OnAbilitySelected
 // 0x0270 (0x0270 - 0x0000)
@@ -144,39 +114,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0240(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0258(0x0018)()
 };
-static_assert(alignof(AbilitiesPage_C_OnAbilitySelected) == 0x000008, "Wrong alignment on AbilitiesPage_C_OnAbilitySelected");
-static_assert(sizeof(AbilitiesPage_C_OnAbilitySelected) == 0x000270, "Wrong size on AbilitiesPage_C_OnAbilitySelected");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, AbilityButton) == 0x000000, "Member 'AbilitiesPage_C_OnAbilitySelected::AbilityButton' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_DynamicCast_AsAbilities_Page_Tile) == 0x000010, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_DynamicCast_AsAbilities_Page_Tile' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00001C, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetTier_ReturnValue) == 0x000020, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_Conv_ByteToInt_ReturnValue2) == 0x000024, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_Conv_ByteToInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_Subtract_IntInt_ReturnValue) == 0x00002C, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetDisplayName_ReturnValue) == 0x000030, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_TextToUpper_ReturnValue) == 0x000048, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetOwningPlayer_ReturnValue) == 0x000060, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000068, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetTooltipTextFromToken_OutText) == 0x000070, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetTooltipTextFromToken_OutText' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetTooltipTextFromToken_ReturnValue) == 0x000088, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetTooltipTextFromToken_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeStruct_FormatArgumentData) == 0x000090, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_TextIsEmpty_ReturnValue) == 0x0000D0, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetTooltipTextFromToken_OutText2) == 0x0000D8, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetTooltipTextFromToken_OutText2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetTooltipTextFromToken_ReturnValue2) == 0x0000F0, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetTooltipTextFromToken_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_Not_PreBool_ReturnValue) == 0x0000F1, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeStruct_FormatArgumentData2) == 0x0000F8, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_BooleanAND_ReturnValue) == 0x000138, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeStruct_FormatArgumentData3) == 0x000140, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetCombinedDescription_OutDescription) == 0x000180, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_GetCombinedDescription_ReturnValue) == 0x000198, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeStruct_FormatArgumentData4) == 0x0001A0, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeStruct_FormatArgumentData5) == 0x0001E0, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeArray_Array) == 0x000220, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, K2Node_MakeArray_Array2) == 0x000230, "Member 'AbilitiesPage_C_OnAbilitySelected::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_Format_ReturnValue) == 0x000240, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_OnAbilitySelected, CallFunc_Format_ReturnValue2) == 0x000258, "Member 'AbilitiesPage_C_OnAbilitySelected::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.HandleSelectedButtonChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -188,11 +125,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          NewLocalVar_0;                                     // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AbilitiesPage_C_HandleSelectedButtonChanged) == 0x000008, "Wrong alignment on AbilitiesPage_C_HandleSelectedButtonChanged");
-static_assert(sizeof(AbilitiesPage_C_HandleSelectedButtonChanged) == 0x000018, "Wrong size on AbilitiesPage_C_HandleSelectedButtonChanged");
-static_assert(offsetof(AbilitiesPage_C_HandleSelectedButtonChanged, InSelectedButton) == 0x000000, "Member 'AbilitiesPage_C_HandleSelectedButtonChanged::InSelectedButton' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_HandleSelectedButtonChanged, InSelectedButtonIndex) == 0x000008, "Member 'AbilitiesPage_C_HandleSelectedButtonChanged::InSelectedButtonIndex' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_HandleSelectedButtonChanged, NewLocalVar_0) == 0x000010, "Member 'AbilitiesPage_C_HandleSelectedButtonChanged::NewLocalVar_0' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.AddTilesToButtonGroup
 // 0x0038 (0x0038 - 0x0000)
@@ -214,19 +146,6 @@ public:
 	uint8                                         Pad_33[0x1];                                       // 0x0033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AbilitiesPage_C_AddTilesToButtonGroup) == 0x000008, "Wrong alignment on AbilitiesPage_C_AddTilesToButtonGroup");
-static_assert(sizeof(AbilitiesPage_C_AddTilesToButtonGroup) == 0x000038, "Wrong size on AbilitiesPage_C_AddTilesToButtonGroup");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, ButtonContainer) == 0x000000, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::ButtonContainer' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_GetChildrenCount_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, Temp_int_Variable) == 0x000010, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_GetChildAt_ReturnValue) == 0x000018, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, K2Node_DynamicCast_AsAbilities_Page_Tile) == 0x000028, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::K2Node_DynamicCast_AsAbilities_Page_Tile' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_IsValid_ReturnValue2) == 0x000031, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000032, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_AddTilesToButtonGroup, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'AbilitiesPage_C_AddTilesToButtonGroup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.InitializeAbilityTiles
 // 0x01C0 (0x01C0 - 0x0000)
@@ -288,51 +207,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue4;                     // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue5;                     // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_InitializeAbilityTiles) == 0x000008, "Wrong alignment on AbilitiesPage_C_InitializeAbilityTiles");
-static_assert(sizeof(AbilitiesPage_C_InitializeAbilityTiles) == 0x0001C0, "Wrong size on AbilitiesPage_C_InitializeAbilityTiles");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, SlottedGadgets) == 0x000000, "Member 'AbilitiesPage_C_InitializeAbilityTiles::SlottedGadgets' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, AvailableSlots) == 0x000010, "Member 'AbilitiesPage_C_InitializeAbilityTiles::AvailableSlots' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, Temp_int_Array_Index_Variable) == 0x000020, "Member 'AbilitiesPage_C_InitializeAbilityTiles::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Length_ReturnValue) == 0x000024, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Get_Item) == 0x000028, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Greater_IntInt_ReturnValue) == 0x000030, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue) == 0x000034, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue2) == 0x000038, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue3) == 0x00003C, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue4) == 0x000040, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetHeroData_HeroData) == 0x000050, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetHeroData_HeroData' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetHeroData_ReturnValue) == 0x000070, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetHeroData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_RemoveItem_ReturnValue) == 0x000071, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue5) == 0x000074, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue6) == 0x000078, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Add_ReturnValue7) == 0x00007C, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Add_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_RemoveItem_ReturnValue2) == 0x000080, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_RemoveItem_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_RemoveItem_ReturnValue3) == 0x000081, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_RemoveItem_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetContext_ReturnValue2) == 0x000088, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, Temp_int_Loop_Counter_Variable) == 0x000090, "Member 'AbilitiesPage_C_InitializeAbilityTiles::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetHeroAbilityPerks_HeroAbilityPerks) == 0x000098, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetHeroAbilityPerks_HeroAbilityPerks' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetHeroAbilityPerks_ReturnValue) == 0x0000A8, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetHeroAbilityPerks_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Get_Item2) == 0x0000B0, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Length_ReturnValue2) == 0x000138, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Less_IntInt_ReturnValue) == 0x00013C, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetGrantedAbilityKit_ReturnValue) == 0x000140, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetGrantedAbilityKit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Add_IntInt_ReturnValue) == 0x000148, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_BP_GetGadgets_GadgetItemDefinitions) == 0x000150, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_BP_GetGadgets_GadgetItemDefinitions' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Get_Item3) == 0x000160, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_Array_Contains_ReturnValue) == 0x000168, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetContext_ReturnValue3) == 0x000170, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetQuickBarSlottedItem_ReturnValue) == 0x000178, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetQuickBarSlottedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetQuickBarSlottedItem_ReturnValue2) == 0x000180, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetQuickBarSlottedItem_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_IsValid_ReturnValue) == 0x000188, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_IsValid_ReturnValue2) == 0x000189, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetContext_ReturnValue4) == 0x000190, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetQuickBarSlottedItem_ReturnValue3) == 0x000198, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetQuickBarSlottedItem_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_IsValid_ReturnValue3) == 0x0001A0, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_IsValid_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetQuickBarSlottedItem_ReturnValue4) == 0x0001A8, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetQuickBarSlottedItem_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_GetQuickBarSlottedItem_ReturnValue5) == 0x0001B0, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_GetQuickBarSlottedItem_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_IsValid_ReturnValue4) == 0x0001B8, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_IsValid_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_InitializeAbilityTiles, CallFunc_IsValid_ReturnValue5) == 0x0001B9, "Member 'AbilitiesPage_C_InitializeAbilityTiles::CallFunc_IsValid_ReturnValue5' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.UpdateAbilityMovie
 // 0x0010 (0x0010 - 0x0000)
@@ -342,10 +216,6 @@ public:
 	class UFortGadgetItemDefinition*              inGadgetItemDef;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AbilitiesPage_C_UpdateAbilityMovie) == 0x000008, "Wrong alignment on AbilitiesPage_C_UpdateAbilityMovie");
-static_assert(sizeof(AbilitiesPage_C_UpdateAbilityMovie) == 0x000010, "Wrong size on AbilitiesPage_C_UpdateAbilityMovie");
-static_assert(offsetof(AbilitiesPage_C_UpdateAbilityMovie, inGadgetItemDef) == 0x000000, "Member 'AbilitiesPage_C_UpdateAbilityMovie::inGadgetItemDef' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_UpdateAbilityMovie, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_UpdateAbilityMovie::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AbilitiesPage.AbilitiesPage_C.HandleInventory
 // 0x0010 (0x0010 - 0x0000)
@@ -356,10 +226,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AbilitiesPage_C_HandleInventory) == 0x000008, "Wrong alignment on AbilitiesPage_C_HandleInventory");
-static_assert(sizeof(AbilitiesPage_C_HandleInventory) == 0x000010, "Wrong size on AbilitiesPage_C_HandleInventory");
-static_assert(offsetof(AbilitiesPage_C_HandleInventory, PassThrough) == 0x000000, "Member 'AbilitiesPage_C_HandleInventory::PassThrough' has a wrong offset!");
-static_assert(offsetof(AbilitiesPage_C_HandleInventory, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AbilitiesPage_C_HandleInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

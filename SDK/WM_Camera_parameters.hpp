@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function WM_Camera.WM_Camera_C.ExecuteUbergraph_WM_Camera
 // 0x0470 (0x0470 - 0x0000)
@@ -73,53 +73,6 @@ public:
 	TArray<class AWM_Lights_C*>                   CallFunc_GetAllActorsOfClass_OutActors3;           // 0x0450(0x0010)(ZeroConstructor, ReferenceParm)
 	class AWM_Lights_C*                           CallFunc_Array_Get_Item3;                          // 0x0460(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WM_Camera_C_ExecuteUbergraph_WM_Camera) == 0x000010, "Wrong alignment on WM_Camera_C_ExecuteUbergraph_WM_Camera");
-static_assert(sizeof(WM_Camera_C_ExecuteUbergraph_WM_Camera) == 0x000470, "Wrong size on WM_Camera_C_ExecuteUbergraph_WM_Camera");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, EntryPoint) == 0x000000, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Location) == 0x000004, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Rotation) == 0x000010, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Scale) == 0x00001C, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_X) == 0x000028, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_Y) == 0x00002C, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_Z) == 0x000030, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000034, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_MakeVector_ReturnValue) == 0x000038, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_MakeTransform_ReturnValue) == 0x000050, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_TLerp_ReturnValue) == 0x000080, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_TLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Location2) == 0x0000B0, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Location2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Rotation2) == 0x0000BC, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Rotation2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Scale2) == 0x0000C8, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Scale2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_X2) == 0x0000D4, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_X2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_Y2) == 0x0000D8, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_Y2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_Z2) == 0x0000DC, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_Z2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x0000E0, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_MakeVector_ReturnValue2) == 0x0000E4, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_MakeTransform_ReturnValue2) == 0x0000F0, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_MakeTransform_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Location3) == 0x000120, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Location3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Rotation3) == 0x00012C, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Rotation3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakTransform_Scale3) == 0x000138, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakTransform_Scale3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_TLerp_ReturnValue2) == 0x000150, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_TLerp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_X3) == 0x000180, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_X3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_Y3) == 0x000184, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_Y3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_BreakVector_Z3) == 0x000188, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_BreakVector_Z3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000190, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Add_FloatFloat_ReturnValue) == 0x000218, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Add_FloatFloat_ReturnValue2) == 0x00021C, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_MakeVector_ReturnValue3) == 0x000220, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_MakeVector_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_VLerp_ReturnValue) == 0x00022C, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_MakeTransform_ReturnValue3) == 0x000240, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_MakeTransform_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_K2_SetActorRelativeTransform_SweepHitResult) == 0x000270, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_K2_SetActorRelativeTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_K2_SetActorRelativeTransform_SweepHitResult2) == 0x0002F8, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_K2_SetActorRelativeTransform_SweepHitResult2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000380, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x000388, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000410, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_GetAllActorsOfClass_OutActors) == 0x000418, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Array_Get_Item) == 0x000428, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_GetPlayerController_ReturnValue) == 0x000430, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_GetAllActorsOfClass_OutActors2) == 0x000438, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_GetAllActorsOfClass_OutActors2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Array_Get_Item2) == 0x000448, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_GetAllActorsOfClass_OutActors3) == 0x000450, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_GetAllActorsOfClass_OutActors3' has a wrong offset!");
-static_assert(offsetof(WM_Camera_C_ExecuteUbergraph_WM_Camera, CallFunc_Array_Get_Item3) == 0x000460, "Member 'WM_Camera_C_ExecuteUbergraph_WM_Camera::CallFunc_Array_Get_Item3' has a wrong offset!");
 
 // Function WM_Camera.WM_Camera_C.UserConstructionScript
 // 0x0030 (0x0030 - 0x0000)
@@ -128,9 +81,6 @@ struct WM_Camera_C_UserConstructionScript final
 public:
 	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0000(0x0030)(IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WM_Camera_C_UserConstructionScript) == 0x000010, "Wrong alignment on WM_Camera_C_UserConstructionScript");
-static_assert(sizeof(WM_Camera_C_UserConstructionScript) == 0x000030, "Wrong size on WM_Camera_C_UserConstructionScript");
-static_assert(offsetof(WM_Camera_C_UserConstructionScript, CallFunc_GetTransform_ReturnValue) == 0x000000, "Member 'WM_Camera_C_UserConstructionScript::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function DayWidget.DayWidget_C.ExecuteUbergraph_DayWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -27,12 +27,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DayWidget_C_ExecuteUbergraph_DayWidget) == 0x000008, "Wrong alignment on DayWidget_C_ExecuteUbergraph_DayWidget");
-static_assert(sizeof(DayWidget_C_ExecuteUbergraph_DayWidget) == 0x000028, "Wrong size on DayWidget_C_ExecuteUbergraph_DayWidget");
-static_assert(offsetof(DayWidget_C_ExecuteUbergraph_DayWidget, EntryPoint) == 0x000000, "Member 'DayWidget_C_ExecuteUbergraph_DayWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_ExecuteUbergraph_DayWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'DayWidget_C_ExecuteUbergraph_DayWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_ExecuteUbergraph_DayWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'DayWidget_C_ExecuteUbergraph_DayWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_ExecuteUbergraph_DayWidget, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'DayWidget_C_ExecuteUbergraph_DayWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function DayWidget.DayWidget_C.Update
 // 0x00A8 (0x00A8 - 0x0000)
@@ -53,18 +47,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
 };
-static_assert(alignof(DayWidget_C_Update) == 0x000008, "Wrong alignment on DayWidget_C_Update");
-static_assert(sizeof(DayWidget_C_Update) == 0x0000A8, "Wrong size on DayWidget_C_Update");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'DayWidget_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'DayWidget_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_GetGameStateZone_ReturnValue) == 0x000010, "Member 'DayWidget_C_Update::CallFunc_GetGameStateZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_IsValid_ReturnValue2) == 0x000018, "Member 'DayWidget_C_Update::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_GetWorldDaysElapsed_ReturnValue) == 0x00001C, "Member 'DayWidget_C_Update::CallFunc_GetWorldDaysElapsed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'DayWidget_C_Update::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'DayWidget_C_Update::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'DayWidget_C_Update::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, K2Node_MakeArray_Array) == 0x000080, "Member 'DayWidget_C_Update::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(DayWidget_C_Update, CallFunc_Format_ReturnValue) == 0x000090, "Member 'DayWidget_C_Update::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

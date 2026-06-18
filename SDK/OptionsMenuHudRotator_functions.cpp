@@ -14,8 +14,7 @@
 #include "OptionsMenuHudRotator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.ExecuteUbergraph_OptionsMenuHudRotator
 // (HasDefaults)
@@ -82,8 +81,8 @@ void UOptionsMenuHudRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuHudRotator_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -104,7 +103,7 @@ void UOptionsMenuHudRotator_C::OnMouseEnter(const struct FGeometry& MyGeometry, 
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOptionsMenuHudRotator_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -226,7 +225,7 @@ void UOptionsMenuHudRotator_C::SetExpanded(bool bExpanded)
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.RegisterOnClicked
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// const TDelegate<void(class UUserWidget* Widget)>&Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 
 void UOptionsMenuHudRotator_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
 {
@@ -322,7 +321,7 @@ void UOptionsMenuHudRotator_C::Center_on_Widget()
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Update Options
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FText>                     NewParam                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class FText>&                    NewParam                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UOptionsMenuHudRotator_C::Update_Options(TArray<class FText>& NewParam)
 {
@@ -344,8 +343,8 @@ void UOptionsMenuHudRotator_C::Update_Options(TArray<class FText>& NewParam)
 // Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnFocusReceived
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FFocusEvent                      InFocusEvent                                           (Parm, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FFocusEvent&               InFocusEvent                                           (Parm, NoDestructor)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UOptionsMenuHudRotator_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
@@ -445,5 +444,5 @@ int32 UOptionsMenuHudRotator_C::DoesItemHaveChildren() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

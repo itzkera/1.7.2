@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TwitchNotification.TwitchNotification_C
 // 0x0000 (0x0098 - 0x0098)
@@ -26,15 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TwitchNotification_C">();
+		BP_STATIC_CLASS_IMPL("TwitchNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TwitchNotification_C")
 	}
 	static class UTwitchNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTwitchNotification_C>();
 	}
 };
-static_assert(alignof(UTwitchNotification_C) == 0x000008, "Wrong alignment on UTwitchNotification_C");
-static_assert(sizeof(UTwitchNotification_C) == 0x000098, "Wrong size on UTwitchNotification_C");
 
-}
-
+SDK_NAMESPACE_END

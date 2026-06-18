@@ -14,8 +14,7 @@
 #include "ArrowCursorWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ArrowCursorWidget.ArrowCursorWidget_C.GetBackground_0
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
@@ -36,5 +35,5 @@ struct FSlateBrush UArrowCursorWidget_C::GetBackground_0()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

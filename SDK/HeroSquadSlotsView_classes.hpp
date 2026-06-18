@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HeroSquadSlotsView.HeroSquadSlotsView_C
 // 0x0020 (0x02E0 - 0x02C0)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroSquadSlotsView_C">();
+		BP_STATIC_CLASS_IMPL("HeroSquadSlotsView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroSquadSlotsView_C")
 	}
 	static class UHeroSquadSlotsView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroSquadSlotsView_C>();
 	}
 };
-static_assert(alignof(UHeroSquadSlotsView_C) == 0x000008, "Wrong alignment on UHeroSquadSlotsView_C");
-static_assert(sizeof(UHeroSquadSlotsView_C) == 0x0002E0, "Wrong size on UHeroSquadSlotsView_C");
-static_assert(offsetof(UHeroSquadSlotsView_C, UberGraphFrame) == 0x0002C0, "Member 'UHeroSquadSlotsView_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroSquadSlotsView_C, BonusSquadSlotGroup) == 0x0002C8, "Member 'UHeroSquadSlotsView_C::BonusSquadSlotGroup' has a wrong offset!");
-static_assert(offsetof(UHeroSquadSlotsView_C, DefendersSquadSlotGroup) == 0x0002D0, "Member 'UHeroSquadSlotsView_C::DefendersSquadSlotGroup' has a wrong offset!");
-static_assert(offsetof(UHeroSquadSlotsView_C, PrimarySquadSlotGroup) == 0x0002D8, "Member 'UHeroSquadSlotsView_C::PrimarySquadSlotGroup' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

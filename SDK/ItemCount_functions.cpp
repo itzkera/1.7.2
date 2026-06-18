@@ -14,8 +14,7 @@
 #include "ItemCount_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCount.ItemCount_C.ExecuteUbergraph_ItemCount
 // ()
@@ -110,5 +109,5 @@ void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

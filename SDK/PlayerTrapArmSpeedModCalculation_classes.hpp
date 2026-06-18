@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PlayerTrapArmSpeedModCalculation.PlayerTrapArmSpeedModCalculation_C
 // 0x0000 (0x0068 - 0x0068)
@@ -23,15 +22,16 @@ class UPlayerTrapArmSpeedModCalculation_C final : public UPlayerTrapBonusModMagn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapArmSpeedModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapArmSpeedModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapArmSpeedModCalculation_C")
 	}
 	static class UPlayerTrapArmSpeedModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapArmSpeedModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapArmSpeedModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapArmSpeedModCalculation_C");
-static_assert(sizeof(UPlayerTrapArmSpeedModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapArmSpeedModCalculation_C");
 
-}
-
+SDK_NAMESPACE_END

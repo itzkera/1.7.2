@@ -14,8 +14,7 @@
 #include "IconAndNameWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function IconAndNameWidget.IconAndNameWidget_C.ExecuteUbergraph_IconAndNameWidget
 // ()
@@ -88,7 +87,7 @@ void UIconAndNameWidget_C::Setup_Text()
 // Function IconAndNameWidget.IconAndNameWidget_C.Set Border Color
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                     Value                                                  (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Value                                                  (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UIconAndNameWidget_C::Set_Border_Color(const struct FLinearColor& Value)
 {
@@ -104,5 +103,5 @@ void UIconAndNameWidget_C::Set_Border_Color(const struct FLinearColor& Value)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

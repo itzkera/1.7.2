@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass InvisibleCursorWidget.InvisibleCursorWidget_C
 // 0x0000 (0x0230 - 0x0230)
@@ -23,15 +22,16 @@ class UInvisibleCursorWidget_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InvisibleCursorWidget_C">();
+		BP_STATIC_CLASS_IMPL("InvisibleCursorWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InvisibleCursorWidget_C")
 	}
 	static class UInvisibleCursorWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInvisibleCursorWidget_C>();
 	}
 };
-static_assert(alignof(UInvisibleCursorWidget_C) == 0x000008, "Wrong alignment on UInvisibleCursorWidget_C");
-static_assert(sizeof(UInvisibleCursorWidget_C) == 0x000230, "Wrong size on UInvisibleCursorWidget_C");
 
-}
-
+SDK_NAMESPACE_END

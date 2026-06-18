@@ -14,8 +14,7 @@
 #include "ErrorEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ErrorEntry.ErrorEntry_C.ExecuteUbergraph_ErrorEntry
 // ()
@@ -74,7 +73,7 @@ void UErrorEntry_C::Construct()
 // Function ErrorEntry.ErrorEntry_C.GetButtonVisibility
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// ESlateVisibility                        NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESlateVisibility*                       NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UErrorEntry_C::GetButtonVisibility(ESlateVisibility* NewParam)
 {
@@ -95,7 +94,7 @@ void UErrorEntry_C::GetButtonVisibility(ESlateVisibility* NewParam)
 // Function ErrorEntry.ErrorEntry_C.SetErrorInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortErrorInfo                   ErrorInfo_0                                            (Parm)
+// const struct FFortErrorInfo&            ErrorInfo_0                                            (Parm)
 
 void UErrorEntry_C::SetErrorInfo(const struct FFortErrorInfo& ErrorInfo_0)
 {
@@ -115,7 +114,7 @@ void UErrorEntry_C::SetErrorInfo(const struct FFortErrorInfo& ErrorInfo_0)
 // Function ErrorEntry.ErrorEntry_C.Center on Widget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Did_Center                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Did_Center                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UErrorEntry_C::Center_on_Widget(bool* Did_Center)
 {
@@ -132,5 +131,5 @@ void UErrorEntry_C::Center_on_Widget(bool* Did_Center)
 		*Did_Center = Parms.Did_Center;
 }
 
-}
 
+SDK_NAMESPACE_END

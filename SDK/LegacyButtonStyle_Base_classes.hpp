@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass LegacyButtonStyle-Base.LegacyButtonStyle-Base_C
 // 0x0000 (0x1C08 - 0x1C08)
@@ -23,15 +22,16 @@ class ULegacyButtonStyle_Base_C : public UFortButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyButtonStyle-Base_C">();
+		BP_STATIC_CLASS_IMPL("LegacyButtonStyle-Base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyButtonStyle-Base_C")
 	}
 	static class ULegacyButtonStyle_Base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyButtonStyle_Base_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyle_Base_C) == 0x000008, "Wrong alignment on ULegacyButtonStyle_Base_C");
-static_assert(sizeof(ULegacyButtonStyle_Base_C) == 0x001C08, "Wrong size on ULegacyButtonStyle_Base_C");
 
-}
-
+SDK_NAMESPACE_END

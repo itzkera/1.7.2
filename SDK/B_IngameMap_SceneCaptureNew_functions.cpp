@@ -14,8 +14,7 @@
 #include "B_IngameMap_SceneCaptureNew_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_IngameMap_SceneCaptureNew.B_IngameMap_SceneCaptureNew_C.ExecuteUbergraph_B_IngameMap_SceneCaptureNew
 // ()
@@ -64,5 +63,5 @@ void AB_IngameMap_SceneCaptureNew_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

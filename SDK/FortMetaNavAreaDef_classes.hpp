@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FortMetaNavAreaDef.FortMetaNavAreaDef_C
 // 0x0000 (0x0050 - 0x0050)
@@ -23,15 +22,16 @@ class UFortMetaNavAreaDef_C final : public UFortMetaNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortMetaNavAreaDef_C">();
+		BP_STATIC_CLASS_IMPL("FortMetaNavAreaDef_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortMetaNavAreaDef_C")
 	}
 	static class UFortMetaNavAreaDef_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortMetaNavAreaDef_C>();
 	}
 };
-static_assert(alignof(UFortMetaNavAreaDef_C) == 0x000008, "Wrong alignment on UFortMetaNavAreaDef_C");
-static_assert(sizeof(UFortMetaNavAreaDef_C) == 0x000050, "Wrong size on UFortMetaNavAreaDef_C");
 
-}
-
+SDK_NAMESPACE_END

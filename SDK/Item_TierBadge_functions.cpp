@@ -14,8 +14,7 @@
 #include "Item_TierBadge_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Item_TierBadge.Item_TierBadge_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
@@ -25,7 +24,7 @@ namespace SDK
 // EFortBrushSize                          Brush_Size                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EItemDisplayStyle                       Item_Display_Style                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EItemDisplayMode                        Item_Display_Mode                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortRarityItemData              Rarity_Colors                                          (Parm)
+// const struct FFortRarityItemData&       Rarity_Colors                                          (Parm)
 // int32                                   Current_Level                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Max_Level                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -57,7 +56,7 @@ void UItem_TierBadge_C::Update(EFortItemTier Current_Tier, EFortItemTier Max_Tie
 // EFortBrushSize                          Brush_Size                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EItemDisplayMode                        Display_Mode                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EFortItemTier                           Current_Tier                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Visible                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Visible                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItem_TierBadge_C::Refresh_Visibility(EFortBrushSize Brush_Size, EItemDisplayMode Display_Mode, EFortItemTier Current_Tier, bool* Visible)
 {
@@ -100,5 +99,5 @@ void UItem_TierBadge_C::Set_Level(int32 Current_Level, int32 Max_Level)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

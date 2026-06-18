@@ -16,8 +16,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCountRecycling.ItemCountRecycling_C
 // 0x0050 (0x0288 - 0x0238)
@@ -47,26 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCountRecycling_C">();
+		BP_STATIC_CLASS_IMPL("ItemCountRecycling_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCountRecycling_C")
 	}
 	static class UItemCountRecycling_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCountRecycling_C>();
 	}
 };
-static_assert(alignof(UItemCountRecycling_C) == 0x000008, "Wrong alignment on UItemCountRecycling_C");
-static_assert(sizeof(UItemCountRecycling_C) == 0x000288, "Wrong size on UItemCountRecycling_C");
-static_assert(offsetof(UItemCountRecycling_C, UberGraphFrame) == 0x000238, "Member 'UItemCountRecycling_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, CountText) == 0x000240, "Member 'UItemCountRecycling_C::CountText' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, DisplayName) == 0x000248, "Member 'UItemCountRecycling_C::DisplayName' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, IconLeft) == 0x000250, "Member 'UItemCountRecycling_C::IconLeft' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, Indicator) == 0x000258, "Member 'UItemCountRecycling_C::Indicator' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, ItemDefinition) == 0x000260, "Member 'UItemCountRecycling_C::ItemDefinition' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, TextStyle) == 0x000268, "Member 'UItemCountRecycling_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, CountStyle) == 0x000270, "Member 'UItemCountRecycling_C::CountStyle' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, OverrideValue) == 0x000274, "Member 'UItemCountRecycling_C::OverrideValue' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, BrushSize) == 0x000278, "Member 'UItemCountRecycling_C::BrushSize' has a wrong offset!");
-static_assert(offsetof(UItemCountRecycling_C, DisplayNameStyle) == 0x000280, "Member 'UItemCountRecycling_C::DisplayNameStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

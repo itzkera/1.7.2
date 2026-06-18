@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.ExecuteUbergraph_ZoneDayCompletion_ScoreBlock
 // 0x0010 (0x0010 - 0x0000)
@@ -23,10 +23,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortNumericTextBlock*                  K2Node_ComponentBoundEvent_NumericTextBlock;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock) == 0x000008, "Wrong alignment on ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock");
-static_assert(sizeof(ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock) == 0x000010, "Wrong size on ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock, EntryPoint) == 0x000000, "Member 'ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock, K2Node_ComponentBoundEvent_NumericTextBlock) == 0x000008, "Member 'ZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock::K2Node_ComponentBoundEvent_NumericTextBlock' has a wrong offset!");
 
 // Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +31,6 @@ struct ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentB
 public:
 	class UFortNumericTextBlock*                  NumericTextBlock;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature) == 0x000008, "Wrong alignment on ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature");
-static_assert(sizeof(ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature) == 0x000008, "Wrong size on ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature, NumericTextBlock) == 0x000000, "Member 'ZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature::NumericTextBlock' has a wrong offset!");
 
 // Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.Increment
 // 0x0020 (0x0020 - 0x0000)
@@ -53,15 +46,6 @@ public:
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneDayCompletion_ScoreBlock_C_Increment) == 0x000008, "Wrong alignment on ZoneDayCompletion_ScoreBlock_C_Increment");
-static_assert(sizeof(ZoneDayCompletion_ScoreBlock_C_Increment) == 0x000020, "Wrong size on ZoneDayCompletion_ScoreBlock_C_Increment");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, New_Score) == 0x000000, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::New_Score' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, Interpolation_Length) == 0x000004, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::Interpolation_Length' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_SpawnSound2D_ReturnValue) == 0x000008, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000018, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_Increment, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x00001C, "Member 'ZoneDayCompletion_ScoreBlock_C_Increment::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
 
 // Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.SetScore
 // 0x0008 (0x0008 - 0x0000)
@@ -71,10 +55,6 @@ public:
 	int32                                         New_Score;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ZoneDayCompletion_ScoreBlock_C_SetScore) == 0x000004, "Wrong alignment on ZoneDayCompletion_ScoreBlock_C_SetScore");
-static_assert(sizeof(ZoneDayCompletion_ScoreBlock_C_SetScore) == 0x000008, "Wrong size on ZoneDayCompletion_ScoreBlock_C_SetScore");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_SetScore, New_Score) == 0x000000, "Member 'ZoneDayCompletion_ScoreBlock_C_SetScore::New_Score' has a wrong offset!");
-static_assert(offsetof(ZoneDayCompletion_ScoreBlock_C_SetScore, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'ZoneDayCompletion_ScoreBlock_C_SetScore::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

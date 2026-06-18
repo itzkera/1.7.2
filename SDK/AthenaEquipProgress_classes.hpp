@@ -15,8 +15,7 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaEquipProgress.AthenaEquipProgress_C
 // 0x0038 (0x0298 - 0x0260)
@@ -42,23 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaEquipProgress_C">();
+		BP_STATIC_CLASS_IMPL("AthenaEquipProgress_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaEquipProgress_C")
 	}
 	static class UAthenaEquipProgress_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaEquipProgress_C>();
 	}
 };
-static_assert(alignof(UAthenaEquipProgress_C) == 0x000008, "Wrong alignment on UAthenaEquipProgress_C");
-static_assert(sizeof(UAthenaEquipProgress_C) == 0x000298, "Wrong size on UAthenaEquipProgress_C");
-static_assert(offsetof(UAthenaEquipProgress_C, UberGraphFrame) == 0x000260, "Member 'UAthenaEquipProgress_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, ImageTimer) == 0x000268, "Member 'UAthenaEquipProgress_C::ImageTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, OverlayTimer) == 0x000270, "Member 'UAthenaEquipProgress_C::OverlayTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, Root) == 0x000278, "Member 'UAthenaEquipProgress_C::Root' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, TextTimeRemaining) == 0x000280, "Member 'UAthenaEquipProgress_C::TextTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, Duration) == 0x000288, "Member 'UAthenaEquipProgress_C::Duration' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, StartTime) == 0x00028C, "Member 'UAthenaEquipProgress_C::StartTime' has a wrong offset!");
-static_assert(offsetof(UAthenaEquipProgress_C, Progress) == 0x000290, "Member 'UAthenaEquipProgress_C::Progress' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

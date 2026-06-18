@@ -14,8 +14,7 @@
 #include "ItemCountOverCost_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCountOverCost.ItemCountOverCost_C.ExecuteUbergraph_ItemCountOverCost
 // ()
@@ -109,7 +108,7 @@ void UItemCountOverCost_C::Update()
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItemDefinition*              ItemDefinition_0                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Count_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Count_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemCountOverCost_C::Calculate_Total_Item_Def_in_Inventory(class UFortItemDefinition* ItemDefinition_0, int32* Count_0)
 {
@@ -128,5 +127,5 @@ void UItemCountOverCost_C::Calculate_Total_Item_Def_in_Inventory(class UFortItem
 		*Count_0 = Parms.Count_0;
 }
 
-}
 
+SDK_NAMESPACE_END

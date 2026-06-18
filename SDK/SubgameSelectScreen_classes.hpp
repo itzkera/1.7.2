@@ -11,14 +11,13 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SubGameSelectRotatorItems_structs.hpp"
 #include "FortniteUI_classes.hpp"
+#include "SubGameSelectRotatorItems_structs.hpp"
 #include "UMG_structs.hpp"
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SubgameSelectScreen.SubgameSelectScreen_C
 // 0x0108 (0x04E8 - 0x03E0)
@@ -94,47 +93,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameSelectScreen_C">();
+		BP_STATIC_CLASS_IMPL("SubgameSelectScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameSelectScreen_C")
 	}
 	static class USubgameSelectScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameSelectScreen_C>();
 	}
 };
-static_assert(alignof(USubgameSelectScreen_C) == 0x000008, "Wrong alignment on USubgameSelectScreen_C");
-static_assert(sizeof(USubgameSelectScreen_C) == 0x0004E8, "Wrong size on USubgameSelectScreen_C");
-static_assert(offsetof(USubgameSelectScreen_C, UberGraphFrame) == 0x0003E0, "Member 'USubgameSelectScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Pan_P1P2) == 0x0003E8, "Member 'USubgameSelectScreen_C::Pan_P1P2' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Pan_P1) == 0x0003F0, "Member 'USubgameSelectScreen_C::Pan_P1' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Pan_P2) == 0x0003F8, "Member 'USubgameSelectScreen_C::Pan_P2' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ContractSeperator) == 0x000400, "Member 'USubgameSelectScreen_C::ContractSeperator' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ToggleCycle) == 0x000408, "Member 'USubgameSelectScreen_C::ToggleCycle' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, SwitchTextures) == 0x000410, "Member 'USubgameSelectScreen_C::SwitchTextures' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ExpandSeperator) == 0x000418, "Member 'USubgameSelectScreen_C::ExpandSeperator' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, DescriptionIntro) == 0x000420, "Member 'USubgameSelectScreen_C::DescriptionIntro' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, SwitchMaterial) == 0x000428, "Member 'USubgameSelectScreen_C::SwitchMaterial' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, AthenaBtn) == 0x000430, "Member 'USubgameSelectScreen_C::AthenaBtn' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, BGImage) == 0x000438, "Member 'USubgameSelectScreen_C::BGImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ButtonBack) == 0x000440, "Member 'USubgameSelectScreen_C::ButtonBack' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ButtonPurchase) == 0x000448, "Member 'USubgameSelectScreen_C::ButtonPurchase' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ButtonRedeem) == 0x000450, "Member 'USubgameSelectScreen_C::ButtonRedeem' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, CampaignBtn) == 0x000458, "Member 'USubgameSelectScreen_C::CampaignBtn' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ConsoleProfileWidget) == 0x000460, "Member 'USubgameSelectScreen_C::ConsoleProfileWidget' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Description) == 0x000468, "Member 'USubgameSelectScreen_C::Description' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Image_0) == 0x000470, "Member 'USubgameSelectScreen_C::Image_0' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Image_1) == 0x000478, "Member 'USubgameSelectScreen_C::Image_1' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PVEDescriptionBorder) == 0x000480, "Member 'USubgameSelectScreen_C::PVEDescriptionBorder' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PVEDescriptionText) == 0x000488, "Member 'USubgameSelectScreen_C::PVEDescriptionText' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PVPDescriptionBorder) == 0x000490, "Member 'USubgameSelectScreen_C::PVPDescriptionBorder' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PVPDescriptionText) == 0x000498, "Member 'USubgameSelectScreen_C::PVPDescriptionText' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, SwitcherMenu) == 0x0004A0, "Member 'USubgameSelectScreen_C::SwitcherMenu' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, TitleImage) == 0x0004A8, "Member 'USubgameSelectScreen_C::TitleImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, WasLastPlayForward) == 0x0004B0, "Member 'USubgameSelectScreen_C::WasLastPlayForward' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, LeavingMatchmakingDialog) == 0x0004B8, "Member 'USubgameSelectScreen_C::LeavingMatchmakingDialog' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, MID_Keyart) == 0x0004C0, "Member 'USubgameSelectScreen_C::MID_Keyart' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, CycleTimer) == 0x0004C8, "Member 'USubgameSelectScreen_C::CycleTimer' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, PveRotatorIndex) == 0x0004D0, "Member 'USubgameSelectScreen_C::PveRotatorIndex' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, Items) == 0x0004D8, "Member 'USubgameSelectScreen_C::Items' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

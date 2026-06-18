@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // ScriptStruct AudioMixer.SoundEffectLowPassFilterSettings
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +21,6 @@ public:
 	float                                         CutoffFrequency;                                   // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Q;                                                 // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSoundEffectLowPassFilterSettings) == 0x000004, "Wrong alignment on FSoundEffectLowPassFilterSettings");
-static_assert(sizeof(FSoundEffectLowPassFilterSettings) == 0x000008, "Wrong size on FSoundEffectLowPassFilterSettings");
-static_assert(offsetof(FSoundEffectLowPassFilterSettings, CutoffFrequency) == 0x000000, "Member 'FSoundEffectLowPassFilterSettings::CutoffFrequency' has a wrong offset!");
-static_assert(offsetof(FSoundEffectLowPassFilterSettings, Q) == 0x000004, "Member 'FSoundEffectLowPassFilterSettings::Q' has a wrong offset!");
 
 // ScriptStruct AudioMixer.SubmixEffectReverbSettings
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +29,6 @@ struct FSubmixEffectReverbSettings final
 public:
 	class UReverbEffect*                          ReverbEffect;                                      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectReverbSettings) == 0x000008, "Wrong alignment on FSubmixEffectReverbSettings");
-static_assert(sizeof(FSubmixEffectReverbSettings) == 0x000008, "Wrong size on FSubmixEffectReverbSettings");
-static_assert(offsetof(FSubmixEffectReverbSettings, ReverbEffect) == 0x000000, "Member 'FSubmixEffectReverbSettings::ReverbEffect' has a wrong offset!");
 
 // ScriptStruct AudioMixer.SubmixEffectSubmixEQSettings
 // 0x0001 (0x0001 - 0x0000)
@@ -45,8 +37,6 @@ struct FSubmixEffectSubmixEQSettings final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSubmixEffectSubmixEQSettings) == 0x000001, "Wrong alignment on FSubmixEffectSubmixEQSettings");
-static_assert(sizeof(FSubmixEffectSubmixEQSettings) == 0x000001, "Wrong size on FSubmixEffectSubmixEQSettings");
 
 // ScriptStruct AudioMixer.SubmixEffectTestSettings
 // 0x0004 (0x0004 - 0x0000)
@@ -55,9 +45,5 @@ struct FSubmixEffectTestSettings final
 public:
 	float                                         TestVolume;                                        // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectTestSettings) == 0x000004, "Wrong alignment on FSubmixEffectTestSettings");
-static_assert(sizeof(FSubmixEffectTestSettings) == 0x000004, "Wrong size on FSubmixEffectTestSettings");
-static_assert(offsetof(FSubmixEffectTestSettings, TestVolume) == 0x000000, "Member 'FSubmixEffectTestSettings::TestVolume' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

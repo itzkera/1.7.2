@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemAttributesDetailWidget.ItemAttributesDetailWidget_C
 // 0x0010 (0x0280 - 0x0270)
@@ -39,17 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemAttributesDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemAttributesDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemAttributesDetailWidget_C")
 	}
 	static class UItemAttributesDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemAttributesDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemAttributesDetailWidget_C) == 0x000008, "Wrong alignment on UItemAttributesDetailWidget_C");
-static_assert(sizeof(UItemAttributesDetailWidget_C) == 0x000280, "Wrong size on UItemAttributesDetailWidget_C");
-static_assert(offsetof(UItemAttributesDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemAttributesDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemAttributesDetailWidget_C, StatsListWidget) == 0x000278, "Member 'UItemAttributesDetailWidget_C::StatsListWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

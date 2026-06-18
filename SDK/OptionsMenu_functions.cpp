@@ -14,8 +14,7 @@
 #include "OptionsMenu_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OptionsMenu.OptionsMenu_C.ExecuteUbergraph_OptionsMenu
 // (HasDefaults)
@@ -261,7 +260,7 @@ void UOptionsMenu_C::Enable_Overlay_Video(bool Accept_Input_0)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Accept_Input_0                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Overlay_Text                                           (Parm)
+// const class FText&                      Overlay_Text                                           (Parm)
 
 void UOptionsMenu_C::Enable_Overlay_Input(bool Accept_Input_0, const class FText& Overlay_Text)
 {
@@ -332,8 +331,8 @@ void UOptionsMenu_C::Initialize()
 // Function OptionsMenu.OptionsMenu_C.OnPreviewMouseButtonDown
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UOptionsMenu_C::OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -357,8 +356,8 @@ struct FEventReply UOptionsMenu_C::OnPreviewMouseButtonDown(const struct FGeomet
 // Function OptionsMenu.OptionsMenu_C.OnMouseWheel
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UOptionsMenu_C::OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -382,8 +381,8 @@ struct FEventReply UOptionsMenu_C::OnMouseWheel(const struct FGeometry& MyGeomet
 // Function OptionsMenu.OptionsMenu_C.OnPreviewKeyDown
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FKeyEvent                        InKeyEvent                                             (Parm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FKeyEvent&                 InKeyEvent                                             (Parm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply UOptionsMenu_C::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
@@ -407,7 +406,7 @@ struct FEventReply UOptionsMenu_C::OnPreviewKeyDown(const struct FGeometry& MyGe
 // Function OptionsMenu.OptionsMenu_C.Handle Apply
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOptionsMenu_C::Handle_Apply(bool* PassThrough)
 {
@@ -428,7 +427,7 @@ void UOptionsMenu_C::Handle_Apply(bool* PassThrough)
 // Function OptionsMenu.OptionsMenu_C.Handle Reset Default
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOptionsMenu_C::Handle_Reset_Default(bool* PassThrough)
 {
@@ -449,7 +448,7 @@ void UOptionsMenu_C::Handle_Reset_Default(bool* PassThrough)
 // Function OptionsMenu.OptionsMenu_C.Handle Reset
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOptionsMenu_C::Handle_Reset(bool* PassThrough)
 {
@@ -470,7 +469,7 @@ void UOptionsMenu_C::Handle_Reset(bool* PassThrough)
 // Function OptionsMenu.OptionsMenu_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOptionsMenu_C::HandleBack(bool* PassThrough)
 {
@@ -505,7 +504,7 @@ void UOptionsMenu_C::Set_Input_Action_Handlers()
 // Function OptionsMenu.OptionsMenu_C.Handle Toggle Mode
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOptionsMenu_C::Handle_Toggle_Mode(bool* PassThrough)
 {
@@ -547,7 +546,7 @@ void UOptionsMenu_C::HandleCursorModeChanging(bool IsEnabled)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                           WidgetClass                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             DisplayName                                            (Parm)
+// const class FText&                      DisplayName                                            (Parm)
 // class FName                             NameId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UOptionsMenu_C::AddTab(class UClass* WidgetClass, const class FText& DisplayName, class FName NameId)
@@ -584,7 +583,7 @@ void UOptionsMenu_C::SetBackground()
 // Function OptionsMenu.OptionsMenu_C.Handle Reset HUD Default
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOptionsMenu_C::Handle_Reset_HUD_Default(bool* PassThrough)
 {
@@ -615,5 +614,5 @@ void UOptionsMenu_C::CenterOnActiveTab()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

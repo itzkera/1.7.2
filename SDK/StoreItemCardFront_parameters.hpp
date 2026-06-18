@@ -18,8 +18,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function StoreItemCardFront.StoreItemCardFront_C.ExecuteUbergraph_StoreItemCardFront
 // 0x0058 (0x0058 - 0x0000)
@@ -40,18 +40,6 @@ public:
 	class UFortStoreContext*                      CallFunc_GetContext_ReturnValue3;                  // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CardFrontRevealComplete_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront) == 0x000008, "Wrong alignment on StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront");
-static_assert(sizeof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront) == 0x000058, "Wrong size on StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, EntryPoint) == 0x000000, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::EntryPoint' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, K2Node_CustomEvent_NewStoreState) == 0x000018, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::K2Node_CustomEvent_NewStoreState' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetCard_ResultOut) == 0x000020, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetCard_ResultOut' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetCard_ReturnValue) == 0x000038, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetCard_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, K2Node_SwitchEnum_CmpSuccess) == 0x000039, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, K2Node_Event_InitObject) == 0x000040, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::K2Node_Event_InitObject' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_GetContext_ReturnValue3) == 0x000048, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront, CallFunc_CardFrontRevealComplete_ReturnValue) == 0x000050, "Member 'StoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront::CallFunc_CardFrontRevealComplete_ReturnValue' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.InitFromObject
 // 0x0008 (0x0008 - 0x0000)
@@ -60,9 +48,6 @@ struct StoreItemCardFront_C_InitFromObject final
 public:
 	class UObject*                                InitObject;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreItemCardFront_C_InitFromObject) == 0x000008, "Wrong alignment on StoreItemCardFront_C_InitFromObject");
-static_assert(sizeof(StoreItemCardFront_C_InitFromObject) == 0x000008, "Wrong size on StoreItemCardFront_C_InitFromObject");
-static_assert(offsetof(StoreItemCardFront_C_InitFromObject, InitObject) == 0x000000, "Member 'StoreItemCardFront_C_InitFromObject::InitObject' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.OnFortStoreStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -71,9 +56,6 @@ struct StoreItemCardFront_C_OnFortStoreStateChanged final
 public:
 	EFortStoreState                               NewStoreState;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreItemCardFront_C_OnFortStoreStateChanged) == 0x000001, "Wrong alignment on StoreItemCardFront_C_OnFortStoreStateChanged");
-static_assert(sizeof(StoreItemCardFront_C_OnFortStoreStateChanged) == 0x000001, "Wrong size on StoreItemCardFront_C_OnFortStoreStateChanged");
-static_assert(offsetof(StoreItemCardFront_C_OnFortStoreStateChanged, NewStoreState) == 0x000000, "Member 'StoreItemCardFront_C_OnFortStoreStateChanged::NewStoreState' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.Initialize_Card
 // 0x0020 (0x0020 - 0x0000)
@@ -83,10 +65,6 @@ public:
 	struct FCard                                  inCard;                                            // 0x0000(0x0018)(Parm, NoDestructor)
 	EFortRarity                                   CallFunc_GetRarity_ReturnValue;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreItemCardFront_C_Initialize_Card) == 0x000008, "Wrong alignment on StoreItemCardFront_C_Initialize_Card");
-static_assert(sizeof(StoreItemCardFront_C_Initialize_Card) == 0x000020, "Wrong size on StoreItemCardFront_C_Initialize_Card");
-static_assert(offsetof(StoreItemCardFront_C_Initialize_Card, inCard) == 0x000000, "Member 'StoreItemCardFront_C_Initialize_Card::inCard' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Initialize_Card, CallFunc_GetRarity_ReturnValue) == 0x000018, "Member 'StoreItemCardFront_C_Initialize_Card::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.Draw_Card
 // 0x02D0 (0x02D0 - 0x0000)
@@ -120,30 +98,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02A8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02B8(0x0018)()
 };
-static_assert(alignof(StoreItemCardFront_C_Draw_Card) == 0x000008, "Wrong alignment on StoreItemCardFront_C_Draw_Card");
-static_assert(sizeof(StoreItemCardFront_C_Draw_Card) == 0x0002D0, "Wrong size on StoreItemCardFront_C_Draw_Card");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, RarityData) == 0x000000, "Member 'StoreItemCardFront_C_Draw_Card::RarityData' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_GetType_ReturnValue) == 0x000080, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000081, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000082, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_MakeStruct_SlateColor) == 0x000088, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x0000B0, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_BooleanOR_ReturnValue) == 0x0000B1, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_BooleanOR_ReturnValue2) == 0x0000B2, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_BooleanOR_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_BPGetRarityData_ReturnValue) == 0x0000B8, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_Get_Card_Name_Text_ReturnValue) == 0x000138, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_Get_Card_Name_Text_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, Temp_byte_Variable) == 0x000150, "Member 'StoreItemCardFront_C_Draw_Card::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_MakeStruct_LinearColor) == 0x000154, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, Temp_byte_Variable2) == 0x000164, "Member 'StoreItemCardFront_C_Draw_Card::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, Temp_bool_Variable) == 0x000165, "Member 'StoreItemCardFront_C_Draw_Card::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_Select_Default) == 0x000166, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_Get_Type_Text_outText) == 0x000168, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_Get_Type_Text_outText' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_MakeStruct_FormatArgumentData) == 0x000180, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_BPGetRarityData_ReturnValue2) == 0x0001C0, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_BPGetRarityData_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_MakeStruct_SlateColor2) == 0x000240, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_MakeStruct_SlateColor2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_MakeStruct_FormatArgumentData2) == 0x000268, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, K2Node_MakeArray_Array) == 0x0002A8, "Member 'StoreItemCardFront_C_Draw_Card::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Draw_Card, CallFunc_Format_ReturnValue) == 0x0002B8, "Member 'StoreItemCardFront_C_Draw_Card::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.Get Card Name Text
 // 0x0380 (0x0380 - 0x0000)
@@ -188,41 +142,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0350(0x0018)()
 	class FText                                   K2Node_Select2_Default;                            // 0x0368(0x0018)()
 };
-static_assert(alignof(StoreItemCardFront_C_Get_Card_Name_Text) == 0x000008, "Wrong alignment on StoreItemCardFront_C_Get_Card_Name_Text");
-static_assert(sizeof(StoreItemCardFront_C_Get_Card_Name_Text) == 0x000380, "Wrong size on StoreItemCardFront_C_Get_Card_Name_Text");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, ReturnValue) == 0x000000, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable) == 0x000018, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable2) == 0x000030, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable3) == 0x000048, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable4) == 0x000060, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable5) == 0x000078, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable6) == 0x000090, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable7) == 0x0000A8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable8) == 0x0000C0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable9) == 0x0000D8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable9' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable10) == 0x0000F0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable10' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable11) == 0x000108, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable11' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable12) == 0x000120, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable13) == 0x000138, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable13' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable14) == 0x000150, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable14' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_text_Variable15) == 0x000168, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_text_Variable15' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_bool_Variable) == 0x000180, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, Temp_byte_Variable) == 0x000181, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetEmptyText_ReturnValue) == 0x000188, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetTertiaryCategory_ItemCategoryText) == 0x0001A0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetTertiaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetTertiaryCategory_ItemCategoryBrush) == 0x0001B8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetTertiaryCategory_ItemCategoryBrush' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetTertiaryCategory_ReturnValue) == 0x000248, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetTertiaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_Conv_StringToText_ReturnValue) == 0x000250, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000268, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetFilterCategory_ReturnValue) == 0x0002A8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetFilterCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_GetDisplayName_ReturnValue) == 0x0002B0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_EqualEqual_TextText_ReturnValue) == 0x0002C8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, K2Node_Select_Default) == 0x0002D0, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_TextTrimPrecedingAndTrailing_ReturnValue) == 0x0002E8, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_TextTrimPrecedingAndTrailing_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, K2Node_MakeStruct_FormatArgumentData2) == 0x000300, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, K2Node_MakeArray_Array) == 0x000340, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, CallFunc_Format_ReturnValue) == 0x000350, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Card_Name_Text, K2Node_Select2_Default) == 0x000368, "Member 'StoreItemCardFront_C_Get_Card_Name_Text::K2Node_Select2_Default' has a wrong offset!");
 
 // Function StoreItemCardFront.StoreItemCardFront_C.Get Type Text
 // 0x01D8 (0x01D8 - 0x0000)
@@ -253,29 +172,6 @@ public:
 	uint8                                         Pad_1B9[0x7];                                      // 0x01B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x01C0(0x0018)()
 };
-static_assert(alignof(StoreItemCardFront_C_Get_Type_Text) == 0x000008, "Wrong alignment on StoreItemCardFront_C_Get_Type_Text");
-static_assert(sizeof(StoreItemCardFront_C_Get_Type_Text) == 0x0001D8, "Wrong size on StoreItemCardFront_C_Get_Type_Text");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, OutText) == 0x000000, "Member 'StoreItemCardFront_C_Get_Type_Text::OutText' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_byte_Variable) == 0x000018, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable) == 0x000020, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable2) == 0x000038, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable3) == 0x000050, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable4) == 0x000068, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable5) == 0x000080, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable5' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable6) == 0x000098, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable6' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable7) == 0x0000B0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable7' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable8) == 0x0000C8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable8' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable9) == 0x0000E0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable9' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable10) == 0x0000F8, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable10' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable11) == 0x000110, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable11' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable12) == 0x000128, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable12' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable13) == 0x000140, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable13' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable14) == 0x000158, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable14' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable15) == 0x000170, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable15' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable16) == 0x000188, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable16' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, Temp_text_Variable17) == 0x0001A0, "Member 'StoreItemCardFront_C_Get_Type_Text::Temp_text_Variable17' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, CallFunc_GetFilterCategory_ReturnValue) == 0x0001B8, "Member 'StoreItemCardFront_C_Get_Type_Text::CallFunc_GetFilterCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreItemCardFront_C_Get_Type_Text, K2Node_Select_Default) == 0x0001C0, "Member 'StoreItemCardFront_C_Get_Type_Text::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C
 // 0x00D0 (0x0B10 - 0x0A40)
@@ -39,23 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DefaultPlayer_HarvestBuffSwitch_C">();
+		BP_STATIC_CLASS_IMPL("GA_DefaultPlayer_HarvestBuffSwitch_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DefaultPlayer_HarvestBuffSwitch_C")
 	}
 	static class UGA_DefaultPlayer_HarvestBuffSwitch_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DefaultPlayer_HarvestBuffSwitch_C>();
 	}
 };
-static_assert(alignof(UGA_DefaultPlayer_HarvestBuffSwitch_C) == 0x000008, "Wrong alignment on UGA_DefaultPlayer_HarvestBuffSwitch_C");
-static_assert(sizeof(UGA_DefaultPlayer_HarvestBuffSwitch_C) == 0x000B10, "Wrong size on UGA_DefaultPlayer_HarvestBuffSwitch_C");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, UberGraphFrame) == 0x000A40, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_ImpactWeapon) == 0x000A48, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_ImpactWeapon' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_HarvestBuff_T1) == 0x000A68, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_HarvestBuff_T1' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_LaserFocus) == 0x000A88, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_LaserFocus' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, GE_LaserFocus) == 0x000AA8, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::GE_LaserFocus' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_ImpactWeapon_Stick) == 0x000AB0, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_ImpactWeapon_Stick' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_ImpactWeapon_Pickaxe) == 0x000AD0, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_ImpactWeapon_Pickaxe' has a wrong offset!");
-static_assert(offsetof(UGA_DefaultPlayer_HarvestBuffSwitch_C, TC_HarvestBuff_T2) == 0x000AF0, "Member 'UGA_DefaultPlayer_HarvestBuffSwitch_C::TC_HarvestBuff_T2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

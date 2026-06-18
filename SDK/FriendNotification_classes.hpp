@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FriendNotification.FriendNotification_C
 // 0x0008 (0x00A0 - 0x0098)
@@ -33,16 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FriendNotification_C">();
+		BP_STATIC_CLASS_IMPL("FriendNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FriendNotification_C")
 	}
 	static class UFriendNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriendNotification_C>();
 	}
 };
-static_assert(alignof(UFriendNotification_C) == 0x000008, "Wrong alignment on UFriendNotification_C");
-static_assert(sizeof(UFriendNotification_C) == 0x0000A0, "Wrong size on UFriendNotification_C");
-static_assert(offsetof(UFriendNotification_C, UberGraphFrame) == 0x000098, "Member 'UFriendNotification_C::UberGraphFrame' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

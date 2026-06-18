@@ -14,8 +14,7 @@
 #include "GAB_GenericDeath_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.ExecuteUbergraph_GAB_GenericDeath
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int32 EntryPoint)
 // Function GAB_GenericDeath.GAB_GenericDeath_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -144,7 +143,7 @@ void UGAB_GenericDeath_C::OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4()
 // Function GAB_GenericDeath.GAB_GenericDeath_C.InitializeDeathHitDirection
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventHitData                                           (Parm)
+// const struct FGameplayEventData&        EventHitData                                           (Parm)
 
 void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData)
 {
@@ -166,7 +165,7 @@ void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEven
 // Parameters:
 // int32                                   MaxNumberOfSections                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             OriginalSectionName                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             SectionName                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            SectionName                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_GenericDeath_C::GetRandomSectionName(int32 MaxNumberOfSections, class FName OriginalSectionName, class FName* SectionName)
 {
@@ -186,5 +185,5 @@ void UGAB_GenericDeath_C::GetRandomSectionName(int32 MaxNumberOfSections, class 
 		*SectionName = Parms.SectionName;
 }
 
-}
 
+SDK_NAMESPACE_END

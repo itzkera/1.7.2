@@ -15,8 +15,7 @@
 #include "GAT_ActiveAbility_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GAT_GenericActiveAbilityNoCommit.GAT_GenericActiveAbilityNoCommit_C
 // 0x00C0 (0x0B10 - 0x0A50)
@@ -36,20 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_GenericActiveAbilityNoCommit_C">();
+		BP_STATIC_CLASS_IMPL("GAT_GenericActiveAbilityNoCommit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_GenericActiveAbilityNoCommit_C")
 	}
 	static class UGAT_GenericActiveAbilityNoCommit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_GenericActiveAbilityNoCommit_C>();
 	}
 };
-static_assert(alignof(UGAT_GenericActiveAbilityNoCommit_C) == 0x000008, "Wrong alignment on UGAT_GenericActiveAbilityNoCommit_C");
-static_assert(sizeof(UGAT_GenericActiveAbilityNoCommit_C) == 0x000B10, "Wrong size on UGAT_GenericActiveAbilityNoCommit_C");
-static_assert(offsetof(UGAT_GenericActiveAbilityNoCommit_C, UberGraphFrame_GAT_GenericActiveAbilityNoCommit_C) == 0x000A50, "Member 'UGAT_GenericActiveAbilityNoCommit_C::UberGraphFrame_GAT_GenericActiveAbilityNoCommit_C' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericActiveAbilityNoCommit_C, EventData) == 0x000A58, "Member 'UGAT_GenericActiveAbilityNoCommit_C::EventData' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericActiveAbilityNoCommit_C, FortPlayerPawn) == 0x000B00, "Member 'UGAT_GenericActiveAbilityNoCommit_C::FortPlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericActiveAbilityNoCommit_C, isAutoCommitted) == 0x000B08, "Member 'UGAT_GenericActiveAbilityNoCommit_C::isAutoCommitted' has a wrong offset!");
-static_assert(offsetof(UGAT_GenericActiveAbilityNoCommit_C, isStaminaLockedOut) == 0x000B09, "Member 'UGAT_GenericActiveAbilityNoCommit_C::isStaminaLockedOut' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

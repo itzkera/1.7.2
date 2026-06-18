@@ -14,8 +14,7 @@
 #include "ResourceAggregationWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ResourceAggregationWidget.ResourceAggregationWidget_C.ExecuteUbergraph_ResourceAggregationWidget
 // ()
@@ -160,5 +159,5 @@ void UResourceAggregationWidget_C::ForceHideWidget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "GCN_TakerMarkedForDeath_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C.ExecuteUbergraph_GCN_TakerMarkedForDeath
 // ()
@@ -78,5 +77,5 @@ void AGCN_TakerMarkedForDeath_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

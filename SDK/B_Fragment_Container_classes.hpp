@@ -12,15 +12,14 @@
 
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
+#include "E_OutlanderFragmentTypes_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_Fragment_Container.B_Fragment_Container_C
 // 0x0360 (0x1320 - 0x0FC0)
@@ -139,81 +138,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Fragment_Container_C">();
+		BP_STATIC_CLASS_IMPL("B_Fragment_Container_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Fragment_Container_C")
 	}
 	static class AB_Fragment_Container_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Fragment_Container_C>();
 	}
 };
-static_assert(alignof(AB_Fragment_Container_C) == 0x000010, "Wrong alignment on AB_Fragment_Container_C");
-static_assert(sizeof(AB_Fragment_Container_C) == 0x001320, "Wrong size on AB_Fragment_Container_C");
-static_assert(offsetof(AB_Fragment_Container_C, UberGraphFrame) == 0x000FC0, "Member 'AB_Fragment_Container_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, P_LightOn) == 0x000FC8, "Member 'AB_Fragment_Container_C::P_LightOn' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Mesh) == 0x000FD0, "Member 'AB_Fragment_Container_C::Orb_Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, P_ResOut) == 0x000FD8, "Member 'AB_Fragment_Container_C::P_ResOut' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, P_Orb_PickupEffect) == 0x000FE0, "Member 'AB_Fragment_Container_C::P_Orb_PickupEffect' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, BlockingCollision) == 0x000FE8, "Member 'AB_Fragment_Container_C::BlockingCollision' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Container_SK) == 0x000FF0, "Member 'AB_Fragment_Container_C::Container_SK' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, RotationRoot) == 0x000FF8, "Member 'AB_Fragment_Container_C::RotationRoot' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, VerticalMovement) == 0x001000, "Member 'AB_Fragment_Container_C::VerticalMovement' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Awaken_Collision) == 0x001008, "Member 'AB_Fragment_Container_C::Awaken_Collision' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, MiniMapCollision) == 0x001010, "Member 'AB_Fragment_Container_C::MiniMapCollision' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, MiniMapLoc) == 0x001018, "Member 'AB_Fragment_Container_C::MiniMapLoc' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, VerticalMovementTimeline_Z_Offset_E77B23F44312E9BD5DA6EF9ACE127DE4) == 0x001020, "Member 'AB_Fragment_Container_C::VerticalMovementTimeline_Z_Offset_E77B23F44312E9BD5DA6EF9ACE127DE4' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, VerticalMovementTimeline__Direction_E77B23F44312E9BD5DA6EF9ACE127DE4) == 0x001024, "Member 'AB_Fragment_Container_C::VerticalMovementTimeline__Direction_E77B23F44312E9BD5DA6EF9ACE127DE4' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, VerticalMovementTimeline) == 0x001028, "Member 'AB_Fragment_Container_C::VerticalMovementTimeline' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, TC_HasFragmentAbility) == 0x001030, "Member 'AB_Fragment_Container_C::TC_HasFragmentAbility' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, TC_LlamaFragment) == 0x001050, "Member 'AB_Fragment_Container_C::TC_LlamaFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, TC_ChargeFragmentTag) == 0x001070, "Member 'AB_Fragment_Container_C::TC_ChargeFragmentTag' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, TC_LlamaFragmentTag) == 0x001090, "Member 'AB_Fragment_Container_C::TC_LlamaFragmentTag' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Event_FragmentCollected) == 0x0010B0, "Member 'AB_Fragment_Container_C::Event_FragmentCollected' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, SentFragment) == 0x0010B8, "Member 'AB_Fragment_Container_C::SentFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FragmentType) == 0x001160, "Member 'AB_Fragment_Container_C::FragmentType' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, ChargeFragmentColor) == 0x001164, "Member 'AB_Fragment_Container_C::ChargeFragmentColor' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, LlamaFragmentColor) == 0x001174, "Member 'AB_Fragment_Container_C::LlamaFragmentColor' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FragmentAmmoData) == 0x001188, "Member 'AB_Fragment_Container_C::FragmentAmmoData' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Current_Outlander) == 0x001190, "Member 'AB_Fragment_Container_C::Current_Outlander' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, InteractingPlayerPawn) == 0x001198, "Member 'AB_Fragment_Container_C::InteractingPlayerPawn' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, GE_Outlander_LlamaFragment) == 0x0011A0, "Member 'AB_Fragment_Container_C::GE_Outlander_LlamaFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, GE_ClearFragmentCooldown) == 0x0011A8, "Member 'AB_Fragment_Container_C::GE_ClearFragmentCooldown' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, GE_Outlander_FragmentTeamSpeedBost) == 0x0011B0, "Member 'AB_Fragment_Container_C::GE_Outlander_FragmentTeamSpeedBost' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FortPawnFilter) == 0x0011B8, "Member 'AB_Fragment_Container_C::FortPawnFilter' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, LlamaFragmentPercent) == 0x0011C0, "Member 'AB_Fragment_Container_C::LlamaFragmentPercent' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, RotateToPlayerSpeed) == 0x0011C4, "Member 'AB_Fragment_Container_C::RotateToPlayerSpeed' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, LastInteractStartTime) == 0x0011C8, "Member 'AB_Fragment_Container_C::LastInteractStartTime' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, DelayedDestroyTime) == 0x0011CC, "Member 'AB_Fragment_Container_C::DelayedDestroyTime' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, NumberOfTimeToPingMap) == 0x0011D0, "Member 'AB_Fragment_Container_C::NumberOfTimeToPingMap' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, NumberOfMapPings) == 0x0011D4, "Member 'AB_Fragment_Container_C::NumberOfMapPings' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, IsAnyOutlanderStillAround) == 0x0011D8, "Member 'AB_Fragment_Container_C::IsAnyOutlanderStillAround' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, CanInteract) == 0x0011D9, "Member 'AB_Fragment_Container_C::CanInteract' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, IsAwake) == 0x0011DA, "Member 'AB_Fragment_Container_C::IsAwake' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, HasLoot) == 0x0011DB, "Member 'AB_Fragment_Container_C::HasLoot' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, IsOpen) == 0x0011DC, "Member 'AB_Fragment_Container_C::IsOpen' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, bIsUP) == 0x0011DD, "Member 'AB_Fragment_Container_C::bIsUP' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, IsOn) == 0x0011DE, "Member 'AB_Fragment_Container_C::IsOn' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Container_Base_Mat) == 0x0011E0, "Member 'AB_Fragment_Container_C::Container_Base_Mat' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Container_Screen_mat) == 0x0011E8, "Member 'AB_Fragment_Container_C::Container_Screen_mat' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Container_Light_mat) == 0x0011F0, "Member 'AB_Fragment_Container_C::Container_Light_mat' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Mat) == 0x0011F8, "Member 'AB_Fragment_Container_C::Orb_Mat' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Turn_On_Sound) == 0x001200, "Member 'AB_Fragment_Container_C::Orb_Turn_On_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Hello_Sound) == 0x001208, "Member 'AB_Fragment_Container_C::Orb_Hello_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Hover_Sound) == 0x001210, "Member 'AB_Fragment_Container_C::Orb_Hover_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Goodbye_Sound) == 0x001218, "Member 'AB_Fragment_Container_C::Orb_Goodbye_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, Orb_Thanks_Sound) == 0x001220, "Member 'AB_Fragment_Container_C::Orb_Thanks_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, InteractLlamaFragment) == 0x001228, "Member 'AB_Fragment_Container_C::InteractLlamaFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, InteractChargeFragment) == 0x001240, "Member 'AB_Fragment_Container_C::InteractChargeFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, InteractNonOutlander) == 0x001258, "Member 'AB_Fragment_Container_C::InteractNonOutlander' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, PickupLlamaFragment) == 0x001270, "Member 'AB_Fragment_Container_C::PickupLlamaFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, PickupChargeFragment) == 0x001288, "Member 'AB_Fragment_Container_C::PickupChargeFragment' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, OrbAudioComponent) == 0x0012A0, "Member 'AB_Fragment_Container_C::OrbAudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, IsOrbTaken) == 0x0012A8, "Member 'AB_Fragment_Container_C::IsOrbTaken' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FailedOutlanderOnlyOneLlama) == 0x0012B0, "Member 'AB_Fragment_Container_C::FailedOutlanderOnlyOneLlama' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FailedOutlanderMaxFragHeldDefault) == 0x0012C8, "Member 'AB_Fragment_Container_C::FailedOutlanderMaxFragHeldDefault' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FailedOutlanderActivatedButDoesNotYetPossessFragmentAbility) == 0x0012E0, "Member 'AB_Fragment_Container_C::FailedOutlanderActivatedButDoesNotYetPossessFragmentAbility' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FailedNonOutlanderActivated) == 0x0012F8, "Member 'AB_Fragment_Container_C::FailedNonOutlanderActivated' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FF_Interact) == 0x001310, "Member 'AB_Fragment_Container_C::FF_Interact' has a wrong offset!");
-static_assert(offsetof(AB_Fragment_Container_C, FFInteractSoft) == 0x001318, "Member 'AB_Fragment_Container_C::FFInteractSoft' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

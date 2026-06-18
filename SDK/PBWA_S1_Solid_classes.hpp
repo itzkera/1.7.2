@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PBWA_S1_Solid.PBWA_S1_Solid_C
 // 0x0030 (0x10E0 - 0x10B0)
@@ -38,21 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_S1_Solid_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_S1_Solid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_S1_Solid_C")
 	}
 	static class APBWA_S1_Solid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_S1_Solid_C>();
 	}
 };
-static_assert(alignof(APBWA_S1_Solid_C) == 0x000010, "Wrong alignment on APBWA_S1_Solid_C");
-static_assert(sizeof(APBWA_S1_Solid_C) == 0x0010E0, "Wrong size on APBWA_S1_Solid_C");
-static_assert(offsetof(APBWA_S1_Solid_C, UberGraphFrame) == 0x0010B0, "Member 'APBWA_S1_Solid_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallChance) == 0x0010B8, "Member 'APBWA_S1_Solid_C::GnomeWallChance' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeWallMax) == 0x0010BC, "Member 'APBWA_S1_Solid_C::GnomeWallMax' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, Gnomed) == 0x0010C0, "Member 'APBWA_S1_Solid_C::Gnomed' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeMaterial) == 0x0010C8, "Member 'APBWA_S1_Solid_C::GnomeMaterial' has a wrong offset!");
-static_assert(offsetof(APBWA_S1_Solid_C, GnomeWall) == 0x0010D0, "Member 'APBWA_S1_Solid_C::GnomeWall' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

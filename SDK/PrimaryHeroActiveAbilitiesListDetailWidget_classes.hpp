@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C
 // 0x0018 (0x02B0 - 0x0298)
@@ -37,19 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PrimaryHeroActiveAbilitiesListDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("PrimaryHeroActiveAbilitiesListDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PrimaryHeroActiveAbilitiesListDetailWidget_C")
 	}
 	static class UPrimaryHeroActiveAbilitiesListDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPrimaryHeroActiveAbilitiesListDetailWidget_C>();
 	}
 };
-static_assert(alignof(UPrimaryHeroActiveAbilitiesListDetailWidget_C) == 0x000008, "Wrong alignment on UPrimaryHeroActiveAbilitiesListDetailWidget_C");
-static_assert(sizeof(UPrimaryHeroActiveAbilitiesListDetailWidget_C) == 0x0002B0, "Wrong size on UPrimaryHeroActiveAbilitiesListDetailWidget_C");
-static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, UberGraphFrame) == 0x000298, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, PerksList) == 0x0002A0, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::PerksList' has a wrong offset!");
-static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, EnableMouseTooltips) == 0x0002A8, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::EnableMouseTooltips' has a wrong offset!");
-static_assert(offsetof(UPrimaryHeroActiveAbilitiesListDetailWidget_C, DisplayOutsideOfHeroSquad) == 0x0002A9, "Member 'UPrimaryHeroActiveAbilitiesListDetailWidget_C::DisplayOutsideOfHeroSquad' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

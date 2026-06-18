@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotEntry.ItemTransformSlotEntry_C
 // 0x0050 (0x0288 - 0x0238)
@@ -43,23 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformSlotEntry_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformSlotEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformSlotEntry_C")
 	}
 	static class UItemTransformSlotEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformSlotEntry_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotEntry_C) == 0x000008, "Wrong alignment on UItemTransformSlotEntry_C");
-static_assert(sizeof(UItemTransformSlotEntry_C) == 0x000288, "Wrong size on UItemTransformSlotEntry_C");
-static_assert(offsetof(UItemTransformSlotEntry_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformSlotEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, PanelButton) == 0x000240, "Member 'UItemTransformSlotEntry_C::PanelButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, SacrificePointText) == 0x000248, "Member 'UItemTransformSlotEntry_C::SacrificePointText' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, SelectedItemCard) == 0x000250, "Member 'UItemTransformSlotEntry_C::SelectedItemCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, SlotSizeBox) == 0x000258, "Member 'UItemTransformSlotEntry_C::SlotSizeBox' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, OnSlotChosen) == 0x000260, "Member 'UItemTransformSlotEntry_C::OnSlotChosen' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, CurrentItem) == 0x000270, "Member 'UItemTransformSlotEntry_C::CurrentItem' has a wrong offset!");
-static_assert(offsetof(UItemTransformSlotEntry_C, OnSlotSelected) == 0x000278, "Member 'UItemTransformSlotEntry_C::OnSlotSelected' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

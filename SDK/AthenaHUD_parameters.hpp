@@ -18,8 +18,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaHUD.AthenaHUD_C.ExecuteUbergraph_AthenaHUD
 // 0x0600 (0x0600 - 0x0000)
@@ -39,9 +39,9 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue6;                  // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(struct FFortPlayerDeathReport& DeathReport)> K2Node_CreateDelegate_OutputDelegate4;             // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(bool bCursorModeEnabled, class FName ActionName, class UUserWidget* CursorModeContentWidget)> K2Node_CreateDelegate_OutputDelegate5;             // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EFortQuickBars QuickbarIndex, int32 Slot)> K2Node_CreateDelegate_OutputDelegate6;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FFortPlayerDeathReport& DeathReport)> K2Node_CreateDelegate_OutputDelegate4; // 0x0070(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bCursorModeEnabled, class FName ActionName, class UUserWidget* CursorModeContentWidget)> K2Node_CreateDelegate_OutputDelegate5; // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortQuickBars QuickbarIndex, int32 Slot)> K2Node_CreateDelegate_OutputDelegate6; // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 	EFortUIState                                  K2Node_Event_PreviousUIState;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue7;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,9 +74,9 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue11;                 // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortActorCanvasSlot*                   CallFunc_AddActorIndicator_ReturnValue2;           // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPickerContext*                     CallFunc_GetContext_ReturnValue12;                 // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortPickerMode Mode, int32 InitialOption, bool bIgnoreFirstAccept)> K2Node_CreateDelegate_OutputDelegate10;            // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* PointOfInterest, class FText DisplayText, class UTexture2D* DisplayImage)> K2Node_CreateDelegate_OutputDelegate11;            // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* PointOfInterest)> K2Node_CreateDelegate_OutputDelegate12;            // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortPickerMode Mode, int32 InitialOption, bool bIgnoreFirstAccept)> K2Node_CreateDelegate_OutputDelegate10; // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* PointOfInterest, class FText DisplayText, class UTexture2D* DisplayImage)> K2Node_CreateDelegate_OutputDelegate11; // 0x0188(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* PointOfInterest)> K2Node_CreateDelegate_OutputDelegate12;           // 0x0198(0x0010)(ZeroConstructor, NoDestructor)
 	class UWidget*                                K2Node_Event_Widget;                               // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FContentPushState                      K2Node_Event_State;                                // 0x01B0(0x0003)(NoDestructor)
 	uint8                                         Pad_1B3[0x5];                                      // 0x01B3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
@@ -99,14 +99,14 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02F0(0x0018)()
 	uint8                                         Pad_308[0x8];                                      // 0x0308(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortDialogDescription                 K2Node_MakeStruct_FortDialogDescription;           // 0x0310(0x0170)(ContainsInstancedReference)
-	TDelegate<void(struct FGameplayTagContainer& HiddenHUDElementTags)> K2Node_CreateDelegate_OutputDelegate13;            // 0x0480(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayTagContainer& HiddenHUDElementTags)> K2Node_CreateDelegate_OutputDelegate13; // 0x0480(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortAsyncAction_TriggerNotification*   CallFunc_TriggerNotification_ReturnValue;          // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_499[0x7];                                      // 0x0499(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortPlayerDeathReport                 K2Node_CustomEvent_DeathReport;                    // 0x04A0(0x0050)(ConstParm)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate14;            // 0x04F0(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate15;            // 0x0500(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(TArray<class UFortQuestItem*>& Quests)> K2Node_CreateDelegate_OutputDelegate16;            // 0x0510(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortQuestItem*>& Quests)> K2Node_CreateDelegate_OutputDelegate16; // 0x0510(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue3;             // 0x0520(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate17;            // 0x0528(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena; // 0x0538(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,7 +120,7 @@ public:
 	class FText                                   K2Node_CustomEvent_FailureText;                    // 0x0580(0x0018)()
 	bool                                          CallFunc_HasTag_ReturnValue;                       // 0x0598(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_599[0x7];                                      // 0x0599(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FGameplayTagContainer& FailedReason, class FText FailureText)> K2Node_CreateDelegate_OutputDelegate18;            // 0x05A0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayTagContainer& FailedReason, class FText FailureText)> K2Node_CreateDelegate_OutputDelegate18; // 0x05A0(0x0010)(ZeroConstructor, NoDestructor)
 	class UAthenaTeamMemberIndicator_C*           CallFunc_Array_Get_Item2;                          // 0x05B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoveChild_ReturnValue;                  // 0x05B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5B9[0x3];                                      // 0x05B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -138,101 +138,6 @@ public:
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x05FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue3;                 // 0x05FD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD) == 0x000010, "Wrong alignment on AthenaHUD_C_ExecuteUbergraph_AthenaHUD");
-static_assert(sizeof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD) == 0x000600, "Wrong size on AthenaHUD_C_ExecuteUbergraph_AthenaHUD");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, EntryPoint) == 0x000000, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue3) == 0x000018, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue4) == 0x000030, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue5) == 0x000038, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate2) == 0x000040, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate3) == 0x000050, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_int_Array_Index_Variable) == 0x000060, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue6) == 0x000068, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate4) == 0x000070, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate5) == 0x000080, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate6) == 0x000090, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_Event_PreviousUIState) == 0x0000A0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_Event_PreviousUIState' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue7) == 0x0000A8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate7) == 0x0000B0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate7' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_int_Loop_Counter_Variable) == 0x0000C0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_int_Loop_Counter_Variable2) == 0x0000C4, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Add_IntInt_ReturnValue) == 0x0000C8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Add_IntInt_ReturnValue2) == 0x0000CC, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue8) == 0x0000D0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate8) == 0x0000D8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate8' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetQuestManager_ReturnValue) == 0x0000E8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000F0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_byte_Variable) == 0x0000F8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Create_ReturnValue) == 0x000100, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_AddActorIndicator_ReturnValue) == 0x000108, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_AddActorIndicator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate9) == 0x000110, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate9' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_byte_Variable2) == 0x000120, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_int_Array_Index_Variable2) == 0x000124, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CustomEvent_Quests) == 0x000128, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CustomEvent_Quests' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue9) == 0x000138, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Array_Length_ReturnValue) == 0x000140, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Less_IntInt_ReturnValue) == 0x000144, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_bool_Variable) == 0x000145, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue10) == 0x000148, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000150, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Create_ReturnValue2) == 0x000158, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue11) == 0x000160, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_AddActorIndicator_ReturnValue2) == 0x000168, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_AddActorIndicator_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue12) == 0x000170, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate10) == 0x000178, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate10' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate11) == 0x000188, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate11' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate12) == 0x000198, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate12' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_Event_Widget) == 0x0001A8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_Event_State) == 0x0001B0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_Event_State' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetUIManagerWidget_ReturnValue) == 0x0001B8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetCachedWidget_ReturnValue) == 0x0001C0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_int_Loop_Counter_Variable3) == 0x0001C8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_int_Loop_Counter_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue13) == 0x0001D0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Add_IntInt_ReturnValue3) == 0x0001D8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, Temp_int_Array_Index_Variable3) == 0x0001DC, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::Temp_int_Array_Index_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CustomEvent_UsingGamepad) == 0x0001E0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CustomEvent_UsingGamepad' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Array_Get_Item) == 0x0001E8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x0001F0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_Select_Default) == 0x000280, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetDisplayName_ReturnValue) == 0x000288, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_MakeStruct_FormatArgumentData) == 0x0002A0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_MakeArray_Array) == 0x0002E0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Format_ReturnValue) == 0x0002F0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_MakeStruct_FortDialogDescription) == 0x000310, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_MakeStruct_FortDialogDescription' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate13) == 0x000480, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate13' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_TriggerNotification_ReturnValue) == 0x000490, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_TriggerNotification_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_IsValid_ReturnValue) == 0x000498, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CustomEvent_DeathReport) == 0x0004A0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CustomEvent_DeathReport' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate14) == 0x0004F0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate14' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate15) == 0x000500, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate15' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate16) == 0x000510, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate16' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetOwningPlayer_ReturnValue3) == 0x000520, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate17) == 0x000528, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate17' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000538, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_DynamicCast_bSuccess) == 0x000540, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetOwningPlayer_ReturnValue4) == 0x000548, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetOwningPlayer_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_DynamicCast_AsFort_Player_Controller_Athena2) == 0x000550, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_DynamicCast_AsFort_Player_Controller_Athena2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_DynamicCast_bSuccess2) == 0x000558, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CustomEvent_FailedReason) == 0x000560, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CustomEvent_FailedReason' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CustomEvent_FailureText) == 0x000580, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CustomEvent_FailureText' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_HasTag_ReturnValue) == 0x000598, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_HasTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_CreateDelegate_OutputDelegate18) == 0x0005A0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_CreateDelegate_OutputDelegate18' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Array_Get_Item2) == 0x0005B0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_RemoveChild_ReturnValue) == 0x0005B8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_RemoveChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Array_Length_ReturnValue2) == 0x0005BC, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetContext_ReturnValue14) == 0x0005C0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetContext_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Less_IntInt_ReturnValue2) == 0x0005C8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetOwningPlayer_ReturnValue5) == 0x0005D0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetOwningPlayer_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_GetOwningPlayer_ReturnValue6) == 0x0005D8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_GetOwningPlayer_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_DynamicCast_AsFort_Player_Controller_Athena3) == 0x0005E0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_DynamicCast_AsFort_Player_Controller_Athena3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, K2Node_DynamicCast_bSuccess3) == 0x0005E8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Array_Get_Item3) == 0x0005F0, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Array_Get_Item3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Array_Length_ReturnValue3) == 0x0005F8, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Array_Length_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x0005FC, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ExecuteUbergraph_AthenaHUD, CallFunc_Less_IntInt_ReturnValue3) == 0x0005FD, "Member 'AthenaHUD_C_ExecuteUbergraph_AthenaHUD::CallFunc_Less_IntInt_ReturnValue3' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.OnUnableToPerformAction
 // 0x0038 (0x0038 - 0x0000)
@@ -242,10 +147,6 @@ public:
 	struct FGameplayTagContainer                  FailedReason;                                      // 0x0000(0x0020)(Parm)
 	class FText                                   FailureText;                                       // 0x0020(0x0018)(Parm)
 };
-static_assert(alignof(AthenaHUD_C_OnUnableToPerformAction) == 0x000008, "Wrong alignment on AthenaHUD_C_OnUnableToPerformAction");
-static_assert(sizeof(AthenaHUD_C_OnUnableToPerformAction) == 0x000038, "Wrong size on AthenaHUD_C_OnUnableToPerformAction");
-static_assert(offsetof(AthenaHUD_C_OnUnableToPerformAction, FailedReason) == 0x000000, "Member 'AthenaHUD_C_OnUnableToPerformAction::FailedReason' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnUnableToPerformAction, FailureText) == 0x000020, "Member 'AthenaHUD_C_OnUnableToPerformAction::FailureText' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.On Player Died
 // 0x0050 (0x0050 - 0x0000)
@@ -254,9 +155,6 @@ struct AthenaHUD_C_On_Player_Died final
 public:
 	struct FFortPlayerDeathReport                 DeathReport;                                       // 0x0000(0x0050)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaHUD_C_On_Player_Died) == 0x000008, "Wrong alignment on AthenaHUD_C_On_Player_Died");
-static_assert(sizeof(AthenaHUD_C_On_Player_Died) == 0x000050, "Wrong size on AthenaHUD_C_On_Player_Died");
-static_assert(offsetof(AthenaHUD_C_On_Player_Died, DeathReport) == 0x000000, "Member 'AthenaHUD_C_On_Player_Died::DeathReport' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleInputMethodChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -265,9 +163,6 @@ struct AthenaHUD_C_HandleInputMethodChanged final
 public:
 	bool                                          UsingGamepad;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_HandleInputMethodChanged) == 0x000001, "Wrong alignment on AthenaHUD_C_HandleInputMethodChanged");
-static_assert(sizeof(AthenaHUD_C_HandleInputMethodChanged) == 0x000001, "Wrong size on AthenaHUD_C_HandleInputMethodChanged");
-static_assert(offsetof(AthenaHUD_C_HandleInputMethodChanged, UsingGamepad) == 0x000000, "Member 'AthenaHUD_C_HandleInputMethodChanged::UsingGamepad' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.PushContentWidgetInternal
 // 0x0010 (0x0010 - 0x0000)
@@ -277,10 +172,6 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FContentPushState                      State;                                             // 0x0008(0x0003)(Parm, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_PushContentWidgetInternal) == 0x000008, "Wrong alignment on AthenaHUD_C_PushContentWidgetInternal");
-static_assert(sizeof(AthenaHUD_C_PushContentWidgetInternal) == 0x000010, "Wrong size on AthenaHUD_C_PushContentWidgetInternal");
-static_assert(offsetof(AthenaHUD_C_PushContentWidgetInternal, Widget) == 0x000000, "Member 'AthenaHUD_C_PushContentWidgetInternal::Widget' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_PushContentWidgetInternal, State) == 0x000008, "Member 'AthenaHUD_C_PushContentWidgetInternal::State' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.QuestsCompleted
 // 0x0010 (0x0010 - 0x0000)
@@ -289,9 +180,6 @@ struct AthenaHUD_C_QuestsCompleted final
 public:
 	TArray<class UFortQuestItem*>                 Quests;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(AthenaHUD_C_QuestsCompleted) == 0x000008, "Wrong alignment on AthenaHUD_C_QuestsCompleted");
-static_assert(sizeof(AthenaHUD_C_QuestsCompleted) == 0x000010, "Wrong size on AthenaHUD_C_QuestsCompleted");
-static_assert(offsetof(AthenaHUD_C_QuestsCompleted, Quests) == 0x000000, "Member 'AthenaHUD_C_QuestsCompleted::Quests' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.OnEnterState
 // 0x0001 (0x0001 - 0x0000)
@@ -300,9 +188,6 @@ struct AthenaHUD_C_OnEnterState final
 public:
 	EFortUIState                                  PreviousUIState;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_OnEnterState) == 0x000001, "Wrong alignment on AthenaHUD_C_OnEnterState");
-static_assert(sizeof(AthenaHUD_C_OnEnterState) == 0x000001, "Wrong size on AthenaHUD_C_OnEnterState");
-static_assert(offsetof(AthenaHUD_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'AthenaHUD_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleCursorModeChanged
 // 0x00A0 (0x00A0 - 0x0000)
@@ -342,32 +227,6 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue3;                  // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue2;             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaHUD_C_HandleCursorModeChanged) == 0x000008, "Wrong alignment on AthenaHUD_C_HandleCursorModeChanged");
-static_assert(sizeof(AthenaHUD_C_HandleCursorModeChanged) == 0x0000A0, "Wrong size on AthenaHUD_C_HandleCursorModeChanged");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, IsEnabled) == 0x000000, "Member 'AthenaHUD_C_HandleCursorModeChanged::IsEnabled' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, ActionName) == 0x000008, "Member 'AthenaHUD_C_HandleCursorModeChanged::ActionName' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CursorModeContentCustomWidget) == 0x000010, "Member 'AthenaHUD_C_HandleCursorModeChanged::CursorModeContentCustomWidget' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_SwitchName_CmpSuccess) == 0x000018, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, Temp_byte_Variable) == 0x000019, "Member 'AthenaHUD_C_HandleCursorModeChanged::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, Temp_byte_Variable2) == 0x00001A, "Member 'AthenaHUD_C_HandleCursorModeChanged::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, Temp_bool_Variable) == 0x00001B, "Member 'AthenaHUD_C_HandleCursorModeChanged::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_Select_Default) == 0x000028, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, Temp_byte_Variable3) == 0x000029, "Member 'AthenaHUD_C_HandleCursorModeChanged::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000030, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, Temp_byte_Variable4) == 0x000038, "Member 'AthenaHUD_C_HandleCursorModeChanged::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_DynamicCast_AsUIManager) == 0x000040, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_DynamicCast_AsUIManager' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_DynamicCast_AsFeedback) == 0x000050, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_DynamicCast_AsFeedback' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_DynamicCast_bSuccess2) == 0x000058, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetUIManagerWidget_ReturnValue2) == 0x000060, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetUIManagerWidget_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetCachedWidget_ReturnValue) == 0x000068, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, Temp_bool_Variable2) == 0x000070, "Member 'AthenaHUD_C_HandleCursorModeChanged::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetContext_ReturnValue2) == 0x000078, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetInputManager_ReturnValue) == 0x000080, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, K2Node_Select2_Default) == 0x000088, "Member 'AthenaHUD_C_HandleCursorModeChanged::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetContext_ReturnValue3) == 0x000090, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleCursorModeChanged, CallFunc_GetInputManager_ReturnValue2) == 0x000098, "Member 'AthenaHUD_C_HandleCursorModeChanged::CallFunc_GetInputManager_ReturnValue2' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleQuickbarSlotFocusSlotChanged
 // 0x000C (0x000C - 0x0000)
@@ -379,11 +238,6 @@ public:
 	int32                                         Slot_0;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged) == 0x000004, "Wrong alignment on AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged");
-static_assert(sizeof(AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged) == 0x00000C, "Wrong size on AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged");
-static_assert(offsetof(AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged, Quickbar_Index) == 0x000000, "Member 'AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged::Quickbar_Index' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged, Slot_0) == 0x000004, "Member 'AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged::Slot_0' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000008, "Member 'AthenaHUD_C_HandleQuickbarSlotFocusSlotChanged::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.SetQuickbarSizes
 // 0x0001 (0x0001 - 0x0000)
@@ -392,9 +246,6 @@ struct AthenaHUD_C_SetQuickbarSizes final
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_SetQuickbarSizes) == 0x000001, "Wrong alignment on AthenaHUD_C_SetQuickbarSizes");
-static_assert(sizeof(AthenaHUD_C_SetQuickbarSizes) == 0x000001, "Wrong size on AthenaHUD_C_SetQuickbarSizes");
-static_assert(offsetof(AthenaHUD_C_SetQuickbarSizes, K2Node_SwitchEnum_CmpSuccess) == 0x000000, "Member 'AthenaHUD_C_SetQuickbarSizes::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.OnHandleAction
 // 0x0310 (0x0310 - 0x0000)
@@ -418,20 +269,6 @@ public:
 	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            K2Node_Select_Default;                             // 0x0258(0x00B8)()
 };
-static_assert(alignof(AthenaHUD_C_OnHandleAction) == 0x000008, "Wrong alignment on AthenaHUD_C_OnHandleAction");
-static_assert(sizeof(AthenaHUD_C_OnHandleAction) == 0x000310, "Wrong size on AthenaHUD_C_OnHandleAction");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, Result) == 0x000000, "Member 'AthenaHUD_C_OnHandleAction::Result' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, bPassThrough) == 0x0000B8, "Member 'AthenaHUD_C_OnHandleAction::bPassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, HandleAction) == 0x0000B9, "Member 'AthenaHUD_C_OnHandleAction::HandleAction' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, Temp_bool_Variable) == 0x0000BA, "Member 'AthenaHUD_C_OnHandleAction::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_GetContext_ReturnValue) == 0x0000C0, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_GetContext_ReturnValue2) == 0x0000C8, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_ShouldCloseMenuOnEscape_ReturnValue) == 0x0000D0, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_ShouldCloseMenuOnEscape_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_Handled_ReturnValue) == 0x0000D8, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_Not_PreBool_ReturnValue) == 0x000190, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_Unhandled_ReturnValue) == 0x000198, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, CallFunc_BooleanAND_ReturnValue) == 0x000250, "Member 'AthenaHUD_C_OnHandleAction::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnHandleAction, K2Node_Select_Default) == 0x000258, "Member 'AthenaHUD_C_OnHandleAction::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.OnPlayerTargetingChanged
 // 0x0028 (0x0028 - 0x0000)
@@ -445,13 +282,6 @@ public:
 	class AFortWeaponRanged*                      K2Node_DynamicCast_AsFort_Weapon_Ranged;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_OnPlayerTargetingChanged) == 0x000008, "Wrong alignment on AthenaHUD_C_OnPlayerTargetingChanged");
-static_assert(sizeof(AthenaHUD_C_OnPlayerTargetingChanged) == 0x000028, "Wrong size on AthenaHUD_C_OnPlayerTargetingChanged");
-static_assert(offsetof(AthenaHUD_C_OnPlayerTargetingChanged, IsTargeting) == 0x000000, "Member 'AthenaHUD_C_OnPlayerTargetingChanged::IsTargeting' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnPlayerTargetingChanged, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaHUD_C_OnPlayerTargetingChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnPlayerTargetingChanged, CallFunc_GetEquippedWeapon_ReturnValue) == 0x000010, "Member 'AthenaHUD_C_OnPlayerTargetingChanged::CallFunc_GetEquippedWeapon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnPlayerTargetingChanged, K2Node_DynamicCast_AsFort_Weapon_Ranged) == 0x000018, "Member 'AthenaHUD_C_OnPlayerTargetingChanged::K2Node_DynamicCast_AsFort_Weapon_Ranged' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_OnPlayerTargetingChanged, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AthenaHUD_C_OnPlayerTargetingChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.SetCursorModeContent
 // 0x0028 (0x0028 - 0x0000)
@@ -465,13 +295,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaHUD_C_SetCursorModeContent) == 0x000008, "Wrong alignment on AthenaHUD_C_SetCursorModeContent");
-static_assert(sizeof(AthenaHUD_C_SetCursorModeContent) == 0x000028, "Wrong size on AthenaHUD_C_SetCursorModeContent");
-static_assert(offsetof(AthenaHUD_C_SetCursorModeContent, CustomWidget) == 0x000000, "Member 'AthenaHUD_C_SetCursorModeContent::CustomWidget' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetCursorModeContent, ActionName) == 0x000008, "Member 'AthenaHUD_C_SetCursorModeContent::ActionName' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetCursorModeContent, CursorWidget) == 0x000010, "Member 'AthenaHUD_C_SetCursorModeContent::CursorWidget' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetCursorModeContent, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'AthenaHUD_C_SetCursorModeContent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetCursorModeContent, CallFunc_AddChild_ReturnValue) == 0x000020, "Member 'AthenaHUD_C_SetCursorModeContent::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleIndicatorModeChanged
 // 0x0005 (0x0005 - 0x0000)
@@ -484,13 +307,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_HandleIndicatorModeChanged) == 0x000001, "Wrong alignment on AthenaHUD_C_HandleIndicatorModeChanged");
-static_assert(sizeof(AthenaHUD_C_HandleIndicatorModeChanged) == 0x000005, "Wrong size on AthenaHUD_C_HandleIndicatorModeChanged");
-static_assert(offsetof(AthenaHUD_C_HandleIndicatorModeChanged, InidicatorsEnabled) == 0x000000, "Member 'AthenaHUD_C_HandleIndicatorModeChanged::InidicatorsEnabled' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleIndicatorModeChanged, Temp_bool_Variable) == 0x000001, "Member 'AthenaHUD_C_HandleIndicatorModeChanged::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleIndicatorModeChanged, Temp_byte_Variable) == 0x000002, "Member 'AthenaHUD_C_HandleIndicatorModeChanged::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleIndicatorModeChanged, Temp_byte_Variable2) == 0x000003, "Member 'AthenaHUD_C_HandleIndicatorModeChanged::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleIndicatorModeChanged, K2Node_Select_Default) == 0x000004, "Member 'AthenaHUD_C_HandleIndicatorModeChanged::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.SetPersistentHUDContentVisibility
 // 0x0005 (0x0005 - 0x0000)
@@ -503,13 +319,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_SetPersistentHUDContentVisibility) == 0x000001, "Wrong alignment on AthenaHUD_C_SetPersistentHUDContentVisibility");
-static_assert(sizeof(AthenaHUD_C_SetPersistentHUDContentVisibility) == 0x000005, "Wrong size on AthenaHUD_C_SetPersistentHUDContentVisibility");
-static_assert(offsetof(AthenaHUD_C_SetPersistentHUDContentVisibility, Visible) == 0x000000, "Member 'AthenaHUD_C_SetPersistentHUDContentVisibility::Visible' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetPersistentHUDContentVisibility, Temp_bool_Variable) == 0x000001, "Member 'AthenaHUD_C_SetPersistentHUDContentVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetPersistentHUDContentVisibility, Temp_byte_Variable) == 0x000002, "Member 'AthenaHUD_C_SetPersistentHUDContentVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetPersistentHUDContentVisibility, Temp_byte_Variable2) == 0x000003, "Member 'AthenaHUD_C_SetPersistentHUDContentVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_SetPersistentHUDContentVisibility, K2Node_Select_Default) == 0x000004, "Member 'AthenaHUD_C_SetPersistentHUDContentVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.ToggleChat
 // 0x0001 (0x0001 - 0x0000)
@@ -518,9 +327,6 @@ struct AthenaHUD_C_ToggleChat final
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_ToggleChat) == 0x000001, "Wrong alignment on AthenaHUD_C_ToggleChat");
-static_assert(sizeof(AthenaHUD_C_ToggleChat) == 0x000001, "Wrong size on AthenaHUD_C_ToggleChat");
-static_assert(offsetof(AthenaHUD_C_ToggleChat, Show) == 0x000000, "Member 'AthenaHUD_C_ToggleChat::Show' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.ToggleTopLevelMenu
 // 0x0001 (0x0001 - 0x0000)
@@ -529,9 +335,6 @@ struct AthenaHUD_C_ToggleTopLevelMenu final
 public:
 	bool                                          Show;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_ToggleTopLevelMenu) == 0x000001, "Wrong alignment on AthenaHUD_C_ToggleTopLevelMenu");
-static_assert(sizeof(AthenaHUD_C_ToggleTopLevelMenu) == 0x000001, "Wrong size on AthenaHUD_C_ToggleTopLevelMenu");
-static_assert(offsetof(AthenaHUD_C_ToggleTopLevelMenu, Show) == 0x000000, "Member 'AthenaHUD_C_ToggleTopLevelMenu::Show' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.ShowPicker
 // 0x000C (0x000C - 0x0000)
@@ -545,13 +348,6 @@ public:
 	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_ShowPicker) == 0x000004, "Wrong alignment on AthenaHUD_C_ShowPicker");
-static_assert(sizeof(AthenaHUD_C_ShowPicker) == 0x00000C, "Wrong size on AthenaHUD_C_ShowPicker");
-static_assert(offsetof(AthenaHUD_C_ShowPicker, Mode) == 0x000000, "Member 'AthenaHUD_C_ShowPicker::Mode' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ShowPicker, InitialOption) == 0x000004, "Member 'AthenaHUD_C_ShowPicker::InitialOption' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ShowPicker, IgnoreFirstAccept) == 0x000008, "Member 'AthenaHUD_C_ShowPicker::IgnoreFirstAccept' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ShowPicker, CallFunc_GetVisibility_ReturnValue) == 0x000009, "Member 'AthenaHUD_C_ShowPicker::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_ShowPicker, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x00000A, "Member 'AthenaHUD_C_ShowPicker::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleOnPointOfInterestAdded
 // 0x0040 (0x0040 - 0x0000)
@@ -566,15 +362,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_HandleOnPointOfInterestAdded) == 0x000008, "Wrong alignment on AthenaHUD_C_HandleOnPointOfInterestAdded");
-static_assert(sizeof(AthenaHUD_C_HandleOnPointOfInterestAdded) == 0x000040, "Wrong size on AthenaHUD_C_HandleOnPointOfInterestAdded");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, PointOfInterest) == 0x000000, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::PointOfInterest' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, DisplayText) == 0x000008, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::DisplayText' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, DisplayImage) == 0x000020, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::DisplayImage' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, CallFunc_Array_Get_Item) == 0x000028, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, CallFunc_Array_AddUnique_ReturnValue) == 0x000030, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestAdded, CallFunc_Greater_IntInt_ReturnValue) == 0x000038, "Member 'AthenaHUD_C_HandleOnPointOfInterestAdded::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleOnPointOfInterestRemoved
 // 0x0040 (0x0040 - 0x0000)
@@ -601,23 +388,6 @@ public:
 	uint8                                         Pad_33[0x5];                                       // 0x0033(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInterestIndicatorWidget_C*             CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaHUD_C_HandleOnPointOfInterestRemoved) == 0x000008, "Wrong alignment on AthenaHUD_C_HandleOnPointOfInterestRemoved");
-static_assert(sizeof(AthenaHUD_C_HandleOnPointOfInterestRemoved) == 0x000040, "Wrong size on AthenaHUD_C_HandleOnPointOfInterestRemoved");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, PointOfInterest) == 0x000000, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::PointOfInterest' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CurrentPointOfInterestWidget) == 0x000008, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CurrentPointOfInterestWidget' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, Removed) == 0x000010, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::Removed' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, Temp_bool_True_if_break_was_hit_Variable) == 0x000011, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, Temp_int_Array_Index_Variable) == 0x000014, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Array_AddUnique_ReturnValue) == 0x000024, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Array_RemoveItem_ReturnValue) == 0x000028, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Array_Length_ReturnValue) == 0x00002C, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_RemovePointOfInterest_Removed) == 0x000030, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_RemovePointOfInterest_Removed' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Less_IntInt_ReturnValue) == 0x000031, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_BooleanAND_ReturnValue) == 0x000032, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleOnPointOfInterestRemoved, CallFunc_Array_Get_Item) == 0x000038, "Member 'AthenaHUD_C_HandleOnPointOfInterestRemoved::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.CreateInterestIndicatorWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -630,12 +400,6 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortActorCanvasSlot*                   CallFunc_AddActorIndicator_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaHUD_C_CreateInterestIndicatorWidget) == 0x000008, "Wrong alignment on AthenaHUD_C_CreateInterestIndicatorWidget");
-static_assert(sizeof(AthenaHUD_C_CreateInterestIndicatorWidget) == 0x000020, "Wrong size on AthenaHUD_C_CreateInterestIndicatorWidget");
-static_assert(offsetof(AthenaHUD_C_CreateInterestIndicatorWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000000, "Member 'AthenaHUD_C_CreateInterestIndicatorWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CreateInterestIndicatorWidget, CallFunc_Create_ReturnValue) == 0x000008, "Member 'AthenaHUD_C_CreateInterestIndicatorWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CreateInterestIndicatorWidget, CallFunc_Array_AddUnique_ReturnValue) == 0x000010, "Member 'AthenaHUD_C_CreateInterestIndicatorWidget::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CreateInterestIndicatorWidget, CallFunc_AddActorIndicator_ReturnValue) == 0x000018, "Member 'AthenaHUD_C_CreateInterestIndicatorWidget::CallFunc_AddActorIndicator_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.PopContentWidgetInternal
 // 0x0018 (0x0018 - 0x0000)
@@ -647,11 +411,6 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_PopWigdet_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaHUD_C_PopContentWidgetInternal) == 0x000008, "Wrong alignment on AthenaHUD_C_PopContentWidgetInternal");
-static_assert(sizeof(AthenaHUD_C_PopContentWidgetInternal) == 0x000018, "Wrong size on AthenaHUD_C_PopContentWidgetInternal");
-static_assert(offsetof(AthenaHUD_C_PopContentWidgetInternal, State) == 0x000000, "Member 'AthenaHUD_C_PopContentWidgetInternal::State' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'AthenaHUD_C_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_PopContentWidgetInternal, CallFunc_PopWigdet_ReturnValue) == 0x000010, "Member 'AthenaHUD_C_PopContentWidgetInternal::CallFunc_PopWigdet_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.OnHUDElementVisibilityChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -660,9 +419,6 @@ struct AthenaHUD_C_OnHUDElementVisibilityChanged final
 public:
 	struct FGameplayTagContainer                  HiddenHUDElementTags;                              // 0x0000(0x0020)(Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaHUD_C_OnHUDElementVisibilityChanged) == 0x000008, "Wrong alignment on AthenaHUD_C_OnHUDElementVisibilityChanged");
-static_assert(sizeof(AthenaHUD_C_OnHUDElementVisibilityChanged) == 0x000020, "Wrong size on AthenaHUD_C_OnHUDElementVisibilityChanged");
-static_assert(offsetof(AthenaHUD_C_OnHUDElementVisibilityChanged, HiddenHUDElementTags) == 0x000000, "Member 'AthenaHUD_C_OnHUDElementVisibilityChanged::HiddenHUDElementTags' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.CheckHUDElementVisibility
 // 0x0058 (0x0058 - 0x0000)
@@ -676,14 +432,6 @@ public:
 	bool                                          CallFunc_HasAnyTags_ReturnValue;                   // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_CheckHUDElementVisibility) == 0x000008, "Wrong alignment on AthenaHUD_C_CheckHUDElementVisibility");
-static_assert(sizeof(AthenaHUD_C_CheckHUDElementVisibility) == 0x000058, "Wrong size on AthenaHUD_C_CheckHUDElementVisibility");
-static_assert(offsetof(AthenaHUD_C_CheckHUDElementVisibility, HiddenHUDElementTags) == 0x000000, "Member 'AthenaHUD_C_CheckHUDElementVisibility::HiddenHUDElementTags' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CheckHUDElementVisibility, HUDElementTagToCheck) == 0x000020, "Member 'AthenaHUD_C_CheckHUDElementVisibility::HUDElementTagToCheck' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CheckHUDElementVisibility, HUDElement) == 0x000028, "Member 'AthenaHUD_C_CheckHUDElementVisibility::HUDElement' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CheckHUDElementVisibility, CallFunc_MakeGameplayTagContainerFromTag_ReturnValue) == 0x000030, "Member 'AthenaHUD_C_CheckHUDElementVisibility::CallFunc_MakeGameplayTagContainerFromTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CheckHUDElementVisibility, CallFunc_HasAnyTags_ReturnValue) == 0x000050, "Member 'AthenaHUD_C_CheckHUDElementVisibility::CallFunc_HasAnyTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_CheckHUDElementVisibility, CallFunc_IsVisible_ReturnValue) == 0x000051, "Member 'AthenaHUD_C_CheckHUDElementVisibility::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.HandleAircraftModeChanged
 // 0x0038 (0x0038 - 0x0000)
@@ -696,13 +444,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsInAircraft_ReturnValue;                 // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaHUD_C_HandleAircraftModeChanged) == 0x000008, "Wrong alignment on AthenaHUD_C_HandleAircraftModeChanged");
-static_assert(sizeof(AthenaHUD_C_HandleAircraftModeChanged) == 0x000038, "Wrong size on AthenaHUD_C_HandleAircraftModeChanged");
-static_assert(offsetof(AthenaHUD_C_HandleAircraftModeChanged, CallFunc_MakeGameplayTagContainerFromTag_ReturnValue) == 0x000000, "Member 'AthenaHUD_C_HandleAircraftModeChanged::CallFunc_MakeGameplayTagContainerFromTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleAircraftModeChanged, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'AthenaHUD_C_HandleAircraftModeChanged::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleAircraftModeChanged, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000028, "Member 'AthenaHUD_C_HandleAircraftModeChanged::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleAircraftModeChanged, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'AthenaHUD_C_HandleAircraftModeChanged::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_HandleAircraftModeChanged, CallFunc_IsInAircraft_ReturnValue) == 0x000031, "Member 'AthenaHUD_C_HandleAircraftModeChanged::CallFunc_IsInAircraft_ReturnValue' has a wrong offset!");
 
 // Function AthenaHUD.AthenaHUD_C.AddTeamMemberIndicator
 // 0x0040 (0x0040 - 0x0000)
@@ -720,16 +461,6 @@ public:
 	class UFortActorCanvasSlot*                   CallFunc_AddActorIndicator_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaHUD_C_AddTeamMemberIndicator) == 0x000008, "Wrong alignment on AthenaHUD_C_AddTeamMemberIndicator");
-static_assert(sizeof(AthenaHUD_C_AddTeamMemberIndicator) == 0x000040, "Wrong size on AthenaHUD_C_AddTeamMemberIndicator");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, Player_State) == 0x000000, "Member 'AthenaHUD_C_AddTeamMemberIndicator::Player_State' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, Team_Member_Index) == 0x000008, "Member 'AthenaHUD_C_AddTeamMemberIndicator::Team_Member_Index' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'AthenaHUD_C_AddTeamMemberIndicator::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000018, "Member 'AthenaHUD_C_AddTeamMemberIndicator::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, CallFunc_Create_ReturnValue) == 0x000020, "Member 'AthenaHUD_C_AddTeamMemberIndicator::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000028, "Member 'AthenaHUD_C_AddTeamMemberIndicator::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, CallFunc_AddActorIndicator_ReturnValue) == 0x000030, "Member 'AthenaHUD_C_AddTeamMemberIndicator::CallFunc_AddActorIndicator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaHUD_C_AddTeamMemberIndicator, CallFunc_Array_Add_ReturnValue) == 0x000038, "Member 'AthenaHUD_C_AddTeamMemberIndicator::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

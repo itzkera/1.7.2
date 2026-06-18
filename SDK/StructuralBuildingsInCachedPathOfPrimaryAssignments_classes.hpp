@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass StructuralBuildingsInCachedPathOfPrimaryAssignments.StructuralBuildingsInCachedPathOfPrimaryAssignments_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UStructuralBuildingsInCachedPathOfPrimaryAssignments_C final : public UFor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StructuralBuildingsInCachedPathOfPrimaryAssignments_C">();
+		BP_STATIC_CLASS_IMPL("StructuralBuildingsInCachedPathOfPrimaryAssignments_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StructuralBuildingsInCachedPathOfPrimaryAssignments_C")
 	}
 	static class UStructuralBuildingsInCachedPathOfPrimaryAssignments_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStructuralBuildingsInCachedPathOfPrimaryAssignments_C>();
 	}
 };
-static_assert(alignof(UStructuralBuildingsInCachedPathOfPrimaryAssignments_C) == 0x000008, "Wrong alignment on UStructuralBuildingsInCachedPathOfPrimaryAssignments_C");
-static_assert(sizeof(UStructuralBuildingsInCachedPathOfPrimaryAssignments_C) == 0x0000D0, "Wrong size on UStructuralBuildingsInCachedPathOfPrimaryAssignments_C");
 
-}
-
+SDK_NAMESPACE_END

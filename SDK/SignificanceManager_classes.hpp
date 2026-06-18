@@ -14,8 +14,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class SignificanceManager.SignificanceManager
 // 0x00C8 (0x00F0 - 0x0028)
@@ -28,16 +27,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SignificanceManager">();
+		STATIC_CLASS_IMPL("SignificanceManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SignificanceManager")
 	}
 	static class USignificanceManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USignificanceManager>();
 	}
 };
-static_assert(alignof(USignificanceManager) == 0x000008, "Wrong alignment on USignificanceManager");
-static_assert(sizeof(USignificanceManager) == 0x0000F0, "Wrong size on USignificanceManager");
-static_assert(offsetof(USignificanceManager, SignificanceManagerClassName) == 0x0000E0, "Member 'USignificanceManager::SignificanceManagerClassName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

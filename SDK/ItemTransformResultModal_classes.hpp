@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformResultModal.ItemTransformResultModal_C
 // 0x0070 (0x0450 - 0x03E0)
@@ -47,26 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformResultModal_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformResultModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformResultModal_C")
 	}
 	static class UItemTransformResultModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformResultModal_C>();
 	}
 };
-static_assert(alignof(UItemTransformResultModal_C) == 0x000008, "Wrong alignment on UItemTransformResultModal_C");
-static_assert(sizeof(UItemTransformResultModal_C) == 0x000450, "Wrong size on UItemTransformResultModal_C");
-static_assert(offsetof(UItemTransformResultModal_C, UberGraphFrame) == 0x0003E0, "Member 'UItemTransformResultModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, ContinueButton) == 0x0003E8, "Member 'UItemTransformResultModal_C::ContinueButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, InspectButton) == 0x0003F0, "Member 'UItemTransformResultModal_C::InspectButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, ItemDetailsWidget) == 0x0003F8, "Member 'UItemTransformResultModal_C::ItemDetailsWidget' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, RecycleItemsBorder) == 0x000400, "Member 'UItemTransformResultModal_C::RecycleItemsBorder' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, RecycleItemsBox) == 0x000408, "Member 'UItemTransformResultModal_C::RecycleItemsBox' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, TransformResultItemCard) == 0x000410, "Member 'UItemTransformResultModal_C::TransformResultItemCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, OnContinue) == 0x000418, "Member 'UItemTransformResultModal_C::OnContinue' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, RewardItem) == 0x000428, "Member 'UItemTransformResultModal_C::RewardItem' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, Reward_Items) == 0x000430, "Member 'UItemTransformResultModal_C::Reward_Items' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultModal_C, Recycle_Items) == 0x000440, "Member 'UItemTransformResultModal_C::Recycle_Items' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

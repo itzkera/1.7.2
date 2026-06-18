@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManangementItemTileButton.ItemManangementItemTileButton_C
 // 0x0098 (0x09A0 - 0x0908)
@@ -70,34 +69,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManangementItemTileButton_C">();
+		BP_STATIC_CLASS_IMPL("ItemManangementItemTileButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManangementItemTileButton_C")
 	}
 	static class UItemManangementItemTileButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManangementItemTileButton_C>();
 	}
 };
-static_assert(alignof(UItemManangementItemTileButton_C) == 0x000008, "Wrong alignment on UItemManangementItemTileButton_C");
-static_assert(sizeof(UItemManangementItemTileButton_C) == 0x0009A0, "Wrong size on UItemManangementItemTileButton_C");
-static_assert(offsetof(UItemManangementItemTileButton_C, UberGraphFrame) == 0x000908, "Member 'UItemManangementItemTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, CurrentlySlottedIndicatorLayer) == 0x000910, "Member 'UItemManangementItemTileButton_C::CurrentlySlottedIndicatorLayer' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, EquipSlotBorder) == 0x000918, "Member 'UItemManangementItemTileButton_C::EquipSlotBorder' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, EquipSlotOverlay) == 0x000920, "Member 'UItemManangementItemTileButton_C::EquipSlotOverlay' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, Image_0) == 0x000928, "Member 'UItemManangementItemTileButton_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, ImageSquad) == 0x000930, "Member 'UItemManangementItemTileButton_C::ImageSquad' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, InputActionWrapper) == 0x000938, "Member 'UItemManangementItemTileButton_C::InputActionWrapper' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, ItemWidgetHolder) == 0x000940, "Member 'UItemManangementItemTileButton_C::ItemWidgetHolder' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, MarkForMulchAction) == 0x000948, "Member 'UItemManangementItemTileButton_C::MarkForMulchAction' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, MulchCountText) == 0x000950, "Member 'UItemManangementItemTileButton_C::MulchCountText' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, MulchIndicatorBorder) == 0x000958, "Member 'UItemManangementItemTileButton_C::MulchIndicatorBorder' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, MulchStateBorder) == 0x000960, "Member 'UItemManangementItemTileButton_C::MulchStateBorder' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, MulchStateBox) == 0x000968, "Member 'UItemManangementItemTileButton_C::MulchStateBox' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, MulchStateIndicatorImage) == 0x000970, "Member 'UItemManangementItemTileButton_C::MulchStateIndicatorImage' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, NormalBangWrapper) == 0x000978, "Member 'UItemManangementItemTileButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, NotCraftableIconVerticalBox) == 0x000980, "Member 'UItemManangementItemTileButton_C::NotCraftableIconVerticalBox' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, QuantityProducedOverlay) == 0x000988, "Member 'UItemManangementItemTileButton_C::QuantityProducedOverlay' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, QuantityProducedText) == 0x000990, "Member 'UItemManangementItemTileButton_C::QuantityProducedText' has a wrong offset!");
-static_assert(offsetof(UItemManangementItemTileButton_C, TileDimmer) == 0x000998, "Member 'UItemManangementItemTileButton_C::TileDimmer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

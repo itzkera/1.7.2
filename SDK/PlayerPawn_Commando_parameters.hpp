@@ -15,8 +15,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.ExecuteUbergraph_PlayerPawn_Commando
 // 0x0590 (0x0590 - 0x0000)
@@ -83,52 +83,6 @@ public:
 	float                                         CallFunc_Montage_Play_ReturnValue;                 // 0x0584(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando) == 0x000010, "Wrong alignment on PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando");
-static_assert(sizeof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando) == 0x000590, "Wrong size on PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, EntryPoint) == 0x000000, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_EventType) == 0x000004, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_Parameters) == 0x000008, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_SwitchEnum_CmpSuccess) == 0x0000C0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_CreateDelegate_OutputDelegate) == 0x0000C8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0000D8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x0000E0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x0000F0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_MakeStruct_GameplayEventData) == 0x0000F8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_Event_NewController) == 0x0001A0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_Event_NewController' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_EventType5) == 0x0001A8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_EventType5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_Parameters5) == 0x0001B0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_Parameters5' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_SwitchEnum2_CmpSuccess) == 0x000268, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_MakeRotFromX_ReturnValue) == 0x00026C, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000278, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000280, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000288, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_MakeVector_ReturnValue) == 0x00028C, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_MakeVector_ReturnValue2) == 0x000298, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_MakeVector_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_EventType4) == 0x0002A4, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_EventType4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_Parameters4) == 0x0002A8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_Parameters4' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_SwitchEnum3_CmpSuccess) == 0x000360, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_SwitchEnum3_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_EventType3) == 0x000361, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_EventType3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_Parameters3) == 0x000368, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_Parameters3' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_EventType2) == 0x000420, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_EventType2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_GameplayCueEvent_Parameters2) == 0x000428, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_GameplayCueEvent_Parameters2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_SwitchEnum4_CmpSuccess) == 0x0004E0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_SwitchEnum4_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_CustomEvent_AnimInst) == 0x0004E8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_CustomEvent_AnimInst' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_DynamicCast_AsMenu_Screen_Commando) == 0x0004F0, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_DynamicCast_AsMenu_Screen_Commando' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_DynamicCast_bSuccess) == 0x0004F8, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_GetGameState_ReturnValue) == 0x000500, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_DynamicCast_AsFort_Game_State_Zone) == 0x000508, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_DynamicCast_AsFort_Game_State_Zone' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, K2Node_DynamicCast_bSuccess2) == 0x000510, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000518, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_IsValid_ReturnValue) == 0x000520, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_GetSocketTransform_ReturnValue) == 0x000530, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000560, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_GetGender_IsMale) == 0x000568, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_GetGender_IsMale' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_GetGender_IsFemale) == 0x000569, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_GetGender_IsFemale' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_FinishSpawningActor_ReturnValue) == 0x000570, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_GetAnimInstance_ReturnValue) == 0x000578, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_IsValid_ReturnValue2) == 0x000580, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_Montage_Play_ReturnValue) == 0x000584, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_Montage_Play_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000588, "Member 'PlayerPawn_Commando_C_ExecuteUbergraph_PlayerPawn_Commando::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.GameplayCue.Abilities.Applied.Commando.MakeItRain
 // 0x00C0 (0x00C0 - 0x0000)
@@ -139,10 +93,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain");
-static_assert(sizeof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain) == 0x0000C0, "Wrong size on PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain, EventType) == 0x000000, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain, Parameters) == 0x000008, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_MakeItRain::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.SelectPawn
 // 0x0008 (0x0008 - 0x0000)
@@ -151,9 +101,6 @@ struct PlayerPawn_Commando_C_SelectPawn final
 public:
 	class UAnimInstance*                          AnimInst;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerPawn_Commando_C_SelectPawn) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_SelectPawn");
-static_assert(sizeof(PlayerPawn_Commando_C_SelectPawn) == 0x000008, "Wrong size on PlayerPawn_Commando_C_SelectPawn");
-static_assert(offsetof(PlayerPawn_Commando_C_SelectPawn, AnimInst) == 0x000000, "Member 'PlayerPawn_Commando_C_SelectPawn::AnimInst' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.GameplayCue.Abilities.Applied.Commando.IncendiaryRounds
 // 0x00C0 (0x00C0 - 0x0000)
@@ -164,10 +111,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds");
-static_assert(sizeof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds) == 0x0000C0, "Wrong size on PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds, EventType) == 0x000000, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds, Parameters) == 0x000008, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
 // 0x00C0 (0x00C0 - 0x0000)
@@ -178,10 +121,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(sizeof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1) == 0x0000C0, "Wrong size on PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, EventType) == 0x000000, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1, Parameters) == 0x000008, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
 // 0x00C0 (0x00C0 - 0x0000)
@@ -192,10 +131,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(sizeof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2) == 0x0000C0, "Wrong size on PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, EventType) == 0x000000, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2, Parameters) == 0x000008, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.GameplayCue.Abilities.Activation.Commando.Shockwave
 // 0x00C0 (0x00C0 - 0x0000)
@@ -206,10 +141,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(Parm, ContainsInstancedReference)
 };
-static_assert(alignof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave");
-static_assert(sizeof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave) == 0x0000C0, "Wrong size on PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave, EventType) == 0x000000, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave::EventType' has a wrong offset!");
-static_assert(offsetof(PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave, Parameters) == 0x000008, "Member 'PlayerPawn_Commando_C_GameplayCue_Abilities_Activation_Commando_Shockwave::Parameters' has a wrong offset!");
 
 // Function PlayerPawn_Commando.PlayerPawn_Commando_C.ReceivePossessed
 // 0x0008 (0x0008 - 0x0000)
@@ -218,9 +149,6 @@ struct PlayerPawn_Commando_C_ReceivePossessed final
 public:
 	class AController*                            NewController;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerPawn_Commando_C_ReceivePossessed) == 0x000008, "Wrong alignment on PlayerPawn_Commando_C_ReceivePossessed");
-static_assert(sizeof(PlayerPawn_Commando_C_ReceivePossessed) == 0x000008, "Wrong size on PlayerPawn_Commando_C_ReceivePossessed");
-static_assert(offsetof(PlayerPawn_Commando_C_ReceivePossessed, NewController) == 0x000000, "Member 'PlayerPawn_Commando_C_ReceivePossessed::NewController' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

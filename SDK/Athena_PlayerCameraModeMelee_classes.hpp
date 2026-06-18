@@ -13,8 +13,7 @@
 #include "Athena_PlayerCameraModeBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Athena_PlayerCameraModeMelee.Athena_PlayerCameraModeMelee_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class UAthena_PlayerCameraModeMelee_C final : public UAthena_PlayerCameraModeBas
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeMelee_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeMelee_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeMelee_C")
 	}
 	static class UAthena_PlayerCameraModeMelee_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeMelee_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeMelee_C) == 0x000008, "Wrong alignment on UAthena_PlayerCameraModeMelee_C");
-static_assert(sizeof(UAthena_PlayerCameraModeMelee_C) == 0x000110, "Wrong size on UAthena_PlayerCameraModeMelee_C");
 
-}
-
+SDK_NAMESPACE_END

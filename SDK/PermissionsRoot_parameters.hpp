@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PermissionsRoot.PermissionsRoot_C.ExecuteUbergraph_PermissionsRoot
 // 0x0028 (0x0028 - 0x0000)
@@ -27,11 +27,6 @@ public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0008(0x0010)(NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot) == 0x000008, "Wrong alignment on PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot");
-static_assert(sizeof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot) == 0x000028, "Wrong size on PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot");
-static_assert(offsetof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot, EntryPoint) == 0x000000, "Member 'PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'PermissionsRoot_C_ExecuteUbergraph_PermissionsRoot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function PermissionsRoot.PermissionsRoot_C.RefreshOutpostInfo
 // 0x0570 (0x0570 - 0x0000)
@@ -72,36 +67,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x0548(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0558(0x0018)()
 };
-static_assert(alignof(PermissionsRoot_C_RefreshOutpostInfo) == 0x000008, "Wrong alignment on PermissionsRoot_C_RefreshOutpostInfo");
-static_assert(sizeof(PermissionsRoot_C_RefreshOutpostInfo) == 0x000570, "Wrong size on PermissionsRoot_C_RefreshOutpostInfo");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, Outpost_DisplayName) == 0x000000, "Member 'PermissionsRoot_C_RefreshOutpostInfo::Outpost_DisplayName' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, StonewoodText) == 0x000018, "Member 'PermissionsRoot_C_RefreshOutpostInfo::StonewoodText' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, Temp_text_Variable) == 0x000030, "Member 'PermissionsRoot_C_RefreshOutpostInfo::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, Temp_text_Variable2) == 0x000048, "Member 'PermissionsRoot_C_RefreshOutpostInfo::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue) == 0x000060, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue2) == 0x000068, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetCurrentTheaterName_ReturnValue) == 0x000070, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetCurrentTheaterName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetOutpostCoreLevel_ReturnValue) == 0x000088, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetOutpostCoreLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_Conv_IntToText_ReturnValue) == 0x000090, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData) == 0x0000A8, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, Temp_bool_Variable) == 0x0000E8, "Member 'PermissionsRoot_C_RefreshOutpostInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeArray_Array) == 0x0000F0, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_Format_ReturnValue) == 0x000100, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_EqualEqual_IgnoreCase_TextText_ReturnValue) == 0x000118, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_EqualEqual_IgnoreCase_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData2) == 0x000120, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue3) == 0x000168, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_DynamicCast_AsFort_Player_Controller_Outpost) == 0x000170, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_DynamicCast_AsFort_Player_Controller_Outpost' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_DynamicCast_bSuccess) == 0x000178, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000180, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_IsOutpostOwner_ReturnValue) == 0x000310, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_IsOutpostOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_Select_Default) == 0x000318, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData3) == 0x000330, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetContext_ReturnValue4) == 0x000370, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo2) == 0x000378, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo2' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeStruct_FormatArgumentData4) == 0x000508, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, K2Node_MakeArray_Array2) == 0x000548, "Member 'PermissionsRoot_C_RefreshOutpostInfo::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_RefreshOutpostInfo, CallFunc_Format_ReturnValue2) == 0x000558, "Member 'PermissionsRoot_C_RefreshOutpostInfo::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
 // Function PermissionsRoot.PermissionsRoot_C.Input Handle Back
 // 0x0010 (0x0010 - 0x0000)
@@ -112,10 +77,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PermissionsRoot_C_Input_Handle_Back) == 0x000008, "Wrong alignment on PermissionsRoot_C_Input_Handle_Back");
-static_assert(sizeof(PermissionsRoot_C_Input_Handle_Back) == 0x000010, "Wrong size on PermissionsRoot_C_Input_Handle_Back");
-static_assert(offsetof(PermissionsRoot_C_Input_Handle_Back, PassThrough) == 0x000000, "Member 'PermissionsRoot_C_Input_Handle_Back::PassThrough' has a wrong offset!");
-static_assert(offsetof(PermissionsRoot_C_Input_Handle_Back, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PermissionsRoot_C_Input_Handle_Back::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

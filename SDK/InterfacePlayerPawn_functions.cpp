@@ -14,8 +14,7 @@
 #include "InterfacePlayerPawn_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingRight
 // (BlueprintCallable, BlueprintEvent)
@@ -25,9 +24,9 @@ void IInterfacePlayerPawn_C::MeleeSwingRight()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingRight");
+		Func = AsUObject()->Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingRight");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -39,27 +38,27 @@ void IInterfacePlayerPawn_C::MeleeSwingLeft()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingLeft");
+		Func = AsUObject()->Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingLeft");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
 // Function InterfacePlayerPawn.InterfacePlayerPawn_C.Melee_Effect_Color
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          Melee_Color_Set                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Melee_Color_Set                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void IInterfacePlayerPawn_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfacePlayerPawn_C", "Melee_Effect_Color");
+		Func = AsUObject()->Class->GetFunction("InterfacePlayerPawn_C", "Melee_Effect_Color");
 
 	Params::InterfacePlayerPawn_C_Melee_Effect_Color Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (Melee_Color_Set != nullptr)
 		*Melee_Color_Set = std::move(Parms.Melee_Color_Set);
@@ -74,9 +73,9 @@ void IInterfacePlayerPawn_C::FootStepLeft()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfacePlayerPawn_C", "FootStepLeft");
+		Func = AsUObject()->Class->GetFunction("InterfacePlayerPawn_C", "FootStepLeft");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -88,10 +87,10 @@ void IInterfacePlayerPawn_C::FootStepRight()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfacePlayerPawn_C", "FootStepRight");
+		Func = AsUObject()->Class->GetFunction("InterfacePlayerPawn_C", "FootStepRight");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ZoneDayCompletion_ScoreBlock_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.ExecuteUbergraph_ZoneDayCompletion_ScoreBlock
 // ()
@@ -196,5 +195,5 @@ void UZoneDayCompletion_ScoreBlock_C::SetScore(int32 New_Score)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

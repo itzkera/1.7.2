@@ -16,8 +16,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C
 // 0x0110 (0x0348 - 0x0238)
@@ -60,30 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortLiveStreamGrantWindowExpires_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortLiveStreamGrantWindowExpires_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortLiveStreamGrantWindowExpires_C")
 	}
 	static class UBP_FortLiveStreamGrantWindowExpires_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortLiveStreamGrantWindowExpires_C>();
 	}
 };
-static_assert(alignof(UBP_FortLiveStreamGrantWindowExpires_C) == 0x000008, "Wrong alignment on UBP_FortLiveStreamGrantWindowExpires_C");
-static_assert(sizeof(UBP_FortLiveStreamGrantWindowExpires_C) == 0x000348, "Wrong size on UBP_FortLiveStreamGrantWindowExpires_C");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, UberGraphFrame) == 0x000238, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, FadeExpirationText) == 0x000240, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::FadeExpirationText' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, Border) == 0x000248, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::Border' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, ExpirationText) == 0x000250, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::ExpirationText' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, SizeBox_0) == 0x000258, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::SizeBox_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, StreamImage) == 0x000260, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::StreamImage' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, StreamBrush) == 0x000268, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::StreamBrush' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, SimulatedTimespan) == 0x0002F8, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::SimulatedTimespan' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, StreamTimerExpired) == 0x000300, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerExpired' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, StreamTimerStarted) == 0x000310, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerStarted' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, SimulatedExpirationTimerHandle) == 0x000320, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::SimulatedExpirationTimerHandle' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, CurrentName) == 0x000328, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::CurrentName' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, TotalNames) == 0x00032C, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::TotalNames' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, Viewers) == 0x000330, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::Viewers' has a wrong offset!");
-static_assert(offsetof(UBP_FortLiveStreamGrantWindowExpires_C, SecondsToDisplayName) == 0x000340, "Member 'UBP_FortLiveStreamGrantWindowExpires_C::SecondsToDisplayName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

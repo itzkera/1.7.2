@@ -14,8 +14,7 @@
 #include "B_PlayerHealthDamage_CameraLensEffect_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C.ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect
 // ()
@@ -72,5 +71,5 @@ void AB_PlayerHealthDamage_CameraLensEffect_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Frontend_BG_Main.Frontend_BG_Main_C
 // 0x0000 (0x03A0 - 0x03A0)
@@ -23,15 +22,16 @@ class AFrontend_BG_Main_C final : public AFortLevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Frontend_BG_Main_C">();
+		BP_STATIC_CLASS_IMPL("Frontend_BG_Main_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Frontend_BG_Main_C")
 	}
 	static class AFrontend_BG_Main_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontend_BG_Main_C>();
 	}
 };
-static_assert(alignof(AFrontend_BG_Main_C) == 0x000008, "Wrong alignment on AFrontend_BG_Main_C");
-static_assert(sizeof(AFrontend_BG_Main_C) == 0x0003A0, "Wrong size on AFrontend_BG_Main_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ItemStackCounter_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemStackCounter.ItemStackCounter_C.ExecuteUbergraph_ItemStackCounter
 // ()
@@ -112,5 +111,5 @@ void UItemStackCounter_C::Refresh_Visibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

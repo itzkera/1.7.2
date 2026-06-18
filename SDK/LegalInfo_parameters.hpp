@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LegalInfo.LegalInfo_C.ExecuteUbergraph_LegalInfo
 // 0x0080 (0x0080 - 0x0000)
@@ -40,23 +40,6 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegalInfo_C_ExecuteUbergraph_LegalInfo) == 0x000008, "Wrong alignment on LegalInfo_C_ExecuteUbergraph_LegalInfo");
-static_assert(sizeof(LegalInfo_C_ExecuteUbergraph_LegalInfo) == 0x000080, "Wrong size on LegalInfo_C_ExecuteUbergraph_LegalInfo");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, EntryPoint) == 0x000000, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000018, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000020, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_DynamicCast_AsEula_Tab) == 0x000030, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_DynamicCast_AsEula_Tab' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_DynamicCast_AsThird_Party_Tab) == 0x000040, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_DynamicCast_AsThird_Party_Tab' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_DynamicCast_bSuccess2) == 0x000048, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_ComponentBoundEvent_TabId) == 0x000050, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_ComponentBoundEvent_TabButton) == 0x000058, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000060, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, K2Node_DynamicCast_bSuccess3) == 0x000068, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, CallFunc_GetUINavigationManager_ReturnValue) == 0x000070, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_ExecuteUbergraph_LegalInfo, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000078, "Member 'LegalInfo_C_ExecuteUbergraph_LegalInfo::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function LegalInfo.LegalInfo_C.BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -66,10 +49,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'LegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function LegalInfo.LegalInfo_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +57,6 @@ struct LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButto
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'LegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function LegalInfo.LegalInfo_C.BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -90,10 +66,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'LegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function LegalInfo.LegalInfo_C.On Scroll Down
 // 0x0001 (0x0001 - 0x0000)
@@ -102,9 +74,6 @@ struct LegalInfo_C_On_Scroll_Down final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LegalInfo_C_On_Scroll_Down) == 0x000001, "Wrong alignment on LegalInfo_C_On_Scroll_Down");
-static_assert(sizeof(LegalInfo_C_On_Scroll_Down) == 0x000001, "Wrong size on LegalInfo_C_On_Scroll_Down");
-static_assert(offsetof(LegalInfo_C_On_Scroll_Down, PassThrough) == 0x000000, "Member 'LegalInfo_C_On_Scroll_Down::PassThrough' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

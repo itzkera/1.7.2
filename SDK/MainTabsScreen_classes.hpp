@@ -15,8 +15,7 @@
 #include "StoreOfferCosts_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MainTabsScreen.MainTabsScreen_C
 // 0x0028 (0x0478 - 0x0450)
@@ -71,20 +70,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainTabsScreen_C">();
+		BP_STATIC_CLASS_IMPL("MainTabsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainTabsScreen_C")
 	}
 	static class UMainTabsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainTabsScreen_C>();
 	}
 };
-static_assert(alignof(UMainTabsScreen_C) == 0x000008, "Wrong alignment on UMainTabsScreen_C");
-static_assert(sizeof(UMainTabsScreen_C) == 0x000478, "Wrong size on UMainTabsScreen_C");
-static_assert(offsetof(UMainTabsScreen_C, UberGraphFrame) == 0x000450, "Member 'UMainTabsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000458, "Member 'UMainTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, LastActiveTabId) == 0x000460, "Member 'UMainTabsScreen_C::LastActiveTabId' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchBangThreshold) == 0x000468, "Member 'UMainTabsScreen_C::UnclaimedResearchBangThreshold' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchPointsHandle) == 0x000470, "Member 'UMainTabsScreen_C::UnclaimedResearchPointsHandle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

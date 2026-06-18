@@ -14,8 +14,7 @@
 #include "QuickbarSlot_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuickbarSlot.QuickbarSlot_C.ExecuteUbergraph_QuickbarSlot
 // ()
@@ -308,7 +307,7 @@ void UQuickbarSlot_C::UpdateItemCardsVisibility()
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class FName                             KeyBindingAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            KeyBindingAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuickbarSlot_C::GetKeyBindingAction(class FName* KeyBindingAction) const
 {
@@ -329,7 +328,7 @@ void UQuickbarSlot_C::GetKeyBindingAction(class FName* KeyBindingAction) const
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction_Keyboard
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class FName                             Key_Binding_Action                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            Key_Binding_Action                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuickbarSlot_C::GetKeyBindingAction_Keyboard(class FName* Key_Binding_Action) const
 {
@@ -350,7 +349,7 @@ void UQuickbarSlot_C::GetKeyBindingAction_Keyboard(class FName* Key_Binding_Acti
 // Function QuickbarSlot.QuickbarSlot_C.GetKeyBindingAction_Gamepad
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class FName                             KeyBindingAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            KeyBindingAction                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UQuickbarSlot_C::GetKeyBindingAction_Gamepad(class FName* KeyBindingAction) const
 {
@@ -367,5 +366,5 @@ void UQuickbarSlot_C::GetKeyBindingAction_Gamepad(class FName* KeyBindingAction)
 		*KeyBindingAction = Parms.KeyBindingAction;
 }
 
-}
 
+SDK_NAMESPACE_END

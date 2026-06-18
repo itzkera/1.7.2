@@ -14,8 +14,7 @@
 #include "Results_PlayerScoreRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.ExecuteUbergraph_Results_PlayerScoreRow
 // (HasDefaults)
@@ -160,7 +159,7 @@ void UResults_PlayerScoreRow_C::InitializePlayerName(class UFortUIScoreReport* S
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeHomeBasePower
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 PlayerID                                               (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          PlayerID                                               (Parm, HasGetValueTypeHash)
 
 void UResults_PlayerScoreRow_C::InitializeHomeBasePower(const struct FUniqueNetIdRepl& PlayerID)
 {
@@ -176,5 +175,5 @@ void UResults_PlayerScoreRow_C::InitializeHomeBasePower(const struct FUniqueNetI
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

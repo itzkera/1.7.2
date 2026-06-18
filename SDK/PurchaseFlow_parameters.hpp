@@ -13,8 +13,8 @@
 #include "PurchaseFlow_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PurchaseFlow.PurchaseFlowJSBridge.RECEIPT
 // 0x0030 (0x0030 - 0x0000)
@@ -23,9 +23,6 @@ struct PurchaseFlowJSBridge_RECEIPT final
 public:
 	struct FPurchaseFlowReceiptParam              RECEIPT_0;                                         // 0x0000(0x0030)(Parm, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PurchaseFlowJSBridge_RECEIPT) == 0x000008, "Wrong alignment on PurchaseFlowJSBridge_RECEIPT");
-static_assert(sizeof(PurchaseFlowJSBridge_RECEIPT) == 0x000030, "Wrong size on PurchaseFlowJSBridge_RECEIPT");
-static_assert(offsetof(PurchaseFlowJSBridge_RECEIPT, RECEIPT_0) == 0x000000, "Member 'PurchaseFlowJSBridge_RECEIPT::RECEIPT_0' has a wrong offset!");
 
 // Function PurchaseFlow.PurchaseFlowJSBridge.RequestClose
 // 0x0010 (0x0010 - 0x0000)
@@ -34,9 +31,6 @@ struct PurchaseFlowJSBridge_RequestClose final
 public:
 	class FString                                 CloseInfo;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(PurchaseFlowJSBridge_RequestClose) == 0x000008, "Wrong alignment on PurchaseFlowJSBridge_RequestClose");
-static_assert(sizeof(PurchaseFlowJSBridge_RequestClose) == 0x000010, "Wrong size on PurchaseFlowJSBridge_RequestClose");
-static_assert(offsetof(PurchaseFlowJSBridge_RequestClose, CloseInfo) == 0x000000, "Member 'PurchaseFlowJSBridge_RequestClose::CloseInfo' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

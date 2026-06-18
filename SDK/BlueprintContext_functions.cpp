@@ -14,8 +14,7 @@
 #include "BlueprintContext_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BlueprintContext.BlueprintContextLibrary.GetContext
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable, BlueprintPure)
@@ -36,10 +35,15 @@ class UBlueprintContextBase* UBlueprintContextLibrary::GetContext(class UObject*
 	Parms.ContextObject = ContextObject;
 	Parms.Class_0 = Class_0;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

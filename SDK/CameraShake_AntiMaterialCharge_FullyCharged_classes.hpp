@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CameraShake_AntiMaterialCharge_FullyCharged.CameraShake_AntiMaterialCharge_FullyCharged_C
 // 0x0000 (0x0160 - 0x0160)
@@ -23,15 +22,16 @@ class UCameraShake_AntiMaterialCharge_FullyCharged_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraShake_AntiMaterialCharge_FullyCharged_C">();
+		BP_STATIC_CLASS_IMPL("CameraShake_AntiMaterialCharge_FullyCharged_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraShake_AntiMaterialCharge_FullyCharged_C")
 	}
 	static class UCameraShake_AntiMaterialCharge_FullyCharged_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraShake_AntiMaterialCharge_FullyCharged_C>();
 	}
 };
-static_assert(alignof(UCameraShake_AntiMaterialCharge_FullyCharged_C) == 0x000008, "Wrong alignment on UCameraShake_AntiMaterialCharge_FullyCharged_C");
-static_assert(sizeof(UCameraShake_AntiMaterialCharge_FullyCharged_C) == 0x000160, "Wrong size on UCameraShake_AntiMaterialCharge_FullyCharged_C");
 
-}
-
+SDK_NAMESPACE_END

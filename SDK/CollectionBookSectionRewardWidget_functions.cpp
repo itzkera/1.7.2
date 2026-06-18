@@ -14,8 +14,7 @@
 #include "CollectionBookSectionRewardWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookSectionRewardWidget.CollectionBookSectionRewardWidget_C.ExecuteUbergraph_CollectionBookSectionRewardWidget
 // ()
@@ -56,5 +55,5 @@ void UCollectionBookSectionRewardWidget_C::OnRewardStatusChanged(ECollectionBook
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

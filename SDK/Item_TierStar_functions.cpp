@@ -14,8 +14,7 @@
 #include "Item_TierStar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Item_TierStar.Item_TierStar_C.ExecuteUbergraph_Item_TierStar
 // ()
@@ -50,5 +49,5 @@ void UItem_TierStar_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

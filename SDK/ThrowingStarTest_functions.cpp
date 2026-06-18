@@ -14,14 +14,13 @@
 #include "ThrowingStarTest_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ThrowingStarTest.ThrowingStarTest_C.OnExecute
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class AActor*                           MyTarget                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters           Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UThrowingStarTest_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
@@ -41,5 +40,5 @@ bool UThrowingStarTest_C::OnExecute(class AActor* MyTarget, const struct FGamepl
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

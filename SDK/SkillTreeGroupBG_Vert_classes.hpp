@@ -13,8 +13,7 @@
 #include "SkillTreeGroupBG_H_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SkillTreeGroupBG-Vert.SkillTreeGroupBG-Vert_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class USkillTreeGroupBG_Vert_C final : public USkillTreeGroupBG_H_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkillTreeGroupBG-Vert_C">();
+		BP_STATIC_CLASS_IMPL("SkillTreeGroupBG-Vert_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkillTreeGroupBG-Vert_C")
 	}
 	static class USkillTreeGroupBG_Vert_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkillTreeGroupBG_Vert_C>();
 	}
 };
-static_assert(alignof(USkillTreeGroupBG_Vert_C) == 0x000008, "Wrong alignment on USkillTreeGroupBG_Vert_C");
-static_assert(sizeof(USkillTreeGroupBG_Vert_C) == 0x000530, "Wrong size on USkillTreeGroupBG_Vert_C");
 
-}
-
+SDK_NAMESPACE_END

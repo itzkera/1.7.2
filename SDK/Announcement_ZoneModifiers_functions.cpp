@@ -14,8 +14,7 @@
 #include "Announcement_ZoneModifiers_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.ExecuteUbergraph_Announcement_ZoneModifiers
 // (HasDefaults)
@@ -98,5 +97,5 @@ void UAnnouncement_ZoneModifiers_C::UpdateWidgetData(class AFortClientAnnounceme
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

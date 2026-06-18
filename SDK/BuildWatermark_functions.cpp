@@ -14,8 +14,7 @@
 #include "BuildWatermark_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BuildWatermark.BuildWatermark_C.ExecuteUbergraph_BuildWatermark
 // ()
@@ -64,5 +63,5 @@ void UBuildWatermark_C::Update_Watermark()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

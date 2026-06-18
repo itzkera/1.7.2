@@ -14,8 +14,7 @@
 #include "WaveModifiersTile_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function WaveModifiersTile.WaveModifiersTile_C.ExecuteUbergraph_WaveModifiersTile
 // (HasDefaults)
@@ -104,5 +103,5 @@ void UWaveModifiersTile_C::PlayIntro()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

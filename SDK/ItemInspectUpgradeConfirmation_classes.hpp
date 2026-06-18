@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C
 // 0x00A8 (0x02E8 - 0x0240)
@@ -59,34 +58,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInspectUpgradeConfirmation_C">();
+		BP_STATIC_CLASS_IMPL("ItemInspectUpgradeConfirmation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInspectUpgradeConfirmation_C")
 	}
 	static class UItemInspectUpgradeConfirmation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInspectUpgradeConfirmation_C>();
 	}
 };
-static_assert(alignof(UItemInspectUpgradeConfirmation_C) == 0x000008, "Wrong alignment on UItemInspectUpgradeConfirmation_C");
-static_assert(sizeof(UItemInspectUpgradeConfirmation_C) == 0x0002E8, "Wrong size on UItemInspectUpgradeConfirmation_C");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UberGraphFrame) == 0x000240, "Member 'UItemInspectUpgradeConfirmation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, CurrentLevelText) == 0x000248, "Member 'UItemInspectUpgradeConfirmation_C::CurrentLevelText' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, Image_0) == 0x000250, "Member 'UItemInspectUpgradeConfirmation_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, Image_1) == 0x000258, "Member 'UItemInspectUpgradeConfirmation_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, Image_3) == 0x000260, "Member 'UItemInspectUpgradeConfirmation_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, ItemCountBG) == 0x000268, "Member 'UItemInspectUpgradeConfirmation_C::ItemCountBG' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, NextLevelText) == 0x000270, "Member 'UItemInspectUpgradeConfirmation_C::NextLevelText' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, RestrictionBorder) == 0x000278, "Member 'UItemInspectUpgradeConfirmation_C::RestrictionBorder' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, TextHelpMessage) == 0x000280, "Member 'UItemInspectUpgradeConfirmation_C::TextHelpMessage' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeConfirmButton) == 0x000288, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeConfirmButton' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeCostItemCount) == 0x000290, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeCostItemCount' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeHighlight) == 0x000298, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeHighlight' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeInfo) == 0x0002A0, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeInfo' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeRestrictionText) == 0x0002A8, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeRestrictionText' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeTextOverlay) == 0x0002B0, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeTextOverlay' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, Item) == 0x0002B8, "Member 'UItemInspectUpgradeConfirmation_C::Item' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, OnUpgradeConfirm) == 0x0002C0, "Member 'UItemInspectUpgradeConfirmation_C::OnUpgradeConfirm' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, OnUpgradeCancel) == 0x0002D0, "Member 'UItemInspectUpgradeConfirmation_C::OnUpgradeCancel' has a wrong offset!");
-static_assert(offsetof(UItemInspectUpgradeConfirmation_C, UpgradeCost) == 0x0002E0, "Member 'UItemInspectUpgradeConfirmation_C::UpgradeCost' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

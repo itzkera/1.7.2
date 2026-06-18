@@ -14,13 +14,12 @@
 #include "SkillTreeColorSetup_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SkillTreeColorSetup.SkillTreeColorSetup_C.SkillTreeBGSetup
 // (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSkillTreePageColors             Page_Color                                             (Parm, HasGetValueTypeHash)
+// const struct FSkillTreePageColors&      Page_Color                                             (Parm, HasGetValueTypeHash)
 // ESkillTreePages                         Pages                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,5 +41,5 @@ void USkillTreeColorSetup_C::SkillTreeBGSetup(const struct FSkillTreePageColors&
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

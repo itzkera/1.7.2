@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C
 // 0x0000 (0x0030 - 0x0030)
@@ -27,15 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotifyState_DisablePawnRotation_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotifyState_DisablePawnRotation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_DisablePawnRotation_C")
 	}
 	static class UAnimNotifyState_DisablePawnRotation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_DisablePawnRotation_C>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_DisablePawnRotation_C) == 0x000008, "Wrong alignment on UAnimNotifyState_DisablePawnRotation_C");
-static_assert(sizeof(UAnimNotifyState_DisablePawnRotation_C) == 0x000030, "Wrong size on UAnimNotifyState_DisablePawnRotation_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FrontEndRewards_Widget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.ExecuteUbergraph_FrontEndRewards_Widget
 // (HasDefaults)
@@ -184,7 +183,7 @@ void UFrontEndRewards_Widget_C::BndEvt__ButtonOpen_K2Node_ComponentBoundEvent_26
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnPrimaryActionTextChanged
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Text                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::OnPrimaryActionTextChanged(const class FText& Text)
 {
@@ -435,7 +434,7 @@ void UFrontEndRewards_Widget_C::Cleanup()
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Succeeded                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::HandleExpeditionCompleted(bool Succeeded, TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -458,7 +457,7 @@ void UFrontEndRewards_Widget_C::HandleExpeditionCompleted(bool Succeeded, TArray
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.InitInitialRewards
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFrontEndRewards_Definition      Definition                                             (Parm, HasGetValueTypeHash)
+// const struct FFrontEndRewards_Definition&Definition                                             (Parm, HasGetValueTypeHash)
 
 void UFrontEndRewards_Widget_C::InitInitialRewards(const struct FFrontEndRewards_Definition& Definition)
 {
@@ -524,9 +523,9 @@ void UFrontEndRewards_Widget_C::ClaimQuestChoiceReward(class UFortRewardNotifica
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.CreateCardsFromItemList
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortItem*>                Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<EFortInventoryType>              ItemInventoryTypeList                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor)
+// TArray<class UFortItem*>&               Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<EFortInventoryType>&             ItemInventoryTypeList                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>*     Cards                                                  (Parm, OutParm, ZeroConstructor)
 
 void UFrontEndRewards_Widget_C::CreateCardsFromItemList(TArray<class UFortItem*>& Items, TArray<EFortInventoryType>& ItemInventoryTypeList, TArray<class URewards_ItemCard_C*>* Cards)
 {
@@ -553,8 +552,8 @@ void UFrontEndRewards_Widget_C::CreateCardsFromItemList(TArray<class UFortItem*>
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.CreateCardsFromItemQuantityList
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemQuantityPair>    Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor)
+// TArray<struct FFortItemQuantityPair>&   Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>*     Cards                                                  (Parm, OutParm, ZeroConstructor)
 
 void UFrontEndRewards_Widget_C::CreateCardsFromItemQuantityList(TArray<struct FFortItemQuantityPair>& Items, TArray<class URewards_ItemCard_C*>* Cards)
 {
@@ -579,8 +578,8 @@ void UFrontEndRewards_Widget_C::CreateCardsFromItemQuantityList(TArray<struct FF
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.CreateCardsFromItemInstanceQuantityList
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor)
+// TArray<struct FFortItemInstanceQuantityPair>&Items                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>*     Cards                                                  (Parm, OutParm, ZeroConstructor)
 
 void UFrontEndRewards_Widget_C::CreateCardsFromItemInstanceQuantityList(TArray<struct FFortItemInstanceQuantityPair>& Items, TArray<class URewards_ItemCard_C*>* Cards)
 {
@@ -756,7 +755,7 @@ void UFrontEndRewards_Widget_C::ClaimCollectionBookChoiceReward(class UFortRewar
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortQuestItem*                   Quest                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::HandleOnQuestRewardsClaimed(class UFortQuestItem* Quest, TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -779,9 +778,9 @@ void UFrontEndRewards_Widget_C::HandleOnQuestRewardsClaimed(class UFortQuestItem
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.HandleOnCollectionBookRewardsClaimed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortCollectionBookRewards       RewardRequested                                        (Parm)
+// const struct FFortCollectionBookRewards&RewardRequested                                        (Parm)
 // bool                                    Success                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FFortItemInstanceQuantityPair>ActualRewards                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&ActualRewards                                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::HandleOnCollectionBookRewardsClaimed(const struct FFortCollectionBookRewards& RewardRequested, bool Success, TArray<struct FFortItemInstanceQuantityPair>& ActualRewards)
 {
@@ -805,7 +804,7 @@ void UFrontEndRewards_Widget_C::HandleOnCollectionBookRewardsClaimed(const struc
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateListRewardsWidgetFromCardList
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>&     Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::PopulateListRewardsWidgetFromCardList(TArray<class URewards_ItemCard_C*>& Cards)
 {
@@ -827,7 +826,7 @@ void UFrontEndRewards_Widget_C::PopulateListRewardsWidgetFromCardList(TArray<cla
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.HandleOnMissionRewardsClaimed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::HandleOnMissionRewardsClaimed(TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -891,7 +890,7 @@ void UFrontEndRewards_Widget_C::HandleCurrentRewardTransitionOutComplete()
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.PopulateChoiceRewardsWidgetFromCardList
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class URewards_ItemCard_C*>      Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class URewards_ItemCard_C*>&     Cards                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::PopulateChoiceRewardsWidgetFromCardList(TArray<class URewards_ItemCard_C*>& Cards)
 {
@@ -1039,7 +1038,7 @@ void UFrontEndRewards_Widget_C::HandleBorderShown()
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.InitAdditionalRewards
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFrontEndRewards_Definition      Definition                                             (Parm, HasGetValueTypeHash)
+// const struct FFrontEndRewards_Definition&Definition                                             (Parm, HasGetValueTypeHash)
 
 void UFrontEndRewards_Widget_C::InitAdditionalRewards(const struct FFrontEndRewards_Definition& Definition)
 {
@@ -1059,7 +1058,7 @@ void UFrontEndRewards_Widget_C::InitAdditionalRewards(const struct FFrontEndRewa
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.InitializeRewardsData
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFrontEndRewards_Definition      FrontEndRewards_Definition                             (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// const struct FFrontEndRewards_Definition&FrontEndRewards_Definition                             (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
 void UFrontEndRewards_Widget_C::InitializeRewardsData(const struct FFrontEndRewards_Definition& FrontEndRewards_Definition)
 {
@@ -1121,7 +1120,7 @@ void UFrontEndRewards_Widget_C::ClaimMissionAlertRewards()
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.HandleOnMissionAlertRewardsClaimed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Widget_C::HandleOnMissionAlertRewardsClaimed(TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -1171,7 +1170,7 @@ void UFrontEndRewards_Widget_C::SafePop()
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.DebugPrintChoiceReward
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Object                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UObject*                    Object                                                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFrontEndRewards_Widget_C::DebugPrintChoiceReward(const class UObject* Object)
 {
@@ -1201,5 +1200,5 @@ void UFrontEndRewards_Widget_C::HandleOnMissionRewardsClaimFailed()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C
 // 0x0020 (0x08F0 - 0x08D0)
@@ -42,19 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformKeyPickerTileButton_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformKeyPickerTileButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformKeyPickerTileButton_C")
 	}
 	static class UItemTransformKeyPickerTileButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformKeyPickerTileButton_C>();
 	}
 };
-static_assert(alignof(UItemTransformKeyPickerTileButton_C) == 0x000008, "Wrong alignment on UItemTransformKeyPickerTileButton_C");
-static_assert(sizeof(UItemTransformKeyPickerTileButton_C) == 0x0008F0, "Wrong size on UItemTransformKeyPickerTileButton_C");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, UberGraphFrame) == 0x0008D0, "Member 'UItemTransformKeyPickerTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, NormalBangWrapper) == 0x0008D8, "Member 'UItemTransformKeyPickerTileButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, NullItemBorder) == 0x0008E0, "Member 'UItemTransformKeyPickerTileButton_C::NullItemBorder' has a wrong offset!");
-static_assert(offsetof(UItemTransformKeyPickerTileButton_C, RootWidgetSwitcher) == 0x0008E8, "Member 'UItemTransformKeyPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

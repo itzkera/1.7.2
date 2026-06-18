@@ -14,8 +14,7 @@
 #include "GAB_AthenaDBNO_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.ExecuteUbergraph_GAB_AthenaDBNO
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UGAB_AthenaDBNO_C::K2_OnEndAbility()
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGAB_AthenaDBNO_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -158,7 +157,7 @@ void UGAB_AthenaDBNO_C::OnCancelled_F0F6785443BD2E74F5591884CB19F35F()
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.InitializeDeathHitDirection
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventHitData                                           (Parm)
+// const struct FGameplayEventData&        EventHitData                                           (Parm)
 
 void UGAB_AthenaDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData)
 {
@@ -178,7 +177,7 @@ void UGAB_AthenaDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventD
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.GetInitialHealAmount
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Health                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Health                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_AthenaDBNO_C::GetInitialHealAmount(float* Health)
 {
@@ -195,5 +194,5 @@ void UGAB_AthenaDBNO_C::GetInitialHealAmount(float* Health)
 		*Health = Parms.Health;
 }
 
-}
 
+SDK_NAMESPACE_END

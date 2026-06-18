@@ -14,8 +14,7 @@
 #include "ItemCraftingIngredientsDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C.ExecuteUbergraph_ItemCraftingIngredientsDetailWidget
 // ()
@@ -64,5 +63,5 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet(
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

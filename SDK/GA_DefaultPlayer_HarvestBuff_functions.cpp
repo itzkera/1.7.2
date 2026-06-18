@@ -14,8 +14,7 @@
 #include "GA_DefaultPlayer_HarvestBuff_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_DefaultPlayer_HarvestBuff.GA_DefaultPlayer_HarvestBuff_C.ExecuteUbergraph_GA_DefaultPlayer_HarvestBuff
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGA_DefaultPlayer_HarvestBuff_C::ExecuteUbergraph_GA_DefaultPlayer_HarvestB
 // Function GA_DefaultPlayer_HarvestBuff.GA_DefaultPlayer_HarvestBuff_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData_0                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData_0                                            (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGA_DefaultPlayer_HarvestBuff_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
@@ -56,5 +55,5 @@ void UGA_DefaultPlayer_HarvestBuff_C::K2_ActivateAbilityFromEvent(const struct F
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

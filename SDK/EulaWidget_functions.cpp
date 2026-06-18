@@ -14,8 +14,7 @@
 #include "EulaWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function EulaWidget.EulaWidget_C.ExecuteUbergraph_EulaWidget
 // ()
@@ -108,7 +107,7 @@ void UEulaWidget_C::BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_44_Commo
 // Function EulaWidget.EulaWidget_C.SetEulaText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             EULA                                                   (Parm)
+// const class FText&                      EULA                                                   (Parm)
 
 void UEulaWidget_C::SetEulaText(const class FText& EULA)
 {
@@ -144,5 +143,5 @@ void UEulaWidget_C::SetViewOnly(bool bViewOnly)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

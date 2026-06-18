@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestInfo_BulletList.QuestInfo_BulletList_C
 // 0x0030 (0x0268 - 0x0238)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestInfo_BulletList_C">();
+		BP_STATIC_CLASS_IMPL("QuestInfo_BulletList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestInfo_BulletList_C")
 	}
 	static class UQuestInfo_BulletList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestInfo_BulletList_C>();
 	}
 };
-static_assert(alignof(UQuestInfo_BulletList_C) == 0x000008, "Wrong alignment on UQuestInfo_BulletList_C");
-static_assert(sizeof(UQuestInfo_BulletList_C) == 0x000268, "Wrong size on UQuestInfo_BulletList_C");
-static_assert(offsetof(UQuestInfo_BulletList_C, UberGraphFrame) == 0x000238, "Member 'UQuestInfo_BulletList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletList_C, TextBlockTitle) == 0x000240, "Member 'UQuestInfo_BulletList_C::TextBlockTitle' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletList_C, VerticalBoxBulletList) == 0x000248, "Member 'UQuestInfo_BulletList_C::VerticalBoxBulletList' has a wrong offset!");
-static_assert(offsetof(UQuestInfo_BulletList_C, TitleText) == 0x000250, "Member 'UQuestInfo_BulletList_C::TitleText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "CollectionBookSectionTileRewardWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.ExecuteUbergraph_CollectionBookSectionTileRewardWidget
 // ()
@@ -78,5 +77,5 @@ void UCollectionBookSectionTileRewardWidget_C::SetSlotCompletionRatio(int32 NumS
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

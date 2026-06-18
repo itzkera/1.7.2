@@ -23,8 +23,7 @@
 #include "WidgetCarousel_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class CommonUI.CommonWidgetGroupBase
 // 0x0000 (0x0028 - 0x0028)
@@ -38,15 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonWidgetGroupBase">();
+		STATIC_CLASS_IMPL("CommonWidgetGroupBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonWidgetGroupBase")
 	}
 	static class UCommonWidgetGroupBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonWidgetGroupBase>();
 	}
 };
-static_assert(alignof(UCommonWidgetGroupBase) == 0x000008, "Wrong alignment on UCommonWidgetGroupBase");
-static_assert(sizeof(UCommonWidgetGroupBase) == 0x000028, "Wrong size on UCommonWidgetGroupBase");
 
 // Class CommonUI.CommonButtonGroup
 // 0x0070 (0x0098 - 0x0028)
@@ -81,21 +82,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonButtonGroup">();
+		STATIC_CLASS_IMPL("CommonButtonGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonButtonGroup")
 	}
 	static class UCommonButtonGroup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonButtonGroup>();
 	}
 };
-static_assert(alignof(UCommonButtonGroup) == 0x000008, "Wrong alignment on UCommonButtonGroup");
-static_assert(sizeof(UCommonButtonGroup) == 0x000098, "Wrong size on UCommonButtonGroup");
-static_assert(offsetof(UCommonButtonGroup, OnSelectedButtonChanged) == 0x000028, "Member 'UCommonButtonGroup::OnSelectedButtonChanged' has a wrong offset!");
-static_assert(offsetof(UCommonButtonGroup, OnHoveredButtonChanged) == 0x000038, "Member 'UCommonButtonGroup::OnHoveredButtonChanged' has a wrong offset!");
-static_assert(offsetof(UCommonButtonGroup, OnButtonClicked) == 0x000048, "Member 'UCommonButtonGroup::OnButtonClicked' has a wrong offset!");
-static_assert(offsetof(UCommonButtonGroup, OnButtonDoubleClicked) == 0x000058, "Member 'UCommonButtonGroup::OnButtonDoubleClicked' has a wrong offset!");
-static_assert(offsetof(UCommonButtonGroup, OnSelectionCleared) == 0x000068, "Member 'UCommonButtonGroup::OnSelectionCleared' has a wrong offset!");
-static_assert(offsetof(UCommonButtonGroup, bSelectionRequired) == 0x000078, "Member 'UCommonButtonGroup::bSelectionRequired' has a wrong offset!");
 
 // Class CommonUI.CommonLazyImage
 // 0x0040 (0x0240 - 0x0200)
@@ -118,17 +115,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonLazyImage">();
+		STATIC_CLASS_IMPL("CommonLazyImage")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonLazyImage")
 	}
 	static class UCommonLazyImage* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonLazyImage>();
 	}
 };
-static_assert(alignof(UCommonLazyImage) == 0x000008, "Wrong alignment on UCommonLazyImage");
-static_assert(sizeof(UCommonLazyImage) == 0x000240, "Wrong size on UCommonLazyImage");
-static_assert(offsetof(UCommonLazyImage, OnLoadingStateChanged) == 0x000200, "Member 'UCommonLazyImage::OnLoadingStateChanged' has a wrong offset!");
-static_assert(offsetof(UCommonLazyImage, LoadGuard) == 0x000238, "Member 'UCommonLazyImage::LoadGuard' has a wrong offset!");
 
 // Class CommonUI.CommonUserWidget
 // 0x0008 (0x0238 - 0x0230)
@@ -144,20 +141,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonUserWidget">();
+		STATIC_CLASS_IMPL("CommonUserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUserWidget")
 	}
 	static class UCommonUserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUserWidget>();
 	}
 };
-static_assert(alignof(UCommonUserWidget) == 0x000008, "Wrong alignment on UCommonUserWidget");
-static_assert(sizeof(UCommonUserWidget) == 0x000238, "Wrong size on UCommonUserWidget");
-static_assert(offsetof(UCommonUserWidget, bConsumePointerInput) == 0x000230, "Member 'UCommonUserWidget::bConsumePointerInput' has a wrong offset!");
 
 // Class CommonUI.CommonPoolableWidgetInterface
-// 0x0000 (0x0028 - 0x0028)
-class ICommonPoolableWidgetInterface : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ICommonPoolableWidgetInterface final
 {
 public:
 	void OnAcquireFromPool();
@@ -166,19 +164,30 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonPoolableWidgetInterface">();
+		STATIC_CLASS_IMPL("CommonPoolableWidgetInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonPoolableWidgetInterface")
 	}
 	static class ICommonPoolableWidgetInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ICommonPoolableWidgetInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ICommonPoolableWidgetInterface) == 0x000008, "Wrong alignment on ICommonPoolableWidgetInterface");
-static_assert(sizeof(ICommonPoolableWidgetInterface) == 0x000028, "Wrong size on ICommonPoolableWidgetInterface");
 
 // Class CommonUI.CommonListItem
-// 0x0000 (0x0028 - 0x0028)
-class ICommonListItem : public ICommonPoolableWidgetInterface
+// 0x0000 (0x0000 - 0x0000)
+class ICommonListItem final
 {
 public:
 	void Private_OnExpanderArrowShiftClicked();
@@ -195,15 +204,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonListItem">();
+		STATIC_CLASS_IMPL("CommonListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonListItem")
 	}
 	static class ICommonListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ICommonListItem>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ICommonListItem) == 0x000008, "Wrong alignment on ICommonListItem");
-static_assert(sizeof(ICommonListItem) == 0x000028, "Wrong size on ICommonListItem");
 
 // Class CommonUI.CommonTabListWidget
 // 0x00C8 (0x0300 - 0x0238)
@@ -218,7 +238,7 @@ public:
 	bool                                          bAutoListenForInput;                               // 0x0288(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, ExposeOnSpawn, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_289[0x7];                                      // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonWidgetSwitcher*                  LinkedSwitcher;                                    // 0x0290(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TMap<class FName, struct FCommonRegisteredTabInfo> RegisteredTabsByID;                                // 0x0298(0x0050)(ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	TMap<class FName, struct FCommonRegisteredTabInfo> RegisteredTabsByID;                           // 0x0298(0x0050)(ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	class UCommonButtonGroup*                     TabButtonGroup;                                    // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_2F0[0x10];                                     // 0x02F0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -247,24 +267,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonTabListWidget">();
+		STATIC_CLASS_IMPL("CommonTabListWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonTabListWidget")
 	}
 	static class UCommonTabListWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonTabListWidget>();
 	}
 };
-static_assert(alignof(UCommonTabListWidget) == 0x000008, "Wrong alignment on UCommonTabListWidget");
-static_assert(sizeof(UCommonTabListWidget) == 0x000300, "Wrong size on UCommonTabListWidget");
-static_assert(offsetof(UCommonTabListWidget, OnTabSelected) == 0x000238, "Member 'UCommonTabListWidget::OnTabSelected' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, OnTabButtonCreated) == 0x000248, "Member 'UCommonTabListWidget::OnTabButtonCreated' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, OnTabButtonRemoved) == 0x000258, "Member 'UCommonTabListWidget::OnTabButtonRemoved' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, NextTabInputActionData) == 0x000268, "Member 'UCommonTabListWidget::NextTabInputActionData' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, PreviousTabInputActionData) == 0x000278, "Member 'UCommonTabListWidget::PreviousTabInputActionData' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, bAutoListenForInput) == 0x000288, "Member 'UCommonTabListWidget::bAutoListenForInput' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, LinkedSwitcher) == 0x000290, "Member 'UCommonTabListWidget::LinkedSwitcher' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, RegisteredTabsByID) == 0x000298, "Member 'UCommonTabListWidget::RegisteredTabsByID' has a wrong offset!");
-static_assert(offsetof(UCommonTabListWidget, TabButtonGroup) == 0x0002E8, "Member 'UCommonTabListWidget::TabButtonGroup' has a wrong offset!");
 
 // Class CommonUI.CommonTextBlock
 // 0x0050 (0x0298 - 0x0248)
@@ -285,17 +298,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonTextBlock">();
+		STATIC_CLASS_IMPL("CommonTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonTextBlock")
 	}
 	static class UCommonTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonTextBlock>();
 	}
 };
-static_assert(alignof(UCommonTextBlock) == 0x000008, "Wrong alignment on UCommonTextBlock");
-static_assert(sizeof(UCommonTextBlock) == 0x000298, "Wrong size on UCommonTextBlock");
-static_assert(offsetof(UCommonTextBlock, Style) == 0x000248, "Member 'UCommonTextBlock::Style' has a wrong offset!");
-static_assert(offsetof(UCommonTextBlock, ScrollStyle) == 0x000250, "Member 'UCommonTextBlock::ScrollStyle' has a wrong offset!");
 
 // Class CommonUI.CommonNumericTextBlock
 // 0x0088 (0x0320 - 0x0298)
@@ -324,23 +337,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonNumericTextBlock">();
+		STATIC_CLASS_IMPL("CommonNumericTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonNumericTextBlock")
 	}
 	static class UCommonNumericTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonNumericTextBlock>();
 	}
 };
-static_assert(alignof(UCommonNumericTextBlock) == 0x000008, "Wrong alignment on UCommonNumericTextBlock");
-static_assert(sizeof(UCommonNumericTextBlock) == 0x000320, "Wrong size on UCommonNumericTextBlock");
-static_assert(offsetof(UCommonNumericTextBlock, OnOutroEvent) == 0x0002A0, "Member 'UCommonNumericTextBlock::OnOutroEvent' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, OnInterpolationEndedEvent) == 0x0002B0, "Member 'UCommonNumericTextBlock::OnInterpolationEndedEvent' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, CurrentNumericValue) == 0x0002C0, "Member 'UCommonNumericTextBlock::CurrentNumericValue' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, IsPercentage) == 0x0002C4, "Member 'UCommonNumericTextBlock::IsPercentage' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, FormattingSpecification) == 0x0002C8, "Member 'UCommonNumericTextBlock::FormattingSpecification' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, EaseOutInterpolationExponent) == 0x0002DC, "Member 'UCommonNumericTextBlock::EaseOutInterpolationExponent' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, InterpolationUpdateInterval) == 0x0002E0, "Member 'UCommonNumericTextBlock::InterpolationUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UCommonNumericTextBlock, PostInterpolationShrinkDuration) == 0x0002E4, "Member 'UCommonNumericTextBlock::PostInterpolationShrinkDuration' has a wrong offset!");
 
 // Class CommonUI.CommonWidgetCarousel
 // 0x08E0 (0x0A10 - 0x0130)
@@ -367,18 +374,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonWidgetCarousel">();
+		STATIC_CLASS_IMPL("CommonWidgetCarousel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonWidgetCarousel")
 	}
 	static class UCommonWidgetCarousel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonWidgetCarousel>();
 	}
 };
-static_assert(alignof(UCommonWidgetCarousel) == 0x000008, "Wrong alignment on UCommonWidgetCarousel");
-static_assert(sizeof(UCommonWidgetCarousel) == 0x000A10, "Wrong size on UCommonWidgetCarousel");
-static_assert(offsetof(UCommonWidgetCarousel, ActiveWidgetIndex) == 0x000130, "Member 'UCommonWidgetCarousel::ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetCarousel, OnCurrentPageIndexChanged) == 0x000138, "Member 'UCommonWidgetCarousel::OnCurrentPageIndexChanged' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetCarousel, NavigationStyle) == 0x000148, "Member 'UCommonWidgetCarousel::NavigationStyle' has a wrong offset!");
 
 // Class CommonUI.CommonActivatablePanel
 // 0x01A8 (0x03E0 - 0x0238)
@@ -425,20 +431,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonActivatablePanel">();
+		STATIC_CLASS_IMPL("CommonActivatablePanel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonActivatablePanel")
 	}
 	static class UCommonActivatablePanel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonActivatablePanel>();
 	}
 };
-static_assert(alignof(UCommonActivatablePanel) == 0x000008, "Wrong alignment on UCommonActivatablePanel");
-static_assert(sizeof(UCommonActivatablePanel) == 0x0003E0, "Wrong size on UCommonActivatablePanel");
-static_assert(offsetof(UCommonActivatablePanel, OnWidgetActivated) == 0x000240, "Member 'UCommonActivatablePanel::OnWidgetActivated' has a wrong offset!");
-static_assert(offsetof(UCommonActivatablePanel, OnWidgetDeactivated) == 0x000250, "Member 'UCommonActivatablePanel::OnWidgetDeactivated' has a wrong offset!");
-static_assert(offsetof(UCommonActivatablePanel, bConsumeAllActions) == 0x000360, "Member 'UCommonActivatablePanel::bConsumeAllActions' has a wrong offset!");
-static_assert(offsetof(UCommonActivatablePanel, bExposeActionsExternally) == 0x000361, "Member 'UCommonActivatablePanel::bExposeActionsExternally' has a wrong offset!");
-static_assert(offsetof(UCommonActivatablePanel, bShouldBypassStack) == 0x000362, "Member 'UCommonActivatablePanel::bShouldBypassStack' has a wrong offset!");
 
 // Class CommonUI.CommonButton
 // 0x0668 (0x08A0 - 0x0238)
@@ -525,39 +528,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonButton">();
+		STATIC_CLASS_IMPL("CommonButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonButton")
 	}
 	static class UCommonButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonButton>();
 	}
 };
-static_assert(alignof(UCommonButton) == 0x000008, "Wrong alignment on UCommonButton");
-static_assert(sizeof(UCommonButton) == 0x0008A0, "Wrong size on UCommonButton");
-static_assert(offsetof(UCommonButton, OnSelectedChanged) == 0x000238, "Member 'UCommonButton::OnSelectedChanged' has a wrong offset!");
-static_assert(offsetof(UCommonButton, OnButtonClicked) == 0x000248, "Member 'UCommonButton::OnButtonClicked' has a wrong offset!");
-static_assert(offsetof(UCommonButton, OnButtonDoubleClicked) == 0x000258, "Member 'UCommonButton::OnButtonDoubleClicked' has a wrong offset!");
-static_assert(offsetof(UCommonButton, OnButtonHovered) == 0x000268, "Member 'UCommonButton::OnButtonHovered' has a wrong offset!");
-static_assert(offsetof(UCommonButton, OnButtonUnhovered) == 0x000278, "Member 'UCommonButton::OnButtonUnhovered' has a wrong offset!");
-static_assert(offsetof(UCommonButton, MinWidth) == 0x000288, "Member 'UCommonButton::MinWidth' has a wrong offset!");
-static_assert(offsetof(UCommonButton, MinHeight) == 0x00028C, "Member 'UCommonButton::MinHeight' has a wrong offset!");
-static_assert(offsetof(UCommonButton, Style) == 0x000290, "Member 'UCommonButton::Style' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bApplyAlphaOnDisable) == 0x000298, "Member 'UCommonButton::bApplyAlphaOnDisable' has a wrong offset!");
-static_assert(offsetof(UCommonButton, PressedSlateSoundOverride) == 0x0002A0, "Member 'UCommonButton::PressedSlateSoundOverride' has a wrong offset!");
-static_assert(offsetof(UCommonButton, HoveredSlateSoundOverride) == 0x0002B8, "Member 'UCommonButton::HoveredSlateSoundOverride' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bSelectable) == 0x0002D0, "Member 'UCommonButton::bSelectable' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bShouldSelectUponReceivingFocus) == 0x0002D1, "Member 'UCommonButton::bShouldSelectUponReceivingFocus' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bInteractableWhenSelected) == 0x0002D2, "Member 'UCommonButton::bInteractableWhenSelected' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bToggleable) == 0x0002D3, "Member 'UCommonButton::bToggleable' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bDisplayInputActionWhenNotInteractable) == 0x0002D4, "Member 'UCommonButton::bDisplayInputActionWhenNotInteractable' has a wrong offset!");
-static_assert(offsetof(UCommonButton, ClickMethod) == 0x0002D5, "Member 'UCommonButton::ClickMethod' has a wrong offset!");
-static_assert(offsetof(UCommonButton, TriggeringInputAction) == 0x0002D8, "Member 'UCommonButton::TriggeringInputAction' has a wrong offset!");
-static_assert(offsetof(UCommonButton, InputPriority) == 0x0002E8, "Member 'UCommonButton::InputPriority' has a wrong offset!");
-static_assert(offsetof(UCommonButton, bHideInputActionWithKeyboard) == 0x0002EC, "Member 'UCommonButton::bHideInputActionWithKeyboard' has a wrong offset!");
-static_assert(offsetof(UCommonButton, InputActionWidget) == 0x000330, "Member 'UCommonButton::InputActionWidget' has a wrong offset!");
-static_assert(offsetof(UCommonButton, SingleMaterialStyleMID) == 0x000338, "Member 'UCommonButton::SingleMaterialStyleMID' has a wrong offset!");
-static_assert(offsetof(UCommonButton, NormalStyle) == 0x000340, "Member 'UCommonButton::NormalStyle' has a wrong offset!");
-static_assert(offsetof(UCommonButton, SelectedStyle) == 0x0005E8, "Member 'UCommonButton::SelectedStyle' has a wrong offset!");
 
 // Class CommonUI.CommonWidgetSwitcher
 // 0x0050 (0x0198 - 0x0148)
@@ -589,22 +570,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonWidgetSwitcher">();
+		STATIC_CLASS_IMPL("CommonWidgetSwitcher")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonWidgetSwitcher")
 	}
 	static class UCommonWidgetSwitcher* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonWidgetSwitcher>();
 	}
 };
-static_assert(alignof(UCommonWidgetSwitcher) == 0x000008, "Wrong alignment on UCommonWidgetSwitcher");
-static_assert(sizeof(UCommonWidgetSwitcher) == 0x000198, "Wrong size on UCommonWidgetSwitcher");
-static_assert(offsetof(UCommonWidgetSwitcher, OnActiveWidgetDeactivated) == 0x000148, "Member 'UCommonWidgetSwitcher::OnActiveWidgetDeactivated' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetSwitcher, OnActiveWidgetChanged) == 0x000158, "Member 'UCommonWidgetSwitcher::OnActiveWidgetChanged' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetSwitcher, TransitionType) == 0x000168, "Member 'UCommonWidgetSwitcher::TransitionType' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetSwitcher, TransitionCurveType) == 0x000169, "Member 'UCommonWidgetSwitcher::TransitionCurveType' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetSwitcher, TransitionDuration) == 0x00016C, "Member 'UCommonWidgetSwitcher::TransitionDuration' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetSwitcher, bWidgetActivationEnabled) == 0x000192, "Member 'UCommonWidgetSwitcher::bWidgetActivationEnabled' has a wrong offset!");
-static_assert(offsetof(UCommonWidgetSwitcher, bOutroPanelBelow) == 0x000193, "Member 'UCommonWidgetSwitcher::bOutroPanelBelow' has a wrong offset!");
 
 // Class CommonUI.CommonWidgetStack
 // 0x0000 (0x0198 - 0x0198)
@@ -619,20 +595,22 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonWidgetStack">();
+		STATIC_CLASS_IMPL("CommonWidgetStack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonWidgetStack")
 	}
 	static class UCommonWidgetStack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonWidgetStack>();
 	}
 };
-static_assert(alignof(UCommonWidgetStack) == 0x000008, "Wrong alignment on UCommonWidgetStack");
-static_assert(sizeof(UCommonWidgetStack) == 0x000198, "Wrong size on UCommonWidgetStack");
 
 // Class CommonUI.CommonListView
 // 0x0200 (0x0318 - 0x0118)
 #pragma pack(push, 0x1)
-class alignas(0x08) UCommonListView : public UWidget
+class SDK_ALIGN(0x08) UCommonListView : public UWidget
 {
 public:
 	UMulticastDelegateProperty_                   OnItemClicked;                                     // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -686,7 +664,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonListView">();
+		STATIC_CLASS_IMPL("CommonListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonListView")
 	}
 	static class UCommonListView* GetDefaultObj()
 	{
@@ -694,23 +676,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UCommonListView) == 0x000008, "Wrong alignment on UCommonListView");
-static_assert(sizeof(UCommonListView) == 0x000318, "Wrong size on UCommonListView");
-static_assert(offsetof(UCommonListView, OnItemClicked) == 0x000118, "Member 'UCommonListView::OnItemClicked' has a wrong offset!");
-static_assert(offsetof(UCommonListView, OnItemDoubleClicked) == 0x000128, "Member 'UCommonListView::OnItemDoubleClicked' has a wrong offset!");
-static_assert(offsetof(UCommonListView, OnItemHovered) == 0x000138, "Member 'UCommonListView::OnItemHovered' has a wrong offset!");
-static_assert(offsetof(UCommonListView, OnItemSelected) == 0x000148, "Member 'UCommonListView::OnItemSelected' has a wrong offset!");
-static_assert(offsetof(UCommonListView, OnItemWidgetCreated) == 0x000158, "Member 'UCommonListView::OnItemWidgetCreated' has a wrong offset!");
-static_assert(offsetof(UCommonListView, OnItemWidgetDestroyed) == 0x000168, "Member 'UCommonListView::OnItemWidgetDestroyed' has a wrong offset!");
-static_assert(offsetof(UCommonListView, ItemHeight) == 0x000178, "Member 'UCommonListView::ItemHeight' has a wrong offset!");
-static_assert(offsetof(UCommonListView, DesiredItemPadding) == 0x00017C, "Member 'UCommonListView::DesiredItemPadding' has a wrong offset!");
-static_assert(offsetof(UCommonListView, ListItemClass) == 0x000190, "Member 'UCommonListView::ListItemClass' has a wrong offset!");
-static_assert(offsetof(UCommonListView, SelectionMode) == 0x000198, "Member 'UCommonListView::SelectionMode' has a wrong offset!");
-static_assert(offsetof(UCommonListView, ConsumeMouseWheel) == 0x000199, "Member 'UCommonListView::ConsumeMouseWheel' has a wrong offset!");
-static_assert(offsetof(UCommonListView, bClearSelectionOnClick) == 0x00019A, "Member 'UCommonListView::bClearSelectionOnClick' has a wrong offset!");
-static_assert(offsetof(UCommonListView, NumPreAllocatedEntries) == 0x00019C, "Member 'UCommonListView::NumPreAllocatedEntries' has a wrong offset!");
-static_assert(offsetof(UCommonListView, bSimulateDoubleClickOnSelectedItemClick) == 0x0001A0, "Member 'UCommonListView::bSimulateDoubleClickOnSelectedItemClick' has a wrong offset!");
-static_assert(offsetof(UCommonListView, NullItem) == 0x000310, "Member 'UCommonListView::NullItem' has a wrong offset!");
 
 // Class CommonUI.CommonTreeView
 // 0x0028 (0x0340 - 0x0318)
@@ -730,17 +695,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonTreeView">();
+		STATIC_CLASS_IMPL("CommonTreeView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonTreeView")
 	}
 	static class UCommonTreeView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonTreeView>();
 	}
 };
-static_assert(alignof(UCommonTreeView) == 0x000008, "Wrong alignment on UCommonTreeView");
-static_assert(sizeof(UCommonTreeView) == 0x000340, "Wrong size on UCommonTreeView");
-static_assert(offsetof(UCommonTreeView, OnGetChildrenForCategory) == 0x000318, "Member 'UCommonTreeView::OnGetChildrenForCategory' has a wrong offset!");
-static_assert(offsetof(UCommonTreeView, bAllowInvisibleItemSelection) == 0x000328, "Member 'UCommonTreeView::bAllowInvisibleItemSelection' has a wrong offset!");
 
 // Class CommonUI.CommonTileView
 // 0x0018 (0x0330 - 0x0318)
@@ -758,17 +723,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonTileView">();
+		STATIC_CLASS_IMPL("CommonTileView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonTileView")
 	}
 	static class UCommonTileView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonTileView>();
 	}
 };
-static_assert(alignof(UCommonTileView) == 0x000008, "Wrong alignment on UCommonTileView");
-static_assert(sizeof(UCommonTileView) == 0x000330, "Wrong size on UCommonTileView");
-static_assert(offsetof(UCommonTileView, ItemAlignment) == 0x000318, "Member 'UCommonTileView::ItemAlignment' has a wrong offset!");
-static_assert(offsetof(UCommonTileView, ItemWidth) == 0x00031C, "Member 'UCommonTileView::ItemWidth' has a wrong offset!");
 
 // Class CommonUI.AnalogSlider
 // 0x0010 (0x0420 - 0x0410)
@@ -780,33 +745,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AnalogSlider">();
+		STATIC_CLASS_IMPL("AnalogSlider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnalogSlider")
 	}
 	static class UAnalogSlider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnalogSlider>();
 	}
 };
-static_assert(alignof(UAnalogSlider) == 0x000008, "Wrong alignment on UAnalogSlider");
-static_assert(sizeof(UAnalogSlider) == 0x000420, "Wrong size on UAnalogSlider");
-static_assert(offsetof(UAnalogSlider, OnAnalogCapture) == 0x000410, "Member 'UAnalogSlider::OnAnalogCapture' has a wrong offset!");
 
 // Class CommonUI.CommonActionHandlerInterface
-// 0x0000 (0x0028 - 0x0028)
-class ICommonActionHandlerInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ICommonActionHandlerInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonActionHandlerInterface">();
+		STATIC_CLASS_IMPL("CommonActionHandlerInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonActionHandlerInterface")
 	}
 	static class ICommonActionHandlerInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ICommonActionHandlerInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ICommonActionHandlerInterface) == 0x000008, "Wrong alignment on ICommonActionHandlerInterface");
-static_assert(sizeof(ICommonActionHandlerInterface) == 0x000028, "Wrong size on ICommonActionHandlerInterface");
 
 // Class CommonUI.CommonActionWidget
 // 0x0228 (0x0340 - 0x0118)
@@ -831,21 +808,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonActionWidget">();
+		STATIC_CLASS_IMPL("CommonActionWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonActionWidget")
 	}
 	static class UCommonActionWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonActionWidget>();
 	}
 };
-static_assert(alignof(UCommonActionWidget) == 0x000008, "Wrong alignment on UCommonActionWidget");
-static_assert(sizeof(UCommonActionWidget) == 0x000340, "Wrong size on UCommonActionWidget");
-static_assert(offsetof(UCommonActionWidget, OnInputMethodChanged) == 0x000118, "Member 'UCommonActionWidget::OnInputMethodChanged' has a wrong offset!");
-static_assert(offsetof(UCommonActionWidget, InputActionDataRow) == 0x000128, "Member 'UCommonActionWidget::InputActionDataRow' has a wrong offset!");
-static_assert(offsetof(UCommonActionWidget, ProgressMaterialBrush) == 0x000138, "Member 'UCommonActionWidget::ProgressMaterialBrush' has a wrong offset!");
-static_assert(offsetof(UCommonActionWidget, ProgressMaterialParam) == 0x0001C8, "Member 'UCommonActionWidget::ProgressMaterialParam' has a wrong offset!");
-static_assert(offsetof(UCommonActionWidget, IconRimBrush) == 0x0001D0, "Member 'UCommonActionWidget::IconRimBrush' has a wrong offset!");
-static_assert(offsetof(UCommonActionWidget, ProgressDynamicMaterial) == 0x000260, "Member 'UCommonActionWidget::ProgressDynamicMaterial' has a wrong offset!");
 
 // Class CommonUI.CommonBorderStyle
 // 0x0090 (0x00B8 - 0x0028)
@@ -860,16 +833,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonBorderStyle">();
+		STATIC_CLASS_IMPL("CommonBorderStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonBorderStyle")
 	}
 	static class UCommonBorderStyle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonBorderStyle>();
 	}
 };
-static_assert(alignof(UCommonBorderStyle) == 0x000008, "Wrong alignment on UCommonBorderStyle");
-static_assert(sizeof(UCommonBorderStyle) == 0x0000B8, "Wrong size on UCommonBorderStyle");
-static_assert(offsetof(UCommonBorderStyle, Background) == 0x000028, "Member 'UCommonBorderStyle::Background' has a wrong offset!");
 
 // Class CommonUI.CommonBorder
 // 0x0020 (0x02B0 - 0x0290)
@@ -888,18 +862,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonBorder">();
+		STATIC_CLASS_IMPL("CommonBorder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonBorder")
 	}
 	static class UCommonBorder* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonBorder>();
 	}
 };
-static_assert(alignof(UCommonBorder) == 0x000008, "Wrong alignment on UCommonBorder");
-static_assert(sizeof(UCommonBorder) == 0x0002B0, "Wrong size on UCommonBorder");
-static_assert(offsetof(UCommonBorder, Style) == 0x000290, "Member 'UCommonBorder::Style' has a wrong offset!");
-static_assert(offsetof(UCommonBorder, bReducePaddingBySafezone) == 0x000298, "Member 'UCommonBorder::bReducePaddingBySafezone' has a wrong offset!");
-static_assert(offsetof(UCommonBorder, MinimumPadding) == 0x00029C, "Member 'UCommonBorder::MinimumPadding' has a wrong offset!");
 
 // Class CommonUI.CommonVisibilityWidget
 // 0x0010 (0x02C0 - 0x02B0)
@@ -921,25 +894,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonVisibilityWidget">();
+		STATIC_CLASS_IMPL("CommonVisibilityWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonVisibilityWidget")
 	}
 	static class UCommonVisibilityWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonVisibilityWidget>();
 	}
 };
-static_assert(alignof(UCommonVisibilityWidget) == 0x000008, "Wrong alignment on UCommonVisibilityWidget");
-static_assert(sizeof(UCommonVisibilityWidget) == 0x0002C0, "Wrong size on UCommonVisibilityWidget");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForGamepad) == 0x0002B0, "Member 'UCommonVisibilityWidget::bShowForGamepad' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForMouseAndKeyboard) == 0x0002B1, "Member 'UCommonVisibilityWidget::bShowForMouseAndKeyboard' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForPC) == 0x0002B2, "Member 'UCommonVisibilityWidget::bShowForPC' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForMac) == 0x0002B3, "Member 'UCommonVisibilityWidget::bShowForMac' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForPS4) == 0x0002B4, "Member 'UCommonVisibilityWidget::bShowForPS4' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForXBox) == 0x0002B5, "Member 'UCommonVisibilityWidget::bShowForXBox' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForIOS) == 0x0002B6, "Member 'UCommonVisibilityWidget::bShowForIOS' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, bShowForAndroid) == 0x0002B7, "Member 'UCommonVisibilityWidget::bShowForAndroid' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, VisibleType) == 0x0002B8, "Member 'UCommonVisibilityWidget::VisibleType' has a wrong offset!");
-static_assert(offsetof(UCommonVisibilityWidget, HiddenType) == 0x0002B9, "Member 'UCommonVisibilityWidget::HiddenType' has a wrong offset!");
 
 // Class CommonUI.CommonButtonStyle
 // 0x0508 (0x0530 - 0x0028)
@@ -988,35 +953,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonButtonStyle">();
+		STATIC_CLASS_IMPL("CommonButtonStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonButtonStyle")
 	}
 	static class UCommonButtonStyle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonButtonStyle>();
 	}
 };
-static_assert(alignof(UCommonButtonStyle) == 0x000008, "Wrong alignment on UCommonButtonStyle");
-static_assert(sizeof(UCommonButtonStyle) == 0x000530, "Wrong size on UCommonButtonStyle");
-static_assert(offsetof(UCommonButtonStyle, bSingleMaterial) == 0x000028, "Member 'UCommonButtonStyle::bSingleMaterial' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, SingleMaterialBrush) == 0x000030, "Member 'UCommonButtonStyle::SingleMaterialBrush' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, NormalBase) == 0x0000C0, "Member 'UCommonButtonStyle::NormalBase' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, NormalHovered) == 0x000150, "Member 'UCommonButtonStyle::NormalHovered' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, NormalPressed) == 0x0001E0, "Member 'UCommonButtonStyle::NormalPressed' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, SelectedBase) == 0x000270, "Member 'UCommonButtonStyle::SelectedBase' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, SelectedHovered) == 0x000300, "Member 'UCommonButtonStyle::SelectedHovered' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, SelectedPressed) == 0x000390, "Member 'UCommonButtonStyle::SelectedPressed' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, Disabled) == 0x000420, "Member 'UCommonButtonStyle::Disabled' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, ButtonPadding) == 0x0004B0, "Member 'UCommonButtonStyle::ButtonPadding' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, CustomPadding) == 0x0004C0, "Member 'UCommonButtonStyle::CustomPadding' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, MinWidth) == 0x0004D0, "Member 'UCommonButtonStyle::MinWidth' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, MinHeight) == 0x0004D4, "Member 'UCommonButtonStyle::MinHeight' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, NormalTextStyle) == 0x0004D8, "Member 'UCommonButtonStyle::NormalTextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, NormalHoveredTextStyle) == 0x0004E0, "Member 'UCommonButtonStyle::NormalHoveredTextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, SelectedTextStyle) == 0x0004E8, "Member 'UCommonButtonStyle::SelectedTextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, SelectedHoveredTextStyle) == 0x0004F0, "Member 'UCommonButtonStyle::SelectedHoveredTextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, DisabledTextStyle) == 0x0004F8, "Member 'UCommonButtonStyle::DisabledTextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, PressedSlateSound) == 0x000500, "Member 'UCommonButtonStyle::PressedSlateSound' has a wrong offset!");
-static_assert(offsetof(UCommonButtonStyle, HoveredSlateSound) == 0x000518, "Member 'UCommonButtonStyle::HoveredSlateSound' has a wrong offset!");
 
 // Class CommonUI.CommonButtonInternal
 // 0x0088 (0x04F0 - 0x0468)
@@ -1034,20 +981,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonButtonInternal">();
+		STATIC_CLASS_IMPL("CommonButtonInternal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonButtonInternal")
 	}
 	static class UCommonButtonInternal* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonButtonInternal>();
 	}
 };
-static_assert(alignof(UCommonButtonInternal) == 0x000008, "Wrong alignment on UCommonButtonInternal");
-static_assert(sizeof(UCommonButtonInternal) == 0x0004F0, "Wrong size on UCommonButtonInternal");
-static_assert(offsetof(UCommonButtonInternal, OnDoubleClicked) == 0x000468, "Member 'UCommonButtonInternal::OnDoubleClicked' has a wrong offset!");
-static_assert(offsetof(UCommonButtonInternal, MinWidth) == 0x0004C0, "Member 'UCommonButtonInternal::MinWidth' has a wrong offset!");
-static_assert(offsetof(UCommonButtonInternal, MinHeight) == 0x0004C4, "Member 'UCommonButtonInternal::MinHeight' has a wrong offset!");
-static_assert(offsetof(UCommonButtonInternal, bButtonEnabled) == 0x0004C8, "Member 'UCommonButtonInternal::bButtonEnabled' has a wrong offset!");
-static_assert(offsetof(UCommonButtonInternal, bInteractionEnabled) == 0x0004C9, "Member 'UCommonButtonInternal::bInteractionEnabled' has a wrong offset!");
 
 // Class CommonUI.CommonCustomNavigation
 // 0x0010 (0x02A0 - 0x0290)
@@ -1059,16 +1003,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonCustomNavigation">();
+		STATIC_CLASS_IMPL("CommonCustomNavigation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonCustomNavigation")
 	}
 	static class UCommonCustomNavigation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonCustomNavigation>();
 	}
 };
-static_assert(alignof(UCommonCustomNavigation) == 0x000008, "Wrong alignment on UCommonCustomNavigation");
-static_assert(sizeof(UCommonCustomNavigation) == 0x0002A0, "Wrong size on UCommonCustomNavigation");
-static_assert(offsetof(UCommonCustomNavigation, OnNavigationEvent) == 0x000290, "Member 'UCommonCustomNavigation::OnNavigationEvent' has a wrong offset!");
 
 // Class CommonUI.CommonGlobalInputHandler
 // 0x0048 (0x0070 - 0x0028)
@@ -1080,15 +1025,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonGlobalInputHandler">();
+		STATIC_CLASS_IMPL("CommonGlobalInputHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonGlobalInputHandler")
 	}
 	static class UCommonGlobalInputHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonGlobalInputHandler>();
 	}
 };
-static_assert(alignof(UCommonGlobalInputHandler) == 0x000008, "Wrong alignment on UCommonGlobalInputHandler");
-static_assert(sizeof(UCommonGlobalInputHandler) == 0x000070, "Wrong size on UCommonGlobalInputHandler");
 
 // Class CommonUI.CommonInputManager
 // 0x0298 (0x02C0 - 0x0028)
@@ -1096,7 +1043,7 @@ class UCommonInputManager final : public UObject
 {
 public:
 	uint8                                         Pad_28[0x238];                                     // 0x0028(0x0238)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ICommonActionHandlerInterface> CurrentlyHeldActionInputHandler;                   // 0x0260(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPrivate)
+	TScriptInterface<class ICommonActionHandlerInterface> CurrentlyHeldActionInputHandler;           // 0x0260(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TArray<class UCommonActivatablePanel*>        ActivatablePanelStack;                             // 0x0270(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	class UCommonGlobalInputHandler*              GlobalInputHandler;                                // 0x0280(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_288[0x10];                                     // 0x0288(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1118,19 +1065,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputManager">();
+		STATIC_CLASS_IMPL("CommonInputManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputManager")
 	}
 	static class UCommonInputManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputManager>();
 	}
 };
-static_assert(alignof(UCommonInputManager) == 0x000008, "Wrong alignment on UCommonInputManager");
-static_assert(sizeof(UCommonInputManager) == 0x0002C0, "Wrong size on UCommonInputManager");
-static_assert(offsetof(UCommonInputManager, CurrentlyHeldActionInputHandler) == 0x000260, "Member 'UCommonInputManager::CurrentlyHeldActionInputHandler' has a wrong offset!");
-static_assert(offsetof(UCommonInputManager, ActivatablePanelStack) == 0x000270, "Member 'UCommonInputManager::ActivatablePanelStack' has a wrong offset!");
-static_assert(offsetof(UCommonInputManager, GlobalInputHandler) == 0x000280, "Member 'UCommonInputManager::GlobalInputHandler' has a wrong offset!");
-static_assert(offsetof(UCommonInputManager, Operations) == 0x000298, "Member 'UCommonInputManager::Operations' has a wrong offset!");
 
 // Class CommonUI.CommonLoadGuard
 // 0x0088 (0x01B8 - 0x0130)
@@ -1158,22 +1103,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonLoadGuard">();
+		STATIC_CLASS_IMPL("CommonLoadGuard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonLoadGuard")
 	}
 	static class UCommonLoadGuard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonLoadGuard>();
 	}
 };
-static_assert(alignof(UCommonLoadGuard) == 0x000008, "Wrong alignment on UCommonLoadGuard");
-static_assert(sizeof(UCommonLoadGuard) == 0x0001B8, "Wrong size on UCommonLoadGuard");
-static_assert(offsetof(UCommonLoadGuard, OnLoadingStateChanged) == 0x000130, "Member 'UCommonLoadGuard::OnLoadingStateChanged' has a wrong offset!");
-static_assert(offsetof(UCommonLoadGuard, ThrobberAlignment) == 0x000140, "Member 'UCommonLoadGuard::ThrobberAlignment' has a wrong offset!");
-static_assert(offsetof(UCommonLoadGuard, ThrobberPadding) == 0x000144, "Member 'UCommonLoadGuard::ThrobberPadding' has a wrong offset!");
-static_assert(offsetof(UCommonLoadGuard, LoadingText) == 0x000158, "Member 'UCommonLoadGuard::LoadingText' has a wrong offset!");
-static_assert(offsetof(UCommonLoadGuard, TextStyleClass) == 0x000170, "Member 'UCommonLoadGuard::TextStyleClass' has a wrong offset!");
-static_assert(offsetof(UCommonLoadGuard, TextStyle) == 0x000180, "Member 'UCommonLoadGuard::TextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonLoadGuard, Text_LoadingText) == 0x000188, "Member 'UCommonLoadGuard::Text_LoadingText' has a wrong offset!");
 
 // Class CommonUI.CommonListViewNullItem
 // 0x0000 (0x0028 - 0x0028)
@@ -1182,19 +1122,21 @@ class UCommonListViewNullItem final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonListViewNullItem">();
+		STATIC_CLASS_IMPL("CommonListViewNullItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonListViewNullItem")
 	}
 	static class UCommonListViewNullItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonListViewNullItem>();
 	}
 };
-static_assert(alignof(UCommonListViewNullItem) == 0x000008, "Wrong alignment on UCommonListViewNullItem");
-static_assert(sizeof(UCommonListViewNullItem) == 0x000028, "Wrong size on UCommonListViewNullItem");
 
 // Class CommonUI.CommonObjectListItem
-// 0x0000 (0x0028 - 0x0028)
-class ICommonObjectListItem final : public ICommonListItem
+// 0x0000 (0x0000 - 0x0000)
+class ICommonObjectListItem final
 {
 public:
 	void Reset();
@@ -1205,15 +1147,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonObjectListItem">();
+		STATIC_CLASS_IMPL("CommonObjectListItem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonObjectListItem")
 	}
 	static class ICommonObjectListItem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ICommonObjectListItem>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ICommonObjectListItem) == 0x000008, "Wrong alignment on ICommonObjectListItem");
-static_assert(sizeof(ICommonObjectListItem) == 0x000028, "Wrong size on ICommonObjectListItem");
 
 // Class CommonUI.CommonTextStyle
 // 0x00A8 (0x00D0 - 0x0028)
@@ -1240,22 +1193,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonTextStyle">();
+		STATIC_CLASS_IMPL("CommonTextStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonTextStyle")
 	}
 	static class UCommonTextStyle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonTextStyle>();
 	}
 };
-static_assert(alignof(UCommonTextStyle) == 0x000008, "Wrong alignment on UCommonTextStyle");
-static_assert(sizeof(UCommonTextStyle) == 0x0000D0, "Wrong size on UCommonTextStyle");
-static_assert(offsetof(UCommonTextStyle, Font) == 0x000028, "Member 'UCommonTextStyle::Font' has a wrong offset!");
-static_assert(offsetof(UCommonTextStyle, Color) == 0x000090, "Member 'UCommonTextStyle::Color' has a wrong offset!");
-static_assert(offsetof(UCommonTextStyle, bUsesDropShadow) == 0x0000A0, "Member 'UCommonTextStyle::bUsesDropShadow' has a wrong offset!");
-static_assert(offsetof(UCommonTextStyle, ShadowOffset) == 0x0000A4, "Member 'UCommonTextStyle::ShadowOffset' has a wrong offset!");
-static_assert(offsetof(UCommonTextStyle, ShadowColor) == 0x0000AC, "Member 'UCommonTextStyle::ShadowColor' has a wrong offset!");
-static_assert(offsetof(UCommonTextStyle, Margin) == 0x0000BC, "Member 'UCommonTextStyle::Margin' has a wrong offset!");
-static_assert(offsetof(UCommonTextStyle, LineHeightPercentage) == 0x0000CC, "Member 'UCommonTextStyle::LineHeightPercentage' has a wrong offset!");
 
 // Class CommonUI.CommonTextScrollStyle
 // 0x0018 (0x0040 - 0x0028)
@@ -1272,20 +1220,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonTextScrollStyle">();
+		STATIC_CLASS_IMPL("CommonTextScrollStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonTextScrollStyle")
 	}
 	static class UCommonTextScrollStyle* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonTextScrollStyle>();
 	}
 };
-static_assert(alignof(UCommonTextScrollStyle) == 0x000008, "Wrong alignment on UCommonTextScrollStyle");
-static_assert(sizeof(UCommonTextScrollStyle) == 0x000040, "Wrong size on UCommonTextScrollStyle");
-static_assert(offsetof(UCommonTextScrollStyle, Speed) == 0x000028, "Member 'UCommonTextScrollStyle::Speed' has a wrong offset!");
-static_assert(offsetof(UCommonTextScrollStyle, StartDelay) == 0x00002C, "Member 'UCommonTextScrollStyle::StartDelay' has a wrong offset!");
-static_assert(offsetof(UCommonTextScrollStyle, EndDelay) == 0x000030, "Member 'UCommonTextScrollStyle::EndDelay' has a wrong offset!");
-static_assert(offsetof(UCommonTextScrollStyle, FadeInDelay) == 0x000034, "Member 'UCommonTextScrollStyle::FadeInDelay' has a wrong offset!");
-static_assert(offsetof(UCommonTextScrollStyle, FadeOutDelay) == 0x000038, "Member 'UCommonTextScrollStyle::FadeOutDelay' has a wrong offset!");
 
 // Class CommonUI.CommonUIContext
 // 0x00B8 (0x00E0 - 0x0028)
@@ -1315,21 +1260,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonUIContext">();
+		STATIC_CLASS_IMPL("CommonUIContext")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUIContext")
 	}
 	static class UCommonUIContext* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUIContext>();
 	}
 };
-static_assert(alignof(UCommonUIContext) == 0x000008, "Wrong alignment on UCommonUIContext");
-static_assert(sizeof(UCommonUIContext) == 0x0000E0, "Wrong size on UCommonUIContext");
-static_assert(offsetof(UCommonUIContext, OnInputMethodChanged) == 0x000028, "Member 'UCommonUIContext::OnInputMethodChanged' has a wrong offset!");
-static_assert(offsetof(UCommonUIContext, OnInputSuspensionChanged) == 0x0000B0, "Member 'UCommonUIContext::OnInputSuspensionChanged' has a wrong offset!");
-static_assert(offsetof(UCommonUIContext, CommonInputManager) == 0x0000D0, "Member 'UCommonUIContext::CommonInputManager' has a wrong offset!");
-static_assert(offsetof(UCommonUIContext, bIsUsingGamepad) == 0x0000D8, "Member 'UCommonUIContext::bIsUsingGamepad' has a wrong offset!");
-static_assert(offsetof(UCommonUIContext, bIsUsingTouch) == 0x0000D9, "Member 'UCommonUIContext::bIsUsingTouch' has a wrong offset!");
-static_assert(offsetof(UCommonUIContext, GamepadInputType) == 0x0000DA, "Member 'UCommonUIContext::GamepadInputType' has a wrong offset!");
 
 // Class CommonUI.CommonUILibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -1341,15 +1282,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonUILibrary">();
+		STATIC_CLASS_IMPL("CommonUILibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUILibrary")
 	}
 	static class UCommonUILibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUILibrary>();
 	}
 };
-static_assert(alignof(UCommonUILibrary) == 0x000008, "Wrong alignment on UCommonUILibrary");
-static_assert(sizeof(UCommonUILibrary) == 0x000028, "Wrong size on UCommonUILibrary");
 
 // Class CommonUI.CommonUISettings
 // 0x0068 (0x0090 - 0x0028)
@@ -1362,29 +1305,23 @@ public:
 	TSubclassOf<class UCommonButtonStyle>         DefaultButtonStyle;                                // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FStringClassReference                  DefaultBorderStyle_StringRef;                      // 0x0058(0x0010)(Edit, Config, NativeAccessSpecifierPublic)
 	TSubclassOf<class UCommonBorderStyle>         DefaultBorderStyle;                                // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FCommonInputKeyDisplayConfiguration> InputKeyToPlatformSpecificDisplayDataMap;          // 0x0070(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+	TArray<struct FCommonInputKeyDisplayConfiguration> InputKeyToPlatformSpecificDisplayDataMap;     // 0x0070(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	struct FDataTableRowHandle                    DefaultClickAction;                                // 0x0080(0x0010)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonUISettings">();
+		STATIC_CLASS_IMPL("CommonUISettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUISettings")
 	}
 	static class UCommonUISettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUISettings>();
 	}
 };
-static_assert(alignof(UCommonUISettings) == 0x000008, "Wrong alignment on UCommonUISettings");
-static_assert(sizeof(UCommonUISettings) == 0x000090, "Wrong size on UCommonUISettings");
-static_assert(offsetof(UCommonUISettings, DefaultTextStyle_StringRef) == 0x000028, "Member 'UCommonUISettings::DefaultTextStyle_StringRef' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, DefaultTextStyle) == 0x000038, "Member 'UCommonUISettings::DefaultTextStyle' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, DefaultButtonStyle_StringRef) == 0x000040, "Member 'UCommonUISettings::DefaultButtonStyle_StringRef' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, DefaultButtonStyle) == 0x000050, "Member 'UCommonUISettings::DefaultButtonStyle' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, DefaultBorderStyle_StringRef) == 0x000058, "Member 'UCommonUISettings::DefaultBorderStyle_StringRef' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, DefaultBorderStyle) == 0x000068, "Member 'UCommonUISettings::DefaultBorderStyle' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, InputKeyToPlatformSpecificDisplayDataMap) == 0x000070, "Member 'UCommonUISettings::InputKeyToPlatformSpecificDisplayDataMap' has a wrong offset!");
-static_assert(offsetof(UCommonUISettings, DefaultClickAction) == 0x000080, "Member 'UCommonUISettings::DefaultClickAction' has a wrong offset!");
 
 // Class CommonUI.CommonRotator
 // 0x0090 (0x0930 - 0x08A0)
@@ -1410,20 +1347,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonRotator">();
+		STATIC_CLASS_IMPL("CommonRotator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonRotator")
 	}
 	static class UCommonRotator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonRotator>();
 	}
 };
-static_assert(alignof(UCommonRotator) == 0x000008, "Wrong alignment on UCommonRotator");
-static_assert(sizeof(UCommonRotator) == 0x000930, "Wrong size on UCommonRotator");
-static_assert(offsetof(UCommonRotator, OnRotated) == 0x0008E0, "Member 'UCommonRotator::OnRotated' has a wrong offset!");
-static_assert(offsetof(UCommonRotator, MainBorder) == 0x0008F0, "Member 'UCommonRotator::MainBorder' has a wrong offset!");
-static_assert(offsetof(UCommonRotator, ButtonLeft) == 0x0008F8, "Member 'UCommonRotator::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UCommonRotator, ButtonRight) == 0x000900, "Member 'UCommonRotator::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UCommonRotator, MyText) == 0x000908, "Member 'UCommonRotator::MyText' has a wrong offset!");
 
 // Class CommonUI.CommonInputReflector
 // 0x0028 (0x0260 - 0x0238)
@@ -1441,18 +1375,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CommonInputReflector">();
+		STATIC_CLASS_IMPL("CommonInputReflector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonInputReflector")
 	}
 	static class UCommonInputReflector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonInputReflector>();
 	}
 };
-static_assert(alignof(UCommonInputReflector) == 0x000008, "Wrong alignment on UCommonInputReflector");
-static_assert(sizeof(UCommonInputReflector) == 0x000260, "Wrong size on UCommonInputReflector");
-static_assert(offsetof(UCommonInputReflector, ButtonType) == 0x000238, "Member 'UCommonInputReflector::ButtonType' has a wrong offset!");
-static_assert(offsetof(UCommonInputReflector, ActiveButtons) == 0x000240, "Member 'UCommonInputReflector::ActiveButtons' has a wrong offset!");
-static_assert(offsetof(UCommonInputReflector, InactiveButtons) == 0x000250, "Member 'UCommonInputReflector::InactiveButtons' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

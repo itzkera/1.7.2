@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestTrackerMainQuestList.QuestTrackerMainQuestList_C
 // 0x0000 (0x0270 - 0x0270)
@@ -26,15 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestTrackerMainQuestList_C">();
+		BP_STATIC_CLASS_IMPL("QuestTrackerMainQuestList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestTrackerMainQuestList_C")
 	}
 	static class UQuestTrackerMainQuestList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestTrackerMainQuestList_C>();
 	}
 };
-static_assert(alignof(UQuestTrackerMainQuestList_C) == 0x000008, "Wrong alignment on UQuestTrackerMainQuestList_C");
-static_assert(sizeof(UQuestTrackerMainQuestList_C) == 0x000270, "Wrong size on UQuestTrackerMainQuestList_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "FortniteGame_structs.hpp"
+#include "TooltipStat_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
-#include "TooltipStat_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PerkWidgetNew.PerkWidgetNew_C.ExecuteUbergraph_PerkWidgetNew
 // 0x00F0 (0x00F0 - 0x0000)
@@ -55,30 +55,6 @@ public:
 	class UClass*                                 K2Node_Select4_Default;                            // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select5_Default;                            // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew) == 0x000008, "Wrong alignment on PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew");
-static_assert(sizeof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew) == 0x0000F0, "Wrong size on PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, EntryPoint) == 0x000000, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, CallFunc_IsPerkHighlighted_ReturnValue) == 0x000004, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::CallFunc_IsPerkHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_bool_Variable) == 0x000005, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_byte_Variable) == 0x000006, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_byte_Variable2) == 0x000007, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_bool_Variable2) == 0x000008, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_bool_Variable3) == 0x000009, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_bool_Variable4) == 0x00000A, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_byte_Variable3) == 0x00000B, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_byte_Variable4) == 0x00000C, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_Event_IsDesignTime) == 0x00000D, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_Select_Default) == 0x00000E, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_MakeStruct_SlateBrush) == 0x000010, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, CallFunc_ShouldFadePerk_Result) == 0x0000A0, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::CallFunc_ShouldFadePerk_Result' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_struct_Variable) == 0x0000A4, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_Select2_Default) == 0x0000B4, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, CallFunc_HasAbility_ReturnValue) == 0x0000B5, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::CallFunc_HasAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_struct_Variable2) == 0x0000B8, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, Temp_bool_Variable5) == 0x0000C8, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_Select3_Default) == 0x0000CC, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_Select4_Default) == 0x0000E0, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew, K2Node_Select5_Default) == 0x0000E8, "Member 'PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew::K2Node_Select5_Default' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -87,9 +63,6 @@ struct PerkWidgetNew_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidgetNew_C_PreConstruct) == 0x000001, "Wrong alignment on PerkWidgetNew_C_PreConstruct");
-static_assert(sizeof(PerkWidgetNew_C_PreConstruct) == 0x000001, "Wrong size on PerkWidgetNew_C_PreConstruct");
-static_assert(offsetof(PerkWidgetNew_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PerkWidgetNew_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeBasicPerk
 // 0x0250 (0x0250 - 0x0000)
@@ -105,14 +78,6 @@ public:
 	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0130(0x0090)()
 	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x01C0(0x0090)()
 };
-static_assert(alignof(PerkWidgetNew_C_InitializeBasicPerk) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeBasicPerk");
-static_assert(sizeof(PerkWidgetNew_C_InitializeBasicPerk) == 0x000250, "Wrong size on PerkWidgetNew_C_InitializeBasicPerk");
-static_assert(offsetof(PerkWidgetNew_C_InitializeBasicPerk, CallFunc_NoResourceBrush_ReturnValue) == 0x000000, "Member 'PerkWidgetNew_C_InitializeBasicPerk::CallFunc_NoResourceBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeBasicPerk, Temp_bool_Variable) == 0x000090, "Member 'PerkWidgetNew_C_InitializeBasicPerk::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeBasicPerk, CallFunc_GetIcon_Brush) == 0x000098, "Member 'PerkWidgetNew_C_InitializeBasicPerk::CallFunc_GetIcon_Brush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeBasicPerk, CallFunc_GetIcon_ReturnValue) == 0x000128, "Member 'PerkWidgetNew_C_InitializeBasicPerk::CallFunc_GetIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeBasicPerk, K2Node_Select_Default) == 0x000130, "Member 'PerkWidgetNew_C_InitializeBasicPerk::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeBasicPerk, CallFunc_ResizeBrush_NewParam) == 0x0001C0, "Member 'PerkWidgetNew_C_InitializeBasicPerk::CallFunc_ResizeBrush_NewParam' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeAbilityPerk
 // 0x0250 (0x0250 - 0x0000)
@@ -128,14 +93,6 @@ public:
 	struct FSlateBrush                            K2Node_Select_Default;                             // 0x0130(0x0090)()
 	struct FSlateBrush                            CallFunc_ResizeBrush_NewParam;                     // 0x01C0(0x0090)()
 };
-static_assert(alignof(PerkWidgetNew_C_InitializeAbilityPerk) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeAbilityPerk");
-static_assert(sizeof(PerkWidgetNew_C_InitializeAbilityPerk) == 0x000250, "Wrong size on PerkWidgetNew_C_InitializeAbilityPerk");
-static_assert(offsetof(PerkWidgetNew_C_InitializeAbilityPerk, Temp_bool_Variable) == 0x000000, "Member 'PerkWidgetNew_C_InitializeAbilityPerk::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeAbilityPerk, K2Node_MakeStruct_SlateBrush) == 0x000008, "Member 'PerkWidgetNew_C_InitializeAbilityPerk::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeAbilityPerk, CallFunc_GetIcon_Brush) == 0x000098, "Member 'PerkWidgetNew_C_InitializeAbilityPerk::CallFunc_GetIcon_Brush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeAbilityPerk, CallFunc_GetIcon_ReturnValue) == 0x000128, "Member 'PerkWidgetNew_C_InitializeAbilityPerk::CallFunc_GetIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeAbilityPerk, K2Node_Select_Default) == 0x000130, "Member 'PerkWidgetNew_C_InitializeAbilityPerk::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeAbilityPerk, CallFunc_ResizeBrush_NewParam) == 0x0001C0, "Member 'PerkWidgetNew_C_InitializeAbilityPerk::CallFunc_ResizeBrush_NewParam' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.GetTierAbilityBrush
 // 0x0190 (0x0190 - 0x0000)
@@ -161,24 +118,6 @@ public:
 	class UObject*                                K2Node_Select_Default;                             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0100(0x0090)()
 };
-static_assert(alignof(PerkWidgetNew_C_GetTierAbilityBrush) == 0x000008, "Wrong alignment on PerkWidgetNew_C_GetTierAbilityBrush");
-static_assert(sizeof(PerkWidgetNew_C_GetTierAbilityBrush) == 0x000190, "Wrong size on PerkWidgetNew_C_GetTierAbilityBrush");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, SlateBrush) == 0x000000, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::SlateBrush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_byte_Variable) == 0x000090, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable) == 0x000098, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable2) == 0x0000A0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable3) == 0x0000A8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable4) == 0x0000B0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable4' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable5) == 0x0000B8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable5' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable6) == 0x0000C0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable6' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable7) == 0x0000C8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable7' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable8) == 0x0000D0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable8' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable9) == 0x0000D8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable9' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable10) == 0x0000E0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable10' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, Temp_object_Variable11) == 0x0000E8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::Temp_object_Variable11' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, CallFunc_GetPerkTier_ReturnValue) == 0x0000F0, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::CallFunc_GetPerkTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, K2Node_Select_Default) == 0x0000F8, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetTierAbilityBrush, K2Node_MakeStruct_SlateBrush) == 0x000100, "Member 'PerkWidgetNew_C_GetTierAbilityBrush::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.GetHighlightColor
 // 0x0048 (0x0048 - 0x0000)
@@ -194,14 +133,6 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerkWidgetNew_C_GetHighlightColor) == 0x000004, "Wrong alignment on PerkWidgetNew_C_GetHighlightColor");
-static_assert(sizeof(PerkWidgetNew_C_GetHighlightColor) == 0x000048, "Wrong size on PerkWidgetNew_C_GetHighlightColor");
-static_assert(offsetof(PerkWidgetNew_C_GetHighlightColor, Color) == 0x000000, "Member 'PerkWidgetNew_C_GetHighlightColor::Color' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetHighlightColor, Temp_bool_Variable) == 0x000010, "Member 'PerkWidgetNew_C_GetHighlightColor::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetHighlightColor, Temp_struct_Variable) == 0x000014, "Member 'PerkWidgetNew_C_GetHighlightColor::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetHighlightColor, CallFunc_Get_Buff_Color_Color) == 0x000024, "Member 'PerkWidgetNew_C_GetHighlightColor::CallFunc_Get_Buff_Color_Color' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetHighlightColor, CallFunc_IsPerkHighlighted_ReturnValue) == 0x000034, "Member 'PerkWidgetNew_C_GetHighlightColor::CallFunc_IsPerkHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetHighlightColor, K2Node_Select_Default) == 0x000038, "Member 'PerkWidgetNew_C_GetHighlightColor::K2Node_Select_Default' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.ShouldFadePerk
 // 0x0006 (0x0006 - 0x0000)
@@ -215,14 +146,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidgetNew_C_ShouldFadePerk) == 0x000001, "Wrong alignment on PerkWidgetNew_C_ShouldFadePerk");
-static_assert(sizeof(PerkWidgetNew_C_ShouldFadePerk) == 0x000006, "Wrong size on PerkWidgetNew_C_ShouldFadePerk");
-static_assert(offsetof(PerkWidgetNew_C_ShouldFadePerk, Result) == 0x000000, "Member 'PerkWidgetNew_C_ShouldFadePerk::Result' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ShouldFadePerk, CallFunc_IsPerkHighlighted_ReturnValue) == 0x000001, "Member 'PerkWidgetNew_C_ShouldFadePerk::CallFunc_IsPerkHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ShouldFadePerk, CallFunc_IsPerkUnlocked_ReturnValue) == 0x000002, "Member 'PerkWidgetNew_C_ShouldFadePerk::CallFunc_IsPerkUnlocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ShouldFadePerk, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'PerkWidgetNew_C_ShouldFadePerk::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ShouldFadePerk, CallFunc_Not_PreBool_ReturnValue2) == 0x000004, "Member 'PerkWidgetNew_C_ShouldFadePerk::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_ShouldFadePerk, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'PerkWidgetNew_C_ShouldFadePerk::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeText
 // 0x0058 (0x0058 - 0x0000)
@@ -236,13 +159,6 @@ public:
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetTooltipTitle_ReturnValue;              // 0x0040(0x0018)()
 };
-static_assert(alignof(PerkWidgetNew_C_InitializeText) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeText");
-static_assert(sizeof(PerkWidgetNew_C_InitializeText) == 0x000058, "Wrong size on PerkWidgetNew_C_InitializeText");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, DescriptionText) == 0x000000, "Member 'PerkWidgetNew_C_InitializeText::DescriptionText' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, CallFunc_GetCombinedTooltipDescription_ReturnValue) == 0x000010, "Member 'PerkWidgetNew_C_InitializeText::CallFunc_GetCombinedTooltipDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface) == 0x000028, "Member 'PerkWidgetNew_C_InitializeText::K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'PerkWidgetNew_C_InitializeText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeText, CallFunc_GetTooltipTitle_ReturnValue) == 0x000040, "Member 'PerkWidgetNew_C_InitializeText::CallFunc_GetTooltipTitle_ReturnValue' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeHeroBonusIcon
 // 0x00C8 (0x00C8 - 0x0000)
@@ -261,17 +177,6 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x0090)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidgetNew_C_InitializeHeroBonusIcon) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeHeroBonusIcon");
-static_assert(sizeof(PerkWidgetNew_C_InitializeHeroBonusIcon) == 0x0000C8, "Wrong size on PerkWidgetNew_C_InitializeHeroBonusIcon");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, SupportPerkType) == 0x000000, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::SupportPerkType' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_byte_Variable) == 0x000001, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable) == 0x000008, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable2) == 0x000010, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, Temp_object_Variable3) == 0x000018, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, CallFunc_GetSupportBonusType_ReturnValue) == 0x000020, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::CallFunc_GetSupportBonusType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, K2Node_Select_Default) == 0x000028, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, K2Node_MakeStruct_SlateBrush) == 0x000030, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeHeroBonusIcon, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000C0, "Member 'PerkWidgetNew_C_InitializeHeroBonusIcon::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.SetupBadge
 // 0x00B8 (0x00B8 - 0x0000)
@@ -286,13 +191,6 @@ public:
 	int32                                         CallFunc_GetRequiredLevel_ReturnValue;             // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00A0(0x0018)()
 };
-static_assert(alignof(PerkWidgetNew_C_SetupBadge) == 0x000008, "Wrong alignment on PerkWidgetNew_C_SetupBadge");
-static_assert(sizeof(PerkWidgetNew_C_SetupBadge) == 0x0000B8, "Wrong size on PerkWidgetNew_C_SetupBadge");
-static_assert(offsetof(PerkWidgetNew_C_SetupBadge, SupportPerkType) == 0x000000, "Member 'PerkWidgetNew_C_SetupBadge::SupportPerkType' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_SetupBadge, CallFunc_GetTierAbilityBrush_SlateBrush) == 0x000008, "Member 'PerkWidgetNew_C_SetupBadge::CallFunc_GetTierAbilityBrush_SlateBrush' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_SetupBadge, CallFunc_IsTierPerk_ReturnValue) == 0x000098, "Member 'PerkWidgetNew_C_SetupBadge::CallFunc_IsTierPerk_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_SetupBadge, CallFunc_GetRequiredLevel_ReturnValue) == 0x00009C, "Member 'PerkWidgetNew_C_SetupBadge::CallFunc_GetRequiredLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_SetupBadge, CallFunc_Conv_IntToText_ReturnValue) == 0x0000A0, "Member 'PerkWidgetNew_C_SetupBadge::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.GetPerkStat
 // 0x0258 (0x0258 - 0x0000)
@@ -323,28 +221,6 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0208(0x0018)()
 	struct FTooltipStat                           K2Node_MakeStruct_TooltipStat;                     // 0x0220(0x0038)(HasGetValueTypeHash)
 };
-static_assert(alignof(PerkWidgetNew_C_GetPerkStat) == 0x000008, "Wrong alignment on PerkWidgetNew_C_GetPerkStat");
-static_assert(sizeof(PerkWidgetNew_C_GetPerkStat) == 0x000258, "Wrong size on PerkWidgetNew_C_GetPerkStat");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, TooltipStat) == 0x000000, "Member 'PerkWidgetNew_C_GetPerkStat::TooltipStat' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, Temp_bool_Variable) == 0x000038, "Member 'PerkWidgetNew_C_GetPerkStat::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetPerkTier_ReturnValue) == 0x000039, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetPerkTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetTooltipTitle_ReturnValue) == 0x000040, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetTooltipTitle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_IsTierPerk_ReturnValue) == 0x000058, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_IsTierPerk_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetTooltipTitle_ReturnValue2) == 0x0000A0, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetTooltipTitle_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetContext_ReturnValue) == 0x0000B8, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData2) == 0x0000C0, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetTierText_ReturnValue) == 0x000100, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetTierText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_GetRequiredLevel_ReturnValue) == 0x000118, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_GetRequiredLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData3) == 0x000120, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_Conv_IntToText_ReturnValue) == 0x000160, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeArray_Array) == 0x000178, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_FormatArgumentData4) == 0x000188, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_Format_ReturnValue) == 0x0001C8, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeArray_Array2) == 0x0001E0, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, CallFunc_Format_ReturnValue2) == 0x0001F0, "Member 'PerkWidgetNew_C_GetPerkStat::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_Select_Default) == 0x000208, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_GetPerkStat, K2Node_MakeStruct_TooltipStat) == 0x000220, "Member 'PerkWidgetNew_C_GetPerkStat::K2Node_MakeStruct_TooltipStat' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.HighlightBadge
 // 0x0048 (0x0048 - 0x0000)
@@ -355,11 +231,6 @@ public:
 	struct FLinearColor                           CallFunc_GetHighlightColor_Color2;                 // 0x0010(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
 };
-static_assert(alignof(PerkWidgetNew_C_HighlightBadge) == 0x000008, "Wrong alignment on PerkWidgetNew_C_HighlightBadge");
-static_assert(sizeof(PerkWidgetNew_C_HighlightBadge) == 0x000048, "Wrong size on PerkWidgetNew_C_HighlightBadge");
-static_assert(offsetof(PerkWidgetNew_C_HighlightBadge, CallFunc_GetHighlightColor_Color) == 0x000000, "Member 'PerkWidgetNew_C_HighlightBadge::CallFunc_GetHighlightColor_Color' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_HighlightBadge, CallFunc_GetHighlightColor_Color2) == 0x000010, "Member 'PerkWidgetNew_C_HighlightBadge::CallFunc_GetHighlightColor_Color2' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_HighlightBadge, K2Node_MakeStruct_SlateColor) == 0x000020, "Member 'PerkWidgetNew_C_HighlightBadge::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.InitializeSettings
 // 0x0098 (0x0098 - 0x0000)
@@ -374,14 +245,6 @@ public:
 	struct FFortUIPerk                            Perk_0;                                            // 0x0008(0x0088)(Parm)
 	bool                                          ShowMouseTooltips;                                 // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidgetNew_C_InitializeSettings) == 0x000008, "Wrong alignment on PerkWidgetNew_C_InitializeSettings");
-static_assert(sizeof(PerkWidgetNew_C_InitializeSettings) == 0x000098, "Wrong size on PerkWidgetNew_C_InitializeSettings");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, bIncludeName_0) == 0x000000, "Member 'PerkWidgetNew_C_InitializeSettings::bIncludeName_0' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, bIncludeDescription_0) == 0x000001, "Member 'PerkWidgetNew_C_InitializeSettings::bIncludeDescription_0' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, IconSize_0) == 0x000002, "Member 'PerkWidgetNew_C_InitializeSettings::IconSize_0' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, bUseLargeFormatName_0) == 0x000003, "Member 'PerkWidgetNew_C_InitializeSettings::bUseLargeFormatName_0' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, Perk_0) == 0x000008, "Member 'PerkWidgetNew_C_InitializeSettings::Perk_0' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_InitializeSettings, ShowMouseTooltips) == 0x000090, "Member 'PerkWidgetNew_C_InitializeSettings::ShowMouseTooltips' has a wrong offset!");
 
 // Function PerkWidgetNew.PerkWidgetNew_C.Get_OverlayAbilityPerk_ToolTipWidget
 // 0x0058 (0x0058 - 0x0000)
@@ -398,17 +261,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget) == 0x000008, "Wrong alignment on PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget");
-static_assert(sizeof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget) == 0x000058, "Wrong size on PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, ReturnValue) == 0x000000, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_GetTooltipTitle_ReturnValue) == 0x000008, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_GetTooltipTitle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_GetCombinedTooltipDescription_ReturnValue) == 0x000020, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_GetCombinedTooltipDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_Create_Basic_Tooltip_Output) == 0x000040, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_GetContext_ReturnValue) == 0x000048, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000050, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000051, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget, CallFunc_BooleanAND_ReturnValue) == 0x000052, "Member 'PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

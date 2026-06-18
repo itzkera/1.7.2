@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TODM_A.TODM_A_C.ExecuteUbergraph_TODM_A
 // 0x0210 (0x0210 - 0x0000)
@@ -111,88 +111,6 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue14;             // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue8;                   // 0x01F8(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TODM_A_C_ExecuteUbergraph_TODM_A) == 0x000010, "Wrong alignment on TODM_A_C_ExecuteUbergraph_TODM_A");
-static_assert(sizeof(TODM_A_C_ExecuteUbergraph_TODM_A) == 0x000210, "Wrong size on TODM_A_C_ExecuteUbergraph_TODM_A");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, EntryPoint) == 0x000000, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FFloor_ReturnValue) == 0x000004, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FFloor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Conv_IntToBool_ReturnValue) == 0x000008, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000020, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Square_ReturnValue) == 0x000028, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Square_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00002C, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue2) == 0x000030, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GetGameUserSettings_ReturnValue) == 0x000038, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GetShadowQuality_ReturnValue) == 0x000040, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GetShadowQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Greater_IntInt_ReturnValue) == 0x000044, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000048, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, K2Node_SwitchInteger_CmpSuccess) == 0x00004C, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, Temp_bool_Variable) == 0x00004D, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Not_PreBool_ReturnValue) == 0x00004E, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BooleanOR_ReturnValue) == 0x00004F, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_RandomFloatInRange_ReturnValue) == 0x000050, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000058, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue3) == 0x000060, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue4) == 0x000064, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue) == 0x000068, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GetStormStrength_ReturnValue) == 0x00006C, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GetStormStrength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, K2Node_CustomEvent_Enable) == 0x000070, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::K2Node_CustomEvent_Enable' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Not_PreBool_ReturnValue2) == 0x000071, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GetLightColor_ReturnValue) == 0x000074, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GetLightColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_R) == 0x000084, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_G) == 0x000088, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_B) == 0x00008C, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_A) == 0x000090, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_LinearColorLerp_ReturnValue) == 0x000094, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_LinearColorLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue5) == 0x0000A4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_R2) == 0x0000A8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_R2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_G2) == 0x0000AC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_G2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_B2) == 0x0000B0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_B2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_BreakColor_A2) == 0x0000B4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_BreakColor_A2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue6) == 0x0000B8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue7) == 0x0000BC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue8) == 0x0000C0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue9) == 0x0000C4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue2) == 0x0000C8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue10) == 0x0000CC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue3) == 0x0000D0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue4) == 0x0000D4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue5) == 0x0000D8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000DC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_RandomFloatInRange_ReturnValue2) == 0x0000E0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_RandomFloatInRange_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue6) == 0x0000E4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000E8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Divide_FloatFloat_ReturnValue2) == 0x0000EC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Divide_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Multiply_FloatFloat_ReturnValue11) == 0x0000F0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Multiply_FloatFloat_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GetGameUserSettings_ReturnValue2) == 0x0000F8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GetGameUserSettings_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeTransform_ReturnValue) == 0x000100, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GetAntiAliasingQuality_ReturnValue) == 0x000130, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GetAntiAliasingQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_AddComponent_ReturnValue) == 0x000138, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000140, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_SelectFloat_ReturnValue) == 0x000144, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue) == 0x000148, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue) == 0x000158, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue7) == 0x00015C, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue2) == 0x000160, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue8) == 0x000164, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue2) == 0x000168, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue3) == 0x000178, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue3) == 0x000188, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue4) == 0x00018C, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue9) == 0x000190, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue9' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue10) == 0x000194, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue10' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue4) == 0x000198, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue5) == 0x0001A8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue5) == 0x0001B8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue11) == 0x0001BC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue11' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue6) == 0x0001C0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue12) == 0x0001C4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue12' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue6) == 0x0001C8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue7) == 0x0001D8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue7) == 0x0001E8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue13) == 0x0001EC, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue13' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_FClamp_ReturnValue8) == 0x0001F0, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_FClamp_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_Add_FloatFloat_ReturnValue14) == 0x0001F4, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_Add_FloatFloat_ReturnValue14' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_ExecuteUbergraph_TODM_A, CallFunc_MakeColor_ReturnValue8) == 0x0001F8, "Member 'TODM_A_C_ExecuteUbergraph_TODM_A::CallFunc_MakeColor_ReturnValue8' has a wrong offset!");
 
 // Function TODM_A.TODM_A_C.DisableLightAndFog
 // 0x0001 (0x0001 - 0x0000)
@@ -201,9 +119,6 @@ struct TODM_A_C_DisableLightAndFog final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TODM_A_C_DisableLightAndFog) == 0x000001, "Wrong alignment on TODM_A_C_DisableLightAndFog");
-static_assert(sizeof(TODM_A_C_DisableLightAndFog) == 0x000001, "Wrong size on TODM_A_C_DisableLightAndFog");
-static_assert(offsetof(TODM_A_C_DisableLightAndFog, Enable) == 0x000000, "Member 'TODM_A_C_DisableLightAndFog::Enable' has a wrong offset!");
 
 // Function TODM_A.TODM_A_C.UserConstructionScript
 // 0x00C0 (0x00C0 - 0x0000)
@@ -235,32 +150,6 @@ public:
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue7;                   // 0x00A0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_MakeColor_ReturnValue8;                   // 0x00B0(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TODM_A_C_UserConstructionScript) == 0x000004, "Wrong alignment on TODM_A_C_UserConstructionScript");
-static_assert(sizeof(TODM_A_C_UserConstructionScript) == 0x0000C0, "Wrong size on TODM_A_C_UserConstructionScript");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue) == 0x000000, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue2) == 0x000004, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue) == 0x000008, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue2) == 0x00000C, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue) == 0x000010, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue2) == 0x000020, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue3) == 0x000030, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue3) == 0x000034, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue4) == 0x000038, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue4) == 0x00003C, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue3) == 0x000040, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue4) == 0x000050, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue5) == 0x000060, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue5) == 0x000064, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue6) == 0x000068, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue6) == 0x00006C, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue5) == 0x000070, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue6) == 0x000080, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue7) == 0x000090, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue7) == 0x000094, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_FClamp_ReturnValue8) == 0x000098, "Member 'TODM_A_C_UserConstructionScript::CallFunc_FClamp_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_Add_FloatFloat_ReturnValue8) == 0x00009C, "Member 'TODM_A_C_UserConstructionScript::CallFunc_Add_FloatFloat_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue7) == 0x0000A0, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(TODM_A_C_UserConstructionScript, CallFunc_MakeColor_ReturnValue8) == 0x0000B0, "Member 'TODM_A_C_UserConstructionScript::CallFunc_MakeColor_ReturnValue8' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

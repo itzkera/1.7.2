@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionListItem.BP_FortExpeditionListItem_C
 // 0x0058 (0x0910 - 0x08B8)
@@ -60,26 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionListItem_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionListItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionListItem_C")
 	}
 	static class UBP_FortExpeditionListItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionListItem_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionListItem_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionListItem_C");
-static_assert(sizeof(UBP_FortExpeditionListItem_C) == 0x000910, "Wrong size on UBP_FortExpeditionListItem_C");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, UberGraphFrame) == 0x0008B8, "Member 'UBP_FortExpeditionListItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, BasicRatingWidget) == 0x0008C0, "Member 'UBP_FortExpeditionListItem_C::BasicRatingWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, BP_FortExpeditionExpiresWidget) == 0x0008C8, "Member 'UBP_FortExpeditionListItem_C::BP_FortExpeditionExpiresWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, BP_FortExpeditionReturnsWidget) == 0x0008D0, "Member 'UBP_FortExpeditionListItem_C::BP_FortExpeditionReturnsWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, ExpeditionDuration) == 0x0008D8, "Member 'UBP_FortExpeditionListItem_C::ExpeditionDuration' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, ExpeditionName) == 0x0008E0, "Member 'UBP_FortExpeditionListItem_C::ExpeditionName' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, InProgressSwitcher) == 0x0008E8, "Member 'UBP_FortExpeditionListItem_C::InProgressSwitcher' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, NormalBangWrapper) == 0x0008F0, "Member 'UBP_FortExpeditionListItem_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, RewardsSet) == 0x0008F8, "Member 'UBP_FortExpeditionListItem_C::RewardsSet' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, SuccessChance) == 0x000900, "Member 'UBP_FortExpeditionListItem_C::SuccessChance' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionListItem_C, VechileImage) == 0x000908, "Member 'UBP_FortExpeditionListItem_C::VechileImage' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

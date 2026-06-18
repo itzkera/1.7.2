@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C
 // 0x0040 (0x0278 - 0x0238)
@@ -42,23 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TeleportPadPlayerTop_C">();
+		BP_STATIC_CLASS_IMPL("Results_TeleportPadPlayerTop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TeleportPadPlayerTop_C")
 	}
 	static class UResults_TeleportPadPlayerTop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TeleportPadPlayerTop_C>();
 	}
 };
-static_assert(alignof(UResults_TeleportPadPlayerTop_C) == 0x000008, "Wrong alignment on UResults_TeleportPadPlayerTop_C");
-static_assert(sizeof(UResults_TeleportPadPlayerTop_C) == 0x000278, "Wrong size on UResults_TeleportPadPlayerTop_C");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, UberGraphFrame) == 0x000238, "Member 'UResults_TeleportPadPlayerTop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, Anim_Intro) == 0x000240, "Member 'UResults_TeleportPadPlayerTop_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, Anim_IntroName) == 0x000248, "Member 'UResults_TeleportPadPlayerTop_C::Anim_IntroName' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, PlayerBanner) == 0x000250, "Member 'UResults_TeleportPadPlayerTop_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, ProgressBar) == 0x000258, "Member 'UResults_TeleportPadPlayerTop_C::ProgressBar' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, TextHomeBasePower) == 0x000260, "Member 'UResults_TeleportPadPlayerTop_C::TextHomeBasePower' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, TextName) == 0x000268, "Member 'UResults_TeleportPadPlayerTop_C::TextName' has a wrong offset!");
-static_assert(offsetof(UResults_TeleportPadPlayerTop_C, TextXPAmount) == 0x000270, "Member 'UResults_TeleportPadPlayerTop_C::TextXPAmount' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

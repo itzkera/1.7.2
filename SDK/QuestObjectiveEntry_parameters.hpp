@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.ExecuteUbergraph_QuestObjectiveEntry
 // 0x0020 (0x0020 - 0x0000)
@@ -27,12 +27,6 @@ public:
 	class UFortQuestObjectiveInfo*                K2Node_DynamicCast_AsFort_Quest_Objective_Info;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry) == 0x000008, "Wrong alignment on QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry");
-static_assert(sizeof(QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry) == 0x000020, "Wrong size on QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry");
-static_assert(offsetof(QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry, EntryPoint) == 0x000000, "Member 'QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry, K2Node_CustomEvent_InData) == 0x000008, "Member 'QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry::K2Node_CustomEvent_InData' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry, K2Node_DynamicCast_AsFort_Quest_Objective_Info) == 0x000010, "Member 'QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry::K2Node_DynamicCast_AsFort_Quest_Objective_Info' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'QuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.SetData
 // 0x0008 (0x0008 - 0x0000)
@@ -41,9 +35,6 @@ struct QuestObjectiveEntry_C_SetData final
 public:
 	class UObject*                                InData;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestObjectiveEntry_C_SetData) == 0x000008, "Wrong alignment on QuestObjectiveEntry_C_SetData");
-static_assert(sizeof(QuestObjectiveEntry_C_SetData) == 0x000008, "Wrong size on QuestObjectiveEntry_C_SetData");
-static_assert(offsetof(QuestObjectiveEntry_C_SetData, InData) == 0x000000, "Member 'QuestObjectiveEntry_C_SetData::InData' has a wrong offset!");
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.UpdateProgress
 // 0x0018 (0x0018 - 0x0000)
@@ -58,15 +49,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestObjectiveEntry_C_UpdateProgress) == 0x000008, "Wrong alignment on QuestObjectiveEntry_C_UpdateProgress");
-static_assert(sizeof(QuestObjectiveEntry_C_UpdateProgress) == 0x000018, "Wrong size on QuestObjectiveEntry_C_UpdateProgress");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Objective) == 0x000000, "Member 'QuestObjectiveEntry_C_UpdateProgress::Objective' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, AchievedCount) == 0x000008, "Member 'QuestObjectiveEntry_C_UpdateProgress::AchievedCount' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Temp_byte_Variable) == 0x00000C, "Member 'QuestObjectiveEntry_C_UpdateProgress::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, CallFunc_HasCompleted_ReturnValue) == 0x00000D, "Member 'QuestObjectiveEntry_C_UpdateProgress::CallFunc_HasCompleted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Temp_byte_Variable2) == 0x00000E, "Member 'QuestObjectiveEntry_C_UpdateProgress::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, Temp_bool_Variable) == 0x00000F, "Member 'QuestObjectiveEntry_C_UpdateProgress::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_UpdateProgress, K2Node_Select_Default) == 0x000010, "Member 'QuestObjectiveEntry_C_UpdateProgress::K2Node_Select_Default' has a wrong offset!");
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.Update
 // 0x00B8 (0x00B8 - 0x0000)
@@ -103,32 +85,6 @@ public:
 	class FText                                   CallFunc_GetCombinedDescription_OutDescription2;   // 0x0098(0x0018)()
 	bool                                          CallFunc_GetCombinedDescription_ReturnValue2;      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestObjectiveEntry_C_Update) == 0x000008, "Wrong alignment on QuestObjectiveEntry_C_Update");
-static_assert(sizeof(QuestObjectiveEntry_C_Update) == 0x0000B8, "Wrong size on QuestObjectiveEntry_C_Update");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Objective) == 0x000000, "Member 'QuestObjectiveEntry_C_Update::Objective' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, AchievedCount) == 0x000008, "Member 'QuestObjectiveEntry_C_Update::AchievedCount' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_byte_Variable) == 0x00000C, "Member 'QuestObjectiveEntry_C_Update::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_IsValid_ReturnValue) == 0x00000D, "Member 'QuestObjectiveEntry_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_byte_Variable2) == 0x00000E, "Member 'QuestObjectiveEntry_C_Update::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_bool_Variable) == 0x00000F, "Member 'QuestObjectiveEntry_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_SpawnTooltipContext_ReturnValue) == 0x000010, "Member 'QuestObjectiveEntry_C_Update::CallFunc_SpawnTooltipContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_byte_Variable3) == 0x000018, "Member 'QuestObjectiveEntry_C_Update::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetText_ReturnValue) == 0x000020, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_SpawnTooltipContext_ReturnValue2) == 0x000038, "Member 'QuestObjectiveEntry_C_Update::CallFunc_SpawnTooltipContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_TextIsEmpty_ReturnValue) == 0x000040, "Member 'QuestObjectiveEntry_C_Update::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetGameState_ReturnValue) == 0x000048, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, K2Node_DynamicCast_AsFort_Game_State_Zone) == 0x000050, "Member 'QuestObjectiveEntry_C_Update::K2Node_DynamicCast_AsFort_Game_State_Zone' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'QuestObjectiveEntry_C_Update::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, K2Node_Select_Default) == 0x000059, "Member 'QuestObjectiveEntry_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_byte_Variable4) == 0x00005A, "Member 'QuestObjectiveEntry_C_Update::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, Temp_bool_Variable2) == 0x00005B, "Member 'QuestObjectiveEntry_C_Update::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetContext_ReturnValue) == 0x000060, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, K2Node_Select2_Default) == 0x000068, "Member 'QuestObjectiveEntry_C_Update::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetCombinedDescription_OutDescription) == 0x000070, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetCombinedDescription_ReturnValue) == 0x000088, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetContext_ReturnValue2) == 0x000090, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetCombinedDescription_OutDescription2) == 0x000098, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetCombinedDescription_OutDescription2' has a wrong offset!");
-static_assert(offsetof(QuestObjectiveEntry_C_Update, CallFunc_GetCombinedDescription_ReturnValue2) == 0x0000B0, "Member 'QuestObjectiveEntry_C_Update::CallFunc_GetCombinedDescription_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

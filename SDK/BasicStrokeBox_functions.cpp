@@ -14,8 +14,7 @@
 #include "BasicStrokeBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BasicStrokeBox.BasicStrokeBox_C.ExecuteUbergraph_BasicStrokeBox
 // ()
@@ -75,8 +74,8 @@ void UBasicStrokeBox_C::Redraw()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Shape_Style                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Fill_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Stroke_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Fill_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Stroke_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBasicStrokeBox_C::Customize(int32 Shape_Style, const struct FLinearColor& Fill_Color, const struct FLinearColor& Stroke_Color)
 {
@@ -94,5 +93,5 @@ void UBasicStrokeBox_C::Customize(int32 Shape_Style, const struct FLinearColor& 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemTransform.ItemTransform_C.ExecuteUbergraph_ItemTransform
 // 0x0098 (0x0098 - 0x0000)
@@ -25,9 +25,9 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              K2Node_ComponentBoundEvent_Key;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class UFortItem*                        Temp_object_Variable;                              // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TArray<struct FFortItemInstanceQuantityPair>& TransmoggedItems, TArray<struct FFortItemInstanceQuantityPair>& RecycledItems)> K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<struct FFortItemInstanceQuantityPair>& TransmoggedItems, const TArray<struct FFortItemInstanceQuantityPair>& RecycledItems)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FText& ErrorMessage)>    K2Node_CreateDelegate_OutputDelegate2;             // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FText& ErrorMessage)> K2Node_CreateDelegate_OutputDelegate2;          // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_ComponentBoundEvent_ActiveWidget;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,28 +48,6 @@ public:
 	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_ExecuteUbergraph_ItemTransform) == 0x000008, "Wrong alignment on ItemTransform_C_ExecuteUbergraph_ItemTransform");
-static_assert(sizeof(ItemTransform_C_ExecuteUbergraph_ItemTransform) == 0x000098, "Wrong size on ItemTransform_C_ExecuteUbergraph_ItemTransform");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, EntryPoint) == 0x000000, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_ComponentBoundEvent_Key) == 0x000008, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_ComponentBoundEvent_Key' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, Temp_object_Variable) == 0x000010, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate2) == 0x000030, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_Array_Add_ReturnValue) == 0x000040, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000048, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000050, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_SwitchInteger_CmpSuccess) == 0x000054, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_HandleSelect_PassThrough) == 0x000055, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_HandleSelect_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_ComponentBoundEvent_TransformActive) == 0x000056, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_ComponentBoundEvent_TransformActive' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000058, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00005C, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate3) == 0x000060, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, K2Node_CreateDelegate_OutputDelegate4) == 0x000070, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, Temp_int_Variable) == 0x000080, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_GetContext_ReturnValue2) == 0x000088, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000090, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ExecuteUbergraph_ItemTransform, CallFunc_Add_IntInt_ReturnValue) == 0x000094, "Member 'ItemTransform_C_ExecuteUbergraph_ItemTransform::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +56,6 @@ struct ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTrans
 public:
 	bool                                          TransformActive;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature) == 0x000001, "Wrong alignment on ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature");
-static_assert(sizeof(ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature) == 0x000001, "Wrong size on ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature");
-static_assert(offsetof(ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature, TransformActive) == 0x000000, "Member 'ItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature::TransformActive' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -90,10 +65,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'ItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -102,9 +73,6 @@ struct ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelec
 public:
 	class UFortItem*                              Key;                                               // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature) == 0x000008, "Wrong alignment on ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature");
-static_assert(sizeof(ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature) == 0x000008, "Wrong size on ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature");
-static_assert(offsetof(ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature, Key) == 0x000000, "Member 'ItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature::Key' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.OpenItemTransform
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +81,6 @@ struct ItemTransform_C_OpenItemTransform final
 public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_OpenItemTransform) == 0x000008, "Wrong alignment on ItemTransform_C_OpenItemTransform");
-static_assert(sizeof(ItemTransform_C_OpenItemTransform) == 0x000008, "Wrong size on ItemTransform_C_OpenItemTransform");
-static_assert(offsetof(ItemTransform_C_OpenItemTransform, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemTransform_C_OpenItemTransform::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.SetupActionHandlers
 // 0x0060 (0x0060 - 0x0000)
@@ -129,14 +94,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate5;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate6;             // 0x0050(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_SetupActionHandlers) == 0x000008, "Wrong alignment on ItemTransform_C_SetupActionHandlers");
-static_assert(sizeof(ItemTransform_C_SetupActionHandlers) == 0x000060, "Wrong size on ItemTransform_C_SetupActionHandlers");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate3) == 0x000020, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate4) == 0x000030, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate4' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate5) == 0x000040, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate5' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_SetupActionHandlers, K2Node_CreateDelegate_OutputDelegate6) == 0x000050, "Member 'ItemTransform_C_SetupActionHandlers::K2Node_CreateDelegate_OutputDelegate6' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleBack
 // 0x0018 (0x0018 - 0x0000)
@@ -149,12 +106,6 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_HandleBack) == 0x000008, "Wrong alignment on ItemTransform_C_HandleBack");
-static_assert(sizeof(ItemTransform_C_HandleBack) == 0x000018, "Wrong size on ItemTransform_C_HandleBack");
-static_assert(offsetof(ItemTransform_C_HandleBack, PassThrough) == 0x000000, "Member 'ItemTransform_C_HandleBack::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleBack, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000008, "Member 'ItemTransform_C_HandleBack::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleBack, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000010, "Member 'ItemTransform_C_HandleBack::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleBack, K2Node_SwitchInteger_CmpSuccess) == 0x000014, "Member 'ItemTransform_C_HandleBack::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleSelect
 // 0x000C (0x000C - 0x0000)
@@ -166,11 +117,6 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_HandleSelect) == 0x000004, "Wrong alignment on ItemTransform_C_HandleSelect");
-static_assert(sizeof(ItemTransform_C_HandleSelect) == 0x00000C, "Wrong size on ItemTransform_C_HandleSelect");
-static_assert(offsetof(ItemTransform_C_HandleSelect, PassThrough) == 0x000000, "Member 'ItemTransform_C_HandleSelect::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleSelect, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'ItemTransform_C_HandleSelect::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleSelect, K2Node_SwitchInteger_CmpSuccess) == 0x000008, "Member 'ItemTransform_C_HandleSelect::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.OpenConfirmation
 // 0x0040 (0x0040 - 0x0000)
@@ -184,14 +130,6 @@ public:
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_OpenConfirmation) == 0x000008, "Wrong alignment on ItemTransform_C_OpenConfirmation");
-static_assert(sizeof(ItemTransform_C_OpenConfirmation) == 0x000040, "Wrong size on ItemTransform_C_OpenConfirmation");
-static_assert(offsetof(ItemTransform_C_OpenConfirmation, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'ItemTransform_C_OpenConfirmation::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenConfirmation, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'ItemTransform_C_OpenConfirmation::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenConfirmation, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'ItemTransform_C_OpenConfirmation::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenConfirmation, CallFunc_Create_ReturnValue) == 0x000028, "Member 'ItemTransform_C_OpenConfirmation::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenConfirmation, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000030, "Member 'ItemTransform_C_OpenConfirmation::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenConfirmation, CallFunc_IsValid_ReturnValue) == 0x000038, "Member 'ItemTransform_C_OpenConfirmation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleTransformConfirm
 // 0x0020 (0x0020 - 0x0000)
@@ -203,12 +141,6 @@ public:
 	class UFortConversionControlItemDefinition*   K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_HandleTransformConfirm) == 0x000008, "Wrong alignment on ItemTransform_C_HandleTransformConfirm");
-static_assert(sizeof(ItemTransform_C_HandleTransformConfirm) == 0x000020, "Wrong size on ItemTransform_C_HandleTransformConfirm");
-static_assert(offsetof(ItemTransform_C_HandleTransformConfirm, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000000, "Member 'ItemTransform_C_HandleTransformConfirm::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformConfirm, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemTransform_C_HandleTransformConfirm::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformConfirm, K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition) == 0x000010, "Member 'ItemTransform_C_HandleTransformConfirm::K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformConfirm, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemTransform_C_HandleTransformConfirm::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.OpenResult
 // 0x0060 (0x0060 - 0x0000)
@@ -225,17 +157,6 @@ public:
 	class UItemTransformResultModal_C*            K2Node_DynamicCast_AsItem_Transform_Result_Modal;  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_OpenResult) == 0x000008, "Wrong alignment on ItemTransform_C_OpenResult");
-static_assert(sizeof(ItemTransform_C_OpenResult) == 0x000060, "Wrong size on ItemTransform_C_OpenResult");
-static_assert(offsetof(ItemTransform_C_OpenResult, RewardItems) == 0x000000, "Member 'ItemTransform_C_OpenResult::RewardItems' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, SacrificeItems) == 0x000010, "Member 'ItemTransform_C_OpenResult::SacrificeItems' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'ItemTransform_C_OpenResult::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'ItemTransform_C_OpenResult::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'ItemTransform_C_OpenResult::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000040, "Member 'ItemTransform_C_OpenResult::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, CallFunc_GetCachedWidget_ReturnValue) == 0x000048, "Member 'ItemTransform_C_OpenResult::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, K2Node_DynamicCast_AsItem_Transform_Result_Modal) == 0x000050, "Member 'ItemTransform_C_OpenResult::K2Node_DynamicCast_AsItem_Transform_Result_Modal' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_OpenResult, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'ItemTransform_C_OpenResult::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleTransformSucceeded
 // 0x0020 (0x0020 - 0x0000)
@@ -245,10 +166,6 @@ public:
 	TArray<struct FFortItemInstanceQuantityPair>  RewardedItems;                                     // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FFortItemInstanceQuantityPair>  SacrificedItems;                                   // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemTransform_C_HandleTransformSucceeded) == 0x000008, "Wrong alignment on ItemTransform_C_HandleTransformSucceeded");
-static_assert(sizeof(ItemTransform_C_HandleTransformSucceeded) == 0x000020, "Wrong size on ItemTransform_C_HandleTransformSucceeded");
-static_assert(offsetof(ItemTransform_C_HandleTransformSucceeded, RewardedItems) == 0x000000, "Member 'ItemTransform_C_HandleTransformSucceeded::RewardedItems' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformSucceeded, SacrificedItems) == 0x000010, "Member 'ItemTransform_C_HandleTransformSucceeded::SacrificedItems' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleTransformFailed
 // 0x0018 (0x0018 - 0x0000)
@@ -257,9 +174,6 @@ struct ItemTransform_C_HandleTransformFailed final
 public:
 	class FText                                   ErrorMessage;                                      // 0x0000(0x0018)(Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ItemTransform_C_HandleTransformFailed) == 0x000008, "Wrong alignment on ItemTransform_C_HandleTransformFailed");
-static_assert(sizeof(ItemTransform_C_HandleTransformFailed) == 0x000018, "Wrong size on ItemTransform_C_HandleTransformFailed");
-static_assert(offsetof(ItemTransform_C_HandleTransformFailed, ErrorMessage) == 0x000000, "Member 'ItemTransform_C_HandleTransformFailed::ErrorMessage' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.ResetItemTransform
 // 0x0018 (0x0018 - 0x0000)
@@ -273,12 +187,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UFortItem*                        Temp_object_Variable;                              // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_ResetItemTransform) == 0x000008, "Wrong alignment on ItemTransform_C_ResetItemTransform");
-static_assert(sizeof(ItemTransform_C_ResetItemTransform) == 0x000018, "Wrong size on ItemTransform_C_ResetItemTransform");
-static_assert(offsetof(ItemTransform_C_ResetItemTransform, Temp_int_Variable) == 0x000000, "Member 'ItemTransform_C_ResetItemTransform::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ResetItemTransform, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000004, "Member 'ItemTransform_C_ResetItemTransform::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ResetItemTransform, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'ItemTransform_C_ResetItemTransform::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_ResetItemTransform, Temp_object_Variable) == 0x000010, "Member 'ItemTransform_C_ResetItemTransform::Temp_object_Variable' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleTransformAction
 // 0x0020 (0x0020 - 0x0000)
@@ -291,12 +199,6 @@ public:
 	int32                                         CallFunc_Get_Transform_Data_CurrentSacrificePoints; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Get_Transform_Data_CurrentTier;           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_HandleTransformAction) == 0x000008, "Wrong alignment on ItemTransform_C_HandleTransformAction");
-static_assert(sizeof(ItemTransform_C_HandleTransformAction) == 0x000020, "Wrong size on ItemTransform_C_HandleTransformAction");
-static_assert(offsetof(ItemTransform_C_HandleTransformAction, PassThrough) == 0x000000, "Member 'ItemTransform_C_HandleTransformAction::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformAction, CallFunc_Get_Transform_Data_SacrificeItems) == 0x000008, "Member 'ItemTransform_C_HandleTransformAction::CallFunc_Get_Transform_Data_SacrificeItems' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformAction, CallFunc_Get_Transform_Data_CurrentSacrificePoints) == 0x000018, "Member 'ItemTransform_C_HandleTransformAction::CallFunc_Get_Transform_Data_CurrentSacrificePoints' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleTransformAction, CallFunc_Get_Transform_Data_CurrentTier) == 0x00001C, "Member 'ItemTransform_C_HandleTransformAction::CallFunc_Get_Transform_Data_CurrentTier' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleSelectKeyAction
 // 0x0002 (0x0002 - 0x0000)
@@ -306,10 +208,6 @@ public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HandleSelect_PassThrough;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_HandleSelectKeyAction) == 0x000001, "Wrong alignment on ItemTransform_C_HandleSelectKeyAction");
-static_assert(sizeof(ItemTransform_C_HandleSelectKeyAction) == 0x000002, "Wrong size on ItemTransform_C_HandleSelectKeyAction");
-static_assert(offsetof(ItemTransform_C_HandleSelectKeyAction, PassThrough) == 0x000000, "Member 'ItemTransform_C_HandleSelectKeyAction::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_HandleSelectKeyAction, CallFunc_HandleSelect_PassThrough) == 0x000001, "Member 'ItemTransform_C_HandleSelectKeyAction::CallFunc_HandleSelect_PassThrough' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.UpdateSelectKeyAction
 // 0x0001 (0x0001 - 0x0000)
@@ -318,9 +216,6 @@ struct ItemTransform_C_UpdateSelectKeyAction final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_UpdateSelectKeyAction) == 0x000001, "Wrong alignment on ItemTransform_C_UpdateSelectKeyAction");
-static_assert(sizeof(ItemTransform_C_UpdateSelectKeyAction) == 0x000001, "Wrong size on ItemTransform_C_UpdateSelectKeyAction");
-static_assert(offsetof(ItemTransform_C_UpdateSelectKeyAction, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ItemTransform_C_UpdateSelectKeyAction::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.Handle Select Key Activated
 // 0x0010 (0x0010 - 0x0000)
@@ -331,10 +226,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              CallFunc_Get_Selected_Item_SelectedKey;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransform_C_Handle_Select_Key_Activated) == 0x000008, "Wrong alignment on ItemTransform_C_Handle_Select_Key_Activated");
-static_assert(sizeof(ItemTransform_C_Handle_Select_Key_Activated) == 0x000010, "Wrong size on ItemTransform_C_Handle_Select_Key_Activated");
-static_assert(offsetof(ItemTransform_C_Handle_Select_Key_Activated, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'ItemTransform_C_Handle_Select_Key_Activated::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransform_C_Handle_Select_Key_Activated, CallFunc_Get_Selected_Item_SelectedKey) == 0x000008, "Member 'ItemTransform_C_Handle_Select_Key_Activated::CallFunc_Get_Selected_Item_SelectedKey' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.UpdateTransformAction
 // 0x0001 (0x0001 - 0x0000)
@@ -343,9 +234,6 @@ struct ItemTransform_C_UpdateTransformAction final
 public:
 	bool                                          TransformActive;                                   // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_UpdateTransformAction) == 0x000001, "Wrong alignment on ItemTransform_C_UpdateTransformAction");
-static_assert(sizeof(ItemTransform_C_UpdateTransformAction) == 0x000001, "Wrong size on ItemTransform_C_UpdateTransformAction");
-static_assert(offsetof(ItemTransform_C_UpdateTransformAction, TransformActive) == 0x000000, "Member 'ItemTransform_C_UpdateTransformAction::TransformActive' has a wrong offset!");
 
 // Function ItemTransform.ItemTransform_C.HandleClosePicker
 // 0x0001 (0x0001 - 0x0000)
@@ -354,9 +242,6 @@ struct ItemTransform_C_HandleClosePicker final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTransform_C_HandleClosePicker) == 0x000001, "Wrong alignment on ItemTransform_C_HandleClosePicker");
-static_assert(sizeof(ItemTransform_C_HandleClosePicker) == 0x000001, "Wrong size on ItemTransform_C_HandleClosePicker");
-static_assert(offsetof(ItemTransform_C_HandleClosePicker, PassThrough) == 0x000000, "Member 'ItemTransform_C_HandleClosePicker::PassThrough' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

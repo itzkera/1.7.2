@@ -14,8 +14,7 @@
 #include "CollectionBookWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookWidget.CollectionBookWidget_C.ExecuteUbergraph_CollectionBookWidget
 // ()
@@ -68,7 +67,7 @@ void UCollectionBookWidget_C::Destruct()
 // Function CollectionBookWidget.CollectionBookWidget_C.SlotItemComplete
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortAccountItem*                 ItemSlotted                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortAccountItem*           ItemSlotted                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             SlotId                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCollectionBookWidget_C::SlotItemComplete(const class UFortAccountItem* ItemSlotted, class FName SlotId)
@@ -100,5 +99,5 @@ void UCollectionBookWidget_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -13,8 +13,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function MissionModifierItem.MissionModifierItem_C.ExecuteUbergraph_MissionModifierItem
 // 0x0008 (0x0008 - 0x0000)
@@ -26,12 +26,6 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue2;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue3;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem) == 0x000004, "Wrong alignment on MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem");
-static_assert(sizeof(MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem) == 0x000008, "Wrong size on MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem");
-static_assert(offsetof(MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem, EntryPoint) == 0x000000, "Member 'MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000004, "Member 'MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem, CallFunc_Greater_FloatFloat_ReturnValue2) == 0x000005, "Member 'MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem::CallFunc_Greater_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem, CallFunc_Greater_FloatFloat_ReturnValue3) == 0x000006, "Member 'MissionModifierItem_C_ExecuteUbergraph_MissionModifierItem::CallFunc_Greater_FloatFloat_ReturnValue3' has a wrong offset!");
 
 // Function MissionModifierItem.MissionModifierItem_C.Update
 // 0x0098 (0x0098 - 0x0000)
@@ -41,10 +35,6 @@ public:
 	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x0000(0x0090)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionModifierItem_C_Update) == 0x000008, "Wrong alignment on MissionModifierItem_C_Update");
-static_assert(sizeof(MissionModifierItem_C_Update) == 0x000098, "Wrong size on MissionModifierItem_C_Update");
-static_assert(offsetof(MissionModifierItem_C_Update, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x000000, "Member 'MissionModifierItem_C_Update::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_Update, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'MissionModifierItem_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MissionModifierItem.MissionModifierItem_C.GetToolTipWidget
 // 0x0048 (0x0048 - 0x0000)
@@ -57,13 +47,6 @@ public:
 	class FText                                   CallFunc_GetSingleLineDescription_ReturnValue;     // 0x0028(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionModifierItem_C_GetToolTipWidget) == 0x000008, "Wrong alignment on MissionModifierItem_C_GetToolTipWidget");
-static_assert(sizeof(MissionModifierItem_C_GetToolTipWidget) == 0x000048, "Wrong size on MissionModifierItem_C_GetToolTipWidget");
-static_assert(offsetof(MissionModifierItem_C_GetToolTipWidget, ReturnValue) == 0x000000, "Member 'MissionModifierItem_C_GetToolTipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_GetToolTipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'MissionModifierItem_C_GetToolTipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_GetToolTipWidget, CallFunc_GetDisplayName_ReturnValue) == 0x000010, "Member 'MissionModifierItem_C_GetToolTipWidget::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_GetToolTipWidget, CallFunc_GetSingleLineDescription_ReturnValue) == 0x000028, "Member 'MissionModifierItem_C_GetToolTipWidget::CallFunc_GetSingleLineDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionModifierItem_C_GetToolTipWidget, CallFunc_Create_Basic_Tooltip_Output) == 0x000040, "Member 'MissionModifierItem_C_GetToolTipWidget::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

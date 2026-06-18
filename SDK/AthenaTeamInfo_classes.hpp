@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaTeamInfo.AthenaTeamInfo_C
 // 0x0020 (0x0280 - 0x0260)
@@ -46,18 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTeamInfo_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTeamInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTeamInfo_C")
 	}
 	static class UAthenaTeamInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTeamInfo_C>();
 	}
 };
-static_assert(alignof(UAthenaTeamInfo_C) == 0x000008, "Wrong alignment on UAthenaTeamInfo_C");
-static_assert(sizeof(UAthenaTeamInfo_C) == 0x000280, "Wrong size on UAthenaTeamInfo_C");
-static_assert(offsetof(UAthenaTeamInfo_C, UberGraphFrame) == 0x000260, "Member 'UAthenaTeamInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamInfo_C, _Vertical_Box__Team_Members) == 0x000268, "Member 'UAthenaTeamInfo_C::_Vertical_Box__Team_Members' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamInfo_C, TeamMembers) == 0x000270, "Member 'UAthenaTeamInfo_C::TeamMembers' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

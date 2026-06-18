@@ -13,8 +13,7 @@
 #include "ItemTextureSet_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedStruct ItemTextureStylesheet.ItemTextureStylesheet
 // 0x0010 (0x0010 - 0x0000)
@@ -23,9 +22,5 @@ struct FItemTextureStylesheet final
 public:
 	TArray<struct FItemTextureSet>                Members_3_EB0AC869410136B477252EB0E0F22279;        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor)
 };
-static_assert(alignof(FItemTextureStylesheet) == 0x000008, "Wrong alignment on FItemTextureStylesheet");
-static_assert(sizeof(FItemTextureStylesheet) == 0x000010, "Wrong size on FItemTextureStylesheet");
-static_assert(offsetof(FItemTextureStylesheet, Members_3_EB0AC869410136B477252EB0E0F22279) == 0x000000, "Member 'FItemTextureStylesheet::Members_3_EB0AC869410136B477252EB0E0F22279' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

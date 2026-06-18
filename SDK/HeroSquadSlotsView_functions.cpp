@@ -14,8 +14,7 @@
 #include "HeroSquadSlotsView_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.ExecuteUbergraph_HeroSquadSlotsView
 // ()
@@ -54,9 +53,9 @@ void UHeroSquadSlotsView_C::Construct()
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.CreateAndAddSquadSlotButton
 // (Event, Protected, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   SquadSlotIndex                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHomebaseSquadSlot               SquadSlotDefinition                                    (ConstParm, Parm, OutParm, ReferenceParm)
-// class UWidget*                          OutSquadSlotButtonHost                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const int32                             SquadSlotIndex                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHomebaseSquadSlot&        SquadSlotDefinition                                    (ConstParm, Parm, OutParm, ReferenceParm)
+// class UWidget**                         OutSquadSlotButtonHost                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortSquadSlotSelectorButton*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UFortSquadSlotSelectorButton* UHeroSquadSlotsView_C::CreateAndAddSquadSlotButton(const int32 SquadSlotIndex, const struct FHomebaseSquadSlot& SquadSlotDefinition, class UWidget** OutSquadSlotButtonHost)
@@ -135,5 +134,5 @@ void UHeroSquadSlotsView_C::UndarkenAllSlots()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

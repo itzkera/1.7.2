@@ -18,8 +18,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaHUD.AthenaHUD_C
 // 0x01F0 (0x05F0 - 0x0400)
@@ -132,72 +131,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaHUD_C">();
+		BP_STATIC_CLASS_IMPL("AthenaHUD_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaHUD_C")
 	}
 	static class UAthenaHUD_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaHUD_C>();
 	}
 };
-static_assert(alignof(UAthenaHUD_C) == 0x000008, "Wrong alignment on UAthenaHUD_C");
-static_assert(sizeof(UAthenaHUD_C) == 0x0005F0, "Wrong size on UAthenaHUD_C");
-static_assert(offsetof(UAthenaHUD_C, UberGraphFrame) == 0x000400, "Member 'UAthenaHUD_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Actor_Canvas__Indicators) == 0x000408, "Member 'UAthenaHUD_C::_Actor_Canvas__Indicators' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Horizontal_Box__Top_Right_Content) == 0x000410, "Member 'UAthenaHUD_C::_Horizontal_Box__Top_Right_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Overlay__Camera_Mode_Content) == 0x000418, "Member 'UAthenaHUD_C::_Overlay__Camera_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Overlay__Cursor_Mode_Content) == 0x000420, "Member 'UAthenaHUD_C::_Overlay__Cursor_Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Overlay__Persistent_HUD_Content) == 0x000428, "Member 'UAthenaHUD_C::_Overlay__Persistent_HUD_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Slot__CursorModeContent) == 0x000430, "Member 'UAthenaHUD_C::_Slot__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Switcher__CursorModeContent) == 0x000438, "Member 'UAthenaHUD_C::_Switcher__CursorModeContent' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Switcher__Mode_Content) == 0x000440, "Member 'UAthenaHUD_C::_Switcher__Mode_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Vertical_Box__Bottom_Left_Content) == 0x000448, "Member 'UAthenaHUD_C::_Vertical_Box__Bottom_Left_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Vertical_Box__Top_Left_Content) == 0x000450, "Member 'UAthenaHUD_C::_Vertical_Box__Top_Left_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, _Vertical_Box__Top_Right_Content) == 0x000458, "Member 'UAthenaHUD_C::_Vertical_Box__Top_Right_Content' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaAerialFeedback) == 0x000460, "Member 'UAthenaHUD_C::AthenaAerialFeedback' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaCompass) == 0x000468, "Member 'UAthenaHUD_C::AthenaCompass' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaEquippedItemWidget) == 0x000470, "Member 'UAthenaHUD_C::AthenaEquippedItemWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaGamePhaseWidget) == 0x000478, "Member 'UAthenaHUD_C::AthenaGamePhaseWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaHealProgress) == 0x000480, "Member 'UAthenaHUD_C::AthenaHealProgress' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaKillFeedWidget) == 0x000488, "Member 'UAthenaHUD_C::AthenaKillFeedWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaPickupManager) == 0x000490, "Member 'UAthenaHUD_C::AthenaPickupManager' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaPlayerActionAlert) == 0x000498, "Member 'UAthenaHUD_C::AthenaPlayerActionAlert' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaPlayerInfo_C_0) == 0x0004A0, "Member 'UAthenaHUD_C::AthenaPlayerInfo_C_0' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaSessionId) == 0x0004A8, "Member 'UAthenaHUD_C::AthenaSessionId' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AthenaWatchers) == 0x0004B0, "Member 'UAthenaHUD_C::AthenaWatchers' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, BottomBarWidget) == 0x0004B8, "Member 'UAthenaHUD_C::BottomBarWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, BP_FortLiveStreamGrantWindowExpires) == 0x0004C0, "Member 'UAthenaHUD_C::BP_FortLiveStreamGrantWindowExpires' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, GameOverScreen) == 0x0004C8, "Member 'UAthenaHUD_C::GameOverScreen' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, GamePhaseAlert) == 0x0004D0, "Member 'UAthenaHUD_C::GamePhaseAlert' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, InvalidationBoxBottomLeft) == 0x0004D8, "Member 'UAthenaHUD_C::InvalidationBoxBottomLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, InvalidationBoxCameraMode) == 0x0004E0, "Member 'UAthenaHUD_C::InvalidationBoxCameraMode' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, InvalidationBoxCenterPopup) == 0x0004E8, "Member 'UAthenaHUD_C::InvalidationBoxCenterPopup' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, InvalidationBoxTopRight) == 0x0004F0, "Member 'UAthenaHUD_C::InvalidationBoxTopRight' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, LocalPlayerHitPointInfo) == 0x0004F8, "Member 'UAthenaHUD_C::LocalPlayerHitPointInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, MainContentStack) == 0x000500, "Member 'UAthenaHUD_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, MinimapContainer) == 0x000508, "Member 'UAthenaHUD_C::MinimapContainer' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, OverlayIndicatorContent) == 0x000510, "Member 'UAthenaHUD_C::OverlayIndicatorContent' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, PopupCenterMessageWidget) == 0x000518, "Member 'UAthenaHUD_C::PopupCenterMessageWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, QuickbarPrimary) == 0x000520, "Member 'UAthenaHUD_C::QuickbarPrimary' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, QuickbarSecondary) == 0x000528, "Member 'UAthenaHUD_C::QuickbarSecondary' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, RadialPicker) == 0x000530, "Member 'UAthenaHUD_C::RadialPicker' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, ResourceAggregationWidget) == 0x000538, "Member 'UAthenaHUD_C::ResourceAggregationWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, Reticle) == 0x000540, "Member 'UAthenaHUD_C::Reticle' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, ReticleStatusWidget) == 0x000548, "Member 'UAthenaHUD_C::ReticleStatusWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, Subtitles) == 0x000550, "Member 'UAthenaHUD_C::Subtitles' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, TeamInfo) == 0x000558, "Member 'UAthenaHUD_C::TeamInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, TeamMembersActorCanvas) == 0x000560, "Member 'UAthenaHUD_C::TeamMembersActorCanvas' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, TopBar) == 0x000568, "Member 'UAthenaHUD_C::TopBar' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, VerticalBoxMissionWidgets) == 0x000570, "Member 'UAthenaHUD_C::VerticalBoxMissionWidgets' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, Widget_BuildWatermark) == 0x000578, "Member 'UAthenaHUD_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, FocusedQuickbar) == 0x000580, "Member 'UAthenaHUD_C::FocusedQuickbar' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, UnfocusedQuickbarScale) == 0x000584, "Member 'UAthenaHUD_C::UnfocusedQuickbarScale' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, CursorModeEnabled) == 0x00058C, "Member 'UAthenaHUD_C::CursorModeEnabled' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, ZoneCompleted) == 0x00058D, "Member 'UAthenaHUD_C::ZoneCompleted' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, AvailableInterestIndicators) == 0x000590, "Member 'UAthenaHUD_C::AvailableInterestIndicators' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, ActiveInterestIndicators) == 0x0005A0, "Member 'UAthenaHUD_C::ActiveInterestIndicators' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, PlayerLeft) == 0x0005B0, "Member 'UAthenaHUD_C::PlayerLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, KillsPrefix) == 0x0005C8, "Member 'UAthenaHUD_C::KillsPrefix' has a wrong offset!");
-static_assert(offsetof(UAthenaHUD_C, TeamMemberIndicators) == 0x0005E0, "Member 'UAthenaHUD_C::TeamMemberIndicators' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

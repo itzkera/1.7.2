@@ -14,8 +14,7 @@
 #include "FrontEndRewards_Expedition_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ExecuteUbergraph_FrontEndRewards_Expedition
 // ()
@@ -68,9 +67,9 @@ void UFrontEndRewards_Expedition_C::OnPrimaryAction()
 // Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnCollectExpeditionCompleted
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class UFortExpeditionItem*              Expedition                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UFortExpeditionItem*        Expedition                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bSucceeded                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FFortItemInstanceQuantityPair>Rewards                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<struct FFortItemInstanceQuantityPair>&Rewards                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UFrontEndRewards_Expedition_C::OnCollectExpeditionCompleted(const class UFortExpeditionItem* Expedition, bool bSucceeded, const TArray<struct FFortItemInstanceQuantityPair>& Rewards)
 {
@@ -234,5 +233,5 @@ void UFrontEndRewards_Expedition_C::HandleTransitionInComplete()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

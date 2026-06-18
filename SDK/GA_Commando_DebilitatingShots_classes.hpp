@@ -11,13 +11,12 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "GAT_CommandoTriggeredAbility_classes.hpp"
 #include "Engine_structs.hpp"
+#include "GAT_CommandoTriggeredAbility_classes.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C
 // 0x0148 (0x0C58 - 0x0B10)
@@ -70,45 +69,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Commando_DebilitatingShots_C">();
+		BP_STATIC_CLASS_IMPL("GA_Commando_DebilitatingShots_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Commando_DebilitatingShots_C")
 	}
 	static class UGA_Commando_DebilitatingShots_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Commando_DebilitatingShots_C>();
 	}
 };
-static_assert(alignof(UGA_Commando_DebilitatingShots_C) == 0x000008, "Wrong alignment on UGA_Commando_DebilitatingShots_C");
-static_assert(sizeof(UGA_Commando_DebilitatingShots_C) == 0x000C58, "Wrong size on UGA_Commando_DebilitatingShots_C");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, UberGraphFrame_GA_Commando_DebilitatingShots_C) == 0x000B10, "Member 'UGA_Commando_DebilitatingShots_C::UberGraphFrame_GA_Commando_DebilitatingShots_C' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TC_IsGun) == 0x000B18, "Member 'UGA_Commando_DebilitatingShots_C::TC_IsGun' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, EventActivation) == 0x000B20, "Member 'UGA_Commando_DebilitatingShots_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, GE_DebilitatingShots) == 0x000B28, "Member 'UGA_Commando_DebilitatingShots_C::GE_DebilitatingShots' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, EventComplete) == 0x000B30, "Member 'UGA_Commando_DebilitatingShots_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, EventDirectTrigger) == 0x000B38, "Member 'UGA_Commando_DebilitatingShots_C::EventDirectTrigger' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, StackCount) == 0x000B40, "Member 'UGA_Commando_DebilitatingShots_C::StackCount' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, DefaultStackCount) == 0x000B44, "Member 'UGA_Commando_DebilitatingShots_C::DefaultStackCount' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, PerfectEngineeringStack) == 0x000B48, "Member 'UGA_Commando_DebilitatingShots_C::PerfectEngineeringStack' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TargetData) == 0x000B50, "Member 'UGA_Commando_DebilitatingShots_C::TargetData' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TC_LingeringPain) == 0x000B70, "Member 'UGA_Commando_DebilitatingShots_C::TC_LingeringPain' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TC_DebilitationTraining) == 0x000B90, "Member 'UGA_Commando_DebilitatingShots_C::TC_DebilitationTraining' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TC_Kneecapper) == 0x000BB0, "Member 'UGA_Commando_DebilitatingShots_C::TC_Kneecapper' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TC_HackStackBreaker) == 0x000BD0, "Member 'UGA_Commando_DebilitatingShots_C::TC_HackStackBreaker' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, GE_LingeringPain) == 0x000BF0, "Member 'UGA_Commando_DebilitatingShots_C::GE_LingeringPain' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, DebuffValue) == 0x000BF8, "Member 'UGA_Commando_DebilitatingShots_C::DebuffValue' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, DefaultValue) == 0x000BFC, "Member 'UGA_Commando_DebilitatingShots_C::DefaultValue' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, KneecapperValue) == 0x000C00, "Member 'UGA_Commando_DebilitatingShots_C::KneecapperValue' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, DebuffDuration) == 0x000C04, "Member 'UGA_Commando_DebilitatingShots_C::DebuffDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, GE_DebilitationTraining_FatigueInstant) == 0x000C08, "Member 'UGA_Commando_DebilitatingShots_C::GE_DebilitationTraining_FatigueInstant' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, TC_IsAfflicted) == 0x000C10, "Member 'UGA_Commando_DebilitatingShots_C::TC_IsAfflicted' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, HitTargetPawn) == 0x000C30, "Member 'UGA_Commando_DebilitatingShots_C::HitTargetPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, GE_DebilitationTraining_FatigueDuration) == 0x000C38, "Member 'UGA_Commando_DebilitatingShots_C::GE_DebilitationTraining_FatigueDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, Kneecapper) == 0x000C40, "Member 'UGA_Commando_DebilitatingShots_C::Kneecapper' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, DebilitationTraining) == 0x000C41, "Member 'UGA_Commando_DebilitatingShots_C::DebilitationTraining' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, LingeringPain) == 0x000C42, "Member 'UGA_Commando_DebilitatingShots_C::LingeringPain' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, MaxStacks) == 0x000C44, "Member 'UGA_Commando_DebilitatingShots_C::MaxStacks' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, LingeringPainStacks) == 0x000C48, "Member 'UGA_Commando_DebilitatingShots_C::LingeringPainStacks' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, DefaultStacks) == 0x000C4C, "Member 'UGA_Commando_DebilitatingShots_C::DefaultStacks' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_DebilitatingShots_C, PS) == 0x000C50, "Member 'UGA_Commando_DebilitatingShots_C::PS' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

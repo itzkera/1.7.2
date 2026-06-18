@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WM_PinManager.WM_PinManager_C
 // 0x0010 (0x03B8 - 0x03A8)
@@ -34,17 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WM_PinManager_C">();
+		BP_STATIC_CLASS_IMPL("WM_PinManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WM_PinManager_C")
 	}
 	static class AWM_PinManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWM_PinManager_C>();
 	}
 };
-static_assert(alignof(AWM_PinManager_C) == 0x000008, "Wrong alignment on AWM_PinManager_C");
-static_assert(sizeof(AWM_PinManager_C) == 0x0003B8, "Wrong size on AWM_PinManager_C");
-static_assert(offsetof(AWM_PinManager_C, UberGraphFrame) == 0x0003A8, "Member 'AWM_PinManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWM_PinManager_C, DefaultSceneRoot) == 0x0003B0, "Member 'AWM_PinManager_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MulchRefundItemQuantityList.MulchRefundItemQuantityList_C
 // 0x0010 (0x02C0 - 0x02B0)
@@ -32,17 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MulchRefundItemQuantityList_C">();
+		BP_STATIC_CLASS_IMPL("MulchRefundItemQuantityList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MulchRefundItemQuantityList_C")
 	}
 	static class UMulchRefundItemQuantityList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMulchRefundItemQuantityList_C>();
 	}
 };
-static_assert(alignof(UMulchRefundItemQuantityList_C) == 0x000008, "Wrong alignment on UMulchRefundItemQuantityList_C");
-static_assert(sizeof(UMulchRefundItemQuantityList_C) == 0x0002C0, "Wrong size on UMulchRefundItemQuantityList_C");
-static_assert(offsetof(UMulchRefundItemQuantityList_C, UberGraphFrame) == 0x0002B0, "Member 'UMulchRefundItemQuantityList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMulchRefundItemQuantityList_C, ContainerBox) == 0x0002B8, "Member 'UMulchRefundItemQuantityList_C::ContainerBox' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

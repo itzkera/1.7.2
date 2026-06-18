@@ -15,8 +15,7 @@
 #include "GameplayTags_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C
 // 0x0040 (0x0A80 - 0x0A40)
@@ -45,22 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_AthenaDBNORevive_C">();
+		BP_STATIC_CLASS_IMPL("GAB_AthenaDBNORevive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_AthenaDBNORevive_C")
 	}
 	static class UGAB_AthenaDBNORevive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_AthenaDBNORevive_C>();
 	}
 };
-static_assert(alignof(UGAB_AthenaDBNORevive_C) == 0x000008, "Wrong alignment on UGAB_AthenaDBNORevive_C");
-static_assert(sizeof(UGAB_AthenaDBNORevive_C) == 0x000A80, "Wrong size on UGAB_AthenaDBNORevive_C");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, UberGraphFrame) == 0x000A40, "Member 'UGAB_AthenaDBNORevive_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, EC_AppliedEffect) == 0x000A48, "Member 'UGAB_AthenaDBNORevive_C::EC_AppliedEffect' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, PlayerPawn) == 0x000A50, "Member 'UGAB_AthenaDBNORevive_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, KnockbackMagnitude) == 0x000A58, "Member 'UGAB_AthenaDBNORevive_C::KnockbackMagnitude' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, HitActors) == 0x000A60, "Member 'UGAB_AthenaDBNORevive_C::HitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, KnockbackStunGE) == 0x000A70, "Member 'UGAB_AthenaDBNORevive_C::KnockbackStunGE' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNORevive_C, BP_VictoryDrone) == 0x000A78, "Member 'UGAB_AthenaDBNORevive_C::BP_VictoryDrone' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

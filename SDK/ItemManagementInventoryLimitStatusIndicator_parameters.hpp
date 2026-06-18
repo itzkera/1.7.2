@@ -16,8 +16,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator
 // 0x00A0 (0x00A0 - 0x0000)
@@ -30,7 +30,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<class UFortWorldItem*>                 K2Node_CustomEvent_ItemsAdded2;                    // 0x0020(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 K2Node_CustomEvent_ItemsRemoved2;                  // 0x0030(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate2; // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UFortWorldItem*>                 K2Node_CustomEvent_ItemsAdded;                     // 0x0058(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 K2Node_CustomEvent_ItemsRemoved;                   // 0x0068(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
@@ -39,23 +39,8 @@ public:
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue3;                  // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum2_CmpSuccess;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate3;             // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate3; // 0x0090(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator) == 0x0000A0, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, EntryPoint) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsAdded2) == 0x000020, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsAdded2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsRemoved2) == 0x000030, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsRemoved2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CreateDelegate_OutputDelegate2) == 0x000040, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsAdded) == 0x000058, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsAdded' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CustomEvent_ItemsRemoved) == 0x000068, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CustomEvent_ItemsRemoved' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_SwitchEnum_CmpSuccess) == 0x000078, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, CallFunc_GetContext_ReturnValue3) == 0x000080, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_SwitchEnum2_CmpSuccess) == 0x000088, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_SwitchEnum2_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator, K2Node_CreateDelegate_OutputDelegate3) == 0x000090, "Member 'ItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleOutpostItemListChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -65,10 +50,6 @@ public:
 	TArray<class UFortWorldItem*>                 ItemsAdded;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 ItemsRemoved;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged) == 0x000020, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged, ItemsAdded) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged::ItemsAdded' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged, ItemsRemoved) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleWorldItemListChanged
 // 0x0020 (0x0020 - 0x0000)
@@ -78,10 +59,6 @@ public:
 	TArray<class UFortWorldItem*>                 ItemsAdded;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<class UFortWorldItem*>                 ItemsRemoved;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged) == 0x000020, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged, ItemsAdded) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged::ItemsAdded' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged, ItemsRemoved) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged::ItemsRemoved' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleVaultItemLimitStateChanged
 // 0x0160 (0x0160 - 0x0000)
@@ -110,38 +87,15 @@ public:
 	uint8                                         Pad_134[0x4];                                      // 0x0134(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0138(0x0028)()
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged) == 0x000160, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, Temp_struct_Variable) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, Temp_struct_Variable2) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_GetContext_ReturnValue2) == 0x000028, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_GetVaultItemLimitStatus_ReturnValue) == 0x000030, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_GetVaultItemLimitStatus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_GetCountOfVaultLimitedItems_ReturnValue) == 0x000034, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_GetCountOfVaultLimitedItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_GetVaultItemLimit_ReturnValue) == 0x000038, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_GetVaultItemLimit_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, K2Node_MakeStruct_FormatArgumentData2) == 0x000080, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, K2Node_MakeArray_Array) == 0x0000C0, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, K2Node_MakeArray_Array2) == 0x0000D0, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_Format_ReturnValue) == 0x0000E0, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, CallFunc_Format_ReturnValue2) == 0x0000F8, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, Temp_struct_Variable3) == 0x000110, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, Temp_byte_Variable) == 0x000120, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, K2Node_Select_Default) == 0x000124, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged, K2Node_MakeStruct_SlateColor) == 0x000138, "Member 'ItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackWorldInventory
 // 0x0018 (0x0018 - 0x0000)
 struct ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory final
 {
 public:
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory) == 0x000018, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackVaultInventory
 // 0x0018 (0x0018 - 0x0000)
@@ -151,10 +105,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory) == 0x000018, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.RefreshWorldInventoryStatus
 // 0x0180 (0x0180 - 0x0000)
@@ -190,46 +140,15 @@ public:
 	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0158(0x0028)()
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus) == 0x000180, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_struct_Variable) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_bool_Variable) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Get_Theme_Color_Theme_Color) == 0x000020, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Get_Theme_Color_Theme_Color' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetBackpackItemCounts_ItemsCount) == 0x000030, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetBackpackItemCounts_ItemsCount' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetBackpackItemCounts_MaxItemsCount) == 0x000034, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetBackpackItemCounts_MaxItemsCount' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_GetBackpackItemCounts_OverflowItemsCount) == 0x000038, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_GetBackpackItemCounts_OverflowItemsCount' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Get_Theme_Color_Theme_Color2) == 0x00003C, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Get_Theme_Color_Theme_Color2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeStruct_FormatArgumentData2) == 0x000090, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeArray_Array) == 0x0000D0, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeArray_Array2) == 0x0000E0, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Format_ReturnValue) == 0x0000F0, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Format_ReturnValue2) == 0x000108, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000120, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000124, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_FMax_ReturnValue) == 0x000128, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00012C, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Less_FloatFloat_ReturnValue) == 0x000130, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, CallFunc_Less_FloatFloat_ReturnValue2) == 0x000131, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::CallFunc_Less_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, Temp_bool_Variable2) == 0x000132, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_Select_Default) == 0x000134, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_Select2_Default) == 0x000144, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus, K2Node_MakeStruct_SlateColor) == 0x000158, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus::K2Node_MakeStruct_SlateColor' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackStorageInventory
 // 0x0018 (0x0018 - 0x0000)
 struct ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory final
 {
 public:
-	TDelegate<void(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortInventoryContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory) == 0x000018, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.RefreshStorageInventoryStatus
 // 0x00F0 (0x00F0 - 0x0000)
@@ -249,18 +168,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array2;                           // 0x00C8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x00D8(0x0018)()
 };
-static_assert(alignof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus) == 0x000008, "Wrong alignment on ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus");
-static_assert(sizeof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus) == 0x0000F0, "Wrong size on ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, CallFunc_GetStorageNumItems_ReturnValue) == 0x000008, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::CallFunc_GetStorageNumItems_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000010, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, CallFunc_GetContext_ReturnValue2) == 0x000050, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, K2Node_MakeArray_Array) == 0x000058, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, CallFunc_GetStorageCapacity_ReturnValue) == 0x000068, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::CallFunc_GetStorageCapacity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, CallFunc_Format_ReturnValue) == 0x000070, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, K2Node_MakeStruct_FormatArgumentData2) == 0x000088, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, K2Node_MakeArray_Array2) == 0x0000C8, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus, CallFunc_Format_ReturnValue2) == 0x0000D8, "Member 'ItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

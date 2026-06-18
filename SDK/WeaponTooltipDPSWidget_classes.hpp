@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WeaponTooltipDPSWidget.WeaponTooltipDPSWidget_C
 // 0x0088 (0x02B8 - 0x0230)
@@ -35,19 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WeaponTooltipDPSWidget_C">();
+		BP_STATIC_CLASS_IMPL("WeaponTooltipDPSWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WeaponTooltipDPSWidget_C")
 	}
 	static class UWeaponTooltipDPSWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWeaponTooltipDPSWidget_C>();
 	}
 };
-static_assert(alignof(UWeaponTooltipDPSWidget_C) == 0x000008, "Wrong alignment on UWeaponTooltipDPSWidget_C");
-static_assert(sizeof(UWeaponTooltipDPSWidget_C) == 0x0002B8, "Wrong size on UWeaponTooltipDPSWidget_C");
-static_assert(offsetof(UWeaponTooltipDPSWidget_C, UberGraphFrame) == 0x000230, "Member 'UWeaponTooltipDPSWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWeaponTooltipDPSWidget_C, _Text__Label) == 0x000238, "Member 'UWeaponTooltipDPSWidget_C::_Text__Label' has a wrong offset!");
-static_assert(offsetof(UWeaponTooltipDPSWidget_C, _Text__Value) == 0x000240, "Member 'UWeaponTooltipDPSWidget_C::_Text__Value' has a wrong offset!");
-static_assert(offsetof(UWeaponTooltipDPSWidget_C, Data) == 0x000248, "Member 'UWeaponTooltipDPSWidget_C::Data' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

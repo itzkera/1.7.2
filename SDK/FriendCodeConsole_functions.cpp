@@ -14,8 +14,7 @@
 #include "FriendCodeConsole_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FriendCodeConsole.FriendCodeConsole_C.ExecuteUbergraph_FriendCodeConsole
 // (HasDefaults)
@@ -84,5 +83,5 @@ void UFriendCodeConsole_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

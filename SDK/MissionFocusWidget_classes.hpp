@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionFocusWidget.MissionFocusWidget_C
 // 0x0038 (0x0270 - 0x0238)
@@ -42,22 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionFocusWidget_C">();
+		BP_STATIC_CLASS_IMPL("MissionFocusWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionFocusWidget_C")
 	}
 	static class UMissionFocusWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionFocusWidget_C>();
 	}
 };
-static_assert(alignof(UMissionFocusWidget_C) == 0x000008, "Wrong alignment on UMissionFocusWidget_C");
-static_assert(sizeof(UMissionFocusWidget_C) == 0x000270, "Wrong size on UMissionFocusWidget_C");
-static_assert(offsetof(UMissionFocusWidget_C, UberGraphFrame) == 0x000238, "Member 'UMissionFocusWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionFocusWidget_C, HeaderText) == 0x000240, "Member 'UMissionFocusWidget_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UMissionFocusWidget_C, KillPointsBar) == 0x000248, "Member 'UMissionFocusWidget_C::KillPointsBar' has a wrong offset!");
-static_assert(offsetof(UMissionFocusWidget_C, TimerText) == 0x000250, "Member 'UMissionFocusWidget_C::TimerText' has a wrong offset!");
-static_assert(offsetof(UMissionFocusWidget_C, SavedTimerComponent) == 0x000258, "Member 'UMissionFocusWidget_C::SavedTimerComponent' has a wrong offset!");
-static_assert(offsetof(UMissionFocusWidget_C, CurrentFocusedMission) == 0x000260, "Member 'UMissionFocusWidget_C::CurrentFocusedMission' has a wrong offset!");
-static_assert(offsetof(UMissionFocusWidget_C, KillBarPercentage) == 0x000268, "Member 'UMissionFocusWidget_C::KillBarPercentage' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

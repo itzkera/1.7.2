@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformConfirmationModal.ItemTransformConfirmationModal_C
 // 0x0088 (0x0468 - 0x03E0)
@@ -48,30 +47,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformConfirmationModal_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformConfirmationModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformConfirmationModal_C")
 	}
 	static class UItemTransformConfirmationModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformConfirmationModal_C>();
 	}
 };
-static_assert(alignof(UItemTransformConfirmationModal_C) == 0x000008, "Wrong alignment on UItemTransformConfirmationModal_C");
-static_assert(sizeof(UItemTransformConfirmationModal_C) == 0x000468, "Wrong size on UItemTransformConfirmationModal_C");
-static_assert(offsetof(UItemTransformConfirmationModal_C, UberGraphFrame) == 0x0003E0, "Member 'UItemTransformConfirmationModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, CancelButton) == 0x0003E8, "Member 'UItemTransformConfirmationModal_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, ConfirmButton) == 0x0003F0, "Member 'UItemTransformConfirmationModal_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, Image_0) == 0x0003F8, "Member 'UItemTransformConfirmationModal_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, ItemTransformRequiredItems) == 0x000400, "Member 'UItemTransformConfirmationModal_C::ItemTransformRequiredItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, ItemTransformResultItems) == 0x000408, "Member 'UItemTransformConfirmationModal_C::ItemTransformResultItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, KeyItemCard) == 0x000410, "Member 'UItemTransformConfirmationModal_C::KeyItemCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, SacrificeItemBox) == 0x000418, "Member 'UItemTransformConfirmationModal_C::SacrificeItemBox' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, SacrificeItemCard1) == 0x000420, "Member 'UItemTransformConfirmationModal_C::SacrificeItemCard1' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, SacrificeItemCard2) == 0x000428, "Member 'UItemTransformConfirmationModal_C::SacrificeItemCard2' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, SacrificeItemCard3) == 0x000430, "Member 'UItemTransformConfirmationModal_C::SacrificeItemCard3' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, SacrificeItemCard4) == 0x000438, "Member 'UItemTransformConfirmationModal_C::SacrificeItemCard4' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, SacrificeItemCard5) == 0x000440, "Member 'UItemTransformConfirmationModal_C::SacrificeItemCard5' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, OnCancel) == 0x000448, "Member 'UItemTransformConfirmationModal_C::OnCancel' has a wrong offset!");
-static_assert(offsetof(UItemTransformConfirmationModal_C, OnConfirm) == 0x000458, "Member 'UItemTransformConfirmationModal_C::OnConfirm' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

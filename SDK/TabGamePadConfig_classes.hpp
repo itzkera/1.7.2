@@ -16,8 +16,7 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabGamePadConfig.TabGamePadConfig_C
 // 0x0048 (0x02D0 - 0x0288)
@@ -51,24 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGamePadConfig_C">();
+		BP_STATIC_CLASS_IMPL("TabGamePadConfig_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGamePadConfig_C")
 	}
 	static class UTabGamePadConfig_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGamePadConfig_C>();
 	}
 };
-static_assert(alignof(UTabGamePadConfig_C) == 0x000008, "Wrong alignment on UTabGamePadConfig_C");
-static_assert(sizeof(UTabGamePadConfig_C) == 0x0002D0, "Wrong size on UTabGamePadConfig_C");
-static_assert(offsetof(UTabGamePadConfig_C, UberGraphFrame) == 0x000288, "Member 'UTabGamePadConfig_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, ControllerPlatformConfig) == 0x000290, "Member 'UTabGamePadConfig_C::ControllerPlatformConfig' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, GamepadConfig) == 0x000298, "Member 'UTabGamePadConfig_C::GamepadConfig' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, GamepadMappingInfo) == 0x0002A0, "Member 'UTabGamePadConfig_C::GamepadMappingInfo' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, SizeBoxControllerPlatform) == 0x0002A8, "Member 'UTabGamePadConfig_C::SizeBoxControllerPlatform' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, IsCombatMode) == 0x0002B0, "Member 'UTabGamePadConfig_C::IsCombatMode' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, InputPresets) == 0x0002B8, "Member 'UTabGamePadConfig_C::InputPresets' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, ControllerPlatformMappingIndex) == 0x0002C8, "Member 'UTabGamePadConfig_C::ControllerPlatformMappingIndex' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_C, ControllerConfiguration) == 0x0002CC, "Member 'UTabGamePadConfig_C::ControllerConfiguration' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

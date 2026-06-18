@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PBWA_S1_BalconyI.PBWA_S1_BalconyI_C
 // 0x0000 (0x0FD0 - 0x0FD0)
@@ -23,15 +22,16 @@ class APBWA_S1_BalconyI_C final : public ABuildingFloor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_S1_BalconyI_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_S1_BalconyI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_S1_BalconyI_C")
 	}
 	static class APBWA_S1_BalconyI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_S1_BalconyI_C>();
 	}
 };
-static_assert(alignof(APBWA_S1_BalconyI_C) == 0x000010, "Wrong alignment on APBWA_S1_BalconyI_C");
-static_assert(sizeof(APBWA_S1_BalconyI_C) == 0x000FD0, "Wrong size on APBWA_S1_BalconyI_C");
 
-}
-
+SDK_NAMESPACE_END

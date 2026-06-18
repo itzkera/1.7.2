@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GET_VulnerableParent.GET_VulnerableParent_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGET_VulnerableParent_C : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_VulnerableParent_C">();
+		BP_STATIC_CLASS_IMPL("GET_VulnerableParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_VulnerableParent_C")
 	}
 	static class UGET_VulnerableParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_VulnerableParent_C>();
 	}
 };
-static_assert(alignof(UGET_VulnerableParent_C) == 0x000010, "Wrong alignment on UGET_VulnerableParent_C");
-static_assert(sizeof(UGET_VulnerableParent_C) == 0x000660, "Wrong size on UGET_VulnerableParent_C");
 
-}
-
+SDK_NAMESPACE_END

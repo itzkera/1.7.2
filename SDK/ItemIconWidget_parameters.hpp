@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemIconWidget.ItemIconWidget_C.ExecuteUbergraph_ItemIconWidget
 // 0x00F0 (0x00F0 - 0x0000)
@@ -40,22 +40,6 @@ public:
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_MakeBrushFromTexture_ReturnValue;         // 0x0060(0x0090)()
 };
-static_assert(alignof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget) == 0x000008, "Wrong alignment on ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget");
-static_assert(sizeof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget) == 0x0000F0, "Wrong size on ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, EntryPoint) == 0x000000, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_byte_Variable) == 0x000004, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable) == 0x000008, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable2) == 0x00000C, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable3) == 0x000010, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable4) == 0x000014, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable5) == 0x000018, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable5' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, Temp_int_Variable6) == 0x00001C, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::Temp_int_Variable6' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000020, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, CallFunc_Conv_AssetToObject_ReturnValue) == 0x000040, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::CallFunc_Conv_AssetToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, K2Node_Select_Default) == 0x000048, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, K2Node_DynamicCast_AsTexture_2D) == 0x000050, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget, CallFunc_MakeBrushFromTexture_ReturnValue) == 0x000060, "Member 'ItemIconWidget_C_ExecuteUbergraph_ItemIconWidget::CallFunc_MakeBrushFromTexture_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

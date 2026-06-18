@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass News.News_C
 // 0x0048 (0x0428 - 0x03E0)
@@ -37,31 +36,23 @@ public:
 	void Construct();
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void AddEntry(const class FText& inEntryText);
-	void PopulateEntries(bool* isEmpty);
+	void PopulateEntries(bool* IsEmpty);
 	void Init();
 	void UpdateInfoPanel(const class FText& BodyText);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"News_C">();
+		BP_STATIC_CLASS_IMPL("News_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"News_C")
 	}
 	static class UNews_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNews_C>();
 	}
 };
-static_assert(alignof(UNews_C) == 0x000008, "Wrong alignment on UNews_C");
-static_assert(sizeof(UNews_C) == 0x000428, "Wrong size on UNews_C");
-static_assert(offsetof(UNews_C, UberGraphFrame) == 0x0003E0, "Member 'UNews_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UNews_C, CloseButton) == 0x0003E8, "Member 'UNews_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UNews_C, DescriptionScroll) == 0x0003F0, "Member 'UNews_C::DescriptionScroll' has a wrong offset!");
-static_assert(offsetof(UNews_C, Lightbox) == 0x0003F8, "Member 'UNews_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UNews_C, MainIcon) == 0x000400, "Member 'UNews_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UNews_C, ScrollBoxEntries) == 0x000408, "Member 'UNews_C::ScrollBoxEntries' has a wrong offset!");
-static_assert(offsetof(UNews_C, TextDescription) == 0x000410, "Member 'UNews_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UNews_C, Title) == 0x000418, "Member 'UNews_C::Title' has a wrong offset!");
-static_assert(offsetof(UNews_C, ButtonGroup) == 0x000420, "Member 'UNews_C::ButtonGroup' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "LeaveButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LeaveButton.LeaveButton_C.ExecuteUbergraph_LeaveButton
 // (HasDefaults)
@@ -122,7 +121,7 @@ void ULeaveButton_C::HandleLobbyEvents()
 // Function LeaveButton.LeaveButton_C.HandleTeamMemberAdded
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewTeamMemberInfo                                      (Parm)
+// const struct FFortTeamMemberInfo&       NewTeamMemberInfo                                      (Parm)
 
 void ULeaveButton_C::HandleTeamMemberAdded(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
 {
@@ -250,7 +249,7 @@ void ULeaveButton_C::DialogResult_1E39F47546648367BB2F218F69311220(EFortDialogRe
 // Function LeaveButton.LeaveButton_C.GetLeaveActionText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FText                             Text                                                   (Parm, OutParm)
+// class FText*                            Text                                                   (Parm, OutParm)
 
 void ULeaveButton_C::GetLeaveActionText(class FText* Text)
 {
@@ -271,7 +270,7 @@ void ULeaveButton_C::GetLeaveActionText(class FText* Text)
 // Function LeaveButton.LeaveButton_C.IsConsideredInGame
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    InGame                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   InGame                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULeaveButton_C::IsConsideredInGame(bool* InGame)
 {
@@ -320,7 +319,7 @@ void ULeaveButton_C::LeaveParty()
 // Function LeaveButton.LeaveButton_C.HasUnsavedQuestProgress
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    HasUnsavedQuestProgress_0                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   HasUnsavedQuestProgress_0                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULeaveButton_C::HasUnsavedQuestProgress(bool* HasUnsavedQuestProgress_0)
 {
@@ -341,7 +340,7 @@ void ULeaveButton_C::HasUnsavedQuestProgress(bool* HasUnsavedQuestProgress_0)
 // Function LeaveButton.LeaveButton_C.GetButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UIconTextButton_C*                Leave_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UIconTextButton_C**               Leave_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULeaveButton_C::GetButton(class UIconTextButton_C** Leave_0)
 {
@@ -362,7 +361,7 @@ void ULeaveButton_C::GetButton(class UIconTextButton_C** Leave_0)
 // Function LeaveButton.LeaveButton_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             TextOverride                                           (Parm)
+// const class FText&                      TextOverride                                           (Parm)
 
 void ULeaveButton_C::SetText(const class FText& TextOverride)
 {
@@ -396,7 +395,7 @@ void ULeaveButton_C::Update_Style_State()
 // Function LeaveButton.LeaveButton_C.IsInNeighborhood
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsInNeighborhood                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsInNeighborhood                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULeaveButton_C::IsInNeighborhood(bool* bIsInNeighborhood)
 {
@@ -413,5 +412,5 @@ void ULeaveButton_C::IsInNeighborhood(bool* bIsInNeighborhood)
 		*bIsInNeighborhood = Parms.bIsInNeighborhood;
 }
 
-}
 
+SDK_NAMESPACE_END

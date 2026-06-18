@@ -14,8 +14,7 @@
 #include "StickyNotification_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StickyNotification.StickyNotification_C.ExecuteUbergraph_StickyNotification
 // (HasDefaults)
@@ -122,8 +121,8 @@ void UStickyNotification_C::BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent
 // Function StickyNotification.StickyNotification_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UStickyNotification_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -144,7 +143,7 @@ void UStickyNotification_C::OnMouseEnter(const struct FGeometry& MyGeometry, con
 // Function StickyNotification.StickyNotification_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UStickyNotification_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -292,5 +291,5 @@ void UStickyNotification_C::CloseSticky()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

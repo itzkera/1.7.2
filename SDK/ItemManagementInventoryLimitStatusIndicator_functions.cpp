@@ -14,8 +14,7 @@
 #include "ItemManagementInventoryLimitStatusIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator
 // ()
@@ -40,8 +39,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::ExecuteUbergraph_ItemManage
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleOutpostItemListChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemManagementInventoryLimitStatusIndicator_C::HandleOutpostItemListChanged(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -62,8 +61,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::HandleOutpostItemListChange
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleWorldItemListChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UItemManagementInventoryLimitStatusIndicator_C::HandleWorldItemListChanged(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -192,5 +191,5 @@ void UItemManagementInventoryLimitStatusIndicator_C::RefreshStorageInventoryStat
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

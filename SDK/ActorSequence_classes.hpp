@@ -16,8 +16,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class ActorSequence.ActorSequence
 // 0x0028 (0x0300 - 0x02D8)
@@ -30,17 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorSequence">();
+		STATIC_CLASS_IMPL("ActorSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorSequence")
 	}
 	static class UActorSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActorSequence>();
 	}
 };
-static_assert(alignof(UActorSequence) == 0x000008, "Wrong alignment on UActorSequence");
-static_assert(sizeof(UActorSequence) == 0x000300, "Wrong size on UActorSequence");
-static_assert(offsetof(UActorSequence, MovieScene) == 0x0002D8, "Member 'UActorSequence::MovieScene' has a wrong offset!");
-static_assert(offsetof(UActorSequence, ObjectReferences) == 0x0002E0, "Member 'UActorSequence::ObjectReferences' has a wrong offset!");
 
 // Class ActorSequence.ActorSequenceComponent
 // 0x0040 (0x0130 - 0x00F0)
@@ -56,19 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorSequenceComponent">();
+		STATIC_CLASS_IMPL("ActorSequenceComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorSequenceComponent")
 	}
 	static class UActorSequenceComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActorSequenceComponent>();
 	}
 };
-static_assert(alignof(UActorSequenceComponent) == 0x000008, "Wrong alignment on UActorSequenceComponent");
-static_assert(sizeof(UActorSequenceComponent) == 0x000130, "Wrong size on UActorSequenceComponent");
-static_assert(offsetof(UActorSequenceComponent, PlaybackSettings) == 0x0000F0, "Member 'UActorSequenceComponent::PlaybackSettings' has a wrong offset!");
-static_assert(offsetof(UActorSequenceComponent, Sequence) == 0x000118, "Member 'UActorSequenceComponent::Sequence' has a wrong offset!");
-static_assert(offsetof(UActorSequenceComponent, SequencePlayer) == 0x000120, "Member 'UActorSequenceComponent::SequencePlayer' has a wrong offset!");
-static_assert(offsetof(UActorSequenceComponent, bAutoPlay) == 0x000128, "Member 'UActorSequenceComponent::bAutoPlay' has a wrong offset!");
 
 // Class ActorSequence.ActorSequencePlayer
 // 0x0000 (0x0690 - 0x0690)
@@ -77,15 +74,16 @@ class UActorSequencePlayer final : public UMovieSceneSequencePlayer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ActorSequencePlayer">();
+		STATIC_CLASS_IMPL("ActorSequencePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActorSequencePlayer")
 	}
 	static class UActorSequencePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActorSequencePlayer>();
 	}
 };
-static_assert(alignof(UActorSequencePlayer) == 0x000008, "Wrong alignment on UActorSequencePlayer");
-static_assert(sizeof(UActorSequencePlayer) == 0x000690, "Wrong size on UActorSequencePlayer");
 
-}
-
+SDK_NAMESPACE_END

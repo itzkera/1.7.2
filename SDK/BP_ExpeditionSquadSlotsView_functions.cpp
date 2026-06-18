@@ -14,8 +14,7 @@
 #include "BP_ExpeditionSquadSlotsView_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.ExecuteUbergraph_BP_ExpeditionSquadSlotsView
 // ()
@@ -94,9 +93,9 @@ void UBP_ExpeditionSquadSlotsView_C::HandleSquadSlotSelected(int32 SquadSlotInde
 // Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.CreateAndAddSquadSlotButton
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   SquadSlotIndex                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHomebaseSquadSlot               SquadSlotDefinition                                    (ConstParm, Parm, OutParm, ReferenceParm)
-// class UWidget*                          OutSquadSlotButtonHost                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const int32                             SquadSlotIndex                                         (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHomebaseSquadSlot&        SquadSlotDefinition                                    (ConstParm, Parm, OutParm, ReferenceParm)
+// class UWidget**                         OutSquadSlotButtonHost                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortSquadSlotSelectorButton*     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UFortSquadSlotSelectorButton* UBP_ExpeditionSquadSlotsView_C::CreateAndAddSquadSlotButton(const int32 SquadSlotIndex, const struct FHomebaseSquadSlot& SquadSlotDefinition, class UWidget** OutSquadSlotButtonHost)
@@ -119,5 +118,5 @@ class UFortSquadSlotSelectorButton* UBP_ExpeditionSquadSlotsView_C::CreateAndAdd
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

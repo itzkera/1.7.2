@@ -13,8 +13,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValue
 // 0x0010 (0x0010 - 0x0000)
@@ -27,12 +27,6 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingValue) == 0x000004, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingValue");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingValue) == 0x000010, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingValue");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, PowerRating) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::PowerRating' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, InterpolationDuration) == 0x000004, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::InterpolationDuration' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000008, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValue, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValue::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingFromItem
 // 0x0018 (0x0018 - 0x0000)
@@ -44,12 +38,6 @@ public:
 	int32                                         CallFunc_GetRating_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem) == 0x000008, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingFromItem");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem) == 0x000018, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingFromItem");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, Item) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::Item' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, InterpolationDuration) == 0x000008, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::InterpolationDuration' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, CallFunc_GetRating_ReturnValue) == 0x00000C, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::CallFunc_GetRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingFromItem, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingFromItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValueForComparison
 // 0x0004 (0x0004 - 0x0000)
@@ -58,9 +46,6 @@ struct PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison final
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison) == 0x000004, "Wrong alignment on PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison) == 0x000004, "Wrong size on PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison, Value) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison::Value' has a wrong offset!");
 
 // Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.UpdateComparison
 // 0x0018 (0x0018 - 0x0000)
@@ -83,22 +68,6 @@ public:
 	EFortBuffState                                K2Node_Select2_Default;                            // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortBuffState                                K2Node_Select3_Default;                            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerRatingBlockItemDetails_C_UpdateComparison) == 0x000004, "Wrong alignment on PowerRatingBlockItemDetails_C_UpdateComparison");
-static_assert(sizeof(PowerRatingBlockItemDetails_C_UpdateComparison) == 0x000018, "Wrong size on PowerRatingBlockItemDetails_C_UpdateComparison");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_byte_Variable) == 0x000000, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_byte_Variable2) == 0x000001, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_bool_Variable) == 0x000002, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_byte_Variable3) == 0x000003, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_bool_Variable2) == 0x000004, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_byte_Variable4) == 0x000005, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, Temp_bool_Variable3) == 0x000006, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, CallFunc_GetTargetValue_ReturnValue) == 0x000008, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::CallFunc_GetTargetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, CallFunc_FTrunc_ReturnValue) == 0x00000C, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000010, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, CallFunc_Greater_IntInt_ReturnValue) == 0x000011, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, K2Node_Select_Default) == 0x000012, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, K2Node_Select2_Default) == 0x000013, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(PowerRatingBlockItemDetails_C_UpdateComparison, K2Node_Select3_Default) == 0x000014, "Member 'PowerRatingBlockItemDetails_C_UpdateComparison::K2Node_Select3_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

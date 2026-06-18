@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCooldownMeter.ItemCooldownMeter_C
 // 0x02F0 (0x0520 - 0x0230)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCooldownMeter_C">();
+		BP_STATIC_CLASS_IMPL("ItemCooldownMeter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCooldownMeter_C")
 	}
 	static class UItemCooldownMeter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCooldownMeter_C>();
 	}
 };
-static_assert(alignof(UItemCooldownMeter_C) == 0x000008, "Wrong alignment on UItemCooldownMeter_C");
-static_assert(sizeof(UItemCooldownMeter_C) == 0x000520, "Wrong size on UItemCooldownMeter_C");
-static_assert(offsetof(UItemCooldownMeter_C, _Image__Backfill) == 0x000230, "Member 'UItemCooldownMeter_C::_Image__Backfill' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, _Image__Overfill) == 0x000238, "Member 'UItemCooldownMeter_C::_Image__Overfill' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, _SizeBox_) == 0x000240, "Member 'UItemCooldownMeter_C::_SizeBox_' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, _Text__Clock) == 0x000248, "Member 'UItemCooldownMeter_C::_Text__Clock' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, MultiSizeFont) == 0x000250, "Member 'UItemCooldownMeter_C::MultiSizeFont' has a wrong offset!");
-static_assert(offsetof(UItemCooldownMeter_C, MultiSizeMargin) == 0x0004C0, "Member 'UItemCooldownMeter_C::MultiSizeMargin' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

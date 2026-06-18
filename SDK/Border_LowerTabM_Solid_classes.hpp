@@ -13,8 +13,7 @@
 #include "Border_LowerTabM_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-LowerTabM-Solid.Border-LowerTabM-Solid_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_LowerTabM_Solid_C final : public UBorder_LowerTabM_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-LowerTabM-Solid_C">();
+		BP_STATIC_CLASS_IMPL("Border-LowerTabM-Solid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-LowerTabM-Solid_C")
 	}
 	static class UBorder_LowerTabM_Solid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_LowerTabM_Solid_C>();
 	}
 };
-static_assert(alignof(UBorder_LowerTabM_Solid_C) == 0x000008, "Wrong alignment on UBorder_LowerTabM_Solid_C");
-static_assert(sizeof(UBorder_LowerTabM_Solid_C) == 0x0000B8, "Wrong size on UBorder_LowerTabM_Solid_C");
 
-}
-
+SDK_NAMESPACE_END

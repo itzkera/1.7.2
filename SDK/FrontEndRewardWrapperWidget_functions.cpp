@@ -14,8 +14,7 @@
 #include "FrontEndRewardWrapperWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.ExecuteUbergraph_FrontEndRewardWrapperWidget
 // ()
@@ -69,7 +68,7 @@ void UFrontEndRewardWrapperWidget_C::Construct()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             DisplayName                                            (Parm)
+// const class FText&                      DisplayName                                            (Parm)
 
 void UFrontEndRewardWrapperWidget_C::AddToWrapper(class UWidget* Widget, const class FText& DisplayName)
 {
@@ -100,5 +99,5 @@ void UFrontEndRewardWrapperWidget_C::IntroAnimation()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

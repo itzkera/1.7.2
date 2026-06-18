@@ -14,8 +14,7 @@
 #include "HeadMountedDisplay_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HeadMountedDisplay.MotionControllerComponent.IsTracked
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
@@ -31,10 +30,15 @@ bool UMotionControllerComponent::IsTracked() const
 
 	Params::MotionControllerComponent_IsTracked Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

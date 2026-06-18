@@ -14,8 +14,7 @@
 #include "RatingWidget_NUI_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RatingWidget_NUI.RatingWidget_NUI_C.ExecuteUbergraph_RatingWidget_NUI
 // (HasDefaults)
@@ -40,7 +39,7 @@ void URatingWidget_NUI_C::ExecuteUbergraph_RatingWidget_NUI(int32 EntryPoint)
 // Function RatingWidget_NUI.RatingWidget_NUI_C.PlayerStateChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTeamMemberInfo&       PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void URatingWidget_NUI_C::PlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
@@ -74,7 +73,7 @@ void URatingWidget_NUI_C::Construct()
 // Function RatingWidget_NUI.RatingWidget_NUI_C.PlayerInfoChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 UniqueId_0                                             (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          UniqueId_0                                             (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
 
 void URatingWidget_NUI_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& UniqueId_0)
 {
@@ -148,7 +147,7 @@ void URatingWidget_NUI_C::Update()
 // Function RatingWidget_NUI.RatingWidget_NUI_C.Set Unique ID
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 ID                                                     (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          ID                                                     (Parm, HasGetValueTypeHash)
 
 void URatingWidget_NUI_C::Set_Unique_ID(const struct FUniqueNetIdRepl& ID)
 {
@@ -184,7 +183,7 @@ void URatingWidget_NUI_C::Update_From_Unique_ID()
 // Parameters:
 // class UMaterialInstanceDynamic*         Mid                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                             Parameter                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortMultiSizeBrush              MBrush                                                 (Parm)
+// const struct FFortMultiSizeBrush&       MBrush                                                 (Parm)
 
 void URatingWidget_NUI_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class UMaterialInstanceDynamic* Mid, class FName Parameter, const struct FFortMultiSizeBrush& MBrush)
 {
@@ -207,9 +206,9 @@ void URatingWidget_NUI_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class UM
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Override                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                     Light_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Medium_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Dark_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Light_Color                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Medium_Color                                           (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Dark_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URatingWidget_NUI_C::Override_Default_Color_Set(bool Override, const struct FLinearColor& Light_Color, const struct FLinearColor& Medium_Color, const struct FLinearColor& Dark_Color)
 {
@@ -248,5 +247,5 @@ void URatingWidget_NUI_C::SetShouldShowTeamPowerRating(bool ShowTeamRating)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

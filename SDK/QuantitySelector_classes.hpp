@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuantitySelector.QuantitySelector_C
 // 0x0780 (0x0B88 - 0x0408)
@@ -68,34 +67,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuantitySelector_C">();
+		BP_STATIC_CLASS_IMPL("QuantitySelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuantitySelector_C")
 	}
 	static class UQuantitySelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuantitySelector_C>();
 	}
 };
-static_assert(alignof(UQuantitySelector_C) == 0x000008, "Wrong alignment on UQuantitySelector_C");
-static_assert(sizeof(UQuantitySelector_C) == 0x000B88, "Wrong size on UQuantitySelector_C");
-static_assert(offsetof(UQuantitySelector_C, UberGraphFrame) == 0x000410, "Member 'UQuantitySelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, AdditionalInfo) == 0x000418, "Member 'UQuantitySelector_C::AdditionalInfo' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, CancelButton) == 0x000420, "Member 'UQuantitySelector_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ConfirmButton) == 0x000428, "Member 'UQuantitySelector_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, CurrentAmount) == 0x000430, "Member 'UQuantitySelector_C::CurrentAmount' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ItemCard) == 0x000438, "Member 'UQuantitySelector_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, Lightbox) == 0x000440, "Member 'UQuantitySelector_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, MaxAmount) == 0x000448, "Member 'UQuantitySelector_C::MaxAmount' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, MaxButton) == 0x000450, "Member 'UQuantitySelector_C::MaxButton' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, ValueSlider) == 0x000458, "Member 'UQuantitySelector_C::ValueSlider' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, WindowTitle) == 0x000460, "Member 'UQuantitySelector_C::WindowTitle' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, CurrentValue) == 0x000468, "Member 'UQuantitySelector_C::CurrentValue' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, MaxValue) == 0x00046C, "Member 'UQuantitySelector_C::MaxValue' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, OnButtonClickedDispatcher) == 0x000470, "Member 'UQuantitySelector_C::OnButtonClickedDispatcher' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, OnStackValueChangedDispatcher) == 0x000480, "Member 'UQuantitySelector_C::OnStackValueChangedDispatcher' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, Item) == 0x000490, "Member 'UQuantitySelector_C::Item' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_MouseKeyboard) == 0x000498, "Member 'UQuantitySelector_C::SliderStyle_MouseKeyboard' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_XboxOne) == 0x0006E8, "Member 'UQuantitySelector_C::SliderStyle_XboxOne' has a wrong offset!");
-static_assert(offsetof(UQuantitySelector_C, SliderStyle_PS4) == 0x000938, "Member 'UQuantitySelector_C::SliderStyle_PS4' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

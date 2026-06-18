@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border_DropShadow.Border_DropShadow_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_DropShadow_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_DropShadow_C">();
+		BP_STATIC_CLASS_IMPL("Border_DropShadow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_DropShadow_C")
 	}
 	static class UBorder_DropShadow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_DropShadow_C>();
 	}
 };
-static_assert(alignof(UBorder_DropShadow_C) == 0x000008, "Wrong alignment on UBorder_DropShadow_C");
-static_assert(sizeof(UBorder_DropShadow_C) == 0x0000B8, "Wrong size on UBorder_DropShadow_C");
 
-}
-
+SDK_NAMESPACE_END

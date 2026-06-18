@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass JournalQuestDetails.JournalQuestDetails_C
 // 0x00D0 (0x0310 - 0x0240)
@@ -71,37 +70,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JournalQuestDetails_C">();
+		BP_STATIC_CLASS_IMPL("JournalQuestDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JournalQuestDetails_C")
 	}
 	static class UJournalQuestDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJournalQuestDetails_C>();
 	}
 };
-static_assert(alignof(UJournalQuestDetails_C) == 0x000008, "Wrong alignment on UJournalQuestDetails_C");
-static_assert(sizeof(UJournalQuestDetails_C) == 0x000310, "Wrong size on UJournalQuestDetails_C");
-static_assert(offsetof(UJournalQuestDetails_C, UberGraphFrame) == 0x000240, "Member 'UJournalQuestDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, BP_LiveStreamerDescription) == 0x000248, "Member 'UJournalQuestDetails_C::BP_LiveStreamerDescription' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, BP_QuestExpiresWidget) == 0x000250, "Member 'UJournalQuestDetails_C::BP_QuestExpiresWidget' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, FutureObjectiveProgressBarGroup) == 0x000258, "Member 'UJournalQuestDetails_C::FutureObjectiveProgressBarGroup' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, FutureTaskList) == 0x000260, "Member 'UJournalQuestDetails_C::FutureTaskList' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, Image_0) == 0x000268, "Member 'UJournalQuestDetails_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, Image_3) == 0x000270, "Member 'UJournalQuestDetails_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, ObjectiveProgressBarGroup) == 0x000278, "Member 'UJournalQuestDetails_C::ObjectiveProgressBarGroup' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, QuestDescription) == 0x000280, "Member 'UJournalQuestDetails_C::QuestDescription' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, QuestIcon_Fill) == 0x000288, "Member 'UJournalQuestDetails_C::QuestIcon_Fill' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, QuestLocation) == 0x000290, "Member 'UJournalQuestDetails_C::QuestLocation' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, QuestTitle) == 0x000298, "Member 'UJournalQuestDetails_C::QuestTitle' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, TaskList) == 0x0002A0, "Member 'UJournalQuestDetails_C::TaskList' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, UpcomingText) == 0x0002A8, "Member 'UJournalQuestDetails_C::UpcomingText' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, IsQuestAudioPlaying_) == 0x0002B0, "Member 'UJournalQuestDetails_C::IsQuestAudioPlaying_' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, Conversation) == 0x0002B8, "Member 'UJournalQuestDetails_C::Conversation' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, Initialized_) == 0x0002C0, "Member 'UJournalQuestDetails_C::Initialized_' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, ConversationActor) == 0x0002C8, "Member 'UJournalQuestDetails_C::ConversationActor' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, NewVar_0) == 0x0002D0, "Member 'UJournalQuestDetails_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, OnSpokenDialogEnded) == 0x0002F0, "Member 'UJournalQuestDetails_C::OnSpokenDialogEnded' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, QuestItemRef) == 0x000300, "Member 'UJournalQuestDetails_C::QuestItemRef' has a wrong offset!");
-static_assert(offsetof(UJournalQuestDetails_C, isOutro) == 0x000308, "Member 'UJournalQuestDetails_C::isOutro' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

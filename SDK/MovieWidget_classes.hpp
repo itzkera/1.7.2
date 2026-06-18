@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MovieWidget.MovieWidget_C
 // 0x0030 (0x0288 - 0x0258)
@@ -45,22 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MovieWidget_C">();
+		BP_STATIC_CLASS_IMPL("MovieWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieWidget_C")
 	}
 	static class UMovieWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieWidget_C>();
 	}
 };
-static_assert(alignof(UMovieWidget_C) == 0x000008, "Wrong alignment on UMovieWidget_C");
-static_assert(sizeof(UMovieWidget_C) == 0x000288, "Wrong size on UMovieWidget_C");
-static_assert(offsetof(UMovieWidget_C, UberGraphFrame) == 0x000258, "Member 'UMovieWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Video_Image) == 0x000260, "Member 'UMovieWidget_C::Video_Image' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Video_ScaleBox) == 0x000268, "Member 'UMovieWidget_C::Video_ScaleBox' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, ShouldLoop) == 0x000270, "Member 'UMovieWidget_C::ShouldLoop' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, AutoPlay) == 0x000271, "Member 'UMovieWidget_C::AutoPlay' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, MaintainAspectRatio) == 0x000272, "Member 'UMovieWidget_C::MaintainAspectRatio' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, OnMediaReadyToPlay) == 0x000278, "Member 'UMovieWidget_C::OnMediaReadyToPlay' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.ExecuteUbergraph_HexmapLevelSettings_Temperate01
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +22,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_Visibility;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01) == 0x000004, "Wrong alignment on HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01");
-static_assert(sizeof(HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01) == 0x000008, "Wrong size on HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01");
-static_assert(offsetof(HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01, EntryPoint) == 0x000000, "Member 'HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01, K2Node_CustomEvent_Visibility) == 0x000004, "Member 'HexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01::K2Node_CustomEvent_Visibility' has a wrong offset!");
 
 // Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.CustomSettings
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +30,6 @@ struct HexmapLevelSettings_Temperate01_C_CustomSettings final
 public:
 	bool                                          Visibility;                                        // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HexmapLevelSettings_Temperate01_C_CustomSettings) == 0x000001, "Wrong alignment on HexmapLevelSettings_Temperate01_C_CustomSettings");
-static_assert(sizeof(HexmapLevelSettings_Temperate01_C_CustomSettings) == 0x000001, "Wrong size on HexmapLevelSettings_Temperate01_C_CustomSettings");
-static_assert(offsetof(HexmapLevelSettings_Temperate01_C_CustomSettings, Visibility) == 0x000000, "Member 'HexmapLevelSettings_Temperate01_C_CustomSettings::Visibility' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C
 // 0x0128 (0x09C8 - 0x08A0)
@@ -67,33 +66,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionIconTabButton_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionIconTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionIconTabButton_C")
 	}
 	static class UBP_FortExpeditionIconTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionIconTabButton_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionIconTabButton_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionIconTabButton_C");
-static_assert(sizeof(UBP_FortExpeditionIconTabButton_C) == 0x0009C8, "Wrong size on UBP_FortExpeditionIconTabButton_C");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, UberGraphFrame) == 0x0008A0, "Member 'UBP_FortExpeditionIconTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, AvailableVehicles) == 0x0008A8, "Member 'UBP_FortExpeditionIconTabButton_C::AvailableVehicles' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, CenterButtonTextWidget) == 0x0008B0, "Member 'UBP_FortExpeditionIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, Heading) == 0x0008B8, "Member 'UBP_FortExpeditionIconTabButton_C::Heading' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, LeftSideImage) == 0x0008C0, "Member 'UBP_FortExpeditionIconTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, NormalBangWrapper_0) == 0x0008C8, "Member 'UBP_FortExpeditionIconTabButton_C::NormalBangWrapper_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, ButtonText) == 0x0008D0, "Member 'UBP_FortExpeditionIconTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, IconBrush) == 0x0008E8, "Member 'UBP_FortExpeditionIconTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, TabId) == 0x000978, "Member 'UBP_FortExpeditionIconTabButton_C::TabId' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, Hovered_Icon_Tint) == 0x000980, "Member 'UBP_FortExpeditionIconTabButton_C::Hovered_Icon_Tint' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, Selected_Icon_Tint) == 0x000990, "Member 'UBP_FortExpeditionIconTabButton_C::Selected_Icon_Tint' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, Deselected_Icon_Tint) == 0x0009A0, "Member 'UBP_FortExpeditionIconTabButton_C::Deselected_Icon_Tint' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, LandVehicles) == 0x0009B0, "Member 'UBP_FortExpeditionIconTabButton_C::LandVehicles' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, LandVehiclesAvailable) == 0x0009B4, "Member 'UBP_FortExpeditionIconTabButton_C::LandVehiclesAvailable' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, SeaVehicles) == 0x0009B8, "Member 'UBP_FortExpeditionIconTabButton_C::SeaVehicles' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, SeaVehiclesAvailable) == 0x0009BC, "Member 'UBP_FortExpeditionIconTabButton_C::SeaVehiclesAvailable' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, AirVehicles) == 0x0009C0, "Member 'UBP_FortExpeditionIconTabButton_C::AirVehicles' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionIconTabButton_C, AirVehiclesAvailable) == 0x0009C4, "Member 'UBP_FortExpeditionIconTabButton_C::AirVehiclesAvailable' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

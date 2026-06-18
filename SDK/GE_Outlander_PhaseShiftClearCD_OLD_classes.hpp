@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Outlander_PhaseShiftClearCD_OLD.GE_Outlander_PhaseShiftClearCD_OLD_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGE_Outlander_PhaseShiftClearCD_OLD_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Outlander_PhaseShiftClearCD_OLD_C">();
+		BP_STATIC_CLASS_IMPL("GE_Outlander_PhaseShiftClearCD_OLD_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Outlander_PhaseShiftClearCD_OLD_C")
 	}
 	static class UGE_Outlander_PhaseShiftClearCD_OLD_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Outlander_PhaseShiftClearCD_OLD_C>();
 	}
 };
-static_assert(alignof(UGE_Outlander_PhaseShiftClearCD_OLD_C) == 0x000010, "Wrong alignment on UGE_Outlander_PhaseShiftClearCD_OLD_C");
-static_assert(sizeof(UGE_Outlander_PhaseShiftClearCD_OLD_C) == 0x000660, "Wrong size on UGE_Outlander_PhaseShiftClearCD_OLD_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.ExecuteUbergraph_VaultCamera_Blueprint
 // 0x01B8 (0x01B8 - 0x0000)
@@ -59,37 +59,6 @@ public:
 	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortTimeOfDayManager*                  CallFunc_GetTimeOfDayManagerFromContext_ReturnValue; // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint) == 0x000008, "Wrong alignment on VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint");
-static_assert(sizeof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint) == 0x0001B8, "Wrong size on VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, EntryPoint) == 0x000000, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, K2Node_InputKeyEvent_Key) == 0x000008, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::K2Node_InputKeyEvent_Key' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, Temp_struct_Variable) == 0x000020, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetHeroPlayerPawnByIndex_ReturnValue) == 0x000040, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetHeroPlayerPawnByIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, K2Node_InputKeyEvent_Key3) == 0x000048, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::K2Node_InputKeyEvent_Key3' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, K2Node_Event_DeltaSeconds) == 0x000064, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetPlayerController_ReturnValue) == 0x000068, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetInputMouseDelta_DeltaX) == 0x000070, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetInputMouseDelta_DeltaX' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetInputMouseDelta_DeltaY) == 0x000074, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetInputMouseDelta_DeltaY' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000078, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetPlayerController_ReturnValue2) == 0x000080, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetPlayerController_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, K2Node_InputKeyEvent_Key4) == 0x000088, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::K2Node_InputKeyEvent_Key4' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, K2Node_InputKeyEvent_Key2) == 0x0000A0, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::K2Node_InputKeyEvent_Key2' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, Temp_struct_Variable2) == 0x0000B8, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_IsValid_ReturnValue2) == 0x0000D0, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000D4, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetPlayerController_ReturnValue3) == 0x0000E0, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetPlayerController_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_BreakRotator_Roll) == 0x0000E8, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_BreakRotator_Pitch) == 0x0000EC, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_BreakRotator_Yaw) == 0x0000F0, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000F4, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors) == 0x0000F8, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_MakeRotator_ReturnValue) == 0x000108, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_Array_Get_Item) == 0x000118, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000120, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_K2_SetActorRotation_ReturnValue) == 0x0001A8, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x0001B0, "Member 'VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -98,9 +67,6 @@ struct VaultCamera_Blueprint_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(VaultCamera_Blueprint_C_ReceiveTick) == 0x000004, "Wrong alignment on VaultCamera_Blueprint_C_ReceiveTick");
-static_assert(sizeof(VaultCamera_Blueprint_C_ReceiveTick) == 0x000004, "Wrong size on VaultCamera_Blueprint_C_ReceiveTick");
-static_assert(offsetof(VaultCamera_Blueprint_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'VaultCamera_Blueprint_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4
 // 0x0018 (0x0018 - 0x0000)
@@ -109,9 +75,6 @@ struct VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4 
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4) == 0x000008, "Wrong alignment on VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4");
-static_assert(sizeof(VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4) == 0x000018, "Wrong size on VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4");
-static_assert(offsetof(VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4, Key) == 0x000000, "Member 'VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4::Key' has a wrong offset!");
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5
 // 0x0018 (0x0018 - 0x0000)
@@ -120,9 +83,6 @@ struct VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5 
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5) == 0x000008, "Wrong alignment on VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5");
-static_assert(sizeof(VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5) == 0x000018, "Wrong size on VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5");
-static_assert(offsetof(VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5, Key) == 0x000000, "Member 'VaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5::Key' has a wrong offset!");
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6
 // 0x0018 (0x0018 - 0x0000)
@@ -131,9 +91,6 @@ struct VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6) == 0x000008, "Wrong alignment on VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6");
-static_assert(sizeof(VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6) == 0x000018, "Wrong size on VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6");
-static_assert(offsetof(VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6, Key) == 0x000000, "Member 'VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6::Key' has a wrong offset!");
 
 // Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7
 // 0x0018 (0x0018 - 0x0000)
@@ -142,9 +99,6 @@ struct VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7
 public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7) == 0x000008, "Wrong alignment on VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7");
-static_assert(sizeof(VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7) == 0x000018, "Wrong size on VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7");
-static_assert(offsetof(VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7, Key) == 0x000000, "Member 'VaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7::Key' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

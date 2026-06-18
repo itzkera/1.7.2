@@ -14,8 +14,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ChoiceCardName.ChoiceCardName_C
 // 0x0030 (0x0268 - 0x0238)
@@ -33,19 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChoiceCardName_C">();
+		BP_STATIC_CLASS_IMPL("ChoiceCardName_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChoiceCardName_C")
 	}
 	static class UChoiceCardName_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChoiceCardName_C>();
 	}
 };
-static_assert(alignof(UChoiceCardName_C) == 0x000008, "Wrong alignment on UChoiceCardName_C");
-static_assert(sizeof(UChoiceCardName_C) == 0x000268, "Wrong size on UChoiceCardName_C");
-static_assert(offsetof(UChoiceCardName_C, RarityBG) == 0x000238, "Member 'UChoiceCardName_C::RarityBG' has a wrong offset!");
-static_assert(offsetof(UChoiceCardName_C, RarityBorder) == 0x000240, "Member 'UChoiceCardName_C::RarityBorder' has a wrong offset!");
-static_assert(offsetof(UChoiceCardName_C, TextName) == 0x000248, "Member 'UChoiceCardName_C::TextName' has a wrong offset!");
-static_assert(offsetof(UChoiceCardName_C, DisplayText) == 0x000250, "Member 'UChoiceCardName_C::DisplayText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "EulaTab_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function EulaTab.EulaTab_C.ExecuteUbergraph_EulaTab
 // (HasDefaults)
@@ -64,5 +63,5 @@ void UEulaTab_C::Activate_Scroll_Box()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

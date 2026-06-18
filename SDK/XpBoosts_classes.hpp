@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBoosts.XpBoosts_C
 // 0x00C0 (0x02F8 - 0x0238)
@@ -63,35 +62,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBoosts_C">();
+		BP_STATIC_CLASS_IMPL("XpBoosts_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBoosts_C")
 	}
 	static class UXpBoosts_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBoosts_C>();
 	}
 };
-static_assert(alignof(UXpBoosts_C) == 0x000008, "Wrong alignment on UXpBoosts_C");
-static_assert(sizeof(UXpBoosts_C) == 0x0002F8, "Wrong size on UXpBoosts_C");
-static_assert(offsetof(UXpBoosts_C, UberGraphFrame) == 0x000238, "Member 'UXpBoosts_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Ally0Boost) == 0x000240, "Member 'UXpBoosts_C::Ally0Boost' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Ally1Boost) == 0x000248, "Member 'UXpBoosts_C::Ally1Boost' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Ally2Boost) == 0x000250, "Member 'UXpBoosts_C::Ally2Boost' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, CurrentBoosts) == 0x000258, "Member 'UXpBoosts_C::CurrentBoosts' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, DailyBonus) == 0x000260, "Member 'UXpBoosts_C::DailyBonus' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Image_0) == 0x000268, "Member 'UXpBoosts_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Image_2) == 0x000270, "Member 'UXpBoosts_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, LocalPlayerBoost) == 0x000278, "Member 'UXpBoosts_C::LocalPlayerBoost' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, PartyRows) == 0x000280, "Member 'UXpBoosts_C::PartyRows' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, TotalBoost) == 0x000288, "Member 'UXpBoosts_C::TotalBoost' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, TotalIcon) == 0x000290, "Member 'UXpBoosts_C::TotalIcon' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, XpBoostBar) == 0x000298, "Member 'UXpBoosts_C::XpBoostBar' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, XpBoostCounts) == 0x0002A0, "Member 'UXpBoosts_C::XpBoostCounts' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, XpBoostInfoText) == 0x0002A8, "Member 'UXpBoosts_C::XpBoostInfoText' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, XpBoostQuantities) == 0x0002B0, "Member 'UXpBoosts_C::XpBoostQuantities' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Total_Boost_Amount) == 0x0002B8, "Member 'UXpBoosts_C::Total_Boost_Amount' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Party_Members) == 0x0002C0, "Member 'UXpBoosts_C::Party_Members' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, Player_To_Boost) == 0x0002D0, "Member 'UXpBoosts_C::Player_To_Boost' has a wrong offset!");
-static_assert(offsetof(UXpBoosts_C, RowsBoosted) == 0x0002E8, "Member 'UXpBoosts_C::RowsBoosted' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

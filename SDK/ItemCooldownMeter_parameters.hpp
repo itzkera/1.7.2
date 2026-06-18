@@ -16,8 +16,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.Update
 // 0x00A0 (0x00A0 - 0x0000)
@@ -35,16 +35,6 @@ public:
 	class UOverlaySlot*                           CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimespan                              CallFunc_FromSeconds_ReturnValue;                  // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCooldownMeter_C_Update) == 0x000008, "Wrong alignment on ItemCooldownMeter_C_Update");
-static_assert(sizeof(ItemCooldownMeter_C_Update) == 0x0000A0, "Wrong size on ItemCooldownMeter_C_Update");
-static_assert(offsetof(ItemCooldownMeter_C_Update, Brush_Size) == 0x000000, "Member 'ItemCooldownMeter_C_Update::Brush_Size' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_Get_Item_Icon_Size_Icon_Size) == 0x000004, "Member 'ItemCooldownMeter_C_Update::CallFunc_Get_Item_Icon_Size_Icon_Size' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue) == 0x000010, "Member 'ItemCooldownMeter_C_Update::CallFunc_GetFontBySizeFromMultiSizeFont_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_BreakVector2D_X) == 0x000078, "Member 'ItemCooldownMeter_C_Update::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_BreakVector2D_Y) == 0x00007C, "Member 'ItemCooldownMeter_C_Update::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue) == 0x000080, "Member 'ItemCooldownMeter_C_Update::CallFunc_GetMarginBySizeFromMultiSizeMargin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000090, "Member 'ItemCooldownMeter_C_Update::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Update, CallFunc_FromSeconds_ReturnValue) == 0x000098, "Member 'ItemCooldownMeter_C_Update::CallFunc_FromSeconds_ReturnValue' has a wrong offset!");
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.Set Cooldown
 // 0x0130 (0x0130 - 0x0000)
@@ -87,37 +77,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x012E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x012F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemCooldownMeter_C_Set_Cooldown) == 0x000008, "Wrong alignment on ItemCooldownMeter_C_Set_Cooldown");
-static_assert(sizeof(ItemCooldownMeter_C_Set_Cooldown) == 0x000130, "Wrong size on ItemCooldownMeter_C_Set_Cooldown");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, Time_Left) == 0x000000, "Member 'ItemCooldownMeter_C_Set_Cooldown::Time_Left' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, Temp_byte_Variable) == 0x000008, "Member 'ItemCooldownMeter_C_Set_Cooldown::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_BreakTimespan_Days) == 0x00000C, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_BreakTimespan_Hours) == 0x000010, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_BreakTimespan_Minutes) == 0x000014, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_BreakTimespan_Seconds) == 0x000018, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_BreakTimespan_Milliseconds) == 0x00001C, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Greater_IntInt_ReturnValue) == 0x000020, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_IntToString_ReturnValue) == 0x000028, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Concat_StrStr_ReturnValue) == 0x000038, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_GetSecondsCorrectedMinutes_ReturnValue) == 0x000048, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_GetSecondsCorrectedMinutes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_IntToString_ReturnValue2) == 0x000068, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_IntToString_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Greater_IntInt_ReturnValue2) == 0x000078, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Concat_StrStr_ReturnValue2) == 0x000080, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Concat_StrStr_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_StringToText_ReturnValue2) == 0x000090, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_StringToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_IntToString_ReturnValue3) == 0x0000A8, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_IntToString_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Greater_IntInt_ReturnValue3) == 0x0000B8, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Greater_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Concat_StrStr_ReturnValue3) == 0x0000C0, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Concat_StrStr_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_StringToText_ReturnValue3) == 0x0000D0, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_StringToText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_IntToString_ReturnValue4) == 0x0000E8, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_IntToString_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Greater_IntInt_ReturnValue4) == 0x0000F8, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Greater_IntInt_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Concat_StrStr_ReturnValue4) == 0x000100, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Concat_StrStr_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Conv_StringToText_ReturnValue4) == 0x000110, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Conv_StringToText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_GetTotalSeconds_ReturnValue) == 0x000128, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, Temp_byte_Variable2) == 0x00012C, "Member 'ItemCooldownMeter_C_Set_Cooldown::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00012D, "Member 'ItemCooldownMeter_C_Set_Cooldown::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, Temp_bool_Variable) == 0x00012E, "Member 'ItemCooldownMeter_C_Set_Cooldown::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_Set_Cooldown, K2Node_Select_Default) == 0x00012F, "Member 'ItemCooldownMeter_C_Set_Cooldown::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.GetSecondsCorrectedMinutes
 // 0x001C (0x001C - 0x0000)
@@ -135,16 +94,6 @@ public:
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes) == 0x000004, "Wrong alignment on ItemCooldownMeter_C_GetSecondsCorrectedMinutes");
-static_assert(sizeof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes) == 0x00001C, "Wrong size on ItemCooldownMeter_C_GetSecondsCorrectedMinutes");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, Minutes) == 0x000000, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::Minutes' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, Seconds) == 0x000004, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::Seconds' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, ReturnValue) == 0x000008, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, CallFunc_Greater_IntInt_ReturnValue) == 0x00000C, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, CallFunc_Greater_IntInt_ReturnValue2) == 0x00000D, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, CallFunc_BooleanAND_ReturnValue) == 0x000014, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetSecondsCorrectedMinutes, CallFunc_SelectInt_ReturnValue) == 0x000018, "Member 'ItemCooldownMeter_C_GetSecondsCorrectedMinutes::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
 
 // Function ItemCooldownMeter.ItemCooldownMeter_C.GetCooldownMaterial
 // 0x0010 (0x0010 - 0x0000)
@@ -154,10 +103,6 @@ public:
 	class UMaterialInstanceDynamic*               CooldownMat;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemCooldownMeter_C_GetCooldownMaterial) == 0x000008, "Wrong alignment on ItemCooldownMeter_C_GetCooldownMaterial");
-static_assert(sizeof(ItemCooldownMeter_C_GetCooldownMaterial) == 0x000010, "Wrong size on ItemCooldownMeter_C_GetCooldownMaterial");
-static_assert(offsetof(ItemCooldownMeter_C_GetCooldownMaterial, CooldownMat) == 0x000000, "Member 'ItemCooldownMeter_C_GetCooldownMaterial::CooldownMat' has a wrong offset!");
-static_assert(offsetof(ItemCooldownMeter_C_GetCooldownMaterial, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'ItemCooldownMeter_C_GetCooldownMaterial::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

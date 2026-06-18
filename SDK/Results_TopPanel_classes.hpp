@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_TopPanel.Results_TopPanel_C
 // 0x0060 (0x0290 - 0x0230)
@@ -44,26 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_TopPanel_C">();
+		BP_STATIC_CLASS_IMPL("Results_TopPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_TopPanel_C")
 	}
 	static class UResults_TopPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_TopPanel_C>();
 	}
 };
-static_assert(alignof(UResults_TopPanel_C) == 0x000008, "Wrong alignment on UResults_TopPanel_C");
-static_assert(sizeof(UResults_TopPanel_C) == 0x000290, "Wrong size on UResults_TopPanel_C");
-static_assert(offsetof(UResults_TopPanel_C, UberGraphFrame) == 0x000230, "Member 'UResults_TopPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, Anim_Intro) == 0x000238, "Member 'UResults_TopPanel_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, Image_9) == 0x000240, "Member 'UResults_TopPanel_C::Image_9' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, Image_10) == 0x000248, "Member 'UResults_TopPanel_C::Image_10' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, ImageMissionIcon) == 0x000250, "Member 'UResults_TopPanel_C::ImageMissionIcon' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, SafeZone_1) == 0x000258, "Member 'UResults_TopPanel_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, TextMissionInfo) == 0x000260, "Member 'UResults_TopPanel_C::TextMissionInfo' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, TextMissionResult) == 0x000268, "Member 'UResults_TopPanel_C::TextMissionResult' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, TextMissionTitle) == 0x000270, "Member 'UResults_TopPanel_C::TextMissionTitle' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, IntroComplete) == 0x000278, "Member 'UResults_TopPanel_C::IntroComplete' has a wrong offset!");
-static_assert(offsetof(UResults_TopPanel_C, PlayRate) == 0x000288, "Member 'UResults_TopPanel_C::PlayRate' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

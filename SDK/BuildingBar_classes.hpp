@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BuildingBar.BuildingBar_C
 // 0x0140 (0x0378 - 0x0238)
@@ -84,50 +83,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuildingBar_C">();
+		BP_STATIC_CLASS_IMPL("BuildingBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildingBar_C")
 	}
 	static class UBuildingBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuildingBar_C>();
 	}
 };
-static_assert(alignof(UBuildingBar_C) == 0x000008, "Wrong alignment on UBuildingBar_C");
-static_assert(sizeof(UBuildingBar_C) == 0x000378, "Wrong size on UBuildingBar_C");
-static_assert(offsetof(UBuildingBar_C, UberGraphFrame) == 0x000238, "Member 'UBuildingBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Horizontal_Box__Health_Stat_Text) == 0x000240, "Member 'UBuildingBar_C::_Horizontal_Box__Health_Stat_Text' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Image__HP_Baseplate) == 0x000248, "Member 'UBuildingBar_C::_Image__HP_Baseplate' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Overlay__HP_Bar_Artwork) == 0x000250, "Member 'UBuildingBar_C::_Overlay__HP_Bar_Artwork' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _ProgressBar__HP_Delta) == 0x000258, "Member 'UBuildingBar_C::_ProgressBar__HP_Delta' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _ProgressBar__HP_Fill) == 0x000260, "Member 'UBuildingBar_C::_ProgressBar__HP_Fill' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Size_Box__HP_Bar) == 0x000268, "Member 'UBuildingBar_C::_Size_Box__HP_Bar' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, _Size_Box__HP_Bevel) == 0x000270, "Member 'UBuildingBar_C::_Size_Box__HP_Bevel' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, ImageHPBevel) == 0x000278, "Member 'UBuildingBar_C::ImageHPBevel' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, SwitcherHPText) == 0x000280, "Member 'UBuildingBar_C::SwitcherHPText' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TextBuildModeHPText) == 0x000288, "Member 'UBuildingBar_C::TextBuildModeHPText' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TextCurrentHealthStat) == 0x000290, "Member 'UBuildingBar_C::TextCurrentHealthStat' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TextMaxHealthStat) == 0x000298, "Member 'UBuildingBar_C::TextMaxHealthStat' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TrapItemCard) == 0x0002A0, "Member 'UBuildingBar_C::TrapItemCard' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TrapNameTextBlock) == 0x0002A8, "Member 'UBuildingBar_C::TrapNameTextBlock' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TrapUsesText) == 0x0002B0, "Member 'UBuildingBar_C::TrapUsesText' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TrapVerticalBox) == 0x0002B8, "Member 'UBuildingBar_C::TrapVerticalBox' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Current_HP_Value) == 0x0002C0, "Member 'UBuildingBar_C::Current_HP_Value' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Max_HP_Value) == 0x0002C4, "Member 'UBuildingBar_C::Max_HP_Value' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Last_HP_Value) == 0x0002C8, "Member 'UBuildingBar_C::Last_HP_Value' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, HP_FadeTimer) == 0x0002D0, "Member 'UBuildingBar_C::HP_FadeTimer' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, HP_FadeUpdateRate) == 0x0002D8, "Member 'UBuildingBar_C::HP_FadeUpdateRate' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, DisplayMode) == 0x0002DC, "Member 'UBuildingBar_C::DisplayMode' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Max_Durability_Value) == 0x0002E0, "Member 'UBuildingBar_C::Max_Durability_Value' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Current_Durability_Value) == 0x0002E4, "Member 'UBuildingBar_C::Current_Durability_Value' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Default_Baseplate_Color) == 0x0002E8, "Member 'UBuildingBar_C::Default_Baseplate_Color' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Alternate_Baseplate_Color) == 0x0002F8, "Member 'UBuildingBar_C::Alternate_Baseplate_Color' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Default_HP_Color_A) == 0x000308, "Member 'UBuildingBar_C::Default_HP_Color_A' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Default_HP_Color_B) == 0x000318, "Member 'UBuildingBar_C::Default_HP_Color_B' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Default_HP_Color_C) == 0x000328, "Member 'UBuildingBar_C::Default_HP_Color_C' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Alternate_HP_Color_A) == 0x000338, "Member 'UBuildingBar_C::Alternate_HP_Color_A' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Alternate_HP_Color_B) == 0x000348, "Member 'UBuildingBar_C::Alternate_HP_Color_B' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Alternate_HP_Color_C) == 0x000358, "Member 'UBuildingBar_C::Alternate_HP_Color_C' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, Show_Trap_Durability_Text) == 0x000368, "Member 'UBuildingBar_C::Show_Trap_Durability_Text' has a wrong offset!");
-static_assert(offsetof(UBuildingBar_C, TemporaryTrapInstance) == 0x000370, "Member 'UBuildingBar_C::TemporaryTrapInstance' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

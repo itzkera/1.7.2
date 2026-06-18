@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.ExecuteUbergraph_BluGlow_MorphAnimation
 // 0x00E0 (0x00E0 - 0x0000)
@@ -41,25 +41,6 @@ public:
 	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0050(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation) == 0x000008, "Wrong alignment on BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation");
-static_assert(sizeof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation) == 0x0000E0, "Wrong size on BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, EntryPoint) == 0x000000, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_IntInt_ReturnValue2) == 0x000008, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_FloatFloat_ReturnValue) == 0x000010, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000014, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000018, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000024, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_FloatFloat_ReturnValue2) == 0x000028, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_FloatFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Sin_ReturnValue) == 0x00002C, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Sin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Cos_ReturnValue) == 0x000030, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Cos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_FloatFloat_ReturnValue3) == 0x000034, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_FloatFloat_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Sin_ReturnValue2) == 0x000038, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Sin_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Add_FloatFloat_ReturnValue4) == 0x00003C, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Add_FloatFloat_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_MakeRotator_ReturnValue) == 0x000040, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x000050, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation, CallFunc_Percent_IntInt_ReturnValue) == 0x0000D8, "Member 'BluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

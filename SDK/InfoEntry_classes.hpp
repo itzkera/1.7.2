@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass InfoEntry.InfoEntry_C
 // 0x0028 (0x0260 - 0x0238)
@@ -51,19 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InfoEntry_C">();
+		BP_STATIC_CLASS_IMPL("InfoEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InfoEntry_C")
 	}
 	static class UInfoEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInfoEntry_C>();
 	}
 };
-static_assert(alignof(UInfoEntry_C) == 0x000008, "Wrong alignment on UInfoEntry_C");
-static_assert(sizeof(UInfoEntry_C) == 0x000260, "Wrong size on UInfoEntry_C");
-static_assert(offsetof(UInfoEntry_C, UberGraphFrame) == 0x000238, "Member 'UInfoEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInfoEntry_C, IconTextButton) == 0x000240, "Member 'UInfoEntry_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UInfoEntry_C, Item_Definition) == 0x000248, "Member 'UInfoEntry_C::Item_Definition' has a wrong offset!");
-static_assert(offsetof(UInfoEntry_C, Entry_Selected) == 0x000250, "Member 'UInfoEntry_C::Entry_Selected' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

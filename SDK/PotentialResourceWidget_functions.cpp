@@ -14,8 +14,7 @@
 #include "PotentialResourceWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PotentialResourceWidget.PotentialResourceWidget_C.ExecuteUbergraph_PotentialResourceWidget
 // ()
@@ -83,7 +82,7 @@ void UPotentialResourceWidget_C::UpdateResourceCountText()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItem*                        Resource                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Result                                                 (Parm, OutParm)
+// class FText*                            Result                                                 (Parm, OutParm)
 
 void UPotentialResourceWidget_C::GetResourceCountAsText(class UFortItem* Resource, class FText* Result)
 {
@@ -138,5 +137,5 @@ void UPotentialResourceWidget_C::ShowPotentialResource(class UFortItem* Potentia
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

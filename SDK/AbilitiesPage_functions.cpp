@@ -14,8 +14,7 @@
 #include "AbilitiesPage_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AbilitiesPage.AbilitiesPage_C.ExecuteUbergraph_AbilitiesPage
 // (HasDefaults)
@@ -102,7 +101,7 @@ void UAbilitiesPage_C::OnActivated()
 // Function AbilitiesPage.AbilitiesPage_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAbilitiesPage_C::HandleBack(bool* PassThrough)
 {
@@ -219,7 +218,7 @@ void UAbilitiesPage_C::UpdateAbilityMovie(class UFortGadgetItemDefinition* inGad
 // Function AbilitiesPage.AbilitiesPage_C.HandleInventory
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAbilitiesPage_C::HandleInventory(bool* PassThrough)
 {
@@ -236,5 +235,5 @@ void UAbilitiesPage_C::HandleInventory(bool* PassThrough)
 		*PassThrough = Parms.PassThrough;
 }
 
-}
 
+SDK_NAMESPACE_END

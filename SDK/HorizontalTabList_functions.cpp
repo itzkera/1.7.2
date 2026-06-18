@@ -14,8 +14,7 @@
 #include "HorizontalTabList_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HorizontalTabList.HorizontalTabList_C.ExecuteUbergraph_HorizontalTabList
 // ()
@@ -150,8 +149,8 @@ void UHorizontalTabList_C::Construct()
 // Function HorizontalTabList.HorizontalTabList_C.ChangeInputBindings
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDataTableRowHandle              NextBinding                                            (Parm, NoDestructor)
-// struct FDataTableRowHandle              PreviousBinding                                        (Parm, NoDestructor)
+// const struct FDataTableRowHandle&       NextBinding                                            (Parm, NoDestructor)
+// const struct FDataTableRowHandle&       PreviousBinding                                        (Parm, NoDestructor)
 
 void UHorizontalTabList_C::ChangeInputBindings(const struct FDataTableRowHandle& NextBinding, const struct FDataTableRowHandle& PreviousBinding)
 {
@@ -191,5 +190,5 @@ class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(class FName TabNameID
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

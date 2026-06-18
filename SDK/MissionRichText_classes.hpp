@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MissionRichText.MissionRichText_C
 // 0x0038 (0x0270 - 0x0238)
@@ -36,20 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionRichText_C">();
+		BP_STATIC_CLASS_IMPL("MissionRichText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionRichText_C")
 	}
 	static class UMissionRichText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionRichText_C>();
 	}
 };
-static_assert(alignof(UMissionRichText_C) == 0x000008, "Wrong alignment on UMissionRichText_C");
-static_assert(sizeof(UMissionRichText_C) == 0x000270, "Wrong size on UMissionRichText_C");
-static_assert(offsetof(UMissionRichText_C, UberGraphFrame) == 0x000238, "Member 'UMissionRichText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionRichText_C, TextBlockHUD) == 0x000240, "Member 'UMissionRichText_C::TextBlockHUD' has a wrong offset!");
-static_assert(offsetof(UMissionRichText_C, TextBlockNonHUD) == 0x000248, "Member 'UMissionRichText_C::TextBlockNonHUD' has a wrong offset!");
-static_assert(offsetof(UMissionRichText_C, TextToDisplay) == 0x000250, "Member 'UMissionRichText_C::TextToDisplay' has a wrong offset!");
-static_assert(offsetof(UMissionRichText_C, bConfigureAsHUD) == 0x000268, "Member 'UMissionRichText_C::bConfigureAsHUD' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

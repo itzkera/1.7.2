@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Ranged3PCamera.Ranged3PCamera_C
 // 0x0000 (0x0128 - 0x0128)
@@ -23,15 +22,16 @@ class URanged3PCamera_C final : public UFort3PCam_Default
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ranged3PCamera_C">();
+		BP_STATIC_CLASS_IMPL("Ranged3PCamera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ranged3PCamera_C")
 	}
 	static class URanged3PCamera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URanged3PCamera_C>();
 	}
 };
-static_assert(alignof(URanged3PCamera_C) == 0x000008, "Wrong alignment on URanged3PCamera_C");
-static_assert(sizeof(URanged3PCamera_C) == 0x000128, "Wrong size on URanged3PCamera_C");
 
-}
-
+SDK_NAMESPACE_END

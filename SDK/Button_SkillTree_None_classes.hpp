@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Button-SkillTree-None.Button-SkillTree-None_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButton_SkillTree_None_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Button-SkillTree-None_C">();
+		BP_STATIC_CLASS_IMPL("Button-SkillTree-None_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Button-SkillTree-None_C")
 	}
 	static class UButton_SkillTree_None_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButton_SkillTree_None_C>();
 	}
 };
-static_assert(alignof(UButton_SkillTree_None_C) == 0x000008, "Wrong alignment on UButton_SkillTree_None_C");
-static_assert(sizeof(UButton_SkillTree_None_C) == 0x000530, "Wrong size on UButton_SkillTree_None_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemEntry.ItemEntry_C.ExecuteUbergraph_ItemEntry
 // 0x0038 (0x0038 - 0x0000)
@@ -30,15 +30,6 @@ public:
 	class UObject*                                K2Node_Event_InData;                               // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        K2Node_Event_OwningList;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_ExecuteUbergraph_ItemEntry) == 0x000008, "Wrong alignment on ItemEntry_C_ExecuteUbergraph_ItemEntry");
-static_assert(sizeof(ItemEntry_C_ExecuteUbergraph_ItemEntry) == 0x000038, "Wrong size on ItemEntry_C_ExecuteUbergraph_ItemEntry");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, EntryPoint) == 0x000000, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, K2Node_Event_Callback) == 0x000008, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::K2Node_Event_Callback' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, K2Node_Event_bExpanded) == 0x000018, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::K2Node_Event_bExpanded' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, K2Node_Event_InIndexInList) == 0x00001C, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::K2Node_Event_InIndexInList' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, K2Node_Event_bSelected) == 0x000020, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::K2Node_Event_bSelected' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, K2Node_Event_InData) == 0x000028, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::K2Node_Event_InData' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_ExecuteUbergraph_ItemEntry, K2Node_Event_OwningList) == 0x000030, "Member 'ItemEntry_C_ExecuteUbergraph_ItemEntry::K2Node_Event_OwningList' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.SetData
 // 0x0010 (0x0010 - 0x0000)
@@ -48,10 +39,6 @@ public:
 	class UObject*                                InData;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonListView*                        OwningList;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_SetData) == 0x000008, "Wrong alignment on ItemEntry_C_SetData");
-static_assert(sizeof(ItemEntry_C_SetData) == 0x000010, "Wrong size on ItemEntry_C_SetData");
-static_assert(offsetof(ItemEntry_C_SetData, InData) == 0x000000, "Member 'ItemEntry_C_SetData::InData' has a wrong offset!");
-static_assert(offsetof(ItemEntry_C_SetData, OwningList) == 0x000008, "Member 'ItemEntry_C_SetData::OwningList' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.SetSelected
 // 0x0001 (0x0001 - 0x0000)
@@ -60,9 +47,6 @@ struct ItemEntry_C_SetSelected final
 public:
 	bool                                          bSelected;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemEntry_C_SetSelected) == 0x000001, "Wrong alignment on ItemEntry_C_SetSelected");
-static_assert(sizeof(ItemEntry_C_SetSelected) == 0x000001, "Wrong size on ItemEntry_C_SetSelected");
-static_assert(offsetof(ItemEntry_C_SetSelected, bSelected) == 0x000000, "Member 'ItemEntry_C_SetSelected::bSelected' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.SetIndexInList
 // 0x0004 (0x0004 - 0x0000)
@@ -71,9 +55,6 @@ struct ItemEntry_C_SetIndexInList final
 public:
 	int32                                         InIndexInList;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_SetIndexInList) == 0x000004, "Wrong alignment on ItemEntry_C_SetIndexInList");
-static_assert(sizeof(ItemEntry_C_SetIndexInList) == 0x000004, "Wrong size on ItemEntry_C_SetIndexInList");
-static_assert(offsetof(ItemEntry_C_SetIndexInList, InIndexInList) == 0x000000, "Member 'ItemEntry_C_SetIndexInList::InIndexInList' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.SetExpanded
 // 0x0001 (0x0001 - 0x0000)
@@ -82,9 +63,6 @@ struct ItemEntry_C_SetExpanded final
 public:
 	bool                                          bExpanded;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemEntry_C_SetExpanded) == 0x000001, "Wrong alignment on ItemEntry_C_SetExpanded");
-static_assert(sizeof(ItemEntry_C_SetExpanded) == 0x000001, "Wrong size on ItemEntry_C_SetExpanded");
-static_assert(offsetof(ItemEntry_C_SetExpanded, bExpanded) == 0x000000, "Member 'ItemEntry_C_SetExpanded::bExpanded' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.RegisterOnClicked
 // 0x0010 (0x0010 - 0x0000)
@@ -93,9 +71,6 @@ struct alignas(0x08) ItemEntry_C_RegisterOnClicked final
 public:
 	TDelegate<void(class UUserWidget* Widget)>    Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(ItemEntry_C_RegisterOnClicked) == 0x000008, "Wrong alignment on ItemEntry_C_RegisterOnClicked");
-static_assert(sizeof(ItemEntry_C_RegisterOnClicked) == 0x000010, "Wrong size on ItemEntry_C_RegisterOnClicked");
-static_assert(offsetof(ItemEntry_C_RegisterOnClicked, Callback) == 0x000000, "Member 'ItemEntry_C_RegisterOnClicked::Callback' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.GetData
 // 0x0008 (0x0008 - 0x0000)
@@ -104,9 +79,6 @@ struct ItemEntry_C_GetData final
 public:
 	class UObject*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_GetData) == 0x000008, "Wrong alignment on ItemEntry_C_GetData");
-static_assert(sizeof(ItemEntry_C_GetData) == 0x000008, "Wrong size on ItemEntry_C_GetData");
-static_assert(offsetof(ItemEntry_C_GetData, ReturnValue) == 0x000000, "Member 'ItemEntry_C_GetData::ReturnValue' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.IsItemExpanded
 // 0x0001 (0x0001 - 0x0000)
@@ -115,9 +87,6 @@ struct ItemEntry_C_IsItemExpanded final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemEntry_C_IsItemExpanded) == 0x000001, "Wrong alignment on ItemEntry_C_IsItemExpanded");
-static_assert(sizeof(ItemEntry_C_IsItemExpanded) == 0x000001, "Wrong size on ItemEntry_C_IsItemExpanded");
-static_assert(offsetof(ItemEntry_C_IsItemExpanded, ReturnValue) == 0x000000, "Member 'ItemEntry_C_IsItemExpanded::ReturnValue' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.GetIndentLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -126,9 +95,6 @@ struct ItemEntry_C_GetIndentLevel final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_GetIndentLevel) == 0x000004, "Wrong alignment on ItemEntry_C_GetIndentLevel");
-static_assert(sizeof(ItemEntry_C_GetIndentLevel) == 0x000004, "Wrong size on ItemEntry_C_GetIndentLevel");
-static_assert(offsetof(ItemEntry_C_GetIndentLevel, ReturnValue) == 0x000000, "Member 'ItemEntry_C_GetIndentLevel::ReturnValue' has a wrong offset!");
 
 // Function ItemEntry.ItemEntry_C.DoesItemHaveChildren
 // 0x0004 (0x0004 - 0x0000)
@@ -137,9 +103,6 @@ struct ItemEntry_C_DoesItemHaveChildren final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemEntry_C_DoesItemHaveChildren) == 0x000004, "Wrong alignment on ItemEntry_C_DoesItemHaveChildren");
-static_assert(sizeof(ItemEntry_C_DoesItemHaveChildren) == 0x000004, "Wrong size on ItemEntry_C_DoesItemHaveChildren");
-static_assert(offsetof(ItemEntry_C_DoesItemHaveChildren, ReturnValue) == 0x000000, "Member 'ItemEntry_C_DoesItemHaveChildren::ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

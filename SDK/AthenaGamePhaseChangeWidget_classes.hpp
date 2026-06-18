@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C
 // 0x0058 (0x02B8 - 0x0260)
@@ -45,26 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaGamePhaseChangeWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaGamePhaseChangeWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaGamePhaseChangeWidget_C")
 	}
 	static class UAthenaGamePhaseChangeWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaGamePhaseChangeWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaGamePhaseChangeWidget_C) == 0x000008, "Wrong alignment on UAthenaGamePhaseChangeWidget_C");
-static_assert(sizeof(UAthenaGamePhaseChangeWidget_C) == 0x0002B8, "Wrong size on UAthenaGamePhaseChangeWidget_C");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaGamePhaseChangeWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconSlide) == 0x000268, "Member 'UAthenaGamePhaseChangeWidget_C::IconSlide' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, IconPulse) == 0x000270, "Member 'UAthenaGamePhaseChangeWidget_C::IconPulse' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, ModeChanged) == 0x000278, "Member 'UAthenaGamePhaseChangeWidget_C::ModeChanged' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Content) == 0x000280, "Member 'UAthenaGamePhaseChangeWidget_C::Content' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Feedback) == 0x000288, "Member 'UAthenaGamePhaseChangeWidget_C::Feedback' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, Icon) == 0x000290, "Member 'UAthenaGamePhaseChangeWidget_C::Icon' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, MESSAGE) == 0x000298, "Member 'UAthenaGamePhaseChangeWidget_C::MESSAGE' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, TimeText) == 0x0002A0, "Member 'UAthenaGamePhaseChangeWidget_C::TimeText' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, GameState_0) == 0x0002A8, "Member 'UAthenaGamePhaseChangeWidget_C::GameState_0' has a wrong offset!");
-static_assert(offsetof(UAthenaGamePhaseChangeWidget_C, ServerTime) == 0x0002B0, "Member 'UAthenaGamePhaseChangeWidget_C::ServerTime' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

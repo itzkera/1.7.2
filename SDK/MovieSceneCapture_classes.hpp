@@ -15,25 +15,35 @@
 #include "MovieSceneCapture_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class MovieSceneCapture.MovieSceneCaptureInterface
-// 0x0000 (0x0028 - 0x0028)
-class IMovieSceneCaptureInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMovieSceneCaptureInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCaptureInterface">();
+		STATIC_CLASS_IMPL("MovieSceneCaptureInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCaptureInterface")
 	}
 	static class IMovieSceneCaptureInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IMovieSceneCaptureInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IMovieSceneCaptureInterface) == 0x000008, "Wrong alignment on IMovieSceneCaptureInterface");
-static_assert(sizeof(IMovieSceneCaptureInterface) == 0x000028, "Wrong size on IMovieSceneCaptureInterface");
 
 // Class MovieSceneCapture.MovieSceneCaptureProtocolSettings
 // 0x0000 (0x0028 - 0x0028)
@@ -42,20 +52,22 @@ class UMovieSceneCaptureProtocolSettings : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCaptureProtocolSettings">();
+		STATIC_CLASS_IMPL("MovieSceneCaptureProtocolSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCaptureProtocolSettings")
 	}
 	static class UMovieSceneCaptureProtocolSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCaptureProtocolSettings>();
 	}
 };
-static_assert(alignof(UMovieSceneCaptureProtocolSettings) == 0x000008, "Wrong alignment on UMovieSceneCaptureProtocolSettings");
-static_assert(sizeof(UMovieSceneCaptureProtocolSettings) == 0x000028, "Wrong size on UMovieSceneCaptureProtocolSettings");
 
 // Class MovieSceneCapture.MovieSceneCapture
 // 0x0210 (0x0238 - 0x0028)
 #pragma pack(push, 0x1)
-class alignas(0x08) UMovieSceneCapture : public UObject
+class SDK_ALIGN(0x08) UMovieSceneCapture : public UObject
 {
 public:
 	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -72,7 +84,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCapture">();
+		STATIC_CLASS_IMPL("MovieSceneCapture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCapture")
 	}
 	static class UMovieSceneCapture* GetDefaultObj()
 	{
@@ -80,15 +96,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UMovieSceneCapture) == 0x000008, "Wrong alignment on UMovieSceneCapture");
-static_assert(sizeof(UMovieSceneCapture) == 0x000238, "Wrong size on UMovieSceneCapture");
-static_assert(offsetof(UMovieSceneCapture, CaptureType) == 0x000038, "Member 'UMovieSceneCapture::CaptureType' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, ProtocolSettings) == 0x000040, "Member 'UMovieSceneCapture::ProtocolSettings' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, Settings) == 0x000048, "Member 'UMovieSceneCapture::Settings' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, bUseSeparateProcess) == 0x000098, "Member 'UMovieSceneCapture::bUseSeparateProcess' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, bCloseEditorWhenCaptureStarts) == 0x000099, "Member 'UMovieSceneCapture::bCloseEditorWhenCaptureStarts' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, AdditionalCommandLineArguments) == 0x0000A0, "Member 'UMovieSceneCapture::AdditionalCommandLineArguments' has a wrong offset!");
-static_assert(offsetof(UMovieSceneCapture, InheritedCommandLineArguments) == 0x0000B0, "Member 'UMovieSceneCapture::InheritedCommandLineArguments' has a wrong offset!");
 
 // Class MovieSceneCapture.AutomatedLevelSequenceCapture
 // 0x0008 (0x0240 - 0x0238)
@@ -100,15 +107,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AutomatedLevelSequenceCapture">();
+		STATIC_CLASS_IMPL("AutomatedLevelSequenceCapture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AutomatedLevelSequenceCapture")
 	}
 	static class UAutomatedLevelSequenceCapture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAutomatedLevelSequenceCapture>();
 	}
 };
-static_assert(alignof(UAutomatedLevelSequenceCapture) == 0x000008, "Wrong alignment on UAutomatedLevelSequenceCapture");
-static_assert(sizeof(UAutomatedLevelSequenceCapture) == 0x000240, "Wrong size on UAutomatedLevelSequenceCapture");
 
 // Class MovieSceneCapture.LevelCapture
 // 0x0028 (0x0260 - 0x0238)
@@ -123,17 +132,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LevelCapture">();
+		STATIC_CLASS_IMPL("LevelCapture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LevelCapture")
 	}
 	static class ULevelCapture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULevelCapture>();
 	}
 };
-static_assert(alignof(ULevelCapture) == 0x000008, "Wrong alignment on ULevelCapture");
-static_assert(sizeof(ULevelCapture) == 0x000260, "Wrong size on ULevelCapture");
-static_assert(offsetof(ULevelCapture, bAutoStartCapture) == 0x000238, "Member 'ULevelCapture::bAutoStartCapture' has a wrong offset!");
-static_assert(offsetof(ULevelCapture, PrerequisiteActorId) == 0x000244, "Member 'ULevelCapture::PrerequisiteActorId' has a wrong offset!");
 
 // Class MovieSceneCapture.MovieSceneCaptureEnvironment
 // 0x0000 (0x0028 - 0x0028)
@@ -146,15 +155,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneCaptureEnvironment">();
+		STATIC_CLASS_IMPL("MovieSceneCaptureEnvironment")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneCaptureEnvironment")
 	}
 	static class UMovieSceneCaptureEnvironment* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneCaptureEnvironment>();
 	}
 };
-static_assert(alignof(UMovieSceneCaptureEnvironment) == 0x000008, "Wrong alignment on UMovieSceneCaptureEnvironment");
-static_assert(sizeof(UMovieSceneCaptureEnvironment) == 0x000028, "Wrong size on UMovieSceneCaptureEnvironment");
 
 // Class MovieSceneCapture.FrameGrabberProtocolSettings
 // 0x0008 (0x0030 - 0x0028)
@@ -166,15 +177,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FrameGrabberProtocolSettings">();
+		STATIC_CLASS_IMPL("FrameGrabberProtocolSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrameGrabberProtocolSettings")
 	}
 	static class UFrameGrabberProtocolSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrameGrabberProtocolSettings>();
 	}
 };
-static_assert(alignof(UFrameGrabberProtocolSettings) == 0x000008, "Wrong alignment on UFrameGrabberProtocolSettings");
-static_assert(sizeof(UFrameGrabberProtocolSettings) == 0x000030, "Wrong size on UFrameGrabberProtocolSettings");
 
 // Class MovieSceneCapture.BmpImageCaptureSettings
 // 0x0000 (0x0028 - 0x0028)
@@ -183,15 +196,17 @@ class UBmpImageCaptureSettings final : public UMovieSceneCaptureProtocolSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BmpImageCaptureSettings">();
+		STATIC_CLASS_IMPL("BmpImageCaptureSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BmpImageCaptureSettings")
 	}
 	static class UBmpImageCaptureSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBmpImageCaptureSettings>();
 	}
 };
-static_assert(alignof(UBmpImageCaptureSettings) == 0x000008, "Wrong alignment on UBmpImageCaptureSettings");
-static_assert(sizeof(UBmpImageCaptureSettings) == 0x000028, "Wrong size on UBmpImageCaptureSettings");
 
 // Class MovieSceneCapture.ImageCaptureSettings
 // 0x0008 (0x0038 - 0x0030)
@@ -204,16 +219,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImageCaptureSettings">();
+		STATIC_CLASS_IMPL("ImageCaptureSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImageCaptureSettings")
 	}
 	static class UImageCaptureSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImageCaptureSettings>();
 	}
 };
-static_assert(alignof(UImageCaptureSettings) == 0x000008, "Wrong alignment on UImageCaptureSettings");
-static_assert(sizeof(UImageCaptureSettings) == 0x000038, "Wrong size on UImageCaptureSettings");
-static_assert(offsetof(UImageCaptureSettings, CompressionQuality) == 0x000030, "Member 'UImageCaptureSettings::CompressionQuality' has a wrong offset!");
 
 // Class MovieSceneCapture.CompositionGraphCaptureSettings
 // 0x0030 (0x0058 - 0x0028)
@@ -231,20 +247,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CompositionGraphCaptureSettings">();
+		STATIC_CLASS_IMPL("CompositionGraphCaptureSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CompositionGraphCaptureSettings")
 	}
 	static class UCompositionGraphCaptureSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCompositionGraphCaptureSettings>();
 	}
 };
-static_assert(alignof(UCompositionGraphCaptureSettings) == 0x000008, "Wrong alignment on UCompositionGraphCaptureSettings");
-static_assert(sizeof(UCompositionGraphCaptureSettings) == 0x000058, "Wrong size on UCompositionGraphCaptureSettings");
-static_assert(offsetof(UCompositionGraphCaptureSettings, IncludeRenderPasses) == 0x000028, "Member 'UCompositionGraphCaptureSettings::IncludeRenderPasses' has a wrong offset!");
-static_assert(offsetof(UCompositionGraphCaptureSettings, bCaptureFramesInHDR) == 0x000038, "Member 'UCompositionGraphCaptureSettings::bCaptureFramesInHDR' has a wrong offset!");
-static_assert(offsetof(UCompositionGraphCaptureSettings, HDRCompressionQuality) == 0x00003C, "Member 'UCompositionGraphCaptureSettings::HDRCompressionQuality' has a wrong offset!");
-static_assert(offsetof(UCompositionGraphCaptureSettings, CaptureGamut) == 0x000040, "Member 'UCompositionGraphCaptureSettings::CaptureGamut' has a wrong offset!");
-static_assert(offsetof(UCompositionGraphCaptureSettings, PostProcessingMaterial) == 0x000048, "Member 'UCompositionGraphCaptureSettings::PostProcessingMaterial' has a wrong offset!");
 
 // Class MovieSceneCapture.VideoCaptureSettings
 // 0x0018 (0x0048 - 0x0030)
@@ -259,18 +272,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VideoCaptureSettings">();
+		STATIC_CLASS_IMPL("VideoCaptureSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VideoCaptureSettings")
 	}
 	static class UVideoCaptureSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVideoCaptureSettings>();
 	}
 };
-static_assert(alignof(UVideoCaptureSettings) == 0x000008, "Wrong alignment on UVideoCaptureSettings");
-static_assert(sizeof(UVideoCaptureSettings) == 0x000048, "Wrong size on UVideoCaptureSettings");
-static_assert(offsetof(UVideoCaptureSettings, bUseCompression) == 0x000030, "Member 'UVideoCaptureSettings::bUseCompression' has a wrong offset!");
-static_assert(offsetof(UVideoCaptureSettings, CompressionQuality) == 0x000034, "Member 'UVideoCaptureSettings::CompressionQuality' has a wrong offset!");
-static_assert(offsetof(UVideoCaptureSettings, VideoCodec) == 0x000038, "Member 'UVideoCaptureSettings::VideoCodec' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

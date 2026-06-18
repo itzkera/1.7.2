@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C
 // 0x0048 (0x0298 - 0x0250)
@@ -41,24 +40,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookSectionTileRewardWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookSectionTileRewardWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookSectionTileRewardWidget_C")
 	}
 	static class UCollectionBookSectionTileRewardWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookSectionTileRewardWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookSectionTileRewardWidget_C) == 0x000008, "Wrong alignment on UCollectionBookSectionTileRewardWidget_C");
-static_assert(sizeof(UCollectionBookSectionTileRewardWidget_C) == 0x000298, "Wrong size on UCollectionBookSectionTileRewardWidget_C");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, UberGraphFrame) == 0x000250, "Member 'UCollectionBookSectionTileRewardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, ArrowImage) == 0x000258, "Member 'UCollectionBookSectionTileRewardWidget_C::ArrowImage' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, CheckImage) == 0x000260, "Member 'UCollectionBookSectionTileRewardWidget_C::CheckImage' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, DivisorText) == 0x000268, "Member 'UCollectionBookSectionTileRewardWidget_C::DivisorText' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, NumSlotsText) == 0x000270, "Member 'UCollectionBookSectionTileRewardWidget_C::NumSlotsText' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, RewardStatusSwitcher) == 0x000278, "Member 'UCollectionBookSectionTileRewardWidget_C::RewardStatusSwitcher' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, SlotsFilledText) == 0x000280, "Member 'UCollectionBookSectionTileRewardWidget_C::SlotsFilledText' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, ClaimedTextStyle) == 0x000288, "Member 'UCollectionBookSectionTileRewardWidget_C::ClaimedTextStyle' has a wrong offset!");
-static_assert(offsetof(UCollectionBookSectionTileRewardWidget_C, AvailableTextStyle) == 0x000290, "Member 'UCollectionBookSectionTileRewardWidget_C::AvailableTextStyle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

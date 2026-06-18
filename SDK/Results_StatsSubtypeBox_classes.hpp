@@ -16,8 +16,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Results_StatsSubtypeBox.Results_StatsSubtypeBox_C
 // 0x0040 (0x0278 - 0x0238)
@@ -42,22 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Results_StatsSubtypeBox_C">();
+		BP_STATIC_CLASS_IMPL("Results_StatsSubtypeBox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Results_StatsSubtypeBox_C")
 	}
 	static class UResults_StatsSubtypeBox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResults_StatsSubtypeBox_C>();
 	}
 };
-static_assert(alignof(UResults_StatsSubtypeBox_C) == 0x000008, "Wrong alignment on UResults_StatsSubtypeBox_C");
-static_assert(sizeof(UResults_StatsSubtypeBox_C) == 0x000278, "Wrong size on UResults_StatsSubtypeBox_C");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, UberGraphFrame) == 0x000238, "Member 'UResults_StatsSubtypeBox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, GradientBackground) == 0x000240, "Member 'UResults_StatsSubtypeBox_C::GradientBackground' has a wrong offset!");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, ImageType) == 0x000248, "Member 'UResults_StatsSubtypeBox_C::ImageType' has a wrong offset!");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, TextType) == 0x000250, "Member 'UResults_StatsSubtypeBox_C::TextType' has a wrong offset!");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, ScoreType) == 0x000258, "Member 'UResults_StatsSubtypeBox_C::ScoreType' has a wrong offset!");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, TotalTypeTexture) == 0x000260, "Member 'UResults_StatsSubtypeBox_C::TotalTypeTexture' has a wrong offset!");
-static_assert(offsetof(UResults_StatsSubtypeBox_C, TotalTypeColor) == 0x000268, "Member 'UResults_StatsSubtypeBox_C::TotalTypeColor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

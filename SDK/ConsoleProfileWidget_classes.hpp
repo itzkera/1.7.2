@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ConsoleProfileWidget.ConsoleProfileWidget_C
 // 0x0010 (0x0240 - 0x0230)
@@ -30,17 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ConsoleProfileWidget_C">();
+		BP_STATIC_CLASS_IMPL("ConsoleProfileWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConsoleProfileWidget_C")
 	}
 	static class UConsoleProfileWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConsoleProfileWidget_C>();
 	}
 };
-static_assert(alignof(UConsoleProfileWidget_C) == 0x000008, "Wrong alignment on UConsoleProfileWidget_C");
-static_assert(sizeof(UConsoleProfileWidget_C) == 0x000240, "Wrong size on UConsoleProfileWidget_C");
-static_assert(offsetof(UConsoleProfileWidget_C, DisplayName) == 0x000230, "Member 'UConsoleProfileWidget_C::DisplayName' has a wrong offset!");
-static_assert(offsetof(UConsoleProfileWidget_C, Prefix) == 0x000238, "Member 'UConsoleProfileWidget_C::Prefix' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

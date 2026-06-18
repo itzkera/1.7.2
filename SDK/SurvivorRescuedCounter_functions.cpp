@@ -14,8 +14,7 @@
 #include "SurvivorRescuedCounter_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.ExecuteUbergraph_SurvivorRescuedCounter
 // ()
@@ -70,5 +69,5 @@ void USurvivorRescuedCounter_C::UpdateSurvivorsRescued(int32 SurvivorsRescued)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

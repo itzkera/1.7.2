@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.ExecuteUbergraph_Results_TeamSubtotalScore
 // 0x0010 (0x0010 - 0x0000)
@@ -25,12 +25,6 @@ public:
 	int32                                         CallFunc_RandomIntegerInRange_ReturnValue;         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore) == 0x000004, "Wrong alignment on Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore");
-static_assert(sizeof(Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore) == 0x000010, "Wrong size on Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore");
-static_assert(offsetof(Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore, EntryPoint) == 0x000000, "Member 'Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore, K2Node_Event_IsDesignTime) == 0x000004, "Member 'Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore, CallFunc_RandomIntegerInRange_ReturnValue) == 0x000008, "Member 'Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore::CallFunc_RandomIntegerInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00000C, "Member 'Results_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +33,6 @@ struct Results_TeamSubtotalScore_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamSubtotalScore_C_PreConstruct) == 0x000001, "Wrong alignment on Results_TeamSubtotalScore_C_PreConstruct");
-static_assert(sizeof(Results_TeamSubtotalScore_C_PreConstruct) == 0x000001, "Wrong size on Results_TeamSubtotalScore_C_PreConstruct");
-static_assert(offsetof(Results_TeamSubtotalScore_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_TeamSubtotalScore_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.SetScore
 // 0x0008 (0x0008 - 0x0000)
@@ -51,10 +42,6 @@ public:
 	int32                                         Score;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_TeamSubtotalScore_C_SetScore) == 0x000004, "Wrong alignment on Results_TeamSubtotalScore_C_SetScore");
-static_assert(sizeof(Results_TeamSubtotalScore_C_SetScore) == 0x000008, "Wrong size on Results_TeamSubtotalScore_C_SetScore");
-static_assert(offsetof(Results_TeamSubtotalScore_C_SetScore, Score) == 0x000000, "Member 'Results_TeamSubtotalScore_C_SetScore::Score' has a wrong offset!");
-static_assert(offsetof(Results_TeamSubtotalScore_C_SetScore, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'Results_TeamSubtotalScore_C_SetScore::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.UpdateBackground
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +51,6 @@ public:
 	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_TeamSubtotalScore_C_UpdateBackground) == 0x000008, "Wrong alignment on Results_TeamSubtotalScore_C_UpdateBackground");
-static_assert(sizeof(Results_TeamSubtotalScore_C_UpdateBackground) == 0x000010, "Wrong size on Results_TeamSubtotalScore_C_UpdateBackground");
-static_assert(offsetof(Results_TeamSubtotalScore_C_UpdateBackground, Texture) == 0x000000, "Member 'Results_TeamSubtotalScore_C_UpdateBackground::Texture' has a wrong offset!");
-static_assert(offsetof(Results_TeamSubtotalScore_C_UpdateBackground, K2Node_SwitchEnum_CmpSuccess) == 0x000008, "Member 'Results_TeamSubtotalScore_C_UpdateBackground::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

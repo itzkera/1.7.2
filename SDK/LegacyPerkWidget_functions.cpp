@@ -14,8 +14,7 @@
 #include "LegacyPerkWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyPerkWidget.LegacyPerkWidget_C.ExecuteUbergraph_LegacyPerkWidget
 // (HasDefaults)
@@ -102,7 +101,7 @@ void ULegacyPerkWidget_C::InitializeAbilityPerk()
 // Function LegacyPerkWidget.LegacyPerkWidget_C.GetTierAbilityBrush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FSlateBrush                      SlateBrush                                             (Parm, OutParm)
+// struct FSlateBrush*                     SlateBrush                                             (Parm, OutParm)
 
 void ULegacyPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 {
@@ -123,7 +122,7 @@ void ULegacyPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 // Function LegacyPerkWidget.LegacyPerkWidget_C.GetHighlightColor
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor                     Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Color                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ULegacyPerkWidget_C::GetHighlightColor(struct FLinearColor* Color)
 {
@@ -144,7 +143,7 @@ void ULegacyPerkWidget_C::GetHighlightColor(struct FLinearColor* Color)
 // Function LegacyPerkWidget.LegacyPerkWidget_C.ShouldFadePerk
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULegacyPerkWidget_C::ShouldFadePerk(bool* Result)
 {
@@ -221,7 +220,7 @@ void ULegacyPerkWidget_C::ShowTierImage()
 // Function LegacyPerkWidget.LegacyPerkWidget_C.GetPerkStat
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FTooltipStat                     TooltipStat                                            (Parm, OutParm, HasGetValueTypeHash)
+// struct FTooltipStat*                    TooltipStat                                            (Parm, OutParm, HasGetValueTypeHash)
 
 void ULegacyPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 {
@@ -286,5 +285,5 @@ class UWidget* ULegacyPerkWidget_C::CreateToolTipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

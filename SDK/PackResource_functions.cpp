@@ -14,8 +14,7 @@
 #include "PackResource_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PackResource.PackResource_C.ExecuteUbergraph_PackResource
 // ()
@@ -84,5 +83,5 @@ void UPackResource_C::UpdateType(EFortResourceType ResourceType_0)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

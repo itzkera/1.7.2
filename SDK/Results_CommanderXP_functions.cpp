@@ -14,8 +14,7 @@
 #include "Results_CommanderXP_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_CommanderXP.Results_CommanderXP_C.ExecuteUbergraph_Results_CommanderXP
 // ()
@@ -404,5 +403,5 @@ void UResults_CommanderXP_C::Focus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

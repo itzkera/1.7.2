@@ -14,8 +14,7 @@
 #include "MessageCenterListItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MessageCenterListItem.MessageCenterListItem_C.ExecuteUbergraph_MessageCenterListItem
 // ()
@@ -164,7 +163,7 @@ void UMessageCenterListItem_C::SetExpanded(bool bExpanded)
 // Function MessageCenterListItem.MessageCenterListItem_C.RegisterOnClicked
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TDelegate<void(class UUserWidget* Widget)>Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// const TDelegate<void(class UUserWidget* Widget)>&Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
 
 void UMessageCenterListItem_C::RegisterOnClicked(const TDelegate<void(class UUserWidget* Widget)>& Callback)
 {
@@ -246,7 +245,7 @@ void UMessageCenterListItem_C::SetMessage(class UFortUINotification* MESSAGE_0)
 // Function MessageCenterListItem.MessageCenterListItem_C.ShowText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 // class UCommonTextBlock*                 TextBlock                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMessageCenterListItem_C::ShowText(const class FText& Text, class UCommonTextBlock* TextBlock)
@@ -344,5 +343,5 @@ int32 UMessageCenterListItem_C::DoesItemHaveChildren() const
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

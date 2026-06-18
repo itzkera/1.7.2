@@ -13,8 +13,7 @@
 #include "Hotfix_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Hotfix.OnlineHotfixManager.StartHotfixProcess
 // (Native, Public, BlueprintCallable)
@@ -26,8 +25,13 @@ void UOnlineHotfixManager::StartHotfixProcess()
 	if (Func == nullptr)
 		Func = Class->GetFunction("OnlineHotfixManager", "StartHotfixProcess");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

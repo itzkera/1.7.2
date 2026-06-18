@@ -16,8 +16,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AlterationsWidget.AlterationsWidget_C
 // 0x0088 (0x02E8 - 0x0260)
@@ -58,35 +57,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlterationsWidget_C">();
+		BP_STATIC_CLASS_IMPL("AlterationsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlterationsWidget_C")
 	}
 	static class UAlterationsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAlterationsWidget_C>();
 	}
 };
-static_assert(alignof(UAlterationsWidget_C) == 0x000008, "Wrong alignment on UAlterationsWidget_C");
-static_assert(sizeof(UAlterationsWidget_C) == 0x0002E8, "Wrong size on UAlterationsWidget_C");
-static_assert(offsetof(UAlterationsWidget_C, UberGraphFrame) == 0x000260, "Member 'UAlterationsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget) == 0x000268, "Member 'UAlterationsWidget_C::AlterationWidget' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_2) == 0x000270, "Member 'UAlterationsWidget_C::AlterationWidget_2' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_3) == 0x000278, "Member 'UAlterationsWidget_C::AlterationWidget_3' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, AlterationWidget_6) == 0x000280, "Member 'UAlterationsWidget_C::AlterationWidget_6' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, BorderLocked) == 0x000288, "Member 'UAlterationsWidget_C::BorderLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, BorderUnlocked) == 0x000290, "Member 'UAlterationsWidget_C::BorderUnlocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, PerkDivider) == 0x000298, "Member 'UAlterationsWidget_C::PerkDivider' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, PerkDivider_C_0) == 0x0002A0, "Member 'UAlterationsWidget_C::PerkDivider_C_0' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsLocked) == 0x0002A8, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsUnlocked) == 0x0002B0, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsUnlocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeName) == 0x0002B8, "Member 'UAlterationsWidget_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeDescription) == 0x0002B9, "Member 'UAlterationsWidget_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeShortDescription) == 0x0002BA, "Member 'UAlterationsWidget_C::bIncludeShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, FirstAlterationComplete) == 0x0002BB, "Member 'UAlterationsWidget_C::FirstAlterationComplete' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, FirstLockedComplete) == 0x0002BC, "Member 'UAlterationsWidget_C::FirstLockedComplete' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, IconSize) == 0x0002BD, "Member 'UAlterationsWidget_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, RowPadding) == 0x0002C0, "Member 'UAlterationsWidget_C::RowPadding' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bUseLargeFormatNameOnly) == 0x0002D0, "Member 'UAlterationsWidget_C::bUseLargeFormatNameOnly' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, Description_Padding) == 0x0002D4, "Member 'UAlterationsWidget_C::Description_Padding' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

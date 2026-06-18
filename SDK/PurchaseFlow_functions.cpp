@@ -14,13 +14,12 @@
 #include "PurchaseFlow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PurchaseFlow.PurchaseFlowJSBridge.RECEIPT
 // (Final, Native, Public)
 // Parameters:
-// struct FPurchaseFlowReceiptParam        RECEIPT_0                                              (Parm, NativeAccessSpecifierPublic)
+// const struct FPurchaseFlowReceiptParam& RECEIPT_0                                              (Parm, NativeAccessSpecifierPublic)
 
 void UPurchaseFlowJSBridge::RECEIPT(const struct FPurchaseFlowReceiptParam& RECEIPT_0)
 {
@@ -33,14 +32,19 @@ void UPurchaseFlowJSBridge::RECEIPT(const struct FPurchaseFlowReceiptParam& RECE
 
 	Parms.RECEIPT_0 = std::move(RECEIPT_0);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
 // Function PurchaseFlow.PurchaseFlowJSBridge.RequestClose
 // (Final, Native, Public)
 // Parameters:
-// class FString                           CloseInfo                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    CloseInfo                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UPurchaseFlowJSBridge::RequestClose(const class FString& CloseInfo)
 {
@@ -53,8 +57,13 @@ void UPurchaseFlowJSBridge::RequestClose(const class FString& CloseInfo)
 
 	Parms.CloseInfo = std::move(CloseInfo);
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
-}
 
+SDK_NAMESPACE_END

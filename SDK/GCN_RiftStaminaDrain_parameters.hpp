@@ -14,8 +14,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)
@@ -25,10 +25,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_RiftStaminaDrain_C_UserConstructionScript) == 0x000008, "Wrong alignment on GCN_RiftStaminaDrain_C_UserConstructionScript");
-static_assert(sizeof(GCN_RiftStaminaDrain_C_UserConstructionScript) == 0x000010, "Wrong size on GCN_RiftStaminaDrain_C_UserConstructionScript");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'GCN_RiftStaminaDrain_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue2) == 0x000008, "Member 'GCN_RiftStaminaDrain_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue2' has a wrong offset!");
 
 // Function GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C.OnWhileActiveParticleSystemActivate
 // 0x0120 (0x0120 - 0x0000)
@@ -49,19 +45,6 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0104(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue2;    // 0x0110(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate) == 0x000008, "Wrong alignment on GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate");
-static_assert(sizeof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate) == 0x000120, "Wrong size on GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, WhileActiveParticleSysComponent) == 0x000000, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::WhileActiveParticleSysComponent' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, Parameters) == 0x000008, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_EffectContextGetEffectCauser_ReturnValue) == 0x0000C0, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_EffectContextGetEffectCauser_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_IsValid_ReturnValue) == 0x0000C8, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, K2Node_DynamicCast_AsB_Dt_B_Floating_Rift) == 0x0000D0, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::K2Node_DynamicCast_AsB_Dt_B_Floating_Rift' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000DC, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000E8, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x0000F4, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_Add_VectorVector_ReturnValue) == 0x000104, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate, CallFunc_Conv_VectorToLinearColor_ReturnValue2) == 0x000110, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate::CallFunc_Conv_VectorToLinearColor_ReturnValue2' has a wrong offset!");
 
 // Function GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C.OnWhileActiveParticleSystemDeactivate
 // 0x00C0 (0x00C0 - 0x0000)
@@ -71,10 +54,6 @@ public:
 	class UParticleSystemComponent*               WhileActiveParticleSysComponent;                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate) == 0x000008, "Wrong alignment on GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate");
-static_assert(sizeof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate) == 0x0000C0, "Wrong size on GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate, WhileActiveParticleSysComponent) == 0x000000, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate::WhileActiveParticleSysComponent' has a wrong offset!");
-static_assert(offsetof(GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate, Parameters) == 0x000008, "Member 'GCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate::Parameters' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

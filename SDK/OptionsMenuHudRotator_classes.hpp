@@ -15,8 +15,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OptionsMenuHudRotator.OptionsMenuHudRotator_C
 // 0x0058 (0x0290 - 0x0238)
@@ -62,23 +61,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuHudRotator_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuHudRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuHudRotator_C")
 	}
 	static class UOptionsMenuHudRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuHudRotator_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuHudRotator_C) == 0x000008, "Wrong alignment on UOptionsMenuHudRotator_C");
-static_assert(sizeof(UOptionsMenuHudRotator_C) == 0x000290, "Wrong size on UOptionsMenuHudRotator_C");
-static_assert(offsetof(UOptionsMenuHudRotator_C, UberGraphFrame) == 0x000238, "Member 'UOptionsMenuHudRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, DisplayText) == 0x000240, "Member 'UOptionsMenuHudRotator_C::DisplayText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, TextRotator) == 0x000248, "Member 'UOptionsMenuHudRotator_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, SelectedIndex) == 0x000250, "Member 'UOptionsMenuHudRotator_C::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, HoverText) == 0x000258, "Member 'UOptionsMenuHudRotator_C::HoverText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, Selection_Changed) == 0x000270, "Member 'UOptionsMenuHudRotator_C::Selection_Changed' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, Tab_Tooltip_Text) == 0x000280, "Member 'UOptionsMenuHudRotator_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, Gameplay_Tag) == 0x000288, "Member 'UOptionsMenuHudRotator_C::Gameplay_Tag' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

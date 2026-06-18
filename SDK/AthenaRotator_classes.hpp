@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaRotator.AthenaRotator_C
 // 0x0038 (0x0968 - 0x0930)
@@ -43,20 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaRotator_C">();
+		BP_STATIC_CLASS_IMPL("AthenaRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaRotator_C")
 	}
 	static class UAthenaRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaRotator_C>();
 	}
 };
-static_assert(alignof(UAthenaRotator_C) == 0x000008, "Wrong alignment on UAthenaRotator_C");
-static_assert(sizeof(UAthenaRotator_C) == 0x000968, "Wrong size on UAthenaRotator_C");
-static_assert(offsetof(UAthenaRotator_C, UberGraphFrame) == 0x000930, "Member 'UAthenaRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, Left_Triggering_Input_Action) == 0x000938, "Member 'UAthenaRotator_C::Left_Triggering_Input_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, Right_Triggering_Input_Action) == 0x000948, "Member 'UAthenaRotator_C::Right_Triggering_Input_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, TextStyle) == 0x000958, "Member 'UAthenaRotator_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ShowGamepadButtonOnlyWhenFocused) == 0x000960, "Member 'UAthenaRotator_C::ShowGamepadButtonOnlyWhenFocused' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

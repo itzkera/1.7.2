@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LoginResultWIdget.LoginResultWIdget_C.ExecuteUbergraph_LoginResultWIdget
 // 0x0020 (0x0020 - 0x0000)
@@ -25,12 +25,6 @@ public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget) == 0x000008, "Wrong alignment on LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget");
-static_assert(sizeof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget) == 0x000020, "Wrong size on LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget");
-static_assert(offsetof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget, EntryPoint) == 0x000000, "Member 'LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget, CallFunc_HasKeyboardFocus_ReturnValue) == 0x000018, "Member 'LoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
 
 // Function LoginResultWIdget.LoginResultWIdget_C.BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -39,9 +33,6 @@ struct LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'LoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function LoginResultWIdget.LoginResultWIdget_C.SetTitle
 // 0x0040 (0x0040 - 0x0000)
@@ -57,14 +48,6 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LoginResultWIdget_C_SetTitle) == 0x000008, "Wrong alignment on LoginResultWIdget_C_SetTitle");
-static_assert(sizeof(LoginResultWIdget_C_SetTitle) == 0x000040, "Wrong size on LoginResultWIdget_C_SetTitle");
-static_assert(offsetof(LoginResultWIdget_C_SetTitle, Title) == 0x000000, "Member 'LoginResultWIdget_C_SetTitle::Title' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetTitle, bShowError) == 0x000018, "Member 'LoginResultWIdget_C_SetTitle::bShowError' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetTitle, Temp_class_Variable) == 0x000020, "Member 'LoginResultWIdget_C_SetTitle::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetTitle, Temp_class_Variable2) == 0x000028, "Member 'LoginResultWIdget_C_SetTitle::Temp_class_Variable2' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetTitle, Temp_bool_Variable) == 0x000030, "Member 'LoginResultWIdget_C_SetTitle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetTitle, K2Node_Select_Default) == 0x000038, "Member 'LoginResultWIdget_C_SetTitle::K2Node_Select_Default' has a wrong offset!");
 
 // Function LoginResultWIdget.LoginResultWIdget_C.SetDescription
 // 0x0018 (0x0018 - 0x0000)
@@ -73,9 +56,6 @@ struct LoginResultWIdget_C_SetDescription final
 public:
 	class FText                                   Description;                                       // 0x0000(0x0018)(Parm)
 };
-static_assert(alignof(LoginResultWIdget_C_SetDescription) == 0x000008, "Wrong alignment on LoginResultWIdget_C_SetDescription");
-static_assert(sizeof(LoginResultWIdget_C_SetDescription) == 0x000018, "Wrong size on LoginResultWIdget_C_SetDescription");
-static_assert(offsetof(LoginResultWIdget_C_SetDescription, Description) == 0x000000, "Member 'LoginResultWIdget_C_SetDescription::Description' has a wrong offset!");
 
 // Function LoginResultWIdget.LoginResultWIdget_C.SetResultsData
 // 0x0038 (0x0038 - 0x0000)
@@ -87,11 +67,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Description;                                       // 0x0020(0x0018)(Parm)
 };
-static_assert(alignof(LoginResultWIdget_C_SetResultsData) == 0x000008, "Wrong alignment on LoginResultWIdget_C_SetResultsData");
-static_assert(sizeof(LoginResultWIdget_C_SetResultsData) == 0x000038, "Wrong size on LoginResultWIdget_C_SetResultsData");
-static_assert(offsetof(LoginResultWIdget_C_SetResultsData, Title) == 0x000000, "Member 'LoginResultWIdget_C_SetResultsData::Title' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetResultsData, bShowError) == 0x000018, "Member 'LoginResultWIdget_C_SetResultsData::bShowError' has a wrong offset!");
-static_assert(offsetof(LoginResultWIdget_C_SetResultsData, Description) == 0x000020, "Member 'LoginResultWIdget_C_SetResultsData::Description' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

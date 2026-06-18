@@ -14,8 +14,7 @@
 #include "AthenaRotator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaRotator.AthenaRotator_C.ExecuteUbergraph_AthenaRotator
 // (HasDefaults)
@@ -74,7 +73,7 @@ void UAthenaRotator_C::PreConstruct(bool IsDesignTime)
 // Function AthenaRotator.AthenaRotator_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaRotator_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -180,5 +179,5 @@ void UAthenaRotator_C::NewFunction_0()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

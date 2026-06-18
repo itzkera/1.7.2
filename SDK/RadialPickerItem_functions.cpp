@@ -14,8 +14,7 @@
 #include "RadialPickerItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RadialPickerItem.RadialPickerItem_C.ExecuteUbergraph_RadialPickerItem
 // ()
@@ -54,8 +53,8 @@ void URadialPickerItem_C::Construct()
 // Function RadialPickerItem.RadialPickerItem_C.SetImageAndLabelContent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
-// struct FSlateBrush                      Brush                                                  (Parm)
+// const class FText&                      Text                                                   (Parm)
+// const struct FSlateBrush&               Brush                                                  (Parm)
 // bool                                    Option_Enabled                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                                   RadialItemIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -154,5 +153,5 @@ void URadialPickerItem_C::SetKeybindVisibility()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

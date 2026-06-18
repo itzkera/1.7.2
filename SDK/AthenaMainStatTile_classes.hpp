@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaMainStatTile.AthenaMainStatTile_C
 // 0x0040 (0x0278 - 0x0238)
@@ -37,20 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMainStatTile_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMainStatTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMainStatTile_C")
 	}
 	static class UAthenaMainStatTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMainStatTile_C>();
 	}
 };
-static_assert(alignof(UAthenaMainStatTile_C) == 0x000008, "Wrong alignment on UAthenaMainStatTile_C");
-static_assert(sizeof(UAthenaMainStatTile_C) == 0x000278, "Wrong size on UAthenaMainStatTile_C");
-static_assert(offsetof(UAthenaMainStatTile_C, UberGraphFrame) == 0x000238, "Member 'UAthenaMainStatTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMainStatTile_C, NameTextBlock) == 0x000240, "Member 'UAthenaMainStatTile_C::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UAthenaMainStatTile_C, ValueTextBlock) == 0x000248, "Member 'UAthenaMainStatTile_C::ValueTextBlock' has a wrong offset!");
-static_assert(offsetof(UAthenaMainStatTile_C, StatName) == 0x000250, "Member 'UAthenaMainStatTile_C::StatName' has a wrong offset!");
-static_assert(offsetof(UAthenaMainStatTile_C, BaseTagName) == 0x000268, "Member 'UAthenaMainStatTile_C::BaseTagName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

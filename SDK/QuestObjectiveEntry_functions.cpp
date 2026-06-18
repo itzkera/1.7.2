@@ -14,8 +14,7 @@
 #include "QuestObjectiveEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestObjectiveEntry.QuestObjectiveEntry_C.ExecuteUbergraph_QuestObjectiveEntry
 // ()
@@ -114,5 +113,5 @@ void UQuestObjectiveEntry_C::PlayAppearAnimation()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

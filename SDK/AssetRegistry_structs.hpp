@@ -13,8 +13,7 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // ScriptStruct AssetRegistry.AssetBundleEntry
 // 0x0028 (0x0028 - 0x0000)
@@ -25,11 +24,6 @@ public:
 	class FName                                   BundleName;                                        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FStringAssetReference>          BundleAssets;                                      // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAssetBundleEntry) == 0x000008, "Wrong alignment on FAssetBundleEntry");
-static_assert(sizeof(FAssetBundleEntry) == 0x000028, "Wrong size on FAssetBundleEntry");
-static_assert(offsetof(FAssetBundleEntry, BundleScope) == 0x000000, "Member 'FAssetBundleEntry::BundleScope' has a wrong offset!");
-static_assert(offsetof(FAssetBundleEntry, BundleName) == 0x000010, "Member 'FAssetBundleEntry::BundleName' has a wrong offset!");
-static_assert(offsetof(FAssetBundleEntry, BundleAssets) == 0x000018, "Member 'FAssetBundleEntry::BundleAssets' has a wrong offset!");
 
 // ScriptStruct AssetRegistry.AssetBundleData
 // 0x0010 (0x0010 - 0x0000)
@@ -38,9 +32,5 @@ struct FAssetBundleData final
 public:
 	TArray<struct FAssetBundleEntry>              Bundles;                                           // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAssetBundleData) == 0x000008, "Wrong alignment on FAssetBundleData");
-static_assert(sizeof(FAssetBundleData) == 0x000010, "Wrong size on FAssetBundleData");
-static_assert(offsetof(FAssetBundleData, Bundles) == 0x000000, "Member 'FAssetBundleData::Bundles' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FullPartyBar.FullPartyBar_C
 // 0x02A0 (0x04D8 - 0x0238)
@@ -89,47 +88,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FullPartyBar_C">();
+		BP_STATIC_CLASS_IMPL("FullPartyBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FullPartyBar_C")
 	}
 	static class UFullPartyBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFullPartyBar_C>();
 	}
 };
-static_assert(alignof(UFullPartyBar_C) == 0x000008, "Wrong alignment on UFullPartyBar_C");
-static_assert(sizeof(UFullPartyBar_C) == 0x0004D8, "Wrong size on UFullPartyBar_C");
-static_assert(offsetof(UFullPartyBar_C, UberGraphFrame) == 0x000238, "Member 'UFullPartyBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Fortitude) == 0x000240, "Member 'UFullPartyBar_C::Fortitude' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, FortitudeImage) == 0x000248, "Member 'UFullPartyBar_C::FortitudeImage' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, FortitudeText) == 0x000250, "Member 'UFullPartyBar_C::FortitudeText' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, LocalPlayer) == 0x000258, "Member 'UFullPartyBar_C::LocalPlayer' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, LocalPlayer_FPM) == 0x000260, "Member 'UFullPartyBar_C::LocalPlayer_FPM' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Offense) == 0x000268, "Member 'UFullPartyBar_C::Offense' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, OffenseImage) == 0x000270, "Member 'UFullPartyBar_C::OffenseImage' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, OffenseText) == 0x000278, "Member 'UFullPartyBar_C::OffenseText' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, RemotePlayer1) == 0x000280, "Member 'UFullPartyBar_C::RemotePlayer1' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, RemotePlayer1_FPM) == 0x000288, "Member 'UFullPartyBar_C::RemotePlayer1_FPM' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, RemotePlayer2) == 0x000290, "Member 'UFullPartyBar_C::RemotePlayer2' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, RemotePlayer2_FPM) == 0x000298, "Member 'UFullPartyBar_C::RemotePlayer2_FPM' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, RemotePlayer3) == 0x0002A0, "Member 'UFullPartyBar_C::RemotePlayer3' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, RemotePlayer3_FPM) == 0x0002A8, "Member 'UFullPartyBar_C::RemotePlayer3_FPM' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Resistance) == 0x0002B0, "Member 'UFullPartyBar_C::Resistance' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, ResistanceImage) == 0x0002B8, "Member 'UFullPartyBar_C::ResistanceImage' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, ResistanceText) == 0x0002C0, "Member 'UFullPartyBar_C::ResistanceText' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Tech) == 0x0002C8, "Member 'UFullPartyBar_C::Tech' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, TechImage) == 0x0002D0, "Member 'UFullPartyBar_C::TechImage' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, TechText) == 0x0002D8, "Member 'UFullPartyBar_C::TechText' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, LocalTeam) == 0x0002E0, "Member 'UFullPartyBar_C::LocalTeam' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, EmptyPartyMember) == 0x0002E8, "Member 'UFullPartyBar_C::EmptyPartyMember' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, PrivacyConfirmOptions) == 0x000478, "Member 'UFullPartyBar_C::PrivacyConfirmOptions' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, DeclineAction) == 0x000488, "Member 'UFullPartyBar_C::DeclineAction' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Public) == 0x000490, "Member 'UFullPartyBar_C::Public' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Friends) == 0x000498, "Member 'UFullPartyBar_C::Friends' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, Private) == 0x0004A0, "Member 'UFullPartyBar_C::Private' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, PartyFinder) == 0x0004A8, "Member 'UFullPartyBar_C::PartyFinder' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, PrivacyWidget) == 0x0004B0, "Member 'UFullPartyBar_C::PrivacyWidget' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, OnButtonHovered) == 0x0004B8, "Member 'UFullPartyBar_C::OnButtonHovered' has a wrong offset!");
-static_assert(offsetof(UFullPartyBar_C, FriendCodes) == 0x0004C8, "Member 'UFullPartyBar_C::FriendCodes' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

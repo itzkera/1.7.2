@@ -16,8 +16,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ImpactNumbers.ImpactNumbers_C
 // 0x0080 (0x05E0 - 0x0560)
@@ -50,30 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ImpactNumbers_C">();
+		BP_STATIC_CLASS_IMPL("ImpactNumbers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImpactNumbers_C")
 	}
 	static class AImpactNumbers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AImpactNumbers_C>();
 	}
 };
-static_assert(alignof(AImpactNumbers_C) == 0x000008, "Wrong alignment on AImpactNumbers_C");
-static_assert(sizeof(AImpactNumbers_C) == 0x0005E0, "Wrong size on AImpactNumbers_C");
-static_assert(offsetof(AImpactNumbers_C, UberGraphFrame) == 0x000560, "Member 'AImpactNumbers_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, DefaultSceneRoot) == 0x000568, "Member 'AImpactNumbers_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Spacing_percentage_for_1s) == 0x000570, "Member 'AImpactNumbers_C::Spacing_percentage_for_1s' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, FontYSize_0) == 0x000574, "Member 'AImpactNumbers_C::FontYSize_0' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, FontXSize_0) == 0x000578, "Member 'AImpactNumbers_C::FontXSize_0' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, FontSizeScaleMaxPerc) == 0x00057C, "Member 'AImpactNumbers_C::FontSizeScaleMaxPerc' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Standard_Hit_Color) == 0x000580, "Member 'AImpactNumbers_C::Standard_Hit_Color' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Critical_Wall_Hit_Color) == 0x000590, "Member 'AImpactNumbers_C::Critical_Wall_Hit_Color' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Player_Damage_Color) == 0x0005A0, "Member 'AImpactNumbers_C::Player_Damage_Color' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Number_Spacing_Multiplier) == 0x0005B0, "Member 'AImpactNumbers_C::Number_Spacing_Multiplier' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Number_of_number_rotations) == 0x0005B4, "Member 'AImpactNumbers_C::Number_of_number_rotations' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Critical_Hit_Multiplier) == 0x0005B8, "Member 'AImpactNumbers_C::Critical_Hit_Multiplier' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Distance_from_Camera_Before_Doubling_Size) == 0x0005BC, "Member 'AImpactNumbers_C::Distance_from_Camera_Before_Doubling_Size' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Critical_Enemy_Hit_Color) == 0x0005C0, "Member 'AImpactNumbers_C::Critical_Enemy_Hit_Color' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Number_offset_per) == 0x0005D0, "Member 'AImpactNumbers_C::Number_offset_per' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

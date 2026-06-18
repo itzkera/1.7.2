@@ -14,8 +14,7 @@
 #include "Tooltip_Item_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Tooltip-Item.Tooltip-Item_C.ExecuteUbergraph_Tooltip-Item
 // ()
@@ -150,5 +149,5 @@ ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Text_Visibility()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

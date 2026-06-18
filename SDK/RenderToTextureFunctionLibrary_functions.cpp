@@ -14,20 +14,19 @@
 #include "RenderToTextureFunctionLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C.Array to HLSL Int Array
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EIntTypes                               Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           Variable_Name                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-// TArray<int32>                           int_0                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FVector2D>                int2                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FVector>                  int3                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FLinearColor>             int4                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class FString&                          Variable_Name                                          (Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
+// TArray<int32>&                          int_0                                                  (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector2D>&               int2                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector>&                 int3                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FLinearColor>&            int4                                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           String                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// class FString*                          String                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
 void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, class FString& Variable_Name, TArray<int32>& int_0, TArray<struct FVector2D>& int2, TArray<struct FVector>& int3, TArray<struct FLinearColor>& int4, class UObject* __WorldContext, class FString* String)
 {
@@ -62,12 +61,12 @@ void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, 
 // Function RenderToTextureFunctionLibrary.RenderToTextureFunctionLibrary_C.Set Canvas Material Scale and Position
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        Size                                                   (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Position                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 Size                                                   (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 Position                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Scale                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Screen_Position                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        Screen_Size                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Screen_Position                                        (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       Screen_Size                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URenderToTextureFunctionLibrary_C::Set_Canvas_Material_Scale_and_Position(const struct FVector2D& Size, const struct FVector2D& Position, float Scale, class UObject* __WorldContext, struct FVector2D* Screen_Position, struct FVector2D* Screen_Size)
 {
@@ -92,5 +91,5 @@ void URenderToTextureFunctionLibrary_C::Set_Canvas_Material_Scale_and_Position(c
 		*Screen_Size = std::move(Parms.Screen_Size);
 }
 
-}
 
+SDK_NAMESPACE_END

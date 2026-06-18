@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_IngameMap_SceneCaptureNew.B_IngameMap_SceneCaptureNew_C
 // 0x0010 (0x03B0 - 0x03A0)
@@ -33,17 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_IngameMap_SceneCaptureNew_C">();
+		BP_STATIC_CLASS_IMPL("B_IngameMap_SceneCaptureNew_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_IngameMap_SceneCaptureNew_C")
 	}
 	static class AB_IngameMap_SceneCaptureNew_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_IngameMap_SceneCaptureNew_C>();
 	}
 };
-static_assert(alignof(AB_IngameMap_SceneCaptureNew_C) == 0x000008, "Wrong alignment on AB_IngameMap_SceneCaptureNew_C");
-static_assert(sizeof(AB_IngameMap_SceneCaptureNew_C) == 0x0003B0, "Wrong size on AB_IngameMap_SceneCaptureNew_C");
-static_assert(offsetof(AB_IngameMap_SceneCaptureNew_C, UberGraphFrame) == 0x0003A0, "Member 'AB_IngameMap_SceneCaptureNew_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_IngameMap_SceneCaptureNew_C, PostProcessPlane) == 0x0003A8, "Member 'AB_IngameMap_SceneCaptureNew_C::PostProcessPlane' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

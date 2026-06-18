@@ -10,16 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "SupplyDropUnlocks_structs.hpp"
 #include "Engine_structs.hpp"
 #include "FortniteGame_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "SupplyDropUnlocks_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_SupplyDropPlacement.B_SupplyDropPlacement_C
 // 0x01A0 (0x09E0 - 0x0840)
@@ -101,47 +100,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_SupplyDropPlacement_C">();
+		BP_STATIC_CLASS_IMPL("B_SupplyDropPlacement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_SupplyDropPlacement_C")
 	}
 	static class AB_SupplyDropPlacement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_SupplyDropPlacement_C>();
 	}
 };
-static_assert(alignof(AB_SupplyDropPlacement_C) == 0x000010, "Wrong alignment on AB_SupplyDropPlacement_C");
-static_assert(sizeof(AB_SupplyDropPlacement_C) == 0x0009E0, "Wrong size on AB_SupplyDropPlacement_C");
-static_assert(offsetof(AB_SupplyDropPlacement_C, UberGraphFrame) == 0x000840, "Member 'AB_SupplyDropPlacement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, ActiveFloorCollision) == 0x000848, "Member 'AB_SupplyDropPlacement_C::ActiveFloorCollision' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Scene) == 0x000850, "Member 'AB_SupplyDropPlacement_C::Scene' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, P_Reticle) == 0x000858, "Member 'AB_SupplyDropPlacement_C::P_Reticle' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, P_SupplydropCrate_Explosion) == 0x000860, "Member 'AB_SupplyDropPlacement_C::P_SupplydropCrate_Explosion' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, SupplyDropBeep) == 0x000868, "Member 'AB_SupplyDropPlacement_C::SupplyDropBeep' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Collision) == 0x000870, "Member 'AB_SupplyDropPlacement_C::Collision' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, NewIncoming) == 0x000878, "Member 'AB_SupplyDropPlacement_C::NewIncoming' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, SupplyDrop_Mesh_Open) == 0x000880, "Member 'AB_SupplyDropPlacement_C::SupplyDrop_Mesh_Open' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Trail) == 0x000888, "Member 'AB_SupplyDropPlacement_C::Trail' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, SupplyDrop_Mesh) == 0x000890, "Member 'AB_SupplyDropPlacement_C::SupplyDrop_Mesh' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, FortMiniMap1) == 0x000898, "Member 'AB_SupplyDropPlacement_C::FortMiniMap1' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, FallingTimeline_FallCurve_A2643A72491D3A745741F8A24DC189B4) == 0x0008A0, "Member 'AB_SupplyDropPlacement_C::FallingTimeline_FallCurve_A2643A72491D3A745741F8A24DC189B4' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, FallingTimeline__Direction_A2643A72491D3A745741F8A24DC189B4) == 0x0008A4, "Member 'AB_SupplyDropPlacement_C::FallingTimeline__Direction_A2643A72491D3A745741F8A24DC189B4' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, FallingTimeline) == 0x0008A8, "Member 'AB_SupplyDropPlacement_C::FallingTimeline' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Allow_SupplyDrop_Interact) == 0x0008B0, "Member 'AB_SupplyDropPlacement_C::Allow_SupplyDrop_Interact' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Activate_Sound) == 0x0008B8, "Member 'AB_SupplyDropPlacement_C::Activate_Sound' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Impact_Sound) == 0x0008C0, "Member 'AB_SupplyDropPlacement_C::Impact_Sound' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Loot_Sound) == 0x0008C8, "Member 'AB_SupplyDropPlacement_C::Loot_Sound' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, EventHit) == 0x0008D0, "Member 'AB_SupplyDropPlacement_C::EventHit' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, EventData) == 0x0008D8, "Member 'AB_SupplyDropPlacement_C::EventData' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, DelayForSelfDestruct) == 0x000980, "Member 'AB_SupplyDropPlacement_C::DelayForSelfDestruct' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, LootSpawnOffset) == 0x000984, "Member 'AB_SupplyDropPlacement_C::LootSpawnOffset' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, FallHeight) == 0x000990, "Member 'AB_SupplyDropPlacement_C::FallHeight' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Unlocks) == 0x000994, "Member 'AB_SupplyDropPlacement_C::Unlocks' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, LootTableNames) == 0x0009A0, "Member 'AB_SupplyDropPlacement_C::LootTableNames' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, SelfDestructTimerHandle) == 0x0009B0, "Member 'AB_SupplyDropPlacement_C::SelfDestructTimerHandle' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, Floor) == 0x0009B8, "Member 'AB_SupplyDropPlacement_C::Floor' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, NewLocation) == 0x0009C0, "Member 'AB_SupplyDropPlacement_C::NewLocation' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, FallTime) == 0x0009CC, "Member 'AB_SupplyDropPlacement_C::FallTime' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, SecondaryFallingTimerHandle) == 0x0009D0, "Member 'AB_SupplyDropPlacement_C::SecondaryFallingTimerHandle' has a wrong offset!");
-static_assert(offsetof(AB_SupplyDropPlacement_C, bLooted) == 0x0009D8, "Member 'AB_SupplyDropPlacement_C::bLooted' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

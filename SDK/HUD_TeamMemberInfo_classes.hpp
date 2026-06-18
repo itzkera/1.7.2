@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HUD-TeamMemberInfo.HUD-TeamMemberInfo_C
 // 0x0200 (0x0438 - 0x0238)
@@ -49,30 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HUD-TeamMemberInfo_C">();
+		BP_STATIC_CLASS_IMPL("HUD-TeamMemberInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUD-TeamMemberInfo_C")
 	}
 	static class UHUD_TeamMemberInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUD_TeamMemberInfo_C>();
 	}
 };
-static_assert(alignof(UHUD_TeamMemberInfo_C) == 0x000008, "Wrong alignment on UHUD_TeamMemberInfo_C");
-static_assert(sizeof(UHUD_TeamMemberInfo_C) == 0x000438, "Wrong size on UHUD_TeamMemberInfo_C");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, UberGraphFrame) == 0x000238, "Member 'UHUD_TeamMemberInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, _Image__Class_Icon) == 0x000240, "Member 'UHUD_TeamMemberInfo_C::_Image__Class_Icon' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, _Image__Healthbar) == 0x000248, "Member 'UHUD_TeamMemberInfo_C::_Image__Healthbar' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, CommonTextBlock_1) == 0x000250, "Member 'UHUD_TeamMemberInfo_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, LeaderImage) == 0x000258, "Member 'UHUD_TeamMemberInfo_C::LeaderImage' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, MicIndicator) == 0x000260, "Member 'UHUD_TeamMemberInfo_C::MicIndicator' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, RatingWidget) == 0x000268, "Member 'UHUD_TeamMemberInfo_C::RatingWidget' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, RatingWidget_Connected) == 0x000270, "Member 'UHUD_TeamMemberInfo_C::RatingWidget_Connected' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, SwitcherConnectingStranger) == 0x000278, "Member 'UHUD_TeamMemberInfo_C::SwitcherConnectingStranger' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, SwitcherContextualInfo) == 0x000280, "Member 'UHUD_TeamMemberInfo_C::SwitcherContextualInfo' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, TeamMemberBluGloIndicator) == 0x000288, "Member 'UHUD_TeamMemberInfo_C::TeamMemberBluGloIndicator' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, TextBlock_6) == 0x000290, "Member 'UHUD_TeamMemberInfo_C::TextBlock_6' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, TextPlayerName) == 0x000298, "Member 'UHUD_TeamMemberInfo_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, MemberInfo) == 0x0002A0, "Member 'UHUD_TeamMemberInfo_C::MemberInfo' has a wrong offset!");
-static_assert(offsetof(UHUD_TeamMemberInfo_C, ShowingHealth) == 0x000430, "Member 'UHUD_TeamMemberInfo_C::ShowingHealth' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

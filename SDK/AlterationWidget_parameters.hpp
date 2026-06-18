@@ -16,8 +16,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AlterationWidget.AlterationWidget_C.ExecuteUbergraph_AlterationWidget
 // 0x0018 (0x0018 - 0x0000)
@@ -29,11 +29,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget) == 0x000004, "Wrong alignment on AlterationWidget_C_ExecuteUbergraph_AlterationWidget");
-static_assert(sizeof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget) == 0x000018, "Wrong size on AlterationWidget_C_ExecuteUbergraph_AlterationWidget");
-static_assert(offsetof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget, EntryPoint) == 0x000000, "Member 'AlterationWidget_C_ExecuteUbergraph_AlterationWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget, CallFunc_ShouldFadeAlteration_ReturnValue) == 0x000004, "Member 'AlterationWidget_C_ExecuteUbergraph_AlterationWidget::CallFunc_ShouldFadeAlteration_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ExecuteUbergraph_AlterationWidget, K2Node_MakeStruct_LinearColor) == 0x000008, "Member 'AlterationWidget_C_ExecuteUbergraph_AlterationWidget::K2Node_MakeStruct_LinearColor' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.GetHighlightColor
 // 0x0048 (0x0048 - 0x0000)
@@ -49,14 +44,6 @@ public:
 	struct FLinearColor                           CallFunc_Get_Buff_Color_Color;                     // 0x0028(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0038(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlterationWidget_C_GetHighlightColor) == 0x000004, "Wrong alignment on AlterationWidget_C_GetHighlightColor");
-static_assert(sizeof(AlterationWidget_C_GetHighlightColor) == 0x000048, "Wrong size on AlterationWidget_C_GetHighlightColor");
-static_assert(offsetof(AlterationWidget_C_GetHighlightColor, ReturnValue) == 0x000000, "Member 'AlterationWidget_C_GetHighlightColor::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_GetHighlightColor, Temp_bool_Variable) == 0x000010, "Member 'AlterationWidget_C_GetHighlightColor::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_GetHighlightColor, Temp_struct_Variable) == 0x000014, "Member 'AlterationWidget_C_GetHighlightColor::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_GetHighlightColor, CallFunc_IsAlterationHighlighted_ReturnValue) == 0x000024, "Member 'AlterationWidget_C_GetHighlightColor::CallFunc_IsAlterationHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_GetHighlightColor, CallFunc_Get_Buff_Color_Color) == 0x000028, "Member 'AlterationWidget_C_GetHighlightColor::CallFunc_Get_Buff_Color_Color' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_GetHighlightColor, K2Node_Select_Default) == 0x000038, "Member 'AlterationWidget_C_GetHighlightColor::K2Node_Select_Default' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.ShouldFadeAlteration
 // 0x0006 (0x0006 - 0x0000)
@@ -70,14 +57,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue2;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AlterationWidget_C_ShouldFadeAlteration) == 0x000001, "Wrong alignment on AlterationWidget_C_ShouldFadeAlteration");
-static_assert(sizeof(AlterationWidget_C_ShouldFadeAlteration) == 0x000006, "Wrong size on AlterationWidget_C_ShouldFadeAlteration");
-static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, ReturnValue) == 0x000000, "Member 'AlterationWidget_C_ShouldFadeAlteration::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_IsAlterationHighlighted_ReturnValue) == 0x000001, "Member 'AlterationWidget_C_ShouldFadeAlteration::CallFunc_IsAlterationHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_IsAlterationUnlocked_ReturnValue) == 0x000002, "Member 'AlterationWidget_C_ShouldFadeAlteration::CallFunc_IsAlterationUnlocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'AlterationWidget_C_ShouldFadeAlteration::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_Not_PreBool_ReturnValue2) == 0x000004, "Member 'AlterationWidget_C_ShouldFadeAlteration::CallFunc_Not_PreBool_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_ShouldFadeAlteration, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'AlterationWidget_C_ShouldFadeAlteration::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.InitIcon
 // 0x0130 (0x0130 - 0x0000)
@@ -90,12 +69,6 @@ public:
 	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue; // 0x00A0(0x0090)()
 };
-static_assert(alignof(AlterationWidget_C_InitIcon) == 0x000008, "Wrong alignment on AlterationWidget_C_InitIcon");
-static_assert(sizeof(AlterationWidget_C_InitIcon) == 0x000130, "Wrong size on AlterationWidget_C_InitIcon");
-static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_ResizeBrush_NewParam) == 0x000000, "Member 'AlterationWidget_C_InitIcon::CallFunc_ResizeBrush_NewParam' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_GetAlterationDefintion_ReturnValue) == 0x000090, "Member 'AlterationWidget_C_InitIcon::CallFunc_GetAlterationDefintion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'AlterationWidget_C_InitIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitIcon, CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue) == 0x0000A0, "Member 'AlterationWidget_C_InitIcon::CallFunc_GetItemDefinitionSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.InitText
 // 0x0080 (0x0080 - 0x0000)
@@ -113,17 +86,6 @@ public:
 	TScriptInterface<class IFortClientAnnouncement_TutorialInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface; // 0x0068(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AlterationWidget_C_InitText) == 0x000008, "Wrong alignment on AlterationWidget_C_InitText");
-static_assert(sizeof(AlterationWidget_C_InitText) == 0x000080, "Wrong size on AlterationWidget_C_InitText");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_GetAlterationDefintion_ReturnValue) == 0x000000, "Member 'AlterationWidget_C_InitText::CallFunc_GetAlterationDefintion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_GetShortDescription_ReturnValue) == 0x000008, "Member 'AlterationWidget_C_InitText::CallFunc_GetShortDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_ShouldFadeAlteration_ReturnValue) == 0x000020, "Member 'AlterationWidget_C_InitText::CallFunc_ShouldFadeAlteration_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_GetAlterationDefintion_ReturnValue2) == 0x000028, "Member 'AlterationWidget_C_InitText::CallFunc_GetAlterationDefintion_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_GetSingleLineDescription_ReturnValue) == 0x000030, "Member 'AlterationWidget_C_InitText::CallFunc_GetSingleLineDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_GetAlterationDefintion_ReturnValue3) == 0x000048, "Member 'AlterationWidget_C_InitText::CallFunc_GetAlterationDefintion_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, CallFunc_GetDisplayName_ReturnValue) == 0x000050, "Member 'AlterationWidget_C_InitText::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface) == 0x000068, "Member 'AlterationWidget_C_InitText::K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_InitText, K2Node_DynamicCast_bSuccess) == 0x000078, "Member 'AlterationWidget_C_InitText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.SetLevelText
 // 0x0120 (0x0120 - 0x0000)
@@ -146,19 +108,6 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00F0(0x0018)()
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 };
-static_assert(alignof(AlterationWidget_C_SetLevelText) == 0x000008, "Wrong alignment on AlterationWidget_C_SetLevelText");
-static_assert(sizeof(AlterationWidget_C_SetLevelText) == 0x000120, "Wrong size on AlterationWidget_C_SetLevelText");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, Temp_bool_Variable) == 0x000000, "Member 'AlterationWidget_C_SetLevelText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, K2Node_MakeStruct_SlateColor) == 0x000008, "Member 'AlterationWidget_C_SetLevelText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, CallFunc_IsAlterationHighlighted_ReturnValue) == 0x000030, "Member 'AlterationWidget_C_SetLevelText::CallFunc_IsAlterationHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, CallFunc_GetHighlightColor_ReturnValue) == 0x000034, "Member 'AlterationWidget_C_SetLevelText::CallFunc_GetHighlightColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, K2Node_MakeStruct_SlateColor2) == 0x000048, "Member 'AlterationWidget_C_SetLevelText::K2Node_MakeStruct_SlateColor2' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, CallFunc_GetRequiredLevel_ReturnValue) == 0x000070, "Member 'AlterationWidget_C_SetLevelText::CallFunc_GetRequiredLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, K2Node_Select_Default) == 0x000078, "Member 'AlterationWidget_C_SetLevelText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, K2Node_MakeStruct_FormatArgumentData) == 0x0000A0, "Member 'AlterationWidget_C_SetLevelText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, K2Node_MakeArray_Array) == 0x0000E0, "Member 'AlterationWidget_C_SetLevelText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, CallFunc_Conv_IntToText_ReturnValue) == 0x0000F0, "Member 'AlterationWidget_C_SetLevelText::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetLevelText, CallFunc_Format_ReturnValue) == 0x000108, "Member 'AlterationWidget_C_SetLevelText::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.UpdateRaritySwitcherVisiblity
 // 0x0018 (0x0018 - 0x0000)
@@ -175,16 +124,6 @@ public:
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select2_Default;                            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AlterationWidget_C_UpdateRaritySwitcherVisiblity) == 0x000008, "Wrong alignment on AlterationWidget_C_UpdateRaritySwitcherVisiblity");
-static_assert(sizeof(AlterationWidget_C_UpdateRaritySwitcherVisiblity) == 0x000018, "Wrong size on AlterationWidget_C_UpdateRaritySwitcherVisiblity");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, Temp_bool_Variable) == 0x000000, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, Temp_byte_Variable) == 0x000001, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, Temp_byte_Variable2) == 0x000002, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, K2Node_Select_Default) == 0x000003, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000004, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, CallFunc_IsAlterationUnlocked_ReturnValue) == 0x000008, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::CallFunc_IsAlterationUnlocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, Temp_bool_Variable2) == 0x000009, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_UpdateRaritySwitcherVisiblity, K2Node_Select2_Default) == 0x000010, "Member 'AlterationWidget_C_UpdateRaritySwitcherVisiblity::K2Node_Select2_Default' has a wrong offset!");
 
 // Function AlterationWidget.AlterationWidget_C.SetEvolutionDetails
 // 0x0005 (0x0005 - 0x0000)
@@ -197,13 +136,6 @@ public:
 	bool                                          CallFunc_IsAlterationHighlighted_ReturnValue;      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AlterationWidget_C_SetEvolutionDetails) == 0x000001, "Wrong alignment on AlterationWidget_C_SetEvolutionDetails");
-static_assert(sizeof(AlterationWidget_C_SetEvolutionDetails) == 0x000005, "Wrong size on AlterationWidget_C_SetEvolutionDetails");
-static_assert(offsetof(AlterationWidget_C_SetEvolutionDetails, Temp_bool_Variable) == 0x000000, "Member 'AlterationWidget_C_SetEvolutionDetails::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetEvolutionDetails, Temp_byte_Variable) == 0x000001, "Member 'AlterationWidget_C_SetEvolutionDetails::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetEvolutionDetails, Temp_byte_Variable2) == 0x000002, "Member 'AlterationWidget_C_SetEvolutionDetails::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetEvolutionDetails, CallFunc_IsAlterationHighlighted_ReturnValue) == 0x000003, "Member 'AlterationWidget_C_SetEvolutionDetails::CallFunc_IsAlterationHighlighted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AlterationWidget_C_SetEvolutionDetails, K2Node_Select_Default) == 0x000004, "Member 'AlterationWidget_C_SetEvolutionDetails::K2Node_Select_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

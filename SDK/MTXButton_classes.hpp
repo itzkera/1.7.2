@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MTXButton.MTXButton_C
 // 0x0028 (0x0260 - 0x0238)
@@ -43,20 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MTXButton_C">();
+		BP_STATIC_CLASS_IMPL("MTXButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MTXButton_C")
 	}
 	static class UMTXButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMTXButton_C>();
 	}
 };
-static_assert(alignof(UMTXButton_C) == 0x000008, "Wrong alignment on UMTXButton_C");
-static_assert(sizeof(UMTXButton_C) == 0x000260, "Wrong size on UMTXButton_C");
-static_assert(offsetof(UMTXButton_C, UberGraphFrame) == 0x000238, "Member 'UMTXButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, Amount) == 0x000240, "Member 'UMTXButton_C::Amount' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, Button) == 0x000248, "Member 'UMTXButton_C::Button' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, TextPlus) == 0x000250, "Member 'UMTXButton_C::TextPlus' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, HidePlusButton) == 0x000258, "Member 'UMTXButton_C::HidePlusButton' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

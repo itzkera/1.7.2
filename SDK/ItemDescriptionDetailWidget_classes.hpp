@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C
 // 0x0018 (0x0288 - 0x0270)
@@ -37,19 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDescriptionDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemDescriptionDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDescriptionDetailWidget_C")
 	}
 	static class UItemDescriptionDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDescriptionDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemDescriptionDetailWidget_C) == 0x000008, "Wrong alignment on UItemDescriptionDetailWidget_C");
-static_assert(sizeof(UItemDescriptionDetailWidget_C) == 0x000288, "Wrong size on UItemDescriptionDetailWidget_C");
-static_assert(offsetof(UItemDescriptionDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemDescriptionDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDescriptionDetailWidget_C, ItemDescriptionTextBlock) == 0x000278, "Member 'UItemDescriptionDetailWidget_C::ItemDescriptionTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemDescriptionDetailWidget_C, ShouldShowOnlyIfItemIsSimple) == 0x000280, "Member 'UItemDescriptionDetailWidget_C::ShouldShowOnlyIfItemIsSimple' has a wrong offset!");
-static_assert(offsetof(UItemDescriptionDetailWidget_C, InCollectionBook) == 0x000281, "Member 'UItemDescriptionDetailWidget_C::InCollectionBook' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

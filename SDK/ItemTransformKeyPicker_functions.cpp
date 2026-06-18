@@ -14,8 +14,7 @@
 #include "ItemTransformKeyPicker_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.SetSelectedKey
 // (Public, BlueprintCallable, BlueprintEvent)
@@ -40,7 +39,7 @@ void UItemTransformKeyPicker_C::SetSelectedKey(class UFortAccountItem* AccountKe
 // Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.GetSelectedKey
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UFortItem*                        SelectedKey                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem**                       SelectedKey                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemTransformKeyPicker_C::GetSelectedKey(class UFortItem** SelectedKey)
 {
@@ -91,5 +90,5 @@ void UItemTransformKeyPicker_C::NavigateToFirstItem()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

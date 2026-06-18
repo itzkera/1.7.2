@@ -15,8 +15,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaGamePhaseWidget.AthenaGamePhaseWidget_C.ExecuteUbergraph_AthenaGamePhaseWidget
 // 0x0198 (0x0198 - 0x0000)
@@ -55,36 +55,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0170(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0180(0x0018)()
 };
-static_assert(alignof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget) == 0x000008, "Wrong alignment on AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget");
-static_assert(sizeof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget) == 0x000198, "Wrong size on AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, EntryPoint) == 0x000000, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_byte_Variable) == 0x000004, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable) == 0x000008, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_FTrunc_ReturnValue) == 0x000010, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_Percent_IntInt_ReturnValue) == 0x000014, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable2) == 0x000018, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable2' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000020, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000038, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable3) == 0x000078, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable3' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable4) == 0x000080, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable4' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable5) == 0x000088, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable5' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable6) == 0x000090, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable6' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable7) == 0x000098, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable7' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable8) == 0x0000A0, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable8' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable9) == 0x0000A8, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable9' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, Temp_object_Variable10) == 0x0000B0, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::Temp_object_Variable10' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_GetGameState_ReturnValue) == 0x0000B8, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_Event_MyGeometry) == 0x0000C0, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_Event_InDeltaTime) == 0x0000F4, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_DynamicCast_AsAthena_Game_State) == 0x0000F8, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_DynamicCast_AsAthena_Game_State' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_FTrunc_ReturnValue2) == 0x000104, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_FTrunc_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_Select_Default) == 0x000108, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_Divide_IntInt_ReturnValue) == 0x000110, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_Conv_IntToText_ReturnValue2) == 0x000118, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_MakeStruct_FormatArgumentData2) == 0x000130, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, K2Node_MakeArray_Array) == 0x000170, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget, CallFunc_Format_ReturnValue) == 0x000180, "Member 'AthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function AthenaGamePhaseWidget.AthenaGamePhaseWidget_C.Tick
 // 0x0038 (0x0038 - 0x0000)
@@ -94,10 +64,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0034)(Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaGamePhaseWidget_C_Tick) == 0x000004, "Wrong alignment on AthenaGamePhaseWidget_C_Tick");
-static_assert(sizeof(AthenaGamePhaseWidget_C_Tick) == 0x000038, "Wrong size on AthenaGamePhaseWidget_C_Tick");
-static_assert(offsetof(AthenaGamePhaseWidget_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaGamePhaseWidget_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaGamePhaseWidget_C_Tick, InDeltaTime) == 0x000034, "Member 'AthenaGamePhaseWidget_C_Tick::InDeltaTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

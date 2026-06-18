@@ -14,8 +14,7 @@
 #include "Tooltip_Basic_S_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.ExecuteUbergraph_Tooltip-Basic-S
 // ()
@@ -110,5 +109,5 @@ struct FSlateBrush UTooltip_Basic_S_C::Get_Icon_Brush()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

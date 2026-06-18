@@ -17,8 +17,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PerkWidget.PerkWidget_C
 // 0x0150 (0x0420 - 0x02D0)
@@ -73,41 +72,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PerkWidget_C">();
+		BP_STATIC_CLASS_IMPL("PerkWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PerkWidget_C")
 	}
 	static class UPerkWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPerkWidget_C>();
 	}
 };
-static_assert(alignof(UPerkWidget_C) == 0x000008, "Wrong alignment on UPerkWidget_C");
-static_assert(sizeof(UPerkWidget_C) == 0x000420, "Wrong size on UPerkWidget_C");
-static_assert(offsetof(UPerkWidget_C, UberGraphFrame) == 0x0002D0, "Member 'UPerkWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, BorderAbility) == 0x0002D8, "Member 'UPerkWidget_C::BorderAbility' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, BorderFrame) == 0x0002E0, "Member 'UPerkWidget_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, BorderHighlightBorder) == 0x0002E8, "Member 'UPerkWidget_C::BorderHighlightBorder' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, BorderHightlightBackground) == 0x0002F0, "Member 'UPerkWidget_C::BorderHightlightBackground' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, ImageAbilityIcon) == 0x0002F8, "Member 'UPerkWidget_C::ImageAbilityIcon' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, ImageHeroBonusIcon) == 0x000300, "Member 'UPerkWidget_C::ImageHeroBonusIcon' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, ImagePerkIcon) == 0x000308, "Member 'UPerkWidget_C::ImagePerkIcon' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, ImageTier) == 0x000310, "Member 'UPerkWidget_C::ImageTier' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, LevelText) == 0x000318, "Member 'UPerkWidget_C::LevelText' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, NamedSlotTextOnlyContent) == 0x000320, "Member 'UPerkWidget_C::NamedSlotTextOnlyContent' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, OverlayAbilityPerk) == 0x000328, "Member 'UPerkWidget_C::OverlayAbilityPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, OverlayBadge) == 0x000330, "Member 'UPerkWidget_C::OverlayBadge' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, OverlayBasicPerk) == 0x000338, "Member 'UPerkWidget_C::OverlayBasicPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, OverlayImagePerk) == 0x000340, "Member 'UPerkWidget_C::OverlayImagePerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, OverlayLevel) == 0x000348, "Member 'UPerkWidget_C::OverlayLevel' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, ScaleBoxHoldingBox) == 0x000350, "Member 'UPerkWidget_C::ScaleBoxHoldingBox' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, TextBlock_Perkname) == 0x000358, "Member 'UPerkWidget_C::TextBlock_Perkname' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, TextBlock_SquadBonusType) == 0x000360, "Member 'UPerkWidget_C::TextBlock_SquadBonusType' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, VBox_TextInfo) == 0x000368, "Member 'UPerkWidget_C::VBox_TextInfo' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, WidgetSwitcherBasicPerkOrAbilityPerk) == 0x000370, "Member 'UPerkWidget_C::WidgetSwitcherBasicPerkOrAbilityPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, WidgetSwitcherTextOrImage) == 0x000378, "Member 'UPerkWidget_C::WidgetSwitcherTextOrImage' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, WidgetSwitcherTierOrLevel) == 0x000380, "Member 'UPerkWidget_C::WidgetSwitcherTierOrLevel' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, DemoImage) == 0x000388, "Member 'UPerkWidget_C::DemoImage' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, bTextOnly) == 0x000418, "Member 'UPerkWidget_C::bTextOnly' has a wrong offset!");
-static_assert(offsetof(UPerkWidget_C, ShowTextWithIcon) == 0x000419, "Member 'UPerkWidget_C::ShowTextWithIcon' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

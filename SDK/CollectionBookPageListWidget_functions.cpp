@@ -14,8 +14,7 @@
 #include "CollectionBookPageListWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.ExecuteUbergraph_CollectionBookPageListWidget
 // ()
@@ -194,5 +193,5 @@ void UCollectionBookPageListWidget_C::Update_Available_Slots_Widget(int32 NumAva
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

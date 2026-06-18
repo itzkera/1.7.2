@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyButtonIconText.LegacyButtonIconText_C
 // 0x0108 (0x0970 - 0x0868)
@@ -61,30 +60,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyButtonIconText_C">();
+		BP_STATIC_CLASS_IMPL("LegacyButtonIconText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyButtonIconText_C")
 	}
 	static class ULegacyButtonIconText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyButtonIconText_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonIconText_C) == 0x000008, "Wrong alignment on ULegacyButtonIconText_C");
-static_assert(sizeof(ULegacyButtonIconText_C) == 0x000970, "Wrong size on ULegacyButtonIconText_C");
-static_assert(offsetof(ULegacyButtonIconText_C, UberGraphFrame) == 0x000868, "Member 'ULegacyButtonIconText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, Anim_Outro) == 0x000870, "Member 'ULegacyButtonIconText_C::Anim_Outro' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, Anim_Intro) == 0x000878, "Member 'ULegacyButtonIconText_C::Anim_Intro' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, ContentHBox) == 0x000880, "Member 'ULegacyButtonIconText_C::ContentHBox' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, Icon) == 0x000888, "Member 'ULegacyButtonIconText_C::Icon' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, IconOverlay) == 0x000890, "Member 'ULegacyButtonIconText_C::IconOverlay' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, Shadow) == 0x000898, "Member 'ULegacyButtonIconText_C::Shadow' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, SizeBox) == 0x0008A0, "Member 'ULegacyButtonIconText_C::SizeBox' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, TextBlock) == 0x0008A8, "Member 'ULegacyButtonIconText_C::TextBlock' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, DisplayText) == 0x0008B0, "Member 'ULegacyButtonIconText_C::DisplayText' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, IconBrush) == 0x0008C8, "Member 'ULegacyButtonIconText_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, HasIcon) == 0x000958, "Member 'ULegacyButtonIconText_C::HasIcon' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, HasText) == 0x000959, "Member 'ULegacyButtonIconText_C::HasText' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, Content_Align) == 0x00095A, "Member 'ULegacyButtonIconText_C::Content_Align' has a wrong offset!");
-static_assert(offsetof(ULegacyButtonIconText_C, On_Mouse_Hovered_Changed) == 0x000960, "Member 'ULegacyButtonIconText_C::On_Mouse_Hovered_Changed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

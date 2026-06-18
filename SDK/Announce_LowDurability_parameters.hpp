@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Announce_LowDurability.Announce_LowDurability_C.ExecuteUbergraph_Announce_LowDurability
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability) == 0x000004, "Wrong alignment on Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability");
-static_assert(sizeof(Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability) == 0x000004, "Wrong size on Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability");
-static_assert(offsetof(Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability, EntryPoint) == 0x000000, "Member 'Announce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

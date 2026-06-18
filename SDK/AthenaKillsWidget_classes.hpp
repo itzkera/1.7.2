@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaKillsWidget.AthenaKillsWidget_C
 // 0x0030 (0x0290 - 0x0260)
@@ -34,19 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaKillsWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaKillsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaKillsWidget_C")
 	}
 	static class UAthenaKillsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaKillsWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaKillsWidget_C) == 0x000008, "Wrong alignment on UAthenaKillsWidget_C");
-static_assert(sizeof(UAthenaKillsWidget_C) == 0x000290, "Wrong size on UAthenaKillsWidget_C");
-static_assert(offsetof(UAthenaKillsWidget_C, UberGraphFrame) == 0x000260, "Member 'UAthenaKillsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaKillsWidget_C, Image_1) == 0x000268, "Member 'UAthenaKillsWidget_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UAthenaKillsWidget_C, KillsText) == 0x000270, "Member 'UAthenaKillsWidget_C::KillsText' has a wrong offset!");
-static_assert(offsetof(UAthenaKillsWidget_C, KillsPrefix) == 0x000278, "Member 'UAthenaKillsWidget_C::KillsPrefix' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

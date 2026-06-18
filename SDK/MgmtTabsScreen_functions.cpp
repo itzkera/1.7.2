@@ -14,8 +14,7 @@
 #include "MgmtTabsScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MgmtTabsScreen.MgmtTabsScreen_C.ExecuteUbergraph_MgmtTabsScreen
 // ()
@@ -202,5 +201,5 @@ void UMgmtTabsScreen_C::HandleMgmtMenuTabChangeRequested(class FName TabName)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

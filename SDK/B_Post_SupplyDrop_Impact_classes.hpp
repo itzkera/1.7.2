@@ -14,8 +14,7 @@
 #include "B_Post_Explosion_Generic_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_Post_SupplyDrop_Impact.B_Post_SupplyDrop_Impact_C
 // 0x0020 (0x08C0 - 0x08A0)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Post_SupplyDrop_Impact_C">();
+		BP_STATIC_CLASS_IMPL("B_Post_SupplyDrop_Impact_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Post_SupplyDrop_Impact_C")
 	}
 	static class AB_Post_SupplyDrop_Impact_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Post_SupplyDrop_Impact_C>();
 	}
 };
-static_assert(alignof(AB_Post_SupplyDrop_Impact_C) == 0x000010, "Wrong alignment on AB_Post_SupplyDrop_Impact_C");
-static_assert(sizeof(AB_Post_SupplyDrop_Impact_C) == 0x0008C0, "Wrong size on AB_Post_SupplyDrop_Impact_C");
-static_assert(offsetof(AB_Post_SupplyDrop_Impact_C, UberGraphFrame) == 0x0008A0, "Member 'AB_Post_SupplyDrop_Impact_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Post_SupplyDrop_Impact_C, Timeline_0_BlendWeight_69D06A67407476376496A4814EB654AE) == 0x0008A8, "Member 'AB_Post_SupplyDrop_Impact_C::Timeline_0_BlendWeight_69D06A67407476376496A4814EB654AE' has a wrong offset!");
-static_assert(offsetof(AB_Post_SupplyDrop_Impact_C, Timeline_0__Direction_69D06A67407476376496A4814EB654AE) == 0x0008AC, "Member 'AB_Post_SupplyDrop_Impact_C::Timeline_0__Direction_69D06A67407476376496A4814EB654AE' has a wrong offset!");
-static_assert(offsetof(AB_Post_SupplyDrop_Impact_C, Timeline_0) == 0x0008B0, "Member 'AB_Post_SupplyDrop_Impact_C::Timeline_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

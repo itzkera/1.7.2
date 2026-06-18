@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotItemPicker.ItemTransformSlotItemPicker_C
 // 0x0000 (0x02A0 - 0x02A0)
@@ -23,15 +22,16 @@ class UItemTransformSlotItemPicker_C final : public UFortTransformSlotItemPicker
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformSlotItemPicker_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformSlotItemPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformSlotItemPicker_C")
 	}
 	static class UItemTransformSlotItemPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformSlotItemPicker_C>();
 	}
 };
-static_assert(alignof(UItemTransformSlotItemPicker_C) == 0x000008, "Wrong alignment on UItemTransformSlotItemPicker_C");
-static_assert(sizeof(UItemTransformSlotItemPicker_C) == 0x0002A0, "Wrong size on UItemTransformSlotItemPicker_C");
 
-}
-
+SDK_NAMESPACE_END

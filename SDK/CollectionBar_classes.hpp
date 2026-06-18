@@ -12,13 +12,12 @@
 
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CollectionBounds_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "CollectionBounds_structs.hpp"
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBar.CollectionBar_C
 // 0x00E8 (0x0320 - 0x0238)
@@ -51,26 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBar_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBar_C")
 	}
 	static class UCollectionBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBar_C>();
 	}
 };
-static_assert(alignof(UCollectionBar_C) == 0x000008, "Wrong alignment on UCollectionBar_C");
-static_assert(sizeof(UCollectionBar_C) == 0x000320, "Wrong size on UCollectionBar_C");
-static_assert(offsetof(UCollectionBar_C, UberGraphFrame) == 0x000238, "Member 'UCollectionBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, Bar) == 0x000240, "Member 'UCollectionBar_C::Bar' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, BarSizeBox) == 0x000248, "Member 'UCollectionBar_C::BarSizeBox' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, SideIcon) == 0x000250, "Member 'UCollectionBar_C::SideIcon' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, BarBounds) == 0x000258, "Member 'UCollectionBar_C::BarBounds' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, AchievedCount) == 0x000260, "Member 'UCollectionBar_C::AchievedCount' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, IconBrush) == 0x000268, "Member 'UCollectionBar_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, bShowSideIcon) == 0x0002F8, "Member 'UCollectionBar_C::bShowSideIcon' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, BarColor) == 0x0002FC, "Member 'UCollectionBar_C::BarColor' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, BarHeightOverride) == 0x00030C, "Member 'UCollectionBar_C::BarHeightOverride' has a wrong offset!");
-static_assert(offsetof(UCollectionBar_C, IconMargin) == 0x000310, "Member 'UCollectionBar_C::IconMargin' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "Fortnite_M_Avg_Player_AnimBlueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint
 // (HasDefaults)
@@ -4514,5 +4513,5 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteU
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

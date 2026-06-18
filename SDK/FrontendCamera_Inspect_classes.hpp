@@ -14,8 +14,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FrontendCamera_Inspect.FrontendCamera_Inspect_C
 // 0x0010 (0x08D0 - 0x08C0)
@@ -34,17 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontendCamera_Inspect_C">();
+		BP_STATIC_CLASS_IMPL("FrontendCamera_Inspect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontendCamera_Inspect_C")
 	}
 	static class AFrontendCamera_Inspect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontendCamera_Inspect_C>();
 	}
 };
-static_assert(alignof(AFrontendCamera_Inspect_C) == 0x000010, "Wrong alignment on AFrontendCamera_Inspect_C");
-static_assert(sizeof(AFrontendCamera_Inspect_C) == 0x0008D0, "Wrong size on AFrontendCamera_Inspect_C");
-static_assert(offsetof(AFrontendCamera_Inspect_C, UberGraphFrame) == 0x0008C0, "Member 'AFrontendCamera_Inspect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFrontendCamera_Inspect_C, LoginCamera_0) == 0x0008C8, "Member 'AFrontendCamera_Inspect_C::LoginCamera_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

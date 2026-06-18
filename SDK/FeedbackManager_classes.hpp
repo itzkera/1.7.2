@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FeedbackManager.FeedbackManager_C
 // 0x0008 (0x04B0 - 0x04A8)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FeedbackManager_C">();
+		BP_STATIC_CLASS_IMPL("FeedbackManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FeedbackManager_C")
 	}
 	static class AFeedbackManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFeedbackManager_C>();
 	}
 };
-static_assert(alignof(AFeedbackManager_C) == 0x000008, "Wrong alignment on AFeedbackManager_C");
-static_assert(sizeof(AFeedbackManager_C) == 0x0004B0, "Wrong size on AFeedbackManager_C");
-static_assert(offsetof(AFeedbackManager_C, DefaultSceneRoot) == 0x0004A8, "Member 'AFeedbackManager_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

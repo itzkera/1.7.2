@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.ExecuteUbergraph_ItemTransformKeyInfo
 // 0x0004 (0x0004 - 0x0000)
@@ -24,9 +24,6 @@ struct ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo) == 0x000004, "Wrong alignment on ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo");
-static_assert(sizeof(ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo) == 0x000004, "Wrong size on ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo");
-static_assert(offsetof(ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo, EntryPoint) == 0x000000, "Member 'ItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo::EntryPoint' has a wrong offset!");
 
 // Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.SetKeyToRepresent
 // 0x02E8 (0x02E8 - 0x0000)
@@ -60,31 +57,6 @@ public:
 	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Format_ReturnValue5;                      // 0x02D0(0x0018)()
 };
-static_assert(alignof(ItemTransformKeyInfo_C_SetKeyToRepresent) == 0x000008, "Wrong alignment on ItemTransformKeyInfo_C_SetKeyToRepresent");
-static_assert(sizeof(ItemTransformKeyInfo_C_SetKeyToRepresent) == 0x0002E8, "Wrong size on ItemTransformKeyInfo_C_SetKeyToRepresent");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, Key) == 0x000000, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::Key' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_GetDescription_ReturnValue) == 0x000008, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_GetRarity_ReturnValue) == 0x000020, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_GetDisplayName_ReturnValue) == 0x000028, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_BPGetRarityData_ReturnValue) == 0x000040, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_IsValid_ReturnValue) == 0x0000C0, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeStruct_FormatArgumentData) == 0x0000C8, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeStruct_FormatArgumentData2) == 0x000108, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeArray_Array) == 0x000148, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeArray_Array2) == 0x000158, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_Format_ReturnValue) == 0x000168, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_Format_ReturnValue2) == 0x000180, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeStruct_FormatArgumentData3) == 0x000198, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeStruct_FormatArgumentData4) == 0x0001D8, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeArray_Array3) == 0x000218, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeArray_Array4) == 0x000228, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_Format_ReturnValue3) == 0x000238, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_Format_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_Format_ReturnValue4) == 0x000250, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_Format_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeStruct_FormatArgumentData5) == 0x000268, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_Conv_TextToString_ReturnValue) == 0x0002A8, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_MakeArray_Array5) == 0x0002B8, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_MakeArray_Array5' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, K2Node_SwitchString_CmpSuccess) == 0x0002C8, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::K2Node_SwitchString_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTransformKeyInfo_C_SetKeyToRepresent, CallFunc_Format_ReturnValue5) == 0x0002D0, "Member 'ItemTransformKeyInfo_C_SetKeyToRepresent::CallFunc_Format_ReturnValue5' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

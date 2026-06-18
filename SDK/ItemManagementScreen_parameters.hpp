@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemManagementScreen.ItemManagementScreen_C.ExecuteUbergraph_ItemManagementScreen
 // 0x0338 (0x0338 - 0x0000)
@@ -61,7 +61,7 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0280(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate2; // 0x0280(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortConsumableAccountItem*             K2Node_Event_ConsumableItem;                       // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAsyncAction_MCPContextConsumeItem* CallFunc_ConsumeItem_ReturnValue;                  // 0x0298(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x02A0(0x0018)()
@@ -75,51 +75,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue2;                     // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanActivateOnSelf_ReturnValue;            // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x000008, "Wrong alignment on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
-static_assert(sizeof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen) == 0x000338, "Wrong size on ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, EntryPoint) == 0x000000, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item) == 0x000008, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_HandleInspect_PassThrough) == 0x000018, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_HandleInspect_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsInZone_ReturnValue) == 0x000030, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue4) == 0x000048, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue5) == 0x000050, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue6) == 0x000058, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetInputManager_ReturnValue) == 0x000060, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetDescriptionText_ItemDescription) == 0x000068, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetDescriptionText_ItemDescription' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue7) == 0x000080, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo) == 0x000088, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetLocalPlayerTeamMemberInfo_LocalPlayerInfo' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetContext_ReturnValue8) == 0x000218, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetContext_ReturnValue8' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_Item2) == 0x000220, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_Item2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_SchematicItem) == 0x000228, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_SchematicItem' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_HandleEquip_PassThrough) == 0x000230, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_HandleEquip_PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CraftSchematic_FailCause) == 0x000231, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CraftSchematic_FailCause' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CraftSchematic_ReturnValue) == 0x000232, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CraftSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Create_ReturnValue) == 0x000238, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x000240, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_AsItem_Manangement_Item_Tile_Button) == 0x000248, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_AsItem_Manangement_Item_Tile_Button' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_DynamicCast_bSuccess) == 0x000250, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Create_ReturnValue2) == 0x000258, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_byte_Variable) == 0x000260, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000261, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, Temp_name_Variable) == 0x000268, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_Result) == 0x000270, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CustomEvent_ResultName) == 0x000278, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_CreateDelegate_OutputDelegate2) == 0x000280, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_Event_ConsumableItem) == 0x000290, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_Event_ConsumableItem' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ConsumeItem_ReturnValue) == 0x000298, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ConsumeItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_GetDisplayName_ReturnValue) == 0x0002A0, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_MakeStruct_FormatArgumentData) == 0x0002B8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, K2Node_MakeArray_Array) == 0x0002F8, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue) == 0x000308, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_Format_ReturnValue) == 0x000310, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue) == 0x000328, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CanActivateOnOthers_ReturnValue) == 0x000330, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CanActivateOnOthers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_IsValid_ReturnValue2) == 0x000331, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen, CallFunc_CanActivateOnSelf_ReturnValue) == 0x000332, "Member 'ItemManagementScreen_C_ExecuteUbergraph_ItemManagementScreen::CallFunc_CanActivateOnSelf_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleInspectItemBP
 // 0x0008 (0x0008 - 0x0000)
@@ -128,9 +83,6 @@ struct ItemManagementScreen_C_HandleInspectItemBP final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleInspectItemBP) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleInspectItemBP");
-static_assert(sizeof(ItemManagementScreen_C_HandleInspectItemBP) == 0x000008, "Wrong size on ItemManagementScreen_C_HandleInspectItemBP");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspectItemBP, Item) == 0x000000, "Member 'ItemManagementScreen_C_HandleInspectItemBP::Item' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleConsumeItemBP
 // 0x0008 (0x0008 - 0x0000)
@@ -139,9 +91,6 @@ struct ItemManagementScreen_C_HandleConsumeItemBP final
 public:
 	class UFortConsumableAccountItem*             ConsumableItem;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleConsumeItemBP) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleConsumeItemBP");
-static_assert(sizeof(ItemManagementScreen_C_HandleConsumeItemBP) == 0x000008, "Wrong size on ItemManagementScreen_C_HandleConsumeItemBP");
-static_assert(offsetof(ItemManagementScreen_C_HandleConsumeItemBP, ConsumableItem) == 0x000000, "Member 'ItemManagementScreen_C_HandleConsumeItemBP::ConsumableItem' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleCraftItemBP
 // 0x0008 (0x0008 - 0x0000)
@@ -150,9 +99,6 @@ struct ItemManagementScreen_C_HandleCraftItemBP final
 public:
 	class UFortSchematicItem*                     SchematicItem;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleCraftItemBP) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleCraftItemBP");
-static_assert(sizeof(ItemManagementScreen_C_HandleCraftItemBP) == 0x000008, "Wrong size on ItemManagementScreen_C_HandleCraftItemBP");
-static_assert(offsetof(ItemManagementScreen_C_HandleCraftItemBP, SchematicItem) == 0x000000, "Member 'ItemManagementScreen_C_HandleCraftItemBP::SchematicItem' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleEquipItemBP
 // 0x0008 (0x0008 - 0x0000)
@@ -161,9 +107,6 @@ struct ItemManagementScreen_C_HandleEquipItemBP final
 public:
 	class UFortItem*                              Item;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleEquipItemBP) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleEquipItemBP");
-static_assert(sizeof(ItemManagementScreen_C_HandleEquipItemBP) == 0x000008, "Wrong size on ItemManagementScreen_C_HandleEquipItemBP");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquipItemBP, Item) == 0x000000, "Member 'ItemManagementScreen_C_HandleEquipItemBP::Item' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40
 // 0x0010 (0x0010 - 0x0000)
@@ -174,10 +117,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40) == 0x000008, "Wrong alignment on ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40");
-static_assert(sizeof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40) == 0x000010, "Wrong size on ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40");
-static_assert(offsetof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40, Result) == 0x000000, "Member 'ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40::Result' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40, ResultName) == 0x000008, "Member 'ItemManagementScreen_C_DialogResult_EF030FF4438BB62E1CCFDFBCCE5EFA40::ResultName' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleClose
 // 0x0030 (0x0030 - 0x0000)
@@ -195,16 +134,6 @@ public:
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue2;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleClose) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleClose");
-static_assert(sizeof(ItemManagementScreen_C_HandleClose) == 0x000030, "Wrong size on ItemManagementScreen_C_HandleClose");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x000000, "Member 'ItemManagementScreen_C_HandleClose::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'ItemManagementScreen_C_HandleClose::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementScreen_C_HandleClose::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, CallFunc_GetSelectedEquipSlot_Slot) == 0x000018, "Member 'ItemManagementScreen_C_HandleClose::CallFunc_GetSelectedEquipSlot_Slot' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, CallFunc_IsInZone_ReturnValue) == 0x00001C, "Member 'ItemManagementScreen_C_HandleClose::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00001D, "Member 'ItemManagementScreen_C_HandleClose::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, CallFunc_GetContext_ReturnValue2) == 0x000020, "Member 'ItemManagementScreen_C_HandleClose::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleClose, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000028, "Member 'ItemManagementScreen_C_HandleClose::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleInspect
 // 0x0038 (0x0038 - 0x0000)
@@ -223,17 +152,6 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsInZone_ReturnValue;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleInspect) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleInspect");
-static_assert(sizeof(ItemManagementScreen_C_HandleInspect) == 0x000038, "Wrong size on ItemManagementScreen_C_HandleInspect");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, ItemToInspect) == 0x000000, "Member 'ItemManagementScreen_C_HandleInspect::ItemToInspect' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, PassThrough) == 0x000008, "Member 'ItemManagementScreen_C_HandleInspect::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, AllowFavoriting) == 0x000009, "Member 'ItemManagementScreen_C_HandleInspect::AllowFavoriting' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, K2Node_DynamicCast_AsFort_World_Item) == 0x000010, "Member 'ItemManagementScreen_C_HandleInspect::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemManagementScreen_C_HandleInspect::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'ItemManagementScreen_C_HandleInspect::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, CallFunc_GetUINavigationManager_ReturnValue) == 0x000020, "Member 'ItemManagementScreen_C_HandleInspect::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'ItemManagementScreen_C_HandleInspect::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleInspect, CallFunc_IsInZone_ReturnValue) == 0x000030, "Member 'ItemManagementScreen_C_HandleInspect::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.GetDescriptionText
 // 0x0078 (0x0078 - 0x0000)
@@ -251,17 +169,6 @@ public:
 	class FText                                   CallFunc_GetCombinedDescription_OutDescription;    // 0x0058(0x0018)()
 	bool                                          CallFunc_GetCombinedDescription_ReturnValue;       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_GetDescriptionText) == 0x000008, "Wrong alignment on ItemManagementScreen_C_GetDescriptionText");
-static_assert(sizeof(ItemManagementScreen_C_GetDescriptionText) == 0x000078, "Wrong size on ItemManagementScreen_C_GetDescriptionText");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, ItemDescription) == 0x000000, "Member 'ItemManagementScreen_C_GetDescriptionText::ItemDescription' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetPlayerController_ReturnValue) == 0x000018, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000020, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000028, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetDescription_ReturnValue) == 0x000030, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetContext_ReturnValue) == 0x000050, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetCombinedDescription_OutDescription) == 0x000058, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetCombinedDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_GetDescriptionText, CallFunc_GetCombinedDescription_ReturnValue) == 0x000070, "Member 'ItemManagementScreen_C_GetDescriptionText::CallFunc_GetCombinedDescription_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.OnDrop
 // 0x00E8 (0x00E8 - 0x0000)
@@ -283,19 +190,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess2;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_RemoveItemFromQuickBar_ReturnValue;       // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_OnDrop) == 0x000008, "Wrong alignment on ItemManagementScreen_C_OnDrop");
-static_assert(sizeof(ItemManagementScreen_C_OnDrop) == 0x0000E8, "Wrong size on ItemManagementScreen_C_OnDrop");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, MyGeometry) == 0x000000, "Member 'ItemManagementScreen_C_OnDrop::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, PointerEvent) == 0x000038, "Member 'ItemManagementScreen_C_OnDrop::PointerEvent' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, Operation) == 0x0000B0, "Member 'ItemManagementScreen_C_OnDrop::Operation' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, ReturnValue) == 0x0000B8, "Member 'ItemManagementScreen_C_OnDrop::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x0000C0, "Member 'ItemManagementScreen_C_OnDrop::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'ItemManagementScreen_C_OnDrop::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0000C9, "Member 'ItemManagementScreen_C_OnDrop::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, CallFunc_GetContext_ReturnValue) == 0x0000D0, "Member 'ItemManagementScreen_C_OnDrop::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, K2Node_DynamicCast_AsFort_Item) == 0x0000D8, "Member 'ItemManagementScreen_C_OnDrop::K2Node_DynamicCast_AsFort_Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, K2Node_DynamicCast_bSuccess2) == 0x0000E0, "Member 'ItemManagementScreen_C_OnDrop::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_OnDrop, CallFunc_RemoveItemFromQuickBar_ReturnValue) == 0x0000E1, "Member 'ItemManagementScreen_C_OnDrop::CallFunc_RemoveItemFromQuickBar_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.SizeInventoryPanel
 // 0x0005 (0x0005 - 0x0000)
@@ -308,13 +202,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_SizeInventoryPanel) == 0x000001, "Wrong alignment on ItemManagementScreen_C_SizeInventoryPanel");
-static_assert(sizeof(ItemManagementScreen_C_SizeInventoryPanel) == 0x000005, "Wrong size on ItemManagementScreen_C_SizeInventoryPanel");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000000, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue2) == 0x000001, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_EqualEqual_ByteByte_ReturnValue3) == 0x000002, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_EqualEqual_ByteByte_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_BooleanOR_ReturnValue) == 0x000003, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_SizeInventoryPanel, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'ItemManagementScreen_C_SizeInventoryPanel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleEquip
 // 0x0050 (0x0050 - 0x0000)
@@ -338,21 +225,6 @@ public:
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_RemoveItemFromQuickBar_ReturnValue;       // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_HandleEquip) == 0x000008, "Wrong alignment on ItemManagementScreen_C_HandleEquip");
-static_assert(sizeof(ItemManagementScreen_C_HandleEquip) == 0x000050, "Wrong size on ItemManagementScreen_C_HandleEquip");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, ItemToEquip) == 0x000000, "Member 'ItemManagementScreen_C_HandleEquip::ItemToEquip' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, PassThrough) == 0x000008, "Member 'ItemManagementScreen_C_HandleEquip::PassThrough' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, Item) == 0x000010, "Member 'ItemManagementScreen_C_HandleEquip::Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x000018, "Member 'ItemManagementScreen_C_HandleEquip::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'ItemManagementScreen_C_HandleEquip::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_IsSlotted_ReturnValue) == 0x000021, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_IsSlotted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetType_ReturnValue) == 0x000022, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000030, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue2) == 0x000038, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_GetContext_ReturnValue3) == 0x000040, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_IsUsingGamepad_ReturnValue) == 0x000048, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_HandleEquip, CallFunc_RemoveItemFromQuickBar_ReturnValue) == 0x000049, "Member 'ItemManagementScreen_C_HandleEquip::CallFunc_RemoveItemFromQuickBar_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.CraftAndSlot
 // 0x0050 (0x0050 - 0x0000)
@@ -379,25 +251,6 @@ public:
 	EFortCraftFailCause                           CallFunc_CraftAndSlotSchematic_FailCause;          // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CraftAndSlotSchematic_ReturnValue;        // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_CraftAndSlot) == 0x000008, "Wrong alignment on ItemManagementScreen_C_CraftAndSlot");
-static_assert(sizeof(ItemManagementScreen_C_CraftAndSlot) == 0x000050, "Wrong size on ItemManagementScreen_C_CraftAndSlot");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, SchematicItem) == 0x000000, "Member 'ItemManagementScreen_C_CraftAndSlot::SchematicItem' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, Item) == 0x000008, "Member 'ItemManagementScreen_C_CraftAndSlot::Item' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue2) == 0x000018, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_IsUsingGamepad_ReturnValue) == 0x000020, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetSchematicResultType_ReturnValue) == 0x000021, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetSchematicResultType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000022, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue3) == 0x000028, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftSchematic_FailCause) == 0x000030, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftSchematic_FailCause' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftSchematic_ReturnValue) == 0x000031, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CanCraftSchematic_FailCause) == 0x000032, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CanCraftSchematic_FailCause' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CanCraftSchematic_ReturnValue) == 0x000033, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CanCraftSchematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_GetContext_ReturnValue4) == 0x000038, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_GetContext_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, K2Node_DynamicCast_AsItem_Management_Inventory_Panel) == 0x000040, "Member 'ItemManagementScreen_C_CraftAndSlot::K2Node_DynamicCast_AsItem_Management_Inventory_Panel' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'ItemManagementScreen_C_CraftAndSlot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftAndSlotSchematic_FailCause) == 0x000049, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftAndSlotSchematic_FailCause' has a wrong offset!");
-static_assert(offsetof(ItemManagementScreen_C_CraftAndSlot, CallFunc_CraftAndSlotSchematic_ReturnValue) == 0x00004A, "Member 'ItemManagementScreen_C_CraftAndSlot::CallFunc_CraftAndSlotSchematic_ReturnValue' has a wrong offset!");
 
 // Function ItemManagementScreen.ItemManagementScreen_C.ShowCraftError
 // 0x0001 (0x0001 - 0x0000)
@@ -406,9 +259,6 @@ struct ItemManagementScreen_C_ShowCraftError final
 public:
 	EFortCraftFailCause                           FailCause;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemManagementScreen_C_ShowCraftError) == 0x000001, "Wrong alignment on ItemManagementScreen_C_ShowCraftError");
-static_assert(sizeof(ItemManagementScreen_C_ShowCraftError) == 0x000001, "Wrong size on ItemManagementScreen_C_ShowCraftError");
-static_assert(offsetof(ItemManagementScreen_C_ShowCraftError, FailCause) == 0x000000, "Member 'ItemManagementScreen_C_ShowCraftError::FailCause' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

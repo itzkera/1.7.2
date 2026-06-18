@@ -14,8 +14,7 @@
 #include "LoginScreen_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LoginScreen.LoginScreen_C.ExecuteUbergraph_LoginScreen
 // (HasDefaults)
@@ -41,8 +40,8 @@ void ULoginScreen_C::ExecuteUbergraph_LoginScreen(int32 EntryPoint)
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
 // bool                                    bShow                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Tile                                                   (ConstParm, Parm, OutParm, ReferenceParm)
-// class FText                             Body                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Tile                                                   (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Body                                                   (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULoginScreen_C::OnShowLoginMessage(bool bShow, const class FText& Tile, const class FText& Body)
 {
@@ -64,7 +63,7 @@ void ULoginScreen_C::OnShowLoginMessage(bool bShow, const class FText& Tile, con
 // Function LoginScreen.LoginScreen_C.OnPostLoginLogoutComplete
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Reason                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Reason                                                 (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULoginScreen_C::OnPostLoginLogoutComplete(const class FText& Reason)
 {
@@ -201,7 +200,7 @@ void ULoginScreen_C::OnLogoutComplete()
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 
 void ULoginScreen_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
@@ -264,7 +263,7 @@ void ULoginScreen_C::AccountLinking_RequestSignIn()
 // Function LoginScreen.LoginScreen_C.AccountLinking_LinkingFailed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             FailReason                                             (Parm)
+// const class FText&                      FailReason                                             (Parm)
 
 void ULoginScreen_C::AccountLinking_LinkingFailed(const class FText& FailReason)
 {
@@ -298,7 +297,7 @@ void ULoginScreen_C::AccountLinking_PopStatus()
 // Function LoginScreen.LoginScreen_C.AccountLinking_PushStatus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             StatusText                                             (Parm)
+// const class FText&                      StatusText                                             (Parm)
 
 void ULoginScreen_C::AccountLinking_PushStatus(const class FText& StatusText)
 {
@@ -366,7 +365,7 @@ void ULoginScreen_C::HandleEulaResponse(bool Accepted)
 // Function LoginScreen.LoginScreen_C.OnEulaAvailable
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             EulaText                                               (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      EulaText                                               (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULoginScreen_C::OnEulaAvailable(const class FText& EulaText)
 {
@@ -400,7 +399,7 @@ void ULoginScreen_C::OnLoginSuceeded()
 // Function LoginScreen.LoginScreen_C.OnLoginFailed
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             Reason                                                 (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      Reason                                                 (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULoginScreen_C::OnLoginFailed(const class FText& Reason)
 {
@@ -420,8 +419,8 @@ void ULoginScreen_C::OnLoginFailed(const class FText& Reason)
 // Function LoginScreen.LoginScreen_C.HandleOnStartLogin
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           LoginEmail                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString                           LoginPassword                                          (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    LoginEmail                                             (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    LoginPassword                                          (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void ULoginScreen_C::HandleOnStartLogin(const class FString& LoginEmail, const class FString& LoginPassword)
 {
@@ -580,7 +579,7 @@ void ULoginScreen_C::ShowSignInWindow(bool DirectSignIn)
 // Function LoginScreen.LoginScreen_C.ShowStatusWindow
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             StatusText                                             (Parm)
+// const class FText&                      StatusText                                             (Parm)
 
 void ULoginScreen_C::ShowStatusWindow(const class FText& StatusText)
 {
@@ -620,7 +619,7 @@ void ULoginScreen_C::ShowAccountLinkingWindow(bool InLinkedAccountNeedsPurchase)
 // Function LoginScreen.LoginScreen_C.UpdateStatusTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
+// const class FText&                      Title                                                  (Parm)
 
 void ULoginScreen_C::UpdateStatusTitle(const class FText& Title)
 {
@@ -654,8 +653,8 @@ void ULoginScreen_C::ToggleLoginMenu()
 // Function LoginScreen.LoginScreen_C.ShowResultWindow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
-// class FText                             Description                                            (Parm)
+// const class FText&                      Title                                                  (Parm)
+// const class FText&                      Description                                            (Parm)
 // bool                                    bShowError                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULoginScreen_C::ShowResultWindow(const class FText& Title, const class FText& Description, bool bShowError)
@@ -678,7 +677,7 @@ void ULoginScreen_C::ShowResultWindow(const class FText& Title, const class FTex
 // Function LoginScreen.LoginScreen_C.SetResultTitle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Title                                                  (Parm)
+// const class FText&                      Title                                                  (Parm)
 // bool                                    bShowError                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULoginScreen_C::SetResultTitle(const class FText& Title, bool bShowError)
@@ -700,7 +699,7 @@ void ULoginScreen_C::SetResultTitle(const class FText& Title, bool bShowError)
 // Function LoginScreen.LoginScreen_C.SetResultsDescription
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Description                                            (Parm)
+// const class FText&                      Description                                            (Parm)
 
 void ULoginScreen_C::SetResultsDescription(const class FText& Description)
 {
@@ -720,7 +719,7 @@ void ULoginScreen_C::SetResultsDescription(const class FText& Description)
 // Function LoginScreen.LoginScreen_C.ShowEulaWindow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 // bool                                    ViewOnly                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULoginScreen_C::ShowEulaWindow(const class FText& Text, bool ViewOnly)
@@ -742,7 +741,7 @@ void ULoginScreen_C::ShowEulaWindow(const class FText& Text, bool ViewOnly)
 // Function LoginScreen.LoginScreen_C.ShouldShowBenchmark
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULoginScreen_C::ShouldShowBenchmark(bool* Return_Value)
 {
@@ -791,8 +790,8 @@ void ULoginScreen_C::SkipBenchmark()
 // Function LoginScreen.LoginScreen_C.OnMouseButtonUp_MenuBorder
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply ULoginScreen_C::OnMouseButtonUp_MenuBorder(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -850,7 +849,7 @@ void ULoginScreen_C::ShowSplashScreen()
 // Function LoginScreen.LoginScreen_C.PopContentWidgetInternal
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FContentPushState                State                                                  (Parm, NoDestructor)
+// const struct FContentPushState&         State                                                  (Parm, NoDestructor)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* ULoginScreen_C::PopContentWidgetInternal(const struct FContentPushState& State)
@@ -953,5 +952,5 @@ void ULoginScreen_C::SafePopContent()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

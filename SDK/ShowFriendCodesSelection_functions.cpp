@@ -14,8 +14,7 @@
 #include "ShowFriendCodesSelection_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.ExecuteUbergraph_ShowFriendCodesSelection
 // (HasDefaults)
@@ -98,5 +97,5 @@ void UShowFriendCodesSelection_C::SetFocus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

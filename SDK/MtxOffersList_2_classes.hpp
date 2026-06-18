@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass MtxOffersList_2.MtxOffersList_2_C
 // 0x0060 (0x0298 - 0x0238)
@@ -51,28 +50,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MtxOffersList_2_C">();
+		BP_STATIC_CLASS_IMPL("MtxOffersList_2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MtxOffersList_2_C")
 	}
 	static class UMtxOffersList_2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMtxOffersList_2_C>();
 	}
 };
-static_assert(alignof(UMtxOffersList_2_C) == 0x000008, "Wrong alignment on UMtxOffersList_2_C");
-static_assert(sizeof(UMtxOffersList_2_C) == 0x000298, "Wrong size on UMtxOffersList_2_C");
-static_assert(offsetof(UMtxOffersList_2_C, UberGraphFrame) == 0x000238, "Member 'UMtxOffersList_2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, MtxOffer_2) == 0x000240, "Member 'UMtxOffersList_2_C::MtxOffer_2' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, NoOffers_Overlay) == 0x000248, "Member 'UMtxOffersList_2_C::NoOffers_Overlay' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, OffersList) == 0x000250, "Member 'UMtxOffersList_2_C::OffersList' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, Throbber) == 0x000258, "Member 'UMtxOffersList_2_C::Throbber' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, PurchaseComplete) == 0x000260, "Member 'UMtxOffersList_2_C::PurchaseComplete' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, CountUpdateRate) == 0x000270, "Member 'UMtxOffersList_2_C::CountUpdateRate' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, CountTimer) == 0x000278, "Member 'UMtxOffersList_2_C::CountTimer' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, CurrentMtxAmount_Float) == 0x000280, "Member 'UMtxOffersList_2_C::CurrentMtxAmount_Float' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, TargetMtxAmount_Float) == 0x000284, "Member 'UMtxOffersList_2_C::TargetMtxAmount_Float' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, DisplayedMtxAmount_Float) == 0x000288, "Member 'UMtxOffersList_2_C::DisplayedMtxAmount_Float' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, MtxLerpRate_Float) == 0x00028C, "Member 'UMtxOffersList_2_C::MtxLerpRate_Float' has a wrong offset!");
-static_assert(offsetof(UMtxOffersList_2_C, VBucksCountSound) == 0x000290, "Member 'UMtxOffersList_2_C::VBucksCountSound' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

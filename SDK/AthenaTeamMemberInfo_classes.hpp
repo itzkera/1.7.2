@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaTeamMemberInfo.AthenaTeamMemberInfo_C
 // 0x05F0 (0x0828 - 0x0238)
@@ -72,39 +71,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTeamMemberInfo_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTeamMemberInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTeamMemberInfo_C")
 	}
 	static class UAthenaTeamMemberInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTeamMemberInfo_C>();
 	}
 };
-static_assert(alignof(UAthenaTeamMemberInfo_C) == 0x000008, "Wrong alignment on UAthenaTeamMemberInfo_C");
-static_assert(sizeof(UAthenaTeamMemberInfo_C) == 0x000828, "Wrong size on UAthenaTeamMemberInfo_C");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, UberGraphFrame) == 0x000238, "Member 'UAthenaTeamMemberInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, DBNOState) == 0x000240, "Member 'UAthenaTeamMemberInfo_C::DBNOState' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, DeadIndicator) == 0x000248, "Member 'UAthenaTeamMemberInfo_C::DeadIndicator' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, ImageDBNOBar) == 0x000250, "Member 'UAthenaTeamMemberInfo_C::ImageDBNOBar' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, ImageHealthbar) == 0x000258, "Member 'UAthenaTeamMemberInfo_C::ImageHealthbar' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, ImageShieldbar) == 0x000260, "Member 'UAthenaTeamMemberInfo_C::ImageShieldbar' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Marker) == 0x000268, "Member 'UAthenaTeamMemberInfo_C::Marker' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Speaker) == 0x000270, "Member 'UAthenaTeamMemberInfo_C::Speaker' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, SwitcherContextualInfo) == 0x000278, "Member 'UAthenaTeamMemberInfo_C::SwitcherContextualInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, TextPlayerName) == 0x000280, "Member 'UAthenaTeamMemberInfo_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, MemberInfo) == 0x000288, "Member 'UAthenaTeamMemberInfo_C::MemberInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, ShowingHealth) == 0x000418, "Member 'UAthenaTeamMemberInfo_C::ShowingHealth' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, ShowingShield) == 0x000419, "Member 'UAthenaTeamMemberInfo_C::ShowingShield' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, PlayerState) == 0x000420, "Member 'UAthenaTeamMemberInfo_C::PlayerState' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, PlayerIndex) == 0x000428, "Member 'UAthenaTeamMemberInfo_C::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Player0) == 0x000430, "Member 'UAthenaTeamMemberInfo_C::Player0' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Player1) == 0x0004C0, "Member 'UAthenaTeamMemberInfo_C::Player1' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Player2) == 0x000550, "Member 'UAthenaTeamMemberInfo_C::Player2' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Player3) == 0x0005E0, "Member 'UAthenaTeamMemberInfo_C::Player3' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Talking) == 0x000670, "Member 'UAthenaTeamMemberInfo_C::Talking' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, Muted) == 0x000671, "Member 'UAthenaTeamMemberInfo_C::Muted' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, MutedBrush) == 0x000678, "Member 'UAthenaTeamMemberInfo_C::MutedBrush' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, TalkingBrush) == 0x000708, "Member 'UAthenaTeamMemberInfo_C::TalkingBrush' has a wrong offset!");
-static_assert(offsetof(UAthenaTeamMemberInfo_C, NotTalkingBrush) == 0x000798, "Member 'UAthenaTeamMemberInfo_C::NotTalkingBrush' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

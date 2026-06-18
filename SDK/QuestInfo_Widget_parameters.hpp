@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.ExecuteUbergraph_QuestInfo_Widget
 // 0x0008 (0x0008 - 0x0000)
@@ -25,10 +25,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget) == 0x000004, "Wrong alignment on QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget");
-static_assert(sizeof(QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget) == 0x000008, "Wrong size on QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget");
-static_assert(offsetof(QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget, EntryPoint) == 0x000000, "Member 'QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget, K2Node_Event_IsDesignTime) == 0x000004, "Member 'QuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -37,9 +33,6 @@ struct QuestInfo_Widget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_PreConstruct) == 0x000001, "Wrong alignment on QuestInfo_Widget_C_PreConstruct");
-static_assert(sizeof(QuestInfo_Widget_C_PreConstruct) == 0x000001, "Wrong size on QuestInfo_Widget_C_PreConstruct");
-static_assert(offsetof(QuestInfo_Widget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuestInfo_Widget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateFromQuest
 // 0x0010 (0x0010 - 0x0000)
@@ -49,10 +42,6 @@ public:
 	class UFortQuestItem*                         InQuest;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_PopulateFromQuest) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_PopulateFromQuest");
-static_assert(sizeof(QuestInfo_Widget_C_PopulateFromQuest) == 0x000010, "Wrong size on QuestInfo_Widget_C_PopulateFromQuest");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateFromQuest, InQuest) == 0x000000, "Member 'QuestInfo_Widget_C_PopulateFromQuest::InQuest' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateFromQuest, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'QuestInfo_Widget_C_PopulateFromQuest::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.InitDesignView
 // 0x0020 (0x0020 - 0x0000)
@@ -64,12 +53,6 @@ public:
 	class UFortQuestItem*                         K2Node_DynamicCast_AsFort_Quest_Item;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_InitDesignView) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_InitDesignView");
-static_assert(sizeof(QuestInfo_Widget_C_InitDesignView) == 0x000020, "Wrong size on QuestInfo_Widget_C_InitDesignView");
-static_assert(offsetof(QuestInfo_Widget_C_InitDesignView, TempQuestDefinition) == 0x000000, "Member 'QuestInfo_Widget_C_InitDesignView::TempQuestDefinition' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_InitDesignView, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000008, "Member 'QuestInfo_Widget_C_InitDesignView::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_InitDesignView, K2Node_DynamicCast_AsFort_Quest_Item) == 0x000010, "Member 'QuestInfo_Widget_C_InitDesignView::K2Node_DynamicCast_AsFort_Quest_Item' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_InitDesignView, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'QuestInfo_Widget_C_InitDesignView::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateObjectives
 // 0x0020 (0x0020 - 0x0000)
@@ -84,15 +67,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsVisibleToUser_ReturnValue;              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_PopulateObjectives) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_PopulateObjectives");
-static_assert(sizeof(QuestInfo_Widget_C_PopulateObjectives) == 0x000020, "Wrong size on QuestInfo_Widget_C_PopulateObjectives");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, Temp_int_Array_Index_Variable) == 0x000000, "Member 'QuestInfo_Widget_C_PopulateObjectives::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'QuestInfo_Widget_C_PopulateObjectives::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuestInfo_Widget_C_PopulateObjectives::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'QuestInfo_Widget_C_PopulateObjectives::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_Array_Get_Item) == 0x000010, "Member 'QuestInfo_Widget_C_PopulateObjectives::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'QuestInfo_Widget_C_PopulateObjectives::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateObjectives, CallFunc_IsVisibleToUser_ReturnValue) == 0x000019, "Member 'QuestInfo_Widget_C_PopulateObjectives::CallFunc_IsVisibleToUser_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateRewards
 // 0x0100 (0x0100 - 0x0000)
@@ -116,20 +90,6 @@ public:
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x00E0(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestInfo_Widget_C_PopulateRewards) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_PopulateRewards");
-static_assert(sizeof(QuestInfo_Widget_C_PopulateRewards) == 0x000100, "Wrong size on QuestInfo_Widget_C_PopulateRewards");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, Temp_int_Array_Index_Variable) == 0x000000, "Member 'QuestInfo_Widget_C_PopulateRewards::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'QuestInfo_Widget_C_PopulateRewards::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_GetPreviewRewards_ReturnValue) == 0x000010, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_GetPreviewRewards_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_Array_Get_Item) == 0x000028, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000040, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, K2Node_DynamicCast_AsFort_Quest_Item) == 0x0000D0, "Member 'QuestInfo_Widget_C_PopulateRewards::K2Node_DynamicCast_AsFort_Quest_Item' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'QuestInfo_Widget_C_PopulateRewards::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_GetDisplayName_ReturnValue) == 0x0000E0, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_PopulateRewards, CallFunc_IsValid_ReturnValue) == 0x0000F8, "Member 'QuestInfo_Widget_C_PopulateRewards::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.SetQuestIcon
 // 0x0128 (0x0128 - 0x0000)
@@ -141,11 +101,6 @@ public:
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x0098(0x0090)()
 };
-static_assert(alignof(QuestInfo_Widget_C_SetQuestIcon) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_SetQuestIcon");
-static_assert(sizeof(QuestInfo_Widget_C_SetQuestIcon) == 0x000128, "Wrong size on QuestInfo_Widget_C_SetQuestIcon");
-static_assert(offsetof(QuestInfo_Widget_C_SetQuestIcon, CallFunc_GetItemSmallPreviewImageBrush_ReturnValue) == 0x000000, "Member 'QuestInfo_Widget_C_SetQuestIcon::CallFunc_GetItemSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_SetQuestIcon, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'QuestInfo_Widget_C_SetQuestIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_SetQuestIcon, K2Node_SetFieldsInStruct_StructOut) == 0x000098, "Member 'QuestInfo_Widget_C_SetQuestIcon::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
 
 // Function QuestInfo_Widget.QuestInfo_Widget_C.SetQuestText
 // 0x0030 (0x0030 - 0x0000)
@@ -155,10 +110,6 @@ public:
 	class FText                                   CallFunc_GetDescription_ReturnValue;               // 0x0000(0x0018)()
 	class FText                                   CallFunc_GetDisplayName_ReturnValue;               // 0x0018(0x0018)()
 };
-static_assert(alignof(QuestInfo_Widget_C_SetQuestText) == 0x000008, "Wrong alignment on QuestInfo_Widget_C_SetQuestText");
-static_assert(sizeof(QuestInfo_Widget_C_SetQuestText) == 0x000030, "Wrong size on QuestInfo_Widget_C_SetQuestText");
-static_assert(offsetof(QuestInfo_Widget_C_SetQuestText, CallFunc_GetDescription_ReturnValue) == 0x000000, "Member 'QuestInfo_Widget_C_SetQuestText::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestInfo_Widget_C_SetQuestText, CallFunc_GetDisplayName_ReturnValue) == 0x000018, "Member 'QuestInfo_Widget_C_SetQuestText::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

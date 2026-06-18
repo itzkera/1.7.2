@@ -14,8 +14,7 @@
 #include "XpBar_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function XpBar.XpBar_C.ExecuteUbergraph_XpBar
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UXpBar_C::Xp_Boost_Changed(int32 BoostAmount)
 // Function XpBar.XpBar_C.Account Info Changed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           NewInfo                                                (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    NewInfo                                                (Parm, NoDestructor)
 
 void UXpBar_C::Account_Info_Changed(const struct FFortPublicAccountInfo& NewInfo)
 {
@@ -94,7 +93,7 @@ void UXpBar_C::Construct()
 // Function XpBar.XpBar_C.Update Xp Bar
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPublicAccountInfo           Account_Info                                           (Parm, NoDestructor)
+// const struct FFortPublicAccountInfo&    Account_Info                                           (Parm, NoDestructor)
 
 void UXpBar_C::Update_Xp_Bar(const struct FFortPublicAccountInfo& Account_Info)
 {
@@ -201,5 +200,5 @@ float UXpBar_C::ScaledCommanderBalance(int32 LeveXP, int32 InInt2)
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

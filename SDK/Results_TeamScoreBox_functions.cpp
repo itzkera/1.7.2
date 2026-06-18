@@ -14,8 +14,7 @@
 #include "Results_TeamScoreBox_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeamScoreBox.Results_TeamScoreBox_C.ExecuteUbergraph_Results_TeamScoreBox
 // ()
@@ -41,7 +40,7 @@ void UResults_TeamScoreBox_C::ExecuteUbergraph_Results_TeamScoreBox(int32 EntryP
 // (BlueprintEvent)
 // Parameters:
 // class UCommonNumericTextBlock*          NumericTextBlock                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    HadCompleted                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              HadCompleted                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UResults_TeamScoreBox_C::BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted)
 {
@@ -284,5 +283,5 @@ void UResults_TeamScoreBox_C::SkipToFinalState()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "TooltipStatWrapper_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TooltipStatWrapper.TooltipStatWrapper_C.ExecuteUbergraph_TooltipStatWrapper
 // ()
@@ -70,5 +69,5 @@ void UTooltipStatWrapper_C::ShowUpgradeArrow(ESlateVisibility InVisibility)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

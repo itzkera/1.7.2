@@ -14,13 +14,12 @@
 #include "ActiveModifierItemHUD_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ActiveModifierItemHUD.ActiveModifierItemHUD_C.AssignIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      inIconSlateBrush                                       (Parm)
+// const struct FSlateBrush&               inIconSlateBrush                                       (Parm)
 
 void UActiveModifierItemHUD_C::AssignIcon(const struct FSlateBrush& inIconSlateBrush)
 {
@@ -36,5 +35,5 @@ void UActiveModifierItemHUD_C::AssignIcon(const struct FSlateBrush& inIconSlateB
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

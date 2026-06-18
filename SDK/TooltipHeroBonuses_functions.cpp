@@ -14,8 +14,7 @@
 #include "TooltipHeroBonuses_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TooltipHeroBonuses.TooltipHeroBonuses_C.ExecuteUbergraph_TooltipHeroBonuses
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UTooltipHeroBonuses_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

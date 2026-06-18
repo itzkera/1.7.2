@@ -14,8 +14,7 @@
 #include "ItemDescriptionDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.ExecuteUbergraph_ItemDescriptionDetailWidget
 // (HasDefaults)
@@ -54,7 +53,7 @@ void UItemDescriptionDetailWidget_C::HandlePostDifferentItemToDetailSet()
 // Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.IsItemSimple
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemDescriptionDetailWidget_C::IsItemSimple(bool* Result)
 {
@@ -71,5 +70,5 @@ void UItemDescriptionDetailWidget_C::IsItemSimple(bool* Result)
 		*Result = Parms.Result;
 }
 
-}
 
+SDK_NAMESPACE_END

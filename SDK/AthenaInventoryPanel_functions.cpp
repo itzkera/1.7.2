@@ -14,8 +14,7 @@
 #include "AthenaInventoryPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.ExecuteUbergraph_AthenaInventoryPanel
 // ()
@@ -256,7 +255,7 @@ void UAthenaInventoryPanel_C::ProcessSlotAction()
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.GetSelectedEquipSlot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Slot_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Slot_0                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaInventoryPanel_C::GetSelectedEquipSlot(int32* Slot_0)
 {
@@ -277,7 +276,7 @@ void UAthenaInventoryPanel_C::GetSelectedEquipSlot(int32* Slot_0)
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleClose
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaInventoryPanel_C::HandleClose(bool* PassThrough)
 {
@@ -326,7 +325,7 @@ void UAthenaInventoryPanel_C::RegisterEquip()
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleEquip
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaInventoryPanel_C::HandleEquip(bool* PassThrough)
 {
@@ -409,7 +408,7 @@ void UAthenaInventoryPanel_C::RegisterDrop()
 // Function AthenaInventoryPanel.AthenaInventoryPanel_C.HandleDrop
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaInventoryPanel_C::HandleDrop(bool* PassThrough)
 {
@@ -467,7 +466,7 @@ void UAthenaInventoryPanel_C::RefocusOnInventory()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortWorldItem*                   Item                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             ConfirmationText                                       (Parm)
+// const class FText&                      ConfirmationText                                       (Parm)
 
 void UAthenaInventoryPanel_C::CreateQuantitySelectorWidget(class UFortWorldItem* Item, const class FText& ConfirmationText)
 {
@@ -520,5 +519,5 @@ void UAthenaInventoryPanel_C::HandleDropItemConfirmationCallback(int32 ChosenQua
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ToastWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ToastWidget.ToastWidget_C.ExecuteUbergraph_ToastWidget
 // (HasDefaults)
@@ -60,7 +59,7 @@ void UToastWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButto
 // Function ToastWidget.ToastWidget_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UToastWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -80,8 +79,8 @@ void UToastWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 // Function ToastWidget.ToastWidget_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UToastWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -178,7 +177,7 @@ void UToastWidget_C::SetToast(class UFortUINotification* Toast)
 // Function ToastWidget.ToastWidget_C.ShowText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 // class UCommonTextBlock*                 TextBlock                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UToastWidget_C::ShowText(const class FText& Text, class UCommonTextBlock* TextBlock)
@@ -230,5 +229,5 @@ ESlateVisibility UToastWidget_C::GetOpenButtonVisibility()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

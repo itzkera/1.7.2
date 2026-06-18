@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function B_DtB_LightningZap.B_DtB_LightningZap_C.ExecuteUbergraph_B_DtB_LightningZap
 // 0x004C (0x004C - 0x0000)
@@ -34,19 +34,6 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap) == 0x000004, "Wrong alignment on B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap");
-static_assert(sizeof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap) == 0x00004C, "Wrong size on B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, EntryPoint) == 0x000000, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, K2Node_Event_DeltaSeconds) == 0x000004, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000014, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_VSize_ReturnValue) == 0x000020, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000024, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000028, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_MakeVector_ReturnValue) == 0x000034, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_K2_SetActorRotation_ReturnValue) == 0x000040, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000044, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000048, "Member 'B_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function B_DtB_LightningZap.B_DtB_LightningZap_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -55,9 +42,6 @@ struct B_DtB_LightningZap_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_DtB_LightningZap_C_ReceiveTick) == 0x000004, "Wrong alignment on B_DtB_LightningZap_C_ReceiveTick");
-static_assert(sizeof(B_DtB_LightningZap_C_ReceiveTick) == 0x000004, "Wrong size on B_DtB_LightningZap_C_ReceiveTick");
-static_assert(offsetof(B_DtB_LightningZap_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'B_DtB_LightningZap_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

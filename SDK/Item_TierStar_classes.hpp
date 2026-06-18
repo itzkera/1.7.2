@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Item_TierStar.Item_TierStar_C
 // 0x0020 (0x0250 - 0x0230)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Item_TierStar_C">();
+		BP_STATIC_CLASS_IMPL("Item_TierStar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Item_TierStar_C")
 	}
 	static class UItem_TierStar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItem_TierStar_C>();
 	}
 };
-static_assert(alignof(UItem_TierStar_C) == 0x000008, "Wrong alignment on UItem_TierStar_C");
-static_assert(sizeof(UItem_TierStar_C) == 0x000250, "Wrong size on UItem_TierStar_C");
-static_assert(offsetof(UItem_TierStar_C, UberGraphFrame) == 0x000230, "Member 'UItem_TierStar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItem_TierStar_C, Image_Star) == 0x000238, "Member 'UItem_TierStar_C::Image_Star' has a wrong offset!");
-static_assert(offsetof(UItem_TierStar_C, Color) == 0x000240, "Member 'UItem_TierStar_C::Color' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

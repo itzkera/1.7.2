@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass JournalQuestProgressBar.JournalQuestProgressBar_C
 // 0x00E0 (0x0328 - 0x0248)
@@ -45,26 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JournalQuestProgressBar_C">();
+		BP_STATIC_CLASS_IMPL("JournalQuestProgressBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JournalQuestProgressBar_C")
 	}
 	static class UJournalQuestProgressBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJournalQuestProgressBar_C>();
 	}
 };
-static_assert(alignof(UJournalQuestProgressBar_C) == 0x000008, "Wrong alignment on UJournalQuestProgressBar_C");
-static_assert(sizeof(UJournalQuestProgressBar_C) == 0x000328, "Wrong size on UJournalQuestProgressBar_C");
-static_assert(offsetof(UJournalQuestProgressBar_C, UberGraphFrame) == 0x000248, "Member 'UJournalQuestProgressBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, Image_61) == 0x000250, "Member 'UJournalQuestProgressBar_C::Image_61' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, ObjectiveText) == 0x000258, "Member 'UJournalQuestProgressBar_C::ObjectiveText' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, ParentBorder) == 0x000260, "Member 'UJournalQuestProgressBar_C::ParentBorder' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, ProgressBar_0) == 0x000268, "Member 'UJournalQuestProgressBar_C::ProgressBar_0' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, ProgressBorder) == 0x000270, "Member 'UJournalQuestProgressBar_C::ProgressBorder' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, ProgressIndicator) == 0x000278, "Member 'UJournalQuestProgressBar_C::ProgressIndicator' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, TaskProgressText) == 0x000280, "Member 'UJournalQuestProgressBar_C::TaskProgressText' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, FutureObjectiveTextSyle) == 0x000288, "Member 'UJournalQuestProgressBar_C::FutureObjectiveTextSyle' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, FutureObjectiveTaskProgressTextStyle) == 0x000290, "Member 'UJournalQuestProgressBar_C::FutureObjectiveTaskProgressTextStyle' has a wrong offset!");
-static_assert(offsetof(UJournalQuestProgressBar_C, FutureObjectProgressBarBrush) == 0x000298, "Member 'UJournalQuestProgressBar_C::FutureObjectProgressBarBrush' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

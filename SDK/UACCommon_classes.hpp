@@ -14,8 +14,7 @@
 #include "UACCommon_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class UACCommon.UACNetComponent
 // 0x0090 (0x0180 - 0x00F0)
@@ -33,16 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UACNetComponent">();
+		STATIC_CLASS_IMPL("UACNetComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UACNetComponent")
 	}
 	static class UUACNetComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUACNetComponent>();
 	}
 };
-static_assert(alignof(UUACNetComponent) == 0x000008, "Wrong alignment on UUACNetComponent");
-static_assert(sizeof(UUACNetComponent) == 0x000180, "Wrong size on UUACNetComponent");
-static_assert(offsetof(UUACNetComponent, PlayerID) == 0x0000F0, "Member 'UUACNetComponent::PlayerID' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

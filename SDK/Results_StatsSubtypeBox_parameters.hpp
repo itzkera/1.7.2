@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.ExecuteUbergraph_Results_StatsSubtypeBox
 // 0x0008 (0x0008 - 0x0000)
@@ -26,10 +26,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox) == 0x000004, "Wrong alignment on Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox");
-static_assert(sizeof(Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox) == 0x000008, "Wrong size on Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox");
-static_assert(offsetof(Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox, EntryPoint) == 0x000000, "Member 'Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox, K2Node_Event_IsDesignTime) == 0x000004, "Member 'Results_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +34,6 @@ struct Results_StatsSubtypeBox_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_StatsSubtypeBox_C_PreConstruct) == 0x000001, "Wrong alignment on Results_StatsSubtypeBox_C_PreConstruct");
-static_assert(sizeof(Results_StatsSubtypeBox_C_PreConstruct) == 0x000001, "Wrong size on Results_StatsSubtypeBox_C_PreConstruct");
-static_assert(offsetof(Results_StatsSubtypeBox_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_StatsSubtypeBox_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.InitializeScoreType
 // 0x0400 (0x0400 - 0x0000)
@@ -57,16 +50,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x03D0(0x0028)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_StatsSubtypeBox_C_InitializeScoreType) == 0x000008, "Wrong alignment on Results_StatsSubtypeBox_C_InitializeScoreType");
-static_assert(sizeof(Results_StatsSubtypeBox_C_InitializeScoreType) == 0x000400, "Wrong size on Results_StatsSubtypeBox_C_InitializeScoreType");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, Texture) == 0x000000, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::Texture' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, Color) == 0x000008, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::Color' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, Text) == 0x000018, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::Text' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, CallFunc_Multiply_LinearColorFloat_ReturnValue) == 0x000030, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::CallFunc_Multiply_LinearColorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, CallFunc_GetScoreStylingData_ScoreStylingInfo) == 0x000040, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::CallFunc_GetScoreStylingData_ScoreStylingInfo' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, CallFunc_GetScoreStylingData_ReturnValue) == 0x0003C8, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::CallFunc_GetScoreStylingData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, K2Node_MakeStruct_SlateColor) == 0x0003D0, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(Results_StatsSubtypeBox_C_InitializeScoreType, K2Node_SwitchEnum_CmpSuccess) == 0x0003F8, "Member 'Results_StatsSubtypeBox_C_InitializeScoreType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

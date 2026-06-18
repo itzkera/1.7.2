@@ -14,8 +14,7 @@
 #include "FortTwitchLogin_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FortTwitchLogin.FortTwitchLogin_C.ExecuteUbergraph_FortTwitchLogin
 // (HasDefaults)
@@ -40,8 +39,8 @@ void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint)
 // Function FortTwitchLogin.FortTwitchLogin_C.OnShowLoginError
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FText                             ErrorTitle                                             (ConstParm, Parm, OutParm, ReferenceParm)
-// class FText                             ErrorMessage                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      ErrorTitle                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      ErrorMessage                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UFortTwitchLogin_C::OnShowLoginError(const class FText& ErrorTitle, const class FText& ErrorMessage)
 {
@@ -237,7 +236,7 @@ void UFortTwitchLogin_C::OnLoginFlowModalCreated(class UFortTwitchLoginModalWidg
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // bool                                    bLoggedIn                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FString                           AccountName                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    AccountName                                            (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UFortTwitchLogin_C::OnLoginStatusChanged(bool bLoggedIn, const class FString& AccountName)
 {
@@ -406,5 +405,5 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Id_Analytic
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

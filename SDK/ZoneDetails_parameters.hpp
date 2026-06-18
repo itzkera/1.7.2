@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ZoneDetails.ZoneDetails_C.ExecuteUbergraph_ZoneDetails
 // 0x0048 (0x0048 - 0x0000)
@@ -31,14 +31,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate2;             // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate3;             // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails) == 0x000008, "Wrong alignment on ZoneDetails_C_ExecuteUbergraph_ZoneDetails");
-static_assert(sizeof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails) == 0x000048, "Wrong size on ZoneDetails_C_ExecuteUbergraph_ZoneDetails");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, EntryPoint) == 0x000000, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate2) == 0x000028, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_ExecuteUbergraph_ZoneDetails, K2Node_CreateDelegate_OutputDelegate3) == 0x000038, "Member 'ZoneDetails_C_ExecuteUbergraph_ZoneDetails::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
 
 // Function ZoneDetails.ZoneDetails_C.Update
 // 0x0470 (0x0470 - 0x0000)
@@ -54,15 +46,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0448(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0458(0x0018)()
 };
-static_assert(alignof(ZoneDetails_C_Update) == 0x000008, "Wrong alignment on ZoneDetails_C_Update");
-static_assert(sizeof(ZoneDetails_C_Update) == 0x000470, "Wrong size on ZoneDetails_C_Update");
-static_assert(offsetof(ZoneDetails_C_Update, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ZoneDetails_C_Update::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_Update, CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo) == 0x000008, "Member 'ZoneDetails_C_Update::CallFunc_GetCurrentBasicMissionInfo_BasicMissionInfo' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_Update, CallFunc_GetCurrentBasicMissionInfo_ReturnValue) == 0x0003C0, "Member 'ZoneDetails_C_Update::CallFunc_GetCurrentBasicMissionInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_Update, K2Node_MakeStruct_FormatArgumentData) == 0x0003C8, "Member 'ZoneDetails_C_Update::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_Update, K2Node_MakeStruct_FormatArgumentData2) == 0x000408, "Member 'ZoneDetails_C_Update::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_Update, K2Node_MakeArray_Array) == 0x000448, "Member 'ZoneDetails_C_Update::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ZoneDetails_C_Update, CallFunc_Format_ReturnValue) == 0x000458, "Member 'ZoneDetails_C_Update::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

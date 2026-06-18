@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // ScriptStruct GameLiveStreaming.BlueprintLiveStreamInfo
 // 0x0030 (0x0030 - 0x0000)
@@ -23,11 +22,5 @@ public:
 	class FString                                 StreamName;                                        // 0x0010(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 URL;                                               // 0x0020(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FBlueprintLiveStreamInfo) == 0x000008, "Wrong alignment on FBlueprintLiveStreamInfo");
-static_assert(sizeof(FBlueprintLiveStreamInfo) == 0x000030, "Wrong size on FBlueprintLiveStreamInfo");
-static_assert(offsetof(FBlueprintLiveStreamInfo, GameName) == 0x000000, "Member 'FBlueprintLiveStreamInfo::GameName' has a wrong offset!");
-static_assert(offsetof(FBlueprintLiveStreamInfo, StreamName) == 0x000010, "Member 'FBlueprintLiveStreamInfo::StreamName' has a wrong offset!");
-static_assert(offsetof(FBlueprintLiveStreamInfo, URL) == 0x000020, "Member 'FBlueprintLiveStreamInfo::URL' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

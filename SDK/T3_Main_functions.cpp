@@ -14,8 +14,7 @@
 #include "T3_Main_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function T3_Main.T3_Main_C.ExecuteUbergraph_T3_Main
 // ()
@@ -70,5 +69,5 @@ void UT3_Main_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

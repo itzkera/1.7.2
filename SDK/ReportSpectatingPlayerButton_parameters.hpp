@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.ExecuteUbergraph_ReportSpectatingPlayerButton
 // 0x0068 (0x0068 - 0x0000)
@@ -32,18 +32,6 @@ public:
 	class FString                                 CallFunc_GetSpectatingPlayerName_ReturnValue;      // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
 };
-static_assert(alignof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton) == 0x000008, "Wrong alignment on ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton");
-static_assert(sizeof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton) == 0x000068, "Wrong size on ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, EntryPoint) == 0x000000, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, K2Node_ComponentBoundEvent_Button) == 0x000018, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000020, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000028, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000030, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_GetSpectatingPlayerName_ReturnValue) == 0x000040, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_GetSpectatingPlayerName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'ReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -52,9 +40,6 @@ struct ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

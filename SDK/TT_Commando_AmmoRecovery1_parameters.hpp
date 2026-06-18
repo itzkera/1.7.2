@@ -14,8 +14,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function TT_Commando_AmmoRecovery1.TT_Commando_AmmoRecovery1_C.InitializeAbilityInstanceInternal
 // 0x0020 (0x0020 - 0x0000)
@@ -27,12 +27,6 @@ public:
 	class UGA_Commando_AmmoRecovery_C*            K2Node_DynamicCast_AsGA_Commando_Ammo_Recovery;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal");
-static_assert(sizeof(TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal) == 0x000020, "Wrong size on TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal, AbilityInstance) == 0x000000, "Member 'TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal, Context) == 0x000008, "Member 'TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal::Context' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal, K2Node_DynamicCast_AsGA_Commando_Ammo_Recovery) == 0x000010, "Member 'TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal::K2Node_DynamicCast_AsGA_Commando_Ammo_Recovery' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'TT_Commando_AmmoRecovery1_C_InitializeAbilityInstanceInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function TT_Commando_AmmoRecovery1.TT_Commando_AmmoRecovery1_C.GetTextForTokenFromAbilityInstanceInternal
 // 0x00F0 (0x00F0 - 0x0000)
@@ -62,25 +56,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0018)()
 };
-static_assert(alignof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal) == 0x000008, "Wrong alignment on TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal");
-static_assert(sizeof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal) == 0x0000F0, "Wrong size on TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, AbilityInstance) == 0x000000, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::AbilityInstance' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, Tag) == 0x000008, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::Tag' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, Context) == 0x000010, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::Context' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, Token) == 0x000018, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::Token' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, OutText) == 0x000020, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::OutText' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, ReturnValue) == 0x000038, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, AmmoRecovery) == 0x000040, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::AmmoRecovery' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x000048, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_DynamicCast_AsGA_Commando_Ammo_Recovery) == 0x000050, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_DynamicCast_AsGA_Commando_Ammo_Recovery' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Conv_IntToText_ReturnValue) == 0x000060, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00007C, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_FTrunc_ReturnValue) == 0x000080, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeStruct_FormatArgumentData) == 0x000088, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, K2Node_MakeArray_Array) == 0x0000C8, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal, CallFunc_Format_ReturnValue) == 0x0000D8, "Member 'TT_Commando_AmmoRecovery1_C_GetTextForTokenFromAbilityInstanceInternal::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

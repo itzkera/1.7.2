@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_Queue.FrontEndRewards_Queue_C
 // 0x0058 (0x0290 - 0x0238)
@@ -54,27 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_Queue_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_Queue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_Queue_C")
 	}
 	static class UFrontEndRewards_Queue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_Queue_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_Queue_C) == 0x000008, "Wrong alignment on UFrontEndRewards_Queue_C");
-static_assert(sizeof(UFrontEndRewards_Queue_C) == 0x000290, "Wrong size on UFrontEndRewards_Queue_C");
-static_assert(offsetof(UFrontEndRewards_Queue_C, UberGraphFrame) == 0x000238, "Member 'UFrontEndRewards_Queue_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, OverlayMain) == 0x000240, "Member 'UFrontEndRewards_Queue_C::OverlayMain' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconList) == 0x000248, "Member 'UFrontEndRewards_Queue_C::IconList' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconPadding) == 0x000258, "Member 'UFrontEndRewards_Queue_C::IconPadding' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconScale) == 0x00025C, "Member 'UFrontEndRewards_Queue_C::IconScale' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, SlideIndexList) == 0x000260, "Member 'UFrontEndRewards_Queue_C::SlideIndexList' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconSlideHandle) == 0x000270, "Member 'UFrontEndRewards_Queue_C::IconSlideHandle' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconSlideStaggerTime) == 0x000278, "Member 'UFrontEndRewards_Queue_C::IconSlideStaggerTime' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconInitStaggerTime) == 0x00027C, "Member 'UFrontEndRewards_Queue_C::IconInitStaggerTime' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, IconInitHandle) == 0x000280, "Member 'UFrontEndRewards_Queue_C::IconInitHandle' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, InitIndex) == 0x000288, "Member 'UFrontEndRewards_Queue_C::InitIndex' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_Queue_C, BaseIconOffset) == 0x00028C, "Member 'UFrontEndRewards_Queue_C::BaseIconOffset' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

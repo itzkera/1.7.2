@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HordeWaveAlertWidget.HordeWaveAlertWidget_C
 // 0x0080 (0x02C0 - 0x0240)
@@ -56,30 +55,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HordeWaveAlertWidget_C">();
+		BP_STATIC_CLASS_IMPL("HordeWaveAlertWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HordeWaveAlertWidget_C")
 	}
 	static class UHordeWaveAlertWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHordeWaveAlertWidget_C>();
 	}
 };
-static_assert(alignof(UHordeWaveAlertWidget_C) == 0x000008, "Wrong alignment on UHordeWaveAlertWidget_C");
-static_assert(sizeof(UHordeWaveAlertWidget_C) == 0x0002C0, "Wrong size on UHordeWaveAlertWidget_C");
-static_assert(offsetof(UHordeWaveAlertWidget_C, UberGraphFrame) == 0x000240, "Member 'UHordeWaveAlertWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, AppearanceAndDisappearance_Quick) == 0x000248, "Member 'UHordeWaveAlertWidget_C::AppearanceAndDisappearance_Quick' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, ModifierDisappearance) == 0x000250, "Member 'UHordeWaveAlertWidget_C::ModifierDisappearance' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, ModifierAppearance) == 0x000258, "Member 'UHordeWaveAlertWidget_C::ModifierAppearance' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, AppearanceAndDisappearance) == 0x000260, "Member 'UHordeWaveAlertWidget_C::AppearanceAndDisappearance' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, ContentSwitcher) == 0x000268, "Member 'UHordeWaveAlertWidget_C::ContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, HordeLevelText) == 0x000270, "Member 'UHordeWaveAlertWidget_C::HordeLevelText' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, ModifierAddedText) == 0x000278, "Member 'UHordeWaveAlertWidget_C::ModifierAddedText' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, RewardText) == 0x000280, "Member 'UHordeWaveAlertWidget_C::RewardText' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, WaveModifiersWidget) == 0x000288, "Member 'UHordeWaveAlertWidget_C::WaveModifiersWidget' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, WaveNumText) == 0x000290, "Member 'UHordeWaveAlertWidget_C::WaveNumText' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, WaveText) == 0x000298, "Member 'UHordeWaveAlertWidget_C::WaveText' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, AllModsPresentedDisplayDelay) == 0x0002A0, "Member 'UHordeWaveAlertWidget_C::AllModsPresentedDisplayDelay' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, EmptyArray) == 0x0002A8, "Member 'UHordeWaveAlertWidget_C::EmptyArray' has a wrong offset!");
-static_assert(offsetof(UHordeWaveAlertWidget_C, PostInitializationDelay) == 0x0002B8, "Member 'UHordeWaveAlertWidget_C::PostInitializationDelay' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

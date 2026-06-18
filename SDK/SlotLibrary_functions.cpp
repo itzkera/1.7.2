@@ -14,8 +14,7 @@
 #include "SlotLibrary_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SlotLibrary.SlotLibrary_C.InitItemWidget
 // (Static, Public, BlueprintCallable, BlueprintEvent)
@@ -44,9 +43,9 @@ void USlotLibrary_C::InitItemWidget(class UFortItemWidget* Widget, class UFortIt
 // Function SlotLibrary.SlotLibrary_C.EnsureIconBrush
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortMultiSizeBrush              Multi_size_Brush                                       (Parm)
+// const struct FFortMultiSizeBrush&       Multi_size_Brush                                       (Parm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                      Brush                                                  (Parm, OutParm)
+// struct FSlateBrush*                     Brush                                                  (Parm, OutParm)
 
 void USlotLibrary_C::EnsureIconBrush(const struct FFortMultiSizeBrush& Multi_size_Brush, class UObject* __WorldContext, struct FSlateBrush* Brush)
 {
@@ -70,10 +69,10 @@ void USlotLibrary_C::EnsureIconBrush(const struct FFortMultiSizeBrush& Multi_siz
 // Function SlotLibrary.SlotLibrary_C.Calculate Current Pulsing Highlight Color
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor                     Base_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Hightlight_Color                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Base_Color                                             (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Hightlight_Color                                       (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     Current_Color                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Current_Color                                          (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USlotLibrary_C::Calculate_Current_Pulsing_Highlight_Color(const struct FLinearColor& Base_Color, const struct FLinearColor& Hightlight_Color, class UObject* __WorldContext, struct FLinearColor* Current_Color)
 {
@@ -98,11 +97,11 @@ void USlotLibrary_C::Calculate_Current_Pulsing_Highlight_Color(const struct FLin
 // Function SlotLibrary.SlotLibrary_C.Get Traits Of Workers
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class UFortWorker*>              Workers                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortWorker*>&             Workers                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            Chief_Personality                                      (Parm, OutParm)
-// struct FGameplayTagContainer            Crew_Personalities                                     (Parm, OutParm)
-// struct FGameplayTagContainer            Crew_Set_Bonuses                                       (Parm, OutParm)
+// struct FGameplayTagContainer*           Chief_Personality                                      (Parm, OutParm)
+// struct FGameplayTagContainer*           Crew_Personalities                                     (Parm, OutParm)
+// struct FGameplayTagContainer*           Crew_Set_Bonuses                                       (Parm, OutParm)
 
 void USlotLibrary_C::Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, class UObject* __WorldContext, struct FGameplayTagContainer* Chief_Personality, struct FGameplayTagContainer* Crew_Personalities, struct FGameplayTagContainer* Crew_Set_Bonuses)
 {
@@ -135,12 +134,12 @@ void USlotLibrary_C::Get_Traits_Of_Workers(TArray<class UFortWorker*>& Workers, 
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APlayerController*                Owning_Player                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortAttributeInfo               Attribute_Info                                         (Parm)
-// struct FGameplayTagContainer            Required_Gameplay_Tags                                 (Parm)
-// class FText                             Required_Gameplay_Tags_Description                     (Parm)
-// class FText                             Modifier_Source                                        (Parm)
+// const struct FFortAttributeInfo&        Attribute_Info                                         (Parm)
+// const struct FGameplayTagContainer&     Required_Gameplay_Tags                                 (Parm)
+// const class FText&                      Required_Gameplay_Tags_Description                     (Parm)
+// const class FText&                      Modifier_Source                                        (Parm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USlotLibrary_C::Create_Attribute_Modifier_Tool_Tip(class APlayerController* Owning_Player, const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Gameplay_Tags, const class FText& Required_Gameplay_Tags_Description, const class FText& Modifier_Source, class UObject* __WorldContext, class UWidget** Result)
 {
@@ -168,9 +167,9 @@ void USlotLibrary_C::Create_Attribute_Modifier_Tool_Tip(class APlayerController*
 // Function SlotLibrary.SlotLibrary_C.Get Attribute Modifier Header Text
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FFortAttributeInfo               Attribute_Info                                         (Parm)
-// struct FGameplayTagContainer            Required_Tags                                          (Parm)
-// class FText                             Required_Gameplay_Tags_Description                     (Parm)
+// const struct FFortAttributeInfo&        Attribute_Info                                         (Parm)
+// const struct FGameplayTagContainer&     Required_Tags                                          (Parm)
+// const class FText&                      Required_Gameplay_Tags_Description                     (Parm)
 // class UObject*                          __WorldContext                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
@@ -193,5 +192,5 @@ class FText USlotLibrary_C::Get_Attribute_Modifier_Header_Text(const struct FFor
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

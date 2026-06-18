@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LocalPlayerHitPointInfo.LocalPlayerHitPointInfo_C
 // 0x0028 (0x0288 - 0x0260)
@@ -35,20 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LocalPlayerHitPointInfo_C">();
+		BP_STATIC_CLASS_IMPL("LocalPlayerHitPointInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalPlayerHitPointInfo_C")
 	}
 	static class ULocalPlayerHitPointInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalPlayerHitPointInfo_C>();
 	}
 };
-static_assert(alignof(ULocalPlayerHitPointInfo_C) == 0x000008, "Wrong alignment on ULocalPlayerHitPointInfo_C");
-static_assert(sizeof(ULocalPlayerHitPointInfo_C) == 0x000288, "Wrong size on ULocalPlayerHitPointInfo_C");
-static_assert(offsetof(ULocalPlayerHitPointInfo_C, UberGraphFrame) == 0x000260, "Member 'ULocalPlayerHitPointInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerHitPointInfo_C, _Bang_Wrapper___PlayerInfo_) == 0x000268, "Member 'ULocalPlayerHitPointInfo_C::_Bang_Wrapper___PlayerInfo_' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerHitPointInfo_C, _Hit_Point_Bar__Health) == 0x000270, "Member 'ULocalPlayerHitPointInfo_C::_Hit_Point_Bar__Health' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerHitPointInfo_C, _Hit_Point_Bar__Shield) == 0x000278, "Member 'ULocalPlayerHitPointInfo_C::_Hit_Point_Bar__Shield' has a wrong offset!");
-static_assert(offsetof(ULocalPlayerHitPointInfo_C, _Hit_Point_Bar__Stamina) == 0x000280, "Member 'ULocalPlayerHitPointInfo_C::_Hit_Point_Bar__Stamina' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

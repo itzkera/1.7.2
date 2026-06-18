@@ -14,8 +14,7 @@
 #include "MiscellaneousModeItemDetailsHostPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MiscellaneousModeItemDetailsHostPanel.MiscellaneousModeItemDetailsHostPanel_C.ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel
 // ()
@@ -50,5 +49,5 @@ void UMiscellaneousModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingCha
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

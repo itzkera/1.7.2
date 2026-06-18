@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCountOverCost.ItemCountOverCost_C
 // 0x0058 (0x0290 - 0x0238)
@@ -47,27 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCountOverCost_C">();
+		BP_STATIC_CLASS_IMPL("ItemCountOverCost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCountOverCost_C")
 	}
 	static class UItemCountOverCost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCountOverCost_C>();
 	}
 };
-static_assert(alignof(UItemCountOverCost_C) == 0x000008, "Wrong alignment on UItemCountOverCost_C");
-static_assert(sizeof(UItemCountOverCost_C) == 0x000290, "Wrong size on UItemCountOverCost_C");
-static_assert(offsetof(UItemCountOverCost_C, UberGraphFrame) == 0x000238, "Member 'UItemCountOverCost_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, CountText) == 0x000240, "Member 'UItemCountOverCost_C::CountText' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, DisplayName) == 0x000248, "Member 'UItemCountOverCost_C::DisplayName' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, IconLeft) == 0x000250, "Member 'UItemCountOverCost_C::IconLeft' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, IconRight) == 0x000258, "Member 'UItemCountOverCost_C::IconRight' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, RequiredCount) == 0x000260, "Member 'UItemCountOverCost_C::RequiredCount' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, SeperatorText) == 0x000268, "Member 'UItemCountOverCost_C::SeperatorText' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, ItemDefinition) == 0x000270, "Member 'UItemCountOverCost_C::ItemDefinition' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, TextStyle) == 0x000278, "Member 'UItemCountOverCost_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, Count) == 0x000280, "Member 'UItemCountOverCost_C::Count' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, Required) == 0x000284, "Member 'UItemCountOverCost_C::Required' has a wrong offset!");
-static_assert(offsetof(UItemCountOverCost_C, DisplayIconLeftSide) == 0x000288, "Member 'UItemCountOverCost_C::DisplayIconLeftSide' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

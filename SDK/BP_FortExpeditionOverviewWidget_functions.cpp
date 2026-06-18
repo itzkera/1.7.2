@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionOverviewWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.ExecuteUbergraph_BP_FortExpeditionOverviewWidget
 // ()
@@ -178,7 +177,7 @@ void UBP_FortExpeditionOverviewWidget_C::HandleAbandonExpedition()
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.OnExpeditionTabSelected
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class FName                             TabNameID                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      TabNameID                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionOverviewWidget_C::OnExpeditionTabSelected(const class FName& TabNameID)
 {
@@ -314,7 +313,7 @@ void UBP_FortExpeditionOverviewWidget_C::Determine_Active_Input_Action(class UFo
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.HandleBuildExpeditionAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionOverviewWidget_C::HandleBuildExpeditionAction(bool* PassThrough)
 {
@@ -335,7 +334,7 @@ void UBP_FortExpeditionOverviewWidget_C::HandleBuildExpeditionAction(bool* PassT
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.HandleAbandonExpeditionAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionOverviewWidget_C::HandleAbandonExpeditionAction(bool* PassThrough)
 {
@@ -356,7 +355,7 @@ void UBP_FortExpeditionOverviewWidget_C::HandleAbandonExpeditionAction(bool* Pas
 // Function BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C.HandleCollectExpeditionAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionOverviewWidget_C::HandleCollectExpeditionAction(bool* PassThrough)
 {
@@ -466,7 +465,7 @@ void UBP_FortExpeditionOverviewWidget_C::Try_to_Build_Expedition(class UFortExpe
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortExpeditionItem*              Expedition                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Disable                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Disable                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionOverviewWidget_C::Should_Disable_Build_Expedition_Action(class UFortExpeditionItem* Expedition, bool* Disable)
 {
@@ -525,5 +524,5 @@ struct FTimespan UBP_FortExpeditionOverviewWidget_C::Get_Utc_Now_Offset()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

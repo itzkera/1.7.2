@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C
 // 0x0048 (0x0940 - 0x08F8)
@@ -46,21 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ExpeditionSquadSlotButton_C">();
+		BP_STATIC_CLASS_IMPL("ExpeditionSquadSlotButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExpeditionSquadSlotButton_C")
 	}
 	static class UExpeditionSquadSlotButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExpeditionSquadSlotButton_C>();
 	}
 };
-static_assert(alignof(UExpeditionSquadSlotButton_C) == 0x000008, "Wrong alignment on UExpeditionSquadSlotButton_C");
-static_assert(sizeof(UExpeditionSquadSlotButton_C) == 0x000940, "Wrong size on UExpeditionSquadSlotButton_C");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, UberGraphFrame) == 0x0008F8, "Member 'UExpeditionSquadSlotButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, SquadSlotIndex) == 0x000900, "Member 'UExpeditionSquadSlotButton_C::SquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotSelected) == 0x000908, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotSelected' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotUpdated) == 0x000918, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotUpdated' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, OnSquadSlotOpened) == 0x000928, "Member 'UExpeditionSquadSlotButton_C::OnSquadSlotOpened' has a wrong offset!");
-static_assert(offsetof(UExpeditionSquadSlotButton_C, SlottedItemCardSize) == 0x000938, "Member 'UExpeditionSquadSlotButton_C::SlottedItemCardSize' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "AudioMixer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AudioMixer.SynthComponent.Start
 // (Final, Native, Public, BlueprintCallable)
@@ -27,7 +26,12 @@ void USynthComponent::Start()
 	if (Func == nullptr)
 		Func = Class->GetFunction("SynthComponent", "Start");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -41,7 +45,12 @@ void USynthComponent::Stop()
 	if (Func == nullptr)
 		Func = Class->GetFunction("SynthComponent", "Stop");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -59,10 +68,15 @@ bool USynthComponent::IsPlaying() const
 
 	Params::SynthComponent_IsPlaying Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

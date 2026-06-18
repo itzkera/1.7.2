@@ -14,8 +14,7 @@
 #include "MovieWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MovieWidget.MovieWidget_C.ExecuteUbergraph_MovieWidget
 // (HasDefaults)
@@ -156,5 +155,5 @@ void UMovieWidget_C::SetDelayedContentValues()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

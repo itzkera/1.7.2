@@ -14,8 +14,7 @@
 #include "Subtitles_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Subtitles.Subtitles_C.ExecuteUbergraph_Subtitles
 // ()
@@ -70,5 +69,5 @@ ESlateVisibility USubtitles_C::GetSubtitleVisibility()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

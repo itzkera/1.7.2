@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BannerSelectionWidget.BannerSelectionWidget_C.ExecuteUbergraph_BannerSelectionWidget
 // 0x0148 (0x0148 - 0x0000)
@@ -69,46 +69,6 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue2;                  // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget) == 0x000008, "Wrong alignment on BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget");
-static_assert(sizeof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget) == 0x000148, "Wrong size on BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, EntryPoint) == 0x000000, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_ComponentBoundEvent_IconId) == 0x000020, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_ComponentBoundEvent_IconId' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_ComponentBoundEvent_ColorId) == 0x000028, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_ComponentBoundEvent_ColorId' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_NotEqual_NameName_ReturnValue) == 0x000030, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_NotEqual_NameName_ReturnValue2) == 0x000031, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_NotEqual_NameName_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_ComponentBoundEvent_Button) == 0x000038, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_BooleanAND_ReturnValue) == 0x000040, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000048, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetText_ReturnValue) == 0x000050, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_TextIsEmpty_ReturnValue) == 0x000068, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_Not_PreBool_ReturnValue) == 0x000069, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000070, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_Attempt_Leave_Picker_Left) == 0x000080, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_Attempt_Leave_Picker_Left' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_CreateDelegate_OutputDelegate2) == 0x000088, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetContext_ReturnValue) == 0x000098, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetText_ReturnValue2) == 0x0000A0, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_TextIsEmpty_ReturnValue2) == 0x0000B8, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_TextIsEmpty_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_BooleanAND_ReturnValue2) == 0x0000B9, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_BooleanAND_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetOwningPlayer_ReturnValue2) == 0x0000C0, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetOwningPlayer_ReturnValue3) == 0x0000C8, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_AsFort_Player_Controller2) == 0x0000D0, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_AsFort_Player_Controller2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_bSuccess2) == 0x0000D8, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_AsFort_Player_Controller3) == 0x0000E0, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_AsFort_Player_Controller3' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_bSuccess3) == 0x0000E8, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_CreateDelegate_OutputDelegate3) == 0x0000F0, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_CreateDelegate_OutputDelegate3' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetUINavigationManager_ReturnValue2) == 0x000100, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetUINavigationManager_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetOwningPlayer_ReturnValue4) == 0x000108, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetOwningPlayer_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetOwningPlayer_ReturnValue5) == 0x000110, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetOwningPlayer_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_AsFort_Player_Controller4) == 0x000118, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_AsFort_Player_Controller4' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_bSuccess4) == 0x000120, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_bSuccess4' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_AsFort_Player_Controller5) == 0x000128, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_AsFort_Player_Controller5' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, K2Node_DynamicCast_bSuccess5) == 0x000130, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::K2Node_DynamicCast_bSuccess5' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetAtNameHomeBaseScreen_ReturnValue) == 0x000131, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetAtNameHomeBaseScreen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_GetContext_ReturnValue2) == 0x000138, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000140, "Member 'BannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
 
 // Function BannerSelectionWidget.BannerSelectionWidget_C.BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -117,9 +77,6 @@ struct BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_Componen
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'BannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function BannerSelectionWidget.BannerSelectionWidget_C.BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -129,10 +86,6 @@ public:
 	class FName                                   IconId;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   ColorId;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature) == 0x000008, "Wrong alignment on BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature");
-static_assert(sizeof(BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature) == 0x000010, "Wrong size on BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature");
-static_assert(offsetof(BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature, IconId) == 0x000000, "Member 'BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature::IconId' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature, ColorId) == 0x000008, "Member 'BannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature::ColorId' has a wrong offset!");
 
 // Function BannerSelectionWidget.BannerSelectionWidget_C.HandlePreviousCategoryAction
 // 0x000C (0x000C - 0x0000)
@@ -144,11 +97,6 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BannerSelectionWidget_C_HandlePreviousCategoryAction) == 0x000004, "Wrong alignment on BannerSelectionWidget_C_HandlePreviousCategoryAction");
-static_assert(sizeof(BannerSelectionWidget_C_HandlePreviousCategoryAction) == 0x00000C, "Wrong size on BannerSelectionWidget_C_HandlePreviousCategoryAction");
-static_assert(offsetof(BannerSelectionWidget_C_HandlePreviousCategoryAction, bPassThrough) == 0x000000, "Member 'BannerSelectionWidget_C_HandlePreviousCategoryAction::bPassThrough' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_HandlePreviousCategoryAction, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'BannerSelectionWidget_C_HandlePreviousCategoryAction::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_HandlePreviousCategoryAction, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BannerSelectionWidget_C_HandlePreviousCategoryAction::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BannerSelectionWidget.BannerSelectionWidget_C.HandleNextCategoryAction
 // 0x000C (0x000C - 0x0000)
@@ -160,11 +108,6 @@ public:
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BannerSelectionWidget_C_HandleNextCategoryAction) == 0x000004, "Wrong alignment on BannerSelectionWidget_C_HandleNextCategoryAction");
-static_assert(sizeof(BannerSelectionWidget_C_HandleNextCategoryAction) == 0x00000C, "Wrong size on BannerSelectionWidget_C_HandleNextCategoryAction");
-static_assert(offsetof(BannerSelectionWidget_C_HandleNextCategoryAction, bPassThrough) == 0x000000, "Member 'BannerSelectionWidget_C_HandleNextCategoryAction::bPassThrough' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_HandleNextCategoryAction, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'BannerSelectionWidget_C_HandleNextCategoryAction::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BannerSelectionWidget_C_HandleNextCategoryAction, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BannerSelectionWidget_C_HandleNextCategoryAction::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

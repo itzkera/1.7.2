@@ -14,8 +14,7 @@
 #include "PartyFinderListItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PartyFinderListItem.PartyFinderListItem_C.ExecuteUbergraph_PartyFinderListItem
 // ()
@@ -188,5 +187,5 @@ void UPartyFinderListItem_C::UnbindSocialItemDelegates()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

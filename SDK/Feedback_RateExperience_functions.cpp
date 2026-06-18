@@ -14,8 +14,7 @@
 #include "Feedback_RateExperience_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Feedback_RateExperience.Feedback_RateExperience_C.ExecuteUbergraph_Feedback_RateExperience
 // ()
@@ -316,7 +315,7 @@ void UFeedback_RateExperience_C::SetupStarButtons()
 // Function Feedback_RateExperience.Feedback_RateExperience_C.SendAnalyticsEvent
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FString                           FeedbackSentBy                                         (Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    FeedbackSentBy                                         (Parm, ZeroConstructor, HasGetValueTypeHash)
 
 void UFeedback_RateExperience_C::SendAnalyticsEvent(const class FString& FeedbackSentBy)
 {
@@ -368,5 +367,5 @@ void UFeedback_RateExperience_C::CreateToolTip(class UWidget* Star_Widget, int32
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

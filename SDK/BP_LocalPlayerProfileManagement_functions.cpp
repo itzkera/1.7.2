@@ -14,8 +14,7 @@
 #include "BP_LocalPlayerProfileManagement_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.ExecuteUbergraph_BP_LocalPlayerProfileManagement
 // (HasDefaults)
@@ -248,5 +247,5 @@ void UBP_LocalPlayerProfileManagement_C::Update_Bang_State()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

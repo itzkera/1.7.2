@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTransformResultInfo.ItemTransformResultInfo_C
 // 0x00D0 (0x0308 - 0x0238)
@@ -66,37 +65,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTransformResultInfo_C">();
+		BP_STATIC_CLASS_IMPL("ItemTransformResultInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTransformResultInfo_C")
 	}
 	static class UItemTransformResultInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTransformResultInfo_C>();
 	}
 };
-static_assert(alignof(UItemTransformResultInfo_C) == 0x000008, "Wrong alignment on UItemTransformResultInfo_C");
-static_assert(sizeof(UItemTransformResultInfo_C) == 0x000308, "Wrong size on UItemTransformResultInfo_C");
-static_assert(offsetof(UItemTransformResultInfo_C, UberGraphFrame) == 0x000238, "Member 'UItemTransformResultInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, CurrentSacrificePointsText) == 0x000240, "Member 'UItemTransformResultInfo_C::CurrentSacrificePointsText' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, ItemTransformRequiredItems) == 0x000248, "Member 'UItemTransformResultInfo_C::ItemTransformRequiredItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, ItemTransformResultItems) == 0x000250, "Member 'UItemTransformResultInfo_C::ItemTransformResultItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, KeyCard) == 0x000258, "Member 'UItemTransformResultInfo_C::KeyCard' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, KeyName) == 0x000260, "Member 'UItemTransformResultInfo_C::KeyName' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, MaxText) == 0x000268, "Member 'UItemTransformResultInfo_C::MaxText' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, NextLevelSacrificePoints) == 0x000270, "Member 'UItemTransformResultInfo_C::NextLevelSacrificePoints' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, RequiredResourceInfo) == 0x000278, "Member 'UItemTransformResultInfo_C::RequiredResourceInfo' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, TierProgressBar) == 0x000280, "Member 'UItemTransformResultInfo_C::TierProgressBar' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, CurrentSacrificePoints) == 0x000288, "Member 'UItemTransformResultInfo_C::CurrentSacrificePoints' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, KeyItemDef) == 0x000290, "Member 'UItemTransformResultInfo_C::KeyItemDef' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, KeyItem) == 0x000298, "Member 'UItemTransformResultInfo_C::KeyItem' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, SelectedItems) == 0x0002A0, "Member 'UItemTransformResultInfo_C::SelectedItems' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, OnTransformConfirmed) == 0x0002B0, "Member 'UItemTransformResultInfo_C::OnTransformConfirmed' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, CurrentTier) == 0x0002C0, "Member 'UItemTransformResultInfo_C::CurrentTier' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, FirstTier) == 0x0002C4, "Member 'UItemTransformResultInfo_C::FirstTier' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, MaxTier) == 0x0002C8, "Member 'UItemTransformResultInfo_C::MaxTier' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, AtMaxText) == 0x0002D0, "Member 'UItemTransformResultInfo_C::AtMaxText' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, TierPercentage) == 0x0002E8, "Member 'UItemTransformResultInfo_C::TierPercentage' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, TierProgressBarMaterial) == 0x0002F0, "Member 'UItemTransformResultInfo_C::TierProgressBarMaterial' has a wrong offset!");
-static_assert(offsetof(UItemTransformResultInfo_C, OnUpdateSacrificeInfo) == 0x0002F8, "Member 'UItemTransformResultInfo_C::OnUpdateSacrificeInfo' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "BP_Hex_PARENT_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Hex_TheGrasslands.BP_Hex_TheGrasslands_C
 // 0x0000 (0x0728 - 0x0728)
@@ -23,15 +22,16 @@ class ABP_Hex_TheGrasslands_C final : public ABP_Hex_PARENT_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Hex_TheGrasslands_C">();
+		BP_STATIC_CLASS_IMPL("BP_Hex_TheGrasslands_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Hex_TheGrasslands_C")
 	}
 	static class ABP_Hex_TheGrasslands_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Hex_TheGrasslands_C>();
 	}
 };
-static_assert(alignof(ABP_Hex_TheGrasslands_C) == 0x000008, "Wrong alignment on ABP_Hex_TheGrasslands_C");
-static_assert(sizeof(ABP_Hex_TheGrasslands_C) == 0x000728, "Wrong size on ABP_Hex_TheGrasslands_C");
 
-}
-
+SDK_NAMESPACE_END

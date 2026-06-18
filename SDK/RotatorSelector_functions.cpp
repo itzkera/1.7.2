@@ -14,8 +14,7 @@
 #include "RotatorSelector_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
 // (HasDefaults)
@@ -60,8 +59,8 @@ void URotatorSelector_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRota
 // Function RotatorSelector.RotatorSelector_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void URotatorSelector_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -82,7 +81,7 @@ void URotatorSelector_C::OnMouseEnter(const struct FGeometry& MyGeometry, const 
 // Function RotatorSelector.RotatorSelector_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void URotatorSelector_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -136,9 +135,9 @@ void URotatorSelector_C::Update_Row_Selector(int32 Currently_Selected)
 // Function RotatorSelector.RotatorSelector_C.Initialize
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Display_Text                                           (Parm)
-// TArray<class FText>                     Options                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             Hover_Text                                             (Parm)
+// const class FText&                      Display_Text                                           (Parm)
+// TArray<class FText>&                    Options                                                (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const class FText&                      Hover_Text                                             (Parm)
 // class UCommonTextBlock*                 Tab_Tooltip                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URotatorSelector_C::Initialize(const class FText& Display_Text, TArray<class FText>& Options, const class FText& Hover_Text, class UCommonTextBlock* Tab_Tooltip)
@@ -178,7 +177,7 @@ void URotatorSelector_C::Center_on_Widget()
 // Function RotatorSelector.RotatorSelector_C.Update Options
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class FText>                     NewParam                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class FText>&                    NewParam                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void URotatorSelector_C::Update_Options(TArray<class FText>& NewParam)
 {
@@ -196,5 +195,5 @@ void URotatorSelector_C::Update_Options(TArray<class FText>& NewParam)
 	NewParam = std::move(Parms.NewParam);
 }
 
-}
 
+SDK_NAMESPACE_END

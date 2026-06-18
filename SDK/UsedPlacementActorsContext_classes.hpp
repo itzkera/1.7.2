@@ -14,8 +14,7 @@
 #include "AIModule_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass UsedPlacementActorsContext.UsedPlacementActorsContext_C
 // 0x0048 (0x0078 - 0x0030)
@@ -30,16 +29,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UsedPlacementActorsContext_C">();
+		BP_STATIC_CLASS_IMPL("UsedPlacementActorsContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UsedPlacementActorsContext_C")
 	}
 	static class UUsedPlacementActorsContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUsedPlacementActorsContext_C>();
 	}
 };
-static_assert(alignof(UUsedPlacementActorsContext_C) == 0x000008, "Wrong alignment on UUsedPlacementActorsContext_C");
-static_assert(sizeof(UUsedPlacementActorsContext_C) == 0x000078, "Wrong size on UUsedPlacementActorsContext_C");
-static_assert(offsetof(UUsedPlacementActorsContext_C, UsedTagsAddedQuery) == 0x000030, "Member 'UUsedPlacementActorsContext_C::UsedTagsAddedQuery' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

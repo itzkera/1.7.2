@@ -14,8 +14,7 @@
 #include "MtxOffer_2_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MtxOffer_2.MtxOffer_2_C.ExecuteUbergraph_MtxOffer_2
 // (HasDefaults)
@@ -110,5 +109,5 @@ void UMtxOffer_2_C::BndEvt__Purchase_Button_K2Node_ComponentBoundEvent_516_FortB
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

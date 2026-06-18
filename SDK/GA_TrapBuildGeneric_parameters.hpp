@@ -13,8 +13,8 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GA_TrapBuildGeneric.GA_TrapBuildGeneric_C.ExecuteUbergraph_GA_TrapBuildGeneric
 // 0x0018 (0x0018 - 0x0000)
@@ -25,10 +25,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_ApplyGameplayEffectContainer_ReturnValue; // 0x0008(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric) == 0x000008, "Wrong alignment on GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric");
-static_assert(sizeof(GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric) == 0x000018, "Wrong size on GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric");
-static_assert(offsetof(GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric, EntryPoint) == 0x000000, "Member 'GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric, CallFunc_ApplyGameplayEffectContainer_ReturnValue) == 0x000008, "Member 'GA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric::CallFunc_ApplyGameplayEffectContainer_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

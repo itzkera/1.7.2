@@ -14,8 +14,7 @@
 #include "Results_TeamScoreRow_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Results_TeamScoreRow.Results_TeamScoreRow_C.ExecuteUbergraph_Results_TeamScoreRow
 // ()
@@ -212,5 +211,5 @@ void UResults_TeamScoreRow_C::ShowValidResidualScores()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

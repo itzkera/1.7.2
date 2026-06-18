@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass RadialPicker.RadialPicker_C
 // 0x00C0 (0x02F8 - 0x0238)
@@ -84,45 +83,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RadialPicker_C">();
+		BP_STATIC_CLASS_IMPL("RadialPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadialPicker_C")
 	}
 	static class URadialPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadialPicker_C>();
 	}
 };
-static_assert(alignof(URadialPicker_C) == 0x000008, "Wrong alignment on URadialPicker_C");
-static_assert(sizeof(URadialPicker_C) == 0x0002F8, "Wrong size on URadialPicker_C");
-static_assert(offsetof(URadialPicker_C, UberGraphFrame) == 0x000238, "Member 'URadialPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, CanvasPanel_0) == 0x000240, "Member 'URadialPicker_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, Image_0) == 0x000248, "Member 'URadialPicker_C::Image_0' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, ImageRadialPointer) == 0x000250, "Member 'URadialPicker_C::ImageRadialPointer' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, KeybindWidget) == 0x000258, "Member 'URadialPicker_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, KeybindWidget_81) == 0x000260, "Member 'URadialPicker_C::KeybindWidget_81' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption0) == 0x000268, "Member 'URadialPicker_C::PickerOption0' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption1) == 0x000270, "Member 'URadialPicker_C::PickerOption1' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption2) == 0x000278, "Member 'URadialPicker_C::PickerOption2' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption3) == 0x000280, "Member 'URadialPicker_C::PickerOption3' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption4) == 0x000288, "Member 'URadialPicker_C::PickerOption4' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption5) == 0x000290, "Member 'URadialPicker_C::PickerOption5' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption6) == 0x000298, "Member 'URadialPicker_C::PickerOption6' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOption7) == 0x0002A0, "Member 'URadialPicker_C::PickerOption7' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, Text_OK) == 0x0002A8, "Member 'URadialPicker_C::Text_OK' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, ActiveOption) == 0x0002B0, "Member 'URadialPicker_C::ActiveOption' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, NumOptions) == 0x0002B4, "Member 'URadialPicker_C::NumOptions' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, YAxisMultiplier) == 0x0002B8, "Member 'URadialPicker_C::YAxisMultiplier' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerClosing) == 0x0002BC, "Member 'URadialPicker_C::PickerClosing' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerMode) == 0x0002BD, "Member 'URadialPicker_C::PickerMode' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, Thumbstick) == 0x0002BE, "Member 'URadialPicker_C::Thumbstick' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, SoundOnAccept) == 0x0002C0, "Member 'URadialPicker_C::SoundOnAccept' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, SoundOnCancel) == 0x0002C8, "Member 'URadialPicker_C::SoundOnCancel' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, SoundOnSelect) == 0x0002D0, "Member 'URadialPicker_C::SoundOnSelect' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, PickerOptions) == 0x0002D8, "Member 'URadialPicker_C::PickerOptions' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, bUsingGamepad) == 0x0002E8, "Member 'URadialPicker_C::bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, bIgnoringMoveInput) == 0x0002E9, "Member 'URadialPicker_C::bIgnoringMoveInput' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, bIgnoringLookInput) == 0x0002EA, "Member 'URadialPicker_C::bIgnoringLookInput' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, CurrentPointerAngle) == 0x0002EC, "Member 'URadialPicker_C::CurrentPointerAngle' has a wrong offset!");
-static_assert(offsetof(URadialPicker_C, bShowingMouseCursor) == 0x0002F0, "Member 'URadialPicker_C::bShowingMouseCursor' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

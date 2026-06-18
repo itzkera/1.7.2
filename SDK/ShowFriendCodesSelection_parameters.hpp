@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.ExecuteUbergraph_ShowFriendCodesSelection
 // 0x00D0 (0x00D0 - 0x0000)
@@ -51,31 +51,6 @@ public:
 	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMargin                                K2Node_MakeStruct_Margin2;                         // 0x00BC(0x0010)(NoDestructor)
 };
-static_assert(alignof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection) == 0x000008, "Wrong alignment on ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection");
-static_assert(sizeof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection) == 0x0000D0, "Wrong size on ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, EntryPoint) == 0x000000, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_MakeStruct_Margin) == 0x000004, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, Temp_int_Array_Index_Variable) == 0x000014, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_IsDesktopPlatform_ReturnValue) == 0x000028, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_IsDesktopPlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_GetContext_ReturnValue2) == 0x000030, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_ComponentBoundEvent_Button) == 0x000038, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_Array_Get_Item) == 0x000040, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000068, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_Create_ReturnValue) == 0x000080, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_Create_ReturnValue2) == 0x000088, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_AddChild_ReturnValue) == 0x000090, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_DynamicCast_AsScroll_Box_Slot) == 0x000098, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_DynamicCast_AsScroll_Box_Slot' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_DynamicCast_bSuccess) == 0x0000A0, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, CallFunc_AddChild_ReturnValue2) == 0x0000A8, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::CallFunc_AddChild_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_DynamicCast_AsScroll_Box_Slot2) == 0x0000B0, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_DynamicCast_AsScroll_Box_Slot2' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_DynamicCast_bSuccess2) == 0x0000B8, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection, K2Node_MakeStruct_Margin2) == 0x0000BC, "Member 'ShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection::K2Node_MakeStruct_Margin2' has a wrong offset!");
 
 // Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -84,9 +59,6 @@ struct ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.SetFocus
 // 0x0020 (0x0020 - 0x0000)
@@ -100,12 +72,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowFriendCodesSelection_C_SetFocus) == 0x000008, "Wrong alignment on ShowFriendCodesSelection_C_SetFocus");
-static_assert(sizeof(ShowFriendCodesSelection_C_SetFocus) == 0x000020, "Wrong size on ShowFriendCodesSelection_C_SetFocus");
-static_assert(offsetof(ShowFriendCodesSelection_C_SetFocus, CallFunc_GetChildrenCount_ReturnValue) == 0x000000, "Member 'ShowFriendCodesSelection_C_SetFocus::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_SetFocus, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'ShowFriendCodesSelection_C_SetFocus::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_SetFocus, CallFunc_Greater_IntInt_ReturnValue) == 0x000010, "Member 'ShowFriendCodesSelection_C_SetFocus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowFriendCodesSelection_C_SetFocus, CallFunc_GetUINavigationManager_ReturnValue) == 0x000018, "Member 'ShowFriendCodesSelection_C_SetFocus::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

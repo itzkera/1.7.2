@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum SkillTreeGroups.SkillTreeGroups
 // NumValues: 0x0006
@@ -26,5 +25,4 @@ enum class ESkillTreeGroups : uint8
 	SkillTreeGroups_MAX                      = 5,
 };
 
-}
-
+SDK_NAMESPACE_END

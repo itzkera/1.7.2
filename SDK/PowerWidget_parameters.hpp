@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function PowerWidget.PowerWidget_C.ExecuteUbergraph_PowerWidget
 // 0x01B0 (0x01B0 - 0x0000)
@@ -31,14 +31,6 @@ public:
 	EFortPartyMemberDisplayState                  CallFunc_GetPartyMemberDisplayState_ReturnValue;   // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerWidget_C_ExecuteUbergraph_PowerWidget) == 0x000008, "Wrong alignment on PowerWidget_C_ExecuteUbergraph_PowerWidget");
-static_assert(sizeof(PowerWidget_C_ExecuteUbergraph_PowerWidget) == 0x0001B0, "Wrong size on PowerWidget_C_ExecuteUbergraph_PowerWidget");
-static_assert(offsetof(PowerWidget_C_ExecuteUbergraph_PowerWidget, EntryPoint) == 0x000000, "Member 'PowerWidget_C_ExecuteUbergraph_PowerWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_ExecuteUbergraph_PowerWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PowerWidget_C_ExecuteUbergraph_PowerWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_ExecuteUbergraph_PowerWidget, CallFunc_SetState_PassThrough) == 0x000010, "Member 'PowerWidget_C_ExecuteUbergraph_PowerWidget::CallFunc_SetState_PassThrough' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_ExecuteUbergraph_PowerWidget, K2Node_Event_NewInfo) == 0x000018, "Member 'PowerWidget_C_ExecuteUbergraph_PowerWidget::K2Node_Event_NewInfo' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_ExecuteUbergraph_PowerWidget, CallFunc_GetPartyMemberDisplayState_ReturnValue) == 0x0001A8, "Member 'PowerWidget_C_ExecuteUbergraph_PowerWidget::CallFunc_GetPartyMemberDisplayState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_ExecuteUbergraph_PowerWidget, K2Node_SwitchEnum_CmpSuccess) == 0x0001A9, "Member 'PowerWidget_C_ExecuteUbergraph_PowerWidget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.OnPlayerInfoChanged
 // 0x0190 (0x0190 - 0x0000)
@@ -47,9 +39,6 @@ struct PowerWidget_C_OnPlayerInfoChanged final
 public:
 	struct FFortTeamMemberInfo                    NewInfo;                                           // 0x0000(0x0190)(Parm)
 };
-static_assert(alignof(PowerWidget_C_OnPlayerInfoChanged) == 0x000008, "Wrong alignment on PowerWidget_C_OnPlayerInfoChanged");
-static_assert(sizeof(PowerWidget_C_OnPlayerInfoChanged) == 0x000190, "Wrong size on PowerWidget_C_OnPlayerInfoChanged");
-static_assert(offsetof(PowerWidget_C_OnPlayerInfoChanged, NewInfo) == 0x000000, "Member 'PowerWidget_C_OnPlayerInfoChanged::NewInfo' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.Update Rating Value
 // 0x0010 (0x0010 - 0x0000)
@@ -61,12 +50,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue2;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerWidget_C_Update_Rating_Value) == 0x000004, "Wrong alignment on PowerWidget_C_Update_Rating_Value");
-static_assert(sizeof(PowerWidget_C_Update_Rating_Value) == 0x000010, "Wrong size on PowerWidget_C_Update_Rating_Value");
-static_assert(offsetof(PowerWidget_C_Update_Rating_Value, New_Rating_Value) == 0x000000, "Member 'PowerWidget_C_Update_Rating_Value::New_Rating_Value' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000008, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating_Value, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00000C, "Member 'PowerWidget_C_Update_Rating_Value::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.Update Rating
 // 0x006C (0x006C - 0x0000)
@@ -111,37 +94,6 @@ public:
 	float                                         CallFunc_GetHomebaseRating_ProgressFraction4;      // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetHomebaseRating_ReturnValue4;           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerWidget_C_Update_Rating) == 0x000004, "Wrong alignment on PowerWidget_C_Update_Rating");
-static_assert(sizeof(PowerWidget_C_Update_Rating) == 0x00006C, "Wrong size on PowerWidget_C_Update_Rating");
-static_assert(offsetof(PowerWidget_C_Update_Rating, IsIncreasing) == 0x000000, "Member 'PowerWidget_C_Update_Rating::IsIncreasing' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, NewProgressValue) == 0x000004, "Member 'PowerWidget_C_Update_Rating::NewProgressValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, NewRatingValue) == 0x000008, "Member 'PowerWidget_C_Update_Rating::NewRatingValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_Rating) == 0x00000C, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ProgressFraction) == 0x000010, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ReturnValue) == 0x000014, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_Rating) == 0x000018, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ProgressFraction) == 0x00001C, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ReturnValue) == 0x000020, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_Rating2) == 0x000024, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_Rating2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ProgressFraction2) == 0x000028, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ProgressFraction2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ReturnValue2) == 0x00002C, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_Rating3) == 0x000030, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_Rating3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ProgressFraction3) == 0x000034, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ProgressFraction3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ReturnValue3) == 0x000038, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_Rating4) == 0x00003C, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_Rating4' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ProgressFraction4) == 0x000040, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ProgressFraction4' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetModifiedHomebaseRating_ReturnValue4) == 0x000044, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetModifiedHomebaseRating_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_Rating2) == 0x000048, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_Rating2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ProgressFraction2) == 0x00004C, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ProgressFraction2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ReturnValue2) == 0x000050, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_Rating3) == 0x000054, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_Rating3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ProgressFraction3) == 0x000058, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ProgressFraction3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ReturnValue3) == 0x00005C, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00005D, "Member 'PowerWidget_C_Update_Rating::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_PlayerHasTeammates_ReturnValue) == 0x00005E, "Member 'PowerWidget_C_Update_Rating::CallFunc_PlayerHasTeammates_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_Rating4) == 0x000060, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_Rating4' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ProgressFraction4) == 0x000064, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ProgressFraction4' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Update_Rating, CallFunc_GetHomebaseRating_ReturnValue4) == 0x000068, "Member 'PowerWidget_C_Update_Rating::CallFunc_GetHomebaseRating_ReturnValue4' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.SetState
 // 0x0002 (0x0002 - 0x0000)
@@ -151,10 +103,6 @@ public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_PlayerHasTeammates_ReturnValue;           // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerWidget_C_SetState) == 0x000001, "Wrong alignment on PowerWidget_C_SetState");
-static_assert(sizeof(PowerWidget_C_SetState) == 0x000002, "Wrong size on PowerWidget_C_SetState");
-static_assert(offsetof(PowerWidget_C_SetState, PassThrough) == 0x000000, "Member 'PowerWidget_C_SetState::PassThrough' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_SetState, CallFunc_PlayerHasTeammates_ReturnValue) == 0x000001, "Member 'PowerWidget_C_SetState::CallFunc_PlayerHasTeammates_ReturnValue' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.Debug
 // 0x02F0 (0x02F0 - 0x0000)
@@ -190,33 +138,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02C8(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x02E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerWidget_C_Debug) == 0x000008, "Wrong alignment on PowerWidget_C_Debug");
-static_assert(sizeof(PowerWidget_C_Debug) == 0x0002F0, "Wrong size on PowerWidget_C_Debug");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'PowerWidget_C_Debug::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetHomebaseRating_Rating) == 0x000008, "Member 'PowerWidget_C_Debug::CallFunc_GetHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetHomebaseRating_ProgressFraction) == 0x00000C, "Member 'PowerWidget_C_Debug::CallFunc_GetHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetHomebaseRating_ReturnValue) == 0x000010, "Member 'PowerWidget_C_Debug::CallFunc_GetHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetModifiedHomebaseRating_Rating) == 0x000014, "Member 'PowerWidget_C_Debug::CallFunc_GetModifiedHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetModifiedHomebaseRating_ProgressFraction) == 0x000018, "Member 'PowerWidget_C_Debug::CallFunc_GetModifiedHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetModifiedHomebaseRating_ReturnValue) == 0x00001C, "Member 'PowerWidget_C_Debug::CallFunc_GetModifiedHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue) == 0x000020, "Member 'PowerWidget_C_Debug::CallFunc_Conv_BoolToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue2) == 0x000038, "Member 'PowerWidget_C_Debug::CallFunc_Conv_BoolToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData2) == 0x000090, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData3) == 0x0000D0, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData4) == 0x000110, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData5) == 0x000150, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData6) == 0x000190, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData6' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetTotalHomebaseRating_Rating) == 0x0001D0, "Member 'PowerWidget_C_Debug::CallFunc_GetTotalHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetTotalHomebaseRating_ProgressFraction) == 0x0001D4, "Member 'PowerWidget_C_Debug::CallFunc_GetTotalHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_GetTotalHomebaseRating_ReturnValue) == 0x0001D8, "Member 'PowerWidget_C_Debug::CallFunc_GetTotalHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData7) == 0x0001E0, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData7' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_BoolToText_ReturnValue3) == 0x000220, "Member 'PowerWidget_C_Debug::CallFunc_Conv_BoolToText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData8) == 0x000238, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData8' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeStruct_FormatArgumentData9) == 0x000278, "Member 'PowerWidget_C_Debug::K2Node_MakeStruct_FormatArgumentData9' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, K2Node_MakeArray_Array) == 0x0002B8, "Member 'PowerWidget_C_Debug::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Format_ReturnValue) == 0x0002C8, "Member 'PowerWidget_C_Debug::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Debug, CallFunc_Conv_TextToString_ReturnValue) == 0x0002E0, "Member 'PowerWidget_C_Debug::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.PlayerHasTeammates
 // 0x0030 (0x0030 - 0x0000)
@@ -231,14 +152,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerWidget_C_PlayerHasTeammates) == 0x000008, "Wrong alignment on PowerWidget_C_PlayerHasTeammates");
-static_assert(sizeof(PowerWidget_C_PlayerHasTeammates) == 0x000030, "Wrong size on PowerWidget_C_PlayerHasTeammates");
-static_assert(offsetof(PowerWidget_C_PlayerHasTeammates, ReturnValue) == 0x000000, "Member 'PowerWidget_C_PlayerHasTeammates::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_PlayerHasTeammates, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PowerWidget_C_PlayerHasTeammates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_PlayerHasTeammates, CallFunc_GetLocalPlayerTeam_ReturnValue) == 0x000010, "Member 'PowerWidget_C_PlayerHasTeammates::CallFunc_GetLocalPlayerTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_PlayerHasTeammates, CallFunc_GetTeamMemberIDs_TeamMemberIDs) == 0x000018, "Member 'PowerWidget_C_PlayerHasTeammates::CallFunc_GetTeamMemberIDs_TeamMemberIDs' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_PlayerHasTeammates, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'PowerWidget_C_PlayerHasTeammates::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_PlayerHasTeammates, CallFunc_Greater_IntInt_ReturnValue) == 0x00002C, "Member 'PowerWidget_C_PlayerHasTeammates::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.GetPowerRatingTooltipWidget
 // 0x00B8 (0x00B8 - 0x0000)
@@ -262,22 +175,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0098(0x0018)()
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PowerWidget_C_GetPowerRatingTooltipWidget) == 0x000008, "Wrong alignment on PowerWidget_C_GetPowerRatingTooltipWidget");
-static_assert(sizeof(PowerWidget_C_GetPowerRatingTooltipWidget) == 0x0000B8, "Wrong size on PowerWidget_C_GetPowerRatingTooltipWidget");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, ReturnValue) == 0x000000, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_GetModifiedHomebaseRating_Rating) == 0x000010, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_GetModifiedHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_GetModifiedHomebaseRating_ProgressFraction) == 0x000014, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_GetModifiedHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_GetModifiedHomebaseRating_ReturnValue) == 0x000018, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_GetModifiedHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_IsUsingGamepad_ReturnValue) == 0x000019, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00001C, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_Round_ReturnValue) == 0x000020, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_MakeLiteralText_ReturnValue) == 0x000070, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, K2Node_MakeArray_Array) == 0x000088, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_Format_ReturnValue) == 0x000098, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_GetPowerRatingTooltipWidget, CallFunc_Create_Basic_Tooltip_Output) == 0x0000B0, "Member 'PowerWidget_C_GetPowerRatingTooltipWidget::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function PowerWidget.PowerWidget_C.Check For Power Change
 // 0x0003 (0x0003 - 0x0000)
@@ -288,11 +185,6 @@ public:
 	bool                                          CallFunc_PlayerHasTeammates_ReturnValue;           // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PowerWidget_C_Check_For_Power_Change) == 0x000001, "Wrong alignment on PowerWidget_C_Check_For_Power_Change");
-static_assert(sizeof(PowerWidget_C_Check_For_Power_Change) == 0x000003, "Wrong size on PowerWidget_C_Check_For_Power_Change");
-static_assert(offsetof(PowerWidget_C_Check_For_Power_Change, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'PowerWidget_C_Check_For_Power_Change::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Check_For_Power_Change, CallFunc_PlayerHasTeammates_ReturnValue) == 0x000001, "Member 'PowerWidget_C_Check_For_Power_Change::CallFunc_PlayerHasTeammates_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PowerWidget_C_Check_For_Power_Change, CallFunc_BooleanAND_ReturnValue) == 0x000002, "Member 'PowerWidget_C_Check_For_Power_Change::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

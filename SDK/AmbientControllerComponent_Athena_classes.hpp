@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C
 // 0x0078 (0x0168 - 0x00F0)
@@ -65,34 +64,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AmbientControllerComponent_Athena_C">();
+		BP_STATIC_CLASS_IMPL("AmbientControllerComponent_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmbientControllerComponent_Athena_C")
 	}
 	static class UAmbientControllerComponent_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAmbientControllerComponent_Athena_C>();
 	}
 };
-static_assert(alignof(UAmbientControllerComponent_Athena_C) == 0x000008, "Wrong alignment on UAmbientControllerComponent_Athena_C");
-static_assert(sizeof(UAmbientControllerComponent_Athena_C) == 0x000168, "Wrong size on UAmbientControllerComponent_Athena_C");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, UberGraphFrame) == 0x0000F0, "Member 'UAmbientControllerComponent_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Morning) == 0x0000F8, "Member 'UAmbientControllerComponent_Athena_C::Loop_Morning' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Evening) == 0x000100, "Member 'UAmbientControllerComponent_Athena_C::Loop_Evening' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Indoors) == 0x000108, "Member 'UAmbientControllerComponent_Athena_C::Loop_Indoors' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Night) == 0x000110, "Member 'UAmbientControllerComponent_Athena_C::Loop_Night' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, Loop_Day) == 0x000118, "Member 'UAmbientControllerComponent_Athena_C::Loop_Day' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, AmbientMixA) == 0x000120, "Member 'UAmbientControllerComponent_Athena_C::AmbientMixA' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, AmbientMixB) == 0x000128, "Member 'UAmbientControllerComponent_Athena_C::AmbientMixB' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, bActiveMixIsA) == 0x000130, "Member 'UAmbientControllerComponent_Athena_C::bActiveMixIsA' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, CheckFrequency) == 0x000134, "Member 'UAmbientControllerComponent_Athena_C::CheckFrequency' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, bIsInsidePrevious) == 0x000138, "Member 'UAmbientControllerComponent_Athena_C::bIsInsidePrevious' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, bIsInsideCurrent) == 0x000139, "Member 'UAmbientControllerComponent_Athena_C::bIsInsideCurrent' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, AmbientMixIndoor) == 0x000140, "Member 'UAmbientControllerComponent_Athena_C::AmbientMixIndoor' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, PlayerController) == 0x000148, "Member 'UAmbientControllerComponent_Athena_C::PlayerController' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, TargetLPFFreq) == 0x000150, "Member 'UAmbientControllerComponent_Athena_C::TargetLPFFreq' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, CurrentLPFFreq) == 0x000154, "Member 'UAmbientControllerComponent_Athena_C::CurrentLPFFreq' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, InsideLPFFreq) == 0x000158, "Member 'UAmbientControllerComponent_Athena_C::InsideLPFFreq' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, OutsideLPFFreq) == 0x00015C, "Member 'UAmbientControllerComponent_Athena_C::OutsideLPFFreq' has a wrong offset!");
-static_assert(offsetof(UAmbientControllerComponent_Athena_C, CurrentOneShot) == 0x000160, "Member 'UAmbientControllerComponent_Athena_C::CurrentOneShot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

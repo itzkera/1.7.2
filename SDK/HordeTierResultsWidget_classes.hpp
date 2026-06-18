@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass HordeTierResultsWidget.HordeTierResultsWidget_C
 // 0x0060 (0x02C8 - 0x0268)
@@ -45,25 +44,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HordeTierResultsWidget_C">();
+		BP_STATIC_CLASS_IMPL("HordeTierResultsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HordeTierResultsWidget_C")
 	}
 	static class UHordeTierResultsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHordeTierResultsWidget_C>();
 	}
 };
-static_assert(alignof(UHordeTierResultsWidget_C) == 0x000008, "Wrong alignment on UHordeTierResultsWidget_C");
-static_assert(sizeof(UHordeTierResultsWidget_C) == 0x0002C8, "Wrong size on UHordeTierResultsWidget_C");
-static_assert(offsetof(UHordeTierResultsWidget_C, Movie) == 0x000268, "Member 'UHordeTierResultsWidget_C::Movie' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, ResultsNameplate) == 0x000270, "Member 'UHordeTierResultsWidget_C::ResultsNameplate' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, OnTierResultsWidgetComplete) == 0x000278, "Member 'UHordeTierResultsWidget_C::OnTierResultsWidgetComplete' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, CompletionResult) == 0x000288, "Member 'UHordeTierResultsWidget_C::CompletionResult' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, DefaultDefeatMedia) == 0x000290, "Member 'UHordeTierResultsWidget_C::DefaultDefeatMedia' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, DefaultVictoryMedia) == 0x000298, "Member 'UHordeTierResultsWidget_C::DefaultVictoryMedia' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, VictorySound) == 0x0002A0, "Member 'UHordeTierResultsWidget_C::VictorySound' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, DefeatSound) == 0x0002A8, "Member 'UHordeTierResultsWidget_C::DefeatSound' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, MovieTextDelay) == 0x0002B0, "Member 'UHordeTierResultsWidget_C::MovieTextDelay' has a wrong offset!");
-static_assert(offsetof(UHordeTierResultsWidget_C, NameplateIntroFunctionName) == 0x0002B8, "Member 'UHordeTierResultsWidget_C::NameplateIntroFunctionName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

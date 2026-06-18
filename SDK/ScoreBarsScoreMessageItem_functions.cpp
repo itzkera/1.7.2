@@ -14,8 +14,7 @@
 #include "ScoreBarsScoreMessageItem_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.ExecuteUbergraph_ScoreBarsScoreMessageItem
 // ()
@@ -89,7 +88,7 @@ void UScoreBarsScoreMessageItem_C::UpdateValues()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   Base_Delta_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             Name_Text                                              (Parm)
+// const class FText&                      Name_Text                                              (Parm)
 // class UScoreMessageNumber_C*            In_Score_Widget                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UScoreBarsScoreMessageItem_C::Setup(int32 Base_Delta_0, const class FText& Name_Text, class UScoreMessageNumber_C* In_Score_Widget)
@@ -112,7 +111,7 @@ void UScoreBarsScoreMessageItem_C::Setup(int32 Base_Delta_0, const class FText& 
 // Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.GetScoreValueWidget
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UWidget*                          Widget                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UScoreBarsScoreMessageItem_C::GetScoreValueWidget(class UWidget** Widget)
 {
@@ -157,5 +156,5 @@ void UScoreBarsScoreMessageItem_C::OnAppearAnimationFinished()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.ExecuteUbergraph_AthenaInventoryDragVisual
 // 0x0008 (0x0008 - 0x0000)
@@ -22,10 +22,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual) == 0x000004, "Wrong alignment on AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual");
-static_assert(sizeof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual) == 0x000008, "Wrong size on AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual");
-static_assert(offsetof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual, EntryPoint) == 0x000000, "Member 'AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual, K2Node_Event_IsDesignTime) == 0x000004, "Member 'AthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 // Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +30,6 @@ struct AthenaInventoryDragVisual_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaInventoryDragVisual_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaInventoryDragVisual_C_PreConstruct");
-static_assert(sizeof(AthenaInventoryDragVisual_C_PreConstruct) == 0x000001, "Wrong size on AthenaInventoryDragVisual_C_PreConstruct");
-static_assert(offsetof(AthenaInventoryDragVisual_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaInventoryDragVisual_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

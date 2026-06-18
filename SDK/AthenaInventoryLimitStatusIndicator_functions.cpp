@@ -14,8 +14,7 @@
 #include "AthenaInventoryLimitStatusIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.ExecuteUbergraph_AthenaInventoryLimitStatusIndicator
 // ()
@@ -40,8 +39,8 @@ void UAthenaInventoryLimitStatusIndicator_C::ExecuteUbergraph_AthenaInventoryLim
 // Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.HandleWorldItemListChanged
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class UFortWorldItem*>           ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<class UFortWorldItem*>           ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsAdded                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// const TArray<class UFortWorldItem*>&    ItemsRemoved                                           (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 
 void UAthenaInventoryLimitStatusIndicator_C::HandleWorldItemListChanged(const TArray<class UFortWorldItem*>& ItemsAdded, const TArray<class UFortWorldItem*>& ItemsRemoved)
 {
@@ -114,5 +113,5 @@ void UAthenaInventoryLimitStatusIndicator_C::RefreshWorldInventoryStatus()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "LobbyTimer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LobbyTimer.LobbyTimer_C.ExecuteUbergraph_LobbyTimer
 // ()
@@ -152,5 +151,5 @@ void ULobbyTimer_C::Handle_Lobby_Timer_Updated(int32 Seconds_Remaining)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

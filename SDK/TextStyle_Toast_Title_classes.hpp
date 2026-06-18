@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass TextStyle-Toast-Title.TextStyle-Toast-Title_C
 // 0x0000 (0x00D0 - 0x00D0)
@@ -23,15 +22,16 @@ class UTextStyle_Toast_Title_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Toast-Title_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Toast-Title_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Toast-Title_C")
 	}
 	static class UTextStyle_Toast_Title_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Toast_Title_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Toast_Title_C) == 0x000008, "Wrong alignment on UTextStyle_Toast_Title_C");
-static_assert(sizeof(UTextStyle_Toast_Title_C) == 0x0000D0, "Wrong size on UTextStyle_Toast_Title_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "LeaderboardRowWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget
 // ()
@@ -90,5 +89,5 @@ void ULeaderboardRowWidget_C::Refresh(class UFortLeaderboardRowProxyInstance* Ro
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

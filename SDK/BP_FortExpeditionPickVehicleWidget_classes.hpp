@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C
 // 0x0050 (0x0440 - 0x03F0)
@@ -49,22 +48,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionPickVehicleWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionPickVehicleWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionPickVehicleWidget_C")
 	}
 	static class UBP_FortExpeditionPickVehicleWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionPickVehicleWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionPickVehicleWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionPickVehicleWidget_C");
-static_assert(sizeof(UBP_FortExpeditionPickVehicleWidget_C) == 0x000440, "Wrong size on UBP_FortExpeditionPickVehicleWidget_C");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, UberGraphFrame) == 0x0003F0, "Member 'UBP_FortExpeditionPickVehicleWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, CommonTileView_0) == 0x0003F8, "Member 'UBP_FortExpeditionPickVehicleWidget_C::CommonTileView_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, ExpeditionSquadSlotsView) == 0x000400, "Member 'UBP_FortExpeditionPickVehicleWidget_C::ExpeditionSquadSlotsView' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, SafeZone_0) == 0x000408, "Member 'UBP_FortExpeditionPickVehicleWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, BackInputAction) == 0x000410, "Member 'UBP_FortExpeditionPickVehicleWidget_C::BackInputAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, SquadOjbects) == 0x000420, "Member 'UBP_FortExpeditionPickVehicleWidget_C::SquadOjbects' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionPickVehicleWidget_C, OnVehicleSelected) == 0x000430, "Member 'UBP_FortExpeditionPickVehicleWidget_C::OnVehicleSelected' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

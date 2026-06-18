@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PopupCenterMessageWidget.PopupCenterMessageWidget_C
 // 0x0018 (0x0280 - 0x0268)
@@ -37,18 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PopupCenterMessageWidget_C">();
+		BP_STATIC_CLASS_IMPL("PopupCenterMessageWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PopupCenterMessageWidget_C")
 	}
 	static class UPopupCenterMessageWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPopupCenterMessageWidget_C>();
 	}
 };
-static_assert(alignof(UPopupCenterMessageWidget_C) == 0x000008, "Wrong alignment on UPopupCenterMessageWidget_C");
-static_assert(sizeof(UPopupCenterMessageWidget_C) == 0x000280, "Wrong size on UPopupCenterMessageWidget_C");
-static_assert(offsetof(UPopupCenterMessageWidget_C, UberGraphFrame) == 0x000268, "Member 'UPopupCenterMessageWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageWidget_C, CenterPopupModal) == 0x000270, "Member 'UPopupCenterMessageWidget_C::CenterPopupModal' has a wrong offset!");
-static_assert(offsetof(UPopupCenterMessageWidget_C, UpdateStateTimer) == 0x000278, "Member 'UPopupCenterMessageWidget_C::UpdateStateTimer' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

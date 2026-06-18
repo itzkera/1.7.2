@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C
 // 0x0028 (0x0298 - 0x0270)
@@ -38,19 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCalledOutAttributesDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemCalledOutAttributesDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCalledOutAttributesDetailWidget_C")
 	}
 	static class UItemCalledOutAttributesDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCalledOutAttributesDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemCalledOutAttributesDetailWidget_C) == 0x000008, "Wrong alignment on UItemCalledOutAttributesDetailWidget_C");
-static_assert(sizeof(UItemCalledOutAttributesDetailWidget_C) == 0x000298, "Wrong size on UItemCalledOutAttributesDetailWidget_C");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemCalledOutAttributesDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, AmmoTypeIndicator) == 0x000278, "Member 'UItemCalledOutAttributesDetailWidget_C::AmmoTypeIndicator' has a wrong offset!");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, ContainerWrapBox) == 0x000280, "Member 'UItemCalledOutAttributesDetailWidget_C::ContainerWrapBox' has a wrong offset!");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, StatWidgets) == 0x000288, "Member 'UItemCalledOutAttributesDetailWidget_C::StatWidgets' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

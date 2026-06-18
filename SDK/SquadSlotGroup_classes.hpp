@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SquadSlotGroup.SquadSlotGroup_C
 // 0x0148 (0x0380 - 0x0238)
@@ -58,31 +57,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadSlotGroup_C">();
+		BP_STATIC_CLASS_IMPL("SquadSlotGroup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadSlotGroup_C")
 	}
 	static class USquadSlotGroup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadSlotGroup_C>();
 	}
 };
-static_assert(alignof(USquadSlotGroup_C) == 0x000008, "Wrong alignment on USquadSlotGroup_C");
-static_assert(sizeof(USquadSlotGroup_C) == 0x000380, "Wrong size on USquadSlotGroup_C");
-static_assert(offsetof(USquadSlotGroup_C, UberGraphFrame) == 0x000238, "Member 'USquadSlotGroup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, GroupIconImage) == 0x000240, "Member 'USquadSlotGroup_C::GroupIconImage' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, GroupLabelTextBlock) == 0x000248, "Member 'USquadSlotGroup_C::GroupLabelTextBlock' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeadingBase) == 0x000250, "Member 'USquadSlotGroup_C::HeadingBase' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeadingSizeBox) == 0x000258, "Member 'USquadSlotGroup_C::HeadingSizeBox' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, SquadSlotBox) == 0x000260, "Member 'USquadSlotGroup_C::SquadSlotBox' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, GroupLabelText) == 0x000268, "Member 'USquadSlotGroup_C::GroupLabelText' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, SquadSlotPadding) == 0x000280, "Member 'USquadSlotGroup_C::SquadSlotPadding' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeadingWidth) == 0x000290, "Member 'USquadSlotGroup_C::HeadingWidth' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, bShowHeader) == 0x000294, "Member 'USquadSlotGroup_C::bShowHeader' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, TooltipDescription) == 0x000298, "Member 'USquadSlotGroup_C::TooltipDescription' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, TooltipHeader) == 0x0002B0, "Member 'USquadSlotGroup_C::TooltipHeader' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, bShowImageInHeader) == 0x0002C8, "Member 'USquadSlotGroup_C::bShowImageInHeader' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HeaderImageBrush) == 0x0002D0, "Member 'USquadSlotGroup_C::HeaderImageBrush' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HandleMouseEnter) == 0x000360, "Member 'USquadSlotGroup_C::HandleMouseEnter' has a wrong offset!");
-static_assert(offsetof(USquadSlotGroup_C, HandleMouseLeave) == 0x000370, "Member 'USquadSlotGroup_C::HandleMouseLeave' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

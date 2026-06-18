@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass OptionsMenuInput.OptionsMenuInput_C
 // 0x0070 (0x02A8 - 0x0238)
@@ -62,25 +61,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuInput_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuInput_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuInput_C")
 	}
 	static class UOptionsMenuInput_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuInput_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuInput_C) == 0x000008, "Wrong alignment on UOptionsMenuInput_C");
-static_assert(sizeof(UOptionsMenuInput_C) == 0x0002A8, "Wrong size on UOptionsMenuInput_C");
-static_assert(offsetof(UOptionsMenuInput_C, UberGraphFrame) == 0x000238, "Member 'UOptionsMenuInput_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, IconTextButton) == 0x000240, "Member 'UOptionsMenuInput_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, InputText) == 0x000248, "Member 'UOptionsMenuInput_C::InputText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, PrimaryInput) == 0x000250, "Member 'UOptionsMenuInput_C::PrimaryInput' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, SecondaryInput) == 0x000258, "Member 'UOptionsMenuInput_C::SecondaryInput' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, Number_in_List) == 0x000260, "Member 'UOptionsMenuInput_C::Number_in_List' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, Input_Clicked) == 0x000268, "Member 'UOptionsMenuInput_C::Input_Clicked' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, Tab_Tooltip_Text) == 0x000278, "Member 'UOptionsMenuInput_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, Hover_Text) == 0x000280, "Member 'UOptionsMenuInput_C::Hover_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInput_C, UnbindClicked) == 0x000298, "Member 'UOptionsMenuInput_C::UnbindClicked' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

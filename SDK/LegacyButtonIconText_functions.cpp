@@ -14,8 +14,7 @@
 #include "LegacyButtonIconText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function LegacyButtonIconText.LegacyButtonIconText_C.ExecuteUbergraph_LegacyButtonIconText
 // (HasDefaults)
@@ -40,7 +39,7 @@ void ULegacyButtonIconText_C::ExecuteUbergraph_LegacyButtonIconText(int32 EntryP
 // Function LegacyButtonIconText.LegacyButtonIconText_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULegacyButtonIconText_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -60,8 +59,8 @@ void ULegacyButtonIconText_C::OnMouseLeave(const struct FPointerEvent& MouseEven
 // Function LegacyButtonIconText.LegacyButtonIconText_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ULegacyButtonIconText_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -102,7 +101,7 @@ void ULegacyButtonIconText_C::PreConstruct(bool IsDesignTime)
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Set Text
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             InText                                                 (Parm)
+// const class FText&                      InText                                                 (Parm)
 // bool                                    RefreshPadding                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULegacyButtonIconText_C::Set_Text(const class FText& InText, bool RefreshPadding)
@@ -124,7 +123,7 @@ void ULegacyButtonIconText_C::Set_Text(const class FText& InText, bool RefreshPa
 // Function LegacyButtonIconText.LegacyButtonIconText_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      InBrush                                                (Parm)
+// const struct FSlateBrush&               InBrush                                                (Parm)
 // bool                                    RefreshPadding                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULegacyButtonIconText_C::Set_Icon(const struct FSlateBrush& InBrush, bool RefreshPadding)
@@ -278,5 +277,5 @@ void ULegacyButtonIconText_C::Outro()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

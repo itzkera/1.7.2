@@ -16,8 +16,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BasicRatingWidget.BasicRatingWidget_C.ExecuteUbergraph_BasicRatingWidget
 // 0x00E0 (0x00E0 - 0x0000)
@@ -43,24 +43,6 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0048(0x0090)()
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget) == 0x000008, "Wrong alignment on BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget");
-static_assert(sizeof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget) == 0x0000E0, "Wrong size on BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, EntryPoint) == 0x000000, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_byte_Variable) == 0x000004, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_struct_Variable) == 0x000008, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_struct_Variable2) == 0x000010, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_struct_Variable3) == 0x000018, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_struct_Variable4) == 0x000020, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_struct_Variable4' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_struct_Variable5) == 0x000028, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_struct_Variable5' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_struct_Variable6) == 0x000030, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_struct_Variable6' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_bool_Variable) == 0x000038, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_byte_Variable2) == 0x000039, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, Temp_byte_Variable3) == 0x00003A, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, K2Node_Event_IsDesignTime) == 0x00003B, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, CallFunc_GetBorderVisibility_Visibility) == 0x00003C, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::CallFunc_GetBorderVisibility_Visibility' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, K2Node_Select_Default) == 0x000040, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, K2Node_MakeStruct_SlateBrush) == 0x000048, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget, K2Node_Select2_Default) == 0x0000D8, "Member 'BasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget::K2Node_Select2_Default' has a wrong offset!");
 
 // Function BasicRatingWidget.BasicRatingWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +51,6 @@ struct BasicRatingWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BasicRatingWidget_C_PreConstruct) == 0x000001, "Wrong alignment on BasicRatingWidget_C_PreConstruct");
-static_assert(sizeof(BasicRatingWidget_C_PreConstruct) == 0x000001, "Wrong size on BasicRatingWidget_C_PreConstruct");
-static_assert(offsetof(BasicRatingWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BasicRatingWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BasicRatingWidget.BasicRatingWidget_C.GetBorderVisibility
 // 0x0005 (0x0005 - 0x0000)
@@ -84,13 +63,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable2;                               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BasicRatingWidget_C_GetBorderVisibility) == 0x000001, "Wrong alignment on BasicRatingWidget_C_GetBorderVisibility");
-static_assert(sizeof(BasicRatingWidget_C_GetBorderVisibility) == 0x000005, "Wrong size on BasicRatingWidget_C_GetBorderVisibility");
-static_assert(offsetof(BasicRatingWidget_C_GetBorderVisibility, Visibility_0) == 0x000000, "Member 'BasicRatingWidget_C_GetBorderVisibility::Visibility_0' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_GetBorderVisibility, Temp_bool_Variable) == 0x000001, "Member 'BasicRatingWidget_C_GetBorderVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_GetBorderVisibility, Temp_byte_Variable) == 0x000002, "Member 'BasicRatingWidget_C_GetBorderVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_GetBorderVisibility, Temp_byte_Variable2) == 0x000003, "Member 'BasicRatingWidget_C_GetBorderVisibility::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_GetBorderVisibility, K2Node_Select_Default) == 0x000004, "Member 'BasicRatingWidget_C_GetBorderVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function BasicRatingWidget.BasicRatingWidget_C.Update Power Rating Value
 // 0x0008 (0x0008 - 0x0000)
@@ -100,10 +72,6 @@ public:
 	int32                                         Rating;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BasicRatingWidget_C_Update_Power_Rating_Value) == 0x000004, "Wrong alignment on BasicRatingWidget_C_Update_Power_Rating_Value");
-static_assert(sizeof(BasicRatingWidget_C_Update_Power_Rating_Value) == 0x000008, "Wrong size on BasicRatingWidget_C_Update_Power_Rating_Value");
-static_assert(offsetof(BasicRatingWidget_C_Update_Power_Rating_Value, Rating) == 0x000000, "Member 'BasicRatingWidget_C_Update_Power_Rating_Value::Rating' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_Update_Power_Rating_Value, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'BasicRatingWidget_C_Update_Power_Rating_Value::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
 // Function BasicRatingWidget.BasicRatingWidget_C.Update Border Color
 // 0x0028 (0x0028 - 0x0000)
@@ -114,11 +82,6 @@ public:
 	struct FLinearColor                           Color2;                                            // 0x0010(0x0010)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BasicRatingWidget_C_Update_Border_Color) == 0x000008, "Wrong alignment on BasicRatingWidget_C_Update_Border_Color");
-static_assert(sizeof(BasicRatingWidget_C_Update_Border_Color) == 0x000028, "Wrong size on BasicRatingWidget_C_Update_Border_Color");
-static_assert(offsetof(BasicRatingWidget_C_Update_Border_Color, Color1) == 0x000000, "Member 'BasicRatingWidget_C_Update_Border_Color::Color1' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_Update_Border_Color, Color2) == 0x000010, "Member 'BasicRatingWidget_C_Update_Border_Color::Color2' has a wrong offset!");
-static_assert(offsetof(BasicRatingWidget_C_Update_Border_Color, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'BasicRatingWidget_C_Update_Border_Color::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function BasicRatingWidget.BasicRatingWidget_C.Get Current Rating
 // 0x0004 (0x0004 - 0x0000)
@@ -127,9 +90,6 @@ struct BasicRatingWidget_C_Get_Current_Rating final
 public:
 	float                                         CurrentNumericValue;                               // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BasicRatingWidget_C_Get_Current_Rating) == 0x000004, "Wrong alignment on BasicRatingWidget_C_Get_Current_Rating");
-static_assert(sizeof(BasicRatingWidget_C_Get_Current_Rating) == 0x000004, "Wrong size on BasicRatingWidget_C_Get_Current_Rating");
-static_assert(offsetof(BasicRatingWidget_C_Get_Current_Rating, CurrentNumericValue) == 0x000000, "Member 'BasicRatingWidget_C_Get_Current_Rating::CurrentNumericValue' has a wrong offset!");
 
 // Function BasicRatingWidget.BasicRatingWidget_C.Update Power Rating Style
 // 0x0008 (0x0008 - 0x0000)
@@ -138,9 +98,6 @@ struct BasicRatingWidget_C_Update_Power_Rating_Style final
 public:
 	class UClass*                                 InStyle;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BasicRatingWidget_C_Update_Power_Rating_Style) == 0x000008, "Wrong alignment on BasicRatingWidget_C_Update_Power_Rating_Style");
-static_assert(sizeof(BasicRatingWidget_C_Update_Power_Rating_Style) == 0x000008, "Wrong size on BasicRatingWidget_C_Update_Power_Rating_Style");
-static_assert(offsetof(BasicRatingWidget_C_Update_Power_Rating_Style, InStyle) == 0x000000, "Member 'BasicRatingWidget_C_Update_Power_Rating_Style::InStyle' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "QuestsCountIconTabButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.ExecuteUbergraph_QuestsCountIconTabButton
 // (HasDefaults)
@@ -124,7 +123,7 @@ void UQuestsCountIconTabButton_C::OnSelected()
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTabLabelInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortTabButtonLabelInfo          TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTabButtonLabelInfo&   TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UQuestsCountIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
@@ -178,7 +177,7 @@ void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ButtonText_0                                           (Parm)
+// const class FText&                      ButtonText_0                                           (Parm)
 
 void UQuestsCountIconTabButton_C::Set_Text(const class FText& ButtonText_0)
 {
@@ -198,7 +197,7 @@ void UQuestsCountIconTabButton_C::Set_Text(const class FText& ButtonText_0)
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush_0                                            (Parm)
+// const struct FSlateBrush&               IconBrush_0                                            (Parm)
 
 void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
@@ -284,5 +283,5 @@ void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled_0, int32 C
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

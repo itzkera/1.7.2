@@ -16,8 +16,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.ExecuteUbergraph_LobbyPlayerPadGadgets
 // 0x0128 (0x0128 - 0x0000)
@@ -29,12 +29,6 @@ public:
 	struct FPointerEvent                          K2Node_Event_MouseEvent2;                          // 0x0038(0x0078)(ConstParm)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00B0(0x0078)(ConstParm)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets) == 0x000008, "Wrong alignment on LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets) == 0x000128, "Wrong size on LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets, EntryPoint) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets, K2Node_Event_MyGeometry) == 0x000004, "Member 'LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets, K2Node_Event_MouseEvent2) == 0x000038, "Member 'LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets::K2Node_Event_MouseEvent2' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets, K2Node_Event_MouseEvent) == 0x0000B0, "Member 'LobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets::K2Node_Event_MouseEvent' has a wrong offset!");
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseLeave
 // 0x0078 (0x0078 - 0x0000)
@@ -43,9 +37,6 @@ struct LobbyPlayerPadGadgets_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_OnMouseLeave) == 0x000008, "Wrong alignment on LobbyPlayerPadGadgets_C_OnMouseLeave");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_OnMouseLeave) == 0x000078, "Wrong size on LobbyPlayerPadGadgets_C_OnMouseLeave");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseEnter
 // 0x00B0 (0x00B0 - 0x0000)
@@ -56,10 +47,6 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_OnMouseEnter) == 0x000008, "Wrong alignment on LobbyPlayerPadGadgets_C_OnMouseEnter");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_OnMouseEnter) == 0x0000B0, "Wrong size on LobbyPlayerPadGadgets_C_OnMouseEnter");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LobbyPlayerPadGadgets_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Refresh
 // 0x01C0 (0x01C0 - 0x0000)
@@ -77,17 +64,6 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue2;          // 0x01BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_Refresh) == 0x000008, "Wrong alignment on LobbyPlayerPadGadgets_C_Refresh");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_Refresh) == 0x0001C0, "Wrong size on LobbyPlayerPadGadgets_C_Refresh");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, TeamMemberInfo) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_Refresh::TeamMemberInfo' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, CallFunc_Array_Get_Item) == 0x000190, "Member 'LobbyPlayerPadGadgets_C_Refresh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, CallFunc_Array_Get_Item2) == 0x000198, "Member 'LobbyPlayerPadGadgets_C_Refresh::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, K2Node_DynamicCast_AsFort_World_Item) == 0x0001A0, "Member 'LobbyPlayerPadGadgets_C_Refresh::K2Node_DynamicCast_AsFort_World_Item' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, K2Node_DynamicCast_bSuccess) == 0x0001A8, "Member 'LobbyPlayerPadGadgets_C_Refresh::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, K2Node_DynamicCast_AsFort_World_Item2) == 0x0001B0, "Member 'LobbyPlayerPadGadgets_C_Refresh::K2Node_DynamicCast_AsFort_World_Item2' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, K2Node_DynamicCast_bSuccess2) == 0x0001B8, "Member 'LobbyPlayerPadGadgets_C_Refresh::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001B9, "Member 'LobbyPlayerPadGadgets_C_Refresh::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Refresh, CallFunc_Array_IsValidIndex_ReturnValue2) == 0x0001BA, "Member 'LobbyPlayerPadGadgets_C_Refresh::CallFunc_Array_IsValidIndex_ReturnValue2' has a wrong offset!");
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseButtonDown
 // 0x0240 (0x0240 - 0x0000)
@@ -102,14 +78,6 @@ public:
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0180(0x00B8)()
 	bool                                          CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_OnMouseButtonDown) == 0x000008, "Wrong alignment on LobbyPlayerPadGadgets_C_OnMouseButtonDown");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_OnMouseButtonDown) == 0x000240, "Wrong size on LobbyPlayerPadGadgets_C_OnMouseButtonDown");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseButtonDown, MyGeometry) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_OnMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseButtonDown, MouseEvent) == 0x000038, "Member 'LobbyPlayerPadGadgets_C_OnMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseButtonDown, ReturnValue) == 0x0000B0, "Member 'LobbyPlayerPadGadgets_C_OnMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseButtonDown, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000168, "Member 'LobbyPlayerPadGadgets_C_OnMouseButtonDown::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'LobbyPlayerPadGadgets_C_OnMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnMouseButtonDown, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000238, "Member 'LobbyPlayerPadGadgets_C_OnMouseButtonDown::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnInputClicked
 // 0x0008 (0x0008 - 0x0000)
@@ -118,9 +86,6 @@ struct LobbyPlayerPadGadgets_C_OnInputClicked final
 public:
 	class UFortFrontEndContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_OnInputClicked) == 0x000008, "Wrong alignment on LobbyPlayerPadGadgets_C_OnInputClicked");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_OnInputClicked) == 0x000008, "Wrong size on LobbyPlayerPadGadgets_C_OnInputClicked");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_OnInputClicked, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_OnInputClicked::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Initialize
 // 0x0004 (0x0004 - 0x0000)
@@ -129,9 +94,6 @@ struct LobbyPlayerPadGadgets_C_Initialize final
 public:
 	int32                                         PlayerIndex_0;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LobbyPlayerPadGadgets_C_Initialize) == 0x000004, "Wrong alignment on LobbyPlayerPadGadgets_C_Initialize");
-static_assert(sizeof(LobbyPlayerPadGadgets_C_Initialize) == 0x000004, "Wrong size on LobbyPlayerPadGadgets_C_Initialize");
-static_assert(offsetof(LobbyPlayerPadGadgets_C_Initialize, PlayerIndex_0) == 0x000000, "Member 'LobbyPlayerPadGadgets_C_Initialize::PlayerIndex_0' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

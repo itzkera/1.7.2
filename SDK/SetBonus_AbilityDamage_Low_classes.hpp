@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SetBonus_AbilityDamage_Low.SetBonus_AbilityDamage_Low_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class USetBonus_AbilityDamage_Low_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SetBonus_AbilityDamage_Low_C">();
+		BP_STATIC_CLASS_IMPL("SetBonus_AbilityDamage_Low_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SetBonus_AbilityDamage_Low_C")
 	}
 	static class USetBonus_AbilityDamage_Low_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USetBonus_AbilityDamage_Low_C>();
 	}
 };
-static_assert(alignof(USetBonus_AbilityDamage_Low_C) == 0x000010, "Wrong alignment on USetBonus_AbilityDamage_Low_C");
-static_assert(sizeof(USetBonus_AbilityDamage_Low_C) == 0x000660, "Wrong size on USetBonus_AbilityDamage_Low_C");
 
-}
-
+SDK_NAMESPACE_END

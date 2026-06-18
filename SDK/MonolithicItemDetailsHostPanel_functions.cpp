@@ -14,8 +14,7 @@
 #include "MonolithicItemDetailsHostPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MonolithicItemDetailsHostPanel.MonolithicItemDetailsHostPanel_C.ExecuteUbergraph_MonolithicItemDetailsHostPanel
 // ()
@@ -50,5 +49,5 @@ void UMonolithicItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

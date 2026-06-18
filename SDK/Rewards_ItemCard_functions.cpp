@@ -14,8 +14,7 @@
 #include "Rewards_ItemCard_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.ExecuteUbergraph_Rewards_ItemCard
 // ()
@@ -142,14 +141,14 @@ void URewards_ItemCard_C::TickSlideAnimation()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PlaySlideAnimation
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        TargetAlignment                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAnchors                         TargetAnchors                                          (Parm, NoDestructor)
+// const struct FVector2D&                 TargetAlignment                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FAnchors&                  TargetAnchors                                          (Parm, NoDestructor)
 // float                                   TargetScale                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   TargetOffset                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   TargetAngle                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   StaggerDelay                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                        TargetTranslation                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 TargetTranslation                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewards_ItemCard_C::PlaySlideAnimation(const struct FVector2D& TargetAlignment, const struct FAnchors& TargetAnchors, float TargetScale, float TargetOffset, float TargetAngle, float Duration, float StaggerDelay, const struct FVector2D& TargetTranslation)
 {
@@ -270,7 +269,7 @@ void URewards_ItemCard_C::HandlePopInAnimationFinished()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetItemToRepresent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UFortItem*                        ItemToRepresent_0                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem**                       ItemToRepresent_0                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewards_ItemCard_C::GetItemToRepresent(class UFortItem** ItemToRepresent_0)
 {
@@ -469,7 +468,7 @@ void URewards_ItemCard_C::InitDropShadow()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetDropShadowDepth
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   DropShadowDepth                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  DropShadowDepth                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewards_ItemCard_C::GetDropShadowDepth(float* DropShadowDepth)
 {
@@ -576,5 +575,5 @@ void URewards_ItemCard_C::SetOutpostInventoryNotification(bool ShouldShow)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum EnumEventWorldItemDrop.EnumEventWorldItemDrop
 // NumValues: 0x0005
@@ -25,5 +24,4 @@ enum class EnumEventWorldItemDrop : uint8
 	EnumEventWorldItemDrop_MAX               = 4,
 };
 
-}
-
+SDK_NAMESPACE_END

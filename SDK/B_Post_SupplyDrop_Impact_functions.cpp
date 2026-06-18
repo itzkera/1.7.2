@@ -14,8 +14,7 @@
 #include "B_Post_SupplyDrop_Impact_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function B_Post_SupplyDrop_Impact.B_Post_SupplyDrop_Impact_C.ExecuteUbergraph_B_Post_SupplyDrop_Impact
 // (HasDefaults)
@@ -41,7 +40,7 @@ void AB_Post_SupplyDrop_Impact_C::ExecuteUbergraph_B_Post_SupplyDrop_Impact(int3
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   PostFX_BoxScaleDyn                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          PostFX_CamShakeLoc                                     (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   PostFX_CamShakeLoc                                     (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    PostFX_UseCamShake                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                                   PostFX_DeactivateDelay                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    PostFX_UseForceFeedback                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -106,5 +105,5 @@ void AB_Post_SupplyDrop_Impact_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

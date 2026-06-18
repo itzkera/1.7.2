@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookRecycleSlotResultsWidget.CollectionBookRecycleSlotResultsWidget_C
 // 0x0010 (0x0260 - 0x0250)
@@ -27,17 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookRecycleSlotResultsWidget_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookRecycleSlotResultsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookRecycleSlotResultsWidget_C")
 	}
 	static class UCollectionBookRecycleSlotResultsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookRecycleSlotResultsWidget_C>();
 	}
 };
-static_assert(alignof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000008, "Wrong alignment on UCollectionBookRecycleSlotResultsWidget_C");
-static_assert(sizeof(UCollectionBookRecycleSlotResultsWidget_C) == 0x000260, "Wrong size on UCollectionBookRecycleSlotResultsWidget_C");
-static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, DisplayNameWidget) == 0x000250, "Member 'UCollectionBookRecycleSlotResultsWidget_C::DisplayNameWidget' has a wrong offset!");
-static_assert(offsetof(UCollectionBookRecycleSlotResultsWidget_C, Image_2) == 0x000258, "Member 'UCollectionBookRecycleSlotResultsWidget_C::Image_2' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

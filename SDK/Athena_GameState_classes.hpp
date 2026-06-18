@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Athena_GameState.Athena_GameState_C
 // 0x0008 (0x14E8 - 0x14E0)
@@ -29,16 +28,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_GameState_C">();
+		BP_STATIC_CLASS_IMPL("Athena_GameState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_GameState_C")
 	}
 	static class AAthena_GameState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_GameState_C>();
 	}
 };
-static_assert(alignof(AAthena_GameState_C) == 0x000008, "Wrong alignment on AAthena_GameState_C");
-static_assert(sizeof(AAthena_GameState_C) == 0x0014E8, "Wrong size on AAthena_GameState_C");
-static_assert(offsetof(AAthena_GameState_C, DefaultSceneRoot) == 0x0014E0, "Member 'AAthena_GameState_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

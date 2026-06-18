@@ -13,8 +13,8 @@
 #include "GameplayAbilities_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function GAT_GenericActiveAbility.GAT_GenericActiveAbility_C.ExecuteUbergraph_GAT_GenericActiveAbility
 // 0x0130 (0x0130 - 0x0000)
@@ -32,16 +32,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0100(0x0020)()
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x0120(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility) == 0x000008, "Wrong alignment on GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility");
-static_assert(sizeof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility) == 0x000130, "Wrong size on GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, EntryPoint) == 0x000000, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, CallFunc_K2_CommitAbility_ReturnValue) == 0x000004, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, CallFunc_GetActorInfo_ReturnValue) == 0x000008, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000048, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, K2Node_MakeStruct_GameplayEventData) == 0x000058, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000100, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000120, "Member 'GAT_GenericActiveAbility_C_ExecuteUbergraph_GAT_GenericActiveAbility::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

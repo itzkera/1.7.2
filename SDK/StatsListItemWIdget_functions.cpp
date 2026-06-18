@@ -14,8 +14,7 @@
 #include "StatsListItemWIdget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StatsListItemWIdget.StatsListItemWIdget_C.ExecuteUbergraph_StatsListItemWIdget
 // (HasDefaults)
@@ -130,7 +129,7 @@ void UStatsListItemWIdget_C::Update()
 // Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateColors
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDisplayAttribute            CurrentAttribute                                       (Parm)
+// const struct FFortDisplayAttribute&     CurrentAttribute                                       (Parm)
 
 void UStatsListItemWIdget_C::UpdateColors(const struct FFortDisplayAttribute& CurrentAttribute)
 {
@@ -150,7 +149,7 @@ void UStatsListItemWIdget_C::UpdateColors(const struct FFortDisplayAttribute& Cu
 // Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateType
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDisplayAttribute            CurrentAttribute                                       (Parm)
+// const struct FFortDisplayAttribute&     CurrentAttribute                                       (Parm)
 
 void UStatsListItemWIdget_C::UpdateType(const struct FFortDisplayAttribute& CurrentAttribute)
 {
@@ -170,7 +169,7 @@ void UStatsListItemWIdget_C::UpdateType(const struct FFortDisplayAttribute& Curr
 // Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateValueText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDisplayAttribute            CurrentAttribute                                       (Parm)
+// const struct FFortDisplayAttribute&     CurrentAttribute                                       (Parm)
 
 void UStatsListItemWIdget_C::UpdateValueText(const struct FFortDisplayAttribute& CurrentAttribute)
 {
@@ -190,7 +189,7 @@ void UStatsListItemWIdget_C::UpdateValueText(const struct FFortDisplayAttribute&
 // Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateBasicPairLabel
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDisplayAttribute            CurrentAttribute                                       (Parm)
+// const struct FFortDisplayAttribute&     CurrentAttribute                                       (Parm)
 
 void UStatsListItemWIdget_C::UpdateBasicPairLabel(const struct FFortDisplayAttribute& CurrentAttribute)
 {
@@ -210,7 +209,7 @@ void UStatsListItemWIdget_C::UpdateBasicPairLabel(const struct FFortDisplayAttri
 // Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateBuffArrows
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortDisplayAttribute            CurrentAttribute                                       (Parm)
+// const struct FFortDisplayAttribute&     CurrentAttribute                                       (Parm)
 
 void UStatsListItemWIdget_C::UpdateBuffArrows(const struct FFortDisplayAttribute& CurrentAttribute)
 {
@@ -230,7 +229,7 @@ void UStatsListItemWIdget_C::UpdateBuffArrows(const struct FFortDisplayAttribute
 // Function StatsListItemWIdget.StatsListItemWIdget_C.SetStatIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      NewParam                                               (Parm)
+// const struct FSlateBrush&               NewParam                                               (Parm)
 
 void UStatsListItemWIdget_C::SetStatIcon(const struct FSlateBrush& NewParam)
 {
@@ -266,5 +265,5 @@ class UWidget* UStatsListItemWIdget_C::GetListItemTooltipWidget()
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

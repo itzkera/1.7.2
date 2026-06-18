@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C
 // 0x0040 (0x02A0 - 0x0260)
@@ -40,23 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementItemDetailsPanel-OverviewOnly_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementItemDetailsPanel-OverviewOnly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementItemDetailsPanel-OverviewOnly_C")
 	}
 	static class UItemManagementItemDetailsPanel_OverviewOnly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementItemDetailsPanel_OverviewOnly_C>();
 	}
 };
-static_assert(alignof(UItemManagementItemDetailsPanel_OverviewOnly_C) == 0x000008, "Wrong alignment on UItemManagementItemDetailsPanel_OverviewOnly_C");
-static_assert(sizeof(UItemManagementItemDetailsPanel_OverviewOnly_C) == 0x0002A0, "Wrong size on UItemManagementItemDetailsPanel_OverviewOnly_C");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, UberGraphFrame) == 0x000260, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, ItemDescription) == 0x000268, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::ItemDescription' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, ItemDisplayNameText) == 0x000270, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::ItemDisplayNameText' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, NoSelectionDetailsBox) == 0x000278, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::NoSelectionDetailsBox' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, NoSelectionText) == 0x000280, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::NoSelectionText' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, RootWidgetSwitcher) == 0x000288, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::RootWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, SelectedItemDetailsOverlay) == 0x000290, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::SelectedItemDetailsOverlay' has a wrong offset!");
-static_assert(offsetof(UItemManagementItemDetailsPanel_OverviewOnly_C, SelectionPromptText) == 0x000298, "Member 'UItemManagementItemDetailsPanel_OverviewOnly_C::SelectionPromptText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

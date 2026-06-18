@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaLobby.AthenaLobby_C
 // 0x00A8 (0x04D8 - 0x0430)
@@ -93,30 +92,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLobby_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLobby_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLobby_C")
 	}
 	static class UAthenaLobby_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLobby_C>();
 	}
 };
-static_assert(alignof(UAthenaLobby_C) == 0x000008, "Wrong alignment on UAthenaLobby_C");
-static_assert(sizeof(UAthenaLobby_C) == 0x0004D8, "Wrong size on UAthenaLobby_C");
-static_assert(offsetof(UAthenaLobby_C, UberGraphFrame) == 0x000430, "Member 'UAthenaLobby_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, AthenaNews) == 0x000438, "Member 'UAthenaLobby_C::AthenaNews' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, ButtonGamepadSelect) == 0x000440, "Member 'UAthenaLobby_C::ButtonGamepadSelect' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, Image_0) == 0x000448, "Member 'UAthenaLobby_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, Launch) == 0x000450, "Member 'UAthenaLobby_C::Launch' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, PlayerPanel) == 0x000458, "Member 'UAthenaLobby_C::PlayerPanel' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputCancel) == 0x000460, "Member 'UAthenaLobby_C::InputCancel' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, SwitcherDetailsActiveIndex) == 0x000470, "Member 'UAthenaLobby_C::SwitcherDetailsActiveIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, TeamMembersInfo) == 0x000478, "Member 'UAthenaLobby_C::TeamMembersInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, HoveredPlayerIndex) == 0x000488, "Member 'UAthenaLobby_C::HoveredPlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputScroll) == 0x000490, "Member 'UAthenaLobby_C::InputScroll' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, SelectedPlayerIndex) == 0x0004A0, "Member 'UAthenaLobby_C::SelectedPlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, NavigationOrderToPlayerIndex) == 0x0004A8, "Member 'UAthenaLobby_C::NavigationOrderToPlayerIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, PlaylistChange) == 0x0004B8, "Member 'UAthenaLobby_C::PlaylistChange' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, FillChange) == 0x0004C8, "Member 'UAthenaLobby_C::FillChange' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

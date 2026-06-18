@@ -16,8 +16,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PartyDisplayManagerBP.PartyDisplayManagerBP_C
 // 0x00C0 (0x04F0 - 0x0430)
@@ -86,42 +85,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyDisplayManagerBP_C">();
+		BP_STATIC_CLASS_IMPL("PartyDisplayManagerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyDisplayManagerBP_C")
 	}
 	static class APartyDisplayManagerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APartyDisplayManagerBP_C>();
 	}
 };
-static_assert(alignof(APartyDisplayManagerBP_C) == 0x000008, "Wrong alignment on APartyDisplayManagerBP_C");
-static_assert(sizeof(APartyDisplayManagerBP_C) == 0x0004F0, "Wrong size on APartyDisplayManagerBP_C");
-static_assert(offsetof(APartyDisplayManagerBP_C, UberGraphFrame) == 0x000430, "Member 'APartyDisplayManagerBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, SkeletalMesh) == 0x000438, "Member 'APartyDisplayManagerBP_C::SkeletalMesh' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, StaticMesh) == 0x000440, "Member 'APartyDisplayManagerBP_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScalePivot) == 0x000448, "Member 'APartyDisplayManagerBP_C::ScalePivot' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, PivotHolder) == 0x000450, "Member 'APartyDisplayManagerBP_C::PivotHolder' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, CelebratoryFX) == 0x000458, "Member 'APartyDisplayManagerBP_C::CelebratoryFX' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, DefaultSceneRoot) == 0x000460, "Member 'APartyDisplayManagerBP_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScaleAnimEvolve_Scaling_6D0D09564D54A0DEA88CCC96FA6653CC) == 0x000468, "Member 'APartyDisplayManagerBP_C::ScaleAnimEvolve_Scaling_6D0D09564D54A0DEA88CCC96FA6653CC' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScaleAnimEvolve__Direction_6D0D09564D54A0DEA88CCC96FA6653CC) == 0x00046C, "Member 'APartyDisplayManagerBP_C::ScaleAnimEvolve__Direction_6D0D09564D54A0DEA88CCC96FA6653CC' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScaleAnimEvolve) == 0x000470, "Member 'APartyDisplayManagerBP_C::ScaleAnimEvolve' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScaleAnimLevel_Scaling_CC68128E49202D0C982B7A945E41AF43) == 0x000478, "Member 'APartyDisplayManagerBP_C::ScaleAnimLevel_Scaling_CC68128E49202D0C982B7A945E41AF43' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScaleAnimLevel__Direction_CC68128E49202D0C982B7A945E41AF43) == 0x00047C, "Member 'APartyDisplayManagerBP_C::ScaleAnimLevel__Direction_CC68128E49202D0C982B7A945E41AF43' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ScaleAnimLevel) == 0x000480, "Member 'APartyDisplayManagerBP_C::ScaleAnimLevel' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, TimerHandle) == 0x000488, "Member 'APartyDisplayManagerBP_C::TimerHandle' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, Rotation) == 0x000490, "Member 'APartyDisplayManagerBP_C::Rotation' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, ItemToRepresent) == 0x000498, "Member 'APartyDisplayManagerBP_C::ItemToRepresent' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, PreviewRotation) == 0x0004A0, "Member 'APartyDisplayManagerBP_C::PreviewRotation' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, RotationAnimation) == 0x0004A8, "Member 'APartyDisplayManagerBP_C::RotationAnimation' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, LevelUpFX) == 0x0004B0, "Member 'APartyDisplayManagerBP_C::LevelUpFX' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, EvolveUpFX) == 0x0004B8, "Member 'APartyDisplayManagerBP_C::EvolveUpFX' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, FXTargetLocation) == 0x0004C0, "Member 'APartyDisplayManagerBP_C::FXTargetLocation' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, IsCharacter) == 0x0004CC, "Member 'APartyDisplayManagerBP_C::IsCharacter' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, IsEvolve) == 0x0004CD, "Member 'APartyDisplayManagerBP_C::IsEvolve' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, CharLevelUpFX) == 0x0004D0, "Member 'APartyDisplayManagerBP_C::CharLevelUpFX' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, CharEvolveUpFX) == 0x0004D8, "Member 'APartyDisplayManagerBP_C::CharEvolveUpFX' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, UIoverrideMID) == 0x0004E0, "Member 'APartyDisplayManagerBP_C::UIoverrideMID' has a wrong offset!");
-static_assert(offsetof(APartyDisplayManagerBP_C, HasResetVisuals) == 0x0004E8, "Member 'APartyDisplayManagerBP_C::HasResetVisuals' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

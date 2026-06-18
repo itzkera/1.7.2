@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Feedback_RateExperience.Feedback_RateExperience_C
 // 0x00D0 (0x04D8 - 0x0408)
@@ -71,35 +70,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Feedback_RateExperience_C">();
+		BP_STATIC_CLASS_IMPL("Feedback_RateExperience_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Feedback_RateExperience_C")
 	}
 	static class UFeedback_RateExperience_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFeedback_RateExperience_C>();
 	}
 };
-static_assert(alignof(UFeedback_RateExperience_C) == 0x000008, "Wrong alignment on UFeedback_RateExperience_C");
-static_assert(sizeof(UFeedback_RateExperience_C) == 0x0004D8, "Wrong size on UFeedback_RateExperience_C");
-static_assert(offsetof(UFeedback_RateExperience_C, UberGraphFrame) == 0x000410, "Member 'UFeedback_RateExperience_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, OneStar) == 0x000418, "Member 'UFeedback_RateExperience_C::OneStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, TwoStar) == 0x000420, "Member 'UFeedback_RateExperience_C::TwoStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, ThreeStar) == 0x000428, "Member 'UFeedback_RateExperience_C::ThreeStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, FourStar) == 0x000430, "Member 'UFeedback_RateExperience_C::FourStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, FiveStar) == 0x000438, "Member 'UFeedback_RateExperience_C::FiveStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, BodyEditable) == 0x000440, "Member 'UFeedback_RateExperience_C::BodyEditable' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, CancelButton) == 0x000448, "Member 'UFeedback_RateExperience_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, EntryVbox) == 0x000450, "Member 'UFeedback_RateExperience_C::EntryVbox' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, HiddenInitialStar) == 0x000458, "Member 'UFeedback_RateExperience_C::HiddenInitialStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, Image_LStick_Left) == 0x000460, "Member 'UFeedback_RateExperience_C::Image_LStick_Left' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, Image_LStick_Right) == 0x000468, "Member 'UFeedback_RateExperience_C::Image_LStick_Right' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, SendButton) == 0x000470, "Member 'UFeedback_RateExperience_C::SendButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, Title) == 0x000478, "Member 'UFeedback_RateExperience_C::Title' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, StarCount) == 0x000480, "Member 'UFeedback_RateExperience_C::StarCount' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, StarButtons) == 0x000488, "Member 'UFeedback_RateExperience_C::StarButtons' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, TooltipHeaders) == 0x000498, "Member 'UFeedback_RateExperience_C::TooltipHeaders' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, TooltipBodys) == 0x0004A8, "Member 'UFeedback_RateExperience_C::TooltipBodys' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, LastClickedStar) == 0x0004B8, "Member 'UFeedback_RateExperience_C::LastClickedStar' has a wrong offset!");
-static_assert(offsetof(UFeedback_RateExperience_C, FeedbackTitle) == 0x0004C0, "Member 'UFeedback_RateExperience_C::FeedbackTitle' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

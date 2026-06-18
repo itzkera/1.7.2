@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass DailyRewardsEpic.DailyRewardsEpic_C
 // 0x0050 (0x0298 - 0x0248)
@@ -40,23 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DailyRewardsEpic_C">();
+		BP_STATIC_CLASS_IMPL("DailyRewardsEpic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DailyRewardsEpic_C")
 	}
 	static class UDailyRewardsEpic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDailyRewardsEpic_C>();
 	}
 };
-static_assert(alignof(UDailyRewardsEpic_C) == 0x000008, "Wrong alignment on UDailyRewardsEpic_C");
-static_assert(sizeof(UDailyRewardsEpic_C) == 0x000298, "Wrong size on UDailyRewardsEpic_C");
-static_assert(offsetof(UDailyRewardsEpic_C, UberGraphFrame) == 0x000248, "Member 'UDailyRewardsEpic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, DayNumber) == 0x000250, "Member 'UDailyRewardsEpic_C::DayNumber' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, FortItemCard) == 0x000258, "Member 'UDailyRewardsEpic_C::FortItemCard' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, Image_Item_Flare) == 0x000260, "Member 'UDailyRewardsEpic_C::Image_Item_Flare' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, ItemBorder) == 0x000268, "Member 'UDailyRewardsEpic_C::ItemBorder' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, ScheduleText) == 0x000270, "Member 'UDailyRewardsEpic_C::ScheduleText' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, ScheduleName) == 0x000278, "Member 'UDailyRewardsEpic_C::ScheduleName' has a wrong offset!");
-static_assert(offsetof(UDailyRewardsEpic_C, ImageFlare_MID) == 0x000290, "Member 'UDailyRewardsEpic_C::ImageFlare_MID' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

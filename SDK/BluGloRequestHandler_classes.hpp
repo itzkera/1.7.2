@@ -16,8 +16,7 @@
 #include "AIModule_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BluGloRequestHandler.BluGloRequestHandler_C
 // 0x0048 (0x00C0 - 0x0078)
@@ -43,21 +42,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BluGloRequestHandler_C">();
+		BP_STATIC_CLASS_IMPL("BluGloRequestHandler_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BluGloRequestHandler_C")
 	}
 	static class UBluGloRequestHandler_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBluGloRequestHandler_C>();
 	}
 };
-static_assert(alignof(UBluGloRequestHandler_C) == 0x000008, "Wrong alignment on UBluGloRequestHandler_C");
-static_assert(sizeof(UBluGloRequestHandler_C) == 0x0000C0, "Wrong size on UBluGloRequestHandler_C");
-static_assert(offsetof(UBluGloRequestHandler_C, UberGraphFrame) == 0x000078, "Member 'UBluGloRequestHandler_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBluGloRequestHandler_C, OnBluGloQueryFinished) == 0x000080, "Member 'UBluGloRequestHandler_C::OnBluGloQueryFinished' has a wrong offset!");
-static_assert(offsetof(UBluGloRequestHandler_C, NumBluGloToSpawn) == 0x000090, "Member 'UBluGloRequestHandler_C::NumBluGloToSpawn' has a wrong offset!");
-static_assert(offsetof(UBluGloRequestHandler_C, ActorToSpawnFrom) == 0x000098, "Member 'UBluGloRequestHandler_C::ActorToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(UBluGloRequestHandler_C, LocationToSpawnFrom) == 0x0000A0, "Member 'UBluGloRequestHandler_C::LocationToSpawnFrom' has a wrong offset!");
-static_assert(offsetof(UBluGloRequestHandler_C, LocationsToSpawnTo) == 0x0000B0, "Member 'UBluGloRequestHandler_C::LocationsToSpawnTo' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

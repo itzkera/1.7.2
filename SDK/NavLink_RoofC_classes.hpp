@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass NavLink_RoofC.NavLink_RoofC_C
 // 0x0000 (0x0080 - 0x0080)
@@ -23,15 +22,16 @@ class UNavLink_RoofC_C final : public UFortNavLinkDefinition
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NavLink_RoofC_C">();
+		BP_STATIC_CLASS_IMPL("NavLink_RoofC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLink_RoofC_C")
 	}
 	static class UNavLink_RoofC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLink_RoofC_C>();
 	}
 };
-static_assert(alignof(UNavLink_RoofC_C) == 0x000008, "Wrong alignment on UNavLink_RoofC_C");
-static_assert(sizeof(UNavLink_RoofC_C) == 0x000080, "Wrong size on UNavLink_RoofC_C");
 
-}
-
+SDK_NAMESPACE_END

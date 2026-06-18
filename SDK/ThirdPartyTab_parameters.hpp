@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ThirdPartyTab.ThirdPartyTab_C.Activate Scroll Box
 // 0x0018 (0x0018 - 0x0000)
@@ -24,11 +24,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThirdPartyTab_C_Activate_Scroll_Box) == 0x000008, "Wrong alignment on ThirdPartyTab_C_Activate_Scroll_Box");
-static_assert(sizeof(ThirdPartyTab_C_Activate_Scroll_Box) == 0x000018, "Wrong size on ThirdPartyTab_C_Activate_Scroll_Box");
-static_assert(offsetof(ThirdPartyTab_C_Activate_Scroll_Box, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ThirdPartyTab_C_Activate_Scroll_Box::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThirdPartyTab_C_Activate_Scroll_Box, CallFunc_IsMobileApp_ReturnValue) == 0x000008, "Member 'ThirdPartyTab_C_Activate_Scroll_Box::CallFunc_IsMobileApp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThirdPartyTab_C_Activate_Scroll_Box, CallFunc_GetUINavigationManager_ReturnValue) == 0x000010, "Member 'ThirdPartyTab_C_Activate_Scroll_Box::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "LegacyButtonStyle_Default_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass LegacyButtonStyle-Emphasis.LegacyButtonStyle-Emphasis_C
 // 0x0000 (0x1C08 - 0x1C08)
@@ -23,15 +22,16 @@ class ULegacyButtonStyle_Emphasis_C final : public ULegacyButtonStyle_Default_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyButtonStyle-Emphasis_C">();
+		BP_STATIC_CLASS_IMPL("LegacyButtonStyle-Emphasis_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyButtonStyle-Emphasis_C")
 	}
 	static class ULegacyButtonStyle_Emphasis_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyButtonStyle_Emphasis_C>();
 	}
 };
-static_assert(alignof(ULegacyButtonStyle_Emphasis_C) == 0x000008, "Wrong alignment on ULegacyButtonStyle_Emphasis_C");
-static_assert(sizeof(ULegacyButtonStyle_Emphasis_C) == 0x001C08, "Wrong size on ULegacyButtonStyle_Emphasis_C");
 
-}
-
+SDK_NAMESPACE_END

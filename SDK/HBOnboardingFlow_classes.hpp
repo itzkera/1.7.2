@@ -18,8 +18,7 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass HBOnboardingFlow.HBOnboardingFlow_C
 // 0x0080 (0x0408 - 0x0388)
@@ -86,28 +85,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HBOnboardingFlow_C">();
+		BP_STATIC_CLASS_IMPL("HBOnboardingFlow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HBOnboardingFlow_C")
 	}
 	static class AHBOnboardingFlow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHBOnboardingFlow_C>();
 	}
 };
-static_assert(alignof(AHBOnboardingFlow_C) == 0x000008, "Wrong alignment on AHBOnboardingFlow_C");
-static_assert(sizeof(AHBOnboardingFlow_C) == 0x000408, "Wrong size on AHBOnboardingFlow_C");
-static_assert(offsetof(AHBOnboardingFlow_C, UberGraphFrame) == 0x000388, "Member 'AHBOnboardingFlow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, DefaultSceneRoot) == 0x000390, "Member 'AHBOnboardingFlow_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, QuestManager) == 0x000398, "Member 'AHBOnboardingFlow_C::QuestManager' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, OnboardingQuest) == 0x0003A0, "Member 'AHBOnboardingFlow_C::OnboardingQuest' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, OnboardingAfterOutpostQuest) == 0x0003A8, "Member 'AHBOnboardingFlow_C::OnboardingAfterOutpostQuest' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, CompleteZoneObjective) == 0x0003B0, "Member 'AHBOnboardingFlow_C::CompleteZoneObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, NameHomebaseObjective) == 0x0003C0, "Member 'AHBOnboardingFlow_C::NameHomebaseObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, OnboardingQuestItem) == 0x0003D0, "Member 'AHBOnboardingFlow_C::OnboardingQuestItem' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, NotificationPadding) == 0x0003D8, "Member 'AHBOnboardingFlow_C::NotificationPadding' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PlaySatelliteCineObjective) == 0x0003E8, "Member 'AHBOnboardingFlow_C::PlaySatelliteCineObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, ShowNewsToken) == 0x0003F8, "Member 'AHBOnboardingFlow_C::ShowNewsToken' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, ClientQuestLoginRetryCount) == 0x000400, "Member 'AHBOnboardingFlow_C::ClientQuestLoginRetryCount' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, ClientQuestLoginNumRetries) == 0x000404, "Member 'AHBOnboardingFlow_C::ClientQuestLoginNumRetries' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

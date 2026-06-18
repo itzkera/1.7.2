@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaStatsTab.AthenaStatsTab_C
 // 0x00D0 (0x0540 - 0x0470)
@@ -54,32 +53,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStatsTab_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStatsTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStatsTab_C")
 	}
 	static class UAthenaStatsTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStatsTab_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsTab_C) == 0x000008, "Wrong alignment on UAthenaStatsTab_C");
-static_assert(sizeof(UAthenaStatsTab_C) == 0x000540, "Wrong size on UAthenaStatsTab_C");
-static_assert(offsetof(UAthenaStatsTab_C, UberGraphFrame) == 0x000470, "Member 'UAthenaStatsTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, ComingSoonPlaceholderWidget) == 0x000478, "Member 'UAthenaStatsTab_C::ComingSoonPlaceholderWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, CommonWidgetSwitcher_0) == 0x000480, "Member 'UAthenaStatsTab_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, HiddenSwitcher) == 0x000488, "Member 'UAthenaStatsTab_C::HiddenSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, KillsRow) == 0x000490, "Member 'UAthenaStatsTab_C::KillsRow' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, LastUpdatedTime) == 0x000498, "Member 'UAthenaStatsTab_C::LastUpdatedTime' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, LastUpdatedTimeBox) == 0x0004A0, "Member 'UAthenaStatsTab_C::LastUpdatedTimeBox' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, MatchesPlayedRow) == 0x0004A8, "Member 'UAthenaStatsTab_C::MatchesPlayedRow' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, OverlayMain) == 0x0004B0, "Member 'UAthenaStatsTab_C::OverlayMain' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, ProgressSpinner) == 0x0004B8, "Member 'UAthenaStatsTab_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, SecondTierTile) == 0x0004C0, "Member 'UAthenaStatsTab_C::SecondTierTile' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, StatsHeader) == 0x0004C8, "Member 'UAthenaStatsTab_C::StatsHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, ThirdTierTile) == 0x0004D0, "Member 'UAthenaStatsTab_C::ThirdTierTile' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, TimePlayedRow) == 0x0004D8, "Member 'UAthenaStatsTab_C::TimePlayedRow' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, UpdatingBox) == 0x0004E0, "Member 'UAthenaStatsTab_C::UpdatingBox' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, WinsTile) == 0x0004E8, "Member 'UAthenaStatsTab_C::WinsTile' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, TagToDisplayName) == 0x0004F0, "Member 'UAthenaStatsTab_C::TagToDisplayName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

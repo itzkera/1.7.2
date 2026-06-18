@@ -13,8 +13,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass B_PlasmaCameraShake.B_PlasmaCameraShake_C
 // 0x0000 (0x0160 - 0x0160)
@@ -23,15 +22,16 @@ class UB_PlasmaCameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_PlasmaCameraShake_C">();
+		BP_STATIC_CLASS_IMPL("B_PlasmaCameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_PlasmaCameraShake_C")
 	}
 	static class UB_PlasmaCameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UB_PlasmaCameraShake_C>();
 	}
 };
-static_assert(alignof(UB_PlasmaCameraShake_C) == 0x000008, "Wrong alignment on UB_PlasmaCameraShake_C");
-static_assert(sizeof(UB_PlasmaCameraShake_C) == 0x000160, "Wrong size on UB_PlasmaCameraShake_C");
 
-}
-
+SDK_NAMESPACE_END

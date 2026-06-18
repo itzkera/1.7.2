@@ -14,8 +14,7 @@
 #include "MissionTrackerEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MissionTrackerEntry.MissionTrackerEntry_C.ExecuteUbergraph_MissionTrackerEntry
 // (HasDefaults)
@@ -64,5 +63,5 @@ void UMissionTrackerEntry_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

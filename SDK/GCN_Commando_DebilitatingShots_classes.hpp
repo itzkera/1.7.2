@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_Commando_DebilitatingShots.GCN_Commando_DebilitatingShots_C
 // 0x0000 (0x0468 - 0x0468)
@@ -23,15 +22,16 @@ class AGCN_Commando_DebilitatingShots_C final : public AFortGameplayCueNotify_Lo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Commando_DebilitatingShots_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Commando_DebilitatingShots_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Commando_DebilitatingShots_C")
 	}
 	static class AGCN_Commando_DebilitatingShots_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Commando_DebilitatingShots_C>();
 	}
 };
-static_assert(alignof(AGCN_Commando_DebilitatingShots_C) == 0x000008, "Wrong alignment on AGCN_Commando_DebilitatingShots_C");
-static_assert(sizeof(AGCN_Commando_DebilitatingShots_C) == 0x000468, "Wrong size on AGCN_Commando_DebilitatingShots_C");
 
-}
-
+SDK_NAMESPACE_END

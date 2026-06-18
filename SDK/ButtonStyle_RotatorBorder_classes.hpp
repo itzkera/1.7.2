@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ButtonStyle-RotatorBorder.ButtonStyle-RotatorBorder_C
 // 0x0000 (0x0530 - 0x0530)
@@ -23,15 +22,16 @@ class UButtonStyle_RotatorBorder_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-RotatorBorder_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-RotatorBorder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-RotatorBorder_C")
 	}
 	static class UButtonStyle_RotatorBorder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_RotatorBorder_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_RotatorBorder_C) == 0x000008, "Wrong alignment on UButtonStyle_RotatorBorder_C");
-static_assert(sizeof(UButtonStyle_RotatorBorder_C) == 0x000530, "Wrong size on UButtonStyle_RotatorBorder_C");
 
-}
-
+SDK_NAMESPACE_END

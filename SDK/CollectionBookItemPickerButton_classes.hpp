@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass CollectionBookItemPickerButton.CollectionBookItemPickerButton_C
 // 0x0008 (0x08D8 - 0x08D0)
@@ -26,16 +25,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CollectionBookItemPickerButton_C">();
+		BP_STATIC_CLASS_IMPL("CollectionBookItemPickerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CollectionBookItemPickerButton_C")
 	}
 	static class UCollectionBookItemPickerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCollectionBookItemPickerButton_C>();
 	}
 };
-static_assert(alignof(UCollectionBookItemPickerButton_C) == 0x000008, "Wrong alignment on UCollectionBookItemPickerButton_C");
-static_assert(sizeof(UCollectionBookItemPickerButton_C) == 0x0008D8, "Wrong size on UCollectionBookItemPickerButton_C");
-static_assert(offsetof(UCollectionBookItemPickerButton_C, RootWidgetSwitcher) == 0x0008D0, "Member 'UCollectionBookItemPickerButton_C::RootWidgetSwitcher' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

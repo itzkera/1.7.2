@@ -14,8 +14,7 @@
 #include "TooltipDurabilityMeter_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TooltipDurabilityMeter.TooltipDurabilityMeter_C.ExecuteUbergraph_TooltipDurabilityMeter
 // ()
@@ -55,7 +54,7 @@ void UTooltipDurabilityMeter_C::Construct()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                                   Normalized_0                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortDisplayAttribute            Display_Attribute                                      (Parm)
+// const struct FFortDisplayAttribute&     Display_Attribute                                      (Parm)
 
 void UTooltipDurabilityMeter_C::Draw(float Normalized_0, const struct FFortDisplayAttribute& Display_Attribute)
 {
@@ -72,5 +71,5 @@ void UTooltipDurabilityMeter_C::Draw(float Normalized_0, const struct FFortDispl
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegalInfo.LegalInfo_C
 // 0x0040 (0x0448 - 0x0408)
@@ -42,22 +41,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegalInfo_C">();
+		BP_STATIC_CLASS_IMPL("LegalInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegalInfo_C")
 	}
 	static class ULegalInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegalInfo_C>();
 	}
 };
-static_assert(alignof(ULegalInfo_C) == 0x000008, "Wrong alignment on ULegalInfo_C");
-static_assert(sizeof(ULegalInfo_C) == 0x000448, "Wrong size on ULegalInfo_C");
-static_assert(offsetof(ULegalInfo_C, UberGraphFrame) == 0x000410, "Member 'ULegalInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegalInfo_C, CloseButton) == 0x000418, "Member 'ULegalInfo_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(ULegalInfo_C, CommonWidgetSwitcher_0) == 0x000420, "Member 'ULegalInfo_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(ULegalInfo_C, LegalOptions) == 0x000428, "Member 'ULegalInfo_C::LegalOptions' has a wrong offset!");
-static_assert(offsetof(ULegalInfo_C, Lightbox) == 0x000430, "Member 'ULegalInfo_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(ULegalInfo_C, SizeBox_1) == 0x000438, "Member 'ULegalInfo_C::SizeBox_1' has a wrong offset!");
-static_assert(offsetof(ULegalInfo_C, Title) == 0x000440, "Member 'ULegalInfo_C::Title' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

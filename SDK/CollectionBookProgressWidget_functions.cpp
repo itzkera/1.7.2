@@ -14,8 +14,7 @@
 #include "CollectionBookProgressWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CollectionBookProgressWidget.CollectionBookProgressWidget_C.ExecuteUbergraph_CollectionBookProgressWidget
 // ()
@@ -76,5 +75,5 @@ void UCollectionBookProgressWidget_C::OnCollectionBookLevelProgressionChanged(fl
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

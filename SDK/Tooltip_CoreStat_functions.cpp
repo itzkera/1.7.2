@@ -14,8 +14,7 @@
 #include "Tooltip_CoreStat_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function Tooltip-CoreStat.Tooltip-CoreStat_C.ExecuteUbergraph_Tooltip-CoreStat
 // ()
@@ -54,7 +53,7 @@ void UTooltip_CoreStat_C::Construct()
 // Function Tooltip-CoreStat.Tooltip-CoreStat_C.Update
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FHeroCoreStat                    Data_0                                                 (Parm, HasGetValueTypeHash)
+// const struct FHeroCoreStat&             Data_0                                                 (Parm, HasGetValueTypeHash)
 // float                                   Value_0                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UTooltip_CoreStat_C::Update(const struct FHeroCoreStat& Data_0, float Value_0)
@@ -72,5 +71,5 @@ void UTooltip_CoreStat_C::Update(const struct FHeroCoreStat& Data_0, float Value
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

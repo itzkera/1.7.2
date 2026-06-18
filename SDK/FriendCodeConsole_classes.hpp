@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FriendCodeConsole.FriendCodeConsole_C
 // 0x0038 (0x08D8 - 0x08A0)
@@ -37,19 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FriendCodeConsole_C">();
+		BP_STATIC_CLASS_IMPL("FriendCodeConsole_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FriendCodeConsole_C")
 	}
 	static class UFriendCodeConsole_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriendCodeConsole_C>();
 	}
 };
-static_assert(alignof(UFriendCodeConsole_C) == 0x000008, "Wrong alignment on UFriendCodeConsole_C");
-static_assert(sizeof(UFriendCodeConsole_C) == 0x0008D8, "Wrong size on UFriendCodeConsole_C");
-static_assert(offsetof(UFriendCodeConsole_C, UberGraphFrame) == 0x0008A0, "Member 'UFriendCodeConsole_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFriendCodeConsole_C, CodeDetailsText) == 0x0008A8, "Member 'UFriendCodeConsole_C::CodeDetailsText' has a wrong offset!");
-static_assert(offsetof(UFriendCodeConsole_C, CodeDisplayText) == 0x0008B0, "Member 'UFriendCodeConsole_C::CodeDisplayText' has a wrong offset!");
-static_assert(offsetof(UFriendCodeConsole_C, FriendCode) == 0x0008B8, "Member 'UFriendCodeConsole_C::FriendCode' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

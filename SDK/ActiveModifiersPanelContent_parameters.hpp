@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.ExecuteUbergraph_ActiveModifiersPanelContent
 // 0x0004 (0x0004 - 0x0000)
@@ -21,20 +21,14 @@ struct ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelConten
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent) == 0x000004, "Wrong alignment on ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent");
-static_assert(sizeof(ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent) == 0x000004, "Wrong size on ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent");
-static_assert(offsetof(ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent, EntryPoint) == 0x000000, "Member 'ActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent::EntryPoint' has a wrong offset!");
 
 // Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.Init
 // 0x0010 (0x0010 - 0x0000)
 struct ActiveModifiersPanelContent_C_Init final
 {
 public:
-	TArray<class UFortGameplayModifierItemDefinition*> inModifiers;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UFortGameplayModifierItemDefinition*> inModifiers;                                  // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ActiveModifiersPanelContent_C_Init) == 0x000008, "Wrong alignment on ActiveModifiersPanelContent_C_Init");
-static_assert(sizeof(ActiveModifiersPanelContent_C_Init) == 0x000010, "Wrong size on ActiveModifiersPanelContent_C_Init");
-static_assert(offsetof(ActiveModifiersPanelContent_C_Init, inModifiers) == 0x000000, "Member 'ActiveModifiersPanelContent_C_Init::inModifiers' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

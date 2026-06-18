@@ -15,8 +15,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AbilitiesPage.AbilitiesPage_C
 // 0x0098 (0x0478 - 0x03E0)
@@ -60,34 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AbilitiesPage_C">();
+		BP_STATIC_CLASS_IMPL("AbilitiesPage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilitiesPage_C")
 	}
 	static class UAbilitiesPage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilitiesPage_C>();
 	}
 };
-static_assert(alignof(UAbilitiesPage_C) == 0x000008, "Wrong alignment on UAbilitiesPage_C");
-static_assert(sizeof(UAbilitiesPage_C) == 0x000478, "Wrong size on UAbilitiesPage_C");
-static_assert(offsetof(UAbilitiesPage_C, UberGraphFrame) == 0x0003E0, "Member 'UAbilitiesPage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilitiesBox) == 0x0003E8, "Member 'UAbilitiesPage_C::AbilitiesBox' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilityTilePrimary) == 0x0003F0, "Member 'UAbilitiesPage_C::AbilityTilePrimary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilityTileSecondary) == 0x0003F8, "Member 'UAbilitiesPage_C::AbilityTileSecondary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, AbilityTileTertiary) == 0x000400, "Member 'UAbilitiesPage_C::AbilityTileTertiary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, CommonTextAbilityDescription) == 0x000408, "Member 'UAbilitiesPage_C::CommonTextAbilityDescription' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, CommonTextAbilityName) == 0x000410, "Member 'UAbilitiesPage_C::CommonTextAbilityName' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, FortTierIndicatorUnlockTier) == 0x000418, "Member 'UAbilitiesPage_C::FortTierIndicatorUnlockTier' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, GadgetsBox) == 0x000420, "Member 'UAbilitiesPage_C::GadgetsBox' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, GadgetTilePrimary) == 0x000428, "Member 'UAbilitiesPage_C::GadgetTilePrimary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, GadgetTileSecondary) == 0x000430, "Member 'UAbilitiesPage_C::GadgetTileSecondary' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, MovieWidget) == 0x000438, "Member 'UAbilitiesPage_C::MovieWidget' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, SafeZone_0) == 0x000440, "Member 'UAbilitiesPage_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, SizeBoxMovie) == 0x000448, "Member 'UAbilitiesPage_C::SizeBoxMovie' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, VerticalBoxGadgetsList) == 0x000450, "Member 'UAbilitiesPage_C::VerticalBoxGadgetsList' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, WidgetSwitcherAbilityDescription) == 0x000458, "Member 'UAbilitiesPage_C::WidgetSwitcherAbilityDescription' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, ButtonGroup) == 0x000460, "Member 'UAbilitiesPage_C::ButtonGroup' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, SelectedAbilityButton) == 0x000468, "Member 'UAbilitiesPage_C::SelectedAbilityButton' has a wrong offset!");
-static_assert(offsetof(UAbilitiesPage_C, VideoMediaSource) == 0x000470, "Member 'UAbilitiesPage_C::VideoMediaSource' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

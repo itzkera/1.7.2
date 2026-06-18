@@ -14,8 +14,7 @@
 #include "SubtitlesWidgets_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SubtitlesWidgets.FortMediaSubtitlesPlayer.BindToMediaPlayer
 // (Final, Native, Public, BlueprintCallable)
@@ -33,7 +32,12 @@ void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPla
 
 	Parms.InMediaPlayer = InMediaPlayer;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -47,7 +51,12 @@ void UFortMediaSubtitlesPlayer::Play()
 	if (Func == nullptr)
 		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Play");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -67,7 +76,12 @@ void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 
 	Parms.Subtitles = Subtitles;
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -81,7 +95,12 @@ void UFortMediaSubtitlesPlayer::Stop()
 	if (Func == nullptr)
 		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Stop");
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -99,10 +118,15 @@ bool USubtitleDisplay::HasSubtitles() const
 
 	Params::SubtitleDisplay_HasSubtitles Parms{};
 
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
 	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

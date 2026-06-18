@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BP_FortExpeditionOverviewWidget.BP_FortExpeditionOverviewWidget_C
 // 0x00A8 (0x0308 - 0x0260)
@@ -37,7 +36,7 @@ public:
 	struct FDataTableRowHandle                    SortInputAction;                                   // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UBP_FortExpeditionMasterWidget_C*       ParentWidget;                                      // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CurrentTabId;                                      // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UBP_FortExpeditionIconTabButton_C*> TabButtons;                                        // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<class UBP_FortExpeditionIconTabButton_C*> TabButtons;                                     // 0x02F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          bIgnoreBuildExpeditionAction;                      // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -73,30 +72,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortExpeditionOverviewWidget_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortExpeditionOverviewWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortExpeditionOverviewWidget_C")
 	}
 	static class UBP_FortExpeditionOverviewWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_FortExpeditionOverviewWidget_C>();
 	}
 };
-static_assert(alignof(UBP_FortExpeditionOverviewWidget_C) == 0x000008, "Wrong alignment on UBP_FortExpeditionOverviewWidget_C");
-static_assert(sizeof(UBP_FortExpeditionOverviewWidget_C) == 0x000308, "Wrong size on UBP_FortExpeditionOverviewWidget_C");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, UberGraphFrame) == 0x000260, "Member 'UBP_FortExpeditionOverviewWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, BP_FortExpeditionDetailsWidget) == 0x000268, "Member 'UBP_FortExpeditionOverviewWidget_C::BP_FortExpeditionDetailsWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, CommonWidgetSwitcher_0) == 0x000270, "Member 'UBP_FortExpeditionOverviewWidget_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, NoExpeditionsText) == 0x000278, "Member 'UBP_FortExpeditionOverviewWidget_C::NoExpeditionsText' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, SafeZone_0) == 0x000280, "Member 'UBP_FortExpeditionOverviewWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, SelectedTabName) == 0x000288, "Member 'UBP_FortExpeditionOverviewWidget_C::SelectedTabName' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, OnCollectCompletedExpedition) == 0x000290, "Member 'UBP_FortExpeditionOverviewWidget_C::OnCollectCompletedExpedition' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, BuildExpeditionAction) == 0x0002A0, "Member 'UBP_FortExpeditionOverviewWidget_C::BuildExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, AbandonExpeditionAction) == 0x0002B0, "Member 'UBP_FortExpeditionOverviewWidget_C::AbandonExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, CollectExpeditionAction) == 0x0002C0, "Member 'UBP_FortExpeditionOverviewWidget_C::CollectExpeditionAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, SortInputAction) == 0x0002D0, "Member 'UBP_FortExpeditionOverviewWidget_C::SortInputAction' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, ParentWidget) == 0x0002E0, "Member 'UBP_FortExpeditionOverviewWidget_C::ParentWidget' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, CurrentTabId) == 0x0002E8, "Member 'UBP_FortExpeditionOverviewWidget_C::CurrentTabId' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, TabButtons) == 0x0002F0, "Member 'UBP_FortExpeditionOverviewWidget_C::TabButtons' has a wrong offset!");
-static_assert(offsetof(UBP_FortExpeditionOverviewWidget_C, bIgnoreBuildExpeditionAction) == 0x000300, "Member 'UBP_FortExpeditionOverviewWidget_C::bIgnoreBuildExpeditionAction' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

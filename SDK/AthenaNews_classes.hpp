@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaNews.AthenaNews_C
 // 0x0028 (0x0260 - 0x0238)
@@ -38,20 +37,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaNews_C">();
+		BP_STATIC_CLASS_IMPL("AthenaNews_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaNews_C")
 	}
 	static class UAthenaNews_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaNews_C>();
 	}
 };
-static_assert(alignof(UAthenaNews_C) == 0x000008, "Wrong alignment on UAthenaNews_C");
-static_assert(sizeof(UAthenaNews_C) == 0x000260, "Wrong size on UAthenaNews_C");
-static_assert(offsetof(UAthenaNews_C, UberGraphFrame) == 0x000238, "Member 'UAthenaNews_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, GeneralNews) == 0x000240, "Member 'UAthenaNews_C::GeneralNews' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, NewsHeader) == 0x000248, "Member 'UAthenaNews_C::NewsHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, PlatformNews) == 0x000250, "Member 'UAthenaNews_C::PlatformNews' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, RegionNews) == 0x000258, "Member 'UAthenaNews_C::RegionNews' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

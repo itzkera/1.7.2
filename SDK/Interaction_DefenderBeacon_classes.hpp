@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Interaction_DefenderBeacon.Interaction_DefenderBeacon_C
 // 0x00C8 (0x0308 - 0x0240)
@@ -60,40 +59,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Interaction_DefenderBeacon_C">();
+		BP_STATIC_CLASS_IMPL("Interaction_DefenderBeacon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Interaction_DefenderBeacon_C")
 	}
 	static class UInteraction_DefenderBeacon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInteraction_DefenderBeacon_C>();
 	}
 };
-static_assert(alignof(UInteraction_DefenderBeacon_C) == 0x000008, "Wrong alignment on UInteraction_DefenderBeacon_C");
-static_assert(sizeof(UInteraction_DefenderBeacon_C) == 0x000308, "Wrong size on UInteraction_DefenderBeacon_C");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, UberGraphFrame) == 0x000240, "Member 'UInteraction_DefenderBeacon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, AmmoItemCard) == 0x000248, "Member 'UInteraction_DefenderBeacon_C::AmmoItemCard' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, AmmoSelection) == 0x000250, "Member 'UInteraction_DefenderBeacon_C::AmmoSelection' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, AmmoSlot) == 0x000258, "Member 'UInteraction_DefenderBeacon_C::AmmoSlot' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, AmmoSlotLocked) == 0x000260, "Member 'UInteraction_DefenderBeacon_C::AmmoSlotLocked' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, DefenderItemCard) == 0x000268, "Member 'UInteraction_DefenderBeacon_C::DefenderItemCard' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, DefenderSelection) == 0x000270, "Member 'UInteraction_DefenderBeacon_C::DefenderSelection' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, DefenderSlotEmpty) == 0x000278, "Member 'UInteraction_DefenderBeacon_C::DefenderSlotEmpty' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, ErrorTextBlock) == 0x000280, "Member 'UInteraction_DefenderBeacon_C::ErrorTextBlock' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, IconWeaponAssault) == 0x000288, "Member 'UInteraction_DefenderBeacon_C::IconWeaponAssault' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, IconWeaponMelee) == 0x000290, "Member 'UInteraction_DefenderBeacon_C::IconWeaponMelee' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, IconWeaponPistol) == 0x000298, "Member 'UInteraction_DefenderBeacon_C::IconWeaponPistol' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, IconWeaponShotgun) == 0x0002A0, "Member 'UInteraction_DefenderBeacon_C::IconWeaponShotgun' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, IconWeaponSniper) == 0x0002A8, "Member 'UInteraction_DefenderBeacon_C::IconWeaponSniper' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, ImageInteraction) == 0x0002B0, "Member 'UInteraction_DefenderBeacon_C::ImageInteraction' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, InteractBox) == 0x0002B8, "Member 'UInteraction_DefenderBeacon_C::InteractBox' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, InteractErrorBox) == 0x0002C0, "Member 'UInteraction_DefenderBeacon_C::InteractErrorBox' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, ItemHBox) == 0x0002C8, "Member 'UInteraction_DefenderBeacon_C::ItemHBox' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, WeaponItemCard) == 0x0002D0, "Member 'UInteraction_DefenderBeacon_C::WeaponItemCard' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, WeaponSelection) == 0x0002D8, "Member 'UInteraction_DefenderBeacon_C::WeaponSelection' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, WeaponSlotEmpty) == 0x0002E0, "Member 'UInteraction_DefenderBeacon_C::WeaponSlotEmpty' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, WeaponSlotLocked) == 0x0002E8, "Member 'UInteraction_DefenderBeacon_C::WeaponSlotLocked' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, OurDefenderTrap) == 0x0002F0, "Member 'UInteraction_DefenderBeacon_C::OurDefenderTrap' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, DefenderItem) == 0x0002F8, "Member 'UInteraction_DefenderBeacon_C::DefenderItem' has a wrong offset!");
-static_assert(offsetof(UInteraction_DefenderBeacon_C, DefenderPawn) == 0x000300, "Member 'UInteraction_DefenderBeacon_C::DefenderPawn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ItemDetailsHeaderTagListText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.ExecuteUbergraph_ItemDetailsHeaderTagListText
 // (HasDefaults)
@@ -82,8 +81,8 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.FormatItemDisplayTags
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// TArray<class FText>                     TagTexts                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// class FText                             FormatedText                                           (Parm, OutParm)
+// TArray<class FText>&                    TagTexts                                               (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class FText*                            FormatedText                                           (Parm, OutParm)
 
 void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<class FText>& TagTexts, class FText* FormatedText)
 {
@@ -104,5 +103,5 @@ void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<class FText>&
 		*FormatedText = std::move(Parms.FormatedText);
 }
 
-}
 
+SDK_NAMESPACE_END

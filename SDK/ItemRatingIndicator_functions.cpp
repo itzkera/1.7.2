@@ -14,8 +14,7 @@
 #include "ItemRatingIndicator_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemRatingIndicator.ItemRatingIndicator_C.ExecuteUbergraph_ItemRatingIndicator
 // (HasDefaults)
@@ -50,5 +49,5 @@ void UItemRatingIndicator_C::HandleViewModelChanged()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

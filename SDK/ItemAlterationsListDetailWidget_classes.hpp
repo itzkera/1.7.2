@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C
 // 0x0010 (0x0280 - 0x0270)
@@ -35,17 +34,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemAlterationsListDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemAlterationsListDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemAlterationsListDetailWidget_C")
 	}
 	static class UItemAlterationsListDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemAlterationsListDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemAlterationsListDetailWidget_C) == 0x000008, "Wrong alignment on UItemAlterationsListDetailWidget_C");
-static_assert(sizeof(UItemAlterationsListDetailWidget_C) == 0x000280, "Wrong size on UItemAlterationsListDetailWidget_C");
-static_assert(offsetof(UItemAlterationsListDetailWidget_C, UberGraphFrame) == 0x000270, "Member 'UItemAlterationsListDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemAlterationsListDetailWidget_C, AlterationsWidget) == 0x000278, "Member 'UItemAlterationsListDetailWidget_C::AlterationsWidget' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

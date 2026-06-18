@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass BasicGradientFill.BasicGradientFill_C
 // 0x0040 (0x0280 - 0x0240)
@@ -39,21 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BasicGradientFill_C">();
+		BP_STATIC_CLASS_IMPL("BasicGradientFill_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BasicGradientFill_C")
 	}
 	static class UBasicGradientFill_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBasicGradientFill_C>();
 	}
 };
-static_assert(alignof(UBasicGradientFill_C) == 0x000008, "Wrong alignment on UBasicGradientFill_C");
-static_assert(sizeof(UBasicGradientFill_C) == 0x000280, "Wrong size on UBasicGradientFill_C");
-static_assert(offsetof(UBasicGradientFill_C, UberGraphFrame) == 0x000240, "Member 'UBasicGradientFill_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, ImageFill) == 0x000248, "Member 'UBasicGradientFill_C::ImageFill' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Color_1) == 0x000250, "Member 'UBasicGradientFill_C::Color_1' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Color_2) == 0x000260, "Member 'UBasicGradientFill_C::Color_2' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Brush_Size) == 0x000270, "Member 'UBasicGradientFill_C::Brush_Size' has a wrong offset!");
-static_assert(offsetof(UBasicGradientFill_C, Rotation) == 0x000278, "Member 'UBasicGradientFill_C::Rotation' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

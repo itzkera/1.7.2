@@ -15,8 +15,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SlateContentCalloutMenu.SlateContentCalloutMenu_C
 // 0x0020 (0x0250 - 0x0230)
@@ -36,19 +35,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SlateContentCalloutMenu_C">();
+		BP_STATIC_CLASS_IMPL("SlateContentCalloutMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SlateContentCalloutMenu_C")
 	}
 	static class USlateContentCalloutMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USlateContentCalloutMenu_C>();
 	}
 };
-static_assert(alignof(USlateContentCalloutMenu_C) == 0x000008, "Wrong alignment on USlateContentCalloutMenu_C");
-static_assert(sizeof(USlateContentCalloutMenu_C) == 0x000250, "Wrong size on USlateContentCalloutMenu_C");
-static_assert(offsetof(USlateContentCalloutMenu_C, UberGraphFrame) == 0x000230, "Member 'USlateContentCalloutMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USlateContentCalloutMenu_C, _Slate_Widget__Menu_Content) == 0x000238, "Member 'USlateContentCalloutMenu_C::_Slate_Widget__Menu_Content' has a wrong offset!");
-static_assert(offsetof(USlateContentCalloutMenu_C, SizeBoxContent) == 0x000240, "Member 'USlateContentCalloutMenu_C::SizeBoxContent' has a wrong offset!");
-static_assert(offsetof(USlateContentCalloutMenu_C, SlateWidgetType) == 0x000248, "Member 'USlateContentCalloutMenu_C::SlateWidgetType' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

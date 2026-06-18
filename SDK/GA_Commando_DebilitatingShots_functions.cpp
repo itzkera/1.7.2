@@ -14,8 +14,7 @@
 #include "GA_Commando_DebilitatingShots_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.ExecuteUbergraph_GA_Commando_DebilitatingShots
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UGA_Commando_DebilitatingShots_C::ExecuteUbergraph_GA_Commando_Debilitating
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData               EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayEventData&        EventData                                              (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UGA_Commando_DebilitatingShots_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
@@ -60,13 +59,13 @@ void UGA_Commando_DebilitatingShots_C::K2_ActivateAbilityFromEvent(const struct 
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.SetupGameplayEffect
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTag                     EventTag                                               (Parm, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              EventTag                                               (Parm, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           HitActor                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          OptionalObject                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandle Target_Data                                            (Parm, OutParm)
-// class UClass*                           DebilitatingShots                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Effect_Level                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Stack_Count                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayAbilityTargetDataHandle*Target_Data                                            (Parm, OutParm)
+// class UClass**                          DebilitatingShots                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Effect_Level                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Stack_Count                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UGA_Commando_DebilitatingShots_C::SetupGameplayEffect(const struct FGameplayTag& EventTag, class AActor* HitActor, class UObject* OptionalObject, struct FGameplayAbilityTargetDataHandle* Target_Data, class UClass** DebilitatingShots, int32* Effect_Level, int32* Stack_Count)
 {
@@ -103,8 +102,8 @@ void UGA_Commando_DebilitatingShots_C::SetupGameplayEffect(const struct FGamepla
 // float                                   Magnitude                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   Duration                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   Stack_Count                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle        EffectSpecHandle                                       (Parm)
-// struct FGameplayEffectSpecHandle        EffectspecHandleOut                                    (Parm, OutParm)
+// const struct FGameplayEffectSpecHandle& EffectSpecHandle                                       (Parm)
+// struct FGameplayEffectSpecHandle*       EffectspecHandleOut                                    (Parm, OutParm)
 
 void UGA_Commando_DebilitatingShots_C::SetupAppliedEffect(float Magnitude, float Duration, int32 Stack_Count, const struct FGameplayEffectSpecHandle& EffectSpecHandle, struct FGameplayEffectSpecHandle* EffectspecHandleOut)
 {
@@ -130,8 +129,8 @@ void UGA_Commando_DebilitatingShots_C::SetupAppliedEffect(float Magnitude, float
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.SetupDebilitationTraining
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayEffectSpecHandle        EffectspecOutInstant                                   (Parm, OutParm)
-// struct FGameplayEffectSpecHandle        EffectspecOutDuration                                  (Parm, OutParm)
+// struct FGameplayEffectSpecHandle*       EffectspecOutInstant                                   (Parm, OutParm)
+// struct FGameplayEffectSpecHandle*       EffectspecOutDuration                                  (Parm, OutParm)
 
 void UGA_Commando_DebilitatingShots_C::SetupDebilitationTraining(struct FGameplayEffectSpecHandle* EffectspecOutInstant, struct FGameplayEffectSpecHandle* EffectspecOutDuration)
 {
@@ -175,8 +174,8 @@ void UGA_Commando_DebilitatingShots_C::SetupAbility(class UAbilitySystemComponen
 // Function GA_Commando_DebilitatingShots.GA_Commando_DebilitatingShots_C.K2_ShouldAbilityRespondToEvent
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FGameplayAbilityActorInfo        ActorInfo                                              (Parm, ContainsInstancedReference)
-// struct FGameplayEventData               Payload                                                (Parm)
+// const struct FGameplayAbilityActorInfo& ActorInfo                                              (Parm, ContainsInstancedReference)
+// const struct FGameplayEventData&        Payload                                                (Parm)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 
 bool UGA_Commando_DebilitatingShots_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
@@ -196,5 +195,5 @@ bool UGA_Commando_DebilitatingShots_C::K2_ShouldAbilityRespondToEvent(const stru
 	return Parms.ReturnValue;
 }
 
-}
 
+SDK_NAMESPACE_END

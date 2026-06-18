@@ -14,8 +14,7 @@
 #include "ItemManagementMulchConfirmationDialogContent_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C.ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent
 // (HasDefaults)
@@ -70,5 +69,5 @@ void UItemManagementMulchConfirmationDialogContent_C::PreConstruct(bool IsDesign
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

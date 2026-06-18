@@ -11,8 +11,7 @@
 #include "Basic.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // UserDefinedEnum StoreOfferCosts.StoreOfferCosts
 // NumValues: 0x0008
@@ -28,5 +27,4 @@ enum class EStoreOfferCosts : uint8
 	StoreOfferCosts_MAX                      = 7,
 };
 
-}
-
+SDK_NAMESPACE_END

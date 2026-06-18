@@ -14,8 +14,7 @@
 #include "BluGlow_MorphAnimation_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.ExecuteUbergraph_BluGlow_MorphAnimation
 // (HasDefaults)
@@ -106,5 +105,5 @@ void ABluGlow_MorphAnimation_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

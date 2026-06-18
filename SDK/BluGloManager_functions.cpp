@@ -14,8 +14,7 @@
 #include "BluGloManager_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BluGloManager.BluGloManager_C.ExecuteUbergraph_BluGloManager
 // (HasDefaults)
@@ -40,18 +39,18 @@ void ABluGloManager_C::ExecuteUbergraph_BluGloManager(int32 EntryPoint)
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseEQS
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGuid                            MissionGuid                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            ObjectiveHandle                                        (Parm)
+// const struct FGuid&                     MissionGuid                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTagContainer&     ObjectiveHandle                                        (Parm)
 // class UFortMissionEventParams*          Params_0                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    DO_NOT_USE_THIS_OR_VARIABLES_BELOW                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UDataAsset*                       EventContent                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDataAsset*                 EventContent                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           EventInstigator                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   GenericInt                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   GenericFloat                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             GenericText                                            (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTagContainer            GameplayTags                                           (Parm)
-// struct FFortMissionEvent                MissionEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      GenericText                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTagContainer&     GameplayTags                                           (Parm)
+// const struct FFortMissionEvent&         MissionEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ABluGloManager_C::HandleMissionEvent_RequestBluGloSpawnUseEQS(const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params_0, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, const class UDataAsset* EventContent, class AActor* EventInstigator, int32 GenericInt, float GenericFloat, const class FText& GenericText, const struct FGameplayTagContainer& GameplayTags, const struct FFortMissionEvent& MissionEvent)
 {
@@ -102,7 +101,7 @@ void ABluGloManager_C::AddMoreBluGloInWorld(class AFortMission* Mission)
 // Function BluGloManager.BluGloManager_C.SpawnBluGloGroupEvent
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          SpawnCenter                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   SpawnCenter                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGloManager_C::SpawnBluGloGroupEvent(const struct FVector& SpawnCenter)
 {
@@ -143,7 +142,7 @@ void ABluGloManager_C::SpawnFXComplete(class UParticleSystemComponent* PSystem)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           ActorToSpawnFrom                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EEnvQueryStatus                         QueryStatus                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*QueryInstance                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   NumBluGloToSpawn                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -190,18 +189,18 @@ void ABluGloManager_C::StopSpawnFX(bool off)
 // Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseActor
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGuid                            MissionGuid                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer            ObjectiveHandle                                        (Parm)
+// const struct FGuid&                     MissionGuid                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTagContainer&     ObjectiveHandle                                        (Parm)
 // class UFortMissionEventParams*          Params_0                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    DO_NOT_USE_THIS_OR_VARIABLES_BELOW                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UDataAsset*                       EventContent                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDataAsset*                 EventContent                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           EventInstigator                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   GenericInt                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                                   GenericFloat                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                             GenericText                                            (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FGameplayTagContainer            GameplayTags                                           (Parm)
-// struct FFortMissionEvent                MissionEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const class FText&                      GenericText                                            (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGameplayTagContainer&     GameplayTags                                           (Parm)
+// const struct FFortMissionEvent&         MissionEvent                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void ABluGloManager_C::HandleMissionEvent_RequestBluGloSpawnUseActor(const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params_0, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, const class UDataAsset* EventContent, class AActor* EventInstigator, int32 GenericInt, float GenericFloat, const class FText& GenericText, const struct FGameplayTagContainer& GameplayTags, const struct FFortMissionEvent& MissionEvent)
 {
@@ -247,7 +246,7 @@ void ABluGloManager_C::UserConstructionScript()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortMission*                     Mission                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          EQS_Start_Location                                     (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   EQS_Start_Location                                     (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGloManager_C::RequestedBluGo(class AFortMission* Mission, const struct FVector& EQS_Start_Location, class AActor* Actor)
@@ -284,8 +283,8 @@ void ABluGloManager_C::RemoveOccupiedNodes()
 // Function BluGloManager.BluGloManager_C.SpawnBluGlo
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          SpawnLocation                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          SpawnFromLocation                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   SpawnLocation                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   SpawnFromLocation                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGloManager_C::SpawnBluGlo(const struct FVector& SpawnLocation, const struct FVector& SpawnFromLocation)
 {
@@ -308,7 +307,7 @@ void ABluGloManager_C::SpawnBluGlo(const struct FVector& SpawnLocation, const st
 // Parameters:
 // int32                                   NumBluGloToSpawn                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           ActorToSpawnFrom                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGloManager_C::IssueBluGloRequest(int32 NumBluGloToSpawn, class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid)
 {
@@ -333,8 +332,8 @@ void ABluGloManager_C::IssueBluGloRequest(int32 NumBluGloToSpawn, class AActor* 
 // EEnvQueryStatus                         QueryStatus                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*QueryInstance                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   NumBluGloToSpawn                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          SpawnCenter                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FVector>                  LocationsForSpawningBluGlo                             (Parm, OutParm, ZeroConstructor)
+// const struct FVector&                   SpawnCenter                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FVector>*                 LocationsForSpawningBluGlo                             (Parm, OutParm, ZeroConstructor)
 
 void ABluGloManager_C::BuildSpawnLocations(EEnvQueryStatus QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int32 NumBluGloToSpawn, const struct FVector& SpawnCenter, TArray<struct FVector>* LocationsForSpawningBluGlo)
 {
@@ -361,8 +360,8 @@ void ABluGloManager_C::BuildSpawnLocations(EEnvQueryStatus QueryStatus, class UE
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   NumBluGloToSpawn                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FVector>                  QueryResultLocations                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FVector>                  LocationsForSpawningBluGlo                             (Parm, OutParm, ZeroConstructor)
+// TArray<struct FVector>&                 QueryResultLocations                                   (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FVector>*                 LocationsForSpawningBluGlo                             (Parm, OutParm, ZeroConstructor)
 
 void ABluGloManager_C::BuildSpawnLocationsFromQueryLocations(int32 NumBluGloToSpawn, TArray<struct FVector>& QueryResultLocations, TArray<struct FVector>* LocationsForSpawningBluGlo)
 {
@@ -388,9 +387,9 @@ void ABluGloManager_C::BuildSpawnLocationsFromQueryLocations(int32 NumBluGloToSp
 // Function BluGloManager.BluGloManager_C.BuildSpawnLocationsRandomly
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          LocationToSpawnFrom                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   LocationToSpawnFrom                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   NumBluGloToSpawn                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FVector>                  LocationsForSpawningBluGlo                             (Parm, OutParm, ZeroConstructor)
+// TArray<struct FVector>*                 LocationsForSpawningBluGlo                             (Parm, OutParm, ZeroConstructor)
 
 void ABluGloManager_C::BuildSpawnLocationsRandomly(const struct FVector& LocationToSpawnFrom, int32 NumBluGloToSpawn, TArray<struct FVector>* LocationsForSpawningBluGlo)
 {
@@ -415,8 +414,8 @@ void ABluGloManager_C::BuildSpawnLocationsRandomly(const struct FVector& Locatio
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           ActorToSpawnFrom                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationToSpawnFrom                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          SpawnCenter                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   LocationToSpawnFrom                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         SpawnCenter                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGloManager_C::ChooseSpawnCenter(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFrom, struct FVector* SpawnCenter)
 {
@@ -441,7 +440,7 @@ void ABluGloManager_C::ChooseSpawnCenter(class AActor* ActorToSpawnFrom, const s
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           ActorToSpawnFrom                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   LocationToSpawnFromIfActorInvalid                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EEnvQueryStatus                         QueryStatus                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*QueryInstance                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   NumBluGloToSpawn                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -468,8 +467,8 @@ void ABluGloManager_C::SpawnBluGloGroup(class AActor* ActorToSpawnFrom, const st
 // Function BluGloManager.BluGloManager_C.StartSpawnFXAndAudio
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                          SpawnCenter                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UParticleSystemComponent*         SpawnFXEmitter                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   SpawnCenter                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UParticleSystemComponent**        SpawnFXEmitter                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABluGloManager_C::StartSpawnFXAndAudio(const struct FVector& SpawnCenter, class UParticleSystemComponent** SpawnFXEmitter)
 {
@@ -510,5 +509,5 @@ void ABluGloManager_C::IssueBluGloRequestForMission(class AFortMission* Mission,
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

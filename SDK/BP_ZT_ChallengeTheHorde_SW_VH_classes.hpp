@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ZT_ChallengeTheHorde_SW_VH.BP_ZT_ChallengeTheHorde_SW_VH_C
 // 0x0000 (0x0270 - 0x0270)
@@ -23,15 +22,16 @@ class UBP_ZT_ChallengeTheHorde_SW_VH_C final : public UFortZoneTheme
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ZT_ChallengeTheHorde_SW_VH_C">();
+		BP_STATIC_CLASS_IMPL("BP_ZT_ChallengeTheHorde_SW_VH_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ZT_ChallengeTheHorde_SW_VH_C")
 	}
 	static class UBP_ZT_ChallengeTheHorde_SW_VH_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_ZT_ChallengeTheHorde_SW_VH_C>();
 	}
 };
-static_assert(alignof(UBP_ZT_ChallengeTheHorde_SW_VH_C) == 0x000008, "Wrong alignment on UBP_ZT_ChallengeTheHorde_SW_VH_C");
-static_assert(sizeof(UBP_ZT_ChallengeTheHorde_SW_VH_C) == 0x000270, "Wrong size on UBP_ZT_ChallengeTheHorde_SW_VH_C");
 
-}
-
+SDK_NAMESPACE_END

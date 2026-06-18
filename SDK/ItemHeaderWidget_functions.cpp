@@ -14,8 +14,7 @@
 #include "ItemHeaderWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemHeaderWidget.ItemHeaderWidget_C.ExecuteUbergraph_ItemHeaderWidget
 // (HasDefaults)
@@ -180,5 +179,5 @@ void UItemHeaderWidget_C::Show_Power_Block(bool Show)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

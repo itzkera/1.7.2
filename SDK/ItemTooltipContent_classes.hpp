@@ -12,14 +12,13 @@
 
 #include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "ItemTooltip_DisplayMode_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
-#include "FortniteUI_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemTooltipContent.ItemTooltipContent_C
 // 0x02B0 (0x04E0 - 0x0230)
@@ -135,85 +134,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemTooltipContent_C">();
+		BP_STATIC_CLASS_IMPL("ItemTooltipContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemTooltipContent_C")
 	}
 	static class UItemTooltipContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemTooltipContent_C>();
 	}
 };
-static_assert(alignof(UItemTooltipContent_C) == 0x000008, "Wrong alignment on UItemTooltipContent_C");
-static_assert(sizeof(UItemTooltipContent_C) == 0x0004E0, "Wrong size on UItemTooltipContent_C");
-static_assert(offsetof(UItemTooltipContent_C, UberGraphFrame) == 0x000230, "Member 'UItemTooltipContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, _Anim__Intro) == 0x000238, "Member 'UItemTooltipContent_C::_Anim__Intro' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, BorderSecondaryType_B) == 0x000240, "Member 'UItemTooltipContent_C::BorderSecondaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, BorderSecondaryTypeFrame_A) == 0x000248, "Member 'UItemTooltipContent_C::BorderSecondaryTypeFrame_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, BorderTertiaryType_B) == 0x000250, "Member 'UItemTooltipContent_C::BorderTertiaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, BorderTertiaryTypeFrame_A) == 0x000258, "Member 'UItemTooltipContent_C::BorderTertiaryTypeFrame_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxRarity_Primary_A) == 0x000260, "Member 'UItemTooltipContent_C::HorizontalBoxRarity_Primary_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxRarity_Primary_B) == 0x000268, "Member 'UItemTooltipContent_C::HorizontalBoxRarity_Primary_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxSecondaryType_A) == 0x000270, "Member 'UItemTooltipContent_C::HorizontalBoxSecondaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxSecondaryType_B) == 0x000278, "Member 'UItemTooltipContent_C::HorizontalBoxSecondaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTertiaryType_A) == 0x000280, "Member 'UItemTooltipContent_C::HorizontalBoxTertiaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTertiaryType_B) == 0x000288, "Member 'UItemTooltipContent_C::HorizontalBoxTertiaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTier_A) == 0x000290, "Member 'UItemTooltipContent_C::HorizontalBoxTier_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HorizontalBoxTier_B) == 0x000298, "Member 'UItemTooltipContent_C::HorizontalBoxTier_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageDiv_Top_A) == 0x0002A0, "Member 'UItemTooltipContent_C::ImageDiv_Top_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageDiv_Top_B) == 0x0002A8, "Member 'UItemTooltipContent_C::ImageDiv_Top_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageSecondaryType_A) == 0x0002B0, "Member 'UItemTooltipContent_C::ImageSecondaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageSecondaryType_B) == 0x0002B8, "Member 'UItemTooltipContent_C::ImageSecondaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageTertiaryType_A) == 0x0002C0, "Member 'UItemTooltipContent_C::ImageTertiaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ImageTertiaryType_B) == 0x0002C8, "Member 'UItemTooltipContent_C::ImageTertiaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Item_TierStar) == 0x0002D0, "Member 'UItemTooltipContent_C::Item_TierStar' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, RatingWidget_A) == 0x0002D8, "Member 'UItemTooltipContent_C::RatingWidget_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, RatingWidget_B) == 0x0002E0, "Member 'UItemTooltipContent_C::RatingWidget_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, SizeBoxPanel_B) == 0x0002E8, "Member 'UItemTooltipContent_C::SizeBoxPanel_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, SizeBoxTier_A) == 0x0002F0, "Member 'UItemTooltipContent_C::SizeBoxTier_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, SizeBoxTier_B) == 0x0002F8, "Member 'UItemTooltipContent_C::SizeBoxTier_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, SizeBoxTooltip_A) == 0x000300, "Member 'UItemTooltipContent_C::SizeBoxTooltip_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, StackCounter_A) == 0x000308, "Member 'UItemTooltipContent_C::StackCounter_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, StackCounter_B) == 0x000310, "Member 'UItemTooltipContent_C::StackCounter_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Switcher) == 0x000318, "Member 'UItemTooltipContent_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextItemName_A) == 0x000320, "Member 'UItemTooltipContent_C::TextItemName_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextItemName_B) == 0x000328, "Member 'UItemTooltipContent_C::TextItemName_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextPrimaryType_A) == 0x000330, "Member 'UItemTooltipContent_C::TextPrimaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextPrimaryType_B) == 0x000338, "Member 'UItemTooltipContent_C::TextPrimaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextRarityName_A) == 0x000340, "Member 'UItemTooltipContent_C::TextRarityName_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextRarityName_B) == 0x000348, "Member 'UItemTooltipContent_C::TextRarityName_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextSecondaryType_A) == 0x000350, "Member 'UItemTooltipContent_C::TextSecondaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextSecondaryType_B) == 0x000358, "Member 'UItemTooltipContent_C::TextSecondaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextTertiaryType_A) == 0x000360, "Member 'UItemTooltipContent_C::TextTertiaryType_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, TextTertiaryType_B) == 0x000368, "Member 'UItemTooltipContent_C::TextTertiaryType_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Tooltip_DescriptionText_1) == 0x000370, "Member 'UItemTooltipContent_C::Tooltip_DescriptionText_1' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Tooltip_DescriptionText_2) == 0x000378, "Member 'UItemTooltipContent_C::Tooltip_DescriptionText_2' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxContent_A) == 0x000380, "Member 'UItemTooltipContent_C::VerticalBoxContent_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxContent_B) == 0x000388, "Member 'UItemTooltipContent_C::VerticalBoxContent_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDescription_A) == 0x000390, "Member 'UItemTooltipContent_C::VerticalBoxDescription_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDescription_B) == 0x000398, "Member 'UItemTooltipContent_C::VerticalBoxDescription_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDPS_A) == 0x0003A0, "Member 'UItemTooltipContent_C::VerticalBoxDPS_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDPS_B) == 0x0003A8, "Member 'UItemTooltipContent_C::VerticalBoxDPS_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDurability_A) == 0x0003B0, "Member 'UItemTooltipContent_C::VerticalBoxDurability_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxDurability_B) == 0x0003B8, "Member 'UItemTooltipContent_C::VerticalBoxDurability_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxHeroBonuses_A) == 0x0003C0, "Member 'UItemTooltipContent_C::VerticalBoxHeroBonuses_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxHeroBonuses_B) == 0x0003C8, "Member 'UItemTooltipContent_C::VerticalBoxHeroBonuses_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxIngredients_A) == 0x0003D0, "Member 'UItemTooltipContent_C::VerticalBoxIngredients_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxIngredients_B) == 0x0003D8, "Member 'UItemTooltipContent_C::VerticalBoxIngredients_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxLevel_A) == 0x0003E0, "Member 'UItemTooltipContent_C::VerticalBoxLevel_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxLevel_B) == 0x0003E8, "Member 'UItemTooltipContent_C::VerticalBoxLevel_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxPerks_A) == 0x0003F0, "Member 'UItemTooltipContent_C::VerticalBoxPerks_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxPerks_B) == 0x0003F8, "Member 'UItemTooltipContent_C::VerticalBoxPerks_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxStats_A) == 0x000400, "Member 'UItemTooltipContent_C::VerticalBoxStats_A' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, VerticalBoxStats_B) == 0x000408, "Member 'UItemTooltipContent_C::VerticalBoxStats_B' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Item) == 0x000410, "Member 'UItemTooltipContent_C::Item' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ComparisonItem) == 0x000418, "Member 'UItemTooltipContent_C::ComparisonItem' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Rarity_Data) == 0x000420, "Member 'UItemTooltipContent_C::Rarity_Data' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, HoverEnabled) == 0x0004A0, "Member 'UItemTooltipContent_C::HoverEnabled' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, PanelMode) == 0x0004A1, "Member 'UItemTooltipContent_C::PanelMode' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, DisplayMode) == 0x0004A2, "Member 'UItemTooltipContent_C::DisplayMode' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Label_Level) == 0x0004A8, "Member 'UItemTooltipContent_C::Label_Level' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, Label_MaxLevel) == 0x0004C0, "Member 'UItemTooltipContent_C::Label_MaxLevel' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, ShowOnlyBasicInfo) == 0x0004D8, "Member 'UItemTooltipContent_C::ShowOnlyBasicInfo' has a wrong offset!");
-static_assert(offsetof(UItemTooltipContent_C, OverrideQuantity) == 0x0004DC, "Member 'UItemTooltipContent_C::OverrideQuantity' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

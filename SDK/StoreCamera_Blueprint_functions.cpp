@@ -14,8 +14,7 @@
 #include "StoreCamera_Blueprint_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreCamera_Blueprint.StoreCamera_Blueprint_C.ExecuteUbergraph_StoreCamera_Blueprint
 // (HasDefaults)
@@ -210,5 +209,5 @@ void AStoreCamera_Blueprint_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

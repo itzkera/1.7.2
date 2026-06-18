@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C.ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect
 // 0x0014 (0x0014 - 0x0000)
@@ -25,13 +25,6 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue2;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect) == 0x000004, "Wrong alignment on B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect");
-static_assert(sizeof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect) == 0x000014, "Wrong size on B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect");
-static_assert(offsetof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect, EntryPoint) == 0x000000, "Member 'B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect, K2Node_CustomEvent_NewParam) == 0x000004, "Member 'B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect::K2Node_CustomEvent_NewParam' has a wrong offset!");
-static_assert(offsetof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000008, "Member 'B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect, CallFunc_Subtract_FloatFloat_ReturnValue2) == 0x000010, "Member 'B_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect::CallFunc_Subtract_FloatFloat_ReturnValue2' has a wrong offset!");
 
 // Function B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C.PassParticle_Parameter_Shield
 // 0x0004 (0x0004 - 0x0000)
@@ -40,9 +33,6 @@ struct B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield fin
 public:
 	float                                         NewParam;                                          // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield) == 0x000004, "Wrong alignment on B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield");
-static_assert(sizeof(B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield) == 0x000004, "Wrong size on B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield");
-static_assert(offsetof(B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield, NewParam) == 0x000000, "Member 'B_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield::NewParam' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

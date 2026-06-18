@@ -13,8 +13,7 @@
 #include "v2_PlayerCameraModeBase_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass v2_PlayerCameraModeMelee.v2_PlayerCameraModeMelee_C
 // 0x0000 (0x0110 - 0x0110)
@@ -23,15 +22,16 @@ class Uv2_PlayerCameraModeMelee_C final : public Uv2_PlayerCameraModeBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v2_PlayerCameraModeMelee_C">();
+		BP_STATIC_CLASS_IMPL("v2_PlayerCameraModeMelee_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v2_PlayerCameraModeMelee_C")
 	}
 	static class Uv2_PlayerCameraModeMelee_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv2_PlayerCameraModeMelee_C>();
 	}
 };
-static_assert(alignof(Uv2_PlayerCameraModeMelee_C) == 0x000008, "Wrong alignment on Uv2_PlayerCameraModeMelee_C");
-static_assert(sizeof(Uv2_PlayerCameraModeMelee_C) == 0x000110, "Wrong size on Uv2_PlayerCameraModeMelee_C");
 
-}
-
+SDK_NAMESPACE_END

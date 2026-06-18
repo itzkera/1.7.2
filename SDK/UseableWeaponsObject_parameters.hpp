@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function UseableWeaponsObject.UseableWeaponsObject_C.ExecuteUbergraph_UseableWeaponsObject
 // 0x0004 (0x0004 - 0x0000)
@@ -21,9 +21,6 @@ struct UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject) == 0x000004, "Wrong alignment on UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject");
-static_assert(sizeof(UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject) == 0x000004, "Wrong size on UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject");
-static_assert(offsetof(UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject, EntryPoint) == 0x000000, "Member 'UseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject::EntryPoint' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

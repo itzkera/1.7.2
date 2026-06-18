@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabBrightnessOptions.TabBrightnessOptions_C
 // 0x0040 (0x02C8 - 0x0288)
@@ -44,23 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabBrightnessOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabBrightnessOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabBrightnessOptions_C")
 	}
 	static class UTabBrightnessOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabBrightnessOptions_C>();
 	}
 };
-static_assert(alignof(UTabBrightnessOptions_C) == 0x000008, "Wrong alignment on UTabBrightnessOptions_C");
-static_assert(sizeof(UTabBrightnessOptions_C) == 0x0002C8, "Wrong size on UTabBrightnessOptions_C");
-static_assert(offsetof(UTabBrightnessOptions_C, UberGraphFrame) == 0x000288, "Member 'UTabBrightnessOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, BackgroundSurpress) == 0x000290, "Member 'UTabBrightnessOptions_C::BackgroundSurpress' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, BrightnessValue) == 0x000298, "Member 'UTabBrightnessOptions_C::BrightnessValue' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, CommonTextBlock_0) == 0x0002A0, "Member 'UTabBrightnessOptions_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, DefaultCallOut) == 0x0002A8, "Member 'UTabBrightnessOptions_C::DefaultCallOut' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, Image_0) == 0x0002B0, "Member 'UTabBrightnessOptions_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, Image_1) == 0x0002B8, "Member 'UTabBrightnessOptions_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UTabBrightnessOptions_C, Image_152) == 0x0002C0, "Member 'UTabBrightnessOptions_C::Image_152' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

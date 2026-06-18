@@ -13,8 +13,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PartyInfo.PartyInfo_C
 // 0x0070 (0x02A0 - 0x0230)
@@ -39,29 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyInfo_C">();
+		BP_STATIC_CLASS_IMPL("PartyInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyInfo_C")
 	}
 	static class UPartyInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPartyInfo_C>();
 	}
 };
-static_assert(alignof(UPartyInfo_C) == 0x000008, "Wrong alignment on UPartyInfo_C");
-static_assert(sizeof(UPartyInfo_C) == 0x0002A0, "Wrong size on UPartyInfo_C");
-static_assert(offsetof(UPartyInfo_C, Biome_Info) == 0x000230, "Member 'UPartyInfo_C::Biome_Info' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, BiomeName) == 0x000238, "Member 'UPartyInfo_C::BiomeName' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Difficulty_Info) == 0x000240, "Member 'UPartyInfo_C::Difficulty_Info' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, DifficultyName) == 0x000248, "Member 'UPartyInfo_C::DifficultyName' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Image_0) == 0x000250, "Member 'UPartyInfo_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Image_1) == 0x000258, "Member 'UPartyInfo_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Image_15) == 0x000260, "Member 'UPartyInfo_C::Image_15' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Image_16) == 0x000268, "Member 'UPartyInfo_C::Image_16' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Image_HeaderSplitter) == 0x000270, "Member 'UPartyInfo_C::Image_HeaderSplitter' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, Mission_Type_Icon) == 0x000278, "Member 'UPartyInfo_C::Mission_Type_Icon' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, ModifierContentHorizontalBox) == 0x000280, "Member 'UPartyInfo_C::ModifierContentHorizontalBox' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, ModifierVerticalBox) == 0x000288, "Member 'UPartyInfo_C::ModifierVerticalBox' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, RewardsContent) == 0x000290, "Member 'UPartyInfo_C::RewardsContent' has a wrong offset!");
-static_assert(offsetof(UPartyInfo_C, ZoneName) == 0x000298, "Member 'UPartyInfo_C::ZoneName' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

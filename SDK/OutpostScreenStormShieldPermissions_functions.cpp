@@ -14,8 +14,7 @@
 #include "OutpostScreenStormShieldPermissions_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.ExecuteUbergraph_OutpostScreenStormShieldPermissions
 // (HasDefaults)
@@ -74,7 +73,7 @@ void UOutpostScreenStormShieldPermissions_C::UpdatePrivilagesEvent_1(int32 Playe
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.UpdatePrivilagesEvent_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewTeamMemberInfo                                      (Parm)
+// const struct FFortTeamMemberInfo&       NewTeamMemberInfo                                      (Parm)
 
 void UOutpostScreenStormShieldPermissions_C::UpdatePrivilagesEvent_0(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
 {
@@ -108,7 +107,7 @@ void UOutpostScreenStormShieldPermissions_C::Construct()
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.isPlayerAlone
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    isAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   isAlone                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOutpostScreenStormShieldPermissions_C::isPlayerAlone(bool* isAlone)
 {
@@ -177,7 +176,7 @@ void UOutpostScreenStormShieldPermissions_C::AddInputHandlers()
 // Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UOutpostScreenStormShieldPermissions_C::HandleBack(bool* PassThrough)
 {
@@ -228,5 +227,5 @@ void UOutpostScreenStormShieldPermissions_C::CenterWidget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

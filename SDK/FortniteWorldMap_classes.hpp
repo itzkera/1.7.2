@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FortniteWorldMap.FortniteWorldMap_C
 // 0x0000 (0x03A0 - 0x03A0)
@@ -23,15 +22,16 @@ class AFortniteWorldMap_C final : public AFortLevelScriptActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortniteWorldMap_C">();
+		BP_STATIC_CLASS_IMPL("FortniteWorldMap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortniteWorldMap_C")
 	}
 	static class AFortniteWorldMap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFortniteWorldMap_C>();
 	}
 };
-static_assert(alignof(AFortniteWorldMap_C) == 0x000008, "Wrong alignment on AFortniteWorldMap_C");
-static_assert(sizeof(AFortniteWorldMap_C) == 0x0003A0, "Wrong size on AFortniteWorldMap_C");
 
-}
-
+SDK_NAMESPACE_END

@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C
 // 0x02B8 (0x04F8 - 0x0240)
@@ -40,22 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerZoneTeamScoreContributionWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerZoneTeamScoreContributionWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerZoneTeamScoreContributionWidget_C")
 	}
 	static class UPlayerZoneTeamScoreContributionWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerZoneTeamScoreContributionWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerZoneTeamScoreContributionWidget_C) == 0x000008, "Wrong alignment on UPlayerZoneTeamScoreContributionWidget_C");
-static_assert(sizeof(UPlayerZoneTeamScoreContributionWidget_C) == 0x0004F8, "Wrong size on UPlayerZoneTeamScoreContributionWidget_C");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, UberGraphFrame) == 0x000240, "Member 'UPlayerZoneTeamScoreContributionWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, IntroAnim) == 0x000248, "Member 'UPlayerZoneTeamScoreContributionWidget_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, Border_Shell) == 0x000250, "Member 'UPlayerZoneTeamScoreContributionWidget_C::Border_Shell' has a wrong offset!");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, PlayerBanner) == 0x000258, "Member 'UPlayerZoneTeamScoreContributionWidget_C::PlayerBanner' has a wrong offset!");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, TextPlayerName) == 0x000260, "Member 'UPlayerZoneTeamScoreContributionWidget_C::TextPlayerName' has a wrong offset!");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, TextPlayerScoreCounter) == 0x000268, "Member 'UPlayerZoneTeamScoreContributionWidget_C::TextPlayerScoreCounter' has a wrong offset!");
-static_assert(offsetof(UPlayerZoneTeamScoreContributionWidget_C, ScoreReport) == 0x000270, "Member 'UPlayerZoneTeamScoreContributionWidget_C::ScoreReport' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

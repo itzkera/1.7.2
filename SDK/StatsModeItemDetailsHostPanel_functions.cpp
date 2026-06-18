@@ -14,8 +14,7 @@
 #include "StatsModeItemDetailsHostPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StatsModeItemDetailsHostPanel.StatsModeItemDetailsHostPanel_C.ExecuteUbergraph_StatsModeItemDetailsHostPanel
 // ()
@@ -50,5 +49,5 @@ void UStatsModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

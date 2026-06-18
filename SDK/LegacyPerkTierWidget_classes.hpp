@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass LegacyPerkTierWidget.LegacyPerkTierWidget_C
 // 0x0030 (0x0290 - 0x0260)
@@ -37,21 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LegacyPerkTierWidget_C">();
+		BP_STATIC_CLASS_IMPL("LegacyPerkTierWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LegacyPerkTierWidget_C")
 	}
 	static class ULegacyPerkTierWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULegacyPerkTierWidget_C>();
 	}
 };
-static_assert(alignof(ULegacyPerkTierWidget_C) == 0x000008, "Wrong alignment on ULegacyPerkTierWidget_C");
-static_assert(sizeof(ULegacyPerkTierWidget_C) == 0x000290, "Wrong size on ULegacyPerkTierWidget_C");
-static_assert(offsetof(ULegacyPerkTierWidget_C, UberGraphFrame) == 0x000260, "Member 'ULegacyPerkTierWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkTierWidget_C, PerkList) == 0x000268, "Member 'ULegacyPerkTierWidget_C::PerkList' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkTierWidget_C, PerkWidget) == 0x000270, "Member 'ULegacyPerkTierWidget_C::PerkWidget' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkTierWidget_C, PerkWidget_0) == 0x000278, "Member 'ULegacyPerkTierWidget_C::PerkWidget_0' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkTierWidget_C, PerkWidget_1) == 0x000280, "Member 'ULegacyPerkTierWidget_C::PerkWidget_1' has a wrong offset!");
-static_assert(offsetof(ULegacyPerkTierWidget_C, bTextOnly) == 0x000288, "Member 'ULegacyPerkTierWidget_C::bTextOnly' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass FortNavArea_JumpDownSmashable3.FortNavArea_JumpDownSmashable3_C
 // 0x0000 (0x0050 - 0x0050)
@@ -23,15 +22,16 @@ class UFortNavArea_JumpDownSmashable3_C final : public UFortNavArea_SmashableJum
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortNavArea_JumpDownSmashable3_C">();
+		BP_STATIC_CLASS_IMPL("FortNavArea_JumpDownSmashable3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortNavArea_JumpDownSmashable3_C")
 	}
 	static class UFortNavArea_JumpDownSmashable3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortNavArea_JumpDownSmashable3_C>();
 	}
 };
-static_assert(alignof(UFortNavArea_JumpDownSmashable3_C) == 0x000008, "Wrong alignment on UFortNavArea_JumpDownSmashable3_C");
-static_assert(sizeof(UFortNavArea_JumpDownSmashable3_C) == 0x000050, "Wrong size on UFortNavArea_JumpDownSmashable3_C");
 
-}
-
+SDK_NAMESPACE_END

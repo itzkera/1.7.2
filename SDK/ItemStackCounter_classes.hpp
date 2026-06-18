@@ -16,8 +16,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemStackCounter.ItemStackCounter_C
 // 0x0660 (0x0898 - 0x0238)
@@ -47,26 +46,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemStackCounter_C">();
+		BP_STATIC_CLASS_IMPL("ItemStackCounter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemStackCounter_C")
 	}
 	static class UItemStackCounter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemStackCounter_C>();
 	}
 };
-static_assert(alignof(UItemStackCounter_C) == 0x000008, "Wrong alignment on UItemStackCounter_C");
-static_assert(sizeof(UItemStackCounter_C) == 0x000898, "Wrong size on UItemStackCounter_C");
-static_assert(offsetof(UItemStackCounter_C, UberGraphFrame) == 0x000238, "Member 'UItemStackCounter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, _SizeBox_) == 0x000240, "Member 'UItemStackCounter_C::_SizeBox_' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, BorderBase) == 0x000248, "Member 'UItemStackCounter_C::BorderBase' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, TextCounter) == 0x000250, "Member 'UItemStackCounter_C::TextCounter' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, MultiSizeBase) == 0x000258, "Member 'UItemStackCounter_C::MultiSizeBase' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, MultiSizeFont) == 0x0005B8, "Member 'UItemStackCounter_C::MultiSizeFont' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, MultiSizeMargin) == 0x000828, "Member 'UItemStackCounter_C::MultiSizeMargin' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, Brush_Size) == 0x000888, "Member 'UItemStackCounter_C::Brush_Size' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, Count) == 0x00088C, "Member 'UItemStackCounter_C::Count' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, AlwaysVisible) == 0x000890, "Member 'UItemStackCounter_C::AlwaysVisible' has a wrong offset!");
-static_assert(offsetof(UItemStackCounter_C, TruncateValue) == 0x000891, "Member 'UItemStackCounter_C::TruncateValue' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

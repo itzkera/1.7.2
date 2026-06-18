@@ -11,15 +11,14 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ItemDisplayStyle_structs.hpp"
 #include "FortniteGame_structs.hpp"
-#include "FortniteUI_structs.hpp"
 #include "CommonUI_classes.hpp"
+#include "ItemDisplayStyle_structs.hpp"
+#include "FortniteUI_structs.hpp"
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuickbarSlot.QuickbarSlot_C
 // 0x0140 (0x0378 - 0x0238)
@@ -101,61 +100,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuickbarSlot_C">();
+		BP_STATIC_CLASS_IMPL("QuickbarSlot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickbarSlot_C")
 	}
 	static class UQuickbarSlot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickbarSlot_C>();
 	}
 };
-static_assert(alignof(UQuickbarSlot_C) == 0x000008, "Wrong alignment on UQuickbarSlot_C");
-static_assert(sizeof(UQuickbarSlot_C) == 0x000378, "Wrong size on UQuickbarSlot_C");
-static_assert(offsetof(UQuickbarSlot_C, UberGraphFrame) == 0x000238, "Member 'UQuickbarSlot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, Selected) == 0x000240, "Member 'UQuickbarSlot_C::Selected' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, AnimMaximize) == 0x000248, "Member 'UQuickbarSlot_C::AnimMaximize' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, AnimMinimize) == 0x000250, "Member 'UQuickbarSlot_C::AnimMinimize' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, _SizeBox__Item) == 0x000258, "Member 'UQuickbarSlot_C::_SizeBox__Item' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, BottomHoldText) == 0x000260, "Member 'UQuickbarSlot_C::BottomHoldText' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, BottomLeftArrowImage) == 0x000268, "Member 'UQuickbarSlot_C::BottomLeftArrowImage' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, BottomLeftArrowImage2) == 0x000270, "Member 'UQuickbarSlot_C::BottomLeftArrowImage2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, BottomRightArrowImage) == 0x000278, "Member 'UQuickbarSlot_C::BottomRightArrowImage' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, BottomRightArrowImage2) == 0x000280, "Member 'UQuickbarSlot_C::BottomRightArrowImage2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, Empty) == 0x000288, "Member 'UQuickbarSlot_C::Empty' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, InvalidationBox_0) == 0x000290, "Member 'UQuickbarSlot_C::InvalidationBox_0' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, ItemCardSmall) == 0x000298, "Member 'UQuickbarSlot_C::ItemCardSmall' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, ItemCardVerySmall) == 0x0002A0, "Member 'UQuickbarSlot_C::ItemCardVerySmall' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindBottom) == 0x0002A8, "Member 'UQuickbarSlot_C::KeybindBottom' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindBottomCombo1) == 0x0002B0, "Member 'UQuickbarSlot_C::KeybindBottomCombo1' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindBottomCombo2) == 0x0002B8, "Member 'UQuickbarSlot_C::KeybindBottomCombo2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindBottomComboArrow1) == 0x0002C0, "Member 'UQuickbarSlot_C::KeybindBottomComboArrow1' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindBottomComboArrow2) == 0x0002C8, "Member 'UQuickbarSlot_C::KeybindBottomComboArrow2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindTop) == 0x0002D0, "Member 'UQuickbarSlot_C::KeybindTop' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindTopCombo1) == 0x0002D8, "Member 'UQuickbarSlot_C::KeybindTopCombo1' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindTopCombo2) == 0x0002E0, "Member 'UQuickbarSlot_C::KeybindTopCombo2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindTopComboArrow1) == 0x0002E8, "Member 'UQuickbarSlot_C::KeybindTopComboArrow1' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, KeybindTopComboArrow2) == 0x0002F0, "Member 'UQuickbarSlot_C::KeybindTopComboArrow2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, QuickbarSlotCooldown) == 0x0002F8, "Member 'UQuickbarSlot_C::QuickbarSlotCooldown' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, Selection) == 0x000300, "Member 'UQuickbarSlot_C::Selection' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, SizeBoxBottomKeybind) == 0x000308, "Member 'UQuickbarSlot_C::SizeBoxBottomKeybind' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, SizeBoxTopKeybind) == 0x000310, "Member 'UQuickbarSlot_C::SizeBoxTopKeybind' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, SlotInteraction) == 0x000318, "Member 'UQuickbarSlot_C::SlotInteraction' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, SwitcherBottomComboSwitcher) == 0x000320, "Member 'UQuickbarSlot_C::SwitcherBottomComboSwitcher' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, SwitcherTopComboSwitcher) == 0x000328, "Member 'UQuickbarSlot_C::SwitcherTopComboSwitcher' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, TopLeftArrowImage) == 0x000330, "Member 'UQuickbarSlot_C::TopLeftArrowImage' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, TopLeftArrowImage2) == 0x000338, "Member 'UQuickbarSlot_C::TopLeftArrowImage2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, TopRightArrowImage) == 0x000340, "Member 'UQuickbarSlot_C::TopRightArrowImage' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, TopRightArrowImage2) == 0x000348, "Member 'UQuickbarSlot_C::TopRightArrowImage2' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, SlotIndex) == 0x000350, "Member 'UQuickbarSlot_C::SlotIndex' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, QuickBarType) == 0x000354, "Member 'UQuickbarSlot_C::QuickBarType' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, ItemDisplayStyle) == 0x000355, "Member 'UQuickbarSlot_C::ItemDisplayStyle' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, ItemBrushSize) == 0x000356, "Member 'UQuickbarSlot_C::ItemBrushSize' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, bShowBottomArrows) == 0x000357, "Member 'UQuickbarSlot_C::bShowBottomArrows' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, bShowTopArrows) == 0x000358, "Member 'UQuickbarSlot_C::bShowTopArrows' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, DoNotPlaySelectionAnimation) == 0x000359, "Member 'UQuickbarSlot_C::DoNotPlaySelectionAnimation' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, bHideKeybindsWhenAbilityUnavailable) == 0x00035A, "Member 'UQuickbarSlot_C::bHideKeybindsWhenAbilityUnavailable' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, bKeybindsHidden) == 0x00035B, "Member 'UQuickbarSlot_C::bKeybindsHidden' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, CooldownTypesSupported) == 0x000360, "Member 'UQuickbarSlot_C::CooldownTypesSupported' has a wrong offset!");
-static_assert(offsetof(UQuickbarSlot_C, Item) == 0x000370, "Member 'UQuickbarSlot_C::Item' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

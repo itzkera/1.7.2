@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass SpeechBubbleWidget.SpeechBubbleWidget_C
 // 0x0010 (0x0240 - 0x0230)
@@ -32,17 +31,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SpeechBubbleWidget_C">();
+		BP_STATIC_CLASS_IMPL("SpeechBubbleWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpeechBubbleWidget_C")
 	}
 	static class USpeechBubbleWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USpeechBubbleWidget_C>();
 	}
 };
-static_assert(alignof(USpeechBubbleWidget_C) == 0x000008, "Wrong alignment on USpeechBubbleWidget_C");
-static_assert(sizeof(USpeechBubbleWidget_C) == 0x000240, "Wrong size on USpeechBubbleWidget_C");
-static_assert(offsetof(USpeechBubbleWidget_C, UberGraphFrame) == 0x000230, "Member 'USpeechBubbleWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USpeechBubbleWidget_C, BubbleText) == 0x000238, "Member 'USpeechBubbleWidget_C::BubbleText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

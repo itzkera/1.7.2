@@ -14,8 +14,7 @@
 #include "CraftingIngredient_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function CraftingIngredient.CraftingIngredient_C.ExecuteUbergraph_CraftingIngredient
 // ()
@@ -104,5 +103,5 @@ void UCraftingIngredient_C::ShowDivider(bool Show)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

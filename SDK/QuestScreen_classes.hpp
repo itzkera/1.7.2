@@ -16,8 +16,7 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass QuestScreen.QuestScreen_C
 // 0x00D0 (0x04B0 - 0x03E0)
@@ -93,39 +92,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestScreen_C">();
+		BP_STATIC_CLASS_IMPL("QuestScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestScreen_C")
 	}
 	static class UQuestScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestScreen_C>();
 	}
 };
-static_assert(alignof(UQuestScreen_C) == 0x000008, "Wrong alignment on UQuestScreen_C");
-static_assert(sizeof(UQuestScreen_C) == 0x0004B0, "Wrong size on UQuestScreen_C");
-static_assert(offsetof(UQuestScreen_C, UberGraphFrame) == 0x0003E0, "Member 'UQuestScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, JournalQuestDetails) == 0x0003E8, "Member 'UQuestScreen_C::JournalQuestDetails' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, JournalQuestRewardDetails) == 0x0003F0, "Member 'UQuestScreen_C::JournalQuestRewardDetails' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, QuestDetailsScrollbox) == 0x0003F8, "Member 'UQuestScreen_C::QuestDetailsScrollbox' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, QuestsTreeView) == 0x000400, "Member 'UQuestScreen_C::QuestsTreeView' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, SafeZone_2) == 0x000408, "Member 'UQuestScreen_C::SafeZone_2' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, ActiveQuestItem) == 0x000410, "Member 'UQuestScreen_C::ActiveQuestItem' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNamePlay) == 0x000418, "Member 'UQuestScreen_C::rowNamePlay' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNameAbandon) == 0x000420, "Member 'UQuestScreen_C::rowNameAbandon' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNameCollect) == 0x000428, "Member 'UQuestScreen_C::rowNameCollect' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNameReplayIntro) == 0x000430, "Member 'UQuestScreen_C::rowNameReplayIntro' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNameReplayOutro) == 0x000438, "Member 'UQuestScreen_C::rowNameReplayOutro' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNamePinQuest) == 0x000440, "Member 'UQuestScreen_C::rowNamePinQuest' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNameStopConversation) == 0x000448, "Member 'UQuestScreen_C::rowNameStopConversation' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, PreviousEntry) == 0x000450, "Member 'UQuestScreen_C::PreviousEntry' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, isFrontEnd_) == 0x000458, "Member 'UQuestScreen_C::isFrontEnd_' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, CloseJournal) == 0x000460, "Member 'UQuestScreen_C::CloseJournal' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, rowNameUnpinQuest) == 0x000470, "Member 'UQuestScreen_C::rowNameUnpinQuest' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, QuestDetailsWidgetReference) == 0x000478, "Member 'UQuestScreen_C::QuestDetailsWidgetReference' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, RewardDetailsWidgetReference) == 0x000480, "Member 'UQuestScreen_C::RewardDetailsWidgetReference' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, InitialQuestToSelect) == 0x000488, "Member 'UQuestScreen_C::InitialQuestToSelect' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, UpdatePendingSeenItemTimerHandle) == 0x000490, "Member 'UQuestScreen_C::UpdatePendingSeenItemTimerHandle' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, QuestButtons) == 0x000498, "Member 'UQuestScreen_C::QuestButtons' has a wrong offset!");
-static_assert(offsetof(UQuestScreen_C, bDisableClaimRewardButton) == 0x0004A8, "Member 'UQuestScreen_C::bDisableClaimRewardButton' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

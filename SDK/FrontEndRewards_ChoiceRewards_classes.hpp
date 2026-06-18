@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C
 // 0x00D8 (0x0338 - 0x0260)
@@ -90,43 +89,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewards_ChoiceRewards_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewards_ChoiceRewards_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewards_ChoiceRewards_C")
 	}
 	static class UFrontEndRewards_ChoiceRewards_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewards_ChoiceRewards_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewards_ChoiceRewards_C) == 0x000008, "Wrong alignment on UFrontEndRewards_ChoiceRewards_C");
-static_assert(sizeof(UFrontEndRewards_ChoiceRewards_C) == 0x000338, "Wrong size on UFrontEndRewards_ChoiceRewards_C");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, UberGraphFrame) == 0x000260, "Member 'UFrontEndRewards_ChoiceRewards_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, AnimFadeOut) == 0x000268, "Member 'UFrontEndRewards_ChoiceRewards_C::AnimFadeOut' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, AnimFadeIn) == 0x000270, "Member 'UFrontEndRewards_ChoiceRewards_C::AnimFadeIn' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, BorderConfirmationDim) == 0x000278, "Member 'UFrontEndRewards_ChoiceRewards_C::BorderConfirmationDim' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, ButtonNo) == 0x000280, "Member 'UFrontEndRewards_ChoiceRewards_C::ButtonNo' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, ButtonYes) == 0x000288, "Member 'UFrontEndRewards_ChoiceRewards_C::ButtonYes' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, CanvasPanelCardList) == 0x000290, "Member 'UFrontEndRewards_ChoiceRewards_C::CanvasPanelCardList' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, CommonBorder_0) == 0x000298, "Member 'UFrontEndRewards_ChoiceRewards_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, OverlayMain) == 0x0002A0, "Member 'UFrontEndRewards_ChoiceRewards_C::OverlayMain' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, SizeBoxCanvasSize) == 0x0002A8, "Member 'UFrontEndRewards_ChoiceRewards_C::SizeBoxCanvasSize' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, TextDescriptionHeader) == 0x0002B0, "Member 'UFrontEndRewards_ChoiceRewards_C::TextDescriptionHeader' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, TextDescriptionSummary) == 0x0002B8, "Member 'UFrontEndRewards_ChoiceRewards_C::TextDescriptionSummary' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, VerticalBoxConfirmation) == 0x0002C0, "Member 'UFrontEndRewards_ChoiceRewards_C::VerticalBoxConfirmation' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, VerticalBoxDescription) == 0x0002C8, "Member 'UFrontEndRewards_ChoiceRewards_C::VerticalBoxDescription' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, CardPadding) == 0x0002D0, "Member 'UFrontEndRewards_ChoiceRewards_C::CardPadding' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, CardList) == 0x0002D8, "Member 'UFrontEndRewards_ChoiceRewards_C::CardList' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, CardSelectionIndex) == 0x0002E8, "Member 'UFrontEndRewards_ChoiceRewards_C::CardSelectionIndex' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, ScaleDuration) == 0x0002EC, "Member 'UFrontEndRewards_ChoiceRewards_C::ScaleDuration' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, OnRewardSelected) == 0x0002F0, "Member 'UFrontEndRewards_ChoiceRewards_C::OnRewardSelected' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, CardSidePadding) == 0x000300, "Member 'UFrontEndRewards_ChoiceRewards_C::CardSidePadding' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, HighlightedScale) == 0x000304, "Member 'UFrontEndRewards_ChoiceRewards_C::HighlightedScale' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, NormalScale) == 0x000308, "Member 'UFrontEndRewards_ChoiceRewards_C::NormalScale' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, BackgroundScale) == 0x00030C, "Member 'UFrontEndRewards_ChoiceRewards_C::BackgroundScale' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, NormalShadowDepth) == 0x000310, "Member 'UFrontEndRewards_ChoiceRewards_C::NormalShadowDepth' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, BackgroundShadowDepth) == 0x000314, "Member 'UFrontEndRewards_ChoiceRewards_C::BackgroundShadowDepth' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, HighlightedShadowDepth) == 0x000318, "Member 'UFrontEndRewards_ChoiceRewards_C::HighlightedShadowDepth' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, InspectAction) == 0x000320, "Member 'UFrontEndRewards_ChoiceRewards_C::InspectAction' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewards_ChoiceRewards_C, bCardSelectionDisabled) == 0x000330, "Member 'UFrontEndRewards_ChoiceRewards_C::bCardSelectionDisabled' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

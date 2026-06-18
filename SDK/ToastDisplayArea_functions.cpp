@@ -14,8 +14,7 @@
 #include "ToastDisplayArea_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ToastDisplayArea.ToastDisplayArea_C.ExecuteUbergraph_ToastDisplayArea
 // ()
@@ -134,5 +133,5 @@ void UToastDisplayArea_C::AttemptDisplayNextToast()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

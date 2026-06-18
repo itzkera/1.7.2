@@ -14,8 +14,7 @@
 #include "HelpWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function HelpWidget.HelpWidget_C.ExecuteUbergraph_HelpWidget
 // ()
@@ -74,11 +73,11 @@ void UHelpWidget_C::BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButt
 // Function HelpWidget.HelpWidget_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             inTitle                                                (Parm)
-// class FText                             inDescription                                          (Parm)
-// class FText                             inStep1_Text                                           (Parm)
-// class FText                             inStep2_Text                                           (Parm)
-// class FText                             inStep3_Text                                           (Parm)
+// const class FText&                      inTitle                                                (Parm)
+// const class FText&                      inDescription                                          (Parm)
+// const class FText&                      inStep1_Text                                           (Parm)
+// const class FText&                      inStep2_Text                                           (Parm)
+// const class FText&                      inStep3_Text                                           (Parm)
 // class UTexture2D*                       inStep1_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                       inStep2_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                       inStep3_Picture                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -106,5 +105,5 @@ void UHelpWidget_C::Init(const class FText& inTitle, const class FText& inDescri
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

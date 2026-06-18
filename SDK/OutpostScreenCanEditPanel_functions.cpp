@@ -14,8 +14,7 @@
 #include "OutpostScreenCanEditPanel_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.ExecuteUbergraph_OutpostScreenCanEditPanel
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UOutpostScreenCanEditPanel_C::ExecuteUbergraph_OutpostScreenCanEditPanel(in
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.PartyUpdated
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTeamMemberInfo&       PlayerInfo                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UOutpostScreenCanEditPanel_C::PartyUpdated(const struct FFortTeamMemberInfo& PlayerInfo)
 {
@@ -102,7 +101,7 @@ void UOutpostScreenCanEditPanel_C::HandleRemoved(int32 PlayerIndex)
 // Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.HandleJoined
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewTeamMemberInfo                                      (Parm)
+// const struct FFortTeamMemberInfo&       NewTeamMemberInfo                                      (Parm)
 
 void UOutpostScreenCanEditPanel_C::HandleJoined(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
 {
@@ -208,5 +207,5 @@ void UOutpostScreenCanEditPanel_C::CenterWidget()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

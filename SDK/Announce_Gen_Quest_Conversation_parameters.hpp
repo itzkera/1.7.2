@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation
 // 0x00C0 (0x00C0 - 0x0000)
@@ -26,11 +26,6 @@ public:
 	struct FFortConversationSentence              K2Node_Event_FinishingSentence;                    // 0x0008(0x00B0)()
 	int32                                         K2Node_Event_FinishingSentenceSentenceIndex;       // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation) == 0x000008, "Wrong alignment on Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation");
-static_assert(sizeof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation) == 0x0000C0, "Wrong size on Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation");
-static_assert(offsetof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation, EntryPoint) == 0x000000, "Member 'Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation, K2Node_Event_FinishingSentence) == 0x000008, "Member 'Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation::K2Node_Event_FinishingSentence' has a wrong offset!");
-static_assert(offsetof(Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation, K2Node_Event_FinishingSentenceSentenceIndex) == 0x0000B8, "Member 'Announce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation::K2Node_Event_FinishingSentenceSentenceIndex' has a wrong offset!");
 
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.OnConversationFinished
 // 0x00B8 (0x00B8 - 0x0000)
@@ -40,10 +35,6 @@ public:
 	struct FFortConversationSentence              FinishingSentence;                                 // 0x0000(0x00B0)(Parm)
 	int32                                         FinishingSentenceSentenceIndex;                    // 0x00B0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_Gen_Quest_Conversation_C_OnConversationFinished) == 0x000008, "Wrong alignment on Announce_Gen_Quest_Conversation_C_OnConversationFinished");
-static_assert(sizeof(Announce_Gen_Quest_Conversation_C_OnConversationFinished) == 0x0000B8, "Wrong size on Announce_Gen_Quest_Conversation_C_OnConversationFinished");
-static_assert(offsetof(Announce_Gen_Quest_Conversation_C_OnConversationFinished, FinishingSentence) == 0x000000, "Member 'Announce_Gen_Quest_Conversation_C_OnConversationFinished::FinishingSentence' has a wrong offset!");
-static_assert(offsetof(Announce_Gen_Quest_Conversation_C_OnConversationFinished, FinishingSentenceSentenceIndex) == 0x0000B0, "Member 'Announce_Gen_Quest_Conversation_C_OnConversationFinished::FinishingSentenceSentenceIndex' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "ItemTransformConfirmationModal_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.ExecuteUbergraph_ItemTransformConfirmationModal
 // ()
@@ -95,7 +94,7 @@ void UItemTransformConfirmationModal_C::BndEvt__CancelButton_K2Node_ComponentBou
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                        TransformKey                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortItem*>                SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<class UFortItem*>&               SacrificeItems                                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // int32                                   SacrificePoints                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTier                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -118,5 +117,5 @@ void UItemTransformConfirmationModal_C::UpdateTransformInfo(class UFortItem* Tra
 	SacrificeItems = std::move(Parms.SacrificeItems);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass ItemDragIcon.ItemDragIcon_C
 // 0x0018 (0x0258 - 0x0240)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDragIcon_C">();
+		BP_STATIC_CLASS_IMPL("ItemDragIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDragIcon_C")
 	}
 	static class UItemDragIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDragIcon_C>();
 	}
 };
-static_assert(alignof(UItemDragIcon_C) == 0x000008, "Wrong alignment on UItemDragIcon_C");
-static_assert(sizeof(UItemDragIcon_C) == 0x000258, "Wrong size on UItemDragIcon_C");
-static_assert(offsetof(UItemDragIcon_C, UberGraphFrame) == 0x000240, "Member 'UItemDragIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDragIcon_C, IconImage) == 0x000248, "Member 'UItemDragIcon_C::IconImage' has a wrong offset!");
-static_assert(offsetof(UItemDragIcon_C, IconTexture) == 0x000250, "Member 'UItemDragIcon_C::IconTexture' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

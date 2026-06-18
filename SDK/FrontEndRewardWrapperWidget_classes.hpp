@@ -16,8 +16,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C
 // 0x0050 (0x0290 - 0x0240)
@@ -46,25 +45,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEndRewardWrapperWidget_C">();
+		BP_STATIC_CLASS_IMPL("FrontEndRewardWrapperWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontEndRewardWrapperWidget_C")
 	}
 	static class UFrontEndRewardWrapperWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontEndRewardWrapperWidget_C>();
 	}
 };
-static_assert(alignof(UFrontEndRewardWrapperWidget_C) == 0x000008, "Wrong alignment on UFrontEndRewardWrapperWidget_C");
-static_assert(sizeof(UFrontEndRewardWrapperWidget_C) == 0x000290, "Wrong size on UFrontEndRewardWrapperWidget_C");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, UberGraphFrame) == 0x000240, "Member 'UFrontEndRewardWrapperWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, IntroAnim) == 0x000248, "Member 'UFrontEndRewardWrapperWidget_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, Overlay_Container) == 0x000250, "Member 'UFrontEndRewardWrapperWidget_C::Overlay_Container' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, SizeBox_Container) == 0x000258, "Member 'UFrontEndRewardWrapperWidget_C::SizeBox_Container' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, TextName) == 0x000260, "Member 'UFrontEndRewardWrapperWidget_C::TextName' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, Reward) == 0x000268, "Member 'UFrontEndRewardWrapperWidget_C::Reward' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, StackCounterDefaultVisibility) == 0x000270, "Member 'UFrontEndRewardWrapperWidget_C::StackCounterDefaultVisibility' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, DefaultDisplayStyle) == 0x000271, "Member 'UFrontEndRewardWrapperWidget_C::DefaultDisplayStyle' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, EventDispatcher_Go_Trigger) == 0x000278, "Member 'UFrontEndRewardWrapperWidget_C::EventDispatcher_Go_Trigger' has a wrong offset!");
-static_assert(offsetof(UFrontEndRewardWrapperWidget_C, ShowText) == 0x000288, "Member 'UFrontEndRewardWrapperWidget_C::ShowText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

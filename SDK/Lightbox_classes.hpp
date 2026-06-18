@@ -14,8 +14,7 @@
 #include "UMG_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Lightbox.Lightbox_C
 // 0x0050 (0x0280 - 0x0230)
@@ -44,23 +43,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Lightbox_C">();
+		BP_STATIC_CLASS_IMPL("Lightbox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lightbox_C")
 	}
 	static class ULightbox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULightbox_C>();
 	}
 };
-static_assert(alignof(ULightbox_C) == 0x000008, "Wrong alignment on ULightbox_C");
-static_assert(sizeof(ULightbox_C) == 0x000280, "Wrong size on ULightbox_C");
-static_assert(offsetof(ULightbox_C, UberGraphFrame) == 0x000230, "Member 'ULightbox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, FadeOut) == 0x000238, "Member 'ULightbox_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, FadeIn) == 0x000240, "Member 'ULightbox_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Content) == 0x000248, "Member 'ULightbox_C::Content' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Dimmer) == 0x000250, "Member 'ULightbox_C::Dimmer' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, SafeZone_0) == 0x000258, "Member 'ULightbox_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, IntroEnded) == 0x000260, "Member 'ULightbox_C::IntroEnded' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, OutroEnded) == 0x000270, "Member 'ULightbox_C::OutroEnded' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

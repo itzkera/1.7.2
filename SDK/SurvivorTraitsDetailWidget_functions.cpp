@@ -14,8 +14,7 @@
 #include "SurvivorTraitsDetailWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function SurvivorTraitsDetailWidget.SurvivorTraitsDetailWidget_C.ExecuteUbergraph_SurvivorTraitsDetailWidget
 // (HasDefaults)
@@ -50,5 +49,5 @@ void USurvivorTraitsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

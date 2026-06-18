@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass Feedback.Feedback_C
 // 0x00A0 (0x0540 - 0x04A0)
@@ -59,33 +58,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Feedback_C">();
+		BP_STATIC_CLASS_IMPL("Feedback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Feedback_C")
 	}
 	static class UFeedback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFeedback_C>();
 	}
 };
-static_assert(alignof(UFeedback_C) == 0x000008, "Wrong alignment on UFeedback_C");
-static_assert(sizeof(UFeedback_C) == 0x000540, "Wrong size on UFeedback_C");
-static_assert(offsetof(UFeedback_C, UberGraphFrame) == 0x0004A0, "Member 'UFeedback_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, BugButton) == 0x0004A8, "Member 'UFeedback_C::BugButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CancelButton) == 0x0004B0, "Member 'UFeedback_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CommentButton) == 0x0004B8, "Member 'UFeedback_C::CommentButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, EntryProgressSwitcher) == 0x0004C0, "Member 'UFeedback_C::EntryProgressSwitcher' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, EntryVbox) == 0x0004C8, "Member 'UFeedback_C::EntryVbox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, Image_0) == 0x0004D0, "Member 'UFeedback_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, InteractableVBox) == 0x0004D8, "Member 'UFeedback_C::InteractableVBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, Lightbox) == 0x0004E0, "Member 'UFeedback_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, MainIcon) == 0x0004E8, "Member 'UFeedback_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, PlayerButton) == 0x0004F0, "Member 'UFeedback_C::PlayerButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, ProgressSizeBox) == 0x0004F8, "Member 'UFeedback_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, ProgressVBox) == 0x000500, "Member 'UFeedback_C::ProgressVBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, RootBorder) == 0x000508, "Member 'UFeedback_C::RootBorder' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, RootOverlay) == 0x000510, "Member 'UFeedback_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, SendButton) == 0x000518, "Member 'UFeedback_C::SendButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, Title) == 0x000520, "Member 'UFeedback_C::Title' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, NewVar_0) == 0x000528, "Member 'UFeedback_C::NewVar_0' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

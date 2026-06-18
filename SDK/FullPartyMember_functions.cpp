@@ -14,8 +14,7 @@
 #include "FullPartyMember_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function FullPartyMember.FullPartyMember_C.ExecuteUbergraph_FullPartyMember
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UFullPartyMember_C::ExecuteUbergraph_FullPartyMember(int32 EntryPoint)
 // Function FullPartyMember.FullPartyMember_C.OnPlayerInfoChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewInfo                                                (Parm)
+// const struct FFortTeamMemberInfo&       NewInfo                                                (Parm)
 
 void UFullPartyMember_C::OnPlayerInfoChanged(const struct FFortTeamMemberInfo& NewInfo)
 {
@@ -144,7 +143,7 @@ void UFullPartyMember_C::DialogResult_1F64669049EA0B1762273C8ED9CBB619(EFortDial
 // Function FullPartyMember.FullPartyMember_C.UpdateMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewMemberInfo                                          (Parm)
+// const struct FFortTeamMemberInfo&       NewMemberInfo                                          (Parm)
 
 void UFullPartyMember_C::UpdateMemberInfo(const struct FFortTeamMemberInfo& NewMemberInfo)
 {
@@ -206,7 +205,7 @@ void UFullPartyMember_C::ShowConnected()
 // Function FullPartyMember.FullPartyMember_C.UpdateDimensions
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                        NewDimensions                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 NewDimensions                                          (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UFullPartyMember_C::UpdateDimensions(const struct FVector2D& NewDimensions)
 {
@@ -297,7 +296,7 @@ void UFullPartyMember_C::HandleLocalPlayerActionsResult(EFortDialogResult Result
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                                    LocalPlayerAlone                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<struct FConfirmationDialogAction>OutConfirmActions                                      (Parm, OutParm, ZeroConstructor)
+// TArray<struct FConfirmationDialogAction>*OutConfirmActions                                      (Parm, OutParm, ZeroConstructor)
 
 void UFullPartyMember_C::MakeLocalPlayerConfirmActions(bool LocalPlayerAlone, TArray<struct FConfirmationDialogAction>* OutConfirmActions)
 {
@@ -438,5 +437,5 @@ void UFullPartyMember_C::UpdateBang()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,8 @@
 #include "FortniteGame_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.ExecuteUbergraph_Results_PlayerScoreRow
 // 0x00C0 (0x00C0 - 0x0000)
@@ -48,31 +48,6 @@ public:
 	class UCommonNumericTextBlock*                CallFunc_Array_Get_Item;                           // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow) == 0x000008, "Wrong alignment on Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow");
-static_assert(sizeof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow) == 0x0000C0, "Wrong size on Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, EntryPoint) == 0x000000, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_int_Variable) == 0x000004, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable) == 0x000008, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable2) == 0x000018, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable2' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable3) == 0x000028, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable3' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_string_Variable4) == 0x000038, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_string_Variable4' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_int_Array_Index_Variable) == 0x000048, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue) == 0x00004C, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000054, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Add_IntInt_ReturnValue) == 0x000058, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue2) == 0x00005C, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomInteger_ReturnValue3) == 0x000060, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomInteger_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x000064, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, K2Node_Select_Default) == 0x000068, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Conv_StringToText_ReturnValue) == 0x000078, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, K2Node_CustomEvent_bIsDesignTime) == 0x000090, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::K2Node_CustomEvent_bIsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_RandomBool_ReturnValue) == 0x000091, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_RandomBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, K2Node_Event_IsDesignTime) == 0x000092, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, K2Node_MakeArray_Array) == 0x000098, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Array_Length_ReturnValue) == 0x0000A8, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Array_Get_Item) == 0x0000B0, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow, CallFunc_Less_IntInt_ReturnValue) == 0x0000B8, "Member 'Results_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +56,6 @@ struct Results_PlayerScoreRow_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_PreConstruct) == 0x000001, "Wrong alignment on Results_PlayerScoreRow_C_PreConstruct");
-static_assert(sizeof(Results_PlayerScoreRow_C_PreConstruct) == 0x000001, "Wrong size on Results_PlayerScoreRow_C_PreConstruct");
-static_assert(offsetof(Results_PlayerScoreRow_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Results_PlayerScoreRow_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.Manual Pre Construct
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +64,6 @@ struct Results_PlayerScoreRow_C_Manual_Pre_Construct final
 public:
 	bool                                          bIsDesignTime;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_Manual_Pre_Construct) == 0x000001, "Wrong alignment on Results_PlayerScoreRow_C_Manual_Pre_Construct");
-static_assert(sizeof(Results_PlayerScoreRow_C_Manual_Pre_Construct) == 0x000001, "Wrong size on Results_PlayerScoreRow_C_Manual_Pre_Construct");
-static_assert(offsetof(Results_PlayerScoreRow_C_Manual_Pre_Construct, bIsDesignTime) == 0x000000, "Member 'Results_PlayerScoreRow_C_Manual_Pre_Construct::bIsDesignTime' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.Initialize
 // 0x0030 (0x0030 - 0x0000)
@@ -107,12 +76,6 @@ public:
 	struct FUniqueNetIdRepl                       CallFunc_GetPlayerIDFromScoreReportIndex_OutUniqueNetIdRepl; // 0x0010(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsLocalPlayer_ReturnValue;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_Initialize) == 0x000008, "Wrong alignment on Results_PlayerScoreRow_C_Initialize");
-static_assert(sizeof(Results_PlayerScoreRow_C_Initialize) == 0x000030, "Wrong size on Results_PlayerScoreRow_C_Initialize");
-static_assert(offsetof(Results_PlayerScoreRow_C_Initialize, ScoreReport) == 0x000000, "Member 'Results_PlayerScoreRow_C_Initialize::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_Initialize, ScoreReportIndex) == 0x000008, "Member 'Results_PlayerScoreRow_C_Initialize::ScoreReportIndex' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_Initialize, CallFunc_GetPlayerIDFromScoreReportIndex_OutUniqueNetIdRepl) == 0x000010, "Member 'Results_PlayerScoreRow_C_Initialize::CallFunc_GetPlayerIDFromScoreReportIndex_OutUniqueNetIdRepl' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_Initialize, CallFunc_IsLocalPlayer_ReturnValue) == 0x000028, "Member 'Results_PlayerScoreRow_C_Initialize::CallFunc_IsLocalPlayer_ReturnValue' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeBackground
 // 0x0040 (0x0040 - 0x0000)
@@ -130,16 +93,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_InitializeBackground) == 0x000008, "Wrong alignment on Results_PlayerScoreRow_C_InitializeBackground");
-static_assert(sizeof(Results_PlayerScoreRow_C_InitializeBackground) == 0x000040, "Wrong size on Results_PlayerScoreRow_C_InitializeBackground");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, Temp_int_Array_Index_Variable) == 0x000000, "Member 'Results_PlayerScoreRow_C_InitializeBackground::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'Results_PlayerScoreRow_C_InitializeBackground::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'Results_PlayerScoreRow_C_InitializeBackground::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, K2Node_MakeArray_Array) == 0x000010, "Member 'Results_PlayerScoreRow_C_InitializeBackground::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, CallFunc_Array_Get_Item) == 0x000020, "Member 'Results_PlayerScoreRow_C_InitializeBackground::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'Results_PlayerScoreRow_C_InitializeBackground::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000030, "Member 'Results_PlayerScoreRow_C_InitializeBackground::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeBackground, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'Results_PlayerScoreRow_C_InitializeBackground::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeScores
 // 0x0090 (0x0090 - 0x0000)
@@ -170,25 +123,6 @@ public:
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EFortUIScoreType>                      K2Node_MakeArray_Array2;                           // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_InitializeScores) == 0x000008, "Wrong alignment on Results_PlayerScoreRow_C_InitializeScores");
-static_assert(sizeof(Results_PlayerScoreRow_C_InitializeScores) == 0x000090, "Wrong size on Results_PlayerScoreRow_C_InitializeScores");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, InScoreReport) == 0x000000, "Member 'Results_PlayerScoreRow_C_InitializeScores::InScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, InScoreReportIndex) == 0x000008, "Member 'Results_PlayerScoreRow_C_InitializeScores::InScoreReportIndex' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, TextScoresOrdered) == 0x000010, "Member 'Results_PlayerScoreRow_C_InitializeScores::TextScoresOrdered' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, ScoreTypesOrdered) == 0x000020, "Member 'Results_PlayerScoreRow_C_InitializeScores::ScoreTypesOrdered' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, ScoreReportIndex) == 0x000030, "Member 'Results_PlayerScoreRow_C_InitializeScores::ScoreReportIndex' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, ScoreReport) == 0x000038, "Member 'Results_PlayerScoreRow_C_InitializeScores::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, Temp_int_Array_Index_Variable) == 0x000040, "Member 'Results_PlayerScoreRow_C_InitializeScores::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, Temp_int_Loop_Counter_Variable) == 0x000044, "Member 'Results_PlayerScoreRow_C_InitializeScores::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, K2Node_MakeArray_Array) == 0x000050, "Member 'Results_PlayerScoreRow_C_InitializeScores::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_Array_Get_Item) == 0x000060, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_Array_Get_Item2) == 0x000068, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_Array_Length_ReturnValue) == 0x00006C, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_GetPlayerScore_ReturnValue) == 0x000074, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_GetPlayerScore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000078, "Member 'Results_PlayerScoreRow_C_InitializeScores::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeScores, K2Node_MakeArray_Array2) == 0x000080, "Member 'Results_PlayerScoreRow_C_InitializeScores::K2Node_MakeArray_Array2' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializePlayerName
 // 0x0028 (0x0028 - 0x0000)
@@ -200,11 +134,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetPlayerName_ReturnValue;                // 0x0010(0x0018)()
 };
-static_assert(alignof(Results_PlayerScoreRow_C_InitializePlayerName) == 0x000008, "Wrong alignment on Results_PlayerScoreRow_C_InitializePlayerName");
-static_assert(sizeof(Results_PlayerScoreRow_C_InitializePlayerName) == 0x000028, "Wrong size on Results_PlayerScoreRow_C_InitializePlayerName");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializePlayerName, ScoreReport) == 0x000000, "Member 'Results_PlayerScoreRow_C_InitializePlayerName::ScoreReport' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializePlayerName, ScoreReportReferece) == 0x000008, "Member 'Results_PlayerScoreRow_C_InitializePlayerName::ScoreReportReferece' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializePlayerName, CallFunc_GetPlayerName_ReturnValue) == 0x000010, "Member 'Results_PlayerScoreRow_C_InitializePlayerName::CallFunc_GetPlayerName_ReturnValue' has a wrong offset!");
 
 // Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeHomeBasePower
 // 0x0030 (0x0030 - 0x0000)
@@ -219,14 +148,6 @@ public:
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Results_PlayerScoreRow_C_InitializeHomeBasePower) == 0x000008, "Wrong alignment on Results_PlayerScoreRow_C_InitializeHomeBasePower");
-static_assert(sizeof(Results_PlayerScoreRow_C_InitializeHomeBasePower) == 0x000030, "Wrong size on Results_PlayerScoreRow_C_InitializeHomeBasePower");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeHomeBasePower, PlayerID) == 0x000000, "Member 'Results_PlayerScoreRow_C_InitializeHomeBasePower::PlayerID' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeHomeBasePower, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'Results_PlayerScoreRow_C_InitializeHomeBasePower::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeHomeBasePower, CallFunc_GetTotalHomebaseRating_Rating) == 0x000020, "Member 'Results_PlayerScoreRow_C_InitializeHomeBasePower::CallFunc_GetTotalHomebaseRating_Rating' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeHomeBasePower, CallFunc_GetTotalHomebaseRating_ProgressFraction) == 0x000024, "Member 'Results_PlayerScoreRow_C_InitializeHomeBasePower::CallFunc_GetTotalHomebaseRating_ProgressFraction' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeHomeBasePower, CallFunc_GetTotalHomebaseRating_ReturnValue) == 0x000028, "Member 'Results_PlayerScoreRow_C_InitializeHomeBasePower::CallFunc_GetTotalHomebaseRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Results_PlayerScoreRow_C_InitializeHomeBasePower, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00002C, "Member 'Results_PlayerScoreRow_C_InitializeHomeBasePower::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

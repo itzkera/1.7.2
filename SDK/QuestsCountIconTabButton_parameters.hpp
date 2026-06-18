@@ -15,8 +15,8 @@
 #include "FortniteUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.ExecuteUbergraph_QuestsCountIconTabButton
 // 0x00F8 (0x00F8 - 0x0000)
@@ -45,27 +45,6 @@ public:
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton");
-static_assert(sizeof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton) == 0x0000F8, "Wrong size on QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, EntryPoint) == 0x000000, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetSelected_ReturnValue) == 0x000004, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetSelected_ReturnValue2) == 0x000005, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetSelected_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue) == 0x000006, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue2) == 0x000007, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, K2Node_Event_TabLabelInfo) == 0x000008, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::K2Node_Event_TabLabelInfo' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue3) == 0x0000B0, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue4) == 0x0000B1, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000B2, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue5) == 0x0000B3, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue5' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue6) == 0x0000B4, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue6' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, K2Node_Event_IsDesignTime) == 0x0000B5, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue) == 0x0000B8, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_EqualEqual_ClassClass_ReturnValue7) == 0x0000C0, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_EqualEqual_ClassClass_ReturnValue7' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetCurrentTextStyleClass_ReturnValue2) == 0x0000C8, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetCurrentTextStyleClass_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetContext_ReturnValue) == 0x0000D0, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, K2Node_CreateDelegate_OutputDelegate) == 0x0000D8, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_GetQuestManager_ReturnValue) == 0x0000E8, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton, CallFunc_IsValid_ReturnValue) == 0x0000F0, "Member 'QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTabLabelInfo
 // 0x00A8 (0x00A8 - 0x0000)
@@ -74,9 +53,6 @@ struct QuestsCountIconTabButton_C_SetTabLabelInfo final
 public:
 	struct FFortTabButtonLabelInfo                TabLabelInfo;                                      // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_SetTabLabelInfo) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_SetTabLabelInfo");
-static_assert(sizeof(QuestsCountIconTabButton_C_SetTabLabelInfo) == 0x0000A8, "Wrong size on QuestsCountIconTabButton_C_SetTabLabelInfo");
-static_assert(offsetof(QuestsCountIconTabButton_C_SetTabLabelInfo, TabLabelInfo) == 0x000000, "Member 'QuestsCountIconTabButton_C_SetTabLabelInfo::TabLabelInfo' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +61,6 @@ struct QuestsCountIconTabButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_PreConstruct) == 0x000001, "Wrong alignment on QuestsCountIconTabButton_C_PreConstruct");
-static_assert(sizeof(QuestsCountIconTabButton_C_PreConstruct) == 0x000001, "Wrong size on QuestsCountIconTabButton_C_PreConstruct");
-static_assert(offsetof(QuestsCountIconTabButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'QuestsCountIconTabButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Text
 // 0x0038 (0x0038 - 0x0000)
@@ -103,14 +76,6 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Create_Basic_Tooltip_Output;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_Set_Text) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_Set_Text");
-static_assert(sizeof(QuestsCountIconTabButton_C_Set_Text) == 0x000038, "Wrong size on QuestsCountIconTabButton_C_Set_Text");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, ButtonText_0) == 0x000000, "Member 'QuestsCountIconTabButton_C_Set_Text::ButtonText_0' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_TextIsEmpty_ReturnValue) == 0x000018, "Member 'QuestsCountIconTabButton_C_Set_Text::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_Not_PreBool_ReturnValue) == 0x000019, "Member 'QuestsCountIconTabButton_C_Set_Text::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'QuestsCountIconTabButton_C_Set_Text::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'QuestsCountIconTabButton_C_Set_Text::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Text, CallFunc_Create_Basic_Tooltip_Output) == 0x000030, "Member 'QuestsCountIconTabButton_C_Set_Text::CallFunc_Create_Basic_Tooltip_Output' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Icon
 // 0x0090 (0x0090 - 0x0000)
@@ -119,9 +84,6 @@ struct QuestsCountIconTabButton_C_Set_Icon final
 public:
 	struct FSlateBrush                            IconBrush_0;                                       // 0x0000(0x0090)(Parm)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_Set_Icon) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_Set_Icon");
-static_assert(sizeof(QuestsCountIconTabButton_C_Set_Icon) == 0x000090, "Wrong size on QuestsCountIconTabButton_C_Set_Icon");
-static_assert(offsetof(QuestsCountIconTabButton_C_Set_Icon, IconBrush_0) == 0x000000, "Member 'QuestsCountIconTabButton_C_Set_Icon::IconBrush_0' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTutorialBorderStyle
 // 0x0008 (0x0008 - 0x0000)
@@ -130,9 +92,6 @@ struct QuestsCountIconTabButton_C_SetTutorialBorderStyle final
 public:
 	class UClass*                                 BorderStyle;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_SetTutorialBorderStyle) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_SetTutorialBorderStyle");
-static_assert(sizeof(QuestsCountIconTabButton_C_SetTutorialBorderStyle) == 0x000008, "Wrong size on QuestsCountIconTabButton_C_SetTutorialBorderStyle");
-static_assert(offsetof(QuestsCountIconTabButton_C_SetTutorialBorderStyle, BorderStyle) == 0x000000, "Member 'QuestsCountIconTabButton_C_SetTutorialBorderStyle::BorderStyle' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Update Text
 // 0x0078 (0x0078 - 0x0000)
@@ -165,28 +124,6 @@ public:
 	EFortQuestState                               CallFunc_GetQuestState_ReturnValue;                // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_Update_Text) == 0x000008, "Wrong alignment on QuestsCountIconTabButton_C_Update_Text");
-static_assert(sizeof(QuestsCountIconTabButton_C_Update_Text) == 0x000078, "Wrong size on QuestsCountIconTabButton_C_Update_Text");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, QuestCount) == 0x000000, "Member 'QuestsCountIconTabButton_C_Update_Text::QuestCount' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'QuestsCountIconTabButton_C_Update_Text::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'QuestsCountIconTabButton_C_Update_Text::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, Temp_int_Loop_Counter_Variable2) == 0x000010, "Member 'QuestsCountIconTabButton_C_Update_Text::Temp_int_Loop_Counter_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Add_IntInt_ReturnValue2) == 0x000020, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Add_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_GetQuestManager_ReturnValue) == 0x000028, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_GetCurrentQuestsCategories_Categories) == 0x000030, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_GetCurrentQuestsCategories_Categories' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Array_Get_Item) == 0x000048, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Array_Length_ReturnValue) == 0x000050, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Array_Length_ReturnValue2) == 0x000054, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Array_Length_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Less_IntInt_ReturnValue2) == 0x000059, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Less_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Add_IntInt_ReturnValue3) == 0x00005C, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Add_IntInt_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, Temp_int_Array_Index_Variable2) == 0x000060, "Member 'QuestsCountIconTabButton_C_Update_Text::Temp_int_Array_Index_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_Array_Get_Item2) == 0x000068, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_Array_Get_Item2' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_GetQuestState_ReturnValue) == 0x000070, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_GetQuestState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Text, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000071, "Member 'QuestsCountIconTabButton_C_Update_Text::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Update Bang State
 // 0x000C (0x000C - 0x0000)
@@ -199,12 +136,6 @@ public:
 	bool                                          CallFunc_GetIsEnabled_ReturnValue;                 // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestsCountIconTabButton_C_Update_Bang_State) == 0x000004, "Wrong alignment on QuestsCountIconTabButton_C_Update_Bang_State");
-static_assert(sizeof(QuestsCountIconTabButton_C_Update_Bang_State) == 0x00000C, "Wrong size on QuestsCountIconTabButton_C_Update_Bang_State");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Bang_State, bBangEnabled_0) == 0x000000, "Member 'QuestsCountIconTabButton_C_Update_Bang_State::bBangEnabled_0' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Bang_State, Count) == 0x000004, "Member 'QuestsCountIconTabButton_C_Update_Bang_State::Count' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Bang_State, CallFunc_GetIsEnabled_ReturnValue) == 0x000008, "Member 'QuestsCountIconTabButton_C_Update_Bang_State::CallFunc_GetIsEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestsCountIconTabButton_C_Update_Bang_State, CallFunc_BooleanAND_ReturnValue) == 0x000009, "Member 'QuestsCountIconTabButton_C_Update_Bang_State::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

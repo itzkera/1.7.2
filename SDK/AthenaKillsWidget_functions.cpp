@@ -14,8 +14,7 @@
 #include "AthenaKillsWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaKillsWidget.AthenaKillsWidget_C.ExecuteUbergraph_AthenaKillsWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UAthenaKillsWidget_C::ExecuteUbergraph_AthenaKillsWidget(int32 EntryPoint)
 // Function AthenaKillsWidget.AthenaKillsWidget_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
 // float                                   InDeltaTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaKillsWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
@@ -58,5 +57,5 @@ void UAthenaKillsWidget_C::Tick(const struct FGeometry& MyGeometry, float InDelt
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

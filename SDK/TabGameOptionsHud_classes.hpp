@@ -14,8 +14,7 @@
 #include "TabGameOptions_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabGameOptionsHud.TabGameOptionsHud_C
 // 0x0010 (0x02B8 - 0x02A8)
@@ -37,17 +36,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGameOptionsHud_C">();
+		BP_STATIC_CLASS_IMPL("TabGameOptionsHud_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGameOptionsHud_C")
 	}
 	static class UTabGameOptionsHud_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGameOptionsHud_C>();
 	}
 };
-static_assert(alignof(UTabGameOptionsHud_C) == 0x000008, "Wrong alignment on UTabGameOptionsHud_C");
-static_assert(sizeof(UTabGameOptionsHud_C) == 0x0002B8, "Wrong size on UTabGameOptionsHud_C");
-static_assert(offsetof(UTabGameOptionsHud_C, UberGraphFrame_TabGameOptionsHud_C) == 0x0002A8, "Member 'UTabGameOptionsHud_C::UberGraphFrame_TabGameOptionsHud_C' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsHud_C, Tooltip_Display) == 0x0002B0, "Member 'UTabGameOptionsHud_C::Tooltip_Display' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaPlayersLeftWidget.AthenaPlayersLeftWidget_C
 // 0x0020 (0x0288 - 0x0268)
@@ -27,17 +26,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaPlayersLeftWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaPlayersLeftWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaPlayersLeftWidget_C")
 	}
 	static class UAthenaPlayersLeftWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaPlayersLeftWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayersLeftWidget_C) == 0x000008, "Wrong alignment on UAthenaPlayersLeftWidget_C");
-static_assert(sizeof(UAthenaPlayersLeftWidget_C) == 0x000288, "Wrong size on UAthenaPlayersLeftWidget_C");
-static_assert(offsetof(UAthenaPlayersLeftWidget_C, PlayersOrTeamsLeftImage) == 0x000268, "Member 'UAthenaPlayersLeftWidget_C::PlayersOrTeamsLeftImage' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayersLeftWidget_C, TeamsLeft) == 0x000270, "Member 'UAthenaPlayersLeftWidget_C::TeamsLeft' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

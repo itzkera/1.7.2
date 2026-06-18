@@ -14,8 +14,7 @@
 #include "Engine_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C
 // 0x0040 (0x03C8 - 0x0388)
@@ -39,23 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HexmapLevelSettings_Temperate01_C">();
+		BP_STATIC_CLASS_IMPL("HexmapLevelSettings_Temperate01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HexmapLevelSettings_Temperate01_C")
 	}
 	static class AHexmapLevelSettings_Temperate01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHexmapLevelSettings_Temperate01_C>();
 	}
 };
-static_assert(alignof(AHexmapLevelSettings_Temperate01_C) == 0x000008, "Wrong alignment on AHexmapLevelSettings_Temperate01_C");
-static_assert(sizeof(AHexmapLevelSettings_Temperate01_C) == 0x0003C8, "Wrong size on AHexmapLevelSettings_Temperate01_C");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, UberGraphFrame) == 0x000388, "Member 'AHexmapLevelSettings_Temperate01_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, ExponentialHeightFog_Volumetric) == 0x000390, "Member 'AHexmapLevelSettings_Temperate01_C::ExponentialHeightFog_Volumetric' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, ExponentialHeightFog) == 0x000398, "Member 'AHexmapLevelSettings_Temperate01_C::ExponentialHeightFog' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, SkyLight) == 0x0003A0, "Member 'AHexmapLevelSettings_Temperate01_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, DirectionalLight_Main) == 0x0003A8, "Member 'AHexmapLevelSettings_Temperate01_C::DirectionalLight_Main' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, LightsRoot) == 0x0003B0, "Member 'AHexmapLevelSettings_Temperate01_C::LightsRoot' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, Arrow) == 0x0003B8, "Member 'AHexmapLevelSettings_Temperate01_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AHexmapLevelSettings_Temperate01_C, DefaultSceneRoot) == 0x0003C0, "Member 'AHexmapLevelSettings_Temperate01_C::DefaultSceneRoot' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

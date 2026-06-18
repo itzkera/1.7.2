@@ -13,8 +13,7 @@
 #include "GameplayAbilities_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GET_DamageParent.GET_DamageParent_C
 // 0x0000 (0x0660 - 0x0660)
@@ -23,15 +22,16 @@ class UGET_DamageParent_C : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_DamageParent_C">();
+		BP_STATIC_CLASS_IMPL("GET_DamageParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_DamageParent_C")
 	}
 	static class UGET_DamageParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_DamageParent_C>();
 	}
 };
-static_assert(alignof(UGET_DamageParent_C) == 0x000010, "Wrong alignment on UGET_DamageParent_C");
-static_assert(sizeof(UGET_DamageParent_C) == 0x000660, "Wrong size on UGET_DamageParent_C");
 
-}
-
+SDK_NAMESPACE_END

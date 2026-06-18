@@ -15,8 +15,8 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.ExecuteUbergraph_HeroSquadSlotsView
 // 0x0030 (0x0030 - 0x0000)
@@ -25,16 +25,10 @@ struct HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName SquadId, int32 SquadSlotIndex)> K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class FName SquadId, int32 SquadSlotIndex)> K2Node_CreateDelegate_OutputDelegate2;             // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FName SquadId, int32 SquadSlotIndex)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FName SquadId, int32 SquadSlotIndex)> K2Node_CreateDelegate_OutputDelegate2; // 0x0018(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView) == 0x000008, "Wrong alignment on HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView");
-static_assert(sizeof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView) == 0x000030, "Wrong size on HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView");
-static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, EntryPoint) == 0x000000, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, K2Node_CreateDelegate_OutputDelegate2) == 0x000018, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView, CallFunc_GetUINavigationManager_ReturnValue) == 0x000028, "Member 'HeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.CreateAndAddSquadSlotButton
 // 0x0468 (0x0468 - 0x0000)
@@ -84,45 +78,6 @@ public:
 	TArray<class UWidget*>                        K2Node_MakeArray_Array5;                           // 0x0440(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue2;                      // 0x0450(0x0018)()
 };
-static_assert(alignof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x000008, "Wrong alignment on HeroSquadSlotsView_C_CreateAndAddSquadSlotButton");
-static_assert(sizeof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton) == 0x000468, "Wrong size on HeroSquadSlotsView_C_CreateAndAddSquadSlotButton");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, SquadSlotIndex) == 0x000000, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::SquadSlotIndex' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, SquadSlotDefinition) == 0x000008, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::SquadSlotDefinition' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, OutSquadSlotButtonHost) == 0x000068, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::OutSquadSlotButtonHost' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, ReturnValue) == 0x000070, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000078, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_SwitchInteger_CmpSuccess) == 0x000079, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_SlateBrush) == 0x000080, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_SlateBrush2) == 0x000110, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_SlateBrush2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue) == 0x0001A0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue2) == 0x0001B8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue3) == 0x0001D0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_MakeLiteralText_ReturnValue4) == 0x0001E8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_MakeLiteralText_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable) == 0x000200, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable2) == 0x000218, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable) == 0x000230, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x000238, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue) == 0x000240, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select_Default) == 0x000248, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_FormatArgumentData) == 0x000260, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array) == 0x0002A0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array2) == 0x0002B0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Format_ReturnValue) == 0x0002C0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable3) == 0x0002D8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable3' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_text_Variable4) == 0x0002F0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_text_Variable4' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000308, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue2) == 0x000310, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable2) == 0x000318, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array3) == 0x000320, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select2_Default) == 0x000330, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, Temp_bool_Variable3) == 0x0003C0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_GetOwningPlayer_ReturnValue3) == 0x0003C8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_GetOwningPlayer_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_Select3_Default) == 0x0003D0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Create_ReturnValue3) == 0x0003E8, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Create_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeStruct_FormatArgumentData2) == 0x0003F0, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array4) == 0x000430, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, K2Node_MakeArray_Array5) == 0x000440, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::K2Node_MakeArray_Array5' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_CreateAndAddSquadSlotButton, CallFunc_Format_ReturnValue2) == 0x000450, "Member 'HeroSquadSlotsView_C_CreateAndAddSquadSlotButton::CallFunc_Format_ReturnValue2' has a wrong offset!");
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.HandleSquadNavigation
 // 0x0018 (0x0018 - 0x0000)
@@ -135,13 +90,6 @@ public:
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroSquadSlotsView_C_HandleSquadNavigation) == 0x000008, "Wrong alignment on HeroSquadSlotsView_C_HandleSquadNavigation");
-static_assert(sizeof(HeroSquadSlotsView_C_HandleSquadNavigation) == 0x000018, "Wrong size on HeroSquadSlotsView_C_HandleSquadNavigation");
-static_assert(offsetof(HeroSquadSlotsView_C_HandleSquadNavigation, SquadId) == 0x000000, "Member 'HeroSquadSlotsView_C_HandleSquadNavigation::SquadId' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_HandleSquadNavigation, SlotIndex) == 0x000008, "Member 'HeroSquadSlotsView_C_HandleSquadNavigation::SlotIndex' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_HandleSquadNavigation, SquadSlotId) == 0x00000C, "Member 'HeroSquadSlotsView_C_HandleSquadNavigation::SquadSlotId' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_HandleSquadNavigation, K2Node_SwitchInteger_CmpSuccess) == 0x000010, "Member 'HeroSquadSlotsView_C_HandleSquadNavigation::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_HandleSquadNavigation, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000011, "Member 'HeroSquadSlotsView_C_HandleSquadNavigation::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 
 // Function HeroSquadSlotsView.HeroSquadSlotsView_C.HighlightSlotByIndex
 // 0x0008 (0x0008 - 0x0000)
@@ -151,10 +99,6 @@ public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroSquadSlotsView_C_HighlightSlotByIndex) == 0x000004, "Wrong alignment on HeroSquadSlotsView_C_HighlightSlotByIndex");
-static_assert(sizeof(HeroSquadSlotsView_C_HighlightSlotByIndex) == 0x000008, "Wrong size on HeroSquadSlotsView_C_HighlightSlotByIndex");
-static_assert(offsetof(HeroSquadSlotsView_C_HighlightSlotByIndex, Index_0) == 0x000000, "Member 'HeroSquadSlotsView_C_HighlightSlotByIndex::Index_0' has a wrong offset!");
-static_assert(offsetof(HeroSquadSlotsView_C_HighlightSlotByIndex, K2Node_SwitchInteger_CmpSuccess) == 0x000004, "Member 'HeroSquadSlotsView_C_HighlightSlotByIndex::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

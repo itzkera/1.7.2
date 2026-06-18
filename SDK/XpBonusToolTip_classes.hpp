@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass XpBonusToolTip.XpBonusToolTip_C
 // 0x0018 (0x0250 - 0x0238)
@@ -34,18 +33,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"XpBonusToolTip_C">();
+		BP_STATIC_CLASS_IMPL("XpBonusToolTip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"XpBonusToolTip_C")
 	}
 	static class UXpBonusToolTip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UXpBonusToolTip_C>();
 	}
 };
-static_assert(alignof(UXpBonusToolTip_C) == 0x000008, "Wrong alignment on UXpBonusToolTip_C");
-static_assert(sizeof(UXpBonusToolTip_C) == 0x000250, "Wrong size on UXpBonusToolTip_C");
-static_assert(offsetof(UXpBonusToolTip_C, UberGraphFrame) == 0x000238, "Member 'UXpBonusToolTip_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UXpBonusToolTip_C, HBoxBoost) == 0x000240, "Member 'UXpBonusToolTip_C::HBoxBoost' has a wrong offset!");
-static_assert(offsetof(UXpBonusToolTip_C, HBoxDaily) == 0x000248, "Member 'UXpBonusToolTip_C::HBoxDaily' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

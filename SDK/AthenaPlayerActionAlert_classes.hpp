@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass AthenaPlayerActionAlert.AthenaPlayerActionAlert_C
 // 0x0038 (0x02B8 - 0x0280)
@@ -39,22 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaPlayerActionAlert_C">();
+		BP_STATIC_CLASS_IMPL("AthenaPlayerActionAlert_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaPlayerActionAlert_C")
 	}
 	static class UAthenaPlayerActionAlert_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaPlayerActionAlert_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayerActionAlert_C) == 0x000008, "Wrong alignment on UAthenaPlayerActionAlert_C");
-static_assert(sizeof(UAthenaPlayerActionAlert_C) == 0x0002B8, "Wrong size on UAthenaPlayerActionAlert_C");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, UberGraphFrame) == 0x000280, "Member 'UAthenaPlayerActionAlert_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, CrawlDown) == 0x000288, "Member 'UAthenaPlayerActionAlert_C::CrawlDown' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, FlashRun) == 0x000290, "Member 'UAthenaPlayerActionAlert_C::FlashRun' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, ShowAlert) == 0x000298, "Member 'UAthenaPlayerActionAlert_C::ShowAlert' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, MessageSwitcher) == 0x0002A0, "Member 'UAthenaPlayerActionAlert_C::MessageSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, PlayerDownText) == 0x0002A8, "Member 'UAthenaPlayerActionAlert_C::PlayerDownText' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerActionAlert_C, PlayerEliminatedText) == 0x0002B0, "Member 'UAthenaPlayerActionAlert_C::PlayerEliminatedText' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

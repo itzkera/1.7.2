@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C.Received_Notify
 // 0x0050 (0x0050 - 0x0000)
@@ -36,20 +36,6 @@ public:
 	bool                                          CallFunc_IsLocalController_ReturnValue;            // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AnimNotify_PlayForceFeedback_C_Received_Notify) == 0x000008, "Wrong alignment on AnimNotify_PlayForceFeedback_C_Received_Notify");
-static_assert(sizeof(AnimNotify_PlayForceFeedback_C_Received_Notify) == 0x000050, "Wrong size on AnimNotify_PlayForceFeedback_C_Received_Notify");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, MeshComp) == 0x000000, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, Animation) == 0x000008, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, ReturnValue) == 0x000010, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, K2Node_DynamicCast_AsFort_Pawn) == 0x000020, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00002C, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, CallFunc_GetController_ReturnValue) == 0x000038, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000040, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, K2Node_DynamicCast_bSuccess2) == 0x000048, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, CallFunc_IsLocalController_ReturnValue) == 0x000049, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::CallFunc_IsLocalController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_PlayForceFeedback_C_Received_Notify, CallFunc_IsValid_ReturnValue) == 0x00004A, "Member 'AnimNotify_PlayForceFeedback_C_Received_Notify::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "RewardsIcon_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon
 // ()
@@ -219,7 +218,7 @@ void URewardsIcon_C::PlaySlideAnimation(float TargetTranslation)
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   LootLevel                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                       Texture                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D**                      Texture                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsIcon_C::PopulateFromLootLevel(int32 LootLevel, class UTexture2D** Texture)
 {
@@ -262,7 +261,7 @@ void URewardsIcon_C::SetScale(float Scale)
 // Function RewardsIcon.RewardsIcon_C.GetScale
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   Scale                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float*                                  Scale                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsIcon_C::GetScale(float* Scale)
 {
@@ -353,7 +352,7 @@ void URewardsIcon_C::PopulateFromCollectionBookRewards()
 // Function RewardsIcon.RewardsIcon_C.PopulateFromRandomLootLevel
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       Texture                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTexture2D**                      Texture                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsIcon_C::PopulateFromRandomLootLevel(class UTexture2D** Texture)
 {
@@ -388,8 +387,8 @@ void URewardsIcon_C::RandomizeDesignView()
 // Function RewardsIcon.RewardsIcon_C.On_ImageIcon_MouseButtonDown_0
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
 struct FEventReply URewardsIcon_C::On_ImageIcon_MouseButtonDown_0(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
@@ -465,5 +464,5 @@ void URewardsIcon_C::PopulateFromMissionAlertRewards()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

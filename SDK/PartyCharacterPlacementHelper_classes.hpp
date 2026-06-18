@@ -17,8 +17,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C
 // 0x0100 (0x0488 - 0x0388)
@@ -93,49 +92,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyCharacterPlacementHelper_C">();
+		BP_STATIC_CLASS_IMPL("PartyCharacterPlacementHelper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyCharacterPlacementHelper_C")
 	}
 	static class APartyCharacterPlacementHelper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APartyCharacterPlacementHelper_C>();
 	}
 };
-static_assert(alignof(APartyCharacterPlacementHelper_C) == 0x000008, "Wrong alignment on APartyCharacterPlacementHelper_C");
-static_assert(sizeof(APartyCharacterPlacementHelper_C) == 0x000488, "Wrong size on APartyCharacterPlacementHelper_C");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, UberGraphFrame) == 0x000388, "Member 'APartyCharacterPlacementHelper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, LobbyPlayerAddPlayer) == 0x000390, "Member 'APartyCharacterPlacementHelper_C::LobbyPlayerAddPlayer' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, LobbyPlayerPadTop) == 0x000398, "Member 'APartyCharacterPlacementHelper_C::LobbyPlayerPadTop' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, LobbyPlayerPadGadgets) == 0x0003A0, "Member 'APartyCharacterPlacementHelper_C::LobbyPlayerPadGadgets' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, UnderlightBluePoint02) == 0x0003A8, "Member 'APartyCharacterPlacementHelper_C::UnderlightBluePoint02' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, UnderlightBluePoint01) == 0x0003B0, "Member 'APartyCharacterPlacementHelper_C::UnderlightBluePoint01' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, UnderlightBlue02) == 0x0003B8, "Member 'APartyCharacterPlacementHelper_C::UnderlightBlue02' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, UnderlightBlue01) == 0x0003C0, "Member 'APartyCharacterPlacementHelper_C::UnderlightBlue01' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, RimSpotLight) == 0x0003C8, "Member 'APartyCharacterPlacementHelper_C::RimSpotLight' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, TopSpotLight) == 0x0003D0, "Member 'APartyCharacterPlacementHelper_C::TopSpotLight' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, LightsParent) == 0x0003D8, "Member 'APartyCharacterPlacementHelper_C::LightsParent' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PS_NoPlayer_Sparkle) == 0x0003E0, "Member 'APartyCharacterPlacementHelper_C::PS_NoPlayer_Sparkle' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PS_NoPlayer_Swirl02) == 0x0003E8, "Member 'APartyCharacterPlacementHelper_C::PS_NoPlayer_Swirl02' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PS_NoPlayer_Swirl01) == 0x0003F0, "Member 'APartyCharacterPlacementHelper_C::PS_NoPlayer_Swirl01' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, SM_Lobby_Character_Pad_Light_Ring) == 0x0003F8, "Member 'APartyCharacterPlacementHelper_C::SM_Lobby_Character_Pad_Light_Ring' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, SM_Lobby_Character_Pad) == 0x000400, "Member 'APartyCharacterPlacementHelper_C::SM_Lobby_Character_Pad' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, CharacterPlacement) == 0x000408, "Member 'APartyCharacterPlacementHelper_C::CharacterPlacement' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, Root) == 0x000410, "Member 'APartyCharacterPlacementHelper_C::Root' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PlayerID) == 0x000418, "Member 'APartyCharacterPlacementHelper_C::PlayerID' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PreviewMesh) == 0x00041C, "Member 'APartyCharacterPlacementHelper_C::PreviewMesh' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, Mesh) == 0x000420, "Member 'APartyCharacterPlacementHelper_C::Mesh' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, bIsPlayerSelected) == 0x000428, "Member 'APartyCharacterPlacementHelper_C::bIsPlayerSelected' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PlayerOnPad) == 0x000429, "Member 'APartyCharacterPlacementHelper_C::PlayerOnPad' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, MID_Pad) == 0x000430, "Member 'APartyCharacterPlacementHelper_C::MID_Pad' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, DebugFakePlayer) == 0x000438, "Member 'APartyCharacterPlacementHelper_C::DebugFakePlayer' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, DebugFakePlayerID_) == 0x00043C, "Member 'APartyCharacterPlacementHelper_C::DebugFakePlayerID_' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, NewEventDispatcher_0) == 0x000440, "Member 'APartyCharacterPlacementHelper_C::NewEventDispatcher_0' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PlayerBeingRemoved) == 0x000450, "Member 'APartyCharacterPlacementHelper_C::PlayerBeingRemoved' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, OverlayEmptySpot) == 0x000458, "Member 'APartyCharacterPlacementHelper_C::OverlayEmptySpot' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, OverlayInputAction) == 0x000460, "Member 'APartyCharacterPlacementHelper_C::OverlayInputAction' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, Top) == 0x000468, "Member 'APartyCharacterPlacementHelper_C::Top' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, Gadgets) == 0x000470, "Member 'APartyCharacterPlacementHelper_C::Gadgets' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, PlayerAdd) == 0x000478, "Member 'APartyCharacterPlacementHelper_C::PlayerAdd' has a wrong offset!");
-static_assert(offsetof(APartyCharacterPlacementHelper_C, LastAnimatedPlayerPawn) == 0x000480, "Member 'APartyCharacterPlacementHelper_C::LastAnimatedPlayerPawn' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

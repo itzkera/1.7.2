@@ -17,13 +17,12 @@
 #include "SlateCore_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class EpicCMSUIFramework.EpicCMSScreenBase
 // 0x0078 (0x0458 - 0x03E0)
 #pragma pack(push, 0x1)
-class alignas(0x08) UEpicCMSScreenBase : public UCommonActivatablePanel
+class SDK_ALIGN(0x08) UEpicCMSScreenBase : public UCommonActivatablePanel
 {
 public:
 	class FString                                 TileSetFieldName;                                  // 0x03E0(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -35,7 +34,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EpicCMSScreenBase">();
+		STATIC_CLASS_IMPL("EpicCMSScreenBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EpicCMSScreenBase")
 	}
 	static class UEpicCMSScreenBase* GetDefaultObj()
 	{
@@ -43,12 +46,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(UEpicCMSScreenBase) == 0x000008, "Wrong alignment on UEpicCMSScreenBase");
-static_assert(sizeof(UEpicCMSScreenBase) == 0x000458, "Wrong size on UEpicCMSScreenBase");
-static_assert(offsetof(UEpicCMSScreenBase, TileSetFieldName) == 0x0003E0, "Member 'UEpicCMSScreenBase::TileSetFieldName' has a wrong offset!");
-static_assert(offsetof(UEpicCMSScreenBase, TileTypeToTileClassDataTable) == 0x0003F0, "Member 'UEpicCMSScreenBase::TileTypeToTileClassDataTable' has a wrong offset!");
-static_assert(offsetof(UEpicCMSScreenBase, LayoutErrorClass) == 0x000410, "Member 'UEpicCMSScreenBase::LayoutErrorClass' has a wrong offset!");
-static_assert(offsetof(UEpicCMSScreenBase, LayoutTypeToLayoutClassDataTable) == 0x000430, "Member 'UEpicCMSScreenBase::LayoutTypeToLayoutClassDataTable' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSTileBase
 // 0x0118 (0x09B8 - 0x08A0)
@@ -75,25 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EpicCMSTileBase">();
+		STATIC_CLASS_IMPL("EpicCMSTileBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EpicCMSTileBase")
 	}
 	static class UEpicCMSTileBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEpicCMSTileBase>();
 	}
 };
-static_assert(alignof(UEpicCMSTileBase) == 0x000008, "Wrong alignment on UEpicCMSTileBase");
-static_assert(sizeof(UEpicCMSTileBase) == 0x0009B8, "Wrong size on UEpicCMSTileBase");
-static_assert(offsetof(UEpicCMSTileBase, DefaultTitleTextStyle) == 0x0008A8, "Member 'UEpicCMSTileBase::DefaultTitleTextStyle' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, FeaturedTitleTextStyle) == 0x0008B0, "Member 'UEpicCMSTileBase::FeaturedTitleTextStyle' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, Title) == 0x0008B8, "Member 'UEpicCMSTileBase::Title' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, Link) == 0x0008D0, "Member 'UEpicCMSTileBase::Link' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, bDownloadingExternalMedia) == 0x0008E0, "Member 'UEpicCMSTileBase::bDownloadingExternalMedia' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, bRefreshingMcpCatalog) == 0x0008E1, "Member 'UEpicCMSTileBase::bRefreshingMcpCatalog' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, LazyImage_Icon) == 0x000998, "Member 'UEpicCMSTileBase::LazyImage_Icon' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, TitleTextBlock) == 0x0009A0, "Member 'UEpicCMSTileBase::TitleTextBlock' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, SubtitleTextBlock) == 0x0009A8, "Member 'UEpicCMSTileBase::SubtitleTextBlock' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileBase, EyebrowTextBlock) == 0x0009B0, "Member 'UEpicCMSTileBase::EyebrowTextBlock' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSLayoutBase
 // 0x0068 (0x0298 - 0x0230)
@@ -107,17 +96,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EpicCMSLayoutBase">();
+		STATIC_CLASS_IMPL("EpicCMSLayoutBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EpicCMSLayoutBase")
 	}
 	static class UEpicCMSLayoutBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEpicCMSLayoutBase>();
 	}
 };
-static_assert(alignof(UEpicCMSLayoutBase) == 0x000008, "Wrong alignment on UEpicCMSLayoutBase");
-static_assert(sizeof(UEpicCMSLayoutBase) == 0x000298, "Wrong size on UEpicCMSLayoutBase");
-static_assert(offsetof(UEpicCMSLayoutBase, CarouselSlotDescriptions) == 0x000230, "Member 'UEpicCMSLayoutBase::CarouselSlotDescriptions' has a wrong offset!");
-static_assert(offsetof(UEpicCMSLayoutBase, CarouselClass) == 0x000240, "Member 'UEpicCMSLayoutBase::CarouselClass' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSManager
 // 0x00B8 (0x00E0 - 0x0028)
@@ -132,17 +121,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EpicCMSManager">();
+		STATIC_CLASS_IMPL("EpicCMSManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EpicCMSManager")
 	}
 	static class UEpicCMSManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEpicCMSManager>();
 	}
 };
-static_assert(alignof(UEpicCMSManager) == 0x000008, "Wrong alignment on UEpicCMSManager");
-static_assert(sizeof(UEpicCMSManager) == 0x0000E0, "Wrong size on UEpicCMSManager");
-static_assert(offsetof(UEpicCMSManager, CmsEndpointOverride) == 0x0000A0, "Member 'UEpicCMSManager::CmsEndpointOverride' has a wrong offset!");
-static_assert(offsetof(UEpicCMSManager, bRefreshing) == 0x0000B0, "Member 'UEpicCMSManager::bRefreshing' has a wrong offset!");
 
 // Class EpicCMSUIFramework.EpicCMSTileCarousel
 // 0x0050 (0x0280 - 0x0230)
@@ -170,22 +159,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EpicCMSTileCarousel">();
+		STATIC_CLASS_IMPL("EpicCMSTileCarousel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EpicCMSTileCarousel")
 	}
 	static class UEpicCMSTileCarousel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEpicCMSTileCarousel>();
 	}
 };
-static_assert(alignof(UEpicCMSTileCarousel) == 0x000008, "Wrong alignment on UEpicCMSTileCarousel");
-static_assert(sizeof(UEpicCMSTileCarousel) == 0x000280, "Wrong size on UEpicCMSTileCarousel");
-static_assert(offsetof(UEpicCMSTileCarousel, PreviousButtonSound) == 0x000230, "Member 'UEpicCMSTileCarousel::PreviousButtonSound' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileCarousel, NextButtonSound) == 0x000248, "Member 'UEpicCMSTileCarousel::NextButtonSound' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileCarousel, Carousel) == 0x000260, "Member 'UEpicCMSTileCarousel::Carousel' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileCarousel, NextPageButton) == 0x000268, "Member 'UEpicCMSTileCarousel::NextPageButton' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileCarousel, PreviousPageButton) == 0x000270, "Member 'UEpicCMSTileCarousel::PreviousPageButton' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileCarousel, bShouldShowNavigationOnlyOnHover) == 0x000278, "Member 'UEpicCMSTileCarousel::bShouldShowNavigationOnlyOnHover' has a wrong offset!");
-static_assert(offsetof(UEpicCMSTileCarousel, bIsShowingNavigation) == 0x000279, "Member 'UEpicCMSTileCarousel::bIsShowingNavigation' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

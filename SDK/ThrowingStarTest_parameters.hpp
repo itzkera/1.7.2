@@ -15,8 +15,8 @@
 #include "Engine_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ThrowingStarTest.ThrowingStarTest_C.OnExecute
 // 0x01D0 (0x01D0 - 0x0000)
@@ -46,28 +46,6 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x01BC(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ThrowingStarTest_C_OnExecute) == 0x000008, "Wrong alignment on ThrowingStarTest_C_OnExecute");
-static_assert(sizeof(ThrowingStarTest_C_OnExecute) == 0x0001D0, "Wrong size on ThrowingStarTest_C_OnExecute");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, MyTarget) == 0x000000, "Member 'ThrowingStarTest_C_OnExecute::MyTarget' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, Parameters) == 0x000008, "Member 'ThrowingStarTest_C_OnExecute::Parameters' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, ReturnValue) == 0x0000C0, "Member 'ThrowingStarTest_C_OnExecute::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_GetHitResult_ReturnValue) == 0x0000C8, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_GetHitResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_bBlockingHit) == 0x000150, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_bInitialOverlap) == 0x000151, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_Time) == 0x000154, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_Location) == 0x000158, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_ImpactPoint) == 0x000164, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_Normal) == 0x000170, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_ImpactNormal) == 0x00017C, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_PhysMat) == 0x000188, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_HitActor) == 0x000190, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_HitComponent) == 0x000198, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_HitBoneName) == 0x0001A0, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_HitItem) == 0x0001A8, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_FaceIndex) == 0x0001AC, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_TraceStart) == 0x0001B0, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_BreakHitResult_TraceEnd) == 0x0001BC, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(ThrowingStarTest_C_OnExecute, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0001C8, "Member 'ThrowingStarTest_C_OnExecute::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

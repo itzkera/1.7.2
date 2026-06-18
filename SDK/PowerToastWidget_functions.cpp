@@ -14,8 +14,7 @@
 #include "PowerToastWidget_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function PowerToastWidget.PowerToastWidget_C.ExecuteUbergraph_PowerToastWidget
 // (HasDefaults)
@@ -40,7 +39,7 @@ void UPowerToastWidget_C::ExecuteUbergraph_PowerToastWidget(int32 EntryPoint)
 // Function PowerToastWidget.PowerToastWidget_C.OnTeamMemberFinishedSynchronizing_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl                 NewTeamMemberId                                        (Parm, HasGetValueTypeHash)
+// const struct FUniqueNetIdRepl&          NewTeamMemberId                                        (Parm, HasGetValueTypeHash)
 
 void UPowerToastWidget_C::OnTeamMemberFinishedSynchronizing_Event_0(const struct FUniqueNetIdRepl& NewTeamMemberId)
 {
@@ -102,7 +101,7 @@ void UPowerToastWidget_C::Construct()
 // Function PowerToastWidget.PowerToastWidget_C.OnPlayerInfoChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              NewInfo                                                (Parm)
+// const struct FFortTeamMemberInfo&       NewInfo                                                (Parm)
 
 void UPowerToastWidget_C::OnPlayerInfoChanged(const struct FFortTeamMemberInfo& NewInfo)
 {
@@ -142,7 +141,7 @@ void UPowerToastWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_Common
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseLeave
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPowerToastWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
@@ -162,8 +161,8 @@ void UPowerToastWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FGeometry                        MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent                    MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FGeometry&                 MyGeometry                                             (Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UPowerToastWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
@@ -246,7 +245,7 @@ void UPowerToastWidget_C::SetToast(class UFortUINotification* Toast)
 // Function PowerToastWidget.PowerToastWidget_C.ShowText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Text                                                   (Parm)
+// const class FText&                      Text                                                   (Parm)
 // class UCommonTextBlock*                 TextBlock                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPowerToastWidget_C::ShowText(const class FText& Text, class UCommonTextBlock* TextBlock)
@@ -278,5 +277,5 @@ void UPowerToastWidget_C::StartIntro()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

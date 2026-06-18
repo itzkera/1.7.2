@@ -14,8 +14,7 @@
 #include "ItemDetailsHeaderRarityTypeText_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function ItemDetailsHeaderRarityTypeText.ItemDetailsHeaderRarityTypeText_C.ExecuteUbergraph_ItemDetailsHeaderRarityTypeText
 // (HasDefaults)
@@ -78,5 +77,5 @@ void UItemDetailsHeaderRarityTypeText_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

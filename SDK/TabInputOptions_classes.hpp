@@ -15,8 +15,7 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabInputOptions.TabInputOptions_C
 // 0x0050 (0x02D0 - 0x0280)
@@ -50,23 +49,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabInputOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabInputOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabInputOptions_C")
 	}
 	static class UTabInputOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabInputOptions_C>();
 	}
 };
-static_assert(alignof(UTabInputOptions_C) == 0x000008, "Wrong alignment on UTabInputOptions_C");
-static_assert(sizeof(UTabInputOptions_C) == 0x0002D0, "Wrong size on UTabInputOptions_C");
-static_assert(offsetof(UTabInputOptions_C, UberGraphFrame) == 0x000280, "Member 'UTabInputOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, OverlayBorder) == 0x000288, "Member 'UTabInputOptions_C::OverlayBorder' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Currently_Selected_Input) == 0x000290, "Member 'UTabInputOptions_C::Currently_Selected_Input' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Is_Currently_Primary) == 0x000294, "Member 'UTabInputOptions_C::Is_Currently_Primary' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Enable_Overlay) == 0x000298, "Member 'UTabInputOptions_C::Enable_Overlay' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Disable_Overlay) == 0x0002A8, "Member 'UTabInputOptions_C::Disable_Overlay' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Using_Gamepad) == 0x0002B8, "Member 'UTabInputOptions_C::Using_Gamepad' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Gamepad_Changed) == 0x0002C0, "Member 'UTabInputOptions_C::Gamepad_Changed' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

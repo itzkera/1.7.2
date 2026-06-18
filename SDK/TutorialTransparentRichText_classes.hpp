@@ -14,8 +14,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TutorialTransparentRichText.TutorialTransparentRichText_C
 // 0x0028 (0x0260 - 0x0238)
@@ -33,18 +32,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TutorialTransparentRichText_C">();
+		BP_STATIC_CLASS_IMPL("TutorialTransparentRichText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TutorialTransparentRichText_C")
 	}
 	static class UTutorialTransparentRichText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTutorialTransparentRichText_C>();
 	}
 };
-static_assert(alignof(UTutorialTransparentRichText_C) == 0x000008, "Wrong alignment on UTutorialTransparentRichText_C");
-static_assert(sizeof(UTutorialTransparentRichText_C) == 0x000260, "Wrong size on UTutorialTransparentRichText_C");
-static_assert(offsetof(UTutorialTransparentRichText_C, UberGraphFrame) == 0x000238, "Member 'UTutorialTransparentRichText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialTransparentRichText_C, FortRichTextBlock_0) == 0x000240, "Member 'UTutorialTransparentRichText_C::FortRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UTutorialTransparentRichText_C, Text) == 0x000248, "Member 'UTutorialTransparentRichText_C::Text' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

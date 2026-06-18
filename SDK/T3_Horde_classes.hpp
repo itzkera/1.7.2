@@ -15,8 +15,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass T3_Horde.T3_Horde_C
 // 0x0190 (0x04C0 - 0x0330)
@@ -59,42 +58,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"T3_Horde_C">();
+		BP_STATIC_CLASS_IMPL("T3_Horde_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"T3_Horde_C")
 	}
 	static class UT3_Horde_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UT3_Horde_C>();
 	}
 };
-static_assert(alignof(UT3_Horde_C) == 0x000008, "Wrong alignment on UT3_Horde_C");
-static_assert(sizeof(UT3_Horde_C) == 0x0004C0, "Wrong size on UT3_Horde_C");
-static_assert(offsetof(UT3_Horde_C, UberGraphFrame) == 0x000330, "Member 'UT3_Horde_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, Background) == 0x000338, "Member 'UT3_Horde_C::Background' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_24) == 0x000340, "Member 'UT3_Horde_C::DefaultSkillNode_C_24' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_25) == 0x000348, "Member 'UT3_Horde_C::DefaultSkillNode_C_25' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_26) == 0x000350, "Member 'UT3_Horde_C::DefaultSkillNode_C_26' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_27) == 0x000358, "Member 'UT3_Horde_C::DefaultSkillNode_C_27' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_28) == 0x000360, "Member 'UT3_Horde_C::DefaultSkillNode_C_28' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_29) == 0x000368, "Member 'UT3_Horde_C::DefaultSkillNode_C_29' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_30) == 0x000370, "Member 'UT3_Horde_C::DefaultSkillNode_C_30' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_31) == 0x000378, "Member 'UT3_Horde_C::DefaultSkillNode_C_31' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_32) == 0x000380, "Member 'UT3_Horde_C::DefaultSkillNode_C_32' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_33) == 0x000388, "Member 'UT3_Horde_C::DefaultSkillNode_C_33' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_34) == 0x000390, "Member 'UT3_Horde_C::DefaultSkillNode_C_34' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_35) == 0x000398, "Member 'UT3_Horde_C::DefaultSkillNode_C_35' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_36) == 0x0003A0, "Member 'UT3_Horde_C::DefaultSkillNode_C_36' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_37) == 0x0003A8, "Member 'UT3_Horde_C::DefaultSkillNode_C_37' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_38) == 0x0003B0, "Member 'UT3_Horde_C::DefaultSkillNode_C_38' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_39) == 0x0003B8, "Member 'UT3_Horde_C::DefaultSkillNode_C_39' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_40) == 0x0003C0, "Member 'UT3_Horde_C::DefaultSkillNode_C_40' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_41) == 0x0003C8, "Member 'UT3_Horde_C::DefaultSkillNode_C_41' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_42) == 0x0003D0, "Member 'UT3_Horde_C::DefaultSkillNode_C_42' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_43) == 0x0003D8, "Member 'UT3_Horde_C::DefaultSkillNode_C_43' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_44) == 0x0003E0, "Member 'UT3_Horde_C::DefaultSkillNode_C_44' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_45) == 0x0003E8, "Member 'UT3_Horde_C::DefaultSkillNode_C_45' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_46) == 0x0003F0, "Member 'UT3_Horde_C::DefaultSkillNode_C_46' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, DefaultSkillNode_C_47) == 0x0003F8, "Member 'UT3_Horde_C::DefaultSkillNode_C_47' has a wrong offset!");
-static_assert(offsetof(UT3_Horde_C, PageColors) == 0x000400, "Member 'UT3_Horde_C::PageColors' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

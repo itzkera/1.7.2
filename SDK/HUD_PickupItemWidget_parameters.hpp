@@ -13,8 +13,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.ExecuteUbergraph_HUD-PickupItemWidget
 // 0x0004 (0x0004 - 0x0000)
@@ -23,9 +23,6 @@ struct HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget) == 0x000004, "Wrong alignment on HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget");
-static_assert(sizeof(HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget) == 0x000004, "Wrong size on HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget");
-static_assert(offsetof(HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget, EntryPoint) == 0x000000, "Member 'HUD_PickupItemWidget_C_ExecuteUbergraph_HUD_PickupItemWidget::EntryPoint' has a wrong offset!");
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.InitializeItemData
 // 0x0020 (0x0020 - 0x0000)
@@ -44,17 +41,6 @@ public:
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortItem*                              K2Node_Select2_Default;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_PickupItemWidget_C_InitializeItemData) == 0x000008, "Wrong alignment on HUD_PickupItemWidget_C_InitializeItemData");
-static_assert(sizeof(HUD_PickupItemWidget_C_InitializeItemData) == 0x000020, "Wrong size on HUD_PickupItemWidget_C_InitializeItemData");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, Temp_bool_Variable) == 0x000000, "Member 'HUD_PickupItemWidget_C_InitializeItemData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, Temp_object_Variable) == 0x000008, "Member 'HUD_PickupItemWidget_C_InitializeItemData::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'HUD_PickupItemWidget_C_InitializeItemData::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, Temp_bool_Variable2) == 0x000011, "Member 'HUD_PickupItemWidget_C_InitializeItemData::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, Temp_byte_Variable) == 0x000012, "Member 'HUD_PickupItemWidget_C_InitializeItemData::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, Temp_byte_Variable2) == 0x000013, "Member 'HUD_PickupItemWidget_C_InitializeItemData::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, CallFunc_IsValid_ReturnValue2) == 0x000014, "Member 'HUD_PickupItemWidget_C_InitializeItemData::CallFunc_IsValid_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, K2Node_Select_Default) == 0x000015, "Member 'HUD_PickupItemWidget_C_InitializeItemData::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeItemData, K2Node_Select2_Default) == 0x000018, "Member 'HUD_PickupItemWidget_C_InitializeItemData::K2Node_Select2_Default' has a wrong offset!");
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.InitializeInteractionFailureText
 // 0x0070 (0x0070 - 0x0000)
@@ -78,22 +64,6 @@ public:
 	class FText                                   CallFunc_GetInteractErrorText_InteractErrorText;   // 0x0050(0x0018)()
 	bool                                          CallFunc_GetInteractErrorText_ReturnValue;         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUD_PickupItemWidget_C_InitializeInteractionFailureText) == 0x000008, "Wrong alignment on HUD_PickupItemWidget_C_InitializeInteractionFailureText");
-static_assert(sizeof(HUD_PickupItemWidget_C_InitializeInteractionFailureText) == 0x000070, "Wrong size on HUD_PickupItemWidget_C_InitializeInteractionFailureText");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, InteractErrorText) == 0x000000, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::InteractErrorText' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetBackpackItemCounts_ItemsCount) == 0x000020, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetBackpackItemCounts_ItemsCount' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetBackpackItemCounts_MaxItemsCount) == 0x000024, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetBackpackItemCounts_MaxItemsCount' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetBackpackItemCounts_OverflowItemsCount) == 0x000028, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetBackpackItemCounts_OverflowItemsCount' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002C, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, Temp_byte_Variable) == 0x00002D, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetEmptyText_ReturnValue) == 0x000030, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, Temp_byte_Variable2) == 0x000049, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, Temp_bool_Variable) == 0x00004A, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, K2Node_Select_Default) == 0x00004B, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetInteractErrorText_InteractErrorText) == 0x000050, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetInteractErrorText_InteractErrorText' has a wrong offset!");
-static_assert(offsetof(HUD_PickupItemWidget_C_InitializeInteractionFailureText, CallFunc_GetInteractErrorText_ReturnValue) == 0x000068, "Member 'HUD_PickupItemWidget_C_InitializeInteractionFailureText::CallFunc_GetInteractErrorText_ReturnValue' has a wrong offset!");
 
 // Function HUD-PickupItemWidget.HUD-PickupItemWidget_C.SetPickup
 // 0x0008 (0x0008 - 0x0000)
@@ -102,9 +72,6 @@ struct HUD_PickupItemWidget_C_SetPickup final
 public:
 	class AFortPickup*                            NewPickup;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUD_PickupItemWidget_C_SetPickup) == 0x000008, "Wrong alignment on HUD_PickupItemWidget_C_SetPickup");
-static_assert(sizeof(HUD_PickupItemWidget_C_SetPickup) == 0x000008, "Wrong size on HUD_PickupItemWidget_C_SetPickup");
-static_assert(offsetof(HUD_PickupItemWidget_C_SetPickup, NewPickup) == 0x000000, "Member 'HUD_PickupItemWidget_C_SetPickup::NewPickup' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

@@ -13,8 +13,7 @@
 #include "CoreUObject_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class JsonUtilities.JsonUtilitiesDummyObject
 // 0x0000 (0x0028 - 0x0028)
@@ -23,15 +22,16 @@ class UJsonUtilitiesDummyObject final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"JsonUtilitiesDummyObject">();
+		STATIC_CLASS_IMPL("JsonUtilitiesDummyObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JsonUtilitiesDummyObject")
 	}
 	static class UJsonUtilitiesDummyObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJsonUtilitiesDummyObject>();
 	}
 };
-static_assert(alignof(UJsonUtilitiesDummyObject) == 0x000008, "Wrong alignment on UJsonUtilitiesDummyObject");
-static_assert(sizeof(UJsonUtilitiesDummyObject) == 0x000028, "Wrong size on UJsonUtilitiesDummyObject");
 
-}
-
+SDK_NAMESPACE_END

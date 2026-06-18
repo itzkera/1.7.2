@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TeamScoreDetailsContent.TeamScoreDetailsContent_C
 // 0x0038 (0x0278 - 0x0240)
@@ -40,22 +39,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamScoreDetailsContent_C">();
+		BP_STATIC_CLASS_IMPL("TeamScoreDetailsContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamScoreDetailsContent_C")
 	}
 	static class UTeamScoreDetailsContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamScoreDetailsContent_C>();
 	}
 };
-static_assert(alignof(UTeamScoreDetailsContent_C) == 0x000008, "Wrong alignment on UTeamScoreDetailsContent_C");
-static_assert(sizeof(UTeamScoreDetailsContent_C) == 0x000278, "Wrong size on UTeamScoreDetailsContent_C");
-static_assert(offsetof(UTeamScoreDetailsContent_C, UberGraphFrame) == 0x000240, "Member 'UTeamScoreDetailsContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, Image_2) == 0x000248, "Member 'UTeamScoreDetailsContent_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, Image_3) == 0x000250, "Member 'UTeamScoreDetailsContent_C::Image_3' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, Image_4) == 0x000258, "Member 'UTeamScoreDetailsContent_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, ScoreBarsWidget_0) == 0x000260, "Member 'UTeamScoreDetailsContent_C::ScoreBarsWidget_0' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, VerticalBoxScores) == 0x000268, "Member 'UTeamScoreDetailsContent_C::VerticalBoxScores' has a wrong offset!");
-static_assert(offsetof(UTeamScoreDetailsContent_C, ScoreReport) == 0x000270, "Member 'UTeamScoreDetailsContent_C::ScoreReport' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

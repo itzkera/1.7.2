@@ -15,8 +15,7 @@
 #include "HeadMountedDisplay_structs.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Class HeadMountedDisplay.MotionControllerComponent
 // 0x0020 (0x0690 - 0x0670)
@@ -37,18 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MotionControllerComponent">();
+		STATIC_CLASS_IMPL("MotionControllerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MotionControllerComponent")
 	}
 	static class UMotionControllerComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMotionControllerComponent>();
 	}
 };
-static_assert(alignof(UMotionControllerComponent) == 0x000010, "Wrong alignment on UMotionControllerComponent");
-static_assert(sizeof(UMotionControllerComponent) == 0x000690, "Wrong size on UMotionControllerComponent");
-static_assert(offsetof(UMotionControllerComponent, PlayerIndex) == 0x000670, "Member 'UMotionControllerComponent::PlayerIndex' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, Hand) == 0x000674, "Member 'UMotionControllerComponent::Hand' has a wrong offset!");
-static_assert(offsetof(UMotionControllerComponent, CurrentTrackingStatus) == 0x00067C, "Member 'UMotionControllerComponent::CurrentTrackingStatus' has a wrong offset!");
 
 // Class HeadMountedDisplay.VRNotificationsComponent
 // 0x0080 (0x0170 - 0x00F0)
@@ -67,23 +65,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"VRNotificationsComponent">();
+		STATIC_CLASS_IMPL("VRNotificationsComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VRNotificationsComponent")
 	}
 	static class UVRNotificationsComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVRNotificationsComponent>();
 	}
 };
-static_assert(alignof(UVRNotificationsComponent) == 0x000008, "Wrong alignment on UVRNotificationsComponent");
-static_assert(sizeof(UVRNotificationsComponent) == 0x000170, "Wrong size on UVRNotificationsComponent");
-static_assert(offsetof(UVRNotificationsComponent, HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate) == 0x0000F0, "Member 'UVRNotificationsComponent::HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDTrackingInitializedDelegate) == 0x000100, "Member 'UVRNotificationsComponent::HMDTrackingInitializedDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDRecenteredDelegate) == 0x000110, "Member 'UVRNotificationsComponent::HMDRecenteredDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDLostDelegate) == 0x000120, "Member 'UVRNotificationsComponent::HMDLostDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDReconnectedDelegate) == 0x000130, "Member 'UVRNotificationsComponent::HMDReconnectedDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDConnectCanceledDelegate) == 0x000140, "Member 'UVRNotificationsComponent::HMDConnectCanceledDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDPutOnHeadDelegate) == 0x000150, "Member 'UVRNotificationsComponent::HMDPutOnHeadDelegate' has a wrong offset!");
-static_assert(offsetof(UVRNotificationsComponent, HMDRemovedFromHeadDelegate) == 0x000160, "Member 'UVRNotificationsComponent::HMDRemovedFromHeadDelegate' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

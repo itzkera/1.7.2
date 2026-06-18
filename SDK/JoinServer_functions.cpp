@@ -14,8 +14,7 @@
 #include "JoinServer_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function JoinServer.JoinServer_C.ExecuteUbergraph_JoinServer
 // (HasDefaults)
@@ -76,7 +75,7 @@ void UJoinServer_C::Construct()
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UJoinServer_C::HandleClientEvent_OnboardingStartMatchmaking(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -128,7 +127,7 @@ void UJoinServer_C::HandleRequestRejoinRetry()
 // Parameters:
 // class UObject*                          EventSource                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          EventFocus                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortClientEvent                 ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FFortClientEvent&          ClientEvent                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor)
 
 void UJoinServer_C::HandleClientEvent_RejoinStart(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
@@ -395,7 +394,7 @@ void UJoinServer_C::HandleLobbyTimeUpdated(int32 TimeRemaining)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EMatchmakingCompleteResult              MatchMakingError                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             ErrorText                                              (Parm, OutParm)
+// class FText*                            ErrorText                                              (Parm, OutParm)
 
 void UJoinServer_C::GetMatchmakingError(EMatchmakingCompleteResult MatchMakingError, class FText* ErrorText)
 {
@@ -514,7 +513,7 @@ void UJoinServer_C::ShowRetryRejoinSession()
 // Function JoinServer.JoinServer_C.ShowRetryRejoinWindow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             Failure                                                (Parm)
+// const class FText&                      Failure                                                (Parm)
 // bool                                    AllowRetry                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UJoinServer_C::ShowRetryRejoinWindow(const class FText& Failure, bool AllowRetry)
@@ -560,5 +559,5 @@ void UJoinServer_C::HandleLobbyConnectingToGame()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

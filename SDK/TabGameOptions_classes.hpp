@@ -14,8 +14,7 @@
 #include "FortniteUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass TabGameOptions.TabGameOptions_C
 // 0x0020 (0x02A8 - 0x0288)
@@ -39,19 +38,16 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGameOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabGameOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGameOptions_C")
 	}
 	static class UTabGameOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGameOptions_C>();
 	}
 };
-static_assert(alignof(UTabGameOptions_C) == 0x000008, "Wrong alignment on UTabGameOptions_C");
-static_assert(sizeof(UTabGameOptions_C) == 0x0002A8, "Wrong size on UTabGameOptions_C");
-static_assert(offsetof(UTabGameOptions_C, UberGraphFrame) == 0x000288, "Member 'UTabGameOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, CommonWidgetSwitcher_0) == 0x000290, "Member 'UTabGameOptions_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, GameTabs) == 0x000298, "Member 'UTabGameOptions_C::GameTabs' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, TooltipDisplay) == 0x0002A0, "Member 'UTabGameOptions_C::TooltipDisplay' has a wrong offset!");
 
-}
-
+SDK_NAMESPACE_END

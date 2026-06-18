@@ -14,8 +14,7 @@
 #include "StoreCardReveal_BP_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.ExecuteUbergraph_StoreCardReveal_BP
 // (HasDefaults)
@@ -589,7 +588,7 @@ void AStoreCardReveal_BP_C::SkipBackRevealForChoicePack()
 // (BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              TouchedComponent                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             ButtonPressed                                          (Parm, HasGetValueTypeHash)
+// const struct FKey&                      ButtonPressed                                          (Parm, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_ComponentOnClickedSignature__DelegateSignature(class UPrimitiveComponent* TouchedComponent, const struct FKey& ButtonPressed)
 {
@@ -611,7 +610,7 @@ void AStoreCardReveal_BP_C::BndEvt__S_ChoiceCardB_K2Node_ComponentBoundEvent_1_C
 // (BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              TouchedComponent                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FKey                             ButtonPressed                                          (Parm, HasGetValueTypeHash)
+// const struct FKey&                      ButtonPressed                                          (Parm, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::BndEvt__S_ChoiceCardA_K2Node_ComponentBoundEvent_0_ComponentOnClickedSignature__DelegateSignature(class UPrimitiveComponent* TouchedComponent, const struct FKey& ButtonPressed)
 {
@@ -876,7 +875,7 @@ void AStoreCardReveal_BP_C::InitiatePinata()
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4(const struct FKey& Key)
 {
@@ -897,7 +896,7 @@ void AStoreCardReveal_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_4(con
 // (BlueprintEvent)
 // Parameters:
 // ETouchIndex                             FingerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::InpTchEvt_Pressed(ETouchIndex FingerIndex, const struct FVector& Location)
 {
@@ -919,7 +918,7 @@ void AStoreCardReveal_BP_C::InpTchEvt_Pressed(ETouchIndex FingerIndex, const str
 // (BlueprintEvent)
 // Parameters:
 // ETouchIndex                             FingerIndex                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::InpTchEvt_Released(ETouchIndex FingerIndex, const struct FVector& Location)
 {
@@ -960,7 +959,7 @@ void AStoreCardReveal_BP_C::OnLoaded_90006C1C471D136EF3B142B7CD6D1379(class UObj
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
@@ -1000,7 +999,7 @@ void AStoreCardReveal_BP_C::OnLoaded_EFC62B084995CBCCD64787B51198EA0F(class UObj
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
@@ -1020,7 +1019,7 @@ void AStoreCardReveal_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(con
 // Function StoreCardReveal_BP.StoreCardReveal_BP_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7
 // (BlueprintEvent)
 // Parameters:
-// struct FKey                             Key                                                    (Parm, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (Parm, HasGetValueTypeHash)
 
 void AStoreCardReveal_BP_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
@@ -1723,8 +1722,8 @@ void AStoreCardReveal_BP_C::SetText_CCB(bool Hide)
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortAccountItemDefinition*       Object                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsDefender_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             Result                                                 (Parm, OutParm)
+// bool*                                   IsDefender_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText*                            Result                                                 (Parm, OutParm)
 
 void AStoreCardReveal_BP_C::IsDefender(class UFortAccountItemDefinition* Object, bool* IsDefender_0, class FText* Result)
 {
@@ -1751,7 +1750,7 @@ void AStoreCardReveal_BP_C::IsDefender(class UFortAccountItemDefinition* Object,
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // EFortRarity                             InRarity                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                             OutRarity                                              (Parm, OutParm)
+// class FText*                            OutRarity                                              (Parm, OutParm)
 
 void AStoreCardReveal_BP_C::RarityEnumToText(EFortRarity InRarity, class FText* OutRarity)
 {
@@ -1770,5 +1769,5 @@ void AStoreCardReveal_BP_C::RarityEnumToText(EFortRarity InRarity, class FText* 
 		*OutRarity = std::move(Parms.OutRarity);
 }
 
-}
 
+SDK_NAMESPACE_END

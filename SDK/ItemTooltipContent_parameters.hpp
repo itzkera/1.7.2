@@ -14,14 +14,14 @@
 #include "GameplayTags_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteUI_structs.hpp"
+#include "ItemTooltip_DisplayMode_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ItemTooltip_DisplayMode_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function ItemTooltipContent.ItemTooltipContent_C.ExecuteUbergraph_ItemTooltipContent
 // 0x0004 (0x0004 - 0x0000)
@@ -30,9 +30,6 @@ struct ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent) == 0x000004, "Wrong alignment on ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent");
-static_assert(sizeof(ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent) == 0x000004, "Wrong size on ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent");
-static_assert(offsetof(ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent, EntryPoint) == 0x000000, "Member 'ItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent::EntryPoint' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Update
 // 0x0018 (0x0018 - 0x0000)
@@ -45,12 +42,6 @@ public:
 	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Update) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Update");
-static_assert(sizeof(ItemTooltipContent_C_Update) == 0x000018, "Wrong size on ItemTooltipContent_C_Update");
-static_assert(offsetof(ItemTooltipContent_C_Update, Success) == 0x000000, "Member 'ItemTooltipContent_C_Update::Success' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Update, Temp_bool_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Update, K2Node_Select_Default) == 0x000008, "Member 'ItemTooltipContent_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Update, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Update::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Item Data
 // 0x0020 (0x0020 - 0x0000)
@@ -64,13 +55,6 @@ public:
 	int32                                         OverrideQuantity_0;                                // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Update_Success;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Item_Data) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Item_Data");
-static_assert(sizeof(ItemTooltipContent_C_Set_Item_Data) == 0x000020, "Wrong size on ItemTooltipContent_C_Set_Item_Data");
-static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, Item_0) == 0x000000, "Member 'ItemTooltipContent_C_Set_Item_Data::Item_0' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, Comparison_Item) == 0x000008, "Member 'ItemTooltipContent_C_Set_Item_Data::Comparison_Item' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, DisplayMode_0) == 0x000010, "Member 'ItemTooltipContent_C_Set_Item_Data::DisplayMode_0' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, OverrideQuantity_0) == 0x000014, "Member 'ItemTooltipContent_C_Set_Item_Data::OverrideQuantity_0' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Item_Data, CallFunc_Update_Success) == 0x000018, "Member 'ItemTooltipContent_C_Set_Item_Data::CallFunc_Update_Success' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Weapon DPS Stat
 // 0x00B8 (0x00B8 - 0x0000)
@@ -93,21 +77,6 @@ public:
 	bool                                          Temp_bool_Variable2;                               // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Weapon_DPS_Stat) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Weapon_DPS_Stat");
-static_assert(sizeof(ItemTooltipContent_C_Build_Weapon_DPS_Stat) == 0x0000B8, "Wrong size on ItemTooltipContent_C_Build_Weapon_DPS_Stat");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_byte_Variable2) == 0x000001, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_bool_Variable) == 0x000002, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_Init_Tooltip_Context_Tooltip_Context) == 0x000010, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_Init_Tooltip_Context_Tooltip_Context' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, K2Node_Select_Default) == 0x000018, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_Create_ReturnValue) == 0x000028, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000030, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_GetTooltipStat_ReturnValue) == 0x0000A0, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000A8, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, Temp_bool_Variable2) == 0x0000B0, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Weapon_DPS_Stat, K2Node_Select2_Default) == 0x0000B1, "Member 'ItemTooltipContent_C_Build_Weapon_DPS_Stat::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Worker Stats
 // 0x0030 (0x0030 - 0x0000)
@@ -121,14 +90,6 @@ public:
 	class UFortWorker*                            K2Node_DynamicCast_AsFort_Worker;                  // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Worker_Stats) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Worker_Stats");
-static_assert(sizeof(ItemTooltipContent_C_Build_Worker_Stats) == 0x000030, "Wrong size on ItemTooltipContent_C_Build_Worker_Stats");
-static_assert(offsetof(ItemTooltipContent_C_Build_Worker_Stats, OccupiedBuildingDefinition) == 0x000000, "Member 'ItemTooltipContent_C_Build_Worker_Stats::OccupiedBuildingDefinition' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Worker_Stats, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_Build_Worker_Stats::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Worker_Stats, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Build_Worker_Stats::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Worker_Stats, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Build_Worker_Stats::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Worker_Stats, K2Node_DynamicCast_AsFort_Worker) == 0x000020, "Member 'ItemTooltipContent_C_Build_Worker_Stats::K2Node_DynamicCast_AsFort_Worker' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Worker_Stats, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'ItemTooltipContent_C_Build_Worker_Stats::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Alteration Info
 // 0x0010 (0x0010 - 0x0000)
@@ -140,11 +101,6 @@ public:
 	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBox*                           K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Alteration_Info) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Alteration_Info");
-static_assert(sizeof(ItemTooltipContent_C_Build_Alteration_Info) == 0x000010, "Wrong size on ItemTooltipContent_C_Build_Alteration_Info");
-static_assert(offsetof(ItemTooltipContent_C_Build_Alteration_Info, Temp_bool_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Build_Alteration_Info::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Alteration_Info, CallFunc_GetLevel_ReturnValue) == 0x000004, "Member 'ItemTooltipContent_C_Build_Alteration_Info::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Alteration_Info, K2Node_Select_Default) == 0x000008, "Member 'ItemTooltipContent_C_Build_Alteration_Info::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Durability
 // 0x00B0 (0x00B0 - 0x0000)
@@ -165,19 +121,6 @@ public:
 	class UVerticalBox*                           K2Node_Select_Default;                             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Durability) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Durability");
-static_assert(sizeof(ItemTooltipContent_C_Build_Durability) == 0x0000B0, "Wrong size on ItemTooltipContent_C_Build_Durability");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_Init_Tooltip_Context_Tooltip_Context) == 0x000008, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_Init_Tooltip_Context_Tooltip_Context' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_Create_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetTooltipNumericValue_Value) == 0x000020, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetTooltipNumericValue_Value' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetTooltipNumericValue_ReturnValue) == 0x000024, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetTooltipNumericValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetTooltipStat_OutDisplayAttribute) == 0x000028, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetTooltipStat_OutDisplayAttribute' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_GetTooltipStat_ReturnValue) == 0x000098, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_GetTooltipStat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, Temp_bool_Variable) == 0x000099, "Member 'ItemTooltipContent_C_Build_Durability::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, K2Node_Select_Default) == 0x0000A0, "Member 'ItemTooltipContent_C_Build_Durability::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Durability, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000A8, "Member 'ItemTooltipContent_C_Build_Durability::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Basic Stat Block
 // 0x0108 (0x0108 - 0x0000)
@@ -207,27 +150,6 @@ public:
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetUpgradeStats_ReturnValue;              // 0x00E8(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetComparisonStats_ReturnValue;           // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Basic_Stat_Block) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Basic_Stat_Block");
-static_assert(sizeof(ItemTooltipContent_C_Build_Basic_Stat_Block) == 0x000108, "Wrong size on ItemTooltipContent_C_Build_Basic_Stat_Block");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, StatArray) == 0x000000, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::StatArray' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, Temp_int_Array_Index_Variable) == 0x000010, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_Array_Get_Item) == 0x000028, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_Less_IntInt_ReturnValue) == 0x00009C, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, K2Node_SwitchEnum_CmpSuccess) == 0x00009D, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000A0, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, Temp_bool_Variable) == 0x0000A8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_Create_ReturnValue) == 0x0000B0, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, K2Node_Select_Default) == 0x0000B8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000C0, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetPlayerController_ReturnValue) == 0x0000C8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x0000D0, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetTooltipStats_ReturnValue) == 0x0000D8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetTooltipStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetUpgradeStats_ReturnValue) == 0x0000E8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetUpgradeStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Basic_Stat_Block, CallFunc_GetComparisonStats_ReturnValue) == 0x0000F8, "Member 'ItemTooltipContent_C_Build_Basic_Stat_Block::CallFunc_GetComparisonStats_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Display Name Text
 // 0x0098 (0x0098 - 0x0000)
@@ -240,13 +162,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0018)()
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Display_Name_Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Display_Name_Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Display_Name_Text) == 0x000098, "Wrong size on ItemTooltipContent_C_Set_Display_Name_Text");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, CallFunc_GetDisplayName_ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, CallFunc_TextTrimPrecedingAndTrailing_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::CallFunc_TextTrimPrecedingAndTrailing_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, K2Node_MakeArray_Array) == 0x000070, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Name_Text, CallFunc_Format_ReturnValue) == 0x000080, "Member 'ItemTooltipContent_C_Set_Display_Name_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Primary Category Text
 // 0x0028 (0x0028 - 0x0000)
@@ -261,14 +176,6 @@ public:
 	bool                                          CallFunc_GetPrimaryCategory_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Primary_Category_Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Primary_Category_Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Primary_Category_Text) == 0x000028, "Wrong size on ItemTooltipContent_C_Set_Primary_Category_Text");
-static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, Temp_byte_Variable2) == 0x000001, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, Temp_bool_Variable) == 0x000002, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, CallFunc_GetPrimaryCategory_ItemCategoryText) == 0x000008, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::CallFunc_GetPrimaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, CallFunc_GetPrimaryCategory_ReturnValue) == 0x000020, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::CallFunc_GetPrimaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Primary_Category_Text, K2Node_Select_Default) == 0x000021, "Member 'ItemTooltipContent_C_Set_Primary_Category_Text::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Secondary Category Icon & Text
 // 0x00B8 (0x00B8 - 0x0000)
@@ -288,19 +195,6 @@ public:
 	bool                                          CallFunc_GetSecondaryCategory_ReturnValue;         // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Secondary_Category_Icon___Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text) == 0x0000B8, "Wrong size on ItemTooltipContent_C_Set_Secondary_Category_Icon___Text");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_bool_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_byte_Variable2) == 0x000002, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_byte_Variable3) == 0x000003, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_byte_Variable4) == 0x000004, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, Temp_bool_Variable2) == 0x000005, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, K2Node_Select_Default) == 0x000006, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, CallFunc_GetSecondaryCategory_ItemCategoryText) == 0x000008, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::CallFunc_GetSecondaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, CallFunc_GetSecondaryCategory_ItemCategoryBrush) == 0x000020, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::CallFunc_GetSecondaryCategory_ItemCategoryBrush' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, CallFunc_GetSecondaryCategory_ReturnValue) == 0x0000B0, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::CallFunc_GetSecondaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Secondary_Category_Icon___Text, K2Node_Select2_Default) == 0x0000B1, "Member 'ItemTooltipContent_C_Set_Secondary_Category_Icon___Text::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Tertiary Category Icon & Text
 // 0x00B8 (0x00B8 - 0x0000)
@@ -320,19 +214,6 @@ public:
 	bool                                          CallFunc_GetTertiaryCategory_ReturnValue;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text) == 0x0000B8, "Wrong size on ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_byte_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_bool_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_byte_Variable2) == 0x000002, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_byte_Variable3) == 0x000003, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_byte_Variable4) == 0x000004, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, Temp_bool_Variable2) == 0x000005, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, K2Node_Select_Default) == 0x000006, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, CallFunc_GetTertiaryCategory_ItemCategoryText) == 0x000008, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::CallFunc_GetTertiaryCategory_ItemCategoryText' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, CallFunc_GetTertiaryCategory_ItemCategoryBrush) == 0x000020, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::CallFunc_GetTertiaryCategory_ItemCategoryBrush' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, CallFunc_GetTertiaryCategory_ReturnValue) == 0x0000B0, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::CallFunc_GetTertiaryCategory_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text, K2Node_Select2_Default) == 0x0000B1, "Member 'ItemTooltipContent_C_Set_Tertiary_Category_Icon___Text::K2Node_Select2_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Tier
 // 0x0080 (0x0080 - 0x0000)
@@ -372,35 +253,6 @@ public:
 	uint8                                         Pad_6B[0x1];                                       // 0x006B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select3_Default;                            // 0x006C(0x0010)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Tier) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Tier");
-static_assert(sizeof(ItemTooltipContent_C_Set_Tier) == 0x000080, "Wrong size on ItemTooltipContent_C_Set_Tier");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, MaxTier) == 0x000000, "Member 'ItemTooltipContent_C_Set_Tier::MaxTier' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CurrentTier) == 0x000004, "Member 'ItemTooltipContent_C_Set_Tier::CurrentTier' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, ActiveBox) == 0x000008, "Member 'ItemTooltipContent_C_Set_Tier::ActiveBox' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, HasTier) == 0x000010, "Member 'ItemTooltipContent_C_Set_Tier::HasTier' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_bool_Variable) == 0x000011, "Member 'ItemTooltipContent_C_Set_Tier::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_bool_Variable2) == 0x000012, "Member 'ItemTooltipContent_C_Set_Tier::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_byte_Variable) == 0x000013, "Member 'ItemTooltipContent_C_Set_Tier::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_byte_Variable2) == 0x000014, "Member 'ItemTooltipContent_C_Set_Tier::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, K2Node_Select_Default) == 0x000015, "Member 'ItemTooltipContent_C_Set_Tier::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, K2Node_MakeStruct_Margin) == 0x000018, "Member 'ItemTooltipContent_C_Set_Tier::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_GetMaxTier_ReturnValue) == 0x000028, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_GetMaxTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_GetTier_ReturnValue) == 0x000029, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_GetTier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_Convert_Tier_To_Integer_Numeric_Tier) == 0x00002C, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_Convert_Tier_To_Integer_Numeric_Tier' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_Convert_Tier_To_Integer_Numeric_Tier2) == 0x000030, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_Convert_Tier_To_Integer_Numeric_Tier2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_GetOwningPlayer_ReturnValue) == 0x000038, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_Create_ReturnValue) == 0x000040, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_AddChildToHorizontalBox_ReturnValue) == 0x000048, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_AddChildToHorizontalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_Max_ReturnValue) == 0x000050, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_int_Variable) == 0x000054, "Member 'ItemTooltipContent_C_Set_Tier::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000058, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_LessEqual_IntInt_ReturnValue2) == 0x000059, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_LessEqual_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, K2Node_Select2_Default) == 0x000060, "Member 'ItemTooltipContent_C_Set_Tier::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_GetTier_ReturnValue2) == 0x000068, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_GetTier_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000069, "Member 'ItemTooltipContent_C_Set_Tier::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, Temp_bool_Variable3) == 0x00006A, "Member 'ItemTooltipContent_C_Set_Tier::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Tier, K2Node_Select3_Default) == 0x00006C, "Member 'ItemTooltipContent_C_Set_Tier::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Level Text
 // 0x0180 (0x0180 - 0x0000)
@@ -448,39 +300,6 @@ public:
 	class UVerticalBox*                           K2Node_Select2_Default;                            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue2;       // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Level_Text) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Level_Text");
-static_assert(sizeof(ItemTooltipContent_C_Set_Level_Text) == 0x000180, "Wrong size on ItemTooltipContent_C_Set_Level_Text");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CompareMaxLevel) == 0x000000, "Member 'ItemTooltipContent_C_Set_Level_Text::CompareMaxLevel' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CompareLevel) == 0x000004, "Member 'ItemTooltipContent_C_Set_Level_Text::CompareLevel' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, HasLevel) == 0x000008, "Member 'ItemTooltipContent_C_Set_Level_Text::HasLevel' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, ActiveBox) == 0x000010, "Member 'ItemTooltipContent_C_Set_Level_Text::ActiveBox' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, MaxLevel) == 0x000018, "Member 'ItemTooltipContent_C_Set_Level_Text::MaxLevel' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CurrentLevel) == 0x00001C, "Member 'ItemTooltipContent_C_Set_Level_Text::CurrentLevel' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, Temp_bool_Variable) == 0x000020, "Member 'ItemTooltipContent_C_Set_Level_Text::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_GetMaxLevel_ReturnValue) == 0x000028, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_GetMaxLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_IsValid_ReturnValue) == 0x00002C, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_GetLevel_ReturnValue) == 0x000030, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Greater_IntInt_ReturnValue) == 0x000034, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Create_Custom_Integer_Stat_Display_Attribute) == 0x000038, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Create_Custom_Integer_Stat_Display_Attribute' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000A8, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Create_ReturnValue) == 0x0000B0, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000B8, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, Temp_byte_Variable) == 0x0000C0, "Member 'ItemTooltipContent_C_Set_Level_Text::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, K2Node_MakeStruct_Margin) == 0x0000C4, "Member 'ItemTooltipContent_C_Set_Level_Text::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Create_Custom_Integer_Stat_Display_Attribute2) == 0x0000D8, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Create_Custom_Integer_Stat_Display_Attribute2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, Temp_byte_Variable2) == 0x000148, "Member 'ItemTooltipContent_C_Set_Level_Text::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, Temp_bool_Variable2) == 0x000149, "Member 'ItemTooltipContent_C_Set_Level_Text::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, K2Node_Select_Default) == 0x00014A, "Member 'ItemTooltipContent_C_Set_Level_Text::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_NotEqual_IntInt_ReturnValue) == 0x00014B, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Greater_IntInt_ReturnValue2) == 0x00014C, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Greater_IntInt_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_GetMaxLevel_ReturnValue2) == 0x000150, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_GetMaxLevel_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_BooleanAND_ReturnValue) == 0x000154, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_GetLevel_ReturnValue2) == 0x000158, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_GetLevel_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000160, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_Create_ReturnValue2) == 0x000168, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, K2Node_Select2_Default) == 0x000170, "Member 'ItemTooltipContent_C_Set_Level_Text::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Level_Text, CallFunc_AddChildToVerticalBox_ReturnValue2) == 0x000178, "Member 'ItemTooltipContent_C_Set_Level_Text::CallFunc_AddChildToVerticalBox_ReturnValue2' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Display Mode
 // 0x0008 (0x0008 - 0x0000)
@@ -496,16 +315,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EItemTooltip_DisplayMode                      K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Display_Mode) == 0x000001, "Wrong alignment on ItemTooltipContent_C_Set_Display_Mode");
-static_assert(sizeof(ItemTooltipContent_C_Set_Display_Mode) == 0x000008, "Wrong size on ItemTooltipContent_C_Set_Display_Mode");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, DisplayMode_0) == 0x000000, "Member 'ItemTooltipContent_C_Set_Display_Mode::DisplayMode_0' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, Temp_bool_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Set_Display_Mode::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'ItemTooltipContent_C_Set_Display_Mode::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, Temp_byte_Variable) == 0x000003, "Member 'ItemTooltipContent_C_Set_Display_Mode::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'ItemTooltipContent_C_Set_Display_Mode::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'ItemTooltipContent_C_Set_Display_Mode::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, CallFunc_BooleanAND_ReturnValue) == 0x000006, "Member 'ItemTooltipContent_C_Set_Display_Mode::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Display_Mode, K2Node_Select_Default) == 0x000007, "Member 'ItemTooltipContent_C_Set_Display_Mode::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Rarity Data
 // 0x0088 (0x0088 - 0x0000)
@@ -516,10 +325,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortRarityItemData                    CallFunc_BPGetRarityData_ReturnValue;              // 0x0008(0x0080)()
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Rarity_Data) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Rarity_Data");
-static_assert(sizeof(ItemTooltipContent_C_Set_Rarity_Data) == 0x000088, "Wrong size on ItemTooltipContent_C_Set_Rarity_Data");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rarity_Data, CallFunc_GetRarity_ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_Set_Rarity_Data::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rarity_Data, CallFunc_BPGetRarityData_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_Set_Rarity_Data::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Get Query Tag
 // 0x0030 (0x0030 - 0x0000)
@@ -534,14 +339,6 @@ public:
 	struct FGameplayTag                           Temp_struct_Variable3;                             // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           K2Node_Select_Default;                             // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Get_Query_Tag) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Get_Query_Tag");
-static_assert(sizeof(ItemTooltipContent_C_Get_Query_Tag) == 0x000030, "Wrong size on ItemTooltipContent_C_Get_Query_Tag");
-static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Tag) == 0x000000, "Member 'ItemTooltipContent_C_Get_Query_Tag::Tag' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_byte_Variable) == 0x000008, "Member 'ItemTooltipContent_C_Get_Query_Tag::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_struct_Variable) == 0x000010, "Member 'ItemTooltipContent_C_Get_Query_Tag::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_struct_Variable2) == 0x000018, "Member 'ItemTooltipContent_C_Get_Query_Tag::Temp_struct_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, Temp_struct_Variable3) == 0x000020, "Member 'ItemTooltipContent_C_Get_Query_Tag::Temp_struct_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Get_Query_Tag, K2Node_Select_Default) == 0x000028, "Member 'ItemTooltipContent_C_Get_Query_Tag::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Init Tooltip Context
 // 0x0028 (0x0028 - 0x0000)
@@ -554,13 +351,6 @@ public:
 	class UFortTooltipContext*                    CallFunc_SpawnTooltipContextWithSource_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_AddGameplayTagToContainer_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Init_Tooltip_Context) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Init_Tooltip_Context");
-static_assert(sizeof(ItemTooltipContent_C_Init_Tooltip_Context) == 0x000028, "Wrong size on ItemTooltipContent_C_Init_Tooltip_Context");
-static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, Tooltip_Context) == 0x000000, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::Tooltip_Context' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, CallFunc_Get_Query_Tag_Tag) == 0x000008, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::CallFunc_Get_Query_Tag_Tag' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Init_Tooltip_Context, CallFunc_AddGameplayTagToContainer_ReturnValue) == 0x000020, "Member 'ItemTooltipContent_C_Init_Tooltip_Context::CallFunc_AddGameplayTagToContainer_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Ingredients
 // 0x0038 (0x0038 - 0x0000)
@@ -576,15 +366,6 @@ public:
 	class UFortSchematicItem*                     K2Node_DynamicCast_AsFort_Schematic_Item;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Ingredients) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Ingredients");
-static_assert(sizeof(ItemTooltipContent_C_Build_Ingredients) == 0x000038, "Wrong size on ItemTooltipContent_C_Build_Ingredients");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, Temp_bool_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Build_Ingredients::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_Build_Ingredients::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Build_Ingredients::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, K2Node_Select_Default) == 0x000018, "Member 'ItemTooltipContent_C_Build_Ingredients::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000020, "Member 'ItemTooltipContent_C_Build_Ingredients::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000028, "Member 'ItemTooltipContent_C_Build_Ingredients::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Ingredients, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'ItemTooltipContent_C_Build_Ingredients::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.BuildHeroBonuses
 // 0x0040 (0x0040 - 0x0000)
@@ -603,17 +384,6 @@ public:
 	class UVerticalBox*                           K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_BuildHeroBonuses) == 0x000008, "Wrong alignment on ItemTooltipContent_C_BuildHeroBonuses");
-static_assert(sizeof(ItemTooltipContent_C_BuildHeroBonuses) == 0x000040, "Wrong size on ItemTooltipContent_C_BuildHeroBonuses");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, Hero) == 0x000000, "Member 'ItemTooltipContent_C_BuildHeroBonuses::Hero' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_BuildHeroBonuses::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, CallFunc_Create_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_BuildHeroBonuses::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, CallFunc_IsComparison_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_BuildHeroBonuses::CallFunc_IsComparison_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, Temp_bool_Variable) == 0x000019, "Member 'ItemTooltipContent_C_BuildHeroBonuses::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, K2Node_DynamicCast_AsFort_Hero) == 0x000020, "Member 'ItemTooltipContent_C_BuildHeroBonuses::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'ItemTooltipContent_C_BuildHeroBonuses::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, K2Node_Select_Default) == 0x000030, "Member 'ItemTooltipContent_C_BuildHeroBonuses::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_BuildHeroBonuses, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000038, "Member 'ItemTooltipContent_C_BuildHeroBonuses::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.IsComparison
 // 0x0004 (0x0004 - 0x0000)
@@ -625,12 +395,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_IsComparison) == 0x000001, "Wrong alignment on ItemTooltipContent_C_IsComparison");
-static_assert(sizeof(ItemTooltipContent_C_IsComparison) == 0x000004, "Wrong size on ItemTooltipContent_C_IsComparison");
-static_assert(offsetof(ItemTooltipContent_C_IsComparison, ReturnValue) == 0x000000, "Member 'ItemTooltipContent_C_IsComparison::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_IsComparison, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'ItemTooltipContent_C_IsComparison::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_IsComparison, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'ItemTooltipContent_C_IsComparison::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_IsComparison, CallFunc_BooleanAND_ReturnValue) == 0x000003, "Member 'ItemTooltipContent_C_IsComparison::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Build Perks List
 // 0x0078 (0x0078 - 0x0000)
@@ -655,23 +419,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_Build_Perks_List) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Build_Perks_List");
-static_assert(sizeof(ItemTooltipContent_C_Build_Perks_List) == 0x000078, "Wrong size on ItemTooltipContent_C_Build_Perks_List");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, Hero) == 0x000000, "Member 'ItemTooltipContent_C_Build_Perks_List::Hero' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_GetAlterations_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_GetAlterations_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_Array_Length_ReturnValue) == 0x000018, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_GetOwningPlayer_ReturnValue) == 0x000020, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_Create_ReturnValue) == 0x000028, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000030, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_GetOwningPlayer_ReturnValue2) == 0x000038, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_GetOwningPlayer_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_GetAlterations_ReturnValue2) == 0x000040, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_GetAlterations_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_Create_ReturnValue2) == 0x000050, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_Create_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_GetLevel_ReturnValue) == 0x000058, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_AddChildToVerticalBox_ReturnValue2) == 0x000060, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_AddChildToVerticalBox_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, K2Node_DynamicCast_AsFort_Hero) == 0x000068, "Member 'ItemTooltipContent_C_Build_Perks_List::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'ItemTooltipContent_C_Build_Perks_List::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Build_Perks_List, CallFunc_Not_PreBool_ReturnValue) == 0x000071, "Member 'ItemTooltipContent_C_Build_Perks_List::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Create Custom Integer Stat
 // 0x04B0 (0x04B0 - 0x0000)
@@ -769,90 +516,6 @@ public:
 	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortDisplayAttribute                  K2Node_MakeStruct_FortDisplayAttribute;            // 0x0440(0x0070)()
 };
-static_assert(alignof(ItemTooltipContent_C_Create_Custom_Integer_Stat) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Create_Custom_Integer_Stat");
-static_assert(sizeof(ItemTooltipContent_C_Create_Custom_Integer_Stat) == 0x0004B0, "Wrong size on ItemTooltipContent_C_Create_Custom_Integer_Stat");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Display_Type) == 0x000000, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Display_Type' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Label) == 0x000008, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Label' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Value) == 0x000020, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Value' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Comparison_Value) == 0x000024, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Comparison_Value' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, HigherIsBetter) == 0x000028, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::HigherIsBetter' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Display_Attribute) == 0x000030, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Display_Attribute' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable) == 0x0000A0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A1, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Less_IntInt_ReturnValue) == 0x0000A2, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A3, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Conv_IntToText_ReturnValue) == 0x0000A8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Conv_IntToText_ReturnValue2) == 0x0000C0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData) == 0x0000D8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData2) == 0x000118, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData3) == 0x000158, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeArray_Array) == 0x000198, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeArray_Array2) == 0x0001A8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeArray_Array2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Format_ReturnValue) == 0x0001B8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Format_ReturnValue2) == 0x0001D0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Format_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData4) == 0x0001E8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData5) == 0x000228, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData5' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData6) == 0x000268, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData6' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData7) == 0x0002A8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData7' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FormatArgumentData8) == 0x0002E8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FormatArgumentData8' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeArray_Array3) == 0x000328, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeArray_Array3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeArray_Array4) == 0x000338, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeArray_Array4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Format_ReturnValue3) == 0x000348, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Format_ReturnValue3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_Format_ReturnValue4) == 0x000360, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_Format_ReturnValue4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000378, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select_Default) == 0x000380, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable2) == 0x000398, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable3) == 0x000399, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select2_Default) == 0x0003A0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable) == 0x0003B8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable2) == 0x0003B9, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable4) == 0x0003BA, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select3_Default) == 0x0003BB, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select3_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable3) == 0x0003BC, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable4) == 0x0003BD, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable4' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable5) == 0x0003BE, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable5' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select4_Default) == 0x0003BF, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select4_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable5) == 0x0003C0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable5' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable6) == 0x0003C1, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable6' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable6) == 0x0003C2, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable6' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable7) == 0x0003C3, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable7' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable8) == 0x0003C4, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable8' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable7) == 0x0003C5, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable7' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select5_Default) == 0x0003C6, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select5_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable9) == 0x0003C7, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable9' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable8) == 0x0003C8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable8' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select6_Default) == 0x0003C9, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select6_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable10) == 0x0003CA, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable10' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable9) == 0x0003CB, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable9' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select7_Default) == 0x0003CC, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select7_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable11) == 0x0003CD, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable11' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select8_Default) == 0x0003CE, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select8_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable12) == 0x0003CF, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable13) == 0x0003D0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable13' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable14) == 0x0003D1, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable14' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable15) == 0x0003D2, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable15' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable16) == 0x0003D3, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable16' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable10) == 0x0003D4, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable10' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select9_Default) == 0x0003D5, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select9_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable11) == 0x0003D6, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable11' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable17) == 0x0003D7, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable17' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable12) == 0x0003D8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable12' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable18) == 0x0003D9, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable18' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable19) == 0x0003DA, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable19' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select10_Default) == 0x0003E0, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select10_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select11_Default) == 0x0003F8, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select11_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable13) == 0x000410, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable13' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select12_Default) == 0x000418, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select12_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable20) == 0x000430, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable20' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select13_Default) == 0x000431, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select13_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select14_Default) == 0x000432, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select14_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_byte_Variable21) == 0x000433, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_byte_Variable21' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, Temp_bool_Variable14) == 0x000434, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::Temp_bool_Variable14' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select15_Default) == 0x000435, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select15_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select16_Default) == 0x000436, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select16_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select17_Default) == 0x000437, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select17_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_Select18_Default) == 0x000438, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_Select18_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Create_Custom_Integer_Stat, K2Node_MakeStruct_FortDisplayAttribute) == 0x000440, "Member 'ItemTooltipContent_C_Create_Custom_Integer_Stat::K2Node_MakeStruct_FortDisplayAttribute' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.SetDescriptionText
 // 0x00C8 (0x00C8 - 0x0000)
@@ -884,27 +547,6 @@ public:
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x00A8(0x0018)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemTooltipContent_C_SetDescriptionText) == 0x000008, "Wrong alignment on ItemTooltipContent_C_SetDescriptionText");
-static_assert(sizeof(ItemTooltipContent_C_SetDescriptionText) == 0x0000C8, "Wrong size on ItemTooltipContent_C_SetDescriptionText");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, Temp_int_Array_Index_Variable) == 0x000000, "Member 'ItemTooltipContent_C_SetDescriptionText::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'ItemTooltipContent_C_SetDescriptionText::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_GetDescription_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, K2Node_MakeArray_Array) == 0x000028, "Member 'ItemTooltipContent_C_SetDescriptionText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_GetOwningPlayer_ReturnValue) == 0x000040, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, Temp_bool_Variable) == 0x000048, "Member 'ItemTooltipContent_C_SetDescriptionText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_Create_ReturnValue) == 0x000050, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, Temp_bool_Variable2) == 0x000058, "Member 'ItemTooltipContent_C_SetDescriptionText::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, K2Node_Select_Default) == 0x000060, "Member 'ItemTooltipContent_C_SetDescriptionText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_Init_Tooltip_Context_Tooltip_Context) == 0x000068, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_Init_Tooltip_Context_Tooltip_Context' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000070, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_GetDescription_OutDescription) == 0x000078, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_GetDescription_OutDescription' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_GetDescription_ReturnValue2) == 0x000088, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_GetDescription_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, K2Node_Select2_Default) == 0x000090, "Member 'ItemTooltipContent_C_SetDescriptionText::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_Array_Length_ReturnValue) == 0x0000A0, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_Array_Get_Item) == 0x0000A8, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_SetDescriptionText, CallFunc_Less_IntInt_ReturnValue) == 0x0000C0, "Member 'ItemTooltipContent_C_SetDescriptionText::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Quantity
 // 0x0018 (0x0018 - 0x0000)
@@ -923,18 +565,6 @@ public:
 	int32                                         CallFunc_GetNumInStack_ReturnValue;                // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select3_Default;                            // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Quantity) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Quantity");
-static_assert(sizeof(ItemTooltipContent_C_Set_Quantity) == 0x000018, "Wrong size on ItemTooltipContent_C_Set_Quantity");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, Temp_bool_Variable) == 0x000000, "Member 'ItemTooltipContent_C_Set_Quantity::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, Temp_byte_Variable) == 0x000001, "Member 'ItemTooltipContent_C_Set_Quantity::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, Temp_byte_Variable2) == 0x000002, "Member 'ItemTooltipContent_C_Set_Quantity::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, Temp_bool_Variable2) == 0x000003, "Member 'ItemTooltipContent_C_Set_Quantity::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, Temp_bool_Variable3) == 0x000004, "Member 'ItemTooltipContent_C_Set_Quantity::Temp_bool_Variable3' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, CallFunc_Greater_IntInt_ReturnValue) == 0x000005, "Member 'ItemTooltipContent_C_Set_Quantity::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, K2Node_Select_Default) == 0x000006, "Member 'ItemTooltipContent_C_Set_Quantity::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, K2Node_Select2_Default) == 0x000008, "Member 'ItemTooltipContent_C_Set_Quantity::K2Node_Select2_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, CallFunc_GetNumInStack_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Set_Quantity::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Quantity, K2Node_Select3_Default) == 0x000014, "Member 'ItemTooltipContent_C_Set_Quantity::K2Node_Select3_Default' has a wrong offset!");
 
 // Function ItemTooltipContent.ItemTooltipContent_C.Set Rating
 // 0x0028 (0x0028 - 0x0000)
@@ -957,20 +587,6 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULegacyRatingWidget_C*                  K2Node_Select2_Default;                            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemTooltipContent_C_Set_Rating) == 0x000008, "Wrong alignment on ItemTooltipContent_C_Set_Rating");
-static_assert(sizeof(ItemTooltipContent_C_Set_Rating) == 0x000028, "Wrong size on ItemTooltipContent_C_Set_Rating");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, ActiveWidget) == 0x000000, "Member 'ItemTooltipContent_C_Set_Rating::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, Temp_bool_Variable) == 0x000008, "Member 'ItemTooltipContent_C_Set_Rating::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, Temp_byte_Variable) == 0x000009, "Member 'ItemTooltipContent_C_Set_Rating::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, Temp_byte_Variable2) == 0x00000A, "Member 'ItemTooltipContent_C_Set_Rating::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, Temp_bool_Variable2) == 0x00000B, "Member 'ItemTooltipContent_C_Set_Rating::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, CallFunc_GetType_ReturnValue) == 0x00000C, "Member 'ItemTooltipContent_C_Set_Rating::CallFunc_GetType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000D, "Member 'ItemTooltipContent_C_Set_Rating::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, CallFunc_GetRating_ReturnValue) == 0x000010, "Member 'ItemTooltipContent_C_Set_Rating::CallFunc_GetRating_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, CallFunc_Greater_IntInt_ReturnValue) == 0x000014, "Member 'ItemTooltipContent_C_Set_Rating::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, K2Node_Select_Default) == 0x000015, "Member 'ItemTooltipContent_C_Set_Rating::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, CallFunc_GetRating_ReturnValue2) == 0x000018, "Member 'ItemTooltipContent_C_Set_Rating::CallFunc_GetRating_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(ItemTooltipContent_C_Set_Rating, K2Node_Select2_Default) == 0x000020, "Member 'ItemTooltipContent_C_Set_Rating::K2Node_Select2_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

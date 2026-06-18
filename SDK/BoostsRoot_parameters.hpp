@@ -13,8 +13,8 @@
 #include "CommonUI_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function BoostsRoot.BoostsRoot_C.ExecuteUbergraph_BoostsRoot
 // 0x00B0 (0x00B0 - 0x0000)
@@ -54,31 +54,6 @@ public:
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue3;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot) == 0x000008, "Wrong alignment on BoostsRoot_C_ExecuteUbergraph_BoostsRoot");
-static_assert(sizeof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot) == 0x0000B0, "Wrong size on BoostsRoot_C_ExecuteUbergraph_BoostsRoot");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, EntryPoint) == 0x000000, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, Temp_byte_Variable) == 0x000010, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, Temp_byte_Variable2) == 0x000011, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_ComponentBoundEvent_TabId) == 0x000018, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_ComponentBoundEvent_TabButton) == 0x000020, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, Temp_bool_Variable) == 0x000028, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_DynamicCast_AsIcon_Tab_Button) == 0x000030, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_DynamicCast_AsIcon_Tab_Button' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_GetUINavigationManager_ReturnValue) == 0x000050, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000058, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000060, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000068, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000070, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_DynamicCast_AsAccount_Bonuses) == 0x000078, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_DynamicCast_AsAccount_Bonuses' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_DynamicCast_bSuccess2) == 0x000080, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_DynamicCast_bSuccess2' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_DynamicCast_AsXp_Boosts) == 0x000088, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_DynamicCast_AsXp_Boosts' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_DynamicCast_bSuccess3) == 0x000090, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_DynamicCast_bSuccess3' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_GetContext_ReturnValue2) == 0x000098, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_IsInZone_ReturnValue) == 0x0000A0, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, K2Node_Select_Default) == 0x0000A1, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_ExecuteUbergraph_BoostsRoot, CallFunc_GetContext_ReturnValue3) == 0x0000A8, "Member 'BoostsRoot_C_ExecuteUbergraph_BoostsRoot::CallFunc_GetContext_ReturnValue3' has a wrong offset!");
 
 // Function BoostsRoot.BoostsRoot_C.BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -88,10 +63,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'BoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function BoostsRoot.BoostsRoot_C.BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -101,10 +72,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'BoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function BoostsRoot.BoostsRoot_C.HandleBack
 // 0x0028 (0x0028 - 0x0000)
@@ -119,13 +86,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUIManagerWidget_NUI*               CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BoostsRoot_C_HandleBack) == 0x000008, "Wrong alignment on BoostsRoot_C_HandleBack");
-static_assert(sizeof(BoostsRoot_C_HandleBack) == 0x000028, "Wrong size on BoostsRoot_C_HandleBack");
-static_assert(offsetof(BoostsRoot_C_HandleBack, PassThrough) == 0x000000, "Member 'BoostsRoot_C_HandleBack::PassThrough' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BoostsRoot_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleBack, CallFunc_GetContext_ReturnValue2) == 0x000010, "Member 'BoostsRoot_C_HandleBack::CallFunc_GetContext_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleBack, CallFunc_IsInZone_ReturnValue) == 0x000018, "Member 'BoostsRoot_C_HandleBack::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleBack, CallFunc_GetUIManagerWidget_ReturnValue) == 0x000020, "Member 'BoostsRoot_C_HandleBack::CallFunc_GetUIManagerWidget_ReturnValue' has a wrong offset!");
 
 // Function BoostsRoot.BoostsRoot_C.Set Input Action Handlers
 // 0x0020 (0x0020 - 0x0000)
@@ -135,10 +95,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate2;             // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(BoostsRoot_C_Set_Input_Action_Handlers) == 0x000008, "Wrong alignment on BoostsRoot_C_Set_Input_Action_Handlers");
-static_assert(sizeof(BoostsRoot_C_Set_Input_Action_Handlers) == 0x000020, "Wrong size on BoostsRoot_C_Set_Input_Action_Handlers");
-static_assert(offsetof(BoostsRoot_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'BoostsRoot_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_Set_Input_Action_Handlers, K2Node_CreateDelegate_OutputDelegate2) == 0x000010, "Member 'BoostsRoot_C_Set_Input_Action_Handlers::K2Node_CreateDelegate_OutputDelegate2' has a wrong offset!");
 
 // Function BoostsRoot.BoostsRoot_C.HandleCursorModeChanging
 // 0x0018 (0x0018 - 0x0000)
@@ -151,12 +107,6 @@ public:
 	class UCommonUIContext*                       CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BoostsRoot_C_HandleCursorModeChanging) == 0x000008, "Wrong alignment on BoostsRoot_C_HandleCursorModeChanging");
-static_assert(sizeof(BoostsRoot_C_HandleCursorModeChanging) == 0x000018, "Wrong size on BoostsRoot_C_HandleCursorModeChanging");
-static_assert(offsetof(BoostsRoot_C_HandleCursorModeChanging, IsEnabled) == 0x000000, "Member 'BoostsRoot_C_HandleCursorModeChanging::IsEnabled' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleCursorModeChanging, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'BoostsRoot_C_HandleCursorModeChanging::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleCursorModeChanging, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'BoostsRoot_C_HandleCursorModeChanging::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleCursorModeChanging, CallFunc_GetInputManager_ReturnValue) == 0x000010, "Member 'BoostsRoot_C_HandleCursorModeChanging::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
 
 // Function BoostsRoot.BoostsRoot_C.HandleStore
 // 0x0010 (0x0010 - 0x0000)
@@ -167,10 +117,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BoostsRoot_C_HandleStore) == 0x000008, "Wrong alignment on BoostsRoot_C_HandleStore");
-static_assert(sizeof(BoostsRoot_C_HandleStore) == 0x000010, "Wrong size on BoostsRoot_C_HandleStore");
-static_assert(offsetof(BoostsRoot_C_HandleStore, PassThrough) == 0x000000, "Member 'BoostsRoot_C_HandleStore::PassThrough' has a wrong offset!");
-static_assert(offsetof(BoostsRoot_C_HandleStore, CallFunc_GetUINavigationManager_ReturnValue) == 0x000008, "Member 'BoostsRoot_C_HandleStore::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

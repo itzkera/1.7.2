@@ -14,8 +14,8 @@
 #include "UMG_structs.hpp"
 
 
-namespace SDK::Params
-{
+SDK_NAMESPACE_START
+SDK_PARAM_NAMESPACE_START
 
 // Function QuestProgressWidget.QuestProgressWidget_C.Update
 // 0x0150 (0x0150 - 0x0000)
@@ -51,30 +51,6 @@ public:
 	bool                                          Temp_bool_Variable2;                               // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select2_Default;                            // 0x014A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(QuestProgressWidget_C_Update) == 0x000008, "Wrong alignment on QuestProgressWidget_C_Update");
-static_assert(sizeof(QuestProgressWidget_C_Update) == 0x000150, "Wrong size on QuestProgressWidget_C_Update");
-static_assert(offsetof(QuestProgressWidget_C_Update, Required) == 0x000000, "Member 'QuestProgressWidget_C_Update::Required' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Achieved) == 0x000004, "Member 'QuestProgressWidget_C_Update::Achieved' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Current) == 0x000008, "Member 'QuestProgressWidget_C_Update::Current' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Total) == 0x00000C, "Member 'QuestProgressWidget_C_Update::Total' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'QuestProgressWidget_C_Update::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000028, "Member 'QuestProgressWidget_C_Update::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'QuestProgressWidget_C_Update::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Greater_IntInt_ReturnValue) == 0x000070, "Member 'QuestProgressWidget_C_Update::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Conv_IntToText_ReturnValue2) == 0x000078, "Member 'QuestProgressWidget_C_Update::CallFunc_Conv_IntToText_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Max_ReturnValue) == 0x000090, "Member 'QuestProgressWidget_C_Update::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, K2Node_MakeStruct_FormatArgumentData2) == 0x000098, "Member 'QuestProgressWidget_C_Update::K2Node_MakeStruct_FormatArgumentData2' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Conv_IntToFloat_ReturnValue2) == 0x0000D8, "Member 'QuestProgressWidget_C_Update::CallFunc_Conv_IntToFloat_ReturnValue2' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, K2Node_MakeArray_Array) == 0x0000E0, "Member 'QuestProgressWidget_C_Update::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000F0, "Member 'QuestProgressWidget_C_Update::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'QuestProgressWidget_C_Update::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, CallFunc_GetEmptyText_ReturnValue) == 0x000110, "Member 'QuestProgressWidget_C_Update::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Temp_bool_Variable) == 0x000128, "Member 'QuestProgressWidget_C_Update::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Temp_byte_Variable) == 0x000129, "Member 'QuestProgressWidget_C_Update::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, K2Node_Select_Default) == 0x000130, "Member 'QuestProgressWidget_C_Update::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Temp_byte_Variable2) == 0x000148, "Member 'QuestProgressWidget_C_Update::Temp_byte_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, Temp_bool_Variable2) == 0x000149, "Member 'QuestProgressWidget_C_Update::Temp_bool_Variable2' has a wrong offset!");
-static_assert(offsetof(QuestProgressWidget_C_Update, K2Node_Select2_Default) == 0x00014A, "Member 'QuestProgressWidget_C_Update::K2Node_Select2_Default' has a wrong offset!");
 
-}
-
+SDK_PARAM_NAMESPACE_END
+SDK_NAMESPACE_END

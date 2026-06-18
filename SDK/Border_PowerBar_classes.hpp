@@ -13,8 +13,7 @@
 #include "CommonUI_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Border-PowerBar.Border-PowerBar_C
 // 0x0000 (0x00B8 - 0x00B8)
@@ -23,15 +22,16 @@ class UBorder_PowerBar_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-PowerBar_C">();
+		BP_STATIC_CLASS_IMPL("Border-PowerBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-PowerBar_C")
 	}
 	static class UBorder_PowerBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_PowerBar_C>();
 	}
 };
-static_assert(alignof(UBorder_PowerBar_C) == 0x000008, "Wrong alignment on UBorder_PowerBar_C");
-static_assert(sizeof(UBorder_PowerBar_C) == 0x0000B8, "Wrong size on UBorder_PowerBar_C");
 
-}
-
+SDK_NAMESPACE_END

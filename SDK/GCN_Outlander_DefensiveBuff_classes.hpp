@@ -13,8 +13,7 @@
 #include "FortniteGame_classes.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GCN_Outlander_DefensiveBuff.GCN_Outlander_DefensiveBuff_C
 // 0x0000 (0x0468 - 0x0468)
@@ -23,15 +22,16 @@ class AGCN_Outlander_DefensiveBuff_C final : public AFortGameplayCueNotify_Loopi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Outlander_DefensiveBuff_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Outlander_DefensiveBuff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Outlander_DefensiveBuff_C")
 	}
 	static class AGCN_Outlander_DefensiveBuff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Outlander_DefensiveBuff_C>();
 	}
 };
-static_assert(alignof(AGCN_Outlander_DefensiveBuff_C) == 0x000008, "Wrong alignment on AGCN_Outlander_DefensiveBuff_C");
-static_assert(sizeof(AGCN_Outlander_DefensiveBuff_C) == 0x000468, "Wrong size on AGCN_Outlander_DefensiveBuff_C");
 
-}
-
+SDK_NAMESPACE_END

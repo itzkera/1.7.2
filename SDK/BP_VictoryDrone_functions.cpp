@@ -14,8 +14,7 @@
 #include "BP_VictoryDrone_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_VictoryDrone.BP_VictoryDrone_C.ExecuteUbergraph_BP_VictoryDrone
 // ()
@@ -162,5 +161,5 @@ void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

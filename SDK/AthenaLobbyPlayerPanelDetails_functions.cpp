@@ -14,8 +14,7 @@
 #include "AthenaLobbyPlayerPanelDetails_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.ExecuteUbergraph_AthenaLobbyPlayerPanelDetails
 // (HasDefaults)
@@ -102,7 +101,7 @@ void UAthenaLobbyPlayerPanelDetails_C::RefreshPendingInvite()
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.IsInvitationPending
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bIsInvitationPending                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsInvitationPending                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLobbyPlayerPanelDetails_C::IsInvitationPending(bool* bIsInvitationPending)
 {
@@ -191,7 +190,7 @@ void UAthenaLobbyPlayerPanelDetails_C::InitializeContextEvents()
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.SetTeamMemberInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortTeamMemberInfo              TeamMemberInfo_0                                       (Parm)
+// const struct FFortTeamMemberInfo&       TeamMemberInfo_0                                       (Parm)
 
 void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo_0)
 {
@@ -207,5 +206,5 @@ void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamM
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-}
 
+SDK_NAMESPACE_END

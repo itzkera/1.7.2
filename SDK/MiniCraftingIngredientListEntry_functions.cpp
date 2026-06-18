@@ -14,8 +14,7 @@
 #include "MiniCraftingIngredientListEntry_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.ExecuteUbergraph_MiniCraftingIngredientListEntry
 // ()
@@ -68,7 +67,7 @@ void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 // Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.HandleDifferentItemOrQuantitySetBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              IsBeingReset                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset)
 {
@@ -112,5 +111,5 @@ void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

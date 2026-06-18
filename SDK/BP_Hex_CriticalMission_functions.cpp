@@ -14,8 +14,7 @@
 #include "BP_Hex_CriticalMission_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.ExecuteUbergraph_BP_Hex_CriticalMission
 // (HasDefaults)
@@ -106,5 +105,5 @@ void ABP_Hex_CriticalMission_C::UserConstructionScript()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

@@ -14,8 +14,7 @@
 #include "BP_FortExpeditionIconTabButton_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.ExecuteUbergraph_BP_FortExpeditionIconTabButton
 // (HasDefaults)
@@ -110,7 +109,7 @@ void UBP_FortExpeditionIconTabButton_C::Construct()
 // Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.SetTabLabelInfo
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// struct FFortTabButtonLabelInfo          TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
+// const struct FFortTabButtonLabelInfo&   TabLabelInfo                                           (ConstParm, Parm, OutParm, ReferenceParm)
 
 void UBP_FortExpeditionIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
@@ -164,7 +163,7 @@ void UBP_FortExpeditionIconTabButton_C::OnCurrentTextStyleChanged()
 // Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ButtonText_0                                           (Parm)
+// const class FText&                      ButtonText_0                                           (Parm)
 
 void UBP_FortExpeditionIconTabButton_C::Set_Text(const class FText& ButtonText_0)
 {
@@ -184,7 +183,7 @@ void UBP_FortExpeditionIconTabButton_C::Set_Text(const class FText& ButtonText_0
 // Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateBrush                      IconBrush_0                                            (Parm)
+// const struct FSlateBrush&               IconBrush_0                                            (Parm)
 
 void UBP_FortExpeditionIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
@@ -304,5 +303,5 @@ void UBP_FortExpeditionIconTabButton_C::Update_Air_Vehicles()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END

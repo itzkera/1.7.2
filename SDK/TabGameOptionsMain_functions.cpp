@@ -14,8 +14,7 @@
 #include "TabGameOptionsMain_parameters.hpp"
 
 
-namespace SDK
-{
+SDK_NAMESPACE_START
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.ExecuteUbergraph_TabGameOptionsMain
 // (HasDefaults)
@@ -500,5 +499,5 @@ void UTabGameOptionsMain_C::Construct()
 	UObject::ProcessEvent(Func, nullptr);
 }
 
-}
 
+SDK_NAMESPACE_END
